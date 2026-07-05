@@ -4,7 +4,7 @@ interface Props {
   productSlug?: string;
 }
 const { productName = '', productSlug = '' } = Astro.props;
-const formAction = 'https://formspree.io/f/your_form_id'; // Replace with Web3Forms or Formspree
+const formAction = 'http://localhost:3001/api/inquiry'; // Local inquiry API
 ---
 
 <form id="inquiry-form" action={formAction} method="POST" class="max-w-2xl mx-auto">
