@@ -124,7 +124,7 @@ Steel or aluminum mats placed beneath the crawler tracks spread the load over an
 
 ### Selecting a Lighter Model
 
-When floor conditions are particularly restrictive, choosing the [FDDPT-20M](/products/fddpt-25m-crawler-ceiling-platform/) (65 kPa) over the FDDPT-31M (81 kPa) may be the simplest solution. The trade-off is reduced maximum working height, but for many indoor applications below 22 meters, the lighter model provides ample reach with greater floor compatibility.
+When floor conditions are particularly restrictive, choosing the [FDDPT-20M](/products/fddpt-20m-crawler-ceiling-platform/) (65 kPa) over the FDDPT-31M (81 kPa) may be the simplest solution. The trade-off is reduced maximum working height, but for many indoor applications below 22 meters, the lighter model provides ample reach with greater floor compatibility.
 
 ## Case Study: Airport Terminal with Polished Concrete
 
