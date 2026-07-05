@@ -1,0 +1,46 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: string;
+  noindex?: boolean;
+  alternateLocales?: { locale: string; url: string }[];
+}
+
+const {
+  title, description, canonical, ogImage,
+  ogType = 'website', noindex = false,
+  alternateLocales = []
+} = Astro.props;
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://yourdomain.com';
+const pageUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
+const defaultOgImage = `${siteUrl}/images/og-default.jpg`;
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={pageUrl} />
+{noindex && <meta name="robots" content="noindex,nofollow" />}
+
+<!-- Open Graph -->
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={pageUrl} />
+<meta property="og:type" content={ogType} />
+<meta property="og:image" content={ogImage || defaultOgImage} />
+<meta property="og:site_name" content="TradeSite Industrial" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage || defaultOgImage} />
+
+<!-- hreflang -->
+<link rel="alternate" hrefLang="en" href={pageUrl} />
+{alternateLocales.map(({ locale, url }) => (
+  <link rel="alternate" hrefLang={locale} href={url} />
+))}

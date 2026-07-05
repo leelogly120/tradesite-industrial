@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import InquiryForm from '../components/InquiryForm.astro';
+---
+
+<BaseLayout title="Contact Us" description="Get in touch for product inquiries, quotes, or any questions about our industrial products.">
+  <section class="hero" style="padding: 3rem 0;">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We typically respond within 24 hours.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+          <h2 class="text-xl font-bold mb-6">Send Us a Message</h2>
+          <InquiryForm />
+        </div>
+        <div>
+          <h2 class="text-xl font-bold mb-6">Contact Info</h2>
+          <div class="space-y-4">
+            <div>
+              <h3 class="font-semibold">Email</h3>
+              <p class="text-gray-600">info@yourdomain.com</p>
+            </div>
+            <div>
+              <h3 class="font-semibold">Phone</h3>
+              <p class="text-gray-600">+86 XXX XXXX XXXX</p>
+            </div>
+            <div>
+              <h3 class="font-semibold">Business Hours</h3>
+              <p class="text-gray-600">Mon - Fri, 9:00 AM - 6:00 PM (CST)</p>
+            </div>
+            <div>
+              <h3 class="font-semibold">Address</h3>
+              <p class="text-gray-600">China</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

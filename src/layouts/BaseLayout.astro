@@ -1,0 +1,86 @@
+---
+import SEOHead from '../components/SEOHead.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  ogType?: string;
+  canonical?: string;
+}
+
+const { title, description, ogImage, ogType, canonical } = Astro.props;
+const siteName = 'TradeSite Industrial';
+const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <SEOHead
+      title={fullTitle}
+      description={description}
+      ogImage={ogImage}
+      ogType={ogType}
+      canonical={canonical}
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="site-header">
+      <div class="container">
+        <a href="/" class="logo">TradeSite Industrial</a>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/products/">Products</a>
+          <a href="/blog/">Blog</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h4 class="text-white font-bold text-lg mb-3">TradeSite Industrial</h4>
+            <p class="text-sm leading-relaxed">
+              Professional supplier of industrial machinery and mechanical components.
+              Quality products, competitive pricing, and reliable after-sales service.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-3">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="/products/">Products</a></li>
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="/about/">About Us</a></li>
+              <li><a href="/contact/">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-3">Contact</h4>
+            <ul class="space-y-2 text-sm">
+              <li>Email: info@yourdomain.com</li>
+              <li>Phone: +86 XXX XXXX XXXX</li>
+              <li>Address: China</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; {new Date().getFullYear()} TradeSite Industrial. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

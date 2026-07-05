@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { getCollection } from 'astro:content';
+
+const allProducts = (await getCollection('products'))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const categories = [...new Set(allProducts.map(p => p.data.category).filter(Boolean))];
+---
+
+<BaseLayout title="Products" description="Browse our full catalog of industrial machinery and mechanical components.">
+  <section class="section">
+    <div class="container">
+      <h1 class="text-3xl font-bold mb-2">Our Products</h1>
+      <p class="text-gray-600 mb-8">
+        Explore our comprehensive range of industrial machinery and mechanical components.
+      </p>
+
+      {categories.length > 0 && (
+        <div class="flex flex-wrap gap-2 mb-8">
+          <a href="/products/" class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium">All</a>
+          {categories.map(cat => (
+            <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium cursor-pointer hover:bg-gray-200">{cat}</span>
+          ))}
+        </div>
+      )}
+
+      <div class="product-grid">
+        {allProducts.map(p => (
+          <ProductCard
+            title={p.data.title}
+            slug={p.slug}
+            description={p.data.description}
+            image={p.data.images?.[0]}
+            priceMin={p.data.price.min}
+            priceMax={p.data.price.max}
+            currency={p.data.price.currency}
+            category={p.data.category}
+          />
+        ))}
+      </div>
+
+      {allProducts.length === 0 && (
+        <div class="text-center py-16 text-gray-400">
+          <p class="text-xl">No products yet.</p>
+          <p class="mt-2">Add product Markdown files to src/content/products/</p>
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,33 @@
+---
+import ProductLayout from '../../layouts/ProductLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const products = await getCollection('products');
+  return products
+    .filter(p => !p.data.draft)
+    .map(p => ({
+      params: { slug: p.id.replace(/\.md$/, '') },
+      props: { product: p },
+    }));
+}
+
+const { product } = Astro.props;
+const { Content } = await product.render();
+---
+
+<ProductLayout
+  title={product.data.title}
+  description={product.data.description}
+  image={product.data.images?.[0]}
+  priceMin={product.data.price.min}
+  priceMax={product.data.price.max}
+  currency={product.data.price.currency}
+  specifications={product.data.specifications}
+  features={product.data.features}
+  faq={product.data.faq}
+  category={product.data.category}
+  moq={product.data.moq}
+>
+  <Content />
+</ProductLayout>

@@ -1,0 +1,96 @@
+---
+interface ProductProps {
+  type: 'Product';
+  name: string;
+  description: string;
+  image: string[];
+  priceMin: number;
+  priceMax: number;
+  currency?: string;
+  sku?: string;
+  brand?: string;
+}
+
+interface OrganizationProps {
+  type: 'Organization';
+  name: string;
+  url: string;
+  logo: string;
+  description: string;
+  sameAs?: string[];
+}
+
+interface BreadcrumbProps {
+  type: 'Breadcrumb';
+  items: { name: string; url: string }[];
+}
+
+interface FAQProps {
+  type: 'FAQ';
+  questions: { question: string; answer: string }[];
+}
+
+type Props = ProductProps | OrganizationProps | BreadcrumbProps | FAQProps;
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://yourdomain.com';
+
+function buildSchema(props: Props): object {
+  if (props.type === 'Product') {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: props.name,
+      description: props.description,
+      image: props.image,
+      sku: props.sku || '',
+      brand: props.brand ? { '@type': 'Brand', name: props.brand } : undefined,
+      offers: {
+        '@type': 'AggregateOffer',
+        priceCurrency: props.currency || 'USD',
+        lowPrice: props.priceMin,
+        highPrice: props.priceMax,
+        availability: 'https://schema.org/InStock',
+      },
+    };
+  }
+  if (props.type === 'Organization') {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: props.name,
+      url: props.url,
+      logo: props.logo,
+      description: props.description,
+      sameAs: props.sameAs || [],
+    };
+  }
+  if (props.type === 'Breadcrumb') {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: props.items.map((item, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: item.name,
+        item: new URL(item.url, siteUrl).href,
+      })),
+    };
+  }
+  if (props.type === 'FAQ') {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: props.questions.map(q => ({
+        '@type': 'Question',
+        name: q.question,
+        acceptedAnswer: { '@type': 'Answer', text: q.answer },
+      })),
+    };
+  }
+  return {};
+}
+
+const schema = buildSchema(Astro.props as Props);
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema, null, 2)} />

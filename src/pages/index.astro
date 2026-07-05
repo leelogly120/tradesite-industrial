@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import SchemaOrg from '../components/SchemaOrg.astro';
+import { getCollection } from 'astro:content';
+
+const products = (await getCollection('products'))
+  .filter(p => !p.data.draft)
+  .slice(0, 6);
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://yourdomain.com';
+---
+
+<BaseLayout title="Home" description="Professional supplier of industrial machinery and mechanical components. Quality products, competitive pricing, reliable service.">
+  <SchemaOrg type="Organization" name="TradeSite Industrial" url={siteUrl}
+    logo={`${siteUrl}/images/logo.png`}
+    description="Professional supplier of industrial machinery and mechanical components." />
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Industrial Machinery & Components</h1>
+      <p>Your trusted partner for high-quality mechanical parts and industrial equipment. Competitive pricing, reliable quality, global shipping.</p>
+      <div class="flex gap-4 justify-center">
+        <a href="/products/" class="btn btn-primary">Browse Products</a>
+        <a href="/contact/" class="btn btn-outline">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-2xl font-bold text-center mb-8">Why Choose Us</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="text-center p-6">
+          <div class="text-4xl mb-3">&#9881;</div>
+          <h3 class="font-bold text-lg mb-2">Factory Direct</h3>
+          <p class="text-gray-600">Direct from manufacturer, ensuring the best prices and quality control.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="text-4xl mb-3">&#128666;</div>
+          <h3 class="font-bold text-lg mb-2">Global Shipping</h3>
+          <p class="text-gray-600">Fast worldwide delivery with reliable logistics partners and full tracking.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="text-4xl mb-3">&#128170;</div>
+          <h3 class="font-bold text-lg mb-2">15+ Years Experience</h3>
+          <p class="text-gray-600">Over 15 years serving international clients with proven track record.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  {products.length > 0 && (
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="text-2xl font-bold text-center mb-8">Featured Products</h2>
+        <div class="product-grid">
+          {products.map(p => (
+            <ProductCard
+              title={p.data.title}
+              slug={p.slug}
+              description={p.data.description}
+              image={p.data.images?.[0]}
+              priceMin={p.data.price.min}
+              priceMax={p.data.price.max}
+              currency={p.data.price.currency}
+              category={p.data.category}
+            />
+          ))}
+        </div>
+        <div class="text-center mt-8">
+          <a href="/products/" class="btn btn-primary">View All Products</a>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- CTA -->
+  <section class="section" style="background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); color: white;">
+    <div class="container text-center">
+      <h2 class="text-2xl font-bold mb-3">Ready to Get Started?</h2>
+      <p class="opacity-90 mb-6 max-w-xl mx-auto">
+        Send us your requirements and receive a detailed quote within 24 hours.
+      </p>
+      <a href="/contact/" class="btn btn-primary">Contact Us Now</a>
+    </div>
+  </section>
+</BaseLayout>
