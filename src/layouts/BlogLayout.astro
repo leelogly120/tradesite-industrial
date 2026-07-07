@@ -1,6 +1,5 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import SchemaOrg from '../components/SchemaOrg.astro';
 
 interface Props {
   title: string;
@@ -11,35 +10,33 @@ interface Props {
   author?: string;
 }
 
-const { title, description, date, tags = [], coverImage, author = 'TradeSite Team' } = Astro.props;
+const { title, description, date, tags = [], coverImage, author = 'ARCLIFT Team' } = Astro.props;
 const formattedDate = new Date(date).toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric',
 });
 ---
 
-<BaseLayout title={title} description={description} ogImage={coverImage} ogType="article">
-  <SchemaOrg
-    type="Breadcrumb"
-    items={[
-      { name: 'Home', url: '/' },
-      { name: 'Blog', url: '/blog/' },
-      { name: title, url: Astro.url.pathname },
-    ]}
-  />
+<BaseLayout title={title} description={description} ogImage={coverImage} ogType="article" transparentNav={false}>
 
-  <article class="section">
-    <div class="container max-w-3xl">
+  <!-- HERO BANNER -->
+  <section class="hero-banner">
+    <div class="overline">Blog</div>
+    <h1 style="font-size:clamp(28px,4vw,42px);">{title}</h1>
+    <p>{description}</p>
+  </section>
+
+  <article class="sec" style="padding-top:clamp(48px,6vw,80px);">
+    <div style="max-width:800px;margin:0 auto;">
       <!-- Header -->
-      <div class="mb-8">
+      <div style="margin-bottom:32px;">
         {tags.length > 0 && (
-          <div class="flex gap-2 mb-3">
+          <div style="display:flex;gap:8px;margin-bottom:12px;">
             {tags.map(tag => (
-              <span class="px-2 py-0.5 bg-blue-50 text-blue-700 rounded text-xs font-medium">{tag}</span>
+              <span style="display:inline-block;padding:4px 12px;background:#eff6ff;color:#2563eb;border-radius:20px;font-size:13px;font-weight:600;">{tag}</span>
             ))}
           </div>
         )}
-        <h1 class="text-3xl font-bold mb-3">{title}</h1>
-        <div class="flex items-center gap-4 text-sm text-gray-500">
+        <div style="display:flex;align-items:center;gap:16px;font-size:14px;color:#64748b;">
           <span>{author}</span>
           <span>&bull;</span>
           <time datetime={new Date(date).toISOString()}>{formattedDate}</time>
@@ -47,19 +44,19 @@ const formattedDate = new Date(date).toLocaleDateString('en-US', {
       </div>
 
       {coverImage && (
-        <img src={coverImage} alt={title} class="rounded-xl mb-8 w-full" />
+        <img src={coverImage} alt={title} style="width:100%;border-radius:16px;margin-bottom:32px;" />
       )}
 
       <!-- Content -->
-      <div class="prose prose-lg max-w-none">
+      <div style="font-size:17px;color:#475569;line-height:1.8;">
         <slot />
       </div>
 
       <!-- CTA -->
-      <div class="mt-12 p-6 bg-blue-50 rounded-xl text-center">
-        <h3 class="text-xl font-bold mb-2">Interested in our products?</h3>
-        <p class="text-gray-600 mb-4">Contact us for a free quote and product catalog.</p>
-        <a href="/contact/" class="btn btn-primary">Contact Us</a>
+      <div style="margin-top:48px;padding:32px;background:#f8fafc;border-radius:16px;border:1px solid #f1f5f9;text-align:center;">
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:8px;">Interested in our platforms?</h3>
+        <p style="color:#64748b;margin-bottom:20px;">Contact us for a free quote and product specifications.</p>
+        <a href="/contact/" class="btn btn--primary">Contact Us →</a>
       </div>
     </div>
   </article>

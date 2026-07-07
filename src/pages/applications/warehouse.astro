@@ -1,60 +1,54 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import HeroSection from '../../components/HeroSection.astro';
-import CTABanner from '../../components/CTABanner.astro';
 ---
 
 <BaseLayout
-  title="Warehouse & Steel Structure Ceiling Work"
-  description="Crawler under-ceiling platforms for industrial warehouse ceiling construction, crane rail installation, and steel structure mezzanine work. 20m–35m, diesel + electric."
+  title="Warehouse & Steel Structure Ceiling Work — ARCLIFT"
+  description="Crawler under-ceiling platforms for industrial warehouse ceiling construction, crane rail installation, and steel structure mezzanine work."
+  transparentNav={false}
 >
 
-  <HeroSection
-    variant="inner"
-    title="Warehouse & Steel Structure Ceilings"
-    subtitle="Install ceiling panels, overhead crane rails, and mezzanine structures without scaffolding — pick & carry across the entire bay."
-    breadcrumb={[
-      { name: 'Home', url: '/' },
-      { name: 'Applications', url: '/applications/' },
-      { name: 'Warehouse & Steel Structures', url: '' },
-    ]}
-  />
+  <section class="hero-banner">
+    <div class="overline">Warehouse & Factory</div>
+    <h1>INDUSTRIAL CEILING CONSTRUCTION</h1>
+    <p>High-bay ceiling construction, overhead crane rail installation, mezzanine work, and routine maintenance.</p>
+  </section>
 
-  <section class="section">
-    <div class="container" style="max-width:800px;">
-      <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;">Industrial Ceiling Projects</h2>
-      <p style="margin-bottom:1rem;">Steel-structure warehouses, logistics hubs, and manufacturing plants need ceiling access for panel installation, overhead crane rail mounting, lighting, sprinkler systems, and insulation. These are massive, repetitive installations — ceiling panels measured in thousands of square meters, crane rails spanning hundreds of meters.</p>
-      <p>The FDDPT's pick & carry advantage is decisive here: the platform travels elevated along the full bay length while crews install panels continuously. No stop-lower-reposition-raise cycle. Diesel power handles rough, unpaved factory floors; electric mode takes over inside the finished building.</p>
+  <section class="sec">
+    <div style="max-width:800px;margin:0 auto;">
+      <h2 style="font-size:28px;font-weight:800;margin-bottom:20px;">Industrial Ceiling Projects</h2>
+      <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:16px;">Steel-structure warehouses, logistics hubs, and manufacturing plants need ceiling access for panel installation, overhead crane rail mounting, lighting, sprinkler systems, and insulation. These are massive, repetitive installations — ceiling panels measured in thousands of square meters, crane rails spanning hundreds of meters.</p>
+      <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:16px;">The FDDPT's pick & carry advantage is decisive here: the platform travels elevated along the full bay length while crews install panels continuously. No stop-lower-reposition-raise cycle. Diesel power handles rough, unpaved factory floors; electric mode takes over inside the finished building.</p>
     </div>
   </section>
 
-  <section class="section section-alt">
-    <div class="container">
-      <h2 style="font-size:1.5rem;font-weight:700;text-align:center;margin-bottom:2rem;">Recommended Models</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div style="padding:1.5rem;background:white;border-radius:0.75rem;border:1px solid var(--color-border);">
-          <h3 style="font-weight:700;">FDDPT-20M — Compact</h3>
-          <p style="color:var(--color-text-light);margin:0.5rem 0;">Entry model for mid-height warehouses (up to 20m). Lighter, faster repositioning. Good for distribution centers and standard logistics buildings.</p>
-          <a href="/products/fddpt-20m-crawler-ceiling-platform/" class="btn btn-outline-dark btn-sm mt-2">View Model</a>
-        </div>
-        <div style="padding:1.5rem;background:white;border-radius:0.75rem;border:1px solid var(--color-border);">
-          <h3 style="font-weight:700;">FDDPT-25M — Mid-Range</h3>
-          <p style="color:var(--color-text-light);margin:0.5rem 0;">Sweet spot for most industrial steel structures (15m–25m). Heavy 0.3–3T load handles panel stacks and crane rail sections.</p>
-          <a href="/products/fddpt-25m-crawler-ceiling-platform/" class="btn btn-outline-dark btn-sm mt-2">View Model</a>
-        </div>
-        <div style="padding:1.5rem;background:white;border-radius:0.75rem;border:1px solid var(--color-border);">
-          <h3 style="font-weight:700;">FDDPT-31M — High-Bay</h3>
-          <p style="color:var(--color-text-light);margin:0.5rem 0;">For tall logistics centers and manufacturing plants (25m+). High-reach with full platform capacity for heavy industrial ceiling components.</p>
-          <a href="/products/fddpt-31m-crawler-ceiling-platform/" class="btn btn-outline-dark btn-sm mt-2">View Model</a>
-        </div>
+  <section class="sec sec--gray">
+    <div class="sec__header reveal">
+      <div class="sec__overline">Recommended Models</div>
+      <h2 class="sec__title">FOR WAREHOUSE WORK</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1200px;margin:0 auto;">
+      <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">FDDPT-20M — Compact</h3>
+        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">Entry model for mid-height warehouses (up to 20m). Lighter, faster repositioning. Good for distribution centers and standard logistics buildings.</p>
+        <a href="/products/fddpt-20m-crawler-ceiling-platform/" class="btn btn--outline-blue">View Model →</a>
+      </div>
+      <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">FDDPT-25M — Mid-Range</h3>
+        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">Sweet spot for most industrial steel structures (15m–25m). Heavy 0.3–3T load handles panel stacks and crane rail sections.</p>
+        <a href="/products/fddpt-25m-crawler-ceiling-platform/" class="btn btn--outline-blue">View Model →</a>
+      </div>
+      <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">FDDPT-31M — High-Bay</h3>
+        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">For tall logistics centers and manufacturing plants (25m+). High-reach with full platform capacity for heavy industrial ceiling components.</p>
+        <a href="/products/fddpt-31m-crawler-ceiling-platform/" class="btn btn--outline-blue">View Model →</a>
       </div>
     </div>
   </section>
 
-  <CTABanner
-    title="Warehouse ceiling project starting soon?"
-    subtitle="Get a cost comparison: FDDPT pick & carry vs traditional scaffolding for your bay dimensions."
-    ctaText="Request a Comparison"
-    ctaUrl="/contact/"
-  />
+  <section class="cta">
+    <h2>WAREHOUSE CEILING PROJECT STARTING SOON?</h2>
+    <p>Get a cost comparison: FDDPT pick & carry vs traditional scaffolding for your bay dimensions.</p>
+    <a href="/contact/" class="btn--white">Request a Comparison →</a>
+  </section>
 </BaseLayout>

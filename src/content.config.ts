@@ -34,9 +34,30 @@ const blog = defineCollection({
     date: z.coerce.date(),
     draft: z.boolean().default(false),
     tags: z.array(z.string()).optional(),
-    author: z.string().default('TradeSite Team'),
+    author: z.string().default('ARCLIFT Team'),
     coverImage: z.string().optional(),
   }),
 });
 
-export const collections = { products, blog };
+const caseStudies = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/case-studies' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().max(200),
+    category: z.string(),
+    date: z.coerce.date(),
+    draft: z.boolean().default(false),
+    stats: z.array(z.object({
+      num: z.string(),
+      label: z.string(),
+    })).optional(),
+    model: z.string().optional(),
+    results: z.array(z.object({
+      num: z.string(),
+      label: z.string(),
+    })).optional(),
+    coverImage: z.string().optional(),
+  }),
+});
+
+export const collections = { products, blog, caseStudies };

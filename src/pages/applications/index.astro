@@ -1,70 +1,106 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import HeroSection from '../../components/HeroSection.astro';
-import CTABanner from '../../components/CTABanner.astro';
 ---
 
 <BaseLayout
   title="Applications — Crawler Under-Ceiling Platform Use Cases"
-  description="FDDPT crawler under-ceiling platforms for stadium ceiling construction, airport terminal maintenance, and warehouse steel structure ceiling work. Scene-specific solutions."
+  description="FDDPT crawler under-ceiling platforms for stadium ceiling construction, airport terminal maintenance, and warehouse steel structure ceiling work."
+  transparentNav={false}
 >
 
-  <HeroSection
-    variant="inner"
-    title="Application Scenarios"
-    subtitle="Three ceiling types. One platform family. Purpose-built for every tall indoor space."
-    breadcrumb={[
-      { name: 'Home', url: '/' },
-      { name: 'Applications', url: '' },
-    ]}
-  />
+  <!-- HERO BANNER -->
+  <section class="hero-banner">
+    <div class="overline">Solutions</div>
+    <h1>BUILT FOR THESE CEILINGS</h1>
+    <p>Specialized aerial access solutions for tall indoor spaces. From stadiums to airports to warehouses.</p>
+  </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <a href="/applications/stadium/" class="app-card" style="aspect-ratio:auto;min-height:320px;display:block;color:inherit;text-decoration:none;">
-          <div style="width:100%;height:100%;position:relative;border-radius:0.75rem;overflow:hidden;background:linear-gradient(135deg,#152C6B,#1E3A8A);">
-            <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:2rem;color:white;">
-              <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:0.5rem;">Stadium Ceilings</h2>
-              <p style="opacity:0.85;font-size:0.95rem;line-height:1.6;">Large-span roof structures, acoustic panel installation, lighting grid rigging, and HVAC maintenance. Keep the pitch clear while working overhead.</p>
-              <span class="spec-chip mt-3" style="background:rgba(255,255,255,.15);color:white;">Recommended: FDDPT-31M / 35M</span>
-            </div>
-          </div>
-        </a>
-        <a href="/applications/airport/" class="app-card" style="aspect-ratio:auto;min-height:320px;display:block;color:inherit;text-decoration:none;">
-          <div style="width:100%;height:100%;position:relative;border-radius:0.75rem;overflow:hidden;background:linear-gradient(135deg,#0F172A,#1E3A8A);">
-            <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:2rem;color:white;">
-              <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:0.5rem;">Airport Terminals</h2>
-              <p style="opacity:0.85;font-size:0.95rem;line-height:1.6;">Ceiling panel maintenance, lighting system upgrades, and mechanical access. Zero-emission electric operation keeps terminals fully operational.</p>
-              <span class="spec-chip mt-3" style="background:rgba(255,255,255,.15);color:white;">Recommended: FDDPT-25M / 31M</span>
-            </div>
-          </div>
-        </a>
-        <a href="/applications/warehouse/" class="app-card" style="aspect-ratio:auto;min-height:320px;display:block;color:inherit;text-decoration:none;">
-          <div style="width:100%;height:100%;position:relative;border-radius:0.75rem;overflow:hidden;background:linear-gradient(135deg,#1E3A8A,#3B82F6);">
-            <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:2rem;color:white;">
-              <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:0.5rem;">Warehouse & Steel Structures</h2>
-              <p style="opacity:0.85;font-size:0.95rem;line-height:1.6;">High-bay ceiling panel installation, overhead crane rail mounting, mezzanine construction. Pick & carry covers entire bays without repositioning.</p>
-              <span class="spec-chip mt-3" style="background:rgba(255,255,255,.15);color:white;">Recommended: FDDPT-20M / 25M / 31M</span>
-            </div>
-          </div>
-        </a>
+  <!-- STADIUM -->
+  <section class="sec">
+    <div class="scenario reveal">
+      <div class="scenario__visual">
+        <div style="font-size:14px;color:#94a3b8;">[Stadium Ceiling Image]</div>
+      </div>
+      <div class="scenario__text">
+        <div class="scenario__tag">Stadium & Arena</div>
+        <h3>Stadium Ceiling Solutions</h3>
+        <p>Large-span steel structures, acoustic panel installation, rigging access, and lighting maintenance. Our pick & carry platforms eliminate scaffolding entirely for faster, safer ceiling work.</p>
+        <div class="scenario__features">
+          <span class="scenario__feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>35m+ Reach</span>
+          <span class="scenario__feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>3T Load Capacity</span>
+          <span class="scenario__feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Floor Protection</span>
+          <span class="scenario__feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Remote Control</span>
+        </div>
+        <div class="scenario__btns">
+          <a href="/applications/stadium/" class="btn btn--primary">View Details →</a>
+          <a href="/contact/" class="btn btn--outline-blue">Get a Quote</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section section-alt">
-    <div class="container" style="max-width:800px;text-align:center;">
-      <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;">Not sure which model fits your project?</h2>
-      <p style="color:var(--color-text-light);margin-bottom:1.5rem;">Tell us your ceiling height, load requirements, and site conditions — we'll recommend the right FDDPT configuration.</p>
-      <a href="/contact/" class="btn btn-primary btn-lg">Request a Consultation</a>
+  <!-- AIRPORT -->
+  <section class="sec sec--gray">
+    <div class="scenario scenario--reverse reveal">
+      <div class="scenario__visual">
+        <div style="font-size:14px;color:#94a3b8;">[Airport Terminal Image]</div>
+      </div>
+      <div class="scenario__text">
+        <div class="scenario__tag">Airport Terminal</div>
+        <h3>Airport Ceiling Maintenance</h3>
+        <p>Ceiling panel installation and maintenance, lighting system upgrades, HVAC access, and emergency repair. Dual power system enables zero-emission indoor operation in occupied terminals.</p>
+        <div class="scenario__features">
+          <span class="scenario__feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Zero Emissions</span>
+          <span class="scenario__feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>24/7 Operation</span>
+          <span class="scenario__feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Low Noise</span>
+          <span class="scenario__feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Compact Access</span>
+        </div>
+        <div class="scenario__btns">
+          <a href="/applications/airport/" class="btn btn--primary">View Details →</a>
+          <a href="/contact/" class="btn btn--outline-blue">Get a Quote</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <CTABanner
-    title="Ready to spec your ceiling access solution?"
-    subtitle="Get a detailed project assessment from our engineering team."
-    ctaText="Contact Us"
-    ctaUrl="/contact/"
-  />
+  <!-- WAREHOUSE -->
+  <section class="sec">
+    <div class="scenario reveal">
+      <div class="scenario__visual">
+        <div style="font-size:14px;color:#94a3b8;">[Warehouse Ceiling Image]</div>
+      </div>
+      <div class="scenario__text">
+        <div class="scenario__tag">Warehouse & Factory</div>
+        <h3>Industrial Ceiling Construction</h3>
+        <p>High-bay ceiling construction, overhead crane rail installation, mezzanine work, and routine maintenance. Pick & carry eliminates scaffolding for massive efficiency gains.</p>
+        <div class="scenario__features">
+          <span class="scenario__feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>30% Faster</span>
+          <span class="scenario__feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>12m×8m Platform</span>
+          <span class="scenario__feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Pick & Carry</span>
+          <span class="scenario__feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>All-Terrain Tracks</span>
+        </div>
+        <div class="scenario__btns">
+          <a href="/applications/warehouse/" class="btn btn--primary">View Details →</a>
+          <a href="/contact/" class="btn btn--outline-blue">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="sec sec--dark">
+    <div class="stats reveal">
+      <div class="stat"><div class="stat__num">30%</div><div class="stat__label">Faster Than Scaffolding</div></div>
+      <div class="stat"><div class="stat__num">12m×8m</div><div class="stat__label">Maximum Platform</div></div>
+      <div class="stat"><div class="stat__num">360°</div><div class="stat__label">Full Rotation</div></div>
+      <div class="stat"><div class="stat__num">24/7</div><div class="stat__label">Global Support</div></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>NOT SURE WHICH SOLUTION FITS YOUR PROJECT?</h2>
+    <p>Tell us about your ceiling project and our engineering team will recommend the right model.</p>
+    <a href="/contact/" class="btn--white">Get a Free Consultation →</a>
+  </section>
 </BaseLayout>

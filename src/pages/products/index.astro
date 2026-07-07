@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ProductCard from '../../components/ProductCard.astro';
 import { getCollection } from 'astro:content';
 
 const allProducts = (await getCollection('products'))
@@ -8,102 +7,55 @@ const allProducts = (await getCollection('products'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
 const craneProducts = allProducts.filter(p => p.data.category === 'Aerial Work Platforms');
-const otherProducts = allProducts.filter(p => p.data.category !== 'Aerial Work Platforms');
 ---
 
 <BaseLayout
   title="Products — Crawler Under-Ceiling Platforms"
-  description="FDDPT series crawler under-ceiling aerial work platforms: 20m, 25m, 31m, 35m models. Pick & carry, dual power, remote control. Also: CNC machines, hydraulic presses."
+  description="FDDPT series crawler under-ceiling aerial work platforms: 20m, 25m, 31m, 35m models. Pick & carry, dual power, remote control."
+  transparentNav={false}
 >
 
-  <section class="section">
-    <div class="container">
-      <div class="breadcrumb">
-        <a href="/">Home</a>
-        <span>/</span>
-        <span aria-current="page">Products</span>
-      </div>
+  <!-- HERO BANNER -->
+  <section class="hero-banner">
+    <div class="overline">Products</div>
+    <h1>FDDPT SERIES</h1>
+    <p>Pick & carry aerial platforms engineered for maximum productivity on ceiling projects. From 20m compact to 35m flagship.</p>
+  </section>
 
-      <h1 style="font-size:2rem;font-weight:700;margin-bottom:0.5rem;">Crawler Under-Ceiling Platforms — FDDPT Series</h1>
-      <p style="color:var(--color-text-light);margin-bottom:2rem;">4 models, 20m–35m height, 0.3T–3T load capacity. Pick & carry capability, dual power, full remote control.</p>
-
-      <!-- Filter chips -->
-      <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:2rem;">
-        <a href="/products/" class="spec-chip" style="background:var(--color-primary);color:white;text-decoration:none;">All</a>
-        <a href="/products/?range=20-25" class="spec-chip filter-chip">20–25m</a>
-        <a href="/products/?range=31-35" class="spec-chip filter-chip">31–35m</a>
-        <a href="/products/?power=diesel" class="spec-chip filter-chip">Diesel</a>
-        <a href="/products/?power=dual" class="spec-chip filter-chip">Dual Power</a>
-      </div>
-
-      <!-- Crane products grid -->
-      {craneProducts.length > 0 && (
-        <div class="product-grid">
-          {craneProducts.sort((a, b) => {
-            const aH = parseInt(a.data.specifications?.['Max Working Height'] || '0');
-            const bH = parseInt(b.data.specifications?.['Max Working Height'] || '0');
-            return aH - bH;
-          }).map(p => {
-            const specs = p.data.specifications || {};
-            return (
-              <ProductCard
-                title={p.data.title}
-                slug={p.id}
-                description={p.data.description}
-                image={p.data.images?.[0]}
-                priceMin={p.data.price.min}
-                priceMax={p.data.price.max}
-                currency={p.data.price.currency}
-                category={p.data.category}
-                isFlagship={p.data.title.includes('35M')}
-                priceEstimate={true}
-                specs={[
-                  { label: 'Height', value: specs['Max Working Height'] || '—' },
-                  { label: 'Load', value: specs['Safe Working Load'] || '—' },
-                  { label: 'Weight', value: specs['Machine Weight'] || '—' },
-                ]}
-              />
-            );
-          })}
-        </div>
-      )}
-
-      <!-- Comparison CTA -->
-      {craneProducts.length >= 2 && (
-        <div style="text-align:center;margin:2rem 0;padding:2rem;background:var(--color-bg-alt);border-radius:0.75rem;">
-          <h3 style="font-weight:700;margin-bottom:0.5rem;">Compare All 4 FDDPT Models</h3>
-          <p style="color:var(--color-text-light);margin-bottom:1rem;">Side-by-side specs: height, load, platform size, power</p>
-          <a href="/blog/pick-and-carry-vs-spider-lift-vs-scaffolding/" class="btn btn-outline-dark">View Full Comparison</a>
-        </div>
-      )}
-
-      <!-- Other products -->
-      {otherProducts.length > 0 && (
-        <>
-          <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;margin-top:3rem;">Other Machinery</h2>
-          <div class="product-grid">
-            {otherProducts.map(p => (
-              <ProductCard
-                title={p.data.title}
-                slug={p.id}
-                description={p.data.description}
-                image={p.data.images?.[0]}
-                priceMin={p.data.price.min}
-                priceMax={p.data.price.max}
-                currency={p.data.price.currency}
-                category={p.data.category}
-              />
-            ))}
-          </div>
-        </>
-      )}
-
-      {allProducts.length === 0 && (
-        <div style="text-align:center;padding:4rem 0;color:var(--color-text-light);">
-          <p style="font-size:1.25rem;">No products yet.</p>
-          <p style="margin-top:0.5rem;">Add product Markdown files to src/content/products/</p>
-        </div>
-      )}
+  <!-- PRODUCTS LIST -->
+  <section class="sec">
+    <div class="products-list">
+      {craneProducts.sort((a, b) => {
+        const aH = parseInt(a.data.specifications?.['Max Working Height'] || '0');
+        const bH = parseInt(b.data.specifications?.['Max Working Height'] || '0');
+        return aH - bH;
+      }).map(p => {
+        const specs = p.data.specifications || {};
+        const isFlagship = p.data.title.includes('35M');
+        return (
+          <a href={`/products/${p.id}/`} class="p-card-list reveal">
+            <div class="p-card-list__img">FDDPT-{specs['Max Working Height'] || ''}</div>
+            <div class="p-card-list__body">
+              <div class="p-card-list__tag">{isFlagship ? 'Flagship' : 'FDDPT'}</div>
+              <div class="p-card-list__name">{p.data.title.split(' ')[0]}</div>
+              <div class="p-card-list__specs">
+                <span class="p-card-list__spec"><b>{specs['Max Working Height'] || '—'}</b> Reach</span>
+                <span class="p-card-list__spec"><b>{specs['Safe Working Load'] || '—'}</b> Load</span>
+                <span class="p-card-list__spec"><b>{specs['Machine Weight'] || '—'}</b> Weight</span>
+                <span class="p-card-list__spec"><b>{specs['Platform Extension'] || specs['Platform Size (L×W)'] || '—'}</b> Platform</span>
+              </div>
+              <span class="btn btn--primary">View Details →</span>
+            </div>
+          </a>
+        );
+      })}
     </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>NEED HELP CHOOSING THE RIGHT MODEL?</h2>
+    <p>Our engineering team will recommend the best FDDPT for your project requirements.</p>
+    <a href="/contact/" class="btn--white">Get a Free Consultation →</a>
   </section>
 </BaseLayout>

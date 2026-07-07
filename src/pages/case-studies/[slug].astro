@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const cases = await getCollection('caseStudies');
+  return cases
+    .filter(p => !p.data.draft)
+    .map(p => ({
+      params: { slug: p.id.replace(/\.md$/, '') },
+      props: { caseStudy: p },
+    }));
+}
+
+const { caseStudy } = Astro.props;
+const data = caseStudy.data;
+const { Content } = await render(caseStudy);
+---
+
+<BaseLayout
+  title={data.title}
+  description={data.description}
+  transparentNav={false}
+>
+
+  <!-- HERO -->
+  <section class="hero-full">
+    <div class="hero-full__content">
+      <span class="hero-full__tag">{data.category}</span>
+      <h1>{data.title.toUpperCase()}</h1>
+      <p>{data.description}</p>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="/case-studies/">Case Studies</a> / <span>{data.title}</span>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="case-content">
+    <!-- META GRID -->
+    {data.stats && (
+      <div class="meta-grid reveal">
+        {data.stats.map(s => (
+          <div class="meta-item">
+            <div class="num">{s.num}</div>
+            <div class="label">{s.label}</div>
+          </div>
+        ))}
+      </div>
+    )}
+
+    <!-- ARTICLE -->
+    <div class="article">
+      <Content />
+    </div>
+
+    <!-- RESULTS -->
+    {data.results && (
+      <div class="results-grid reveal">
+        {data.results.map(r => (
+          <div class="result-card">
+            <div class="num">{r.num}</div>
+            <div class="label">{r.label}</div>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+
+  <!-- CTA -->
+  <section class="cta" style="margin-top:64px;">
+    <h2>HAVE A SIMILAR PROJECT?</h2>
+    <p>Let us help you find the right solution for your ceiling project.</p>
+    <a href="/contact/" class="btn--white">Get a Free Consultation →</a>
+  </section>
+</BaseLayout>

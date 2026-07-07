@@ -1,7 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import HeroSection from '../components/HeroSection.astro';
-import CTABanner from '../components/CTABanner.astro';
 import { getCollection } from 'astro:content';
 
 const craneProducts = (await getCollection('products'))
@@ -22,57 +20,50 @@ const compareKeys = [
 <BaseLayout
   title="Compare FDDPT Models — Side-by-Side Specs"
   description="Compare all 4 FDDPT crawler under-ceiling aerial work platforms: 20m, 25m, 31m, 35m. Height, load, platform size, power — side by side."
+  transparentNav={false}
 >
 
-  <HeroSection
-    variant="inner"
-    title="Compare FDDPT Models"
-    subtitle="Side-by-side specifications for all four crawler under-ceiling platforms."
-    breadcrumb={[
-      { name: 'Home', url: '/' },
-      { name: 'Products', url: '/products/' },
-      { name: 'Compare', url: '' },
-    ]}
-  />
-
-  <section class="section">
-    <div class="container">
-      <div class="comparison-table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Specification</th>
-              {craneProducts.map(p => (
-                <th>
-                  <a href={`/products/${p.id}/`} style="color:var(--color-primary);font-size:0.95rem;">
-                    {p.data.specifications?.['Max Working Height'] || p.data.title}
-                  </a>
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {compareKeys.map(key => (
-              <tr>
-                <td>{key}</td>
-                {craneProducts.map(p => (
-                  <td>{p.data.specifications?.[key] || '—'}</td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <p style="text-align:center;color:var(--color-text-light);font-size:0.85rem;margin-top:1rem;">
-        For complete specifications, visit each model's product detail page.
-      </p>
-    </div>
+  <section class="hero-banner">
+    <div class="overline">Compare</div>
+    <h1>COMPARE FDDPT MODELS</h1>
+    <p>Side-by-side specifications for all four crawler under-ceiling platforms.</p>
   </section>
 
-  <CTABanner
-    title="Need help choosing the right model?"
-    subtitle="Our engineering team can recommend the best FDDPT for your ceiling height, load, and site conditions."
-    ctaText="Get a Recommendation"
-    ctaUrl="/contact/"
-  />
+  <section class="sec">
+    <div class="comp reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Specification</th>
+            {craneProducts.map(p => (
+              <th>
+                <a href={`/products/${p.id}/`} style="color:#2563eb;font-size:0.95rem;">
+                  {p.data.title.split(' ')[0]}
+                </a>
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {compareKeys.map(key => (
+            <tr>
+              <td>{key}</td>
+              {craneProducts.map(p => (
+                <td>{p.data.specifications?.[key] || '—'}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p style="text-align:center;color:#64748b;font-size:0.85rem;margin-top:1rem;">
+      For complete specifications, visit each model's product detail page.
+    </p>
+  </section>
+
+  <section class="cta">
+    <h2>NEED HELP CHOOSING THE RIGHT MODEL?</h2>
+    <p>Our engineering team can recommend the best FDDPT for your ceiling height, load, and site conditions.</p>
+    <a href="/contact/" class="btn--white">Get a Recommendation →</a>
+  </section>
 </BaseLayout>

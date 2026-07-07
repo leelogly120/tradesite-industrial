@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const cases = (await getCollection('caseStudies'))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout
+  title="Case Studies — ARCLIFT"
+  description="See how ARCLIFT platforms deliver results on stadium, airport & warehouse ceiling projects worldwide."
+  transparentNav={false}
+>
+
+  <!-- HERO BANNER -->
+  <section class="hero-banner">
+    <div class="overline">Case Studies</div>
+    <h1>PROJECT SHOWCASE</h1>
+    <p>See how ARCLIFT platforms deliver results on stadium, airport & warehouse ceiling projects worldwide.</p>
+  </section>
+
+  <!-- CASES GRID -->
+  <section class="sec">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="Stadium">Stadium</button>
+      <button class="filter-btn" data-filter="Airport">Airport</button>
+      <button class="filter-btn" data-filter="Warehouse">Warehouse</button>
+    </div>
+    <div class="cases">
+      {cases.map(c => (
+        <a href={`/case-studies/${c.id}/`} class="case-card reveal" data-category={c.data.category}>
+          <div class="case-card__img">
+            {c.data.category} Project
+            <span class="case-card__tag">{c.data.category}</span>
+          </div>
+          <div class="case-card__body">
+            <div class="case-card__title">{c.data.title}</div>
+            <div class="case-card__desc">{c.data.description}</div>
+            {c.data.stats && (
+              <div class="case-card__stats">
+                {c.data.stats.slice(0, 2).map(s => (
+                  <span class="case-card__stat"><b>{s.num}</b> {s.label}</span>
+                ))}
+              </div>
+            )}
+            <span class="case-card__link">Read Case Study →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>HAVE A SIMILAR PROJECT?</h2>
+    <p>Tell us about your ceiling project and we'll recommend the right solution.</p>
+    <a href="/contact/" class="btn--white">Get a Free Consultation →</a>
+  </section>
+
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        document.querySelectorAll('.case-card').forEach(card => {
+          const cat = card.getAttribute('data-category');
+          (card as HTMLElement).style.display = (filter === 'all' || cat === filter) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+</BaseLayout>
