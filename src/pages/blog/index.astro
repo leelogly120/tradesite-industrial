@@ -5,52 +5,532 @@ import { getCollection } from 'astro:content';
 const posts = (await getCollection('blog'))
   .filter(p => !p.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const featuredPost = posts[0];
+const regularPosts = posts.slice(1);
+
+const categories = ['All', 'Product Guide', 'Safety', 'Project Tips', 'Industry News'];
 ---
 
-<BaseLayout title="Blog — ARCLIFT" description="Industry insights, product guides, and technical comparisons for crawler under-ceiling aerial work platforms." transparentNav={false}>
+<BaseLayout title="Blog — ARCLIFT" description="Expert knowledge on aerial work platforms, safety standards, and ceiling installation best practices." transparentNav={false}>
 
   <!-- HERO BANNER -->
   <section class="hero-banner">
-    <div class="overline">Blog</div>
-    <h1>BLOG & INSIGHTS</h1>
-    <p>Industry knowledge, technical guides, and comparison articles for ceiling access professionals.</p>
+    <div class="overline">Blog & Insights</div>
+    <h1>INDUSTRY INSIGHTS</h1>
+    <p>Expert knowledge on aerial work platforms, safety standards, and ceiling installation best practices.</p>
   </section>
 
-  <!-- POSTS -->
-  <section class="sec">
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:1400px;margin:0 auto;">
-      {posts.map(post => (
-        <a href={`/blog/${post.id}/`} class="case-card reveal">
-          <div class="case-card__img">
-            {post.data.tags && post.data.tags.length > 0 ? post.data.tags[0] : 'Blog'}
+  <!-- FEATURED POST -->
+  {featuredPost && (
+    <section class="featured">
+      <div class="featured__inner reveal">
+        <div class="featured__img">Featured Article Image</div>
+        <div class="featured__content">
+          <div class="overline">Featured Article</div>
+          <h2>{featuredPost.data.title}</h2>
+          <p>{featuredPost.data.description}</p>
+          <div class="featured__meta">
+            <span>{featuredPost.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
+            <span>•</span>
+            <span>12 min read</span>
           </div>
-          <div class="case-card__body">
+          <a href={`/blog/${featuredPost.id}/`} class="btn btn--primary">Read Article →</a>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- FILTER + POSTS -->
+  <section class="sec">
+    <div class="filter-bar">
+      {categories.map((cat, i) => (
+        <button class:list={['filter-btn', { active: i === 0 }]} data-category={cat.toLowerCase().replace(/\s+/g, '-')}>
+          {cat}
+        </button>
+      ))}
+    </div>
+    <div class="blog-grid">
+      {regularPosts.map(post => (
+        <a href={`/blog/${post.id}/`} class="blog-card reveal" data-tags={post.data.tags?.join(',').toLowerCase()}>
+          <div class="blog-card__img">
+            Article Image
             {post.data.tags && post.data.tags.length > 0 && (
-              <span style="display:inline-block;padding:4px 12px;background:#eff6ff;color:#2563eb;border-radius:20px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:12px;">{post.data.tags[0]}</span>
+              <span class="blog-card__tag">{post.data.tags[0]}</span>
             )}
-            <div class="case-card__title">{post.data.title}</div>
-            <div class="case-card__desc">{post.data.description}</div>
-            <time style="font-size:13px;color:#64748b;display:block;margin-top:12px;">
+            <span class="blog-card__date">
               {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
-            </time>
+            </span>
+          </div>
+          <div class="blog-card__body">
+            <h3 class="blog-card__title">{post.data.title}</h3>
+            <p class="blog-card__excerpt">{post.data.description}</p>
+            <div class="blog-card__meta">
+              <div class="blog-card__author">AR</div>
+              <span class="blog-card__author-name">ARCLIFT Team</span>
+              <span class="blog-card__read-time">8 min read</span>
+            </div>
+            <span class="blog-card__link">Read More →</span>
           </div>
         </a>
       ))}
     </div>
 
-    {posts.length === 0 && (
+    {regularPosts.length === 0 && (
       <div style="text-align:center;padding:4rem 0;color:#64748b;">
-        <p style="font-size:1.25rem;">No blog posts yet.</p>
+        <p style="font-size:1.25rem;">No more blog posts yet.</p>
       </div>
     )}
   </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <h2>STAY UPDATED</h2>
+    <p>Get the latest insights on aerial work platforms delivered to your inbox.</p>
+    <form class="newsletter__form">
+      <input type="email" class="newsletter__input" placeholder="Enter your email address" required />
+      <button type="submit" class="newsletter__btn">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>NEED EXPERT ADVICE?</h2>
+    <p>Our team can help you choose the right aerial work platform for your project.</p>
+    <a href="/contact/" class="btn btn--white">Get a Free Consultation →</a>
+  </section>
+
 </BaseLayout>
 
 <style>
+  /* Hero Banner */
+  .hero-banner {
+    padding: 160px clamp(24px, 5vw, 80px) 80px;
+    background: linear-gradient(135deg, #0a0a0a, #1e293b);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-banner::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.08);
+  }
+  .hero-banner .overline {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #60a5fa;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .hero-banner h1 {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .hero-banner p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 600px;
+    line-height: 1.7;
+    position: relative;
+  }
+
+  /* Featured Section */
+  .featured {
+    background: #f8fafc;
+    padding: clamp(60px, 8vw, 100px) clamp(24px, 5vw, 80px);
+  }
+  .featured__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .featured__img {
+    height: 400px;
+    background: linear-gradient(135deg, #1e293b, #0a0a0a);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-size: 14px;
+  }
+  .featured__content .overline {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #2563eb;
+    margin-bottom: 12px;
+  }
+  .featured__content h2 {
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 800;
+    margin-bottom: 16px;
+    line-height: 1.3;
+  }
+  .featured__content p {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+  .featured__meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .featured__meta span {
+    font-size: 13px;
+    color: #94a3b8;
+  }
+
+  /* Section */
+  .sec {
+    padding: clamp(60px, 8vw, 100px) clamp(24px, 5vw, 80px);
+  }
+
+  /* Filter Bar */
+  .filter-bar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    padding: 10px 20px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .filter-btn.active,
+  .filter-btn:hover {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+  }
+
+  /* Blog Grid */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .blog-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #f1f5f9;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    color: inherit;
+  }
+  .blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.08);
+    border-color: transparent;
+  }
+  .blog-card__img {
+    height: 200px;
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #94a3b8;
+    position: relative;
+  }
+  .blog-card__tag {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #2563eb;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .blog-card__date {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .blog-card__body {
+    padding: 28px;
+  }
+  .blog-card__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  .blog-card__excerpt {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .blog-card__meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .blog-card__author {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+  }
+  .blog-card__author-name {
+    font-size: 13px;
+    color: #64748b;
+  }
+  .blog-card__read-time {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-left: auto;
+  }
+  .blog-card__link {
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: gap 0.3s;
+  }
+  .blog-card:hover .blog-card__link {
+    gap: 8px;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    background: #0a0a0a;
+    padding: 80px clamp(24px, 5vw, 80px);
+    text-align: center;
+  }
+  .newsletter h2 {
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  .newsletter p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 32px;
+  }
+  .newsletter__form {
+    display: flex;
+    gap: 12px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .newsletter__input {
+    flex: 1;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-family: inherit;
+  }
+  .newsletter__btn {
+    background: #2563eb;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .newsletter__btn:hover {
+    background: #1d4ed8;
+  }
+
+  /* CTA */
+  .cta {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    padding: 80px clamp(24px, 5vw, 80px);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+  }
+  .cta h2 {
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .cta p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 32px;
+    position: relative;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+  .btn--primary {
+    background: #2563eb;
+    color: #fff;
+  }
+  .btn--primary:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(37, 99, 235, 0.3);
+  }
+  .btn--white {
+    background: #fff;
+    color: #2563eb;
+  }
+  .btn--white:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Reveal Animation */
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Responsive */
   @media (max-width: 1024px) {
-    div[style*="grid-template-columns:repeat(3"] { grid-template-columns: repeat(2, 1fr) !important; }
+    .featured__inner {
+      grid-template-columns: 1fr;
+    }
+    .featured__img {
+      height: 300px;
+    }
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   @media (max-width: 768px) {
-    div[style*="grid-template-columns:repeat(3"] { grid-template-columns: 1fr !important; }
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+    .newsletter__form {
+      flex-direction: column;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      transition: none;
+      opacity: 1;
+      transform: none;
+    }
   }
 </style>
+
+<script>
+  // Intersection Observer for reveal animations
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+  // Check for reduced motion preference
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach((el) => {
+      el.classList.add('is-visible');
+      el.style.transition = 'none';
+    });
+  }
+
+  // Filter functionality
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const blogCards = document.querySelectorAll('.blog-card');
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      // Update active state
+      filterBtns.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const category = btn.getAttribute('data-category');
+
+      blogCards.forEach((card) => {
+        const tags = card.getAttribute('data-tags') || '';
+        if (category === 'all' || tags.includes(category)) {
+          (card as HTMLElement).style.display = '';
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
