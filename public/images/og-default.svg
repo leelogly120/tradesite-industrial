@@ -1,0 +1,13 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">ARCLIFT</text>
+  <text x="600" y="330" font-family="Arial, sans-serif" font-size="28" fill="#60a5fa" text-anchor="middle">Crawler Under-Ceiling Aerial Work Platforms</text>
+  <text x="600" y="400" font-family="Arial, sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">Pick & Carry | Dual Power | Full Remote Control</text>
+  <text x="600" y="550" font-family="Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">www.arclifteq.com</text>
+</svg>

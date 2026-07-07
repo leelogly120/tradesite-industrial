@@ -9,11 +9,15 @@ interface Props {
   ogType?: string;
   canonical?: string;
   transparentNav?: boolean;
+  noindex?: boolean;
 }
 
-const { title, description, ogImage, ogType, canonical, transparentNav = true } = Astro.props;
+const { title, description, ogImage, ogType, canonical, transparentNav = true, noindex = false } = Astro.props;
 const siteName = 'ARCLIFT';
 const currentPath = Astro.url.pathname;
+
+// Avoid duplicate brand name in title
+const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -36,11 +40,12 @@ function isActive(href: string) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <SEOHead
-      title={`${title} | ${siteName}`}
+      title={fullTitle}
       description={description}
       ogImage={ogImage}
       ogType={ogType}
       canonical={canonical}
+      noindex={noindex}
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

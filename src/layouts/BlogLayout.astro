@@ -19,6 +19,35 @@ const readTime = '8 min read';
 
 <BaseLayout title={title} description={description} ogImage={coverImage} ogType="article" transparentNav={false}>
 
+  <!-- ARTICLE SCHEMA -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: title,
+    description: description,
+    author: { '@type': 'Organization', name: author },
+    publisher: {
+      '@type': 'Organization',
+      name: 'ARCLIFT',
+      logo: { '@type': 'ImageObject', url: new URL('/favicon.svg', Astro.site).href },
+    },
+    datePublished: new Date(date).toISOString(),
+    dateModified: new Date(date).toISOString(),
+    image: coverImage ? new URL(coverImage, Astro.site).href : undefined,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': Astro.url.href },
+  })} />
+
+  <!-- BREADCRUMB SCHEMA -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: new URL('/blog/', Astro.site).href },
+      { '@type': 'ListItem', position: 3, name: title },
+    ],
+  })} />
+
   <!-- HERO BANNER -->
   <section class="hero-banner">
     <div class="overline">{tags.length > 0 ? tags[0] : 'Blog'}</div>

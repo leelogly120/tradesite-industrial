@@ -8,6 +8,50 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   transparentNav={false}
 >
 
+  <!-- LOCAL BUSINESS SCHEMA -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'ARCLIFT Equipment Co., Ltd.',
+    description: 'Professional manufacturer of crawler under-ceiling aerial work platforms',
+    url: new URL('/', Astro.site).href,
+    telephone: '+86 15617687185',
+    email: 'leelogly120@gmail.com',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Xinxiang',
+      addressRegion: 'Henan',
+      addressCountry: 'CN',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: '35.3030',
+      longitude: '113.9268',
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '18:00',
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+86 15617687185',
+      contactType: 'sales',
+      availableLanguage: ['English', 'Chinese'],
+    },
+  })} />
+
+  <!-- BREADCRUMB SCHEMA -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', Astro.site).href },
+      { '@type': 'ListItem', position: 2, name: 'Contact' },
+    ],
+  })} />
+
   <!-- HERO BANNER -->
   <section class="hero-banner">
     <div class="overline">Contact</div>
