@@ -35,9 +35,16 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     areaServed: 'Worldwide',
   })} />
 
-  <!-- HERO -->
+  <!-- HERO WITH CAROUSEL -->
   <section class="hero">
-    <div class="hero__bg" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');"></div>
+    <div class="hero__carousel">
+      <div class="hero__slide hero__slide--active" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');"></div>
+      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&q=80');"></div>
+      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1920&q=80');"></div>
+      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');"></div>
+      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=1920&q=80');"></div>
+    </div>
+    <div class="hero__overlay"></div>
     <div class="hero__content">
       <div class="hero__overline">Pick & Carry Technology</div>
       <h1 class="hero__title">THE WORLD'S CEILING<br>DOESN'T BUILD <em>ITSELF</em></h1>
@@ -47,11 +54,57 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
         <a href="/products/" class="btn btn--outline">Explore Products</a>
       </div>
     </div>
+    <div class="hero__dots">
+      <button class="hero__dot hero__dot--active" data-index="0"></button>
+      <button class="hero__dot" data-index="1"></button>
+      <button class="hero__dot" data-index="2"></button>
+      <button class="hero__dot" data-index="3"></button>
+      <button class="hero__dot" data-index="4"></button>
+    </div>
     <div class="hero__scroll">
       <div class="hero__scroll-line"></div>
       <span>Scroll</span>
     </div>
   </section>
+
+  <script>
+    // Hero Carousel
+    const slides = document.querySelectorAll('.hero__slide');
+    const dots = document.querySelectorAll('.hero__dot');
+    let currentSlide = 0;
+    const slideInterval = 5000; // 5 seconds
+
+    function goToSlide(index) {
+      slides[currentSlide].classList.remove('hero__slide--active');
+      dots[currentSlide].classList.remove('hero__dot--active');
+      currentSlide = index;
+      slides[currentSlide].classList.add('hero__slide--active');
+      dots[currentSlide].classList.add('hero__dot--active');
+    }
+
+    function nextSlide() {
+      goToSlide((currentSlide + 1) % slides.length);
+    }
+
+    // Auto-rotate
+    let carouselTimer = setInterval(nextSlide, slideInterval);
+
+    // Dot click
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        clearInterval(carouselTimer);
+        goToSlide(i);
+        carouselTimer = setInterval(nextSlide, slideInterval);
+      });
+    });
+
+    // Pause on hover
+    const heroSection = document.querySelector('.hero');
+    heroSection.addEventListener('mouseenter', () => clearInterval(carouselTimer));
+    heroSection.addEventListener('mouseleave', () => {
+      carouselTimer = setInterval(nextSlide, slideInterval);
+    });
+  </script>
 
   <!-- TRUST BAR -->
   <div class="trust">
