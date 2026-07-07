@@ -1,91 +1,270 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import TrustBar from '../components/TrustBar.astro';
 import ProductCard from '../components/ProductCard.astro';
-import SchemaOrg from '../components/SchemaOrg.astro';
+import FAQAccordion from '../components/FAQAccordion.astro';
+import CTABanner from '../components/CTABanner.astro';
 import { getCollection } from 'astro:content';
 
-const products = (await getCollection('products'))
-  .filter(p => !p.data.draft)
-  .slice(0, 6);
+const craneProducts = (await getCollection('products'))
+  .filter(p => !p.data.draft && p.data.category === 'Aerial Work Platforms');
 
-const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://yourdomain.com';
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.com';
 ---
 
-<BaseLayout title="Home" description="Professional supplier of industrial machinery and mechanical components. Quality products, competitive pricing, reliable service.">
-  <SchemaOrg type="Organization" name="TradeSite Industrial" url={siteUrl}
-    logo={`${siteUrl}/images/logo.png`}
-    description="Professional supplier of industrial machinery and mechanical components." />
+<BaseLayout
+  title="Crawler Under-Ceiling Aerial Work Platform — FDDPT Series"
+  description="20m–35m crawler under-ceiling aerial work platforms with pick & carry mega-platform capability. Ideal for stadium, airport & warehouse ceiling work. Request a quote."
+  ogImage="/images/og-home.jpg"
+>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'ARCLIFT (ARCLIFT Equipment Co., Ltd.)',
+    url: siteUrl,
+    logo: `${siteUrl}/images/logo.png`,
+    description: 'Chinese manufacturer of crawler under-ceiling aerial work platforms — FDDPT series, 20m–35m reach.',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+86 15617687185',
+      contactType: 'sales',
+      availableLanguage: ['English', 'Chinese'],
+    },
+    areaServed: 'Worldwide',
+  })} />
 
   <!-- Hero -->
-  <section class="hero">
+  <HeroSection
+    variant="home"
+    title="Crawler Under-Ceiling Aerial Work Platform"
+    subtitle="Pick & Carry mega-platform (12m×3m → 12m×8m) for stadium, airport & warehouse ceilings. 20m–35m reach, 0.3–3T load, dual power — the engineered alternative to scaffolding."
+    chips={['20m', '25m', '31m', '35m']}
+    ctaPrimary={{ text: 'Request a Quote', url: '/contact/' }}
+    ctaSecondary={{ text: 'Download Spec Sheets', url: '/products/' }}
+  />
+
+  <!-- Trust Bar -->
+  <section class="section-narrow">
     <div class="container">
-      <h1>Industrial Machinery & Components</h1>
-      <p>Your trusted partner for high-quality mechanical parts and industrial equipment. Competitive pricing, reliable quality, global shipping.</p>
-      <div class="flex gap-4 justify-center">
-        <a href="/products/" class="btn btn-primary">Browse Products</a>
-        <a href="/contact/" class="btn btn-outline">Get a Quote</a>
+      <TrustBar
+        items={[
+          { label: '20–35m Reach' },
+          { label: '0.3–3T Safe Load' },
+          { label: 'Dual Power (Diesel + Electric)' },
+          { label: 'Full Remote Control' },
+          { label: 'Schneider Electric' },
+          { label: 'French Slewing Bearing' },
+        ]}
+      />
+    </div>
+  </section>
+
+  <!-- Why Pick & Carry -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-heading" style="font-size:2rem;">Why Pick & Carry</h2>
+      <p class="section-sub" style="margin-bottom:3rem;">
+        Unlike spider lifts that must stop to reposition, our FDDPT series keeps working while moving.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="feature-card">
+          <div class="feature-icon" style="color:var(--color-accent);">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </div>
+          <h3>Work & Move Elevated</h3>
+          <p>Full-stroke pick & carry — the platform travels while elevated with a full load. No stop-reset-repeat. 3× faster cycle time per ceiling panel.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="color:var(--color-success);">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <h3>Zero-Emission Indoor</h3>
+          <p>Dual power: diesel for outdoor travel + twin electric motors for enclosed stadiums, airports & warehouses. No exhaust, no noise restrictions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="color:var(--color-primary-light);">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+          </div>
+          <h3>Operator-Safe Remote Control</h3>
+          <p>Full remote operation keeps the operator safely away from overhead hazard zones. Load sensing, anti-collision, emergency stop — multi-layer safety.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Choose Us -->
+  <!-- Model Showcase -->
   <section class="section">
     <div class="container">
-      <h2 class="text-2xl font-bold text-center mb-8">Why Choose Us</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="text-center p-6">
-          <div class="text-4xl mb-3">&#9881;</div>
-          <h3 class="font-bold text-lg mb-2">Factory Direct</h3>
-          <p class="text-gray-600">Direct from manufacturer, ensuring the best prices and quality control.</p>
-        </div>
-        <div class="text-center p-6">
-          <div class="text-4xl mb-3">&#128666;</div>
-          <h3 class="font-bold text-lg mb-2">Global Shipping</h3>
-          <p class="text-gray-600">Fast worldwide delivery with reliable logistics partners and full tracking.</p>
-        </div>
-        <div class="text-center p-6">
-          <div class="text-4xl mb-3">&#128170;</div>
-          <h3 class="font-bold text-lg mb-2">15+ Years Experience</h3>
-          <p class="text-gray-600">Over 15 years serving international clients with proven track record.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Products -->
-  {products.length > 0 && (
-    <section class="section section-alt">
-      <div class="container">
-        <h2 class="text-2xl font-bold text-center mb-8">Featured Products</h2>
-        <div class="product-grid">
-          {products.map(p => (
+      <h2 class="section-heading">FDDPT Series — 4 Models</h2>
+      <p class="section-sub">From compact 20m to flagship 35m heavy-duty</p>
+      <div class="product-grid-4" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;">
+        {craneProducts.sort((a, b) => {
+          const aH = parseInt(a.data.specifications?.['Max Working Height'] || '0');
+          const bH = parseInt(b.data.specifications?.['Max Working Height'] || '0');
+          return aH - bH;
+        }).map(p => {
+          const specs = p.data.specifications || {};
+          return (
             <ProductCard
               title={p.data.title}
-              slug={p.slug}
+              slug={p.id}
               description={p.data.description}
               image={p.data.images?.[0]}
               priceMin={p.data.price.min}
               priceMax={p.data.price.max}
               currency={p.data.price.currency}
               category={p.data.category}
+              isFlagship={p.data.title.includes('35M')}
+              priceEstimate={true}
+              specs={[
+                { label: 'Height', value: specs['Max Working Height'] || '—' },
+                { label: 'Load', value: specs['Safe Working Load'] || '—' },
+                { label: 'Weight', value: specs['Machine Weight'] || '—' },
+              ]}
             />
-          ))}
-        </div>
-        <div class="text-center mt-8">
-          <a href="/products/" class="btn btn-primary">View All Products</a>
-        </div>
+          );
+        })}
       </div>
-    </section>
-  )}
-
-  <!-- CTA -->
-  <section class="section" style="background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%); color: white;">
-    <div class="container text-center">
-      <h2 class="text-2xl font-bold mb-3">Ready to Get Started?</h2>
-      <p class="opacity-90 mb-6 max-w-xl mx-auto">
-        Send us your requirements and receive a detailed quote within 24 hours.
-      </p>
-      <a href="/contact/" class="btn btn-primary">Contact Us Now</a>
     </div>
   </section>
+
+  <!-- Applications -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-heading">Built for These Ceilings</h2>
+      <p class="section-sub">Specialized aerial access for tall indoor spaces</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="/applications/stadium/" class="app-card" style="aspect-ratio:auto;min-height:280px;display:block;color:inherit;text-decoration:none;">
+          <div style="width:100%;height:100%;position:relative;border-radius:0.75rem;overflow:hidden;background:linear-gradient(135deg,#152C6B,#1E3A8A);">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem;color:white;">
+              <h3 style="margin-bottom:0.25rem;">Stadium Ceilings</h3>
+              <p style="opacity:0.8;font-size:0.9rem;">Large-span steel structures, acoustic panel installation, rigging access</p>
+            </div>
+          </div>
+        </a>
+        <a href="/applications/airport/" class="app-card" style="aspect-ratio:auto;min-height:280px;display:block;color:inherit;text-decoration:none;">
+          <div style="width:100%;height:100%;position:relative;border-radius:0.75rem;overflow:hidden;background:linear-gradient(135deg,#0F172A,#1E3A8A);">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem;color:white;">
+              <h3 style="margin-bottom:0.25rem;">Airport Terminals</h3>
+              <p style="opacity:0.8;font-size:0.9rem;">Ceiling panel maintenance, lighting system upgrade, HVAC access</p>
+            </div>
+          </div>
+        </a>
+        <a href="/applications/warehouse/" class="app-card" style="aspect-ratio:auto;min-height:280px;display:block;color:inherit;text-decoration:none;">
+          <div style="width:100%;height:100%;position:relative;border-radius:0.75rem;overflow:hidden;background:linear-gradient(135deg,#1E3A8A,#3B82F6);">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem;color:white;">
+              <h3 style="margin-bottom:0.25rem;">Warehouse & Steel Structures</h3>
+              <p style="opacity:0.8;font-size:0.9rem;">High-bay ceiling construction, overhead crane rail installation, mezzanine work</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-heading">Pick & Carry vs Spider Lift vs Scaffolding</h2>
+      <p style="text-align:center;color:var(--color-text-light);margin-bottom:2rem;">Why traditional access methods fall short for ceiling work</p>
+      <div class="comparison-table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th style="background:var(--color-steel-100);border-radius:0.5rem 0.5rem 0 0;">FDDPT Pick & Carry</th>
+              <th>Spider Lift</th>
+              <th>Scaffolding</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Platform size</td>
+              <td style="font-weight:600;">12m×3m → 12m×8m</td>
+              <td>~2m×1m basket</td>
+              <td>1m-wide planks</td>
+            </tr>
+            <tr>
+              <td>Load while moving</td>
+              <td style="font-weight:600;color:var(--color-success);">0.3–3T (pick & carry)</td>
+              <td>None (must stow)</td>
+              <td>Static only</td>
+            </tr>
+            <tr>
+              <td>Setup time per location</td>
+              <td style="font-weight:600;">Drive & deploy (minutes)</td>
+              <td>Outrigger set + level (15–30 min)</td>
+              <td>Days to erect per bay</td>
+            </tr>
+            <tr>
+              <td>Indoor operation</td>
+              <td style="font-weight:600;color:var(--color-success);">Dual power (electric)</td>
+              <td>Diesel or electric</td>
+              <td>N/A (no power)</td>
+            </tr>
+            <tr>
+              <td>Ground pressure</td>
+              <td style="font-weight:600;">Crawler tracks (low PSI)</td>
+              <td>Point-load outriggers</td>
+              <td>Distributed via base plates</td>
+            </tr>
+            <tr>
+              <td>Remote operation</td>
+              <td style="font-weight:600;color:var(--color-success);">Full remote standard</td>
+              <td>Platform controls</td>
+              <td>Manual</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="text-align:center;margin-top:1.5rem;">
+        <a href="/blog/pick-and-carry-vs-spider-lift-vs-scaffolding/" class="btn btn-outline-dark">Read the Full Comparison Guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt">
+    <div class="container" style="max-width:800px;">
+      <h2 style="font-size:1.75rem;font-weight:700;text-align:center;margin-bottom:2rem;">Frequently Asked Questions</h2>
+      <FAQAccordion
+        faqs={[
+          {
+            question: 'What is a crawler under-ceiling aerial work platform?',
+            answer: 'A crawler under-ceiling aerial work platform is a specialized mobile elevating work platform (MEWP) designed to operate beneath ceilings, roofs, and overhead structures. Unlike boom lifts that extend from below, our FDDPT series elevates a full-sized platform (up to 12m×8m) vertically on a crawler chassis — allowing crews, tools, and materials to work directly under the ceiling plane. The tracked crawler undercarriage provides low ground pressure, all-terrain mobility, and the ability to travel while the platform is elevated (pick & carry).',
+          },
+          {
+            question: 'What does "Pick & Carry" mean?',
+            answer: 'Pick & Carry means the platform can travel on its crawler tracks while elevated with a full load of workers and materials — without needing to lower, stow, and re-deploy at each new position. On a typical ceiling project, this 3×–5× productivity gain is the single biggest advantage over spider lifts (which must stop, extend outriggers, level, and reposition between locations) and scaffolding (which takes days to disassemble and rebuild per bay).',
+          },
+          {
+            question: 'Can the FDDPT work indoors? What about emissions?',
+            answer: 'Yes. All FDDPT models feature dual power systems: a diesel engine for outdoor travel and rough-terrain work, plus electric motors for zero-emission indoor operation. In electric mode, the platform operates silently with no exhaust — approved for enclosed stadiums, airport terminals, and occupied warehouses.',
+          },
+          {
+            question: 'What certifications does ARCLIFT hold?',
+            answer: 'The FDDPT series is currently in the CE certification process (target: EN 280) and manufactured in compliance with ISO 16368 safety standards. All units include multi-layer safety systems: oil pipe explosion prevention, load sensing, outrigger leveling detection, violation alarms, and full emergency stop. We are transparent about certification status and will provide certification documentation as soon as the CE process completes.',
+          },
+        ]}
+      />
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <CTABanner
+    title="Planning a ceiling project?"
+    subtitle="Tell us your height, load, and site conditions — our engineering team will recommend the right FDDPT model."
+    ctaText="Get a Free Site Assessment"
+    ctaUrl="/contact/"
+  />
 </BaseLayout>

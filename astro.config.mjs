@@ -4,7 +4,7 @@ import mdx from '@astrojs/mdx';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://yourdomain.com',
+  site: 'https://www.arclifteq.com',
   integrations: [
     sitemap({
       i18n: {

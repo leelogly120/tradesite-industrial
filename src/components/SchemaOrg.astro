@@ -32,7 +32,7 @@ interface FAQProps {
 
 type Props = ProductProps | OrganizationProps | BreadcrumbProps | FAQProps;
 
-const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://yourdomain.com';
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.com';
 
 function buildSchema(props: Props): object {
   if (props.type === 'Product') {

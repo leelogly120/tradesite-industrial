@@ -1,0 +1,57 @@
+---
+import Breadcrumb from './Breadcrumb.astro';
+
+interface Props {
+  variant: 'home' | 'pdp' | 'inner';
+  title?: string;
+  subtitle?: string;
+  heroImage?: string;
+  breadcrumb?: { name: string; url: string }[];
+  chips?: string[];
+  ctaPrimary?: { text: string; url: string };
+  ctaSecondary?: { text: string; url: string };
+}
+
+const {
+  variant, title, subtitle, heroImage, breadcrumb,
+  chips, ctaPrimary, ctaSecondary,
+} = Astro.props;
+---
+
+{
+  variant === 'home' ? (
+    <section class="hero-home">
+      {heroImage && <img src={heroImage} alt="" class="hero-bg" fetchpriority="high" width="1920" height="1080" />}
+      <div class="hero-scrim"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>{title}</h1>
+          {subtitle && <p class="hero-sub">{subtitle}</p>}
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            {ctaPrimary && <a href={ctaPrimary.url} class="btn btn-primary btn-lg">{ctaPrimary.text}</a>}
+            {ctaSecondary && <a href={ctaSecondary.url} class="btn btn-outline btn-lg">{ctaSecondary.text}</a>}
+          </div>
+          {chips && chips.length > 0 && (
+            <div style="display:flex;gap:0.5rem;margin-top:1.5rem;">
+              {chips.map(c => <span class="spec-chip" style="background:rgba(255,255,255,.2);color:white;">{c}</span>)}
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  ) : variant === 'pdp' ? (
+    <div class="hero-inner" style="padding:1.5rem 0;">
+      <div class="container">
+        {breadcrumb && <Breadcrumb items={breadcrumb} />}
+      </div>
+    </div>
+  ) : (
+    <div class="hero-inner">
+      <div class="container">
+        {breadcrumb && <Breadcrumb items={breadcrumb} />}
+        <h1>{title}</h1>
+        {subtitle && <p style="opacity:0.85;margin-top:0.5rem;font-size:1.05rem;">{subtitle}</p>}
+      </div>
+    </div>
+  )
+}

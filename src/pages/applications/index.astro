@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import CTABanner from '../../components/CTABanner.astro';
+---
+
+<BaseLayout
+  title="Applications — Crawler Under-Ceiling Platform Use Cases"
+  description="FDDPT crawler under-ceiling platforms for stadium ceiling construction, airport terminal maintenance, and warehouse steel structure ceiling work. Scene-specific solutions."
+>
+
+  <HeroSection
+    variant="inner"
+    title="Application Scenarios"
+    subtitle="Three ceiling types. One platform family. Purpose-built for every tall indoor space."
+    breadcrumb={[
+      { name: 'Home', url: '/' },
+      { name: 'Applications', url: '' },
+    ]}
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="/applications/stadium/" class="app-card" style="aspect-ratio:auto;min-height:320px;display:block;color:inherit;text-decoration:none;">
+          <div style="width:100%;height:100%;position:relative;border-radius:0.75rem;overflow:hidden;background:linear-gradient(135deg,#152C6B,#1E3A8A);">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:2rem;color:white;">
+              <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:0.5rem;">Stadium Ceilings</h2>
+              <p style="opacity:0.85;font-size:0.95rem;line-height:1.6;">Large-span roof structures, acoustic panel installation, lighting grid rigging, and HVAC maintenance. Keep the pitch clear while working overhead.</p>
+              <span class="spec-chip mt-3" style="background:rgba(255,255,255,.15);color:white;">Recommended: FDDPT-31M / 35M</span>
+            </div>
+          </div>
+        </a>
+        <a href="/applications/airport/" class="app-card" style="aspect-ratio:auto;min-height:320px;display:block;color:inherit;text-decoration:none;">
+          <div style="width:100%;height:100%;position:relative;border-radius:0.75rem;overflow:hidden;background:linear-gradient(135deg,#0F172A,#1E3A8A);">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:2rem;color:white;">
+              <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:0.5rem;">Airport Terminals</h2>
+              <p style="opacity:0.85;font-size:0.95rem;line-height:1.6;">Ceiling panel maintenance, lighting system upgrades, and mechanical access. Zero-emission electric operation keeps terminals fully operational.</p>
+              <span class="spec-chip mt-3" style="background:rgba(255,255,255,.15);color:white;">Recommended: FDDPT-25M / 31M</span>
+            </div>
+          </div>
+        </a>
+        <a href="/applications/warehouse/" class="app-card" style="aspect-ratio:auto;min-height:320px;display:block;color:inherit;text-decoration:none;">
+          <div style="width:100%;height:100%;position:relative;border-radius:0.75rem;overflow:hidden;background:linear-gradient(135deg,#1E3A8A,#3B82F6);">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:2rem;color:white;">
+              <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:0.5rem;">Warehouse & Steel Structures</h2>
+              <p style="opacity:0.85;font-size:0.95rem;line-height:1.6;">High-bay ceiling panel installation, overhead crane rail mounting, mezzanine construction. Pick & carry covers entire bays without repositioning.</p>
+              <span class="spec-chip mt-3" style="background:rgba(255,255,255,.15);color:white;">Recommended: FDDPT-20M / 25M / 31M</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container" style="max-width:800px;text-align:center;">
+      <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;">Not sure which model fits your project?</h2>
+      <p style="color:var(--color-text-light);margin-bottom:1.5rem;">Tell us your ceiling height, load requirements, and site conditions — we'll recommend the right FDDPT configuration.</p>
+      <a href="/contact/" class="btn btn-primary btn-lg">Request a Consultation</a>
+    </div>
+  </section>
+
+  <CTABanner
+    title="Ready to spec your ceiling access solution?"
+    subtitle="Get a detailed project assessment from our engineering team."
+    ctaText="Contact Us"
+    ctaUrl="/contact/"
+  />
+</BaseLayout>

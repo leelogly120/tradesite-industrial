@@ -20,7 +20,7 @@ interface Props {
 const { title, description, image, priceMin, priceMax, currency = 'USD',
   specifications = {}, features = [], faq = [], category, moq } = Astro.props;
 
-const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://yourdomain.com';
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.com';
 const images = image ? [image] : [];
 ---
 

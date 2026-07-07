@@ -1,0 +1,28 @@
+---
+interface SpecGroup {
+  label: string;
+  rows: { label: string; value: string }[];
+}
+
+interface Props {
+  groups: SpecGroup[];
+  mode?: 'single' | 'compare';
+}
+const { groups, mode = 'single' } = Astro.props;
+---
+
+<table class="spec-table" aria-label="Technical specifications">
+  <tbody>
+    {groups.map(group => (
+      <Fragment>
+        <tr><th colspan={mode === 'compare' ? groups.length + 1 : 2}>{group.label}</th></tr>
+        {group.rows.map(row => (
+          <tr>
+            <td>{row.label}</td>
+            <td>{row.value}</td>
+          </tr>
+        ))}
+      </Fragment>
+    ))}
+  </tbody>
+</table>

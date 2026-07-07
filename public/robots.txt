@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://yourdomain.com/sitemap-index.xml
+Disallow: /api/
+
+Sitemap: https://www.arclifteq.com/sitemap-index.xml

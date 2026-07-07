@@ -7,45 +7,101 @@ const allProducts = (await getCollection('products'))
   .filter(p => !p.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
-const categories = [...new Set(allProducts.map(p => p.data.category).filter(Boolean))];
+const craneProducts = allProducts.filter(p => p.data.category === 'Aerial Work Platforms');
+const otherProducts = allProducts.filter(p => p.data.category !== 'Aerial Work Platforms');
 ---
 
-<BaseLayout title="Products" description="Browse our full catalog of industrial machinery and mechanical components.">
+<BaseLayout
+  title="Products — Crawler Under-Ceiling Platforms"
+  description="FDDPT series crawler under-ceiling aerial work platforms: 20m, 25m, 31m, 35m models. Pick & carry, dual power, remote control. Also: CNC machines, hydraulic presses."
+>
+
   <section class="section">
     <div class="container">
-      <h1 class="text-3xl font-bold mb-2">Our Products</h1>
-      <p class="text-gray-600 mb-8">
-        Explore our comprehensive range of industrial machinery and mechanical components.
-      </p>
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>/</span>
+        <span aria-current="page">Products</span>
+      </div>
 
-      {categories.length > 0 && (
-        <div class="flex flex-wrap gap-2 mb-8">
-          <a href="/products/" class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium">All</a>
-          {categories.map(cat => (
-            <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium cursor-pointer hover:bg-gray-200">{cat}</span>
-          ))}
+      <h1 style="font-size:2rem;font-weight:700;margin-bottom:0.5rem;">Crawler Under-Ceiling Platforms — FDDPT Series</h1>
+      <p style="color:var(--color-text-light);margin-bottom:2rem;">4 models, 20m–35m height, 0.3T–3T load capacity. Pick & carry capability, dual power, full remote control.</p>
+
+      <!-- Filter chips -->
+      <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:2rem;">
+        <a href="/products/" class="spec-chip" style="background:var(--color-primary);color:white;text-decoration:none;">All</a>
+        <a href="/products/?range=20-25" class="spec-chip filter-chip">20–25m</a>
+        <a href="/products/?range=31-35" class="spec-chip filter-chip">31–35m</a>
+        <a href="/products/?power=diesel" class="spec-chip filter-chip">Diesel</a>
+        <a href="/products/?power=dual" class="spec-chip filter-chip">Dual Power</a>
+      </div>
+
+      <!-- Crane products grid -->
+      {craneProducts.length > 0 && (
+        <div class="product-grid">
+          {craneProducts.sort((a, b) => {
+            const aH = parseInt(a.data.specifications?.['Max Working Height'] || '0');
+            const bH = parseInt(b.data.specifications?.['Max Working Height'] || '0');
+            return aH - bH;
+          }).map(p => {
+            const specs = p.data.specifications || {};
+            return (
+              <ProductCard
+                title={p.data.title}
+                slug={p.id}
+                description={p.data.description}
+                image={p.data.images?.[0]}
+                priceMin={p.data.price.min}
+                priceMax={p.data.price.max}
+                currency={p.data.price.currency}
+                category={p.data.category}
+                isFlagship={p.data.title.includes('35M')}
+                priceEstimate={true}
+                specs={[
+                  { label: 'Height', value: specs['Max Working Height'] || '—' },
+                  { label: 'Load', value: specs['Safe Working Load'] || '—' },
+                  { label: 'Weight', value: specs['Machine Weight'] || '—' },
+                ]}
+              />
+            );
+          })}
         </div>
       )}
 
-      <div class="product-grid">
-        {allProducts.map(p => (
-          <ProductCard
-            title={p.data.title}
-            slug={p.slug}
-            description={p.data.description}
-            image={p.data.images?.[0]}
-            priceMin={p.data.price.min}
-            priceMax={p.data.price.max}
-            currency={p.data.price.currency}
-            category={p.data.category}
-          />
-        ))}
-      </div>
+      <!-- Comparison CTA -->
+      {craneProducts.length >= 2 && (
+        <div style="text-align:center;margin:2rem 0;padding:2rem;background:var(--color-bg-alt);border-radius:0.75rem;">
+          <h3 style="font-weight:700;margin-bottom:0.5rem;">Compare All 4 FDDPT Models</h3>
+          <p style="color:var(--color-text-light);margin-bottom:1rem;">Side-by-side specs: height, load, platform size, power</p>
+          <a href="/blog/pick-and-carry-vs-spider-lift-vs-scaffolding/" class="btn btn-outline-dark">View Full Comparison</a>
+        </div>
+      )}
+
+      <!-- Other products -->
+      {otherProducts.length > 0 && (
+        <>
+          <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;margin-top:3rem;">Other Machinery</h2>
+          <div class="product-grid">
+            {otherProducts.map(p => (
+              <ProductCard
+                title={p.data.title}
+                slug={p.id}
+                description={p.data.description}
+                image={p.data.images?.[0]}
+                priceMin={p.data.price.min}
+                priceMax={p.data.price.max}
+                currency={p.data.price.currency}
+                category={p.data.category}
+              />
+            ))}
+          </div>
+        </>
+      )}
 
       {allProducts.length === 0 && (
-        <div class="text-center py-16 text-gray-400">
-          <p class="text-xl">No products yet.</p>
-          <p class="mt-2">Add product Markdown files to src/content/products/</p>
+        <div style="text-align:center;padding:4rem 0;color:var(--color-text-light);">
+          <p style="font-size:1.25rem;">No products yet.</p>
+          <p style="margin-top:0.5rem;">Add product Markdown files to src/content/products/</p>
         </div>
       )}
     </div>

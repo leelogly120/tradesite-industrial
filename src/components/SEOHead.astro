@@ -15,7 +15,7 @@ const {
   alternateLocales = []
 } = Astro.props;
 
-const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://yourdomain.com';
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.com';
 const pageUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
 const defaultOgImage = `${siteUrl}/images/og-default.jpg`;
 ---

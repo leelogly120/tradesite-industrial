@@ -1,5 +1,10 @@
 ---
-import ProductLayout from '../../layouts/ProductLayout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SpecTable from '../../components/SpecTable.astro';
+import FAQAccordion from '../../components/FAQAccordion.astro';
+import InquiryForm from '../../components/InquiryForm.astro';
+import CTABanner from '../../components/CTABanner.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -13,21 +18,287 @@ export async function getStaticPaths() {
 }
 
 const { product } = Astro.props;
+const data = product.data;
+const specs = data.specifications || {};
+
+function groupSpecs(specs: Record<string, string>) {
+  const dims = ['Max Working Height','Max Platform Height','Overall Length','Overall Width','Overall Height (rails up)','Overall Height (rails folded)','Platform Size (L×W)','Platform Extension','Machine Weight','Platform Weight'];
+  const perf = ['Safe Working Load','Extension Platform Load','Max Workers','Max Working Angle','Rise/Descent Time','Gradeability','Travel Speed (stowed)','Travel Speed (elevated)','Min Turning Radius','Min Ground Clearance'];
+  const power = ['Diesel Engine','Electric Motor','Hydraulic Pump','Drive Unit'];
+  const chassis = ['Crawler Chain','Chassis Material','Cylinder Piston Rods','Wheelbase','Crane Capacity'];
+
+  const makeRows = (keys: string[]) => keys.filter(k => specs[k]).map(k => ({ label: k, value: specs[k] }));
+
+  return [
+    { label: 'Dimensions & Weight', rows: makeRows(dims) },
+    { label: 'Performance', rows: makeRows(perf) },
+    { label: 'Power System', rows: makeRows(power) },
+    { label: 'Chassis & Components', rows: makeRows(chassis) },
+  ].filter(g => g.rows.length > 0);
+}
+
+const specGroups = groupSpecs(specs);
+const priceMin = data.price.min;
+const priceMax = data.price.max;
+
+function formatPrice(v: number) { return v >= 1000 ? `$${Math.round(v/1000)}K` : `$${v}`; }
+
+// Get related products
+const allProducts = await getCollection('products');
+const related = (data.relatedProducts || [])
+  .map((slug: string) => allProducts.find(p => p.id === slug))
+  .filter(Boolean);
+
 const { Content } = await render(product);
 ---
 
-<ProductLayout
-  title={product.data.title}
-  description={product.data.description}
-  image={product.data.images?.[0]}
-  priceMin={product.data.price.min}
-  priceMax={product.data.price.max}
-  currency={product.data.price.currency}
-  specifications={product.data.specifications}
-  features={product.data.features}
-  faq={product.data.faq}
-  category={product.data.category}
-  moq={product.data.moq}
+<BaseLayout
+  title={data.title}
+  description={data.description}
+  ogImage={data.images?.[0]}
+  ogType="product"
 >
-  <Content />
-</ProductLayout>
+
+  <!-- Breadcrumb -->
+  <Breadcrumb
+    items={[
+      { name: 'Home', url: '/' },
+      { name: 'Products', url: '/products/' },
+      { name: data.title, url: '' },
+    ]}
+  />
+
+  <!-- Top section: Gallery + Key specs -->
+  <section class="section-narrow">
+    <div class="container">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Gallery -->
+        <div>
+          {data.images?.[0] ? (
+            <>
+              <div class="gallery-main">
+                <img src={data.images[0]} alt={data.title} id="gallery-main" width="640" height="400" />
+              </div>
+              {data.images.length > 1 && (
+                <div class="gallery-thumbs">
+                  {data.images.map((img: string, i: number) => (
+                    <button class={i === 0 ? 'active' : ''} data-src={img}>
+                      <img src={img} alt={`${data.title} view ${i+1}`} loading="lazy" width="80" height="56" />
+                    </button>
+                  ))}
+                </div>
+              )}
+            </>
+          ) : (
+            <div style="aspect-ratio:16/10;background:linear-gradient(135deg,#1E3A8A,#3B82F6);border-radius:0.5rem;display:flex;align-items:center;justify-content:center;">
+              <span style="color:rgba(255,255,255,.3);font-size:4rem;font-weight:800;">FDDPT</span>
+            </div>
+          )}
+        </div>
+
+        <!-- Key specs + buy box -->
+        <div>
+          <h1 style="font-size:1.75rem;font-weight:800;line-height:1.25;margin-bottom:0.25rem;">{data.title}</h1>
+          {data.category && <span class="badge badge-flagship" style="margin-bottom:1rem;">{data.category}</span>}
+
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin:1rem 0;">
+            <span class="spec-chip" style="font-weight:700;">Height: {specs['Max Working Height'] || '—'}</span>
+            <span class="spec-chip" style="font-weight:700;">Load: {specs['Safe Working Load'] || '—'}</span>
+            <span class="spec-chip" style="font-weight:700;">Platform: {specs['Platform Extension'] || specs['Platform Size (L×W)'] || '—'}</span>
+            <span class="spec-chip" style="font-weight:700;">Weight: {specs['Machine Weight'] || '—'}</span>
+          </div>
+
+          <div style="margin:1.5rem 0;padding:1.25rem;background:var(--color-bg-alt);border-radius:0.75rem;">
+            <p style="font-size:1.5rem;font-weight:800;color:var(--color-primary);">
+              {priceMin && priceMax ? `${formatPrice(priceMin)}–${formatPrice(priceMax)}` : 'RFQ'}
+              <span style="font-size:0.875rem;font-weight:400;color:var(--color-text-light);"> (est.)</span>
+            </p>
+            <p style="font-size:0.8rem;color:var(--color-text-light);">Prices are market estimates — contact us for a firm quotation.</p>
+          </div>
+
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1rem;">
+            <span class="badge badge-pending">CE (EN 280) — in progress</span>
+            <span class="badge badge-pending">ISO 16368 compliant</span>
+            <span class="spec-chip">Remote control</span>
+            <span class="spec-chip">Non-marking tracks</span>
+          </div>
+
+          {data.moq && data.moq > 0 && (
+            <p style="font-size:0.85rem;color:var(--color-text-light);margin-bottom:1rem;">MOQ: {data.moq} unit{data.moq > 1 ? 's' : ''}</p>
+          )}
+
+          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <a href="/contact/" class="btn btn-primary btn-lg">Request a Quote</a>
+            <a href="/products/" class="btn btn-outline-dark btn-lg">Compare All Models</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky sub-nav -->
+  <nav class="sticky-subnav" aria-label="Page sections">
+    <div class="subnav-inner" style="justify-content:flex-start;gap:0;">
+      <a href="#overview">Overview</a>
+      {specGroups.length > 0 && <a href="#specifications">Specifications</a>}
+      {data.features?.length > 0 && <a href="#features">Features</a>}
+      <a href="#applications">Applications</a>
+      {data.faq?.length > 0 && <a href="#faq">FAQ</a>}
+      <a href="#inquiry">Inquiry</a>
+    </div>
+  </nav>
+
+  <!-- Overview -->
+  <section id="overview" class="section-narrow">
+    <div class="container" style="max-width:800px;">
+      <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;">Overview</h2>
+      <Content />
+    </div>
+  </section>
+
+  <!-- Full Spec Table -->
+  {specGroups.length > 0 && (
+    <section id="specifications" class="section-narrow section-alt">
+      <div class="container">
+        <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;">Technical Specifications</h2>
+        <SpecTable groups={specGroups} />
+      </div>
+    </section>
+  )}
+
+  <!-- Features -->
+  {data.features?.length > 0 && (
+    <section id="features" class="section-narrow">
+      <div class="container">
+        <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;">Key Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {data.features.map((f: string) => (
+            <div style="display:flex;gap:0.75rem;padding:1rem;background:var(--color-bg);border:1px solid var(--color-border);border-radius:0.5rem;">
+              <span style="color:var(--color-accent);font-weight:700;flex-shrink:0;">&#10003;</span>
+              <span>{f}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Applications -->
+  <section id="applications" class="section-narrow section-alt">
+    <div class="container">
+      <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;">Applications</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div style="padding:1.25rem;background:white;border:1px solid var(--color-border);border-radius:0.5rem;">
+          <h3 style="font-weight:700;margin-bottom:0.25rem;">Stadium Ceilings</h3>
+          <p style="color:var(--color-text-light);font-size:0.9rem;">Large-span steel structures, acoustic panels, rigging access</p>
+        </div>
+        <div style="padding:1.25rem;background:white;border:1px solid var(--color-border);border-radius:0.5rem;">
+          <h3 style="font-weight:700;margin-bottom:0.25rem;">Airport Terminals</h3>
+          <p style="color:var(--color-text-light);font-size:0.9rem;">Ceiling panel maintenance, lighting system upgrade, HVAC</p>
+        </div>
+        <div style="padding:1.25rem;background:white;border:1px solid var(--color-border);border-radius:0.5rem;">
+          <h3 style="font-weight:700;margin-bottom:0.25rem;">Warehouses & Steel Structures</h3>
+          <p style="color:var(--color-text-light);font-size:0.9rem;">High-bay ceiling construction, crane rail installation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Models -->
+  {related.length > 0 && (
+    <section class="section-narrow">
+      <div class="container">
+        <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;">Related Models</h2>
+        <div class="product-grid">
+          {related.map((rp: any) => {
+            const rSpecs = rp.data.specifications || {};
+            return (
+              <a href={`/products/${rp.id}/`} class="card" style="display:block;color:inherit;text-decoration:none;">
+                <div style="aspect-ratio:16/10;overflow:hidden;background:var(--color-bg-alt);display:flex;align-items:center;justify-content:center;">
+                  {rp.data.images?.[0] ? (
+                    <img src={rp.data.images[0]} alt={rp.data.title} loading="lazy" width="320" height="200" style="width:100%;height:100%;object-fit:cover;" />
+                  ) : (
+                    <span style="color:var(--color-text-light);">FDDPT</span>
+                  )}
+                </div>
+                <div class="card-body">
+                  <h3>{rp.data.title}</h3>
+                  <div style="display:flex;flex-wrap:wrap;gap:0.375rem;margin:0.5rem 0;">
+                    <span class="spec-chip">Height: {rSpecs['Max Working Height'] || '—'}</span>
+                    <span class="spec-chip">Load: {rSpecs['Safe Working Load'] || '—'}</span>
+                  </div>
+                  {rp.data.price.min && rp.data.price.max && (
+                    <p style="font-weight:700;color:var(--color-primary);">
+                      {formatPrice(rp.data.price.min)}–{formatPrice(rp.data.price.max)} (est.)
+                    </p>
+                  )}
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- FAQ -->
+  {data.faq?.length > 0 && (
+    <section id="faq" class="section-narrow section-alt">
+      <div class="container" style="max-width:800px;">
+        <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:1.5rem;">FAQ</h2>
+        <FAQAccordion faqs={data.faq} />
+      </div>
+    </section>
+  )}
+
+  <!-- Inquiry -->
+  <section id="inquiry" class="section-narrow">
+    <div class="container" style="max-width:640px;">
+      <h2 style="font-size:1.5rem;font-weight:700;text-align:center;margin-bottom:0.5rem;">Get a Quote for {data.title}</h2>
+      <p style="text-align:center;color:var(--color-text-light);margin-bottom:2rem;">Our engineering team will reply with a detailed quotation within 24 hours.</p>
+      <InquiryForm productName={data.title} productSlug={product.id} />
+    </div>
+  </section>
+
+  <CTABanner
+    title={`Need ${specs['Max Working Height'] || 'custom'} ceiling access?`}
+    subtitle="Tell us your project requirements and we'll recommend the right configuration."
+    ctaText="Contact Our Engineers"
+    ctaUrl="/contact/"
+  />
+
+  <!-- Sticky bottom bar (mobile) -->
+  <div class="sticky-cta-bar">
+    <a href="/contact/" class="btn btn-primary">Request a Quote</a>
+  </div>
+
+  <!-- Product Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: data.title,
+    description: data.description,
+    image: data.images || [],
+    brand: { '@type': 'Brand', name: 'ARCLIFT' },
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: data.price.currency || 'USD',
+      lowPrice: priceMin,
+      highPrice: priceMax,
+      availability: 'https://schema.org/PreOrder',
+    },
+  })} />
+
+  <!-- Gallery image switcher -->
+  <script>
+    document.querySelectorAll('.gallery-thumbs button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const main = document.getElementById('gallery-main');
+        const img = btn.querySelector('img');
+        if (main && img) main.setAttribute('src', img.getAttribute('src') || '');
+        document.querySelectorAll('.gallery-thumbs button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</BaseLayout>

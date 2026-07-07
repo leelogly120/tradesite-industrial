@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import CTABanner from '../../components/CTABanner.astro';
+---
+
+<BaseLayout
+  title="Airport Terminal Ceiling Access — FDDPT Platforms"
+  description="Zero-emission electric crawler platforms for airport terminal ceiling maintenance, lighting upgrades, and HVAC access. Work airside without disrupting passenger flow."
+>
+
+  <HeroSection
+    variant="inner"
+    title="Airport Terminals & Transit Hubs"
+    subtitle="Maintain terminal ceilings, lighting systems, and mechanical infrastructure without closing gates or disrupting passengers."
+    breadcrumb={[
+      { name: 'Home', url: '/' },
+      { name: 'Applications', url: '/applications/' },
+      { name: 'Airport Terminals', url: '' },
+    ]}
+  />
+
+  <section class="section">
+    <div class="container" style="max-width:800px;">
+      <h2 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;">Why Airports Choose FDDPT</h2>
+      <p style="margin-bottom:1rem;">Airport terminals combine some of the toughest ceiling access conditions: high clearances (20m–35m), security-restricted zones, continuous passenger flow below, and strict noise/emission limits. Traditional access methods either block gates (scissor lifts require floor-level staging) or cannot handle the long ceiling spans (spider lifts have tiny platforms).</p>
+      <p>FDDPT platforms operate in electric mode with zero emissions and near-silent operation. The crawler tracks distribute weight gently across terminal flooring (no outrigger point loads). One machine covers the ceiling area that would require 8–10 spider lift repositions — without ever moving barricades at floor level.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <h2 style="font-size:1.5rem;font-weight:700;text-align:center;margin-bottom:2rem;">Recommended Models</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div style="padding:1.5rem;background:white;border-radius:0.75rem;border:1px solid var(--color-border);">
+          <h3 style="font-weight:700;">FDDPT-25M — Mid-Range</h3>
+          <p style="color:var(--color-text-light);margin:0.5rem 0;">Ideal for most terminal ceiling heights (15m–25m). Good balance of platform size and turning radius for navigating between gate areas and check-in halls.</p>
+          <a href="/products/fddpt-25m-crawler-ceiling-platform/" class="btn btn-outline-dark btn-sm mt-2">View Model</a>
+        </div>
+        <div style="padding:1.5rem;background:white;border-radius:0.75rem;border:1px solid var(--color-border);">
+          <h3 style="font-weight:700;">FDDPT-31M — High-Reach</h3>
+          <p style="color:var(--color-text-light);margin:0.5rem 0;">For taller international terminal atriums (25m+). Electric mode standard. Large platform for multi-crew lighting and mechanical upgrades.</p>
+          <a href="/products/fddpt-31m-crawler-ceiling-platform/" class="btn btn-outline-dark btn-sm mt-2">View Model</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <CTABanner
+    title="Airport ceiling project on the horizon?"
+    subtitle="We'll help you specify the right model for your terminal height and access restrictions."
+    ctaText="Request a Specification"
+    ctaUrl="/contact/"
+  />
+</BaseLayout>

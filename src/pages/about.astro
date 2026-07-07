@@ -1,50 +1,139 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import TrustBar from '../components/TrustBar.astro';
+import CTABanner from '../components/CTABanner.astro';
+
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.com';
 ---
 
-<BaseLayout title="About Us" description="Learn about our company, mission, and commitment to quality industrial products.">
-  <section class="hero" style="padding: 3rem 0;">
-    <div class="container">
-      <h1>About TradeSite Industrial</h1>
-      <p>Your trusted partner in industrial machinery and mechanical components.</p>
-    </div>
-  </section>
+<BaseLayout
+  title="About ARCLIFT — Professional Crawler Under-Ceiling Platform Manufacturer"
+  description="ARCLIFT is a professional manufacturer of crawler under-ceiling aerial work platforms. FDDPT series: 20m–35m reach, pick & carry, dual power, remote control. Engineered for stadium, airport & warehouse ceiling projects worldwide."
+>
 
+  <HeroSection
+    variant="inner"
+    title="About ARCLIFT"
+    subtitle="Engineering reliable access to the world's tallest ceilings — purpose-built platforms for the most demanding ceiling projects."
+    breadcrumb={[
+      { name: 'Home', url: '/' },
+      { name: 'About', url: '' },
+    ]}
+  />
+
+  <!-- Company Story -->
   <section class="section">
-    <div class="container max-w-3xl">
-      <h2 class="text-2xl font-bold mb-4">Our Story</h2>
-      <p class="text-gray-600 mb-6">
-        TradeSite Industrial was founded with a simple mission: to connect global buyers
-        with high-quality industrial products at competitive prices. With over 15 years
-        of experience in international trade, we understand the unique challenges of
-        sourcing industrial components across borders.
-      </p>
+    <div class="container" style="max-width:800px;">
+      <h2 style="font-size:1.75rem;font-weight:700;margin-bottom:1rem;">Who We Are</h2>
+      <p style="margin-bottom:1rem;">ARCLIFT is a professional manufacturer specializing in <strong>crawler under-ceiling aerial work platforms</strong>. Our mission is to solve one of the most persistent challenges in large-scale construction: how to safely and efficiently access ceilings in stadiums, airport terminals, convention centers, and steel-structure warehouses.</p>
+      <p style="margin-bottom:1rem;">We identified a critical gap in the global aerial access market: while spider lifts and boom lifts serve general construction well, no mass-produced platform was purpose-built for the unique demands of <strong>ceiling-level work</strong> — where crews need a large, stable, mobile work surface directly under the ceiling plane. Existing equipment forces repeated repositioning, scaffolding setups that take days, or makeshift solutions that compromise safety.</p>
+      <p>The ARCLIFT FDDPT series was engineered from the ground up to fill this gap. Every design choice — the crawler chassis, the mega-platform with bidirectional extension, the dual power system, the full remote control — was driven by real ceiling-project conditions and the demands of contractors worldwide.</p>
+    </div>
+  </section>
 
-      <h2 class="text-2xl font-bold mb-4">Our Commitment</h2>
-      <ul class="space-y-3 mb-8">
-        <li class="flex items-start gap-3">
-          <span class="text-green-500 text-xl">&#10003;</span>
-          <span><strong>Quality Assurance:</strong> Every product undergoes rigorous quality inspection before shipment.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-green-500 text-xl">&#10003;</span>
-          <span><strong>Competitive Pricing:</strong> Direct factory relationships ensure the best prices for our clients.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-green-500 text-xl">&#10003;</span>
-          <span><strong>Fast Response:</strong> Our team responds to all inquiries within 24 hours.</span>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-green-500 text-xl">&#10003;</span>
-          <span><strong>Global Logistics:</strong> Reliable shipping to 50+ countries with full tracking.</span>
-        </li>
+  <!-- Manufacturing Capability -->
+  <section class="section section-alt">
+    <div class="container" style="max-width:800px;">
+      <h2 style="font-size:1.75rem;font-weight:700;text-align:center;margin-bottom:2rem;">Manufacturing Excellence</h2>
+      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;">
+        <div>
+          <h3 style="font-weight:600;margin-bottom:0.5rem;">🏭 Dedicated Production Line</h3>
+          <p style="color:var(--color-text-light);font-size:0.95rem;">Our factory in Henan — China's heavy machinery heartland — operates a production line dedicated exclusively to crawler under-ceiling platforms. This focus allows us to continuously refine every detail of the FDDPT series.</p>
+        </div>
+        <div>
+          <h3 style="font-weight:600;margin-bottom:0.5rem;">🔩 Tier-One Components</h3>
+          <p style="color:var(--color-text-light);font-size:0.95rem;">Every critical component is sourced from tier-one suppliers: Schneider Electric, French slewing bearings, K3V112 hydraulic pumps, 42CrMo alloy steel, 700L high-strength steel plates.</p>
+        </div>
+        <div>
+          <h3 style="font-weight:600;margin-bottom:0.5rem;">🛡️ Quality Control</h3>
+          <p style="color:var(--color-text-light);font-size:0.95rem;">100% load testing before shipment. Multi-point weld inspection, hydraulic pressure testing, operational verification at full working height, and complete documentation for every unit.</p>
+        </div>
+        <div>
+          <h3 style="font-weight:600;margin-bottom:0.5rem;">📐 Custom Engineering</h3>
+          <p style="color:var(--color-text-light);font-size:0.95rem;">Our engineering team works directly with clients to customize platform configurations — height, load, platform dimensions, and power systems tailored to specific project requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Journey -->
+  <section class="section">
+    <div class="container" style="max-width:800px;">
+      <h2 style="font-size:1.75rem;font-weight:700;margin-bottom:1.5rem;">Our Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3 style="font-weight:700;">2019 — Founded</h3>
+          <p style="color:var(--color-text-light);">ARCLIFT established with a clear focus: purpose-built aerial platforms for ceiling-level construction. Initial R&D investment in crawler chassis and mega-platform technology.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 style="font-weight:700;">2021 — First FDDPT Prototype</h3>
+          <p style="color:var(--color-text-light);">After two years of R&D and collaboration with construction contractors, the first FDDPT crawler under-ceiling platform prototype was designed, built, and tested on real job sites.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 style="font-weight:700;">2023 — FDDPT Series Launched</h3>
+          <p style="color:var(--color-text-light);">Four-model lineup (20M/25M/31M/35M) entered production. Adopted by stadium and industrial construction contractors for large-span ceiling projects across China.</p>
+        </div>
+        <div class="timeline-item">
+          <h3 style="font-weight:700;">2025 — Export Production Line</h3>
+          <p style="color:var(--color-text-light);">Dedicated export production line established with English documentation, international packaging standards, and compliance testing. CE certification process initiated (target: EN 280).</p>
+        </div>
+        <div class="timeline-item">
+          <h3 style="font-weight:700;">2026 — Global Market Entry</h3>
+          <p style="color:var(--color-text-light);">FDDPT series now available for worldwide export. Active in stadiums, airports, and industrial facilities across 20+ target markets in the Middle East, Southeast Asia, Europe, and beyond.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supply Chain -->
+  <section class="section section-alt">
+    <div class="container" style="max-width:800px;">
+      <h2 style="font-size:1.75rem;font-weight:700;margin-bottom:1rem;">Supply Chain & Core Components</h2>
+      <p style="margin-bottom:1rem;">Every FDDPT platform is manufactured with a supply chain anchored by tier-one component partners:</p>
+      <ul style="margin-bottom:1.5rem;padding-left:1.5rem;line-height:2;">
+        <li><strong>Schneider Electric</strong> — electrical control systems and safety interlocks</li>
+        <li><strong>French slewing bearing</strong> — precision rotation mechanism for stable platform articulation</li>
+        <li><strong>K3V112 hydraulic pumps</strong> — high-pressure, high-reliability hydraulic power</li>
+        <li><strong>42CrMo alloy steel</strong> — cylinder piston rods for fatigue-resistant operation</li>
+        <li><strong>700L high-strength steel</strong> — chassis and structural members</li>
+        <li><strong>PC360 crawler chains</strong> — low-ground-pressure tracked undercarriage</li>
       </ul>
+      <p><strong>Quality assurance:</strong> Every unit undergoes 100% load testing, multi-point weld inspection, hydraulic system pressure testing, and full operational verification at maximum working height before leaving our factory. Complete test reports and certificates accompany every shipment.</p>
+    </div>
+  </section>
 
-      <h2 class="text-2xl font-bold mb-4">Certifications</h2>
-      <p class="text-gray-600">
-        Our products meet international standards including ISO 9001, CE, and RoHS compliance.
-        We maintain strict quality management systems to ensure consistency across all shipments.
+  <!-- Certifications -->
+  <section class="section">
+    <div class="container" style="max-width:800px;">
+      <h2 style="font-size:1.75rem;font-weight:700;text-align:center;margin-bottom:1.5rem;">Certifications & Compliance</h2>
+      <TrustBar
+        items={[
+          { label: 'CE (EN 280) — in progress', achieved: false },
+          { label: 'ISO 16368 compliant', achieved: true },
+          { label: 'ISO 9001 — in progress', achieved: false },
+        ]}
+      />
+      <p style="text-align:center;color:var(--color-text-light);font-size:0.9rem;margin-top:0.5rem;">
+        We are transparent about certification status. All machines are designed and manufactured to target standards.
       </p>
     </div>
   </section>
+
+  <CTABanner
+    title="Visit our factory or schedule a virtual tour"
+    subtitle="See an FDDPT platform being built — contact our team to arrange a visit."
+    ctaText="Contact Our Team"
+    ctaUrl="/contact/"
+  />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'ARCLIFT',
+    url: siteUrl,
+    description: 'Professional manufacturer of crawler under-ceiling aerial work platforms — FDDPT series, 20m–35m reach.',
+    foundingDate: '2019',
+    contactPoint: { '@type': 'ContactPoint', contactType: 'sales', availableLanguage: ['English', 'Chinese'] },
+  })} />
 </BaseLayout>

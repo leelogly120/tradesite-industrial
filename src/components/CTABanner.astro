@@ -1,0 +1,18 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  ctaText?: string;
+  ctaUrl?: string;
+}
+
+const { title, subtitle, ctaText = 'Contact Us', ctaUrl = '/contact/' } = Astro.props;
+---
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>{title}</h2>
+    {subtitle && <p>{subtitle}</p>}
+    <a href={ctaUrl} class="btn btn-primary btn-lg">{ctaText}</a>
+  </div>
+</section>

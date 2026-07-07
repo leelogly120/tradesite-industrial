@@ -70,7 +70,7 @@ draft: false
 
 ## Product Overview
 
-The **FDDPT-35M** is HYING's flagship heavy-duty crawler under-ceiling aerial work platform — purpose-built for the world's most ambitious large-scale construction and maintenance projects. With a maximum working height of **35 meters**, a massive **12m×8m extended platform**, and an industry-leading **3-ton safe working load**, this machine redefines what is possible for reverse ceiling work at scale.
+The **FDDPT-35M** is ARCLIFT's flagship heavy-duty crawler under-ceiling aerial work platform — purpose-built for the world's most ambitious large-scale construction and maintenance projects. With a maximum working height of **35 meters**, a massive **12m×8m extended platform**, and an industry-leading **3-ton safe working load**, this machine redefines what is possible for reverse ceiling work at scale.
 
 Unlike conventional spider lifts or boom lifts that force crews to reposition repeatedly, the FDDPT-35M delivers true **pick & carry** capability: it travels at full stroke while carrying heavy materials, tools, and up to 10 workers simultaneously. The oversized platform transforms into a mobile factory floor at height, enabling continuous ceiling panel installation, HVAC ductwork, lighting rigging, and structural steel connections without constant ground-level reloads.
 
