@@ -38,17 +38,22 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
   <!-- HERO WITH CAROUSEL -->
   <section class="hero">
     <div class="hero__carousel">
-      <div class="hero__slide hero__slide--active" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');"></div>
-      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&q=80');"></div>
-      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1920&q=80');"></div>
-      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');"></div>
-      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=1920&q=80');"></div>
+      <!-- Slide 1: Pick & Carry -->
+      <div class="hero__slide hero__slide--active" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');" data-overline="Pick & Carry Technology" data-title="WORK WHILE YOU MOVE" data-desc="Unlike traditional lifts that must stop to reposition, FDDPT platforms travel at full height with load — 3× faster cycle time per ceiling panel."></div>
+      <!-- Slide 2: Ultra-Large Platform -->
+      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&q=80');" data-overline="Mega Platform" data-title="12M × 8M WORKSPACE" data-desc="The largest platform in the industry. 8 workers + full materials onboard. Eliminate repeated trips to ground level."></div>
+      <!-- Slide 3: Dual Power -->
+      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1920&q=80');" data-overline="Dual Power System" data-title="ZERO EMISSIONS INDOORS" data-desc="150hp diesel for outdoor travel + twin electric motors for enclosed spaces. No noise restrictions, no emission limits."></div>
+      <!-- Slide 4: Remote Control -->
+      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');" data-overline="Full Remote Control" data-title="OPERATE FROM THE GROUND" data-desc="Complete platform control from ground level. Safer operation, precise positioning, one-person setup in minutes."></div>
+      <!-- Slide 5: Cost Savings -->
+      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=1920&q=80');" data-overline="Save 30% on Projects" data-title="SKIP THE SCAFFOLDING" data-desc="No scaffolding rental, no setup days, no dismantling. Deploy in minutes, not days. 30% faster than traditional methods."></div>
     </div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <div class="hero__overline">Pick & Carry Technology</div>
-      <h1 class="hero__title">THE WORLD'S CEILING<br>DOESN'T BUILD <em>ITSELF</em></h1>
-      <p class="hero__desc">Revolutionary pick & carry aerial platforms. 30% faster than scaffolding. Built for stadium, airport & warehouse ceilings.</p>
+      <div class="hero__overline" id="hero-overline">Pick & Carry Technology</div>
+      <h1 class="hero__title" id="hero-title">WORK WHILE<br>YOU <em>MOVE</em></h1>
+      <p class="hero__desc" id="hero-desc">Unlike traditional lifts that must stop to reposition, FDDPT platforms travel at full height with load — 3× faster cycle time per ceiling panel.</p>
       <div class="hero__actions">
         <a href="/contact/" class="btn btn--primary">Get a Quote →</a>
         <a href="/products/" class="btn btn--outline">Explore Products</a>
@@ -71,15 +76,37 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     // Hero Carousel
     const slides = document.querySelectorAll('.hero__slide');
     const dots = document.querySelectorAll('.hero__dot');
+    const heroOverline = document.getElementById('hero-overline');
+    const heroTitle = document.getElementById('hero-title');
+    const heroDesc = document.getElementById('hero-desc');
     let currentSlide = 0;
-    const slideInterval = 5000; // 5 seconds
+    const slideInterval = 6000; // 6 seconds
 
     function goToSlide(index) {
-      slides[currentSlide].classList.remove('hero__slide--active');
-      dots[currentSlide].classList.remove('hero__dot--active');
-      currentSlide = index;
-      slides[currentSlide].classList.add('hero__slide--active');
-      dots[currentSlide].classList.add('hero__dot--active');
+      // Fade out current content
+      heroOverline.style.opacity = '0';
+      heroTitle.style.opacity = '0';
+      heroDesc.style.opacity = '0';
+
+      setTimeout(() => {
+        // Update slide
+        slides[currentSlide].classList.remove('hero__slide--active');
+        dots[currentSlide].classList.remove('hero__dot--active');
+        currentSlide = index;
+        slides[currentSlide].classList.add('hero__slide--active');
+        dots[currentSlide].classList.add('hero__dot--active');
+
+        // Update content
+        const slide = slides[currentSlide];
+        heroOverline.textContent = slide.dataset.overline;
+        heroTitle.innerHTML = slide.dataset.title.replace('<em>', '<em>').replace('</em>', '</em>');
+        heroDesc.textContent = slide.dataset.desc;
+
+        // Fade in new content
+        heroOverline.style.opacity = '1';
+        heroTitle.style.opacity = '1';
+        heroDesc.style.opacity = '1';
+      }, 300);
     }
 
     function nextSlide() {

@@ -143,6 +143,9 @@ button { font-family: inherit; }
   position: relative; z-index: 2; padding: 0 var(--section-px);
   max-width: 900px;
 }
+.hero__overline, .hero__title, .hero__desc {
+  transition: opacity 0.3s ease-in-out;
+}
 .hero__overline {
   display: inline-flex; align-items: center; gap: 8px;
   font-size: 12px; font-weight: 700; letter-spacing: 0.18em;
