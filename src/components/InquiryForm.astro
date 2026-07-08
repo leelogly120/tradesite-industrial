@@ -5,7 +5,7 @@ interface Props {
 }
 
 const { productName = '', productSlug = '' } = Astro.props;
-const formAction = import.meta.env.PUBLIC_FORM_ENDPOINT || '/api/inquiry';
+const formAction = import.meta.env.PUBLIC_FORM_ENDPOINT || 'https://formspree.io/f/mnjkykge';
 
 const modelOptions = ['Not sure', 'FDDPT-20M', 'FDDPT-25M', 'FDDPT-31M', 'FDDPT-35M'];
 const applicationOptions = ['Select...', 'Stadium ceiling', 'Airport terminal', 'Warehouse / Steel structure', 'Other'];
