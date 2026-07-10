@@ -1,7 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import InquiryForm from '../components/InquiryForm.astro';
-
 const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://www.arclifteq.com';
 ---
 
@@ -68,7 +66,36 @@ const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://www.arclifteq.com';
     <div class="form-card">
       <h2>Tell Us About Your Project</h2>
       <p class="sub">Fill in the form and we'll get back to you within 24 hours.</p>
-      <InquiryForm />
+      <form id="contact-form">
+        <input type="hidden" name="_subject" value="New Quote Request from ARCLIFT Website" />
+        <input type="hidden" name="_captcha" value="false" />
+        <div class="fg">
+          <label>Name <span class="req">*</span></label>
+          <input type="text" name="name" placeholder="Your full name" required />
+        </div>
+        <div class="fg">
+          <label>Email <span class="req">*</span></label>
+          <input type="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="fg">
+          <label>WhatsApp / Phone <span class="req">*</span></label>
+          <input type="tel" name="phone" placeholder="+86 156 1768 7185" required />
+        </div>
+        <div class="fg">
+          <label>Company</label>
+          <input type="text" name="company" placeholder="Your company name" />
+        </div>
+        <div class="fg">
+          <label>Message</label>
+          <textarea name="message" placeholder="Tell us about your project requirements, working height, load capacity, site conditions..."></textarea>
+        </div>
+        <button type="submit" class="submit" id="submit-btn">Submit Quote Request →</button>
+      </form>
+      <div id="form-success" style="display:none;text-align:center;padding:40px 0;">
+        <div style="font-size:3rem;color:#22c55e;margin-bottom:1rem;">&#10004;</div>
+        <h3 style="font-size:1.25rem;font-weight:700;color:#22c55e;">Thank you for your inquiry!</h3>
+        <p style="color:#64748b;margin-top:0.5rem;">Your message has been sent successfully. Our engineering team will reply within 24 hours (GMT+8).</p>
+      </div>
     </div>
 
     <!-- SIDEBAR -->
@@ -104,6 +131,36 @@ const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://www.arclifteq.com';
     </div>
   </div>
 </BaseLayout>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn') as HTMLButtonElement;
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+    try {
+      const data = new FormData(form);
+      const res = await fetch('https://formspree.io/f/mnjkykge', {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' },
+      });
+      if (res.ok) {
+        form.style.display = 'none';
+        document.getElementById('form-success')!.style.display = 'block';
+      } else {
+        alert('Something went wrong. Please try again or email us directly at leelogly120@gmail.com.');
+        btn.disabled = false;
+        btn.textContent = 'Submit Quote Request →';
+      }
+    } catch {
+      alert('Network error. Please try again later.');
+      btn.disabled = false;
+      btn.textContent = 'Submit Quote Request →';
+    }
+  });
+</script>
 
 <style>
   @media (max-width: 768px) {
