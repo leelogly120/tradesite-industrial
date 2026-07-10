@@ -141,7 +141,7 @@ const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://www.arclifteq.com';
     btn.textContent = 'Submitting...';
     try {
       const data = new FormData(form);
-      const res = await fetch('https://formspree.io/f/mnjkykge', {
+      const res = await fetch('https://arclift-form.leelogly120.workers.dev/', {
         method: 'POST',
         body: data,
         headers: { 'Accept': 'application/json' },
