@@ -9,25 +9,25 @@ const HOME_CATEGORIES = [
     id: 'crawler-roll-forming-lifts',
     name: 'Crawler Roll Forming Lifts',
     range: '17m – 32m',
-    desc: 'Self-propelled crawler platforms lifting a complete roll forming line to roof level. 5 models.',
+    desc: 'Crawler platforms configured to lift a compatible roll forming line toward roof level. 5 reference models.',
   },
   {
     id: 'truck-mounted-roll-forming-lifts',
     name: 'Truck-Mounted Roll Forming Lifts',
     range: '12m – 31m',
-    desc: 'Highway-mobile forming lifts, incl. 40HQ container-shippable ARC-T25HQ. 5 models.',
+    desc: 'Truck-mounted forming systems, including a 40HQ-oriented split configuration. 5 reference models.',
   },
   {
     id: 'crawler-ceiling-platforms',
     name: 'Crawler Ceiling Platforms',
     range: '20m – 35m',
-    desc: 'ARC-F pick & carry under-ceiling platforms with oversized extending decks. 4 models.',
+    desc: 'Large-deck under-ceiling platform concepts pending model-specific verification. 4 reference models.',
   },
   {
     id: 'roll-forming-machines',
     name: 'Roll Forming Machines',
     range: 'Standing seam',
-    desc: 'Aerial-ready panel lines controlled from the same remote as the lift. 1 model.',
+    desc: 'Panel-forming lines matched to the profile drawing and selected lifting platform. 1 reference model.',
   },
 ];
 
@@ -49,8 +49,8 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
 ---
 
 <BaseLayout
-  title="Aerial Roll Forming Lifts & Crawler Ceiling Platforms — ARC Series"
-  description="Crawler & truck-mounted roll forming lifts (12-32m) that form roofing panels at height, plus 20-35m pick & carry ceiling platforms. Remote control, dual power."
+  title="High-Altitude Roll Forming Lifts & Crawler Ceiling Platforms"
+  description="Crawler and truck-mounted lifting systems for roll forming at roof level, plus engineered crawler platforms for under-ceiling and wall-panel work."
   ogImage="/images/og-home.jpg"
 >
 
@@ -60,31 +60,29 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     name: 'ARCLIFT Equipment Co., Ltd.',
     url: siteUrl,
     logo: `${siteUrl}/images/logo.png`,
-    description: 'Professional manufacturer of aerial roll forming lifts and crawler ceiling platforms — ARC series, 12m–35m reach.',
+    description: 'Export-facing project engineering and product presentation for high-altitude roll forming lifts and large-deck crawler platforms.',
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+86 15617687185',
       contactType: 'sales',
       availableLanguage: ['English', 'Chinese'],
     },
-    areaServed: 'Worldwide',
   })} />
 
   <!-- HERO WITH CAROUSEL -->
   <section class="hero">
     <div class="hero__carousel">
-      <!-- Slide 1: Pick & Carry -->
-      <div class="hero__slide hero__slide--active" style="background-image: url('/images/hero-1.jpg');" data-overline="Pick & Carry Technology" data-title="WORK WHILE YOU MOVE" data-desc="Unlike traditional lifts that must stop to reposition, ARC platforms travel at full height with load — 3× faster cycle time per ceiling panel."></div>
-      <!-- Slide 2: Aerial Roll Forming / Remote Control -->
-      <div class="hero__slide" style="background-image: url('/images/hero-2.jpg');" data-overline="Full Remote Control" data-title="OPERATE FROM THE GROUND" data-desc="Complete platform control from ground level. Safer operation, precise positioning, one-person setup in minutes."></div>
-      <!-- Slide 3: Export Delivery -->
-      <div class="hero__slide" style="background-image: url('/images/hero-3.jpg');" data-overline="Export Ready" data-title="DELIVERED WORLDWIDE" data-desc="Modular designs ship in standard 40HQ containers or via RoRo vessel. Full export documentation, reassembly support and worldwide delivery."></div>
+      <div class="hero__slide hero__slide--brand hero__slide--active" style="background-image: url('/images/hero/hero-1-arclift.webp');" data-overline="Under-Ceiling Work Platform" data-title="A LARGE WORK DECK AT HEIGHT" data-desc="Purpose-built platforms for steel-building ceilings, installation crews and material handling. Final load, travel mode and deck geometry are engineered for the project."></div>
+      <div class="hero__slide" style="background-image: url('/images/hero/hero-2.webp');" data-overline="Aerial Roll Forming" data-title="FORM PANELS AT ROOF LEVEL" data-desc="Move the forming line to eave height and feed long roof panels directly toward the installation area. This can reduce repeated ground handling and reliance on crane lifts."></div>
+      <div class="hero__slide" style="background-image: url('/images/hero/hero-3.webp');" data-overline="Export-Oriented Configuration" data-title="DESIGNED AROUND THE ROUTE" data-desc="Transport envelope, split points, local chassis and commissioning plan are confirmed before production. 40HQ-compatible configurations are available for selected projects."></div>
+      <div class="hero__slide" style="background-image: url('/images/hero/hero-4.webp');" data-overline="Matched Roll Forming Line" data-title="PROFILE-SPECIFIC TOOLING" data-desc="Roll tooling, material thickness, drive power, hydraulic shear and controls are matched to your drawing and project workflow."></div>
+      <div class="hero__slide" style="background-image: url('/images/hero/hero-5.webp');" data-overline="Wall & Facade Installation" data-title="POSITION CREWS AND PANELS" data-desc="Special platform layouts support vertical wall-panel and facade work where conventional baskets provide too little working area."></div>
     </div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <div class="hero__overline" id="hero-overline">Pick & Carry Technology</div>
-      <h1 class="hero__title" id="hero-title">WORK WHILE<br>YOU <em>MOVE</em></h1>
-      <p class="hero__desc" id="hero-desc">Unlike traditional lifts that must stop to reposition, ARC platforms travel at full height with load — 3× faster cycle time per ceiling panel.</p>
+      <div class="hero__overline" id="hero-overline">Under-Ceiling Work Platform</div>
+      <h1 class="hero__title" id="hero-title">A LARGE WORK<br>DECK AT <em>HEIGHT</em></h1>
+      <p class="hero__desc" id="hero-desc">Purpose-built platforms for steel-building ceilings, installation crews and material handling. Final load, travel mode and deck geometry are engineered for the project.</p>
       <div class="hero__actions">
         <a href="/contact/" class="btn btn--primary">Get a Quote →</a>
         <a href="/products/" class="btn btn--outline">Explore Products</a>
@@ -94,6 +92,8 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
       <button class="hero__dot hero__dot--active" data-index="0"></button>
       <button class="hero__dot" data-index="1"></button>
       <button class="hero__dot" data-index="2"></button>
+      <button class="hero__dot" data-index="3"></button>
+      <button class="hero__dot" data-index="4"></button>
     </div>
     <div class="hero__scroll">
       <div class="hero__scroll-line"></div>
@@ -164,12 +164,12 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
 
   <!-- TRUST BAR -->
   <div class="trust">
-    <span class="trust__text">Trusted by contractors in 40+ countries</span>
+    <span class="trust__text">Project-engineered lifting and forming systems</span>
     <div class="trust__items">
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> CE Certified</div>
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> ISO 9001</div>
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> ISO 16368</div>
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 24h Response</div>
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 12–32m Reference Range</div>
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Crawler & Truck Options</div>
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Project-Specific Compliance</div>
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Configuration Before Quote</div>
     </div>
   </div>
 
@@ -178,7 +178,7 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     <div class="sec__header reveal">
       <div class="sec__overline">Our Products</div>
       <h2 class="sec__title">FOUR PRODUCT LINES</h2>
-      <p class="sec__desc">Aerial roll forming lifts, ceiling platforms and forming machines — 15 models, one remote-controlled workflow</p>
+      <p class="sec__desc">Roll forming lifts, large-deck platform concepts and forming machines — {allProducts.length} reference models organized by project workflow</p>
     </div>
     <div class="products">
       {homeCats.map((cat, i) => (
@@ -205,11 +205,11 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
   <!-- FEATURE 1: Pick & Carry -->
   <section class="sec sec--gray">
     <div class="split reveal">
-      <div class="split__visual" style="background: linear-gradient(135deg, #e0e7ff, #c7d2fe); border-radius: 20px; height: 480px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #6366f1;">[Pick & Carry Demo]</div>
+      <div class="split__visual"><img src="/images/home/under-ceiling-field-v2.webp" alt="ARCLIFT-branded large crawler under-ceiling platform working inside a steel structure" width="1200" height="800" loading="lazy" /></div>
       <div class="split__text">
         <div class="sec__overline" style="text-align:left;">Core Technology</div>
         <h3>PICK & CARRY</h3>
-        <p>Unlike spider lifts that must stop to reposition, our ARC-F series keeps working while moving. The platform travels while elevated with a full load — 3× faster cycle time per ceiling panel.</p>
+        <p>Selected ARC-F reference configurations are designed around a large work deck and controlled repositioning. Travel-at-height, allowable load and floor pressure are engineering values that must be confirmed for the final machine and site.</p>
         <a href="/products/" class="link">Learn More →</a>
       </div>
     </div>
@@ -218,23 +218,23 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
   <!-- FEATURE 2: Dual Power -->
   <section class="sec sec--white">
     <div class="split split--reverse reveal">
-      <div class="split__visual" style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border-radius: 20px; height: 480px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #3b82f6;">[Dual Power System]</div>
+      <div class="split__visual"><img src="/images/home/roof-panel-output.webp" alt="Long standing-seam roof panels fed from a roll forming line at roof level" width="1200" height="800" loading="lazy" /></div>
       <div class="split__text">
-        <div class="sec__overline" style="text-align:left;">Power System</div>
-        <h3>DUAL POWER</h3>
-        <p>150hp diesel engine for outdoor travel + twin electric motors for enclosed spaces. Zero emissions, zero noise restrictions indoors.</p>
-        <a href="/about/" class="link">Learn More →</a>
+        <div class="sec__overline" style="text-align:left;">Roofing Workflow</div>
+        <h3>FORM AT ROOF LEVEL</h3>
+        <p>A complete forming line can be raised close to the eave so panels move directly toward the roof crew. The method reduces repeated handling; profile, material, panel length and site wind plan remain project-specific.</p>
+        <a href="/products/#crawler-roll-forming-lifts" class="link">See Roll Forming Lifts →</a>
       </div>
     </div>
   </section>
 
   <!-- STATS -->
-  <section class="sec sec--dark">
+  <section class="sec sec--dark spec-band" id="key-specifications">
     <div class="stats reveal">
-      <div class="stat"><div class="stat__num">30%</div><div class="stat__label">Faster Than Scaffolding</div></div>
-      <div class="stat"><div class="stat__num">12m×8m</div><div class="stat__label">Maximum Platform</div></div>
-      <div class="stat"><div class="stat__num">360°</div><div class="stat__label">Full Rotation</div></div>
-      <div class="stat"><div class="stat__num">24/7</div><div class="stat__label">Global Support</div></div>
+      <div class="stat"><div class="stat__num"><span>12–32</span><small class="stat__unit">m</small></div><div class="stat__label">Documented Lift Heights</div></div>
+      <div class="stat"><div class="stat__num"><span>8 / 11 / 20</span><small class="stat__unit">t</small></div><div class="stat__label">Archived Lift Classes</div></div>
+      <div class="stat"><div class="stat__num"><span>0.3–1.0</span><small class="stat__unit">mm</small></div><div class="stat__label">Documented Sheet Range</div></div>
+      <div class="stat"><div class="stat__num"><span>380</span><small class="stat__unit">V</small></div><div class="stat__label">Common Line Supply</div></div>
     </div>
   </section>
 
@@ -242,19 +242,19 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
   <section class="sec sec--white">
     <div class="sec__header reveal">
       <div class="sec__overline">Applications</div>
-      <h2 class="sec__title">BUILT FOR THESE CEILINGS</h2>
-      <p class="sec__desc">Specialized aerial access for tall indoor spaces</p>
+      <h2 class="sec__title">PLATFORMS FOR HIGH-BAY INTERIORS</h2>
+      <p class="sec__desc">Reference applications for large-span indoor installation and maintenance work</p>
     </div>
     <div class="apps">
-      <a href="/applications/stadium/" class="app reveal reveal-d1">
+      <a href="/applications/stadium/" class="app reveal reveal-d1" style="background-image:url('/images/home/wall-panel-platform.webp');background-size:cover;background-position:center;">
         <div class="app__arrow">→</div>
         <div class="app__body"><h3>Stadium & Arena</h3><p>Large-span steel structures, acoustic panel installation</p></div>
       </a>
-      <a href="/applications/airport/" class="app reveal reveal-d2">
+      <a href="/applications/airport/" class="app reveal reveal-d2" style="background-image:url('/images/home/under-ceiling-field-v2.webp');background-size:cover;background-position:center;">
         <div class="app__arrow">→</div>
         <div class="app__body"><h3>Airport Terminal</h3><p>Ceiling panel maintenance, lighting upgrade, HVAC access</p></div>
       </a>
-      <a href="/applications/warehouse/" class="app reveal reveal-d3">
+      <a href="/applications/warehouse/" class="app reveal reveal-d3" style="background-image:url('/images/home/roof-panel-output.webp');background-size:cover;background-position:center;">
         <div class="app__arrow">→</div>
         <div class="app__body"><h3>Warehouse & Factory</h3><p>High-bay ceiling construction, overhead crane rail</p></div>
       </a>
@@ -265,17 +265,17 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
   <section class="sec sec--gray">
     <div class="sec__header reveal">
       <div class="sec__overline">Why ARCLIFT</div>
-      <h2 class="sec__title">PICK & CARRY vs THE REST</h2>
+      <h2 class="sec__title">CHOOSE BY PROJECT FIT</h2>
     </div>
     <div class="comp reveal">
       <table>
-        <thead><tr><th>Feature</th><th class="hl">ARC Pick & Carry</th><th>Spider Lift</th><th>Scaffolding</th></tr></thead>
+        <thead><tr><th>Planning Factor</th><th class="hl">ARC Large-Deck Concept</th><th>Spider Lift</th><th>Scaffolding</th></tr></thead>
         <tbody>
-          <tr><td>Platform Size</td><td class="hl">12m×3m → 12m×8m</td><td>~2m×1m basket</td><td>1m-wide planks</td></tr>
-          <tr><td>Load While Moving</td><td class="hl yes">✓ 0.3–3T</td><td class="no">✗ Must stow</td><td class="no">✗ Static only</td></tr>
-          <tr><td>Setup Time</td><td class="hl yes">✓ Minutes</td><td>15–30 min</td><td>Days per bay</td></tr>
-          <tr><td>Indoor Operation</td><td class="hl yes">✓ Dual Power</td><td>Diesel/Electric</td><td>N/A</td></tr>
-          <tr><td>Remote Control</td><td class="hl yes">✓ Full Remote</td><td>Platform controls</td><td class="no">✗ Manual</td></tr>
+          <tr><td>Working Area</td><td class="hl">Large deck, project-defined</td><td>Compact personnel basket</td><td>Site-built working bays</td></tr>
+          <tr><td>Load While Moving</td><td class="hl">Configuration-dependent</td><td>Model-dependent</td><td class="no">✗ Static only</td></tr>
+          <tr><td>Setup Method</td><td class="hl yes">✓ Integrated platform</td><td>Outrigger cycle</td><td>Bay-by-bay erection</td></tr>
+          <tr><td>Indoor Operation</td><td class="hl">Electric option by project</td><td>Model-dependent</td><td>N/A</td></tr>
+          <tr><td>Control Arrangement</td><td class="hl">Remote option by configuration</td><td>Model-dependent controls</td><td class="no">Manual access system</td></tr>
         </tbody>
       </table>
     </div>
@@ -286,13 +286,12 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
 
   <!-- CTA -->
   <section class="cta">
-    <h2>READY TO IMPROVE YOUR EFFICIENCY?</h2>
-    <p>Get a free quote within 24 hours. Our engineering team will recommend the right model.</p>
-    <a href="/contact/" class="btn--white">Get a Free Quote →</a>
+    <h2>READY TO DEFINE YOUR CONFIGURATION?</h2>
+    <p>Send the building height, panel profile, coil/former weight, site layout and destination market. We will confirm the suitable reference configuration and compliance path.</p>
+    <a href="/contact/" class="btn--white">Send Project Details →</a>
     <div class="cta__contacts">
       <a href="https://wa.me/8615617687185">WhatsApp: +86 15617687185</a>
       <a href="mailto:leelogly120@gmail.com">leelogly120@gmail.com</a>
     </div>
   </section>
 </BaseLayout>
-Layout>
