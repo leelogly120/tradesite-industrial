@@ -8,22 +8,26 @@ const CATEGORIES = [
   {
     id: 'crawler-roll-forming-lifts',
     name: 'Crawler Roll Forming Lifts',
-    tagline: 'Self-propelled crawler platforms that lift a complete roll forming line to 17–32m. Full remote control, diesel-electric dual power, built for rough job sites.',
+    tagline: 'Crawler platforms configured to raise a complete roll forming line toward roof level. Archived source material covers reference lift heights from 17m to 32m; final power and chassis are project-specific.',
+    banner: '/images/banners/category-crawler.webp',
   },
   {
     id: 'truck-mounted-roll-forming-lifts',
     name: 'Truck-Mounted Roll Forming Lifts',
-    tagline: 'Highway-mobile forming lifts from 12m to 31m — drive between sites with the roll former on board. Includes the 40HQ container-shippable ARC-T25HQ.',
+    tagline: 'Truck-mounted forming systems with archived 12m–31m reference configurations. Road registration, local chassis, transport envelope and the 40HQ split plan require destination review.',
+    banner: '/images/banners/category-truck.webp',
   },
   {
     id: 'crawler-ceiling-platforms',
     name: 'Crawler Ceiling Platforms',
-    tagline: 'ARC-F pick & carry under-ceiling work platforms, 20–35m. Oversized extending decks for airport, stadium and warehouse ceiling crews.',
+    tagline: 'Large-deck crawler platform concepts for under-ceiling and wall-panel crews. ARC-F pages are reference configurations pending model-specific engineering, approval photos and compliance documents.',
+    banner: '/images/banners/category-ceiling.webp',
   },
   {
     id: 'roll-forming-machines',
     name: 'Roll Forming Machines',
-    tagline: 'Aerial-ready standing seam panel lines engineered to run on ARC lift platforms, controlled from the same radio remote.',
+    tagline: 'Compact standing-seam and trapezoidal panel lines matched to approved profile drawings, sheet thickness and the selected lift platform.',
+    banner: '/images/banners/category-roll-former.webp',
   },
 ];
 
@@ -63,10 +67,10 @@ const grouped = CATEGORIES.map(cat => ({
 >
 
   <!-- HERO BANNER -->
-  <section class="hero-banner">
+  <section class="hero-banner" style="--banner-image:url('/images/banners/products.webp');--banner-position:center 58%;">
     <div class="overline">Products</div>
     <h1>ARC EQUIPMENT RANGE</h1>
-    <p>Four product lines, one mission: form and place roofing panels at height with one operator and zero cranes.</p>
+    <p>Four equipment families for forming long panels near the installation elevation and supporting specialized ceiling or wall work.</p>
   </section>
 
   <!-- CATEGORY NAV -->
@@ -84,6 +88,7 @@ const grouped = CATEGORIES.map(cat => ({
         <h2 class="sec__title">{cat.name.toUpperCase()}</h2>
         <p class="sec__desc">{cat.tagline}</p>
       </div>
+      <div class="category-banner reveal" style={`background-image:url('${cat.banner}');`} role="img" aria-label={`${cat.name} operating scene`}></div>
       <div class="products-list">
         {cat.items.map(p => {
           const s = cardSpecs(p);

@@ -15,55 +15,73 @@ export async function getStaticPaths() {
 const { product } = Astro.props;
 const data = product.data;
 const specs = data.specifications || {};
-
 const model = data.title.split(' ')[0];
 const category = data.category || 'ARC Equipment';
-const heightVal = specs['Lift Height (to shear exit)'] || specs['Max Working Height'] || '';
+const heightVal = specs['Lift Height (to shear exit)'] || specs['Max Working Height'] || '—';
 const loadVal = specs['Lifting Capacity'] || specs['Safe Working Load'] || specs['Sheet Thickness'] || '—';
 const platformVal = specs['Platform Size'] || specs['Platform Size (L×W)'] || specs['Compatible Profiles'] || '—';
 const weightVal = specs['Machine Weight'] || specs['Module Weight'] || specs['Panel Output Length'] || '—';
+const quoteUrl = `/contact/?product=${encodeURIComponent(model)}`;
+const datasheetUrl = `/contact/?product=${encodeURIComponent(model)}&request=datasheet`;
 
 const allProducts = await getCollection('products');
 const sameCat = allProducts.filter(p => p.id !== product.id && !p.data.draft && p.data.category === data.category);
 const others = allProducts.filter(p => p.id !== product.id && !p.data.draft && p.data.category !== data.category);
 const related = [...sameCat, ...others].slice(0, 3);
-
 const { Content } = await render(product);
+
+const applications = category.includes('Ceiling')
+  ? [
+      ['Steel-Building Ceilings', 'Large-span ceiling panels, insulation and service installation.'],
+      ['Warehouse & Factory', 'High-bay lighting, HVAC, sprinkler and overhead maintenance.'],
+      ['Stadium & Terminal', 'Large indoor spaces after floor-load and access-route verification.'],
+      ['Wall & Facade Panels', 'Extended deck layouts for crew, tools and panel positioning.'],
+    ]
+  : category.includes('Roll Forming Machines')
+    ? [
+        ['Roof Profiles', 'Standing seam and trapezoidal profiles matched to approved drawings.'],
+        ['Wall Cladding', 'Profile-specific tooling for wall and facade sheets.'],
+        ['Factory Production', 'Ground-level production with cut-to-length workflow.'],
+        ['Lift Integration', 'A compact line configured for a compatible lifting platform.'],
+      ]
+    : [
+        ['Industrial Roofing', 'Form long roof panels close to the installation elevation.'],
+        ['Warehouses & Factories', 'Reduce repeated ground handling on large steel-building roofs.'],
+        ['Hangars & Workshops', 'Support long-panel projects with constrained crane access.'],
+        ['Wall Cladding', 'Adapted workflow for long vertical facade panels where engineered.'],
+      ];
+
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: data.title,
+  description: data.description,
+  brand: { '@type': 'Brand', name: 'ARCLIFT' },
+  sku: model,
+  image: data.images?.map((img: string) => new URL(img, Astro.site).href),
+  additionalProperty: Object.entries(specs).map(([name, value]) => ({
+    '@type': 'PropertyValue',
+    name,
+    value,
+  })),
+};
 ---
 
-<BaseLayout
-  title={data.title}
-  description={data.description}
-  ogImage={data.images?.[0]}
-  transparentNav={false}
->
+<BaseLayout title={data.title} description={data.description} ogImage={data.images?.[0]} transparentNav={false}>
+  <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
 
-  <!-- PRODUCT SCHEMA -->
-  <script type="application/ld+json" set:html={JSON.stringify({
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: data.title,
-    description: data.description,
-    brand: { '@type': 'Brand', name: 'ARCLIFT' },
-    manufacturer: { '@type': 'Organization', name: 'ARCLIFT Equipment Co., Ltd.' },
-    sku: model,
-    image: data.images?.[0] ? new URL(data.images[0], Astro.site).href : undefined,
-    offers: {
-      '@type': 'Offer',
-      priceCurrency: 'USD',
-      price: data.price?.min || '0',
-      priceValidUntil: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-      availability: 'https://schema.org/InStock',
-      seller: { '@type': 'Organization', name: 'ARCLIFT' },
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      reviewCount: '156',
-    },
-  })} />
+  {data.faq && data.faq.length > 0 && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: data.faq.map(item => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      })),
+    })} />
+  )}
 
-  <!-- BREADCRUMB SCHEMA -->
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -74,51 +92,50 @@ const { Content } = await render(product);
     ],
   })} />
 
-  <!-- BREADCRUMB -->
   <div class="bread">
-    <a href="/">Home</a> / <a href="/products/">Products</a> / <span>{data.title.split(' ')[0]}</span>
+    <a href="/">Home</a> / <a href="/products/">Products</a> / <span>{model}</span>
   </div>
 
-  <!-- PRODUCT HERO -->
   <section class="product-hero">
     <div class="product-hero__gallery">
       {data.images?.[0] ? (
         <div class="product-hero__main">
-          <img src={data.images[0]} alt={data.title} width="640" height="400" style="width:100%;height:100%;object-fit:cover;border-radius:16px;" />
+          <img id="product-main-image" src={data.images[0]} alt={data.title} width="640" height="480" />
         </div>
       ) : (
         <div class="product-hero__main">{model}</div>
       )}
       {data.images && data.images.length > 1 && (
-        <div class="product-hero__thumbs">
+        <div class="product-hero__thumbs" aria-label="Product image gallery">
           {data.images.map((img: string, i: number) => (
-            <div class:list={['product-hero__thumb', { active: i === 0 }]} data-src={img}>
-              {i === 1 ? 'Side' : i === 2 ? 'Platform' : i === 3 ? 'Control' : 'Front'}
-            </div>
+            <button class:list={['product-hero__thumb', { active: i === 0 }]} type="button" data-src={img} aria-label={`Show ${model} image ${i + 1}`}>
+              <img src={img} alt="" width="144" height="108" loading="lazy" />
+            </button>
           ))}
         </div>
       )}
+      <p class="field-note">Field images document the product family and real operating scenarios. Color, chassis, platform geometry and accessories may differ from the quoted configuration.</p>
     </div>
 
     <div class="product-hero__info">
       <div class="product-hero__tag">{category}</div>
       <h1 class="product-hero__name">{model}</h1>
       <p class="product-hero__sub">{data.title.split(' - ')[1] || category}</p>
-      <div class="product-hero__price">Price on Request <span>Factory direct pricing</span></div>
+      <div class="product-hero__price">Price on Request <span>after configuration review</span></div>
+      <p class="verification-note"><strong>Reference configuration:</strong> final height, payload, platform, power, transport envelope, documentation and destination-market compliance are confirmed in the signed technical agreement.</p>
       <div class="specs-mini">
-        <div class="spec-mini"><div class="spec-mini__label">Working Height</div><div class="spec-mini__val">{heightVal || '—'}</div></div>
+        <div class="spec-mini"><div class="spec-mini__label">Working Height</div><div class="spec-mini__val">{heightVal}</div></div>
         <div class="spec-mini"><div class="spec-mini__label">Capacity</div><div class="spec-mini__val">{loadVal}</div></div>
-        <div class="spec-mini"><div class="spec-mini__label">Platform</div><div class="spec-mini__val">{platformVal}</div></div>
-        <div class="spec-mini"><div class="spec-mini__label">Weight</div><div class="spec-mini__val">{weightVal}</div></div>
+        <div class="spec-mini"><div class="spec-mini__label">Platform / Output</div><div class="spec-mini__val">{platformVal}</div></div>
+        <div class="spec-mini"><div class="spec-mini__label">Weight / Length</div><div class="spec-mini__val">{weightVal}</div></div>
       </div>
       <div class="product-hero__btns">
-        <a href="/contact/" class="btn btn--primary">Get a Quote →</a>
-        <button class="btn btn--outline-blue" id="pdfBtn">Download PDF</button>
+        <a href={quoteUrl} class="btn btn--primary">Get a Quote →</a>
+        <a href={datasheetUrl} class="btn btn--outline-blue">Request Datasheet</a>
       </div>
     </div>
   </section>
 
-  <!-- TABS -->
   <div class="tabs">
     <button class="tab active" data-tab="0">Overview</button>
     <button class="tab" data-tab="1">Specifications</button>
@@ -127,34 +144,29 @@ const { Content } = await render(product);
   </div>
 
   <div class="tab-content">
-    <!-- Overview -->
     <div class="tab-panel active">
-      <h2 style="font-size:28px;font-weight:800;margin-bottom:20px;">Product Overview</h2>
-      <div style="font-size:16px;color:#475569;line-height:1.8;">
-        <Content />
-      </div>
+      <div style="font-size:16px;color:#475569;line-height:1.8;"><Content /></div>
     </div>
 
-    <!-- Specifications -->
     <div class="tab-panel">
+      <p class="verification-note">Values below are website reference data. Request a model-specific drawing and technical schedule before procurement, tender submission or lift planning.</p>
       <table class="specs-table">
-        {Object.entries(specs).map(([key, value]) => (
-          <tr><td>{key}</td><td>{value}</td></tr>
-        ))}
+        <tbody>
+          {Object.entries(specs).map(([key, value]) => <tr><td>{key}</td><td>{value}</td></tr>)}
+        </tbody>
       </table>
     </div>
 
-    <!-- Features -->
     <div class="tab-panel">
       <div class="features-grid">
-        {data.features?.map((f: string) => {
-          const parts = f.split('—');
+        {data.features?.map((feature: string) => {
+          const parts = feature.split('—');
           return (
             <div class="feature">
-              <div class="feature__icon">⚡</div>
+              <div class="feature__icon">◆</div>
               <div>
-                <div class="feature__title">{parts[0]?.trim() || f}</div>
-                <div class="feature__desc">{parts[1]?.trim() || ''}</div>
+                <div class="feature__title">{parts[0]?.trim() || feature}</div>
+                <div class="feature__desc">{parts.slice(1).join('—').trim()}</div>
               </div>
             </div>
           );
@@ -162,28 +174,34 @@ const { Content } = await render(product);
       </div>
     </div>
 
-    <!-- Applications -->
     <div class="tab-panel">
-      <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:24px;">The {data.title.split(' ')[0]} is designed for a wide range of ceiling installation and maintenance applications.</p>
+      <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:24px;">Typical applications for the {model}. Every site requires verification of ground or floor bearing, access route, clearance, wind, load, rescue plan and local rules.</p>
       <div class="app-cards">
-        <div class="app-card"><div class="app-card__icon">🏟️</div><h4>Stadium & Arena</h4><p>Acoustic panel installation, rigging access, lighting maintenance</p></div>
-        <div class="app-card"><div class="app-card__icon">✈️</div><h4>Airport Terminal</h4><p>Ceiling panels, HVAC systems, lighting upgrades</p></div>
-        <div class="app-card"><div class="app-card__icon">🏭</div><h4>Warehouse & Factory</h4><p>High-bay ceilings, overhead cranes, mezzanine work</p></div>
-        <div class="app-card"><div class="app-card__icon">☀️</div><h4>Solar Installation</h4><p>Commercial rooftop solar panel mounting</p></div>
-        <div class="app-card"><div class="app-card__icon">🏢</div><h4>Commercial Buildings</h4><p>Lobby ceilings, atrium maintenance, facade work</p></div>
-        <div class="app-card"><div class="app-card__icon">🔧</div><h4>Industrial Maintenance</h4><p>Pipe racks, ventilation, overhead equipment access</p></div>
+        {applications.map(([title, description]) => (
+          <div class="app-card"><div class="app-card__icon">▦</div><h4>{title}</h4><p>{description}</p></div>
+        ))}
       </div>
     </div>
   </div>
 
-  <!-- CTA -->
+  {data.faq && data.faq.length > 0 && (
+    <section class="sec sec--gray">
+      <div class="sec__header">
+        <div class="sec__overline">Buyer Questions</div>
+        <h2 class="sec__title">{model} FAQ</h2>
+      </div>
+      <div class="faq-grid">
+        {data.faq.map(item => <div class="faq-item"><h3>{item.question}</h3><p>{item.answer}</p></div>)}
+      </div>
+    </section>
+  )}
+
   <section class="cta">
-    <h2>INTERESTED IN THE {data.title.split(' ')[0]}?</h2>
-    <p>Get factory-direct pricing and technical consultation within 24 hours.</p>
-    <a href="/contact/" class="btn--white">Request a Quote →</a>
+    <h2>CONFIGURE THE {model}</h2>
+    <p>Send the eave or ceiling height, panel profile, material, site conditions, destination and transport constraints for an engineering review.</p>
+    <a href={quoteUrl} class="btn--white">Request a Project Review →</a>
   </section>
 
-  <!-- RELATED PRODUCTS -->
   <section class="sec">
     <div class="sec__header reveal">
       <div class="sec__overline">Related Products</div>
@@ -213,32 +231,23 @@ const { Content } = await render(product);
     </div>
   </section>
 
-  <!-- PDF Modal -->
-  <div id="pdfModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:10000;align-items:center;justify-content:center;" onclick="if(event.target===this)this.style.display='none'">
-    <div style="background:#fff;border-radius:20px;padding:48px;max-width:480px;width:90%;position:relative;">
-      <button onclick="document.getElementById('pdfModal').style.display='none'" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:#94a3b8;">✕</button>
-      <h3 style="font-size:24px;font-weight:800;margin-bottom:8px;">Download Product Catalog</h3>
-      <p style="font-size:14px;color:#64748b;margin-bottom:24px;">Fill in your details to download the {data.title.split(' ')[0]} specifications PDF.</p>
-      <div style="margin-bottom:16px;"><label style="display:block;font-size:13px;font-weight:600;color:#475569;margin-bottom:4px;">Name *</label><input type="text" style="width:100%;padding:12px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:14px;" placeholder="Your name"></div>
-      <div style="margin-bottom:16px;"><label style="display:block;font-size:13px;font-weight:600;color:#475569;margin-bottom:4px;">Email *</label><input type="email" style="width:100%;padding:12px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:14px;" placeholder="your@email.com"></div>
-      <div style="margin-bottom:20px;"><label style="display:block;font-size:13px;font-weight:600;color:#475569;margin-bottom:4px;">WhatsApp / Phone *</label><input type="tel" style="width:100%;padding:12px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:14px;" placeholder="+86 xxx xxxx xxxx"></div>
-      <button style="width:100%;padding:14px;background:#2563eb;color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;">Download PDF →</button>
-    </div>
-  </div>
-
   <script>
-    // Tab switching
     document.querySelectorAll('.tab').forEach(tab => {
       tab.addEventListener('click', () => {
-        const n = parseInt(tab.getAttribute('data-tab') || '0');
-        document.querySelectorAll('.tab').forEach((t, i) => t.classList.toggle('active', i === n));
-        document.querySelectorAll('.tab-panel').forEach((p, i) => p.classList.toggle('active', i === n));
+        const n = Number(tab.getAttribute('data-tab') || 0);
+        document.querySelectorAll('.tab').forEach((item, i) => item.classList.toggle('active', i === n));
+        document.querySelectorAll('.tab-panel').forEach((panel, i) => panel.classList.toggle('active', i === n));
       });
     });
 
-    // PDF modal
-    document.getElementById('pdfBtn')?.addEventListener('click', () => {
-      document.getElementById('pdfModal').style.display = 'flex';
+    const mainImage = document.getElementById('product-main-image') as HTMLImageElement | null;
+    document.querySelectorAll<HTMLButtonElement>('.product-hero__thumb').forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        const src = thumb.dataset.src;
+        if (mainImage && src) mainImage.src = src;
+        document.querySelectorAll('.product-hero__thumb').forEach(item => item.classList.remove('active'));
+        thumb.classList.add('active');
+      });
     });
   </script>
 </BaseLayout>

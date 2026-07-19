@@ -8,16 +8,16 @@ const cases = (await getCollection('caseStudies'))
 ---
 
 <BaseLayout
-  title="Case Studies — ARCLIFT"
-  description="See how ARCLIFT platforms deliver results on stadium, airport & warehouse ceiling projects worldwide."
+  title="Application Scenarios — ARCLIFT"
+  description="Explore project-planning scenarios for roll forming lifts and large-deck crawler platforms. Confirm every result and configuration against project evidence."
   transparentNav={false}
 >
 
   <!-- HERO BANNER -->
-  <section class="hero-banner">
-    <div class="overline">Case Studies</div>
-    <h1>PROJECT SHOWCASE</h1>
-    <p>See how ARCLIFT platforms deliver results on stadium, airport & warehouse ceiling projects worldwide.</p>
+  <section class="hero-banner" style="--banner-image:url('/images/banners/case-studies.webp');--banner-position:center 58%;">
+    <div class="overline">Application Scenarios</div>
+    <h1>PROJECT PLANNING LIBRARY</h1>
+    <p>Use these scenarios to structure discovery questions. They are not verified customer references unless a page explicitly provides project evidence.</p>
   </section>
 
   <!-- CASES GRID -->
@@ -31,21 +31,13 @@ const cases = (await getCollection('caseStudies'))
     <div class="cases">
       {cases.map(c => (
         <a href={`/case-studies/${c.id}/`} class="case-card reveal" data-category={c.data.category}>
-          <div class="case-card__img">
-            {c.data.category} Project
+          <div class="case-card__img" style={`background-image:url('${c.data.coverImage || '/images/home/under-ceiling-field-v2.webp'}');background-size:cover;background-position:center;`}>
             <span class="case-card__tag">{c.data.category}</span>
           </div>
           <div class="case-card__body">
             <div class="case-card__title">{c.data.title}</div>
             <div class="case-card__desc">{c.data.description}</div>
-            {c.data.stats && (
-              <div class="case-card__stats">
-                {c.data.stats.slice(0, 2).map(s => (
-                  <span class="case-card__stat"><b>{s.num}</b> {s.label}</span>
-                ))}
-              </div>
-            )}
-            <span class="case-card__link">Read Case Study →</span>
+            <span class="case-card__link">Review Scenario →</span>
           </div>
         </a>
       ))}

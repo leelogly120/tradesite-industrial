@@ -1,0 +1,570 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+  const posts = (await getCollection('blog'))
+    .filter(p => !p.data.draft)
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+  return paginate(posts, { pageSize: 20 });
+};
+
+const { page } = Astro.props;
+const posts = page.data;
+const pageNum = page.currentPage;
+const count = page.total;
+const pageSize = 20;
+const total = Math.ceil(count / pageSize);
+const prev = page.url.prev;
+const next = page.url.next;
+
+const categories = ['All', 'Product Guide', 'Safety', 'Project Tips', 'Industry News'];
+---
+
+<BaseLayout title={`Blog — Page ${pageNum} — ARCLIFT`} description="Expert knowledge on aerial work platforms, safety standards, and ceiling installation best practices." transparentNav={false}>
+
+  <!-- HERO BANNER -->
+  <section class="hero-banner" style="background-image:linear-gradient(90deg,rgba(10,10,10,.94),rgba(10,10,10,.45)),url('/images/banners/blog.webp');background-size:cover;background-position:center;">
+    <div class="overline">Blog & Insights</div>
+    <h1>INDUSTRY INSIGHTS</h1>
+    <p>Expert knowledge on aerial work platforms, safety standards, and ceiling installation best practices.</p>
+  </section>
+
+  <!-- FILTER + POSTS -->
+  <section class="sec">
+    <div class="sec__header">
+      <p class="sec__count">Page {pageNum} of {total} — {count} articles total</p>
+      <div class="filter-bar">
+        {categories.map((cat, i) => (
+          <button class:list={['filter-btn', { active: i === 0 }]} data-category={cat.toLowerCase().replace(/\s+/g, '-')}>
+            {cat}
+          </button>
+        ))}
+      </div>
+    </div>
+    <div class="blog-grid">
+      {posts.map(post => (
+        <a href={`/blog/${post.id}/`} class="blog-card reveal" data-tags={post.data.tags?.join(',').toLowerCase()}>
+          <div class="blog-card__img" style={`background-image:url('${post.data.coverImage || '/images/home/roof-panel-output.webp'}');background-size:cover;background-position:center;`}>
+            {post.data.tags && post.data.tags.length > 0 && (
+              <span class="blog-card__tag">{post.data.tags[0]}</span>
+            )}
+            <span class="blog-card__date">
+              {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+            </span>
+          </div>
+          <div class="blog-card__body">
+            <h3 class="blog-card__title">{post.data.title}</h3>
+            <p class="blog-card__excerpt">{post.data.description}</p>
+            <div class="blog-card__meta">
+              <div class="blog-card__author">AR</div>
+              <span class="blog-card__author-name">ARCLIFT Team</span>
+              <span class="blog-card__read-time">8 min read</span>
+            </div>
+            <span class="blog-card__link">Read More →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    {posts.length === 0 && (
+      <div style="text-align:center;padding:4rem 0;color:#64748b;">
+        <p style="font-size:1.25rem;">No more blog posts yet.</p>
+      </div>
+    )}
+
+    <!-- PAGINATION -->
+    <nav class="pagination" aria-label="Blog pagination">
+      {prev && (
+        <a href={prev} class="pagination__link pagination__prev">
+          ← Previous
+        </a>
+      )}
+
+      <div class="pagination__numbers">
+        {Array.from({ length: total }, (_, i) => i + 1).map(num => {
+          const show = num === 1 || num === total || (num >= pageNum - 1 && num <= pageNum + 1);
+          const showEllipsis = num === pageNum - 2 || num === pageNum + 2;
+
+          if (showEllipsis) {
+            return <span class="pagination__ellipsis">...</span>;
+          }
+
+          if (show) {
+            return (
+              <a
+                href={num === 1 ? '/blog/page/' : `/blog/page/${num}/`}
+                class:list={['pagination__num', { active: num === pageNum }]}
+                aria-current={num === pageNum ? 'page' : undefined}
+              >
+                {num}
+              </a>
+            );
+          }
+
+          return null;
+        })}
+      </div>
+
+      {next && (
+        <a href={next} class="pagination__link pagination__next">
+          Next →
+        </a>
+      )}
+    </nav>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <h2>STAY UPDATED</h2>
+    <p>Get the latest insights on aerial work platforms delivered to your inbox.</p>
+    <form class="newsletter__form">
+      <input type="email" class="newsletter__input" placeholder="Enter your email address" required />
+      <button type="submit" class="newsletter__btn">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>NEED EXPERT ADVICE?</h2>
+    <p>Our team can help you choose the right aerial work platform for your project.</p>
+    <a href="/contact/" class="btn btn--white">Get a Free Consultation →</a>
+  </section>
+
+</BaseLayout>
+
+<style>
+  .hero-banner {
+    padding: 160px clamp(24px, 5vw, 80px) 80px;
+    background: linear-gradient(135deg, #0a0a0a, #1e293b);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-banner::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.08);
+  }
+  .hero-banner .overline {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #60a5fa;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .hero-banner h1 {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .hero-banner p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 600px;
+    line-height: 1.7;
+    position: relative;
+  }
+
+  .sec {
+    padding: clamp(60px, 8vw, 100px) clamp(24px, 5vw, 80px);
+  }
+  .sec__header {
+    max-width: 1400px;
+    margin: 0 auto 32px;
+  }
+  .sec__count {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 24px;
+  }
+
+  .filter-bar {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    padding: 10px 20px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .filter-btn.active,
+  .filter-btn:hover {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    max-width: 1400px;
+    margin: 0 auto 48px;
+  }
+  .blog-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #f1f5f9;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    color: inherit;
+  }
+  .blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.08);
+    border-color: transparent;
+  }
+  .blog-card__img {
+    height: 200px;
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #94a3b8;
+    position: relative;
+  }
+  .blog-card__tag {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: #2563eb;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .blog-card__date {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .blog-card__body {
+    padding: 28px;
+  }
+  .blog-card__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  .blog-card__excerpt {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .blog-card__meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .blog-card__author {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+  }
+  .blog-card__author-name {
+    font-size: 13px;
+    color: #64748b;
+  }
+  .blog-card__read-time {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-left: auto;
+  }
+  .blog-card__link {
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: gap 0.3s;
+  }
+  .blog-card:hover .blog-card__link {
+    gap: 8px;
+  }
+
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  .pagination__link {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    background: #f1f5f9;
+    color: #475569;
+  }
+  .pagination__link:hover {
+    background: #e2e8f0;
+  }
+  .pagination__next {
+    background: #2563eb;
+    color: #fff;
+  }
+  .pagination__next:hover {
+    background: #1d4ed8;
+  }
+  .pagination__numbers {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .pagination__num {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #475569;
+    transition: all 0.3s;
+  }
+  .pagination__num:hover {
+    background: #f1f5f9;
+  }
+  .pagination__num.active {
+    background: #2563eb;
+    color: #fff;
+  }
+  .pagination__ellipsis {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #94a3b8;
+  }
+
+  .newsletter {
+    background: #0a0a0a;
+    padding: 80px clamp(24px, 5vw, 80px);
+    text-align: center;
+  }
+  .newsletter h2 {
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  .newsletter p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 32px;
+  }
+  .newsletter__form {
+    display: flex;
+    gap: 12px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .newsletter__input {
+    flex: 1;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: #ffffff !important;
+    color: #0a0a0a !important;
+  }
+  .newsletter__input::placeholder {
+    color: #94a3b8 !important;
+  }
+  .newsletter__input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+  }
+  .newsletter__btn {
+    background: #2563eb;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .newsletter__btn:hover {
+    background: #1d4ed8;
+  }
+
+  .cta {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    padding: 80px clamp(24px, 5vw, 80px);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
+  }
+  .cta h2 {
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .cta p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 32px;
+    position: relative;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+  .btn--white {
+    background: #fff;
+    color: #2563eb;
+  }
+  .btn--white:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 1024px) {
+    .blog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 768px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+    .newsletter__form {
+      flex-direction: column;
+    }
+    .pagination {
+      flex-wrap: wrap;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      transition: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+</style>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach((el) => {
+      el.classList.add('is-visible');
+      el.style.transition = 'none';
+    });
+  }
+
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const blogCards = document.querySelectorAll('.blog-card');
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      const category = btn.getAttribute('data-category');
+      blogCards.forEach((card) => {
+        const tags = card.getAttribute('data-tags') || '';
+        if (category === 'all' || tags.includes(category)) {
+          (card as HTMLElement).style.display = '';
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

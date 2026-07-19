@@ -52,9 +52,9 @@ const { Content } = await render(caseStudy);
   })} />
 
   <!-- HERO -->
-  <section class="hero-full">
+  <section class="hero-full" style="background-image:linear-gradient(90deg,rgba(10,10,10,.92),rgba(10,10,10,.4)),url('/images/banners/case-studies.webp');background-size:cover;background-position:center;">
     <div class="hero-full__content">
-      <span class="hero-full__tag">{data.category}</span>
+      <span class="hero-full__tag">{data.category} Planning Scenario</span>
       <h1>{data.title.toUpperCase()}</h1>
       <p>{data.description}</p>
     </div>
@@ -67,34 +67,13 @@ const { Content } = await render(caseStudy);
 
   <!-- CONTENT -->
   <div class="case-content">
-    <!-- META GRID -->
-    {data.stats && (
-      <div class="meta-grid reveal">
-        {data.stats.map(s => (
-          <div class="meta-item">
-            <div class="num">{s.num}</div>
-            <div class="label">{s.label}</div>
-          </div>
-        ))}
-      </div>
-    )}
+    <p class="verification-note"><strong>Scenario status:</strong> this page is a planning example unless named customer evidence, dated field photos and approved project records are supplied. Do not treat forecast results as delivered performance.</p>
 
     <!-- ARTICLE -->
     <div class="article">
       <Content />
     </div>
 
-    <!-- RESULTS -->
-    {data.results && (
-      <div class="results-grid reveal">
-        {data.results.map(r => (
-          <div class="result-card">
-            <div class="num">{r.num}</div>
-            <div class="label">{r.label}</div>
-          </div>
-        ))}
-      </div>
-    )}
   </div>
 
   <!-- CTA -->
