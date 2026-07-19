@@ -1,11 +1,16 @@
 ---
-title: "FDDPT-31M Crawler Under-ceiling Platform - 31m Pick & Carry Aerial Lift"
-description: "FDDPT-31M crawler under-ceiling platform: 31m height, 12m×8m extended platform, 0.5T pick & carry load. For mega-venue and airport terminal ceiling work."
-category: "Aerial Work Platforms"
+title: "ARC-F31 Crawler Under-ceiling Platform - 31m Pick & Carry Aerial Lift"
+description: "ARC-F31 crawler under-ceiling platform: 31m height, 12m×8m extended platform, 0.5T pick & carry load. For mega-venue and airport terminal ceiling work."
+category: "Crawler Ceiling Platforms"
 price:
   min: 200000
   max: 260000
   currency: "USD"
+images:
+  - "/images/products/arc-f31-crawler-ceiling-platform-1.jpg"
+  - "/images/products/arc-f31-crawler-ceiling-platform-2.jpg"
+  - "/images/products/arc-f31-crawler-ceiling-platform-3.jpg"
+  - "/images/products/arc-f31-crawler-ceiling-platform-4.jpg"
 moq: 1
 specifications:
   "Max Working Height": "31m"
@@ -44,50 +49,50 @@ features:
   - "25T crawler chassis with 360° steering and 30% gradeability for demanding sites"
   - "5T integrated crane capacity for heavy ceiling component installation"
 faq:
-  - question: "What is the maximum working height of the FDDPT-31M?"
-    answer: "The FDDPT-31M reaches a maximum platform height of 31 meters with a 12m×8m extended platform. This places it in the range needed for the world's largest airport terminals, Olympic-class stadiums, and mega-convention centers where ceiling heights exceed 28m. At full extension, workers have comfortable reach for ceiling installations at 33-34m."
+  - question: "What is the maximum working height of the ARC-F31?"
+    answer: "The ARC-F31 reaches a maximum platform height of 31 meters with a 12m×8m extended platform. This places it in the range needed for the world's largest airport terminals, Olympic-class stadiums, and mega-convention centers where ceiling heights exceed 28m. At full extension, workers have comfortable reach for ceiling installations at 33-34m."
   - question: "Can this platform operate while carrying a load?"
-    answer: "Yes. The FDDPT-31M maintains full pick & carry capability — driving at up to 1.0 km/h while the platform is fully elevated to 31m and loaded with up to 0.5 tonnes of workers and materials. This continuous workflow eliminates the 30-45 minute repositioning delays that outrigger-based lifts require at every new work position."
+    answer: "Yes. The ARC-F31 maintains full pick & carry capability — driving at up to 1.0 km/h while the platform is fully elevated to 31m and loaded with up to 0.5 tonnes of workers and materials. This continuous workflow eliminates the 30-45 minute repositioning delays that outrigger-based lifts require at every new work position."
   - question: "What power systems are available?"
-    answer: "The FDDPT-31M features a dual power system: a 150hp diesel engine for outdoor construction and twin electric motors for indoor zero-emission environments. The system switches seamlessly between modes, enabling the same machine to work on an open construction site during structural phases and perform interior ceiling finishing in enclosed spaces."
+    answer: "The ARC-F31 features a dual power system: a 150hp diesel engine for outdoor construction and twin electric motors for indoor zero-emission environments. The system switches seamlessly between modes, enabling the same machine to work on an open construction site during structural phases and perform interior ceiling finishing in enclosed spaces."
   - question: "What certifications does this platform have?"
-    answer: "The FDDPT-31M is undergoing CE certification and complies with ISO 16368 (Mobile Elevating Work Platforms) safety standards. All standard safety systems are included: load sensing, oil pipe explosion prevention, anti-top collision, violation operation alarms, emergency stop, and safety harness anchor points."
+    answer: "The ARC-F31 is undergoing CE certification and complies with ISO 16368 (Mobile Elevating Work Platforms) safety standards. All standard safety systems are included: load sensing, oil pipe explosion prevention, anti-top collision, violation operation alarms, emergency stop, and safety harness anchor points."
   - question: "What is the delivery time and shipping method?"
-    answer: "Production lead time is 30-45 days. The FDDPT-31M ships via 40ft flat rack container or RoRo vessel. We support FOB, CIF, and DDP trade terms with complete export documentation and can coordinate door-to-door logistics to project sites worldwide."
+    answer: "Production lead time is 30-45 days. The ARC-F31 ships via 40ft flat rack container or RoRo vessel. We support FOB, CIF, and DDP trade terms with complete export documentation and can coordinate door-to-door logistics to project sites worldwide."
 relatedProducts:
-  - "fddpt-20m-crawler-ceiling-platform"
-  - "fddpt-25m-crawler-ceiling-platform"
-  - "fddpt-35m-crawler-ceiling-platform"
+  - "arc-f20-crawler-ceiling-platform"
+  - "arc-f25-crawler-ceiling-platform"
+  - "arc-f35-crawler-ceiling-platform"
 date: 2026-07-05
 draft: false
 ---
 
 ## Product Overview
 
-The **FDDPT-31M** is the high-reach model in our crawler under-ceiling platform range, designed for the most demanding ceiling projects in the world's largest venues. At 31 meters of working height, it reaches ceilings that place most conventional aerial equipment beyond their limits — Olympic-class stadiums, international airport mega-terminals, and convention centers with cathedral-height atrium spaces.
+The **ARC-F31** is the high-reach model in our crawler under-ceiling platform range, designed for the most demanding ceiling projects in the world's largest venues. At 31 meters of working height, it reaches ceilings that place most conventional aerial equipment beyond their limits — Olympic-class stadiums, international airport mega-terminals, and convention centers with cathedral-height atrium spaces.
 
-The **pick & carry** advantage becomes even more valuable at these heights. Consider a 31m stadium ceiling where scaffolding would require a 10-day erection sequence and spider lifts cannot reach: the FDDPT-31M deploys in under 20 minutes and begins continuous ceiling work immediately. Crews move along the ceiling installation line without interruption, maintaining the same productivity at 31m as they would at 20m — a capability no other access method at this height range can match.
+The **pick & carry** advantage becomes even more valuable at these heights. Consider a 31m stadium ceiling where scaffolding would require a 10-day erection sequence and spider lifts cannot reach: the ARC-F31 deploys in under 20 minutes and begins continuous ceiling work immediately. Crews move along the ceiling installation line without interruption, maintaining the same productivity at 31m as they would at 20m — a capability no other access method at this height range can match.
 
 The **12m×8m extended platform** at 31m elevation creates a 96-square-meter working area where 6-10 workers install ceiling panels, mount massive lighting arrays, route HVAC ductwork, and position fire suppression systems simultaneously. The 5T integrated crane lifts heavy components directly to the platform, eliminating the need for separate tower crane coordination at ceiling level.
 
-At 25 tonnes distributed across heavy-duty crawler tracks, the FDDPT-31M exerts ground pressure compatible with engineered commercial flooring while maintaining the stability required for precision work at maximum height. The dual power system ensures this capability extends into enclosed, occupied facilities where zero emissions are mandatory.
+At 25 tonnes distributed across heavy-duty crawler tracks, the ARC-F31 exerts ground pressure compatible with engineered commercial flooring while maintaining the stability required for precision work at maximum height. The dual power system ensures this capability extends into enclosed, occupied facilities where zero emissions are mandatory.
 
 ## Applications
 
 ### International Airport Mega-Terminals
-The world's newest airport terminals — serving 50+ million passengers annually — feature soaring ceiling designs reaching 28-35m. These architectural statements require specialized equipment for initial construction and ongoing maintenance. The FDDPT-31M's 31m reach covers the primary ceiling zone of these terminals, while its electric drive mode enables overnight maintenance without disrupting daytime passenger operations.
+The world's newest airport terminals — serving 50+ million passengers annually — feature soaring ceiling designs reaching 28-35m. These architectural statements require specialized equipment for initial construction and ongoing maintenance. The ARC-F31's 31m reach covers the primary ceiling zone of these terminals, while its electric drive mode enables overnight maintenance without disrupting daytime passenger operations.
 
 ### Olympic and World Cup Stadiums
-Mega-event stadiums with 60,000+ seats and retractable roof systems have ceiling heights exceeding 30m. The FDDPT-31M handles the full scope of ceiling work: installing and maintaining LED display systems, broadcast lighting arrays, retractable roof mechanisms, and acoustic treatment panels. Its pick & carry workflow is critical on these projects where compressed construction timelines demand maximum productivity.
+Mega-event stadiums with 60,000+ seats and retractable roof systems have ceiling heights exceeding 30m. The ARC-F31 handles the full scope of ceiling work: installing and maintaining LED display systems, broadcast lighting arrays, retractable roof mechanisms, and acoustic treatment panels. Its pick & carry workflow is critical on these projects where compressed construction timelines demand maximum productivity.
 
 ### Mega Convention Centers
-New-generation convention centers targeting international exhibitions feature column-free halls with 30m+ clear heights to accommodate the largest trade show displays and temporary structures. The FDDPT-31M provides the rigging and ceiling installation capability these venues require, with the mobility to reconfigure between events.
+New-generation convention centers targeting international exhibitions feature column-free halls with 30m+ clear heights to accommodate the largest trade show displays and temporary structures. The ARC-F31 provides the rigging and ceiling installation capability these venues require, with the mobility to reconfigure between events.
 
 ### Aircraft Maintenance Hangars
-Wide-body aircraft maintenance hangars require ceiling heights of 25-35m to accommodate tall-tail aircraft (A380, B747-8). The FDDPT-31M provides access to overhead crane systems, fire suppression piping, lighting, and ventilation at these extreme heights while the crawler chassis operates on hangar floor surfaces designed for aircraft weight.
+Wide-body aircraft maintenance hangars require ceiling heights of 25-35m to accommodate tall-tail aircraft (A380, B747-8). The ARC-F31 provides access to overhead crane systems, fire suppression piping, lighting, and ventilation at these extreme heights while the crawler chassis operates on hangar floor surfaces designed for aircraft weight.
 
 ### Cathedral and Heritage Building Restoration
-Historic religious buildings and heritage structures often feature vaulted ceilings at 25-35m. The FDDPT-31M's low ground pressure protects centuries-old floor structures while providing stable access for restoration work — plaster repair, fresco conservation, lighting installation, and structural inspection.
+Historic religious buildings and heritage structures often feature vaulted ceilings at 25-35m. The ARC-F31's low ground pressure protects centuries-old floor structures while providing stable access for restoration work — plaster repair, fresco conservation, lighting installation, and structural inspection.
 
 ## Technical Highlights
 
@@ -120,7 +125,7 @@ Reaching 31m while maintaining pick & carry capability requires robust structura
 
 ## Packaging & Shipping
 
-Export preparation for the FDDPT-31M includes:
+Export preparation for the ARC-F31 includes:
 - Comprehensive anti-corrosion treatment on all exposed steel surfaces
 - Hydraulic system sealed with desiccant packs and protective port caps
 - Electrical system wrapped in moisture-proof packaging
@@ -140,4 +145,4 @@ Export preparation for the FDDPT-31M includes:
 
 *Planning a mega-venue ceiling project? [Contact us](/contact/) for a detailed site assessment and project-specific deployment plan.*
 
-*Compare with other models: [FDDPT-20M](/products/fddpt-20m-crawler-ceiling-platform/) | [FDDPT-25M](/products/fddpt-25m-crawler-ceiling-platform/) | [FDDPT-35M Heavy-Duty](/products/fddpt-35m-crawler-ceiling-platform/)*
+*Compare with other models: [ARC-F20](/products/arc-f20-crawler-ceiling-platform/) | [ARC-F25](/products/arc-f25-crawler-ceiling-platform/) | [ARC-F35 Heavy-Duty](/products/arc-f35-crawler-ceiling-platform/)*

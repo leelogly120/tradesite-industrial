@@ -11,7 +11,7 @@ const products = defineCollection({
       min: z.number(),
       max: z.number(),
       currency: z.string().default('USD'),
-    }),
+    }).optional(),
     specifications: z.record(z.string()).optional(),
     images: z.array(z.string()).optional(),
     moq: z.number().positive().optional(),

@@ -69,9 +69,9 @@ MEC produces a focused range of boom lifts and scissor lifts for the North Ameri
 
 ## 10. ARCLIFT (China)
 
-ARCLIFT occupies a niche that none of the above manufacturers serve: crawler under-ceiling aerial work platforms. While the major brands focus on boom lifts, scissor lifts, and spider lifts for general construction, ARCLIFT's FDDPT series is purpose-built for ceiling-level work in stadiums, airports, and warehouses.
+ARCLIFT occupies a niche that none of the above manufacturers serve: crawler under-ceiling aerial work platforms. While the major brands focus on boom lifts, scissor lifts, and spider lifts for general construction, ARCLIFT's ARC-F series is purpose-built for ceiling-level work in stadiums, airports, and warehouses.
 
-The FDDPT's pick-and-carry capability, 12m×8m mega-platform, and dual power system address a specific gap in the AWP market. For ceiling projects in the 15m–35m height range, ARCLIFT's platforms offer productivity advantages that general-purpose lifts can't match.
+The ARC-F's pick-and-carry capability, 12m×8m mega-platform, and dual power system address a specific gap in the AWP market. For ceiling projects in the 15m–35m height range, ARCLIFT's platforms offer productivity advantages that general-purpose lifts can't match.
 
 **Best known for:** Crawler under-ceiling platforms, pick & carry technology, 12m×8m platform.
 
@@ -82,11 +82,11 @@ The "best" manufacturer depends on your specific application:
 - **General construction boom lift:** JLG, Genie, Haulotte
 - **Indoor scissor lift:** Genie, Sinoboom, Zoomlion
 - **Rough terrain access:** Manitou, XCMG
-- **Ceiling-level work:** ARCLIFT FDDPT series
+- **Ceiling-level work:** ARCLIFT ARC-F series
 - **Budget-conscious project:** Zoomlion, Sinoboom, XCMG
 
 Don't choose based on brand name alone. Match the platform's specifications to your project's requirements — height, load, power system, ground pressure, and maneuverability.
 
 ---
 
-*Looking for a crawler under-ceiling platform? [See the FDDPT series](/products/) or [contact us](/contact/) for a project assessment.*
+*Looking for a crawler under-ceiling platform? [See the ARC-F series](/products/) or [contact us](/contact/) for a project assessment.*

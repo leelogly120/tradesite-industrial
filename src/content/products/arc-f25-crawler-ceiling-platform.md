@@ -1,11 +1,16 @@
 ---
-title: "FDDPT-25M Crawler Under-ceiling Platform - 25m Pick & Carry Aerial Lift"
-description: "FDDPT-25M crawler under-ceiling platform: 25m height, 12m×8m extended platform, 0.5T pick & carry load. Dual power for stadium and airport ceiling projects."
-category: "Aerial Work Platforms"
+title: "ARC-F25 Crawler Under-ceiling Platform - 25m Pick & Carry Aerial Lift"
+description: "ARC-F25 crawler under-ceiling platform: 25m height, 12m×8m extended platform, 0.5T pick & carry load. Dual power for stadium and airport ceiling projects."
+category: "Crawler Ceiling Platforms"
 price:
   min: 160000
   max: 210000
   currency: "USD"
+images:
+  - "/images/products/arc-f25-crawler-ceiling-platform-1.jpg"
+  - "/images/products/arc-f25-crawler-ceiling-platform-2.jpg"
+  - "/images/products/arc-f25-crawler-ceiling-platform-3.jpg"
+  - "/images/products/arc-f25-crawler-ceiling-platform-4.jpg"
 moq: 1
 specifications:
   "Max Working Height": "25m"
@@ -44,29 +49,29 @@ features:
   - "Heavy-duty crawler chassis: 22T, 360° steering, 30% gradeability"
   - "Integrated 5T crane for on-site material handling"
 faq:
-  - question: "What is the maximum working height of the FDDPT-25M?"
-    answer: "The FDDPT-25M reaches a maximum platform height of 25 meters with an extended platform area of 12m×8m. This is our most popular model for standard sports stadiums and large airport terminals where ceiling heights fall in the 22-28m range, providing 2-3m clearance above the platform for comfortable overhead work."
+  - question: "What is the maximum working height of the ARC-F25?"
+    answer: "The ARC-F25 reaches a maximum platform height of 25 meters with an extended platform area of 12m×8m. This is our most popular model for standard sports stadiums and large airport terminals where ceiling heights fall in the 22-28m range, providing 2-3m clearance above the platform for comfortable overhead work."
   - question: "Can this platform operate while carrying a load?"
-    answer: "Yes. The FDDPT-25M delivers full-stroke pick & carry capability at up to 1.0 km/h while the platform is fully elevated and loaded with up to 0.5 tonnes. This means crews move continuously along a ceiling installation line without the 30-45 minute repositioning delays that spider lifts require at every new work position."
+    answer: "Yes. The ARC-F25 delivers full-stroke pick & carry capability at up to 1.0 km/h while the platform is fully elevated and loaded with up to 0.5 tonnes. This means crews move continuously along a ceiling installation line without the 30-45 minute repositioning delays that spider lifts require at every new work position."
   - question: "What power systems are available?"
-    answer: "The FDDPT-25M features dual power: a 150hp diesel engine for outdoor construction phases and twin electric motors for indoor environments requiring zero emissions. Switching between modes takes seconds, so the same machine can operate on an outdoor construction site during the day and perform interior ceiling finishing at night."
+    answer: "The ARC-F25 features dual power: a 150hp diesel engine for outdoor construction phases and twin electric motors for indoor environments requiring zero emissions. Switching between modes takes seconds, so the same machine can operate on an outdoor construction site during the day and perform interior ceiling finishing at night."
   - question: "What certifications does this platform have?"
-    answer: "The FDDPT-25M is in the CE certification process and is designed to comply with ISO 16368 (Mobile Elevating Work Platforms) safety standards. Standard safety equipment includes load sensing, oil pipe explosion prevention, anti-top collision sensors, violation operation alarms, emergency stop, and safety harness anchor points."
+    answer: "The ARC-F25 is in the CE certification process and is designed to comply with ISO 16368 (Mobile Elevating Work Platforms) safety standards. Standard safety equipment includes load sensing, oil pipe explosion prevention, anti-top collision sensors, violation operation alarms, emergency stop, and safety harness anchor points."
   - question: "What is the delivery time and shipping method?"
     answer: "Production lead time is 30-45 days from order confirmation. Shipping is via 40ft flat rack container or Roll-on/Roll-off vessel. We offer FOB Qingdao, CIF, and DDP trade terms with full export documentation support."
 relatedProducts:
-  - "fddpt-20m-crawler-ceiling-platform"
-  - "fddpt-31m-crawler-ceiling-platform"
-  - "fddpt-35m-crawler-ceiling-platform"
+  - "arc-f20-crawler-ceiling-platform"
+  - "arc-f31-crawler-ceiling-platform"
+  - "arc-f35-crawler-ceiling-platform"
 date: 2026-07-05
 draft: false
 ---
 
 ## Product Overview
 
-The **FDDPT-25M** is our best-selling crawler under-ceiling aerial work platform, hitting the sweet spot for the majority of large-venue ceiling projects worldwide. With a 25-meter working height, it covers the ceiling height range of most modern sports stadiums, airport terminals, and convention centers — the projects where traditional scaffolding would take weeks to erect and spider lifts lose hours to repeated outrigger repositioning.
+The **ARC-F25** is our best-selling crawler under-ceiling aerial work platform, hitting the sweet spot for the majority of large-venue ceiling projects worldwide. With a 25-meter working height, it covers the ceiling height range of most modern sports stadiums, airport terminals, and convention centers — the projects where traditional scaffolding would take weeks to erect and spider lifts lose hours to repeated outrigger repositioning.
 
-The defining advantage is **pick & carry**: the FDDPT-25M drives at full platform elevation while carrying workers and materials, maintaining continuous workflow along the ceiling installation line. Where a spider lift crew completes 8-10 positions per shift (each requiring 30-45 minutes of outrigger setup and teardown), an FDDPT-25M crew covers the same linear distance in a single uninterrupted pass, delivering **30-40% productivity gains** on typical ceiling installation projects.
+The defining advantage is **pick & carry**: the ARC-F25 drives at full platform elevation while carrying workers and materials, maintaining continuous workflow along the ceiling installation line. Where a spider lift crew completes 8-10 positions per shift (each requiring 30-45 minutes of outrigger setup and teardown), an ARC-F25 crew covers the same linear distance in a single uninterrupted pass, delivering **30-40% productivity gains** on typical ceiling installation projects.
 
 The **12m×8m extended platform** provides 96 square meters of working area — roughly 20 times the platform area of a standard spider lift basket. This means 6-10 workers operate simultaneously with tools, materials, and small equipment spread across the deck, rather than making repeated trips to a ground-level staging area. For projects measured in thousands of square meters of ceiling, this platform size translates directly into weeks of schedule compression.
 
@@ -75,24 +80,24 @@ At 22 tonnes distributed across crawler tracks, the ground pressure footprint re
 ## Applications
 
 ### Large Airport Terminals
-International airport terminals typically feature ceiling heights of 22-30m over vast open floor areas. The FDDPT-25M's 25m reach covers the majority of these installations, while its electric drive mode produces zero emissions for work in occupied terminals during overnight maintenance windows. The pick & carry workflow allows continuous ceiling work along departure halls without disrupting the terminal layout with scaffolding barriers.
+International airport terminals typically feature ceiling heights of 22-30m over vast open floor areas. The ARC-F25's 25m reach covers the majority of these installations, while its electric drive mode produces zero emissions for work in occupied terminals during overnight maintenance windows. The pick & carry workflow allows continuous ceiling work along departure halls without disrupting the terminal layout with scaffolding barriers.
 
 ### Sports Stadiums (30,000-60,000 seats)
-Standard-sized sports stadiums with bowl-shaped ceilings in the 22-28m range are the FDDPT-25M's primary target market. Ceiling work includes installing and maintaining lighting rigs, PA systems, video boards, HVAC ductwork, and fire suppression systems. The 5T integrated crane handles heavy component lifting directly from the elevated platform.
+Standard-sized sports stadiums with bowl-shaped ceilings in the 22-28m range are the ARC-F25's primary target market. Ceiling work includes installing and maintaining lighting rigs, PA systems, video boards, HVAC ductwork, and fire suppression systems. The 5T integrated crane handles heavy component lifting directly from the elevated platform.
 
 ### Convention and Exhibition Centers
-Large exhibition halls with 20-25m clear heights require frequent rigging changes between events. The FDDPT-25M's rapid deployment (15-20 minutes from arrival to working height) and continuous movement capability make it ideal for tight event turnaround schedules where scaffolding is impractical.
+Large exhibition halls with 20-25m clear heights require frequent rigging changes between events. The ARC-F25's rapid deployment (15-20 minutes from arrival to working height) and continuous movement capability make it ideal for tight event turnaround schedules where scaffolding is impractical.
 
 ### Manufacturing Facilities
-Heavy manufacturing plants with high-bay production areas (20-25m) need periodic ceiling maintenance — crane rail inspection, skylight replacement, ventilation system servicing. The FDDPT-25M navigates between production equipment while maintaining elevated access for maintenance crews.
+Heavy manufacturing plants with high-bay production areas (20-25m) need periodic ceiling maintenance — crane rail inspection, skylight replacement, ventilation system servicing. The ARC-F25 navigates between production equipment while maintaining elevated access for maintenance crews.
 
 ### Power Plant Turbine Halls
-Turbine halls in thermal and nuclear power plants feature ceilings at 20-30m with complex pipe and cable routing. The FDDPT-25M's crawler chassis handles the uneven floor surfaces common in industrial environments, and its remote control operation keeps operators clear of overhead hazards during inspection work.
+Turbine halls in thermal and nuclear power plants feature ceilings at 20-30m with complex pipe and cable routing. The ARC-F25's crawler chassis handles the uneven floor surfaces common in industrial environments, and its remote control operation keeps operators clear of overhead hazards during inspection work.
 
 ## Technical Highlights
 
 ### Dual Power System
-The FDDPT-25M's hybrid powertrain delivers operational flexibility that single-power-source machines cannot match:
+The ARC-F25's hybrid powertrain delivers operational flexibility that single-power-source machines cannot match:
 - **Diesel mode** — 150hp engine provides full power for outdoor construction sites, rough terrain travel, and heavy lifting operations
 - **Electric mode** — twin electric motors deliver zero-emission operation for indoor environments, noise-sensitive locations, and occupied facilities
 - **Seamless switching** — operators transition between modes with a single button press, no shutdown required
@@ -114,7 +119,7 @@ Reliability in demanding construction environments requires proven components:
 
 ## Packaging & Shipping
 
-Every FDDPT-25M undergoes thorough export preparation:
+Every ARC-F25 undergoes thorough export preparation:
 - Full anti-corrosion coating on exposed steel surfaces
 - Hydraulic system protection with desiccant packs and port caps
 - Electrical system moisture-proof wrapping
@@ -134,4 +139,4 @@ Every FDDPT-25M undergoes thorough export preparation:
 
 *Ready to calculate your project savings? [Contact us](/contact/) for a free site assessment and ROI analysis.*
 
-*Need a different height range? See our [FDDPT-20M](/products/fddpt-20m-crawler-ceiling-platform/) for lower ceilings, [FDDPT-31M](/products/fddpt-31m-crawler-ceiling-platform/) for higher reach, or the [FDDPT-35M flagship](/products/fddpt-35m-crawler-ceiling-platform/) for heavy-duty applications.*
+*Need a different height range? See our [ARC-F20](/products/arc-f20-crawler-ceiling-platform/) for lower ceilings, [ARC-F31](/products/arc-f31-crawler-ceiling-platform/) for higher reach, or the [ARC-F35 flagship](/products/arc-f35-crawler-ceiling-platform/) for heavy-duty applications.*

@@ -7,7 +7,7 @@ interface Props {
 const { productName = '', productSlug = '' } = Astro.props;
 const formAction = import.meta.env.PUBLIC_FORM_ENDPOINT || 'https://formspree.io/f/mnjkykge';
 
-const modelOptions = ['Not sure', 'FDDPT-20M', 'FDDPT-25M', 'FDDPT-31M', 'FDDPT-35M'];
+const modelOptions = ['Not sure', 'ARC-C17', 'ARC-C21', 'ARC-C25', 'ARC-C28', 'ARC-C32', 'ARC-T12', 'ARC-T18', 'ARC-T25', 'ARC-T25HQ', 'ARC-T31', 'ARC-F20', 'ARC-F25', 'ARC-F31', 'ARC-F35', 'ARC-RF8'];
 const applicationOptions = ['Select...', 'Stadium ceiling', 'Airport terminal', 'Warehouse / Steel structure', 'Other'];
 const countryOptions = [
   'Select...', 'United States', 'Canada', 'United Kingdom', 'Germany', 'France',

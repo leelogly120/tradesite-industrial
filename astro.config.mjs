@@ -5,6 +5,12 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://www.arclifteq.com',
+  redirects: {
+    '/products/fddpt-20m-crawler-ceiling-platform/': '/products/arc-f20-crawler-ceiling-platform/',
+    '/products/fddpt-25m-crawler-ceiling-platform/': '/products/arc-f25-crawler-ceiling-platform/',
+    '/products/fddpt-31m-crawler-ceiling-platform/': '/products/arc-f31-crawler-ceiling-platform/',
+    '/products/fddpt-35m-crawler-ceiling-platform/': '/products/arc-f35-crawler-ceiling-platform/',
+  },
   integrations: [
     sitemap({
       i18n: {

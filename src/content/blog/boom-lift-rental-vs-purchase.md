@@ -20,7 +20,7 @@ Aerial work platform rental rates vary by type, size, and region. Here are typic
 - **Boom lift (40–60ft):** $2,500–$4,500/month
 - **Scissor lift (20–40ft):** $800–$2,000/month
 - **Spider lift (60–80ft):** $3,500–$6,000/month
-- **Crawler under-ceiling (FDDPT):** Contact for quote
+- **Crawler under-ceiling (ARC-F):** Contact for quote
 
 But the monthly rate is just the starting point. Add:
 - **Delivery and pickup:** $500–$2,000 per move
@@ -36,10 +36,10 @@ A spider lift that costs $4,000/month to rent actually costs $5,500–$6,500/mon
 The purchase price is the obvious cost. But ownership brings additional expenses:
 
 **Capital cost:**
-- FDDPT-20M: $130K–$180K
-- FDDPT-25M: $150K–$200K
-- FDDPT-31M: $180K–$250K
-- FDDPT-35M: $250K–$350K
+- ARC-F20: $130K–$180K
+- ARC-F25: $150K–$200K
+- ARC-F31: $180K–$250K
+- ARC-F35: $250K–$350K
 
 **Annual operating costs:**
 - Maintenance and parts: 3–5% of purchase price
@@ -86,17 +86,17 @@ Buying makes sense when:
 - You plan to operate the machine for 5+ years
 - You have maintenance capabilities in-house
 
-## The FDDPT Calculation
+## The ARC-F Calculation
 
-For the FDDPT series, the ownership equation is particularly favorable because:
+For the ARC-F series, the ownership equation is particularly favorable because:
 
-1. **No comparable rental alternative.** You can't rent a crawler under-ceiling platform from most rental companies. The FDDPT is a specialty machine — buying is often the only option.
+1. **No comparable rental alternative.** You can't rent a crawler under-ceiling platform from most rental companies. The ARC-F is a specialty machine — buying is often the only option.
 
 2. **High utilization on ceiling projects.** If you're doing stadium, airport, or warehouse ceiling work, the machine runs 8+ hours/day for weeks at a time. That's exactly the usage pattern where ownership beats rental.
 
 3. **Long service life.** Crawler under-ceiling platforms are built for heavy-duty industrial use. With proper maintenance, 15–20 years of service life is realistic.
 
-4. **Resale demand.** The FDDPT series serves a growing market. Used units hold value well.
+4. **Resale demand.** The ARC-F series serves a growing market. Used units hold value well.
 
 ## Decision Framework
 
@@ -113,7 +113,7 @@ For the FDDPT series, the ownership equation is particularly favorable because:
 **If purchase total < rental total:** Buy.
 **If rental total < purchase total:** Rent.
 
-For most contractors doing regular ceiling work with the FDDPT, the answer is clear: buy.
+For most contractors doing regular ceiling work with the ARC-F, the answer is clear: buy.
 
 ---
 

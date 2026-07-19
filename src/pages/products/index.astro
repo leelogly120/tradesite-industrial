@@ -2,60 +2,163 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
-const allProducts = (await getCollection('products'))
-  .filter(p => !p.data.draft)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const allProducts = (await getCollection('products')).filter(p => !p.data.draft);
 
-const craneProducts = allProducts.filter(p => p.data.category === 'Aerial Work Platforms');
+const CATEGORIES = [
+  {
+    id: 'crawler-roll-forming-lifts',
+    name: 'Crawler Roll Forming Lifts',
+    tagline: 'Self-propelled crawler platforms that lift a complete roll forming line to 17–32m. Full remote control, diesel-electric dual power, built for rough job sites.',
+  },
+  {
+    id: 'truck-mounted-roll-forming-lifts',
+    name: 'Truck-Mounted Roll Forming Lifts',
+    tagline: 'Highway-mobile forming lifts from 12m to 31m — drive between sites with the roll former on board. Includes the 40HQ container-shippable ARC-T25HQ.',
+  },
+  {
+    id: 'crawler-ceiling-platforms',
+    name: 'Crawler Ceiling Platforms',
+    tagline: 'ARC-F pick & carry under-ceiling work platforms, 20–35m. Oversized extending decks for airport, stadium and warehouse ceiling crews.',
+  },
+  {
+    id: 'roll-forming-machines',
+    name: 'Roll Forming Machines',
+    tagline: 'Aerial-ready standing seam panel lines engineered to run on ARC lift platforms, controlled from the same radio remote.',
+  },
+];
+
+function heightOf(p: any): number {
+  const specs = p.data.specifications || {};
+  const h = specs['Lift Height (to shear exit)'] || specs['Max Working Height'] || '';
+  const m = String(h).match(/(\d+(?:\.\d+)?)/);
+  return m ? parseFloat(m[1]) : 0;
+}
+
+function cardSpecs(p: any) {
+  const specs = p.data.specifications || {};
+  return {
+    height: specs['Lift Height (to shear exit)'] || specs['Max Working Height'] || '—',
+    load: specs['Lifting Capacity'] || specs['Safe Working Load'] || specs['Sheet Thickness'] || '—',
+    weight: specs['Machine Weight'] || specs['Module Weight'] || specs['Panel Output Length'] || '—',
+    extra: specs['Platform Size'] || specs['Platform Extension'] || specs['Platform Size (L×W)'] || specs['Compatible Profiles'] || '—',
+  };
+}
+
+function modelOf(p: any): string {
+  return p.data.title.split(' ')[0];
+}
+
+const grouped = CATEGORIES.map(cat => ({
+  ...cat,
+  items: allProducts
+    .filter(p => p.data.category === cat.name)
+    .sort((a, b) => heightOf(a) - heightOf(b)),
+}));
 ---
 
 <BaseLayout
-  title="Products — Crawler Under-Ceiling Platforms"
-  description="FDDPT series crawler under-ceiling aerial work platforms: 20m, 25m, 31m, 35m models. Pick & carry, dual power, remote control."
+  title="Products — Roll Forming Lifts & Aerial Platforms"
+  description="ARC aerial roll forming lifts: crawler 17-32m, truck-mounted 12-31m, 40HQ container option, crawler ceiling platforms 20-35m, and aerial-ready roll forming machines."
   transparentNav={false}
 >
 
   <!-- HERO BANNER -->
   <section class="hero-banner">
     <div class="overline">Products</div>
-    <h1>FDDPT SERIES</h1>
-    <p>Pick & carry aerial platforms engineered for maximum productivity on ceiling projects. From 20m compact to 35m flagship.</p>
+    <h1>ARC EQUIPMENT RANGE</h1>
+    <p>Four product lines, one mission: form and place roofing panels at height with one operator and zero cranes.</p>
   </section>
 
-  <!-- PRODUCTS LIST -->
-  <section class="sec">
-    <div class="products-list">
-      {craneProducts.sort((a, b) => {
-        const aH = parseInt(a.data.specifications?.['Max Working Height'] || '0');
-        const bH = parseInt(b.data.specifications?.['Max Working Height'] || '0');
-        return aH - bH;
-      }).map(p => {
-        const specs = p.data.specifications || {};
-        const isFlagship = p.data.title.includes('35M');
-        return (
-          <a href={`/products/${p.id}/`} class="p-card-list reveal">
-            <div class="p-card-list__img">FDDPT-{specs['Max Working Height'] || ''}</div>
-            <div class="p-card-list__body">
-              <div class="p-card-list__tag">{isFlagship ? 'Flagship' : 'FDDPT'}</div>
-              <div class="p-card-list__name">{p.data.title.split(' ')[0]}</div>
-              <div class="p-card-list__specs">
-                <span class="p-card-list__spec"><b>{specs['Max Working Height'] || '—'}</b> Reach</span>
-                <span class="p-card-list__spec"><b>{specs['Safe Working Load'] || '—'}</b> Load</span>
-                <span class="p-card-list__spec"><b>{specs['Machine Weight'] || '—'}</b> Weight</span>
-                <span class="p-card-list__spec"><b>{specs['Platform Extension'] || specs['Platform Size (L×W)'] || '—'}</b> Platform</span>
+  <!-- CATEGORY NAV -->
+  <nav class="cat-nav" aria-label="Product categories">
+    {CATEGORIES.map(cat => (
+      <a href={`#${cat.id}`} class="cat-nav__link">{cat.name}</a>
+    ))}
+  </nav>
+
+  <!-- CATEGORY SECTIONS -->
+  {grouped.map(cat => (
+    <section class="sec" id={cat.id}>
+      <div class="sec__header reveal">
+        <div class="sec__overline">{cat.items.length} {cat.items.length === 1 ? 'Model' : 'Models'}</div>
+        <h2 class="sec__title">{cat.name.toUpperCase()}</h2>
+        <p class="sec__desc">{cat.tagline}</p>
+      </div>
+      <div class="products-list">
+        {cat.items.map(p => {
+          const s = cardSpecs(p);
+          const model = modelOf(p);
+          return (
+            <a href={`/products/${p.id}/`} class="p-card-list reveal">
+              {p.data.images?.[0] ? (
+                <div class="p-card-list__img" style={`background-image:url('${p.data.images[0]}');background-size:cover;background-position:center;`}>
+                  <span class="sr-only">{model}</span>
+                </div>
+              ) : (
+                <div class="p-card-list__img">{model}</div>
+              )}
+              <div class="p-card-list__body">
+                <div class="p-card-list__tag">{cat.name}</div>
+                <div class="p-card-list__name">{model}</div>
+                <div class="p-card-list__specs">
+                  <span class="p-card-list__spec"><b>{s.height}</b> Height</span>
+                  <span class="p-card-list__spec"><b>{s.load}</b> Capacity</span>
+                  <span class="p-card-list__spec"><b>{s.weight}</b></span>
+                </div>
+                <span class="btn btn--primary">View Details →</span>
               </div>
-              <span class="btn btn--primary">View Details →</span>
-            </div>
-          </a>
-        );
-      })}
-    </div>
-  </section>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  ))}
 
   <!-- CTA -->
   <section class="cta">
     <h2>NEED HELP CHOOSING THE RIGHT MODEL?</h2>
-    <p>Our engineering team will recommend the best FDDPT for your project requirements.</p>
+    <p>Tell us your eave height, panel profile and site conditions — our engineers will spec the right ARC configuration.</p>
     <a href="/contact/" class="btn--white">Get a Free Consultation →</a>
   </section>
+
+  <style>
+    .cat-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      padding: 24px 20px;
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      z-index: 50;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .cat-nav__link {
+      padding: 8px 18px;
+      border-radius: 999px;
+      border: 1.5px solid #e2e8f0;
+      font-size: 14px;
+      font-weight: 600;
+      color: #475569;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .cat-nav__link:hover {
+      border-color: #2563eb;
+      color: #2563eb;
+      background: #eff6ff;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+    }
+    section[id] {
+      scroll-margin-top: 90px;
+    }
+  </style>
 </BaseLayout>

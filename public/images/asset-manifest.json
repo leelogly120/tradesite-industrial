@@ -1,0 +1,325 @@
+{
+  "products": {
+    "arc-c17-crawler-roll-forming-lift": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c17-crawler-roll-forming-lift-1.jpg",
+        "source": "E:\\举升机\\14-20米履带设备\\93083b4f60686154c827974a7703d57.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c17-crawler-roll-forming-lift-2.jpg",
+        "source": "E:\\举升机\\14-20米履带设备\\19223c73aac9d9e7a31a4c4d11c0968.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c17-crawler-roll-forming-lift-3.jpg",
+        "source": "E:\\举升机\\14-20米履带设备\\b8934f33d86e5b5935e66f0b1d4e95c7.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c17-crawler-roll-forming-lift-4.jpg",
+        "source": "E:\\举升机\\14-20米履带设备\\19223c73aac9d9e7a31a4c4d11c0968.jpg",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-c21-crawler-roll-forming-lift": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c21-crawler-roll-forming-lift-1.jpg",
+        "source": "E:\\举升机\\14-20米履带设备\\af8db1850681796e05c06bfe417fd3d.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c21-crawler-roll-forming-lift-2.jpg",
+        "source": "E:\\举升机\\14-20米履带设备\\935bfc756054e4bf86e7620b872a047.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c21-crawler-roll-forming-lift-3.jpg",
+        "source": "E:\\举升机\\14-20米履带设备\\c88c70bfa6e8b826e4d8d201ffd2a9e.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c21-crawler-roll-forming-lift-4.jpg",
+        "source": "E:\\举升机\\14-20米履带设备\\935bfc756054e4bf86e7620b872a047.jpg",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-c25-crawler-roll-forming-lift": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c25-crawler-roll-forming-lift-1.jpg",
+        "source": "E:\\举升机\\24米履带高空压瓦机\\mmexport1743395962828.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c25-crawler-roll-forming-lift-2.jpg",
+        "source": "E:\\举升机\\24米履带高空压瓦机\\mmexport1743395695666.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c25-crawler-roll-forming-lift-3.jpg",
+        "source": "E:\\举升机\\24米履带高空压瓦机\\mmexport1743396004394.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c25-crawler-roll-forming-lift-4.jpg",
+        "source": "E:\\举升机\\24米履带高空压瓦机\\mmexport1743395695666.jpg",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-c28-crawler-roll-forming-lift": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c28-crawler-roll-forming-lift-1.jpg",
+        "source": "E:\\举升机\\33米测试\\91d756d9c00f62fe9d1f0fdff17d71f.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c28-crawler-roll-forming-lift-2.jpg",
+        "source": "E:\\举升机\\33米测试\\ed5056da3a2b54a6d7bcdb43191ea6e.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c28-crawler-roll-forming-lift-3.jpg",
+        "source": "E:\\举升机\\33米测试\\3c207cbe9a16703a356c2443a53b1b2.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c28-crawler-roll-forming-lift-4.jpg",
+        "source": "E:\\举升机\\33米测试\\ed5056da3a2b54a6d7bcdb43191ea6e.jpg",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-c32-crawler-roll-forming-lift": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c32-crawler-roll-forming-lift-1.jpg",
+        "source": "E:\\举升机\\33米测试\\afbebc13c69aa4f8b3c896f60513a08.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c32-crawler-roll-forming-lift-2.jpg",
+        "source": "E:\\举升机\\33米测试\\f3125ac423626f9d481c72efa87619d.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c32-crawler-roll-forming-lift-3.jpg",
+        "source": "E:\\举升机\\33米测试\\b3c3b586e002bab3d940b8ab5a9c057.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-c32-crawler-roll-forming-lift-4.jpg",
+        "source": "E:\\举升机\\33米测试\\f3125ac423626f9d481c72efa87619d.jpg",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-t12-truck-mounted-roll-forming-lift": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t12-truck-mounted-roll-forming-lift-1.jpg",
+        "source": "E:\\举升机\\25米车载高空压瓦机\\25米车载1.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t12-truck-mounted-roll-forming-lift-2.jpg",
+        "source": "C:\\Users\\Administrator\\.accio\\accounts\\1755104219\\agents\\DID-F456DA-16F456DAU1778678-2283-924692\\project\\_asset_work\\video_frames\\truck25video\\25米车载6-frame-2.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t12-truck-mounted-roll-forming-lift-3.jpg",
+        "source": "C:\\Users\\Administrator\\.accio\\accounts\\1755104219\\agents\\DID-F456DA-16F456DAU1778678-2283-924692\\project\\_asset_work\\video_frames\\truck25video\\25米车载7-frame-4.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t12-truck-mounted-roll-forming-lift-4.jpg",
+        "source": "C:\\Users\\Administrator\\.accio\\accounts\\1755104219\\agents\\DID-F456DA-16F456DAU1778678-2283-924692\\project\\_asset_work\\video_frames\\truck25video\\25米车载6-frame-2.jpg",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-t18-truck-mounted-roll-forming-lift": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t18-truck-mounted-roll-forming-lift-1.jpg",
+        "source": "E:\\举升机\\25米车载高空压瓦机\\25米车载2.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t18-truck-mounted-roll-forming-lift-2.jpg",
+        "source": "C:\\Users\\Administrator\\.accio\\accounts\\1755104219\\agents\\DID-F456DA-16F456DAU1778678-2283-924692\\project\\_asset_work\\video_frames\\truck25video\\25米车载8-frame-1.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t18-truck-mounted-roll-forming-lift-3.jpg",
+        "source": "C:\\Users\\Administrator\\.accio\\accounts\\1755104219\\agents\\DID-F456DA-16F456DAU1778678-2283-924692\\project\\_asset_work\\video_frames\\truck25video\\25米车载8-frame-5.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t18-truck-mounted-roll-forming-lift-4.jpg",
+        "source": "C:\\Users\\Administrator\\.accio\\accounts\\1755104219\\agents\\DID-F456DA-16F456DAU1778678-2283-924692\\project\\_asset_work\\video_frames\\truck25video\\25米车载8-frame-1.jpg",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-t25-truck-mounted-roll-forming-lift": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t25-truck-mounted-roll-forming-lift-1.jpg",
+        "source": "E:\\举升机\\25米车载高空压瓦机\\25米车载5.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t25-truck-mounted-roll-forming-lift-2.jpg",
+        "source": "E:\\举升机\\25米车载高空压瓦机\\25米车载3.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t25-truck-mounted-roll-forming-lift-3.jpg",
+        "source": "E:\\举升机\\25米车载高空压瓦机\\25米车载4.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t25-truck-mounted-roll-forming-lift-4.jpg",
+        "source": "E:\\举升机\\25米车载高空压瓦机\\25米车载3.jpg",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-t31-truck-mounted-roll-forming-lift": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t31-truck-mounted-roll-forming-lift-1.jpg",
+        "source": "C:\\Users\\Administrator\\.accio\\accounts\\1755104219\\agents\\DID-F456DA-16F456DAU1778678-2283-924692\\project\\_asset_work\\video_frames\\truck31\\5fe209fefd85e77412a681541830edc3-frame-1.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t31-truck-mounted-roll-forming-lift-2.jpg",
+        "source": "C:\\Users\\Administrator\\.accio\\accounts\\1755104219\\agents\\DID-F456DA-16F456DAU1778678-2283-924692\\project\\_asset_work\\video_frames\\truck31\\af62f53b4f1bbed889fed48005403055-frame-6.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t31-truck-mounted-roll-forming-lift-3.jpg",
+        "source": "C:\\Users\\Administrator\\.accio\\accounts\\1755104219\\agents\\DID-F456DA-16F456DAU1778678-2283-924692\\project\\_asset_work\\video_frames\\truck31\\dfe99dc3f0f32eaa7c9a380b14321735-frame-5.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t31-truck-mounted-roll-forming-lift-4.jpg",
+        "source": "C:\\Users\\Administrator\\.accio\\accounts\\1755104219\\agents\\DID-F456DA-16F456DAU1778678-2283-924692\\project\\_asset_work\\video_frames\\truck31\\af62f53b4f1bbed889fed48005403055-frame-6.jpg",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-t25hq-truck-mounted-roll-forming-lift-40hq": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t25hq-truck-mounted-roll-forming-lift-40hq-1.jpg",
+        "source": "E:\\举升机\\25米车载高空压瓦机（40HQ集装箱款）等2项文件\\25米车载高空压瓦机（40HQ集装箱款）\\IMG_5133.jpeg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t25hq-truck-mounted-roll-forming-lift-40hq-2.jpg",
+        "source": "E:\\举升机\\25米车载高空压瓦机（40HQ集装箱款）等2项文件\\25米车载高空压瓦机（40HQ集装箱款）\\IMG_5134.jpeg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t25hq-truck-mounted-roll-forming-lift-40hq-3.jpg",
+        "source": "C:\\Users\\Administrator\\.accio\\accounts\\1755104219\\agents\\DID-F456DA-16F456DAU1778678-2283-924692\\project\\_asset_work\\heic\\IMG_5134-heic.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-t25hq-truck-mounted-roll-forming-lift-40hq-4.jpg",
+        "source": "E:\\举升机\\25米车载高空压瓦机（40HQ集装箱款）等2项文件\\25米车载高空压瓦机（40HQ集装箱款）\\IMG_5134.jpeg",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-f20-crawler-ceiling-platform": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f20-crawler-ceiling-platform-1.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0048.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f20-crawler-ceiling-platform-2.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0046.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f20-crawler-ceiling-platform-3.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0050.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f20-crawler-ceiling-platform-4.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0046.JPG",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-f25-crawler-ceiling-platform": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f25-crawler-ceiling-platform-1.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0059.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f25-crawler-ceiling-platform-2.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0062.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f25-crawler-ceiling-platform-3.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0065.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f25-crawler-ceiling-platform-4.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0062.JPG",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-f31-crawler-ceiling-platform": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f31-crawler-ceiling-platform-1.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0030.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f31-crawler-ceiling-platform-2.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0031.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f31-crawler-ceiling-platform-3.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0034.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f31-crawler-ceiling-platform-4.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0031.JPG",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-f35-crawler-ceiling-platform": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f35-crawler-ceiling-platform-1.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0008.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f35-crawler-ceiling-platform-2.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0009.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f35-crawler-ceiling-platform-3.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0042.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-f35-crawler-ceiling-platform-4.jpg",
+        "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0009.JPG",
+        "variant": "detail crop"
+      }
+    ],
+    "arc-rf8-roll-forming-machine": [
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-rf8-roll-forming-machine-1.jpg",
+        "source": "E:\\举升机\\压瓦机\\2023_12_03_10_07_IMG_6890.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-rf8-roll-forming-machine-2.jpg",
+        "source": "E:\\举升机\\压瓦机\\20241121_112827.jpg"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-rf8-roll-forming-machine-3.jpg",
+        "source": "E:\\举升机\\压瓦机\\2024_03_12_09_44_IMG_1994.JPG"
+      },
+      {
+        "output": "D:\\TradeSite\\site\\public\\images\\products\\arc-rf8-roll-forming-machine-4.jpg",
+        "source": "E:\\举升机\\压瓦机\\20241121_112827.jpg",
+        "variant": "detail crop"
+      }
+    ]
+  },
+  "hero": {
+    "hero-1.jpg": {
+      "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0048.JPG",
+      "theme": "Aerial-scale high-reach crawler ceiling platform in an active steel structure"
+    },
+    "hero-2.jpg": {
+      "source": "E:\\举升机\\24米履带高空压瓦机\\mmexport1743395867405.jpg",
+      "theme": "On-roof roll-forming operation and continuous metal panel production"
+    },
+    "hero-3.jpg": {
+      "source": "E:\\举升机\\25米车载高空压瓦机（40HQ集装箱款）等2项文件\\25米履带-15T-高空压瓦+反吊顶+竖板平台+5吨吊车-印度MBS\\4816 2.JPG",
+      "theme": "Port crane loading for export delivery capability"
+    }
+  },
+  "other": {
+    "logo.png": {
+      "source": "vector design",
+      "size": "400x120"
+    },
+    "og-home.jpg": {
+      "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0048.JPG",
+      "size": "1200x630"
+    },
+    "/images/products/fddpt-35m-crawler-ceiling-platform-1.jpg": {
+      "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0008.JPG",
+      "reference": "src/content/products/fddpt-35m-crawler-ceiling-platform.md"
+    },
+    "/images/products/fddpt-35m-crawler-ceiling-platform-2.jpg": {
+      "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0030.JPG",
+      "reference": "src/content/products/fddpt-35m-crawler-ceiling-platform.md"
+    },
+    "/images/products/fddpt-35m-crawler-ceiling-platform-3.jpg": {
+      "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0048.JPG",
+      "reference": "src/content/products/fddpt-35m-crawler-ceiling-platform.md"
+    }
+  }
+}

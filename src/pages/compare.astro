@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
 const craneProducts = (await getCollection('products'))
-  .filter(p => !p.data.draft && p.data.category === 'Aerial Work Platforms')
+  .filter(p => !p.data.draft && p.data.category === 'Crawler Ceiling Platforms')
   .sort((a, b) => {
     const aH = parseInt(a.data.specifications?.['Max Working Height'] || '0');
     const bH = parseInt(b.data.specifications?.['Max Working Height'] || '0');
@@ -18,14 +18,14 @@ const compareKeys = [
 ---
 
 <BaseLayout
-  title="Compare FDDPT Models — Side-by-Side Specs"
-  description="Compare all 4 FDDPT crawler under-ceiling aerial work platforms: 20m, 25m, 31m, 35m. Height, load, platform size, power — side by side."
+  title="Compare ARC-F Ceiling Platforms — Side-by-Side Specs"
+  description="Compare all 4 ARC-F crawler ceiling platforms: 20m, 25m, 31m, 35m. Height, load, platform size, power — side by side."
   transparentNav={false}
 >
 
   <section class="hero-banner">
     <div class="overline">Compare</div>
-    <h1>COMPARE FDDPT MODELS</h1>
+    <h1>COMPARE ARC-F MODELS</h1>
     <p>Side-by-side specifications for all four crawler under-ceiling platforms.</p>
   </section>
 
@@ -63,7 +63,7 @@ const compareKeys = [
 
   <section class="cta">
     <h2>NEED HELP CHOOSING THE RIGHT MODEL?</h2>
-    <p>Our engineering team can recommend the best FDDPT for your ceiling height, load, and site conditions.</p>
+    <p>Our engineering team can recommend the best ARC-F for your ceiling height, load, and site conditions.</p>
     <a href="/contact/" class="btn--white">Get a Recommendation →</a>
   </section>
 </BaseLayout>

@@ -2,20 +2,55 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
-const products = (await getCollection('products'))
-  .filter(p => !p.data.draft && p.data.category === 'Aerial Work Platforms')
-  .sort((a, b) => {
-    const aH = parseInt(a.data.specifications?.['Max Working Height'] || '0');
-    const bH = parseInt(b.data.specifications?.['Max Working Height'] || '0');
-    return aH - bH;
-  });
+const allProducts = (await getCollection('products')).filter(p => !p.data.draft);
+
+const HOME_CATEGORIES = [
+  {
+    id: 'crawler-roll-forming-lifts',
+    name: 'Crawler Roll Forming Lifts',
+    range: '17m – 32m',
+    desc: 'Self-propelled crawler platforms lifting a complete roll forming line to roof level. 5 models.',
+  },
+  {
+    id: 'truck-mounted-roll-forming-lifts',
+    name: 'Truck-Mounted Roll Forming Lifts',
+    range: '12m – 31m',
+    desc: 'Highway-mobile forming lifts, incl. 40HQ container-shippable ARC-T25HQ. 5 models.',
+  },
+  {
+    id: 'crawler-ceiling-platforms',
+    name: 'Crawler Ceiling Platforms',
+    range: '20m – 35m',
+    desc: 'ARC-F pick & carry under-ceiling platforms with oversized extending decks. 4 models.',
+  },
+  {
+    id: 'roll-forming-machines',
+    name: 'Roll Forming Machines',
+    range: 'Standing seam',
+    desc: 'Aerial-ready panel lines controlled from the same remote as the lift. 1 model.',
+  },
+];
+
+function heightNum(p: any): number {
+  const specs = p.data.specifications || {};
+  const h = specs['Lift Height (to shear exit)'] || specs['Max Working Height'] || '';
+  const m = String(h).match(/(\d+(?:\.\d+)?)/);
+  return m ? parseFloat(m[1]) : 0;
+}
+
+const homeCats = HOME_CATEGORIES.map(cat => ({
+  ...cat,
+  items: allProducts
+    .filter(p => p.data.category === cat.name)
+    .sort((a, b) => heightNum(a) - heightNum(b)),
+}));
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.com';
 ---
 
 <BaseLayout
-  title="Crawler Under-Ceiling Aerial Work Platform — FDDPT Series"
-  description="20m–35m crawler under-ceiling aerial work platforms with pick & carry mega-platform capability. Ideal for stadium, airport & warehouse ceiling work."
+  title="Aerial Roll Forming Lifts & Crawler Ceiling Platforms — ARC Series"
+  description="Crawler & truck-mounted roll forming lifts (12-32m) that form roofing panels at height, plus 20-35m pick & carry ceiling platforms. Remote control, dual power."
   ogImage="/images/og-home.jpg"
 >
 
@@ -25,7 +60,7 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     name: 'ARCLIFT Equipment Co., Ltd.',
     url: siteUrl,
     logo: `${siteUrl}/images/logo.png`,
-    description: 'Professional manufacturer of crawler under-ceiling aerial work platforms — FDDPT series, 20m–35m reach.',
+    description: 'Professional manufacturer of aerial roll forming lifts and crawler ceiling platforms — ARC series, 12m–35m reach.',
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+86 15617687185',
@@ -39,21 +74,17 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
   <section class="hero">
     <div class="hero__carousel">
       <!-- Slide 1: Pick & Carry -->
-      <div class="hero__slide hero__slide--active" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');" data-overline="Pick & Carry Technology" data-title="WORK WHILE YOU MOVE" data-desc="Unlike traditional lifts that must stop to reposition, FDDPT platforms travel at full height with load — 3× faster cycle time per ceiling panel."></div>
-      <!-- Slide 2: Ultra-Large Platform -->
-      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&q=80');" data-overline="Mega Platform" data-title="12M × 8M WORKSPACE" data-desc="The largest platform in the industry. 8 workers + full materials onboard. Eliminate repeated trips to ground level."></div>
-      <!-- Slide 3: Dual Power -->
-      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1920&q=80');" data-overline="Dual Power System" data-title="ZERO EMISSIONS INDOORS" data-desc="150hp diesel for outdoor travel + twin electric motors for enclosed spaces. No noise restrictions, no emission limits."></div>
-      <!-- Slide 4: Remote Control -->
-      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');" data-overline="Full Remote Control" data-title="OPERATE FROM THE GROUND" data-desc="Complete platform control from ground level. Safer operation, precise positioning, one-person setup in minutes."></div>
-      <!-- Slide 5: Cost Savings -->
-      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=1920&q=80');" data-overline="Save 30% on Projects" data-title="SKIP THE SCAFFOLDING" data-desc="No scaffolding rental, no setup days, no dismantling. Deploy in minutes, not days. 30% faster than traditional methods."></div>
+      <div class="hero__slide hero__slide--active" style="background-image: url('/images/hero-1.jpg');" data-overline="Pick & Carry Technology" data-title="WORK WHILE YOU MOVE" data-desc="Unlike traditional lifts that must stop to reposition, ARC platforms travel at full height with load — 3× faster cycle time per ceiling panel."></div>
+      <!-- Slide 2: Aerial Roll Forming / Remote Control -->
+      <div class="hero__slide" style="background-image: url('/images/hero-2.jpg');" data-overline="Full Remote Control" data-title="OPERATE FROM THE GROUND" data-desc="Complete platform control from ground level. Safer operation, precise positioning, one-person setup in minutes."></div>
+      <!-- Slide 3: Export Delivery -->
+      <div class="hero__slide" style="background-image: url('/images/hero-3.jpg');" data-overline="Export Ready" data-title="DELIVERED WORLDWIDE" data-desc="Modular designs ship in standard 40HQ containers or via RoRo vessel. Full export documentation, reassembly support and worldwide delivery."></div>
     </div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
       <div class="hero__overline" id="hero-overline">Pick & Carry Technology</div>
       <h1 class="hero__title" id="hero-title">WORK WHILE<br>YOU <em>MOVE</em></h1>
-      <p class="hero__desc" id="hero-desc">Unlike traditional lifts that must stop to reposition, FDDPT platforms travel at full height with load — 3× faster cycle time per ceiling panel.</p>
+      <p class="hero__desc" id="hero-desc">Unlike traditional lifts that must stop to reposition, ARC platforms travel at full height with load — 3× faster cycle time per ceiling panel.</p>
       <div class="hero__actions">
         <a href="/contact/" class="btn btn--primary">Get a Quote →</a>
         <a href="/products/" class="btn btn--outline">Explore Products</a>
@@ -63,8 +94,6 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
       <button class="hero__dot hero__dot--active" data-index="0"></button>
       <button class="hero__dot" data-index="1"></button>
       <button class="hero__dot" data-index="2"></button>
-      <button class="hero__dot" data-index="3"></button>
-      <button class="hero__dot" data-index="4"></button>
     </div>
     <div class="hero__scroll">
       <div class="hero__scroll-line"></div>
@@ -144,34 +173,32 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     </div>
   </div>
 
-  <!-- PRODUCTS -->
+  <!-- PRODUCTS BY CATEGORY -->
   <section class="sec sec--white">
     <div class="sec__header reveal">
       <div class="sec__overline">Our Products</div>
-      <h2 class="sec__title">FDDPT SERIES</h2>
-      <p class="sec__desc">Pick & carry aerial platforms engineered for maximum productivity</p>
+      <h2 class="sec__title">FOUR PRODUCT LINES</h2>
+      <p class="sec__desc">Aerial roll forming lifts, ceiling platforms and forming machines — 15 models, one remote-controlled workflow</p>
     </div>
     <div class="products">
-      {products.map((p, i) => {
-        const specs = p.data.specifications || {};
-        const height = specs['Max Working Height'] || '—';
-        const load = specs['Safe Working Load'] || '—';
-        const isFlagship = p.data.title.includes('35M');
-        return (
-          <a href={`/products/${p.id}/`} class:list={['p-card', 'reveal', `reveal-d${i + 1}`]}>
-            <div class="p-card__img">FDDPT-{height}</div>
-            <div class="p-card__body">
-              <div class="p-card__tag">{isFlagship ? 'Flagship' : 'FDDPT'}</div>
-              <div class="p-card__name">{p.data.title.split(' ')[0]}</div>
-              <div class="p-card__specs">
-                <span class="p-card__spec"><b>{height}</b> Reach</span>
-                <span class="p-card__spec"><b>{load}</b> Load</span>
-              </div>
-              <span class="p-card__link">View Details →</span>
+      {homeCats.map((cat, i) => (
+        <a href={`/products/#${cat.id}`} class:list={['p-card', 'reveal', `reveal-d${i + 1}`]}>
+          {cat.items[0]?.data.images?.[0] ? (
+            <div class="p-card__img" style={`background-image:url('${cat.items[0].data.images[0]}');background-size:cover;background-position:center;`}></div>
+          ) : (
+            <div class="p-card__img">{cat.name}</div>
+          )}
+          <div class="p-card__body">
+            <div class="p-card__tag">{cat.items.length} {cat.items.length === 1 ? 'Model' : 'Models'}</div>
+            <div class="p-card__name">{cat.name}</div>
+            <div class="p-card__specs">
+              <span class="p-card__spec"><b>{cat.range}</b></span>
             </div>
-          </a>
-        );
-      })}
+            <p style="font-size:13px;color:#64748b;margin:8px 0 12px;line-height:1.5;">{cat.desc}</p>
+            <span class="p-card__link">View Models →</span>
+          </div>
+        </a>
+      ))}
     </div>
   </section>
 
@@ -182,7 +209,7 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
       <div class="split__text">
         <div class="sec__overline" style="text-align:left;">Core Technology</div>
         <h3>PICK & CARRY</h3>
-        <p>Unlike spider lifts that must stop to reposition, our FDDPT series keeps working while moving. The platform travels while elevated with a full load — 3× faster cycle time per ceiling panel.</p>
+        <p>Unlike spider lifts that must stop to reposition, our ARC-F series keeps working while moving. The platform travels while elevated with a full load — 3× faster cycle time per ceiling panel.</p>
         <a href="/products/" class="link">Learn More →</a>
       </div>
     </div>
@@ -242,7 +269,7 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     </div>
     <div class="comp reveal">
       <table>
-        <thead><tr><th>Feature</th><th class="hl">FDDPT Pick & Carry</th><th>Spider Lift</th><th>Scaffolding</th></tr></thead>
+        <thead><tr><th>Feature</th><th class="hl">ARC Pick & Carry</th><th>Spider Lift</th><th>Scaffolding</th></tr></thead>
         <tbody>
           <tr><td>Platform Size</td><td class="hl">12m×3m → 12m×8m</td><td>~2m×1m basket</td><td>1m-wide planks</td></tr>
           <tr><td>Load While Moving</td><td class="hl yes">✓ 0.3–3T</td><td class="no">✗ Must stow</td><td class="no">✗ Static only</td></tr>
@@ -268,3 +295,4 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     </div>
   </section>
 </BaseLayout>
+Layout>

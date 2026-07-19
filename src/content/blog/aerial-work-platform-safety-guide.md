@@ -11,9 +11,9 @@ author: "ARCLIFT Team"
 
 Working at 20–35 meters above the floor leaves no margin for error. A fall from that height is almost always fatal. Equipment failure at ceiling level can injure multiple workers simultaneously. And the materials you're installing — panels, lighting, rigging — add weight and complexity to every operation.
 
-The FDDPT series includes multiple redundant safety systems, but technology alone doesn't prevent accidents. Safe operation requires trained operators, proper procedures, and constant awareness of the work environment.
+The ARC-F series includes multiple redundant safety systems, but technology alone doesn't prevent accidents. Safe operation requires trained operators, proper procedures, and constant awareness of the work environment.
 
-These 10 rules apply to every aerial work platform operation — FDDPT, spider lifts, boom lifts, or scissor lifts.
+These 10 rules apply to every aerial work platform operation — ARC-F, spider lifts, boom lifts, or scissor lifts.
 
 ## 1. Complete a Pre-Use Inspection Every Shift
 
@@ -30,7 +30,7 @@ This takes 10–15 minutes. Skipping it is the most common cause of preventable 
 
 ## 2. Never Exceed the Rated Load
 
-Every platform has a safe working load (SWL). The FDDPT-20M through FDDPT-31M carry 0.3–0.5 tonnes. The FDDPT-35M carries 3 tonnes.
+Every platform has a safe working load (SWL). The ARC-F20 through ARC-F31 carry 0.3–0.5 tonnes. The ARC-F35 carries 3 tonnes.
 
 Exceeding the SWL doesn't just risk structural failure — it changes the machine's center of gravity, affects braking distance, and can cause the platform to tip on uneven ground.
 
@@ -41,12 +41,12 @@ Count the workers. Weigh the materials. Add the tools. If the total exceeds the 
 Crawler tracks handle rough terrain well, but they're not invincible. Before moving the platform:
 - Check for soft ground, standing water, or loose gravel
 - Verify floor loading capacity for indoor work
-- Look for slopes exceeding the machine's gradeability rating (30% for FDDPT)
+- Look for slopes exceeding the machine's gradeability rating (30% for ARC-F)
 - Confirm there are no underground utilities or voids beneath the work area
 
 ## 4. Maintain Clear Communication
 
-The platform operator and ground crew need constant communication. On FDDPT platforms with remote control, the operator is on the ground — but workers on the elevated platform need to communicate their status, material needs, and any hazards they observe.
+The platform operator and ground crew need constant communication. On ARC-F platforms with remote control, the operator is on the ground — but workers on the elevated platform need to communicate their status, material needs, and any hazards they observe.
 
 Use radios or a standardized hand signal system. Never assume the other team knows what you're doing.
 
@@ -60,7 +60,7 @@ Ceiling work means working directly beneath steel structures, electrical systems
 
 ## 6. Use the Remote Control
 
-FDDPT platforms include full wireless remote control for a reason. It keeps the operator on the ground with clear sightlines of the entire work area. From the ground, the operator can see obstacles, personnel, and hazards that are invisible from inside the platform.
+ARC-F platforms include full wireless remote control for a reason. It keeps the operator on the ground with clear sightlines of the entire work area. From the ground, the operator can see obstacles, personnel, and hazards that are invisible from inside the platform.
 
 Only use platform-mounted controls when ground-level remote operation is impractical — and only with a dedicated spotter.
 
@@ -82,10 +82,10 @@ Every job site needs a written evacuation plan that covers:
 
 ## 9. Train Every Operator
 
-Operating an aerial work platform is not intuitive. The FDDPT series has specific procedures for mode switching (diesel to electric), platform extension, and remote control operation that require training.
+Operating an aerial work platform is not intuitive. The ARC-F series has specific procedures for mode switching (diesel to electric), platform extension, and remote control operation that require training.
 
 Every operator should receive:
-- Manufacturer-specific training on the FDDPT series
+- Manufacturer-specific training on the ARC-F series
 - Site-specific training on the project's unique hazards
 - Refresher training at least annually
 
@@ -97,8 +97,8 @@ It's always cheaper to pause for 30 minutes and fix a problem than to deal with 
 
 ## The Bottom Line
 
-Safe aerial work platform operation isn't complicated — it's disciplined. Follow the manufacturer's procedures, inspect before every shift, respect load limits, and maintain communication. The FDDPT series' built-in safety systems (load sensing, anti-collision, emergency stop) provide redundant protection, but they work best when operated by trained, alert personnel.
+Safe aerial work platform operation isn't complicated — it's disciplined. Follow the manufacturer's procedures, inspect before every shift, respect load limits, and maintain communication. The ARC-F series' built-in safety systems (load sensing, anti-collision, emergency stop) provide redundant protection, but they work best when operated by trained, alert personnel.
 
 ---
 
-*Need safety training guidance for your FDDPT platform? [Contact us](/contact/) for operator training documentation and support.*
+*Need safety training guidance for your ARC-F platform? [Contact us](/contact/) for operator training documentation and support.*

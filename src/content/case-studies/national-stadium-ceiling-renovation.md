@@ -1,10 +1,10 @@
 ---
 title: "National Stadium Ceiling Renovation"
-description: "Complete ceiling system replacement for a 60,000-seat national stadium using FDDPT-35M flagship platforms."
+description: "Complete ceiling system replacement for a 60,000-seat national stadium using ARC-F35 flagship platforms."
 category: "Stadium"
 date: 2026-06-15
 draft: false
-model: "FDDPT-35M"
+model: "ARC-F35"
 stats:
   - num: "60,000"
     label: "Seat Capacity"
@@ -27,7 +27,7 @@ results:
 
 A major national stadium required a complete ceiling system replacement as part of a modernization project. The existing scaffolding approach was estimated at 65 days with significant safety risks due to the 35m working height and complex steel structure.
 
-The project team deployed two FDDPT-35M heavy-duty pick & carry platforms, enabling crews to work on 12m×8m sections simultaneously while maintaining full mobility across the stadium floor.
+The project team deployed two ARC-F35 heavy-duty pick & carry platforms, enabling crews to work on 12m×8m sections simultaneously while maintaining full mobility across the stadium floor.
 
 ## The Challenge
 
@@ -39,7 +39,7 @@ The project team deployed two FDDPT-35M heavy-duty pick & carry platforms, enabl
 
 ## The Solution
 
-ARCLIFT deployed two FDDPT-35M heavy-duty platforms with the following configuration:
+ARCLIFT deployed two ARC-F35 heavy-duty platforms with the following configuration:
 
 - 12m×8m extended platform for maximum workspace
 - 3T load capacity for hoisting acoustic panels and rigging
@@ -52,11 +52,11 @@ ARCLIFT deployed two FDDPT-35M heavy-duty platforms with the following configura
 
 ## Key Results
 
-The project was completed 20 days ahead of schedule with zero safety incidents. The FDDPT-35M's large platform meant fewer repositioning cycles, and the remote control system kept operators safely away from overhead hazard zones.
+The project was completed 20 days ahead of schedule with zero safety incidents. The ARC-F35's large platform meant fewer repositioning cycles, and the remote control system kept operators safely away from overhead hazard zones.
 
 ## Technical Specifications Used
 
-- **Model:** FDDPT-35M Heavy-Duty
+- **Model:** ARC-F35 Heavy-Duty
 - **Working Height:** 35m
 - **Platform Size:** 12m × 8m (extended)
 - **Load Capacity:** 3,000kg

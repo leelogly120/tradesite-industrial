@@ -48,9 +48,9 @@ Ground Pressure (kPa) = Machine Weight (kg) × 9.81 ÷ Contact Area (m²)
 
 Where 9.81 is the gravitational acceleration constant (m/s²), converting mass to force in Newtons, and the result is expressed in Pascals (N/m²), then divided by 1,000 for kPa.
 
-### Calculation Example: FDDPT-25M Crawler Platform
+### Calculation Example: ARC-F25 Crawler Platform
 
-Let's apply this formula to the [FDDPT-25M crawler under-ceiling platform](/products/fddpt-25m-crawler-ceiling-platform/):
+Let's apply this formula to the [ARC-F25 crawler under-ceiling platform](/products/arc-f25-crawler-ceiling-platform/):
 
 | Parameter | Value |
 |-----------|-------|
@@ -67,16 +67,16 @@ Ground Pressure = 22,000 × 9.81 ÷ 3.02
                 ≈ 71.5 kPa
 ```
 
-At **71.5 kPa**, the FDDPT-25M exerts roughly the same pressure as a person standing on one foot—remarkably low for a 22-ton machine.
+At **71.5 kPa**, the ARC-F25 exerts roughly the same pressure as a person standing on one foot—remarkably low for a 22-ton machine.
 
-### Comparison Across the FDDPT Series
+### Comparison Across the ARC-F Series
 
 | Model | Weight | Ground Pressure | Suitable Floors |
 |-------|--------|----------------|-----------------|
-| FDDPT-20M | 20 T | ~65 kPa | All standard floors |
-| FDDPT-25M | 22 T | ~71 kPa | Most indoor surfaces |
-| [FDDPT-31M](/products/fddpt-31m-crawler-ceiling-platform/) | 25 T | ~81 kPa | Concrete, polished concrete |
-| FDDPT-35M | 53 T | ~172 kPa | Reinforced concrete only |
+| ARC-F20 | 20 T | ~65 kPa | All standard floors |
+| ARC-F25 | 22 T | ~71 kPa | Most indoor surfaces |
+| [ARC-F31](/products/arc-f31-crawler-ceiling-platform/) | 25 T | ~81 kPa | Concrete, polished concrete |
+| ARC-F35 | 53 T | ~172 kPa | Reinforced concrete only |
 
 ### Spider Lift Comparison
 
@@ -86,17 +86,17 @@ A typical 5-ton spider lift with four outrigger pads (each approximately 0.06 m�
 5,000 × 9.81 ÷ (4 × 0.06) = 49,050 ÷ 0.24 ≈ 204 kPa
 ```
 
-That is nearly **three times** the ground pressure of the 22-ton FDDPT-25M. The spider lift is lighter overall, but its concentrated outrigger points create much higher local pressure on the floor.
+That is nearly **three times** the ground pressure of the 22-ton ARC-F25. The spider lift is lighter overall, but its concentrated outrigger points create much higher local pressure on the floor.
 
 ## Common Floor Load Limits
 
 Understanding your floor's capacity is the first step in platform selection. The table below summarizes typical load limits for common indoor floor types:
 
-| Floor Type | Typical Load Limit | Suitable FDDPT Models |
+| Floor Type | Typical Load Limit | Suitable ARC-F Models |
 |------------|-------------------|----------------------|
-| **Standard concrete slab** | 250–500 kPa | All FDDPT models |
-| **Polished concrete** | 150–250 kPa | FDDPT-20M, 25M, 31M |
-| **Ceramic tile** | 100–200 kPa | FDDPT-20M, 25M (with non-marking tracks) |
+| **Standard concrete slab** | 250–500 kPa | All ARC-F models |
+| **Polished concrete** | 150–250 kPa | ARC-F20, 25M, 31M |
+| **Ceramic tile** | 100–200 kPa | ARC-F20, 25M (with non-marking tracks) |
 | **Wood flooring** | 50–150 kPa | Consult structural engineer |
 | **Raised access floor** | 50–100 kPa | Not recommended without reinforcement |
 
@@ -116,7 +116,7 @@ Replacing standard steel crawler pads with non-marking rubber tracks eliminates 
 
 ### Wider Crawler Pads
 
-Optional wider track pads increase the contact area by 20–30%, directly reducing ground pressure by the same proportion. For example, upgrading the FDDPT-25M from 0.36m to 0.46m wide pads would lower ground pressure from 71.5 kPa to approximately 55 kPa. The trade-off is a wider machine footprint, which may affect passage through narrow doorways.
+Optional wider track pads increase the contact area by 20–30%, directly reducing ground pressure by the same proportion. For example, upgrading the ARC-F25 from 0.36m to 0.46m wide pads would lower ground pressure from 71.5 kPa to approximately 55 kPa. The trade-off is a wider machine footprint, which may affect passage through narrow doorways.
 
 ### Load Distribution Mats
 
@@ -124,7 +124,7 @@ Steel or aluminum mats placed beneath the crawler tracks spread the load over an
 
 ### Selecting a Lighter Model
 
-When floor conditions are particularly restrictive, choosing the [FDDPT-20M](/products/fddpt-20m-crawler-ceiling-platform/) (65 kPa) over the FDDPT-31M (81 kPa) may be the simplest solution. The trade-off is reduced maximum working height, but for many indoor applications below 22 meters, the lighter model provides ample reach with greater floor compatibility.
+When floor conditions are particularly restrictive, choosing the [ARC-F20](/products/arc-f20-crawler-ceiling-platform/) (65 kPa) over the ARC-F31 (81 kPa) may be the simplest solution. The trade-off is reduced maximum working height, but for many indoor applications below 22 meters, the lighter model provides ample reach with greater floor compatibility.
 
 ## Case Study: Airport Terminal with Polished Concrete
 
@@ -134,7 +134,7 @@ A major international airport terminal required ceiling maintenance at heights u
 
 ### Solution
 
-After evaluating ground pressure calculations, the team selected the **FDDPT-31M** crawler under-ceiling platform:
+After evaluating ground pressure calculations, the team selected the **ARC-F31** crawler under-ceiling platform:
 
 - Machine weight: 25,000 kg
 - Ground pressure: **~81 kPa** (well under the 200 kPa floor limit)
@@ -145,7 +145,7 @@ A detailed ground pressure calculation report was provided to the airport engine
 
 ### Result
 
-The project was completed with **zero floor damage**. Post-project inspection confirmed no cracking, deformation, or surface marking. The client approved the FDDPT-31M for all future maintenance projects at the terminal, and the ground pressure assessment methodology became part of their standard contractor qualification process.
+The project was completed with **zero floor damage**. Post-project inspection confirmed no cracking, deformation, or surface marking. The client approved the ARC-F31 for all future maintenance projects at the terminal, and the ground pressure assessment methodology became part of their standard contractor qualification process.
 
 ## Pre-Project Ground Pressure Checklist
 
@@ -164,7 +164,7 @@ Before deploying any aerial platform on sensitive indoor floors, work through th
 
 Ground pressure is the single most important metric when selecting an aerial platform for indoor use. A heavy machine with wide tracks can be far gentler on your floors than a lighter machine with concentrated support points. By understanding the simple formula—**weight × 9.81 ÷ contact area**—you can evaluate any platform against your facility's floor limits with confidence.
 
-The FDDPT crawler under-ceiling platform series is engineered specifically for low ground pressure operation, with models ranging from 65 kPa to 172 kPa to match virtually any indoor floor condition. Whether your project involves a polished airport terminal, a tiled exhibition hall, or a reinforced warehouse, there is a configuration that protects your floor while delivering the working height you need.
+The ARC-F crawler under-ceiling platform series is engineered specifically for low ground pressure operation, with models ranging from 65 kPa to 172 kPa to match virtually any indoor floor condition. Whether your project involves a polished airport terminal, a tiled exhibition hall, or a reinforced warehouse, there is a configuration that protects your floor while delivering the working height you need.
 
 ---
 

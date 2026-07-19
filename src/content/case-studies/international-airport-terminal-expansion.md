@@ -4,7 +4,7 @@ description: "High-reach ceiling installation for a new international airport te
 category: "Airport"
 date: 2026-05-20
 draft: false
-model: "FDDPT-31M"
+model: "ARC-F31"
 stats:
   - num: "3 months"
     label: "Project Duration"
@@ -37,7 +37,7 @@ A new international airport terminal required ceiling panel installation across 
 
 ## The Solution
 
-Three FDDPT-31M platforms were deployed in rotation across the terminal zones. Electric-mode operation meant zero exhaust emissions, and the near-silent electric motors allowed overnight work without noise complaints from nearby residential areas.
+Three ARC-F31 platforms were deployed in rotation across the terminal zones. Electric-mode operation meant zero exhaust emissions, and the near-silent electric motors allowed overnight work without noise complaints from nearby residential areas.
 
 The crawler tracks distributed weight evenly across the terminal's polished stone flooring — no point-load damage, no protective covering required. The 12m×3m platform accommodated 6-8 workers per shift with all necessary tools and materials.
 
@@ -47,7 +47,7 @@ The ceiling installation was completed 45 days ahead of the original schedule, w
 
 ## Technical Specifications Used
 
-- **Model:** FDDPT-31M High-Reach
+- **Model:** ARC-F31 High-Reach
 - **Working Height:** 31m
 - **Platform Size:** 12m × 8m (extended)
 - **Load Capacity:** 500kg

@@ -27,11 +27,11 @@ Scaffolding for stadium ceiling work has three fundamental problems:
 
 ## How Pick and Carry Changes the Math
 
-A crawler under-ceiling platform like the FDDPT-35M approaches the problem differently. Instead of building temporary access from the ground up, the machine drives onto the stadium floor, raises its 12m×8m platform to the working height, and travels along the ceiling line.
+A crawler under-ceiling platform like the ARC-F35 approaches the problem differently. Instead of building temporary access from the ground up, the machine drives onto the stadium floor, raises its 12m×8m platform to the working height, and travels along the ceiling line.
 
-**Time.** A single FDDPT-35M can cover the same ceiling area in one week that would take scaffolding a month. The 12m×8m platform means 6–10 workers can operate simultaneously, and the pick-and-carry capability means no stop-lower-reposition-raise cycle.
+**Time.** A single ARC-F35 can cover the same ceiling area in one week that would take scaffolding a month. The 12m×8m platform means 6–10 workers can operate simultaneously, and the pick-and-carry capability means no stop-lower-reposition-raise cycle.
 
-**Cost.** Equipment cost plus labor for a FDDPT-based maintenance project runs about $200K–$400K — significantly less than scaffolding when you factor in the eliminated erection and dismantling costs.
+**Cost.** Equipment cost plus labor for a ARC-F-based maintenance project runs about $200K–$400K — significantly less than scaffolding when you factor in the eliminated erection and dismantling costs.
 
 **Minimal disruption.** The machine works from the field level. Seating sections stay clear. The venue can host events in unaffected sections while ceiling work continues in others.
 
@@ -45,13 +45,13 @@ A national stadium with 60,000 seats needed full ceiling panel replacement and l
 - Venue downtime: 45 days × $50,000/day revenue loss = $2,250,000
 - **Total: ~$2,950,000**
 
-**FDDPT-35M approach (actual):**
+**ARC-F35 approach (actual):**
 - Equipment (2 units): $350,000
 - Labor (8 workers, 45 days): $120,000
 - Venue downtime: 0 (work performed during non-event hours)
 - **Total: ~$470,000**
 
-The FDDPT approach saved over $2.4 million — mostly from eliminated venue downtime. Even without counting lost revenue, the direct cost savings exceeded $330,000.
+The ARC-F approach saved over $2.4 million — mostly from eliminated venue downtime. Even without counting lost revenue, the direct cost savings exceeded $330,000.
 
 ## Why Stadiums Are Adopting Pick and Carry
 
@@ -63,9 +63,9 @@ Three trends are driving stadium operators toward pick and carry platforms:
 
 **Safety liability.** Stadium owners face increasing liability for worker safety during maintenance projects. Remote-controlled platforms at ground level are inherently safer than workers on scaffolding at 30m.
 
-## The FDDPT Advantage for Stadium Work
+## The ARC-F Advantage for Stadium Work
 
-The FDDPT-35M is particularly well-suited for stadium ceiling maintenance because:
+The ARC-F35 is particularly well-suited for stadium ceiling maintenance because:
 
 - **35m working height** covers even the tallest stadium roofs
 - **12m×8m platform** accommodates multiple workers and large panel sections
@@ -82,7 +82,7 @@ Switching from scaffolding to pick and carry requires planning:
 1. **Site survey:** Verify floor loading capacity for the machine's weight
 2. **Access planning:** Confirm the machine can enter and maneuver within the stadium
 3. **Power supply:** Plan electric power connections for indoor operation
-4. **Training:** Ensure operators are trained on the FDDPT series
+4. **Training:** Ensure operators are trained on the ARC-F series
 5. **Scheduling:** Plan work around the event calendar to minimize disruption
 
 The investment in planning pays off in dramatically faster, cheaper, and safer ceiling maintenance.

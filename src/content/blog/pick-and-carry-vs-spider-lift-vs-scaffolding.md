@@ -21,19 +21,19 @@ A spider lift basket gives you roughly 2m × 1m of working space. That's about 2
 
 Scaffolding planks are about 1 meter wide. You can walk along them, but you can't move materials efficiently, and you certainly can't work with large panels or equipment.
 
-A pick and carry platform like the FDDPT series gives you 12m × 3m standard, extendable to 12m × 8m. That's 96 square meters — roughly 50 times the area of a spider lift basket. Six to ten workers can operate simultaneously with full material staging.
+A pick and carry platform like the ARC-F series gives you 12m × 3m standard, extendable to 12m × 8m. That's 96 square meters — roughly 50 times the area of a spider lift basket. Six to ten workers can operate simultaneously with full material staging.
 
 On a stadium ceiling project, this difference is decisive. Installing a 3m × 1m acoustic panel from a spider lift means positioning the lift, extending outriggers, raising the basket, placing the panel, lowering, retracting, repositioning — repeat hundreds of times. From a pick and carry platform, the crew simply moves along the ceiling line with the panel already in position.
 
 ## Load While Moving: The Pick and Carry Advantage
 
-The name says it all. Pick and carry platforms can drive while elevated with a full load. The FDDPT series carries 0.3–3 tonnes while traveling at up to 1.0 km/h at full working height.
+The name says it all. Pick and carry platforms can drive while elevated with a full load. The ARC-F series carries 0.3–3 tonnes while traveling at up to 1.0 km/h at full working height.
 
 Spider lifts must stow their load before repositioning. Every move requires a full cycle: lower, stow, drive, position, extend outriggers, level, raise. That's 15–30 minutes per reposition.
 
 Scaffolding is static by definition. Moving scaffolding means dismantling and rebuilding — days of work per bay.
 
-On a 50,000 sqm warehouse project, the FDDPT-25M completed ceiling panel installation in 60 days. The scaffolding estimate was 90 days and $600K. The actual FDDPT cost came in at about $400K — a 33% savings.
+On a 50,000 sqm warehouse project, the ARC-F25 completed ceiling panel installation in 60 days. The scaffolding estimate was 90 days and $600K. The actual ARC-F cost came in at about $400K — a 33% savings.
 
 ## Setup Time Per Location
 
@@ -49,13 +49,13 @@ On a project with 100+ work positions across a stadium, the setup time alone add
 
 Modern indoor venues — airports, stadiums, warehouses — often require zero-emission operation. Diesel exhaust is unacceptable in occupied terminals, and noise restrictions apply during overnight work.
 
-FDDPT platforms offer dual power: diesel for outdoor work, electric motors for indoor operation. In electric mode, there are zero emissions and near-silent operation.
+ARC-F platforms offer dual power: diesel for outdoor work, electric motors for indoor operation. In electric mode, there are zero emissions and near-silent operation.
 
 Spider lifts come in diesel or electric variants, but you're typically choosing one or the other per machine. Scaffolding has no power system — it's just metal and wood.
 
 ## Ground Pressure and Floor Protection
 
-Crawler tracks distribute weight across a large contact area. The FDDPT-35M at 53 tonnes spreads its weight across the full track footprint, resulting in low PSI that's safe for most indoor flooring.
+Crawler tracks distribute weight across a large contact area. The ARC-F35 at 53 tonnes spreads its weight across the full track footprint, resulting in low PSI that's safe for most indoor flooring.
 
 Spider lifts use outriggers that concentrate load on four small pads — potentially hundreds of PSI. On premium stadium seating or airport terminal stone flooring, this can cause damage.
 
@@ -63,7 +63,7 @@ Scaffolding distributes load via base plates, but the sheer weight of scaffoldin
 
 ## Remote Control Operation
 
-FDDPT platforms come with full wireless remote control as standard. The operator stands on the ground, maintaining clear sightlines of the entire work area. This keeps the operator away from overhead hazard zones — falling objects, structural elements, electrical systems.
+ARC-F platforms come with full wireless remote control as standard. The operator stands on the ground, maintaining clear sightlines of the entire work area. This keeps the operator away from overhead hazard zones — falling objects, structural elements, electrical systems.
 
 Spider lifts typically have controls only in the basket. Some offer ground-level controls, but they're not the primary operating position.
 
@@ -84,7 +84,7 @@ Here's a rough cost comparison for a typical 30,000 sqm stadium ceiling project:
 - Labor (20 workers): $300,000
 - **Total: ~$700,000, 150 days**
 
-**FDDPT-35M Pick & Carry:**
+**ARC-F35 Pick & Carry:**
 - Equipment (2 units): $350,000
 - Labor (8 workers): $120,000
 - **Total: ~$470,000, 90 days**
@@ -109,9 +109,9 @@ Scaffolding works when:
 
 ## The Bottom Line
 
-For ceiling projects in the 15m–35m height range, covering areas larger than a few hundred square meters, pick and carry platforms deliver the best combination of speed, safety, and cost-efficiency. The FDDPT series' 12m×8m platform, pick-and-carry mobility, dual power, and remote control make it purpose-built for exactly this kind of work.
+For ceiling projects in the 15m–35m height range, covering areas larger than a few hundred square meters, pick and carry platforms deliver the best combination of speed, safety, and cost-efficiency. The ARC-F series' 12m×8m platform, pick-and-carry mobility, dual power, and remote control make it purpose-built for exactly this kind of work.
 
-If your project involves stadium, airport, or warehouse ceilings, the math favors pick and carry. Run your own numbers — but don't be surprised when the FDDPT wins.
+If your project involves stadium, airport, or warehouse ceilings, the math favors pick and carry. Run your own numbers — but don't be surprised when the ARC-F wins.
 
 ---
 

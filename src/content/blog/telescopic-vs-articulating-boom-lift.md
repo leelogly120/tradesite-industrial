@@ -78,7 +78,7 @@ Neither telescopic nor articulating boom lifts address the fundamental limitatio
 
 Boom lifts position a single worker (or two) at a specific point. For ceiling work that covers thousands of square meters — installing panels, running conduit, mounting lighting — you need a platform that moves along the ceiling line, not just reaches a single point.
 
-This is where crawler under-ceiling platforms like the ARCLIFT FDDPT series fill a different niche entirely. The FDDPT isn't a boom lift — it's a mobile work platform that travels while elevated. The 12m×8m platform covers ceiling sections that would require dozens of boom lift repositions.
+This is where crawler under-ceiling platforms like the ARCLIFT ARC-F series fill a different niche entirely. The ARC-F isn't a boom lift — it's a mobile work platform that travels while elevated. The 12m×8m platform covers ceiling sections that would require dozens of boom lift repositions.
 
 ## Decision Framework
 
@@ -94,7 +94,7 @@ This is where crawler under-ceiling platforms like the ARCLIFT FDDPT series fill
 - The work area has complex geometry
 - You're in an industrial or congested environment
 
-**Choose pick & carry (FDDPT) when:**
+**Choose pick & carry (ARC-F) when:**
 - You're working on ceilings (stadiums, airports, warehouses)
 - You need a large work surface, not just a single point
 - The project covers hundreds or thousands of square meters
