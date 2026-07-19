@@ -34,7 +34,7 @@ images:
   - "/images/products/arc-c17-crawler-roll-forming-lift-3.jpg"
   - "/images/products/arc-c17-crawler-roll-forming-lift-4.jpg"
 features:
-  - "Roll forming at height — panels are formed and fed directly at roof level, eliminating ground forming and crane lifting"
+  - "Roll forming at height — panels are formed and fed directly at roof level, reducing ground forming, repeated handling and crane lifts"
   - "Full remote control — travel, turning, outriggers, lifting and roll forming all operated by one person from the ground"
   - "Dual power system — Yuchai turbocharged diesel for site mobility plus 380V electric mode for quiet, economical forming"
   - "Heavy crawler chassis — Komatsu PC200-type chains with 600mm shoes handle unpaved and uneven job sites"
@@ -43,11 +43,11 @@ features:
   - "Q345B / 700BL steel structure — high-strength welded plate for long fatigue life"
 faq:
   - question: "What roll forming machines can the ARC-C17 carry?"
-    answer: "The ARC-C17 accepts all standing-seam (JCH type), roof panel and clip-lock forming machines driven by motor + reducer with hydraulic shear. The 9m × 2.3m platform mounts virtually any roofing machine, and the lift supplies power and control from its own electric cabinet and hydraulic station."
+    answer: "The ARC-C17 accepts compatible standing-seam (JCH-type), roof-panel and clip-lock forming machines driven by motor + reducer with hydraulic shear. The 9m × 2.3m platform mounts a compatible roofing machine after weight, footprint, power and control-interface review, and the lift supplies power and control from its own electric cabinet and hydraulic station."
   - question: "How high can it deliver panels?"
     answer: "The lift height to the shear exit is 17 meters, with a usable panel output range of 4m to 17.5m above ground and an output radius of up to 5,000mm. Panels from 1m up to 200m continuous length can be formed and fed directly onto the roof."
   - question: "Is the machine really operated by one person?"
-    answer: "Yes. Crawler travel, turning, outrigger extension and support, platform lifting, slewing and the roll forming line are all on the radio remote. One operator controls the entire panel installation cycle from the ground — no signalman or separate crane crew is needed."
+    answer: "Yes. Crawler travel, turning, outrigger extension and support, platform lifting, slewing and the roll forming line are all on the radio remote. The ground remote integrates machine functions. Roofing crew, supervision, exclusion-zone control and any project-specific crane or signal roles remain subject to the lift plan."
   - question: "What power options are available?"
     answer: "The ARC-C17 runs on a 98kW Yuchai turbocharged diesel engine for travel and off-grid work, and on a 380V / 14kW electric supply for forming operations. The dual lift system (engine or motor) is selectable, so you can work economically wherever grid power is available."
 relatedProducts:
@@ -62,9 +62,9 @@ draft: false
 
 The **ARC-C17** is the entry model of our crawler roll forming lift range, engineered for metal roofing projects with eave heights up to 17 meters. It solves the oldest problem in standing-seam roofing: long panels formed on the ground must be lifted by crane, and every lift risks scratched coatings, bent panels and idle crews.
 
-The ARC-C17 eliminates the crane entirely. A complete roll forming machine rides on the 9m × 2.3m platform; steel coil is formed **at roof level** and the finished panel feeds straight onto the purlins. Panels up to 200m long are produced in one continuous run — no splices, no second handling, no coating damage.
+The ARC-C17 is intended to reduce repeated crane lifting and ground-to-roof panel handling. A complete roll forming machine rides on the 9m × 2.3m platform; steel coil is formed **at roof level** and the finished panel feeds straight onto the purlins. Panels up to 200m long are produced in one continuous run — no splices, no second handling, no coating damage.
 
-Every function — crawler travel, turning, outrigger deployment, lifting, slewing and the forming line itself — is on a single radio remote. One operator replaces the crane driver, the signalman and the ground forming crew.
+Every function — crawler travel, turning, outrigger deployment, lifting, slewing and the forming line itself — is on a single radio remote. Integrated controls can simplify coordination, but they do not replace the trained roofing crew, supervision or project-specific lifting roles.
 
 ## Applications
 
@@ -88,7 +88,7 @@ The platform also positions forming machines for vertical wall panel feeding on 
 
 ## Packaging & Shipping
 
-Anti-corrosion coating, moisture-proof electrical wrapping and transport locking are standard. The machine loads onto a lowbed trailer under its own remote-controlled power. Ships via RoRo vessel or flat rack container. FOB / CIF / DDP terms available.
+Anti-corrosion coating, moisture-proof electrical wrapping and transport locking are standard. The machine loads onto a lowbed trailer under its own remote-controlled power. Ships via RoRo vessel or flat rack container. Trade terms are confirmed in the project quotation.
 
 ---
 

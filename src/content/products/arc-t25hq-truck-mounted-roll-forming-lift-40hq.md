@@ -1,6 +1,6 @@
 ---
 title: "ARC-T25HQ Truck-Mounted Roll Forming Lift - 25m 40HQ Container-Shippable"
-description: "ARC-T25HQ container-shippable roll forming lift: 25m height, 8t capacity, modular design loads into 40HQ containers for low-cost worldwide export shipping."
+description: "ARC-T25HQ container-shippable roll forming lift: 25m height, 8t capacity, modular design loads into 40HQ containers for route-dependent container shipping."
 category: "Truck-Mounted Roll Forming Lifts"
 moq: 1
 specifications:
@@ -31,7 +31,7 @@ images:
   - "/images/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq-3.jpg"
   - "/images/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq-4.jpg"
 features:
-  - "Ships in 40HQ containers — cuts ocean freight dramatically versus RoRo or flat rack"
+  - "Ships in 40HQ containers — allows container-route freight comparison against RoRo or flat-rack options"
   - "Modular split-load design: boom, platform, outriggers and power unit pack separately"
   - "Same 25m-class working envelope as the ARC-T25 after reassembly"
   - "Mounts on a locally sourced 13m-class truck or semi-trailer at destination"
@@ -40,13 +40,13 @@ features:
   - "Reassembly supported by dispatched engineers or step-by-step remote video guidance"
 faq:
   - question: "Why choose the ARC-T25HQ over the standard ARC-T25?"
-    answer: "Shipping cost. The standard ARC-T25 travels as oversized cargo on RoRo vessels or flat racks, which is expensive and route-limited. The ARC-T25HQ splits into modules that pack inside standard 40HQ containers — the cheapest, most widely available shipping mode — then reassembles onto a locally sourced truck at destination."
+    answer: "Shipping cost. The standard ARC-T25 travels as oversized cargo on RoRo vessels or flat racks, which is expensive and route-limited. The ARC-T25HQ splits into modules that pack inside standard 40HQ containers — a widely available shipping option on many trade lanes — then reassembles onto a locally sourced truck at destination."
   - question: "How is the machine reassembled at destination?"
     answer: "The modules bolt and pin together following a documented sequence. We support reassembly either by dispatching a commissioning engineer to your site or through step-by-step remote video guidance. Local requirements are a crane for module handling and a 13m-class truck or semi-trailer for mounting."
   - question: "Is performance identical to the standard ARC-T25?"
     answer: "The working envelope is the same 25m class — panel delivery from 5m to 26m within a 6,000mm output radius, 8-tonne lifting capacity, and the same Mitsubishi PLC remote-control system. The difference is purely in how the machine ships."
   - question: "What does containerized shipping mean for lead time and cost?"
-    answer: "40HQ container service runs on virtually every trade lane with frequent sailings, so transit is usually faster to arrange than RoRo bookings and total freight cost is substantially lower. Contact us with your destination port for a comparison quote."
+    answer: "40HQ container service runs on virtually every trade lane with frequent sailings, so availability and landed cost may compare favorably with RoRo on some routes. Contact us with your destination port for a comparison quote."
 relatedProducts:
   - "arc-t25-truck-mounted-roll-forming-lift"
   - "arc-t31-truck-mounted-roll-forming-lift"
@@ -59,17 +59,17 @@ draft: false
 
 The **ARC-T25HQ** solves the biggest hidden cost in exporting aerial roll forming equipment: ocean freight. Standard truck-mounted lifts ship as oversized break-bulk or RoRo cargo — expensive, route-limited and slow to book. The ARC-T25HQ is engineered from the start as a **modular, 40HQ-container-shippable** machine.
 
-Boom sections, platform, outrigger assemblies and the hydraulic power unit separate into container-sized modules. At destination they reassemble onto a locally sourced 13m-class truck or semi-trailer, restoring the full 25m-class working envelope: panels delivered from 5m to 26m above ground, 8-tonne capacity, one-man radio remote operation.
+Boom sections, platform, outrigger assemblies and the hydraulic power unit separate into container-sized modules. At destination they reassemble onto a locally sourced 13m-class truck or semi-trailer, restoring the full 25m-class working envelope: panels delivered from 5m to 26m above ground, 8-tonne capacity, integrated radio remote operation.
 
-For international buyers — especially in markets with limited RoRo service — this typically transforms the landed-cost equation of aerial roll forming.
+For international buyers — especially in markets with limited RoRo service — this can change the landed-cost comparison on suitable routes.
 
 ## Applications
 
 ### Overseas Roofing Contractors
-Buy the machine, receive containers, mount on a local truck — no oversized-cargo customs complexity.
+Buy the machine, receive containers, mount on a local truck — with customs and local vehicle rules reviewed before shipment.
 
 ### Equipment Importers & Dealers
-Container shipping simplifies inventory logistics and lets dealers quote firm landed prices.
+Container shipping can simplify routing, but landed cost still depends on port, customs, local chassis and assembly.
 
 ### Remote & Island Markets
 Destinations without RoRo service or heavy-lift port cranes can still receive the machine through standard container terminals.
@@ -83,7 +83,7 @@ Destinations without RoRo service or heavy-lift port cranes can still receive th
 
 ## Packaging & Shipping
 
-Modules are export-coated, moisture-wrapped and secured in 40HQ containers with lashing certificates. Complete documentation for customs and reassembly included. FOB / CIF / DDP terms supported worldwide.
+Modules are export-coated, moisture-wrapped and secured in 40HQ containers with lashing certificates. Customs, reassembly documents and trade terms are confirmed for the selected route and destination.
 
 ---
 

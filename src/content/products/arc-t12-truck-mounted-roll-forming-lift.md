@@ -29,7 +29,7 @@ features:
   - "Truck-mounted mobility — drive between job sites at highway speed, no trailer needed"
   - "12m forming height covers standard workshops, warehouses and agricultural buildings"
   - "Lightest module in the range at 9 tonnes — mounts on a common 9.6m flatbed truck"
-  - "Remote-controlled outrigger extension, support and lifting — one-man setup in minutes"
+  - "Remote-controlled outrigger extension, support and lifting — integrated remote setup after the lift plan is approved"
   - "380V electric drive with 11kW pump motor — quiet, economical forming"
   - "LCD level gauge for fast, accurate leveling on uneven ground"
   - "Optional VFD and remote package integrates the roll forming machine into one controller"
@@ -65,7 +65,7 @@ At 12 meters of lift height, it covers the most common tier of steel constructio
 Highway mobility makes multi-site contracting practical: finish a barn roof in the morning, drive to the next county, form panels in the afternoon.
 
 ### Repair & Re-Roofing Contracts
-Small crews handle re-sheeting jobs with one truck, one operator and no lifting subcontractor.
+Small crews can coordinate re-sheeting work around one truck-mounted system; lifting roles and any crane support remain project-specific.
 
 ## Technical Highlights
 
@@ -76,7 +76,7 @@ Small crews handle re-sheeting jobs with one truck, one operator and no lifting 
 
 ## Packaging & Shipping
 
-The module ships without the truck — mount it on a locally sourced flatbed at destination, or order the complete truck-mounted unit. Standard export packaging with anti-corrosion coating. FOB / CIF / DDP available.
+The module ships without the truck — mount it on a locally sourced flatbed at destination, or order the complete truck-mounted unit. Standard export packaging with anti-corrosion coating. Trade terms are confirmed in the project quotation.
 
 ---
 

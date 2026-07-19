@@ -1,6 +1,6 @@
 ---
-title: "ARC-T31 Truck-Mounted Roll Forming Lift - 31m Flagship Truck Platform"
-description: "ARC-T31 flagship truck-mounted roll forming lift: 31m height, 8t capacity, 2400mm double-row bearing, 9.8m outrigger spread, semi-trailer mounting."
+title: "ARC-T31 Truck-Mounted Roll Forming Lift - 31m Reference Platform"
+description: "ARC-T31 truck-mounted roll forming lift reference: 31m archived height, 8t class, 2400mm double-row bearing and 9.8m outrigger spread."
 category: "Truck-Mounted Roll Forming Lifts"
 moq: 1
 specifications:
@@ -35,9 +35,9 @@ images:
 features:
   - "31m forming height — the tallest truck-mounted roll forming lift in the range"
   - "Ф2,400mm-class double-row slewing bearing rated around 25t rotating loads"
-  - "Massive 9.8m × 9.8m outrigger footprint with 480×380mm box-section legs"
+  - "9.8m × 9.8m archived outrigger footprint with 480×380mm box-section legs"
   - "Ф245mm main boom cylinder and 7,800mm-stroke telescopic cylinder for the tall boom"
-  - "Semi-trailer mounting keeps highway mobility even at flagship height"
+  - "Semi-trailer mounting option subject to chassis, axle-load and road-rule review"
   - "Oil-electric dual lift system — engine or 380V motor, operator's choice"
   - "Height & radius limiter, violation alarm, LCD level gauge and remote E-stop standard"
 faq:
@@ -59,11 +59,11 @@ draft: false
 
 ## Product Overview
 
-The **ARC-T31** is the flagship of the truck-mounted range — 31 meters of forming height with full highway mobility. Mounted on a 13-17m semi-trailer, the complete forming line reaches the tallest tier of steel construction and still relocates between cities overnight.
+The **ARC-T31** is the upper archived truck-mounted reference at 31m forming height. A compatible 13–17m-class semi-trailer may be used after chassis, axle-load, registration and route review; relocation time depends on local road and transport rules.
 
 The engineering follows the 30m-class crawler models: Ф2,400mm-class double-row slewing bearing, 480 × 380mm box-section outriggers spreading **9.8m × 9.8m**, Ф245mm main boom cylinder and a 7,800mm-stroke telescopic cylinder. The module weighs 27.3 tonnes excluding former and trailer.
 
-One operator on one imported radio remote controls outrigger deployment, lifting, slewing and the forming line. The height/radius controller with violation alarm, LCD level gauge and 24V safe-voltage valve system are standard.
+One imported radio remote can command outrigger deployment, lifting, slewing and the forming line. The height/radius controller with violation alarm, LCD level gauge and 24V safe-voltage valve system are standard.
 
 ## Applications
 
@@ -87,7 +87,7 @@ The ≤8,000mm output radius delivers panels past ring beams and parapets.
 
 ## Packaging & Shipping
 
-Ships as module (trailer sourced locally) or complete unit. Export coating, moisture-proof wrapping and transport locks standard. RoRo or break-bulk; FOB / CIF / DDP supported.
+Ships as module (trailer sourced locally) or complete unit. Export coating, moisture-proof wrapping and transport locks standard. RoRo or break-bulk; Trade terms are confirmed in the project quotation.
 
 ---
 

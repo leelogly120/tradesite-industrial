@@ -38,9 +38,9 @@ images:
 features:
   - "28m forming height with ≤8,000mm output radius for very tall, deep-eave structures"
   - "Ф2,600mm × 200mm double-row slewing bearing — rated around 25t rotating loads"
-  - "Massive 9.8m × 9.8m outrigger footprint with 480×380mm box-section two-stage legs"
+  - "9.8m × 9.8m archived outrigger footprint with 480×380mm box-section two-stage legs"
   - "K3V112 main pump and GM60 travel motors — upsized hydraulics for the taller boom"
-  - "Full one-man remote control of travel, outriggers, lifting and roll forming"
+  - "Integrated remote control of travel, outriggers, lifting and roll forming"
   - "Dual power: 110kW Yuchai turbo diesel + 380V/18kW electric with selectable lift system"
   - "Q345B / 700BL steel structure with height/radius limiter and violation alarm"
 faq:
@@ -64,7 +64,7 @@ draft: false
 
 The **ARC-C28** pushes aerial roll forming to 28 meters for the tallest single-span industrial structures. To carry a full roll forming line to that height safely, everything below is upsized: a Ф2,600mm × 200mm double-row slewing bearing rated around 25-tonne rotating loads, 480 × 380mm box-section outriggers spreading to a **9.8m × 9.8m footprint**, a Ф245mm main boom cylinder and K3V112 main pump with GM60 travel motors.
 
-The working principle is unchanged — the forming machine rides the platform, coil is formed at roof level, and panels up to 200m long feed straight onto the purlins. One operator on one remote runs the complete cycle: crawler travel, turning, outrigger deployment, lifting, slewing and forming.
+The working principle is unchanged — the forming machine rides the platform, coil is formed at roof level, and panels up to 200m long feed straight onto the purlins. One integrated remote can command crawler travel, turning, outrigger deployment, lifting, slewing and forming; the ground operator still works within a trained roofing crew and approved lift plan.
 
 ## Applications
 
@@ -88,7 +88,7 @@ The 9.8m × 9.8m outrigger footprint gives a stable base on prepared aprons whil
 
 ## Packaging & Shipping
 
-Full export preparation with anti-corrosion coating and transport locking. Ships via RoRo vessel or break-bulk; FOB / CIF / DDP supported.
+Full export preparation with anti-corrosion coating and transport locking. Ships via RoRo vessel or break-bulk; Trade terms are confirmed in the project quotation.
 
 ---
 

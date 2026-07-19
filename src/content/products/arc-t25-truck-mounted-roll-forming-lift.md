@@ -69,10 +69,10 @@ The structure mirrors its crawler sibling where it counts: Ф2,100mm double-row 
 One unit serves projects across an entire region — drive, set outriggers, form, drive again.
 
 ### Large Workshops & Cargo Terminals
-20-25m eaves with continuous panels up to 200m; no crane, no ground forming crew.
+20-25m eaves with continuous panels up to 200m; reduced repeated crane lifting and ground forming/handling.
 
 ### Equipment Rental Fleets
-High utilization thanks to road mobility; one operator per unit keeps daily cost low.
+High utilization thanks to road mobility; integrated controls can reduce duplicated equipment interfaces.
 
 ## Technical Highlights
 
@@ -84,7 +84,7 @@ High utilization thanks to road mobility; one operator per unit keeps daily cost
 
 ## Packaging & Shipping
 
-Module ships with or without truck; export coating and transport locks standard. FOB / CIF / DDP supported. For containerized shipping, see the ARC-T25HQ.
+Module ships with or without truck; export coating and transport locks standard. Trade terms are confirmed in the project quotation. For containerized shipping, see the ARC-T25HQ.
 
 ---
 

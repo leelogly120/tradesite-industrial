@@ -1,6 +1,6 @@
 ---
-title: "ARC-C32 Crawler Roll Forming Lift - 32m Flagship Aerial Roofing Platform"
-description: "ARC-C32 flagship crawler roll forming lift: 30-32m height, 8t capacity, 125kW Yuchai diesel, double-row slewing bearing, one-man full remote control."
+title: "ARC-C32 Crawler Roll Forming Lift - 30-32m Reference Platform"
+description: "ARC-C32 crawler roll forming lift reference: 30-32m archived height, 8t class, diesel/electric options, double-row bearing and integrated remote."
 category: "Crawler Roll Forming Lifts"
 moq: 1
 specifications:
@@ -36,11 +36,11 @@ images:
   - "/images/products/arc-c32-crawler-roll-forming-lift-3.jpg"
   - "/images/products/arc-c32-crawler-roll-forming-lift-4.jpg"
 features:
-  - "Industry-leading 30-32m forming height — the tallest crawler roll forming lift in the range"
+  - "30–32m archived height — the upper crawler reference range"
   - "50t traction crawler chains with 6.5m ground contact for maximum stability under the tall boom"
   - "125kW Yuchai turbocharged diesel plus 380V/18.5kW electric — oil-electric dual lift system"
   - "Ф2,400mm × 180mm double-row slewing bearing with minimal clearance and extended life"
-  - "One-man imported radio remote: travel, turning, outriggers, lifting, slewing and forming"
+  - "Imported radio remote integrates travel, turning, outriggers, lifting, slewing and forming"
   - "Smartphone-linked camera monitoring of shear position available for full-site visibility"
   - "Q345B / 700BL structure with triple-section outrigger legs for the 30m+ class"
 faq:
@@ -62,11 +62,11 @@ draft: false
 
 ## Product Overview
 
-The **ARC-C32** is the flagship of the crawler range — 30 to 32 meters of forming height, the tallest aerial roll forming platform we build. It exists for the projects nothing else can reach: wide-body aircraft hangars, Olympic-class stadium roofs and landmark long-span halls.
+The **ARC-C32** represents the upper archived crawler range at 30–32m forming height. It can be screened for taller hangars and long-span steel buildings after the working envelope, wind, ground bearing and transport plan are confirmed.
 
 Stability at this height starts at the ground. The chassis runs **50-tonne traction chains** on 600mm shoes with 6.5 meters of track in contact with the ground. Above it, a Ф2,400mm × 180mm double-row slewing bearing, triple-section 480 × 380mm outrigger legs spreading 9.8m × 9.8m, and a Ф220/245mm main boom cylinder carry the forming machine smoothly to full height.
 
-Power comes from a 125kW Yuchai turbocharged diesel for travel and off-grid work, with a 380V / 18.5kW electric mode for forming. The oil-electric dual lift system switches between engine and motor at the operator's choice. As on every ARC crawler, the entire cycle — travel, turning, outriggers, lifting, slewing, forming, shearing — runs from one imported radio remote in one operator's hands.
+Power comes from a 125kW Yuchai turbocharged diesel for travel and off-grid work, with a 380V / 18.5kW electric mode for forming. The oil-electric dual lift system switches between engine and motor at the operator's choice. As on every ARC crawler, travel, turning, outriggers, lifting, slewing, forming and shearing are integrated into one imported radio remote; crew roles remain defined by the approved lift and roofing plan.
 
 ## Applications
 
@@ -89,7 +89,7 @@ Convention centers and terminal buildings where roof quality is on public displa
 
 ## Packaging & Shipping
 
-Export-grade anti-corrosion coating, moisture-proof electrical wrapping, transport locking and spare parts kit. RoRo or break-bulk shipment; FOB / CIF / DDP supported.
+Export-grade anti-corrosion coating, moisture-proof electrical wrapping, transport locking and spare parts kit. RoRo or break-bulk shipment; Trade terms are confirmed in the project quotation.
 
 ---
 

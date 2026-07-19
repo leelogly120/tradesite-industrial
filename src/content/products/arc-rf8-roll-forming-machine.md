@@ -53,7 +53,7 @@ The **ARC-RF8** is the forming heart of the aerial roll forming system — a sta
 
 It forms standing seam (JCH-type), trapezoidal roof panel and clip-lock profiles from 0.3-1.0mm color steel, galvanized or aluminum-magnesium-manganese coil, in continuous lengths from 1 to 200 meters. A hydraulic shear with 5.5kW pump cuts panels cleanly at height, commanded from the ground.
 
-Integration is the point: an aviation-plug connection ties the machine into the lift's Mitsubishi PLC cabinet, so forming speed, shearing and panel counting run from the **same radio remote** that drives the lift. One operator, one controller, complete line.
+Integration is the point: an aviation-plug connection ties the machine into the lift's Mitsubishi PLC cabinet, so forming speed, shearing and panel counting run from the **same radio remote** that drives the lift. Lift and forming functions can be integrated into one controller; trained site crew, supervision and the approved lift plan remain required.
 
 ## Applications
 
@@ -64,7 +64,7 @@ Order together with any ARC-C or ARC-T model for a factory-matched, pre-commissi
 Add a second ARC-RF8 with different tooling to switch profiles between projects without re-tooling downtime.
 
 ### Replacement & Upgrade
-Replace an aging ground former with an aerial-ready line and eliminate the crane from your panel logistics.
+Replace an aging ground former with an aerial-ready line and reduce repeated crane lifts in your panel logistics.
 
 ## Technical Highlights
 
@@ -76,7 +76,7 @@ Replace an aging ground former with an aerial-ready line and eliminate the crane
 
 ## Packaging & Shipping
 
-Export packaging with anti-corrosion coating and moisture-proof electrical wrapping. Ships alongside ARC lifts or separately in standard containers. FOB / CIF / DDP supported.
+Export packaging with anti-corrosion coating and moisture-proof electrical wrapping. Ships alongside ARC lifts or separately in standard containers. Trade terms are confirmed in the project quotation.
 
 ---
 

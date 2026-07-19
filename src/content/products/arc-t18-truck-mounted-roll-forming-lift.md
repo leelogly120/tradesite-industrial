@@ -1,6 +1,6 @@
 ---
 title: "ARC-T18 Truck-Mounted Roll Forming Lift - 18.5m Aerial Roofing Platform"
-description: "ARC-T18 truck-mounted roll forming lift: 18.5m height, 8t capacity (11/20t options), double-row bearing, height limiter, one-man remote operation."
+description: "ARC-T18 truck-mounted roll forming lift: 18.5m height, 8t capacity (11/20t options), double-row bearing, height limiter, integrated radio remote operation."
 category: "Truck-Mounted Roll Forming Lifts"
 moq: 1
 specifications:
@@ -32,16 +32,16 @@ images:
   - "/images/products/arc-t18-truck-mounted-roll-forming-lift-3.jpg"
   - "/images/products/arc-t18-truck-mounted-roll-forming-lift-4.jpg"
 features:
-  - "18.5m height — the most popular truck-mounted class for standard steel workshops"
+  - "18.5m reference height for common steel-workshop projects"
   - "Three capacity ratings: 8t standard, 11t and 20t heavy for wide or double-layer formers"
   - "Height & radius limiter with violation alarm standard from this model up"
   - "Ф1,700mm double-row heavy-duty slewing bearing (up to Ф2,100mm on heavy version)"
   - "Highway mobility on a 9.6m flatbed — module weighs from 13.5 tonnes"
-  - "Mitsubishi PLC with touchscreen + full radio remote, one-man operation"
+  - "Mitsubishi PLC with touchscreen + full radio remote, integrated remote operation"
   - "Roll former electric cabinet, VFD and remote included in the package"
 faq:
   - question: "Which capacity rating should I choose?"
-    answer: "The 8-tonne standard version carries typical single-profile roll formers. Choose 11t for wider machines or those with heavier decoilers, and the 20t heavy version for double-layer formers — it upgrades the slewing bearing toward Ф2,100mm, widens the outriggers to 7.2m × 7.2m and is best paired with a 13m semi-trailer."
+    answer: "The archive lists 8t, 11t and 20t classes with different bearings and outrigger arrangements. Select the class only after the forming-line mass, load center, chassis gross mass and local road limits are checked."
   - question: "What is included with the lift module?"
     answer: "From the ARC-T18 up, the package includes the roll forming machine's electric cabinet, variable-frequency drive and remote integration — the forming line and the lift share one control system out of the box."
   - question: "How high and how far can panels be delivered?"
@@ -58,17 +58,17 @@ draft: false
 
 ## Product Overview
 
-The **ARC-T18** is the workhorse of the truck-mounted range — 18.5 meters of lift height matches the single largest tier of steel building construction worldwide. The module mounts on a common 9.6m flatbed truck and carries the roll forming machine from site to site at highway speed, forming panels at eave height and feeding them straight onto the purlins.
+The **ARC-T18** is an 18.5m reference configuration in the truck-mounted range. The module mounts on a compatible 9.6m-class flatbed after chassis and road-rule review, carrying the roll forming machine between sites and feeding panels near eave height.
 
-Three capacity ratings (8t / 11t / 20t) cover everything from standard single-profile formers to heavy double-layer machines. From this model upward, the **height/radius limiter with violation alarm** is standard, and the roll former's electric cabinet, VFD and remote are integrated into the lift's control system — one remote, one operator, complete cycle.
+Three capacity ratings (8t / 11t / 20t) cover everything from standard single-profile formers to heavy double-layer machines. From this model upward, the **height/radius limiter with violation alarm** is standard, and the roll former's electric cabinet, VFD and remote are integrated into the lift's control system — one integrated remote-control workflow.
 
 ## Applications
 
 ### Standard Steel Workshops & Warehouses
-14-18.5m eaves — the highest-volume segment of steel construction, served by one truck and one operator.
+14-18.5m eaves — the highest-volume segment of steel construction, served by one truck-mounted system and a trained site crew.
 
 ### Multi-Site Roofing Contractors
-Highway mobility plus fast outrigger setup means two or even three sites can be serviced in a single day.
+Highway mobility plus fast outrigger setup means road mobility can support multi-site scheduling when route, setup time and local rules allow.
 
 ### Wall Panel Feeding
 The same platform positions formers for vertical wall cladding on high side walls.
@@ -84,7 +84,7 @@ The same platform positions formers for vertical wall cladding on high side wall
 
 ## Packaging & Shipping
 
-Module ships with or without truck. Export anti-corrosion coating and transport locking standard. FOB / CIF / DDP supported.
+Module ships with or without truck. Export anti-corrosion coating and transport locking standard. Trade terms are confirmed in the project quotation.
 
 ---
 

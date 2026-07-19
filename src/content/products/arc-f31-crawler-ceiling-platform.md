@@ -1,11 +1,7 @@
 ---
-title: "ARC-F31 Crawler Under-ceiling Platform - 31m Pick & Carry Aerial Lift"
-description: "ARC-F31 crawler under-ceiling platform: 31m height, 12m×8m extended platform, 0.5T pick & carry load. For mega-venue and airport terminal ceiling work."
+title: "ARC-F31 Crawler Under-Ceiling Platform - Reference Configuration"
+description: "ARC-F31 reference concept for high-reach under-ceiling work. Verify the 31m-class envelope, deck load, travel mode, power and compliance per project."
 category: "Crawler Ceiling Platforms"
-price:
-  min: 200000
-  max: 260000
-  currency: "USD"
 images:
   - "/images/products/arc-f31-crawler-ceiling-platform-1.jpg"
   - "/images/products/arc-f31-crawler-ceiling-platform-2.jpg"
@@ -13,6 +9,7 @@ images:
   - "/images/products/arc-f31-crawler-ceiling-platform-4.jpg"
 moq: 1
 specifications:
+  "Data Status": "Reference development data — model-specific verification required"
   "Max Working Height": "31m"
   "Max Platform Height": "31m"
   "Overall Length": "14.7m"
@@ -30,7 +27,7 @@ specifications:
   "Machine Weight": "~25T"
   "Platform Weight": "2.2T"
   "Diesel Engine": "150hp"
-  "Electric Motor": "KW×2"
+  "Electric Motor": "Twin motors — rating to be confirmed"
   "Hydraulic Pump": "K3V63"
   "Drive Unit": "GM45"
   "Crawler Chain": "PC200"
@@ -41,24 +38,23 @@ specifications:
   "Max Working Angle": "X-0°/Y-73°"
   "Rise/Descent Time": "15/9 min"
 features:
-  - "Pick & Carry — continuous workflow at full 31m elevation with 0.5T load at 1.0 km/h"
-  - "Dual power: 150hp diesel + electric motors for indoor zero-emission ceiling work"
-  - "Full remote control — ground-level operation keeps personnel clear of ceiling hazard zones"
-  - "12m×8m extended platform (96m²) accommodates 6-10 workers with tools and materials"
-  - "Imported components: Schneider Electric, French slewing bearing, 42CrMo rods, 700L steel"
-  - "25T crawler chassis with 360° steering and 30% gradeability for demanding sites"
-  - "5T integrated crane capacity for heavy ceiling component installation"
+  - "Reference large-deck concept — platform geometry and permitted load require approved drawings"
+  - "Crawler chassis — floor pressure, route, turning envelope and gradeability require site verification"
+  - "Travel-at-height concept — permitted height, speed and load require a model-specific load chart and witnessed test"
+  - "Diesel and electric power concept — exact engine, motor rating, emissions and sound data require confirmation"
+  - "Remote control concept — final control functions, interlocks and emergency recovery require acceptance testing"
+  - "Material-handling concept — crane capacity and simultaneous-use restrictions require the final load calculation"
 faq:
-  - question: "What is the maximum working height of the ARC-F31?"
-    answer: "The ARC-F31 reaches a maximum platform height of 31 meters with a 12m×8m extended platform. This places it in the range needed for the world's largest airport terminals, Olympic-class stadiums, and mega-convention centers where ceiling heights exceed 28m. At full extension, workers have comfortable reach for ceiling installations at 33-34m."
-  - question: "Can this platform operate while carrying a load?"
-    answer: "Yes. The ARC-F31 maintains full pick & carry capability — driving at up to 1.0 km/h while the platform is fully elevated to 31m and loaded with up to 0.5 tonnes of workers and materials. This continuous workflow eliminates the 30-45 minute repositioning delays that outrigger-based lifts require at every new work position."
-  - question: "What power systems are available?"
-    answer: "The ARC-F31 features a dual power system: a 150hp diesel engine for outdoor construction and twin electric motors for indoor zero-emission environments. The system switches seamlessly between modes, enabling the same machine to work on an open construction site during structural phases and perform interior ceiling finishing in enclosed spaces."
-  - question: "What certifications does this platform have?"
-    answer: "The ARC-F31 is undergoing CE certification and complies with ISO 16368 (Mobile Elevating Work Platforms) safety standards. All standard safety systems are included: load sensing, oil pipe explosion prevention, anti-top collision, violation operation alarms, emergency stop, and safety harness anchor points."
-  - question: "What is the delivery time and shipping method?"
-    answer: "Production lead time is 30-45 days. The ARC-F31 ships via 40ft flat rack container or RoRo vessel. We support FOB, CIF, and DDP trade terms with complete export documentation and can coordinate door-to-door logistics to project sites worldwide."
+  - question: "Are the published dimensions and capacities final?"
+    answer: "No. They are reference values from a development brief. The quotation must include a model-specific general arrangement drawing, load chart, transport drawing and signed technical schedule."
+  - question: "Can the platform travel while elevated and loaded?"
+    answer: "That capability must be proven for the exact machine. Confirm permitted travel height, platform load, speed, floor pressure, slope limit, interlocks and emergency recovery in writing and during acceptance testing."
+  - question: "What power system is supplied?"
+    answer: "The reference concept combines diesel and electric power, but the available engine, electric-motor rating, supply voltage, emissions and noise data are configuration-specific."
+  - question: "What certifications are included?"
+    answer: "No certification is assumed from this website. Ask for certificate numbers, issuing bodies, scope, validity and the exact machine configuration, then verify destination-market requirements independently."
+  - question: "How will delivery and commissioning be planned?"
+    answer: "Lead time, shipping method, split points, lifting plan and commissioning scope are confirmed only after the transport drawing, destination route and local support requirements are reviewed."
 relatedProducts:
   - "arc-f20-crawler-ceiling-platform"
   - "arc-f25-crawler-ceiling-platform"
@@ -67,82 +63,32 @@ date: 2026-07-05
 draft: false
 ---
 
-## Product Overview
+## Product Status
 
-The **ARC-F31** is the high-reach model in our crawler under-ceiling platform range, designed for the most demanding ceiling projects in the world's largest venues. At 31 meters of working height, it reaches ceilings that place most conventional aerial equipment beyond their limits — Olympic-class stadiums, international airport mega-terminals, and convention centers with cathedral-height atrium spaces.
+The **ARC-F31** is presented as a **reference configuration**, not as verified serial-production inventory. Its current website data comes from an under-ceiling platform development brief and has less evidence support than the archived crawler and truck-mounted roll-forming range. Buyers should not use this page alone for tendering, lift planning or regulatory approval.
 
-The **pick & carry** advantage becomes even more valuable at these heights. Consider a 31m stadium ceiling where scaffolding would require a 10-day erection sequence and spider lifts cannot reach: the ARC-F31 deploys in under 20 minutes and begins continuous ceiling work immediately. Crews move along the ceiling installation line without interruption, maintaining the same productivity at 31m as they would at 20m — a capability no other access method at this height range can match.
+## Reference Concept
 
-The **12m×8m extended platform** at 31m elevation creates a 96-square-meter working area where 6-10 workers install ceiling panels, mount massive lighting arrays, route HVAC ductwork, and position fire suppression systems simultaneously. The 5T integrated crane lifts heavy components directly to the platform, eliminating the need for separate tower crane coordination at ceiling level.
+The concept combines a crawler chassis with a large platform for ceiling, service and wall-panel work around a 31m-class envelope. The development data lists a nominal platform of 12m × 3m with an extended concept up to 12m × 8m, a reference working load of 0.3–0.5t, and machine mass of about 25t. These values interact: platform extension, personnel, tools, materials, wind exposure and travel mode must all be covered by the final load chart.
 
-At 25 tonnes distributed across heavy-duty crawler tracks, the ARC-F31 exerts ground pressure compatible with engineered commercial flooring while maintaining the stability required for precision work at maximum height. The dual power system ensures this capability extends into enclosed, occupied facilities where zero emissions are mandatory.
+## Required Project Inputs
 
-## Applications
+- Measured work height and horizontal coverage area
+- Doorway, aisle, turning and transport-route dimensions
+- Slab or ground bearing capacity and permitted point/contact pressure
+- Crew, tool and material load at each platform configuration
+- Indoor/outdoor power, ventilation, emissions and noise constraints
+- Wind, overhead obstructions, exclusion zones and rescue plan
+- Destination standards, registration rules and third-party inspection needs
 
-### International Airport Mega-Terminals
-The world's newest airport terminals — serving 50+ million passengers annually — feature soaring ceiling designs reaching 28-35m. These architectural statements require specialized equipment for initial construction and ongoing maintenance. The ARC-F31's 31m reach covers the primary ceiling zone of these terminals, while its electric drive mode enables overnight maintenance without disrupting daytime passenger operations.
+## Acceptance Evidence to Request
 
-### Olympic and World Cup Stadiums
-Mega-event stadiums with 60,000+ seats and retractable roof systems have ceiling heights exceeding 30m. The ARC-F31 handles the full scope of ceiling work: installing and maintaining LED display systems, broadcast lighting arrays, retractable roof mechanisms, and acoustic treatment panels. Its pick & carry workflow is critical on these projects where compressed construction timelines demand maximum productivity.
+Before order, request the model-specific general arrangement drawing, structural calculation basis, load chart, hydraulic and electrical diagrams, safety-function list, stability and travel test records, component list, transport drawing, manuals and exact compliance documents. Approval photos and videos should show the same chassis, platform and accessories named in the quotation.
 
-### Mega Convention Centers
-New-generation convention centers targeting international exhibitions feature column-free halls with 30m+ clear heights to accommodate the largest trade show displays and temporary structures. The ARC-F31 provides the rigging and ceiling installation capability these venues require, with the mobility to reconfigure between events.
+## Typical Application Screening
 
-### Aircraft Maintenance Hangars
-Wide-body aircraft maintenance hangars require ceiling heights of 25-35m to accommodate tall-tail aircraft (A380, B747-8). The ARC-F31 provides access to overhead crane systems, fire suppression piping, lighting, and ventilation at these extreme heights while the crawler chassis operates on hangar floor surfaces designed for aircraft weight.
+The ARC-F31 may be screened for steel-building ceilings, warehouse services, large indoor venues and wall-panel positioning. Suitability cannot be inferred from height alone. Access route, floor bearing, clearance, local rules and emergency recovery can eliminate a concept that appears suitable on a simple height comparison.
 
-### Cathedral and Heritage Building Restoration
-Historic religious buildings and heritage structures often feature vaulted ceilings at 25-35m. The ARC-F31's low ground pressure protects centuries-old floor structures while providing stable access for restoration work — plaster repair, fresco conservation, lighting installation, and structural inspection.
+## Pricing and Delivery
 
-## Technical Highlights
-
-### Extended Reach Engineering
-Reaching 31m while maintaining pick & carry capability requires robust structural design:
-- **Reinforced boom sections** with higher wall thickness than the 20m and 25m models
-- **4.50m wheelbase** (vs. 4.18m on the 20M model) for enhanced stability at full extension
-- **25T machine weight** providing the counterbalancing mass needed for safe operation at maximum height
-- **73° maximum working angle** allowing the platform to approach vertical ceiling surfaces at optimal working distance
-
-### Dual Power for Versatile Deployment
-- **150hp diesel engine** — full power delivery for outdoor construction, rough terrain, and heavy lifting
-- **Twin electric motors** — zero-emission operation for enclosed facilities, noise-sensitive environments, and occupied buildings
-- **Instant mode switching** — no shutdown between power modes, maintaining workflow continuity
-
-### Premium Component Selection
-- **Schneider Electric** control components — industrial-grade reliability with global service network
-- **French-manufactured slewing bearing** — precision rotation under the increased moment loads at 31m extension
-- **42CrMo alloy steel piston rods** — fatigue-resistant under the higher cyclic loads of extended-reach operation
-- **700L high-strength steel** structural plates — resisting deformation across the full vehicle frame
-- **K3V63 hydraulic pump** — consistent hydraulic performance across all operating conditions
-
-### Multi-Layer Safety Architecture
-- **Load sensing system** — real-time platform weight monitoring with progressive warnings and automatic lockout at overload threshold
-- **Anti-top collision sensors** — detect ceiling proximity and automatically decelerate ascent before contact
-- **Oil pipe explosion prevention** — hydraulic check valves prevent uncontrolled descent if a line fails
-- **Violation operation alarm** — blocks unsafe control sequences specific to extended-reach operation
-- **One-button platform leveling** — automatic compensation for ground irregularities without operator judgment
-- **Full remote control** — operator positioned at ground level, completely removed from ceiling hazard zone
-
-## Packaging & Shipping
-
-Export preparation for the ARC-F31 includes:
-- Comprehensive anti-corrosion treatment on all exposed steel surfaces
-- Hydraulic system sealed with desiccant packs and protective port caps
-- Electrical system wrapped in moisture-proof packaging
-- Platform mechanically locked in transport position
-- Extended spare parts kit (additional filters, seals, hydraulic fittings for the longer boom sections)
-
-**Shipping options:**
-- **40ft Flat Rack Container** — professional securing with twist locks and certified lashing
-- **Roll-on/Roll-off (RoRo) Vessel** — drive-on/drive-off for lowest handling risk
-- **Break Bulk** — available for project sites near ports without container infrastructure
-
-**Lead time:** 30-45 days from order confirmation and deposit receipt.
-
-**Trade terms:** FOB Qingdao, CIF destination port, or DDP door-to-door. Complete export documentation including certificate of origin, packing list, commercial invoice, and bill of lading provided with every shipment.
-
----
-
-*Planning a mega-venue ceiling project? [Contact us](/contact/) for a detailed site assessment and project-specific deployment plan.*
-
-*Compare with other models: [ARC-F20](/products/arc-f20-crawler-ceiling-platform/) | [ARC-F25](/products/arc-f25-crawler-ceiling-platform/) | [ARC-F35 Heavy-Duty](/products/arc-f35-crawler-ceiling-platform/)*
+Pricing is available only after configuration review. Historical or development-budget figures are not current export offers. Production schedule, packaging, ocean-freight method, local assembly and commissioning are confirmed in the commercial and technical agreement.

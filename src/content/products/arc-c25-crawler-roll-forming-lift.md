@@ -38,7 +38,7 @@ images:
 features:
   - "25m forming height with ≤6,000mm output radius — reaches over parapets and deep eave overhangs"
   - "Ф2,100mm × 180mm double-row slewing bearing — rated to rotate 20t-class loads safely"
-  - "Full remote control of travel, turning, outriggers, lifting and roll forming — one-man operation"
+  - "Full remote control of travel, turning, outriggers, lifting and roll forming — integrated remote operation"
   - "Dual power — 110kW Yuchai turbo diesel + 380V/18kW electric mode with selectable lift system"
   - "Height & radius limiter, violation alarm and LCD level gauge standard"
   - "Two-stage outriggers with 7.3m × 7.0m spread and cylinder safety locks"
@@ -47,7 +47,7 @@ faq:
   - question: "What working range does the ARC-C25 cover?"
     answer: "The shear exit reaches 25 meters, panels can be delivered between 5m and 25m above ground, and the output radius extends up to 6,000mm from the slewing center. Continuous panels from 1m to 200m are formed in one run."
   - question: "Can it carry heavier roll forming machines?"
-    answer: "The standard configuration lifts 8 tonnes; an 11-tonne version is available for wider or double-layer forming machines. The Ф2,100mm × 180mm double-row slewing bearing is engineered around 20t-class rotating loads, providing a wide safety margin."
+    answer: "The archived standard configuration lists 8 tonnes; an 11-tonne version is also listed for heavier forming lines. Bearing, machine mass, load center and stability must be checked against the quoted load chart."
   - question: "What is included in the electrical package?"
     answer: "A stainless steel cabinet with Mitsubishi PLC and 18.5kW VFD, Schneider electrical elements, touchscreen plus radio remote dual operation, aviation-plug connection to the roll former, panel counting system, and a height/angle controller with violation alarm."
   - question: "How is the machine transported between sites?"
@@ -62,7 +62,7 @@ draft: false
 
 ## Product Overview
 
-The **ARC-C25** is the most popular model in our crawler range — 25 meters of forming height covers the vast majority of large-span steel structures built today, from airport cargo terminals to exhibition halls. A complete roll forming machine rides on the 9m × 2.3m platform, forming standing-seam panels at roof level and feeding them directly onto the purlins in continuous runs up to 200 meters.
+The **ARC-C25** is a 25m-class reference model in the crawler range. A compatible roll forming machine rides on the 9m × 2.3m historical platform configuration, forming panels near roof level and feeding them toward the installation area. The archived output-length range extends to 200m, subject to material, coil, site and weather conditions.
 
 The load path is engineered generously at every stage: a Ф2,100mm × 180mm **double-row slewing bearing** rated around 20-tonne rotating loads, Ф180/140mm outrigger cylinders, a Ф203mm main boom cylinder and a two-stage 7.3m × 7.0m outrigger footprint. Machine weight is 33.1 tonnes without the forming machine.
 
@@ -71,13 +71,13 @@ Power is dual: a 110kW Yuchai turbocharged diesel drives travel and off-grid ope
 ## Applications
 
 ### Airports & Cargo Terminals
-Wide roof planes and 20-25m eave heights match the ARC-C25's envelope exactly; the ≤6,000mm output radius clears parapets and service walkways.
+Projects with 20–25m-class eaves can be screened against the archived working envelope. Parapets, service walkways, output radius and wind plan still require a project drawing.
 
 ### Stadiums & Exhibition Halls
 Long continuous panels reduce joint count on high-visibility roofs; the crawler chassis works from the unfinished apron around the structure.
 
 ### Heavy Industrial Plants
-Steel mills, power plant halls and hangar-type buildings with 22-25m eaves — formed, sheared and fed by one remote operator.
+Steel mills, power plant halls and hangar-type buildings with 22-25m eaves — formed, sheared and fed through an integrated remote-control workflow.
 
 ## Technical Highlights
 
@@ -90,7 +90,7 @@ Steel mills, power plant halls and hangar-type buildings with 22-25m eaves — f
 
 ## Packaging & Shipping
 
-Export anti-corrosion coating, moisture-proof electrical wrapping, transport locks and spare seal kit standard. Ships via RoRo vessel or flat rack container; FOB / CIF / DDP terms supported.
+Export anti-corrosion coating, moisture-proof electrical wrapping, transport locks and spare seal kit standard. Ships via RoRo vessel or flat rack container; Trade terms are confirmed in the project quotation.
 
 ---
 
