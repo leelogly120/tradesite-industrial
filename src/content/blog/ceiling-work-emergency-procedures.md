@@ -14,231 +14,107 @@ relatedBlog: ["ceiling-work-safety-checklist", "ceiling-work-fall-protection"]
 
 # Ceiling Work Emergency Procedures: Be Prepared
 
-You never think you'll need emergency procedures until you do. I've used these procedures twice in my career. Both times, they prevented serious injuries. Print this page and keep it accessible.
+Every year, the construction industry loses hundreds of workers to preventable deaths at height. According to the Bureau of Labor Statistics (BLS), falls, slips, and trips accounted for 865 worker fatalities in 2023, representing the second-leading cause of workplace death behind transportation incidents. Among construction workers specifically, falls to a lower level remain the single deadliest event, claiming 395 lives in a single year. These are not abstract statistics. Each number represents a worker who went home in the morning and never returned, a family left behind, and a jobsite forever changed by tragedy.
 
-## Emergency Response Principles
+Ceiling work presents a uniquely dangerous category within construction. Workers operate 15 to 80 feet above the ground, often in confined or semi-enclosed spaces with limited egress. They navigate around structural steel, ductwork, electrical conduit, and fire suppression systems while carrying tools and materials. The margin for error is measured in inches. When something goes wrong on a ceiling project, the consequences are immediate and severe. A dropped tool becomes a projectile. A misstep becomes a fall. A sudden equipment failure becomes a life-threatening emergency where every second of delay reduces the chance of a positive outcome.
 
-### The 3-Minute Rule
+This is why emergency preparedness is not optional. OSHA's Construction Safety Standards under [29 CFR 1926](https://www.osha.gov/laws-regs/regulations/standardnumber/1926) require employers to establish and maintain emergency action plans for construction sites. Section 1926.35 mandates that employers develop written emergency action plans whenever required by a specific OSHA standard. Section 1926.502(d)(20) specifically addresses rescue and retrieval requirements for fall protection systems. Failure to comply with these standards carries penalties of up to $16,131 per serious violation and $161,323 per willful violation as of 2025.
 
-**For any emergency:**
-1. **First 30 seconds:** Assess the situation
-2. **Next 30 seconds:** Call for help
-3. **Next 2 minutes:** Provide first aid
-4. **Remainder:** Monitor until help arrives
+But compliance alone does not save lives. Preparation does. The emergency procedures outlined in this guide are drawn from decades of field experience in ceiling installation, maintenance, and inspection. They reflect real incidents, real rescues, and real lessons learned on jobsites ranging from warehouse ceilings to stadium press boxes. Print this document. Train your team on it. Review it before every shift. The day you need these procedures will be the day you are grateful you prepared.
 
-**Time is critical.** Every second counts.
+## The Critical Importance of Emergency Preparedness
 
-## Emergency Scenarios
+Emergency preparedness on ceiling work projects is a legal obligation, a moral imperative, and a practical necessity that separates professional contractors from liability-laden operations. OSHA's General Duty Clause, Section 5(a)(1) of the Occupational Safety and Health Act, requires every employer to provide a workplace "free from recognized hazards that are causing or are likely to cause death or serious physical harm." When workers operate at height, the recognized hazards are self-evident, and the failure to prepare for emergencies constitutes a direct violation of federal law.
 
-### Scenario 1: Fall from Height
+The legal framework surrounding construction emergencies is extensive and unforgiving. Under 29 CFR 1926.50, employers must provide medical and first aid services at every construction site, with a first aid kit that meets ANSI Z308.1 specifications. Under 29 CFR 1926.502(d), employers must provide a rescue capability that can retrieve a fallen worker within minutes, not hours. The standard is explicit: "The employer shall provide for prompt rescue of employees in the event of a fall." Prompt rescue means having trained personnel, equipment, and a documented plan ready before work begins. It does not mean calling 911 and waiting.
 
-**Immediate Actions:**
-1. **DO NOT MOVE THE CASUALTY** (spinal injury risk)
-2. Call emergency services (911/120)
-3. Check breathing and consciousness
-4. Control bleeding if visible
-5. Keep casualty warm
-6. Monitor until help arrives
+The financial consequences of inadequate emergency preparedness extend far beyond OSHA fines. Workers' compensation claims for fall-related injuries average $106,000 per claim, according to the National Council on Compensation Insurance. Wrongful death lawsuits resulting from inadequate rescue procedures can reach settlements in the millions. Insurance premiums spike dramatically after serious incidents, and many carriers will non-renew policies for contractors with poor safety records. Beyond the financial impact, there is the human cost. Workers who witness preventable injuries or deaths on their crew carry psychological trauma that affects performance, retention, and workplace culture for years.
 
-**First Aid:**
-- If breathing: Recovery position
-- If not breathing: CPR (if trained)
-- If bleeding: Direct pressure
-- If spinal injury suspected: Do not move
+Emergency preparedness is not a document you file and forget. It is a living system that requires regular training, equipment inspection, and procedure review. The most effective construction companies treat emergency response as a core competency, drilling rescue scenarios monthly and integrating emergency awareness into daily toolbox talks. They invest in equipment that facilitates rescue, such as the [ARCLIFT ARC-F20 Crawler Ceiling Platform](/products/arc-f20-crawler-ceiling-platform), which includes integrated emergency stop controls and rapid descent capabilities designed to get workers to the ground safely when every second counts.
 
-**Documentation:**
-- Incident details
-- Witness statements
-- Photos
-- Equipment condition
-- Weather conditions
+## Fall Response Protocol: When Every Second Counts
 
-### Scenario 2: Suspension Trauma
+A fall from a ceiling platform is the most critical emergency scenario in overhead construction work. The response protocol must be immediate, coordinated, and executed with precision, because the window between a survivable incident and a fatality can be measured in seconds. According to ANSI Z359.2, the American National Standard for Self-Retracting Devices for Personal Fall Arrest Systems, rescue must be initiated within minutes of a fall event, and the suspension system must limit free-fall distance to no more than six feet with a maximum arresting force of 1,800 pounds on the worker's body.
 
-**What is it:** When a worker is suspended in a harness, blood pools in the legs, reducing blood flow to the brain.
+The first priority after a fall is securing the scene. Immediately halt all overhead work. Shut down all powered platforms and equipment in the vicinity. Designate a scene commander who takes charge of the rescue operation and directs all communication. The scene commander's role is critical because disorganized rescue attempts frequently result in additional injuries, including rescuers falling from height or disturbing evidence that investigators will need later.
 
-**Symptoms:**
-- Unconsciousness
-- Pale skin
-- Weak pulse
-- Difficulty breathing
+Assess the fallen worker's condition without delay. If the worker is conscious and responsive, maintain verbal contact while initiating retrieval. If the worker is suspended in a harness, the 15-30 minute suspension trauma clock begins immediately, a topic covered in depth in the next section. If the worker has impacted the ground or a lower level, apply spinal injury protocols. Do not move the casualty unless there is an immediate life threat such as fire or structural collapse. Moving a patient with a spinal cord injury can transform a recoverable injury into permanent paralysis or death.
 
-**Response:**
-1. Rescue immediately (within 15 minutes)
-2. Lower to horizontal position
-3. Do not raise legs
-4. Call emergency services
-5. Monitor vital signs
+Call 911 immediately, but do not rely on emergency services as your primary rescue capability. Response times for construction site emergencies average 8-12 minutes in urban areas and 15-25 minutes in rural locations. For a worker in suspension trauma, that delay can be fatal. Your site rescue team must be capable of retrieving a fallen worker and providing initial medical treatment before EMS arrives. This is a fundamental requirement under [OSHA's fall protection standards](https://www.osha.gov/fall-protection/rescue) and a core element of the ARCLIFT approach to ceiling work safety. For a complete fall protection framework, review our guide on [ceiling work fall protection](/blog/ceiling-work-fall-protection/).
 
-**Critical:** Suspension trauma can be fatal in 15-30 minutes.
+Document every detail of the incident as it unfolds. Assign someone to record the time of the fall, the response sequence, the worker's condition at each stage, and the actions taken. This documentation becomes critical during OSHA investigations, insurance proceedings, and any subsequent legal review. Photographs of the scene, equipment condition, and the worker's position before rescue are invaluable.
 
-### Scenario 3: Equipment Failure
+## Suspension Trauma: The Silent Killer in Ceiling Work
 
-**Immediate Actions:**
-1. Emergency stop
-2. Evacuate platform if safe
-3. Secure area
-4. Call for assistance
-5. Document issue
+Suspension trauma, also known as harness hang syndrome or orthostatic shock, is the most misunderstood and underappreciated danger in ceiling work fall protection. When a worker hangs motionless in a fall arrest harness, gravity causes blood to pool in the legs. The harness leg straps compress the femoral veins, further impeding venous return to the heart. Within minutes, cardiac output drops, blood pressure falls, and the brain begins to receive inadequate oxygen. The worker may lose consciousness, and without intervention, cardiac arrest follows within 15 to 30 minutes.
 
-**Investigation:**
-- Root cause analysis
-- Equipment inspection
-- Corrective actions
-- Training review
-- Procedure updates
+The physiology is straightforward but the rescue implications are profound. A conscious worker suspended in a harness will experience increasing dizziness, nausea, and loss of peripheral vision within the first 3 to 5 minutes. Panic sets in as the worker recognizes the deteriorating condition but cannot self-rescue. The instinct of bystanders is to lower the worker as quickly as possible to a standing or supine position. This is exactly wrong. Rapid repositioning after prolonged suspension can cause a sudden surge of deoxygenated blood from the legs to the heart, triggering cardiac arrhythmia and death. This phenomenon is called rescue collapse, and it has killed workers who were successfully retrieved from suspension.
 
-### Scenario 4: Fire
+The correct rescue protocol for suspension trauma follows a specific sequence. First, retrieve the worker to the ground or a stable platform within 6 minutes if possible. Use mechanical rescue systems, platform descent controls, or manual retrieval depending on the situation. Second, once the worker is on a stable surface, place them in a seated position with the torso upright and the knees bent. Do not lay the worker flat. Do not elevate the legs. The seated position allows controlled venous return without overwhelming the heart. Third, monitor vital signs continuously for at least 30 minutes after rescue. Many workers appear to recover quickly from suspension trauma only to collapse minutes later when the cardiovascular system fails under the sudden change in blood flow dynamics.
 
-**Immediate Actions:**
-1. Activate fire alarm
-2. Evacuate area
-3. Call fire services
-4. Use extinguisher if safe
-5. Account for all personnel
+Prevention is always superior to rescue. Workers using fall arrest systems should have a means to relieve pressure on the harness leg straps, such as trauma straps or step loops that allow the worker to stand partially in the harness while awaiting rescue. Platforms like the [ARCLIFT ARC-F20 Crawler Ceiling Platform](/products/arc-f20-crawler-ceiling-platform) reduce suspension trauma risk by providing a stable work surface that eliminates the need for individual fall arrest systems in many ceiling work applications. When fall arrest systems are required, a documented rescue plan with retrieval equipment staged at the work zone is not optional. It is the difference between a survivable incident and a fatality.
 
-**Evacuation:**
-1. Stop work immediately
-2. Shut down equipment
-3. Use designated routes
-4. Assemble at assembly point
-5. Account for all personnel
+## Equipment Failure and Structural Emergency Response
 
-### Scenario 5: Medical Emergency
+Equipment failure at height creates an emergency category that demands specific protocols distinct from fall or medical emergencies. A platform malfunction, hydraulic failure, structural collapse, or electrical fault can strand workers 50 feet above the ground with no immediate means of descent. The psychological impact of being trapped at height is severe, and untrained workers may attempt dangerous self-rescue maneuvers that lead to falls or other injuries.
 
-**Immediate Actions:**
-1. Assess the situation
-2. Call emergency services
-3. Provide first aid within training
-4. Monitor casualty
-5. Prepare for evacuation
+The first response to equipment failure is activation of the emergency stop system. Modern elevated work platforms, including the [ARCLIFT ARC-F25 Crawler Ceiling Platform](/products/arc-f25-crawler-ceiling-platform), are equipped with redundant emergency stop controls that immediately halt all powered movement and lock the platform in its current position. Every worker on the platform must know the location of the emergency stop button before the platform is elevated. This is a pre-lift requirement, not an optional familiarization step.
 
-**Common Emergencies:**
+Once the platform is stabilized, the crew leader must assess the nature of the failure. Hydraulic leaks, electrical faults, and structural deformations each require different response strategies. A hydraulic failure on a scissor lift typically allows the platform to be lowered using the manual descent valve, a procedure that should be practiced during equipment orientation. A structural failure, such as a bent boom or cracked weld, may require external rescue via crane, scaffolding, or an adjacent platform. Never attempt to climb down from an elevated platform unless the platform is actively on fire or in imminent danger of collapse. Climbing down from height without fall protection is statistically more dangerous than remaining on a failed platform and waiting for rescue.
 
-| Emergency | Response |
-|-----------|----------|
-| Heart attack | CPR, defibrillator |
-| Stroke | Call 911, position safely |
-| Seizure | Protect head, do not restrain |
-| Allergic reaction | Epinephrine if available |
-| Heat stroke | Cool rapidly, call 911 |
+Evacuation routes must be established before any ceiling work begins. For multi-level ceiling projects, such as [stadium ceiling maintenance](/solutions/stadium-ceiling-maintenance/), evacuation planning must account for the specific geometry of the structure, including the location of catwalks, permanent ladders, and fire escapes. Workers must walk these routes during orientation so that evacuation under stress follows a familiar path rather than an improvised one. Communication during an equipment emergency follows a structured protocol: the platform crew leader reports the situation to the ground supervisor via two-way radio, the ground supervisor activates the site emergency response plan, and the designated rescue team deploys with the appropriate retrieval equipment.
 
-## Emergency Equipment
+## Fire and Environmental Emergencies at Height
 
-### Required Equipment
+Fire in a ceiling work environment presents a uniquely terrifying scenario because workers are trapped above the fire with limited escape routes, often in a space filled with flammable materials such as insulation, duct wrap, and wooden structural members. Smoke rises, which means ceiling workers face immediate inhalation hazards before the fire becomes visible at ground level. A fire that appears manageable from below can create lethal conditions on a ceiling platform within 60 to 90 seconds.
 
-**First Aid Kit:**
-- Bandages (various sizes)
-- Dressings
-- Adhesive tape
-- Antiseptic wipes
-- Burns treatment
-- Eye wash
-- CPR mask
-- Emergency blanket
+The fire evacuation protocol for ceiling work begins with detection and alert. Workers at height must be equipped with personal smoke detectors or connected to the building's fire alarm system via wireless monitors. When an alarm sounds, the response sequence is: stop all work immediately, shut down all powered equipment to eliminate ignition sources, assess the fire location and direction of spread, and initiate descent via the pre-planned evacuation route. If the primary descent route is blocked by fire or smoke, proceed to the designated secondary refuge point and communicate your position via radio. Under no circumstances should a worker at height attempt to fight a fire with a portable extinguisher unless the fire is small, contained, and between the worker and the only escape route. In all other situations, evacuation is the priority.
 
-**Rescue Equipment:**
-- Rescue kit
-- Stretcher
-- Communication devices
-- Emergency plan
-- Assembly point
+Environmental emergencies extend beyond fire to include wind, lightning, and extreme heat. OSHA's construction standards do not specify a maximum wind speed for elevated work, but industry best practice based on equipment manufacturer guidelines establishes 25 mph as the threshold for ceasing aerial platform operations and 35 mph as the threshold for all elevated work including scaffolding. Lightning presents a more absolute standard: all ceiling work must cease when lightning is detected within 10 miles, and workers must descend to ground level and seek shelter in a grounded structure. The [National Fire Protection Association (NFPA) 70E](https://www.nfpa.org/codes-and-standards/nfpa-70e-standard-development/70e) standard for electrical safety in the workplace provides additional guidance on working near energized electrical systems, a common scenario in ceiling installation projects.
 
-### Equipment Locations
+Heat illness prevention is an often-overlooked component of emergency preparedness for ceiling work. Temperatures on ceiling platforms can exceed ambient ground-level temperatures by 15 to 20 degrees Fahrenheit due to radiant heat from roofing materials and restricted air circulation. OSHA's Heat Illness Prevention campaign recommends water, rest, and shade as the three pillars of heat safety. Workers at height must have access to water at all times, must take mandatory rest breaks in shaded or air-conditioned areas every 30 minutes when the heat index exceeds 90 degrees Fahrenheit, and must be trained to recognize the symptoms of heat stroke, heat exhaustion, and heat cramps. A heat stroke emergency at height, where the worker loses consciousness, becomes a fall rescue scenario compounded by a medical emergency.
 
-**Clearly marked and accessible:**
-- First aid kit: [Location]
-- Rescue equipment: [Location]
-- Emergency contacts: [Posted]
-- Assembly point: [Designated]
+## Building Your Emergency Response Team
 
-## Communication
+An effective emergency response team on a ceiling work project requires more than a designated first aider and a phone number for 911. OSHA 29 CFR 1926.502(d)(20) requires that employers provide "prompt rescue" capability for workers using fall protection systems, and the agency has interpreted "prompt" to mean within minutes of a fall event, not within the response time of external emergency services. Building a competent rescue team requires careful selection, rigorous training, and regular drilling.
 
-### Emergency Contacts
+The rescue team composition for a typical ceiling work project includes a minimum of three individuals. The rescue team leader holds overall responsibility for the rescue operation, makes tactical decisions, and communicates with the ground supervisor and emergency services. The retrieval specialist operates the mechanical rescue equipment, including rope descent systems, platform controls, and patient packaging devices. The medical responder provides immediate first aid, monitors vital signs, and manages the handoff to EMS when they arrive. On larger projects with multiple work zones, each zone should have a dedicated three-person rescue team so that a simultaneous emergency does not leave a work zone unprotected.
 
-| Service | Contact |
-|---------|---------|
-| Emergency services | 911/112 |
-| Site manager | [Number] |
-| First aider | [Number] |
-| Hospital | [Number] |
-| Poison control | [Number] |
+Training requirements for rescue team members are specific and non-negotiable. Initial training must include a minimum of 24 hours of technical rescue training covering rope rescue fundamentals, patient packaging, suspension trauma recognition and treatment, and equipment-specific rescue procedures for each type of platform used on the project. Annual refresher training of at least 8 hours is required to maintain competency, with practical hands-on exercises that simulate real emergency scenarios. All rescue team members must hold current first aid and CPR certifications from an OSHA-recognized provider. Documentation of all training must be maintained on-site and available for OSHA inspection at all times.
 
-### Communication Methods
+Equipment requirements for the rescue team include a rope rescue kit rated for the maximum height on the project, a patient packaging device such as a SKED stretcher or comparable system, a mechanical advantage hauling system, two-way radios for each team member, and a first aid kit that meets ANSI Z308.1 standards with additional supplies for fall injury treatment including cervical collars, splints, and emergency blankets. The rescue equipment must be inspected before each shift and after each use. Equipment that shows wear, damage, or malfunction must be immediately removed from service and replaced. Rescue drills must be conducted at least monthly, with each drill simulating a different emergency scenario so that the team develops competency across the full range of potential incidents.
 
-**Primary:** Two-way radio
-**Secondary:** Mobile phone
-**Emergency:** Whistle signals
+## Post-Incident Procedures and Documentation
 
-### Emergency Signals
+The actions taken immediately after an emergency incident are as critical as the response itself. Proper post-incident procedures protect the injured worker, preserve evidence for investigation, fulfill legal reporting obligations, and generate the information needed to prevent recurrence. Rushing through post-incident procedures or treating them as administrative afterthoughts is a common and costly mistake that exposes contractors to regulatory penalties, litigation, and repeat incidents.
 
-| Signal | Meaning |
-|--------|---------|
-| 3 long blasts | Emergency - evacuate |
-| 2 short blasts | Stop work |
-| 1 long blast | All clear |
+OSHA's reporting requirements are strict and time-sensitive. Under 29 CFR 1904.39, employers must report any work-related fatality within 8 hours and any work-related in-patient hospitalization, amputation, or loss of an eye within 24 hours. These reporting deadlines begin at the time the employer learns of the event, not at the time of the event itself. Failure to report within the required timeframe constitutes a separate violation carrying penalties of up to $16,131 per incident. For catastrophic events involving multiple casualties, OSHA will deploy a team to the site within hours, and the employer must preserve the scene and all evidence until the investigation is complete.
 
-## Training Requirements
+The incident investigation methodology should follow a structured root cause analysis approach, such as the 5 Whys technique or the TapRooT system. The investigation team must include a management representative, a worker representative, and a technical expert familiar with the equipment and processes involved. The investigation must answer four fundamental questions: What happened? Why did it happen? What conditions allowed it to happen? What corrective actions will prevent recurrence? Witness statements should be collected within 24 hours while memories are fresh, and all statements should be documented in writing with the witness's signature.
 
-### Who Needs Training
+Corrective action tracking is the final and most important phase of post-incident procedures. Every identified root cause must have a corresponding corrective action, an assigned owner, a completion deadline, and a verification method. Corrective actions that address only the immediate hazard without addressing the systemic failure are inadequate. For example, replacing a damaged harness strap addresses the immediate hazard, but implementing a daily harness inspection program with documented checklists addresses the systemic failure that allowed the damaged harness to remain in service. Workers' compensation considerations must also be addressed promptly. The injured worker's benefits, including medical treatment, temporary disability payments, and vocational rehabilitation if needed, must be initiated within the timeframe required by state law, which varies by jurisdiction but typically ranges from 7 to 21 days.
 
-- All workers on site
-- Supervisors
-- Rescue team members
-- First aiders
+## Frequently Asked Questions
 
-### Training Content
+**How quickly must a fallen worker be rescued from suspension in a harness?**
+ANSI Z359 standards and industry best practices require rescue initiation within minutes of a fall event. Suspension trauma can become fatal within 15 to 30 minutes of continuous suspension. Your site rescue team must be capable of retrieving a fallen worker and initiating medical treatment before external emergency services arrive. The practical target is to have the worker on a stable surface within 6 minutes of the fall.
 
-**Initial training (8 hours):**
-- Emergency procedures
-- First aid basics
-- Rescue techniques
-- Communication protocols
+**What emergency features should I look for in a ceiling work platform?**
+Modern ceiling platforms should include an emergency stop button accessible from both the platform and ground level, a manual descent valve for hydraulic systems, redundant structural safety factors, and integrated fall protection anchor points. The [ARCLIFT ARC-F25 Crawler Ceiling Platform](/products/arc-f25-crawler-ceiling-platform) includes all of these features as standard equipment, along with outrigger interlock systems that prevent the platform from operating on uneven surfaces.
 
-**Annual refresher (4 hours):**
-- Procedure updates
-- Equipment familiarization
-- Practical exercises
-- Assessment
+**Do I need a written emergency action plan for my ceiling work project?**
+Yes. OSHA 29 CFR 1926.35 requires a written emergency action plan whenever a specific OSHA standard requires one, and 29 CFR 1926.502 requires rescue capability for all fall protection scenarios. Even when not explicitly required, a written plan is considered a best practice and may be cited under the General Duty Clause if an incident occurs on a project that lacked one. Our [ceiling work safety checklist](/blog/ceiling-work-safety-checklist/) includes a template for emergency action planning.
 
-## Post-Incident Procedures
+**What should I do if a worker is unconscious but still suspended in a harness?**
+Treat this as a suspension trauma emergency with the highest priority. Retrieve the worker to a stable surface as quickly as possible using mechanical rescue systems. Position the worker in a seated, upright position with knees bent. Do not lay the worker flat or elevate the legs. Monitor vital signs continuously and be prepared to perform CPR if cardiac arrest occurs. Call 911 immediately but begin rescue operations without waiting for EMS to arrive.
 
-### Immediate Actions
+**How often should we conduct emergency rescue drills on a ceiling work project?**
+Monthly drills are the minimum recommended frequency, with each drill simulating a different emergency scenario. Drills should cover fall rescue, suspension trauma response, equipment failure evacuation, fire evacuation, and medical emergencies at height. All drills must be documented, including the scenario, participants, time to complete rescue, and lessons learned. Quarterly, conduct a full-scale drill that involves external emergency services to test coordination and communication protocols.
 
-1. Ensure scene safety
-2. Provide first aid
-3. Call emergency services
-4. Secure the area
-5. Notify management
+## Emergency Preparedness Saves Lives
 
-### Investigation
+Emergency procedures are not paperwork. They are the difference between a near-miss that becomes a training opportunity and a fatality that becomes an OSHA investigation. Every worker on a ceiling project deserves the confidence that comes from knowing their crew has trained for the worst-case scenario, has the equipment to respond, and has the leadership to act decisively when seconds matter.
 
-1. Gather facts
-2. Interview witnesses
-3. Examine equipment
-4. Determine root cause
-5. Implement corrections
+The procedures in this guide reflect decades of field experience and the hard lessons of incidents that could have been prevented. Use them. Train on them. Review them before every project. And when you need equipment that is designed from the ground up with emergency response in mind, the ARCLIFT platform line delivers the safety features, redundancy, and rescue compatibility that professional ceiling work demands.
 
-### Documentation
-
-1. Incident report
-2. Witness statements
-3. Equipment records
-4. Corrective actions
-5. Follow-up verification
-
-## Conclusion
-
-Emergency procedures save lives. By preparing for emergencies, you can:
-
-- Respond quickly and effectively
-- Minimize injuries and damage
-- Meet legal requirements
-- Protect your team
-- Protect your business
-
-**Print this page. Keep it in your truck. Review it regularly.**
-
----
-
-**Need help developing emergency procedures?** [Contact our safety team](/contact/) for a consultation.
+**Ready to upgrade your emergency preparedness?** [Contact the ARCLIFT safety team](/contact/) for a consultation on emergency response planning, equipment selection, and rescue team training for your next ceiling work project.
