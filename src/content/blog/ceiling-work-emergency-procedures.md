@@ -3,7 +3,6 @@ title: "Ceiling Work Emergency Procedures: Be Prepared"
 description: "The emergency procedures that have saved lives on ceiling work projects. Print this and keep it in your truck."
 date: 2026-07-19
 author: "ARCLIFT Technical Team"
-category: "blog"
 tags: ["emergency", "safety", "procedures", "rescue", "critical"]
 readingTime: "10 min read"
 image: "/images/products/arc-f20-crawler-ceiling-platform-1.jpg"
@@ -11,6 +10,7 @@ relatedProducts: ["arc-f20-crawler-ceiling-platform", "arc-f25-crawler-ceiling-p
 relatedSolutions: ["stadium-ceiling-maintenance", "warehouse-ceiling-installation"]
 relatedBlog: ["ceiling-work-safety-checklist", "ceiling-work-fall-protection"]
 ---
+
 
 # Ceiling Work Emergency Procedures: Be Prepared
 

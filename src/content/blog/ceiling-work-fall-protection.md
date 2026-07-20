@@ -3,7 +3,6 @@ title: "Fall Protection for Ceiling Work: What Every Contractor Must Know"
 description: "Practical guide to fall protection based on 10 years of ceiling work experience. Includes real incident analysis and prevention strategies."
 date: 2026-07-19
 author: "ARCLIFT Technical Team"
-category: "blog"
 tags: ["fall protection", "safety", "ceiling work", "real-world", "prevention"]
 readingTime: "15 min read"
 image: "/images/products/arc-f20-crawler-ceiling-platform-1.jpg"
@@ -11,6 +10,7 @@ relatedProducts: ["arc-f20-crawler-ceiling-platform", "arc-f25-crawler-ceiling-p
 relatedSolutions: ["stadium-ceiling-maintenance", "warehouse-ceiling-installation"]
 relatedBlog: ["ceiling-maintenance-safety-checklist", "construction-site-aerial-safety"]
 ---
+
 
 # Fall Protection for Ceiling Work: What Every Contractor Must Know
 

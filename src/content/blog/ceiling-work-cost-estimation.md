@@ -3,7 +3,6 @@ title: "Ceiling Work Cost Estimation: Stop Guessing, Start Knowing"
 description: "The accurate cost estimation method I've used on 200+ projects. No more surprises, no more losses."
 date: 2026-07-19
 author: "ARCLIFT Technical Team"
-category: "blog"
 tags: ["cost estimation", "budgeting", "financial planning", "accuracy", "profitability"]
 readingTime: "12 min read"
 image: "/images/products/arc-c28-crawler-roll-forming-lift-1.jpg"
@@ -11,6 +10,7 @@ relatedProducts: ["arc-c25-crawler-roll-forming-lift", "arc-c28-crawler-roll-for
 relatedSolutions: ["industrial-roof-construction", "warehouse-ceiling-installation"]
 relatedBlog: ["crawler-lift-vs-scaffolding-cost", "ceiling-work-project-management"]
 ---
+
 
 # Ceiling Work Cost Estimation: Stop Guessing, Start Knowing
 

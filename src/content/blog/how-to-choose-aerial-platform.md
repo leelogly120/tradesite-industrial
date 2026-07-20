@@ -1,11 +1,11 @@
 ---
 title: "How to Choose the Right Aerial Work Platform: Complete Selection Guide (2026)"
-description: "Expert guide to choosing aerial work platforms. Compare scissor lifts, boom lifts, crawler lifts, and vertical mast platforms by height, capacity, terrain, and application."
-keywords: ["how to choose aerial work platform", "aerial platform selection guide", "best aerial lift for construction", "aerial work platform buying guide", "scissor lift vs boom lift"]
+description: "Expert guide to choosing aerial work platforms. Compare scissor lifts, boom lifts, and crawler lifts by height, capacity, and terrain."
 date: 2026-07-20
 author: ARCLIFT Technical Team
-category: Buying Guide
+tags: ["aerial platform", "selection guide", "scissor lift", "boom lift", "crawler lift"]
 ---
+
 
 # How to Choose the Right Aerial Work Platform: Complete Selection Guide
 
@@ -35,8 +35,8 @@ The aerial work platform industry recognizes four primary categories, each desig
 | Platform Area | Up to 7.4 mÂ² | Up to 2.3 mÂ² | Up to 2.0 mÂ² | Up to 1.0 mÂ² |
 | Terrain Capability | Flat, firm surfaces | Moderate rough terrain | Excellent rough terrain | Flat, firm surfaces |
 | Indoor Use | Excellent (electric) | Good (electric) | Excellent (electric) | Excellent (electric) |
-| Setup Time | 30 seconds | 45â€“60 seconds | 60â€“90 seconds | 15â€“30 seconds |
-| Price Range (New) | $15,000â€“$150,000 | $80,000â€“$500,000 | $35,000â€“$250,000 | $10,000â€“$40,000 |
+| Setup Time | 30 seconds | 45ï¿?0 seconds | 60ï¿?0 seconds | 15ï¿?0 seconds |
+| Price Range (New) | $15,000ï¿?150,000 | $80,000ï¿?500,000 | $35,000ï¿?250,000 | $10,000ï¿?40,000 |
 
 ## Step 1: Define Your Work Requirements
 
@@ -46,8 +46,8 @@ Working height is the most critical specificationâ€”but it's often misunderstood
 
 **How to calculate required working height**:
 1. Measure the height of the highest work point from ground level
-2. Add 1.5â€“2.0 meters for comfortable overhead reach
-3. Add 0.5â€“1.0 meter margin for uneven ground or platform positioning variations
+2. Add 1.5ï¿?.0 meters for comfortable overhead reach
+3. Add 0.5ï¿?.0 meter margin for uneven ground or platform positioning variations
 
 **Example**: Installing fixtures at 12 meters ceiling height requires:
 - 12m (ceiling) + 1.8m (worker reach) + 0.7m (margin) = 14.5m working height
@@ -56,26 +56,26 @@ Working height is the most critical specificationâ€”but it's often misunderstood
 **Common mistakes**:
 - Selecting a platform that barely reaches the work height, leaving no margin for comfortable work
 - Ignoring that working height decreases on slopes (derating curves in manufacturer specifications)
-- Confusing platform height with working height (platform height + 2m â‰ˆ working height)
+- Confusing platform height with working height (platform height + 2m ï¿?working height)
 
 ### Load Requirements
 
 Platform capacity must accommodate all loads:
 
-**Personnel weight**: 80â€“100 kg per worker (including clothing, PPE, and personal items)
+**Personnel weight**: 80ï¿?00 kg per worker (including clothing, PPE, and personal items)
 
 **Tool weight**: 
-- Hand tools: 5â€“15 kg
-- Power tools: 10â€“30 kg
-- Tool bags/boxes: 10â€“25 kg
+- Hand tools: 5ï¿?5 kg
+- Power tools: 10ï¿?0 kg
+- Tool bags/boxes: 10ï¿?5 kg
 
 **Material weight**: Varies dramatically by application:
-- Lighting fixtures: 5â€“25 kg each
-- HVAC components: 20â€“200 kg
-- Construction materials: 50â€“300 kg
-- Painting equipment: 20â€“50 kg
+- Lighting fixtures: 5ï¿?5 kg each
+- HVAC components: 20ï¿?00 kg
+- Construction materials: 50ï¿?00 kg
+- Painting equipment: 20ï¿?0 kg
 
-**Total load calculation**: Worker + Tools + Materials + Safety margin (10â€“15%)
+**Total load calculation**: Worker + Tools + Materials + Safety margin (10ï¿?5%)
 
 **Example**: Two workers installing HVAC ductwork:
 - Workers: 2 Ã— 90 kg = 180 kg
@@ -97,7 +97,7 @@ Outreachâ€”the horizontal distance the platform can extend from the machine's ce
 
 **How to calculate required outreach**:
 1. Measure horizontal distance from accessible ground position to work point
-2. Add 1â€“2 meters for platform positioning flexibility
+2. Add 1ï¿? meters for platform positioning flexibility
 3. Verify outreach at required height (outreach decreases as height increases per manufacturer derating curves)
 
 The [ARCLIFT Product Configurator](/tools/configurator) helps calculate exact height and outreach requirements based on your project dimensions.
@@ -137,7 +137,7 @@ Ground conditions significantly impact platform selection:
 - Crawler lifts excel with tracked undercarriage stability
 - Rough terrain scissor lifts with 4WD and oscillating axles
 - Boom lifts with rough terrain packages
-- Maximum slope capability: 5â€“20 degrees depending on model
+- Maximum slope capability: 5ï¿?0 degrees depending on model
 
 **Sensitive surfaces** (finished floors, lawns, tile, marble):
 - Electric platforms with non-marking tires essential
@@ -155,7 +155,7 @@ Ground conditions significantly impact platform selection:
 
 Available space around and above the work area affects platform choice:
 
-**Narrow aisles**: Vertical mast lifts (0.75â€“1.0m width) or compact scissor lifts (0.8â€“1.2m width) for access through standard doorways and between racking.
+**Narrow aisles**: Vertical mast lifts (0.75ï¿?.0m width) or compact scissor lifts (0.8ï¿?.2m width) for access through standard doorways and between racking.
 
 **Low ceilings**: Scissor lifts with lowered height under 2.0 meters for access through standard doorways; some models fold to 1.8 meters.
 
@@ -171,13 +171,13 @@ Electric aerial work platforms are the standard for indoor and emission-sensitiv
 
 **Advantages**:
 - Zero direct emissions (safe for enclosed spaces)
-- Low noise (60â€“75 dB(A) vs 95â€“105 dB(A) for diesel)
-- Lower operating costs ($5â€“$15/day energy vs $30â€“$80/day fuel)
+- Low noise (60ï¿?5 dB(A) vs 95ï¿?05 dB(A) for diesel)
+- Lower operating costs ($5ï¿?15/day energy vs $30ï¿?80/day fuel)
 - Reduced maintenance (no engine oil, filters, or emission systems)
 - Longer lifespan (electric motors outlast combustion engines)
 
 **Disadvantages**:
-- Limited runtime (4â€“8 hours per charge for lithium-ion)
+- Limited runtime (4ï¿? hours per charge for lithium-ion)
 - Charging infrastructure required
 - Reduced performance in extreme cold (below -10Â°C)
 - Higher initial purchase price for equivalent performance
@@ -250,8 +250,8 @@ Verify platforms meet applicable safety standards:
 
 - **Europe**: EN 280 (Mobile elevating work platforms)
 - **North America**: ANSI A92.20 (Design), ANSI A92.22 (Safe Use), ANSI A92.24 (Training)
-- **International**: ISO 16368 (Mobile elevating work platforms â€“ Safety principles)
-- **Australia**: AS 1418.10 (Cranes, hoists and winches â€“ Elevating work platforms)
+- **International**: ISO 16368 (Mobile elevating work platforms ï¿?Safety principles)
+- **Australia**: AS 1418.10 (Cranes, hoists and winches ï¿?Elevating work platforms)
 
 The [ARCLIFT Range](/products) is certified to all major international standards, with comprehensive documentation provided for compliance verification.
 
@@ -263,52 +263,52 @@ New aerial work platform pricing varies significantly by type and specification:
 
 | Platform Type | Entry Level | Mid-Range | Premium |
 |--------------|-------------|-----------|---------|
-| Electric Scissor (6â€“10m) | $15,000â€“$25,000 | $25,000â€“$40,000 | $40,000â€“$60,000 |
-| Electric Scissor (12â€“18m) | $30,000â€“$50,000 | $50,000â€“$80,000 | $80,000â€“$150,000 |
-| Electric Boom (12â€“20m) | $80,000â€“$120,000 | $120,000â€“$180,000 | $180,000â€“$300,000 |
-| Diesel Boom (20â€“40m) | $150,000â€“$250,000 | $250,000â€“$350,000 | $350,000â€“$500,000 |
-| Crawler Lift (12â€“20m) | $35,000â€“$60,000 | $60,000â€“$100,000 | $100,000â€“$180,000 |
-| Crawler Lift (25â€“40m) | $80,000â€“$130,000 | $130,000â€“$200,000 | $200,000â€“$350,000 |
-| Vertical Mast (6â€“14m) | $10,000â€“$20,000 | $20,000â€“$30,000 | $30,000â€“$40,000 |
+| Electric Scissor (6ï¿?0m) | $15,000ï¿?25,000 | $25,000ï¿?40,000 | $40,000ï¿?60,000 |
+| Electric Scissor (12ï¿?8m) | $30,000ï¿?50,000 | $50,000ï¿?80,000 | $80,000ï¿?150,000 |
+| Electric Boom (12ï¿?0m) | $80,000ï¿?120,000 | $120,000ï¿?180,000 | $180,000ï¿?300,000 |
+| Diesel Boom (20ï¿?0m) | $150,000ï¿?250,000 | $250,000ï¿?350,000 | $350,000ï¿?500,000 |
+| Crawler Lift (12ï¿?0m) | $35,000ï¿?60,000 | $60,000ï¿?100,000 | $100,000ï¿?180,000 |
+| Crawler Lift (25ï¿?0m) | $80,000ï¿?130,000 | $130,000ï¿?200,000 | $200,000ï¿?350,000 |
+| Vertical Mast (6ï¿?4m) | $10,000ï¿?20,000 | $20,000ï¿?30,000 | $30,000ï¿?40,000 |
 
 ### Operating Cost Factors
 
 Annual operating costs depend on usage intensity:
 
 **Electric platforms**:
-- Energy: $500â€“$1,500/year (daily charging)
-- Maintenance: $1,000â€“$3,000/year
-- Tyres: $300â€“$800/year
-- Battery replacement: $3,000â€“$8,000 every 5â€“7 years (lithium-ion)
-- Insurance: $500â€“$1,500/year
+- Energy: $500ï¿?1,500/year (daily charging)
+- Maintenance: $1,000ï¿?3,000/year
+- Tyres: $300ï¿?800/year
+- Battery replacement: $3,000ï¿?8,000 every 5ï¿? years (lithium-ion)
+- Insurance: $500ï¿?1,500/year
 
 **Diesel platforms**:
-- Fuel: $2,000â€“$8,000/year (depending on hours)
-- Maintenance: $2,000â€“$5,000/year (engine service, emission system)
-- Tyres/tracks: $500â€“$2,000/year
-- Insurance: $800â€“$2,500/year
+- Fuel: $2,000ï¿?8,000/year (depending on hours)
+- Maintenance: $2,000ï¿?5,000/year (engine service, emission system)
+- Tyres/tracks: $500ï¿?2,000/year
+- Insurance: $800ï¿?2,500/year
 
 ### Rental vs Purchase Decision
 
 The rental-versus-purchase decision depends on utilization rate:
 
 **Rent when**:
-- Project duration under 3â€“4 months
-- Utilization below 40â€“50% annually
+- Project duration under 3ï¿? months
+- Utilization below 40ï¿?0% annually
 - Capital budget is constrained
 - Specialized platform needed infrequently
 - Maintenance capability is limited
 
 **Purchase when**:
-- Utilization exceeds 50â€“60% annually
-- Projects exceed 4â€“6 months regularly
+- Utilization exceeds 50ï¿?0% annually
+- Projects exceed 4ï¿? months regularly
 - Capital is available at reasonable cost
 - In-house maintenance capability exists
 - Specific platform configuration needed consistently
 
 **Breakeven calculation**:
-- Typical rental rate: 3â€“5% of purchase price per month
-- Breakeven point: 20â€“33 months of continuous rental equivalent
+- Typical rental rate: 3ï¿?% of purchase price per month
+- Breakeven point: 20ï¿?3 months of continuous rental equivalent
 - Factor in maintenance, insurance, and depreciation for accurate comparison
 
 ## Step 6: Select the Manufacturer
@@ -323,7 +323,7 @@ Choosing the right manufacturer is as important as choosing the right platform t
 
 **Service and support network**: Global parts availability, local service technicians, and 24/7 technical support minimize downtime.
 
-**Warranty coverage**: Industry standard is 1â€“2 years comprehensive; leading manufacturers offer 2â€“3 years with extended options.
+**Warranty coverage**: Industry standard is 1ï¿? years comprehensive; leading manufacturers offer 2ï¿? years with extended options.
 
 **Innovation and technology**: Telematics, remote diagnostics, and fleet management systems add value for professional operators.
 
@@ -343,11 +343,11 @@ The [ARCLIFT Range](/products) offers compelling advantages:
 
 ### What is the most versatile aerial work platform?
 
-Crawler lifts offer the greatest versatility, combining high working height (12â€“40m), rough terrain capability, compact dimensions for indoor use, and electric or dual-power options. The [ARCLIFT Crawler Lift Range](/products/crawler-lifts) navigates through standard doorways while reaching heights of 25+ meters, making them suitable for construction, maintenance, tree care, and industrial applications.
+Crawler lifts offer the greatest versatility, combining high working height (12ï¿?0m), rough terrain capability, compact dimensions for indoor use, and electric or dual-power options. The [ARCLIFT Crawler Lift Range](/products/crawler-lifts) navigates through standard doorways while reaching heights of 25+ meters, making them suitable for construction, maintenance, tree care, and industrial applications.
 
 ### How do I choose between a scissor lift and a boom lift?
 
-Choose a scissor lift when: you need vertical-only access, large platform area for workers and materials, maximum stability, and the most cost-effective solution for heights under 18 meters. Choose a boom lift when: you need horizontal outreach over obstacles, access to building facades, or height exceeding 18 meters. Boom lifts cost 2â€“4 times more than equivalent-height scissor lifts but provide access capabilities scissor lifts cannot match.
+Choose a scissor lift when: you need vertical-only access, large platform area for workers and materials, maximum stability, and the most cost-effective solution for heights under 18 meters. Choose a boom lift when: you need horizontal outreach over obstacles, access to building facades, or height exceeding 18 meters. Boom lifts cost 2ï¿? times more than equivalent-height scissor lifts but provide access capabilities scissor lifts cannot match.
 
 ### What aerial platform is best for indoor use?
 
@@ -355,11 +355,11 @@ Electric scissor lifts are the most popular choice for indoor use due to zero em
 
 ### How much weight can an aerial work platform lift?
 
-Platform capacities range from 136 kg (compact vertical masts) to 1,134 kg (heavy-duty scissor lifts). Most standard platforms support 230â€“450 kg. Always calculate total load including workers, tools, and materials, then add a 10â€“15% safety margin. Never exceed the rated capacityâ€”load monitoring systems will prevent operation if overloaded.
+Platform capacities range from 136 kg (compact vertical masts) to 1,134 kg (heavy-duty scissor lifts). Most standard platforms support 230ï¿?50 kg. Always calculate total load including workers, tools, and materials, then add a 10ï¿?5% safety margin. Never exceed the rated capacityâ€”load monitoring systems will prevent operation if overloaded.
 
 ### Should I rent or buy an aerial work platform?
 
-Rent if your annual utilization is below 40â€“50% or projects are typically under 3â€“4 months. Purchase if utilization exceeds 50â€“60% annually or you have consistent long-term needs. The breakeven point is typically 20â€“33 months of continuous rental equivalent. Factor in maintenance capability, capital availability, and fleet management requirements.
+Rent if your annual utilization is below 40ï¿?0% or projects are typically under 3ï¿? months. Purchase if utilization exceeds 50ï¿?0% annually or you have consistent long-term needs. The breakeven point is typically 20ï¿?3 months of continuous rental equivalent. Factor in maintenance capability, capital availability, and fleet management requirements.
 
 ## Conclusion
 
