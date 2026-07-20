@@ -286,19 +286,26 @@
       }
     ]
   },
-  "hero": {
-    "hero-1.jpg": {
-      "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0048.JPG",
-      "theme": "Aerial-scale high-reach crawler ceiling platform in an active steel structure"
+  "campaign_assets": {
+    "hero": [
+      { "output": "/images/hero/hero-1-arclift.webp", "source": "E:\\举升机\\20米履带反吊顶平台\\DJI_0048.JPG", "theme": "under-ceiling platform in a steel structure with ARCLIFT boom branding", "method": "AI-assisted precise branding edit from a real source machine; ARCLIFT wordmark added in perspective" },
+      { "output": "/images/hero/hero-2.webp", "source": "E:\\举升机\\24米履带高空压瓦机\\mmexport1743395867405.jpg", "theme": "roof-level long-panel forming", "method": "AI-assisted editorial composition from a real source workflow" },
+      { "output": "/images/hero/hero-3.webp", "source": "E:\\举升机\\25米车载高空压瓦机（40HQ集装箱款）等2项文件", "theme": "compact export-oriented configuration", "method": "AI-assisted editorial composition from real source equipment" },
+      { "output": "/images/hero/hero-4.webp", "source": "E:\\举升机\\压瓦机", "theme": "profile-specific roll forming line", "method": "AI-assisted editorial composition from real source equipment" },
+      { "output": "/images/hero/hero-5.webp", "source": "E:\\举升机\\20米履带反吊顶平台", "theme": "wall and facade panel positioning", "method": "AI-assisted editorial composition from real source equipment" }
+    ],
+    "banners": {
+      "directory": "/images/banners/",
+      "count": 14,
+      "pages": ["products", "applications", "airport", "stadium", "warehouse", "about", "compare", "contact", "blog", "case-studies", "category-crawler", "category-truck", "category-ceiling", "category-roll-former"]
     },
-    "hero-2.jpg": {
-      "source": "E:\\举升机\\24米履带高空压瓦机\\mmexport1743395867405.jpg",
-      "theme": "On-roof roll-forming operation and continuous metal panel production"
-    },
-    "hero-3.jpg": {
-      "source": "E:\\举升机\\25米车载高空压瓦机（40HQ集装箱款）等2项文件\\25米履带-15T-高空压瓦+反吊顶+竖板平台+5吨吊车-印度MBS\\4816 2.JPG",
-      "theme": "Port crane loading for export delivery capability"
-    }
+    "home_support": [
+      { "output": "/images/home/under-ceiling-field-v2.webp", "source": "/images/home/under-ceiling-field.webp", "method": "AI-assisted precise logo-area edit", "brand_text": "ARCLIFT", "note": "Removed the translucent patch and integrated a perspective-matched white wordmark directly on the red boom" },
+      "/images/home/roof-panel-output.webp",
+      "/images/home/roll-forming-line.webp",
+      "/images/home/wall-panel-platform.webp"
+    ],
+    "publishing_rule": "Generated campaign images are contextual marketing composites. Product galleries remain tied to source-file provenance; no generated image proves a model-specific configuration or delivered project."
   },
   "other": {
     "logo.png": {
