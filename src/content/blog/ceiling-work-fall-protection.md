@@ -5,7 +5,7 @@ date: 2026-07-19
 author: "ARCLIFT Technical Team"
 tags: ["fall protection", "safety", "ceiling work", "real-world", "prevention"]
 readingTime: "15 min read"
-coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0003.JPG"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0013.JPG"
 relatedProducts: ["arc-f20-crawler-ceiling-platform", "arc-f25-crawler-ceiling-platform"]
 relatedSolutions: ["stadium-ceiling-maintenance", "warehouse-ceiling-installation"]
 relatedBlog: ["ceiling-maintenance-safety-checklist", "construction-site-aerial-safety"]

@@ -4,7 +4,7 @@ description: "Detailed cost analysis comparing scaffolding and aerial platforms 
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["ceiling work", "aerial platform", "safety", "installation"]
-coverImage: "/images/products/local/安装墙板/01e0bc4bf379003344b64673edb507fd.jpg"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0005.JPG"
 ---
 
 # Ceiling Installation Cost Comparison: Choosing the Right Elevated Work Equipment for Your Budget

@@ -4,7 +4,7 @@ description: "Quality control standards for ceiling installation. Inspection met
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["ceiling work", "aerial platform", "safety", "installation"]
-coverImage: "/images/products/local/安装墙板/1aa10c2802d299dea86caeb2d1632e8.jpg"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0017.JPG"
 ---
 
 # Ceiling Work Quality Control: The Complete Guide to Flawless High-Altitude Construction

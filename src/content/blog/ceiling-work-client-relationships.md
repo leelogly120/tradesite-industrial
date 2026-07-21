@@ -4,7 +4,7 @@ description: "How to build and maintain client relationships in ceiling installa
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["ceiling work", "aerial platform", "safety", "installation"]
-coverImage: "/images/products/local/配置、简介/2ef5914133a6b7cc8e4a31a0a0d6c3e.jpg"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0010.JPG"
 ---
 
 # Ceiling Work Client Relationships: Building Lasting Partnerships for Sustained Success

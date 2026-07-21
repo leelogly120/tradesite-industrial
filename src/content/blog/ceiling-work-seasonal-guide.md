@@ -4,7 +4,7 @@ description: "How seasonal weather affects ceiling work. Temperature, humidity, 
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["ceiling work", "aerial platform", "safety", "installation"]
-coverImage: "/images/products/local/安装墙板/242d96946d65a300276b0e0bbb4134a5.jpg"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0023.JPG"
 ---
 
 # Ceiling Work Seasonal Guide: Adapting High-Altitude Construction to Every Season

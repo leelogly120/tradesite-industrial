@@ -4,7 +4,7 @@ description: "Complete guide to warehouse ceiling installation. System types, eq
 date: 2026-07-20
 author: "ARCLIFT Engineering Team"
 tags: ["warehouse", "ceiling installation", "industrial construction", "aerial platform"]
-coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0008.JPG"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0034.JPG"
 ---
 
 

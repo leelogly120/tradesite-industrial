@@ -4,7 +4,7 @@ description: "Guide to shopping mall ceiling renovation. Equipment selection, sa
 date: 2026-07-20
 author: "ARCLIFT Engineering Team"
 tags: ["shopping mall", "ceiling renovation", "commercial construction", "aerial platform"]
-coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0010.JPG"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0032.JPG"
 ---
 
 

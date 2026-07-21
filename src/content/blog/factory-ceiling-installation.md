@@ -4,7 +4,7 @@ description: "Expert guide to factory ceiling installation including lighting, H
 date: 2026-07-20
 author: ARCLIFT Technical Team
 tags: ["factory", "ceiling installation", "industrial", "aerial platform"]
-coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0007.JPG"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0027.JPG"
 ---
 
 

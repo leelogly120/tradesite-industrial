@@ -4,7 +4,7 @@ description: "How airports maintain terminals at height. Equipment selection, sa
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["ceiling work", "aerial platform", "safety", "installation"]
-coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0011.JPG"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0003.JPG"
 ---
 
 # Airport Terminal Maintenance: How Modern Aerial Platforms Are Transforming Aviation Facility Management

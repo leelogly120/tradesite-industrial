@@ -4,7 +4,7 @@ description: "Complete guide to dual-power aerial lifts. Compare diesel-electric
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["dual power", "aerial lift", "hybrid", "diesel-electric"]
-coverImage: "/images/products/local/14-20米履带设备/1d6f2edee17a80c1a7b0017d725763b9.jpg"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0026.JPG"
 ---
 
 # Dual Power Aerial Lift Guide: Diesel & Electric Hybrid Solutions

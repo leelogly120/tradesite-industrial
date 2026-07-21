@@ -4,7 +4,7 @@ description: "Compare roll forming and pre-formed metal panels for roofing and c
 date: 2026-07-20
 author: "ARCLIFT Engineering Team"
 tags: ["roll forming", "pre-formed panels", "roofing", "construction materials"]
-coverImage: "/images/products/local/压瓦机/2023_12_03_10_07_IMG_6890.JPG"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0031.JPG"
 ---
 
 

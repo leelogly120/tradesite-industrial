@@ -4,7 +4,7 @@ description: "Complete safety checklist for ceiling maintenance work. OSHA requi
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["ceiling work", "aerial platform", "safety", "installation"]
-coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0005.JPG"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0006.JPG"
 ---
 
 # Ceiling Maintenance Safety Checklist: A Complete Guide for Facility Managers

@@ -4,7 +4,7 @@ description: "Expert guide to stadium ceiling and roof maintenance. Inspection p
 date: 2026-07-20
 author: "ARCLIFT Engineering Team"
 tags: ["stadium", "ceiling maintenance", "facility management", "aerial platform"]
-coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0009.JPG"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0033.JPG"
 ---
 
 

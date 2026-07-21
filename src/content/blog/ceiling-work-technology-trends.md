@@ -4,7 +4,7 @@ description: "Emerging technologies transforming ceiling work. Autonomous platfo
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["ceiling work", "aerial platform", "safety", "installation"]
-coverImage: "/images/products/local/安装墙板/1afa84e80f8cd1c7418825bd95a825b4.jpg"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0024.JPG"
 ---
 
 # Ceiling Work Technology Trends: How Innovation Is Transforming High-Altitude Construction

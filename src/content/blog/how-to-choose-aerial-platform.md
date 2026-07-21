@@ -4,7 +4,7 @@ description: "Expert guide to choosing aerial work platforms. Compare scissor li
 date: 2026-07-20
 author: ARCLIFT Technical Team
 tags: ["aerial platform", "selection guide", "scissor lift", "boom lift", "crawler lift"]
-coverImage: "/images/products/local/14-20米履带设备/0e69dd2a06ea8b5da051f7d0109bd55.jpg"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0028.JPG"
 ---
 
 

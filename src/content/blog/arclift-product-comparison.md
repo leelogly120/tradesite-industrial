@@ -4,7 +4,7 @@ description: "Compare ARCLIFT aerial platforms by height, capacity, and applicat
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["ceiling work", "aerial platform", "safety", "installation"]
-coverImage: "/images/products/local/14-20米履带设备/5073c82f5c36ae9d19e2bfc98854d43.jpg"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0004.JPG"
 ---
 
 # ARCLIFT Product Comparison: Finding the Right Aerial Platform for Your Project

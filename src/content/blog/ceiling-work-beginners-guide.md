@@ -4,7 +4,7 @@ description: "Everything beginners need to know about ceiling work. Skills, cert
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["ceiling work", "aerial platform", "safety", "installation"]
-coverImage: "/images/products/local/安装墙板/0f312cd1073a364356981e36543aebd.jpg"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0008.JPG"
 ---
 
 # Ceiling Work for Beginners: Everything You Need to Know Before Starting

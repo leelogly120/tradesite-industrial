@@ -9,7 +9,7 @@ date: 2026-07-19
 author: ARCLIFT Technical Team
 
 tags: ["aerial platform", "maintenance", "safety", "OSHA", "equipment"]
-coverImage: "/images/products/local/14-20米履带设备/48be8a7701e41c9ab0ee32ce1079b11.jpg"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0001.JPG"
 ---
 
 

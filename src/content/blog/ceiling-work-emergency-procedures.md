@@ -5,7 +5,7 @@ date: 2026-07-19
 author: "ARCLIFT Technical Team"
 tags: ["emergency", "safety", "procedures", "rescue", "critical"]
 readingTime: "10 min read"
-coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0004.JPG"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0012.JPG"
 relatedProducts: ["arc-f20-crawler-ceiling-platform", "arc-f25-crawler-ceiling-platform"]
 relatedSolutions: ["stadium-ceiling-maintenance", "warehouse-ceiling-installation"]
 relatedBlog: ["ceiling-work-safety-checklist", "ceiling-work-fall-protection"]

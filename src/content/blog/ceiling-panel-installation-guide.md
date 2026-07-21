@@ -4,7 +4,7 @@ description: "Step-by-step guide to ceiling panel installation. Grid systems, pa
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["ceiling work", "aerial platform", "safety", "installation"]
-coverImage: "/images/products/local/安装墙板/0118a5de9090a5df927a71225824676b.jpg"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0007.JPG"
 ---
 
 # Ceiling Panel Installation Guide: Professional Techniques for Perfect Results

@@ -4,7 +4,7 @@ description: "Complete guide to low ground pressure aerial lifts for sensitive s
 date: 2026-07-20
 author: ARCLIFT Technical Team
 tags: ["low ground pressure", "aerial lift", "crawler lift", "sensitive surfaces"]
-coverImage: "/images/products/local/14-20米履带设备/2dcd2ce713ca7459d25eedd0845b9eb.jpg"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0029.JPG"
 ---
 
 

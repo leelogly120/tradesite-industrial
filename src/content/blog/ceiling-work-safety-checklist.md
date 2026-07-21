@@ -4,7 +4,7 @@ description: "Comprehensive safety checklist for ceiling work. PPE requirements,
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["ceiling work", "aerial platform", "safety", "installation"]
-coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0001.JPG"
+coverImage: "/images/products/local/20米履带反吊顶平台/DJI_0021.JPG"
 ---
 
 # Ceiling Work Safety Checklist: 47 Critical Items Every Contractor Must Verify
