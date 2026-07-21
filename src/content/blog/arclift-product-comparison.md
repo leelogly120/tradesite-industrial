@@ -4,11 +4,12 @@ description: "Compare ARCLIFT aerial platforms by height, capacity, and applicat
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["ceiling work", "aerial platform", "safety", "installation"]
+coverImage: "/images/products/local/14-20ç±³å±¥å¸¦è®¾å¤‡/5073c82f5c36ae9d19e2bfc98854d43.jpg"
 ---
 
 # ARCLIFT Product Comparison: Finding the Right Aerial Platform for Your Project
 
-Choosing the right aerial work platform is one of the most important equipment decisions you'll make for any elevated work project. The wrong choice can lead to productivity losses, safety hazards, and unnecessary costs. With dozens of models available across multiple categories, the selection process can feel overwhelming â€?especially when you're comparing specifications that seem similar on paper but deliver very different real-world performance.
+Choosing the right aerial work platform is one of the most important equipment decisions you'll make for any elevated work project. The wrong choice can lead to productivity losses, safety hazards, and unnecessary costs. With dozens of models available across multiple categories, the selection process can feel overwhelming ?especially when you're comparing specifications that seem similar on paper but deliver very different real-world performance.
 
 This comprehensive comparison guide breaks down [ARCLIFT's complete aerial platform lineup](https://arclift.com/products), helping you understand the key differences between product families, match equipment capabilities to your specific applications, and make confident purchasing or rental decisions. Whether you need a compact scissor lift for indoor maintenance or a high-reach boom lift for industrial construction, this guide provides the data and analysis you need.
 
@@ -83,7 +84,7 @@ The SL-RT Series is distinguished by its gradeability (up to 45% on some models)
 
 **Choosing Between Electric and Rough-Terrain:**
 
-The decision comes down to operating environment. If you're working indoors or on smooth outdoor surfaces (parking structures, paved areas), electric is the clear choice â€?lower operating costs, zero emissions, and less noise. For outdoor construction on uneven terrain, rough-terrain models are essential. Some operations benefit from having both types in their fleet.
+The decision comes down to operating environment. If you're working indoors or on smooth outdoor surfaces (parking structures, paved areas), electric is the clear choice ?lower operating costs, zero emissions, and less noise. For outdoor construction on uneven terrain, rough-terrain models are essential. Some operations benefit from having both types in their fleet.
 
 ---
 
@@ -95,7 +96,7 @@ ARCLIFT's boom lift lineup offers two distinct approaches to elevated access, ea
 
 Articulating boom lifts feature two or more hinged arm sections that can navigate around obstacles to reach work areas that aren't directly accessible from below. This "up and over" capability makes them invaluable in environments with structural obstacles, equipment, or other obstructions blocking direct vertical access.
 
-The BL-A Series offers working heights from 40 to 150 feet with horizontal outreach up to 75 feet. The multiple arm sections provide exceptional positioning flexibility â€?operators can approach work areas from virtually any angle. [Explore the BL-A Series](https://arclift.com/products/boom-lifts/articulating).
+The BL-A Series offers working heights from 40 to 150 feet with horizontal outreach up to 75 feet. The multiple arm sections provide exceptional positioning flexibility ?operators can approach work areas from virtually any angle. [Explore the BL-A Series](https://arclift.com/products/boom-lifts/articulating).
 
 | Model | Working Height | Horizontal Outreach | Platform Capacity | Up-and-Over Height |
 |-------|---------------|--------------------|--------------------|-------------------|
@@ -133,7 +134,7 @@ Beyond the basic equipment type, several key criteria should guide your selectio
 
 **Working Height vs. Platform Height:**
 
-Working height is the maximum height a person can reach while standing on the platform â€?typically 6 feet above the platform floor. Platform height is the height of the platform floor itself. Always specify based on working height, as this represents the actual functional reach of the equipment. A machine with a 40-foot platform height provides approximately 46 feet of working height.
+Working height is the maximum height a person can reach while standing on the platform ?typically 6 feet above the platform floor. Platform height is the height of the platform floor itself. Always specify based on working height, as this represents the actual functional reach of the equipment. A machine with a 40-foot platform height provides approximately 46 feet of working height.
 
 **Platform Capacity and Size:**
 
@@ -197,11 +198,11 @@ ARCLIFT's pricing is competitive within the premium equipment segment. Exact pri
 
 **Operating Costs:**
 
-Operating costs include fuel/energy, routine maintenance, and consumables. Electric models have significantly lower operating costs than diesel models â€?electricity costs approximately 70% less than diesel fuel for equivalent energy, and electric motors require far less maintenance than combustion engines.
+Operating costs include fuel/energy, routine maintenance, and consumables. Electric models have significantly lower operating costs than diesel models ?electricity costs approximately 70% less than diesel fuel for equivalent energy, and electric motors require far less maintenance than combustion engines.
 
 **Maintenance Costs:**
 
-Annual maintenance costs typically range from 3-5% of the equipment's purchase price. ARCLIFT's design emphasis on serviceability â€?accessible maintenance points, common fastener sizes, modular components â€?helps keep maintenance costs at the lower end of this range.
+Annual maintenance costs typically range from 3-5% of the equipment's purchase price. ARCLIFT's design emphasis on serviceability ?accessible maintenance points, common fastener sizes, modular components ?helps keep maintenance costs at the lower end of this range.
 
 **Residual Value:**
 
@@ -212,13 +213,13 @@ Well-maintained ARCLIFT equipment retains strong residual value in the used equi
 ## FAQ: ARCLIFT Product Selection
 
 **Q: How do I determine what working height I need for my project?**
-A: Measure the height of the work surface and add 6 feet (the approximate reach height of a person standing on the platform). For example, if you need to work on a ceiling at 30 feet, you need a machine with at least 36 feet of working height. Always round up â€?it's better to have slightly more height than you need than to find yourself short. [ARCLIFT's application specialists](https://arclift.com/contact) can help you calculate your specific requirements.
+A: Measure the height of the work surface and add 6 feet (the approximate reach height of a person standing on the platform). For example, if you need to work on a ceiling at 30 feet, you need a machine with at least 36 feet of working height. Always round up ?it's better to have slightly more height than you need than to find yourself short. [ARCLIFT's application specialists](https://arclift.com/contact) can help you calculate your specific requirements.
 
 **Q: What's the difference between platform capacity and restricted range capacity?**
 A: Some aerial platforms have different capacity ratings for different operating ranges. For example, a boom lift might be rated for 600 pounds in its full operating envelope but 1,000 pounds in a restricted range (closer to the machine's center of gravity). The restricted range capacity is useful for heavier loads but limits the machine's reach. Always check the capacity chart for your specific operating conditions.
 
 **Q: Can I use an electric scissor lift outdoors?**
-A: Many electric scissor lifts are rated for outdoor use on firm, level surfaces in good weather conditions. However, they're not designed for rough terrain, steep slopes, or adverse weather. Check the specific model's outdoor rating â€?some electric models are indoor-only, while others have limited outdoor capability. For consistent outdoor use on uneven terrain, a rough-terrain model is the better choice.
+A: Many electric scissor lifts are rated for outdoor use on firm, level surfaces in good weather conditions. However, they're not designed for rough terrain, steep slopes, or adverse weather. Check the specific model's outdoor rating ?some electric models are indoor-only, while others have limited outdoor capability. For consistent outdoor use on uneven terrain, a rough-terrain model is the better choice.
 
 **Q: How does ARCLIFT's warranty compare to competitors?**
 A: ARCLIFT offers a comprehensive 2-year/3,000-hour warranty on structural components and a 1-year/2,000-hour warranty on parts and labor. Extended warranty options are available for up to 5 years. The warranty covers manufacturing defects and includes on-site service support. [Review ARCLIFT's warranty terms](https://arclift.com/warranty) for complete details.

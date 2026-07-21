@@ -4,6 +4,7 @@ description: "Compare pick and carry cranes and spider lifts for height access p
 date: 2026-07-19
 author: ARCLIFT Technical Team
 tags: ["pick and carry", "spider lift", "equipment comparison", "aerial platform"]
+coverImage: "/images/products/local/14-20米履带设备/19223c73aac9d9e7a31a4c4d11c0968.jpg"
 ---
 
 # Pick and Carry vs Spider Lift: Which Is Right for Your Project?

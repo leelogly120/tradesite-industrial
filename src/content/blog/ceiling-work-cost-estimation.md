@@ -5,7 +5,7 @@ date: 2026-07-19
 author: "ARCLIFT Technical Team"
 tags: ["cost estimation", "budgeting", "financial planning", "accuracy", "profitability"]
 readingTime: "12 min read"
-image: "/images/products/arc-c28-crawler-roll-forming-lift-1.jpg"
+coverImage: "/images/products/local/压瓦机/2023_12_03_10_07_IMG_6891.JPG"
 relatedProducts: ["arc-c25-crawler-roll-forming-lift", "arc-c28-crawler-roll-forming-lift"]
 relatedSolutions: ["industrial-roof-construction", "warehouse-ceiling-installation"]
 relatedBlog: ["crawler-lift-vs-scaffolding-cost", "ceiling-work-project-management"]
