@@ -1,114 +1,35 @@
 ---
-title: "Industrial Roof Construction Solutions"
-description: "Aerial work platform solutions for industrial roof construction. Crawler lifts for steel structure buildings, factories, and industrial facilities."
-date: 2026-07-19
-author: "ARCLIFT Engineering Team"
+title: "Industrial Roof Roll-Forming Workflow Planning"
+description: "Evidence-led inputs for evaluating roof-level roll forming and long-panel handling on industrial building projects."
+date: 2026-07-25
+author: "ARCLIFT Technical Team"
 category: "solutions"
-tags: ["industrial", "roof construction", "steel structure", "factory", "crawler lift"]
-image: "/images/products/arc-c28-crawler-roll-forming-lift-1.jpg"
-relatedProducts: ["arc-c25-crawler-roll-forming-lift", "arc-c28-crawler-roll-forming-lift", "arc-c32-crawler-roll-forming-lift"]
+tags: ["industrial roof", "roll forming", "long panels", "steel structure", "project planning"]
+relatedProducts: ["arc-c25-crawler-roll-forming-lift", "arc-c28-crawler-roll-forming-lift", "arc-t25-truck-mounted-roll-forming-lift", "arc-rf8-roll-forming-machine"]
 relatedSolutions: ["warehouse-ceiling-installation", "power-plant-maintenance"]
-relatedCases: ["industrial-factory-roof-construction"]
 ---
 
-# Industrial Roof Construction Solutions
+# Industrial Roof Roll-Forming Workflow Planning
 
-## Why Industrial Roof Construction Needs Specialized Lifts
+Roof-level roll forming can reduce some ground-to-roof handling steps, but suitability depends on the building, panel and site logistics. It does not remove the need for a lifting plan, structural review, weather limits or safe panel-control procedures.
 
-Industrial facilities—factories, warehouses, production plants—require robust aerial access solutions for roof construction and maintenance. The combination of heavy materials, challenging access, and operational constraints demands equipment that standard lifts cannot provide.
+ARCLIFT evaluates the lift carrier, roll-forming line and panel path as one project system. Archived model classes are useful for early comparison only. Final dimensions, loads, interlocks, tooling and transport splits must be defined in approved drawings and a signed technical schedule.
 
-### Common Pain Points in Industrial Roof Work
+## What must be coordinated
 
-1. **Heavy Material Transport**: Roof panels, steel beams, and insulation materials weigh hundreds of kilograms. Workers need platforms that can lift both personnel and materials simultaneously.
+The forming line must match the approved panel drawing, material and coil data. The platform or carrier must match the required elevation, support conditions and access route. The contractor must also define how the emerging panel is supported and controlled at the roof edge, including stop conditions for wind or other site hazards.
 
-2. **Challenging Access Routes**: Industrial sites often have limited access—narrow corridors, heavy equipment traffic, and ongoing production operations.
+No application page can establish production rate, labour saving, crane reduction or project duration. Those outcomes depend on the panel, crew, layout, weather and method statement.
 
-3. **Weather Exposure**: Outdoor industrial work is subject to weather conditions. Equipment must operate reliably in wind, rain, and temperature extremes.
+## Project inputs to prepare
 
-4. **Structural Constraints**: Many industrial buildings have limited floor loading capacity, especially in older facilities or areas with underground utilities.
+- Roof plan, eave height, slope, work edge and obstruction dimensions
+- Panel profile drawing, finished length and roof sequence
+- Material grade, coating, thickness range and coil data
+- Required line speed, cut method and electrical supply
+- Platform payload breakdown and forming-line centre of gravity
+- Travel route, setup positions, bearing limits and exclusion zones
+- Wind policy, panel-support method and emergency procedure
+- Shipping limits, assembly plan and destination documentation
 
-## ARCLIFT Solutions for Industrial Roof Construction
-
-### Recommended Models
-
-| Model | Working Height | Platform Size | Best For |
-|-------|---------------|---------------|----------|
-| [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) | 25m | 6m × 2m | Standard industrial buildings |
-| [ARC-C28](/products/arc-c28-crawler-roll-forming-lift/) | 28m | 6m × 2m | Taller structures |
-| [ARC-C32](/products/arc-c32-crawler-roll-forming-lift/) | 32m | 6m × 2m | High-bay industrial facilities |
-
-### Key Features for Industrial Applications
-
-**Integrated Roll Forming**: On-site panel production:
-
-- Produce roof panels to exact specifications
-- Eliminate transportation damage
-- Reduce material waste by 15-20%
-
-**Heavy-Duty Crawler Tracks**: Navigate industrial terrain:
-
-- Self-propelled on rough surfaces
-- Climb slopes up to 15°
-- Cross uneven terrain without damage
-
-**Diesel Power for Extended Operations**: Essential for remote sites:
-
-- 150hp engine for all-day operation
-- Large fuel capacity for extended shifts
-- Reliable in extreme temperatures (-20°C to +50°C)
-
-**Remote Control Precision**: Critical for precise installation:
-
-- Operator controls from ground or platform
-- Millimeter-accurate positioning
-- Safe operation around existing structures
-
-## Case Studies
-
-- [Industrial Factory Roof Construction](/case-studies/industrial-factory-roof-construction/) - 10,000 sqm roof in 4 weeks
-- [Power Plant Maintenance Project](/case-studies/power-plant-maintenance/) - Continuous operation for 12 weeks
-
-## Technical Specifications
-
-### Material Handling Capacity
-
-| Model | Platform Capacity | Reach | Panel Length |
-|-------|-------------------|-------|--------------|
-| ARC-C25 | 500 kg | 25m | 12m |
-| ARC-C28 | 500 kg | 28m | 12m |
-| ARC-C32 | 400 kg | 32m | 12m |
-
-### Operating Conditions
-
-| Parameter | Specification |
-|-----------|---------------|
-| Wind Resistance | Up to 12.5 m/s (6级风) |
-| Operating Temperature | -20°C to +50°C |
-| Gradeability | 15° |
-| Ground Pressure | 0.8-1.2 MPa |
-
-## Getting Started
-
-Industrial roof projects require detailed planning. Our team provides:
-
-1. **Site Assessment**: Evaluate access routes, terrain, and structural constraints
-2. **Model Selection**: Match equipment to project requirements
-3. **Logistics Planning**: Coordinate delivery and positioning
-4. **Operator Training**: On-site training for safe operation
-
-**Contact us today** for a free consultation:
-- WhatsApp: +86 15617687185
-- Email: leelogly120@gmail.com
-
----
-
-**Related Products**:
-- [ARC-C25 Crawler Roll Forming Lift](/products/arc-c25-crawler-roll-forming-lift/)
-- [ARC-C28 Crawler Roll Forming Lift](/products/arc-c28-crawler-roll-forming-lift/)
-- [ARC-C32 Crawler Roll Forming Lift](/products/arc-c32-crawler-roll-forming-lift/)
-
-**Related Solutions**:
-- [Warehouse Ceiling Installation](/solutions/warehouse-ceiling-installation/)
-- [Power Plant Maintenance](/solutions/power-plant-maintenance/)
-
-**Need Help?** [Contact our engineering team](/contact/) for a free site assessment.
+Start with [Roof-Level Roll Forming: Fit and Lift Planning](/blog/roof-level-roll-forming-long-panels/) and [Specify a Roll-Forming Line for Long Roof Panels](/blog/roll-forming-line-specification-long-span-roof-panels/). These guides explain which assumptions must become signed project data before release.

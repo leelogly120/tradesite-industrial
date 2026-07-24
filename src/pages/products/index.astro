@@ -14,7 +14,7 @@ const CATEGORIES = [
   {
     id: 'truck-mounted-roll-forming-lifts',
     name: 'Truck-Mounted Roll Forming Lifts',
-    tagline: 'Truck-mounted forming systems with archived 12m–31m reference configurations. Road registration, local chassis, transport envelope and the 40HQ split plan require destination review.',
+    tagline: 'Truck-mounted forming systems with archived 12m–31m reference classes. Road registration, chassis, transport envelope and any 40HQ packing route require project review and approved data.',
     banner: '/images/banners/category-truck.webp',
   },
   {
@@ -31,21 +31,56 @@ const CATEGORIES = [
   },
 ];
 
-function heightOf(p: any): number {
-  const specs = p.data.specifications || {};
-  const h = specs['Lift Height (to shear exit)'] || specs['Max Working Height'] || '';
-  const m = String(h).match(/(\d+(?:\.\d+)?)/);
-  return m ? parseFloat(m[1]) : 0;
+function productSortValue(specs: Record<string, unknown>): number {
+  const h = specs['Archived Height Class'] || '';
+  const match = String(h).match(/(\d+(?:\.\d+)?)/);
+  return match ? parseFloat(match[1]) : Number.POSITIVE_INFINITY;
 }
 
-function cardSpecs(p: any) {
+type ProductCardSpec = { label: string; value: string };
+
+function getProductCardSpecs(
+  category: string,
+  specs: Record<string, unknown>,
+): ProductCardSpec[] {
+  const value = (key: string) => String(specs[key] || 'Project review');
+
+  if (category === 'Crawler Ceiling Platforms') {
+    return [
+      { label: 'Archived height', value: value('Archived Height Class') },
+      { label: 'Load basis', value: value('Load Basis') },
+      { label: 'Platform envelope', value: value('Platform Envelope') },
+    ];
+  }
+
+  if (category === 'Roll Forming Machines') {
+    return [
+      { label: 'Sheet thickness', value: value('Archived Sheet Thickness') },
+      { label: 'Material boundary', value: value('Material Boundary') },
+      { label: 'Line interface', value: value('Line Interface') },
+    ];
+  }
+
+  if (category === 'Truck-Mounted Roll Forming Lifts' && (
+    specs['Archived Container Route'] || specs['Container Checks']
+  )) {
+    return [
+      { label: 'Archived height', value: value('Archived Height Class') },
+      { label: 'Packing route', value: value('Archived Container Route') },
+      { label: 'Container checks', value: value('Container Checks') },
+    ];
+  }
+
+  return [
+    { label: 'Archived height', value: value('Archived Height Class') },
+    { label: 'Archived payload', value: value('Archived Payload Class') },
+    { label: 'Sheet thickness', value: value('Archived Sheet Thickness') },
+  ];
+}
+
+function heightOf(p: any): number {
   const specs = p.data.specifications || {};
-  return {
-    height: specs['Lift Height (to shear exit)'] || specs['Max Working Height'] || '—',
-    load: specs['Lifting Capacity'] || specs['Safe Working Load'] || specs['Sheet Thickness'] || '—',
-    weight: specs['Machine Weight'] || specs['Module Weight'] || specs['Panel Output Length'] || '—',
-    extra: specs['Platform Size'] || specs['Platform Extension'] || specs['Platform Size (L×W)'] || specs['Compatible Profiles'] || '—',
-  };
+  return productSortValue(specs);
 }
 
 function modelOf(p: any): string {
@@ -62,7 +97,7 @@ const grouped = CATEGORIES.map(cat => ({
 
 <BaseLayout
   title="Products — Roll Forming Lifts & Aerial Platforms"
-  description="ARC aerial roll forming lifts: crawler 17-32m, truck-mounted 12-31m, 40HQ container option, crawler ceiling platforms 20-35m, and aerial-ready roll forming machines."
+  description="ARCLIFT archived reference configurations for crawler and truck roll-forming lifts, large-deck platforms and profile-specific roll-forming lines."
   transparentNav={false}
 >
 
@@ -91,12 +126,12 @@ const grouped = CATEGORIES.map(cat => ({
       <div class="category-banner reveal" style={`background-image:url('${cat.banner}');`} role="img" aria-label={`${cat.name} operating scene`}></div>
       <div class="products-list">
         {cat.items.map(p => {
-          const s = cardSpecs(p);
+          const cardSpecs = getProductCardSpecs(cat.name, p.data.specifications || {});
           const model = modelOf(p);
           return (
             <a href={`/products/${p.id}/`} class="p-card-list reveal">
               {p.data.images?.[0] ? (
-                <div class="p-card-list__img" style={`background-image:url('${p.data.images[0]}');background-size:cover;background-position:center;`}>
+                <div class="p-card-list__img" style={`background-image:url('${p.data.images[0]}');background-size:contain;background-position:center;background-repeat:no-repeat;`}>
                   <span class="sr-only">{model}</span>
                 </div>
               ) : (
@@ -106,9 +141,9 @@ const grouped = CATEGORIES.map(cat => ({
                 <div class="p-card-list__tag">{cat.name}</div>
                 <div class="p-card-list__name">{model}</div>
                 <div class="p-card-list__specs">
-                  <span class="p-card-list__spec"><b>{s.height}</b> Height</span>
-                  <span class="p-card-list__spec"><b>{s.load}</b> Capacity</span>
-                  <span class="p-card-list__spec"><b>{s.weight}</b></span>
+                  {cardSpecs.map(spec => (
+                    <span class="p-card-list__spec"><b>{spec.value}</b> {spec.label}</span>
+                  ))}
                 </div>
                 <span class="btn btn--primary">View Details →</span>
               </div>
@@ -122,8 +157,8 @@ const grouped = CATEGORIES.map(cat => ({
   <!-- CTA -->
   <section class="cta">
     <h2>NEED HELP CHOOSING THE RIGHT MODEL?</h2>
-    <p>Tell us your eave height, panel profile and site conditions — our engineers will spec the right ARC configuration.</p>
-    <a href="/contact/" class="btn--white">Get a Free Consultation →</a>
+    <p>Send the work zones, panel or task data, site conditions, destination and transport constraints for a documented configuration review.</p>
+    <a href="/contact/" class="btn--white">Request a Project Review →</a>
   </section>
 
   <style>

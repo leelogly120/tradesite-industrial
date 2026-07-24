@@ -17,10 +17,10 @@ const data = product.data;
 const specs = data.specifications || {};
 const model = data.title.split(' ')[0];
 const category = data.category || 'ARC Equipment';
-const heightVal = specs['Lift Height (to shear exit)'] || specs['Max Working Height'] || '—';
-const loadVal = specs['Lifting Capacity'] || specs['Safe Working Load'] || specs['Sheet Thickness'] || '—';
-const platformVal = specs['Platform Size'] || specs['Platform Size (L×W)'] || specs['Compatible Profiles'] || '—';
-const weightVal = specs['Machine Weight'] || specs['Module Weight'] || specs['Panel Output Length'] || '—';
+const heightVal = specs['Archived Height Class'] || specs['Archived Sheet Thickness'] || 'Project review';
+const loadVal = specs['Archived Payload Class'] || specs['Load Basis'] || specs['Material Boundary'] || 'Project review';
+const platformVal = specs['Platform Envelope'] || specs['Forming-Line Interface'] || specs['Line Interface'] || 'Project review';
+const weightVal = specs['Final Confirmation'] || 'Signed project documents';
 const quoteUrl = `/contact/?product=${encodeURIComponent(model)}`;
 const datasheetUrl = `/contact/?product=${encodeURIComponent(model)}&request=datasheet`;
 
@@ -33,7 +33,7 @@ const { Content } = await render(product);
 const applications = category.includes('Ceiling')
   ? [
       ['Steel-Building Ceilings', 'Large-span ceiling panels, insulation and service installation.'],
-      ['Warehouse & Factory', 'High-bay lighting, HVAC, sprinkler and overhead maintenance.'],
+      ['Warehouses & Industrial Buildings', 'High-bay lighting, HVAC, sprinkler and overhead maintenance after project review.'],
       ['Stadium & Terminal', 'Large indoor spaces after floor-load and access-route verification.'],
       ['Wall & Facade Panels', 'Extended deck layouts for crew, tools and panel positioning.'],
     ]
@@ -41,7 +41,7 @@ const applications = category.includes('Ceiling')
     ? [
         ['Roof Profiles', 'Standing seam and trapezoidal profiles matched to approved drawings.'],
         ['Wall Cladding', 'Profile-specific tooling for wall and facade sheets.'],
-        ['Factory Production', 'Ground-level production with cut-to-length workflow.'],
+        ['Ground-Level Production', 'Profile-specific production with a reviewed material and run-out workflow.'],
         ['Lift Integration', 'A compact line configured for a compatible lifting platform.'],
       ]
     : [
@@ -51,24 +51,79 @@ const applications = category.includes('Ceiling')
         ['Wall Cladding', 'Adapted workflow for long vertical facade panels where engineered.'],
       ];
 
-const productSchema = {
+function visualAlt(url: string): string {
+  const labels: Array<[string, string]> = [
+    ['hero-2.webp', 'Editorial roof-level panel-forming workflow in an industrial building'],
+    ['truck-site-roll-forming-lift.webp', 'Editorial truck-mounted equipment arrangement at a project site'],
+    ['40hq-logistics-checkpoints.svg', 'Editorial diagram of container logistics review checkpoints'],
+    ['port-loading-logistics.webp', 'Editorial port handling and logistics planning scene'],
+    ['crawler-truck-selection-matrix.svg', 'Editorial crawler and truck configuration selection diagram'],
+    ['roof-level-workflow.svg', 'Editorial roof-level roll-forming workflow diagram'],
+    ['roll-forming-input-map.svg', 'Editorial roll-forming project input diagram'],
+    ['large-deck-steel-structure.webp', 'Editorial large-deck platform arrangement in a steel structure'],
+    ['ceiling-platform-underside.webp', 'Editorial underside work context for a large-deck platform'],
+    ['ceiling-platform-project-data.svg', 'Editorial ceiling-platform project data checklist'],
+  ];
+  return labels.find(([suffix]) => url.endsWith(suffix))?.[1]
+    || 'Representative editorial equipment-planning visual';
+}
+
+type ProductCardSpec = { label: string; value: string };
+
+function getProductCardSpecs(
+  productCategory: string,
+  productSpecs: Record<string, unknown>,
+): ProductCardSpec[] {
+  const value = (key: string) => String(productSpecs[key] || 'Project review');
+
+  if (productCategory === 'Crawler Ceiling Platforms') {
+    return [
+      { label: 'Archived height', value: value('Archived Height Class') },
+      { label: 'Load basis', value: value('Load Basis') },
+      { label: 'Platform envelope', value: value('Platform Envelope') },
+    ];
+  }
+
+  if (productCategory === 'Roll Forming Machines') {
+    return [
+      { label: 'Sheet thickness', value: value('Archived Sheet Thickness') },
+      { label: 'Material boundary', value: value('Material Boundary') },
+      { label: 'Line interface', value: value('Line Interface') },
+    ];
+  }
+
+  if (productCategory === 'Truck-Mounted Roll Forming Lifts' && (
+    productSpecs['Archived Container Route'] || productSpecs['Container Checks']
+  )) {
+    return [
+      { label: 'Archived height', value: value('Archived Height Class') },
+      { label: 'Packing route', value: value('Archived Container Route') },
+      { label: 'Container checks', value: value('Container Checks') },
+    ];
+  }
+
+  return [
+    { label: 'Archived height', value: value('Archived Height Class') },
+    { label: 'Archived payload', value: value('Archived Payload Class') },
+    { label: 'Sheet thickness', value: value('Archived Sheet Thickness') },
+  ];
+}
+
+const pageSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Product',
+  '@type': 'WebPage',
   name: data.title,
   description: data.description,
-  brand: { '@type': 'Brand', name: 'ARCLIFT' },
-  sku: model,
-  image: data.images?.map((img: string) => new URL(img, Astro.site).href),
-  additionalProperty: Object.entries(specs).map(([name, value]) => ({
-    '@type': 'PropertyValue',
-    name,
-    value,
-  })),
+  about: {
+    '@type': 'Thing',
+    name: `${model} archived reference configuration`,
+    description: 'Planning reference only. Final configuration requires the signed technical schedule and approved drawings.',
+  },
 };
 ---
 
 <BaseLayout title={data.title} description={data.description} ogImage={data.images?.[0]} transparentNav={false}>
-  <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
 
   {data.faq && data.faq.length > 0 && (
     <script type="application/ld+json" set:html={JSON.stringify({
@@ -100,7 +155,7 @@ const productSchema = {
     <div class="product-hero__gallery">
       {data.images?.[0] ? (
         <div class="product-hero__main">
-          <img id="product-main-image" src={data.images[0]} alt={data.title} width="640" height="480" />
+          <img id="product-main-image" src={data.images[0]} alt={visualAlt(data.images[0])} width="640" height="480" />
         </div>
       ) : (
         <div class="product-hero__main">{model}</div>
@@ -108,13 +163,13 @@ const productSchema = {
       {data.images && data.images.length > 1 && (
         <div class="product-hero__thumbs" aria-label="Product image gallery">
           {data.images.map((img: string, i: number) => (
-            <button class:list={['product-hero__thumb', { active: i === 0 }]} type="button" data-src={img} aria-label={`Show ${model} image ${i + 1}`}>
+            <button class:list={['product-hero__thumb', { active: i === 0 }]} type="button" data-src={img} data-alt={visualAlt(img)} aria-label={`Show editorial planning visual ${i + 1}`}>
               <img src={img} alt="" width="144" height="108" loading="lazy" />
             </button>
           ))}
         </div>
       )}
-      <p class="field-note">Field images document the product family and real operating scenarios. Color, chassis, platform geometry and accessories may differ from the quoted configuration.</p>
+      <p class="field-note">Representative editorial image — not model-specific evidence. Final configuration requires the signed technical schedule and approved drawings.</p>
     </div>
 
     <div class="product-hero__info">
@@ -122,12 +177,12 @@ const productSchema = {
       <h1 class="product-hero__name">{model}</h1>
       <p class="product-hero__sub">{data.title.split(' - ')[1] || category}</p>
       <div class="product-hero__price">Price on Request <span>after configuration review</span></div>
-      <p class="verification-note"><strong>Reference configuration:</strong> final height, payload, platform, power, transport envelope, documentation and destination-market compliance are confirmed in the signed technical agreement.</p>
+      <p class="verification-note"><strong>Archived reference configuration:</strong> every numeric class and interface remains subject to project-specific confirmation in the signed technical schedule, approved drawings and approved load chart.</p>
       <div class="specs-mini">
-        <div class="spec-mini"><div class="spec-mini__label">Working Height</div><div class="spec-mini__val">{heightVal}</div></div>
-        <div class="spec-mini"><div class="spec-mini__label">Capacity</div><div class="spec-mini__val">{loadVal}</div></div>
-        <div class="spec-mini"><div class="spec-mini__label">Platform / Output</div><div class="spec-mini__val">{platformVal}</div></div>
-        <div class="spec-mini"><div class="spec-mini__label">Weight / Length</div><div class="spec-mini__val">{weightVal}</div></div>
+        <div class="spec-mini"><div class="spec-mini__label">Archived Height / Material</div><div class="spec-mini__val">{heightVal}</div></div>
+        <div class="spec-mini"><div class="spec-mini__label">Archived Load / Boundary</div><div class="spec-mini__val">{loadVal}</div></div>
+        <div class="spec-mini"><div class="spec-mini__label">Reference Interface</div><div class="spec-mini__val">{platformVal}</div></div>
+        <div class="spec-mini"><div class="spec-mini__label">Confirmation Gate</div><div class="spec-mini__val">{weightVal}</div></div>
       </div>
       <div class="product-hero__btns">
         <a href={quoteUrl} class="btn btn--primary">Get a Quote →</a>
@@ -136,7 +191,8 @@ const productSchema = {
     </div>
   </section>
 
-  <div class="tabs">
+  <p class="tabs__hint">Swipe horizontally to view all sections on smaller screens.</p>
+  <div class="tabs" role="tablist" aria-label="Product reference sections">
     <button class="tab active" data-tab="0">Overview</button>
     <button class="tab" data-tab="1">Specifications</button>
     <button class="tab" data-tab="2">Features</button>
@@ -149,7 +205,7 @@ const productSchema = {
     </div>
 
     <div class="tab-panel">
-      <p class="verification-note">Values below are website reference data. Request a model-specific drawing and technical schedule before procurement, tender submission or lift planning.</p>
+      <p class="verification-note">Values below are archived or historical website references. Use only the signed technical schedule, approved drawings and approved load chart for procurement, tender submission or lift planning.</p>
       <table class="specs-table">
         <tbody>
           {Object.entries(specs).map(([key, value]) => <tr><td>{key}</td><td>{value}</td></tr>)}
@@ -211,18 +267,20 @@ const productSchema = {
       {related.map(rp => {
         const rSpecs = rp.data.specifications || {};
         const rModel = rp.data.title.split(' ')[0];
-        const rHeight = rSpecs['Lift Height (to shear exit)'] || rSpecs['Max Working Height'] || '—';
-        const rLoad = rSpecs['Lifting Capacity'] || rSpecs['Safe Working Load'] || rSpecs['Sheet Thickness'] || '—';
+        const relatedSpecs = getProductCardSpecs(
+          rp.data.category || 'ARC Equipment',
+          rSpecs,
+        );
         return (
           <a href={`/products/${rp.id}/`} class="related-card reveal">
             {rp.data.images?.[0] ? (
-              <div class="related-card__img" style={`background-image:url('${rp.data.images[0]}');background-size:cover;background-position:center;`}></div>
+              <div class="related-card__img" style={`background-image:url('${rp.data.images[0]}');background-size:contain;background-position:center;background-repeat:no-repeat;`}></div>
             ) : (
               <div class="related-card__img">{rModel}</div>
             )}
             <div class="related-card__body">
               <h4>{rModel}</h4>
-              <p>{rHeight} Height · {rLoad}</p>
+              <p>{relatedSpecs.map(spec => `${spec.label}: ${spec.value}`).join(' · ')}</p>
               <span style="color:#2563eb;font-weight:600;font-size:14px;">View Details →</span>
             </div>
           </a>
@@ -230,6 +288,25 @@ const productSchema = {
       })}
     </div>
   </section>
+
+  <style>
+    .product-hero__main img,
+    .product-hero__thumb img {
+      object-fit: contain;
+      background: #f8fafc;
+    }
+    .tabs__hint {
+      display: none;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 var(--section-px) 8px;
+      color: #64748b;
+      font-size: 12px;
+    }
+    @media (max-width: 768px) {
+      .tabs__hint { display: block; }
+    }
+  </style>
 
   <script>
     document.querySelectorAll('.tab').forEach(tab => {
@@ -244,7 +321,10 @@ const productSchema = {
     document.querySelectorAll<HTMLButtonElement>('.product-hero__thumb').forEach(thumb => {
       thumb.addEventListener('click', () => {
         const src = thumb.dataset.src;
-        if (mainImage && src) mainImage.src = src;
+        if (mainImage && src) {
+          mainImage.src = src;
+          mainImage.alt = thumb.dataset.alt || 'Representative editorial equipment-planning visual';
+        }
         document.querySelectorAll('.product-hero__thumb').forEach(item => item.classList.remove('active'));
         thumb.classList.add('active');
       });

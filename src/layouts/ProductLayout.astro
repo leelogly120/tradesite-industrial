@@ -7,172 +7,97 @@ interface Props {
   title: string;
   description: string;
   image?: string;
-  priceMin: number;
-  priceMax: number;
-  currency?: string;
+  imageAlt?: string;
   specifications?: Record<string, string>;
   features?: string[];
   faq?: { question: string; answer: string }[];
   category?: string;
-  moq?: number;
 }
 
-const { title, description, image, priceMin, priceMax, currency = 'USD',
-  specifications = {}, features = [], faq = [], category, moq } = Astro.props;
+const {
+  title, description, image,
+  imageAlt = 'Representative editorial equipment-planning visual',
+  specifications = {}, features = [], faq = [], category,
+} = Astro.props;
 
-const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.com';
-const images = image ? [image] : [];
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description,
+  about: {
+    '@type': 'Thing',
+    name: 'Archived equipment reference configuration',
+    description: 'Final configuration requires the signed technical schedule and approved drawings.',
+  },
+};
 ---
 
 <BaseLayout title={title} description={description} ogImage={image}>
-  <SchemaOrg
-    type="Product"
-    name={title}
-    description={description}
-    image={images}
-    priceMin={priceMin}
-    priceMax={priceMax}
-    currency={currency}
-  />
+  <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
   <SchemaOrg
     type="Breadcrumb"
     items={[
       { name: 'Home', url: '/' },
       { name: 'Products', url: '/products/' },
-      ...(category ? [{ name: category, url: `/products/?cat=${category}` }] : []),
+      ...(category ? [{ name: category, url: '/products/' }] : []),
       { name: title, url: Astro.url.pathname },
     ]}
   />
-  {faq.length > 0 && (
-    <SchemaOrg type="FAQ" questions={faq} />
-  )}
+  {faq.length > 0 && <SchemaOrg type="FAQ" questions={faq} />}
 
-  <!-- Breadcrumb -->
   <div class="container">
     <div class="breadcrumb">
-      <a href="/">Home</a><span>/</span>
-      <a href="/products/">Products</a><span>/</span>
-      <span>{title}</span>
+      <a href="/">Home</a><span>/</span><a href="/products/">Products</a><span>/</span><span>{title}</span>
     </div>
   </div>
 
-  <!-- Product Hero -->
   <section class="section">
     <div class="container">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <!-- Image -->
         <div class="aspect-square bg-gray-100 rounded-xl overflow-hidden">
-          {image ? (
-            <img src={image} alt={title} class="w-full h-full object-cover" />
-          ) : (
-            <div class="w-full h-full flex items-center justify-center text-gray-300 text-6xl">
-              &#128247;
-            </div>
-          )}
+          {image
+            ? <img src={image} alt={imageAlt} class="w-full h-full object-contain" />
+            : <div class="w-full h-full flex items-center justify-center text-gray-400">Editorial reference visual</div>}
         </div>
-
-        <!-- Info -->
         <div>
-          {category && (
-            <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium mb-3">
-              {category}
-            </span>
-          )}
+          {category && <span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-medium mb-3">{category}</span>}
           <h1 class="text-3xl font-bold mb-4">{title}</h1>
           <p class="text-gray-600 mb-6 leading-relaxed">{description}</p>
-
-          <!-- Price & MOQ -->
-          <div class="bg-blue-50 rounded-lg p-4 mb-6">
-            <div class="flex justify-between items-center">
-              <div>
-                <span class="text-sm text-gray-500">Price Range</span>
-                <p class="text-2xl font-bold text-blue-700">
-                  ${currency === 'USD' ? '$' : currency}{priceMin.toFixed(2)} - ${priceMax.toFixed(2)}
-                </p>
-              </div>
-              {moq && (
-                <div class="text-right">
-                  <span class="text-sm text-gray-500">Min. Order</span>
-                  <p class="text-xl font-bold">{moq} pcs</p>
-                </div>
-              )}
-            </div>
-          </div>
-
-          <!-- Features -->
-          {features.length > 0 && (
-            <div class="mb-6">
-              <h3 class="font-bold mb-2">Key Features</h3>
-              <ul class="space-y-1">
-                {features.map(f => (
-                  <li class="flex items-start gap-2">
-                    <span class="text-green-500 mt-0.5">&#10003;</span>
-                    <span>{f}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          <a href="#inquiry" class="btn btn-primary">Request Quote</a>
+          <p class="verification-note">Representative editorial image — not model-specific evidence. Final configuration requires the signed technical schedule and approved drawings.</p>
+          {features.length > 0 && <ul class="space-y-2 mb-6">{features.map(feature => <li>{feature}</li>)}</ul>}
+          <a href="#inquiry" class="btn btn-primary">Request Project Review</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Specifications -->
   {Object.keys(specifications).length > 0 && (
     <section class="section section-alt">
       <div class="container">
-        <h2 class="text-2xl font-bold mb-6">Specifications</h2>
+        <h2 class="text-2xl font-bold mb-3">Archived Reference Data</h2>
+        <p class="verification-note">Use signed project documents—not this website table—for procurement, tender or lift planning.</p>
         <div class="overflow-x-auto">
-          <table class="w-full border-collapse">
-            <tbody>
-              {Object.entries(specifications).map(([key, val]) => (
-                <tr class="border-b border-gray-200">
-                  <td class="py-3 px-4 font-medium bg-gray-50 w-1/3">{key}</td>
-                  <td class="py-3 px-4">{val}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <table class="w-full border-collapse"><tbody>
+            {Object.entries(specifications).map(([key, val]) => (
+              <tr class="border-b border-gray-200">
+                <td class="py-3 px-4 font-medium bg-gray-50 w-1/3">{key}</td>
+                <td class="py-3 px-4">{val}</td>
+              </tr>
+            ))}
+          </tbody></table>
         </div>
       </div>
     </section>
   )}
 
-  <!-- Content slot -->
-  <section class="section">
-    <div class="container prose max-w-none">
-      <slot />
-    </div>
-  </section>
+  <section class="section"><div class="container prose max-w-none"><slot /></div></section>
 
-  <!-- FAQ -->
-  {faq.length > 0 && (
-    <section class="section section-alt">
-      <div class="container max-w-3xl">
-        <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          {faq.map(({ question, answer }) => (
-            <details class="bg-white rounded-lg border border-gray-200 p-4">
-              <summary class="font-semibold cursor-pointer">{question}</summary>
-              <p class="mt-3 text-gray-600">{answer}</p>
-            </details>
-          ))}
-        </div>
-      </div>
-    </section>
-  )}
-
-  <!-- Inquiry Form -->
-  <section id="inquiry" class="section">
+  <section id="inquiry" class="section section-alt">
     <div class="container">
-      <h2 class="text-2xl font-bold mb-2 text-center">Request a Quote</h2>
-      <p class="text-gray-600 mb-8 text-center">
-        Fill in the form below and we will get back to you within 24 hours.
-      </p>
-      <InquiryForm productName={title} />
+      <h2 class="text-2xl font-bold mb-2 text-center">Request a Project Review</h2>
+      <p class="text-gray-600 mb-8 text-center">Share the project conditions needed for a documented configuration review.</p>
+      <InquiryForm productName={title} productSlug={Astro.url.pathname.split('/').filter(Boolean).at(-1) || ''} />
     </div>
   </section>
 </BaseLayout>

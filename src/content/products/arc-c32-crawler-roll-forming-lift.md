@@ -1,96 +1,67 @@
 ---
-title: "ARC-C32 Crawler Roll Forming Lift - 30-32m Reference Platform"
-description: "ARC-C32 crawler roll forming lift reference: 30-32m archived height, 8t class, diesel/electric options, double-row bearing and integrated remote."
+title: "ARC-C32 Crawler Roll Forming Lift — Archived Reference"
+description: "ARC-C32 archived 30–32m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
 category: "Crawler Roll Forming Lifts"
-moq: 1
 specifications:
-  "Lift Height (to shear exit)": "30m / 32m"
-  "Lifting Capacity": "8t standard"
-  "Panel Output Height Range": "5m - 32m"
-  "Panel Output Radius": "≤8,000mm"
-  "Panel Output Length": "1m - 200m"
-  "Sheet Thickness": "0.3mm - 1.0mm"
-  "Diesel Engine": "125kW Yuchai (turbocharged)"
-  "Electric Power Supply": "380V / 18.5kW"
-  "Main Hydraulic Pump": "K3V112 piston pump (Kawasaki type)"
-  "Shear Pump Motor": "5.5kW"
-  "Travel Motor": "GM35 series"
-  "Crawler Chain": "50t traction, Komatsu PC200 type"
-  "Track Shoe Width": "600mm"
-  "Track Ground Contact": "6.5m"
-  "Slewing Bearing": "Ф2,400mm × 180mm double-row"
-  "Platform Size": "9m × 2.3m"
-  "Outrigger Box Section": "480 × 380 × 12mm, two-stage"
-  "Outrigger Spread": "9.8m × 9.8m"
-  "Outrigger Cylinder": "Ф180mm barrel / Ф140mm rod"
-  "Main Boom Cylinder": "Ф220/245mm OD / Ф160mm rod / 4,500mm stroke"
-  "Telescopic Cylinder": "Ф180mm OD / Ф140mm rod / 7,800mm stroke"
-  "Machine Weight": "32t standard / 36t heavy (excl. roll former)"
-  "Dimensions with Roll Former (L×W×H)": "12.6m × 3m × 3.5m"
-  "Structural Steel": "Q345B / 700BL high-strength plate"
-  "Control System": "Mitsubishi PLC, touchscreen + imported radio remote"
-  "Coil Crane (optional)": "Hydraulic, max 8t"
+  "Archived Height Class": "Archived reference — 30–32m class; project-specific confirmation required"
+  "Archived Payload Class": "Historical reference — 8t class; final allowable load follows the approved load chart"
+  "Archived Sheet Thickness": "Historical reference — 0.3–1.0mm; final material, profile, yield and tooling require confirmation"
+  "Archived Power Basis": "Historical reference — 380V-class supply; final voltage, frequency and phase are destination-specific"
+  "Mobility Concept": "Reference configuration — crawler base and support system; final ground pressure, reactions and travel conditions require review"
+  "Forming-Line Interface": "To be confirmed — footprint, mass, feed direction, power, controls and access clearances"
+  "Final Confirmation": "Signed technical schedule, approved drawings and approved load chart"
 images:
-  - "/images/products/arc-c32-crawler-roll-forming-lift-1.jpg"
-  - "/images/products/arc-c32-crawler-roll-forming-lift-2.jpg"
-  - "/images/products/arc-c32-crawler-roll-forming-lift-3.jpg"
-  - "/images/products/arc-c32-crawler-roll-forming-lift-4.jpg"
+  - "/images/hero/hero-2.webp"
+  - "/images/editorial/roof-level-workflow.svg"
+  - "/images/editorial/roll-forming-input-map.svg"
 features:
-  - "30–32m archived height — the upper crawler reference range"
-  - "50t traction crawler chains with 6.5m ground contact for maximum stability under the tall boom"
-  - "125kW Yuchai turbocharged diesel plus 380V/18.5kW electric — oil-electric dual lift system"
-  - "Ф2,400mm × 180mm double-row slewing bearing with minimal clearance and extended life"
-  - "Imported radio remote integrates travel, turning, outriggers, lifting, slewing and forming"
-  - "Smartphone-linked camera monitoring of shear position available for full-site visibility"
-  - "Q345B / 700BL structure with triple-section outrigger legs for the 30m+ class"
+  - "Site-data review — selection begins with height, outreach, roof geometry, access route, ground information and weather limits"
+  - "Interface control — the forming line, support structure, power and material path are checked as one project package"
+  - "Document gate — quoted dimensions and operating limits become controlling only in signed project documents"
+  - "Editorial visual boundary — page images explain the equipment family and do not prove this model or its performance"
 faq:
-  - question: "What building heights suit the ARC-C32?"
-    answer: "The shear exit reaches 30 or 32 meters depending on configuration, with panel delivery from 5m up to 32m above ground and an output radius of up to 8,000mm. This covers the tallest single-span steel structures currently built — large hangars, stadium roofs and landmark exhibition halls."
-  - question: "Why does the chassis use 50-tonne chains?"
-    answer: "The taller the boom, the more the chassis matters. The ARC-C32 uses 50t-traction PC200-type chains with 6.5m of ground contact — roughly 45% longer footprint than the 25m class — keeping ground pressure low and the machine stable during elevated travel and slewing."
-  - question: "What does the machine weigh and how is it shipped?"
-    answer: "32 tonnes in standard trim and 36 tonnes in heavy configuration, excluding the roll forming machine. With a former mounted the transport envelope is 12.6m × 3m × 3.5m. It ships via RoRo vessel or break-bulk; the machine loads under its own remote-controlled power."
-  - question: "Can the forming operation be monitored remotely?"
-    answer: "Yes. In addition to the height/angle controller and violation alarm, a camera package can monitor the shear and forming positions with live view on a smartphone, letting the ground operator verify panel feed alignment at 30+ meters without climbing."
+  - question: "Does ARC-C32 currently guarantee a 30–32m working height?"
+    answer: "No. 30–32m is an archived source reference class, not a current-model guarantee. The required work height, outreach and configuration must be checked against the project geometry and confirmed in the signed technical schedule and approved drawings."
+  - question: "What must be supplied before a configuration review?"
+    answer: "Send roof plans and sections, required work zones, panel profile and material, coil and forming-line data, ground or support information, access constraints, destination power and local documentation requirements."
+  - question: "Which documents control the final order?"
+    answer: "The signed technical schedule, approved general-arrangement drawings, approved load chart, interface list and project packing data control the final configuration. Website text and editorial visuals do not."
 relatedProducts:
-  - "arc-c28-crawler-roll-forming-lift"
   - "arc-c25-crawler-roll-forming-lift"
+  - "arc-c28-crawler-roll-forming-lift"
   - "arc-rf8-roll-forming-machine"
-date: 2026-07-19
+date: 2026-07-25
 draft: false
 ---
 
-## Product Overview
+## What this reference page is for
 
-The **ARC-C32** represents the upper archived crawler range at 30–32m forming height. It can be screened for taller hangars and long-span steel buildings after the working envelope, wind, ground bearing and transport plan are confirmed.
+ARC-C32 is retained as a useful **reference configuration** for early discussions about crawler-supported roll forming near an installation elevation. This archived source reference identifies a 30–32m-class starting point, but it does not establish the height, payload, stability, output range or destination compliance of a current unit. ARCLIFT works as an integrated equipment supplier and technical selection partner: the project brief is reviewed first, then the applicable configuration and documentation are defined.
 
-Stability at this height starts at the ground. The chassis runs **50-tonne traction chains** on 600mm shoes with 6.5 meters of track in contact with the ground. Above it, a Ф2,400mm × 180mm double-row slewing bearing, triple-section 480 × 380mm outrigger legs spreading 9.8m × 9.8m, and a Ф220/245mm main boom cylinder carry the forming machine smoothly to full height.
+The page is most useful when a buyer needs to compare a crawler route with ground forming, segmented panels, conventional lifting or a truck-mounted arrangement. Those alternatives should be compared by workflow, support conditions, access, weather exposure and interfaces—not by model label alone.
 
-Power comes from a 125kW Yuchai turbocharged diesel for travel and off-grid work, with a 380V / 18.5kW electric mode for forming. The oil-electric dual lift system switches between engine and motor at the operator's choice. As on every ARC crawler, travel, turning, outriggers, lifting, slewing, forming and shearing are integrated into one imported radio remote; crew roles remain defined by the approved lift and roofing plan.
+## Conditions that control selection
 
-## Applications
+A review should locate every work zone on a roof plan and section. Record the required vertical position and outreach, roof slope, edge distance, obstructions, panel handover point, travel route and setup area. Ground bearing data, slope and drainage matter because the support reaction and travel condition cannot be inferred from a general site photograph.
 
-### Aircraft Hangars
-Wide-body maintenance hangars with 28-32m eaves; continuous panels up to 200m span the full roof plane without splices.
+The forming process needs its own interface package: approved panel profile, material grade and yield, thickness, coil dimensions and mass, intended panel length, tooling revision, line footprint, line mass, power demand, control boundary, feed direction and shear position. The historical references to 8t-class payload, 0.3–1.0mm sheet and 380V-class power are discussion inputs only. Each remains subject to **project-specific confirmation**.
 
-### Olympic-Class Stadiums
-The ≤8,000mm output radius reaches over ring beams and walkways; camera monitoring keeps the ground operator in full control at height.
+## When this route may not fit
 
-### Landmark Long-Span Halls
-Convention centers and terminal buildings where roof quality is on public display — panels arrive on the purlins without a single crane touch.
+A crawler-supported route may not fit if the travel corridor is too narrow, the ground investigation is incomplete, support reactions cannot be accommodated, weather limits cannot be controlled, the roof handover path is unresolved, or the forming-line interface remains unknown. It also cannot replace a site method statement, lift plan, rescue plan or local work-at-height review.
 
-## Technical Highlights
+## Buyer information to send
 
-- **Chassis**: 50t chains, 600mm shoes, 6.5m ground contact, GM35-series travel motors — remote high/low-speed travel and turning.
-- **Hydraulics**: K3V112 main pump, Ф220/245mm main cylinder, 7,800mm-stroke telescopic cylinder, Beijing Huade valves, Nitto burst-proof hoses, double-acting cylinder locks.
-- **Electrics**: Mitsubishi PLC + 18.5kW VFD, Schneider elements, stainless cabinet, touchscreen + imported remote, panel counter (per-project and total), height/angle limiter with alarm.
-- **Structure**: Q345B / 700BL plate, 45# chromed pivot shafts with bronze bushings, 20CrMo sleeves, galvanized cable chains.
-- **Options**: 8t hydraulic coil crane, electric lift module, smartphone camera monitoring.
+- Roof plan, elevations and sections with the required work zones marked
+- Required height, outreach, setup positions and movement sequence
+- Ground report, allowable bearing pressure, slope, drainage and buried services
+- Panel profile drawing, material, yield, thickness, coil data and target lengths
+- Forming-line footprint, mass, power, controls, feed direction and access needs
+- Wind basis, operating environment and the planned weather decision process
+- Destination, transport route, available power and required local documents
 
-## Packaging & Shipping
+## Documents that close the review
 
-Export-grade anti-corrosion coating, moisture-proof electrical wrapping, transport locking and spare parts kit. RoRo or break-bulk shipment; Trade terms are confirmed in the project quotation.
+Final configuration requires the **signed technical schedule**, **approved drawings**, approved load chart, interface schedule and approved packing data. Those documents must identify the configuration, limits, support reactions, interfaces and destination responsibilities that apply to the order.
 
----
-
-*Not sure which height you need? [Contact us](/contact/) with your eave height and roof plan — we'll spec the right model.*
+**Image disclosure:** Representative editorial image — not model-specific evidence. The raster visual is an **AI-assisted editorial composite**; the diagrams are ARCLIFT editorial explanations. None proves model identity, configuration, suitability or performance.

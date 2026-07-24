@@ -45,3 +45,15 @@ output/
 
 # compose specs (internal)
 docs/compose/
+
+# Cloudflare Worker local secrets
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+
+# browser test output
+test-results/
+playwright-report/
+
+# private source archives must never be deployed
+public/images/products/local/

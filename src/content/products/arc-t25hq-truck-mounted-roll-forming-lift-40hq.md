@@ -1,90 +1,62 @@
 ---
-title: "ARC-T25HQ Truck-Mounted Roll Forming Lift - 25m 40HQ Container-Shippable"
-description: "ARC-T25HQ container-shippable roll forming lift: 25m height, 8t capacity, modular design loads into 40HQ containers for route-dependent container shipping."
+title: "ARC-T25HQ Transport-Oriented Truck-Mounted Lift — Archived Reference"
+description: "ARC-T25HQ archived 25m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
 category: "Truck-Mounted Roll Forming Lifts"
-moq: 1
 specifications:
-  "Lift Height (to shear exit)": "25m class"
-  "Lifting Capacity": "8t standard"
-  "Panel Output Height Range": "5m - 26m"
-  "Panel Output Radius": "≤6,000mm"
-  "Panel Output Length": "1m - 200m"
-  "Sheet Thickness": "0.3mm - 1.0mm"
-  "Main Lift Pump": "15kW piston pump"
-  "Electric Power Supply": "380V / 18kW"
-  "Shear Pump Motor": "5.5kW"
-  "Slewing Bearing": "Ф2,100mm double-row heavy-duty"
-  "Platform Size": "9m × 2.3m"
-  "Outrigger Box Section": "400 × 250 × 12mm, two-stage"
-  "Outrigger Spread": "7.3m × 7.3m"
-  "Outrigger Cylinder": "Ф180mm barrel / Ф140mm rod"
-  "Module Weight": "21t class (excl. roll former & truck)"
-  "Shipping Mode": "40HQ container (modular, split-load)"
-  "Truck Mounting": "Local 13m-class truck or semi-trailer at destination"
-  "Control System": "Mitsubishi PLC, touchscreen + full radio remote"
-  "Safety Instruments": "Height & radius limiter, violation alarm, LCD level gauge"
-  "Structural Steel": "Q345B / 700BL high-strength plate"
-  "Assembly Support": "Customizable — engineer dispatch or remote video guidance"
+  "Archived Height Class": "Archived reference — 25m class; project-specific confirmation required"
+  "Archived Container Route": "Historical reference — 40HQ planning route only; fit is not promised"
+  "Packing Inputs": "To be confirmed — module dimensions, module mass, centre of gravity and lifting points"
+  "Container Checks": "To be confirmed — container-door clearance, internal envelope, floor limits and lashing plan"
+  "Destination Chassis Interface": "Reference configuration — frame, axle loads, mounting and local registration require review"
+  "Destination Handling": "To be confirmed — lifting equipment, unloading area, assembly sequence and competent personnel"
+  "Final Confirmation": "Signed technical schedule, approved drawings, approved load chart and approved packing plan"
 images:
-  - "/images/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq-1.jpg"
-  - "/images/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq-2.jpg"
-  - "/images/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq-3.jpg"
-  - "/images/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq-4.jpg"
+  - "/images/editorial/40hq-logistics-checkpoints.svg"
+  - "/images/editorial/port-loading-logistics.webp"
+  - "/images/editorial/crawler-truck-selection-matrix.svg"
 features:
-  - "Ships in 40HQ containers — allows container-route freight comparison against RoRo or flat-rack options"
-  - "Modular split-load design: boom, platform, outriggers and power unit pack separately"
-  - "Same 25m-class working envelope as the ARC-T25 after reassembly"
-  - "Mounts on a locally sourced 13m-class truck or semi-trailer at destination"
-  - "Full remote control with Mitsubishi PLC — identical operation to the standard range"
-  - "Height & radius limiter, violation alarm and LCD level gauge standard"
-  - "Reassembly supported by dispatched engineers or step-by-step remote video guidance"
+  - "Packing-data gate — container planning starts with issued module dimensions and module mass"
+  - "Handling review — lifting points, centre of gravity, lashing and unloading sequence are documented per project"
+  - "Chassis boundary — the destination chassis interface and local road route are confirmed separately"
+  - "Editorial visual boundary — images explain logistics checkpoints and do not prove container fit or a shipped model"
 faq:
-  - question: "Why choose the ARC-T25HQ over the standard ARC-T25?"
-    answer: "Shipping cost. The standard ARC-T25 travels as oversized cargo on RoRo vessels or flat racks, which is expensive and route-limited. The ARC-T25HQ splits into modules that pack inside standard 40HQ containers — a widely available shipping option on many trade lanes — then reassembles onto a locally sourced truck at destination."
-  - question: "How is the machine reassembled at destination?"
-    answer: "The modules bolt and pin together following a documented sequence. We support reassembly either by dispatching a commissioning engineer to your site or through step-by-step remote video guidance. Local requirements are a crane for module handling and a 13m-class truck or semi-trailer for mounting."
-  - question: "Is performance identical to the standard ARC-T25?"
-    answer: "The working envelope is the same 25m class — panel delivery from 5m to 26m within a 6,000mm output radius, 8-tonne lifting capacity, and the same Mitsubishi PLC remote-control system. The difference is purely in how the machine ships."
-  - question: "What does containerized shipping mean for lead time and cost?"
-    answer: "40HQ container service runs on virtually every trade lane with frequent sailings, so availability and landed cost may compare favorably with RoRo on some routes. Contact us with your destination port for a comparison quote."
+  - question: "Does ARC-T25HQ automatically fit a 40HQ container?"
+    answer: "No. 40HQ is a planning route, not a fit guarantee. Module dimensions, module mass, container-door clearance, internal envelope, floor limits, lifting points and lashing must be confirmed per project."
+  - question: "What destination information is required?"
+    answer: "Provide the destination chassis interface, axle and frame data, local registration route, unloading equipment, assembly area, route restrictions, available lifting capacity and competent assembly resources."
+  - question: "Which documents authorize packing and shipment?"
+    answer: "The signed technical schedule, approved drawings, approved load chart, packing list, lifting plan and approved packing data control the shipment. Website diagrams are only editorial planning aids."
 relatedProducts:
   - "arc-t25-truck-mounted-roll-forming-lift"
   - "arc-t31-truck-mounted-roll-forming-lift"
   - "arc-rf8-roll-forming-machine"
-date: 2026-07-19
+date: 2026-07-25
 draft: false
 ---
 
-## Product Overview
+## Use this page to test a logistics route
 
-The **ARC-T25HQ** solves the biggest hidden cost in exporting aerial roll forming equipment: ocean freight. Standard truck-mounted lifts ship as oversized break-bulk or RoRo cargo — expensive, route-limited and slow to book. The ARC-T25HQ is engineered from the start as a **modular, 40HQ-container-shippable** machine.
+ARC-T25HQ is a transport-oriented **reference configuration** for early planning around a possible 40HQ route. This archived source reference records a 25m-class concept and a modular logistics idea; it does not prove that a quoted configuration fits a container, can be handled by a particular crane, or matches a destination chassis.
 
-Boom sections, platform, outrigger assemblies and the hydraulic power unit separate into container-sized modules. At destination they reassemble onto a locally sourced 13m-class truck or semi-trailer, restoring the full 25m-class working envelope: panels delivered from 5m to 26m above ground, 8-tonne capacity, integrated radio remote operation.
+Container planning begins with issued packing information. The review must use actual **module dimensions**, **module mass**, centre of gravity, lifting points, **container-door clearance**, internal dimensions, floor limits, blocking and **lashing** arrangement. These values are **confirmed per project** after the configuration is defined.
 
-For international buyers — especially in markets with limited RoRo service — this can change the landed-cost comparison on suitable routes.
+## Destination integration is a separate engineering boundary
 
-## Applications
+The **destination chassis interface** needs frame and axle data, wheelbase, legal dimensions, mounting arrangement, local registration route and road restrictions. The unloading and assembly plan needs the available lifting equipment, rigging, work area, support surface, competent personnel, inspection steps and commissioning responsibilities.
 
-### Overseas Roofing Contractors
-Buy the machine, receive containers, mount on a local truck — with customs and local vehicle rules reviewed before shipment.
+The archived 25m class and historical 40HQ route are planning inputs only. They require **project-specific confirmation** and should not be used in a tender, freight booking or lift plan before approved documents are issued.
 
-### Equipment Importers & Dealers
-Container shipping can simplify routing, but landed cost still depends on port, customs, local chassis and assembly.
+## Buyer information to send
 
-### Remote & Island Markets
-Destinations without RoRo service or heavy-lift port cranes can still receive the machine through standard container terminals.
+- Destination, port, inland route and proposed chassis data
+- Container owner or carrier requirements and available internal envelope
+- Available crane or handling equipment at loading and destination
+- Assembly area, support surface, access restrictions and weather limits
+- Work-zone plan, required height and outreach, and forming-line interfaces
+- Documentation, inspection, customs and local registration requirements
 
-## Technical Highlights
+## Release documents for the order
 
-- **Modularity**: split-load design with match-marked, bolted/pinned interfaces; documented reassembly sequence.
-- **Structure**: Q345B / 700BL plate; Ф2,100mm double-row slewing bearing; two-stage 400 × 250mm outrigger legs, 7.3m × 7.3m spread.
-- **Controls**: Mitsubishi PLC + VFD, touchscreen and radio remote, height/radius limiter with alarm, LCD level gauge, panel counter.
-- **Commissioning**: engineer dispatch or remote video guidance; local crane and truck required at destination.
+Final configuration requires the **signed technical schedule**, **approved drawings**, approved load chart, approved packing list, lifting-point drawing, lashing plan and destination chassis interface schedule. Freight booking should use only the approved packing data for the quoted configuration.
 
-## Packaging & Shipping
-
-Modules are export-coated, moisture-wrapped and secured in 40HQ containers with lashing certificates. Customs, reassembly documents and trade terms are confirmed for the selected route and destination.
-
----
-
-*Prefer a ready-to-work unit shipped whole? See the standard [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/).*
+**Image disclosure:** Representative editorial image — not model-specific evidence. The port raster is an **AI-assisted editorial composite** and the diagrams are ARCLIFT editorial planning aids. They do not establish container fit, shipment history, chassis compatibility or performance.

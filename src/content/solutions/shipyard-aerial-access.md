@@ -1,114 +1,34 @@
 ---
-title: "Shipyard Aerial Access Solutions"
-description: "Aerial work platform solutions for shipyard operations. Truck-mounted lifts for vessel construction, maintenance, and repair."
-date: 2026-07-19
-author: "ARCLIFT Engineering Team"
+title: "Shipyard Access Equipment Planning"
+description: "Selection inputs for evaluating mobile access concepts in shipyard and marine-adjacent work zones."
+date: 2026-07-25
+author: "ARCLIFT Technical Team"
 category: "solutions"
-tags: ["shipyard", "vessel", "marine", "construction", "truck-mounted lift"]
-image: "/images/products/arc-t31-truck-mounted-roll-forming-lift-1.jpg"
+tags: ["shipyard", "marine", "access equipment", "logistics", "project planning"]
 relatedProducts: ["arc-t25-truck-mounted-roll-forming-lift", "arc-t25hq-truck-mounted-roll-forming-lift-40hq", "arc-t31-truck-mounted-roll-forming-lift"]
 relatedSolutions: ["industrial-roof-construction", "commercial-building-maintenance"]
-relatedCases: ["shipyard-vessel-construction"]
 ---
 
-# Shipyard Aerial Access Solutions
+# Shipyard Access Equipment Planning
 
-## Why Shipyards Need Specialized Aerial Equipment
+Shipyard access projects combine reach requirements with wind exposure, salt contamination, uneven routes, crane interfaces and port logistics. A general-purpose application description cannot confirm that a machine is suitable for a specific vessel or yard.
 
-Shipbuilding and vessel maintenance require access solutions that can handle extreme heights, heavy materials, and the unique challenges of working on water-adjacent structures. Traditional equipment often falls short in these demanding environments.
+ARCLIFT can compare truck-mounted and crawler concepts after receiving the work-zone geometry and environmental requirements. Any corrosion-protection system, wind limit, ingress protection, marine electrical requirement or tie-down arrangement must appear in the signed technical schedule and approved drawings.
 
-### Common Pain Points in Shipyard Operations
+## Logistics and operating boundaries
 
-1. **Extreme Height Requirements**: Modern vessels—cruise ships, cargo ships, tankers—have superstructures reaching 30-50 meters. Standard lifts cannot provide adequate reach.
+The project team should distinguish road travel, yard travel and operation at the work position. Each state can have a different dimensional envelope, axle or ground load, stabilization requirement and local approval. A reference to 40HQ planning is not a loading guarantee; packed dimensions, masses, lifting points, securing method and destination reassembly must be checked for the released configuration.
 
-2. **Heavy Material Transport**: Steel plates, piping, and equipment weigh hundreds of kilograms. Workers need platforms that can lift both personnel and materials.
+## Project inputs to prepare
 
-3. **Outdoor Exposure**: Shipyards are exposed to wind, salt spray, and weather. Equipment must be corrosion-resistant and weather-capable.
+- Vessel or structure drawings with required work coordinates
+- Horizontal offset, vertical reach and obstruction map
+- Yard route, gradient, surface and bearing information
+- Setup area, exclusion zone and nearby crane operations
+- Personnel, tools and material load by work stage
+- Wind, salt, temperature and wash-down requirements
+- Road, port and yard movement rules
+- Packed dimensions, mass limits, lifting and securing requirements
+- Destination inspection and operator-document requirements
 
-4. **Limited Ground Access**: Dry docks and slipways have limited ground space. Equipment must be compact yet provide maximum reach.
-
-## ARCLIFT Solutions for Shipyard Operations
-
-### Recommended Models
-
-| Model | Working Height | Platform Size | Best For |
-|-------|---------------|---------------|----------|
-| [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) | 25m | 6m × 2m | Standard vessel work |
-| [ARC-T25HQ](/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq/) | 25m | 6m × 2m | Container-shippable, remote yards |
-| [ARC-T31](/products/arc-t31-truck-mounted-roll-forming-lift/) | 31m | 6m × 2m | Large vessels, cruise ships |
-
-### Key Features for Shipyard Applications
-
-**Extended Reach**: Essential for modern vessel superstructures:
-
-- 31m maximum working height
-- 15m horizontal outreach
-- Continuous platform for long panel installation
-
-**Corrosion Resistance**: Built for marine environments:
-
-- Marine-grade paint system
-- Stainless steel fasteners
-- Protected electrical components
-
-**Heavy-Duty Capability**: Handle shipyard materials:
-
-- 500 kg platform capacity
-- Integrated material hoist
-- Secure tie-down points
-
-**Container-Shippable Design**: For remote shipyards:
-
-- ARC-T25HQ fits in standard 40HQ container
-- Easy transport to any port worldwide
-- Quick assembly on-site
-
-## Case Studies
-
-- [Shipyard Vessel Construction](/case-studies/shipyard-vessel-construction/) - 200m cruise ship superstructure
-- [Offshore Platform Maintenance](/case-studies/offshore-platform-maintenance/) - 6-month continuous operation
-
-## Technical Specifications
-
-### Marine Environment Capability
-
-| Parameter | Specification |
-|-----------|---------------|
-| Wind Resistance | Up to 15 m/s (7级风) |
-| Salt Spray Protection | IP65 electrical |
-| Operating Temperature | -10°C to +45°C |
-| Corrosion Resistance | C5-M Marine Grade |
-
-### Material Handling
-
-| Model | Platform Capacity | Reach | Panel Length |
-|-------|-------------------|-------|--------------|
-| ARC-T25 | 500 kg | 25m | 12m |
-| ARC-T25HQ | 500 kg | 25m | 12m |
-| ARC-T31 | 400 kg | 31m | 12m |
-
-## Getting Started
-
-Shipyard projects require specialized planning. Our team provides:
-
-1. **Vessel Assessment**: Evaluate access requirements for specific vessel types
-2. **Equipment Configuration**: Adapt equipment for marine environments
-3. **Logistics Support**: Coordinate delivery to shipyard locations
-4. **Operator Training**: Training for shipyard-specific safety protocols
-
-**Contact us today** for a free consultation:
-- WhatsApp: +86 15617687185
-- Email: leelogly120@gmail.com
-
----
-
-**Related Products**:
-- [ARC-T25 Truck-Mounted Lift](/products/arc-t25-truck-mounted-roll-forming-lift/)
-- [ARC-T25HQ Truck-Mounted Lift](/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq/)
-- [ARC-T31 Truck-Mounted Lift](/products/arc-t31-truck-mounted-roll-forming-lift/)
-
-**Related Solutions**:
-- [Industrial Roof Construction](/solutions/industrial-roof-construction/)
-- [Commercial Building Maintenance](/solutions/commercial-building-maintenance/)
-
-**Need Help?** [Contact our engineering team](/contact/) for a free site assessment.
+Review [Crawler vs Truck Roll-Forming Systems: Site Guide](/blog/crawler-vs-truck-mounted-roll-forming-system/) for carrier-selection questions. If container transport is being considered, use [40HQ Planning for Truck-Mounted Roll-Forming Lifts](/blog/40hq-shipping-truck-mounted-roll-forming-lift/) to prepare the packing and destination-interface data.

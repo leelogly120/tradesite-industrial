@@ -2,161 +2,406 @@
 interface Props {
   productName?: string;
   productSlug?: string;
+  variant?: 'product' | 'contact';
 }
 
-const { productName = '', productSlug = '' } = Astro.props;
-const formAction = import.meta.env.PUBLIC_FORM_ENDPOINT || 'https://formspree.io/f/mnjkykge';
+const { productName = '', productSlug = '', variant = 'product' } = Astro.props;
+const formAction =
+  import.meta.env.PUBLIC_FORM_ENDPOINT ||
+  'https://arclift-form.leelogly120.workers.dev/inquiry';
 
-const modelOptions = ['Not sure', 'ARC-C17', 'ARC-C21', 'ARC-C25', 'ARC-C28', 'ARC-C32', 'ARC-T12', 'ARC-T18', 'ARC-T25', 'ARC-T25HQ', 'ARC-T31', 'ARC-F20', 'ARC-F25', 'ARC-F31', 'ARC-F35', 'ARC-RF8'];
-const applicationOptions = ['Select...', 'Stadium ceiling', 'Airport terminal', 'Warehouse / Steel structure', 'Other'];
-const countryOptions = [
-  'Select...', 'United States', 'Canada', 'United Kingdom', 'Germany', 'France',
-  'Australia', 'UAE', 'Saudi Arabia', 'Singapore', 'Malaysia', 'India', 'Other',
+const models = [
+  'Not sure',
+  'ARC-C17',
+  'ARC-C21',
+  'ARC-C25',
+  'ARC-C28',
+  'ARC-C32',
+  'ARC-T12',
+  'ARC-T18',
+  'ARC-T25',
+  'ARC-T25HQ',
+  'ARC-T31',
+  'ARC-F20',
+  'ARC-F25',
+  'ARC-F31',
+  'ARC-F35',
+  'ARC-RF8',
+];
+const defaultModel =
+  models.find((model) => model !== 'Not sure' && productName.startsWith(model)) || 'Not sure';
+const countries = [
+  'Select...',
+  'United States',
+  'Canada',
+  'United Kingdom',
+  'Germany',
+  'France',
+  'Australia',
+  'UAE',
+  'Saudi Arabia',
+  'Singapore',
+  'Malaysia',
+  'India',
+  'Other',
 ];
 ---
 
-<form id="inquiry-form" action={formAction} method="POST">
-  <input type="hidden" name="product" value={productName} />
-  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+<form
+  id="inquiry-form"
+  action={formAction}
+  data-form-variant={variant}
+  data-product={productName}
+  data-product-slug={productSlug}
+  novalidate
+>
+  <input
+    type="text"
+    name="_gotcha"
+    class="honeypot"
+    tabindex="-1"
+    autocomplete="off"
+    aria-hidden="true"
+  />
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4">
-    <div class="form-group">
-      <label for="name">Full Name <span class="required" aria-hidden="true">*</span></label>
-      <input type="text" id="name" name="name" required placeholder="John Smith" />
-      <span class="field-error">Please enter your full name.</span>
-    </div>
-    <div class="form-group">
-      <label for="email">Email <span class="required" aria-hidden="true">*</span></label>
-      <input type="email" id="email" name="email" required placeholder="john@company.com" />
-      <span class="field-error">Please enter a valid email address.</span>
-    </div>
-  </div>
+  {
+    variant === 'contact' ? (
+      <div class="contact-fields">
+        <div class="fg">
+          <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+          <input id="name" name="name" maxlength="120" autocomplete="name" placeholder="Your full name" required />
+          <span class="field-error" data-error-for="name"></span>
+        </div>
+        <div class="fg">
+          <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            maxlength="254"
+            autocomplete="email"
+            placeholder="your@email.com"
+            required
+          />
+          <span class="field-error" data-error-for="email"></span>
+        </div>
+        <div class="fg">
+          <label for="phone">
+            WhatsApp / Phone <span class="req" aria-hidden="true">*</span>
+          </label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            maxlength="50"
+            autocomplete="tel"
+            placeholder="+86 156 1768 7185"
+            required
+          />
+          <span class="field-error" data-error-for="phone"></span>
+        </div>
+        <div class="fg">
+          <label for="company">Company</label>
+          <input id="company" name="company" maxlength="160" autocomplete="organization" placeholder="Your company name" />
+          <span class="field-error" data-error-for="company"></span>
+        </div>
+        <div class="fg">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" maxlength="5000" placeholder="Tell us about your project requirements, working height, load capacity, site conditions..."></textarea>
+          <span class="field-error" data-error-for="message"></span>
+        </div>
+      </div>
+    ) : (
+      <>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4">
+          <div class="form-group">
+            <label for="name">
+              Full Name <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input id="name" name="name" maxlength="120" autocomplete="name" required />
+            <span class="field-error" data-error-for="name"></span>
+          </div>
+          <div class="form-group">
+            <label for="company">
+              Company <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input
+              id="company"
+              name="company"
+              maxlength="160"
+              autocomplete="organization"
+              required
+            />
+            <span class="field-error" data-error-for="company"></span>
+          </div>
+        </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4">
-    <div class="form-group">
-      <label for="company">Company <span class="required" aria-hidden="true">*</span></label>
-      <input type="text" id="company" name="company" required placeholder="Company Ltd." />
-      <span class="field-error">Please enter your company name.</span>
-    </div>
-    <div class="form-group">
-      <label for="country">Country <span class="required" aria-hidden="true">*</span></label>
-      <select id="country" name="country" required>
-        {countryOptions.map(c => <option value={c}>{c}</option>)}
-      </select>
-      <span class="field-error">Please select your country.</span>
-    </div>
-    <div class="form-group">
-      <label for="phone">Phone</label>
-      <input type="tel" id="phone" name="phone" placeholder="+1 234 567 890" />
-    </div>
-  </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4">
+          <div class="form-group">
+            <label for="country">
+              Country / Region <span class="required" aria-hidden="true">*</span>
+            </label>
+            <select id="country" name="country" required>
+              {countries.map((country) => <option value={country}>{country}</option>)}
+            </select>
+            <span class="field-error" data-error-for="country"></span>
+          </div>
+          <div class="form-group">
+            <label for="model">Product / Model</label>
+            <select id="model" name="model">
+              {models.map((model) => (
+                <option value={model} selected={model === defaultModel}>
+                  {model}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4">
-    <div class="form-group">
-      <label for="model">Model Interest</label>
-      <select id="model" name="model">
-        {modelOptions.map(m => <option value={m} selected={m === productName}>{m}</option>)}
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="application">Application</label>
-      <select id="application" name="application">
-        {applicationOptions.map(a => <option value={a}>{a}</option>)}
-      </select>
-    </div>
-  </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" maxlength="254" autocomplete="email" />
+            <span class="field-error" data-error-for="email"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">WhatsApp / Phone</label>
+            <input id="phone" name="phone" type="tel" maxlength="50" autocomplete="tel" />
+            <span class="field-error" data-error-for="phone"></span>
+          </div>
+        </div>
+        <p class="field-error contact-error" data-error-for="contact"></p>
 
-  <div class="form-group">
-    <label for="message">Inquiry Details <span class="required" aria-hidden="true">*</span></label>
-    <textarea id="message" name="message" required
-      placeholder="Please describe your project requirements, ceiling height, site conditions, and any questions..."></textarea>
-    <span class="field-error">Please enter your inquiry details.</span>
-  </div>
+        <div class="form-group">
+          <label for="application">Application</label>
+          <input
+            id="application"
+            name="application"
+            maxlength="160"
+            placeholder="Roofing, ceiling, warehouse, airport..."
+          />
+        </div>
 
-  <button type="submit" class="btn btn-primary w-full" id="submit-btn" style="width:100%;">
-    <span id="btn-text">Submit Inquiry</span>
-    <span id="btn-spinner" style="display:none;">Submitting...</span>
+        <div class="form-group">
+          <label for="message">
+            Project Requirements <span class="required" aria-hidden="true">*</span>
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            maxlength="5000"
+            required
+            placeholder="Share the working height, panel profile, material, site conditions, destination and transport constraints."></textarea>
+          <span class="field-error" data-error-for="message"></span>
+        </div>
+      </>
+    )
+  }
+
+  <button
+    type="submit"
+    class:list={variant === 'contact' ? ['submit'] : ['btn', 'btn-primary', 'w-full']}
+    style="width:100%;"
+  >
+    <span data-submit-label>
+      {variant === 'contact' ? 'Submit Quote Request →' : 'Submit Inquiry'}
+    </span>
+    <span data-submit-progress hidden>Submitting…</span>
   </button>
-  <p class="text-xs text-center mt-2" style="color:var(--color-text-light);">
-    We typically respond within 24 hours.
-  </p>
+  <p class="form-status" data-form-status aria-live="polite"></p>
 </form>
 
-<div id="form-success" class="hidden text-center py-8">
-  <div style="font-size:3rem;color:var(--color-success);margin-bottom:1rem;">&#10004;</div>
-  <h3 style="font-size:1.25rem;font-weight:700;color:var(--color-success);">Thank you for your inquiry!</h3>
-  <p style="color:var(--color-text-light);margin-top:0.5rem;">
-    Your message has been sent successfully. Our engineering team will reply within 24 hours (GMT+8).
-  </p>
-  <button type="button" class="btn btn-outline-dark btn-sm mt-4" onclick="document.getElementById('form-success')!.classList.add('hidden');document.getElementById('inquiry-form')!.classList.remove('hidden');">
-    Send another inquiry
-  </button>
-</div>
-
 <script>
-  const form = document.getElementById('inquiry-form') as HTMLFormElement | null;
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    let valid = true;
+  const form = document.querySelector<HTMLFormElement>('#inquiry-form');
+  const status = form?.querySelector<HTMLElement>('[data-form-status]');
+  const submit = form?.querySelector<HTMLButtonElement>('button[type="submit"]');
+  const label = form?.querySelector<HTMLElement>('[data-submit-label]');
+  const progress = form?.querySelector<HTMLElement>('[data-submit-progress]');
+  const formVariant = form?.dataset.formVariant === 'contact' ? 'contact' : 'product';
 
-    // Validate required fields
-    form.querySelectorAll('[required]').forEach((el) => {
-      const input = el as HTMLInputElement;
-      const group = input.closest('.form-group');
-      if (!input.value.trim() || (input.type === 'email' && !input.value.includes('@'))) {
-        group?.classList.add('error');
-        valid = false;
-      } else {
-        group?.classList.remove('error');
-      }
+  const showError = (field: string, message = '') => {
+    const node = form?.querySelector<HTMLElement>(`[data-error-for="${field}"]`);
+    if (node) node.textContent = message;
+  };
+
+  const clearErrors = () => {
+    form?.querySelectorAll<HTMLElement>('[data-error-for]').forEach((node) => {
+      node.textContent = '';
     });
-    // Validate country select
-    const country = form.querySelector('#country') as HTMLSelectElement;
-    if (country && country.value === 'Select...') {
-      country.closest('.form-group')?.classList.add('error');
-      valid = false;
+    if (status) {
+      status.textContent = '';
+      status.removeAttribute('role');
     }
-    if (!valid) return;
+  };
 
-    const btn = form.querySelector('#submit-btn') as HTMLButtonElement;
-    const btnText = form.querySelector('#btn-text') as HTMLElement;
-    const btnSpinner = form.querySelector('#btn-spinner') as HTMLElement;
-    btn.disabled = true;
-    btnText.style.display = 'none';
-    btnSpinner.style.display = 'inline';
+  const queryProduct = new URLSearchParams(window.location.search).get('product') || '';
+  const model = form?.querySelector<HTMLSelectElement>('#model');
+  if (queryProduct && model && [...model.options].some((option) => option.value === queryProduct)) {
+    model.value = queryProduct;
+  }
+
+  form?.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    clearErrors();
+
+    const data = Object.fromEntries(new FormData(form).entries()) as Record<string, string>;
+    const value = (field: string) => String(data[field] || '').trim();
+    const errors: Record<string, string> = {};
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phonePattern = /^[+()\d\s.-]{7,50}$/;
+
+    if (formVariant === 'contact') {
+      if (!value('name')) errors.name = 'Please enter your name.';
+      if (!value('email')) errors.email = 'Please enter your email address.';
+      else if (!emailPattern.test(value('email'))) errors.email = 'Enter a valid email address.';
+      if (!value('phone')) errors.phone = 'Please enter your WhatsApp/phone number.';
+      else if (!phonePattern.test(value('phone'))) {
+        errors.phone = 'Enter a valid WhatsApp/phone number.';
+      }
+    } else {
+      if (!value('name')) errors.name = 'Please enter your full name.';
+      if (!value('company')) errors.company = 'Please enter your company name.';
+      if (!value('country') || value('country') === 'Select...') {
+        errors.country = 'Please select your country.';
+      }
+      if (!value('message')) errors.message = 'Please describe your project requirements.';
+      if (!value('email') && !value('phone')) {
+        errors.contact = 'Enter an email address or WhatsApp/phone number.';
+      }
+      if (value('email') && !emailPattern.test(value('email'))) {
+        errors.email = 'Enter a valid email address.';
+      }
+    }
+
+    if (Object.keys(errors).length) {
+      Object.entries(errors).forEach(([field, message]) => showError(field, message));
+      if (status) {
+        status.setAttribute('role', 'alert');
+        status.textContent = 'Please correct the highlighted fields.';
+      }
+      return;
+    }
+
+    const payload = {
+      ...data,
+      formVariant,
+      product: form.dataset.product || queryProduct,
+      productSlug: form.dataset.productSlug || '',
+      sourcePage: `${window.location.pathname}${window.location.search}`,
+      submittedAt: new Date().toISOString(),
+    };
+
+    if (submit) submit.disabled = true;
+    if (label) label.hidden = true;
+    if (progress) progress.hidden = false;
 
     try {
-      const data = new FormData(form);
-      const res = await fetch(form.action, {
+      const response = await fetch(form.action, {
         method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' },
+        headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
       });
-      if (res.ok) {
-        form.classList.add('hidden');
-        document.getElementById('form-success')?.classList.remove('hidden');
-      } else {
-        alert('Something went wrong. Please try again or email us directly at leelogly120@gmail.com.');
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !result.ok) {
+        if (result.fields) {
+          Object.entries(result.fields as Record<string, string>).forEach(([field, message]) =>
+            showError(field, message),
+          );
+        }
+        throw new Error(result.code || 'SUBMISSION_FAILED');
+      }
+
+      form.reset();
+      if (status) {
+        status.setAttribute('role', 'status');
+        status.textContent = 'Thank you. Your project information was sent for engineering review.';
       }
     } catch {
-      alert('Network error. Please try again later.');
+      if (status) {
+        status.setAttribute('role', 'alert');
+        status.textContent =
+          'Your inquiry could not be sent. Please try again or contact us by email or WhatsApp.';
+      }
     } finally {
-      btn.disabled = false;
-      btnText.style.display = 'inline';
-      btnSpinner.style.display = 'none';
+      if (submit) submit.disabled = false;
+      if (label) label.hidden = false;
+      if (progress) progress.hidden = true;
     }
   });
-
-  // Clear error on input
-  form?.querySelectorAll('input, select, textarea').forEach((el) => {
-    el.addEventListener('input', () => {
-      el.closest('.form-group')?.classList.remove('error');
-    });
-    el.addEventListener('blur', () => {
-      const input = el as HTMLInputElement;
-      if (input.hasAttribute('required') && !input.value.trim()) {
-        input.closest('.form-group')?.classList.add('error');
-      }
-    });
-  });
 </script>
+
+<style>
+  .honeypot {
+    position: absolute !important;
+    left: -10000px !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+  }
+
+  form[data-form-variant='contact'] {
+    width: 100%;
+    max-width: 434px;
+  }
+
+  form[data-form-variant='contact'] .fg {
+    margin-bottom: 20px;
+  }
+
+  form[data-form-variant='contact'] input {
+    height: 54px;
+    box-sizing: border-box;
+  }
+
+  form[data-form-variant='contact'] textarea {
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    box-sizing: border-box;
+  }
+
+  form[data-form-variant='contact'] .submit {
+    height: 58px;
+    box-sizing: border-box;
+    padding: 0 16px;
+  }
+
+  .field-error {
+    display: block;
+    min-height: 1.25rem;
+    margin-top: 0.35rem;
+    color: #b91c1c;
+    font-size: 0.8125rem;
+  }
+
+  .field-error:empty {
+    display: none;
+    min-height: 0;
+    margin: 0;
+  }
+
+  .contact-error {
+    margin-top: -0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .form-status {
+    min-height: 1.5rem;
+    margin-top: 0.75rem;
+    text-align: center;
+  }
+
+  .form-status[role='status'] {
+    color: #166534;
+  }
+
+  .form-status[role='alert'] {
+    color: #b91c1c;
+  }
+
+  @media (max-width: 480px) {
+    form[data-form-variant='contact'] {
+      max-width: 100%;
+    }
+  }
+</style>

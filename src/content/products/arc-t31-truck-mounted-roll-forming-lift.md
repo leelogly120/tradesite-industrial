@@ -1,94 +1,67 @@
 ---
-title: "ARC-T31 Truck-Mounted Roll Forming Lift - 31m Reference Platform"
-description: "ARC-T31 truck-mounted roll forming lift reference: 31m archived height, 8t class, 2400mm double-row bearing and 9.8m outrigger spread."
+title: "ARC-T31 Truck-Mounted Roll Forming Lift — Archived Reference"
+description: "ARC-T31 archived 31m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
 category: "Truck-Mounted Roll Forming Lifts"
-moq: 1
 specifications:
-  "Lift Height (to shear exit)": "31m"
-  "Lifting Capacity": "8t standard"
-  "Panel Output Height Range": "5m - 31m"
-  "Panel Output Radius": "≤8,000mm"
-  "Panel Output Length": "1m - 200m"
-  "Sheet Thickness": "0.3mm - 1.0mm"
-  "Main Lift Pump": "15kW piston pump"
-  "Electric Power Supply": "380V / 18kW"
-  "Shear Pump Motor": "5.5kW"
-  "Slewing Bearing": "Ф2,400mm double-row heavy-duty (Ф2,450mm × 200mm class)"
-  "Platform Size": "8-9m × 2.3m"
-  "Outrigger Box Section": "480 × 380 × 12mm, two-stage"
-  "Outrigger Spread": "9.8m × 9.8m"
-  "Outrigger Cylinder": "Ф180mm barrel / Ф140mm rod"
-  "Main Boom Cylinder": "Ф245mm OD / Ф160mm rod / 4,500mm stroke"
-  "Telescopic Cylinder": "Ф180mm OD / Ф140mm rod / 7,800mm stroke"
-  "Module Weight": "27.3t (excl. roll former & truck)"
-  "Truck Requirement": "13-17m semi-trailer"
-  "Dimensions with Roll Former (L×W×H)": "12.6m × 2.4m × 4.2m"
-  "Control System": "Mitsubishi PLC, touchscreen + imported radio remote"
-  "Safety Instruments": "Height & radius limiter, violation alarm, LCD level gauge"
-  "Structural Steel": "Q345B / 700BL high-strength plate"
-  "Coil Crane (optional)": "Hydraulic, max 8t"
+  "Archived Height Class": "Archived reference — 31m class; project-specific confirmation required"
+  "Archived Payload Class": "Historical reference — 8t class; final allowable load follows the approved load chart"
+  "Archived Sheet Thickness": "Historical reference — 0.3–1.0mm; final material, profile, yield and tooling require confirmation"
+  "Archived Power Basis": "Historical reference — 380V-class supply; final voltage, frequency and phase are destination-specific"
+  "Vehicle Interface": "Reference configuration — chassis, axle loads, mounting, registration and road use require destination review"
+  "Forming-Line Interface": "To be confirmed — footprint, mass, feed direction, power, controls and access clearances"
+  "Final Confirmation": "Signed technical schedule, approved drawings, approved load chart and chassis interface schedule"
 images:
-  - "/images/products/arc-t31-truck-mounted-roll-forming-lift-1.jpg"
-  - "/images/products/arc-t31-truck-mounted-roll-forming-lift-2.jpg"
-  - "/images/products/arc-t31-truck-mounted-roll-forming-lift-3.jpg"
-  - "/images/products/arc-t31-truck-mounted-roll-forming-lift-4.jpg"
+  - "/images/editorial/truck-site-roll-forming-lift.webp"
+  - "/images/editorial/crawler-truck-selection-matrix.svg"
+  - "/images/editorial/roof-level-workflow.svg"
 features:
-  - "31m forming height — the tallest truck-mounted roll forming lift in the range"
-  - "Ф2,400mm-class double-row slewing bearing rated around 25t rotating loads"
-  - "9.8m × 9.8m archived outrigger footprint with 480×380mm box-section legs"
-  - "Ф245mm main boom cylinder and 7,800mm-stroke telescopic cylinder for the tall boom"
-  - "Semi-trailer mounting option subject to chassis, axle-load and road-rule review"
-  - "Oil-electric dual lift system — engine or 380V motor, operator's choice"
-  - "Height & radius limiter, violation alarm, LCD level gauge and remote E-stop standard"
+  - "Route-first review — road rules, axle limits, bridge clearances, permits and site entry are checked before chassis selection"
+  - "Chassis interface control — mounting loads, axle distribution, outriggers and local registration remain project-specific"
+  - "Forming-line integration — profile, material, machine mass, power, controls and feed direction are reviewed together"
+  - "Editorial visual boundary — page images illustrate the family and do not prove a model-specific vehicle or performance"
 faq:
-  - question: "What projects call for the ARC-T31?"
-    answer: "Structures with 26-31m eave heights where road mobility between sites still matters: hangars, tall exhibition halls, stadium perimeters and multi-site industrial programs. Panels are delivered from 5m to 31m above ground within an 8,000mm output radius."
-  - question: "What trailer does it require?"
-    answer: "The 27.3-tonne module mounts on a 13-17m semi-trailer. With a roll former on the platform the transport envelope is about 12.6m × 2.4m × 4.2m, based on a 1.2m bed and 1m former height."
-  - question: "How does it stay stable at 31 meters?"
-    answer: "Three factors: a Ф2,400mm-class double-row slewing bearing rated around 25-tonne rotating loads, 480 × 380mm box-section outriggers spreading 9.8m × 9.8m, and a Ф245mm main boom cylinder. The height/angle controller limits violations before they become risks."
-  - question: "Can it run without grid power?"
-    answer: "Yes. The oil-electric dual lift system operates from the engine or from a 380V / 18kW supply. On remote greenfield sites the engine handles the full cycle; where grid power is available the electric mode cuts fuel cost and noise."
+  - question: "Is ARC-T31 a current 31m road-ready specification?"
+    answer: "No. 31m is an archived source reference class. Road legality, chassis selection, axle distribution, work envelope and allowable loads depend on the destination and require project-specific confirmation."
+  - question: "Can road travel or setup time be promised from this page?"
+    answer: "No. Travel, permits, site entry, setup sequence and recovery arrangements depend on the selected chassis, route, site and local rules. They are reviewed in the project method and signed documents."
+  - question: "What closes the technical review?"
+    answer: "The signed technical schedule, approved drawings, approved load chart, chassis interface schedule and approved packing data define the order. Editorial visuals and archived website values do not."
 relatedProducts:
+  - "arc-t18-truck-mounted-roll-forming-lift"
   - "arc-t25-truck-mounted-roll-forming-lift"
   - "arc-t25hq-truck-mounted-roll-forming-lift-40hq"
-  - "arc-c32-crawler-roll-forming-lift"
-date: 2026-07-19
+date: 2026-07-25
 draft: false
 ---
 
-## Product Overview
+## A transport-and-site reference, not a fixed vehicle
 
-The **ARC-T31** is the upper archived truck-mounted reference at 31m forming height. A compatible 13–17m-class semi-trailer may be used after chassis, axle-load, registration and route review; relocation time depends on local road and transport rules.
+ARC-T31 is a **reference configuration** for discussing a truck-mounted roll-forming workflow. This archived source reference records a 31m-class concept, but it is not evidence that a current unit has that work envelope, payload, road status or chassis. ARCLIFT treats the equipment module, forming line, destination chassis, road route and site setup as one project package.
 
-The engineering follows the 30m-class crawler models: Ф2,400mm-class double-row slewing bearing, 480 × 380mm box-section outriggers spreading **9.8m × 9.8m**, Ф245mm main boom cylinder and a 7,800mm-stroke telescopic cylinder. The module weighs 27.3 tonnes excluding former and trailer.
+The truck-mounted route can be worth reviewing when projects are distributed and the buyer has a clear vehicle strategy. It should be compared with crawler support, separate transport, ground forming and conventional lifting on the actual route and site data. The comparison must include legal road dimensions, axle distribution, mounting loads, setup area, ground reactions, crane or handling provisions and recovery planning.
 
-One imported radio remote can command outrigger deployment, lifting, slewing and the forming line. The height/radius controller with violation alarm, LCD level gauge and 24V safe-voltage valve system are standard.
+## Information needed before chassis selection
 
-## Applications
+Provide the destination country, proposed chassis data, wheelbase, frame drawing, axle ratings, legal dimensions, route limits and registration route. The technical review also needs the work zones, required height and outreach, setup geometry, ground bearing data, overhead restrictions and the planned operating sequence.
 
-### Hangars & Tall Industrial Halls
-26-31m eaves reached from a road-mobile base — no crawler transport logistics.
+For the forming line, send the approved panel profile, material and yield, thickness, coil data, target panel lengths, tooling revision, machine footprint and mass, power demand, control interface and feed direction. Historical references to 8t-class payload, 0.3–1.0mm material and 380V-class power remain planning inputs only and require **project-specific confirmation**.
 
-### Multi-Site National Programs
-Chain-store distribution centers, standardized plants: one unit covers a national rollout.
+## Boundaries buyers should keep visible
 
-### Stadium & Landmark Roofs
-The ≤8,000mm output radius delivers panels past ring beams and parapets.
+The website does not promise road registration, unrestricted travel, a specific setup time, crane-free handling or a particular production result. A truck concept may not fit where axle limits, bridge clearances, site access, setup reactions, chassis availability or local approval cannot be resolved.
 
-## Technical Highlights
+## Buyer information to send
 
-- **Boom**: main cylinder Ф245mm OD / Ф160mm rod; telescopic cylinder Ф180mm OD / Ф140mm rod × 7,800mm stroke.
-- **Slewing**: Ф2,400mm-class (Ф2,450mm × 200mm) double-row bearing — the critical safety component, sized for 25t rotating loads.
-- **Hydraulics**: 15kW piston main pump, 5.5kW shear pump, Beijing Huade valves, Nitto burst-proof hoses, double-acting cylinder locks.
-- **Electrics**: Mitsubishi PLC + 18.5kW VFD, Schneider elements, stainless cabinet, touchscreen + imported remote, panel counter.
-- **Structure**: Q345B / 700BL plate, 45# chromed shafts, 20CrMo bushings, galvanized cable chains.
-- **Options**: 8t hydraulic coil crane, camera monitoring package.
+- Destination and proposed registration or permit route
+- Chassis drawing, wheelbase, frame, axle ratings and legal envelope
+- Route survey, bridge and gate clearances, turning and site-entry limits
+- Work-zone plan, height, outreach, setup positions and ground information
+- Panel profile, material, thickness, coil data and forming-line interfaces
+- Power, controls, weather basis, support reactions and recovery plan
+- Documentation, inspection, packing and destination handling requirements
 
-## Packaging & Shipping
+## Final project documents
 
-Ships as module (trailer sourced locally) or complete unit. Export coating, moisture-proof wrapping and transport locks standard. RoRo or break-bulk; Trade terms are confirmed in the project quotation.
+Final configuration requires the **signed technical schedule**, **approved drawings**, approved load chart, chassis interface schedule and approved packing data. These documents define the vehicle-module boundary, operating envelope, loads, interfaces and destination responsibilities.
 
----
-
-*Compare the crawler alternative: [ARC-C32](/products/arc-c32-crawler-roll-forming-lift/) for rough-terrain 30m+ projects.*
+**Image disclosure:** Representative editorial image — not model-specific evidence. The raster visual is an **AI-assisted editorial composite** and the diagrams are ARCLIFT editorial explanations. They do not establish vehicle identity, road legality, suitability or performance.

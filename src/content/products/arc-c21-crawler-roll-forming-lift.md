@@ -1,89 +1,67 @@
 ---
-title: "ARC-C21 Crawler Roll Forming Lift - 21m Aerial Roofing Platform"
-description: "ARC-C21 crawler roll forming lift: 21m lift height, 8t capacity, double-row heavy slewing bearing, diesel-electric dual power, integrated radio remote control."
+title: "ARC-C21 Crawler Roll Forming Lift — Archived Reference"
+description: "ARC-C21 archived 21m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
 category: "Crawler Roll Forming Lifts"
-moq: 1
 specifications:
-  "Lift Height (to shear exit)": "21m"
-  "Lifting Capacity": "8t standard"
-  "Panel Output Length": "1m - 200m"
-  "Sheet Thickness": "0.3mm - 1.0mm"
-  "Diesel Engine": "Yuchai (turbocharged)"
-  "Electric Power Supply": "380V"
-  "Pump Motor (main/shear)": "5.5kW"
-  "Slewing Bearing": "Ф1,700mm double-row heavy-duty"
-  "Outrigger Cylinder Rod": "Ф140mm"
-  "Outrigger Spread": "7.3m × 6.8m"
-  "Platform Size": "9m × 2.3m"
-  "Machine Weight": "25.5t (excl. roll former)"
-  "Crawler Chain": "Komatsu PC200 type"
-  "Track Shoe Width": "600mm"
-  "Control System": "Mitsubishi PLC, touchscreen + full radio remote"
-  "Safety Instruments": "Height & radius limiter, LCD level gauge"
-  "Structural Steel": "Q345B / 700BL high-strength plate"
-  "Coil Crane (optional)": "Hydraulic, max 8t"
+  "Archived Height Class": "Archived reference — 21m class; project-specific confirmation required"
+  "Archived Payload Class": "Historical reference — 8t class; final allowable load follows the approved load chart"
+  "Archived Sheet Thickness": "Historical reference — 0.3–1.0mm; final material, profile, yield and tooling require confirmation"
+  "Archived Power Basis": "Historical reference — 380V-class supply; final voltage, frequency and phase are destination-specific"
+  "Mobility Concept": "Reference configuration — crawler base and support system; final ground pressure, reactions and travel conditions require review"
+  "Forming-Line Interface": "To be confirmed — footprint, mass, feed direction, power, controls and access clearances"
+  "Final Confirmation": "Signed technical schedule, approved drawings and approved load chart"
 images:
-  - "/images/products/arc-c21-crawler-roll-forming-lift-1.jpg"
-  - "/images/products/arc-c21-crawler-roll-forming-lift-2.jpg"
-  - "/images/products/arc-c21-crawler-roll-forming-lift-3.jpg"
-  - "/images/products/arc-c21-crawler-roll-forming-lift-4.jpg"
+  - "/images/hero/hero-2.webp"
+  - "/images/editorial/roof-level-workflow.svg"
+  - "/images/editorial/roll-forming-input-map.svg"
 features:
-  - "21m forming height — covers the mainstream range of large steel workshops and logistics hubs"
-  - "Double-row heavy-duty Ф1,700mm slewing bearing for stable rotation under full 8t load"
-  - "Full remote control — travel, turning, outriggers and forming line run by one ground operator"
-  - "Dual power — diesel engine for travel and off-grid sites, 380V electric for quiet forming work"
-  - "Height & radius limiter with violation alarm and LCD level display as standard"
-  - "High/low-speed crawler travel with remote-controlled trailer loading"
-  - "Q345B / 700BL steel structure with two-stage outriggers, 7.3m × 6.8m spread"
+  - "Site-data review — selection begins with height, outreach, roof geometry, access route, ground information and weather limits"
+  - "Interface control — the forming line, support structure, power and material path are checked as one project package"
+  - "Document gate — quoted dimensions and operating limits become controlling only in signed project documents"
+  - "Editorial visual boundary — page images explain the equipment family and do not prove this model or its performance"
 faq:
-  - question: "What is the difference between the ARC-C21 and the ARC-C17?"
-    answer: "The ARC-C21 lifts the roll forming machine to 21 meters versus 17 meters, uses a larger Ф1,700mm double-row heavy-duty slewing bearing, and spreads its outriggers to 7.3m × 6.8m for the taller working envelope. Machine weight rises to about 25.5 tonnes. Both share an integrated remote-control workflow."
-  - question: "Which roll forming machines does it accept?"
-    answer: "Compatible standing-seam, roof-panel and clip-lock forming machines with motor + reducer drive and hydraulic shear fit the 9m × 2.3m platform. The lift powers the machine from its own electric cabinet, and forming, shearing and panel counting are integrated into the remote."
-  - question: "How does it move between job sites?"
-    answer: "On site, the crawler travels and turns under remote control at high or low speed. For transport, it either walks onto a lowbed trailer by remote or raises itself on its outriggers so the trailer can reverse underneath — routine self-loading may reduce crane use; the transport and recovery plan determines when a crane is still required."
-  - question: "What safety systems are standard?"
-    answer: "A height and radius limiter with violation alarm, LCD level gauge, 24V safe-voltage solenoid valves, double-acting cylinder locks and burst-proof hydraulic hoses are all standard equipment, plus emergency stop on the remote."
+  - question: "Does ARC-C21 currently guarantee a 21m working height?"
+    answer: "No. 21m is an archived source reference class, not a current-model guarantee. The required work height, outreach and configuration must be checked against the project geometry and confirmed in the signed technical schedule and approved drawings."
+  - question: "What must be supplied before a configuration review?"
+    answer: "Send roof plans and sections, required work zones, panel profile and material, coil and forming-line data, ground or support information, access constraints, destination power and local documentation requirements."
+  - question: "Which documents control the final order?"
+    answer: "The signed technical schedule, approved general-arrangement drawings, approved load chart, interface list and project packing data control the final configuration. Website text and editorial visuals do not."
 relatedProducts:
   - "arc-c17-crawler-roll-forming-lift"
   - "arc-c25-crawler-roll-forming-lift"
   - "arc-rf8-roll-forming-machine"
-date: 2026-07-19
+date: 2026-07-25
 draft: false
 ---
 
-## Product Overview
+## What this reference page is for
 
-The **ARC-C21** extends aerial roll forming to 21 meters — the sweet spot for modern large-span logistics warehouses and industrial workshops. Like every machine in the ARC crawler range, it carries a complete roll forming line on its 9m × 2.3m platform and produces finished standing-seam panels directly at roof level, feeding them onto the purlins in continuous runs of up to 200 meters.
+ARC-C21 is retained as a useful **reference configuration** for early discussions about crawler-supported roll forming near an installation elevation. This archived source reference identifies a 21m-class starting point, but it does not establish the height, payload, stability, output range or destination compliance of a current unit. ARCLIFT works as an integrated equipment supplier and technical selection partner: the project brief is reviewed first, then the applicable configuration and documentation are defined.
 
-The upgrade over the ARC-C17 is structural: a Ф1,700mm **double-row heavy-duty slewing bearing**, a wider 7.3m × 6.8m outrigger footprint and Ф140mm outrigger cylinder rods give the taller boom the same rock-steady platform behaviour under a full 8-tonne machine load.
+The page is most useful when a buyer needs to compare a crawler route with ground forming, segmented panels, conventional lifting or a truck-mounted arrangement. Those alternatives should be compared by workflow, support conditions, access, weather exposure and interfaces—not by model label alone.
 
-One remote integrates crawler travel, turning, outrigger deployment, lifting, slewing and forming functions; crew roles remain defined by the project lift plan.
+## Conditions that control selection
 
-## Applications
+A review should locate every work zone on a roof plan and section. Record the required vertical position and outreach, roof slope, edge distance, obstructions, panel handover point, travel route and setup area. Ground bearing data, slope and drainage matter because the support reaction and travel condition cannot be inferred from a general site photograph.
 
-### Large Steel Workshops
-Eave heights of 18-21m are increasingly common in heavy industrial buildings. The ARC-C21 reaches them without scaffolding or crane support.
+The forming process needs its own interface package: approved panel profile, material grade and yield, thickness, coil dimensions and mass, intended panel length, tooling revision, line footprint, line mass, power demand, control boundary, feed direction and shear position. The historical references to 8t-class payload, 0.3–1.0mm sheet and 380V-class power are discussion inputs only. Each remains subject to **project-specific confirmation**.
 
-### Logistics & Distribution Hubs
-Continuous panels up to 200m eliminate lap joints across huge roof planes — fewer joints, fewer leaks, faster installation.
+## When this route may not fit
 
-### Exhibition & Sports Venues
-The crawler chassis handles the unfinished ground around large-span venues while panels are formed and placed in sequence along the roof edge.
+A crawler-supported route may not fit if the travel corridor is too narrow, the ground investigation is incomplete, support reactions cannot be accommodated, weather limits cannot be controlled, the roof handover path is unresolved, or the forming-line interface remains unknown. It also cannot replace a site method statement, lift plan, rescue plan or local work-at-height review.
 
-## Technical Highlights
+## Buyer information to send
 
-- **Slewing**: Ф1,700mm double-row heavy-duty bearing — the critical rotating joint, sized for years of full-load cycles.
-- **Outriggers**: two-stage box legs, Ф140mm cylinder rods, 7.3m × 6.8m spread, all remote-deployed.
-- **Controls**: Mitsubishi PLC with touchscreen and radio remote dual mode; height/radius limiter and LCD level gauge standard.
-- **Power**: Yuchai turbocharged diesel plus 380V electric supply; oil-electric dual lift module optional.
-- **Structure**: Q345B / 700BL high-strength welded plate throughout.
-- **Options**: hydraulic coil crane (max 8t), electric lift module, camera monitoring package.
+- Roof plan, elevations and sections with the required work zones marked
+- Required height, outreach, setup positions and movement sequence
+- Ground report, allowable bearing pressure, slope, drainage and buried services
+- Panel profile drawing, material, yield, thickness, coil data and target lengths
+- Forming-line footprint, mass, power, controls, feed direction and access needs
+- Wind basis, operating environment and the planned weather decision process
+- Destination, transport route, available power and required local documents
 
-## Packaging & Shipping
+## Documents that close the review
 
-Standard export preparation with anti-corrosion coating and transport locks. Loads onto lowbed trailers under remote power; ships via RoRo or flat rack. Trade terms are confirmed in the project quotation.
+Final configuration requires the **signed technical schedule**, **approved drawings**, approved load chart, interface schedule and approved packing data. Those documents must identify the configuration, limits, support reactions, interfaces and destination responsibilities that apply to the order.
 
----
-
-*Compare with the [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) for 25m projects, or see the [full crawler range](/products/#crawler-roll-forming-lifts).*
+**Image disclosure:** Representative editorial image — not model-specific evidence. The raster visual is an **AI-assisted editorial composite**; the diagrams are ARCLIFT editorial explanations. None proves model identity, configuration, suitability or performance.

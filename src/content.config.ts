@@ -32,32 +32,14 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string().max(160),
     date: z.coerce.date(),
+    updated: z.coerce.date().optional(),
     draft: z.boolean().default(false),
     tags: z.array(z.string()).optional(),
     author: z.string().default('ARCLIFT Team'),
     coverImage: z.string().optional(),
+    coverAlt: z.string().min(20),
+    coverCaption: z.string().min(20),
   }),
 });
 
-const caseStudies = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/case-studies' }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string().max(200),
-    category: z.string(),
-    date: z.coerce.date(),
-    draft: z.boolean().default(false),
-    stats: z.array(z.object({
-      num: z.string(),
-      label: z.string(),
-    })).optional(),
-    model: z.string().optional(),
-    results: z.array(z.object({
-      num: z.string(),
-      label: z.string(),
-    })).optional(),
-    coverImage: z.string().optional(),
-  }),
-});
-
-export const collections = { products, blog, caseStudies };
+export const collections = { products, blog };

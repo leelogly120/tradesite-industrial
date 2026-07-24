@@ -2,7 +2,7 @@
 interface Props {
   title: string;
   description: string;
-  canonical?: string;
+  canonical?: string | false;
   ogImage?: string;
   ogType?: string;
   noindex?: boolean;
@@ -16,32 +16,35 @@ const {
 } = Astro.props;
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://www.arclifteq.com';
-const pageUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
+const pageUrl = canonical === false ? undefined : canonical || new URL(Astro.url.pathname, siteUrl).href;
 const defaultOgImage = `${siteUrl}/images/og-default.svg`;
+const socialImage = ogImage
+  ? (/^https?:\/\//i.test(ogImage) ? ogImage : new URL(ogImage, siteUrl).href)
+  : defaultOgImage;
 ---
 
 <title>{title}</title>
 <meta name="description" content={description} />
-<link rel="canonical" href={pageUrl} />
+{pageUrl && <link rel="canonical" href={pageUrl} />}
 {noindex && <meta name="robots" content="noindex,nofollow" />}
 
 <!-- Open Graph -->
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:url" content={pageUrl} />
+{pageUrl && <meta property="og:url" content={pageUrl} />}
 <meta property="og:type" content={ogType} />
-<meta property="og:image" content={ogImage || defaultOgImage} />
+<meta property="og:image" content={socialImage} />
 <meta property="og:site_name" content="ARCLIFT" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={ogImage || defaultOgImage} />
+<meta name="twitter:image" content={socialImage} />
 
 <!-- hreflang -->
-<link rel="alternate" hrefLang="en-US" href={pageUrl} />
-<link rel="alternate" hrefLang="x-default" href={pageUrl} />
-{alternateLocales.map(({ locale, url }) => (
+{pageUrl && <link rel="alternate" hrefLang="en-US" href={pageUrl} />}
+{pageUrl && <link rel="alternate" hrefLang="x-default" href={pageUrl} />}
+{pageUrl && alternateLocales.map(({ locale, url }) => (
   <link rel="alternate" hrefLang={locale} href={url} />
 ))}

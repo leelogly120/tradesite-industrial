@@ -1,40 +1,24 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import InquiryForm from '../components/InquiryForm.astro';
 const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://www.arclifteq.com';
 ---
 
 <BaseLayout
   title="Get a Quote — ARCLIFT"
-  description="Get factory-direct pricing within 24 hours. Our engineering team will recommend the right model for your project."
+  description="Share your project height, panel profile, site conditions and destination for an engineering configuration review."
   transparentNav={false}
 >
 
-  <!-- LOCAL BUSINESS SCHEMA -->
+  <!-- ORGANIZATION SCHEMA -->
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': 'Organization',
     name: 'ARCLIFT Equipment Co., Ltd.',
-    description: 'Professional manufacturer of crawler under-ceiling aerial work platforms',
+    description: 'Integrated equipment supplier providing technical selection and supply coordination for roll forming lift systems and large-deck crawler platforms.',
     url: siteUrl,
     telephone: '+86 15617687185',
     email: 'leelogly120@gmail.com',
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Xinxiang',
-      addressRegion: 'Henan',
-      addressCountry: 'CN',
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: '35.3030',
-      longitude: '113.9268',
-    },
-    openingHoursSpecification: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '09:00',
-      closes: '18:00',
-    },
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+86 15617687185',
@@ -57,7 +41,7 @@ const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://www.arclifteq.com';
   <section class="hero-banner" style="--banner-image:url('/images/banners/contact.webp');--banner-position:center 58%;">
     <div class="overline">Contact</div>
     <h1>GET A QUOTE</h1>
-    <p>Get factory-direct pricing within 24 hours. Our engineering team will recommend the right model for your project.</p>
+    <p>Share your project height, panel profile, site conditions and destination for an engineering configuration review.</p>
   </section>
 
   <!-- SPLIT LAYOUT -->
@@ -65,37 +49,8 @@ const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://www.arclifteq.com';
     <!-- FORM -->
     <div class="form-card">
       <h2>Tell Us About Your Project</h2>
-      <p class="sub">Fill in the form and we'll get back to you within 24 hours.</p>
-      <form id="contact-form">
-        <input type="hidden" name="_subject" value="New Quote Request from ARCLIFT Website" />
-        <input type="hidden" name="_captcha" value="false" />
-        <div class="fg">
-          <label>Name <span class="req">*</span></label>
-          <input type="text" name="name" placeholder="Your full name" required />
-        </div>
-        <div class="fg">
-          <label>Email <span class="req">*</span></label>
-          <input type="email" name="email" placeholder="your@email.com" required />
-        </div>
-        <div class="fg">
-          <label>WhatsApp / Phone <span class="req">*</span></label>
-          <input type="tel" name="phone" placeholder="+86 156 1768 7185" required />
-        </div>
-        <div class="fg">
-          <label>Company</label>
-          <input type="text" name="company" placeholder="Your company name" />
-        </div>
-        <div class="fg">
-          <label>Message</label>
-          <textarea name="message" placeholder="Tell us about your project requirements, working height, load capacity, site conditions..."></textarea>
-        </div>
-        <button type="submit" class="submit" id="submit-btn">Submit Quote Request →</button>
-      </form>
-      <div id="form-success" style="display:none;text-align:center;padding:40px 0;">
-        <div style="font-size:3rem;color:#22c55e;margin-bottom:1rem;">&#10004;</div>
-        <h3 style="font-size:1.25rem;font-weight:700;color:#22c55e;">Thank you for your inquiry!</h3>
-        <p style="color:#64748b;margin-top:0.5rem;">Your message has been sent successfully. Our engineering team will reply within 24 hours (GMT+8).</p>
-      </div>
+      <p class="sub">Share the project conditions our engineering team needs to review the configuration.</p>
+      <InquiryForm variant="contact" />
     </div>
 
     <!-- SIDEBAR -->
@@ -111,10 +66,6 @@ const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://www.arclifteq.com';
           <div class="ci__text"><b>Email</b>leelogly120@gmail.com</div>
         </div>
         <div class="ci">
-          <div class="ci__icon">📍</div>
-          <div class="ci__text"><b>Address</b>Xinxiang, Henan, China</div>
-        </div>
-        <div class="ci">
           <div class="ci__icon">🕐</div>
           <div class="ci__text"><b>Working Hours</b>Mon–Sat, 9:00–18:00 (GMT+8)</div>
         </div>
@@ -123,44 +74,14 @@ const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://www.arclifteq.com';
         <h3>Why ARCLIFT</h3>
         <div class="trust-badges">
           <div class="trust-badge">✓ Engineering Review</div>
-          <div class="trust-badge">✓ 24h Response</div>
           <div class="trust-badge">✓ Configuration Confirmed</div>
-          <div class="trust-badge">✓ Factory Documentation</div>
+          <div class="trust-badge">✓ Configuration Documentation</div>
         </div>
       </div>
     </div>
   </div>
 </BaseLayout>
 
-<script>
-  const form = document.getElementById('contact-form') as HTMLFormElement;
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const btn = document.getElementById('submit-btn') as HTMLButtonElement;
-    btn.disabled = true;
-    btn.textContent = 'Submitting...';
-    try {
-      const data = new FormData(form);
-      const res = await fetch('https://arclift-form.leelogly120.workers.dev/', {
-        method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' },
-      });
-      if (res.ok) {
-        form.style.display = 'none';
-        document.getElementById('form-success')!.style.display = 'block';
-      } else {
-        alert('Something went wrong. Please try again or email us directly at leelogly120@gmail.com.');
-        btn.disabled = false;
-        btn.textContent = 'Submit Quote Request →';
-      }
-    } catch {
-      alert('Network error. Please try again later.');
-      btn.disabled = false;
-      btn.textContent = 'Submit Quote Request →';
-    }
-  });
-</script>
 
 <style>
   @media (max-width: 768px) {

@@ -8,41 +8,36 @@ const HOME_CATEGORIES = [
   {
     id: 'crawler-roll-forming-lifts',
     name: 'Crawler Roll Forming Lifts',
-    range: '17m – 32m',
-    desc: 'Crawler platforms configured to lift a compatible roll forming line toward roof level. 5 reference models.',
+    range: 'Archived model references',
+    desc: 'Crawler options for reviewing roof-level forming-line access, ground conditions and panel feed direction.',
+    image: '/images/editorial/roof-level-workflow.svg',
   },
   {
     id: 'truck-mounted-roll-forming-lifts',
     name: 'Truck-Mounted Roll Forming Lifts',
-    range: '12m – 31m',
-    desc: 'Truck-mounted forming systems, including a 40HQ-oriented split configuration. 5 reference models.',
+    range: 'Route review required',
+    desc: 'Truck-mounted options reviewed against local chassis, road limits, shipping plan and commissioning route.',
+    image: '/images/editorial/truck-site-roll-forming-lift.webp',
   },
   {
     id: 'crawler-ceiling-platforms',
     name: 'Crawler Ceiling Platforms',
-    range: '20m – 35m',
-    desc: 'Large-deck under-ceiling platform concepts pending model-specific verification. 4 reference models.',
+    range: 'Working envelope by model',
+    desc: 'Large-deck concepts for under-ceiling and wall-panel work; height, load and travel mode require model and site review.',
+    image: '/images/editorial/large-deck-steel-structure.webp',
   },
   {
     id: 'roll-forming-machines',
     name: 'Roll Forming Machines',
-    range: 'Standing seam',
-    desc: 'Panel-forming lines matched to the profile drawing and selected lifting platform. 1 reference model.',
+    range: 'Profile-led selection',
+    desc: 'Forming-line options selected from the profile drawing, material, thickness, coil and electrical inputs.',
+    image: '/images/editorial/roll-forming-input-map.svg',
   },
 ];
 
-function heightNum(p: any): number {
-  const specs = p.data.specifications || {};
-  const h = specs['Lift Height (to shear exit)'] || specs['Max Working Height'] || '';
-  const m = String(h).match(/(\d+(?:\.\d+)?)/);
-  return m ? parseFloat(m[1]) : 0;
-}
-
 const homeCats = HOME_CATEGORIES.map(cat => ({
   ...cat,
-  items: allProducts
-    .filter(p => p.data.category === cat.name)
-    .sort((a, b) => heightNum(a) - heightNum(b)),
+  items: allProducts.filter(p => p.data.category === cat.name),
 }));
 
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.com';
@@ -60,7 +55,7 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     name: 'ARCLIFT Equipment Co., Ltd.',
     url: siteUrl,
     logo: `${siteUrl}/images/logo.png`,
-    description: 'Export-facing project engineering and product presentation for high-altitude roll forming lifts and large-deck crawler platforms.',
+    description: 'Integrated equipment supplier supporting technical selection for roof-level roll forming lifts and large-deck crawler platform concepts.',
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+86 15617687185',
@@ -70,30 +65,30 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
   })} />
 
   <!-- HERO WITH CAROUSEL -->
-  <section class="hero">
-    <div class="hero__carousel">
-      <div class="hero__slide hero__slide--brand hero__slide--active" style="background-image: url('/images/hero/hero-1-arclift.webp');" data-overline="Under-Ceiling Work Platform" data-title="A LARGE WORK DECK AT HEIGHT" data-desc="Purpose-built platforms for steel-building ceilings, installation crews and material handling. Final load, travel mode and deck geometry are engineered for the project."></div>
-      <div class="hero__slide" style="background-image: url('/images/hero/hero-2.webp');" data-overline="Aerial Roll Forming" data-title="FORM PANELS AT ROOF LEVEL" data-desc="Move the forming line to eave height and feed long roof panels directly toward the installation area. This can reduce repeated ground handling and reliance on crane lifts."></div>
-      <div class="hero__slide" style="background-image: url('/images/hero/hero-3.webp');" data-overline="Export-Oriented Configuration" data-title="DESIGNED AROUND THE ROUTE" data-desc="Transport envelope, split points, local chassis and commissioning plan are confirmed before production. 40HQ-compatible configurations are available for selected projects."></div>
-      <div class="hero__slide" style="background-image: url('/images/hero/hero-4.webp');" data-overline="Matched Roll Forming Line" data-title="PROFILE-SPECIFIC TOOLING" data-desc="Roll tooling, material thickness, drive power, hydraulic shear and controls are matched to your drawing and project workflow."></div>
-      <div class="hero__slide" style="background-image: url('/images/hero/hero-5.webp');" data-overline="Wall & Facade Installation" data-title="POSITION CREWS AND PANELS" data-desc="Special platform layouts support vertical wall-panel and facade work where conventional baskets provide too little working area."></div>
+  <section class="hero" data-autoplay="pending">
+    <div class="hero__carousel" id="hero-carousel" aria-live="off">
+      <div class="hero__slide hero__slide--brand hero__slide--active" role="img" aria-label="AI-assisted editorial visual of an ARCLIFT-branded red crawler platform in a steel structure" aria-hidden="false" data-index="0" style="background-image: url('/images/hero/hero-1-arclift.webp');" data-overline="Under-Ceiling Work Review" data-title="PLAN A LARGE WORK DECK AT HEIGHT" data-desc="Review working height, deck layout, allowable load, floor pressure and on-site repositioning before selecting a platform."></div>
+      <div class="hero__slide" role="img" aria-label="Editorial visual of roof-level roll forming and long-panel feed direction" aria-hidden="true" data-index="1" style="background-image: url('/images/hero/hero-2.webp');" data-overline="Roof-Level Forming Review" data-title="PLAN THE PANEL FEED PATH" data-desc="Compare eave height, profile, material, panel length, forming-line mass, ground access and wind controls before choosing a lifting route."></div>
+      <div class="hero__slide" role="img" aria-label="AI-assisted representative visual of port handling and equipment logistics planning" aria-hidden="true" data-index="2" style="background-image: url('/images/editorial/port-loading-logistics.webp');" data-overline="Destination Requirement Review" data-title="REVIEW THE SHIPPING ROUTE" data-desc="Compare module envelope, mass, packing plan, carrier limits, local chassis and site access. Container fit requires a destination requirement review."></div>
+      <div class="hero__slide" role="img" aria-label="AI-assisted representative visual of truck-mounted equipment at a project site" aria-hidden="true" data-index="3" style="background-image: url('/images/editorial/truck-site-roll-forming-lift.webp');" data-overline="Site Mobility Review" data-title="COMPARE ROAD AND SITE ACCESS" data-desc="Review road transfer, stabilizer space, ground support and working position before selecting a truck-mounted route."></div>
+      <div class="hero__slide" role="img" aria-label="Editorial visual of a large platform positioned for wall-panel access" aria-hidden="true" data-index="4" style="background-image: url('/images/hero/hero-5.webp');" data-overline="Wall-Panel Access Review" data-title="CHECK THE WORKING ENVELOPE" data-desc="Review platform reach, wall clearance, load placement, floor conditions and the proposed work sequence for facade or wall-panel access."></div>
     </div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <div class="hero__overline" id="hero-overline">Under-Ceiling Work Platform</div>
-      <h1 class="hero__title" id="hero-title">A LARGE WORK<br>DECK AT <em>HEIGHT</em></h1>
-      <p class="hero__desc" id="hero-desc">Purpose-built platforms for steel-building ceilings, installation crews and material handling. Final load, travel mode and deck geometry are engineered for the project.</p>
+      <div class="hero__overline" id="hero-overline">Under-Ceiling Work Review</div>
+      <h1 class="hero__title" id="hero-title">PLAN A LARGE WORK<br>DECK AT <em>HEIGHT</em></h1>
+      <p class="hero__desc" id="hero-desc">Review working height, deck layout, allowable load, floor pressure and on-site repositioning before selecting a platform.</p>
       <div class="hero__actions">
         <a href="/contact/" class="btn btn--primary">Get a Quote →</a>
         <a href="/products/" class="btn btn--outline">Explore Products</a>
       </div>
     </div>
     <div class="hero__dots">
-      <button class="hero__dot hero__dot--active" data-index="0"></button>
-      <button class="hero__dot" data-index="1"></button>
-      <button class="hero__dot" data-index="2"></button>
-      <button class="hero__dot" data-index="3"></button>
-      <button class="hero__dot" data-index="4"></button>
+      <button type="button" class="hero__dot hero__dot--active" data-index="0" aria-label="Show slide 1 of 5" aria-controls="hero-carousel" aria-current="true"></button>
+      <button type="button" class="hero__dot" data-index="1" aria-label="Show slide 2 of 5" aria-controls="hero-carousel" aria-current="false"></button>
+      <button type="button" class="hero__dot" data-index="2" aria-label="Show slide 3 of 5" aria-controls="hero-carousel" aria-current="false"></button>
+      <button type="button" class="hero__dot" data-index="3" aria-label="Show slide 4 of 5" aria-controls="hero-carousel" aria-current="false"></button>
+      <button type="button" class="hero__dot" data-index="4" aria-label="Show slide 5 of 5" aria-controls="hero-carousel" aria-current="false"></button>
     </div>
     <div class="hero__scroll">
       <div class="hero__scroll-line"></div>
@@ -102,74 +97,106 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
   </section>
 
   <script>
-    // Hero Carousel
     const slides = document.querySelectorAll('.hero__slide');
     const dots = document.querySelectorAll('.hero__dot');
     const heroOverline = document.getElementById('hero-overline');
     const heroTitle = document.getElementById('hero-title');
     const heroDesc = document.getElementById('hero-desc');
+    const heroSection = document.querySelector('.hero');
+    const heroReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let currentSlide = 0;
-    const slideInterval = 6000; // 6 seconds
+    let carouselTimer;
+    let heroHovered = false;
+    let heroFocused = false;
+    const slideInterval = 6000;
+    const trustedTitleHtml = [
+      'PLAN A LARGE WORK<br>DECK AT <em>HEIGHT</em>',
+      'PLAN THE PANEL FEED PATH',
+      'REVIEW THE SHIPPING ROUTE',
+      'COMPARE ROAD AND SITE ACCESS',
+      'CHECK THE WORKING ENVELOPE',
+    ];
 
     function goToSlide(index) {
-      // Fade out current content
-      heroOverline.style.opacity = '0';
-      heroTitle.style.opacity = '0';
-      heroDesc.style.opacity = '0';
+      if (!slides.length || !dots.length) return;
+      slides[currentSlide]?.classList.remove('hero__slide--active');
+      slides[currentSlide]?.setAttribute('aria-hidden', 'true');
+      dots[currentSlide]?.classList.remove('hero__dot--active');
+      dots[currentSlide]?.setAttribute('aria-current', 'false');
 
-      setTimeout(() => {
-        // Update slide
-        slides[currentSlide].classList.remove('hero__slide--active');
-        dots[currentSlide].classList.remove('hero__dot--active');
-        currentSlide = index;
-        slides[currentSlide].classList.add('hero__slide--active');
-        dots[currentSlide].classList.add('hero__dot--active');
+      currentSlide = (index + slides.length) % slides.length;
+      const slide = slides[currentSlide];
+      const dot = dots[currentSlide];
+      slide?.classList.add('hero__slide--active');
+      slide?.setAttribute('aria-hidden', 'false');
+      dot?.classList.add('hero__dot--active');
+      dot?.setAttribute('aria-current', 'true');
 
-        // Update content
-        const slide = slides[currentSlide];
-        heroOverline.textContent = slide.dataset.overline;
-        heroTitle.innerHTML = slide.dataset.title.replace('<em>', '<em>').replace('</em>', '</em>');
-        heroDesc.textContent = slide.dataset.desc;
-
-        // Fade in new content
-        heroOverline.style.opacity = '1';
-        heroTitle.style.opacity = '1';
-        heroDesc.style.opacity = '1';
-      }, 300);
+      if (slide instanceof HTMLElement) {
+        if (heroOverline) heroOverline.textContent = slide.dataset.overline ?? '';
+        if (heroTitle) heroTitle.innerHTML = trustedTitleHtml[currentSlide] ?? '';
+        if (heroDesc) heroDesc.textContent = slide.dataset.desc ?? '';
+      }
     }
 
     function nextSlide() {
       goToSlide((currentSlide + 1) % slides.length);
     }
 
-    // Auto-rotate
-    let carouselTimer = setInterval(nextSlide, slideInterval);
+    function stopAutoplay(state = 'paused') {
+      if (carouselTimer) window.clearInterval(carouselTimer);
+      carouselTimer = undefined;
+      if (heroSection instanceof HTMLElement) heroSection.dataset.autoplay = state;
+    }
 
-    // Dot click
+    function startAutoplay() {
+      if (heroReducedMotion.matches) {
+        stopAutoplay('disabled');
+        return;
+      }
+      if (heroHovered || heroFocused) {
+        stopAutoplay('paused');
+        return;
+      }
+      stopAutoplay('paused');
+      carouselTimer = window.setInterval(nextSlide, slideInterval);
+      if (heroSection instanceof HTMLElement) heroSection.dataset.autoplay = 'running';
+    }
+
     dots.forEach((dot, i) => {
-      dot.addEventListener('click', () => {
-        clearInterval(carouselTimer);
-        goToSlide(i);
-        carouselTimer = setInterval(nextSlide, slideInterval);
-      });
+      dot.addEventListener('click', () => goToSlide(i));
     });
 
-    // Pause on hover
-    const heroSection = document.querySelector('.hero');
-    heroSection.addEventListener('mouseenter', () => clearInterval(carouselTimer));
-    heroSection.addEventListener('mouseleave', () => {
-      carouselTimer = setInterval(nextSlide, slideInterval);
+    heroSection?.addEventListener('mouseenter', () => {
+      heroHovered = true;
+      stopAutoplay();
     });
+    heroSection?.addEventListener('mouseleave', () => {
+      heroHovered = false;
+      startAutoplay();
+    });
+    heroSection?.addEventListener('focusin', () => {
+      heroFocused = true;
+      stopAutoplay();
+    });
+    heroSection?.addEventListener('focusout', () => {
+      window.setTimeout(() => {
+        heroFocused = Boolean(heroSection?.contains(document.activeElement));
+        startAutoplay();
+      }, 0);
+    });
+    heroReducedMotion.addEventListener('change', startAutoplay);
+    startAutoplay();
   </script>
 
   <!-- TRUST BAR -->
   <div class="trust">
-    <span class="trust__text">Project-engineered lifting and forming systems</span>
+    <span class="trust__text">Technical selection and supply support</span>
     <div class="trust__items">
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 12–32m Reference Range</div>
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 12–32m Historical Reference</div>
       <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Crawler & Truck Options</div>
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Project-Specific Compliance</div>
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Configuration Before Quote</div>
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Destination Requirement Review</div>
+      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Quote After Input Review</div>
     </div>
   </div>
 
@@ -183,11 +210,7 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     <div class="products">
       {homeCats.map((cat, i) => (
         <a href={`/products/#${cat.id}`} class:list={['p-card', 'reveal', `reveal-d${i + 1}`]}>
-          {cat.items[0]?.data.images?.[0] ? (
-            <div class="p-card__img" style={`background-image:url('${cat.items[0].data.images[0]}');background-size:cover;background-position:center;`}></div>
-          ) : (
-            <div class="p-card__img">{cat.name}</div>
-          )}
+          <div class="p-card__img"><img src={cat.image} alt={`${cat.name} representative editorial visual`} loading="lazy" /></div>
           <div class="p-card__body">
             <div class="p-card__tag">{cat.items.length} {cat.items.length === 1 ? 'Model' : 'Models'}</div>
             <div class="p-card__name">{cat.name}</div>
@@ -202,14 +225,14 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     </div>
   </section>
 
-  <!-- FEATURE 1: Pick & Carry -->
+  <!-- FEATURE 1: Repositioning review -->
   <section class="sec sec--gray">
     <div class="split reveal">
       <div class="split__visual"><img src="/images/home/under-ceiling-field-v2.webp" alt="ARCLIFT-branded large crawler under-ceiling platform working inside a steel structure" width="1200" height="800" loading="lazy" /></div>
       <div class="split__text">
-        <div class="sec__overline" style="text-align:left;">Core Technology</div>
-        <h3>PICK & CARRY</h3>
-        <p>Selected ARC-F reference configurations are designed around a large work deck and controlled repositioning. Travel-at-height, allowable load and floor pressure are engineering values that must be confirmed for the final machine and site.</p>
+        <div class="sec__overline" style="text-align:left;">Workflow Review</div>
+        <h3>ON-SITE REPOSITIONING REVIEW</h3>
+        <p>For selected ARC-F references, review deck use, travel state, allowable load, floor pressure and route clearance against the chosen equipment data and actual site conditions.</p>
         <a href="/products/" class="link">Learn More →</a>
       </div>
     </div>
@@ -222,7 +245,7 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
       <div class="split__text">
         <div class="sec__overline" style="text-align:left;">Roofing Workflow</div>
         <h3>FORM AT ROOF LEVEL</h3>
-        <p>A complete forming line can be raised close to the eave so panels move directly toward the roof crew. The method reduces repeated handling; profile, material, panel length and site wind plan remain project-specific.</p>
+        <p>A compatible forming line may be positioned near eave level so long panels move toward the roof crew with fewer handling steps. Selection still depends on profile, material, panel length, line mass, feed direction and the site wind plan.</p>
         <a href="/products/#crawler-roll-forming-lifts" class="link">See Roll Forming Lifts →</a>
       </div>
     </div>
@@ -231,10 +254,22 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
   <!-- STATS -->
   <section class="sec sec--dark spec-band" id="key-specifications">
     <div class="stats reveal">
-      <div class="stat"><div class="stat__num"><span>12–32</span><small class="stat__unit">m</small></div><div class="stat__label">Documented Lift Heights</div></div>
-      <div class="stat"><div class="stat__num"><span>8 / 11 / 20</span><small class="stat__unit">t</small></div><div class="stat__label">Archived Lift Classes</div></div>
-      <div class="stat"><div class="stat__num"><span>0.3–1.0</span><small class="stat__unit">mm</small></div><div class="stat__label">Documented Sheet Range</div></div>
-      <div class="stat"><div class="stat__num"><span>380</span><small class="stat__unit">V</small></div><div class="stat__label">Common Line Supply</div></div>
+      <div class="stat">
+        <div class="stat__num"><span>12–32</span><small class="stat__unit">m</small></div>
+        <div class="stat__label"><span>Historical lift-height reference</span><small>Archived range; verify the selected model</small></div>
+      </div>
+      <div class="stat">
+        <div class="stat__num"><span>8 / 11 / 20</span><small class="stat__unit">t</small></div>
+        <div class="stat__label"><span>Historical equipment classes</span><small>Not platform or personnel payload</small></div>
+      </div>
+      <div class="stat">
+        <div class="stat__num"><span>0.3–1.0</span><small class="stat__unit">mm</small></div>
+        <div class="stat__label"><span>Historical sheet-thickness reference</span><small>Material and profile dependent</small></div>
+      </div>
+      <div class="stat">
+        <div class="stat__num"><span>380</span><small class="stat__unit">V</small></div>
+        <div class="stat__label"><span>Common line-voltage reference</span><small>Destination and project specific</small></div>
+      </div>
     </div>
   </section>
 
@@ -243,20 +278,23 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     <div class="sec__header reveal">
       <div class="sec__overline">Applications</div>
       <h2 class="sec__title">PLATFORMS FOR HIGH-BAY INTERIORS</h2>
-      <p class="sec__desc">Reference applications for large-span indoor installation and maintenance work</p>
+      <p class="sec__desc">Application routes to evaluate against the building, access plan, loads and local requirements</p>
     </div>
     <div class="apps">
-      <a href="/applications/stadium/" class="app reveal reveal-d1" style="background-image:url('/images/home/wall-panel-platform.webp');background-size:cover;background-position:center;">
+      <a href="/applications/stadium/" class="app reveal reveal-d1" aria-label="Stadium and arena planning route. Representative application visual.">
+        <div class="app__media"><img class="app__image" src="/images/home/wall-panel-platform.webp" alt="Representative wall-panel platform visual in a steel structure" width="1200" height="800" loading="lazy" /></div>
         <div class="app__arrow">→</div>
-        <div class="app__body"><h3>Stadium & Arena</h3><p>Large-span steel structures, acoustic panel installation</p></div>
+        <div class="app__body"><span class="app__caption">Representative application visual</span><h3>Stadium & Arena</h3><p>Review span, floor loading, work zone and panel handling.</p></div>
       </a>
-      <a href="/applications/airport/" class="app reveal reveal-d2" style="background-image:url('/images/home/under-ceiling-field-v2.webp');background-size:cover;background-position:center;">
+      <a href="/applications/airport/" class="app reveal reveal-d2" aria-label="Airport terminal planning route. Representative application visual.">
+        <div class="app__media"><img class="app__image" src="/images/home/under-ceiling-field-v2.webp" alt="Representative under-ceiling platform visual in a steel structure" width="1200" height="800" loading="lazy" /></div>
         <div class="app__arrow">→</div>
-        <div class="app__body"><h3>Airport Terminal</h3><p>Ceiling panel maintenance, lighting upgrade, HVAC access</p></div>
+        <div class="app__body"><span class="app__caption">Representative application visual</span><h3>Airport Terminal</h3><p>Review access windows, ceiling services and public-area controls.</p></div>
       </a>
-      <a href="/applications/warehouse/" class="app reveal reveal-d3" style="background-image:url('/images/home/roof-panel-output.webp');background-size:cover;background-position:center;">
+      <a href="/applications/warehouse/" class="app reveal reveal-d3" aria-label="Warehouse and industrial-building planning route. Representative application visual.">
+        <div class="app__media"><img class="app__image" src="/images/home/roof-panel-output.webp" alt="Representative roof-panel forming visual in an industrial structure" width="1200" height="800" loading="lazy" /></div>
         <div class="app__arrow">→</div>
-        <div class="app__body"><h3>Warehouse & Factory</h3><p>High-bay ceiling construction, overhead crane rail</p></div>
+        <div class="app__body"><span class="app__caption">Representative application visual</span><h3>Warehouse & Industrial Building</h3><p>Review aisle width, floor condition, overhead services and work sequence.</p></div>
       </a>
     </div>
   </section>
@@ -271,11 +309,11 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
       <table>
         <thead><tr><th>Planning Factor</th><th class="hl">ARC Large-Deck Concept</th><th>Spider Lift</th><th>Scaffolding</th></tr></thead>
         <tbody>
-          <tr><td>Working Area</td><td class="hl">Large deck, project-defined</td><td>Compact personnel basket</td><td>Site-built working bays</td></tr>
-          <tr><td>Load While Moving</td><td class="hl">Configuration-dependent</td><td>Model-dependent</td><td class="no">✗ Static only</td></tr>
-          <tr><td>Setup Method</td><td class="hl yes">✓ Integrated platform</td><td>Outrigger cycle</td><td>Bay-by-bay erection</td></tr>
-          <tr><td>Indoor Operation</td><td class="hl">Electric option by project</td><td>Model-dependent</td><td>N/A</td></tr>
-          <tr><td>Control Arrangement</td><td class="hl">Remote option by configuration</td><td>Model-dependent controls</td><td class="no">Manual access system</td></tr>
+          <tr><td>Working Area</td><td class="hl">Large-deck concept; verify selected option</td><td>Compact personnel basket</td><td>Site-built working bays</td></tr>
+          <tr><td>Elevated Repositioning</td><td class="hl">Requires model and site review</td><td>Check selected model</td><td class="no">✗ Static access system</td></tr>
+          <tr><td>Setup Method</td><td class="hl">Integrated platform concept</td><td>Outrigger cycle</td><td>Bay-by-bay erection</td></tr>
+          <tr><td>Indoor Operation</td><td class="hl">Electric-drive option for review</td><td>Check selected model</td><td>N/A</td></tr>
+          <tr><td>Control Arrangement</td><td class="hl">Remote-control option for review</td><td>Check selected model</td><td class="no">Manual access system</td></tr>
         </tbody>
       </table>
     </div>
@@ -286,8 +324,8 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
 
   <!-- CTA -->
   <section class="cta">
-    <h2>READY TO DEFINE YOUR CONFIGURATION?</h2>
-    <p>Send the building height, panel profile, coil/former weight, site layout and destination market. We will confirm the suitable reference configuration and compliance path.</p>
+    <h2>READY TO REVIEW YOUR PROJECT INPUTS?</h2>
+    <p>Send the building height, panel profile, coil and former mass, site layout and destination market. We will review relevant references, outline open engineering inputs and identify items requiring local confirmation.</p>
     <a href="/contact/" class="btn--white">Send Project Details →</a>
     <div class="cta__contacts">
       <a href="https://wa.me/8615617687185">WhatsApp: +86 15617687185</a>

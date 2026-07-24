@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+<title>Crawler and truck configuration selection matrix</title>
+<desc>Four concise editorial decision filters shared by crawler and truck-mounted configuration reviews.</desc>
+<defs><style>.bg{fill:#071a2f}.panel{fill:#0d2a4a;stroke:#345c7c;stroke-width:3}.blue{fill:#123b63}.red{fill:#d62932}.white{fill:#fff}.muted{fill:#b8cad9}.line{stroke:#66839d;stroke-width:6;fill:none;stroke-linecap:round}.accent{stroke:#d62932;stroke-width:8;fill:none;stroke-linecap:round}</style></defs>
+<rect class="bg" width="1600" height="900"/>
+<rect class="red" x="76" y="66" width="12" height="112" rx="6"/>
+<text x="120" y="124" fill="#fff" font-family="Arial, sans-serif" font-size="68" font-weight="700" letter-spacing="2">CRAWLER OR TRUCK?</text>
+<text x="120" y="174" fill="#b8cad9" font-family="Arial, sans-serif" font-size="44">Start with project data, then review the carrier route.</text>
+<rect class="red" x="120" y="232" width="380" height="98" rx="22"/><text x="310" y="298" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="54" font-weight="700">CRAWLER</text>
+<rect class="blue" x="1100" y="232" width="380" height="98" rx="22"/><text x="1290" y="298" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="54" font-weight="700">TRUCK</text>
+<text x="800" y="296" text-anchor="middle" fill="#b8cad9" font-family="Arial, sans-serif" font-size="44" font-weight="700">DECISION FILTER</text>
+<g transform="translate(0 370)"><path class="line" d="M310 50H575M1025 50H1290"/><circle class="red" cx="310" cy="50" r="22"/><circle class="blue" cx="1290" cy="50" r="22"/><rect class="panel" x="575" width="450" height="100" rx="22"/><text data-role="decision-label" x="800" y="66" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="50" font-weight="700">GROUND + ACCESS</text></g>
+<g transform="translate(0 495)"><path class="line" d="M310 50H575M1025 50H1290"/><circle class="red" cx="310" cy="50" r="22"/><circle class="blue" cx="1290" cy="50" r="22"/><rect class="panel" x="575" width="450" height="100" rx="22"/><text data-role="decision-label" x="800" y="66" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="50" font-weight="700">RELOCATION</text></g>
+<g transform="translate(0 620)"><path class="line" d="M310 50H575M1025 50H1290"/><circle class="red" cx="310" cy="50" r="22"/><circle class="blue" cx="1290" cy="50" r="22"/><rect class="panel" x="575" width="450" height="100" rx="22"/><text data-role="decision-label" x="800" y="66" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="50" font-weight="700">ROAD ROUTE</text></g>
+<g transform="translate(0 745)"><path class="accent" d="M310 50H575M1025 50H1290"/><circle class="red" cx="310" cy="50" r="22"/><circle class="blue" cx="1290" cy="50" r="22"/><rect class="panel" x="575" width="450" height="100" rx="22"/><text data-role="decision-label" x="800" y="66" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="50" font-weight="700">DESTINATION</text></g>
+<text x="120" y="850" fill="#b8cad9" font-family="Arial, sans-serif" font-size="42">Review both routes before selection.</text><text x="1280" y="850" fill="#fff" font-family="Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="2">ARCLIFT</text>
+</svg>

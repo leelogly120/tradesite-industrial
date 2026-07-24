@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../src/layouts/BaseLayout.astro';
+import InquiryForm from '../../src/components/InquiryForm.astro';
+---
+
+<BaseLayout
+  title="Product Inquiry Test Fixture"
+  description="Playwright-only fixture for the default product inquiry form."
+  transparentNav={false}
+>
+  <main class="section">
+    <div class="container">
+      <InquiryForm
+        productName="ARC-C25 Crawler Roll Forming Lift"
+        productSlug="arc-c25-crawler-roll-forming-lift"
+      />
+    </div>
+  </main>
+</BaseLayout>

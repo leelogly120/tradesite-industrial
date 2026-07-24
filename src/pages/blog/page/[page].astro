@@ -1,0 +1,48 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BlogListing from '../../../components/BlogListing.astro';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const pageSize = 20;
+  const allPosts = (await getCollection('blog'))
+    .filter(post => !post.data.draft)
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+  const totalPages = Math.ceil(allPosts.length / pageSize);
+
+  return Array.from({ length: Math.max(0, totalPages - 1) }, (_, index) => {
+    const pageNum = index + 2;
+    const start = (pageNum - 1) * pageSize;
+    return {
+      params: { page: String(pageNum) },
+      props: {
+        posts: allPosts.slice(start, start + pageSize),
+        pageNum,
+        totalPages,
+        totalPosts: allPosts.length,
+      },
+    };
+  });
+};
+
+const { posts, pageNum, totalPages, totalPosts } = Astro.props;
+const prev = pageNum === 2 ? '/blog/' : `/blog/page/${pageNum - 1}/`;
+const next = pageNum < totalPages ? `/blog/page/${pageNum + 1}/` : undefined;
+---
+
+<BaseLayout
+  title={`Project Guides — Page ${pageNum}`}
+  description="ARCLIFT project decision guides for roll-forming lift systems, transport planning, line specification, and large-deck crawler platforms."
+  canonical={`https://www.arclifteq.com/blog/page/${pageNum}/`}
+  transparentNav={false}
+>
+  <BlogListing
+    posts={posts}
+    pageNum={pageNum}
+    totalPages={totalPages}
+    totalPosts={totalPosts}
+    prev={prev}
+    next={next}
+  />
+</BaseLayout>

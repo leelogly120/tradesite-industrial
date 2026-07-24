@@ -1,94 +1,66 @@
 ---
-title: "ARC-F20 Crawler Under-Ceiling Platform - Reference Configuration"
-description: "ARC-F20 reference concept for large-deck under-ceiling work. Review 20m-class height, platform, load, travel mode, power and compliance per project."
+title: "ARC-F20 Crawler Under-Ceiling Platform — Archived Reference"
+description: "ARC-F20 archived 20m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
 category: "Crawler Ceiling Platforms"
-images:
-  - "/images/products/arc-f20-crawler-ceiling-platform-1.jpg"
-  - "/images/products/arc-f20-crawler-ceiling-platform-2.jpg"
-  - "/images/products/arc-f20-crawler-ceiling-platform-3.jpg"
-  - "/images/products/arc-f20-crawler-ceiling-platform-4.jpg"
-moq: 1
 specifications:
-  "Data Status": "Reference development data — model-specific verification required"
-  "Max Working Height": "20m"
-  "Max Platform Height": "20m"
-  "Overall Length": "14.5m"
-  "Overall Width": "2.95m"
-  "Overall Height (rails up)": "3.75m"
-  "Overall Height (rails folded)": "2.7m"
-  "Platform Size (L×W)": "12m × 3m"
-  "Platform Extension": "12m × 8m"
-  "Min Ground Clearance": "1.27m"
-  "Wheelbase": "4.18m"
-  "Min Turning Radius": "16m"
-  "Safe Working Load": "0.3-0.5T"
-  "Extension Platform Load": "0.3-0.5T"
-  "Max Workers": "6-10"
-  "Machine Weight": "~20T"
-  "Platform Weight": "2.2T"
-  "Diesel Engine": "150hp"
-  "Electric Motor": "Twin motors — rating to be confirmed"
-  "Hydraulic Pump": "K3V63"
-  "Drive Unit": "GM45"
-  "Crawler Chain": "PC200"
-  "Crane Capacity": "5T"
-  "Gradeability": "30%"
-  "Travel Speed (stowed)": "3.0 km/h"
-  "Travel Speed (elevated)": "1.0 km/h"
-  "Max Working Angle": "X-0°/Y-72°"
-  "Rise/Descent Time": "15/9 min"
+  "Archived Height Class": "Archived reference — 20m class; project-specific confirmation required"
+  "Platform Envelope": "Historical reference — large-deck concept; final deck dimensions, extension and guard arrangement require review"
+  "Load Basis": "To be confirmed — crew, tools, materials, point loads and allowable distribution follow the approved load chart"
+  "Travel Mode": "Reference configuration — crawler travel concept; floor route, slope and movement restrictions require approval"
+  "Archived Power Basis": "Historical reference — electric or diesel options were recorded; final supply and controls are destination-specific"
+  "Floor Interface": "To be confirmed — wheel or track loads, support reactions, slab capacity and protection method"
+  "Final Confirmation": "Signed technical schedule, approved drawings and approved load chart"
+images:
+  - "/images/editorial/large-deck-steel-structure.webp"
+  - "/images/editorial/ceiling-platform-underside.webp"
+  - "/images/editorial/ceiling-platform-project-data.svg"
 features:
-  - "Reference large-deck concept — platform geometry and permitted load require approved drawings"
-  - "Crawler chassis — floor pressure, route, turning envelope and gradeability require site verification"
-  - "Travel-at-height concept — permitted height, speed and load require a model-specific load chart and witnessed test"
-  - "Diesel and electric power concept — exact engine, motor rating, emissions and sound data require confirmation"
-  - "Remote control concept — final control functions, interlocks and emergency recovery require acceptance testing"
-  - "Material-handling concept — crane capacity and simultaneous-use restrictions require the final load calculation"
+  - "Zone-by-zone review — height, outreach, underside geometry and task are mapped for every work area"
+  - "Load planning — people, tools, materials and point loads are listed before platform size is selected"
+  - "Floor-route control — slab capacity, joints, openings, slopes, clearances and protection method require review"
+  - "Editorial visual boundary — page images explain work context and do not prove a model-specific platform"
 faq:
-  - question: "Are the published dimensions and capacities final?"
-    answer: "No. They are reference values from a development brief. The quotation must include a model-specific general arrangement drawing, load chart, transport drawing and signed technical schedule."
-  - question: "Can the platform travel while elevated and loaded?"
-    answer: "That capability must be proven for the exact machine. Confirm permitted travel height, platform load, speed, floor pressure, slope limit, interlocks and emergency recovery in writing and during acceptance testing."
-  - question: "What power system is supplied?"
-    answer: "The reference concept combines diesel and electric power, but the available engine, electric-motor rating, supply voltage, emissions and noise data are configuration-specific."
-  - question: "What certifications are included?"
-    answer: "No certification is assumed from this website. Ask for certificate numbers, issuing bodies, scope, validity and the exact machine configuration, then verify destination-market requirements independently."
-  - question: "How will delivery and commissioning be planned?"
-    answer: "Lead time, shipping method, split points, lifting plan and commissioning scope are confirmed only after the transport drawing, destination route and local support requirements are reviewed."
+  - question: "Is ARC-F20 verified for a 20m working height?"
+    answer: "No. 20m is an archived source reference class. The actual platform height, outreach, deck, load distribution and movement limits require project-specific confirmation."
+  - question: "What project data is needed for a large-deck platform review?"
+    answer: "Send reflected ceiling plans, sections, work-zone heights, obstructions, floor route and slab data, openings and joints, task sequence, crew, tools, material loads, power and local access requirements."
+  - question: "Which documents define the final platform?"
+    answer: "The signed technical schedule, approved drawings, approved load chart, floor-route review and transport or packing data define the final configuration. Website visuals are not model evidence."
 relatedProducts:
   - "arc-f25-crawler-ceiling-platform"
   - "arc-f31-crawler-ceiling-platform"
-  - "arc-f35-crawler-ceiling-platform"
-date: 2026-07-05
+  - "arc-c21-crawler-roll-forming-lift"
+date: 2026-07-25
 draft: false
 ---
 
-## Product Status
+## Plan the work zones before selecting a platform
 
-The **ARC-F20** is presented as a **reference configuration**, not as verified serial-production inventory. Its current website data comes from an under-ceiling platform development brief and has less evidence support than the archived crawler and truck-mounted roll-forming range. Buyers should not use this page alone for tendering, lift planning or regulatory approval.
+ARC-F20 is an archived **reference configuration** for early discussion of large-deck crawler platforms used around ceilings, services and wall work. This archived source reference identifies a 20m-class concept, not a verified current-model height, deck size, load or travel permission. ARCLIFT uses the model name to organize a technical review, while the project geometry and task data control the result.
 
-## Reference Concept
+Divide the building into work zones. For each zone, record the required vertical position, horizontal reach, underside geometry, obstructions, wall offset, access route, floor condition and actual task. A single maximum height is not enough because a lower zone can still require more outreach or a different deck arrangement.
 
-The concept combines a crawler chassis with a large platform for ceiling, service and wall-panel work around a 20m-class envelope. The development data lists a nominal platform of 12m × 3m with an extended concept up to 12m × 8m, a reference working load of 0.3–0.5t, and machine mass of about 20t. These values interact: platform extension, personnel, tools, materials, wind exposure and travel mode must all be covered by the final load chart.
+## Build a realistic load and floor brief
 
-## Required Project Inputs
+List the number of people, tools, materials, point loads, handling aids and how they are distributed on the deck. The platform envelope, extension arrangement and allowable load must then be checked together. Floor information should include slab capacity, joints, openings, edge distances, slopes, ramps, finishes, underground spaces and the planned protection method.
 
-- Measured work height and horizontal coverage area
-- Doorway, aisle, turning and transport-route dimensions
-- Slab or ground bearing capacity and permitted point/contact pressure
-- Crew, tool and material load at each platform configuration
-- Indoor/outdoor power, ventilation, emissions and noise constraints
-- Wind, overhead obstructions, exclusion zones and rescue plan
-- Destination standards, registration rules and third-party inspection needs
+The archived 20m class and historical power options are planning inputs only. Deck loads, travel mode, support reactions and controls require **project-specific confirmation** and an approved load chart.
 
-## Acceptance Evidence to Request
+## Situations that require another method
 
-Before order, request the model-specific general arrangement drawing, structural calculation basis, load chart, hydraulic and electrical diagrams, safety-function list, stability and travel test records, component list, transport drawing, manuals and exact compliance documents. Approval photos and videos should show the same chassis, platform and accessories named in the quotation.
+This route may not fit where the floor capacity is unknown, the travel corridor cannot accommodate the reviewed envelope, overhead obstructions cannot be isolated, loads cannot be controlled, rescue access is unresolved, or local rules require another access method. It does not replace a task risk assessment, rescue plan or competent site supervision.
 
-## Typical Application Screening
+## Buyer information to send
 
-The ARC-F20 may be screened for steel-building ceilings, warehouse services, large indoor venues and wall-panel positioning. Suitability cannot be inferred from height alone. Access route, floor bearing, clearance, local rules and emergency recovery can eliminate a concept that appears suitable on a simple height comparison.
+- Reflected ceiling plan, elevations and sections with work zones marked
+- Required height, outreach, wall offset and underside obstructions by zone
+- Floor route, slab data, openings, joints, ramps, slopes and protection limits
+- Crew, tools, materials, point loads and intended load distribution
+- Task sequence, access restrictions, rescue route and exclusion zones
+- Available power, environment, transport route and local requirements
 
-## Pricing and Delivery
+## Documents that control supply
 
-Pricing is available only after configuration review. Historical or development-budget figures are not current export offers. Production schedule, packaging, ocean-freight method, local assembly and commissioning are confirmed in the commercial and technical agreement.
+Final configuration requires the **signed technical schedule**, **approved drawings**, approved load chart, floor-route review and approved packing data. These documents define the deck, loads, movement restrictions, interfaces and responsibilities for the project.
+
+**Image disclosure:** Representative editorial image — not model-specific evidence. Each raster visual is an **AI-assisted editorial composite** and the diagram is an ARCLIFT editorial planning aid. They do not establish model identity, suitability, delivered configuration or performance.

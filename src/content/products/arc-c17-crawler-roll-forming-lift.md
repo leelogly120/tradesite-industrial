@@ -1,95 +1,67 @@
 ---
-title: "ARC-C17 Crawler Roll Forming Lift - 17m Aerial Roofing Platform"
-description: "ARC-C17 crawler roll forming lift: 17m lift height, 8t capacity (11/20t options), Yuchai diesel + electric dual power, full remote control roofing solution."
+title: "ARC-C17 Crawler Roll Forming Lift — Archived Reference"
+description: "ARC-C17 archived 17m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
 category: "Crawler Roll Forming Lifts"
-moq: 1
 specifications:
-  "Lift Height (to shear exit)": "17m"
-  "Lifting Capacity": "8t standard (11t / 20t options)"
-  "Panel Output Height Range": "4m - 17.5m"
-  "Panel Output Radius": "≤5,000mm"
-  "Panel Output Length": "1m - 200m"
-  "Sheet Thickness": "0.3mm - 1.0mm"
-  "Diesel Engine": "98kW Yuchai (turbocharged)"
-  "Electric Power Supply": "380V / 14kW"
-  "Main Hydraulic Pump": "K3V63 piston pump (Kawasaki type)"
-  "Shear Pump Motor": "5.5kW"
-  "Travel Motor": "GM35 (Komatsu / Hitachi / Kobelco / Doosan type)"
-  "Crawler Chain": "25t traction, Komatsu PC200 type"
-  "Track Shoe Width": "600mm"
-  "Track Ground Contact": "4.2m"
-  "Slewing Bearing": "Ф1,600mm × 140mm"
-  "Platform Size": "9m × 2.3m"
-  "Outrigger Box Section": "400 × 250 × 12mm, two-stage"
-  "Outrigger Spread": "7.2m × 6.2m"
-  "Outrigger Cylinder": "Ф180mm barrel / Ф140mm rod"
-  "Machine Weight": "25t (excl. roll former)"
-  "Dimensions with Roll Former (L×W×H)": "10.5m × 3m × 3.3m"
-  "Structural Steel": "Q345B / 700BL high-strength plate"
-  "Control System": "Mitsubishi PLC, touchscreen + full radio remote"
-  "Coil Crane (optional)": "Hydraulic, max 8t"
+  "Archived Height Class": "Archived reference — 17m class; project-specific confirmation required"
+  "Archived Payload Class": "Historical reference — 8t class; final allowable load follows the approved load chart"
+  "Archived Sheet Thickness": "Historical reference — 0.3–1.0mm; final material, profile, yield and tooling require confirmation"
+  "Archived Power Basis": "Historical reference — 380V-class supply; final voltage, frequency and phase are destination-specific"
+  "Mobility Concept": "Reference configuration — crawler base and support system; final ground pressure, reactions and travel conditions require review"
+  "Forming-Line Interface": "To be confirmed — footprint, mass, feed direction, power, controls and access clearances"
+  "Final Confirmation": "Signed technical schedule, approved drawings and approved load chart"
 images:
-  - "/images/products/arc-c17-crawler-roll-forming-lift-1.jpg"
-  - "/images/products/arc-c17-crawler-roll-forming-lift-2.jpg"
-  - "/images/products/arc-c17-crawler-roll-forming-lift-3.jpg"
-  - "/images/products/arc-c17-crawler-roll-forming-lift-4.jpg"
+  - "/images/hero/hero-2.webp"
+  - "/images/editorial/roof-level-workflow.svg"
+  - "/images/editorial/roll-forming-input-map.svg"
 features:
-  - "Roll forming at height — panels are formed and fed directly at roof level, reducing ground forming, repeated handling and crane lifts"
-  - "Full remote control — travel, turning, outriggers, lifting and roll forming all operated by one person from the ground"
-  - "Dual power system — Yuchai turbocharged diesel for site mobility plus 380V electric mode for quiet, economical forming"
-  - "Heavy crawler chassis — Komatsu PC200-type chains with 600mm shoes handle unpaved and uneven job sites"
-  - "Two-stage outriggers — 7.2m × 6.2m spread with Ф140mm cylinder rods for stable elevated operation"
-  - "Mitsubishi PLC control — stainless steel cabinet, touchscreen and remote dual operation, height/angle monitor with alarm"
-  - "Q345B / 700BL steel structure — high-strength welded plate for long fatigue life"
+  - "Site-data review — selection begins with height, outreach, roof geometry, access route, ground information and weather limits"
+  - "Interface control — the forming line, support structure, power and material path are checked as one project package"
+  - "Document gate — quoted dimensions and operating limits become controlling only in signed project documents"
+  - "Editorial visual boundary — page images explain the equipment family and do not prove this model or its performance"
 faq:
-  - question: "What roll forming machines can the ARC-C17 carry?"
-    answer: "The ARC-C17 accepts compatible standing-seam (JCH-type), roof-panel and clip-lock forming machines driven by motor + reducer with hydraulic shear. The 9m × 2.3m platform mounts a compatible roofing machine after weight, footprint, power and control-interface review, and the lift supplies power and control from its own electric cabinet and hydraulic station."
-  - question: "How high can it deliver panels?"
-    answer: "The lift height to the shear exit is 17 meters, with a usable panel output range of 4m to 17.5m above ground and an output radius of up to 5,000mm. Panels from 1m up to 200m continuous length can be formed and fed directly onto the roof."
-  - question: "Is the machine really operated by one person?"
-    answer: "Yes. Crawler travel, turning, outrigger extension and support, platform lifting, slewing and the roll forming line are all on the radio remote. The ground remote integrates machine functions. Roofing crew, supervision, exclusion-zone control and any project-specific crane or signal roles remain subject to the lift plan."
-  - question: "What power options are available?"
-    answer: "The ARC-C17 runs on a 98kW Yuchai turbocharged diesel engine for travel and off-grid work, and on a 380V / 14kW electric supply for forming operations. The dual lift system (engine or motor) is selectable, so you can work economically wherever grid power is available."
+  - question: "Does ARC-C17 currently guarantee a 17m working height?"
+    answer: "No. 17m is an archived source reference class, not a current-model guarantee. The required work height, outreach and configuration must be checked against the project geometry and confirmed in the signed technical schedule and approved drawings."
+  - question: "What must be supplied before a configuration review?"
+    answer: "Send roof plans and sections, required work zones, panel profile and material, coil and forming-line data, ground or support information, access constraints, destination power and local documentation requirements."
+  - question: "Which documents control the final order?"
+    answer: "The signed technical schedule, approved general-arrangement drawings, approved load chart, interface list and project packing data control the final configuration. Website text and editorial visuals do not."
 relatedProducts:
   - "arc-c21-crawler-roll-forming-lift"
   - "arc-c25-crawler-roll-forming-lift"
   - "arc-rf8-roll-forming-machine"
-date: 2026-07-19
+date: 2026-07-25
 draft: false
 ---
 
-## Product Overview
+## What this reference page is for
 
-The **ARC-C17** is the entry model of our crawler roll forming lift range, engineered for metal roofing projects with eave heights up to 17 meters. It solves the oldest problem in standing-seam roofing: long panels formed on the ground must be lifted by crane, and every lift risks scratched coatings, bent panels and idle crews.
+ARC-C17 is retained as a useful **reference configuration** for early discussions about crawler-supported roll forming near an installation elevation. This archived source reference identifies a 17m-class starting point, but it does not establish the height, payload, stability, output range or destination compliance of a current unit. ARCLIFT works as an integrated equipment supplier and technical selection partner: the project brief is reviewed first, then the applicable configuration and documentation are defined.
 
-The ARC-C17 is intended to reduce repeated crane lifting and ground-to-roof panel handling. A complete roll forming machine rides on the 9m × 2.3m platform; steel coil is formed **at roof level** and the finished panel feeds straight onto the purlins. Panels up to 200m long are produced in one continuous run — no splices, no second handling, no coating damage.
+The page is most useful when a buyer needs to compare a crawler route with ground forming, segmented panels, conventional lifting or a truck-mounted arrangement. Those alternatives should be compared by workflow, support conditions, access, weather exposure and interfaces—not by model label alone.
 
-Every function — crawler travel, turning, outrigger deployment, lifting, slewing and the forming line itself — is on a single radio remote. Integrated controls can simplify coordination, but they do not replace the trained roofing crew, supervision or project-specific lifting roles.
+## Conditions that control selection
 
-## Applications
+A review should locate every work zone on a roof plan and section. Record the required vertical position and outreach, roof slope, edge distance, obstructions, panel handover point, travel route and setup area. Ground bearing data, slope and drainage matter because the support reaction and travel condition cannot be inferred from a general site photograph.
 
-### Steel Structure Workshops
-Single-story industrial workshops with 12-17m eave heights are the ARC-C17's home ground. The crawler chassis moves along the building line on unpaved ground, forming and feeding panels bay after bay.
+The forming process needs its own interface package: approved panel profile, material grade and yield, thickness, coil dimensions and mass, intended panel length, tooling revision, line footprint, line mass, power demand, control boundary, feed direction and shear position. The historical references to 8t-class payload, 0.3–1.0mm sheet and 380V-class power are discussion inputs only. Each remains subject to **project-specific confirmation**.
 
-### Warehouses & Logistics Centers
-Standing-seam and clip-lock roofs on distribution centers benefit from continuous long-panel runs, which reduce lap joints and leak risk.
+## When this route may not fit
 
-### Wall Cladding
-The platform also positions forming machines for vertical wall panel feeding on high side walls, using the same remote-controlled cycle.
+A crawler-supported route may not fit if the travel corridor is too narrow, the ground investigation is incomplete, support reactions cannot be accommodated, weather limits cannot be controlled, the roof handover path is unresolved, or the forming-line interface remains unknown. It also cannot replace a site method statement, lift plan, rescue plan or local work-at-height review.
 
-## Technical Highlights
+## Buyer information to send
 
-- **Chassis**: Komatsu PC200-type crawler, 25t traction chain, 600mm shoes, 4.2m ground contact — low ground pressure on soft sites.
-- **Hydraulics**: K3V63 Kawasaki-type piston pump, Beijing Huade valve blocks, Nitto four-layer steel-wire burst-proof hoses, double-acting cylinder locks (Zoomlion type).
-- **Slewing**: Ф1,600mm × 140mm bearing carries the rotating structure safely under full load.
-- **Electrics**: Mitsubishi PLC with 18.5kW VFD, Schneider elements, stainless cabinet, touchscreen + remote dual mode, 24V safe-voltage solenoid valves, height/angle monitor with violation alarm, panel counter.
-- **Structure**: Q345B / 700BL high-strength plate, 45# chromed pivot shafts with bronze bushings, 20CrMo sleeves.
-- **Options**: hydraulic coil crane (max 8t) for coil loading; electric lift module for oil-electric dual lifting; camera monitoring of the shear position.
+- Roof plan, elevations and sections with the required work zones marked
+- Required height, outreach, setup positions and movement sequence
+- Ground report, allowable bearing pressure, slope, drainage and buried services
+- Panel profile drawing, material, yield, thickness, coil data and target lengths
+- Forming-line footprint, mass, power, controls, feed direction and access needs
+- Wind basis, operating environment and the planned weather decision process
+- Destination, transport route, available power and required local documents
 
-## Packaging & Shipping
+## Documents that close the review
 
-Anti-corrosion coating, moisture-proof electrical wrapping and transport locking are standard. The machine loads onto a lowbed trailer under its own remote-controlled power. Ships via RoRo vessel or flat rack container. Trade terms are confirmed in the project quotation.
+Final configuration requires the **signed technical schedule**, **approved drawings**, approved load chart, interface schedule and approved packing data. Those documents must identify the configuration, limits, support reactions, interfaces and destination responsibilities that apply to the order.
 
----
-
-*Need more height? See the [ARC-C21](/products/arc-c21-crawler-roll-forming-lift/) or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/).*
+**Image disclosure:** Representative editorial image — not model-specific evidence. The raster visual is an **AI-assisted editorial composite**; the diagrams are ARCLIFT editorial explanations. None proves model identity, configuration, suitability or performance.

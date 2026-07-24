@@ -1,0 +1,49 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "arclift-inquiry-router",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-24",
+  "observability": {
+    "enabled": true
+  },
+  "env": {
+    "preview": {
+      "name": "arclift-inquiry-router-preview",
+      "vars": {
+        "ALLOWED_ORIGINS": "http://localhost:4321,http://127.0.0.1:4321"
+      },
+      "secrets": {
+        "required": ["FORMSPREE_ENDPOINT", "DINGTALK_WEBHOOK_URL"]
+      },
+      "ratelimits": [
+        {
+          "name": "RATE_LIMITER",
+          "namespace_id": "1202407241",
+          "simple": {
+            "limit": 5,
+            "period": 60
+          }
+        }
+      ]
+    },
+    "production": {
+      "name": "arclift-form",
+      "vars": {
+        "ALLOWED_ORIGINS": "https://www.arclifteq.com,https://arclifteq.com"
+      },
+      "secrets": {
+        "required": ["FORMSPREE_ENDPOINT", "DINGTALK_WEBHOOK"]
+      },
+      "ratelimits": [
+        {
+          "name": "RATE_LIMITER",
+          "namespace_id": "1202407242",
+          "simple": {
+            "limit": 5,
+            "period": 60
+          }
+        }
+      ]
+    }
+  }
+}

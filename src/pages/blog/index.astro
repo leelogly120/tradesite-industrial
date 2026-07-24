@@ -1,15 +1,28 @@
 ---
-// Blog index page - redirects to paginated blog
-// This page serves as the main entry point for /blog/ URL
-// All content is served through /blog/page/[...page].astro
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogListing from '../../components/BlogListing.astro';
+
+const pageSize = 20;
+const allPosts = (await getCollection('blog'))
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const posts = allPosts.slice(0, pageSize);
+const totalPages = Math.max(1, Math.ceil(allPosts.length / pageSize));
+const next = totalPages > 1 ? '/blog/page/2/' : undefined;
 ---
 
-<html>
-<head>
-  <meta http-equiv="refresh" content="0;url=/blog/page/" />
-  <link rel="canonical" href="https://www.arclifteq.com/blog/page/" />
-</head>
-<body>
-  <p>Redirecting to <a href="/blog/page/">blog</a>...</p>
-</body>
-</html>
+<BaseLayout
+  title="Roll-Forming Lift & Platform Project Guides"
+  description="Evidence-led ARCLIFT guides for roll-forming lift, logistics, line specification, and large-deck platform project decisions."
+  canonical="https://www.arclifteq.com/blog/"
+  transparentNav={false}
+>
+  <BlogListing
+    posts={posts}
+    pageNum={1}
+    totalPages={totalPages}
+    totalPosts={allPosts.length}
+    next={next}
+  />
+</BaseLayout>

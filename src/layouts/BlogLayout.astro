@@ -5,16 +5,22 @@ interface Props {
   title: string;
   description: string;
   date: Date;
+  updated?: Date;
   tags?: string[];
   coverImage?: string;
+  coverAlt: string;
+  coverCaption: string;
+  readTime: number;
   author?: string;
 }
 
-const { title, description, date, tags = [], coverImage, author = 'ARCLIFT Team' } = Astro.props;
+const {
+  title, description, date, updated, tags = [], coverImage,
+  coverAlt, coverCaption, readTime, author = 'ARCLIFT Team',
+} = Astro.props;
 const formattedDate = new Date(date).toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric',
 });
-const readTime = '8 min read';
 ---
 
 <BaseLayout title={title} description={description} ogImage={coverImage} ogType="article" transparentNav={false}>
@@ -32,7 +38,7 @@ const readTime = '8 min read';
       logo: { '@type': 'ImageObject', url: new URL('/favicon.svg', Astro.site).href },
     },
     datePublished: new Date(date).toISOString(),
-    dateModified: new Date(date).toISOString(),
+    dateModified: new Date(updated ?? date).toISOString(),
     image: coverImage ? new URL(coverImage, Astro.site).href : undefined,
     mainEntityOfPage: { '@type': 'WebPage', '@id': Astro.url.href },
   })} />
@@ -55,8 +61,8 @@ const readTime = '8 min read';
     <div class="meta">
       {tags.length > 0 && <span class="tag">{tags[0]}</span>}
       <span>{formattedDate}</span>
-      <span>•</span>
-      <span>{readTime}</span>
+      <span aria-hidden="true">•</span>
+      <span>{readTime} min read</span>
     </div>
   </section>
 
@@ -72,9 +78,10 @@ const readTime = '8 min read';
   <!-- ARTICLE -->
   <article class="article">
     {coverImage && (
-      <div class="article__hero">
-        <img src={coverImage} alt={title} style="width:100%;height:100%;object-fit:cover;" />
-      </div>
+      <figure class="article__hero">
+        <img src={coverImage} alt={coverAlt} />
+        <figcaption>{coverCaption}</figcaption>
+      </figure>
     )}
 
     <!-- EDITORIAL NOTE -->
@@ -97,7 +104,7 @@ const readTime = '8 min read';
       <div class="author-box__avatar">AR</div>
       <div class="author-box__info">
         <h4>{author}</h4>
-        <p>Our editorial team organizes factory material, project requirements and procurement questions into practical guidance. Technical claims are reviewed against available source evidence and identified as project-specific where needed.</p>
+        <p>Our editorial team organizes evidence files, project requirements and buyer questions into practical guidance. Technical claims are checked against available evidence and identified as project-specific where needed.</p>
       </div>
     </div>
 
@@ -105,9 +112,9 @@ const readTime = '8 min read';
 
   <!-- CTA -->
   <section class="cta">
-    <h2>READY TO UPGRADE YOUR HEIGHT WORK?</h2>
-    <p>Contact us to find the perfect crawler under-ceiling platform for your project.</p>
-    <a href="/contact/" class="btn btn--white">Get a Free Quote →</a>
+    <h2>READY TO REVIEW YOUR PROJECT DATA?</h2>
+    <p>Send the working height, panel profile, access and ground conditions, transport limits and destination market. ARCLIFT will identify the configuration questions that need confirmation before a project-specific quotation.</p>
+    <a href="/contact/" class="btn btn--white">Send Project Data →</a>
   </section>
 
 </BaseLayout>
@@ -151,7 +158,8 @@ const readTime = '8 min read';
   .hero-banner .meta {
     display: flex;
     align-items: center;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 12px 16px;
     position: relative;
   }
   .hero-banner .meta span {
@@ -195,16 +203,25 @@ const readTime = '8 min read';
   }
   .article__hero {
     width: 100%;
-    height: 400px;
+    margin: 0 0 40px;
+    color: #64748b;
+    font-size: 13px;
+  }
+  .article__hero img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
     background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
-    border-radius: 20px;
-    margin-bottom: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #94a3b8;
-    font-size: 14px;
-    overflow: hidden;
+  }
+  .article__hero figcaption {
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-top: 0;
+    border-radius: 0 0 12px 12px;
+    background: #f8fafc;
+    line-height: 1.55;
   }
 
   /* Key Takeaways */
@@ -278,6 +295,15 @@ const readTime = '8 min read';
     width: 100%;
     border-radius: 16px;
     margin: 32px 0;
+  }
+  .article-content :global(a:has(> img)) {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+  .article-content :global(a > img[src$=".svg"]) {
+    cursor: zoom-in;
   }
   .article-content :global(table) {
     width: 100%;

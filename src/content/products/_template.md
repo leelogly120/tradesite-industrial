@@ -1,46 +1,35 @@
 ---
-title: "Product Name - Specific Model Number"
-description: "SEO-optimized description, 150-160 characters. Include main keyword and key benefit."
+title: "ARC Reference Configuration — Project Review Template"
+description: "Evidence-first template for archived equipment references. Final values, interfaces and documents require project-specific confirmation."
 category: "Category Name"
-price:
-  min: 5.00
-  max: 30.00
-  currency: "USD"
 specifications:
-  Material: "Stainless Steel 304"
-  Weight: "2.5 kg"
-  Size: "100 x 50 x 30 mm"
-  Tolerance: "+/- 0.01mm"
-  Surface: "Polished"
+  "Archived Reference Class": "Historical reference — state the source class and its limits"
+  "Project Boundary": "To be confirmed — list the conditions and interfaces that control selection"
+  "Final Confirmation": "Signed technical schedule, approved drawings and applicable approved load chart"
 images:
-  - "/images/products/example-1.jpg"
-moq: 100
+  - "/images/editorial/roof-level-workflow.svg"
 features:
-  - "High corrosion resistance for long-lasting performance"
-  - "Precision machined to +/- 0.01mm tolerance"
-  - "Custom sizes and materials available on request"
+  - "Evidence boundary — distinguish archived references from current project facts"
+  - "Buyer inputs — list the drawings, site data, material data and destination requirements needed"
+  - "Document gate — state which signed and approved documents control the order"
 faq:
-  - question: "What is the lead time for bulk orders?"
-    answer: "Standard lead time is 15-30 days depending on order quantity and customization requirements."
-  - question: "Do you provide samples?"
-    answer: "Yes, we provide free samples for stock items. Custom samples may incur a small fee."
-  - question: "What certifications do your products have?"
-    answer: "Our products are ISO 9001 certified and comply with CE and RoHS standards."
+  - question: "Are website values final specifications?"
+    answer: "No. Archived website references support early planning only. The signed technical schedule and approved drawings control the final order."
 relatedProducts: []
-date: 2026-07-05
+date: 2026-07-25
 draft: true
 ---
 
-## Product Overview
+## Reference boundary
 
-Write a detailed product overview here (100+ words). Include the main features, target applications, and what makes this product stand out from competitors.
+Explain what the archived reference can support and what remains unknown. Do not infer a current-model fact from an editorial image, historical parameter sheet or model label.
 
-## Applications
+## Buyer inputs
 
-- Application 1: Description
-- Application 2: Description
-- Application 3: Description
+List the project geometry, site conditions, material or task data, interfaces, transport route, destination and documentation requirements needed for review.
 
-## Packaging & Shipping
+## Final documents
 
-Standard export packaging with anti-rust protection. Shipping via sea freight (15-30 days) or air freight (3-7 days).
+Final configuration requires the signed technical schedule, approved drawings and any applicable approved load chart, tooling proposal, chassis interface or packing data.
+
+**Image disclosure:** Representative editorial image — not model-specific evidence.
