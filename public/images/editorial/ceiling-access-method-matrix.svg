@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title>Ceiling access method comparison matrix</title>
+  <desc>ARCLIFT editorial diagram comparing movement, setup, floor, obstructions, and work cycle questions.</desc>
+  <rect width="1600" height="900" fill="#f4f7f8"/>
+  <rect x="65" y="60" width="1470" height="780" rx="32" fill="#ffffff" stroke="#123c4a" stroke-width="8"/>
+  <text x="115" y="145" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#123c4a">ARCLIFT METHOD MATRIX</text>
+  <text x="115" y="212" font-family="Arial, sans-serif" font-size="48" fill="#41636d">Ask the same project questions of every access route</text>
+  <g font-family="Arial, sans-serif" font-size="48" text-anchor="middle">
+    <rect x="105" y="300" width="260" height="310" rx="26" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/>
+    <text data-role="decision-label" x="235" y="385" font-size="48" font-weight="700" fill="#123c4a">MOVE</text>
+    <path d="M165 485 H305 M260 440 l45 45 -45 45" fill="none" stroke="#e07132" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="385" y="300" width="260" height="310" rx="26" fill="#f8eee7" stroke="#123c4a" stroke-width="6"/>
+    <text data-role="decision-label" x="515" y="385" font-size="48" font-weight="700" fill="#123c4a">SET UP</text>
+    <path d="M445 530 L515 435 585 530 M465 505 H565" fill="none" stroke="#e07132" stroke-width="18" stroke-linecap="round"/>
+    <rect x="665" y="300" width="260" height="310" rx="26" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/>
+    <text data-role="decision-label" x="795" y="385" font-size="48" font-weight="700" fill="#123c4a">FLOOR</text>
+    <path d="M720 485 H870 M745 535 H845" fill="none" stroke="#e07132" stroke-width="18" stroke-linecap="round"/>
+    <rect x="945" y="300" width="260" height="310" rx="26" fill="#f8eee7" stroke="#123c4a" stroke-width="6"/>
+    <text data-role="decision-label" x="1075" y="385" font-size="48" font-weight="700" fill="#123c4a">OBSTRUCTIONS</text>
+    <path d="M1015 455 H1135 V535 H1015" fill="none" stroke="#e07132" stroke-width="18" stroke-linejoin="round"/>
+    <rect x="1225" y="300" width="260" height="310" rx="26" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/>
+    <text data-role="decision-label" x="1355" y="385" font-size="48" font-weight="700" fill="#123c4a">WORK CYCLE</text>
+    <path d="M1295 505 a70 70 0 1 1 45 43 M1295 505 l0 -55 55 0" fill="none" stroke="#e07132" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="800" y="700" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#123c4a">CRAWLER PLATFORM • SPIDER LIFT • SCAFFOLD</text>
+  <rect x="115" y="748" width="1370" height="62" rx="16" fill="#123c4a"/>
+  <text x="800" y="793" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#ffffff">EDITORIAL COMPARISON — NO UNIVERSAL WINNER</text>
+</svg>

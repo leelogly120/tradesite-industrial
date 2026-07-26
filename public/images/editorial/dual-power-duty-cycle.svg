@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title>Dual power crawler platform duty cycle</title>
+  <desc>ARCLIFT editorial diagram linking work zone, power mode, charging or fuel, ventilation, and backup questions.</desc>
+  <rect width="1600" height="900" fill="#f4f7f8"/>
+  <rect x="70" y="65" width="1460" height="770" rx="34" fill="#fff" stroke="#123c4a" stroke-width="8"/>
+  <text x="120" y="155" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#123c4a">ARCLIFT DUTY CYCLE</text>
+  <text x="120" y="225" font-family="Arial, sans-serif" font-size="48" fill="#41636d">Map energy source and controls to every work phase</text>
+  <g font-family="Arial, sans-serif" font-size="48" font-weight="700" text-anchor="middle" fill="#123c4a">
+    <circle cx="240" cy="460" r="120" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="240" y="476" font-size="48">WORK ZONE</text>
+    <circle cx="520" cy="460" r="120" fill="#f8eee7" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="520" y="476" font-size="48">POWER MODE</text>
+    <circle cx="800" cy="460" r="120" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="800" y="476" font-size="48">CHARGE / FUEL</text>
+    <circle cx="1080" cy="460" r="120" fill="#f8eee7" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="1080" y="476" font-size="48">VENTILATION</text>
+    <circle cx="1360" cy="460" r="120" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="1360" y="476" font-size="48">BACKUP</text>
+  </g>
+  <g stroke="#e07132" stroke-width="16" stroke-linecap="round">
+    <path d="M360 460 H400"/><path d="M640 460 H680"/><path d="M920 460 H960"/><path d="M1200 460 H1240"/>
+  </g>
+  <text x="800" y="655" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#123c4a">NORMAL DUTY • CHANGEOVER • FAILED-SOURCE RESPONSE</text>
+  <rect x="120" y="730" width="1360" height="65" rx="16" fill="#123c4a"/>
+  <text x="800" y="777" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#fff">EDITORIAL PLAN — NO RUNTIME OR EMISSIONS CLAIM</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title>Warehouse ceiling access map</title>
+  <desc>ARCLIFT editorial diagram connecting gate, aisle, turn, overhead, and rescue planning questions.</desc>
+  <rect width="1600" height="900" fill="#f4f7f8"/>
+  <rect x="70" y="65" width="1460" height="770" rx="34" fill="#fff" stroke="#123c4a" stroke-width="8"/>
+  <text x="120" y="155" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#123c4a">ARCLIFT WAREHOUSE MAP</text>
+  <text x="120" y="225" font-family="Arial, sans-serif" font-size="48" fill="#41636d">Follow the route from the site gate to the work face</text>
+  <path d="M220 610 V340 H500 V610 H800 V340 H1100 V610 H1380" fill="none" stroke="#e07132" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="Arial, sans-serif" font-size="48" font-weight="700" text-anchor="middle" fill="#123c4a">
+    <circle cx="220" cy="610" r="92" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="220" y="626" font-size="48">GATE</text>
+    <circle cx="500" cy="340" r="92" fill="#f8eee7" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="500" y="356" font-size="48">AISLE</text>
+    <circle cx="800" cy="610" r="92" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="800" y="626" font-size="48">TURN</text>
+    <circle cx="1100" cy="340" r="92" fill="#f8eee7" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="1100" y="356" font-size="48">OVERHEAD</text>
+    <circle cx="1380" cy="610" r="92" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="1380" y="626" font-size="48">RESCUE</text>
+  </g>
+  <rect x="120" y="730" width="1360" height="65" rx="16" fill="#123c4a"/>
+  <text x="800" y="777" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#fff">EDITORIAL ROUTE — NOT A WAREHOUSE SURVEY</text>
+</svg>

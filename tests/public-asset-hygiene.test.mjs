@@ -25,12 +25,24 @@ const task4SvgAssets = [
   '40hq-logistics-checkpoints.svg',
   'roll-forming-input-map.svg',
   'ceiling-platform-project-data.svg',
+  'crawler-platform-selection-path.svg',
+  'ceiling-access-method-matrix.svg',
+  'indoor-floor-load-review.svg',
+  'remote-control-safety-loop.svg',
+  'dual-power-duty-cycle.svg',
+  'warehouse-ceiling-access-map.svg',
 ];
 const task4MobileReadableSvgs = [
   '40hq-logistics-checkpoints.svg',
   'crawler-truck-selection-matrix.svg',
   'roll-forming-input-map.svg',
   'ceiling-platform-project-data.svg',
+  'crawler-platform-selection-path.svg',
+  'ceiling-access-method-matrix.svg',
+  'indoor-floor-load-review.svg',
+  'remote-control-safety-loop.svg',
+  'dual-power-duty-cycle.svg',
+  'warehouse-ceiling-access-map.svg',
 ];
 
 const quarantinedLegacyArticles = [

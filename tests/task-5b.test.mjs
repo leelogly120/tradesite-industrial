@@ -11,8 +11,21 @@ const launchSlugs = [
   '40hq-shipping-truck-mounted-roll-forming-lift',
   'roll-forming-line-specification-long-span-roof-panels',
   'crawler-ceiling-wall-panel-platform-project-data',
+  'crawler-under-ceiling-platform-buyers-guide',
+  'crawler-platform-vs-spider-lift-vs-scaffolding',
+  'indoor-aerial-platform-ground-pressure-guide',
+  'remote-control-aerial-platform-safety-planning',
+  'dual-power-crawler-platform-selection',
+  'warehouse-ceiling-access-platform-planning',
 ];
-const markers = [
+const backfillSlugs = [
+  'crawler-under-ceiling-platform-buyers-guide',
+  'crawler-platform-vs-spider-lift-vs-scaffolding',
+  'indoor-aerial-platform-ground-pressure-guide',
+  'remote-control-aerial-platform-safety-planning',
+  'dual-power-crawler-platform-selection',
+  'warehouse-ceiling-access-platform-planning',
+];const markers = [
   'buyer-intent',
   'conditions',
   'evidence-tradeoffs',
@@ -155,6 +168,37 @@ describe('Task 5b article metadata and presentation contract', () => {
     expect(`${title} | ARCLIFT`.length).toBeLessThanOrEqual(70);
   });
 
+  it.each(backfillSlugs)('%s satisfies the long-form content standard', async (slug) => {
+    const article = await readFile(resolve(root, 'src/content/blog', `${slug}.md`), 'utf8');
+    const visible = article
+      .replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, '')
+      .replace(/<!--[\s\S]*?-->/g, '')
+      .replace(/<[^>]+>/g, ' ');
+    const title = article.match(/^title:\s*"([^"]+)"/m)?.[1] ?? '';
+    const description = article.match(/^description:\s*"([^"]+)"/m)?.[1] ?? '';
+    const wordCount = (visible.match(/[A-Za-z0-9]+(?:[-'][A-Za-z0-9]+)*/g) ?? []).length;
+    const h2Count = (article.match(/^##\s+/gm) ?? []).length;
+    const h3Count = (article.match(/^###\s+/gm) ?? []).length;
+    const bodyImageCount = (article.match(/!\[[^\]]+\]\(\/images\//g) ?? []).length;
+    const internalLinkCount = (article.match(/\]\(\/(?:blog|products)\//g) ?? []).length;
+    const externalLinkCount = (article.match(/href="https:\/\//g) ?? []).length;
+    const faqQuestionCount = (article.match(/^####\s+.+\?$/gm) ?? []).length;
+
+    expect(wordCount).toBeGreaterThanOrEqual(1500);
+    expect(wordCount).toBeLessThanOrEqual(3000);
+    expect(title.length).toBeGreaterThanOrEqual(50);
+    expect(title.length).toBeLessThanOrEqual(60);
+    expect(description.length).toBeGreaterThanOrEqual(150);
+    expect(description.length).toBeLessThanOrEqual(160);
+    expect(article).toContain('**Contents**');
+    expect(h2Count).toBeGreaterThanOrEqual(4);
+    expect(h2Count).toBeLessThanOrEqual(6);
+    expect(h3Count).toBeGreaterThanOrEqual(12);
+    expect(bodyImageCount).toBe(3);
+    expect(internalLinkCount).toBeGreaterThanOrEqual(2);
+    expect(externalLinkCount).toBeGreaterThanOrEqual(1);
+    expect(faqQuestionCount).toBeGreaterThanOrEqual(4);
+  });
   it('gives each known AI-assisted asset an explicit per-image AI-assisted caption', async () => {
     const aiAssistedUses = [
       {
@@ -213,6 +257,12 @@ describe('Task 5b article metadata and presentation contract', () => {
       '40hq-shipping-truck-mounted-roll-forming-lift',
       'roll-forming-line-specification-long-span-roof-panels',
       'crawler-ceiling-wall-panel-platform-project-data',
+      'crawler-under-ceiling-platform-buyers-guide',
+      'crawler-platform-vs-spider-lift-vs-scaffolding',
+      'indoor-aerial-platform-ground-pressure-guide',
+      'remote-control-aerial-platform-safety-planning',
+      'dual-power-crawler-platform-selection',
+      'warehouse-ceiling-access-platform-planning',
     ]) {
       const article = await readFile(resolve(root, 'src/content/blog', `${slug}.md`), 'utf8');
       expect(article).toMatch(/\[!\[[^\]]+\]\((\/images\/editorial\/[^)]+\.svg)\)\]\(\1\)/);

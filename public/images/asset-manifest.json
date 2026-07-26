@@ -379,6 +379,54 @@
         "theme": "ceiling platform project data checklist",
         "classification": "editorial",
         "disclosure": "ARCLIFT editorial diagram"
+      },
+      {
+        "slug": "crawler-platform-selection-path",
+        "url": "/images/editorial/crawler-platform-selection-path.svg",
+        "use": "technical article diagram",
+        "theme": "crawler under-ceiling platform selection path",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram"
+      },
+      {
+        "slug": "ceiling-access-method-matrix",
+        "url": "/images/editorial/ceiling-access-method-matrix.svg",
+        "use": "technical article diagram",
+        "theme": "crawler platform spider lift and scaffold comparison questions",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram"
+      },
+      {
+        "slug": "indoor-floor-load-review",
+        "url": "/images/editorial/indoor-floor-load-review.svg",
+        "use": "technical article diagram",
+        "theme": "indoor aerial platform floor and route review",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram"
+      },
+      {
+        "slug": "remote-control-safety-loop",
+        "url": "/images/editorial/remote-control-safety-loop.svg",
+        "use": "technical article diagram",
+        "theme": "remote-control aerial platform safety planning loop",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram"
+      },
+      {
+        "slug": "dual-power-duty-cycle",
+        "url": "/images/editorial/dual-power-duty-cycle.svg",
+        "use": "technical article diagram",
+        "theme": "dual-power crawler platform duty and infrastructure planning",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram"
+      },
+      {
+        "slug": "warehouse-ceiling-access-map",
+        "url": "/images/editorial/warehouse-ceiling-access-map.svg",
+        "use": "technical article diagram",
+        "theme": "warehouse ceiling access route planning",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram"
       }
     ],
     "home": [

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title>Remote control safety planning loop</title>
+  <desc>ARCLIFT editorial diagram linking pre-use, control zone, stop, lowering, and rescue planning.</desc>
+  <rect width="1600" height="900" fill="#f4f7f8"/>
+  <rect x="70" y="65" width="1460" height="770" rx="34" fill="#fff" stroke="#123c4a" stroke-width="8"/>
+  <text x="120" y="155" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#123c4a">ARCLIFT CONTROL LOOP</text>
+  <text x="120" y="225" font-family="Arial, sans-serif" font-size="48" fill="#41636d">Plan normal movement and emergency response together</text>
+  <path d="M330 470 C430 270 1170 270 1270 470 C1170 670 430 670 330 470 Z" fill="none" stroke="#e07132" stroke-width="18"/>
+  <g font-family="Arial, sans-serif" font-size="48" font-weight="700" text-anchor="middle" fill="#123c4a">
+    <circle cx="330" cy="470" r="95" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="330" y="486" font-size="48">PRE-USE</text>
+    <circle cx="565" cy="330" r="95" fill="#f8eee7" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="565" y="346" font-size="48">CONTROL ZONE</text>
+    <circle cx="800" cy="300" r="95" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="800" y="316" font-size="48">STOP</text>
+    <circle cx="1035" cy="330" r="95" fill="#f8eee7" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="1035" y="346" font-size="48">LOWER</text>
+    <circle cx="1270" cy="470" r="95" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="1270" y="486" font-size="48">RESCUE</text>
+  </g>
+  <text x="800" y="670" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#123c4a">VIEW • COMMUNICATE • STOP • RECOVER</text>
+  <rect x="120" y="730" width="1360" height="65" rx="16" fill="#123c4a"/>
+  <text x="800" y="777" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#fff">EDITORIAL PLAN — FOLLOW SIGNED MACHINE INSTRUCTIONS</text>
+</svg>

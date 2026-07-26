@@ -306,11 +306,17 @@ describe('public asset manifest', () => {
       '40hq-logistics-checkpoints',
       'roll-forming-input-map',
       'ceiling-platform-project-data',
+      'crawler-platform-selection-path',
+      'ceiling-access-method-matrix',
+      'indoor-floor-load-review',
+      'remote-control-safety-loop',
+      'dual-power-duty-cycle',
+      'warehouse-ceiling-access-map',
     ];
     const allowedKeys = ['classification', 'disclosure', 'slug', 'theme', 'url', 'use'];
     const failures = [];
 
-    expect(records).toHaveLength(9);
+    expect(records).toHaveLength(15);
     expect(records.map((record) => record.slug).sort()).toEqual(expectedSlugs.sort());
 
     for (const record of records) {

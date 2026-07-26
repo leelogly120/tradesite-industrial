@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title>Crawler platform selection path</title>
+  <desc>ARCLIFT editorial diagram connecting work zone, height and reach, access, floor, and task plan questions.</desc>
+  <rect width="1600" height="900" fill="#f4f7f8"/>
+  <rect x="70" y="70" width="1460" height="760" rx="32" fill="#ffffff" stroke="#123c4a" stroke-width="8"/>
+  <text x="120" y="165" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#123c4a">ARCLIFT SELECTION PATH</text>
+  <text x="120" y="235" font-family="Arial, sans-serif" font-size="48" fill="#41636d">Define the project before comparing a configuration</text>
+  <path d="M250 465 H1350" fill="none" stroke="#e07132" stroke-width="18" stroke-linecap="round"/>
+  <g font-family="Arial, sans-serif" font-size="48" font-weight="700" text-anchor="middle" fill="#123c4a">
+    <circle cx="250" cy="465" r="78" fill="#e9f2f4" stroke="#123c4a" stroke-width="7"/>
+    <text data-role="decision-label" x="250" y="610" font-size="48">WORK ZONE</text>
+    <circle cx="525" cy="465" r="78" fill="#e9f2f4" stroke="#123c4a" stroke-width="7"/>
+    <text data-role="decision-label" x="525" y="610" font-size="48">HEIGHT + REACH</text>
+    <circle cx="800" cy="465" r="78" fill="#e9f2f4" stroke="#123c4a" stroke-width="7"/>
+    <text data-role="decision-label" x="800" y="610" font-size="48">ACCESS</text>
+    <circle cx="1075" cy="465" r="78" fill="#e9f2f4" stroke="#123c4a" stroke-width="7"/>
+    <text data-role="decision-label" x="1075" y="610" font-size="48">FLOOR</text>
+    <circle cx="1350" cy="465" r="78" fill="#e9f2f4" stroke="#123c4a" stroke-width="7"/>
+    <text data-role="decision-label" x="1350" y="610" font-size="48">TASK PLAN</text>
+  </g>
+  <g fill="#e07132">
+    <path d="M240 445 h20 v40 h-20z"/><path d="M515 445 h20 v40 h-20z"/>
+    <path d="M790 445 h20 v40 h-20z"/><path d="M1065 445 h20 v40 h-20z"/>
+    <path d="M1340 445 h20 v40 h-20z"/>
+  </g>
+  <rect x="120" y="700" width="1360" height="78" rx="18" fill="#123c4a"/>
+  <text x="800" y="754" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#ffffff">EDITORIAL QUESTION MAP — NOT A SUITABILITY RESULT</text>
+</svg>

@@ -3,7 +3,7 @@ import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 
 const root = resolve(import.meta.dirname, '..');
-const editorialDiagram = /\/images\/editorial\/(?:roof-level-workflow|crawler-truck-selection-matrix|40hq-logistics-checkpoints|ceiling-platform-project-data|roll-forming-input-map)\.svg/;
+const editorialDiagram = /\/images\/editorial\/(?:roof-level-workflow|crawler-truck-selection-matrix|40hq-logistics-checkpoints|ceiling-platform-project-data|roll-forming-input-map|crawler-platform-selection-path|ceiling-access-method-matrix|indoor-floor-load-review|remote-control-safety-loop|dual-power-duty-cycle|warehouse-ceiling-access-map)\.svg/;
 
 async function markdown(dir) {
   const base = resolve(root, 'src/content', dir);

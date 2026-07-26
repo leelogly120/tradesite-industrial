@@ -8,6 +8,12 @@ export const LAUNCH_SLUGS = [
   '40hq-shipping-truck-mounted-roll-forming-lift',
   'roll-forming-line-specification-long-span-roof-panels',
   'crawler-ceiling-wall-panel-platform-project-data',
+  'crawler-under-ceiling-platform-buyers-guide',
+  'crawler-platform-vs-spider-lift-vs-scaffolding',
+  'indoor-aerial-platform-ground-pressure-guide',
+  'remote-control-aerial-platform-safety-planning',
+  'dual-power-crawler-platform-selection',
+  'warehouse-ceiling-access-platform-planning',
 ];
 
 const PUBLISH_THRESHOLD = 95;
