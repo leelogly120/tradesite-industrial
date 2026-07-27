@@ -2,10 +2,22 @@ import { access, readFile } from 'node:fs/promises';
 import { constants } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { auditArticle } from '../scripts/audit-content.mjs';
+import { auditArticle, LAUNCH_SLUGS } from '../scripts/audit-content.mjs';
 
 const root = resolve(import.meta.dirname, '..');
-const launchSlugs = [
+const approvedNewSlugs = [
+  'roof-panel-profile-material-tooling-data',
+  'coil-handling-roll-forming-line-feeding-plan',
+  'roll-forming-line-electrical-control-interfaces',
+  'roll-forming-line-fat-sat-acceptance-checklist',
+  'truck-mounted-roll-forming-chassis-interface-review',
+  'stadium-ceiling-access-platform-planning',
+  'airport-terminal-maintenance-access-planning',
+  'ceiling-platform-overhead-clearance-survey',
+  'aerial-platform-worker-tool-material-load-planning',
+  'aerial-platform-emergency-lowering-rescue-plan',
+];
+const existingLaunchSlugs = [
   'roof-level-roll-forming-long-panels',
   'crawler-vs-truck-mounted-roll-forming-system',
   '40hq-shipping-truck-mounted-roll-forming-lift',
@@ -17,35 +29,17 @@ const launchSlugs = [
   'remote-control-aerial-platform-safety-planning',
   'dual-power-crawler-platform-selection',
   'warehouse-ceiling-access-platform-planning',
-  'roof-panel-profile-material-tooling-data',
-  'coil-handling-roll-forming-line-feeding-plan',
-  'roll-forming-line-electrical-control-interfaces',
-  'roll-forming-line-fat-sat-acceptance-checklist',
-  'truck-mounted-roll-forming-chassis-interface-review',
-  'stadium-ceiling-access-platform-planning',
-  'airport-terminal-maintenance-access-planning',
-  'ceiling-platform-overhead-clearance-survey',
-  'aerial-platform-worker-tool-material-load-planning',
-  'aerial-platform-emergency-lowering-rescue-plan',
 ];
-const backfillSlugs = [
+const launchSlugs = [...existingLaunchSlugs, ...approvedNewSlugs];
+const existingBackfillSlugs = [
   'crawler-under-ceiling-platform-buyers-guide',
   'crawler-platform-vs-spider-lift-vs-scaffolding',
   'indoor-aerial-platform-ground-pressure-guide',
   'remote-control-aerial-platform-safety-planning',
   'dual-power-crawler-platform-selection',
   'warehouse-ceiling-access-platform-planning',
-  'roof-panel-profile-material-tooling-data',
-  'coil-handling-roll-forming-line-feeding-plan',
-  'roll-forming-line-electrical-control-interfaces',
-  'roll-forming-line-fat-sat-acceptance-checklist',
-  'truck-mounted-roll-forming-chassis-interface-review',
-  'stadium-ceiling-access-platform-planning',
-  'airport-terminal-maintenance-access-planning',
-  'ceiling-platform-overhead-clearance-survey',
-  'aerial-platform-worker-tool-material-load-planning',
-  'aerial-platform-emergency-lowering-rescue-plan',
 ];
+const backfillSlugs = [...existingBackfillSlugs, ...approvedNewSlugs];
 const markers = [
   'buyer-intent',
   'conditions',
@@ -119,6 +113,29 @@ async function exists(path) {
     return false;
   }
 }
+
+describe('Task 5b slug registry contract', () => {
+  it('keeps approved article registries unique and synchronized', () => {
+    const auditNewSlugs = LAUNCH_SLUGS.filter((slug) => !existingLaunchSlugs.includes(slug));
+    const backfillNewSlugs = backfillSlugs.filter((slug) => !existingBackfillSlugs.includes(slug));
+    const sortSlugs = (slugs) => [...slugs].sort();
+
+    for (const registry of [
+      approvedNewSlugs,
+      existingLaunchSlugs,
+      existingBackfillSlugs,
+      launchSlugs,
+      backfillSlugs,
+      LAUNCH_SLUGS,
+    ]) {
+      expect(new Set(registry).size).toBe(registry.length);
+    }
+
+    expect(sortSlugs(auditNewSlugs)).toEqual(sortSlugs(approvedNewSlugs));
+    expect(sortSlugs(backfillNewSlugs)).toEqual(sortSlugs(approvedNewSlugs));
+    expect(sortSlugs(launchSlugs)).toEqual(sortSlugs(LAUNCH_SLUGS));
+  });
+});
 
 describe('Task 5b content-audit behavior', () => {
   it('requires the repository standard to enforce the evidence-first publication boundary', async () => {
