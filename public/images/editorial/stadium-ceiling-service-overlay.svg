@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Generic stadium ceiling service overlay</title>
+  <desc id="desc">Editorial section showing structural, service, work-face and route layers requiring verification.</desc>
+  <rect width="1200" height="675" fill="#071923"/>
+  <text x="72" y="74" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="32" font-weight="700">CEILING-SERVICE OVERLAY</text>
+  <text x="72" y="110" fill="#9fb2bb" font-family="Arial,sans-serif" font-size="18">Verify each layer from current records and survey</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="80" y="166" width="1040" height="82" rx="15" fill="#173844" stroke="#91a8b1" stroke-width="2"/>
+    <text x="112" y="217" fill="#f4f7f8" font-size="22" font-weight="700">STRUCTURE</text><text x="350" y="217" fill="#c8d7dd" font-size="20">truss · bracing · access restrictions</text>
+    <rect x="80" y="268" width="1040" height="82" rx="15" fill="#153342" stroke="#f5b64c" stroke-width="2"/>
+    <text x="112" y="319" fill="#f5b64c" font-size="22" font-weight="700">SERVICES</text><text x="350" y="319" fill="#f4f7f8" font-size="20">lighting · audio · screens · cables</text>
+    <rect x="80" y="370" width="1040" height="82" rx="15" fill="#12323d" stroke="#2ed3c6" stroke-width="2"/>
+    <text x="112" y="421" fill="#2ed3c6" font-size="22" font-weight="700">WORK FACE</text><text x="350" y="421" fill="#f4f7f8" font-size="20">task position · people · tools · exclusion</text>
+    <rect x="80" y="472" width="1040" height="82" rx="15" fill="#102a35" stroke="#68818b" stroke-width="2"/>
+    <text x="112" y="523" fill="#c8d7dd" font-size="22" font-weight="700">ROUTE + FLOOR</text><text x="350" y="523" fill="#f4f7f8" font-size="20">gates · turns · support path · rescue access</text>
+  </g>
+  <text x="80" y="618" fill="#7f98a2" font-family="Arial,sans-serif" font-size="17">Unknown dimensions and service status remain project inputs — no equipment envelope is depicted</text>
+</svg>

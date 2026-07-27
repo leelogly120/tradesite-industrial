@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Electrical commissioning document stack</title>
+  <desc id="desc">Layered cards represent interface list, approved schedule, risk records, change log and handover record.</desc>
+  <rect width="1200" height="675" fill="#f7f2eb"/>
+  <text x="65" y="85" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#3f3850">CONTROL THE DOCUMENT STACK</text>
+  <g font-family="Arial,sans-serif" font-size="24" font-weight="700">
+    <rect x="150" y="185" width="790" height="290" rx="18" fill="#d9d2e9" stroke="#6a5b8a" stroke-width="4"/><text x="195" y="245" fill="#3f3850">HANDOVER RECORD</text>
+    <rect x="210" y="235" width="790" height="290" rx="18" fill="#e5e9f2" stroke="#596b91" stroke-width="4"/><text x="255" y="295" fill="#3f3850">CHANGE LOG</text>
+    <rect x="270" y="285" width="790" height="290" rx="18" fill="#fff" stroke="#3f3850" stroke-width="4"/><text x="315" y="345" fill="#3f3850">APPROVED SCHEDULE + INTERFACE LIST</text>
+  </g>
+  <g font-family="Arial,sans-serif" font-size="20" fill="#6d6576"><text x="315" y="405">revision • language • owner • review status</text><text x="315" y="455">risk inputs • I/O record • deviations</text><text x="315" y="505">configuration-specific evidence only</text></g>
+  <text x="65" y="625" font-family="Arial,sans-serif" font-size="20" fill="#3f3850">Example document set — required records depend on configuration and destination requirements.</text>
+</svg>

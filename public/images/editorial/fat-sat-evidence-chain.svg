@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Factory to site evidence chain</title>
+  <desc id="desc">A controlled chain connects signed conditions, factory evidence, deviations, site evidence and contractual closure.</desc>
+  <rect width="1200" height="675" fill="#f3f5f1"/>
+  <text x="60" y="85" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#31473b">EVIDENCE FOLLOWS SIGNED CONDITIONS</text>
+  <g font-family="Arial,sans-serif">
+    <g fill="#fff" stroke="#52745f" stroke-width="4"><circle cx="150" cy="310" r="92"/><circle cx="445" cy="310" r="92"/><circle cx="750" cy="310" r="92"/><circle cx="1050" cy="310" r="92"/></g>
+    <g fill="#31473b" font-size="22" font-weight="700" text-anchor="middle"><text x="150" y="295">SIGNED</text><text x="150" y="325">CONDITIONS</text><text x="445" y="295">FACTORY</text><text x="445" y="325">RECORD</text><text x="750" y="295">SITE</text><text x="750" y="325">RECORD</text><text x="1050" y="295">CLOSURE</text><text x="1050" y="325">STATUS</text></g>
+  </g>
+  <g stroke="#d16f43" stroke-width="8"><path d="M242 310h111"/><path d="M537 310h121"/><path d="M842 310h116"/></g>
+  <text x="115" y="500" font-family="Arial,sans-serif" font-size="20" fill="#617168">Configuration • sample • method • witness • deviation • owner • contractual release</text>
+  <text x="115" y="555" font-family="Arial,sans-serif" font-size="20" fill="#617168">No universal result is implied by this workflow.</text>
+</svg>

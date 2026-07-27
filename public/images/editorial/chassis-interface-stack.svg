@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Chassis body module and work-zone stack</title>
+  <desc id="desc">Four conceptual layers show the vehicle, attachment, roll-forming module and work-zone interfaces that need confirmation.</desc>
+  <rect width="1200" height="675" fill="#f4f3ef"/>
+  <text x="65" y="80" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#33404f">EVERY INTERFACE: CONFIRM</text>
+  <g font-family="Arial,sans-serif" font-size="25" font-weight="700">
+    <rect x="140" y="135" width="920" height="90" rx="18" fill="#dbe8e2"/><text x="190" y="190" fill="#33404f">WORK / SUPPORT ZONE — CONFIRM</text>
+    <rect x="180" y="245" width="840" height="90" rx="18" fill="#e8ddcd"/><text x="230" y="300" fill="#33404f">ROLL-FORMING MODULE — CONFIRM</text>
+    <rect x="220" y="355" width="760" height="90" rx="18" fill="#d8dee8"/><text x="270" y="410" fill="#33404f">BODY / ATTACHMENT — CONFIRM</text>
+    <rect x="260" y="465" width="680" height="90" rx="18" fill="#566a7e"/><text x="310" y="520" fill="#fff">CHASSIS / AXLES / FRAME — CONFIRM</text>
+  </g>
+  <text x="140" y="620" font-family="Arial,sans-serif" font-size="20" fill="#5e6873">Illustrative architecture only — no vehicle drawing, load chart, installation design or road approval.</text>
+</svg>

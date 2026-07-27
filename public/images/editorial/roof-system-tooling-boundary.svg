@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Roof-system and tooling responsibility boundary</title>
+  <desc id="desc">A conceptual comparison separates roof-system approval questions from tooling proposal questions.</desc>
+  <rect width="1200" height="675" fill="#f7f4ef"/>
+  <text x="70" y="85" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#223a56">TWO REVIEWS — DIFFERENT EVIDENCE</text>
+  <rect x="70" y="140" width="490" height="430" rx="24" fill="#e8f0f7" stroke="#3f6f91" stroke-width="4"/>
+  <rect x="640" y="140" width="490" height="430" rx="24" fill="#f9eadf" stroke="#bd6236" stroke-width="4"/>
+  <g font-family="Arial,sans-serif" fill="#223a56">
+    <text x="115" y="205" font-size="28" font-weight="700">ROOF-SYSTEM APPROVAL</text>
+    <text x="685" y="205" font-size="28" font-weight="700">TOOLING PROPOSAL</text>
+    <g font-size="22"><text x="115" y="270">assembly requirements</text><text x="115" y="320">interfaces and detailing</text><text x="115" y="370">project acceptance evidence</text>
+      <text x="685" y="270">controlled profile input</text><text x="685" y="320">material and coil evidence</text><text x="685" y="370">trial and deviation record</text></g>
+  </g>
+  <path d="M560 355h80" stroke="#223a56" stroke-width="5" stroke-dasharray="10 10"/>
+  <text x="135" y="505" font-family="Arial,sans-serif" font-size="20" fill="#5d7184">Not established by a generic tooling trial</text>
+  <text x="705" y="505" font-family="Arial,sans-serif" font-size="20" fill="#875134">Not a roof performance approval</text>
+</svg>

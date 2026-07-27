@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Generic landside terminal phasing map</title>
+  <desc id="desc">Editorial terminal plan separating public flow, controlled work zone and service route, excluding airside operations.</desc>
+  <rect width="1200" height="675" fill="#071923"/>
+  <text x="70" y="72" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="32" font-weight="700">TERMINAL ACCESS PHASING</text>
+  <text x="70" y="108" fill="#9fb2bb" font-family="Arial,sans-serif" font-size="18">Landside editorial concept — airside excluded</text>
+  <rect x="70" y="160" width="1060" height="400" rx="22" fill="#102d39" stroke="#37515c" stroke-width="3"/>
+  <path d="M125 230 H1065 M125 320 H1065 M125 410 H1065 M125 500 H1065" stroke="#264550" stroke-width="4"/>
+  <path d="M220 190 V530 M520 190 V530 M820 190 V530" stroke="#264550" stroke-width="4"/>
+  <path d="M100 480 C270 420 310 280 500 300 S760 475 1080 255" fill="none" stroke="#2ed3c6" stroke-width="18" stroke-linecap="round" opacity=".85"/>
+  <text x="104" y="521" fill="#2ed3c6" font-family="Arial,sans-serif" font-size="18" font-weight="700">PUBLIC FLOW</text>
+  <rect x="555" y="223" width="225" height="142" rx="17" fill="#173844" stroke="#f5b64c" stroke-width="4"/>
+  <text x="588" y="278" fill="#f5b64c" font-family="Arial,sans-serif" font-size="21" font-weight="700">PHASED WORK</text>
+  <text x="588" y="313" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="18">operator controlled</text>
+  <path d="M112 192 H480" stroke="#d7e3e7" stroke-width="8" stroke-dasharray="16 12"/>
+  <text x="112" y="181" fill="#d7e3e7" font-family="Arial,sans-serif" font-size="17">SERVICE ROUTE</text>
+  <rect x="895" y="580" width="235" height="46" rx="10" fill="#341d25"/>
+  <text x="925" y="611" fill="#f49a9b" font-family="Arial,sans-serif" font-size="18" font-weight="700">NO AIRSIDE CLAIM</text>
+</svg>

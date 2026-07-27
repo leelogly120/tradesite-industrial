@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Emergency scenario decision matrix</title>
+  <desc id="desc">Editorial prompt separating illness, entrapment, loss of normal control and malfunction without operating steps.</desc>
+  <rect width="1200" height="675" fill="#071923"/>
+  <text x="72" y="72" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="32" font-weight="700">SCENARIO READINESS MATRIX</text>
+  <text x="72" y="108" fill="#9fb2bb" font-family="Arial,sans-serif" font-size="18">Prompts only — follow the exact manual and approved site arrangement</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="75" y="166" width="500" height="170" rx="20" fill="#102d39" stroke="#2ed3c6" stroke-width="3"/><text x="112" y="216" fill="#2ed3c6" font-size="22" font-weight="700">ILLNESS / INCAPACITY</text><text x="112" y="260" fill="#f4f7f8" font-size="18">Who is called?</text><text x="112" y="296" fill="#f4f7f8" font-size="18">How is access maintained?</text>
+    <rect x="625" y="166" width="500" height="170" rx="20" fill="#102d39" stroke="#f5b64c" stroke-width="3"/><text x="662" y="216" fill="#f5b64c" font-size="22" font-weight="700">ENTRAPMENT</text><text x="662" y="260" fill="#f4f7f8" font-size="18">What immediate site escalation applies?</text><text x="662" y="296" fill="#f4f7f8" font-size="18">Which trained role responds?</text>
+    <rect x="75" y="382" width="500" height="170" rx="20" fill="#102d39" stroke="#91a8b1" stroke-width="3"/><text x="112" y="432" fill="#c8d7dd" font-size="22" font-weight="700">NORMAL CONTROL LOST</text><text x="112" y="476" fill="#f4f7f8" font-size="18">Which exact information is available?</text><text x="112" y="512" fill="#f4f7f8" font-size="18">Who is authorised?</text>
+    <rect x="625" y="382" width="500" height="170" rx="20" fill="#102d39" stroke="#f05d5e" stroke-width="3"/><text x="662" y="432" fill="#f49a9b" font-size="22" font-weight="700">MALFUNCTION</text><text x="662" y="476" fill="#f4f7f8" font-size="18">Stop-work trigger?</text><text x="662" y="512" fill="#f4f7f8" font-size="18">External support interface?</text>
+  </g>
+  <text x="75" y="614" fill="#7f98a2" font-family="Arial,sans-serif" font-size="17">This matrix is not a rescue procedure and states no equipment control function</text>
+</svg>

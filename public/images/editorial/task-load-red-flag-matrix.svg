@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Task load red-flag matrix</title>
+  <desc id="desc">Editorial matrix for unknown limits, attachments, moving loads and record mismatches.</desc>
+  <rect width="1200" height="675" fill="#071923"/>
+  <text x="72" y="72" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="32" font-weight="700">TASK-LOAD RED-FLAG MATRIX</text>
+  <text x="72" y="108" fill="#9fb2bb" font-family="Arial,sans-serif" font-size="18">Stop and obtain exact-machine and project-authority determination</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="75" y="170" width="500" height="160" rx="20" fill="#341d25" stroke="#f05d5e" stroke-width="3"/><text x="110" y="218" fill="#f49a9b" font-size="22" font-weight="700">LIMIT UNKNOWN</text><text x="110" y="260" fill="#f4f7f8" font-size="18">configuration or document mismatch</text><text x="110" y="296" fill="#f4f7f8" font-size="18">→ HOLD comparison</text>
+    <rect x="625" y="170" width="500" height="160" rx="20" fill="#341d25" stroke="#f05d5e" stroke-width="3"/><text x="660" y="218" fill="#f49a9b" font-size="22" font-weight="700">ATTACHMENT UNRESOLVED</text><text x="660" y="260" fill="#f4f7f8" font-size="18">effect and permission not documented</text><text x="660" y="296" fill="#f4f7f8" font-size="18">→ HOLD task</text>
+    <rect x="75" y="375" width="500" height="160" rx="20" fill="#3b3020" stroke="#f5b64c" stroke-width="3"/><text x="110" y="423" fill="#f5b64c" font-size="22" font-weight="700">LOAD STATE CHANGES</text><text x="110" y="465" fill="#f4f7f8" font-size="18">quantity, position or task differs</text><text x="110" y="501" fill="#f4f7f8" font-size="18">→ REISSUE schedule</text>
+    <rect x="625" y="375" width="500" height="160" rx="20" fill="#3b3020" stroke="#f5b64c" stroke-width="3"/><text x="660" y="423" fill="#f5b64c" font-size="22" font-weight="700">TRANSFER NOT APPROVED</text><text x="660" y="465" fill="#f4f7f8" font-size="18">method or travel state is absent</text><text x="660" y="501" fill="#f4f7f8" font-size="18">→ CHANGE method</text>
+  </g>
+  <text x="75" y="610" fill="#7f98a2" font-family="Arial,sans-serif" font-size="17">Editorial screen only — it neither calculates capacity nor authorizes load handling</text>
+</svg>

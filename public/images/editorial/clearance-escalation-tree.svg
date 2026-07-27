@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Overhead clearance escalation tree</title>
+  <desc id="desc">Editorial decision tree routing unknown services, electrical status and missing records to project authorities.</desc>
+  <rect width="1200" height="675" fill="#071923"/>
+  <text x="72" y="72" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="32" font-weight="700">CLEARANCE ESCALATION TREE</text>
+  <text x="72" y="108" fill="#9fb2bb" font-family="Arial,sans-serif" font-size="18">Screen unknowns; do not convert them into assumed clearance</text>
+  <rect x="430" y="150" width="340" height="88" rx="18" fill="#173844" stroke="#f5b64c" stroke-width="3"/>
+  <text x="489" y="202" fill="#f5b64c" font-family="Arial,sans-serif" font-size="23" font-weight="700">UNKNOWN OVERHEAD ITEM</text>
+  <path d="M600 238 V285 M600 285 H245 V335 M600 285 H600 V335 M600 285 H955 V335" fill="none" stroke="#91a8b1" stroke-width="4"/>
+  <g font-family="Arial,sans-serif">
+    <rect x="85" y="335" width="320" height="110" rx="18" fill="#102d39" stroke="#f05d5e" stroke-width="3"/><text x="119" y="382" fill="#f49a9b" font-size="21" font-weight="700">ELECTRICAL STATUS</text><text x="119" y="416" fill="#f4f7f8" font-size="18">owner + applicable procedure</text>
+    <rect x="440" y="335" width="320" height="110" rx="18" fill="#102d39" stroke="#2ed3c6" stroke-width="3"/><text x="479" y="382" fill="#2ed3c6" font-size="21" font-weight="700">MOVING SERVICE</text><text x="479" y="416" fill="#f4f7f8" font-size="18">state + isolation owner</text>
+    <rect x="795" y="335" width="320" height="110" rx="18" fill="#102d39" stroke="#91a8b1" stroke-width="3"/><text x="834" y="382" fill="#c8d7dd" font-size="21" font-weight="700">MISSING RECORD</text><text x="834" y="416" fill="#f4f7f8" font-size="18">survey + revision control</text>
+  </g>
+  <path d="M245 445 V505 M600 445 V505 M955 445 V505" stroke="#91a8b1" stroke-width="4"/>
+  <rect x="300" y="505" width="600" height="88" rx="18" fill="#341d25" stroke="#f05d5e" stroke-width="3"/>
+  <text x="389" y="558" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="23" font-weight="700">HOLD METHOD UNTIL COMPETENT REVIEW</text>
+</svg>

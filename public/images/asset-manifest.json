@@ -427,6 +427,246 @@
         "theme": "warehouse ceiling access route planning",
         "classification": "editorial",
         "disclosure": "ARCLIFT editorial diagram"
+      },
+      {
+        "slug": "profile-input-sheet",
+        "url": "/images/editorial/profile-input-sheet.svg",
+        "use": "technical article editorial diagram",
+        "theme": "fictional panel profile and material input record",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "profile-tooling-decision-map",
+        "url": "/images/editorial/profile-tooling-decision-map.svg",
+        "use": "technical article editorial diagram",
+        "theme": "profile coil and sample inputs for a tooling review",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "roof-system-tooling-boundary",
+        "url": "/images/editorial/roof-system-tooling-boundary.svg",
+        "use": "technical article editorial diagram",
+        "theme": "roof-system approval and tooling proposal responsibility boundary",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "coil-route-journey-map",
+        "url": "/images/editorial/coil-route-journey-map.svg",
+        "use": "technical article editorial diagram",
+        "theme": "receiving staging lifting and guarded feed-entry journey",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "blank-coil-data-card",
+        "url": "/images/editorial/blank-coil-data-card.svg",
+        "use": "technical article editorial diagram",
+        "theme": "blank incoming-coil planning fields",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "coil-zone-responsibility-overlay",
+        "url": "/images/editorial/coil-zone-responsibility-overlay.svg",
+        "use": "technical article editorial diagram",
+        "theme": "conceptual coil-route zones and responsibility prompts",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "electrical-interface-boundary",
+        "url": "/images/editorial/electrical-interface-boundary.svg",
+        "use": "technical article editorial diagram",
+        "theme": "non-wiring electrical and control boundary map",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "electrical-state-responsibility-matrix",
+        "url": "/images/editorial/electrical-state-responsibility-matrix.svg",
+        "use": "technical article editorial diagram",
+        "theme": "blank machine-state signal response and owner matrix",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "electrical-document-stack",
+        "url": "/images/editorial/electrical-document-stack.svg",
+        "use": "technical article editorial diagram",
+        "theme": "controlled electrical handover document stack",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "fat-sat-evidence-chain",
+        "url": "/images/editorial/fat-sat-evidence-chain.svg",
+        "use": "technical article editorial diagram",
+        "theme": "signed conditions factory record site record and closure chain",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "blank-fat-sat-record",
+        "url": "/images/editorial/blank-fat-sat-record.svg",
+        "use": "technical article editorial diagram",
+        "theme": "blank contract-defined FAT and SAT evidence record",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "fat-sat-boundary-comparison",
+        "url": "/images/editorial/fat-sat-boundary-comparison.svg",
+        "use": "technical article editorial diagram",
+        "theme": "factory and site evidence boundary comparison",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "chassis-interface-stack",
+        "url": "/images/editorial/chassis-interface-stack.svg",
+        "use": "technical article editorial diagram",
+        "theme": "chassis body module and work-zone interface stack",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "chassis-responsibility-swimlane",
+        "url": "/images/editorial/chassis-responsibility-swimlane.svg",
+        "use": "technical article editorial diagram",
+        "theme": "vehicle integration responsibility swimlane",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "road-workface-route-map",
+        "url": "/images/editorial/road-workface-route-map.svg",
+        "use": "technical article editorial diagram",
+        "theme": "public-road site-gate and work-face route review",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "stadium-zone-governance-map",
+        "url": "/images/editorial/stadium-zone-governance-map.svg",
+        "use": "technical article diagram",
+        "theme": "stadium venue governance and controlled work zones",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "stadium-work-window-timeline",
+        "url": "/images/editorial/stadium-work-window-timeline.svg",
+        "use": "technical article diagram",
+        "theme": "stadium event changeover and isolated work windows",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "stadium-ceiling-service-overlay",
+        "url": "/images/editorial/stadium-ceiling-service-overlay.svg",
+        "use": "technical article diagram",
+        "theme": "stadium ceiling services route and task layers",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "airport-terminal-phasing-map",
+        "url": "/images/editorial/airport-terminal-phasing-map.svg",
+        "use": "technical article diagram",
+        "theme": "landside terminal access phasing and public flow",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "airport-approval-handover-swimlane",
+        "url": "/images/editorial/airport-approval-handover-swimlane.svg",
+        "use": "technical article diagram",
+        "theme": "airport operator project and technical handover boundaries",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "airport-gate-workface-checklist",
+        "url": "/images/editorial/airport-gate-workface-checklist.svg",
+        "use": "technical article diagram",
+        "theme": "terminal entry route work face and response inputs",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "clearance-four-state-section",
+        "url": "/images/editorial/clearance-four-state-section.svg",
+        "use": "technical article diagram",
+        "theme": "transport setup task and withdrawal clearance states",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "clearance-obstruction-survey-sheet",
+        "url": "/images/editorial/clearance-obstruction-survey-sheet.svg",
+        "use": "technical article diagram",
+        "theme": "blank overhead obstruction survey record",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "clearance-escalation-tree",
+        "url": "/images/editorial/clearance-escalation-tree.svg",
+        "use": "technical article diagram",
+        "theme": "overhead hazard and missing-record escalation",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "task-load-schedule",
+        "url": "/images/editorial/task-load-schedule.svg",
+        "use": "technical article diagram",
+        "theme": "people tools materials and source schedule",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "task-load-path",
+        "url": "/images/editorial/task-load-path.svg",
+        "use": "technical article diagram",
+        "theme": "task load receipt staging use and removal path",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "task-load-red-flag-matrix",
+        "url": "/images/editorial/task-load-red-flag-matrix.svg",
+        "use": "technical article diagram",
+        "theme": "task load review holds and change triggers",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "rescue-readiness-loop",
+        "url": "/images/editorial/rescue-readiness-loop.svg",
+        "use": "technical article diagram",
+        "theme": "equipment-specific rescue readiness review loop",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "rescue-role-communications-card",
+        "url": "/images/editorial/rescue-role-communications-card.svg",
+        "use": "technical article diagram",
+        "theme": "site rescue roles communications and access",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "rescue-scenario-decision-matrix",
+        "url": "/images/editorial/rescue-scenario-decision-matrix.svg",
+        "use": "technical article diagram",
+        "theme": "emergency scenario readiness prompts without procedures",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
       }
     ],
     "home": [

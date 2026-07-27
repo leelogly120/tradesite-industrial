@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Blank FAT and SAT evidence record</title>
+  <desc id="desc">A fictional protocol form contains blank fields for condition, method, observation, deviation and owner.</desc>
+  <rect width="1200" height="675" fill="#f8f1e8"/>
+  <rect x="90" y="55" width="1020" height="565" rx="20" fill="#fff" stroke="#4b5268" stroke-width="4"/>
+  <text x="135" y="115" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#4b5268">CONTRACT-DEFINED EVIDENCE RECORD</text>
+  <g font-family="Arial,sans-serif" font-size="20" fill="#4b5268"><text x="135" y="190">CONFIGURATION / REVISION</text><text x="635" y="190">WITNESS / ROLE</text><text x="135" y="320">SIGNED CONDITION / METHOD</text><text x="635" y="320">OBSERVATION / RECORD</text><text x="135" y="450">DEVIATION / OWNER</text><text x="635" y="450">CLOSURE AUTHORITY</text></g>
+  <g stroke="#aab0bf" stroke-width="3"><path d="M135 215h390"/><path d="M635 215h330"/><path d="M135 345h390"/><path d="M635 345h330"/><path d="M135 475h390"/><path d="M635 475h330"/></g>
+  <text x="135" y="565" font-family="Arial,sans-serif" font-size="20" fill="#7a7080">BLANK TEMPLATE — NO TEST DATA, RESULT, CERTIFICATION OR ACCEPTANCE</text>
+</svg>

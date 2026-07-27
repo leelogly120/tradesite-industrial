@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Fictional panel profile input sheet</title>
+  <desc id="desc">A blank planning sheet groups profile revision, material record, coil geometry and end-detail fields.</desc>
+  <rect width="1200" height="675" fill="#f5f1e8"/>
+  <rect x="70" y="55" width="1060" height="565" rx="20" fill="#fff" stroke="#17324d" stroke-width="4"/>
+  <text x="110" y="115" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#17324d">TOOLING-REVIEW INPUT RECORD</text>
+  <text x="110" y="150" font-family="Arial,sans-serif" font-size="18" fill="#637381">Representative planning material — blank fields</text>
+  <path d="M125 330h300l45-70 45 70h170" fill="none" stroke="#d46b3c" stroke-width="10" stroke-linejoin="round"/>
+  <g font-family="Arial,sans-serif" font-size="20" fill="#17324d">
+    <text x="110" y="215">PROFILE REVISION</text><text x="735" y="215">MATERIAL RECORD</text>
+    <text x="110" y="430">END DETAIL / HANDEDNESS</text><text x="735" y="430">COIL GEOMETRY</text>
+  </g>
+  <g stroke="#9aabb8" stroke-width="3"><path d="M110 235h455"/><path d="M735 235h350"/><path d="M110 450h455"/><path d="M735 450h350"/></g>
+  <g font-family="Arial,sans-serif" font-size="17" fill="#637381">
+    <text x="110" y="505">CONTROLLED DRAWING • TOLERANCE OWNER • SAMPLE STATUS</text>
+    <text x="110" y="555">NO MACHINE CAPABILITY OR ROOF PERFORMANCE IS SHOWN</text>
+  </g>
+</svg>

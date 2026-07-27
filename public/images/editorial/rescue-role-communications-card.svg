@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Rescue role and communications card</title>
+  <desc id="desc">Editorial role map connecting site owner, employer, competent person, trained rescuers and communications.</desc>
+  <rect width="1200" height="675" fill="#071923"/>
+  <text x="72" y="72" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="32" font-weight="700">ROLE + COMMUNICATIONS CARD</text>
+  <text x="72" y="108" fill="#9fb2bb" font-family="Arial,sans-serif" font-size="18">Names and responsibilities require site-specific confirmation</text>
+  <rect x="445" y="265" width="310" height="130" rx="22" fill="#173844" stroke="#2ed3c6" stroke-width="4"/>
+  <text x="504" y="318" fill="#2ed3c6" font-family="Arial,sans-serif" font-size="23" font-weight="700">SITE COMMUNICATION</text>
+  <text x="507" y="355" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="18">channel · test · fallback</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="80" y="160" width="270" height="105" rx="18" fill="#102d39" stroke="#91a8b1" stroke-width="3"/><text x="118" y="205" fill="#c8d7dd" font-size="21" font-weight="700">SITE OWNER</text><text x="118" y="238" fill="#f4f7f8" font-size="17">access + emergency interface</text>
+    <rect x="850" y="160" width="270" height="105" rx="18" fill="#102d39" stroke="#f5b64c" stroke-width="3"/><text x="888" y="205" fill="#f5b64c" font-size="21" font-weight="700">EMPLOYER</text><text x="888" y="238" fill="#f4f7f8" font-size="17">plan + trained people</text>
+    <rect x="80" y="430" width="270" height="105" rx="18" fill="#102d39" stroke="#f5b64c" stroke-width="3"/><text x="118" y="475" fill="#f5b64c" font-size="21" font-weight="700">COMPETENT PERSON</text><text x="118" y="508" fill="#f4f7f8" font-size="17">review + change control</text>
+    <rect x="850" y="430" width="270" height="105" rx="18" fill="#102d39" stroke="#f05d5e" stroke-width="3"/><text x="888" y="475" fill="#f49a9b" font-size="21" font-weight="700">RESCUERS</text><text x="888" y="508" fill="#f4f7f8" font-size="17">specific-machine readiness</text>
+  </g>
+  <path d="M350 230 L445 294 M850 230 L755 294 M350 470 L445 366 M850 470 L755 366" stroke="#91a8b1" stroke-width="4" stroke-dasharray="9 7"/>
+  <text x="72" y="614" fill="#7f98a2" font-family="Arial,sans-serif" font-size="17">Do not publish names, telephone numbers or emergency contacts</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Blank overhead obstruction survey sheet</title>
+  <desc id="desc">Editorial form for zone, obstruction, measured offsets, status, source and reviewer.</desc>
+  <rect width="1200" height="675" fill="#071923"/>
+  <text x="70" y="72" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="32" font-weight="700">OBSTRUCTION SURVEY SHEET</text>
+  <text x="70" y="108" fill="#9fb2bb" font-family="Arial,sans-serif" font-size="18">Blank editorial record — values require qualified project input</text>
+  <rect x="70" y="150" width="1060" height="430" rx="18" fill="#f4f7f8"/>
+  <rect x="70" y="150" width="1060" height="64" rx="18" fill="#173844"/>
+  <g fill="#f4f7f8" font-family="Arial,sans-serif" font-size="17" font-weight="700">
+    <text x="92" y="190">ZONE / STATE</text><text x="285" y="190">OBSTRUCTION</text><text x="500" y="190">OFFSET / LEVEL</text><text x="735" y="190">STATUS</text><text x="915" y="190">SOURCE / REVIEW</text>
+  </g>
+  <g stroke="#b8c6cc" stroke-width="2"><line x1="70" y1="292" x2="1130" y2="292"/><line x1="70" y1="370" x2="1130" y2="370"/><line x1="70" y1="448" x2="1130" y2="448"/><line x1="70" y1="526" x2="1130" y2="526"/><line x1="265" y1="150" x2="265" y2="580"/><line x1="480" y1="150" x2="480" y2="580"/><line x1="715" y1="150" x2="715" y2="580"/><line x1="895" y1="150" x2="895" y2="580"/></g>
+  <g fill="#78909a" font-family="Arial,sans-serif" font-size="18"><text x="92" y="263">TBD</text><text x="285" y="263">TBD</text><text x="500" y="263">measured TBD</text><text x="735" y="263">unknown</text><text x="915" y="263">record / date</text></g>
+  <text x="70" y="626" fill="#7f98a2" font-family="Arial,sans-serif" font-size="17">Do not copy sensitive drawings or identifiers into public records</text>
+</svg>

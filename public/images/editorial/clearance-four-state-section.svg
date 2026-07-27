@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Four-state overhead clearance section</title>
+  <desc id="desc">Conceptual transport, setup, elevated task and withdrawal states with unknown clearance fields.</desc>
+  <rect width="1200" height="675" fill="#071923"/>
+  <text x="72" y="72" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="32" font-weight="700">FOUR-STATE CLEARANCE REGISTER</text>
+  <text x="72" y="108" fill="#9fb2bb" font-family="Arial,sans-serif" font-size="18">No equipment envelope or dimension is represented</text>
+  <line x1="70" y1="190" x2="1130" y2="190" stroke="#f5b64c" stroke-width="8"/>
+  <path d="M190 190 V515 M460 190 V515 M730 190 V515 M1000 190 V515" stroke="#37515c" stroke-width="3" stroke-dasharray="10 10"/>
+  <g font-family="Arial,sans-serif">
+    <rect x="105" y="410" width="170" height="105" rx="16" fill="#173844" stroke="#2ed3c6" stroke-width="3"/><text x="125" y="455" fill="#2ed3c6" font-size="21" font-weight="700">TRANSPORT</text><text x="125" y="486" fill="#f4f7f8" font-size="17">clearance: TBD</text>
+    <rect x="375" y="360" width="170" height="155" rx="16" fill="#173844" stroke="#91a8b1" stroke-width="3"/><text x="397" y="405" fill="#c8d7dd" font-size="21" font-weight="700">SETUP</text><text x="397" y="438" fill="#f4f7f8" font-size="17">offset: TBD</text><text x="397" y="470" fill="#f4f7f8" font-size="17">sweep: TBD</text>
+    <rect x="645" y="275" width="170" height="240" rx="16" fill="#173844" stroke="#f5b64c" stroke-width="3"/><text x="666" y="320" fill="#f5b64c" font-size="21" font-weight="700">TASK STATE</text><text x="666" y="353" fill="#f4f7f8" font-size="17">worker: TBD</text><text x="666" y="385" fill="#f4f7f8" font-size="17">tools: TBD</text>
+    <rect x="915" y="390" width="170" height="125" rx="16" fill="#173844" stroke="#f05d5e" stroke-width="3"/><text x="935" y="435" fill="#f49a9b" font-size="21" font-weight="700">WITHDRAW</text><text x="935" y="468" fill="#f4f7f8" font-size="17">path: TBD</text>
+  </g>
+  <text x="72" y="602" fill="#7f98a2" font-family="Arial,sans-serif" font-size="17">Record obstruction identity · measured offset · state · source · date · reviewer</text>
+</svg>

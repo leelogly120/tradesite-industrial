@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Coil zone responsibility overlay</title>
+  <desc id="desc">A conceptual floor plan separates receiving, exclusion, operator and guarded-line zones with responsibility prompts.</desc>
+  <rect width="1200" height="675" fill="#eef3ed"/>
+  <text x="65" y="85" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#21473b">ZONES NEED OWNERS, NOT JUST COLOURS</text>
+  <g stroke="#fff" stroke-width="8">
+    <rect x="65" y="145" width="310" height="390" rx="20" fill="#6e9f88"/><rect x="375" y="145" width="270" height="390" fill="#d39b58"/>
+    <rect x="645" y="145" width="210" height="390" fill="#7c91ad"/><rect x="855" y="145" width="280" height="390" rx="20" fill="#465d73"/>
+  </g>
+  <g font-family="Arial,sans-serif" fill="#fff" font-size="25" font-weight="700">
+    <text x="110" y="210">RECEIVING</text><text x="420" y="210">TRANSFER</text><text x="680" y="210">OPERATOR</text><text x="900" y="210">GUARDED LINE</text>
+  </g>
+  <g font-family="Arial,sans-serif" fill="#fff" font-size="18">
+    <text x="110" y="260">storage owner?</text><text x="420" y="260">lifting owner?</text><text x="680" y="260">safe position?</text><text x="900" y="260">handover owner?</text>
+    <text x="110" y="455">route clear?</text><text x="420" y="455">exclusion set?</text><text x="680" y="455">visibility?</text><text x="900" y="455">access controlled?</text>
+  </g>
+  <text x="65" y="605" font-family="Arial,sans-serif" font-size="21" fill="#21473b">Final zoning follows the project risk assessment, destination rules and signed responsibilities.</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Receiving to guarded line coil journey</title>
+  <desc id="desc">A conceptual path moves from receiving through staging and lifting to the guarded feed boundary.</desc>
+  <rect width="1200" height="675" fill="#f2f5f8"/>
+  <text x="65" y="90" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#17324d">COIL JOURNEY: DEFINE EVERY HANDOFF</text>
+  <g font-family="Arial,sans-serif">
+    <g fill="#fff" stroke="#426b8a" stroke-width="4"><rect x="60" y="210" width="235" height="170" rx="20"/><rect x="340" y="210" width="235" height="170" rx="20"/><rect x="620" y="210" width="235" height="170" rx="20"/><rect x="900" y="210" width="235" height="170" rx="20"/></g>
+    <g fill="#17324d" font-size="25" font-weight="700"><text x="105" y="275">RECEIVING</text><text x="400" y="275">STAGING</text><text x="675" y="275">LIFTING</text><text x="945" y="275">FEED ENTRY</text></g>
+    <g fill="#677b8c" font-size="18"><text x="105" y="320">inspect • identify</text><text x="400" y="320">restrain • protect</text><text x="675" y="320">attach • transfer</text><text x="945" y="320">guard • hand over</text></g>
+  </g>
+  <g fill="#d56d3f"><path d="M295 285h45v20h-45z"/><path d="M575 285h45v20h-45z"/><path d="M855 285h45v20h-45z"/></g>
+  <rect x="60" y="455" width="1075" height="100" rx="16" fill="#17324d"/>
+  <text x="95" y="515" font-family="Arial,sans-serif" font-size="23" fill="#fff">Record coil condition, space, people, equipment, safeguards and the owner of each boundary.</text>
+</svg>

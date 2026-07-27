@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Fictional stadium zone governance map</title>
+  <desc id="desc">Editorial plan separating route, isolated work zone, occupied boundary and decision owners.</desc>
+  <rect width="1200" height="675" fill="#071923"/>
+  <text x="72" y="72" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="32" font-weight="700">VENUE ZONE GOVERNANCE MAP</text>
+  <text x="72" y="108" fill="#9fb2bb" font-family="Arial,sans-serif" font-size="18">Fictional planning layout — no site or event data</text>
+  <ellipse cx="510" cy="368" rx="330" ry="205" fill="#102d39" stroke="#2ed3c6" stroke-width="4"/>
+  <ellipse cx="510" cy="368" rx="185" ry="95" fill="#173d49" stroke="#91a8b1" stroke-width="3" stroke-dasharray="12 10"/>
+  <rect x="405" y="315" width="210" height="106" rx="18" fill="#0b222c" stroke="#f5b64c" stroke-width="4"/>
+  <text x="436" y="360" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="22" font-weight="700">ISOLATED</text>
+  <text x="446" y="390" fill="#f5b64c" font-family="Arial,sans-serif" font-size="20">WORK ZONE</text>
+  <path d="M70 505 H250 Q285 505 285 470 V430" fill="none" stroke="#2ed3c6" stroke-width="18" stroke-linecap="round"/>
+  <text x="70" y="548" fill="#d7e3e7" font-family="Arial,sans-serif" font-size="20">CONTROLLED ROUTE</text>
+  <rect x="880" y="166" width="250" height="112" rx="16" fill="#102d39" stroke="#2ed3c6" stroke-width="2"/>
+  <text x="908" y="205" fill="#2ed3c6" font-family="Arial,sans-serif" font-size="18" font-weight="700">VENUE OWNER</text>
+  <text x="908" y="237" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="17">state · access · occupants</text>
+  <rect x="880" y="300" width="250" height="112" rx="16" fill="#102d39" stroke="#f5b64c" stroke-width="2"/>
+  <text x="908" y="339" fill="#f5b64c" font-family="Arial,sans-serif" font-size="18" font-weight="700">PROJECT TEAM</text>
+  <text x="908" y="371" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="17">method · task · controls</text>
+  <rect x="880" y="434" width="250" height="112" rx="16" fill="#102d39" stroke="#91a8b1" stroke-width="2"/>
+  <text x="908" y="473" fill="#c8d7dd" font-family="Arial,sans-serif" font-size="18" font-weight="700">TECHNICAL REVIEW</text>
+  <text x="908" y="505" fill="#f4f7f8" font-family="Arial,sans-serif" font-size="17">route · floor · overhead</text>
+  <text x="72" y="630" fill="#7f98a2" font-family="Arial,sans-serif" font-size="16">Editorial planning diagram — not a traffic plan, survey or equipment approval</text>
+</svg>

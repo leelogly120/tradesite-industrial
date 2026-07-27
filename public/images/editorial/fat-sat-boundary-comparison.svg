@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">FAT and SAT boundary comparison</title>
+  <desc id="desc">Two panels compare factory and site evidence while a shared signed protocol defines their scope.</desc>
+  <rect width="1200" height="675" fill="#eef3f5"/>
+  <text x="65" y="85" font-family="Arial,sans-serif" font-size="36" font-weight="700" fill="#263e4d">FACTORY RECORD ≠ SITE RECORD</text>
+  <rect x="65" y="150" width="485" height="350" rx="22" fill="#fff" stroke="#3f7187" stroke-width="4"/>
+  <rect x="650" y="150" width="485" height="350" rx="22" fill="#fff" stroke="#b96942" stroke-width="4"/>
+  <g font-family="Arial,sans-serif" fill="#263e4d"><text x="110" y="220" font-size="30" font-weight="700">FAT SCOPE</text><text x="695" y="220" font-size="30" font-weight="700">SAT SCOPE</text>
+    <g font-size="22"><text x="110" y="290">factory configuration</text><text x="110" y="340">agreed sample and method</text><text x="110" y="390">witnessed observations</text><text x="695" y="290">installed configuration</text><text x="695" y="340">site utilities and interfaces</text><text x="695" y="390">site observations and issues</text></g></g>
+  <rect x="315" y="535" width="570" height="75" rx="18" fill="#263e4d"/>
+  <text x="380" y="582" font-family="Arial,sans-serif" font-size="23" fill="#fff">SIGNED PROTOCOL DEFINES BOTH</text>
+</svg>

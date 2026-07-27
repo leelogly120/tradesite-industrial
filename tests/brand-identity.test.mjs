@@ -293,10 +293,10 @@ describe('public asset manifest', () => {
     expect(campaignRecords.every((record) => record.classification === 'editorial')).toBe(true);
   });
 
-  it('publishes the nine Task 4 editorial assets with safe public-only fields and existing URLs', async () => {
+  it('preserves the original 15 editorial assets and publishes the 30 approved Task 7 and Task 8 assets', async () => {
     const manifest = JSON.parse(await readProjectFile('public/images/asset-manifest.json'));
     const records = manifest.campaigns?.editorial ?? [];
-    const expectedSlugs = [
+    const originalExpectedSlugs = [
       'truck-site-roll-forming-lift',
       'port-loading-logistics',
       'ceiling-platform-underside',
@@ -313,11 +313,54 @@ describe('public asset manifest', () => {
       'dual-power-duty-cycle',
       'warehouse-ceiling-access-map',
     ];
+    const expectedTask7Assets = [
+      ['profile-input-sheet', '/images/editorial/profile-input-sheet.svg'],
+      ['profile-tooling-decision-map', '/images/editorial/profile-tooling-decision-map.svg'],
+      ['roof-system-tooling-boundary', '/images/editorial/roof-system-tooling-boundary.svg'],
+      ['coil-route-journey-map', '/images/editorial/coil-route-journey-map.svg'],
+      ['blank-coil-data-card', '/images/editorial/blank-coil-data-card.svg'],
+      ['coil-zone-responsibility-overlay', '/images/editorial/coil-zone-responsibility-overlay.svg'],
+      ['electrical-interface-boundary', '/images/editorial/electrical-interface-boundary.svg'],
+      ['electrical-state-responsibility-matrix', '/images/editorial/electrical-state-responsibility-matrix.svg'],
+      ['electrical-document-stack', '/images/editorial/electrical-document-stack.svg'],
+      ['fat-sat-evidence-chain', '/images/editorial/fat-sat-evidence-chain.svg'],
+      ['blank-fat-sat-record', '/images/editorial/blank-fat-sat-record.svg'],
+      ['fat-sat-boundary-comparison', '/images/editorial/fat-sat-boundary-comparison.svg'],
+      ['chassis-interface-stack', '/images/editorial/chassis-interface-stack.svg'],
+      ['chassis-responsibility-swimlane', '/images/editorial/chassis-responsibility-swimlane.svg'],
+      ['road-workface-route-map', '/images/editorial/road-workface-route-map.svg'],
+    ];
+    const expectedTask8Assets = [
+      ['stadium-zone-governance-map', '/images/editorial/stadium-zone-governance-map.svg'],
+      ['stadium-work-window-timeline', '/images/editorial/stadium-work-window-timeline.svg'],
+      ['stadium-ceiling-service-overlay', '/images/editorial/stadium-ceiling-service-overlay.svg'],
+      ['airport-terminal-phasing-map', '/images/editorial/airport-terminal-phasing-map.svg'],
+      ['airport-approval-handover-swimlane', '/images/editorial/airport-approval-handover-swimlane.svg'],
+      ['airport-gate-workface-checklist', '/images/editorial/airport-gate-workface-checklist.svg'],
+      ['clearance-four-state-section', '/images/editorial/clearance-four-state-section.svg'],
+      ['clearance-obstruction-survey-sheet', '/images/editorial/clearance-obstruction-survey-sheet.svg'],
+      ['clearance-escalation-tree', '/images/editorial/clearance-escalation-tree.svg'],
+      ['task-load-schedule', '/images/editorial/task-load-schedule.svg'],
+      ['task-load-path', '/images/editorial/task-load-path.svg'],
+      ['task-load-red-flag-matrix', '/images/editorial/task-load-red-flag-matrix.svg'],
+      ['rescue-readiness-loop', '/images/editorial/rescue-readiness-loop.svg'],
+      ['rescue-role-communications-card', '/images/editorial/rescue-role-communications-card.svg'],
+      ['rescue-scenario-decision-matrix', '/images/editorial/rescue-scenario-decision-matrix.svg'],
+    ];
+    const expectedNewAssets = [...expectedTask7Assets, ...expectedTask8Assets];
+    const originalRecords = records.slice(0, 15);
+    const newRecords = records.slice(15);
     const allowedKeys = ['classification', 'disclosure', 'slug', 'theme', 'url', 'use'];
     const failures = [];
 
-    expect(records).toHaveLength(15);
-    expect(records.map((record) => record.slug).sort()).toEqual(expectedSlugs.sort());
+    expect(records).toHaveLength(45);
+    expect(originalRecords.map((record) => record.slug)).toEqual(originalExpectedSlugs);
+    expect(createHash('sha256').update(JSON.stringify(originalRecords)).digest('hex')).toBe(
+      'e23d452213c0d7159db2048a70773714987a4e9c74b07fb0d9ab3bec0a5af7df',
+    );
+    expect(newRecords.map(({ slug, url }) => [slug, url])).toEqual(expectedNewAssets);
+    expect(new Set(records.map((record) => record.slug)).size).toBe(45);
+    expect(new Set(records.map((record) => record.url)).size).toBe(45);
 
     for (const record of records) {
       const keys = Object.keys(record).sort();
@@ -329,10 +372,23 @@ describe('public asset manifest', () => {
       if (!(await pathExists(resolve(root, 'public', record.url?.replace(/^\/+/, '') ?? '')))) {
         failures.push(`${record.slug}: missing public asset`);
       }
+    }
+
+    for (const record of originalRecords) {
       const expectedDisclosure = record.url?.endsWith('.svg')
         ? 'ARCLIFT editorial diagram'
         : 'AI-assisted editorial composite';
-      if (record.disclosure !== expectedDisclosure) failures.push(`${record.slug}: incorrect disclosure`);
+      if (record.disclosure !== expectedDisclosure) failures.push(`${record.slug}: incorrect original disclosure`);
+    }
+
+    for (const record of newRecords) {
+      if (!record.url?.endsWith('.svg')) failures.push(`${record.slug}: new asset is not SVG`);
+      if (!record.disclosure?.includes('AI-assisted editorial diagram')) {
+        failures.push(`${record.slug}: missing AI-assisted editorial diagram disclosure`);
+      }
+      if (!record.disclosure?.includes('not evidence')) {
+        failures.push(`${record.slug}: missing not-evidence disclosure`);
+      }
     }
 
     expect(failures).toEqual([]);
