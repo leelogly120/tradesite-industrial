@@ -57,3 +57,8 @@ playwright-report/
 
 # private source archives must never be deployed
 public/images/products/local/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.env.example

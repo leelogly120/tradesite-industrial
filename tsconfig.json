@@ -3,5 +3,8 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "allowJs": true
-  }
+  },
+  "include": [
+    "./worker-configuration.d.ts"
+  ]
 }

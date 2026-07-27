@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "npm run build && wrangler dev",
     "astro": "astro",
     "test:worker": "vitest run workers/inquiry-router/test",
     "test:e2e": "playwright test tests/inquiry-form.spec.ts tests/homepage.spec.ts",
@@ -17,9 +17,12 @@
     "verify": "npm run test:worker && npm run test:content && npm run build && npm run test:e2e",
     "worker:dev": "wrangler dev --config workers/inquiry-router/wrangler.jsonc --env preview",
     "worker:deploy:preview": "wrangler deploy --config workers/inquiry-router/wrangler.jsonc --env preview",
-    "worker:deploy:production": "wrangler deploy --config workers/inquiry-router/wrangler.jsonc --env production"
+    "worker:deploy:production": "wrangler deploy --config workers/inquiry-router/wrangler.jsonc --env production",
+    "generate-types": "wrangler types",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^14.1.5",
     "@astrojs/mdx": "^7.0.2",
     "@astrojs/sitemap": "^3.7.3",
     "@tailwindcss/vite": "^4.3.2",
