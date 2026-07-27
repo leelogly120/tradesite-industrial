@@ -10,7 +10,7 @@ coverCaption: "Representative protocol concept. AI-assisted editorial diagram; n
 draft: false
 ---
 
-Write the test protocol before equipment is staged and witnesses are booked. Otherwise, 鈥淔AT鈥?and 鈥淪AT鈥?are labels searching for a scope. A **signed-protocol evidence record** fixes the conditions, method, roles, observations and deviation path needed before shipment and handover decisions. It can record evidence against those signed conditions; it cannot set universal limits, certify a roll-forming line or prove site, roof or production performance.
+Write the test protocol before equipment is staged and witnesses are booked. Otherwise, FAT and SAT are labels searching for a scope. A **signed-protocol evidence record** fixes the conditions, method, roles, observations and deviation path needed before shipment and handover decisions. It can record evidence against those signed conditions; it cannot set universal limits, certify a roll-forming line or prove site, roof or production performance.
 
 **Contents**
 

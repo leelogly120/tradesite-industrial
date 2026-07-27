@@ -50,6 +50,7 @@ const FATAL_DEDUCTION_POINTS = {
   'insufficient-article-images': 15,
   'too-many-article-images': 15,
   'unsupported-high-risk-claim': 10,
+  'mojibake-text': 25,
   'unreadable-file': 25,
   ...Object.fromEntries(CATEGORY_DEFINITIONS.map(({ code, max }) => [code, max])),
 };
@@ -86,13 +87,18 @@ const IDENTITY_PATTERNS = [
   /\bwe\s+manufacture\b/i,
   /\b(?:arclift|we)\s+(?:owns?|operates?|runs?)\s+(?:an?\s+|the\s+|its\s+|our\s+)?(?:manufacturing|production)\s+(?:plant|facility|site)\b/i,
 ];
+const MOJIBAKE_PATTERN = /[\u4E00-\u9FFF\uFFFD]/u;
+const PRODUCTION_CAPACITY_PATTERN = /\bproduction[-\s]+capacity\b/i;
+const PRODUCTION_CAPACITY_BOUNDARY_PATTERNS = [
+  /\b(?:does\s+not|doesn't|do\s+not|don't|cannot|can't)\s+(?:calculate|state|claim|represent|promise|guarantee|provide|assert|estimate|publish|set)\s+(?:an?\s+)?production[-\s]+capacity\b/gi,
+  /\b(?:makes?|contains?|provides?)\s+no\s+production[-\s]+capacity\s+(?:statement|claim|calculation|figure|data)\b/gi,
+];
 const HIGH_RISK_PATTERNS = [
   /(?:\b(?:USD|EUR)\s*\d[\d,]*(?:\.\d+)?|\b\d[\d,]*(?:\.\d+)?\s*(?:USD|EUR)\b|(?:US\$|\u20ac|\$)\s?\d[\d,]*(?:\.\d+)?)/i,
   /\b(?:CE|ISO(?:\s*\d+)?|UL|CSA)\s+(?:certified|certification|approved|compliant)\b/i,
   /\b(?:complies?\s+with|compliance\s+with)\s+(?:EN|ISO|CE|UL|CSA)\b/i,
   /\bpatent(?:ed|\s+pending|\s+protection)?\b/i,
   /\b(?:in stock|available from stock)\b/i,
-  /\bproduction\s+capacity\b/i,
   /\b(?:delivery|lead(?:\s|-)?time|shipping|ships?)[^.\n]{0,60}?\b(?:in|within)\s+(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty[- ]four)\s+(?:hours?|days?|weeks?|months?)\b/i,
   /\b\d+(?:\.\d+)?%\s+(?:savings?|faster|improvement|increase|reduction|more productive|less)\b/i,
   /\b\d+(?:\.\d+)?\s+percent\s+(?:labor\s+)?(?:savings?|reduction|improvement)\b/i,
@@ -184,14 +190,23 @@ function removeSupplierNegations(text) {
     .replace(/\barclift\s+is\s+(?:an?\s+)?(?:integrated\s+equipment\s+)?supplier,?\s+not\s+(?:an?\s+)?factory\s+or\s+manufacturer\b/gi, '');
 }
 
+function removeProductionCapacityBoundaries(text) {
+  return PRODUCTION_CAPACITY_BOUNDARY_PATTERNS.reduce(
+    (remaining, pattern) => remaining.replace(pattern, ''),
+    text,
+  );
+}
+
 function textFailures(markdown) {
   const failures = new Set();
   const identityText = removeSupplierNegations(markdown);
+  const highRiskText = removeProductionCapacityBoundaries(markdown);
 
   if (PATH_PATTERNS.some((pattern) => pattern.test(markdown))) failures.add('public-local-path');
+  if (MOJIBAKE_PATTERN.test(markdown)) failures.add('mojibake-text');
   if (IDENTITY_PATTERNS.some((pattern) => pattern.test(identityText))) failures.add('prohibited-identity-language');
   if (BANNED_AI_PATTERNS.some((pattern) => pattern.test(markdown))) failures.add('banned-ai-language');
-  if (HIGH_RISK_PATTERNS.some((pattern) => pattern.test(markdown))) failures.add('unsupported-high-risk-claim');
+  if (PRODUCTION_CAPACITY_PATTERN.test(highRiskText) || HIGH_RISK_PATTERNS.some((pattern) => pattern.test(markdown))) failures.add('unsupported-high-risk-claim');
   return failures;
 }
 

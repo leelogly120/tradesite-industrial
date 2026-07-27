@@ -229,10 +229,19 @@ describe('Task 5b content-audit behavior', () => {
     expect(auditArticle(hiddenPadding).failures).toContain('missing-buyer-intent');
   });
 
-  it('keeps capacity boundary language publishable', () => {
+  it.each(['\u6027\u80fd', '\uFFFD'])('rejects CJK or replacement-character mojibake: %s', (mojibake) => {
+    const article = naturalArticle.replace(
+      'Start with the work zones, material route, support conditions, destination requirements, and transport boundary.',
+      `This planning guide contains ${mojibake}.`,
+    );
+
+    expect(auditArticle(article).failures).toContain('mojibake-text');
+  });
+
+  it('keeps the explicit production-capacity boundary language publishable', () => {
     const bounded = naturalArticle.replace(
       'Start with the work zones, material route, support conditions, destination requirements, and transport boundary.',
-      'This planning guide does not calculate capacity and makes no capacity statement for any product or project.',
+      'This guide does not calculate production capacity and makes no production-capacity statement for any product or project.',
     );
 
     expect(auditArticle(bounded)).toMatchObject({
