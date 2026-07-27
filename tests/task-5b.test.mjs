@@ -17,6 +17,16 @@ const launchSlugs = [
   'remote-control-aerial-platform-safety-planning',
   'dual-power-crawler-platform-selection',
   'warehouse-ceiling-access-platform-planning',
+  'roof-panel-profile-material-tooling-data',
+  'coil-handling-roll-forming-line-feeding-plan',
+  'roll-forming-line-electrical-control-interfaces',
+  'roll-forming-line-fat-sat-acceptance-checklist',
+  'truck-mounted-roll-forming-chassis-interface-review',
+  'stadium-ceiling-access-platform-planning',
+  'airport-terminal-maintenance-access-planning',
+  'ceiling-platform-overhead-clearance-survey',
+  'aerial-platform-worker-tool-material-load-planning',
+  'aerial-platform-emergency-lowering-rescue-plan',
 ];
 const backfillSlugs = [
   'crawler-under-ceiling-platform-buyers-guide',
@@ -25,7 +35,18 @@ const backfillSlugs = [
   'remote-control-aerial-platform-safety-planning',
   'dual-power-crawler-platform-selection',
   'warehouse-ceiling-access-platform-planning',
-];const markers = [
+  'roof-panel-profile-material-tooling-data',
+  'coil-handling-roll-forming-line-feeding-plan',
+  'roll-forming-line-electrical-control-interfaces',
+  'roll-forming-line-fat-sat-acceptance-checklist',
+  'truck-mounted-roll-forming-chassis-interface-review',
+  'stadium-ceiling-access-platform-planning',
+  'airport-terminal-maintenance-access-planning',
+  'ceiling-platform-overhead-clearance-survey',
+  'aerial-platform-worker-tool-material-load-planning',
+  'aerial-platform-emergency-lowering-rescue-plan',
+];
+const markers = [
   'buyer-intent',
   'conditions',
   'evidence-tradeoffs',
@@ -100,6 +121,52 @@ async function exists(path) {
 }
 
 describe('Task 5b content-audit behavior', () => {
+  it('requires the repository standard to enforce the evidence-first publication boundary', async () => {
+    const standard = await readFile(resolve(root, 'docs/content-quality-standards.md'), 'utf8');
+
+    for (const required of [
+      /evidence-first boundary/i,
+      /claim ledger/i,
+      /visual ledger/i,
+      /Layer A/i,
+      /Layer B/i,
+      /evidence image/i,
+      /editorial image/i,
+      /AI-assisted/i,
+      /per-image disclosure/i,
+      /must not be treated as evidence/i,
+      /current, traceable evidence/i,
+      /standards? records?.*scope records?/i,
+      /not implementation guides? or compliance proof/i,
+      /integrated equipment supplier/i,
+      /technical selection and supply partner/i,
+      /source factory/i,
+      /customer or project identit/i,
+      /sensitive project data/i,
+      /redact/i,
+      /Hold/i,
+      /100\/100/i,
+      /zero fatal/i,
+    ]) {
+      expect(standard).toMatch(required);
+    }
+
+    for (const prohibited of [
+      /Include specific examples, case studies, or data points/i,
+      /Include specific measurements and specifications/i,
+      /Include cost estimates and ROI calculations/i,
+      /Reference real ARCLIFT case studies/i,
+      /Highlight ARCLIFT competitive advantages/i,
+      /Keyword density/i,
+      /(?:link to|linking)[^\n]*solution pages/i,
+      /\/solutions\//i,
+      /Naturally mention ARCLIFT products as solutions/i,
+      /Naturally integrates? ARCLIFT products/i,
+    ]) {
+      expect(standard).not.toMatch(prohibited);
+    }
+  });
+
   it('accepts natural public headings when hidden markers define the audit sections', () => {
     expect(auditArticle(naturalArticle)).toMatchObject({
       fatal: false,

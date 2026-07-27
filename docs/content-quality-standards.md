@@ -1,148 +1,107 @@
-# ARCLIFT Blog Content Quality Standards
+# ARCLIFT Evidence-First Blog Content Quality Standards
 
-## Minimum Requirements
+## Evidence-first boundary
 
-### Word Count
-- **Minimum**: 1500 words per article
-- **Target**: 2000-2500 words
-- **Maximum**: 3000 words (split into series if longer)
+Publication begins with a defensible buyer decision, not a request to fill a template. Every material statement must be classified in a private **claim ledger** as a verified fact, a conditional inference, a project input, an unknown, or a prohibited claim. Every visual must be classified in a private **visual ledger** as an evidence image or an editorial image, with its source, intended use, disclosure, and privacy review recorded.
 
-### Structure Requirements
-1. **Title**: Compelling, keyword-rich, 50-60 characters
-2. **Meta Description**: 150-160 characters, includes primary keyword
-3. **Introduction**: 150-200 words, hook + problem statement + what they'll learn
-4. **Table of Contents**: Required for articles >1500 words
-5. **H2 Sections**: 4-6 main sections
-6. **H3 Subsections**: 2-4 per H2 section
-7. **Conclusion**: 100-150 words, summary + CTA
-8. **FAQ Section**: 3-5 relevant questions
+Numbers, specifications, measurements, product capabilities, certifications, availability, price, cost, ROI, savings, case studies, customer results, competitive advantages, and suitability statements are optional. They may appear only when supported by **current, traceable evidence** that is authoritative for the exact claim, date, configuration, jurisdiction, and project scope. When that chain is missing, narrow the statement, mark the item **Hold**, or omit it. Never invent a value, example, project, result, or advantage to satisfy length, SEO, or brand requirements.
 
-### Content Quality
+Official standards records and scope records may locate a topic and define a source's scope. They are **not implementation guides or compliance proof**. Obtain the controlled text, destination requirements, project documents, and competent review before stating applicability or conformity. Keep the source jurisdiction visible beside regulatory claims.
 
-#### Depth
-- Each section must have 200-400 words of substantive content
-- No bullet-point-only sections - expand with explanations
-- Include specific examples, case studies, or data points
-- Explain the "why" behind recommendations
+## Layer A: semantic and evidence review
 
-#### Authority
-- Reference real industry standards (OSHA, ANSI, EN)
-- Include specific measurements and specifications
-- Cite industry statistics where appropriate
-- Use technical terminology with explanations
+Layer A is the release authority. It cannot be overridden by word count, keyword placement, audit score, or any other mechanical result.
 
-#### Practical Value
-- Include actionable advice readers can implement
-- Provide step-by-step instructions where relevant
-- Include cost estimates and ROI calculations
-- Add comparison tables with real data
+Before drafting:
 
-#### ARCLIFT Integration
-- Naturally mention ARCLIFT products as solutions
-- Include product links in context (not forced)
-- Reference real ARCLIFT case studies
-- Highlight ARCLIFT competitive advantages with specifics
+- Define one buyer decision and a narrow non-overlap boundary.
+- Open the claim ledger and record the evidence owner, source, access date, scope, wording limit, and unresolved items.
+- Open the visual ledger and record classification, provenance, disclosure, privacy result, and whether the visual can support a claim.
+- Separate verified facts from conditional reasoning, requested project inputs, unknowns, and prohibited statements.
+- Confirm that citations support the adjacent wording rather than only the general topic.
 
-### SEO Requirements
+Before release, a human reviewer must verify the claim ledger against the article, challenge high-risk statements, inspect every visual and caption, and confirm that limitations and not-fit conditions are useful to a buyer. Any unresolved identity, privacy, product-capability, compliance, or evidence issue is a **Hold**, even if Layer B passes.
 
-#### Keywords
-- Primary keyword in title, first paragraph, one H2
-- 2-3 secondary keywords distributed naturally
-- Long-tail keywords in FAQ section
-- Keyword density: 1-2% (natural, not stuffed)
+## Identity and privacy boundary
 
-#### Internal Linking
-- Link to 2-3 related blog posts
-- Link to 2-3 relevant product pages
-- Link to 1-2 solution pages
-- Use descriptive anchor text
+ARCLIFT may be described only as an **integrated equipment supplier** or a **technical selection and supply partner**. Do not state or imply that ARCLIFT is the source factory, manufacturer, project designer, certifier, customer, site owner, or operator. Do not expose or imply a source factory, manufacturer, customer or project identity.
 
-#### External Linking
-- Link to 1-2 authoritative sources (standards bodies, industry reports)
-- Open external links in new tab
-- Use rel="noopener noreferrer"
+Collect the minimum information needed for technical review through a secure project channel. Sensitive project data must not be published or placed in public forms, analytics, diagrams, filenames, captions, or examples. Redact or anonymise customer and site names, contact details, event calendars, security or access boundaries, emergency contacts, drawings, identifiers, vehicle identifiers, local file paths, and other traceable project records. Publication requires written and scope-specific authority for any non-public project information.
 
-### Formatting
+Product references are optional and must never be forced. A product link may be used only when it helps the stated buyer decision and the surrounding claim is supported by a current approved record. Do not infer configuration, capacity, reach, load, clearance, travel state, control function, certification, availability, performance, or suitability from a photograph, an archival range page, a generic standard, or another project.
 
-#### Readability
-- Paragraphs: 3-5 sentences maximum
-- Sentences: 15-20 words average
-- Use transition words between sections
-- Include white space for visual scanning
+## Visual evidence and disclosure
 
-#### Visual Elements
-- Tables for comparisons and data
-- Bullet points for lists (not for entire sections)
-- Bold for key terms and important points
-- Blockquotes for expert insights or testimonials
+An **evidence image** is a current, approved record that directly supports a limited claim. Its ledger entry must identify its authoritative source, configuration or project scope, date, permitted claim, publication authority, and privacy result.
 
-#### Media
-- Include relevant images with alt text
-- Reference product images where appropriate
-- Include diagrams or charts for complex concepts
+An **editorial image** explains a workflow, comparison, or planning concept. It must be captioned as illustrative or representative and **must not be treated as evidence** of product identity, configuration, performance, compliance, customer use, or project result.
 
-### Tone and Voice
+Every AI-assisted or AI-edited visual is editorial. It requires **per-image disclosure** in the adjacent public caption, including the cover caption. The disclosure must identify it as AI-assisted and explain that it is illustrative and not evidence. A general site notice does not replace disclosure for each image.
 
-#### Professional Yet Approachable
-- Use "you" to address the reader directly
-- Avoid jargon without explanation
-- Include real-world anecdotes
-- Show expertise without being condescending
+## Layer B: mechanical SEO and presentation gate
 
-#### ARCLIFT Brand Voice
-- Confident but not arrogant
-- Technical but accessible
-- Solution-oriented
-- Customer-focused
+Layer B checks completeness after Layer A passes. It does not repair unsupported claims or authorize publication.
 
-## Quality Checklist
+Each release article must satisfy all of these machine-checkable requirements:
 
-Before publishing, each article must pass:
+- Visible body length: 1,500–3,000 English words.
+- Title: 50–60 characters and no more than 70 characters with the ` | ARCLIFT` suffix.
+- Meta description: 150–160 characters.
+- A visible `**Contents**` block.
+- Four to six H2 sections and at least twelve H3 subsections.
+- At least four substantive FAQ questions.
+- Exactly three body images, plus a disclosed cover image.
+- At least two useful internal links to existing blog or product routes.
+- At least one authoritative external link using `https://`, `target="_blank"`, and `rel="noopener noreferrer"`.
+- Descriptive alternative text and an adjacent caption/disclosure for every image.
+- All six hidden audit markers: `buyer-intent`, `conditions`, `evidence-tradeoffs`, `limitations-not-fit`, `project-checklist`, and `cta-editorial-note`.
+- Natural public headings; hidden audit labels must not be exposed as a mechanical outline.
+- `npm run audit:content` result of **100/100** with **zero fatal** findings for every launch article.
+- `npm run verify`, build, internal-link checks, canonical checks, and sitemap checks all pass before publication.
 
-- [ ] Word count: 1500+ words
-- [ ] All sections have substantive content (no bullet-only sections)
-- [ ] Includes specific data, examples, or case studies
-- [ ] References industry standards where appropriate
-- [ ] Naturally integrates ARCLIFT products
-- [ ] Has 2-3 internal links to related content
-- [ ] Has 1-2 external links to authoritative sources
-- [ ] Includes FAQ section with 3-5 questions
-- [ ] Proper H2/H3 hierarchy
-- [ ] Meta description is 150-160 characters
-- [ ] Images have descriptive alt text
-- [ ] No grammatical or spelling errors
-- [ ] Reads naturally (not AI-generated feel)
+Keywords describe the buyer's question; they do not set a density target. Use one primary intent and only related terms that improve clarity. Internal links must exist in the same release or already be live. Never create a link solely to satisfy a quota, and never assume a route that the repository does not provide.
 
-## Scoring Rubric
+## Buyer-facing structure
 
-### Excellent (90-100)
-- Exceeds word count target
-- Deep, substantive content throughout
-- Real case studies with specific data
-- Natural ARCLIFT integration
-- Strong SEO optimization
-- Engaging, authoritative tone
+Within the Layer B envelope, choose a natural structure that serves the decision:
 
-### Good (80-89)
-- Meets word count target
-- Most sections are substantive
-- Some specific examples
-- Good ARCLIFT integration
-- Basic SEO optimization
-- Professional tone
+1. Give a direct answer and define what the article does not decide.
+2. Explain the conditions and project inputs that change the answer.
+3. Compare evidence, interfaces, and trade-offs without turning inference into fact.
+4. State limitations, not-fit conditions, escalation points, and unresolved risks.
+5. Provide a practical project checklist or review artifact.
+6. End with a scoped next step and an editorial/evidence boundary note.
 
-### Needs Improvement (70-79)
-- Below word count target
-- Some sections are thin
-- Generic advice without specifics
-- Forced ARCLIFT mentions
-- Weak SEO
-- Inconsistent tone
+Tables, examples, calculations, anecdotes, product references, and comparisons are used only when they are supported and genuinely clarify the decision. Generic filler, fabricated specificity, keyword stuffing, unsupported step-by-step operating instructions, and mechanical repetition are release blockers.
 
-### Poor (<70)
-- Significantly below word count
-- Most sections are bullet points only
-- No specific examples or data
-- No ARCLIFT integration
-- No SEO optimization
-- Unprofessional or generic tone
+## Release contract
+
+Publication is allowed only when all nine gates pass:
+
+1. Topic and search-intent boundary.
+2. Claim ledger and evidence scope.
+3. Identity and privacy review.
+4. Visual ledger and per-image disclosure.
+5. Automated content audit.
+6. Layer B SEO, metadata, links, canonical, sitemap, and structured-data alignment.
+7. Human de-AI and technical editorial review.
+8. Committed-tree production build and URL verification.
+9. Search Console handoff or an explicit recorded operator-owned pending state.
+
+If any gate fails, the article remains **Hold**. A 100/100 automated score is necessary but never sufficient: Layer A semantic truth, identity, privacy, and evidence boundaries remain controlling.
+
+## Reviewer checklist
+
+- [ ] One buyer decision and a non-overlap boundary are explicit.
+- [ ] Every material statement is present in the claim ledger with a current source and scope.
+- [ ] Unsupported numbers, specifications, capabilities, cases, ROI, savings, advantages, and suitability claims are omitted or held.
+- [ ] Standards and regulatory sources retain edition, jurisdiction, and scope limits.
+- [ ] ARCLIFT identity uses only an approved supplier/selection-partner description.
+- [ ] Sensitive project data and identity clues are removed or redacted.
+- [ ] The visual ledger distinguishes evidence images from editorial images.
+- [ ] Every AI-assisted visual has adjacent per-image disclosure and is never used as evidence.
+- [ ] Limitations, unknowns, not-fit conditions, and competent-review handoffs are clear.
+- [ ] The article passes every Layer B mechanical requirement and all six audit markers.
+- [ ] `npm run audit:content` reports 100/100 and zero fatal findings.
+- [ ] `npm run verify`, production build, links, canonical, and sitemap checks pass.
+- [ ] A human reviewer confirms natural English, varied rhythm, useful specificity, and no unsupported certainty.

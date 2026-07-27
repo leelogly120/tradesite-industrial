@@ -14,6 +14,16 @@ export const LAUNCH_SLUGS = [
   'remote-control-aerial-platform-safety-planning',
   'dual-power-crawler-platform-selection',
   'warehouse-ceiling-access-platform-planning',
+  'roof-panel-profile-material-tooling-data',
+  'coil-handling-roll-forming-line-feeding-plan',
+  'roll-forming-line-electrical-control-interfaces',
+  'roll-forming-line-fat-sat-acceptance-checklist',
+  'truck-mounted-roll-forming-chassis-interface-review',
+  'stadium-ceiling-access-platform-planning',
+  'airport-terminal-maintenance-access-planning',
+  'ceiling-platform-overhead-clearance-survey',
+  'aerial-platform-worker-tool-material-load-planning',
+  'aerial-platform-emergency-lowering-rescue-plan',
 ];
 
 const PUBLISH_THRESHOLD = 95;
