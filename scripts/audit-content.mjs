@@ -92,7 +92,7 @@ const HIGH_RISK_PATTERNS = [
   /\b(?:complies?\s+with|compliance\s+with)\s+(?:EN|ISO|CE|UL|CSA)\b/i,
   /\bpatent(?:ed|\s+pending|\s+protection)?\b/i,
   /\b(?:in stock|available from stock)\b/i,
-  /\b(?:production\s+)?capacity\b/i,
+  /\bproduction\s+capacity\b/i,
   /\b(?:delivery|lead(?:\s|-)?time|shipping|ships?)[^.\n]{0,60}?\b(?:in|within)\s+(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty[- ]four)\s+(?:hours?|days?|weeks?|months?)\b/i,
   /\b\d+(?:\.\d+)?%\s+(?:savings?|faster|improvement|increase|reduction|more productive|less)\b/i,
   /\b\d+(?:\.\d+)?\s+percent\s+(?:labor\s+)?(?:savings?|reduction|improvement)\b/i,

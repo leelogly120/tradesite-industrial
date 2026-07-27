@@ -228,6 +228,31 @@ describe('Task 5b content-audit behavior', () => {
 
     expect(auditArticle(hiddenPadding).failures).toContain('missing-buyer-intent');
   });
+
+  it('keeps capacity boundary language publishable', () => {
+    const bounded = naturalArticle.replace(
+      'Start with the work zones, material route, support conditions, destination requirements, and transport boundary.',
+      'This planning guide does not calculate capacity and makes no capacity statement for any product or project.',
+    );
+
+    expect(auditArticle(bounded)).toMatchObject({
+      fatal: false,
+      failures: [],
+      score: 100,
+      publishable: true,
+    });
+  });
+
+  it('continues to reject an affirmative ARCLIFT production-capacity claim', () => {
+    const unsupported = naturalArticle.replace(
+      'Start with the work zones, material route, support conditions, destination requirements, and transport boundary.',
+      'ARCLIFT production capacity is available for large orders.',
+    );
+    const report = auditArticle(unsupported);
+
+    expect(report.failures).toContain('unsupported-high-risk-claim');
+    expect(report).toMatchObject({ fatal: true, publishable: false });
+  });
 });
 
 describe('Task 5b article metadata and presentation contract', () => {
