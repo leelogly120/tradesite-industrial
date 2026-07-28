@@ -1,6 +1,6 @@
 ---
-title: "ARC-F31 Crawler Under-Ceiling Platform — Archived Reference"
-description: "ARC-F31 archived 31m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
+title: "ARC-F31 Crawler Under-Ceiling Platform — Reference Concept"
+description: "Reference concept with a 31m archived orientation class; final scope, configuration and documents need project confirmation."
 category: "Crawler Ceiling Platforms"
 specifications:
   "Archived Height Class": "Archived reference — 31m class; project-specific confirmation required"

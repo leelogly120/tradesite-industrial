@@ -9,8 +9,10 @@ describe('Task 8B family-aware product card specifications', () => {
     const list = await readFile(resolve(root, 'src/pages/products/index.astro'), 'utf8');
     const detail = await readFile(resolve(root, 'src/pages/products/[slug].astro'), 'utf8');
 
-    expect(list).toContain("import { PRODUCT_FAMILIES, PRODUCT_REFERENCES } from '../../lib/product-selection'");
-    expect(detail).toContain("import { buildProductView } from '../../lib/product-selection'");
+    expect(list).toContain("from '../../lib/product-selection'");
+    expect(list).toContain('buildProductView');
+    expect(detail).toContain("from '../../lib/product-selection'");
+    expect(detail).toContain('getRelatedProductSlugs');
     for (const source of [list, detail]) {
       expect(source).toContain("from '../../lib/product-selection'");
       expect(source).not.toContain('function getProductCardSpecs');

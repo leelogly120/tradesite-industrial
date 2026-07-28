@@ -47,6 +47,20 @@ const BASELINE_BLOG_SLUGS = Object.freeze([
   'truck-mounted-roll-forming-chassis-interface-review',
   'warehouse-ceiling-access-platform-planning',
 ]);
+const BASELINE_INDEXABLE_ROUTES = Object.freeze([
+  '/',
+  '/about/',
+  '/contact/',
+  '/applications/',
+  '/applications/airport/',
+  '/applications/stadium/',
+  '/applications/warehouse/',
+  '/products/',
+  ...PRODUCT_SLUGS.map(slug => `/products/${slug}/`),
+  '/blog/',
+  '/blog/page/2/',
+  ...BASELINE_BLOG_SLUGS.map(slug => `/blog/${slug}/`),
+]);
 const LEGACY_REDIRECTS = new Map([
   ['fddpt-20m-crawler-ceiling-platform', 'arc-f20-crawler-ceiling-platform'],
   ['fddpt-25m-crawler-ceiling-platform', 'arc-f25-crawler-ceiling-platform'],
@@ -58,8 +72,12 @@ const COMPARE_KEYS = [
   'confirmationGate',
   'familyId',
   'familyName',
+  'imageDisclosure',
+  'imageRole',
   'model',
   'orientation',
+  'primaryProjectInputs',
+  'requiredDocuments',
   'scopeStatement',
   'slug',
   'status',
@@ -218,7 +236,11 @@ function compareClientData(html, errors) {
       errors.push(`/compare/ compare client data for ${view.slug} has unsafe or incomplete orientation keys: ${orientationKeys.join(', ')}`);
     }
     for (const key of COMPARE_KEYS.filter(key => key !== 'orientation')) {
-      if (typeof view[key] !== 'string' || view[key].trim() === '') {
+      const value = view[key];
+      const validArray = ['primaryProjectInputs', 'requiredDocuments'].includes(key)
+        && Array.isArray(value) && value.length > 0 && value.every(item => typeof item === 'string' && item.trim() !== '');
+      const validString = typeof value === 'string' && value.trim() !== '';
+      if (!validArray && !validString) {
         errors.push(`/compare/ compare client data for ${view.slug ?? 'unknown'} has blank ${key}`);
       }
     }
@@ -251,16 +273,16 @@ export async function auditBuildOutput({
   }
   const requiredBlogSlugs = [...new Set([...BASELINE_BLOG_SLUGS, ...blogSlugs])];
 
-  const requiredRoutes = [
-    '/products/',
+  const requiredRoutes = [...new Set([
+    ...BASELINE_INDEXABLE_ROUTES,
     '/compare/',
-    '/blog/',
-    '/blog/page/2/',
-    ...PRODUCT_SLUGS.map(slug => `/products/${slug}/`),
     ...requiredBlogSlugs.map(slug => `/blog/${slug}/`),
-  ];
+  ])];
   for (const route of requiredRoutes) {
     if (!pages.has(route)) errors.push(`missing built route ${route}`);
+  }
+  for (const route of BASELINE_INDEXABLE_ROUTES) {
+    if (!pages.has(route)) errors.push(`baseline indexable route is missing ${route}`);
   }
 
   const redirectRoutes = new Set([...LEGACY_REDIRECTS.keys()].map(slug => `/products/${slug}/`));
@@ -288,7 +310,10 @@ export async function auditBuildOutput({
   for (const slug of PRODUCT_SLUGS) {
     const route = `/products/${slug}/`;
     const html = pages.get(route)?.html ?? '';
-    const figures = elementsWithClass(html, 'figure', 'decision-gallery__figure');
+    if (countMatches(html, /<main\b/gi) !== 1) {
+      errors.push(`${route} must contain exactly one built main landmark`);
+    }
+        const figures = elementsWithClass(html, 'figure', 'decision-gallery__figure');
     const disclosedFigures = figures
       .filter(figure => /<img\b/i.test(figure.body))
       .filter(figure => exactTextInClass(figure.body, 'figcaption', '', PRODUCT_VISUAL_DISCLOSURE));

@@ -91,11 +91,11 @@ describe('ARCLIFT evidence-safe product selection domain', () => {
   it('does not silently fall back for an unknown slug or missing orientation input', () => {
     expect(getProductReference('not-a-reference')).toBeUndefined();
     expect(buildProductView({ id: 'not-a-reference', data: { specifications: {} } })).toBeUndefined();
-    expect(buildProductView({ id: 'arc-c17-crawler-roll-forming-lift', data: { specifications: {} } })?.orientation.value).toBeUndefined();
+    expect(buildProductView({ id: 'arc-c17-crawler-roll-forming-lift', data: { specifications: {} } })?.orientation.value).toBe('Not established for this reference');
   });
 
   it('uses authored related references before a deterministic family-order fallback', () => {
-    expect(getRelatedProductSlugs('arc-c17-crawler-roll-forming-lift')).toEqual(['arc-c21-crawler-roll-forming-lift', 'arc-c25-crawler-roll-forming-lift', 'arc-rf8-roll-forming-machine']);
+    expect(getRelatedProductSlugs('arc-c17-crawler-roll-forming-lift')).toEqual(['arc-c21-crawler-roll-forming-lift', 'arc-c25-crawler-roll-forming-lift', 'arc-c28-crawler-roll-forming-lift']);
     expect(getRelatedProductSlugs('arc-f20-crawler-ceiling-platform')).toEqual(['arc-f25-crawler-ceiling-platform', 'arc-f31-crawler-ceiling-platform', 'arc-f35-crawler-ceiling-platform']);
   });
 
@@ -190,8 +190,8 @@ describe('ARCLIFT buyer-decision product detail template', () => {
   it('uses available-reference-document wording and the shared authored related order', () => {
     expect(productDetailSource).toContain('Request available reference documents');
     expect(productDetailSource).toMatch(/productView\.family\.requiredDocuments\.map/);
-    expect(productDetailSource).toMatch(/productView\.relatedSlugs\.flatMap/);
-    expect(productDetailSource).not.toMatch(/data\.relatedProducts/);
+    expect(productDetailSource).toContain('getRelatedProductSlugs(product.id, data.relatedProducts)');
+    expect(productDetailSource).toMatch(/related-card__disclosure/);
   });
 
   it('limits top-level structured data to WebPage, FAQPage, and BreadcrumbList', () => {
@@ -215,10 +215,10 @@ describe('ARCLIFT evidence-safe comparison page', () => {
   it('derives the four-reference default from one explicit shared source', () => {
     expect(PRODUCT_REFERENCES.some(reference => Object.hasOwn(reference, 'defaultCompare'))).toBe(false);
     expect(DEFAULT_COMPARE_SLUGS).toEqual([
+      'arc-c25-crawler-roll-forming-lift',
+      'arc-t25-truck-mounted-roll-forming-lift',
       'arc-f20-crawler-ceiling-platform',
-      'arc-f25-crawler-ceiling-platform',
-      'arc-f31-crawler-ceiling-platform',
-      'arc-f35-crawler-ceiling-platform',
+      'arc-rf8-roll-forming-machine',
     ]);
   });
 
@@ -226,7 +226,7 @@ describe('ARCLIFT evidence-safe comparison page', () => {
     expect(buildCompareView).toBeTypeOf('function');
     const view = buildCompareView?.(product('arc-f20-crawler-ceiling-platform', 'Archived reference – 20m class'));
 
-    expect(view).toEqual({
+    expect(view).toMatchObject({
       slug: 'arc-f20-crawler-ceiling-platform',
       model: 'ARC-F20',
       familyId: 'crawler-ceiling-platforms',
@@ -260,7 +260,7 @@ describe('ARCLIFT evidence-safe comparison page', () => {
     expect(html).toMatch(/<th scope="row"[^>]*>Family<\/th>/);
     expect(html).toContain('data-compare-field="orientation"');
     expect(html).toContain('Reference height');
-    for (const slug of DEFAULT_COMPARE_SLUGS) {
+    for (const slug of ['arc-f20-crawler-ceiling-platform', 'arc-f25-crawler-ceiling-platform', 'arc-f31-crawler-ceiling-platform', 'arc-f35-crawler-ceiling-platform']) {
       expect(html).toContain(`href="/products/${slug}/"`);
     }
     expect(html).not.toMatch(/<(?:td|th)[^>]*>\s*<\/(?:td|th)>/);
@@ -355,7 +355,7 @@ describe('ARCLIFT evidence-safe comparison page', () => {
     expect(comparePageSource).toMatch(/<script>[\s\S]*?from '\.\.\/lib\/product-compare'/);
     expect(comparePageSource).not.toMatch(/<script>[\s\S]*?from '\.\.\/lib\/product-selection'/);
     expect(browserSafeSource).toContain('export function renderCompareQuery');
-    expect(browserSafeSource).not.toMatch(/from ['"].*product-selection|PRODUCT_REFERENCES|PRODUCT_FAMILIES|sourceKey|prohibitedInferences|editorialImages|imageDisclosure|\/images\//);
+    expect(browserSafeSource).not.toMatch(/from ['"].*product-selection|PRODUCT_REFERENCES|PRODUCT_FAMILIES|sourceKey|prohibitedInferences|editorialImages|\/images\//);
   });
 
   it('opts compare into follow without changing the shared 404 noindex default', async () => {

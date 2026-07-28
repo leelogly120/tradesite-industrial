@@ -1,6 +1,6 @@
 ---
-title: "ARC-F20 Crawler Under-Ceiling Platform — Archived Reference"
-description: "ARC-F20 archived 20m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
+title: "ARC-F20 Crawler Under-Ceiling Platform — Archived Reference Class"
+description: "Archived 20m orientation reference class; final scope, configuration and documents need project confirmation."
 category: "Crawler Ceiling Platforms"
 specifications:
   "Archived Height Class": "Archived reference — 20m class; project-specific confirmation required"

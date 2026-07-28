@@ -49,6 +49,7 @@ type ProductLike = {
 };
 
 const IMAGE_DISCLOSURE = 'Editorial planning visual — not model-specific evidence';
+const ORIENTATION_FALLBACK = 'Not established for this reference';
 const CONFIRMATION_GATE = 'Signed technical schedule, approved drawings and approved load chart';
 const COMMON_INFERENCES = [
   'Current-model performance',
@@ -174,7 +175,12 @@ export const PRODUCT_REFERENCES = [
   reference('arc-rf8-roll-forming-machine', 'ARC-RF8', 'roll-forming-machines', archivedSheet, [crawlers[0], crawlers[2], trucks[2]]),
 ] as const satisfies readonly ProductReference[];
 
-export const DEFAULT_COMPARE_SLUGS = ceilings;
+export const DEFAULT_COMPARE_SLUGS = [
+  crawlers[2],
+  trucks[2],
+  ceilings[0],
+  'arc-rf8-roll-forming-machine',
+] as const;
 
 const familiesById = new Map(PRODUCT_FAMILIES.map(family => [family.id, family]));
 const referencesBySlug = new Map(PRODUCT_REFERENCES.map(item => [item.slug, item]));
@@ -183,11 +189,20 @@ export function getProductReference(slug: string | undefined | null): ProductRef
   return slug ? referencesBySlug.get(slug.replace(/\.md$/, '')) : undefined;
 }
 
-export function getRelatedProductSlugs(slug: string | undefined | null, limit = 3): string[] {
+export function getRelatedProductSlugs(
+  slug: string | undefined | null,
+  authoredRelatedSlugs: readonly string[] = [],
+  limit = 3,
+): string[] {
   const item = getProductReference(slug);
   if (!item) return [];
-  const authored = item.authoredRelatedSlugs.filter(candidate => candidate !== item.slug && referencesBySlug.has(candidate));
-  if (authored.length) return [...authored].slice(0, limit);
+  const seen = new Set<string>();
+  const authored = authoredRelatedSlugs.filter(candidate => {
+    if (candidate === item.slug || seen.has(candidate) || !referencesBySlug.has(candidate)) return false;
+    seen.add(candidate);
+    return true;
+  });
+  if (authored.length) return authored.slice(0, limit);
   return PRODUCT_REFERENCES
     .filter(candidate => candidate.familyId === item.familyId && candidate.slug !== item.slug)
     .map(candidate => candidate.slug)
@@ -200,7 +215,7 @@ export function buildProductView(product: ProductLike) {
   const family = familiesById.get(reference.familyId);
   if (!family) return undefined;
   const rawValue = product.data?.specifications?.[reference.orientation.sourceKey];
-  const value = typeof rawValue === 'string' ? rawValue : undefined;
+  const value = typeof rawValue === 'string' && rawValue.trim() ? rawValue : ORIENTATION_FALLBACK;
   return {
     ...reference,
     family,
@@ -228,6 +243,10 @@ export function buildCompareView(product: ProductLike): CompareView | undefined 
       value: view.orientation.value,
     },
     confirmationGate: view.confirmationGate,
+    primaryProjectInputs: view.family.projectInputs,
+    requiredDocuments: view.family.requiredDocuments,
+    imageRole: 'Editorial planning visual',
+    imageDisclosure: view.imageDisclosure,
   };
 }
 

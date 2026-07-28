@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
-import { buildProductView } from '../../lib/product-selection';
+import { buildProductView, getRelatedProductSlugs } from '../../lib/product-selection';
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
@@ -23,7 +23,8 @@ const quoteUrl = `/contact/?product=${encodeURIComponent(model)}`;
 const datasheetUrl = `/contact/?product=${encodeURIComponent(model)}&request=datasheet`;
 
 const allProducts = await getCollection('products');
-const related = productView.relatedSlugs.flatMap(slug => {
+const relatedSlugs = getRelatedProductSlugs(product.id, data.relatedProducts);
+const related = relatedSlugs.flatMap(slug => {
   const candidate = allProducts.find(item => item.id === slug && !item.data.draft);
   return candidate ? [candidate] : [];
 });
@@ -147,7 +148,7 @@ const pageSchema = {
     <a href="#questions-and-documents">Questions and documents</a>
   </nav>
 
-  <main class="decision-page">
+  <div class="decision-page">
     <section id="selection-overview" class="decision-section decision-section--content">
       <div class="decision-section__heading">
         <p>Selection overview</p>
@@ -247,7 +248,7 @@ const pageSchema = {
         </div>
       </div>
     </section>
-  </main>
+  </div>
 
   <section class="sec related-section">
     <div class="sec__header">
@@ -262,7 +263,9 @@ const pageSchema = {
         return (
           <a href={`/products/${rp.id}/`} class="related-card">
             {rp.data.images?.[0] ? (
-              <div class="related-card__img" style={`background-image:url('${rp.data.images[0]}');background-size:contain;background-position:center;background-repeat:no-repeat;`}></div>
+              <figure class="related-card__img" style={`background-image:url('${rp.data.images[0]}');background-size:contain;background-position:center;background-repeat:no-repeat;`}>
+                <figcaption class="related-card__disclosure">AI-assisted editorial visual. {relatedView.imageDisclosure}</figcaption>
+              </figure>
             ) : (
               <div class="related-card__img">{rModel}</div>
             )}

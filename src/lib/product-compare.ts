@@ -13,6 +13,10 @@ export type CompareView = {
     value?: string;
   };
   confirmationGate: string;
+  primaryProjectInputs: readonly string[];
+  requiredDocuments: readonly string[];
+  imageRole: 'Editorial planning visual';
+  imageDisclosure: string;
 };
 
 type CompareSlug = Pick<CompareView, 'slug'>;
@@ -78,6 +82,9 @@ export function renderCompareRegion(views: readonly CompareView[]): string {
     row('Reference scope', 'scope', views.map(view => view.scopeStatement)),
     row('Buyer question', 'buyer-question', views.map(view => view.buyerQuestion)),
     row('Confirmation gate', 'confirmation-gate', views.map(view => view.confirmationGate)),
+    row('Primary project inputs', 'primary-project-inputs', views.map(view => view.primaryProjectInputs.join('; '))),
+    row('Evidence and documents still required', 'required-documents', views.map(view => view.requiredDocuments.join('; '))),
+    row('Editorial visual role', 'editorial-visual-role', views.map(view => `${view.imageRole}. ${view.imageDisclosure}`)),
   );
 
   const notice = mode === 'cross-family'
@@ -115,5 +122,9 @@ export function renderCompareQuery(
     const view = viewsBySlug.get(slug);
     return view ? [view] : [];
   });
-  return renderCompareRegion(selectedViews);
+  const validUniqueCount = new Set((input ?? '').split(',').map(item => item.trim()).filter(slug => viewsBySlug.has(slug))).size;
+  const limitNotice = validUniqueCount > 4
+    ? '<p class="comparison-notice" role="status">Only the first four valid references are shown.</p>'
+    : '';
+  return `${limitNotice}${renderCompareRegion(selectedViews)}`;
 }

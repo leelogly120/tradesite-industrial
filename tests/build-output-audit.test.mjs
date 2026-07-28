@@ -52,6 +52,9 @@ const productSlugs = [
   'arc-f35-crawler-ceiling-platform',
   'arc-rf8-roll-forming-machine',
 ];
+const baselineStaticRoutes = [
+  '/about/', '/contact/', '/applications/', '/applications/airport/', '/applications/stadium/', '/applications/warehouse/',
+];
 const redirects = new Map([
   ['fddpt-20m-crawler-ceiling-platform', 'arc-f20-crawler-ceiling-platform'],
   ['fddpt-25m-crawler-ceiling-platform', 'arc-f25-crawler-ceiling-platform'],
@@ -80,12 +83,13 @@ function page(route, body = '', { robots } = {}) {
 
 function productPage(slug) {
   return page(`/products/${slug}/`, [
+    '<main>',
     '<figure class="decision-gallery__figure">',
     '<img src="/images/editorial/example.svg" alt="Editorial example">',
     `<figcaption>${PRODUCT_VISUAL_DISCLOSURE}</figcaption>`,
     '</figure>',
     '<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage"}</script>',
-  ].join(''));
+  ].join('') + '</main>');
 }
 
 function comparePage() {
@@ -100,6 +104,10 @@ function comparePage() {
     buyerQuestion: 'Which project inputs control the review?',
     orientation: { label: 'Archived height class', scope: 'reference only', value: `${index + 1}m class` },
     confirmationGate: 'Confirm against signed project documents',
+    imageDisclosure: 'Editorial planning visual — not model-specific evidence',
+    imageRole: 'Editorial planning visual',
+    primaryProjectInputs: ['Project input'],
+    requiredDocuments: ['Signed technical schedule'],
   }));
   return page('/compare/', [
     `<section class="hero-banner" style="--banner-image:url('/images/banners/compare.webp')"><p class="hero-disclosure">${COMPARE_VISUAL_DISCLOSURE}</p></section>`,
@@ -126,6 +134,10 @@ async function makeValidFixture() {
     await write(root, `src/content/products/${slug}.md`, `---\ntitle: ${slug}\n---\n`);
   }
   await write(root, 'dist/index.html', page('/'));
+for (const route of baselineStaticRoutes) {
+    await write(root, `dist${route}index.html`, page(route));
+  }
+  await write(root, 'src/pages/about.astro', '---\n---\n<h1>About</h1>');
   await write(root, 'dist/404.html', '<!doctype html><meta name="robots" content="noindex,nofollow"><h1>Not found</h1>');
   await write(root, 'dist/products/index.html', page('/products/', Array.from({ length: 4 }, (_, index) => [
     '<div class="family-card__image-wrap">',
@@ -155,6 +167,7 @@ async function makeValidFixture() {
 
   const indexableRoutes = [
     '/',
+    ...baselineStaticRoutes,
     '/products/',
     ...productSlugs.map(slug => `/products/${slug}/`),
     '/blog/',
@@ -183,9 +196,9 @@ describe('built output audit', () => {
     const root = await makeValidFixture();
 
     await expect(auditBuildOutput({ root })).resolves.toMatchObject({
-      htmlFileCount: 47,
-      indexableRouteCount: 41,
-      sitemapUrlCount: 41,
+      htmlFileCount: 53,
+      indexableRouteCount: 47,
+      sitemapUrlCount: 47,
       productRouteCount: 15,
       blogArticleRouteCount: 22,
       legacyRedirectCount: 4,
@@ -286,6 +299,18 @@ describe('built output audit', () => {
     expect(error.message).toMatch(new RegExp(`sitemap[\\s\\S]*${slug}`, 'i'));
   });
 
+
+  it('rejects synchronized source, output, and sitemap deletion of a baseline indexable route', async () => {
+    const root = await makeValidFixture();
+    await rm(resolve(root, 'src/pages/about.astro'));
+    await rm(resolve(root, 'dist/about'), { recursive: true });
+    const sitemapPath = resolve(root, 'dist/sitemap-0.xml');
+    await writeFile(sitemapPath, (await readFile(sitemapPath, 'utf8')).replace(`<url><loc>${SITE}/about/</loc></url>`, ''), 'utf8');
+
+    const error = await auditBuildOutput({ root }).catch(reason => reason);
+    expect(error).toBeInstanceOf(Error);
+    expect(error.message).toMatch(/baseline indexable route is missing \/about\//i);
+  });
   it('rejects deletion of the required second blog index from output and sitemap', async () => {
     const root = await makeValidFixture();
     await rm(resolve(root, 'dist/blog/page/2'), { recursive: true });

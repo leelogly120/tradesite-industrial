@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { PRODUCT_FAMILIES, PRODUCT_REFERENCES } from '../../lib/product-selection';
+import { PRODUCT_FAMILIES, PRODUCT_REFERENCES, buildProductView } from '../../lib/product-selection';
 import { getCollection } from 'astro:content';
 
 const allProducts = (await getCollection('products')).filter(product => !product.data.draft);
@@ -10,8 +10,11 @@ const familySections = PRODUCT_FAMILIES.map(family => ({
   references: PRODUCT_REFERENCES
     .filter(reference => reference.familyId === family.id)
     .map(reference => {
-      if (!productsBySlug.has(reference.slug)) throw new Error(`Missing public product entry: ${reference.slug}`);
-      return reference;
+      const product = productsBySlug.get(reference.slug);
+      if (!product) throw new Error(`Missing public product entry: ${reference.slug}`);
+      const view = buildProductView(product);
+      if (!view) throw new Error(`Missing public product view: ${reference.slug}`);
+      return { ...view, product };
     }),
 }));
 const itemListSchema = {
@@ -112,12 +115,18 @@ const itemListSchema = {
         <div class="reference-grid">
           {family.references.map(reference => (
             <article class="reference-card">
+              <figure class="reference-card__visual">
+                <img src={reference.product.data.images?.[0] ?? reference.family.editorialImage} alt={reference.family.editorialAlt} loading="lazy" />
+                <figcaption class="reference-card__disclosure">AI-assisted editorial visual. {reference.imageDisclosure}</figcaption>
+              </figure>
               <div class="reference-card__topline">
                 <p>{reference.model}</p>
                 <span class="status-badge">{reference.status}</span>
               </div>
               <p class="status-note">{reference.statusNote}</p>
               <p>{reference.scopeStatement}</p>
+              <p class="reference-orientation"><strong>{reference.orientation.label}:</strong> {reference.orientation.value}</p>
+              <p class="reference-gate"><strong>Project confirmation required:</strong> {reference.confirmationGate}</p>
               <p class="buyer-question">{reference.buyerQuestion}</p>
               <a class="detail-link" href={`/products/${reference.slug}/`}>Open {reference.model} reference details <span aria-hidden="true">→</span></a>
               <label class="compare-choice">
@@ -210,7 +219,7 @@ const itemListSchema = {
     .reference-heading h3 { margin: .3rem 0 0; color: #10233c; }
     .reference-heading > p { margin: 0; }
     .reference-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-    .reference-card { display: flex; flex-direction: column; padding: 1.25rem; }
+    .reference-card { display: flex; flex-direction: column; padding: 1.25rem; }`r`n    .reference-card__visual { margin: 0 0 1rem; background: #f1f5f9; }`r`n    .reference-card__visual img { aspect-ratio: 4 / 3; display: block; object-fit: contain; width: 100%; }`r`n    .reference-card__disclosure { color: #334e68; font-size: .78rem; line-height: 1.45; margin: 0; padding: .6rem .75rem; }`r`n    .reference-orientation, .reference-gate { font-size: .88rem; }
     .reference-card__topline { display: flex; align-items: start; justify-content: space-between; gap: .75rem; }
     .reference-card__topline p { color: #10233c; font-size: 1.15rem; font-weight: 800; margin: 0; }
     .status-badge { border-radius: 999px; background: #e8eef5; color: #294866; font-size: .72rem; font-weight: 800; padding: .35rem .55rem; white-space: nowrap; }
