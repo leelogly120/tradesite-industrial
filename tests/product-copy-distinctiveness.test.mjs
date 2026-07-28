@@ -140,8 +140,36 @@ function proseUnits(body) {
     .filter(Boolean);
 }
 
-function hasEvidenceBoundary(unit) {
-  return /\b(?:archived|historical|reference concept|reference only|unknown|unconfirmed|not confirmed|not evidence|does not|do not|cannot|may not fit|no current|requested inputs?|send|provide|prepare|review|may change|changes with|project-specific confirmation|confirmed per project|to be confirmed|approved|signed|must|requires?)\b/i.test(unit);
+function claimClauses(unit) {
+  return unit
+    .split(/\s*(?:;|,\s*(?:but|however|yet)|\bbut\b|\bhowever\b|\byet\b)\s*/i)
+    .map(clause => clause.trim())
+    .filter(Boolean);
+}
+
+function directlyNegatesClaim(clause, verb) {
+  const escapedVerb = verb.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const directAuxiliary = new RegExp(
+    `\\b(?:does|do|did|may|might|can|could|will|would)\\s+not\\s+${escapedVerb}\\b`,
+    'i',
+  );
+  const cannot = new RegExp(`\\b(?:cannot|can't|can not)\\s+${escapedVerb}\\b`, 'i');
+  const notEvidence = new RegExp(`\\bnot evidence that\\b[^;:.!?]*\\b${escapedVerb}\\b`, 'i');
+  const negativeEvidenceVerb = new RegExp(
+    `\\b(?:does|do|did)\\s+not\\s+(?:prove|establish|confirm)\\b[^;:.!?]*\\b${escapedVerb}\\b`,
+    'i',
+  );
+  const unconfirmedClaim = new RegExp(
+    `\\b${escapedVerb}\\b[^,;:.!?]*\\b(?:is|are|was|were)\\s+not\\s+(?:confirmed|established|specified)\\b`,
+    'i',
+  );
+  const noEstablishedClaim = /\bno\b[^,;:.!?]*\b(?:is|are|was|were)?\s*established\b/i;
+  return directAuxiliary.test(clause)
+    || cannot.test(clause)
+    || notEvidence.test(clause)
+    || negativeEvidenceVerb.test(clause)
+    || unconfirmedClaim.test(clause)
+    || noEstablishedClaim.test(clause);
 }
 
 function referenceRoleViolations(slug, body) {
@@ -151,29 +179,32 @@ function referenceRoleViolations(slug, body) {
     'arc-f31-crawler-ceiling-platform',
     'arc-f35-crawler-ceiling-platform',
   ]);
-  const positiveVerb = /\b(?:accommodates?|accepts?|carries?|contains?|delivers?|features?|fits?|forms?|handles?|has|holds?|includes?|operates?|offers?|packs?|produces?|provides?|reaches?|runs?(?![- ]out)|ships?|supports?|uses?)\b/i;
+  const positiveVerb = /\b(?:accommodates?|accepts?|carries?|contains?|delivers?|features?|forms?|handles?|holds?|operates?|offers?|packs?|produces?|provides?|reaches?|runs?(?![- ]out)|ships?)\b/i;
+  const subjectBoundVerb = /\b(?:ARC[-A-Z0-9]+|(?:the\s+)?(?:platform|line|machine|container|configuration|system|equipment))\s+(uses?|supports?|includes?|fits?|has)\b/i;
 
   for (const unit of proseUnits(body)) {
-    if (hasEvidenceBoundary(unit)) continue;
+    for (const clause of claimClauses(unit)) {
+      let forbidden;
+      if (/^arc-c\d+/i.test(slug)) {
+        forbidden = /\b(?:payload|deck load|load capacity|sheet thickness|material (?:window|range|grade)|power(?: package| supply| demand)?|voltage|output|performance|stability|working height|work envelope|outreach)\b/i;
+      } else if (conceptSlugs.has(slug)) {
+        forbidden = /\b(?:deck(?: size| load)?|load(?: capacity)?|power|voltage|travel(?: mode| speed)?|working height|reach|use case|capacity|performance|suitab(?:ility|le))\b/i;
+      } else if (slug === 'arc-rf8-roll-forming-machine') {
+        forbidden = /\b(?:profile|material|tooling|output|line rate|speed|power|voltage|capacity|performance)\b/i;
+      } else if (slug === 'arc-t25hq-truck-mounted-roll-forming-lift-40hq') {
+        forbidden = /\b(?:40HQ|container|package|quantity|fit|freight|shipping|shipment|transit|delivery)\b/i;
+      } else if (/^arc-t\d+/i.test(slug)) {
+        forbidden = /\b(?:road legal|registration|registered|chassis|axle load|payload|power|transport status|working envelope|performance)\b/i;
+      }
 
-    let forbidden;
-    if (/^arc-c\d+/i.test(slug)) {
-      forbidden = /\b(?:payload|deck load|load capacity|sheet thickness|material (?:window|range|grade)|power(?: package| supply| demand)?|voltage|output|performance|stability|working height|work envelope|outreach)\b/i;
-    } else if (conceptSlugs.has(slug)) {
-      forbidden = /\b(?:deck(?: size| load)?|load(?: capacity)?|power|voltage|travel(?: mode| speed)?|working height|reach|use case|capacity|performance|suitab(?:ility|le))\b/i;
-    } else if (slug === 'arc-rf8-roll-forming-machine') {
-      forbidden = /\b(?:profile|material|tooling|output|line rate|speed|power|voltage|capacity|performance)\b/i;
-    } else if (slug === 'arc-t25hq-truck-mounted-roll-forming-lift-40hq') {
-      forbidden = /\b(?:40HQ|container|package|quantity|fit|freight|shipping|shipment|transit|delivery)\b/i;
-    } else if (/^arc-t\d+/i.test(slug)) {
-      forbidden = /\b(?:road legal|registration|registered|chassis|axle load|payload|power|transport status|working envelope|performance)\b/i;
-    }
-
-    const hasTechnicalMetric = /\b\d+(?:\.\d+)?\s*(?:m\/min|mm\/s|v|kw|kg|t(?:onnes?)?)\b/i.test(unit);
-    const hasForbiddenClaim = forbidden?.test(unit)
-      || (slug === 'arc-rf8-roll-forming-machine' && hasTechnicalMetric);
-    if (hasForbiddenClaim && positiveVerb.test(unit)) {
-      violations.push(unit);
+      const hasTechnicalMetric = /\b\d+(?:\.\d+)?\s*(?:m\/min|mm\/s|v|kw|kg|t(?:onnes?)?)\b/i.test(clause);
+      const hasForbiddenClaim = forbidden?.test(clause)
+        || (slug === 'arc-rf8-roll-forming-machine' && hasTechnicalMetric);
+      const verb = clause.match(positiveVerb)?.[0]
+        ?? clause.match(subjectBoundVerb)?.[1];
+      if (hasForbiddenClaim && verb && !directlyNegatesClaim(clause, verb)) {
+        violations.push(clause);
+      }
     }
   }
   return violations;
@@ -249,6 +280,10 @@ const referenceRoleMutations = [
   ['arc-rf8-roll-forming-machine', 'ARC-RF8 produces 20 m/min on 380V.'],
   ['arc-t25hq-truck-mounted-roll-forming-lift-40hq', 'The 40HQ container accommodates one ARC-T25HQ package.'],
   ['arc-c25-crawler-roll-forming-lift', 'ARC-C25 uses a 380V power package.'],
+  ['arc-f31-crawler-ceiling-platform', 'The ARC-F31 reference concept carries a 500 kg deck load.'],
+  ['arc-rf8-roll-forming-machine', 'ARC-RF8 produces 20 m/min for review.'],
+  ['arc-t25hq-truck-mounted-roll-forming-lift-40hq', 'The approved 40HQ container accommodates one ARC-T25HQ package.'],
+  ['arc-c25-crawler-roll-forming-lift', 'ARC-C25 uses a 380V power package that requires review.'],
 ];
 
 async function loadReference(reference) {

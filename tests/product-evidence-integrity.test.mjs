@@ -44,8 +44,35 @@ function proseSegments(body) {
     .flatMap(paragraph => {
       const normalized = paragraph.replace(/\s+/g, ' ').trim();
       if (!normalized) return [];
-      return [normalized, ...normalized.split(/(?<=[.!?])\s+/)];
+      return normalized.split(/(?<=[.!?])\s+/);
     });
+}
+
+function commercialClaimClauses(segment) {
+  return segment
+    .split(/\s*(?:;|,\s*(?:but|however|yet)|\bbut\b|\bhowever\b|\byet\b)\s*/i)
+    .map(clause => clause.trim())
+    .filter(Boolean);
+}
+
+function directlyNegatesCommercialClaim(clause) {
+  const commercialVerb = '(?:guarantee|ensure|improve|increase|boost|save|reduce|ship|deliver)';
+  const auxiliary = new RegExp(
+    `\\b(?:does|do|did|may|might|can|could|will|would)\\s+not\\s+${commercialVerb}\\b`,
+    'i',
+  );
+  const cannot = new RegExp(`\\b(?:cannot|can't|can not)\\s+${commercialVerb}\\b`, 'i');
+  const negativeState = /\bnot\s+(?:in stock|available now|ready to ship|certified|suitable|ideal)\b/i;
+  const notEvidence = new RegExp(
+    `\\bnot evidence that\\b[^;:.!?]*\\b${commercialVerb}\\w*\\b`,
+    'i',
+  );
+  const noEstablishedValue = /\bno\s+(?:price|lead time|delivery|saving|performance|output)\b[^;:.!?]*\b(?:promised|confirmed|established|guaranteed)\b/i;
+  return auxiliary.test(clause)
+    || cannot.test(clause)
+    || negativeState.test(clause)
+    || notEvidence.test(clause)
+    || noEstablishedValue.test(clause);
 }
 
 function identityAndCommercialViolations(body) {
@@ -60,6 +87,7 @@ function identityAndCommercialViolations(body) {
     /\bour\s+production\s+facilit(?:y|ies)\b/i,
     /\b(?:customer|client|project)\s+identity\b/i,
     /\bnamed\s+(?:customer|client|project)\b/i,
+    /\bARCLIFT\s+(?:designs?|certifies?|operates?|owns?)\b/i,
   ];
   const forbiddenCommercial = [
     /\b(?:in stock|available now|ready to ship|fixed lead time)\b/i,
@@ -75,11 +103,14 @@ function identityAndCommercialViolations(body) {
   const allowedAction = /\b(?:ARCLIFT can|Ask ARCLIFT to)\s+(?:review|compare)\b/i;
 
   for (const segment of proseSegments(body)) {
-    for (const pattern of [...forbiddenIdentity, ...forbiddenCommercial]) {
-      const isCommercialPattern = forbiddenCommercial.includes(pattern);
-      const isNegativeBoundary = /\b(?:not evidence|does not|do not|cannot|no promise|not confirmed)\b/i.test(segment);
-      if (pattern.test(segment) && !(isCommercialPattern && isNegativeBoundary)) {
-        violations.push(segment);
+    for (const pattern of forbiddenIdentity) {
+      if (pattern.test(segment)) violations.push(segment);
+    }
+    for (const clause of commercialClaimClauses(segment)) {
+      for (const pattern of forbiddenCommercial) {
+        if (pattern.test(clause) && !directlyNegatesCommercialClaim(clause)) {
+          violations.push(clause);
+        }
       }
     }
     if (/\bprivate\b/i.test(segment)
@@ -109,6 +140,11 @@ const identityMutations = [
   'Customer\nidentity: Ridge Systems. Project identity: Terminal Alpha.',
   'This configuration ensures measurable labor savings and higher throughput.',
   'ARCLIFT serves as a systems integrator.',
+  'ARCLIFT designs the equipment.',
+  'ARCLIFT certifies the system.',
+  'ARCLIFT operates the platform.',
+  'ARCLIFT owns the equipment.',
+  'This does not discuss lead time but guarantees performance.',
 ];
 
 const allowedIdentityFixtures = [
@@ -116,6 +152,7 @@ const allowedIdentityFixtures = [
   'ARCLIFT works as a technical selection and supply partner.',
   'ARCLIFT can review the marked route and compare reference classes.',
   'Ask ARCLIFT to review the approved project inputs.',
+  'This does not guarantee performance.',
 ];
 
 describe('Product evidence integrity', () => {
