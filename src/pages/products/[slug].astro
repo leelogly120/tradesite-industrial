@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
+import { buildProductView, getRelatedProductSlugs } from '../../lib/product-selection';
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
@@ -14,20 +15,18 @@ export async function getStaticPaths() {
 
 const { product } = Astro.props;
 const data = product.data;
-const specs = data.specifications || {};
-const model = data.title.split(' ')[0];
-const category = data.category || 'ARC Equipment';
-const heightVal = specs['Archived Height Class'] || specs['Archived Sheet Thickness'] || 'Project review';
-const loadVal = specs['Archived Payload Class'] || specs['Load Basis'] || specs['Material Boundary'] || 'Project review';
-const platformVal = specs['Platform Envelope'] || specs['Forming-Line Interface'] || specs['Line Interface'] || 'Project review';
-const weightVal = specs['Final Confirmation'] || 'Signed project documents';
+const productView = buildProductView(product);
+if (!productView) throw new Error(`Unknown product reference: ${product.id}`);
+const model = productView.model;
+const category = productView.family.name;
 const quoteUrl = `/contact/?product=${encodeURIComponent(model)}`;
 const datasheetUrl = `/contact/?product=${encodeURIComponent(model)}&request=datasheet`;
 
 const allProducts = await getCollection('products');
-const sameCat = allProducts.filter(p => p.id !== product.id && !p.data.draft && p.data.category === data.category);
-const others = allProducts.filter(p => p.id !== product.id && !p.data.draft && p.data.category !== data.category);
-const related = [...sameCat, ...others].slice(0, 3);
+const related = getRelatedProductSlugs(product.id).flatMap(slug => {
+  const candidate = allProducts.find(item => item.id === slug && !item.data.draft);
+  return candidate ? [candidate] : [];
+});
 const { Content } = await render(product);
 
 const applications = category.includes('Ceiling')
@@ -66,47 +65,6 @@ function visualAlt(url: string): string {
   ];
   return labels.find(([suffix]) => url.endsWith(suffix))?.[1]
     || 'Representative editorial equipment-planning visual';
-}
-
-type ProductCardSpec = { label: string; value: string };
-
-function getProductCardSpecs(
-  productCategory: string,
-  productSpecs: Record<string, unknown>,
-): ProductCardSpec[] {
-  const value = (key: string) => String(productSpecs[key] || 'Project review');
-
-  if (productCategory === 'Crawler Ceiling Platforms') {
-    return [
-      { label: 'Archived height', value: value('Archived Height Class') },
-      { label: 'Load basis', value: value('Load Basis') },
-      { label: 'Platform envelope', value: value('Platform Envelope') },
-    ];
-  }
-
-  if (productCategory === 'Roll Forming Machines') {
-    return [
-      { label: 'Sheet thickness', value: value('Archived Sheet Thickness') },
-      { label: 'Material boundary', value: value('Material Boundary') },
-      { label: 'Line interface', value: value('Line Interface') },
-    ];
-  }
-
-  if (productCategory === 'Truck-Mounted Roll Forming Lifts' && (
-    productSpecs['Archived Container Route'] || productSpecs['Container Checks']
-  )) {
-    return [
-      { label: 'Archived height', value: value('Archived Height Class') },
-      { label: 'Packing route', value: value('Archived Container Route') },
-      { label: 'Container checks', value: value('Container Checks') },
-    ];
-  }
-
-  return [
-    { label: 'Archived height', value: value('Archived Height Class') },
-    { label: 'Archived payload', value: value('Archived Payload Class') },
-    { label: 'Sheet thickness', value: value('Archived Sheet Thickness') },
-  ];
 }
 
 const pageSchema = {
@@ -179,10 +137,8 @@ const pageSchema = {
       <div class="product-hero__price">Price on Request <span>after configuration review</span></div>
       <p class="verification-note"><strong>Archived reference configuration:</strong> every numeric class and interface remains subject to project-specific confirmation in the signed technical schedule, approved drawings and approved load chart.</p>
       <div class="specs-mini">
-        <div class="spec-mini"><div class="spec-mini__label">Archived Height / Material</div><div class="spec-mini__val">{heightVal}</div></div>
-        <div class="spec-mini"><div class="spec-mini__label">Archived Load / Boundary</div><div class="spec-mini__val">{loadVal}</div></div>
-        <div class="spec-mini"><div class="spec-mini__label">Reference Interface</div><div class="spec-mini__val">{platformVal}</div></div>
-        <div class="spec-mini"><div class="spec-mini__label">Confirmation Gate</div><div class="spec-mini__val">{weightVal}</div></div>
+        <div class="spec-mini"><div class="spec-mini__label">{productView.orientation.label}</div><div class="spec-mini__val">{productView.orientation.value ?? productView.statusNote}</div></div>
+        <div class="spec-mini"><div class="spec-mini__label">Confirmation Gate</div><div class="spec-mini__val">{productView.confirmationGate}</div></div>
       </div>
       <div class="product-hero__btns">
         <a href={quoteUrl} class="btn btn--primary">Get a Quote →</a>
@@ -208,7 +164,7 @@ const pageSchema = {
       <p class="verification-note">Values below are archived or historical website references. Use only the signed technical schedule, approved drawings and approved load chart for procurement, tender submission or lift planning.</p>
       <table class="specs-table">
         <tbody>
-          {Object.entries(specs).map(([key, value]) => <tr><td>{key}</td><td>{value}</td></tr>)}
+          <tr><td>{productView.orientation.label}</td><td>{productView.orientation.value ?? productView.statusNote}</td></tr>
         </tbody>
       </table>
     </div>
@@ -265,12 +221,9 @@ const pageSchema = {
     </div>
     <div class="related">
       {related.map(rp => {
-        const rSpecs = rp.data.specifications || {};
-        const rModel = rp.data.title.split(' ')[0];
-        const relatedSpecs = getProductCardSpecs(
-          rp.data.category || 'ARC Equipment',
-          rSpecs,
-        );
+        const relatedView = buildProductView(rp);
+        if (!relatedView) return null;
+        const rModel = relatedView.model;
         return (
           <a href={`/products/${rp.id}/`} class="related-card reveal">
             {rp.data.images?.[0] ? (
@@ -280,7 +233,7 @@ const pageSchema = {
             )}
             <div class="related-card__body">
               <h4>{rModel}</h4>
-              <p>{relatedSpecs.map(spec => `${spec.label}: ${spec.value}`).join(' · ')}</p>
+              <p>{relatedView.orientation.label}: {relatedView.orientation.value ?? relatedView.statusNote}</p>
               <span style="color:#2563eb;font-weight:600;font-size:14px;">View Details →</span>
             </div>
           </a>

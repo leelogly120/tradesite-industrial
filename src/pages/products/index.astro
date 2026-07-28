@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { buildProductView } from '../../lib/product-selection';
 import { getCollection } from 'astro:content';
 
 const allProducts = (await getCollection('products')).filter(p => !p.data.draft);
@@ -31,61 +32,15 @@ const CATEGORIES = [
   },
 ];
 
-function productSortValue(specs: Record<string, unknown>): number {
-  const h = specs['Archived Height Class'] || '';
-  const match = String(h).match(/(\d+(?:\.\d+)?)/);
+function productSortValue(value: unknown): number {
+  const match = String(value ?? '').match(/(\d+(?:\.\d+)?)/);
   return match ? parseFloat(match[1]) : Number.POSITIVE_INFINITY;
 }
 
-type ProductCardSpec = { label: string; value: string };
-
-function getProductCardSpecs(
-  category: string,
-  specs: Record<string, unknown>,
-): ProductCardSpec[] {
-  const value = (key: string) => String(specs[key] || 'Project review');
-
-  if (category === 'Crawler Ceiling Platforms') {
-    return [
-      { label: 'Archived height', value: value('Archived Height Class') },
-      { label: 'Load basis', value: value('Load Basis') },
-      { label: 'Platform envelope', value: value('Platform Envelope') },
-    ];
-  }
-
-  if (category === 'Roll Forming Machines') {
-    return [
-      { label: 'Sheet thickness', value: value('Archived Sheet Thickness') },
-      { label: 'Material boundary', value: value('Material Boundary') },
-      { label: 'Line interface', value: value('Line Interface') },
-    ];
-  }
-
-  if (category === 'Truck-Mounted Roll Forming Lifts' && (
-    specs['Archived Container Route'] || specs['Container Checks']
-  )) {
-    return [
-      { label: 'Archived height', value: value('Archived Height Class') },
-      { label: 'Packing route', value: value('Archived Container Route') },
-      { label: 'Container checks', value: value('Container Checks') },
-    ];
-  }
-
-  return [
-    { label: 'Archived height', value: value('Archived Height Class') },
-    { label: 'Archived payload', value: value('Archived Payload Class') },
-    { label: 'Sheet thickness', value: value('Archived Sheet Thickness') },
-  ];
-}
-
 function heightOf(p: any): number {
-  const specs = p.data.specifications || {};
-  return productSortValue(specs);
+  return productSortValue(buildProductView(p)?.orientation.value);
 }
 
-function modelOf(p: any): string {
-  return p.data.title.split(' ')[0];
-}
 
 const grouped = CATEGORIES.map(cat => ({
   ...cat,
@@ -126,8 +81,9 @@ const grouped = CATEGORIES.map(cat => ({
       <div class="category-banner reveal" style={`background-image:url('${cat.banner}');`} role="img" aria-label={`${cat.name} operating scene`}></div>
       <div class="products-list">
         {cat.items.map(p => {
-          const cardSpecs = getProductCardSpecs(cat.name, p.data.specifications || {});
-          const model = modelOf(p);
+          const view = buildProductView(p);
+          if (!view) return null;
+          const model = view.model;
           return (
             <a href={`/products/${p.id}/`} class="p-card-list reveal">
               {p.data.images?.[0] ? (
@@ -141,9 +97,7 @@ const grouped = CATEGORIES.map(cat => ({
                 <div class="p-card-list__tag">{cat.name}</div>
                 <div class="p-card-list__name">{model}</div>
                 <div class="p-card-list__specs">
-                  {cardSpecs.map(spec => (
-                    <span class="p-card-list__spec"><b>{spec.value}</b> {spec.label}</span>
-                  ))}
+                  <span class="p-card-list__spec"><b>{view.orientation.value ?? view.statusNote}</b> {view.orientation.label}</span>
                 </div>
                 <span class="btn btn--primary">View Details →</span>
               </div>
