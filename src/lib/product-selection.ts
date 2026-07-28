@@ -43,7 +43,7 @@ type ProductLike = {
   data?: { specifications?: Record<string, unknown> };
 };
 
-const IMAGE_DISCLOSURE = 'Editorial planning visual — not model-specific evidence.';
+const IMAGE_DISCLOSURE = 'Editorial planning visual — not model-specific evidence';
 const CONFIRMATION_GATE = 'Signed technical schedule, approved drawings and approved load chart';
 const COMMON_INFERENCES = [
   'Current-model performance',

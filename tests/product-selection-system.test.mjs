@@ -10,7 +10,7 @@ import {
   parseCompareItems,
 } from '../src/lib/product-selection';
 
-const disclosure = 'Editorial planning visual — not model-specific evidence.';
+const disclosure = 'Editorial planning visual — not model-specific evidence';
 
 const expectedFamilies = [
   ['crawler-roll-forming-lifts', ['ARC-C17', 'ARC-C21', 'ARC-C25', 'ARC-C28', 'ARC-C32']],

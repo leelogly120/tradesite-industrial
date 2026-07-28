@@ -118,7 +118,8 @@ describe('Product evidence integrity', () => {
     expect(detail).not.toMatch(/additionalProperty/);
     expect(detail).not.toMatch(/\bimage:\s*data\.images/);
     expect(detail).not.toMatch(/alt=\{data\.title\}/);
-    expect(detail).toContain('Representative editorial image — not model-specific evidence. Final configuration requires the signed technical schedule and approved drawings.');
+    expect(detail).toContain('productView.imageDisclosure');
+    expect(detail).not.toContain('Representative editorial image — not model-specific evidence.');
     expect(detail).toMatch(/object-fit:\s*contain/);
     expect(detail).toMatch(/Swipe horizontally/i);
   });
