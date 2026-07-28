@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 import tailwindcss from '@tailwindcss/vite';
+import { shouldIncludeInSitemap } from './scripts/lib/sitemap-policy.mjs';
 
 export default defineConfig({
   site: 'https://www.arclifteq.com',
@@ -13,6 +14,7 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
+      filter: shouldIncludeInSitemap,
       i18n: {
         defaultLocale: 'en',
         locales: { en: 'en-US', zh: 'zh-CN' },

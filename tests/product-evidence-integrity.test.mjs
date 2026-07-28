@@ -261,7 +261,7 @@ describe('Product evidence integrity', () => {
     expect(manifest.products).toHaveLength(15);
     for (const item of manifest.products) {
       expect(item.classification).toBe('editorial');
-      expect(item.disclosure).toMatch(/representative editorial/i);
+      expect(item.disclosure).toBe('Editorial planning visual — not model-specific evidence');
       expect(item.urls.every(url => !/\/images\/products\/arc-.*\.jpg/i.test(url))).toBe(true);
     }
   });

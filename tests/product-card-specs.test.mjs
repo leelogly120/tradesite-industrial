@@ -9,9 +9,10 @@ describe('Task 8B family-aware product card specifications', () => {
     const list = await readFile(resolve(root, 'src/pages/products/index.astro'), 'utf8');
     const detail = await readFile(resolve(root, 'src/pages/products/[slug].astro'), 'utf8');
 
+    expect(list).toContain("import { PRODUCT_FAMILIES, PRODUCT_REFERENCES } from '../../lib/product-selection'");
+    expect(detail).toContain("import { buildProductView } from '../../lib/product-selection'");
     for (const source of [list, detail]) {
       expect(source).toContain("from '../../lib/product-selection'");
-      expect(source).toContain('buildProductView');
       expect(source).not.toContain('function getProductCardSpecs');
       expect(source).not.toMatch(
         /\b(?:Lift Height \(to shear exit\)|Max Working Height|Lifting Capacity|Safe Working Load)\b|['"]Sheet Thickness['"]/,
@@ -29,15 +30,15 @@ describe('Task 8B family-aware product card specifications', () => {
     expect(sources).not.toMatch(/\{[^}]+\}\s+(?:Height|Capacity)\b/);
   });
 
-  it('sorts the listing with the shared orientation and leaves unknown items last', async () => {
+  it('uses the shared family and reference order instead of legacy specification sorting', async () => {
     const list = await readFile(resolve(root, 'src/pages/products/index.astro'), 'utf8');
-    expect(list).toContain('orientation.value');
-    expect(list).toContain('Number.POSITIVE_INFINITY');
+    expect(list).toContain('PRODUCT_FAMILIES.map');
+    expect(list).toContain('.filter(reference => reference.familyId === family.id)');
     expect(list).not.toContain("specs['Max Working Height']");
   });
-  it('fails fast instead of silently removing an unmapped published product', async () => {
+  it('fails fast when a canonical public reference has no content entry', async () => {
     const list = await readFile(resolve(root, 'src/pages/products/index.astro'), 'utf8');
-    expect(list).toContain('throw new Error(`Unknown product reference: ${p.id}`)');
+    expect(list).toContain('throw new Error(`Missing public product entry: ${reference.slug}`)');
     expect(list).not.toContain('if (!view) return null');
   });
 });
