@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
-import { buildProductView, getRelatedProductSlugs } from '../../lib/product-selection';
+import { buildProductView } from '../../lib/product-selection';
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
@@ -23,32 +23,19 @@ const quoteUrl = `/contact/?product=${encodeURIComponent(model)}`;
 const datasheetUrl = `/contact/?product=${encodeURIComponent(model)}&request=datasheet`;
 
 const allProducts = await getCollection('products');
-const related = getRelatedProductSlugs(product.id).flatMap(slug => {
+const related = productView.relatedSlugs.flatMap(slug => {
   const candidate = allProducts.find(item => item.id === slug && !item.data.draft);
   return candidate ? [candidate] : [];
 });
 const { Content } = await render(product);
 
-const applications = category.includes('Ceiling')
-  ? [
-      ['Steel-Building Ceilings', 'Large-span ceiling panels, insulation and service installation.'],
-      ['Warehouses & Industrial Buildings', 'High-bay lighting, HVAC, sprinkler and overhead maintenance after project review.'],
-      ['Stadium & Terminal', 'Large indoor spaces after floor-load and access-route verification.'],
-      ['Wall & Facade Panels', 'Extended deck layouts for crew, tools and panel positioning.'],
-    ]
-  : category.includes('Roll Forming Machines')
-    ? [
-        ['Roof Profiles', 'Standing seam and trapezoidal profiles matched to approved drawings.'],
-        ['Wall Cladding', 'Profile-specific tooling for wall and facade sheets.'],
-        ['Ground-Level Production', 'Profile-specific production with a reviewed material and run-out workflow.'],
-        ['Lift Integration', 'A compact line configured for a compatible lifting platform.'],
-      ]
-    : [
-        ['Industrial Roofing', 'Form long roof panels close to the installation elevation.'],
-        ['Warehouses & Factories', 'Reduce repeated ground handling on large steel-building roofs.'],
-        ['Hangars & Workshops', 'Support long-panel projects with constrained crane access.'],
-        ['Wall Cladding', 'Adapted workflow for long vertical facade panels where engineered.'],
-      ];
+const archiveReferenceRows = [
+  {
+    label: productView.orientation.label,
+    scope: productView.orientation.scope,
+    value: productView.orientation.value ?? productView.statusNote,
+  },
+];
 
 function visualAlt(url: string): string {
   const labels: Array<[string, string]> = [
@@ -75,7 +62,7 @@ const pageSchema = {
   about: {
     '@type': 'Thing',
     name: `${model} archived reference configuration`,
-    description: 'Planning reference only. Final configuration requires the signed technical schedule and approved drawings.',
+    description: productView.scopeStatement,
   },
 };
 ---
@@ -110,114 +97,162 @@ const pageSchema = {
   </div>
 
   <section class="product-hero">
-    <div class="product-hero__gallery">
-      {data.images?.[0] ? (
-        <div class="product-hero__main">
-          <img id="product-main-image" src={data.images[0]} alt={visualAlt(data.images[0])} width="640" height="480" />
+    <div class="product-hero__gallery" aria-label={`${model} editorial planning gallery`}>
+      {data.images && data.images.length > 0 ? (
+        <div class="decision-gallery">
+          {data.images.map((img: string, i: number) => (
+            <figure class="decision-gallery__figure">
+              <img src={img} alt={visualAlt(img)} width="640" height="480" loading={i === 0 ? 'eager' : 'lazy'} />
+              <figcaption>{productView.imageDisclosure}</figcaption>
+            </figure>
+          ))}
         </div>
       ) : (
         <div class="product-hero__main">{model}</div>
       )}
-      {data.images && data.images.length > 1 && (
-        <div class="product-hero__thumbs" aria-label="Product image gallery">
-          {data.images.map((img: string, i: number) => (
-            <button class:list={['product-hero__thumb', { active: i === 0 }]} type="button" data-src={img} data-alt={visualAlt(img)} aria-label={`Show editorial planning visual ${i + 1}`}>
-              <img src={img} alt="" width="144" height="108" loading="lazy" />
-            </button>
-          ))}
-        </div>
-      )}
-      <p class="field-note">{productView.imageDisclosure}</p>
     </div>
 
     <div class="product-hero__info">
       <div class="product-hero__tag">{category}</div>
       <h1 class="product-hero__name">{model}</h1>
-      <p class="product-hero__sub">{data.title.split(' - ')[1] || category}</p>
-      <div class="product-hero__price">Price on Request <span>after configuration review</span></div>
-      <p class="verification-note"><strong>Archived reference configuration:</strong> every numeric class and interface remains subject to project-specific confirmation in the signed technical schedule, approved drawings and approved load chart.</p>
+      <p class="product-hero__sub">{data.title.split(' — ')[1] || category}</p>
+      <div class="reference-status">
+        <span>{productView.status}</span>
+        <strong>{productView.statusNote}</strong>
+      </div>
+      <p class="scope-statement">{productView.scopeStatement}</p>
       <div class="specs-mini">
-        <div class="spec-mini"><div class="spec-mini__label">{productView.orientation.label}</div><div class="spec-mini__val">{productView.orientation.value ?? productView.statusNote}</div></div>
-        <div class="spec-mini"><div class="spec-mini__label">Confirmation Gate</div><div class="spec-mini__val">{productView.confirmationGate}</div></div>
+        <div class="spec-mini">
+          <div class="spec-mini__label">{productView.orientation.label}</div>
+          <div class="spec-mini__val">{productView.orientation.value ?? productView.statusNote}</div>
+          <div class="spec-mini__scope">{productView.orientation.scope}</div>
+        </div>
+        <div class="spec-mini">
+          <div class="spec-mini__label">Confirmation gate</div>
+          <div class="spec-mini__val">{productView.confirmationGate}</div>
+        </div>
       </div>
       <div class="product-hero__btns">
-        <a href={quoteUrl} class="btn btn--primary">Get a Quote →</a>
-        <a href={datasheetUrl} class="btn btn--outline-blue">Request Datasheet</a>
+        <a href={quoteUrl} class="btn btn--primary">Request a project review →</a>
+        <a href={datasheetUrl} class="btn btn--outline-blue">Request available reference documents</a>
       </div>
     </div>
   </section>
 
-  <p class="tabs__hint">Swipe horizontally to view all sections on smaller screens.</p>
-  <div class="tabs" role="tablist" aria-label="Product reference sections">
-    <button class="tab active" data-tab="0">Overview</button>
-    <button class="tab" data-tab="1">Specifications</button>
-    <button class="tab" data-tab="2">Features</button>
-    <button class="tab" data-tab="3">Applications</button>
-  </div>
+  <nav class="decision-nav" aria-label="Product decision sections">
+    <a href="#selection-overview">Selection overview</a>
+    <a href="#archive-reference">Archive reference</a>
+    <a href="#project-inputs">Project inputs</a>
+    <a href="#workflows-to-assess">Workflows to assess</a>
+    <a href="#questions-and-documents">Questions and documents</a>
+  </nav>
 
-  <div class="tab-content">
-    <div class="tab-panel active">
-      <div style="font-size:16px;color:#475569;line-height:1.8;"><Content /></div>
-    </div>
-
-    <div class="tab-panel">
-      <p class="verification-note">Values below are archived or historical website references. Use only the signed technical schedule, approved drawings and approved load chart for procurement, tender submission or lift planning.</p>
-      <table class="specs-table">
-        <tbody>
-          <tr><td>{productView.orientation.label}</td><td>{productView.orientation.value ?? productView.statusNote}</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="tab-panel">
-      <div class="features-grid">
-        {data.features?.map((feature: string) => {
-          const parts = feature.split('—');
-          return (
-            <div class="feature">
-              <div class="feature__icon">◆</div>
-              <div>
-                <div class="feature__title">{parts[0]?.trim() || feature}</div>
-                <div class="feature__desc">{parts.slice(1).join('—').trim()}</div>
-              </div>
-            </div>
-          );
-        })}
+  <main class="decision-page">
+    <section id="selection-overview" class="decision-section decision-section--content">
+      <div class="decision-section__heading">
+        <p>Selection overview</p>
+        <h2>Use the reference to frame a project review</h2>
+        <p>{productView.family.workflow}</p>
       </div>
-    </div>
+      <div class="product-markdown"><Content /></div>
+    </section>
 
-    <div class="tab-panel">
-      <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:24px;">Typical applications for the {model}. Every site requires verification of ground or floor bearing, access route, clearance, wind, load, rescue plan and local rules.</p>
-      <div class="app-cards">
-        {applications.map(([title, description]) => (
-          <div class="app-card"><div class="app-card__icon">▦</div><h4>{title}</h4><p>{description}</p></div>
-        ))}
+    <section id="archive-reference" class="decision-section decision-section--tint">
+      <div class="decision-section__heading">
+        <p>Archive reference</p>
+        <h2>Public orientation, not a current-model specification</h2>
+        <p>{productView.scopeStatement}</p>
       </div>
-    </div>
-  </div>
-
-  {data.faq && data.faq.length > 0 && (
-    <section class="sec sec--gray">
-      <div class="sec__header">
-        <div class="sec__overline">Buyer Questions</div>
-        <h2 class="sec__title">{model} FAQ</h2>
+      <div class="reference-summary">
+        <div>
+          <span>Reference status</span>
+          <strong>{productView.status}</strong>
+          <p>{productView.statusNote}</p>
+        </div>
+        <div>
+          <span>Confirmation gate</span>
+          <strong>Project documents control</strong>
+          <p>{productView.confirmationGate}</p>
+        </div>
       </div>
-      <div class="faq-grid">
-        {data.faq.map(item => <div class="faq-item"><h3>{item.question}</h3><p>{item.answer}</p></div>)}
+      <div class="specs-table-wrap">
+        <table class="specs-table">
+          <caption>Public archive orientation</caption>
+          <thead>
+            <tr><th scope="col">Reference field</th><th scope="col">Published orientation</th></tr>
+          </thead>
+          <tbody>
+            {archiveReferenceRows.map(row => (
+              <tr>
+                <th scope="row">{row.label}<small>{row.scope}</small></th>
+                <td>{row.value}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </section>
-  )}
 
-  <section class="cta">
-    <h2>CONFIGURE THE {model}</h2>
-    <p>Send the eave or ceiling height, panel profile, material, site conditions, destination and transport constraints for an engineering review.</p>
-    <a href={quoteUrl} class="btn--white">Request a Project Review →</a>
-  </section>
+    <section id="project-inputs" class="decision-section">
+      <div class="decision-section__heading">
+        <p>Project inputs</p>
+        <h2>Prepare these inputs before configuration review</h2>
+        <p>The checklist follows the {productView.family.shortName} family route.</p>
+      </div>
+      <ul class="decision-list">
+        {productView.family.projectInputs.map(input => <li>{input}</li>)}
+      </ul>
+    </section>
 
-  <section class="sec">
-    <div class="sec__header reveal">
-      <div class="sec__overline">Related Products</div>
-      <h2 class="sec__title">OTHER MODELS</h2>
+    <section id="workflows-to-assess" class="decision-section decision-section--tint">
+      <div class="decision-section__heading">
+        <p>Workflows to assess</p>
+        <h2>Review the interfaces around the equipment</h2>
+        <p>These are review topics, not claims that the reference is suitable for a site.</p>
+      </div>
+      <div class="workflow-grid">
+        {productView.family.workflowsToAssess.map((workflow, index) => (
+          <article>
+            <span>{String(index + 1).padStart(2, '0')}</span>
+            <h3>{workflow}</h3>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section id="questions-and-documents" class="decision-section">
+      <div class="decision-section__heading">
+        <p>Questions and documents</p>
+        <h2>Close the review with available reference documents</h2>
+        <p>{productView.buyerQuestion}</p>
+      </div>
+
+      {data.faq && data.faq.length > 0 && (
+        <div class="faq-grid">
+          {data.faq.map(item => <article class="faq-item"><h3>{item.question}</h3><p>{item.answer}</p></article>)}
+        </div>
+      )}
+
+      <div class="documents-panel">
+        <div>
+          <h3>Documents to request and validate</h3>
+          <ul>
+            {productView.family.requiredDocuments.map(document => <li>{document}</li>)}
+          </ul>
+          <p>Availability and applicability depend on the reviewed configuration. The signed project documents, not this page, control an order.</p>
+        </div>
+        <div class="documents-panel__actions">
+          <a href={datasheetUrl} class="btn btn--primary">Request available reference documents</a>
+          <a href={quoteUrl} class="btn btn--outline-blue">Send project inputs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="sec related-section">
+    <div class="sec__header">
+      <div class="sec__overline">Related references</div>
+      <h2 class="sec__title">Continue the selection review</h2>
     </div>
     <div class="related">
       {related.map(rp => {
@@ -225,16 +260,16 @@ const pageSchema = {
         if (!relatedView) return null;
         const rModel = relatedView.model;
         return (
-          <a href={`/products/${rp.id}/`} class="related-card reveal">
+          <a href={`/products/${rp.id}/`} class="related-card">
             {rp.data.images?.[0] ? (
               <div class="related-card__img" style={`background-image:url('${rp.data.images[0]}');background-size:contain;background-position:center;background-repeat:no-repeat;`}></div>
             ) : (
               <div class="related-card__img">{rModel}</div>
             )}
             <div class="related-card__body">
-              <h4>{rModel}</h4>
-              <p>{relatedView.orientation.label}: {relatedView.orientation.value ?? relatedView.statusNote}</p>
-              <span style="color:#2563eb;font-weight:600;font-size:14px;">View Details →</span>
+              <h3>{rModel}</h3>
+              <p>{relatedView.status} · {relatedView.statusNote}</p>
+              <span>View reference →</span>
             </div>
           </a>
         );
@@ -243,44 +278,264 @@ const pageSchema = {
   </section>
 
   <style>
-    .product-hero__main img,
-    .product-hero__thumb img {
+    .decision-gallery {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: min(100%, 640px);
+      gap: 16px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 0 0 8px;
+    }
+    .decision-gallery__figure {
+      scroll-snap-align: start;
+      margin: 0;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #f8fafc;
+    }
+    .decision-gallery__figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
       object-fit: contain;
       background: #f8fafc;
     }
-    .tabs__hint {
-      display: none;
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 0 var(--section-px) 8px;
+    .decision-gallery__figure figcaption {
+      padding: 10px 14px;
+      border-top: 1px solid #e2e8f0;
       color: #64748b;
       font-size: 12px;
+      line-height: 1.5;
+    }
+    .reference-status {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      margin: 18px 0 8px;
+      color: #475569;
+    }
+    .reference-status span {
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #075985;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .scope-statement,
+    .spec-mini__scope {
+      color: #64748b;
+      line-height: 1.65;
+    }
+    .spec-mini__scope {
+      margin-top: 6px;
+      font-size: 12px;
+    }
+    .decision-nav {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: flex;
+      gap: 8px;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 12px var(--section-px);
+      overflow-x: auto;
+      background: rgba(255, 255, 255, .96);
+      border-block: 1px solid #e2e8f0;
+      backdrop-filter: blur(10px);
+    }
+    .decision-nav a {
+      flex: 0 0 auto;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #f1f5f9;
+      color: #334155;
+      font-size: 14px;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .decision-page {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 var(--section-px);
+    }
+    .decision-section {
+      scroll-margin-top: 92px;
+      padding: 72px 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .decision-section--tint {
+      margin-inline: calc(var(--section-px) * -1);
+      padding-inline: var(--section-px);
+      background: #f8fafc;
+    }
+    .decision-section__heading {
+      max-width: 780px;
+      margin-bottom: 28px;
+    }
+    .decision-section__heading > p:first-child {
+      margin: 0 0 8px;
+      color: #2563eb;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .decision-section__heading h2 {
+      margin: 0 0 12px;
+      color: #0f172a;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.1;
+    }
+    .decision-section__heading p:last-child {
+      color: #475569;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    .product-markdown {
+      max-width: 860px;
+      color: #334155;
+      font-size: 16px;
+      line-height: 1.85;
+    }
+    .reference-summary {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .reference-summary > div,
+    .workflow-grid article,
+    .documents-panel {
+      padding: 22px;
+      border: 1px solid #dbe3ee;
+      border-radius: 14px;
+      background: #fff;
+    }
+    .reference-summary span,
+    .workflow-grid span {
+      color: #2563eb;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .reference-summary strong {
+      display: block;
+      margin: 8px 0;
+      color: #0f172a;
+      font-size: 19px;
+    }
+    .reference-summary p {
+      margin: 0;
+      color: #64748b;
+      line-height: 1.6;
+    }
+    .specs-table-wrap {
+      overflow-x: auto;
+    }
+    .specs-table caption {
+      padding: 0 0 12px;
+      color: #475569;
+      font-weight: 700;
+      text-align: left;
+    }
+    .specs-table th {
+      text-align: left;
+    }
+    .specs-table small {
+      display: block;
+      margin-top: 4px;
+      color: #64748b;
+      font-weight: 400;
+    }
+    .decision-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .decision-list li {
+      position: relative;
+      padding: 20px 20px 20px 48px;
+      border: 1px solid #dbe3ee;
+      border-radius: 12px;
+      color: #1e293b;
+      font-weight: 650;
+    }
+    .decision-list li::before {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      content: '✓';
+      color: #2563eb;
+      font-weight: 900;
+    }
+    .workflow-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .workflow-grid h3 {
+      margin: 12px 0 0;
+      color: #1e293b;
+      font-size: 18px;
+      line-height: 1.45;
+    }
+    .documents-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 32px;
+      margin-top: 30px;
+      background: #f8fafc;
+    }
+    .documents-panel h3 {
+      margin-top: 0;
+      color: #0f172a;
+    }
+    .documents-panel li,
+    .documents-panel p {
+      color: #475569;
+      line-height: 1.65;
+    }
+    .documents-panel__actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      min-width: 280px;
+    }
+    .related-card__body h3 {
+      margin: 0 0 8px;
+      color: #0f172a;
+      font-size: 20px;
+    }
+    .related-card__body span {
+      color: #2563eb;
+      font-size: 14px;
+      font-weight: 700;
     }
     @media (max-width: 768px) {
-      .tabs__hint { display: block; }
+      .reference-summary,
+      .decision-list,
+      .workflow-grid,
+      .documents-panel {
+        grid-template-columns: 1fr;
+      }
+      .decision-section {
+        padding-block: 52px;
+      }
+      .documents-panel__actions {
+        min-width: 0;
+      }
     }
   </style>
-
-  <script>
-    document.querySelectorAll('.tab').forEach(tab => {
-      tab.addEventListener('click', () => {
-        const n = Number(tab.getAttribute('data-tab') || 0);
-        document.querySelectorAll('.tab').forEach((item, i) => item.classList.toggle('active', i === n));
-        document.querySelectorAll('.tab-panel').forEach((panel, i) => panel.classList.toggle('active', i === n));
-      });
-    });
-
-    const mainImage = document.getElementById('product-main-image') as HTMLImageElement | null;
-    document.querySelectorAll<HTMLButtonElement>('.product-hero__thumb').forEach(thumb => {
-      thumb.addEventListener('click', () => {
-        const src = thumb.dataset.src;
-        if (mainImage && src) {
-          mainImage.src = src;
-          mainImage.alt = thumb.dataset.alt || 'Representative editorial equipment-planning visual';
-        }
-        document.querySelectorAll('.product-hero__thumb').forEach(item => item.classList.remove('active'));
-        thumb.classList.add('active');
-      });
-    });
-  </script>
 </BaseLayout>

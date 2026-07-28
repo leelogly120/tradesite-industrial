@@ -13,6 +13,7 @@ import {
 
 const disclosure = 'Editorial planning visual — not model-specific evidence';
 const productListSource = await readFile(new URL('../src/pages/products/index.astro', import.meta.url), 'utf8');
+const productDetailSource = await readFile(new URL('../src/pages/products/[slug].astro', import.meta.url), 'utf8');
 
 const expectedFamilies = [
   ['crawler-roll-forming-lifts', ['ARC-C17', 'ARC-C21', 'ARC-C25', 'ARC-C28', 'ARC-C32']],
@@ -145,5 +146,58 @@ describe('ARCLIFT family-first product selector', () => {
 
   it('does not place comparison controls inside detail links', () => {
     expect(productListSource).toMatch(/<a[^>]*class="detail-link"[^>]*>[\s\S]*?<\/a>\s*<label class="compare-choice">\s*<input/);
+  });
+});
+
+describe('ARCLIFT buyer-decision product detail template', () => {
+  it('presents shared reference status, scope, one public orientation row, and the confirmation gate', () => {
+    expect(productDetailSource).toContain('productView.status');
+    expect(productDetailSource).toContain('productView.statusNote');
+    expect(productDetailSource).toContain('productView.scopeStatement');
+    expect(productDetailSource).toMatch(/const archiveReferenceRows = \[\s*\{\s*label: productView\.orientation\.label,\s*scope: productView\.orientation\.scope,\s*value: productView\.orientation\.value \?\? productView\.statusNote,\s*\},?\s*\];/);
+    expect(productDetailSource).toContain('productView.confirmationGate');
+    expect(productDetailSource).toMatch(/archiveReferenceRows\.map/);
+    expect(productDetailSource).not.toMatch(/Object\.entries\(\s*(?:data\.)?specifications|Object\.entries\(\s*specs/);
+    expect(productDetailSource).not.toMatch(/data\.specifications/);
+  });
+
+  it('uses five visible anchor sections and keeps the authored Markdown body visible', () => {
+    const sectionIds = [
+      'selection-overview',
+      'archive-reference',
+      'project-inputs',
+      'workflows-to-assess',
+      'questions-and-documents',
+    ];
+
+    for (const id of sectionIds) {
+      expect(productDetailSource).toContain(`href="#${id}"`);
+      expect(productDetailSource).toContain(`id="${id}"`);
+    }
+    expect(productDetailSource).toMatch(/id="selection-overview"[\s\S]*?<Content \/>/);
+    expect(productDetailSource).not.toMatch(/role="tablist"|data-tab=|class="tab-panel/);
+    expect(productDetailSource).not.toMatch(/querySelectorAll\(['"]\.tab['"]\)/);
+  });
+
+  it('renders family-specific project inputs and workflows from the shared family mapping', () => {
+    expect(productDetailSource).toMatch(/productView\.family\.projectInputs\.map/);
+    expect(productDetailSource).toMatch(/productView\.family\.workflowsToAssess\.map/);
+    expect(productDetailSource).toContain('Workflows to assess');
+    expect(productDetailSource).not.toContain('Typical applications');
+  });
+
+  it('uses available-reference-document wording and the shared authored related order', () => {
+    expect(productDetailSource).toContain('Request available reference documents');
+    expect(productDetailSource).toMatch(/productView\.family\.requiredDocuments\.map/);
+    expect(productDetailSource).toMatch(/productView\.relatedSlugs\.flatMap/);
+    expect(productDetailSource).not.toMatch(/data\.relatedProducts/);
+  });
+
+  it('limits top-level structured data to WebPage, FAQPage, and BreadcrumbList', () => {
+    expect(productDetailSource).toMatch(/'@type': 'WebPage'/);
+    expect(productDetailSource).toMatch(/'@type': 'FAQPage'/);
+    expect(productDetailSource).toMatch(/'@type': 'BreadcrumbList'/);
+    expect(productDetailSource).not.toMatch(/'@type': 'Product'/);
+    expect(productDetailSource).not.toMatch(/'@type': 'Offer'/);
   });
 });

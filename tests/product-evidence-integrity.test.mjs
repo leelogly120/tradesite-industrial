@@ -118,10 +118,12 @@ describe('Product evidence integrity', () => {
     expect(detail).not.toMatch(/additionalProperty/);
     expect(detail).not.toMatch(/\bimage:\s*data\.images/);
     expect(detail).not.toMatch(/alt=\{data\.title\}/);
-    expect(detail).toContain('productView.imageDisclosure');
+    expect(detail).toMatch(/data\.images\.map\([\s\S]*?<figure[\s\S]*?<img[\s\S]*?<figcaption>\{productView\.imageDisclosure\}<\/figcaption>[\s\S]*?<\/figure>/);
     expect(detail).not.toContain('Representative editorial image — not model-specific evidence.');
     expect(detail).toMatch(/object-fit:\s*contain/);
-    expect(detail).toMatch(/Swipe horizontally/i);
+    expect(detail).not.toMatch(/role="tablist"|data-tab=|class="tab-panel/);
+    expect(detail).not.toMatch(/Object\.entries\(\s*(?:data\.)?specifications|Object\.entries\(\s*specs/);
+    expect(detail).not.toMatch(/data\.specifications/);
   });
 
   it('keeps the public manifest explicitly editorial and disclosed', async () => {
