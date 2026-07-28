@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { readFile } from 'node:fs/promises';
+import * as productSelectionDomain from '../src/lib/product-selection';
 import {
   DEFAULT_COMPARE_SLUGS,
   PRODUCT_FAMILIES,
@@ -199,5 +200,125 @@ describe('ARCLIFT buyer-decision product detail template', () => {
     expect(productDetailSource).toMatch(/'@type': 'BreadcrumbList'/);
     expect(productDetailSource).not.toMatch(/'@type': 'Product'/);
     expect(productDetailSource).not.toMatch(/'@type': 'Offer'/);
+  });
+});
+
+describe('ARCLIFT evidence-safe comparison page', () => {
+  const buildCompareView = productSelectionDomain.buildCompareView;
+  const renderCompareRegion = productSelectionDomain.renderCompareRegion;
+  const product = (slug, orientationValue) => ({
+    id: slug,
+    data: { specifications: { 'Archived Height Class': orientationValue } },
+  });
+
+  it('derives the four-reference default from one explicit shared source', () => {
+    expect(PRODUCT_REFERENCES.some(reference => Object.hasOwn(reference, 'defaultCompare'))).toBe(false);
+    expect(DEFAULT_COMPARE_SLUGS).toEqual([
+      'arc-f20-crawler-ceiling-platform',
+      'arc-f25-crawler-ceiling-platform',
+      'arc-f31-crawler-ceiling-platform',
+      'arc-f35-crawler-ceiling-platform',
+    ]);
+  });
+
+  it('builds a comparison-only public view model without internal or legacy fields', () => {
+    expect(buildCompareView).toBeTypeOf('function');
+    const view = buildCompareView?.(product('arc-f20-crawler-ceiling-platform', 'Archived reference – 20m class'));
+
+    expect(view).toEqual({
+      slug: 'arc-f20-crawler-ceiling-platform',
+      model: 'ARC-F20',
+      familyId: 'crawler-ceiling-platforms',
+      familyName: 'Crawler Ceiling Platforms',
+      status: 'Archived reference',
+      statusNote: 'Project-specific confirmation required',
+      scopeStatement: 'This is an archived reference configuration for early project discussions.',
+      buyerQuestion: 'What project data is needed before configuration review?',
+      orientation: {
+        label: 'Reference height',
+        scope: 'Reference concept only',
+        value: 'Archived reference – 20m class',
+      },
+      confirmationGate: 'Signed technical schedule, approved drawings and approved load chart',
+    });
+    expect(JSON.stringify(view)).not.toMatch(/sourceKey|specifications|Payload|Power|Machine Weight/);
+  });
+
+  it('renders a complete same-family table with semantic headers and direct reference links', () => {
+    expect(renderCompareRegion).toBeTypeOf('function');
+    const views = [
+      buildCompareView?.(product('arc-f20-crawler-ceiling-platform', 'Archived reference – 20m class')),
+      buildCompareView?.(product('arc-f25-crawler-ceiling-platform', 'Archived reference – 25m class')),
+      buildCompareView?.(product('arc-f31-crawler-ceiling-platform', 'Archived reference – 31m class')),
+      buildCompareView?.(product('arc-f35-crawler-ceiling-platform', 'Archived reference – 35m class')),
+    ].filter(Boolean);
+    const html = renderCompareRegion?.(views) ?? '';
+
+    expect(html).toContain('<caption>Archived references and project-review boundaries</caption>');
+    expect(html).toMatch(/<th scope="col">Review field<\/th>/);
+    expect(html).toMatch(/<th scope="row"[^>]*>Family<\/th>/);
+    expect(html).toContain('data-compare-field="orientation"');
+    expect(html).toContain('Reference height');
+    for (const slug of DEFAULT_COMPARE_SLUGS) {
+      expect(html).toContain(`href="/products/${slug}/"`);
+    }
+    expect(html).not.toMatch(/<(?:td|th)[^>]*>\s*<\/(?:td|th)>/);
+    expect(html).not.toMatch(/Max Working Height|Safe Working Load|Platform Extension|Machine Weight|Diesel Engine|Electric Motor|Gradeability|Travel Speed|Min Ground Clearance/);
+  });
+
+  it('omits orientation across families and explains why without ranking performance', () => {
+    const views = [
+      buildCompareView?.(product('arc-c17-crawler-roll-forming-lift', 'Archived reference – 17m class')),
+      buildCompareView?.(product('arc-f20-crawler-ceiling-platform', 'Archived reference – 20m class')),
+    ].filter(Boolean);
+    const html = renderCompareRegion?.(views) ?? '';
+
+    expect(getCompareMode(views.map(view => view.slug))).toBe('cross-family');
+    expect(html).not.toContain('data-compare-field="orientation"');
+    expect(html).toContain('Orientation is omitted for cross-family comparisons');
+    expect(html).not.toMatch(/\b(?:best|better|higher|lower|top-performing|performance rank)\b/i);
+    for (const view of views) expect(html).toContain(`href="/products/${view.slug}/"`);
+  });
+
+  it('keeps one selected reference visible and asks the buyer to add another', () => {
+    const view = buildCompareView?.(product('arc-f20-crawler-ceiling-platform', 'Archived reference – 20m class'));
+    const html = renderCompareRegion?.(view ? [view] : []) ?? '';
+
+    expect(html).toContain('href="/products/arc-f20-crawler-ceiling-platform/"');
+    expect(html).toContain('Add at least one more reference');
+    expect(html).toContain('data-compare-field="orientation"');
+    expect(html).not.toMatch(/<(?:td|th)[^>]*>\s*<\/(?:td|th)>/);
+  });
+
+  it('uses the shared parser for invalid, duplicate, empty, and over-limit query selections', () => {
+    expect(parseCompareItems(null)).toEqual([]);
+    expect(parseCompareItems('not-real,not-real')).toEqual([]);
+    expect(parseCompareItems([
+      'arc-c17-crawler-roll-forming-lift',
+      'arc-c17-crawler-roll-forming-lift',
+      'arc-t12-truck-mounted-roll-forming-lift',
+      'not-real',
+      'arc-f20-crawler-ceiling-platform',
+      'arc-rf8-roll-forming-machine',
+      'arc-f25-crawler-ceiling-platform',
+    ].join(','))).toEqual([
+      'arc-c17-crawler-roll-forming-lift',
+      'arc-t12-truck-mounted-roll-forming-lift',
+      'arc-f20-crawler-ceiling-platform',
+      'arc-rf8-roll-forming-machine',
+    ]);
+  });
+
+  it('declares static progressive enhancement, canonical metadata, and no unsupported schema', async () => {
+    const comparePageSource = await readFile(new URL('../src/pages/compare.astro', import.meta.url), 'utf8');
+    const seoHeadSource = await readFile(new URL('../src/components/SEOHead.astro', import.meta.url), 'utf8');
+
+    expect(comparePageSource).toMatch(/canonical="https:\/\/www\.arclifteq\.com\/compare\/"/);
+    expect(comparePageSource).toMatch(/noindex=\{true\}/);
+    expect(comparePageSource).toMatch(/data-compare-region/);
+    expect(comparePageSource).toMatch(/URLSearchParams/);
+    expect(comparePageSource).toMatch(/parseCompareItems/);
+    expect(comparePageSource).not.toMatch(/'@type':\s*['"](?:Product|Offer)['"]/);
+    expect(seoHeadSource).toContain('content="noindex,follow"');
   });
 });

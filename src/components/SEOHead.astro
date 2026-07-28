@@ -26,7 +26,7 @@ const socialImage = ogImage
 <title>{title}</title>
 <meta name="description" content={description} />
 {pageUrl && <link rel="canonical" href={pageUrl} />}
-{noindex && <meta name="robots" content="noindex,nofollow" />}
+{noindex && <meta name="robots" content="noindex,follow" />}
 
 <!-- Open Graph -->
 <meta property="og:title" content={title} />

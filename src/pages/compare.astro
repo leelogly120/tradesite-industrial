@@ -1,69 +1,241 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import {
+  DEFAULT_COMPARE_SLUGS,
+  PRODUCT_REFERENCES,
+  buildCompareView,
+  renderCompareRegion,
+} from '../lib/product-selection';
 
-const craneProducts = (await getCollection('products'))
-  .filter(p => !p.data.draft && p.data.category === 'Crawler Ceiling Platforms')
-  .sort((a, b) => {
-    const aH = parseInt(a.data.specifications?.['Max Working Height'] || '0');
-    const bH = parseInt(b.data.specifications?.['Max Working Height'] || '0');
-    return aH - bH;
-  });
-
-const compareKeys = [
-  'Max Working Height', 'Safe Working Load', 'Platform Extension',
-  'Machine Weight', 'Diesel Engine', 'Electric Motor',
-  'Gradeability', 'Travel Speed (stowed)', 'Min Ground Clearance',
-];
+const publicProducts = (await getCollection('products')).filter(product => !product.data.draft);
+const productsBySlug = new Map(publicProducts.map(product => [product.id, product]));
+const allCompareViews = PRODUCT_REFERENCES.flatMap((reference) => {
+  const product = productsBySlug.get(reference.slug);
+  if (!product) return [];
+  const view = buildCompareView(product);
+  return view ? [view] : [];
+});
+const compareViewsBySlug = new Map(allCompareViews.map(view => [view.slug, view]));
+const defaultCompareViews = DEFAULT_COMPARE_SLUGS.flatMap((slug) => {
+  const view = compareViewsBySlug.get(slug);
+  return view ? [view] : [];
+});
+const compareDataJson = JSON.stringify(allCompareViews).replaceAll('<', '\\u003c');
+const defaultCompareHtml = renderCompareRegion(defaultCompareViews);
 ---
 
 <BaseLayout
-  title="Compare ARC-F Ceiling Platforms — Side-by-Side Specs"
-  description="Compare all 4 ARC-F crawler ceiling platforms: 20m, 25m, 31m, 35m. Height, load, platform size, power — side by side."
+  title="Compare Archived Equipment References"
+  description="Compare ARCLIFT archived references by family, status, project-review scope and confirmation requirements."
+  canonical="https://www.arclifteq.com/compare/"
+  noindex={true}
   transparentNav={false}
 >
-
   <section class="hero-banner" style="--banner-image:url('/images/banners/compare.webp');--banner-position:center 58%;">
     <div class="overline">Compare</div>
-    <h1>COMPARE ARC-F MODELS</h1>
-    <p>Side-by-side specifications for all four crawler under-ceiling platforms.</p>
+    <h1>COMPARE ARCHIVED REFERENCES</h1>
+    <p>Use the shared project-review boundaries to prepare questions. Final configuration still depends on signed documents.</p>
   </section>
 
-  <section class="sec">
-    <div class="comp reveal">
-      <table>
-        <thead>
-          <tr>
-            <th>Specification</th>
-            {craneProducts.map(p => (
-              <th>
-                <a href={`/products/${p.id}/`} style="color:#2563eb;font-size:0.95rem;">
-                  {p.data.title.split(' ')[0]}
-                </a>
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {compareKeys.map(key => (
-            <tr>
-              <td>{key}</td>
-              {craneProducts.map(p => (
-                <td>{p.data.specifications?.[key] || '—'}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+  <section class="compare-section">
+    <div class="compare-intro">
+      <p class="eyebrow">Reference comparison</p>
+      <h2>Start with scope, not a performance ranking</h2>
+      <p>
+        The default view keeps four crawler ceiling-platform references available without JavaScript.
+        Selections from the product list replace only the comparison below when browser scripting is available.
+      </p>
+      <a href="/products/" class="selector-link">Change selected references</a>
     </div>
-    <p style="text-align:center;color:#64748b;font-size:0.85rem;margin-top:1rem;">
-      Reference comparison only. ARC-F concepts require model-specific drawings, field evidence and compliance review before procurement.
+
+    <div
+      class="comparison-region"
+      data-compare-region
+      aria-live="polite"
+      set:html={defaultCompareHtml}
+    ></div>
+    <script id="compare-reference-data" type="application/json" set:html={compareDataJson}></script>
+
+    <p class="comparison-boundary">
+      Archived labels are orientation points only. They do not establish current-model performance,
+      project suitability or procurement authorization.
     </p>
   </section>
 
   <section class="cta">
-    <h2>NEED HELP CHOOSING THE RIGHT MODEL?</h2>
-    <p>Our engineering team can recommend the best ARC-F for your ceiling height, load, and site conditions.</p>
-    <a href="/contact/" class="btn--white">Get a Recommendation →</a>
+    <h2>READY FOR A PROJECT-SPECIFIC REVIEW?</h2>
+    <p>Send the site inputs and request the available reference documents before a configuration is quoted.</p>
+    <a href="/contact/" class="btn--white">Prepare an enquiry →</a>
   </section>
 </BaseLayout>
+
+<script>
+  import {
+    parseCompareItems,
+    renderCompareRegion,
+    type CompareView,
+  } from '../lib/product-selection';
+
+  const region = document.querySelector<HTMLElement>('[data-compare-region]');
+  const dataElement = document.querySelector<HTMLScriptElement>('#compare-reference-data');
+  const params = new URLSearchParams(window.location.search);
+
+  if (region && dataElement && params.has('items')) {
+    const availableViews = JSON.parse(dataElement.textContent ?? '[]') as CompareView[];
+    const viewsBySlug = new Map(availableViews.map(view => [view.slug, view]));
+    const selectedViews = parseCompareItems(params.get('items')).flatMap((slug) => {
+      const view = viewsBySlug.get(slug);
+      return view ? [view] : [];
+    });
+    region.innerHTML = renderCompareRegion(selectedViews);
+  }
+</script>
+
+<style>
+  .compare-section {
+    background: #f8fafc;
+    padding: clamp(3.5rem, 7vw, 6.5rem) 5%;
+  }
+
+  .compare-intro,
+  .comparison-region,
+  .comparison-boundary {
+    margin-inline: auto;
+    max-width: 1180px;
+  }
+
+  .compare-intro {
+    margin-bottom: 2rem;
+    max-width: 780px;
+    text-align: center;
+  }
+
+  .eyebrow {
+    color: #174f94;
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .14em;
+    margin-bottom: .65rem;
+    text-transform: uppercase;
+  }
+
+  .compare-intro h2 {
+    color: #102a43;
+    font-size: clamp(1.65rem, 3vw, 2.5rem);
+    margin-bottom: .85rem;
+  }
+
+  .compare-intro p,
+  .comparison-boundary {
+    color: #52657a;
+    line-height: 1.75;
+  }
+
+  .selector-link {
+    color: #174f94;
+    display: inline-block;
+    font-weight: 800;
+    margin-top: 1rem;
+    min-height: 44px;
+    padding: .7rem .9rem;
+    text-underline-offset: .2em;
+  }
+
+  .selector-link:focus-visible,
+  :global(.comparison-table a:focus-visible),
+  :global(.comparison-notice a:focus-visible) {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+  }
+
+  :global(.comparison-notice) {
+    background: #eaf2fb;
+    border-left: 4px solid #174f94;
+    color: #243b53;
+    line-height: 1.65;
+    margin: 0 0 1rem;
+    padding: 1rem 1.15rem;
+  }
+
+  :global(.comparison-notice h2) {
+    color: #102a43;
+    font-size: 1.25rem;
+    margin-bottom: .35rem;
+  }
+
+  :global(.comparison-notice a) {
+    color: #174f94;
+    display: inline-block;
+    font-weight: 800;
+    margin-top: .65rem;
+    min-height: 44px;
+    padding-block: .65rem;
+  }
+
+  :global(.comparison-table-wrap) {
+    background: white;
+    border: 1px solid #d9e2ec;
+    border-radius: 12px;
+    box-shadow: 0 16px 42px rgb(15 23 42 / 7%);
+    overflow-x: auto;
+  }
+
+  :global(.comparison-table) {
+    border-collapse: collapse;
+    color: #243b53;
+    min-width: 760px;
+    width: 100%;
+  }
+
+  :global(.comparison-table caption) {
+    color: #102a43;
+    font-size: 1.05rem;
+    font-weight: 800;
+    padding: 1.15rem;
+    text-align: left;
+  }
+
+  :global(.comparison-table th),
+  :global(.comparison-table td) {
+    border-top: 1px solid #d9e2ec;
+    line-height: 1.55;
+    padding: 1rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  :global(.comparison-table thead th) {
+    background: #102a43;
+    color: white;
+  }
+
+  :global(.comparison-table thead a) {
+    color: white;
+    text-decoration-thickness: 2px;
+    text-underline-offset: .2em;
+  }
+
+  :global(.comparison-table tbody th) {
+    background: #eef4fa;
+    color: #102a43;
+    min-width: 180px;
+  }
+
+  .comparison-boundary {
+    font-size: .9rem;
+    margin-top: 1.25rem;
+    text-align: center;
+  }
+
+  @media (max-width: 720px) {
+    .compare-section {
+      padding-inline: 1rem;
+    }
+
+    :global(.comparison-table th),
+    :global(.comparison-table td) {
+      padding: .8rem;
+    }
+  }
+</style>
