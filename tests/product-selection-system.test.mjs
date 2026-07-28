@@ -155,7 +155,7 @@ describe('ARCLIFT buyer-decision product detail template', () => {
     expect(productDetailSource).toContain('productView.status');
     expect(productDetailSource).toContain('productView.statusNote');
     expect(productDetailSource).toContain('productView.scopeStatement');
-    expect(productDetailSource).toMatch(/const archiveReferenceRows = \[\s*\{\s*label: productView\.orientation\.label,\s*scope: productView\.orientation\.scope,\s*value: productView\.orientation\.value \?\? productView\.statusNote,\s*\},?\s*\];/);
+    expect(productDetailSource).toMatch(/const archiveReferenceRows = \[\s*\{\s*label: productView\.orientation\.label,\s*scope: productView\.orientation\.scope,\s*value: productView\.orientation\.value,\s*\},?\s*\];/);
     expect(productDetailSource).toContain('productView.confirmationGate');
     expect(productDetailSource).toMatch(/archiveReferenceRows\.map/);
     expect(productDetailSource).not.toMatch(/Object\.entries\(\s*(?:data\.)?specifications|Object\.entries\(\s*specs/);
@@ -231,13 +231,13 @@ describe('ARCLIFT evidence-safe comparison page', () => {
       model: 'ARC-F20',
       familyId: 'crawler-ceiling-platforms',
       familyName: 'Crawler Ceiling Platforms',
-      status: 'Archived reference',
+      status: 'Archived reference class',
       statusNote: 'Project-specific confirmation required',
-      scopeStatement: 'This is an archived reference configuration for early project discussions.',
+      scopeStatement: 'This archived reference class provides orientation for an early project discussion only.',
       buyerQuestion: 'What project data is needed before configuration review?',
       orientation: {
-        label: 'Reference height',
-        scope: 'Reference concept only',
+        label: 'Archived height',
+        scope: 'Archived reference only',
         value: 'Archived reference – 20m class',
       },
       confirmationGate: 'Signed technical schedule, approved drawings and approved load chart',
@@ -259,7 +259,7 @@ describe('ARCLIFT evidence-safe comparison page', () => {
     expect(html).toMatch(/<th scope="col">Review field<\/th>/);
     expect(html).toMatch(/<th scope="row"[^>]*>Family<\/th>/);
     expect(html).toContain('data-compare-field="orientation"');
-    expect(html).toContain('Reference height');
+    expect(html).toContain('Archived height');
     for (const slug of ['arc-f20-crawler-ceiling-platform', 'arc-f25-crawler-ceiling-platform', 'arc-f31-crawler-ceiling-platform', 'arc-f35-crawler-ceiling-platform']) {
       expect(html).toContain(`href="/products/${slug}/"`);
     }

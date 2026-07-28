@@ -130,7 +130,16 @@ async function makeValidFixture() {
   for (const slug of [...baselineBlogSlugs, additionalBlogSlug]) {
     await write(root, `src/content/blog/${slug}.md`, `---\ntitle: ${slug}\n---\n`);
   }
-  for (const slug of productSlugs) {
+  await write(root, 'dist/assets/products.css', [
+    '.reference-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }',
+    '.reference-card__visual {}',
+    '.reference-card__visual img {}',
+    '.reference-card__disclosure {}',
+    '.reference-orientation {}',
+    '.reference-gate {}',
+    '@media (max-width: 900px) { .reference-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }',
+    '@media (max-width: 720px) { .reference-grid { grid-template-columns: 1fr; } }',
+  ].join('\n'));  for (const slug of productSlugs) {
     await write(root, `src/content/products/${slug}.md`, `---\ntitle: ${slug}\n---\n`);
   }
   await write(root, 'dist/index.html', page('/'));
@@ -145,7 +154,16 @@ for (const route of baselineStaticRoutes) {
     `<p class="image-disclosure">${PRODUCT_VISUAL_DISCLOSURE}</p>`,
     '</div>',
   ].join('')).join('')));
-  for (const slug of productSlugs) {
+  await write(root, 'dist/assets/products.css', [
+    '.reference-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }',
+    '.reference-card__visual {}',
+    '.reference-card__visual img {}',
+    '.reference-card__disclosure {}',
+    '.reference-orientation {}',
+    '.reference-gate {}',
+    '@media (max-width: 900px) { .reference-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }',
+    '@media (max-width: 720px) { .reference-grid { grid-template-columns: 1fr; } }',
+  ].join('\n'));  for (const slug of productSlugs) {
     await write(root, `dist/products/${slug}/index.html`, productPage(slug));
   }
   await write(root, 'dist/blog/index.html', page('/blog/'));
@@ -205,6 +223,16 @@ describe('built output audit', () => {
     });
   });
 
+  it('rejects literal newline artifacts, missing card selectors, or unsafe responsive reference grids in emitted CSS', async () => {
+    const root = await makeValidFixture();
+    const cssPath = resolve(root, 'dist/assets/products.css');
+    const css = await readFile(cssPath, 'utf8');
+    await writeFile(cssPath, css.replace('.reference-card__disclosure {}', '.reference-card__caption {}'), 'utf8');
+
+    const error = await auditBuildOutput({ root }).catch(reason => reason);
+    expect(error).toBeInstanceOf(Error);
+    expect(error.message).toMatch(/reference-card CSS/i);
+  });
   it('rejects a noindex route in the sitemap and unsafe structured data', async () => {
     const root = await makeValidFixture();
     const sitemapPath = resolve(root, 'dist/sitemap-0.xml');

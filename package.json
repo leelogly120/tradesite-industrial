@@ -12,7 +12,7 @@
     "astro": "astro",
     "test:worker": "vitest run workers/inquiry-router/test",
     "test:e2e": "playwright test tests/inquiry-form.spec.ts tests/homepage.spec.ts",
-    "test:content": "vitest run tests/content-audit.test.mjs tests/brand-identity.test.mjs tests/public-asset-hygiene.test.mjs tests/inquiry-form-variants.test.mjs tests/task-5b.test.mjs tests/homepage-quality.test.mjs tests/product-evidence-integrity.test.mjs tests/replacement-image-truthfulness.test.mjs tests/case-study-evidence.test.mjs tests/audit-public-url-regression.test.mjs tests/product-selection-system.test.mjs tests/product-card-specs.test.mjs tests/product-copy-distinctiveness.test.mjs tests/product-page-encoding.test.mjs tests/build-output-audit.test.mjs tests/verification-wiring.test.mjs",
+    "test:content": "vitest run tests/content-audit.test.mjs tests/brand-identity.test.mjs tests/public-asset-hygiene.test.mjs tests/inquiry-form-variants.test.mjs tests/task-5b.test.mjs tests/homepage-quality.test.mjs tests/product-evidence-integrity.test.mjs tests/replacement-image-truthfulness.test.mjs tests/case-study-evidence.test.mjs tests/audit-public-url-regression.test.mjs tests/product-selection-system.test.mjs tests/product-card-specs.test.mjs tests/product-copy-distinctiveness.test.mjs tests/product-page-encoding.test.mjs tests/build-output-audit.test.mjs tests/final-review-regressions.test.mjs tests/verification-wiring.test.mjs",
     "audit:content": "node scripts/audit-content.mjs",
     "audit:build": "node scripts/audit-build.mjs",
     "verify": "npm run test:worker && npm run test:content && npm run build && npm run test:e2e",

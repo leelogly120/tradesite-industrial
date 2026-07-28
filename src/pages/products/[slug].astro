@@ -34,7 +34,7 @@ const archiveReferenceRows = [
   {
     label: productView.orientation.label,
     scope: productView.orientation.scope,
-    value: productView.orientation.value ?? productView.statusNote,
+    value: productView.orientation.value,
   },
 ];
 
@@ -62,7 +62,7 @@ const pageSchema = {
   description: data.description,
   about: {
     '@type': 'Thing',
-    name: `${model} archived reference configuration`,
+    name: `${model} ${productView.status}: ${productView.orientation.scope}`,
     description: productView.scopeStatement,
   },
 };
@@ -125,7 +125,7 @@ const pageSchema = {
       <div class="specs-mini">
         <div class="spec-mini">
           <div class="spec-mini__label">{productView.orientation.label}</div>
-          <div class="spec-mini__val">{productView.orientation.value ?? productView.statusNote}</div>
+          <div class="spec-mini__val">{productView.orientation.value}</div>
           <div class="spec-mini__scope">{productView.orientation.scope}</div>
         </div>
         <div class="spec-mini">

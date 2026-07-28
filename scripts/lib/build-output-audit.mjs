@@ -301,6 +301,26 @@ export async function auditBuildOutput({
   }
 
   const productIndex = pages.get('/products/')?.html ?? '';
+  const builtCss = (await Promise.all(files
+    .filter(file => file.endsWith('.css'))
+    .map(file => readFile(file, 'utf8')))).join('\n');
+  const requiredProductCardSelectors = [
+    /\.reference-card__visual\b/,
+    /\.reference-card__visual(?:\[[^\]]+\])?\s+img\b/,
+    /\.reference-card__disclosure\b/,
+    /\.reference-orientation\b/,
+    /\.reference-gate\b/,
+  ];
+  const productCardLayoutRules = [
+    /\.reference-grid[^{}]*\{[^}]*grid-template-columns:\s*repeat\(3,\s*minmax\(0,\s*1fr\)\)/,
+    /@media\s*\((?:max-width:\s*)?900px|width\s*<=\s*900px\)[\s\S]*?\.reference-grid[^}]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/,
+    /@media\s*\((?:max-width:\s*)?720px|width\s*<=\s*720px\)[\s\S]*?\.reference-grid[^}]*grid-template-columns:\s*1fr/,
+  ];
+  if (builtCss.includes('`r`n')
+      || requiredProductCardSelectors.some(selector => !selector.test(builtCss))
+      || productCardLayoutRules.some(rule => !rule.test(builtCss))) {
+    errors.push('/products/ must emit complete reference-card CSS without literal newline artifacts, including desktop, 900px, and 390px-safe grid containment');
+  }
   const disclosedFamilyVisuals = elementsWithClass(productIndex, 'div', 'family-card__image-wrap')
     .filter(element => /<img\b[^>]*class=(?:"[^"]*\bfamily-card__image\b[^"]*"|'[^']*\bfamily-card__image\b[^']*')/i.test(element.body))
     .filter(element => exactTextInClass(element.body, 'p', 'image-disclosure', PRODUCT_VISUAL_DISCLOSURE));

@@ -12,6 +12,7 @@ describe('permanent verification wiring', () => {
     expect(testContentCommand).toContain('tests/product-card-specs.test.mjs');
     expect(testContentCommand).toContain('tests/product-copy-distinctiveness.test.mjs');
     expect(testContentCommand).toContain('tests/product-page-encoding.test.mjs');
+    expect(testContentCommand).toContain('tests/final-review-regressions.test.mjs');
   });
 
   it('runs the built-output audit after Astro emits dist', () => {

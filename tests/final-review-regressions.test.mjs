@@ -84,3 +84,49 @@ describe('final ARCLIFT review regressions', () => {
     expect(detail).not.toMatch(/<main class="decision-page">/);
   });
 });
+
+describe('final ARCLIFT review wave 2 regressions', () => {
+  it('makes orientation a required safe value and never falls back to a status note', async () => {
+    const [compare, detail] = await Promise.all([
+      readFile(new URL('../src/lib/product-compare.ts', import.meta.url), 'utf8'),
+      readFile(new URL('../src/pages/products/[slug].astro', import.meta.url), 'utf8'),
+    ]);
+    expect(compare).toMatch(/value: string;/);
+    expect(compare).not.toMatch(/orientation\.value \?\? view\.statusNote/);
+    expect(detail).not.toMatch(/orientation\.value \?\? productView\.statusNote/);
+    const view = buildCompareView(product('arc-c25-crawler-roll-forming-lift'));
+    expect(renderCompareRegion(view ? [view] : [])).toContain('Not established for this reference');
+const mutatedHtml = renderCompareRegion(view ? [{ ...view, orientation: { ...view.orientation, value: 'Not established for this reference' }, statusNote: 'unsafe status fallback' }] : []);
+    const orientationRow = mutatedHtml.match(/<tr data-compare-field="orientation">([\s\S]*?)<\/tr>/)?.[0] ?? '';
+    expect(orientationRow).toContain('Not established for this reference');
+    expect(orientationRow).not.toContain('unsafe status fallback');
+  });
+
+  it('maps F20 as an archived reference class and F25/F31/F35 as explicit reference concepts', () => {
+    const f20 = buildProductView(product('arc-f20-crawler-ceiling-platform', { 'Archived Height Class': '20m class' }));
+    expect(f20).toMatchObject({ status: 'Archived reference class', orientation: { scope: 'Archived reference only' } });
+    for (const slug of ['arc-f25-crawler-ceiling-platform', 'arc-f31-crawler-ceiling-platform', 'arc-f35-crawler-ceiling-platform']) {
+      const view = buildProductView(product(slug, { 'Archived Height Class': 'concept class' }));
+      expect(view).toMatchObject({ status: 'Reference concept', orientation: { scope: 'Reference concept only' } });
+      expect(view?.scopeStatement).toMatch(/concept/i);
+      expect(view?.scopeStatement).not.toMatch(/archived reference configuration/i);
+    }
+  });
+
+  it('keeps the listing card CSS real, complete, and independently verified', async () => {
+    const list = await readFile(new URL('../src/pages/products/index.astro', import.meta.url), 'utf8');
+    expect(list).not.toContain('`r`n');
+    for (const selector of ['.reference-card__visual', '.reference-card__visual img', '.reference-card__disclosure', '.reference-orientation', '.reference-gate']) {
+      expect(list).toContain(selector);
+    }
+  });
+
+  it('runs this regression suite in the permanent content-test wiring', async () => {
+    const [packageText, wiring] = await Promise.all([
+      readFile(new URL('../package.json', import.meta.url), 'utf8'),
+      readFile(new URL('./verification-wiring.test.mjs', import.meta.url), 'utf8'),
+    ]);
+    expect(JSON.parse(packageText).scripts['test:content']).toContain('tests/final-review-regressions.test.mjs');
+    expect(wiring).toContain('tests/final-review-regressions.test.mjs');
+  });
+});

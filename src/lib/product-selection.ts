@@ -168,10 +168,13 @@ export const PRODUCT_REFERENCES = [
     confirmationGate: 'Signed technical schedule, approved drawings, approved load chart and approved packing plan',
   }),
   reference(trucks[4], 'ARC-T31', 'truck-mounted-roll-forming-lifts', archivedHeight, [trucks[1], trucks[2], trucks[3]]),
-  reference(ceilings[0], 'ARC-F20', 'crawler-ceiling-platforms', referenceHeight, []),
-  reference(ceilings[1], 'ARC-F25', 'crawler-ceiling-platforms', referenceHeight, [], { status: 'Reference concept', statusNote: 'Model-specific engineering required' }),
-  reference(ceilings[2], 'ARC-F31', 'crawler-ceiling-platforms', referenceHeight, [], { status: 'Reference concept', statusNote: 'Model-specific engineering required' }),
-  reference(ceilings[3], 'ARC-F35', 'crawler-ceiling-platforms', referenceHeight, [], { status: 'Reference concept', statusNote: 'Model-specific engineering required' }),
+  reference(ceilings[0], 'ARC-F20', 'crawler-ceiling-platforms', archivedHeight, [], {
+    status: 'Archived reference class',
+    scopeStatement: 'This archived reference class provides orientation for an early project discussion only.',
+  }),
+  reference(ceilings[1], 'ARC-F25', 'crawler-ceiling-platforms', referenceHeight, [], { status: 'Reference concept', statusNote: 'Model-specific engineering required', scopeStatement: 'This reference concept frames an early project discussion and does not establish an archived configuration.' }),
+  reference(ceilings[2], 'ARC-F31', 'crawler-ceiling-platforms', referenceHeight, [], { status: 'Reference concept', statusNote: 'Model-specific engineering required', scopeStatement: 'This reference concept frames an early project discussion and does not establish an archived configuration.' }),
+  reference(ceilings[3], 'ARC-F35', 'crawler-ceiling-platforms', referenceHeight, [], { status: 'Reference concept', statusNote: 'Model-specific engineering required', scopeStatement: 'This reference concept frames an early project discussion and does not establish an archived configuration.' }),
   reference('arc-rf8-roll-forming-machine', 'ARC-RF8', 'roll-forming-machines', archivedSheet, [crawlers[0], crawlers[2], trucks[2]]),
 ] as const satisfies readonly ProductReference[];
 

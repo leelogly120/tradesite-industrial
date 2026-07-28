@@ -10,7 +10,7 @@ export type CompareView = {
   orientation: {
     label: string;
     scope: string;
-    value?: string;
+    value: string;
   };
   confirmationGate: string;
   primaryProjectInputs: readonly string[];
@@ -75,7 +75,7 @@ export function renderCompareRegion(views: readonly CompareView[]): string {
 
   if (mode !== 'cross-family') {
     const orientationLabel = `${views[0].orientation.label} (${views[0].orientation.scope})`;
-    rows.push(row(orientationLabel, 'orientation', views.map(view => view.orientation.value ?? view.statusNote)));
+    rows.push(row(orientationLabel, 'orientation', views.map(view => view.orientation.value)));
   }
 
   rows.push(
