@@ -38,7 +38,95 @@ async function product(slug) {
   return readFile(resolve(productsDir, `${slug}.md`), 'utf8');
 }
 
+function proseSegments(body) {
+  return body
+    .split(/\r?\n\s*\r?\n/)
+    .flatMap(paragraph => {
+      const normalized = paragraph.replace(/\s+/g, ' ').trim();
+      if (!normalized) return [];
+      return [normalized, ...normalized.split(/(?<=[.!?])\s+/)];
+    });
+}
+
+function identityAndCommercialViolations(body) {
+  const violations = [];
+  const forbiddenIdentity = [
+    /\bsource\s+factory\b/i,
+    /\bour\s+factory\b/i,
+    /\bfactory(?:\s*-\s*|\s+)direct\b/i,
+    /\b(?:professional\s+)?manufacturers?\b/i,
+    /\bmanufactures?\b/i,
+    /\bOEM\s+producers?\b/i,
+    /\bour\s+production\s+facilit(?:y|ies)\b/i,
+    /\b(?:customer|client|project)\s+identity\b/i,
+    /\bnamed\s+(?:customer|client|project)\b/i,
+  ];
+  const forbiddenCommercial = [
+    /\b(?:in stock|available now|ready to ship|fixed lead time)\b/i,
+    /\b(?:delivery|ships?)\s+(?:in|within)\b/i,
+    /\bcertified\s+(?:to|for|under)\b/i,
+    /\b(?:lowest|best)\s+(?:price|freight|shipping|cost)\b/i,
+    /\b(?:ideal|suitable)\s+for\b/i,
+    /\b(?:guarantees?|guaranteed|ensures?)\b[^.!?]*(?:performance|output|throughput|productivity|savings?|cost|time|result|suitability)/i,
+    /\b(?:improves?|increases?|boosts?|saves?|reduces?)\b[^.!?]*(?:throughput|productivity|savings?|cost|time|labor|handling)/i,
+    /\b(?:measurable|proven)\s+(?:labor\s+)?(?:savings?|performance|throughput|productivity)\b/i,
+  ];
+  const allowedRole = /\bARCLIFT\s+(?:acts|works|participates)\s+as\s+(?:an integrated equipment supplier|a technical selection and supply partner)\b/i;
+  const allowedAction = /\b(?:ARCLIFT can|Ask ARCLIFT to)\s+(?:review|compare)\b/i;
+
+  for (const segment of proseSegments(body)) {
+    for (const pattern of [...forbiddenIdentity, ...forbiddenCommercial]) {
+      const isCommercialPattern = forbiddenCommercial.includes(pattern);
+      const isNegativeBoundary = /\b(?:not evidence|does not|do not|cannot|no promise|not confirmed)\b/i.test(segment);
+      if (pattern.test(segment) && !(isCommercialPattern && isNegativeBoundary)) {
+        violations.push(segment);
+      }
+    }
+    if (/\bprivate\b/i.test(segment)
+      && /\b(?:visual|image|evidence|source|asset)\b/i.test(segment)) {
+      violations.push(segment);
+    }
+    if (/\bARCLIFT\s+(?:is|acts|works|participates|serves)\b/i.test(segment)
+      && !allowedRole.test(segment)) {
+      violations.push(segment);
+    }
+    if (/\b(?:ARCLIFT can|Ask ARCLIFT to)\b/i.test(segment)
+      && !allowedAction.test(segment)) {
+      violations.push(segment);
+    }
+  }
+  return [...new Set(violations)];
+}
+
+const identityMutations = [
+  'ARCLIFT is the source\nfactory for these reference classes.',
+  'ARCLIFT coordinates technical questions for the route, interfaces, destination documents, marked work zones, local review, and packing assumptions before it manufactures the equipment in our production facility.',
+  'The page says our factory controls the supplied equipment.',
+  'This is described as a factory-\ndirect offer.',
+  'ARCLIFT is a manufacturer of the listed references.',
+  'ARCLIFT is an OEM producer and the equipment is ready to ship.',
+  'A named customer is Ridge Systems and the named project is Terminal Alpha.',
+  'Customer\nidentity: Ridge Systems. Project identity: Terminal Alpha.',
+  'This configuration ensures measurable labor savings and higher throughput.',
+  'ARCLIFT serves as a systems integrator.',
+];
+
+const allowedIdentityFixtures = [
+  'ARCLIFT acts as an integrated equipment supplier.',
+  'ARCLIFT works as a technical selection and supply partner.',
+  'ARCLIFT can review the marked route and compare reference classes.',
+  'Ask ARCLIFT to review the approved project inputs.',
+];
+
 describe('Product evidence integrity', () => {
+  it.each(identityMutations)('rejects injected identity or commercial mutation %#', (body) => {
+    expect(identityAndCommercialViolations(body)).not.toEqual([]);
+  });
+
+  it.each(allowedIdentityFixtures)('allows bounded supplier or review language %#', (body) => {
+    expect(identityAndCommercialViolations(body)).toEqual([]);
+  });
+
   it('keeps exactly fifteen publishable product reference pages', async () => {
     const files = (await readdir(productsDir))
       .filter(name => name.endsWith('.md') && name !== '_template.md')
@@ -138,19 +226,12 @@ describe('Product evidence integrity', () => {
 
   it('keeps public product copy free of source identity and manufacturer positioning', async () => {
     const body = (await Promise.all(productSlugs.map(product))).join('\n');
-    expect(body).not.toMatch(/\b(?:source factory|our factory|factory[- ]direct|professional manufacturer|ARCLIFT.{0,80}manufacturer)\b/i);
+    expect(identityAndCommercialViolations(body)).toEqual([]);
   });
 
   it('keeps supplier identity bounded and omits unsupported commercial outcomes', async () => {
     const body = (await Promise.all(productSlugs.map(product))).join('\n');
-    expect(body).not.toMatch(/ARCLIFT.{0,80}\b(?:manufactures?|designs?|certifies?|operates?|owns?)\b/i);
-    expect(body).not.toMatch(/\b(?:our|ARCLIFT's)\s+(?:factory|manufacturing|customer|client|project|site|operators?)\b/i);
-    expect(body).not.toMatch(
-      /\b(?:in stock|available now|fixed lead time|delivery within|ships? within|certified (?:to|for)|guaranteed|guarantees|saves? \d|reduces? (?:cost|time)|improves? productivity|proven performance|ideal for|suitable for)\b/i,
-    );
-    expect(body).not.toMatch(/\b(?:lowest|best)\s+(?:price|freight|shipping|cost)\b/i);
-    expect(body).not.toMatch(/\b(?:customer|client|project)\s+(?:name|identity|site)\s*:/i);
-    expect(body).not.toMatch(/\bprivate\b[^\r\n]{0,60}\b(?:visual|image|evidence|source|asset)\b/i);
+    expect(identityAndCommercialViolations(body)).toEqual([]);
   });
 
   it('removes exact-price assumptions and fixed delivery promises from legacy templates', async () => {

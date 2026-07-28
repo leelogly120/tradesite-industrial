@@ -42,7 +42,7 @@ Start with zones around trusses, services, walls, and restricted approaches. If 
 
 ## Separate the access envelope from the height label
 
-The configuration may change with floor or ground bearing, indoor access, clear height, obstructions, the deck, crew, and tool basis, and rescue and local rules. Include door and aisle widths, turns, ramps, slab joints, openings, finishes, underside offsets, materials, and handling aids.
+For this 25m concept, the configuration may change when floor or ground bearing evidence, indoor access through doors and ramps, clear height, obstructions, the deck, crew, and tool basis, or rescue and local rules remain open. Include aisle widths, turns, slab joints, openings, finishes, underside offsets, materials, and handling aids.
 
 Inputs for concept screening:
 

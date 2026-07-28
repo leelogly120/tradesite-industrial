@@ -42,7 +42,7 @@ Mark each ceiling, wall, and service zone separately. Height alone is insufficie
 
 ## Define the building and task variables
 
-The configuration review changes with floor or ground bearing, indoor access, clear height, obstructions, the deck, crew, and tool basis, and rescue and local rules. Slab openings, joints, ramps, finishes, underground spaces, work sequence, materials, and exclusion zones should be visible in the same brief.
+The ARC-F20 configuration may change after review of floor or ground bearing, the protected indoor access route, clear height at service zones, fixed obstructions, the deck, crew, and tool basis, and rescue and local rules. Slab openings, joints, ramps, finishes, underground spaces, work sequence, materials, and exclusion zones should be visible in the same brief.
 
 Please prepare:
 

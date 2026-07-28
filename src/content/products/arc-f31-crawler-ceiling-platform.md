@@ -42,7 +42,7 @@ Prepare sections through the most difficult zones instead of selecting from maxi
 
 ## Join geometry, floor, and task inputs
 
-The configuration review changes with floor or ground bearing, indoor access, clear height, obstructions, the deck, crew, and tool basis, and rescue and local rules. Show horizontal demand, approach direction, travel corridor, slab transitions, work sequence, materials, and exclusion areas for each difficult zone.
+The ARC-F31 configuration review changes with surveyed floor or ground bearing, indoor access to offset zones, clear height below trusses, mapped obstructions, the deck, crew, and tool basis, and rescue and local rules. Show horizontal demand, approach direction, travel corridor, slab transitions, work sequence, materials, and exclusion areas for each difficult zone.
 
 Send for screening:
 

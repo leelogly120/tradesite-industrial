@@ -42,7 +42,7 @@ Identify the highest zones, but also document how people, materials, and any rev
 
 ## Test the complete indoor route
 
-The configuration may change with floor or ground bearing, indoor access, clear height, obstructions, the deck, crew, and tool basis, and rescue and local rules. High-zone exposure, isolation, communications, emergency access, slab transitions, and staging constraints belong in the initial pack.
+At the 35m concept screen, the configuration may change as floor or ground bearing, full indoor access and egress, clear height, high-zone obstructions, the deck, crew, and tool basis, and rescue and local rules are assigned to reviewers. High-zone exposure, isolation, communications, emergency access, slab transitions, and staging constraints belong in the initial pack.
 
 Prepare:
 
