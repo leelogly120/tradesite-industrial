@@ -103,7 +103,7 @@ const pageSchema = {
           {data.images.map((img: string, i: number) => (
             <figure class="decision-gallery__figure">
               <img src={img} alt={visualAlt(img)} width="640" height="480" loading={i === 0 ? 'eager' : 'lazy'} />
-              <figcaption>{productView.imageDisclosure}</figcaption>
+              <figcaption>AI-assisted editorial visual. {productView.imageDisclosure}</figcaption>
             </figure>
           ))}
         </div>
@@ -306,8 +306,9 @@ const pageSchema = {
     .decision-gallery__figure figcaption {
       padding: 10px 14px;
       border-top: 1px solid #e2e8f0;
-      color: #64748b;
-      font-size: 12px;
+      background: #f1f5f9;
+      color: #475569;
+      font-size: .82rem;
       line-height: 1.5;
     }
     .reference-status {

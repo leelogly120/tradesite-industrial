@@ -6,8 +6,11 @@ const root = resolve(import.meta.dirname, '..');
 const productManifestPath = resolve(root, 'public/images/asset-manifest.json');
 const productListPath = resolve(root, 'src/pages/products/index.astro');
 const productDetailPath = resolve(root, 'src/pages/products/[slug].astro');
+const comparePagePath = resolve(root, 'src/pages/compare.astro');
 const editorialDiagram = /\/images\/editorial\/(?:roof-level-workflow|crawler-truck-selection-matrix|40hq-logistics-checkpoints|ceiling-platform-project-data|roll-forming-input-map|crawler-platform-selection-path|ceiling-access-method-matrix|indoor-floor-load-review|remote-control-safety-loop|dual-power-duty-cycle|warehouse-ceiling-access-map)\.svg/;
 const productDisclosure = 'Editorial planning visual — not model-specific evidence';
+const productVisualDisclosure = `AI-assisted editorial visual. ${productDisclosure}`;
+const compareVisualDisclosure = `AI-assisted editorial composite. ${productDisclosure}`;
 
 async function markdown(dir) {
   const base = resolve(root, 'src/content', dir);
@@ -62,19 +65,23 @@ describe('Replacement image truthfulness', () => {
     }
   });
 
-  it('places the exact disclosure beside listing and detail-page product visuals', async () => {
-    const [selectionDomain, productList, productDetail] = await Promise.all([
+  it('places an AI-assisted label and exact evidence boundary beside every scoped visual', async () => {
+    const [selectionDomain, productList, productDetail, comparePage] = await Promise.all([
       readFile(resolve(root, 'src/lib/product-selection.ts'), 'utf8'),
       readFile(productListPath, 'utf8'),
       readFile(productDetailPath, 'utf8'),
+      readFile(comparePagePath, 'utf8'),
     ]);
 
     expect(selectionDomain).toContain(`const IMAGE_DISCLOSURE = '${productDisclosure}'`);
     expect(productList).toMatch(
-      /<img class="family-card__image"[\s\S]{0,500}<p class="image-disclosure">Editorial planning visual — not model-specific evidence<\/p>/,
+      new RegExp(`<img class="family-card__image"[\\s\\S]{0,500}<p class="image-disclosure">${productVisualDisclosure}<\\/p>`),
     );
     expect(productDetail).toMatch(
-      /<figure class="decision-gallery__figure">[\s\S]{0,500}<figcaption>\{productView\.imageDisclosure\}<\/figcaption>[\s\S]{0,100}<\/figure>/,
+      /<figure class="decision-gallery__figure">[\s\S]{0,500}<figcaption>AI-assisted editorial visual\. \{productView\.imageDisclosure\}<\/figcaption>[\s\S]{0,100}<\/figure>/,
+    );
+    expect(comparePage).toMatch(
+      new RegExp(`<section class="hero-banner"[\\s\\S]{0,700}compare\\.webp[\\s\\S]{0,700}<p class="hero-disclosure">${compareVisualDisclosure}<\\/p>[\\s\\S]{0,100}<\\/section>`),
     );
   });
 });

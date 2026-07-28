@@ -6,7 +6,11 @@ import { auditBuildOutput } from '../scripts/lib/build-output-audit.mjs';
 import { shouldIncludeInSitemap } from '../scripts/lib/sitemap-policy.mjs';
 
 const SITE = 'https://www.arclifteq.com';
+const AI_ASSISTED_VISUAL = 'AI-assisted editorial visual';
+const AI_ASSISTED_COMPOSITE = 'AI-assisted editorial composite';
 const DISCLOSURE = 'Editorial planning visual — not model-specific evidence';
+const PRODUCT_VISUAL_DISCLOSURE = `${AI_ASSISTED_VISUAL}. ${DISCLOSURE}`;
+const COMPARE_VISUAL_DISCLOSURE = `${AI_ASSISTED_COMPOSITE}. ${DISCLOSURE}`;
 const productSlugs = [
   'arc-c17-crawler-roll-forming-lift',
   'arc-c21-crawler-roll-forming-lift',
@@ -54,7 +58,7 @@ function productPage(slug) {
   return page(`/products/${slug}/`, [
     '<figure class="decision-gallery__figure">',
     '<img src="/images/editorial/example.svg" alt="Editorial example">',
-    `<figcaption>${DISCLOSURE}</figcaption>`,
+    `<figcaption>${PRODUCT_VISUAL_DISCLOSURE}</figcaption>`,
     '</figure>',
     '<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage"}</script>',
   ].join(''));
@@ -74,6 +78,7 @@ function comparePage() {
     confirmationGate: 'Confirm against signed project documents',
   }));
   return page('/compare/', [
+    `<section class="hero-banner" style="--banner-image:url('/images/banners/compare.webp')"><p class="hero-disclosure">${COMPARE_VISUAL_DISCLOSURE}</p></section>`,
     '<div data-compare-region>',
     '<table class="comparison-table">',
     '<caption>Archived references and project-review boundaries</caption>',
@@ -97,7 +102,12 @@ async function makeValidFixture() {
   }
   await write(root, 'dist/index.html', page('/'));
   await write(root, 'dist/404.html', '<!doctype html><meta name="robots" content="noindex,nofollow"><h1>Not found</h1>');
-  await write(root, 'dist/products/index.html', page('/products/', DISCLOSURE.repeat(4)));
+  await write(root, 'dist/products/index.html', page('/products/', Array.from({ length: 4 }, (_, index) => [
+    '<div class="family-card__image-wrap">',
+    `<img class="family-card__image" src="/images/editorial/family-${index}.svg" alt="Editorial family visual">`,
+    `<p class="image-disclosure">${PRODUCT_VISUAL_DISCLOSURE}</p>`,
+    '</div>',
+  ].join('')).join('')));
   for (const slug of productSlugs) {
     await write(root, `dist/products/${slug}/index.html`, productPage(slug));
   }
@@ -178,7 +188,7 @@ describe('built output audit', () => {
     const productHtml = await readFile(productPath, 'utf8');
     await writeFile(productPath, productHtml
       .replace(`${SITE}/products/arc-c25-crawler-roll-forming-lift/`, `${SITE}/products/wrong/`)
-      .replace(DISCLOSURE, 'Undisclosed image'), 'utf8');
+      .replace(PRODUCT_VISUAL_DISCLOSURE, 'Undisclosed image'), 'utf8');
     const comparePath = resolve(root, 'dist/compare/index.html');
     const compareHtml = await readFile(comparePath, 'utf8');
     await writeFile(comparePath, compareHtml.replace('new URLSearchParams', 'new Map'), 'utf8');
@@ -192,6 +202,29 @@ describe('built output audit', () => {
     expect(error.message).toMatch(/disclosure/i);
     expect(error.message).toMatch(/URLSearchParams/i);
     expect(error.message).toMatch(/legacy redirect.*noindex/i);
+  });
+
+  it('rejects missing AI-assisted labels even when the evidence-boundary phrase remains', async () => {
+    const root = await makeValidFixture();
+    const productIndexPath = resolve(root, 'dist/products/index.html');
+    const productIndexHtml = await readFile(productIndexPath, 'utf8');
+    await writeFile(
+      productIndexPath,
+      productIndexHtml.replace(`${AI_ASSISTED_VISUAL}. `, ''),
+      'utf8',
+    );
+    const comparePath = resolve(root, 'dist/compare/index.html');
+    const compareHtml = await readFile(comparePath, 'utf8');
+    await writeFile(
+      comparePath,
+      compareHtml.replace(`${AI_ASSISTED_COMPOSITE}. `, ''),
+      'utf8',
+    );
+
+    const error = await auditBuildOutput({ root }).catch(reason => reason);
+    expect(error).toBeInstanceOf(Error);
+    expect(error.message).toMatch(/products.*AI-assisted editorial visual/i);
+    expect(error.message).toMatch(/compare.*AI-assisted editorial composite/i);
   });
 
   it('rejects unsafe or incomplete compare data embedded for client enhancement', async () => {

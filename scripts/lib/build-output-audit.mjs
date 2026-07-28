@@ -2,7 +2,11 @@ import { readdir, readFile } from 'node:fs/promises';
 import { join, relative, resolve, sep } from 'node:path';
 
 const SITE = 'https://www.arclifteq.com';
+const AI_ASSISTED_VISUAL = 'AI-assisted editorial visual';
+const AI_ASSISTED_COMPOSITE = 'AI-assisted editorial composite';
 const DISCLOSURE = 'Editorial planning visual — not model-specific evidence';
+const PRODUCT_VISUAL_DISCLOSURE = `${AI_ASSISTED_VISUAL}. ${DISCLOSURE}`;
+const COMPARE_VISUAL_DISCLOSURE = `${AI_ASSISTED_COMPOSITE}. ${DISCLOSURE}`;
 const PRODUCT_SLUGS = [
   'arc-c17-crawler-roll-forming-lift',
   'arc-c21-crawler-roll-forming-lift',
@@ -77,6 +81,29 @@ function robotsValues(html) {
 
 function countMatches(text, pattern) {
   return [...text.matchAll(pattern)].length;
+}
+
+function normalizedText(html) {
+  return html.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function elementsWithClass(html, tagName, className) {
+  const openingPattern = new RegExp(`<${tagName}\\b([^>]*)>`, 'gi');
+  return [...html.matchAll(openingPattern)].flatMap(match => {
+    if (!(attribute(match[1], 'class') ?? '').split(/\s+/).includes(className)) return [];
+    const bodyStart = (match.index ?? 0) + match[0].length;
+    const bodyEnd = html.indexOf(`</${tagName}>`, bodyStart);
+    if (bodyEnd < 0) return [];
+    return [{
+      attributes: match[1],
+      body: html.slice(bodyStart, bodyEnd),
+    }];
+  });
+}
+
+function exactTextInClass(html, tagName, className, expected) {
+  return elementsWithClass(html, tagName, className)
+    .some(element => normalizedText(element.body) === expected);
 }
 
 function collectSchemaTypes(value, types = []) {
@@ -222,20 +249,31 @@ export async function auditBuildOutput({
   }
 
   const productIndex = pages.get('/products/')?.html ?? '';
-  if (countMatches(productIndex, new RegExp(DISCLOSURE, 'g')) !== 4) {
-    errors.push('/products/ must emit four exact editorial visual disclosures');
+  const disclosedFamilyVisuals = elementsWithClass(productIndex, 'div', 'family-card__image-wrap')
+    .filter(element => /<img\b[^>]*class=(?:"[^"]*\bfamily-card__image\b[^"]*"|'[^']*\bfamily-card__image\b[^']*')/i.test(element.body))
+    .filter(element => exactTextInClass(element.body, 'p', 'image-disclosure', PRODUCT_VISUAL_DISCLOSURE));
+  if (disclosedFamilyVisuals.length !== 4) {
+    errors.push(`/products/ must place four adjacent ${AI_ASSISTED_VISUAL} disclosures with the exact evidence boundary`);
   }
   for (const slug of PRODUCT_SLUGS) {
     const route = `/products/${slug}/`;
     const html = pages.get(route)?.html ?? '';
-    const figureCount = countMatches(html, /<figure\b[^>]*class=(?:"[^"]*\bdecision-gallery__figure\b[^"]*"|'[^']*\bdecision-gallery__figure\b[^']*')/gi);
-    const disclosureCount = countMatches(html, new RegExp(DISCLOSURE, 'g'));
-    if (figureCount === 0 || disclosureCount !== figureCount) {
-      errors.push(`${route} disclosure count ${disclosureCount} does not match ${figureCount} decision gallery figures`);
+    const figures = elementsWithClass(html, 'figure', 'decision-gallery__figure');
+    const disclosedFigures = figures
+      .filter(figure => /<img\b/i.test(figure.body))
+      .filter(figure => exactTextInClass(figure.body, 'figcaption', '', PRODUCT_VISUAL_DISCLOSURE));
+    if (figures.length === 0 || disclosedFigures.length !== figures.length) {
+      errors.push(`${route} has ${disclosedFigures.length} adjacent ${AI_ASSISTED_VISUAL} disclosures for ${figures.length} decision gallery figures`);
     }
   }
 
   const compareHtml = pages.get('/compare/')?.html ?? '';
+  const compareHeroDisclosure = elementsWithClass(compareHtml, 'section', 'hero-banner')
+    .some(hero => hero.attributes.includes('/images/banners/compare.webp')
+      && exactTextInClass(hero.body, 'p', 'hero-disclosure', COMPARE_VISUAL_DISCLOSURE));
+  if (!compareHeroDisclosure) {
+    errors.push(`/compare/ hero must place an adjacent ${AI_ASSISTED_COMPOSITE} disclosure with the exact evidence boundary`);
+  }
   if (!/data-compare-region/.test(compareHtml)
       || !/<caption>Archived references and project-review boundaries<\/caption>/.test(compareHtml)
       || !/<tbody>[\s\S]*?<td>[^<]+<\/td>[\s\S]*?<\/tbody>/.test(compareHtml)) {

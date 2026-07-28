@@ -248,7 +248,7 @@ describe('Product evidence integrity', () => {
     expect(detail).not.toMatch(/additionalProperty/);
     expect(detail).not.toMatch(/\bimage:\s*data\.images/);
     expect(detail).not.toMatch(/alt=\{data\.title\}/);
-    expect(detail).toMatch(/data\.images\.map\([\s\S]*?<figure[\s\S]*?<img[\s\S]*?<figcaption>\{productView\.imageDisclosure\}<\/figcaption>[\s\S]*?<\/figure>/);
+    expect(detail).toMatch(/data\.images\.map\([\s\S]*?<figure[\s\S]*?<img[\s\S]*?<figcaption>AI-assisted editorial visual\. \{productView\.imageDisclosure\}<\/figcaption>[\s\S]*?<\/figure>/);
     expect(detail).not.toContain('Representative editorial image — not model-specific evidence.');
     expect(detail).toMatch(/object-fit:\s*contain/);
     expect(detail).not.toMatch(/role="tablist"|data-tab=|class="tab-panel/);
