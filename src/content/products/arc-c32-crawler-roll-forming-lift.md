@@ -34,34 +34,30 @@ date: 2026-07-25
 draft: false
 ---
 
-## What this reference page is for
+## Screen an upper archive-height reference for high work zones
 
-ARC-C32 is retained as a useful **reference configuration** for early discussions about crawler-supported roll forming near an installation elevation. This archived source reference identifies a 30–32m-class starting point, but it does not establish the height, payload, stability, output range or destination compliance of a current unit. ARCLIFT works as an integrated equipment supplier and technical selection partner: the project brief is reviewed first, then the applicable configuration and documentation are defined.
+ARC-C32 frames an early screen for high work zones using a 30–32m upper archive-height class. It is not a promise of current height, outreach, load, or operating limits. ARCLIFT acts as an integrated equipment supplier and uses this label to collect the evidence needed for a route comparison.
 
-The page is most useful when a buyer needs to compare a crawler route with ground forming, segmented panels, conventional lifting or a truck-mounted arrangement. Those alternatives should be compared by workflow, support conditions, access, weather exposure and interfaces—not by model label alone.
+At this stage, the buyer should identify which zones actually drive the upper-height discussion and whether their offsets, edges, and setup areas are documented. The answer may leave ARC-C32 in review, move the project to another reference, or require a different access method.
 
-## Conditions that control selection
+## Put support and weather evidence beside the geometry
 
-A review should locate every work zone on a roof plan and section. Record the required vertical position and outreach, roof slope, edge distance, obstructions, panel handover point, travel route and setup area. Ground bearing data, slope and drainage matter because the support reaction and travel condition cannot be inferred from a general site photograph.
+The configuration review changes with the access route, ground bearing basis, support geometry, work elevation and outreach, panel run-out, and weather and rescue controls. For high zones, record the exposure basis, setup orientation, exclusion areas, and handover sequence explicitly rather than extrapolating from archive height.
 
-The forming process needs its own interface package: approved panel profile, material grade and yield, thickness, coil dimensions and mass, intended panel length, tooling revision, line footprint, line mass, power demand, control boundary, feed direction and shear position. The historical references to 8t-class payload, 0.3–1.0mm sheet and 380V-class power are discussion inputs only. Each remains subject to **project-specific confirmation**.
+Requested family inputs are:
 
-## When this route may not fit
+- Access route survey and setup footprint for each high-zone position
+- Ground bearing report and the proposed support geometry
+- Work elevation, offset, roof slope, obstructions, and edge distances
+- Panel run-out, line interface, receiving route, and exclusion areas
+- Weather and rescue controls with responsible competent reviewers
 
-A crawler-supported route may not fit if the travel corridor is too narrow, the ground investigation is incomplete, support reactions cannot be accommodated, weather limits cannot be controlled, the roof handover path is unresolved, or the forming-line interface remains unknown. It also cannot replace a site method statement, lift plan, rescue plan or local work-at-height review.
+## Treat missing high-zone evidence as a stop
 
-## Buyer information to send
+This route may not fit if high-zone offsets are unknown, support reactions cannot be reviewed, wind decision rules are absent, the panel path is exposed without controls, or rescue arrangements do not reach every position. Archive height alone cannot resolve those gaps.
 
-- Roof plan, elevations and sections with the required work zones marked
-- Required height, outreach, setup positions and movement sequence
-- Ground report, allowable bearing pressure, slope, drainage and buried services
-- Panel profile drawing, material, yield, thickness, coil data and target lengths
-- Forming-line footprint, mass, power, controls, feed direction and access needs
-- Wind basis, operating environment and the planned weather decision process
-- Destination, transport route, available power and required local documents
+## Move forward only on matched records
 
-## Documents that close the review
+The signed technical schedule and approved drawings control the final configuration. The approved load chart, interface schedule, and packing data must be configuration-matched before use. Ask ARCLIFT to review the high-zone evidence as a technical selection and supply partner, while project and local authorities control site acceptance.
 
-Final configuration requires the **signed technical schedule**, **approved drawings**, approved load chart, interface schedule and approved packing data. Those documents must identify the configuration, limits, support reactions, interfaces and destination responsibilities that apply to the order.
-
-**Image disclosure:** Representative editorial image — not model-specific evidence. The raster visual is an **AI-assisted editorial composite**; the diagrams are ARCLIFT editorial explanations. None proves model identity, configuration, suitability or performance.
+**Image disclosure:** Representative editorial image — not model-specific evidence. The raster is an **AI-assisted editorial composite** and the diagrams are explanatory only; they do not establish ARC-C32 identity, reach, or performance.

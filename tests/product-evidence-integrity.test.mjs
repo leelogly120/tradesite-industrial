@@ -141,6 +141,18 @@ describe('Product evidence integrity', () => {
     expect(body).not.toMatch(/\b(?:source factory|our factory|factory[- ]direct|professional manufacturer|ARCLIFT.{0,80}manufacturer)\b/i);
   });
 
+  it('keeps supplier identity bounded and omits unsupported commercial outcomes', async () => {
+    const body = (await Promise.all(productSlugs.map(product))).join('\n');
+    expect(body).not.toMatch(/ARCLIFT.{0,80}\b(?:manufactures?|designs?|certifies?|operates?|owns?)\b/i);
+    expect(body).not.toMatch(/\b(?:our|ARCLIFT's)\s+(?:factory|manufacturing|customer|client|project|site|operators?)\b/i);
+    expect(body).not.toMatch(
+      /\b(?:in stock|available now|fixed lead time|delivery within|ships? within|certified (?:to|for)|guaranteed|guarantees|saves? \d|reduces? (?:cost|time)|improves? productivity|proven performance|ideal for|suitable for)\b/i,
+    );
+    expect(body).not.toMatch(/\b(?:lowest|best)\s+(?:price|freight|shipping|cost)\b/i);
+    expect(body).not.toMatch(/\b(?:customer|client|project)\s+(?:name|identity|site)\s*:/i);
+    expect(body).not.toMatch(/\bprivate\b[^\r\n]{0,60}\b(?:visual|image|evidence|source|asset)\b/i);
+  });
+
   it('removes exact-price assumptions and fixed delivery promises from legacy templates', async () => {
     const layout = await readFile(resolve(root, 'src/layouts/ProductLayout.astro'), 'utf8');
     const template = await readFile(resolve(productsDir, '_template.md'), 'utf8');

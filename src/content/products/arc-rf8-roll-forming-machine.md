@@ -33,34 +33,31 @@ date: 2026-07-25
 draft: false
 ---
 
-## Start with the panel, not the machine label
+## Begin with profile, material, and tooling
 
-ARC-RF8 is an archived **reference configuration** for discussing a compact roll-forming line that may be integrated with a lifting system or used in another reviewed production arrangement. This archived source reference records a 0.3–1.0mm-class discussion range, but it does not prove that every material, thickness or profile can be formed by a current line.
+ARC-RF8 is an archived sheet-class reference for deciding whether a roll-forming review has a controlled profile, material, and tooling basis. The 0.3–1.0mm archive range does not confirm any profile, material, output, or power package. ARCLIFT acts as an integrated equipment supplier and can coordinate the selection review from issued inputs.
 
-The controlled profile drawing is the first technical input. Mark dimensions that affect fit, seams, drainage, fasteners, overlaps and adjacent work. State critical tolerances and how they will be inspected. Material information must include grade, yield, coating, width, thickness and tolerance because equal thickness does not mean equal forming load or springback.
+The approved profile drawing comes first. It should identify critical dimensions, tolerances, seam geometry, interfaces, and the inspection method; a profile name or photograph is not enough.
 
-## Define the whole line interface
+## Define the material and line boundaries
 
-Provide coil dimensions and mass, feed orientation, line footprint and mass, pass arrangement, drive concept, forming speed requirement, shear method, run-out, control signals, power and the intended integration point. If the line will operate on a lift, the support structure, fixing, centre of gravity, power, controls, access and material path must be reviewed as one system.
+The configuration review changes with the approved profile drawing, material, yield, and coating, thickness range, seam and tooling requirements, output direction, run-out, and power and lift interface. Coil dimensions, feed orientation, cut method, controls, sample material, surface expectations, and acceptance criteria also remain project inputs.
 
-The historical 380V-class supply and archived sheet range are planning inputs only. The final material window, tooling, output quality and electrical package need **project-specific confirmation** with sample material and agreed acceptance criteria.
+Please provide:
 
-## When the reference is insufficient
+- Approved profile drawing with controlled revision, dimensions, and tolerances
+- Material, yield, and coating basis plus thickness range and samples
+- Seam and tooling definition, critical interfaces, and inspection method
+- Coil data, feed and output direction, cut method, and panel-length context
+- Run-out area, access, line footprint, support, and control boundaries
+- Power and lift interface, destination electrical basis, and documents
 
-Do not select tooling from a photograph, a generic profile name or thickness alone. This route may not fit if the profile revision is uncontrolled, sample material is unavailable, critical tolerances are undefined, the run-out path is blocked, or the support and control interfaces cannot be verified.
+## Do not select a line from the archive range
 
-## Buyer information to send
+The route may not fit if the drawing revision is uncontrolled, material samples are unavailable, tolerances have no acceptance method, run-out is blocked, or support and control interfaces cannot be checked. This page does not promise tooling, formed quality, rate, capacity, or electrical demand.
 
-- Controlled profile drawing with critical dimensions and tolerances
-- Material grade, yield, coating, width, thickness range and sample material
-- Coil dimensions and mass, target panel lengths and cut method
-- Required inspection method and acceptance criteria
-- Line footprint, mass, feed direction, run-out and access constraints
-- Destination voltage, frequency, phase, controls and documentation
-- Selected lift or support-system interface, where applicable
+## Release the technical basis in signed records
 
-## Documents that release the configuration
+The signed technical schedule and approved drawings control the final configuration. The signed tooling proposal, electrical schedule, and acceptance protocol must match the approved inputs. Ask ARCLIFT to review the drawing and interface pack as a technical selection and supply partner, without treating an archive range as a result.
 
-Final configuration requires the **signed technical schedule**, **approved drawings**, signed tooling proposal, electrical schedule and signed acceptance protocol. These documents control the profile, material boundary, interfaces and tests used for the order.
-
-**Image disclosure:** Representative editorial image — not model-specific evidence. Both visuals are ARCLIFT editorial diagrams and do not establish machine identity, tooling, supplied configuration, output quality or performance.
+**Image disclosure:** Representative editorial image — not model-specific evidence. Both diagrams are ARCLIFT editorial explanations; they do not prove machine identity, profile compatibility, tooling, output, power, or performance.

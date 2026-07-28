@@ -34,33 +34,30 @@ date: 2026-07-25
 draft: false
 ---
 
-## Plan the work zones before selecting a platform
+## Screen the 31m reference concept around obstructions and offset
 
-ARC-F31 is an archived **reference configuration** for early discussion of large-deck crawler platforms used around ceilings, services and wall work. This archived source reference identifies a 31m-class concept, not a verified current-model height, deck size, load or travel permission. ARCLIFT uses the model name to organize a technical review, while the project geometry and task data control the result.
+ARC-F31 is a 31m reference concept for an early question: do the higher work zones also introduce horizontal offset, structural obstructions, or access conflicts that change the route? It is not evidence of an exact platform. ARCLIFT acts as an integrated equipment supplier and limits its role to technical selection and supply coordination.
 
-Divide the building into work zones. For each zone, record the required vertical position, horizontal reach, underside geometry, obstructions, wall offset, access route, floor condition and actual task. A single maximum height is not enough because a lower zone can still require more outreach or a different deck arrangement.
+Prepare sections through the most difficult zones instead of selecting from maximum clear height. Trusses, ducts, cranes, wall lines, and temporary works can control the discussion before any configuration is proposed.
 
-## Build a realistic load and floor brief
+## Join geometry, floor, and task inputs
 
-List the number of people, tools, materials, point loads, handling aids and how they are distributed on the deck. The platform envelope, extension arrangement and allowable load must then be checked together. Floor information should include slab capacity, joints, openings, edge distances, slopes, ramps, finishes, underground spaces and the planned protection method.
+The configuration review changes with floor or ground bearing, indoor access, clear height, obstructions, the deck, crew, and tool basis, and rescue and local rules. Show horizontal demand, approach direction, travel corridor, slab transitions, work sequence, materials, and exclusion areas for each difficult zone.
 
-The archived 31m class and historical power options are planning inputs only. Deck loads, travel mode, support reactions and controls require **project-specific confirmation** and an approved load chart.
+Send for screening:
 
-## Situations that require another method
+- Floor or ground bearing records across travel and setup positions
+- Indoor access route, staging area, turns, ramps, and temporary restrictions
+- Clear height, horizontal offset, underside structure, and obstructions
+- Deck, crew, and tool basis with materials and distribution assumptions
+- Rescue and local rules, isolation needs, task sequence, and competent reviewers
 
-This route may not fit where the floor capacity is unknown, the travel corridor cannot accommodate the reviewed envelope, overhead obstructions cannot be isolated, loads cannot be controlled, rescue access is unresolved, or local rules require another access method. It does not replace a task risk assessment, rescue plan or competent site supervision.
+## Do not infer reach around an obstruction
 
-## Buyer information to send
+The reference concept may not fit if an obstruction has no surveyed clearance, floor transitions cannot be reviewed, the approach direction is blocked, or rescue coverage is incomplete. Neither the visual nor the 31m label establishes reach, load, or movement.
 
-- Reflected ceiling plan, elevations and sections with work zones marked
-- Required height, outreach, wall offset and underside obstructions by zone
-- Floor route, slab data, openings, joints, ramps, slopes and protection limits
-- Crew, tools, materials, point loads and intended load distribution
-- Task sequence, access restrictions, rescue route and exclusion zones
-- Available power, environment, transport route and local requirements
+## Ask for an evidence-gap review
 
-## Documents that control supply
+The signed technical schedule and approved drawings control the final configuration. A configuration-specific approved load chart, floor-route review, and packing data would be required later. Ask ARCLIFT to review the surveyed sections and evidence gaps as a technical selection and supply partner.
 
-Final configuration requires the **signed technical schedule**, **approved drawings**, approved load chart, floor-route review and approved packing data. These documents define the deck, loads, movement restrictions, interfaces and responsibilities for the project.
-
-**Image disclosure:** Representative editorial image — not model-specific evidence. Each raster visual is an **AI-assisted editorial composite** and the diagram is an ARCLIFT editorial planning aid. They do not establish model identity, suitability, delivered configuration or performance.
+**Image disclosure:** Representative editorial image — not model-specific evidence. Each raster is an **AI-assisted editorial composite** depicting work context, and the diagram lists inputs; none proves ARC-F31 configuration or capability.

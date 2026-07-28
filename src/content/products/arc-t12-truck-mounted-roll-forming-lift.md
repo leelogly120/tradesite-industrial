@@ -34,34 +34,31 @@ date: 2026-07-25
 draft: false
 ---
 
-## A transport-and-site reference, not a fixed vehicle
+## Start with a compact destination chassis and tight site access
 
-ARC-T12 is a **reference configuration** for discussing a truck-mounted roll-forming workflow. This archived source reference records a 12m-class concept, but it is not evidence that a current unit has that work envelope, payload, road status or chassis. ARCLIFT treats the equipment module, forming line, destination chassis, road route and site setup as one project package.
+ARC-T12 is an archived 12m-class reference for deciding whether a compact destination chassis route should be investigated where tight site access governs the plan. It is not a road-ready vehicle specification. ARCLIFT works as a technical selection and supply partner, coordinating module, chassis, route, and site questions without certifying any of them.
 
-The truck-mounted route can be worth reviewing when projects are distributed and the buyer has a clear vehicle strategy. It should be compared with crawler support, separate transport, ground forming and conventional lifting on the actual route and site data. The comparison must include legal road dimensions, axle distribution, mounting loads, setup area, ground reactions, crane or handling provisions and recovery planning.
+The first comparison is between the proposed vehicle envelope and the actual gate, turning, road, and setup constraints. Archive height does not establish axle distribution, registration, or a working envelope.
 
-## Information needed before chassis selection
+## Check vehicle and site variables together
 
-Provide the destination country, proposed chassis data, wheelbase, frame drawing, axle ratings, legal dimensions, route limits and registration route. The technical review also needs the work zones, required height and outreach, setup geometry, ground bearing data, overhead restrictions and the planned operating sequence.
+The configuration review changes with destination road and chassis rules, travel and working envelopes, outriggers and ground conditions, the transport route, panel run-out, and approval documents. Include the proposed frame, wheelbase, axle basis, mounting boundary, and setup sequence in one review pack.
 
-For the forming line, send the approved panel profile, material and yield, thickness, coil data, target panel lengths, tooling revision, machine footprint and mass, power demand, control interface and feed direction. Historical references to 8t-class payload, 0.3–1.0mm material and 380V-class power remain planning inputs only and require **project-specific confirmation**.
+Please send:
 
-## Boundaries buyers should keep visible
+- Destination road and chassis rules plus the proposed chassis drawing
+- Travel and working envelopes against gates, turns, bridges, and overhead limits
+- Outriggers and ground information for every intended setup position
+- Transport route, site-entry survey, and recovery constraints
+- Panel run-out and forming-line interface at the roof handover
+- Approval documents, inspection route, and local registration requirements
 
-The website does not promise road registration, unrestricted travel, a specific setup time, crane-free handling or a particular production result. A truck concept may not fit where axle limits, bridge clearances, site access, setup reactions, chassis availability or local approval cannot be resolved.
+## When the compact route may not fit
 
-## Buyer information to send
+The reference may not fit if the chassis basis is unavailable, the route envelope is unresolved, setup reactions cannot be checked, or the panel path conflicts with site access. This page does not promise registration, travel state, setup time, or operational performance.
 
-- Destination and proposed registration or permit route
-- Chassis drawing, wheelbase, frame, axle ratings and legal envelope
-- Route survey, bridge and gate clearances, turning and site-entry limits
-- Work-zone plan, height, outreach, setup positions and ground information
-- Panel profile, material, thickness, coil data and forming-line interfaces
-- Power, controls, weather basis, support reactions and recovery plan
-- Documentation, inspection, packing and destination handling requirements
+## Request a route-and-interface review
 
-## Final project documents
+The signed technical schedule and approved drawings control the final configuration. The approved load chart, chassis interface schedule, and packing data must match the selected arrangement. Ask ARCLIFT to review the route file and chassis boundary as an integrated equipment supplier; destination approval remains project-specific.
 
-Final configuration requires the **signed technical schedule**, **approved drawings**, approved load chart, chassis interface schedule and approved packing data. These documents define the vehicle-module boundary, operating envelope, loads, interfaces and destination responsibilities.
-
-**Image disclosure:** Representative editorial image — not model-specific evidence. The raster visual is an **AI-assisted editorial composite** and the diagrams are ARCLIFT editorial explanations. They do not establish vehicle identity, road legality, suitability or performance.
+**Image disclosure:** Representative editorial image — not model-specific evidence. The truck raster is an **AI-assisted editorial composite** and the diagrams are planning aids, not proof of ARC-T12 road status or configuration.

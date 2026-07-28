@@ -34,29 +34,31 @@ date: 2026-07-25
 draft: false
 ---
 
-## Use this page to test a logistics route
+## Keep ARC-T25HQ as a 40HQ packing-study route only
 
-ARC-T25HQ is a transport-oriented **reference configuration** for early planning around a possible 40HQ route. This archived source reference records a 25m-class concept and a modular logistics idea; it does not prove that a quoted configuration fits a container, can be handled by a particular crane, or matches a destination chassis.
+ARC-T25HQ exists to decide whether a modular packing study should be opened for a defined project. It is a 40HQ packing-study route only, not evidence that any configuration fits a container, ships in a fixed quantity, or lowers freight cost. ARCLIFT acts as an integrated equipment supplier and can coordinate the information needed for the study.
 
-Container planning begins with issued packing information. The review must use actual **module dimensions**, **module mass**, centre of gravity, lifting points, **container-door clearance**, internal dimensions, floor limits, blocking and **lashing** arrangement. These values are **confirmed per project** after the configuration is defined.
+The archived 25m class does not release a packing plan. Start with the selected module breakdown, then test it against the container, handling, destination assembly, chassis, and route constraints.
 
-## Destination integration is a separate engineering boundary
+## Define every packing and integration variable
 
-The **destination chassis interface** needs frame and axle data, wheelbase, legal dimensions, mounting arrangement, local registration route and road restrictions. The unloading and assembly plan needs the available lifting equipment, rigging, work area, support surface, competent personnel, inspection steps and commissioning responsibilities.
+The configuration review changes with module dimensions and mass, centre of gravity, lifting points, container-door clearance, internal limits, floor basis, blocking, and lashing. Destination road and chassis rules, travel and working envelopes, outriggers and ground data, transport route, panel run-out, and approval documents remain separate project inputs.
 
-The archived 25m class and historical 40HQ route are planning inputs only. They require **project-specific confirmation** and should not be used in a tender, freight booking or lift plan before approved documents are issued.
+Send:
 
-## Buyer information to send
+- Module dimensions and mass with centre of gravity and lifting points
+- Container-door clearance, internal envelope, floor limits, and owner requirements
+- Blocking, lashing, lifting, unloading, and destination assembly resources
+- Destination road and chassis rules plus the proposed interface drawing
+- Travel and working envelopes, outriggers and ground basis, and transport route
+- Panel run-out, work-zone information, customs needs, and approval documents
 
-- Destination, port, inland route and proposed chassis data
-- Container owner or carrier requirements and available internal envelope
-- Available crane or handling equipment at loading and destination
-- Assembly area, support surface, access restrictions and weather limits
-- Work-zone plan, required height and outreach, and forming-line interfaces
-- Documentation, inspection, customs and local registration requirements
+## Stop before freight booking
 
-## Release documents for the order
+This planning route may not fit if the module breakdown is unsettled, masses or lifting points are unissued, container limits conflict with the package, or destination assembly and chassis interfaces remain unresolved. Do not use this page for a booking, lift plan, or tender commitment.
 
-Final configuration requires the **signed technical schedule**, **approved drawings**, approved load chart, approved packing list, lifting-point drawing, lashing plan and destination chassis interface schedule. Freight booking should use only the approved packing data for the quoted configuration.
+## Release only configuration-matched packing data
 
-**Image disclosure:** Representative editorial image — not model-specific evidence. The port raster is an **AI-assisted editorial composite** and the diagrams are ARCLIFT editorial planning aids. They do not establish container fit, shipment history, chassis compatibility or performance.
+The signed technical schedule and approved drawings control the final configuration. The approved packing list, lifting-point drawing, lashing plan, load chart, and chassis interface must match it. Ask ARCLIFT to review the packing inputs as a technical selection and supply partner; carrier acceptance and destination approvals remain external gates.
+
+**Image disclosure:** Representative editorial image — not model-specific evidence. The port raster is an **AI-assisted editorial composite** and the diagrams explain packing checkpoints only; they do not prove container fit, shipment, or ARC-T25HQ performance.
