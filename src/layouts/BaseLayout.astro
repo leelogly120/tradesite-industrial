@@ -10,9 +10,10 @@ interface Props {
   canonical?: string | false;
   transparentNav?: boolean;
   noindex?: boolean;
+  follow?: boolean;
 }
 
-const { title, description, ogImage, ogType, canonical, transparentNav = true, noindex = false } = Astro.props;
+const { title, description, ogImage, ogType, canonical, transparentNav = true, noindex = false, follow = false } = Astro.props;
 const siteName = 'ARCLIFT';
 const currentPath = Astro.url.pathname;
 
@@ -45,6 +46,7 @@ function isActive(href: string) {
       ogType={ogType}
       canonical={canonical}
       noindex={noindex}
+      follow={follow}
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

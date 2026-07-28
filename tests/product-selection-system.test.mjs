@@ -206,6 +206,7 @@ describe('ARCLIFT buyer-decision product detail template', () => {
 describe('ARCLIFT evidence-safe comparison page', () => {
   const buildCompareView = productSelectionDomain.buildCompareView;
   const renderCompareRegion = productSelectionDomain.renderCompareRegion;
+  const renderCompareQuery = productSelectionDomain.renderCompareQuery;
   const product = (slug, orientationValue) => ({
     id: slug,
     data: { specifications: { 'Archived Height Class': orientationValue } },
@@ -317,8 +318,58 @@ describe('ARCLIFT evidence-safe comparison page', () => {
     expect(comparePageSource).toMatch(/noindex=\{true\}/);
     expect(comparePageSource).toMatch(/data-compare-region/);
     expect(comparePageSource).toMatch(/URLSearchParams/);
-    expect(comparePageSource).toMatch(/parseCompareItems/);
+    expect(comparePageSource).toMatch(/renderCompareQuery/);
     expect(comparePageSource).not.toMatch(/'@type':\s*['"](?:Product|Offer)['"]/);
-    expect(seoHeadSource).toContain('content="noindex,follow"');
+    expect(seoHeadSource).toContain("'noindex,follow'");
+    expect(seoHeadSource).toContain("'noindex,nofollow'");
+  });
+
+  it('keeps the static default for empty or invalid-only queries and enhances one to four valid selections', () => {
+    expect(renderCompareQuery).toBeTypeOf('function');
+    const views = [
+      buildCompareView?.(product('arc-f20-crawler-ceiling-platform', 'Archived reference – 20m class')),
+      buildCompareView?.(product('arc-f25-crawler-ceiling-platform', 'Archived reference – 25m class')),
+      buildCompareView?.(product('arc-f31-crawler-ceiling-platform', 'Archived reference – 31m class')),
+      buildCompareView?.(product('arc-f35-crawler-ceiling-platform', 'Archived reference – 35m class')),
+      buildCompareView?.(product('arc-c17-crawler-roll-forming-lift', 'Archived reference – 17m class')),
+    ].filter(Boolean);
+
+    expect(renderCompareQuery?.(null, views)).toBeUndefined();
+    expect(renderCompareQuery?.('', views)).toBeUndefined();
+    expect(renderCompareQuery?.('not-real,also-not-real', views)).toBeUndefined();
+
+    const one = renderCompareQuery?.('not-real,arc-f20-crawler-ceiling-platform', views);
+    expect(one).toContain('href="/products/arc-f20-crawler-ceiling-platform/"');
+    expect(one).toContain('Add at least one more reference');
+
+    const capped = renderCompareQuery?.(views.map(view => view.slug).join(','), views);
+    expect(capped).toContain('href="/products/arc-f20-crawler-ceiling-platform/"');
+    expect(capped).toContain('href="/products/arc-f35-crawler-ceiling-platform/"');
+    expect(capped).not.toContain('href="/products/arc-c17-crawler-roll-forming-lift/"');
+  });
+
+  it('keeps browser comparison code isolated from the full product-selection domain', async () => {
+    const comparePageSource = await readFile(new URL('../src/pages/compare.astro', import.meta.url), 'utf8');
+    const browserSafeSource = await readFile(new URL('../src/lib/product-compare.ts', import.meta.url), 'utf8').catch(() => '');
+
+    expect(comparePageSource).toMatch(/<script>[\s\S]*?from '\.\.\/lib\/product-compare'/);
+    expect(comparePageSource).not.toMatch(/<script>[\s\S]*?from '\.\.\/lib\/product-selection'/);
+    expect(browserSafeSource).toContain('export function renderCompareQuery');
+    expect(browserSafeSource).not.toMatch(/from ['"].*product-selection|PRODUCT_REFERENCES|PRODUCT_FAMILIES|sourceKey|prohibitedInferences|editorialImages|imageDisclosure|\/images\//);
+  });
+
+  it('opts compare into follow without changing the shared 404 noindex default', async () => {
+    const comparePageSource = await readFile(new URL('../src/pages/compare.astro', import.meta.url), 'utf8');
+    const baseLayoutSource = await readFile(new URL('../src/layouts/BaseLayout.astro', import.meta.url), 'utf8');
+    const seoHeadSource = await readFile(new URL('../src/components/SEOHead.astro', import.meta.url), 'utf8');
+    const notFoundSource = await readFile(new URL('../src/pages/404.astro', import.meta.url), 'utf8');
+
+    expect(comparePageSource).toMatch(/follow=\{true\}/);
+    expect(baseLayoutSource).toMatch(/follow\?: boolean/);
+    expect(baseLayoutSource).toMatch(/follow=\{follow\}/);
+    expect(seoHeadSource).toMatch(/follow\?: boolean/);
+    expect(seoHeadSource).toContain("'noindex,follow'");
+    expect(seoHeadSource).toContain("'noindex,nofollow'");
+    expect(notFoundSource).not.toMatch(/follow=\{true\}/);
   });
 });

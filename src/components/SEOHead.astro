@@ -6,12 +6,13 @@ interface Props {
   ogImage?: string;
   ogType?: string;
   noindex?: boolean;
+  follow?: boolean;
   alternateLocales?: { locale: string; url: string }[];
 }
 
 const {
   title, description, canonical, ogImage,
-  ogType = 'website', noindex = false,
+  ogType = 'website', noindex = false, follow = false,
   alternateLocales = []
 } = Astro.props;
 
@@ -21,12 +22,13 @@ const defaultOgImage = `${siteUrl}/images/og-default.svg`;
 const socialImage = ogImage
   ? (/^https?:\/\//i.test(ogImage) ? ogImage : new URL(ogImage, siteUrl).href)
   : defaultOgImage;
+const robots = follow ? 'noindex,follow' : 'noindex,nofollow';
 ---
 
 <title>{title}</title>
 <meta name="description" content={description} />
 {pageUrl && <link rel="canonical" href={pageUrl} />}
-{noindex && <meta name="robots" content="noindex,follow" />}
+{noindex && <meta name="robots" content={robots} />}
 
 <!-- Open Graph -->
 <meta property="og:title" content={title} />

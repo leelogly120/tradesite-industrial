@@ -5,8 +5,8 @@ import {
   DEFAULT_COMPARE_SLUGS,
   PRODUCT_REFERENCES,
   buildCompareView,
-  renderCompareRegion,
 } from '../lib/product-selection';
+import { renderCompareRegion } from '../lib/product-compare';
 
 const publicProducts = (await getCollection('products')).filter(product => !product.data.draft);
 const productsBySlug = new Map(publicProducts.map(product => [product.id, product]));
@@ -30,6 +30,7 @@ const defaultCompareHtml = renderCompareRegion(defaultCompareViews);
   description="Compare ARCLIFT archived references by family, status, project-review scope and confirmation requirements."
   canonical="https://www.arclifteq.com/compare/"
   noindex={true}
+  follow={true}
   transparentNav={false}
 >
   <section class="hero-banner" style="--banner-image:url('/images/banners/compare.webp');--banner-position:center 58%;">
@@ -72,10 +73,9 @@ const defaultCompareHtml = renderCompareRegion(defaultCompareViews);
 
 <script>
   import {
-    parseCompareItems,
-    renderCompareRegion,
+    renderCompareQuery,
     type CompareView,
-  } from '../lib/product-selection';
+  } from '../lib/product-compare';
 
   const region = document.querySelector<HTMLElement>('[data-compare-region]');
   const dataElement = document.querySelector<HTMLScriptElement>('#compare-reference-data');
@@ -83,12 +83,8 @@ const defaultCompareHtml = renderCompareRegion(defaultCompareViews);
 
   if (region && dataElement && params.has('items')) {
     const availableViews = JSON.parse(dataElement.textContent ?? '[]') as CompareView[];
-    const viewsBySlug = new Map(availableViews.map(view => [view.slug, view]));
-    const selectedViews = parseCompareItems(params.get('items')).flatMap((slug) => {
-      const view = viewsBySlug.get(slug);
-      return view ? [view] : [];
-    });
-    region.innerHTML = renderCompareRegion(selectedViews);
+    const queryHtml = renderCompareQuery(params.get('items'), availableViews);
+    if (queryHtml) region.innerHTML = queryHtml;
   }
 </script>
 
