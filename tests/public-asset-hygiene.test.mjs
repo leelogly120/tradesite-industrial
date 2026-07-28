@@ -6,6 +6,8 @@ import { describe, expect, it } from 'vitest';
 
 const root = resolve(import.meta.dirname, '..');
 const blogRoot = resolve(root, 'src/content/blog');
+const productRoot = resolve(root, 'src/content/products');
+const productManifestPath = resolve(root, 'public/images/asset-manifest.json');
 
 const prohibitedPublicDirectories = [
   'public/images/products/local',
@@ -201,6 +203,66 @@ describe('public source-asset quarantine', () => {
 
     expect(gitignore).toMatch(/^public\/images\/products\/local\/$/m);
     expect(gitignore).not.toMatch(/^public\/images\/editorial\/$/m);
+  });
+
+  it('keeps source product photographs out of the public tree and product manifest', async () => {
+    const manifest = JSON.parse(await readFile(productManifestPath, 'utf8'));
+
+    expect(await pathExists(resolve(root, 'public/images/products'))).toBe(false);
+    for (const record of manifest.products) {
+      for (const url of record.urls) {
+        expect(url, record.slug).not.toMatch(/^\/images\/products\//);
+      }
+    }
+  });
+
+  it('publishes no private source path, raw capture name, or source identity in product surfaces', async () => {
+    const templatePaths = [
+      resolve(root, 'src/lib/product-selection.ts'),
+      resolve(root, 'src/pages/products/index.astro'),
+      resolve(root, 'src/pages/products/[slug].astro'),
+      resolve(root, 'src/pages/compare.astro'),
+      productManifestPath,
+    ];
+    const productMarkdown = await listMarkdownFiles(productRoot);
+    const failures = [];
+    const privatePath = /(?:^|[\s"'(>])(?:[A-Za-z]:[\\/]|\/(?:Users|home)\/)|\/images\/[^\s)"']*[\u3400-\u9fff][^\s)"']*/u;
+    const rawCapture = /(?:^|[\\/])(?:DJI|IMG|DSC)[_-]?\d+\.(?:jpe?g|png|webp|gif)\b/imu;
+    const sourceIdentity = /Henan\s+Huaying|河南华鹰|source\s+(?:factory|manufacturer)|customer\s+project\s+(?:name|identity)/iu;
+
+    for (const file of [...templatePaths, ...productMarkdown]) {
+      const text = await readFile(file, 'utf8');
+      if (privatePath.test(text)) failures.push(`${file}: private or Chinese source path`);
+      if (rawCapture.test(text)) failures.push(`${file}: raw camera or DJI filename`);
+      if (sourceIdentity.test(text)) failures.push(`${file}: source identity marker`);
+    }
+
+    expect(failures).toEqual([]);
+  });
+
+  it('strips EXIF, GPS, private paths, raw capture names, and source identities from product visual assets', async () => {
+    const manifest = JSON.parse(await readFile(productManifestPath, 'utf8'));
+    const urls = [...new Set(manifest.products.flatMap(record => record.urls))];
+    const leaks = /(?:^|[\s"'(>])(?:[A-Za-z]:[\\/]|\/(?:Users|home)\/)|GPS(?:Latitude|Longitude|Altitude)?|Henan\s+Huaying|河南华鹰|DJI[_-]?\d+|source\s+(?:factory|manufacturer)/iu;
+
+    for (const url of urls) {
+      const path = resolve(root, 'public', url.replace(/^\//, ''));
+      const extension = extname(path).toLowerCase();
+      expect(await pathExists(path), url).toBe(true);
+
+      if (extension === '.svg') {
+        expect(await readFile(path, 'utf8'), url).not.toMatch(leaks);
+        continue;
+      }
+
+      const metadata = await sharp(path).metadata();
+      const metadataText = [metadata.xmp, metadata.exif, metadata.iptc]
+        .filter(Boolean)
+        .map(bytes => bytes.toString('utf8'))
+        .join('\n');
+      expect(metadata.exif, url).toBeUndefined();
+      expect(metadataText, url).not.toMatch(leaks);
+    }
   });
 });
 

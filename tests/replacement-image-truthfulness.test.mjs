@@ -3,7 +3,11 @@ import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 
 const root = resolve(import.meta.dirname, '..');
+const productManifestPath = resolve(root, 'public/images/asset-manifest.json');
+const productListPath = resolve(root, 'src/pages/products/index.astro');
+const productDetailPath = resolve(root, 'src/pages/products/[slug].astro');
 const editorialDiagram = /\/images\/editorial\/(?:roof-level-workflow|crawler-truck-selection-matrix|40hq-logistics-checkpoints|ceiling-platform-project-data|roll-forming-input-map|crawler-platform-selection-path|ceiling-access-method-matrix|indoor-floor-load-review|remote-control-safety-loop|dual-power-duty-cycle|warehouse-ceiling-access-map)\.svg/;
+const productDisclosure = 'Editorial planning visual — not model-specific evidence';
 
 async function markdown(dir) {
   const base = resolve(root, 'src/content', dir);
@@ -40,5 +44,37 @@ describe('Replacement image truthfulness', () => {
     await expect(readdir(resolve(root, 'src/pages/case-studies'))).rejects.toMatchObject({
       code: 'ENOENT',
     });
+  });
+
+  it('keeps all 15 product visual records editorial with one exact disclosure', async () => {
+    const manifest = JSON.parse(await readFile(productManifestPath, 'utf8'));
+
+    expect(manifest.products).toHaveLength(15);
+    expect(new Set(manifest.products.map(record => record.slug)).size).toBe(15);
+    for (const record of manifest.products) {
+      expect(record.classification, record.slug).toBe('editorial');
+      expect(record.disclosure, record.slug).toBe(productDisclosure);
+      expect(record.urls.length, record.slug).toBeGreaterThan(0);
+      for (const url of record.urls) {
+        expect(url, record.slug).toMatch(/^\/images\/(?:editorial|hero)\//);
+        expect(url, record.slug).not.toMatch(/^\/images\/products\//);
+      }
+    }
+  });
+
+  it('places the exact disclosure beside listing and detail-page product visuals', async () => {
+    const [selectionDomain, productList, productDetail] = await Promise.all([
+      readFile(resolve(root, 'src/lib/product-selection.ts'), 'utf8'),
+      readFile(productListPath, 'utf8'),
+      readFile(productDetailPath, 'utf8'),
+    ]);
+
+    expect(selectionDomain).toContain(`const IMAGE_DISCLOSURE = '${productDisclosure}'`);
+    expect(productList).toMatch(
+      /<img class="family-card__image"[\s\S]{0,500}<p class="image-disclosure">Editorial planning visual — not model-specific evidence<\/p>/,
+    );
+    expect(productDetail).toMatch(
+      /<figure class="decision-gallery__figure">[\s\S]{0,500}<figcaption>\{productView\.imageDisclosure\}<\/figcaption>[\s\S]{0,100}<\/figure>/,
+    );
   });
 });
