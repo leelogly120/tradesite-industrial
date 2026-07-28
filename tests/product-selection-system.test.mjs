@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { readFile } from 'node:fs/promises';
 import {
   DEFAULT_COMPARE_SLUGS,
   PRODUCT_FAMILIES,
@@ -11,6 +12,7 @@ import {
 } from '../src/lib/product-selection';
 
 const disclosure = 'Editorial planning visual — not model-specific evidence';
+const productListSource = await readFile(new URL('../src/pages/products/index.astro', import.meta.url), 'utf8');
 
 const expectedFamilies = [
   ['crawler-roll-forming-lifts', ['ARC-C17', 'ARC-C21', 'ARC-C25', 'ARC-C28', 'ARC-C32']],
@@ -105,5 +107,43 @@ describe('ARCLIFT evidence-safe product selection domain', () => {
     expect(getCompareMode(['arc-f20-crawler-ceiling-platform'])).toBe('single');
     expect(getCompareMode(['arc-f20-crawler-ceiling-platform', 'arc-f25-crawler-ceiling-platform'])).toBe('same-family');
     expect(getCompareMode(['arc-f20-crawler-ceiling-platform', 'arc-c17-crawler-roll-forming-lift'])).toBe('cross-family');
+  });
+});
+
+describe('ARCLIFT family-first product selector', () => {
+  it('renders the four selection families from the shared domain and retains every reference detail route', () => {
+    expect(productListSource).toMatch(/PRODUCT_FAMILIES/);
+    expect(productListSource).toMatch(/PRODUCT_REFERENCES/);
+    expect(productListSource).toMatch(/family-card/);
+    expect(productListSource).toMatch(/href=\{`\/products\/\$\{reference\.slug\}\/`\}/);
+    expect(PRODUCT_REFERENCES).toHaveLength(15);
+  });
+
+  it('gives buyers project inputs and exposes the evidence boundary through visible family and reference content', () => {
+    expect(productListSource).toMatch(/Prepare these inputs/);
+    expect(productListSource).toMatch(/projectInputs/);
+    expect(productListSource).toContain(disclosure);
+    expect(productListSource).toMatch(/reference\.status/);
+    expect(productListSource).toMatch(/reference\.statusNote/);
+  });
+
+  it('keeps comparison progressive and sends selected slugs to the existing compare route', () => {
+    expect(productListSource).toMatch(/type="checkbox"/);
+    expect(productListSource).toMatch(/data-compare-item/);
+    expect(productListSource).toMatch(/\/compare\/\?items=/);
+    expect(productListSource).toMatch(/Compare selected/);
+  });
+
+  it('uses an ItemList of WebPage detail links without Product or Offer structured data or unsafe card fields', () => {
+    expect(productListSource).toMatch(/'@type': 'ItemList'/);
+    expect(productListSource).toMatch(/'@type': 'WebPage'/);
+    expect(productListSource).not.toMatch(/'@type': 'Product'/);
+    expect(productListSource).not.toMatch(/'@type': 'Offer'/);
+    const crawlerAndTruckCardSource = productListSource.slice(0, productListSource.indexOf('roll-forming-machines'));
+    expect(crawlerAndTruckCardSource).not.toMatch(/Payload|Sheet Thickness|Power/);
+  });
+
+  it('does not place comparison controls inside detail links', () => {
+    expect(productListSource).toMatch(/<a[^>]*class="detail-link"[^>]*>[\s\S]*?<\/a>\s*<label class="compare-choice">\s*<input/);
   });
 });

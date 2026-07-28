@@ -1,158 +1,233 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { buildProductView } from '../../lib/product-selection';
+import { PRODUCT_FAMILIES, PRODUCT_REFERENCES } from '../../lib/product-selection';
 import { getCollection } from 'astro:content';
 
-const allProducts = (await getCollection('products')).filter(p => !p.data.draft);
-
-const CATEGORIES = [
-  {
-    id: 'crawler-roll-forming-lifts',
-    name: 'Crawler Roll Forming Lifts',
-    tagline: 'Crawler platforms configured to raise a complete roll forming line toward roof level. Archived source material covers reference lift heights from 17m to 32m; final power and chassis are project-specific.',
-    banner: '/images/banners/category-crawler.webp',
-  },
-  {
-    id: 'truck-mounted-roll-forming-lifts',
-    name: 'Truck-Mounted Roll Forming Lifts',
-    tagline: 'Truck-mounted forming systems with archived 12m–31m reference classes. Road registration, chassis, transport envelope and any 40HQ packing route require project review and approved data.',
-    banner: '/images/banners/category-truck.webp',
-  },
-  {
-    id: 'crawler-ceiling-platforms',
-    name: 'Crawler Ceiling Platforms',
-    tagline: 'Large-deck crawler platform concepts for under-ceiling and wall-panel crews. ARC-F pages are reference configurations pending model-specific engineering, approval photos and compliance documents.',
-    banner: '/images/banners/category-ceiling.webp',
-  },
-  {
-    id: 'roll-forming-machines',
-    name: 'Roll Forming Machines',
-    tagline: 'Compact standing-seam and trapezoidal panel lines matched to approved profile drawings, sheet thickness and the selected lift platform.',
-    banner: '/images/banners/category-roll-former.webp',
-  },
-];
-
-function productSortValue(value: unknown): number {
-  const match = String(value ?? '').match(/(\d+(?:\.\d+)?)/);
-  return match ? parseFloat(match[1]) : Number.POSITIVE_INFINITY;
-}
-
-function heightOf(p: any): number {
-  return productSortValue(buildProductView(p)?.orientation.value);
-}
-
-
-const grouped = CATEGORIES.map(cat => ({
-  ...cat,
-  items: allProducts
-    .filter(p => p.data.category === cat.name)
-    .sort((a, b) => heightOf(a) - heightOf(b)),
+const allProducts = (await getCollection('products')).filter(product => !product.data.draft);
+const productsBySlug = new Map(allProducts.map(product => [product.id, product]));
+const familySections = PRODUCT_FAMILIES.map(family => ({
+  ...family,
+  references: PRODUCT_REFERENCES
+    .filter(reference => reference.familyId === family.id)
+    .map(reference => {
+      if (!productsBySlug.has(reference.slug)) throw new Error(`Missing public product entry: ${reference.slug}`);
+      return reference;
+    }),
 }));
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'ARCLIFT equipment reference index',
+  itemListElement: PRODUCT_REFERENCES.map((reference, position) => ({
+    '@type': 'ListItem',
+    position: position + 1,
+    item: {
+      '@type': 'WebPage',
+      name: `${reference.model} reference page`,
+      url: new URL(`/products/${reference.slug}/`, Astro.url).href,
+    },
+  })),
+};
 ---
 
 <BaseLayout
-  title="Products — Roll Forming Lifts & Aerial Platforms"
-  description="ARCLIFT archived reference configurations for crawler and truck roll-forming lifts, large-deck platforms and profile-specific roll-forming lines."
+  title="Products — Project selection for roll-forming and access workflows"
+  description="Start an ARCLIFT project review by choosing an equipment family, preparing the relevant site inputs and opening retained reference pages."
   transparentNav={false}
 >
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
 
-  <!-- HERO BANNER -->
-  <section class="hero-banner" style="--banner-image:url('/images/banners/products.webp');--banner-position:center 58%;">
-    <div class="overline">Products</div>
-    <h1>ARC EQUIPMENT RANGE</h1>
-    <p>Four equipment families for forming long panels near the installation elevation and supporting specialized ceiling or wall work.</p>
+  <section class="selector-hero">
+    <div class="selector-hero__inner">
+      <p class="eyebrow">Product selection</p>
+      <h1>Start with the project workflow, then open the right references.</h1>
+      <p>Choose the equipment family that matches the work route. These pages organize early discussions; a documented project review confirms the final configuration.</p>
+      <a class="btn btn--primary" href="#families">Explore four equipment families</a>
+    </div>
   </section>
 
-  <!-- CATEGORY NAV -->
-  <nav class="cat-nav" aria-label="Product categories">
-    {CATEGORIES.map(cat => (
-      <a href={`#${cat.id}`} class="cat-nav__link">{cat.name}</a>
-    ))}
+  <section class="inputs" aria-labelledby="inputs-title">
+    <div class="inputs__intro">
+      <p class="eyebrow">Before you compare</p>
+      <h2 id="inputs-title">Prepare these inputs</h2>
+      <p>Bring the project facts that change the work route, interfaces and required documentation.</p>
+    </div>
+    <div class="inputs__grid">
+      {familySections.map(family => (
+        <article class="input-card">
+          <h3>{family.shortName}</h3>
+          <ul>
+            {family.projectInputs.map(input => <li>{input}</li>)}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <nav class="family-nav" aria-label="Equipment families">
+    {familySections.map(family => <a href={`#${family.anchor}`}>{family.shortName}</a>)}
   </nav>
 
-  <!-- CATEGORY SECTIONS -->
-  {grouped.map(cat => (
-    <section class="sec" id={cat.id}>
-      <div class="sec__header reveal">
-        <div class="sec__overline">{cat.items.length} {cat.items.length === 1 ? 'Model' : 'Models'}</div>
-        <h2 class="sec__title">{cat.name.toUpperCase()}</h2>
-        <p class="sec__desc">{cat.tagline}</p>
-      </div>
-      <div class="category-banner reveal" style={`background-image:url('${cat.banner}');`} role="img" aria-label={`${cat.name} operating scene`}></div>
-      <div class="products-list">
-        {cat.items.map(p => {
-          const view = buildProductView(p);
-          if (!view) throw new Error(`Unknown product reference: ${p.id}`);
-          const model = view.model;
-          return (
-            <a href={`/products/${p.id}/`} class="p-card-list reveal">
-              {p.data.images?.[0] ? (
-                <div class="p-card-list__img" style={`background-image:url('${p.data.images[0]}');background-size:contain;background-position:center;background-repeat:no-repeat;`}>
-                  <span class="sr-only">{model}</span>
-                </div>
-              ) : (
-                <div class="p-card-list__img">{model}</div>
-              )}
-              <div class="p-card-list__body">
-                <div class="p-card-list__tag">{cat.name}</div>
-                <div class="p-card-list__name">{model}</div>
-                <div class="p-card-list__specs">
-                  <span class="p-card-list__spec"><b>{view.orientation.value ?? view.statusNote}</b> {view.orientation.label}</span>
-                </div>
-                <span class="btn btn--primary">View Details →</span>
-              </div>
-            </a>
-          );
-        })}
-      </div>
-    </section>
-  ))}
+  <section id="families" class="families" aria-labelledby="families-title">
+    <div class="families__heading">
+      <p class="eyebrow">Select a family</p>
+      <h2 id="families-title">Four routes for a documented project review</h2>
+    </div>
 
-  <!-- CTA -->
+    {familySections.map(family => (
+      <section class="family-section" id={family.anchor}>
+        <div class="family-card">
+          <div class="family-card__image-wrap">
+            <img class="family-card__image" src={family.editorialImage} alt={family.editorialAlt} loading="lazy" />
+            <p class="image-disclosure">Editorial planning visual — not model-specific evidence</p>
+          </div>
+          <div class="family-card__content">
+            <p class="eyebrow">{family.category}</p>
+            <h2>{family.name}</h2>
+            <p>{family.workflow}</p>
+            <div class="family-card__columns">
+              <div>
+                <h3>Review these workflows</h3>
+                <ul>
+                  {family.workflowsToAssess.map(workflow => <li>{workflow}</li>)}
+                </ul>
+              </div>
+              <div>
+                <h3>Bring these documents</h3>
+                <ul>
+                  {family.requiredDocuments.map(document => <li>{document}</li>)}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reference-heading">
+          <div>
+            <p class="eyebrow">Retained references</p>
+            <h3>{family.references.length} detail {family.references.length === 1 ? 'page' : 'pages'} for this family</h3>
+          </div>
+          <p>Open an ordinary detail link for the archived or conceptual reference context before adding it to a comparison.</p>
+        </div>
+        <div class="reference-grid">
+          {family.references.map(reference => (
+            <article class="reference-card">
+              <div class="reference-card__topline">
+                <p>{reference.model}</p>
+                <span class="status-badge">{reference.status}</span>
+              </div>
+              <p class="status-note">{reference.statusNote}</p>
+              <p>{reference.scopeStatement}</p>
+              <p class="buyer-question">{reference.buyerQuestion}</p>
+              <a class="detail-link" href={`/products/${reference.slug}/`}>Open {reference.model} reference details <span aria-hidden="true">→</span></a>
+              <label class="compare-choice">
+                <input type="checkbox" value={reference.slug} data-compare-item />
+                <span>Add {reference.model} to comparison</span>
+              </label>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
+  </section>
+
+  <section class="comparison" aria-labelledby="comparison-title">
+    <div>
+      <p class="eyebrow">Progressive comparison</p>
+      <h2 id="comparison-title">Compare selected references when their project inputs are ready.</h2>
+      <p id="compare-summary" aria-live="polite">No references selected. Choose up to four references.</p>
+    </div>
+    <button type="button" class="compare-button" data-compare-button disabled>Compare selected</button>
+  </section>
+
   <section class="cta">
-    <h2>NEED HELP CHOOSING THE RIGHT MODEL?</h2>
-    <p>Send the work zones, panel or task data, site conditions, destination and transport constraints for a documented configuration review.</p>
+    <h2>READY TO ORGANIZE A PROJECT REVIEW?</h2>
+    <p>Send the work zones, drawings, route conditions and documentation available for the selected workflow.</p>
     <a href="/contact/" class="btn--white">Request a Project Review →</a>
   </section>
 
+  <script>
+    const compareItems = Array.from(document.querySelectorAll<HTMLInputElement>('[data-compare-item]'));
+    const compareButton = document.querySelector<HTMLButtonElement>('[data-compare-button]');
+    const compareSummary = document.querySelector<HTMLElement>('#compare-summary');
+
+    function selectedReferences() {
+      return compareItems.filter(item => item.checked).map(item => item.value).slice(0, 4);
+    }
+
+    function updateComparison() {
+      const selected = selectedReferences();
+      for (const item of compareItems) item.disabled = !item.checked && selected.length >= 4;
+      if (compareButton) compareButton.disabled = selected.length === 0;
+      if (compareSummary) {
+        compareSummary.textContent = selected.length
+          ? `${selected.length} reference${selected.length === 1 ? '' : 's'} selected. You can compare up to four.`
+          : 'No references selected. Choose up to four references.';
+      }
+    }
+
+    compareItems.forEach(item => item.addEventListener('change', updateComparison));
+    compareButton?.addEventListener('click', () => {
+      const selected = selectedReferences();
+      if (selected.length) window.location.assign(`/compare/?items=${encodeURIComponent(selected.join(','))}`);
+    });
+    updateComparison();
+  </script>
+
   <style>
-    .cat-nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      padding: 24px 20px;
-      position: sticky;
-      top: 0;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
-      z-index: 50;
-      border-bottom: 1px solid #e2e8f0;
-    }
-    .cat-nav__link {
-      padding: 8px 18px;
-      border-radius: 999px;
-      border: 1.5px solid #e2e8f0;
-      font-size: 14px;
-      font-weight: 600;
-      color: #475569;
-      text-decoration: none;
-      transition: all 0.2s;
-    }
-    .cat-nav__link:hover {
-      border-color: #2563eb;
-      color: #2563eb;
-      background: #eff6ff;
-    }
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-    }
-    section[id] {
-      scroll-margin-top: 90px;
-    }
+    .selector-hero { background: #10233c; color: white; padding: clamp(4rem, 10vw, 7rem) 1.5rem; }
+    .selector-hero__inner, .inputs, .families, .comparison { max-width: 1180px; margin: 0 auto; }
+    .selector-hero__inner { max-width: 800px; }
+    .selector-hero h1 { max-width: 760px; font-size: clamp(2.3rem, 5vw, 4.7rem); line-height: 1.02; margin: .4rem 0 1.2rem; }
+    .selector-hero p { max-width: 690px; font-size: 1.12rem; line-height: 1.7; color: #dbeafe; }
+    .selector-hero .btn { display: inline-flex; margin-top: 1rem; min-height: 44px; align-items: center; }
+    .eyebrow { margin: 0; color: #2563eb; font-size: .77rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .selector-hero .eyebrow { color: #93c5fd; }
+    .inputs { padding: 4.5rem 1.5rem 2rem; }
+    .inputs__intro { max-width: 650px; }
+    .inputs h2, .families h2, .comparison h2 { margin: .35rem 0 .8rem; color: #10233c; font-size: clamp(1.7rem, 3vw, 2.5rem); line-height: 1.12; }
+    .inputs__intro > p:last-child, .reference-heading > p, .comparison p { color: #526273; line-height: 1.65; }
+    .inputs__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+    .input-card, .reference-card { border: 1px solid #d9e2ec; border-radius: 14px; background: #fff; }
+    .input-card { padding: 1.2rem; }
+    .input-card h3 { margin: 0; color: #10233c; font-size: 1rem; }
+    .input-card ul, .family-card ul { margin: .8rem 0 0; padding-left: 1.1rem; color: #526273; line-height: 1.55; }
+    .family-nav { display: flex; flex-wrap: wrap; gap: .7rem; justify-content: center; padding: 1.5rem; border-block: 1px solid #e2e8f0; }
+    .family-nav a { align-items: center; border: 1px solid #cbd5e1; border-radius: 999px; color: #16345a; display: inline-flex; min-height: 44px; padding: 0 .9rem; text-decoration: none; font-weight: 700; }
+    .family-nav a:hover { background: #eff6ff; border-color: #2563eb; }
+    .families { padding: 4.5rem 1.5rem; }
+    .families__heading { max-width: 700px; }
+    .family-section { margin-top: 3.75rem; scroll-margin-top: 1rem; }
+    .family-card { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); border: 1px solid #d9e2ec; border-radius: 18px; overflow: hidden; background: #fff; }
+    .family-card__image-wrap { background: #f1f5f9; }
+    .family-card__image { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; }
+    .image-disclosure { margin: 0; padding: .7rem 1rem; background: #e8eef5; color: #526273; font-size: .77rem; line-height: 1.35; }
+    .family-card__content { padding: clamp(1.4rem, 3vw, 2.5rem); }
+    .family-card__content > p:not(.eyebrow) { color: #475569; line-height: 1.65; }
+    .family-card__columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.3rem; margin-top: 1.5rem; }
+    .family-card__columns h3 { color: #10233c; font-size: .94rem; margin: 0; }
+    .reference-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); align-items: end; gap: 1.5rem; margin: 1.7rem 0 1rem; }
+    .reference-heading h3 { margin: .3rem 0 0; color: #10233c; }
+    .reference-heading > p { margin: 0; }
+    .reference-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+    .reference-card { display: flex; flex-direction: column; padding: 1.25rem; }
+    .reference-card__topline { display: flex; align-items: start; justify-content: space-between; gap: .75rem; }
+    .reference-card__topline p { color: #10233c; font-size: 1.15rem; font-weight: 800; margin: 0; }
+    .status-badge { border-radius: 999px; background: #e8eef5; color: #294866; font-size: .72rem; font-weight: 800; padding: .35rem .55rem; white-space: nowrap; }
+    .status-note { color: #1d4ed8; font-weight: 700; font-size: .84rem; margin: .75rem 0 .4rem; }
+    .reference-card > p:not(.status-note) { color: #526273; line-height: 1.55; margin: .35rem 0; }
+    .buyer-question { margin-bottom: 1rem !important; }
+    .detail-link { color: #174f94; font-weight: 800; line-height: 1.45; margin-top: auto; min-height: 44px; display: flex; align-items: center; text-decoration: none; }
+    .detail-link:hover { text-decoration: underline; }
+    .compare-choice { display: flex; align-items: center; gap: .6rem; color: #334e68; cursor: pointer; font-size: .9rem; font-weight: 700; min-height: 44px; margin-top: .4rem; }
+    .compare-choice input { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
+    .comparison { align-items: center; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 18px; display: flex; justify-content: space-between; gap: 1.5rem; margin-bottom: 4.5rem; padding: clamp(1.5rem, 4vw, 2.5rem); }
+    .comparison h2 { font-size: clamp(1.4rem, 2.8vw, 2rem); }
+    .comparison p { margin-bottom: 0; }
+    .compare-button { background: #174f94; border: 0; border-radius: 8px; color: white; cursor: pointer; flex: 0 0 auto; font: inherit; font-weight: 800; min-height: 44px; padding: 0 1.1rem; }
+    .compare-button:disabled { background: #94a3b8; cursor: not-allowed; }
+    :global(a:focus-visible), :global(button:focus-visible), :global(input:focus-visible) { outline: 3px solid #f59e0b; outline-offset: 3px; }
+    @media (max-width: 900px) { .inputs__grid, .reference-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 720px) { .family-card, .reference-heading, .comparison { grid-template-columns: 1fr; display: grid; } .family-card__columns { grid-template-columns: 1fr; } .inputs__grid, .reference-grid { grid-template-columns: 1fr; } .comparison { align-items: start; } .compare-button { width: 100%; } }
   </style>
 </BaseLayout>
