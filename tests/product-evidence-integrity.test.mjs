@@ -55,24 +55,22 @@ function commercialClaimClauses(segment) {
     .filter(Boolean);
 }
 
-function directlyNegatesCommercialClaim(clause) {
-  const commercialVerb = '(?:guarantee|ensure|improve|increase|boost|save|reduce|ship|deliver)';
-  const auxiliary = new RegExp(
-    `\\b(?:does|do|did|may|might|can|could|will|would)\\s+not\\s+${commercialVerb}\\b`,
-    'i',
-  );
-  const cannot = new RegExp(`\\b(?:cannot|can't|can not)\\s+${commercialVerb}\\b`, 'i');
-  const negativeState = /\bnot\s+(?:in stock|available now|ready to ship|certified|suitable|ideal)\b/i;
-  const notEvidence = new RegExp(
-    `\\bnot evidence that\\b[^;:.!?]*\\b${commercialVerb}\\w*\\b`,
-    'i',
-  );
+function directlyNegatesCommercialClaim(clause, occurrence) {
+  const prefix = clause.slice(0, occurrence.index);
+  const auxiliary = /\b(?:does|do|did|may|might|can|could|will|would)\s+not\s*$/i;
+  const cannot = /\b(?:cannot|can't|can not)\s*$/i;
+  const directNegative = /\b(?:not|no)\s*$/i;
+  const notEvidence = /\bnot evidence that\b[^;:.!?]*$/i;
   const noEstablishedValue = /\bno\s+(?:price|lead time|delivery|saving|performance|output)\b[^;:.!?]*\b(?:promised|confirmed|established|guaranteed)\b/i;
-  return auxiliary.test(clause)
-    || cannot.test(clause)
-    || negativeState.test(clause)
-    || notEvidence.test(clause)
-    || noEstablishedValue.test(clause);
+  const boundary = clause.match(noEstablishedValue);
+  const occurrenceIsInsideBoundary = boundary
+    && occurrence.index >= boundary.index
+    && occurrence.index < boundary.index + boundary[0].length;
+  return auxiliary.test(prefix)
+    || cannot.test(prefix)
+    || directNegative.test(prefix)
+    || notEvidence.test(prefix)
+    || occurrenceIsInsideBoundary;
 }
 
 function identityAndCommercialViolations(body) {
@@ -95,8 +93,8 @@ function identityAndCommercialViolations(body) {
     /\bcertified\s+(?:to|for|under)\b/i,
     /\b(?:lowest|best)\s+(?:price|freight|shipping|cost)\b/i,
     /\b(?:ideal|suitable)\s+for\b/i,
-    /\b(?:guarantees?|guaranteed|ensures?)\b[^.!?]*(?:performance|output|throughput|productivity|savings?|cost|time|result|suitability)/i,
-    /\b(?:improves?|increases?|boosts?|saves?|reduces?)\b[^.!?]*(?:throughput|productivity|savings?|cost|time|labor|handling)/i,
+    /\b(?:guarantees?|guaranteed|ensures?)\b(?:(?!\b(?:guarantees?|guaranteed|ensures?|improves?|increases?|boosts?|saves?|reduces?)\b)[^.!?])*(?:performance|output|throughput|productivity|savings?|cost|time|result|suitability)/i,
+    /\b(?:improves?|increases?|boosts?|saves?|reduces?)\b(?:(?!\b(?:guarantees?|guaranteed|ensures?|improves?|increases?|boosts?|saves?|reduces?)\b)[^.!?])*(?:throughput|productivity|savings?|cost|time|labor|handling)/i,
     /\b(?:measurable|proven)\s+(?:labor\s+)?(?:savings?|performance|throughput|productivity)\b/i,
   ];
   const allowedRole = /\bARCLIFT\s+(?:acts|works|participates)\s+as\s+(?:an integrated equipment supplier|a technical selection and supply partner)\b/i;
@@ -108,8 +106,14 @@ function identityAndCommercialViolations(body) {
     }
     for (const clause of commercialClaimClauses(segment)) {
       for (const pattern of forbiddenCommercial) {
-        if (pattern.test(clause) && !directlyNegatesCommercialClaim(clause)) {
-          violations.push(clause);
+        const occurrencePattern = new RegExp(
+          pattern.source,
+          pattern.flags.includes('g') ? pattern.flags : `${pattern.flags}g`,
+        );
+        for (const occurrence of clause.matchAll(occurrencePattern)) {
+          if (!directlyNegatesCommercialClaim(clause, occurrence)) {
+            violations.push(clause);
+          }
         }
       }
     }
@@ -145,6 +149,7 @@ const identityMutations = [
   'ARCLIFT operates the platform.',
   'ARCLIFT owns the equipment.',
   'This does not discuss lead time but guarantees performance.',
+  'This does not guarantee performance and guarantees output.',
 ];
 
 const allowedIdentityFixtures = [

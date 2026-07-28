@@ -179,8 +179,16 @@ function referenceRoleViolations(slug, body) {
     'arc-f31-crawler-ceiling-platform',
     'arc-f35-crawler-ceiling-platform',
   ]);
-  const positiveVerb = /\b(?:accommodates?|accepts?|carries?|contains?|delivers?|features?|forms?|handles?|holds?|operates?|offers?|packs?|produces?|provides?|reaches?|runs?(?![- ]out)|ships?)\b/i;
-  const subjectBoundVerb = /\b(?:ARC[-A-Z0-9]+|(?:the\s+)?(?:platform|line|machine|container|configuration|system|equipment))\s+(uses?|supports?|includes?|fits?|has)\b/i;
+  const subject = '(?:ARC[-A-Z0-9]+|(?:the\\s+)?(?:platform|line|machine|container|configuration|system|equipment))';
+  const positiveVerb = /\b(?:accommodates?|accepts?|carry|carries|contains?|delivers?|features?|forms?|handles?|holds?|operates?|offers?|packs?|produces?|provides?|reaches?|runs?(?![- ]out)|ships?)\b/i;
+  const subjectBoundVerb = new RegExp(
+    `\\b${subject}\\s+(uses|supports|includes|fits|has|carries)\\b`,
+    'i',
+  );
+  const modalSubjectBoundVerb = new RegExp(
+    `\\b${subject}\\s+(?:(?:can|could|may|might|shall|should|will|would|do|does|did)(?:\\s+not)?|cannot|can't)\\s+(use|support|include|fit|have|carry)\\b`,
+    'i',
+  );
 
   for (const unit of proseUnits(body)) {
     for (const clause of claimClauses(unit)) {
@@ -201,7 +209,8 @@ function referenceRoleViolations(slug, body) {
       const hasForbiddenClaim = forbidden?.test(clause)
         || (slug === 'arc-rf8-roll-forming-machine' && hasTechnicalMetric);
       const verb = clause.match(positiveVerb)?.[0]
-        ?? clause.match(subjectBoundVerb)?.[1];
+        ?? clause.match(subjectBoundVerb)?.[1]
+        ?? clause.match(modalSubjectBoundVerb)?.[1];
       if (hasForbiddenClaim && verb && !directlyNegatesClaim(clause, verb)) {
         violations.push(clause);
       }
@@ -284,6 +293,9 @@ const referenceRoleMutations = [
   ['arc-rf8-roll-forming-machine', 'ARC-RF8 produces 20 m/min for review.'],
   ['arc-t25hq-truck-mounted-roll-forming-lift-40hq', 'The approved 40HQ container accommodates one ARC-T25HQ package.'],
   ['arc-c25-crawler-roll-forming-lift', 'ARC-C25 uses a 380V power package that requires review.'],
+  ['arc-c25-crawler-roll-forming-lift', 'ARC-C25 can use a 380V power package.'],
+  ['arc-f31-crawler-ceiling-platform', 'The platform can support a 500 kg deck load.'],
+  ['arc-f31-crawler-ceiling-platform', 'ARC-F31 can carry a 500 kg deck load.'],
 ];
 
 async function loadReference(reference) {
@@ -321,6 +333,7 @@ describe('Product copy distinctiveness', () => {
       ['arc-f31-crawler-ceiling-platform', 'Deck load is unknown; send the deck, crew, and tool basis for review.'],
       ['arc-rf8-roll-forming-machine', 'Requested inputs include output direction and the destination power interface.'],
       ['arc-t25hq-truck-mounted-roll-forming-lift-40hq', 'Container fit is not confirmed; approved packing data controls booking.'],
+      ['arc-t31-truck-mounted-roll-forming-lift', 'The working envelope must fit destination rules.'],
     ];
     for (const [slug, body] of safeFixtures) {
       expect(referenceRoleViolations(slug, body), `${slug}: ${body}`).toEqual([]);
