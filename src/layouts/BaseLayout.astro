@@ -75,7 +75,7 @@ function isActive(href: string) {
 
     <!-- Mobile drawer -->
     <div class="drawer-overlay" id="drawer-overlay"></div>
-    <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true" inert>
       <button class="drawer-close" id="drawer-close" aria-label="Close navigation">×</button>
       {navLinks.map(link => (
         <a href={link.href} class={isActive(link.href) ? 'active' : ''}>
@@ -158,6 +158,8 @@ function isActive(href: string) {
       const drawerClose = document.getElementById('drawer-close');
 
       function openDrawer() {
+        drawer?.removeAttribute('inert');
+        drawer?.setAttribute('aria-hidden', 'false');
         hamburger?.classList.add('open');
         drawer?.classList.add('open');
         overlay?.classList.add('open');
@@ -165,6 +167,8 @@ function isActive(href: string) {
         document.body.style.overflow = 'hidden';
       }
       function closeDrawer() {
+        drawer?.setAttribute('inert', '');
+        drawer?.setAttribute('aria-hidden', 'true');
         hamburger?.classList.remove('open');
         drawer?.classList.remove('open');
         overlay?.classList.remove('open');

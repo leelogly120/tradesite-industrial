@@ -151,4 +151,27 @@ test.describe('Task 6 homepage at 390 × 844', () => {
     await expect(page.getByRole('link', { name: 'Explore Products' })).toHaveAttribute('href', '/products/');
     await expect(page.locator('#key-specifications')).toBeVisible();
   });
+
+  test('keeps the closed mobile drawer out of the keyboard focus order', async ({ page }) => {
+    await openHomepage(page, mobile);
+    const drawer = page.locator('#mobile-drawer');
+    const toggle = page.getByRole('button', { name: 'Toggle navigation' });
+
+    await expect(drawer).toHaveAttribute('inert', '');
+    await expect(drawer).toHaveAttribute('aria-hidden', 'true');
+    await toggle.focus();
+    await page.keyboard.press('Tab');
+    expect(await page.evaluate(() => document.querySelector('#mobile-drawer')?.contains(document.activeElement))).toBe(false);
+
+    await toggle.click();
+    await expect(drawer).not.toHaveAttribute('inert', '');
+    await expect(drawer).toHaveAttribute('aria-hidden', 'false');
+    await page.keyboard.press('Tab');
+    expect(await page.evaluate(() => document.querySelector('#mobile-drawer')?.contains(document.activeElement))).toBe(true);
+
+    await page.keyboard.press('Escape');
+    await expect(drawer).toHaveAttribute('inert', '');
+    await expect(drawer).toHaveAttribute('aria-hidden', 'true');
+    await expect(toggle).toBeFocused();
+  });
 });
