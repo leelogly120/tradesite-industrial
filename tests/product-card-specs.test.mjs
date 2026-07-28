@@ -35,4 +35,9 @@ describe('Task 8B family-aware product card specifications', () => {
     expect(list).toContain('Number.POSITIVE_INFINITY');
     expect(list).not.toContain("specs['Max Working Height']");
   });
+  it('fails fast instead of silently removing an unmapped published product', async () => {
+    const list = await readFile(resolve(root, 'src/pages/products/index.astro'), 'utf8');
+    expect(list).toContain('throw new Error(`Unknown product reference: ${p.id}`)');
+    expect(list).not.toContain('if (!view) return null');
+  });
 });

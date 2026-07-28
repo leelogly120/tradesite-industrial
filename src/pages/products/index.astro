@@ -82,7 +82,7 @@ const grouped = CATEGORIES.map(cat => ({
       <div class="products-list">
         {cat.items.map(p => {
           const view = buildProductView(p);
-          if (!view) return null;
+          if (!view) throw new Error(`Unknown product reference: ${p.id}`);
           const model = view.model;
           return (
             <a href={`/products/${p.id}/`} class="p-card-list reveal">

@@ -10,7 +10,7 @@ import {
   parseCompareItems,
 } from '../src/lib/product-selection';
 
-const disclosure = 'Representative editorial image — not model-specific evidence. Final configuration requires the signed technical schedule and approved drawings.';
+const disclosure = 'Editorial planning visual — not model-specific evidence.';
 
 const expectedFamilies = [
   ['crawler-roll-forming-lifts', ['ARC-C17', 'ARC-C21', 'ARC-C25', 'ARC-C28', 'ARC-C32']],
@@ -29,10 +29,28 @@ const expectedMappings = [
   'arc-f31-crawler-ceiling-platform', 'arc-f35-crawler-ceiling-platform',
   'arc-rf8-roll-forming-machine',
 ];
+const expectedReferenceMappings = [
+  ['arc-c17-crawler-roll-forming-lift', 'ARC-C17', 'crawler-roll-forming-lifts'],
+  ['arc-c21-crawler-roll-forming-lift', 'ARC-C21', 'crawler-roll-forming-lifts'],
+  ['arc-c25-crawler-roll-forming-lift', 'ARC-C25', 'crawler-roll-forming-lifts'],
+  ['arc-c28-crawler-roll-forming-lift', 'ARC-C28', 'crawler-roll-forming-lifts'],
+  ['arc-c32-crawler-roll-forming-lift', 'ARC-C32', 'crawler-roll-forming-lifts'],
+  ['arc-t12-truck-mounted-roll-forming-lift', 'ARC-T12', 'truck-mounted-roll-forming-lifts'],
+  ['arc-t18-truck-mounted-roll-forming-lift', 'ARC-T18', 'truck-mounted-roll-forming-lifts'],
+  ['arc-t25-truck-mounted-roll-forming-lift', 'ARC-T25', 'truck-mounted-roll-forming-lifts'],
+  ['arc-t25hq-truck-mounted-roll-forming-lift-40hq', 'ARC-T25HQ', 'truck-mounted-roll-forming-lifts'],
+  ['arc-t31-truck-mounted-roll-forming-lift', 'ARC-T31', 'truck-mounted-roll-forming-lifts'],
+  ['arc-f20-crawler-ceiling-platform', 'ARC-F20', 'crawler-ceiling-platforms'],
+  ['arc-f25-crawler-ceiling-platform', 'ARC-F25', 'crawler-ceiling-platforms'],
+  ['arc-f31-crawler-ceiling-platform', 'ARC-F31', 'crawler-ceiling-platforms'],
+  ['arc-f35-crawler-ceiling-platform', 'ARC-F35', 'crawler-ceiling-platforms'],
+  ['arc-rf8-roll-forming-machine', 'ARC-RF8', 'roll-forming-machines'],
+];
 
 describe('ARCLIFT evidence-safe product selection domain', () => {
   it('has four stable families and fifteen explicit reference mappings', () => {
     expect(PRODUCT_FAMILIES.map(({ id, models }) => [id, models])).toEqual(expectedFamilies);
+    expect(PRODUCT_REFERENCES.map(({ slug, model, familyId }) => [slug, model, familyId])).toEqual(expectedReferenceMappings);
     expect(PRODUCT_REFERENCES.map(({ slug }) => slug)).toEqual(expectedMappings);
   });
 
