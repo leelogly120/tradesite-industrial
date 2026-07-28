@@ -24,6 +24,29 @@ const PRODUCT_SLUGS = [
   'arc-f35-crawler-ceiling-platform',
   'arc-rf8-roll-forming-machine',
 ];
+const BASELINE_BLOG_SLUGS = Object.freeze([
+  '40hq-shipping-truck-mounted-roll-forming-lift',
+  'aerial-platform-emergency-lowering-rescue-plan',
+  'aerial-platform-worker-tool-material-load-planning',
+  'airport-terminal-maintenance-access-planning',
+  'ceiling-platform-overhead-clearance-survey',
+  'coil-handling-roll-forming-line-feeding-plan',
+  'crawler-ceiling-wall-panel-platform-project-data',
+  'crawler-platform-vs-spider-lift-vs-scaffolding',
+  'crawler-under-ceiling-platform-buyers-guide',
+  'crawler-vs-truck-mounted-roll-forming-system',
+  'dual-power-crawler-platform-selection',
+  'indoor-aerial-platform-ground-pressure-guide',
+  'remote-control-aerial-platform-safety-planning',
+  'roll-forming-line-electrical-control-interfaces',
+  'roll-forming-line-fat-sat-acceptance-checklist',
+  'roll-forming-line-specification-long-span-roof-panels',
+  'roof-level-roll-forming-long-panels',
+  'roof-panel-profile-material-tooling-data',
+  'stadium-ceiling-access-platform-planning',
+  'truck-mounted-roll-forming-chassis-interface-review',
+  'warehouse-ceiling-access-platform-planning',
+]);
 const LEGACY_REDIRECTS = new Map([
   ['fddpt-20m-crawler-ceiling-platform', 'arc-f20-crawler-ceiling-platform'],
   ['fddpt-25m-crawler-ceiling-platform', 'arc-f25-crawler-ceiling-platform'],
@@ -221,13 +244,20 @@ export async function auditBuildOutput({
     errors.push(`public product content must match the 15 canonical product references; found ${productContentSlugs.length}`);
   }
   const blogSlugs = await publicMarkdownSlugs(resolve(root, 'src/content/blog'));
+  for (const slug of BASELINE_BLOG_SLUGS) {
+    if (!blogSlugs.includes(slug)) {
+      errors.push(`baseline published blog content is missing ${slug}`);
+    }
+  }
+  const requiredBlogSlugs = [...new Set([...BASELINE_BLOG_SLUGS, ...blogSlugs])];
 
   const requiredRoutes = [
     '/products/',
     '/compare/',
     '/blog/',
+    '/blog/page/2/',
     ...PRODUCT_SLUGS.map(slug => `/products/${slug}/`),
-    ...blogSlugs.map(slug => `/blog/${slug}/`),
+    ...requiredBlogSlugs.map(slug => `/blog/${slug}/`),
   ];
   for (const route of requiredRoutes) {
     if (!pages.has(route)) errors.push(`missing built route ${route}`);
@@ -321,6 +351,13 @@ export async function auditBuildOutput({
   const sitemapUrls = new Set((await Promise.all(sitemapFiles.map(file => readFile(file, 'utf8')))).flatMap(parseSitemapUrls));
   if (sitemapFiles.length === 0) errors.push('missing generated sitemap shard');
   if (sitemapUrls.has(`${site}/compare/`)) errors.push('/compare/ is noindex and must not remain in the sitemap');
+  const requiredBlogSitemapRoutes = [
+    '/blog/page/2/',
+    ...BASELINE_BLOG_SLUGS.map(slug => `/blog/${slug}/`),
+  ];
+  for (const route of requiredBlogSitemapRoutes) {
+    if (!sitemapUrls.has(`${site}${route}`)) errors.push(`sitemap is missing required baseline blog route ${site}${route}`);
+  }
   const indexableRoutes = contentPages.map(([route]) => route).filter(route => route !== '/compare/');
   const expectedSitemapUrls = new Set(indexableRoutes.map(route => `${site}${route}`));
   for (const url of expectedSitemapUrls) {

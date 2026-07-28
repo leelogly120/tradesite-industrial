@@ -11,6 +11,30 @@ const AI_ASSISTED_COMPOSITE = 'AI-assisted editorial composite';
 const DISCLOSURE = 'Editorial planning visual — not model-specific evidence';
 const PRODUCT_VISUAL_DISCLOSURE = `${AI_ASSISTED_VISUAL}. ${DISCLOSURE}`;
 const COMPARE_VISUAL_DISCLOSURE = `${AI_ASSISTED_COMPOSITE}. ${DISCLOSURE}`;
+const baselineBlogSlugs = [
+  '40hq-shipping-truck-mounted-roll-forming-lift',
+  'aerial-platform-emergency-lowering-rescue-plan',
+  'aerial-platform-worker-tool-material-load-planning',
+  'airport-terminal-maintenance-access-planning',
+  'ceiling-platform-overhead-clearance-survey',
+  'coil-handling-roll-forming-line-feeding-plan',
+  'crawler-ceiling-wall-panel-platform-project-data',
+  'crawler-platform-vs-spider-lift-vs-scaffolding',
+  'crawler-under-ceiling-platform-buyers-guide',
+  'crawler-vs-truck-mounted-roll-forming-system',
+  'dual-power-crawler-platform-selection',
+  'indoor-aerial-platform-ground-pressure-guide',
+  'remote-control-aerial-platform-safety-planning',
+  'roll-forming-line-electrical-control-interfaces',
+  'roll-forming-line-fat-sat-acceptance-checklist',
+  'roll-forming-line-specification-long-span-roof-panels',
+  'roof-level-roll-forming-long-panels',
+  'roof-panel-profile-material-tooling-data',
+  'stadium-ceiling-access-platform-planning',
+  'truck-mounted-roll-forming-chassis-interface-review',
+  'warehouse-ceiling-access-platform-planning',
+];
+const additionalBlogSlug = 'future-additional-route';
 const productSlugs = [
   'arc-c17-crawler-roll-forming-lift',
   'arc-c21-crawler-roll-forming-lift',
@@ -95,8 +119,9 @@ function comparePage() {
 async function makeValidFixture() {
   const root = await mkdtemp(join(tmpdir(), 'arclift-build-audit-'));
   scratchDirs.push(root);
-  await write(root, 'src/content/blog/first-existing-route.md', '---\ntitle: First\n---\n');
-  await write(root, 'src/content/blog/second-existing-route.md', '---\ntitle: Second\n---\n');
+  for (const slug of [...baselineBlogSlugs, additionalBlogSlug]) {
+    await write(root, `src/content/blog/${slug}.md`, `---\ntitle: ${slug}\n---\n`);
+  }
   for (const slug of productSlugs) {
     await write(root, `src/content/products/${slug}.md`, `---\ntitle: ${slug}\n---\n`);
   }
@@ -112,8 +137,9 @@ async function makeValidFixture() {
     await write(root, `dist/products/${slug}/index.html`, productPage(slug));
   }
   await write(root, 'dist/blog/index.html', page('/blog/'));
-  await write(root, 'dist/blog/first-existing-route/index.html', page('/blog/first-existing-route/'));
-  await write(root, 'dist/blog/second-existing-route/index.html', page('/blog/second-existing-route/'));
+  for (const slug of [...baselineBlogSlugs, additionalBlogSlug]) {
+    await write(root, `dist/blog/${slug}/index.html`, page(`/blog/${slug}/`));
+  }
   await write(root, 'dist/blog/page/2/index.html', page('/blog/page/2/'));
   await write(root, 'dist/compare/index.html', comparePage());
 
@@ -132,8 +158,7 @@ async function makeValidFixture() {
     '/products/',
     ...productSlugs.map(slug => `/products/${slug}/`),
     '/blog/',
-    '/blog/first-existing-route/',
-    '/blog/second-existing-route/',
+    ...[...baselineBlogSlugs, additionalBlogSlug].map(slug => `/blog/${slug}/`),
     '/blog/page/2/',
   ];
   await write(root, 'dist/sitemap-index.xml', `<?xml version="1.0"?><sitemapindex><sitemap><loc>${SITE}/sitemap-0.xml</loc></sitemap></sitemapindex>`);
@@ -149,7 +174,7 @@ describe('sitemap policy', () => {
   it('excludes the noindex comparison route without excluding indexable routes', () => {
     expect(shouldIncludeInSitemap(`${SITE}/compare/`)).toBe(false);
     expect(shouldIncludeInSitemap(`${SITE}/products/arc-c25-crawler-roll-forming-lift/`)).toBe(true);
-    expect(shouldIncludeInSitemap(`${SITE}/blog/first-existing-route/`)).toBe(true);
+    expect(shouldIncludeInSitemap(`${SITE}/blog/${baselineBlogSlugs[0]}/`)).toBe(true);
   });
 });
 
@@ -158,11 +183,11 @@ describe('built output audit', () => {
     const root = await makeValidFixture();
 
     await expect(auditBuildOutput({ root })).resolves.toMatchObject({
-      htmlFileCount: 27,
-      indexableRouteCount: 21,
-      sitemapUrlCount: 21,
+      htmlFileCount: 47,
+      indexableRouteCount: 41,
+      sitemapUrlCount: 41,
       productRouteCount: 15,
-      blogArticleRouteCount: 2,
+      blogArticleRouteCount: 22,
       legacyRedirectCount: 4,
     });
   });
@@ -239,5 +264,42 @@ describe('built output audit', () => {
     expect(error).toBeInstanceOf(Error);
     expect(error.message).toMatch(/compare client data[\s\S]*(?:confirmationGate|payload)/i);
     expect(error.message).toMatch(/15 canonical product references/i);
+  });
+
+  it('rejects deletion of a baseline published blog even when content, output, and sitemap agree', async () => {
+    const root = await makeValidFixture();
+    const slug = baselineBlogSlugs[0];
+    await rm(resolve(root, `src/content/blog/${slug}.md`));
+    await rm(resolve(root, `dist/blog/${slug}`), { recursive: true });
+    const sitemapPath = resolve(root, 'dist/sitemap-0.xml');
+    const sitemap = await readFile(sitemapPath, 'utf8');
+    await writeFile(
+      sitemapPath,
+      sitemap.replace(`<url><loc>${SITE}/blog/${slug}/</loc></url>`, ''),
+      'utf8',
+    );
+
+    const error = await auditBuildOutput({ root }).catch(reason => reason);
+    expect(error).toBeInstanceOf(Error);
+    expect(error.message).toMatch(new RegExp(`baseline published blog[\\s\\S]*${slug}`, 'i'));
+    expect(error.message).toMatch(new RegExp(`missing built route /blog/${slug}/`, 'i'));
+    expect(error.message).toMatch(new RegExp(`sitemap[\\s\\S]*${slug}`, 'i'));
+  });
+
+  it('rejects deletion of the required second blog index from output and sitemap', async () => {
+    const root = await makeValidFixture();
+    await rm(resolve(root, 'dist/blog/page/2'), { recursive: true });
+    const sitemapPath = resolve(root, 'dist/sitemap-0.xml');
+    const sitemap = await readFile(sitemapPath, 'utf8');
+    await writeFile(
+      sitemapPath,
+      sitemap.replace(`<url><loc>${SITE}/blog/page/2/</loc></url>`, ''),
+      'utf8',
+    );
+
+    const error = await auditBuildOutput({ root }).catch(reason => reason);
+    expect(error).toBeInstanceOf(Error);
+    expect(error.message).toMatch(/missing built route \/blog\/page\/2\//i);
+    expect(error.message).toMatch(/sitemap[\s\S]*\/blog\/page\/2\//i);
   });
 });
