@@ -667,6 +667,166 @@
         "theme": "emergency scenario readiness prompts without procedures",
         "classification": "editorial",
         "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result"
+      },
+      {
+        "slug": "high-altitude-roll-forming-lift-rfq-data",
+        "url": "/images/editorial/high-altitude-roll-forming-lift-rfq-data.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "RFQ input gates for high-altitude roll-forming lift review",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "roof-zone-survey-roll-forming-lift-selection",
+        "url": "/images/editorial/roof-zone-survey-roll-forming-lift-selection.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "roof-zone survey layers for roll-forming lift selection",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "crawler-roll-forming-lift-access-route-survey",
+        "url": "/images/editorial/crawler-roll-forming-lift-access-route-survey.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "crawler roll-forming lift access route survey sequence",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "crawler-roll-forming-lift-ground-support-review",
+        "url": "/images/editorial/crawler-roll-forming-lift-ground-support-review.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "crawler roll-forming lift ground support decision path",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "crawler-roll-forming-lift-work-zone-relocation",
+        "url": "/images/editorial/crawler-roll-forming-lift-work-zone-relocation.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "crawler roll-forming lift relocation hold points",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "truck-mounted-forming-lift-jobsite-setup-review",
+        "url": "/images/editorial/truck-mounted-forming-lift-jobsite-setup-review.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "truck-mounted forming lift jobsite setup zones",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "truck-mounted-lift-destination-chassis-sourcing",
+        "url": "/images/editorial/truck-mounted-lift-destination-chassis-sourcing.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "destination chassis sourcing responsibility sequence",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "truck-mounted-forming-lift-road-transport-documents",
+        "url": "/images/editorial/truck-mounted-forming-lift-road-transport-documents.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "truck-mounted forming lift road transport document stack",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "lifted-roll-forming-line-mounting-interface-review",
+        "url": "/images/editorial/lifted-roll-forming-line-mounting-interface-review.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "lifted roll-forming line mounting interface layers",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "roof-level-roll-forming-lift-coil-loading-plan",
+        "url": "/images/editorial/roof-level-roll-forming-lift-coil-loading-plan.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "roof-level roll-forming lift coil loading journey",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "elevated-roll-forming-roof-panel-handover-zones",
+        "url": "/images/editorial/elevated-roll-forming-roof-panel-handover-zones.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "elevated roof panel handover boundary zones",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "roof-level-roll-forming-weather-hold-points",
+        "url": "/images/editorial/roof-level-roll-forming-weather-hold-points.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "roof-level roll-forming weather hold-point loop",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "lift-roll-forming-system-commissioning-plan",
+        "url": "/images/editorial/lift-roll-forming-system-commissioning-plan.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "lift-and-roll-forming system commissioning evidence chain",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "roll-forming-lift-technical-document-package",
+        "url": "/images/editorial/roll-forming-lift-technical-document-package.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "roll-forming lift technical document package architecture",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "large-deck-crawler-platform-vs-basket-lift",
+        "url": "/images/editorial/large-deck-crawler-platform-vs-basket-lift.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "large-deck crawler platform and basket lift selection matrix",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "large-crawler-work-platform-building-entry-survey",
+        "url": "/images/editorial/large-crawler-work-platform-building-entry-survey.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "large crawler work platform building entry states",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "large-deck-crawler-platform-work-zone-layout",
+        "url": "/images/editorial/large-deck-crawler-platform-work-zone-layout.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "large-deck crawler platform work-zone layout overlay",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "large-deck-platform-wall-panel-access-planning",
+        "url": "/images/editorial/large-deck-platform-wall-panel-access-planning.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "large-deck platform wall-panel workflow lanes",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "crawler-ceiling-platform-site-acceptance-records",
+        "url": "/images/editorial/crawler-ceiling-platform-site-acceptance-records.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "crawler ceiling platform site acceptance record chain",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "crawler-platform-maintenance-spares-handover",
+        "url": "/images/editorial/crawler-platform-maintenance-spares-handover.svg",
+        "classification": "editorial",
+        "disclosure": "ARCLIFT editorial diagram",
+        "theme": "crawler platform maintenance and spares handover system",
+        "use": "technical article diagram"
       }
     ],
     "home": [

@@ -105,7 +105,7 @@ describe('twenty lift-platform article release contract', () => {
       const fontSize = Number(node[1].match(/font-size="(\d+(?:\.\d+)?)"/i)?.[1]);
       expect(fontSize * 390 / 1600).toBeGreaterThanOrEqual(10);
     }
-    expect(svg).not.toMatch(/(?:[A-Za-z]:[\\/]|Henan\s+Huaying|河南华鹰|manufacturer|factory|certification|guarantee)/iu);
+    expect(svg).not.toMatch(/(?:^|[\s"'(])(?:[A-Za-z]:[\\/])|Henan\s+Huaying|\u6cb3\u5357\u534e\u9e70|manufacturer|factory|certification|guarantee/imu);
   });
 
   it('classifies all 20 diagrams in the public manifest without provenance fields', async () => {
