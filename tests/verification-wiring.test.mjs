@@ -15,6 +15,11 @@ describe('permanent verification wiring', () => {
     expect(testContentCommand).toContain('tests/final-review-regressions.test.mjs');
   });
 
+  it('runs the twenty-article coverage test and extended content audit permanently', () => {
+    expect(packageJson.scripts['test:content']).toContain('tests/twenty-lift-platform-articles.test.mjs');
+    expect(packageJson.scripts['audit:content']).toBe('node scripts/audit-lift-platform-content.mjs');
+  });
+
   it('runs the built-output audit after Astro emits dist', () => {
     expect(packageJson.scripts.build).toMatch(/^astro build && npm run audit:build$/);
     expect(packageJson.scripts['audit:build']).toBe('node scripts/audit-build.mjs');
