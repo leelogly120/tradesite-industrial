@@ -20,6 +20,10 @@ describe('permanent verification wiring', () => {
     expect(packageJson.scripts['audit:content']).toBe('node scripts/audit-lift-platform-content.mjs');
   });
 
+  it('runs the Cloudflare static deployment contract test permanently', () => {
+    expect(packageJson.scripts['test:content']).toContain('tests/cloudflare-static-deploy.test.mjs');
+  });
+
   it('runs the built-output audit after Astro emits dist', () => {
     expect(packageJson.scripts.build).toMatch(/^astro build && npm run audit:build$/);
     expect(packageJson.scripts['audit:build']).toBe('node scripts/audit-build.mjs');
