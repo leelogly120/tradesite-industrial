@@ -116,7 +116,7 @@ describe('twenty lift-platform article release contract', () => {
         slug,
         url: `/images/editorial/${diagram}`,
         classification: 'editorial',
-        disclosure: 'ARCLIFT editorial diagram',
+        disclosure: 'AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result',
       }));
     }
   });

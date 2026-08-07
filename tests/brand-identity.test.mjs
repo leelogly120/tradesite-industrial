@@ -2,6 +2,7 @@ import { createHash } from 'node:crypto';
 import { access, readdir, readFile } from 'node:fs/promises';
 import { extname, relative, resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
+import { LIFT_PLATFORM_ARTICLES } from '../scripts/lift-platform-article-registry.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const publicSourceRoots = ['src', 'public'];
@@ -293,7 +294,7 @@ describe('public asset manifest', () => {
     expect(campaignRecords.every((record) => record.classification === 'editorial')).toBe(true);
   });
 
-  it('preserves the original 15 editorial assets and publishes the 30 approved Task 7 and Task 8 assets', async () => {
+  it('preserves the original 15 editorial assets and publishes the 50 approved long-form assets', async () => {
     const manifest = JSON.parse(await readProjectFile('public/images/asset-manifest.json'));
     const records = manifest.campaigns?.editorial ?? [];
     const originalExpectedSlugs = [
@@ -347,20 +348,24 @@ describe('public asset manifest', () => {
       ['rescue-role-communications-card', '/images/editorial/rescue-role-communications-card.svg'],
       ['rescue-scenario-decision-matrix', '/images/editorial/rescue-scenario-decision-matrix.svg'],
     ];
-    const expectedNewAssets = [...expectedTask7Assets, ...expectedTask8Assets];
+    const expectedLiftPlatformAssets = LIFT_PLATFORM_ARTICLES.map(({ slug, diagram }) => [
+      slug,
+      `/images/editorial/${diagram}`,
+    ]);
+    const expectedNewAssets = [...expectedTask7Assets, ...expectedTask8Assets, ...expectedLiftPlatformAssets];
     const originalRecords = records.slice(0, 15);
     const newRecords = records.slice(15);
     const allowedKeys = ['classification', 'disclosure', 'slug', 'theme', 'url', 'use'];
     const failures = [];
 
-    expect(records).toHaveLength(45);
+    expect(records).toHaveLength(65);
     expect(originalRecords.map((record) => record.slug)).toEqual(originalExpectedSlugs);
     expect(createHash('sha256').update(JSON.stringify(originalRecords)).digest('hex')).toBe(
       'e23d452213c0d7159db2048a70773714987a4e9c74b07fb0d9ab3bec0a5af7df',
     );
     expect(newRecords.map(({ slug, url }) => [slug, url])).toEqual(expectedNewAssets);
-    expect(new Set(records.map((record) => record.slug)).size).toBe(45);
-    expect(new Set(records.map((record) => record.url)).size).toBe(45);
+    expect(new Set(records.map((record) => record.slug)).size).toBe(65);
+    expect(new Set(records.map((record) => record.url)).size).toBe(65);
 
     for (const record of records) {
       const keys = Object.keys(record).sort();

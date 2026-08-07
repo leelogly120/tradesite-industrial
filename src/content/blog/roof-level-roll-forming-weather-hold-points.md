@@ -60,9 +60,9 @@ Rain can affect surfaces and visibility; temperature can affect ice or material 
 
 Record the person, time, work state, observation, applicable criterion, action and open items. If work continues under a project-defined condition, preserve the basis. If work stops, show which inspections and approvals are required later. This trail supports learning and shift handover without turning a past decision into automatic permission for a future day.
 
-![Roof-level forming workflow map](/images/editorial/roof-level-workflow.svg)
+![Editorial diagram of roof-level forming workflow map](/images/editorial/roof-level-workflow.svg)
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conceptual workflow; it does not establish a safe method or weather limit.*
+*Editorial diagram. AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conceptual workflow; it does not establish a safe method or weather limit.*
 
 <!-- audit-section: project-checklist -->
 ## Plan secure shutdown and disciplined restart

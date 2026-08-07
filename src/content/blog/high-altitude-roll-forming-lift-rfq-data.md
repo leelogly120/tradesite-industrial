@@ -60,9 +60,9 @@ The forming review needs the intended panel profile, controlled drawing status, 
 
 List the boundaries among lifting structure, forming module, carrier or crawler base, electrical supply, controls, coil handling and roof receiving team. The list should identify who supplies data, who reviews it and what signed record closes the interface. Preliminary envelopes are useful for coordination, but reactions, stability, attachment details and final utilities require configuration-specific documents. Avoid copying values from a similar model into the open fields.
 
-![Roll-forming project input map](/images/editorial/roll-forming-input-map.svg)
+![Editorial diagram of roll-forming project input map](/images/editorial/roll-forming-input-map.svg)
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conceptual input groups; every field remains subject to controlled project evidence.*
+*Editorial diagram. AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conceptual input groups; every field remains subject to controlled project evidence.*
 
 <!-- audit-section: project-checklist -->
 ## Turn the RFQ into a controlled review package
@@ -92,9 +92,9 @@ An open item should say what is missing, why it matters, who owns the answer, th
 
 Before a quotation or technical note is released, freeze a snapshot of the input index, assumptions, exclusions and open items. The snapshot does not make the inputs correct; it shows which inputs the response actually used. If a revised record arrives, compare it against the snapshot and identify the affected interfaces. This makes change control practical during procurement rather than a paper exercise after equipment is committed.
 
-![Roof-level workflow decision map](/images/editorial/roof-level-workflow.svg)
+![Editorial diagram of roof-level workflow decision map](/images/editorial/roof-level-workflow.svg)
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Workflow prompt only; it does not establish a safe method, output or equipment fit.*
+*Editorial diagram. AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Workflow prompt only; it does not establish a safe method, output or equipment fit.*
 
 <!-- audit-section: evidence-tradeoffs -->
 ## Judge RFQ completeness without inventing certainty

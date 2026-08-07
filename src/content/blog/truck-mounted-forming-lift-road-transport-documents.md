@@ -60,9 +60,9 @@ List the local party responsible for confirming registration, alteration, dimens
 
 Vehicle identifiers, registrations, names, addresses, signatures and route-security information should be shared only with authorized parties for the defined purpose. Use anonymized identifiers in early coordination and public editorial material. The public article should never reproduce customer, vehicle or shipment records. A secure index can prove that a document exists without exposing its content to every project participant.
 
-![Logistics checkpoint decision map](/images/editorial/40hq-logistics-checkpoints.svg)
+![Editorial diagram of logistics checkpoint decision map](/images/editorial/40hq-logistics-checkpoints.svg)
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. General handover checkpoints; no container fit or road movement is confirmed.*
+*Editorial diagram. AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. General handover checkpoints; no container fit or road movement is confirmed.*
 
 <!-- audit-section: project-checklist -->
 ## Control revisions through every handover

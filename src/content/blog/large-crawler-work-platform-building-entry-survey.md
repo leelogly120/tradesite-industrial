@@ -92,9 +92,9 @@ Give each photo a location, direction and date, and include a scale reference on
 
 Recheck when doors, stored materials, temporary works, floor repairs, overhead services or the equipment state changes. The site should name who compares current conditions with the survey and who releases the controlled movement window. The release is separate from equipment selection and should follow the approved project method for the actual platform.
 
-![Warehouse ceiling access route map](/images/editorial/warehouse-ceiling-access-map.svg)
+![Editorial diagram of warehouse ceiling access route map](/images/editorial/warehouse-ceiling-access-map.svg)
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Fictional access map; no route, floor or equipment suitability is established.*
+*Editorial diagram. AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Fictional access map; no route, floor or equipment suitability is established.*
 
 <!-- audit-section: evidence-tradeoffs -->
 ## Use entry evidence to compare configurations

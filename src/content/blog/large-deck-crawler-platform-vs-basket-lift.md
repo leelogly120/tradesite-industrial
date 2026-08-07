@@ -60,9 +60,9 @@ Map slabs, suspended floors, joints, trenches, covers, repairs and edges. The co
 
 Show the equipment boundary, deck or basket work zone, dropped-object controls, material staging, pedestrian routes and emergency access. A larger platform can consolidate a team but occupies more controlled space. A smaller basket can reduce one boundary while multiplying positions. Compare the total work sequence and the site's ability to isolate it, not a single snapshot.
 
-![Ceiling access method matrix](/images/editorial/ceiling-access-method-matrix.svg)
+![Editorial diagram of ceiling access method matrix](/images/editorial/ceiling-access-method-matrix.svg)
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Planning prompt; actual equipment and site suitability require controlled review.*
+*Editorial diagram. AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Planning prompt; actual equipment and site suitability require controlled review.*
 
 <!-- audit-section: project-checklist -->
 ## Build a condition-based method comparison

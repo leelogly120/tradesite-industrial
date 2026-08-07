@@ -92,9 +92,9 @@ If a preliminary review uses an assumed state or exclusion, show it directly bes
 
 A competent review may apply only to named segments and states. Mark those boundaries on the plan and keep other areas out of use. If relocation adds a new path, reopen the review for that path. The site team should confirm current conditions before access and preserve the signed basis with the equipment and work method records.
 
-![Crawler platform selection path](/images/editorial/crawler-platform-selection-path.svg)
+![Editorial diagram of crawler platform selection path](/images/editorial/crawler-platform-selection-path.svg)
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conditional selection prompt; no configuration is approved by the diagram.*
+*Editorial diagram. AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conditional selection prompt; no configuration is approved by the diagram.*
 
 <!-- audit-section: evidence-tradeoffs -->
 ## Select around verified support constraints

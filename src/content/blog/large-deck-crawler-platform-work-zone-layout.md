@@ -92,9 +92,9 @@ Changes in crew, material, tool, workface, obstruction, route, floor, surroundin
 
 The site should define how affected people receive the current plan and acknowledge significant changes. Before work, compare the actual deck and surrounding zone with the controlled record. Remove unplanned items, preserve access and record deviations. The article does not provide an inspection procedure; it requires the project to link the approved method to a current, usable layout.
 
-![Warehouse ceiling access map](/images/editorial/warehouse-ceiling-access-map.svg)
+![Editorial diagram of warehouse ceiling access map](/images/editorial/warehouse-ceiling-access-map.svg)
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Fictional route and work-zone context; no site approval is represented.*
+*Editorial diagram. AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Fictional route and work-zone context; no site approval is represented.*
 
 <!-- audit-section: evidence-tradeoffs -->
 ## Judge whether the shared deck supports the task
