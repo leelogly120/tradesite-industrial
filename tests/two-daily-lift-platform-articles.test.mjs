@@ -5,8 +5,6 @@ import { describe, expect, it } from 'vitest';
 import { EXTENDED_LAUNCH_SLUGS } from '../scripts/audit-lift-platform-content.mjs';
 import {
   BASELINE_BLOG_SLUGS,
-  DAILY_LIFT_PLATFORM_ARTICLE_SLUGS,
-  LIFT_PLATFORM_ARTICLES,
   LIFT_PLATFORM_ARTICLE_SLUGS,
 } from '../scripts/lift-platform-article-registry.mjs';
 
@@ -15,6 +13,19 @@ const blogRoot = resolve(root, 'src/content/blog');
 const editorialRoot = resolve(root, 'public/images/editorial');
 const manifestPath = resolve(root, 'public/images/asset-manifest.json');
 const markers = ['buyer-intent', 'conditions', 'evidence-tradeoffs', 'limitations-not-fit', 'project-checklist', 'cta-editorial-note'];
+
+const DAILY_ARTICLES = Object.freeze([
+  {
+    slug: 'roll-forming-lift-configuration-change-control',
+    title: 'Change Control for Roll-Forming Lift Configurations',
+    diagram: 'roll-forming-lift-configuration-change-control.svg',
+  },
+  {
+    slug: 'roll-forming-lift-destination-receipt-plan',
+    title: 'Destination Receipt Plan for Roll-Forming Lift Systems',
+    diagram: 'roll-forming-lift-destination-receipt-plan.svg',
+  },
+]);
 
 async function exists(path) {
   try {
@@ -35,30 +46,22 @@ function visibleWordCount(markdown) {
   const visible = body
     .replace(/<!--[\s\S]*?-->/g, ' ')
     .replace(/<[^>]+>/g, ' ')
-    .replace(/!\[[^\]]*\]\([^)]*\)/g, ' ')
-    .replace(/\[[^\]]+\]\([^)]*\)/g, ' ');
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, ' ')
+    .replace(/\[[^\]]+\]\([^)]+\)/g, ' ');
   return visible.match(/\b[A-Za-z0-9][A-Za-z0-9'-]*\b/g)?.length ?? 0;
 }
 
-describe('twenty lift-platform article release contract', () => {
-  it('keeps 20 unique approved articles and the frozen 21-page baseline', () => {
-    expect(LIFT_PLATFORM_ARTICLES).toHaveLength(20);
-    expect(new Set(LIFT_PLATFORM_ARTICLE_SLUGS).size).toBe(20);
-    expect(BASELINE_BLOG_SLUGS).toHaveLength(21);
-    expect(new Set([...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_LIFT_PLATFORM_ARTICLE_SLUGS]).size).toBe(43);
-  });
-
-  it('includes every approved article in the executable content audit', () => {
-    expect(EXTENDED_LAUNCH_SLUGS).toEqual(expect.arrayContaining(LIFT_PLATFORM_ARTICLE_SLUGS));
+describe('2026-08-08 two-article release contract', () => {
+  it('adds exactly two unique approved pages without deleting the frozen 41-page library', async () => {
+    const expected = [...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_ARTICLES.map(({ slug }) => slug)];
+    expect(new Set(expected).size).toBe(43);
+    expect(EXTENDED_LAUNCH_SLUGS).toEqual(expect.arrayContaining(DAILY_ARTICLES.map(({ slug }) => slug)));
     expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(43);
+    const actual = (await readdir(blogRoot)).filter((name) => name.endsWith('.md')).map((name) => name.slice(0, -3)).sort();
+    expect(actual).toEqual(expected.sort());
   });
 
-  it('retains the frozen 21 plus 20 pages and the approved daily pages', async () => {
-    const slugs = (await readdir(blogRoot)).filter((name) => name.endsWith('.md')).map((name) => name.slice(0, -3)).sort();
-    expect(slugs).toEqual([...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_LIFT_PLATFORM_ARTICLE_SLUGS].sort());
-  });
-
-  it.each(LIFT_PLATFORM_ARTICLES)('$slug satisfies the long-form article contract', async ({ slug, title, diagram }) => {
+  it.each(DAILY_ARTICLES)('$slug satisfies the evidence-first long-form contract', async ({ slug, title, diagram }) => {
     const path = resolve(blogRoot, `${slug}.md`);
     expect(await exists(path), path).toBe(true);
     const markdown = await readFile(path, 'utf8');
@@ -90,7 +93,7 @@ describe('twenty lift-platform article release contract', () => {
     for (const marker of markers) expect(markdown).toContain(`<!-- audit-section: ${marker} -->`);
   });
 
-  it.each(LIFT_PLATFORM_ARTICLES)('$diagram is an accessible mobile-readable editorial SVG', async ({ diagram }) => {
+  it.each(DAILY_ARTICLES)('$diagram is accessible and mobile-readable', async ({ diagram }) => {
     const path = resolve(editorialRoot, diagram);
     expect(await exists(path), path).toBe(true);
     const svg = await readFile(path, 'utf8');
@@ -106,20 +109,23 @@ describe('twenty lift-platform article release contract', () => {
       const fontSize = Number(node[1].match(/font-size="(\d+(?:\.\d+)?)"/i)?.[1]);
       expect(fontSize * 390 / 1600).toBeGreaterThanOrEqual(10);
     }
-    expect(svg).not.toMatch(/(?:^|[\s"'(])(?:[A-Za-z]:[\\/])|Henan\s+Huaying|\u6cb3\u5357\u534e\u9e70|manufacturer|factory|certification|guarantee/imu);
+    expect(svg).not.toMatch(/(?:^|[\s"'(])(?:[A-Za-z]:[\\/])|Henan\s+Huaying|河南华鹰|manufacturer|factory|certification|guarantee/imu);
   });
 
-  it('classifies all 20 diagrams in the public manifest without provenance fields', async () => {
+  it('classifies both diagrams without provenance fields', async () => {
     const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
     const records = manifest.campaigns.editorial;
-    for (const { slug, diagram } of LIFT_PLATFORM_ARTICLES) {
-      expect(records).toContainEqual(expect.objectContaining({
+    for (const { slug, diagram } of DAILY_ARTICLES) {
+      const record = records.find((candidate) => candidate.slug === slug);
+      expect(record).toEqual(expect.objectContaining({
         slug,
         url: `/images/editorial/${diagram}`,
         classification: 'editorial',
         disclosure: 'AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result',
       }));
+      expect(record).not.toHaveProperty('sourceFactory');
+      expect(record).not.toHaveProperty('localPath');
+      expect(record).not.toHaveProperty('customer');
     }
   });
 });
-

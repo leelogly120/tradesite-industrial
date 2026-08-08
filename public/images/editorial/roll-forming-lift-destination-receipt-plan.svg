@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+  <title>Roll-forming lift destination receipt plan</title>
+  <desc>Editorial receipt sequence from safe handoff through identity and condition checks, discrepancy control and staged release.</desc>
+  <rect width="1600" height="900" fill="#101820"/>
+  <rect x="72" y="70" width="1456" height="760" rx="38" fill="#172632" stroke="#526875" stroke-width="4"/>
+  <text x="120" y="150" fill="#f5f7f8" font-family="Arial, sans-serif" font-size="54" font-weight="700">DESTINATION RECEIPT CONTROL</text>
+  <text x="120" y="212" fill="#aebfca" font-family="Arial, sans-serif" font-size="44">ARCLIFT editorial evidence sequence</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="130" y="330" width="300" height="220" rx="26" fill="#244255" stroke="#79b8d1" stroke-width="5"/>
+    <text x="280" y="420" text-anchor="middle" data-role="decision-label" fill="#ffffff" font-size="44" font-weight="700">HANDOFF</text>
+    <text x="280" y="485" text-anchor="middle" fill="#d1e3eb" font-size="44">safe boundary</text>
+    <rect x="480" y="330" width="300" height="220" rx="26" fill="#244255" stroke="#79b8d1" stroke-width="5"/>
+    <text x="630" y="420" text-anchor="middle" data-role="decision-label" fill="#ffffff" font-size="44" font-weight="700">IDENTITY</text>
+    <text x="630" y="485" text-anchor="middle" fill="#d1e3eb" font-size="44">records linked</text>
+    <rect x="830" y="330" width="300" height="220" rx="26" fill="#5b4125" stroke="#e7b05d" stroke-width="5"/>
+    <text x="980" y="420" text-anchor="middle" data-role="decision-label" fill="#ffffff" font-size="44" font-weight="700">CONDITION</text>
+    <text x="980" y="485" text-anchor="middle" fill="#f4dfbd" font-size="44">issues held</text>
+    <rect x="1180" y="330" width="300" height="220" rx="26" fill="#2e533f" stroke="#8dd3a5" stroke-width="5"/>
+    <text x="1330" y="420" text-anchor="middle" data-role="decision-label" fill="#ffffff" font-size="44" font-weight="700">RELEASE</text>
+    <text x="1330" y="485" text-anchor="middle" fill="#cce8d4" font-size="44">stage named</text>
+  </g>
+  <path d="M430 440H480M780 440H830M1130 440H1180" fill="none" stroke="#e8c46e" stroke-width="10"/>
+  <rect x="170" y="650" width="1260" height="98" rx="20" fill="#101e28" stroke="#526875" stroke-width="3"/>
+  <text x="800" y="713" text-anchor="middle" fill="#e0e7eb" font-family="Arial, sans-serif" font-size="44">Receipt evidence does not authorize installation, commissioning or use.</text>
+</svg>

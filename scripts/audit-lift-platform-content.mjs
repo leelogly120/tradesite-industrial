@@ -1,10 +1,10 @@
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { LAUNCH_SLUGS, auditArticle, auditFiles } from './audit-content.mjs';
-import { LIFT_PLATFORM_ARTICLE_SLUGS } from './lift-platform-article-registry.mjs';
+import { ALL_LIFT_PLATFORM_ARTICLE_SLUGS } from './lift-platform-article-registry.mjs';
 
 export { auditArticle, auditFiles };
-export const EXTENDED_LAUNCH_SLUGS = Object.freeze([...new Set([...LAUNCH_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS])]);
+export const EXTENDED_LAUNCH_SLUGS = Object.freeze([...new Set([...LAUNCH_SLUGS, ...ALL_LIFT_PLATFORM_ARTICLE_SLUGS])]);
 
 function defaultPaths(root) {
   return [

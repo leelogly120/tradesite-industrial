@@ -47,3 +47,16 @@ export const LIFT_PLATFORM_ARTICLES = Object.freeze([
 
 export const LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
 
+export const DAILY_LIFT_PLATFORM_ARTICLES = Object.freeze([
+  ['roll-forming-lift-configuration-change-control', 'Change Control for Roll-Forming Lift Configurations', 'interface'],
+  ['roll-forming-lift-destination-receipt-plan', 'Destination Receipt Plan for Roll-Forming Lift Systems', 'logistics'],
+].map(([slug, title, cluster]) => Object.freeze({ slug, title, cluster, diagram: `${slug}.svg` })));
+
+export const DAILY_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(DAILY_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
+
+export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
+  ...LIFT_PLATFORM_ARTICLES,
+  ...DAILY_LIFT_PLATFORM_ARTICLES,
+]);
+
+export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));

@@ -827,6 +827,22 @@
         "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result",
         "theme": "crawler platform maintenance and spares handover system",
         "use": "technical article diagram"
+      },
+      {
+        "slug": "roll-forming-lift-configuration-change-control",
+        "url": "/images/editorial/roll-forming-lift-configuration-change-control.svg",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result",
+        "theme": "roll-forming lift configuration change-control path",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "roll-forming-lift-destination-receipt-plan",
+        "url": "/images/editorial/roll-forming-lift-destination-receipt-plan.svg",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result",
+        "theme": "roll-forming lift destination receipt evidence sequence",
+        "use": "technical article diagram"
       }
     ],
     "home": [

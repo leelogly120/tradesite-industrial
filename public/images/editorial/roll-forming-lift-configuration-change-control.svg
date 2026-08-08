@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+  <title>Roll-forming lift configuration change-control path</title>
+  <desc>Editorial decision path from controlled baseline through change impact review, authorization and released configuration.</desc>
+  <rect width="1600" height="900" fill="#071827"/>
+  <rect x="72" y="70" width="1456" height="760" rx="38" fill="#0d2638" stroke="#2f647b" stroke-width="4"/>
+  <text x="120" y="150" fill="#f3f7f8" font-family="Arial, sans-serif" font-size="54" font-weight="700">CONFIGURATION CHANGE CONTROL</text>
+  <text x="120" y="212" fill="#91b6c8" font-family="Arial, sans-serif" font-size="44">ARCLIFT editorial decision map</text>
+  <path d="M290 460H1310" fill="none" stroke="#e4a72e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1272 430L1320 460L1272 490" fill="none" stroke="#e4a72e" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <circle cx="270" cy="460" r="92" fill="#123c50" stroke="#6fc3d8" stroke-width="5"/>
+    <text x="270" y="448" data-role="decision-label" fill="#ffffff" font-size="44" font-weight="700">BASELINE</text>
+    <text x="270" y="506" fill="#b9d6df" font-size="44">identified</text>
+    <circle cx="625" cy="460" r="92" fill="#123c50" stroke="#6fc3d8" stroke-width="5"/>
+    <text x="625" y="448" data-role="decision-label" fill="#ffffff" font-size="44" font-weight="700">CHANGE</text>
+    <text x="625" y="506" fill="#b9d6df" font-size="44">described</text>
+    <circle cx="980" cy="460" r="92" fill="#123c50" stroke="#6fc3d8" stroke-width="5"/>
+    <text x="980" y="448" data-role="decision-label" fill="#ffffff" font-size="44" font-weight="700">IMPACT</text>
+    <text x="980" y="506" fill="#b9d6df" font-size="44">reviewed</text>
+    <circle cx="1335" cy="460" r="92" fill="#2e533f" stroke="#8dd3a5" stroke-width="5"/>
+    <text x="1335" y="448" data-role="decision-label" fill="#ffffff" font-size="44" font-weight="700">RELEASE</text>
+    <text x="1335" y="506" fill="#cce8d4" font-size="44">controlled</text>
+  </g>
+  <rect x="170" y="650" width="1260" height="98" rx="20" fill="#081e2e" stroke="#315d70" stroke-width="3"/>
+  <text x="800" y="713" text-anchor="middle" fill="#d9e6eb" font-family="Arial, sans-serif" font-size="44">No release until affected interfaces, records and verification are assigned.</text>
+</svg>
