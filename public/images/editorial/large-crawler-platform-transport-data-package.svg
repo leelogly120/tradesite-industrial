@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Large crawler platform transport data package</title>
+  <desc id="desc">Four information gates connect the controlled machine state to carrier, route, handling, and receiving decisions.</desc>
+  <rect width="1600" height="900" fill="#081826"/>
+  <rect x="70" y="72" width="1460" height="756" rx="34" fill="#10283a" stroke="#2f6682" stroke-width="4"/>
+  <text x="120" y="155" fill="#eff8fc" font-family="Arial, sans-serif" font-size="58" font-weight="700">Transport decisions need one controlled data package</text>
+  <text x="120" y="216" fill="#9fc8db" font-family="Arial, sans-serif" font-size="42">Unknown values stay open. A diagram cannot approve a carrier, route, restraint, or handling method.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="120" y="330" width="300" height="220" rx="28" fill="#173f57" stroke="#78d6df" stroke-width="5"/>
+    <text x="160" y="405" fill="#ffffff" font-size="48" font-weight="700" data-role="decision-label">Machine state</text>
+    <text x="160" y="466" fill="#b9dde7" font-size="42">Identity · geometry</text>
+    <text x="160" y="520" fill="#b9dde7" font-size="42">mass · interfaces</text>
+    <path d="M420 440H500" stroke="#48b7ca" stroke-width="10" stroke-linecap="round"/>
+    <path d="M475 415L520 440L475 465" fill="none" stroke="#48b7ca" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="500" y="330" width="300" height="220" rx="28" fill="#173f57" stroke="#78d6df" stroke-width="5"/>
+    <text x="540" y="405" fill="#ffffff" font-size="48" font-weight="700" data-role="decision-label">Carrier + route</text>
+    <text x="540" y="466" fill="#b9dde7" font-size="42">Compatibility · access</text>
+    <text x="540" y="520" fill="#b9dde7" font-size="42">limits · permits</text>
+    <path d="M800 440H880" stroke="#48b7ca" stroke-width="10" stroke-linecap="round"/>
+    <path d="M855 415L900 440L855 465" fill="none" stroke="#48b7ca" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="880" y="330" width="300" height="220" rx="28" fill="#26596c" stroke="#f4bb55" stroke-width="5"/>
+    <text x="920" y="405" fill="#ffffff" font-size="48" font-weight="700" data-role="decision-label">Handling plan</text>
+    <text x="920" y="466" fill="#ffe0a1" font-size="42">Roles · interfaces</text>
+    <text x="920" y="520" fill="#ffe0a1" font-size="42">holds · instructions</text>
+    <path d="M1180 440H1260" stroke="#48b7ca" stroke-width="10" stroke-linecap="round"/>
+    <path d="M1235 415L1280 440L1235 465" fill="none" stroke="#48b7ca" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1260" y="330" width="220" height="220" rx="28" fill="#173f57" stroke="#78d6df" stroke-width="5"/>
+    <text x="1300" y="405" fill="#ffffff" font-size="48" font-weight="700" data-role="decision-label">Handover</text>
+    <text x="1300" y="466" fill="#b9dde7" font-size="42">Condition</text>
+    <text x="1300" y="520" fill="#b9dde7" font-size="42">and release</text>
+  </g>
+  <rect x="120" y="660" width="1360" height="105" rx="18" fill="#0a1d2c" stroke="#2f6682" stroke-width="3"/>
+  <text x="155" y="724" fill="#d7ebf3" font-family="Arial, sans-serif" font-size="42">Change the machine, transport state, carrier, route, handling point, or destination? Re-open the affected gate.</text>
+  <text x="1390" y="802" fill="#78d6df" font-family="Arial, sans-serif" font-size="42" font-weight="700">ARCLIFT</text>
+</svg>

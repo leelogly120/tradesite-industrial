@@ -4,9 +4,8 @@ import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { EXTENDED_LAUNCH_SLUGS } from '../scripts/audit-lift-platform-content.mjs';
 import {
-  AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS,
+  ALL_LIFT_PLATFORM_ARTICLES,
   BASELINE_BLOG_SLUGS,
-  LIFT_PLATFORM_ARTICLE_SLUGS,
 } from '../scripts/lift-platform-article-registry.mjs';
 
 const root = resolve(import.meta.dirname, '..');
@@ -15,16 +14,18 @@ const editorialRoot = resolve(root, 'public/images/editorial');
 const manifestPath = resolve(root, 'public/images/asset-manifest.json');
 const markers = ['buyer-intent', 'conditions', 'evidence-tradeoffs', 'limitations-not-fit', 'project-checklist', 'cta-editorial-note'];
 
-const DAILY_ARTICLES = Object.freeze([
+const AUGUST_10_ARTICLES = Object.freeze([
   {
-    slug: 'roll-forming-lift-configuration-change-control',
-    title: 'Change Control for Roll-Forming Lift Configurations',
-    diagram: 'roll-forming-lift-configuration-change-control.svg',
+    slug: 'aerial-platform-familiarization-handover',
+    title: 'Aerial Platform Familiarization and Handover Guide',
+    cover: '/images/editorial/ceiling-platform-underside.webp',
+    diagram: 'aerial-platform-familiarization-handover.svg',
   },
   {
-    slug: 'roll-forming-lift-destination-receipt-plan',
-    title: 'Destination Receipt Plan for Roll-Forming Lift Systems',
-    diagram: 'roll-forming-lift-destination-receipt-plan.svg',
+    slug: 'large-crawler-platform-transport-data-package',
+    title: 'Transport Data Package for Large Crawler Platforms',
+    cover: '/images/editorial/port-loading-logistics.webp',
+    diagram: 'large-crawler-platform-transport-data-package.svg',
   },
 ]);
 
@@ -52,28 +53,32 @@ function visibleWordCount(markdown) {
   return visible.match(/\b[A-Za-z0-9][A-Za-z0-9'-]*\b/g)?.length ?? 0;
 }
 
-describe('2026-08-08 two-article release contract', () => {
-  it('adds exactly two unique approved pages without deleting the frozen 41-page library', async () => {
-    const expected = [...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_ARTICLES.map(({ slug }) => slug)];
-    expect(new Set(expected).size).toBe(43);
-    expect(EXTENDED_LAUNCH_SLUGS).toEqual(expect.arrayContaining(DAILY_ARTICLES.map(({ slug }) => slug)));
+describe('2026-08-10 two-article release contract', () => {
+  it('adds only the two approved pages while retaining all 43 published routes', async () => {
+    const approvedSlugs = AUGUST_10_ARTICLES.map(({ slug }) => slug);
+    const registrySlugs = ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug);
+    const expected = [...BASELINE_BLOG_SLUGS, ...registrySlugs];
+    expect(ALL_LIFT_PLATFORM_ARTICLES).toEqual(expect.arrayContaining(AUGUST_10_ARTICLES.map(({ slug, title, diagram }) => ({ slug, title, diagram, cluster: expect.any(String) }))));
+    expect(new Set(expected).size).toBe(45);
+    expect(EXTENDED_LAUNCH_SLUGS).toEqual(expect.arrayContaining(approvedSlugs));
     expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(45);
     const actual = (await readdir(blogRoot)).filter((name) => name.endsWith('.md')).map((name) => name.slice(0, -3)).sort();
-    expect(actual).toEqual([...expected, ...AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS].sort());
+    expect(actual).toEqual(expected.sort());
   });
 
-  it.each(DAILY_ARTICLES)('$slug satisfies the evidence-first long-form contract', async ({ slug, title, diagram }) => {
+  it.each(AUGUST_10_ARTICLES)('$slug satisfies the evidence-first long-form contract', async ({ slug, title, cover, diagram }) => {
     const path = resolve(blogRoot, `${slug}.md`);
     expect(await exists(path), path).toBe(true);
     const markdown = await readFile(path, 'utf8');
     const description = frontmatterValue(markdown, 'description');
-    const cover = frontmatterValue(markdown, 'coverImage');
     const bodyImages = [...markdown.matchAll(/!\[[^\]]+\]\((\/images\/[^)]+)\)/g)].map((match) => match[1]);
     const h2 = [...markdown.matchAll(/^##\s+\S.+$/gm)];
     const h3Plus = [...markdown.matchAll(/^#{3,4}\s+\S.+$/gm)];
     const internalLinks = [...markdown.matchAll(/\]\((\/(?:blog|products)\/[^)]+)\)/g)].map((match) => match[1]);
 
     expect(frontmatterValue(markdown, 'title')).toBe(title);
+    expect(frontmatterValue(markdown, 'date')).toBe('2026-08-10');
+    expect(frontmatterValue(markdown, 'coverImage')).toBe(cover);
     expect(title.length).toBeGreaterThanOrEqual(50);
     expect(title.length).toBeLessThanOrEqual(60);
     expect(`${title} | ARCLIFT`.length).toBeLessThanOrEqual(70);
@@ -85,24 +90,26 @@ describe('2026-08-08 two-article release contract', () => {
     expect(h2.length).toBeGreaterThanOrEqual(4);
     expect(h2.length).toBeLessThanOrEqual(6);
     expect(h3Plus.length).toBeGreaterThanOrEqual(12);
-    expect((markdown.match(/^####\s+.+\?$/gm) ?? []).length).toBeGreaterThanOrEqual(4);
+    expect((markdown.match(/^####\s+.+\?$/gm) ?? []).length).toBe(4);
     expect(bodyImages).toHaveLength(3);
     expect(new Set([cover, ...bodyImages]).size).toBe(4);
     expect(bodyImages).toContain(`/images/editorial/${diagram}`);
     expect(new Set(internalLinks).size).toBeGreaterThanOrEqual(2);
     expect(markdown).toMatch(/<a href="https:\/\/[^"\s]+" target="_blank" rel="noopener noreferrer">/);
+    expect((markdown.match(/not evidence of (?:ARCLIFT )?equipment, configuration, project, capability or result/gi) ?? []).length).toBeGreaterThanOrEqual(4);
+    expect(markdown).not.toMatch(/(?:^|[\s"'(])(?:[A-Za-z]:[\\/])|Henan\s+Huaying|河南华鹰|source factory|our factory|we manufacture/imu);
     for (const marker of markers) expect(markdown).toContain(`<!-- audit-section: ${marker} -->`);
   });
 
-  it.each(DAILY_ARTICLES)('$diagram is accessible and mobile-readable', async ({ diagram }) => {
+  it.each(AUGUST_10_ARTICLES)('$diagram is accessible and mobile-readable', async ({ diagram }) => {
     const path = resolve(editorialRoot, diagram);
     expect(await exists(path), path).toBe(true);
     const svg = await readFile(path, 'utf8');
     const labels = [...svg.matchAll(/<text\b([^>]*)data-role="decision-label"([^>]*)>([^<]+)<\/text>/gi)];
     const textNodes = [...svg.matchAll(/<text\b([^>]*)>([^<]*)<\/text>/gi)];
     expect(svg).toMatch(/<svg\b[^>]*viewBox="0 0 1600 900"/i);
-    expect(svg).toMatch(/<title>[^<]+<\/title>/i);
-    expect(svg).toMatch(/<desc>[^<]+<\/desc>/i);
+    expect(svg).toMatch(/<title\b[^>]*>[^<]+<\/title>/i);
+    expect(svg).toMatch(/<desc\b[^>]*>[^<]+<\/desc>/i);
     expect(svg).toContain('ARCLIFT');
     expect(labels.length).toBeGreaterThanOrEqual(3);
     expect(labels.length).toBeLessThanOrEqual(5);
@@ -113,10 +120,10 @@ describe('2026-08-08 two-article release contract', () => {
     expect(svg).not.toMatch(/(?:^|[\s"'(])(?:[A-Za-z]:[\\/])|Henan\s+Huaying|河南华鹰|manufacturer|factory|certification|guarantee/imu);
   });
 
-  it('classifies both diagrams without provenance fields', async () => {
+  it('classifies both new diagrams without provenance fields', async () => {
     const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
     const records = manifest.campaigns.editorial;
-    for (const { slug, diagram } of DAILY_ARTICLES) {
+    for (const { slug, diagram } of AUGUST_10_ARTICLES) {
       const record = records.find((candidate) => candidate.slug === slug);
       expect(record).toEqual(expect.objectContaining({
         slug,

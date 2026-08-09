@@ -851,6 +851,22 @@
         "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result",
         "theme": "roll-forming lift destination receipt evidence sequence",
         "use": "technical article diagram"
+      },
+      {
+        "slug": "aerial-platform-familiarization-handover",
+        "url": "/images/editorial/aerial-platform-familiarization-handover.svg",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result",
+        "theme": "aerial platform familiarization and authorization handover",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "large-crawler-platform-transport-data-package",
+        "url": "/images/editorial/large-crawler-platform-transport-data-package.svg",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result",
+        "theme": "large crawler platform transport data handoffs",
+        "use": "technical article diagram"
       }
     ],
     "home": [

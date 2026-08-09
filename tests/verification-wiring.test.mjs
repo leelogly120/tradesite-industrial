@@ -18,6 +18,7 @@ describe('permanent verification wiring', () => {
 
   it('runs the twenty-article coverage test and extended content audit permanently', () => {
     expect(packageJson.scripts['test:content']).toContain('tests/twenty-lift-platform-articles.test.mjs');
+    expect(packageJson.scripts['test:content']).toContain('tests/two-daily-lift-platform-articles-20260810.test.mjs');
     expect(packageJson.scripts['audit:content']).toBe('node scripts/audit-lift-platform-content.mjs');
   });
 
