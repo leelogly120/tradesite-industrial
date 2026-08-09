@@ -10,6 +10,58 @@ async function openHomepage(page, viewport = desktop, reducedMotion = 'no-prefer
   await page.waitForLoadState('networkidle');
 }
 
+function rgbToLuminance(rgb: string) {
+  const channels = rgb.match(/[\d.]+/g)?.slice(0, 3).map(Number) ?? [];
+  if (channels.length !== 3) return 0;
+  const linear = channels.map((channel) => {
+    const value = channel / 255;
+    return value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2];
+}
+
+test('uses local fonts and preserves accessible homepage text hierarchy', async ({ page }) => {
+  const fontRequests: string[] = [];
+  page.on('request', (request) => {
+    const hostname = new URL(request.url()).hostname;
+    if (hostname === 'fonts.googleapis.com' || hostname === 'fonts.gstatic.com') {
+      fontRequests.push(request.url());
+    }
+  });
+
+  await openHomepage(page, mobile);
+  expect.soft(fontRequests).toEqual([]);
+  await expect.soft(page.locator('.footer').getByRole('heading', { level: 2 })).toHaveCount(4);
+
+  const samples = await page.locator(
+    '.trust__text, .footer__brand-desc, .footer a, .footer__bottom span',
+  ).evaluateAll((elements) => elements.map((element) => {
+    const foreground = getComputedStyle(element).color;
+    let current: Element | null = element;
+    let background = 'rgb(255, 255, 255)';
+
+    while (current) {
+      const candidate = getComputedStyle(current).backgroundColor;
+      const alpha = candidate.match(/[\d.]+/g)?.map(Number)[3] ?? 1;
+      if (alpha > 0) {
+        background = candidate;
+        break;
+      }
+      current = current.parentElement;
+    }
+
+    return { foreground, background, text: element.textContent?.trim() };
+  }));
+
+  for (const sample of samples) {
+    const foreground = rgbToLuminance(sample.foreground);
+    const background = rgbToLuminance(sample.background);
+    const ratio = (Math.max(foreground, background) + 0.05) /
+      (Math.min(foreground, background) + 0.05);
+    expect.soft(ratio, sample.text).toBeGreaterThanOrEqual(4.5);
+  }
+});
+
 test.describe('Task 6 homepage at 1440 × 900', () => {
   test.beforeEach(async ({}, testInfo) => {
     test.skip(testInfo.project.name !== 'desktop-chromium');
