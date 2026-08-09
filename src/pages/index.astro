@@ -67,11 +67,11 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
   <!-- HERO WITH CAROUSEL -->
   <section class="hero" data-autoplay="pending">
     <div class="hero__carousel" id="hero-carousel" aria-live="off">
-      <div class="hero__slide hero__slide--brand hero__slide--active" role="img" aria-label="AI-assisted editorial visual of an ARCLIFT-branded red crawler platform in a steel structure" aria-hidden="false" data-index="0" style="background-image: url('/images/hero/hero-1-arclift.webp');" data-overline="Under-Ceiling Work Review" data-title="PLAN A LARGE WORK DECK AT HEIGHT" data-desc="Review working height, deck layout, allowable load, floor pressure and on-site repositioning before selecting a platform."></div>
-      <div class="hero__slide" role="img" aria-label="Editorial visual of roof-level roll forming and long-panel feed direction" aria-hidden="true" data-index="1" style="background-image: url('/images/hero/hero-2.webp');" data-overline="Roof-Level Forming Review" data-title="PLAN THE PANEL FEED PATH" data-desc="Compare eave height, profile, material, panel length, forming-line mass, ground access and wind controls before choosing a lifting route."></div>
-      <div class="hero__slide" role="img" aria-label="AI-assisted representative visual of port handling and equipment logistics planning" aria-hidden="true" data-index="2" style="background-image: url('/images/editorial/port-loading-logistics.webp');" data-overline="Destination Requirement Review" data-title="REVIEW THE SHIPPING ROUTE" data-desc="Compare module envelope, mass, packing plan, carrier limits, local chassis and site access. Container fit requires a destination requirement review."></div>
-      <div class="hero__slide" role="img" aria-label="AI-assisted representative visual of truck-mounted equipment at a project site" aria-hidden="true" data-index="3" style="background-image: url('/images/editorial/truck-site-roll-forming-lift.webp');" data-overline="Site Mobility Review" data-title="COMPARE ROAD AND SITE ACCESS" data-desc="Review road transfer, stabilizer space, ground support and working position before selecting a truck-mounted route."></div>
-      <div class="hero__slide" role="img" aria-label="Editorial visual of a large platform positioned for wall-panel access" aria-hidden="true" data-index="4" style="background-image: url('/images/hero/hero-5.webp');" data-overline="Wall-Panel Access Review" data-title="CHECK THE WORKING ENVELOPE" data-desc="Review platform reach, wall clearance, load placement, floor conditions and the proposed work sequence for facade or wall-panel access."></div>
+      <div class="hero__slide hero__slide--brand hero__slide--active" role="img" aria-label="AI-assisted editorial visual of an ARCLIFT-branded red crawler platform in a steel structure" aria-hidden="false" data-index="0" data-background-loaded="true" style="background-image: url('/images/hero/hero-1-arclift.webp');" data-overline="Under-Ceiling Work Review" data-title="PLAN A LARGE WORK DECK AT HEIGHT" data-desc="Review working height, deck layout, allowable load, floor pressure and on-site repositioning before selecting a platform."></div>
+      <div class="hero__slide" role="img" aria-label="Editorial visual of roof-level roll forming and long-panel feed direction" aria-hidden="true" data-index="1" data-background="/images/hero/hero-2.webp" data-overline="Roof-Level Forming Review" data-title="PLAN THE PANEL FEED PATH" data-desc="Compare eave height, profile, material, panel length, forming-line mass, ground access and wind controls before choosing a lifting route."></div>
+      <div class="hero__slide" role="img" aria-label="AI-assisted representative visual of port handling and equipment logistics planning" aria-hidden="true" data-index="2" data-background="/images/editorial/port-loading-logistics.webp" data-overline="Destination Requirement Review" data-title="REVIEW THE SHIPPING ROUTE" data-desc="Compare module envelope, mass, packing plan, carrier limits, local chassis and site access. Container fit requires a destination requirement review."></div>
+      <div class="hero__slide" role="img" aria-label="AI-assisted representative visual of truck-mounted equipment at a project site" aria-hidden="true" data-index="3" data-background="/images/editorial/truck-site-roll-forming-lift.webp" data-overline="Site Mobility Review" data-title="COMPARE ROAD AND SITE ACCESS" data-desc="Review road transfer, stabilizer space, ground support and working position before selecting a truck-mounted route."></div>
+      <div class="hero__slide" role="img" aria-label="Editorial visual of a large platform positioned for wall-panel access" aria-hidden="true" data-index="4" data-background="/images/hero/hero-5.webp" data-overline="Wall-Panel Access Review" data-title="CHECK THE WORKING ENVELOPE" data-desc="Review platform reach, wall clearance, load placement, floor conditions and the proposed work sequence for facade or wall-panel access."></div>
     </div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
@@ -104,8 +104,10 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     const heroDesc = document.getElementById('hero-desc');
     const heroSection = document.querySelector('.hero');
     const heroReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const heroDesktopAutoplay = window.matchMedia('(min-width: 769px) and (pointer: fine)');
     let currentSlide = 0;
     let carouselTimer;
+    let backgroundWarmupTimer: number | undefined;
     let heroHovered = false;
     let heroFocused = false;
     const slideInterval = 6000;
@@ -117,14 +119,26 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
       'CHECK THE WORKING ENVELOPE',
     ];
 
+    function ensureSlideBackground(slide: Element | undefined) {
+      if (!(slide instanceof HTMLElement) || slide.dataset.backgroundLoaded === 'true') return;
+
+      const background = slide.dataset.background;
+      if (!background) return;
+
+      slide.style.backgroundImage = `url("${background}")`;
+      slide.dataset.backgroundLoaded = 'true';
+    }
+
     function goToSlide(index) {
       if (!slides.length || !dots.length) return;
+      const nextIndex = (index + slides.length) % slides.length;
+      ensureSlideBackground(slides[nextIndex]);
       slides[currentSlide]?.classList.remove('hero__slide--active');
       slides[currentSlide]?.setAttribute('aria-hidden', 'true');
       dots[currentSlide]?.classList.remove('hero__dot--active');
       dots[currentSlide]?.setAttribute('aria-current', 'false');
 
-      currentSlide = (index + slides.length) % slides.length;
+      currentSlide = nextIndex;
       const slide = slides[currentSlide];
       const dot = dots[currentSlide];
       slide?.classList.add('hero__slide--active');
@@ -146,7 +160,18 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     function stopAutoplay(state = 'paused') {
       if (carouselTimer) window.clearInterval(carouselTimer);
       carouselTimer = undefined;
+      if (backgroundWarmupTimer) window.clearTimeout(backgroundWarmupTimer);
+      backgroundWarmupTimer = undefined;
       if (heroSection instanceof HTMLElement) heroSection.dataset.autoplay = state;
+    }
+
+    function scheduleNextBackground() {
+      if (!heroDesktopAutoplay.matches || heroReducedMotion.matches) return;
+      if (backgroundWarmupTimer) window.clearTimeout(backgroundWarmupTimer);
+
+      backgroundWarmupTimer = window.setTimeout(() => {
+        ensureSlideBackground(slides[(currentSlide + 1) % slides.length]);
+      }, 1_500);
     }
 
     function startAutoplay() {
@@ -154,12 +179,20 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
         stopAutoplay('disabled');
         return;
       }
+      if (!heroDesktopAutoplay.matches) {
+        stopAutoplay(window.matchMedia('(max-width: 768px)').matches ? 'disabled-mobile' : 'disabled-input');
+        return;
+      }
       if (heroHovered || heroFocused) {
         stopAutoplay('paused');
         return;
       }
       stopAutoplay('paused');
-      carouselTimer = window.setInterval(nextSlide, slideInterval);
+      scheduleNextBackground();
+      carouselTimer = window.setInterval(() => {
+        nextSlide();
+        scheduleNextBackground();
+      }, slideInterval);
       if (heroSection instanceof HTMLElement) heroSection.dataset.autoplay = 'running';
     }
 
@@ -186,6 +219,7 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
       }, 0);
     });
     heroReducedMotion.addEventListener('change', startAutoplay);
+    heroDesktopAutoplay.addEventListener('change', startAutoplay);
     startAutoplay();
   </script>
 
