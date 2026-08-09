@@ -341,6 +341,14 @@
         "disclosure": "AI-assisted editorial composite"
       },
       {
+        "slug": "large-deck-steel-structure-800",
+        "url": "/images/editorial/large-deck-steel-structure-800.webp",
+        "use": "homepage responsive derivative",
+        "theme": "large-deck platform in a steel structure",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial composite"
+      },
+      {
         "slug": "roof-level-workflow",
         "url": "/images/editorial/roof-level-workflow.svg",
         "use": "technical article diagram",
@@ -850,6 +858,13 @@
         "slug": "under-ceiling-platform",
         "url": "/images/home/under-ceiling-field-v2.webp",
         "use": "home feature and representative application visual",
+        "theme": "large-deck platform in a steel structure",
+        "classification": "editorial"
+      },
+      {
+        "slug": "under-ceiling-platform-800",
+        "url": "/images/home/under-ceiling-field-v2-800.webp",
+        "use": "homepage responsive derivative",
         "theme": "large-deck platform in a steel structure",
         "classification": "editorial"
       },

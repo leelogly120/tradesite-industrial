@@ -179,6 +179,33 @@ test.describe('Task 6 homepage at 390 × 844', () => {
     }
   });
 
+  test('selects compact homepage image sources on mobile', async ({ page }) => {
+    await openHomepage(page, mobile);
+
+    const images = [
+      {
+        image: page.getByAltText('Crawler Ceiling Platforms representative editorial visual'),
+        expected: '/images/editorial/large-deck-steel-structure-800.webp',
+      },
+      {
+        image: page.getByAltText('ARCLIFT-branded large crawler under-ceiling platform working inside a steel structure'),
+        expected: '/images/home/under-ceiling-field-v2-800.webp',
+      },
+      {
+        image: page.getByAltText('Representative under-ceiling platform visual in a steel structure'),
+        expected: '/images/home/under-ceiling-field-v2-800.webp',
+      },
+    ];
+
+    for (const item of images) {
+      await item.image.scrollIntoViewIfNeeded();
+      await expect.poll(async () => {
+        const currentSrc = await item.image.evaluate((image: HTMLImageElement) => image.currentSrc);
+        return new URL(currentSrc).pathname;
+      }).toBe(item.expected);
+    }
+  });
+
   test('keeps five usable dots and disables autoplay for reduced motion', async ({ page }) => {
     await openHomepage(page, mobile, 'reduce');
     const hero = page.locator('.hero');

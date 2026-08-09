@@ -296,7 +296,9 @@ describe('public asset manifest', () => {
 
   it('preserves the original 15 editorial assets and publishes the 52 approved long-form assets', async () => {
     const manifest = JSON.parse(await readProjectFile('public/images/asset-manifest.json'));
-    const records = manifest.campaigns?.editorial ?? [];
+    const records = (manifest.campaigns?.editorial ?? []).filter(
+      (record) => record.use !== 'homepage responsive derivative',
+    );
     const originalExpectedSlugs = [
       'truck-site-roll-forming-lift',
       'port-loading-logistics',

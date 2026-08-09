@@ -25,6 +25,9 @@ const HOME_CATEGORIES = [
     range: 'Working envelope by model',
     desc: 'Large-deck concepts for under-ceiling and wall-panel work; height, load and travel mode require model and site review.',
     image: '/images/editorial/large-deck-steel-structure.webp',
+    imageSmall: '/images/editorial/large-deck-steel-structure-800.webp',
+    imageWidth: 1600,
+    imageHeight: 900,
   },
   {
     id: 'roll-forming-machines',
@@ -244,7 +247,15 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     <div class="products">
       {homeCats.map((cat, i) => (
         <a href={`/products/#${cat.id}`} class:list={['p-card', 'reveal', `reveal-d${i + 1}`]}>
-          <div class="p-card__img"><img src={cat.image} alt={`${cat.name} representative editorial visual`} loading="lazy" /></div>
+          <div class="p-card__img"><img
+            src={cat.image}
+            srcset={cat.imageSmall ? `${cat.imageSmall} 800w, ${cat.image} ${cat.imageWidth}w` : undefined}
+            sizes={cat.imageSmall ? '(max-width: 768px) calc(100vw - 48px), (max-width: 1024px) calc(50vw - 34px), calc(25vw - 35px)' : undefined}
+            width={cat.imageWidth}
+            height={cat.imageHeight}
+            alt={`${cat.name} representative editorial visual`}
+            loading="lazy"
+          /></div>
           <div class="p-card__body">
             <div class="p-card__tag">{cat.items.length} {cat.items.length === 1 ? 'Model' : 'Models'}</div>
             <div class="p-card__name">{cat.name}</div>
@@ -262,7 +273,7 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
   <!-- FEATURE 1: Repositioning review -->
   <section class="sec sec--gray">
     <div class="split reveal">
-      <div class="split__visual"><img src="/images/home/under-ceiling-field-v2.webp" alt="ARCLIFT-branded large crawler under-ceiling platform working inside a steel structure" width="1200" height="800" loading="lazy" /></div>
+      <div class="split__visual"><img src="/images/home/under-ceiling-field-v2.webp" srcset="/images/home/under-ceiling-field-v2-800.webp 800w, /images/home/under-ceiling-field-v2.webp 1200w" sizes="(max-width: 1024px) calc(100vw - 48px), 50vw" alt="ARCLIFT-branded large crawler under-ceiling platform working inside a steel structure" width="1200" height="800" loading="lazy" /></div>
       <div class="split__text">
         <div class="sec__overline" style="text-align:left;">Workflow Review</div>
         <h3>ON-SITE REPOSITIONING REVIEW</h3>
@@ -321,7 +332,7 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
         <div class="app__body"><span class="app__caption">Representative application visual</span><h3>Stadium & Arena</h3><p>Review span, floor loading, work zone and panel handling.</p></div>
       </a>
       <a href="/applications/airport/" class="app reveal reveal-d2" aria-label="Airport terminal planning route. Representative application visual.">
-        <div class="app__media"><img class="app__image" src="/images/home/under-ceiling-field-v2.webp" alt="Representative under-ceiling platform visual in a steel structure" width="1200" height="800" loading="lazy" /></div>
+        <div class="app__media"><img class="app__image" src="/images/home/under-ceiling-field-v2.webp" srcset="/images/home/under-ceiling-field-v2-800.webp 800w, /images/home/under-ceiling-field-v2.webp 1200w" sizes="(max-width: 1024px) calc(100vw - 48px), 33vw" alt="Representative under-ceiling platform visual in a steel structure" width="1200" height="800" loading="lazy" /></div>
         <div class="app__arrow">→</div>
         <div class="app__body"><span class="app__caption">Representative application visual</span><h3>Airport Terminal</h3><p>Review access windows, ceiling services and public-area controls.</p></div>
       </a>

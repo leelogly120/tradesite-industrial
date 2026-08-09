@@ -13,6 +13,7 @@ describe('permanent verification wiring', () => {
     expect(testContentCommand).toContain('tests/product-copy-distinctiveness.test.mjs');
     expect(testContentCommand).toContain('tests/product-page-encoding.test.mjs');
     expect(testContentCommand).toContain('tests/final-review-regressions.test.mjs');
+    expect(testContentCommand).toContain('tests/homepage-performance-assets.test.mjs');
   });
 
   it('runs the twenty-article coverage test and extended content audit permanently', () => {
