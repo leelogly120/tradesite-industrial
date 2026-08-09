@@ -179,33 +179,6 @@ test.describe('Task 6 homepage at 390 × 844', () => {
     }
   });
 
-  test('selects compact homepage image sources on mobile', async ({ page }) => {
-    await openHomepage(page, mobile);
-
-    const images = [
-      {
-        image: page.getByAltText('Crawler Ceiling Platforms representative editorial visual'),
-        expected: '/images/editorial/large-deck-steel-structure-800.webp',
-      },
-      {
-        image: page.getByAltText('ARCLIFT-branded large crawler under-ceiling platform working inside a steel structure'),
-        expected: '/images/home/under-ceiling-field-v2-800.webp',
-      },
-      {
-        image: page.getByAltText('Representative under-ceiling platform visual in a steel structure'),
-        expected: '/images/home/under-ceiling-field-v2-800.webp',
-      },
-    ];
-
-    for (const item of images) {
-      await item.image.scrollIntoViewIfNeeded();
-      await expect.poll(async () => {
-        const currentSrc = await item.image.evaluate((image: HTMLImageElement) => image.currentSrc);
-        return new URL(currentSrc).pathname;
-      }).toBe(item.expected);
-    }
-  });
-
   test('keeps five usable dots and disables autoplay for reduced motion', async ({ page }) => {
     await openHomepage(page, mobile, 'reduce');
     const hero = page.locator('.hero');
@@ -231,49 +204,6 @@ test.describe('Task 6 homepage at 390 × 844', () => {
     await expect(page.locator('#key-specifications')).toBeVisible();
   });
 
-  test('keeps the mobile hero stable and defers inactive slide backgrounds', async ({ page }) => {
-    const requestedHeroPaths = new Set<string>();
-
-    page.on('request', (request) => {
-      const pathname = new URL(request.url()).pathname;
-      if (pathname.startsWith('/images/hero/') || pathname.startsWith('/images/editorial/')) {
-        requestedHeroPaths.add(pathname);
-      }
-    });
-
-    await openHomepage(page, mobile);
-
-    const hero = page.locator('.hero');
-    const slides = hero.locator('.hero__slide');
-    const dots = hero.locator('.hero__dot');
-    const inactiveBackgrounds = [
-      '/images/hero/hero-2.webp',
-      '/images/editorial/port-loading-logistics.webp',
-      '/images/hero/hero-5.webp',
-    ];
-
-    await expect(hero).toHaveAttribute('data-autoplay', 'disabled-mobile');
-    await expect(slides.nth(0)).toHaveClass(/hero__slide--active/);
-    expect(requestedHeroPaths.has('/images/hero/hero-1-arclift.webp')).toBe(true);
-    for (const pathname of inactiveBackgrounds) {
-      expect(requestedHeroPaths.has(pathname), `${pathname} should be deferred`).toBe(false);
-    }
-    await expect(slides.nth(3)).not.toHaveAttribute('style');
-    expect(await slides.nth(3).evaluate((element) => getComputedStyle(element).backgroundImage)).toBe('none');
-
-    await page.waitForTimeout(6_500);
-    await expect(slides.nth(0)).toHaveClass(/hero__slide--active/);
-
-    await dots.nth(1).click();
-    await expect(slides.nth(1)).toHaveClass(/hero__slide--active/);
-    await expect.poll(() => requestedHeroPaths.has('/images/hero/hero-2.webp')).toBe(true);
-
-    await dots.nth(3).click();
-    await expect(slides.nth(3)).toHaveClass(/hero__slide--active/);
-    expect(await slides.nth(3).evaluate((element) => getComputedStyle(element).backgroundImage))
-      .toContain('truck-site-roll-forming-lift.webp');
-  });
-
   test('keeps the closed mobile drawer out of the keyboard focus order', async ({ page }) => {
     await openHomepage(page, mobile);
     const drawer = page.locator('#mobile-drawer');
@@ -296,4 +226,74 @@ test.describe('Task 6 homepage at 390 × 844', () => {
     await expect(drawer).toHaveAttribute('aria-hidden', 'true');
     await expect(toggle).toBeFocused();
   });
+});
+
+test('selects compact homepage image sources on mobile', async ({ page }) => {
+  await openHomepage(page, mobile);
+
+  const images = [
+    {
+      image: page.getByAltText('Crawler Ceiling Platforms representative editorial visual'),
+      expected: '/images/editorial/large-deck-steel-structure-800.webp',
+    },
+    {
+      image: page.getByAltText('ARCLIFT-branded large crawler under-ceiling platform working inside a steel structure'),
+      expected: '/images/home/under-ceiling-field-v2-800.webp',
+    },
+    {
+      image: page.getByAltText('Representative under-ceiling platform visual in a steel structure'),
+      expected: '/images/home/under-ceiling-field-v2-800.webp',
+    },
+  ];
+
+  for (const item of images) {
+    await item.image.scrollIntoViewIfNeeded();
+    await expect.poll(async () => {
+      const currentSrc = await item.image.evaluate((image: HTMLImageElement) => image.currentSrc);
+      return new URL(currentSrc).pathname;
+    }).toBe(item.expected);
+  }
+});
+
+test('keeps the mobile hero stable and defers inactive slide backgrounds', async ({ page }) => {
+  const requestedHeroPaths = new Set<string>();
+
+  page.on('request', (request) => {
+    const pathname = new URL(request.url()).pathname;
+    if (pathname.startsWith('/images/hero/') || pathname.startsWith('/images/editorial/')) {
+      requestedHeroPaths.add(pathname);
+    }
+  });
+
+  await openHomepage(page, mobile);
+
+  const hero = page.locator('.hero');
+  const slides = hero.locator('.hero__slide');
+  const dots = hero.locator('.hero__dot');
+  const inactiveBackgrounds = [
+    '/images/hero/hero-2.webp',
+    '/images/editorial/port-loading-logistics.webp',
+    '/images/hero/hero-5.webp',
+  ];
+
+  await expect(hero).toHaveAttribute('data-autoplay', 'disabled-mobile');
+  await expect(slides.nth(0)).toHaveClass(/hero__slide--active/);
+  expect(requestedHeroPaths.has('/images/hero/hero-1-arclift.webp')).toBe(true);
+  for (const pathname of inactiveBackgrounds) {
+    expect(requestedHeroPaths.has(pathname), `${pathname} should be deferred`).toBe(false);
+  }
+  await expect(slides.nth(3)).not.toHaveAttribute('style');
+  expect(await slides.nth(3).evaluate((element) => getComputedStyle(element).backgroundImage)).toBe('none');
+
+  await page.waitForTimeout(6_500);
+  await expect(slides.nth(0)).toHaveClass(/hero__slide--active/);
+
+  await dots.nth(1).click();
+  await expect(slides.nth(1)).toHaveClass(/hero__slide--active/);
+  await expect.poll(() => requestedHeroPaths.has('/images/hero/hero-2.webp')).toBe(true);
+
+  await dots.nth(3).click();
+  await expect(slides.nth(3)).toHaveClass(/hero__slide--active/);
+  expect(await slides.nth(3).evaluate((element) => getComputedStyle(element).backgroundImage))
+    .toContain('truck-site-roll-forming-lift.webp');
 });
