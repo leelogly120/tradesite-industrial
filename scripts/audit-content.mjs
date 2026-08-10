@@ -1,30 +1,9 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { BASELINE_BLOG_SLUGS } from './lift-platform-article-registry.mjs';
 
-export const LAUNCH_SLUGS = [
-  'roof-level-roll-forming-long-panels',
-  'crawler-vs-truck-mounted-roll-forming-system',
-  '40hq-shipping-truck-mounted-roll-forming-lift',
-  'roll-forming-line-specification-long-span-roof-panels',
-  'crawler-ceiling-wall-panel-platform-project-data',
-  'crawler-under-ceiling-platform-buyers-guide',
-  'crawler-platform-vs-spider-lift-vs-scaffolding',
-  'indoor-aerial-platform-ground-pressure-guide',
-  'remote-control-aerial-platform-safety-planning',
-  'dual-power-crawler-platform-selection',
-  'warehouse-ceiling-access-platform-planning',
-  'roof-panel-profile-material-tooling-data',
-  'coil-handling-roll-forming-line-feeding-plan',
-  'roll-forming-line-electrical-control-interfaces',
-  'roll-forming-line-fat-sat-acceptance-checklist',
-  'truck-mounted-roll-forming-chassis-interface-review',
-  'stadium-ceiling-access-platform-planning',
-  'airport-terminal-maintenance-access-planning',
-  'ceiling-platform-overhead-clearance-survey',
-  'aerial-platform-worker-tool-material-load-planning',
-  'aerial-platform-emergency-lowering-rescue-plan',
-];
+export const LAUNCH_SLUGS = [...BASELINE_BLOG_SLUGS];
 
 const PUBLISH_THRESHOLD = 95;
 const CATEGORY_DEFINITIONS = [

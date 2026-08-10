@@ -12,6 +12,8 @@ draft: false
 
 A crawler platform, spider lift, and scaffold solve different parts of an under-ceiling access problem. Compare them by the route to the work zone, setup footprint, floor interface, obstruction pattern, work-face duration, material handling, rescue arrangement, and local control requirements. Nominal height alone cannot reveal which method will fit. A crawler platform may support repeated moves and a broad work area; a spider lift may favor a compact transport envelope and stabilizer-based positioning; scaffold may favor a sustained work face. Each advantage carries constraints. This guide gives buyers a practical comparison framework without inventing productivity, cost, or safety rankings.
 
+If the work package includes lifting and carrying a suspended load, separate that question before using this access comparison. The [pick-and-carry crane versus spider lift guide](/blog/pick-and-carry-vs-spider-lift/) defines the material-handling and personnel-access boundary without treating either category as a substitute for the other.
+
 **Contents**
 
 - Frame one comparison around one work package

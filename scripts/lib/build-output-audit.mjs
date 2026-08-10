@@ -1,5 +1,6 @@
 import { readdir, readFile } from 'node:fs/promises';
 import { join, relative, resolve, sep } from 'node:path';
+import { BASELINE_BLOG_SLUGS } from '../lift-platform-article-registry.mjs';
 
 const SITE = 'https://www.arclifteq.com';
 const AI_ASSISTED_VISUAL = 'AI-assisted editorial visual';
@@ -24,29 +25,6 @@ const PRODUCT_SLUGS = [
   'arc-f35-crawler-ceiling-platform',
   'arc-rf8-roll-forming-machine',
 ];
-const BASELINE_BLOG_SLUGS = Object.freeze([
-  '40hq-shipping-truck-mounted-roll-forming-lift',
-  'aerial-platform-emergency-lowering-rescue-plan',
-  'aerial-platform-worker-tool-material-load-planning',
-  'airport-terminal-maintenance-access-planning',
-  'ceiling-platform-overhead-clearance-survey',
-  'coil-handling-roll-forming-line-feeding-plan',
-  'crawler-ceiling-wall-panel-platform-project-data',
-  'crawler-platform-vs-spider-lift-vs-scaffolding',
-  'crawler-under-ceiling-platform-buyers-guide',
-  'crawler-vs-truck-mounted-roll-forming-system',
-  'dual-power-crawler-platform-selection',
-  'indoor-aerial-platform-ground-pressure-guide',
-  'remote-control-aerial-platform-safety-planning',
-  'roll-forming-line-electrical-control-interfaces',
-  'roll-forming-line-fat-sat-acceptance-checklist',
-  'roll-forming-line-specification-long-span-roof-panels',
-  'roof-level-roll-forming-long-panels',
-  'roof-panel-profile-material-tooling-data',
-  'stadium-ceiling-access-platform-planning',
-  'truck-mounted-roll-forming-chassis-interface-review',
-  'warehouse-ceiling-access-platform-planning',
-]);
 const BASELINE_INDEXABLE_ROUTES = Object.freeze([
   '/',
   '/about/',

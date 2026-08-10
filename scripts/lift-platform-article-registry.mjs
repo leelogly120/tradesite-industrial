@@ -1,3 +1,29 @@
+export const RECOVERED_RANKED_ARTICLES = Object.freeze([
+  {
+    slug: 'pick-and-carry-vs-spider-lift',
+    title: 'Pick-and-Carry Crane vs Spider Lift: Task Boundaries',
+    cluster: 'access-method',
+    diagram: 'pick-and-carry-vs-spider-lift.svg',
+    cover: '/images/editorial/crawler-platform-selection-path.svg',
+  },
+  {
+    slug: 'ceiling-maintenance-safety-checklist',
+    title: 'Ceiling Maintenance Safety Checklist for Access Work',
+    cluster: 'ceiling-access',
+    diagram: 'ceiling-maintenance-safety-checklist.svg',
+    cover: '/images/editorial/ceiling-platform-underside.webp',
+  },
+  {
+    slug: 'ceiling-work-technology-trends',
+    title: 'Ceiling Work Technology Trends: Evidence to Verify',
+    cluster: 'ceiling-access',
+    diagram: 'ceiling-work-technology-trends.svg',
+    cover: '/images/editorial/large-deck-steel-structure.webp',
+  },
+].map((article) => Object.freeze(article)));
+
+export const RECOVERED_RANKED_ARTICLE_SLUGS = Object.freeze(RECOVERED_RANKED_ARTICLES.map(({ slug }) => slug));
+
 export const BASELINE_BLOG_SLUGS = Object.freeze([
   '40hq-shipping-truck-mounted-roll-forming-lift',
   'aerial-platform-emergency-lowering-rescue-plan',
@@ -20,6 +46,7 @@ export const BASELINE_BLOG_SLUGS = Object.freeze([
   'stadium-ceiling-access-platform-planning',
   'truck-mounted-roll-forming-chassis-interface-review',
   'warehouse-ceiling-access-platform-planning',
+  ...RECOVERED_RANKED_ARTICLE_SLUGS,
 ]);
 
 export const LIFT_PLATFORM_ARTICLES = Object.freeze([

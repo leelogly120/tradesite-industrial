@@ -867,6 +867,30 @@
         "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result",
         "theme": "large crawler platform transport data handoffs",
         "use": "technical article diagram"
+      },
+      {
+        "slug": "pick-and-carry-vs-spider-lift",
+        "url": "/images/editorial/pick-and-carry-vs-spider-lift.svg",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result",
+        "theme": "material handling and personnel access task boundaries",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "ceiling-maintenance-safety-checklist",
+        "url": "/images/editorial/ceiling-maintenance-safety-checklist.svg",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result",
+        "theme": "ceiling maintenance pre-task information gates",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "ceiling-work-technology-trends",
+        "url": "/images/editorial/ceiling-work-technology-trends.svg",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result",
+        "theme": "ceiling access technology evidence chain",
+        "use": "technical article diagram"
       }
     ],
     "home": [

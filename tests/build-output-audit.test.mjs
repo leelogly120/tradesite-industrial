@@ -4,6 +4,10 @@ import { dirname, join, resolve } from 'node:path';
 import { afterEach, describe, expect, it } from 'vitest';
 import { auditBuildOutput } from '../scripts/lib/build-output-audit.mjs';
 import { shouldIncludeInSitemap } from '../scripts/lib/sitemap-policy.mjs';
+import {
+  BASELINE_BLOG_SLUGS,
+  RECOVERED_RANKED_ARTICLE_SLUGS,
+} from '../scripts/lift-platform-article-registry.mjs';
 
 const SITE = 'https://www.arclifteq.com';
 const AI_ASSISTED_VISUAL = 'AI-assisted editorial visual';
@@ -11,29 +15,7 @@ const AI_ASSISTED_COMPOSITE = 'AI-assisted editorial composite';
 const DISCLOSURE = 'Editorial planning visual — not model-specific evidence';
 const PRODUCT_VISUAL_DISCLOSURE = `${AI_ASSISTED_VISUAL}. ${DISCLOSURE}`;
 const COMPARE_VISUAL_DISCLOSURE = `${AI_ASSISTED_COMPOSITE}. ${DISCLOSURE}`;
-const baselineBlogSlugs = [
-  '40hq-shipping-truck-mounted-roll-forming-lift',
-  'aerial-platform-emergency-lowering-rescue-plan',
-  'aerial-platform-worker-tool-material-load-planning',
-  'airport-terminal-maintenance-access-planning',
-  'ceiling-platform-overhead-clearance-survey',
-  'coil-handling-roll-forming-line-feeding-plan',
-  'crawler-ceiling-wall-panel-platform-project-data',
-  'crawler-platform-vs-spider-lift-vs-scaffolding',
-  'crawler-under-ceiling-platform-buyers-guide',
-  'crawler-vs-truck-mounted-roll-forming-system',
-  'dual-power-crawler-platform-selection',
-  'indoor-aerial-platform-ground-pressure-guide',
-  'remote-control-aerial-platform-safety-planning',
-  'roll-forming-line-electrical-control-interfaces',
-  'roll-forming-line-fat-sat-acceptance-checklist',
-  'roll-forming-line-specification-long-span-roof-panels',
-  'roof-level-roll-forming-long-panels',
-  'roof-panel-profile-material-tooling-data',
-  'stadium-ceiling-access-platform-planning',
-  'truck-mounted-roll-forming-chassis-interface-review',
-  'warehouse-ceiling-access-platform-planning',
-];
+const baselineBlogSlugs = BASELINE_BLOG_SLUGS;
 const additionalBlogSlug = 'future-additional-route';
 const productSlugs = [
   'arc-c17-crawler-roll-forming-lift',
@@ -214,11 +196,11 @@ describe('built output audit', () => {
     const root = await makeValidFixture();
 
     await expect(auditBuildOutput({ root })).resolves.toMatchObject({
-      htmlFileCount: 53,
-      indexableRouteCount: 47,
-      sitemapUrlCount: 47,
+      htmlFileCount: 56,
+      indexableRouteCount: 50,
+      sitemapUrlCount: 50,
       productRouteCount: 15,
-      blogArticleRouteCount: 22,
+      blogArticleRouteCount: 25,
       legacyRedirectCount: 4,
     });
   });
@@ -307,9 +289,8 @@ describe('built output audit', () => {
     expect(error.message).toMatch(/15 canonical product references/i);
   });
 
-  it('rejects deletion of a baseline published blog even when content, output, and sitemap agree', async () => {
+  it.each([baselineBlogSlugs[0], ...RECOVERED_RANKED_ARTICLE_SLUGS])('rejects deletion of protected blog %s even when content, output, and sitemap agree', async (slug) => {
     const root = await makeValidFixture();
-    const slug = baselineBlogSlugs[0];
     await rm(resolve(root, `src/content/blog/${slug}.md`));
     await rm(resolve(root, `dist/blog/${slug}`), { recursive: true });
     const sitemapPath = resolve(root, 'dist/sitemap-0.xml');

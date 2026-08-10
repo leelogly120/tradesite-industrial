@@ -42,19 +42,19 @@ function visibleWordCount(markdown) {
 }
 
 describe('twenty lift-platform article release contract', () => {
-  it('keeps 20 unique approved articles and the frozen 21-page baseline', () => {
+  it('keeps 20 unique approved articles and the protected 24-page baseline', () => {
     expect(LIFT_PLATFORM_ARTICLES).toHaveLength(20);
     expect(new Set(LIFT_PLATFORM_ARTICLE_SLUGS).size).toBe(20);
-    expect(BASELINE_BLOG_SLUGS).toHaveLength(21);
-    expect(new Set([...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_LIFT_PLATFORM_ARTICLE_SLUGS, ...AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS]).size).toBe(45);
+    expect(BASELINE_BLOG_SLUGS).toHaveLength(24);
+    expect(new Set([...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_LIFT_PLATFORM_ARTICLE_SLUGS, ...AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS]).size).toBe(48);
   });
 
   it('includes every approved article in the executable content audit', () => {
     expect(EXTENDED_LAUNCH_SLUGS).toEqual(expect.arrayContaining(LIFT_PLATFORM_ARTICLE_SLUGS));
-    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(45);
+    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(48);
   });
 
-  it('retains the frozen 21 plus 20 pages and the approved daily pages', async () => {
+  it('retains the protected baseline plus 20 pages and the approved daily pages', async () => {
     const slugs = (await readdir(blogRoot)).filter((name) => name.endsWith('.md')).map((name) => name.slice(0, -3)).sort();
     expect(slugs).toEqual([...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_LIFT_PLATFORM_ARTICLE_SLUGS, ...AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS].sort());
   });

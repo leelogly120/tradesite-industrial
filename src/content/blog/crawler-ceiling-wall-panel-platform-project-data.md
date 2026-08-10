@@ -13,6 +13,8 @@ draft: false
 
 Do not select a large-deck crawler platform from ceiling height alone. First define every reachable work zone, required deck area, personnel and material loads, outreach, obstructions, access route, floor conditions, stabilization method, indoor operating limits, emergency procedures, and destination requirements. The resulting data may support a crawler platform concept, narrow it to a specific configuration, or show that another access method is more suitable.
 
+When a feature label enters the discussion, route it through the [ceiling-work technology evidence guide](/blog/ceiling-work-technology-trends/). That guide connects feature scope, affected interface, controlled source, site verification and decision owner without turning the project-data record into a market or product claim.
+
 <!-- audit-section: buyer-intent -->
 ## Define the work zones before the deck
 

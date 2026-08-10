@@ -1,6 +1,6 @@
 ---
-title: "Truck Chassis Interface Review for Roll-Forming Lines"
-description: "Collect chassis, body, route and responsibility inputs for a preliminary truck-mounted line review; it does not approve a vehicle, registration or compliance."
+title: "Truck Chassis Integration Review for Roll-Forming Lines"
+description: "Review truck chassis integration for mobile roll-forming lines, including interfaces, payload allocation, stability inputs, utilities, and verification records."
 date: 2026-07-27
 author: "ARCLIFT Technical Editorial"
 tags: ["truck mounted roll forming", "chassis interface", "vehicle integration", "project review"]
@@ -10,7 +10,7 @@ coverCaption: "Representative interface concept. AI-assisted editorial diagram; 
 draft: false
 ---
 
-Vehicle integration begins with ownership, not with choosing a truck from a brochure. The chassis, body or attachment, equipment module, road route, site route and work zone each bring a different interface owner. Gather those inputs in a **preliminary chassis-interface package** so the relevant parties can decide whether integration review can begin. Loads, stability, road use, registration, compliance, final architecture and chassis fit remain undecided.
+Truck chassis integration begins with ownership, not with choosing a truck from a brochure. The chassis, body or attachment, equipment module, road route, site route and work zone each bring a different interface owner. Gather those inputs in a **preliminary chassis-interface package** so the relevant parties can decide whether integration review can begin. Loads, stability, road use, registration, compliance, final architecture and chassis fit remain undecided.
 
 **Contents**
 

@@ -12,6 +12,8 @@ draft: false
 
 Remote control changes the operator's location; it does not make an aerial platform safe by itself. A workable plan defines who holds control, where that person stands, what they can see, how people and traffic are excluded, how movements are communicated, what happens after a lost signal or stop, who can use ground controls, and how rescue is practised. The exact functions and permitted operating states must come from configuration-specific instructions. This guide helps buyers and site teams evaluate the control interface without claiming that a handset removes entrapment, collision, overturning, fall, or floor risks.
 
+The [ceiling-work technology evidence guide](/blog/ceiling-work-technology-trends/) places remote operation inside a wider feature-to-interface evidence chain. Use it when comparing controls with power, site-data and work-organization questions; return here for the detailed control-zone and communication record.
+
 **Contents**
 
 - Define what remote control must accomplish

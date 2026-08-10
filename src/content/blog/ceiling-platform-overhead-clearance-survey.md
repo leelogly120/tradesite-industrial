@@ -29,6 +29,8 @@ Trace the approved route from unloading or staging to the work area. At each ope
 
 Use clear measured dimensions rather than plan labels. Record the configuration reference as unknown until exact approved information is available; do not draw an assumed ARC-F outline. The [ceiling-platform project-data guide](/blog/crawler-ceiling-wall-panel-platform-project-data/) explains the broader selection inputs, while this register stays narrowly focused on overhead geometry and status.
 
+Place the resulting register inside the broader [ceiling maintenance pre-task checklist](/blog/ceiling-maintenance-safety-checklist/), where route, floor, task load, work-zone and rescue owners can see which decisions remain on hold. The checklist does not convert the survey into equipment clearance or work authorization.
+
 ### Record the setup state
 
 Setup may change the occupied volume. Access panels, guard components, stabilising arrangements, work platforms or other configuration elements may move between transport and task states, but no specific function or movement should be assumed. Request the exact approved setup information for the candidate configuration.

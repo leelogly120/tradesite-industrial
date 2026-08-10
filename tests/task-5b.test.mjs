@@ -3,6 +3,7 @@ import { constants } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { auditArticle, LAUNCH_SLUGS } from '../scripts/audit-content.mjs';
+import { RECOVERED_RANKED_ARTICLE_SLUGS } from '../scripts/lift-platform-article-registry.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const approvedNewSlugs = [
@@ -30,7 +31,7 @@ const existingLaunchSlugs = [
   'dual-power-crawler-platform-selection',
   'warehouse-ceiling-access-platform-planning',
 ];
-const launchSlugs = [...existingLaunchSlugs, ...approvedNewSlugs];
+const launchSlugs = [...existingLaunchSlugs, ...approvedNewSlugs, ...RECOVERED_RANKED_ARTICLE_SLUGS];
 const existingBackfillSlugs = [
   'crawler-under-ceiling-platform-buyers-guide',
   'crawler-platform-vs-spider-lift-vs-scaffolding',
@@ -116,7 +117,7 @@ async function exists(path) {
 
 describe('Task 5b slug registry contract', () => {
   it('keeps approved article registries unique and synchronized', () => {
-    const auditNewSlugs = LAUNCH_SLUGS.filter((slug) => !existingLaunchSlugs.includes(slug));
+    const auditNewSlugs = LAUNCH_SLUGS.filter((slug) => !existingLaunchSlugs.includes(slug) && !RECOVERED_RANKED_ARTICLE_SLUGS.includes(slug));
     const backfillNewSlugs = backfillSlugs.filter((slug) => !existingBackfillSlugs.includes(slug));
     const sortSlugs = (slugs) => [...slugs].sort();
 

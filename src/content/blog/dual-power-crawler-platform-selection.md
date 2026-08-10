@@ -12,6 +12,8 @@ draft: false
 
 Select a dual-power crawler platform by mapping where each power mode may operate, what every shift requires, how the machine moves between zones, where charging or refueling occurs, what ventilation and emissions controls apply, how cables are managed, and what happens when the preferred source is unavailable. “Diesel plus electric” is not a complete specification. Actual architecture, permitted changeover, runtime, electrical input, charger, engine, emissions, and operating limits require signed configuration data. This guide helps buyers build a duty plan without promising continuous operation or assuming that a second source removes site constraints.
 
+The [ceiling-work technology evidence guide](/blog/ceiling-work-technology-trends/) explains how to test a power-feature label against interfaces, controlled evidence, site verification and decision ownership. Use this page for the detailed duty-cycle and infrastructure package after that boundary is clear.
+
 **Contents**
 
 - Start with a zone-by-zone duty plan

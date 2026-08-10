@@ -12,6 +12,8 @@ draft: false
 
 Before elevated work, create an equipment-specific rescue-readiness record that connects plausible emergency scenarios with the exact current manual, approved site procedure, named trained people, communications, access, practice evidence and review triggers. The record does not prescribe rescue steps, state that a control or lowering function exists, replace the manufacturer instructions or site emergency plan, or prove equipment suitability.
 
+For planned ceiling maintenance, attach that record to the [ceiling maintenance pre-task checklist](/blog/ceiling-maintenance-safety-checklist/) so the task, route, floor, overhead and rescue interfaces share owners and revision status. The checklist remains an information record, not a rescue procedure.
+
 **Contents**
 
 - Define plausible emergency scenarios without inventing functions
