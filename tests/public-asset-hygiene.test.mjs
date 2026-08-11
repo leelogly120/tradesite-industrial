@@ -308,9 +308,13 @@ describe('Task 4 editorial asset hygiene', () => {
   });
   it.each(task4MobileReadableSvgs)('%s keeps its decision labels readable at a 390px rendered width', async (filename) => {
     const svg = await readFile(resolve(root, 'public/images/editorial', filename), 'utf8');
-    const textNodes = [...svg.matchAll(/<text\b([^>]*)>([^<]*)<\/text>/gi)].map((match) => ({
+    const textNodes = [...svg.matchAll(/<text\b([^>]*)>([\s\S]*?)<\/text>/gi)].map((match) => ({
       attributes: match[1],
-      text: match[2].trim(),
+      text: match[2]
+        .replace(/<\/?tspan\b[^>]*>/gi, ' ')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim(),
     }));
     const decisionLabels = textNodes.filter(({ attributes }) => /\bdata-role="decision-label"/i.test(attributes));
     const equivalentCssPixels = textNodes.map(({ attributes, text }) => {
