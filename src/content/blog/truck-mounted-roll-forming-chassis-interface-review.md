@@ -12,6 +12,8 @@ draft: false
 
 Truck chassis integration begins with ownership, not with choosing a truck from a brochure. The chassis, body or attachment, equipment module, road route, site route and work zone each bring a different interface owner. Gather those inputs in a **preliminary chassis-interface package** so the relevant parties can decide whether integration review can begin. Loads, stability, road use, registration, compliance, final architecture and chassis fit remain undecided.
 
+For the controlled input set that precedes mass-property and axle-load engineering, use the separate [payload allocation review](/blog/truck-mounted-roll-forming-payload-allocation-review/).
+
 **Contents**
 
 - Set the vehicle-use boundary

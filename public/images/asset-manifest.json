@@ -869,6 +869,22 @@
         "use": "technical article diagram"
       },
       {
+        "slug": "truck-mounted-roll-forming-payload-allocation-review",
+        "url": "/images/editorial/truck-mounted-roll-forming-payload-allocation-review.svg",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result",
+        "theme": "controlled payload allocation input schedule and review handoff",
+        "use": "technical article diagram"
+      },
+      {
+        "slug": "airport-terminal-ceiling-access-route-survey-guide",
+        "url": "/images/editorial/airport-terminal-ceiling-access-route-survey-guide.svg",
+        "classification": "editorial",
+        "disclosure": "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result",
+        "theme": "airport terminal ceiling access route survey handoff",
+        "use": "technical article diagram"
+      },
+      {
         "slug": "pick-and-carry-vs-spider-lift",
         "url": "/images/editorial/pick-and-carry-vs-spider-lift.svg",
         "classification": "editorial",

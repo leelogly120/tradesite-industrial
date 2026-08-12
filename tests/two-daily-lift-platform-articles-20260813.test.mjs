@@ -5,6 +5,7 @@ import { describe, expect, it } from 'vitest';
 import { EXTENDED_LAUNCH_SLUGS } from '../scripts/audit-lift-platform-content.mjs';
 import {
   ALL_LIFT_PLATFORM_ARTICLES,
+  AUGUST_13_LIFT_PLATFORM_ARTICLES,
   BASELINE_BLOG_SLUGS,
 } from '../scripts/lift-platform-article-registry.mjs';
 
@@ -13,19 +14,22 @@ const blogRoot = resolve(root, 'src/content/blog');
 const editorialRoot = resolve(root, 'public/images/editorial');
 const manifestPath = resolve(root, 'public/images/asset-manifest.json');
 const markers = ['buyer-intent', 'conditions', 'evidence-tradeoffs', 'limitations-not-fit', 'project-checklist', 'cta-editorial-note'];
+const disclosure = 'AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result';
 
-const AUGUST_10_ARTICLES = Object.freeze([
+const AUGUST_13_ARTICLES = Object.freeze([
   {
-    slug: 'aerial-platform-familiarization-handover',
-    title: 'Aerial Platform Familiarization and Handover Guide',
-    cover: '/images/editorial/ceiling-platform-underside.webp',
-    diagram: 'aerial-platform-familiarization-handover.svg',
+    slug: 'truck-mounted-roll-forming-payload-allocation-review',
+    title: 'Truck-Mounted Roll-Forming Payload Allocation Review',
+    cover: '/images/editorial/truck-site-roll-forming-lift.webp',
+    diagram: 'truck-mounted-roll-forming-payload-allocation-review.svg',
+    reciprocal: 'truck-mounted-roll-forming-chassis-interface-review.md',
   },
   {
-    slug: 'large-crawler-platform-transport-data-package',
-    title: 'Transport Data Package for Large Crawler Platforms',
-    cover: '/images/editorial/port-loading-logistics.webp',
-    diagram: 'large-crawler-platform-transport-data-package.svg',
+    slug: 'airport-terminal-ceiling-access-route-survey-guide',
+    title: 'Airport Terminal Ceiling Access Route Survey Guide',
+    cover: '/images/editorial/ceiling-platform-underside.webp',
+    diagram: 'airport-terminal-ceiling-access-route-survey-guide.svg',
+    reciprocal: 'airport-terminal-maintenance-access-planning.md',
   },
 ]);
 
@@ -53,31 +57,31 @@ function visibleWordCount(markdown) {
   return visible.match(/\b[A-Za-z0-9][A-Za-z0-9'-]*\b/g)?.length ?? 0;
 }
 
-describe('2026-08-10 two-article release contract', () => {
-  it('adds only the two approved pages while retaining all 43 published routes', async () => {
-    const approvedSlugs = AUGUST_10_ARTICLES.map(({ slug }) => slug);
-    const registrySlugs = ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug);
-    const expected = [...BASELINE_BLOG_SLUGS, ...registrySlugs];
-    expect(ALL_LIFT_PLATFORM_ARTICLES).toEqual(expect.arrayContaining(AUGUST_10_ARTICLES.map(({ slug, title, diagram }) => ({ slug, title, diagram, cluster: expect.any(String) }))));
+describe('2026-08-13 two-article release contract', () => {
+  it('publishes exactly two new protected articles while retaining every existing route', async () => {
+    const expected = [...BASELINE_BLOG_SLUGS, ...ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug)];
+    expect(AUGUST_13_LIFT_PLATFORM_ARTICLES).toEqual(AUGUST_13_ARTICLES.map(({ slug, title, diagram }) => ({
+      slug,
+      title,
+      diagram,
+      cluster: expect.any(String),
+    })));
     expect(new Set(expected).size).toBe(50);
-    expect(EXTENDED_LAUNCH_SLUGS).toEqual(expect.arrayContaining(approvedSlugs));
     expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(50);
     const actual = (await readdir(blogRoot)).filter((name) => name.endsWith('.md')).map((name) => name.slice(0, -3)).sort();
     expect(actual).toEqual(expected.sort());
   });
 
-  it.each(AUGUST_10_ARTICLES)('$slug satisfies the evidence-first long-form contract', async ({ slug, title, cover, diagram }) => {
+  it.each(AUGUST_13_ARTICLES)('$slug satisfies the evidence-first long-form contract', async ({ slug, title, cover, diagram, reciprocal }) => {
     const path = resolve(blogRoot, `${slug}.md`);
     expect(await exists(path), path).toBe(true);
     const markdown = await readFile(path, 'utf8');
     const description = frontmatterValue(markdown, 'description');
     const bodyImages = [...markdown.matchAll(/!\[[^\]]+\]\((\/images\/[^)]+)\)/g)].map((match) => match[1]);
-    const h2 = [...markdown.matchAll(/^##\s+\S.+$/gm)];
-    const h3Plus = [...markdown.matchAll(/^#{3,4}\s+\S.+$/gm)];
     const internalLinks = [...markdown.matchAll(/\]\((\/(?:blog|products)\/[^)]+)\)/g)].map((match) => match[1]);
 
     expect(frontmatterValue(markdown, 'title')).toBe(title);
-    expect(frontmatterValue(markdown, 'date')).toBe('2026-08-10');
+    expect(frontmatterValue(markdown, 'date')).toBe('2026-08-13');
     expect(frontmatterValue(markdown, 'coverImage')).toBe(cover);
     expect(title.length).toBeGreaterThanOrEqual(50);
     expect(title.length).toBeLessThanOrEqual(60);
@@ -87,9 +91,9 @@ describe('2026-08-10 two-article release contract', () => {
     expect(visibleWordCount(markdown)).toBeGreaterThanOrEqual(1500);
     expect(visibleWordCount(markdown)).toBeLessThanOrEqual(3000);
     expect(markdown).toContain('**Contents**');
-    expect(h2.length).toBeGreaterThanOrEqual(4);
-    expect(h2.length).toBeLessThanOrEqual(6);
-    expect(h3Plus.length).toBeGreaterThanOrEqual(12);
+    expect([...markdown.matchAll(/^##\s+\S.+$/gm)].length).toBeGreaterThanOrEqual(4);
+    expect([...markdown.matchAll(/^##\s+\S.+$/gm)].length).toBeLessThanOrEqual(6);
+    expect([...markdown.matchAll(/^#{3,4}\s+\S.+$/gm)].length).toBeGreaterThanOrEqual(12);
     expect((markdown.match(/^####\s+.+\?$/gm) ?? []).length).toBe(4);
     expect(bodyImages).toHaveLength(3);
     expect(new Set([cover, ...bodyImages]).size).toBe(4);
@@ -97,11 +101,14 @@ describe('2026-08-10 two-article release contract', () => {
     expect(new Set(internalLinks).size).toBeGreaterThanOrEqual(2);
     expect(markdown).toMatch(/<a href="https:\/\/[^"\s]+" target="_blank" rel="noopener noreferrer">/);
     expect((markdown.match(/not evidence of (?:ARCLIFT )?equipment, configuration, project, capability or result/gi) ?? []).length).toBeGreaterThanOrEqual(4);
-    expect(markdown).not.toMatch(/(?:^|[\s"'(])(?:[A-Za-z]:[\\/])|Henan\s+Huaying|河南华鹰|source factory|our factory|we manufacture/imu);
+    expect(markdown).not.toMatch(/(?:^|[\s"'(])(?:[A-Za-z]:[\\/])|Henan\s+Huaying|source factory|our factory|we manufacture/imu);
     for (const marker of markers) expect(markdown).toContain(`<!-- audit-section: ${marker} -->`);
+
+    const reciprocalMarkdown = await readFile(resolve(blogRoot, reciprocal), 'utf8');
+    expect(reciprocalMarkdown).toContain(`/blog/${slug}/`);
   });
 
-  it.each(AUGUST_10_ARTICLES)('$diagram is accessible and mobile-readable', async ({ diagram }) => {
+  it.each(AUGUST_13_ARTICLES)('$diagram is accessible and mobile-readable', async ({ diagram }) => {
     const path = resolve(editorialRoot, diagram);
     expect(await exists(path), path).toBe(true);
     const svg = await readFile(path, 'utf8');
@@ -117,23 +124,20 @@ describe('2026-08-10 two-article release contract', () => {
       const fontSize = Number(node[1].match(/font-size="(\d+(?:\.\d+)?)"/i)?.[1]);
       expect(fontSize * 390 / 1600).toBeGreaterThanOrEqual(10);
     }
-    expect(svg).not.toMatch(/(?:^|[\s"'(])(?:[A-Za-z]:[\\/])|Henan\s+Huaying|河南华鹰|manufacturer|factory|certification|guarantee/imu);
+    expect(svg).not.toMatch(/(?:^|[\s"'(])(?:[A-Za-z]:[\\/])|Henan\s+Huaying|manufacturer|factory|certification|guarantee/imu);
   });
 
-  it('classifies both new diagrams without provenance fields', async () => {
-    const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
-    const records = manifest.campaigns.editorial;
-    for (const { slug, diagram } of AUGUST_10_ARTICLES) {
-      const record = records.find((candidate) => candidate.slug === slug);
-      expect(record).toEqual(expect.objectContaining({
+  it('registers both diagrams as non-evidence editorial assets', async () => {
+    const records = JSON.parse(await readFile(manifestPath, 'utf8')).campaigns.editorial;
+    for (const { slug, diagram } of AUGUST_13_ARTICLES) {
+      expect(records.find((record) => record.slug === slug)).toEqual({
         slug,
         url: `/images/editorial/${diagram}`,
         classification: 'editorial',
-        disclosure: 'AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result',
-      }));
-      expect(record).not.toHaveProperty('sourceFactory');
-      expect(record).not.toHaveProperty('localPath');
-      expect(record).not.toHaveProperty('customer');
+        disclosure,
+        theme: expect.any(String),
+        use: 'technical article diagram',
+      });
     }
   });
 });

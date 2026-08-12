@@ -12,6 +12,8 @@ draft: false
 
 An airport-terminal maintenance request should become an operator-coordination and phasing package before any equipment is considered. The package separates terminal and airside boundaries, assigns permissions and escorts, fixes the work location and operating window, and records the route, floor, overhead, energy and emergency interfaces for each phase. It does not authorise airside or secure-area work, select equipment, establish FAA applicability, or approve the maintenance method.
 
+For the physical delivery-point-to-work-face record, use the separate [airport terminal ceiling access route survey guide](/blog/airport-terminal-ceiling-access-route-survey-guide/).
+
 **Contents**
 
 - Set the operator-controlled boundary

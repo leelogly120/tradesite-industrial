@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Truck-mounted roll-forming payload allocation review</title>
+  <desc id="desc">Five controlled information gates connect the declared mass state to a specialist vehicle review.</desc>
+  <rect width="1600" height="900" fill="#081826"/>
+  <rect x="70" y="72" width="1460" height="756" rx="34" fill="#10283a" stroke="#2f6682" stroke-width="4"/>
+  <text x="120" y="155" fill="#eff8fc" font-family="Arial, sans-serif" font-size="58" font-weight="700">Payload allocation starts with controlled inputs</text>
+  <text x="120" y="216" fill="#9fc8db" font-family="Arial, sans-serif" font-size="42">Record the state and source before a specialist accepts the calculation boundary.</text>
+  <path d="M235 490H1365" fill="none" stroke="#48b7ca" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1340 465L1385 490L1340 515" fill="none" stroke="#48b7ca" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g><circle cx="225" cy="490" r="94" fill="#173f57" stroke="#78d6df" stroke-width="5"/><text x="225" y="505" fill="#fff" font-size="44" font-weight="700" data-role="decision-label">Mass state</text></g>
+    <g><circle cx="505" cy="490" r="94" fill="#173f57" stroke="#78d6df" stroke-width="5"/><text x="505" y="505" fill="#fff" font-size="44" font-weight="700" data-role="decision-label">Source</text></g>
+    <g><circle cx="785" cy="490" r="94" fill="#26596c" stroke="#f4bb55" stroke-width="5"/><text x="785" y="505" fill="#fff" font-size="44" font-weight="700" data-role="decision-label">CG frame</text></g>
+    <g><circle cx="1065" cy="490" r="94" fill="#173f57" stroke="#78d6df" stroke-width="5"/><text x="1065" y="505" fill="#fff" font-size="44" font-weight="700" data-role="decision-label">Load case</text></g>
+    <g><circle cx="1345" cy="490" r="94" fill="#173f57" stroke="#78d6df" stroke-width="5"/><text x="1345" y="505" fill="#fff" font-size="44" font-weight="700" data-role="decision-label">Owner</text></g>
+  </g>
+  <rect x="180" y="672" width="1240" height="90" rx="18" fill="#0b1f2e" stroke="#2f6682" stroke-width="3"/>
+  <text x="800" y="730" text-anchor="middle" fill="#d9eef5" font-family="Arial, sans-serif" font-size="42">Missing, provisional, confirmed, reviewed — keep the status visible.</text>
+  <text x="1450" y="795" text-anchor="end" fill="#78d6df" font-family="Arial, sans-serif" font-size="42" font-weight="700">ARCLIFT</text>
+</svg>

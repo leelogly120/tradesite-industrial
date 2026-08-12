@@ -5,6 +5,7 @@ import { describe, expect, it } from 'vitest';
 import { EXTENDED_LAUNCH_SLUGS } from '../scripts/audit-lift-platform-content.mjs';
 import {
   AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS,
+  AUGUST_13_LIFT_PLATFORM_ARTICLE_SLUGS,
   BASELINE_BLOG_SLUGS,
   DAILY_LIFT_PLATFORM_ARTICLE_SLUGS,
   LIFT_PLATFORM_ARTICLES,
@@ -46,17 +47,17 @@ describe('twenty lift-platform article release contract', () => {
     expect(LIFT_PLATFORM_ARTICLES).toHaveLength(20);
     expect(new Set(LIFT_PLATFORM_ARTICLE_SLUGS).size).toBe(20);
     expect(BASELINE_BLOG_SLUGS).toHaveLength(24);
-    expect(new Set([...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_LIFT_PLATFORM_ARTICLE_SLUGS, ...AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS]).size).toBe(48);
+    expect(new Set([...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_LIFT_PLATFORM_ARTICLE_SLUGS, ...AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS, ...AUGUST_13_LIFT_PLATFORM_ARTICLE_SLUGS]).size).toBe(50);
   });
 
   it('includes every approved article in the executable content audit', () => {
     expect(EXTENDED_LAUNCH_SLUGS).toEqual(expect.arrayContaining(LIFT_PLATFORM_ARTICLE_SLUGS));
-    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(48);
+    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(50);
   });
 
   it('retains the protected baseline plus 20 pages and the approved daily pages', async () => {
     const slugs = (await readdir(blogRoot)).filter((name) => name.endsWith('.md')).map((name) => name.slice(0, -3)).sort();
-    expect(slugs).toEqual([...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_LIFT_PLATFORM_ARTICLE_SLUGS, ...AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS].sort());
+    expect(slugs).toEqual([...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_LIFT_PLATFORM_ARTICLE_SLUGS, ...AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS, ...AUGUST_13_LIFT_PLATFORM_ARTICLE_SLUGS].sort());
   });
 
   it.each(LIFT_PLATFORM_ARTICLES)('$slug satisfies the long-form article contract', async ({ slug, title, diagram }) => {

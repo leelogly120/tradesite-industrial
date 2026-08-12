@@ -88,10 +88,18 @@ export const AUGUST_10_LIFT_PLATFORM_ARTICLES = Object.freeze([
 
 export const AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(AUGUST_10_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
 
+export const AUGUST_13_LIFT_PLATFORM_ARTICLES = Object.freeze([
+  ['truck-mounted-roll-forming-payload-allocation-review', 'Truck-Mounted Roll-Forming Payload Allocation Review', 'truck'],
+  ['airport-terminal-ceiling-access-route-survey-guide', 'Airport Terminal Ceiling Access Route Survey Guide', 'large-deck'],
+].map(([slug, title, cluster]) => Object.freeze({ slug, title, cluster, diagram: `${slug}.svg` })));
+
+export const AUGUST_13_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(AUGUST_13_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
+
 export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...LIFT_PLATFORM_ARTICLES,
   ...DAILY_LIFT_PLATFORM_ARTICLES,
   ...AUGUST_10_LIFT_PLATFORM_ARTICLES,
+  ...AUGUST_13_LIFT_PLATFORM_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));

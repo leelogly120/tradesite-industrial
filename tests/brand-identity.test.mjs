@@ -4,6 +4,7 @@ import { extname, relative, resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import {
   AUGUST_10_LIFT_PLATFORM_ARTICLES,
+  AUGUST_13_LIFT_PLATFORM_ARTICLES,
   DAILY_LIFT_PLATFORM_ARTICLES,
   LIFT_PLATFORM_ARTICLES,
   RECOVERED_RANKED_ARTICLES,
@@ -355,7 +356,7 @@ describe('public asset manifest', () => {
       ['rescue-role-communications-card', '/images/editorial/rescue-role-communications-card.svg'],
       ['rescue-scenario-decision-matrix', '/images/editorial/rescue-scenario-decision-matrix.svg'],
     ];
-    const expectedLiftPlatformAssets = [...LIFT_PLATFORM_ARTICLES, ...DAILY_LIFT_PLATFORM_ARTICLES, ...AUGUST_10_LIFT_PLATFORM_ARTICLES].map(({ slug, diagram }) => [
+    const expectedLiftPlatformAssets = [...LIFT_PLATFORM_ARTICLES, ...DAILY_LIFT_PLATFORM_ARTICLES, ...AUGUST_10_LIFT_PLATFORM_ARTICLES, ...AUGUST_13_LIFT_PLATFORM_ARTICLES].map(({ slug, diagram }) => [
       slug,
       `/images/editorial/${diagram}`,
     ]);
@@ -369,14 +370,14 @@ describe('public asset manifest', () => {
     const allowedKeys = ['classification', 'disclosure', 'slug', 'theme', 'url', 'use'];
     const failures = [];
 
-    expect(records).toHaveLength(72);
+    expect(records).toHaveLength(74);
     expect(originalRecords.map((record) => record.slug)).toEqual(originalExpectedSlugs);
     expect(createHash('sha256').update(JSON.stringify(originalRecords)).digest('hex')).toBe(
       'e23d452213c0d7159db2048a70773714987a4e9c74b07fb0d9ab3bec0a5af7df',
     );
     expect(newRecords.map(({ slug, url }) => [slug, url])).toEqual(expectedNewAssets);
-    expect(new Set(records.map((record) => record.slug)).size).toBe(72);
-    expect(new Set(records.map((record) => record.url)).size).toBe(72);
+    expect(new Set(records.map((record) => record.slug)).size).toBe(74);
+    expect(new Set(records.map((record) => record.url)).size).toBe(74);
 
     for (const record of records) {
       const keys = Object.keys(record).sort();
