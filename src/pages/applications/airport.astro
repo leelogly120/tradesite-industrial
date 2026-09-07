@@ -1,5 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import GuideLinks from '../../components/GuideLinks.astro';
+import { getGuideLinks } from '../../lib/guide-navigation';
+const airportGuides = getGuideLinks(['airport-terminal-maintenance-access-planning', 'airport-terminal-ceiling-access-route-survey-guide', 'crawler-under-ceiling-platform-buyers-guide'], await getCollection('blog'));
 ---
 
 <BaseLayout
@@ -24,26 +28,33 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   <section class="sec sec--gray">
     <div class="sec__header reveal">
-      <div class="sec__overline">Recommended Models</div>
-      <h2 class="sec__title">FOR AIRPORT TERMINALS</h2>
+      <div class="sec__overline">Reference concepts</div>
+      <h2 class="sec__title">REVIEW THE EVIDENCE BEFORE SELECTION</h2>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1000px;margin:0 auto;">
+    <div class="application-reference-grid">
       <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F25 — Mid-Range</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">Reference option for measured work areas within the proposed height envelope. Request a model-specific transport drawing, floor-load data and access study.</p>
-        <a href="/products/arc-f25-crawler-ceiling-platform/" class="btn btn--outline-blue">View Model →</a>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F25 — Reference concept</h3>
+        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">This page records a concept for discussion, not a verified configuration for an airport. Review its evidence status before requesting configuration-specific drawings or floor-load data.</p>
+        <a href="/products/arc-f25-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
       </div>
       <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F31 — High-Reach</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">Reference high-reach concept for taller atriums. Power mode, deck load, stabilizing method and local compliance require written confirmation.</p>
-        <a href="/products/arc-f31-crawler-ceiling-platform/" class="btn btn--outline-blue">View Model →</a>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F31 — Reference concept</h3>
+        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">The reference label does not establish reach, power mode or an approved working envelope. The selected configuration and terminal conditions require their own documented review.</p>
+        <a href="/products/arc-f31-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
       </div>
     </div>
   </section>
 
+  <div class="application-guides"><GuideLinks id="airport-guides" title="Plan the work window, then survey the route" introduction="The phasing guide addresses when work can take place; the route guide addresses how the equipment reaches the work face. Keep both decisions separate from model approval." links={airportGuides} /></div>
+
   <section class="cta">
     <h2>AIRPORT CEILING PROJECT ON THE HORIZON?</h2>
-    <p>We'll help you specify the right model for your terminal height and access restrictions.</p>
-    <a href="/contact/" class="btn--white">Request a Specification →</a>
+    <p>Share a non-sensitive summary of the task, work windows and route constraints. ARCLIFT can organize the open selection questions as a technical selection and supply partner.</p>
+    <a href="/contact/" class="btn--white">Request a Project Review →</a>
   </section>
+  <style>
+    .application-reference-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto; }
+    .application-guides { max-width: 1000px; margin: 0 auto; padding: 1rem 24px; }
+    @media (max-width: 680px) { .application-reference-grid { grid-template-columns: 1fr; } }
+  </style>
 </BaseLayout>

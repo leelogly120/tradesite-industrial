@@ -1,0 +1,45 @@
+---
+import type { GuideLink } from '../lib/guide-navigation';
+
+interface Props {
+  id: string;
+  title: string;
+  introduction?: string;
+  links: GuideLink[];
+  compact?: boolean;
+}
+
+const { id, title, introduction, links, compact = false } = Astro.props;
+---
+
+{links.length > 0 && (
+  <section class:list={['guide-links', { 'guide-links--compact': compact }]} aria-labelledby={`${id}-title`} id={id}>
+    <h2 id={`${id}-title`}>{title}</h2>
+    {introduction && <p class="guide-links__intro">{introduction}</p>}
+    <ul>
+      {links.map(link => (
+        <li>
+          <a href={link.href}>
+            <span>{link.title}</span><span aria-hidden="true">↗</span>
+          </a>
+          {!compact && <p>{link.description}</p>}
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
+
+<style>
+  .guide-links { margin-block: 2.5rem; color: #0f172a; scroll-margin-top: calc(var(--nav-height) + 1rem); }
+  .guide-links h2 { margin: 0 0 .8rem; font-size: clamp(1.3rem, 2.5vw, 1.85rem); line-height: 1.25; }
+  .guide-links__intro { max-width: 760px; margin: 0 0 1.25rem; color: #475569; line-height: 1.65; }
+  .guide-links ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 0; padding: 0; list-style: none; }
+  .guide-links li { min-width: 0; margin: 0; padding: 1.1rem; border: 1px solid #dbe3ee; border-radius: 12px; background: #f8fafc; }
+  .guide-links a { display: flex; align-items: center; justify-content: space-between; gap: .8rem; min-height: 44px; color: #1d4ed8; font-weight: 700; line-height: 1.5; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+  .guide-links a:hover { color: #0f172a; }
+  .guide-links a:focus-visible { outline: 3px solid #2563eb; outline-offset: 4px; border-radius: 3px; }
+  .guide-links li p { margin: .6rem 0 0; color: #475569; font-size: .92rem; line-height: 1.65; }
+  .guide-links--compact ul { grid-template-columns: 1fr; gap: .6rem; }
+  .guide-links--compact li { padding: .65rem 1rem; }
+  @media (max-width: 680px) { .guide-links ul { grid-template-columns: 1fr; } }
+</style>

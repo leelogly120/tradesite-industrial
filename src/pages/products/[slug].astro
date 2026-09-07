@@ -2,6 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
 import { buildProductView, getRelatedProductSlugs } from '../../lib/product-selection';
+import { getProductGuides } from '../../lib/guide-navigation';
+import GuideLinks from '../../components/GuideLinks.astro';
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
@@ -19,6 +21,7 @@ const productView = buildProductView(product);
 if (!productView) throw new Error(`Unknown product reference: ${product.id}`);
 const model = productView.model;
 const category = productView.family.name;
+const productGuides = getProductGuides(productView.family.id, await getCollection('blog'));
 const quoteUrl = `/contact/?product=${encodeURIComponent(model)}`;
 const datasheetUrl = `/contact/?product=${encodeURIComponent(model)}&request=datasheet`;
 
@@ -146,6 +149,7 @@ const pageSchema = {
     <a href="#project-inputs">Project inputs</a>
     <a href="#workflows-to-assess">Workflows to assess</a>
     <a href="#questions-and-documents">Questions and documents</a>
+    <a href="#product-guides">Technical guides</a>
   </nav>
 
   <div class="decision-page">
@@ -248,6 +252,7 @@ const pageSchema = {
         </div>
       </div>
     </section>
+    <GuideLinks id="product-guides" title="Technical guides for this equipment family" introduction="Use these guides to prepare the next part of your review. They explain project questions, not the capability or suitability of this reference." links={productGuides} />
   </div>
 
   <section class="sec related-section">

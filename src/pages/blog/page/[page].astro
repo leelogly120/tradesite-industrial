@@ -33,7 +33,7 @@ const next = pageNum < totalPages ? `/blog/page/${pageNum + 1}/` : undefined;
 
 <BaseLayout
   title={`Project Guides — Page ${pageNum}`}
-  description="ARCLIFT project decision guides for roll-forming lift systems, transport planning, line specification, and large-deck crawler platforms."
+  description={`Browse page ${pageNum} of ${totalPages} in the ARCLIFT guide library: roll-forming lift selection, line interfaces, transport and large-deck platform planning.`}
   canonical={`https://www.arclifteq.com/blog/page/${pageNum}/`}
   transparentNav={false}
 >

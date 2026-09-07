@@ -1,5 +1,8 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import GuideLinks from './GuideLinks.astro';
+import { getGuideLinks, STARTER_GUIDES } from '../lib/guide-navigation';
 
 interface Props {
   posts: CollectionEntry<'blog'>[];
@@ -11,6 +14,7 @@ interface Props {
 }
 
 const { posts, pageNum, totalPages, totalPosts, prev, next } = Astro.props;
+const starterGuides = pageNum === 1 ? getGuideLinks(STARTER_GUIDES, await getCollection('blog')) : [];
 
 function readingMinutes(body: string) {
   const words = body.match(/[A-Za-z0-9]+(?:[-'][A-Za-z0-9]+)*/g)?.length ?? 0;
@@ -20,11 +24,12 @@ function readingMinutes(body: string) {
 
 <section class="hero-banner">
   <div class="overline">Project Decision Guides</div>
-  <h1>ROLL-FORMING LIFT & PLATFORM GUIDES</h1>
+  <h1>ROLL-FORMING LIFT & PLATFORM GUIDES{pageNum > 1 && ` — PAGE ${pageNum}`}</h1>
   <p>Practical guidance for roll-forming lift, transport, line-integration, and large-deck platform project decisions.</p>
 </section>
 
 <section class="sec">
+  {pageNum === 1 && <div class="starter-guides"><GuideLinks id="start-here" title="Start with the equipment decision" introduction="Choose a core guide, then follow the specific route, interface or handover questions for your project." links={starterGuides} /></div>}
   <p class="sec__count">Page {pageNum} of {totalPages} — {totalPosts} articles</p>
 
   <div class="blog-grid">
@@ -38,6 +43,7 @@ function readingMinutes(body: string) {
           </span>
         </div>
         <div class="blog-card__body">
+          <p class="blog-card__disclosure">{post.data.coverCaption}</p>
           <h2>{post.data.title}</h2>
           <p>{post.data.description}</p>
           <div class="blog-card__meta">
@@ -106,6 +112,8 @@ function readingMinutes(body: string) {
     color: #64748b;
     font-size: 14px;
   }
+  .starter-guides { max-width: 1400px; margin: 0 auto 3rem; }
+  .blog-card__body .blog-card__disclosure { padding-bottom: 12px; margin-bottom: 16px; border-bottom: 1px solid #e2e8f0; color: #475569; font-size: 12px; line-height: 1.5; }
   .blog-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));

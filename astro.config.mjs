@@ -3,6 +3,14 @@ import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 import tailwindcss from '@tailwindcss/vite';
 import { shouldIncludeInSitemap } from './scripts/lib/sitemap-policy.mjs';
+import { readdirSync, readFileSync } from 'node:fs';
+import { articleUpdatedDate, applyArticleLastmod } from './scripts/lib/article-updated-dates.mjs';
+
+const blogDirectory = new URL('./src/content/blog/', import.meta.url);
+const articleUpdates = new Map(readdirSync(blogDirectory).filter(name => name.endsWith('.md')).flatMap(name => {
+  const updated = articleUpdatedDate(readFileSync(new URL(name, blogDirectory), 'utf8'));
+  return updated ? [[`/blog/${name.slice(0, -3)}/`, updated]] : [];
+}));
 
 export default defineConfig({
   site: 'https://www.arclifteq.com',
@@ -15,6 +23,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       filter: shouldIncludeInSitemap,
+      serialize: item => applyArticleLastmod(item, articleUpdates),
       i18n: {
         defaultLocale: 'en',
         locales: { en: 'en-US', zh: 'zh-CN' },

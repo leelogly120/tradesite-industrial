@@ -2,7 +2,7 @@
 title: "Specify a Roll-Forming Line for Long Roof Panels"
 description: "Build a usable roll-forming specification from the profile, material, coil, cutting, controls, power, tolerance, and handling requirements."
 date: 2026-07-24
-updated: 2026-07-25
+updated: 2026-09-07
 author: "ARCLIFT Technical Editorial"
 tags: ["Roll Forming", "Roofing Panels", "Technical Specification"]
 coverImage: "/images/hero/hero-4.webp"
@@ -37,6 +37,25 @@ Length requirements affect measurement, cutting, support, and handling. Historic
 
 Power information must include voltage, frequency, phase, permissible variation, connection method, earthing approach, cable route, environmental conditions, and any backup arrangement. A 380 V supply appears as a common historical reference, not a default for every destination. Controls, motors, protection devices, plugs, and documentation have to match the agreed project supply.
 
+### Copy this profile, material and interface input table
+
+The project-value cells are intentionally blank. Copy the table into the request package, preserve the source revision for every entry, and attach the referenced record. `Open` is a valid status; an assumed value is not.
+
+| Input block | Controlled input requested | Project value | Source / revision | Evidence owner | Status |
+| --- | --- | --- | --- | --- | --- |
+| Profile | Drawing ID; effective width; section dimensions; radii; seams; overlaps; critical tolerances |  |  |  |  |
+| Material | Substrate/grade; property requirement; coating/finish; visible face; thickness and tolerance; strip width |  |  |  |  |
+| Coil and feed | Coil mass; inner/outer diameter; winding direction; edge condition; loading method; feed direction |  |  |  |  |
+| Tooling / change scope | Profile set; proposed tooling boundary; changeover requirement; reference sample; change-control owner |  |  |  |  |
+| Length / cut / identification | Normal and longest requested panel; length tolerance; cut-end requirement; batch mark; measurement method |  |  |  |  |
+| Exit and handling | Exit support; output direction; available path; handover point; downstream handling owner |  |  |  |  |
+| Electrical supply | Voltage; frequency; phase; permitted variation; connection/earthing boundary; cable route |  |  |  |  |
+| Controls and records | Required functions; language; access roles; recipe/data needs; drawings/manuals; service boundary |  |  |  |  |
+| Lift / mounting interface, if applicable | Available envelope; support/restraint interface; mass/centre-of-gravity data; feed/output orientation; service access |  |  |  |  |
+| Acceptance | Trial material; sample plan; measurement record; visual/dimensional/seaming criteria; approver; change disposition |  |  |  |  |
+
+If the profile revision, purchase description, material certificate, coil record, sample, and acceptance sheet disagree, return the conflict to the named owner before equipment matching. The [profile, material and tooling data guide](/blog/roof-panel-profile-material-tooling-data/) expands the first four rows; the [electrical and control interface guide](/blog/roll-forming-line-electrical-control-interfaces/) expands the supply and controls rows. Neither page turns an incomplete value into a machine specification.
+
 [![Editorial diagram of roll-forming project inputs](/images/editorial/roll-forming-input-map.svg)](/images/editorial/roll-forming-input-map.svg)
 
 *Editorial diagram. Tap to open the full-size editorial diagram. It organizes specification inputs and cannot verify line compatibility, tooling design, output quality, or operating performance.*
@@ -55,6 +74,8 @@ Cutting before forming and cutting after forming create different tooling and ed
 Automation can improve repeatability of length entry, batch counting, and operating sequences, yet it also introduces requirements for controls support, sensors, language, backups, electrical documentation, and troubleshooting. Select the level of control that the operating team can maintain.
 
 Integration with a lifting system adds mass, geometry, restraint, power, communication, and maintenance interfaces. The line must fit the available mounting or support arrangement without assuming that an image proves compatibility. Review lifting position, feed direction, output path, center-of-gravity data, allowed operating states, and access for coil change and service. The [roof-level forming decision guide](/blog/roof-level-roll-forming-long-panels/) explains the site side of that interface.
+
+Treat the lift/mounting row as its own document boundary. A line specification can be complete for forming review while the mounting interface remains open, or vice versa. The [lifted-line mounting-interface review](/blog/lifted-roll-forming-line-mounting-interface-review/) identifies the records that join those packages without implying that a line image establishes the interface.
 
 [![Editorial diagram of roof-level roll-forming workflow questions](/images/editorial/roof-level-workflow.svg)](/images/editorial/roof-level-workflow.svg)
 
@@ -86,7 +107,7 @@ If the project needs many unrelated profiles in small batches, if source materia
 - Identify destination documentation, electrical review, guarding review, training, inspection, tooling records, and spare parts.
 - State the trial material, sample length, measurement tools, acceptance roles, change-control process, and record format.
 
-Use this information when contacting any line or lifting-system supplier. It turns a vague request for “a long-panel machine” into a reviewable technical package.
+Use this information when contacting any line or lifting-system supplier. It turns a vague request for “a long-panel machine” into a reviewable technical package. Keep the proposed checks and their acceptance owners in a separate protocol; the [roll-forming FAT/SAT guide](/blog/roll-forming-line-fat-sat-acceptance-checklist/) can be used to structure that handoff without claiming that a trial has occurred.
 
 <!-- audit-section: cta-editorial-note -->
 ## Move from inputs to signed review

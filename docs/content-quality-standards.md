@@ -92,6 +92,24 @@ If any gate fails, the article remains **Hold**. A 100/100 automated score is ne
 
 ## Reviewer checklist
 
+### Existing-page refresh and distinctiveness review
+
+A refresh preserves the existing URL and original publication date. Set `updated` only after a substantive change; sitemap dates must come from that explicit editorial date, never the build clock. A navigation-only change does not justify resetting every article's publication date.
+
+In addition to the existing evidence and privacy gates, record these answers in the private review ledger:
+
+- **Distinct decision:** Name the closest existing pages and explain the separate buyer question answered here. A different keyword alone is not a boundary.
+- **Useful output:** Identify what the reader can use: a task-specific input sheet, comparison, evidence-backed explanation or document matrix. Label blank examples as editorial templates, never completed project records.
+- **Citation support:** Check the exact statement against the source, date and scope. Link presence, source prestige and a full audit score do not prove support.
+- **Anti-template read:** Compare the complete page with its nearest neighbours. Replace generic copied paragraphs and irrelevant shared checklists with decision-specific information; preserve necessary truthful limitations.
+- **Next reading step:** Add contextual routes only where they help the task. Verify that a reader can reach the page from a relevant guide, product family or application, without relying solely on publication-date lists.
+
+The automated score is an omission check, not a Google quality assessment, a measure of originality or a guarantee of indexing. Existing shorter articles must not be padded solely to reach a length target. Apply the declared release contract to its intended batch; any change to that contract requires an explicit rationale and review, not quietly weakened tests.
+
+Record separately: local editing complete; automated checks complete; independent editorial review complete; user/release approval; production verification; Google URL Inspection. Do not describe an AI-assisted review as a human expert review or a local result as a published result.
+
+### Final checklist
+
 - [ ] One buyer decision and a non-overlap boundary are explicit.
 - [ ] Every material statement is present in the claim ledger with a current source and scope.
 - [ ] Unsupported numbers, specifications, capabilities, cases, ROI, savings, advantages, and suitability claims are omitted or held.

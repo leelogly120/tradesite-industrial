@@ -2,6 +2,7 @@
 title: "How to Choose a Crawler Under-Ceiling Work Platform"
 description: "Choose a crawler under-ceiling work platform by mapping reach, access, floor, overhead, load, power, controls, rescue, and local review needs for procurement."
 date: 2026-07-27
+updated: 2026-09-07
 author: "ARCLIFT Technical Editorial"
 tags: ["Crawler Platforms", "Ceiling Work", "Buyer Guide"]
 coverImage: "/images/banners/category-ceiling.webp"
@@ -33,6 +34,19 @@ For every zone, identify the work activity: inspection, fastening, panel handlin
 ### Define the movement pattern
 
 Ask how the work front changes during a shift. Is the platform set once for a long task, lowered and moved between bays, or expected to serve a continuous ceiling line? Is movement through completed areas allowed? Must other trades, forklifts, or pedestrians continue nearby? The answer affects route control, setup frequency, communication, and whether a mobile crawler concept offers a useful planning route.
+
+### Use four screens to choose the next evidence pack
+
+Do not request every document at once or select a model from one favorable answer. Complete the four rows below for each work zone. The matrix routes an unresolved constraint to the next specialist record; it does not score equipment or approve a method.
+
+| Screen | Question to close | Minimum record for the next review | If it is open, go next to |
+| --- | --- | --- | --- |
+| Task | Where must people, tools and materials be placed, in what sequence, and with what separate load breakdown? | Marked task position plus occupant/tool/material/accessory schedule and record owner | [Worker, tool and material load planning](/blog/aerial-platform-worker-tool-material-load-planning/) |
+| Entry | Can the confirmed transport state pass from unloading through every gate, turn, threshold and staging point? | Route drawing or survey with each restriction identified and its reviewer/status | [Large crawler platform building-entry survey](/blog/large-crawler-work-platform-building-entry-survey/) |
+| Work face | Can the reviewed platform/work arrangement reach the task without conflict with the ceiling, structure, services or adjacent traffic? | Zone section/elevation, work-position requirement and obstruction/clearance schedule | [Ceiling-platform overhead-clearance survey](/blog/ceiling-platform-overhead-clearance-survey/) |
+| Floor | Can the route and each support/work zone be reviewed for the applicable machine state and contact arrangement? | Floor/route information, machine-state data request, local features, protection plan and competent reviewer | [Indoor floor and ground-pressure review](/blog/indoor-aerial-platform-ground-pressure-guide/) |
+
+If one row points to a different access method, compare that method before collecting model-specific data. If all four remain plausible, combine their controlled records into the selection brief and then identify the still-missing power, control, transport, rescue and destination reviews. The [emergency lowering and rescue-plan guide](/blog/aerial-platform-emergency-lowering-rescue-plan/) is the next document path for assigned rescue responsibilities; it is not a generic rescue procedure.
 
 The [crawler ceiling platform project-data guide](/blog/crawler-ceiling-wall-panel-platform-project-data/) expands the input list. The [crawler platform category](/products/arc-f20-crawler-ceiling-platform/) provides orientation to ARCLIFT's supply scope, but selection remains conditional on the project package.
 
@@ -115,6 +129,8 @@ Other reasons to pause include unresolved emissions rules, missing charging arra
 ### Inputs for a meaningful configuration review
 
 Prepare one marked drawing set and a short schedule covering the points below. Photographs can help describe access and obstructions when identities and sensitive information are removed, but dimensions and acceptance boundaries should be recorded separately.
+
+Use the four-screen matrix as the cover sheet for this package. Give each row its own revision, evidence owner and status so a resolved entry route cannot be mistaken for a resolved work face or accepted floor condition.
 
 - Work-zone height, required outreach, worker position, task geometry, and sequence
 - Ceiling, roof, wall, truss, service, crane, and temporary-work obstructions

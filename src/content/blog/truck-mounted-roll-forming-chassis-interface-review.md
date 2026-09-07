@@ -2,6 +2,7 @@
 title: "Truck Chassis Integration Review for Roll-Forming Lines"
 description: "Review truck chassis integration for mobile roll-forming lines, including interfaces, payload allocation, stability inputs, utilities, and verification records."
 date: 2026-07-27
+updated: 2026-09-07
 author: "ARCLIFT Technical Editorial"
 tags: ["truck mounted roll forming", "chassis interface", "vehicle integration", "project review"]
 coverImage: "/images/editorial/chassis-interface-stack.svg"
@@ -12,7 +13,7 @@ draft: false
 
 Truck chassis integration begins with ownership, not with choosing a truck from a brochure. The chassis, body or attachment, equipment module, road route, site route and work zone each bring a different interface owner. Gather those inputs in a **preliminary chassis-interface package** so the relevant parties can decide whether integration review can begin. Loads, stability, road use, registration, compliance, final architecture and chassis fit remain undecided.
 
-For the controlled input set that precedes mass-property and axle-load engineering, use the separate [payload allocation review](/blog/truck-mounted-roll-forming-payload-allocation-review/).
+For the controlled input set that precedes mass-property and axle-load engineering, use the separate [payload allocation review](/blog/truck-mounted-roll-forming-payload-allocation-review/). This page defines who supplies chassis and module records, who reviews each interface, and which document closes the question. It does not allocate payload, calculate axle reactions or release a mounting design.
 
 **Contents**
 
@@ -77,26 +78,49 @@ A VIN should be requested only when genuinely needed through the designated inte
 *AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Example coordination map; contractual and legal responsibilities vary by destination and project.*
 
 <!-- audit-section: project-checklist -->
-## Map integration interfaces
+## Map interface responsibilities and required records
 
-The preliminary package should show what must connect without calculating the final vehicle. Include:
+The preliminary package should show what must connect without calculating the final vehicle. Start with a responsibility matrix. The role names below are placeholders; contracts, the transaction stage and destination rules determine the actual parties and authority.
+
+<table>
+  <thead>
+    <tr><th>Interface role</th><th>Controlled inputs expected</th><th>Review output or closure record</th><th>Keep unresolved on this page</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Equipment-module provider</td><td>Configuration reference, module envelope, mass-property input record, interface loads or reactions when available, utilities and prohibited zones</td><td>Supplier interface-data issue and response to integrator queries</td><td>Chassis suitability, payload allocation and vehicle approval</td></tr>
+    <tr><td>Chassis provider</td><td>Build-stage record, frame and axle documents, body-builder instructions, modification restrictions and current vehicle configuration</td><td>Controlled chassis-data issue and change notification</td><td>Equipment attachment design and final integration</td></tr>
+    <tr><td>Body builder or appointed integrator</td><td>Chassis and module inputs, attachment boundary, calculation criteria and destination requirements</td><td>Released integration drawings, calculation references, installation and inspection records as contracted</td><td>Authority belonging to vehicle or local regulators</td></tr>
+    <tr><td>Project owner or buyer</td><td>Intended use category, road and site route, work-zone needs, locally supplied scope and appointed reviewers</td><td>Signed responsibility map, accepted scope boundary and project decisions</td><td>Engineering conclusions not issued by competent parties</td></tr>
+    <tr><td>Destination specialist or authority</td><td>Actual transaction, vehicle state, intended use and local submission package</td><td>Applicable review, registration, inspection or other destination record</td><td>Global conclusions inferred from another jurisdiction</td></tr>
+  </tbody>
+</table>
+
+This matrix records handoffs. It does not imply that every project uses all five roles, that one company cannot hold more than one role, or that a commercial supplier automatically becomes the legal modifier, designer or certifier.
+
+### Build the required-record index
+
+Use one line per interface question and identify its input owner, receiving reviewer, current revision, required output and hold point:
 
 - Intended road, controlled-site or mixed **transport** use and the decision owner.
-- Controlled chassis, frame and axle documentation with revision status.
-- Proposed module envelope and mass evidence, with all reactions and suitability unresolved.
-- Body or attachment boundary and the integrator responsible for final design.
-- Work/support **zone**, roof interface and operating geometry assumptions.
-- Public-road, gate and internal-site **route** constraints with local review owner.
-- Ground or **floor** condition and the specialist responsible for support review.
-- Equipment **power** and control interface status where it affects vehicle integration.
-- Destination inspection, registration and other documentation requirements.
-- Secure identifier process and signed responsibility map for every open interface.
+- Controlled **chassis**, frame, axle and build-stage documentation, with issuer and revision status.
+- Proposed module envelope and mass-property evidence, with payload allocation, reactions and suitability routed to the separate calculation review.
+- Body or attachment boundary, prohibited modification zones and the integrator responsible for released design information.
+- Work/support **zone**, roof interface, height relationship and operating-geometry assumptions needed to define vehicle states.
+- Public-road, gate and internal-site **access and route** constraints, with the local review owner and governing record.
+- Ground or **floor** condition input and the specialist responsible for support or stability review.
+- Equipment **voltage, power and control** interface status where it affects chassis or auxiliary systems.
+- Destination inspection, registration, compliance and other **documentation requirements**, with the appointed local owner.
+- Secure identifier process, interface-query log, change register and final signed responsibility map for every open interface.
+
+For each line, use statuses such as `input requested`, `issued for interface review`, `query open`, `revised input required` and `closure record issued` only after the project defines them. A status is workflow information, not evidence that the underlying engineering or approval is complete.
 
 ### Body and attachment boundary
 
 Define which structure belongs to the chassis, body builder, equipment module and any support system. Identify proposed attachment regions only from controlled documents. Do not show drilling, welding, reinforcement or fastener detail unless the authorised integrator has issued it.
 
 The interface package should state what data each party supplies: envelopes, masses, reactions, prohibited zones, service access and change-control conditions. It should also state who performs the calculations and who releases fabrication information.
+
+The equipment-module record and the chassis record are inputs to integration; neither should silently overwrite the other. When the integrator changes an attachment concept, module position or vehicle assumption, the change register should identify which supplier records and calculation outputs need another review. Fabrication should use only the integrator’s released information, not the public checklist on this page.
 
 ### Work and support zone
 
@@ -109,6 +133,10 @@ The work-zone review should connect to roof height, panel route, wind-management
 Separate public-road restrictions, site-gate access, internal route and final work-face positioning. Record turning, gradient, overhead, width, surface and traffic-control questions only as project inputs until local owners provide controlled information.
 
 A route that works for a base truck may not work for the completed integration. Conversely, a conceptual module envelope cannot establish the final vehicle dimensions. Keep both records preliminary until the integrator closes the configuration.
+
+### Keep payload work in its own decision path
+
+The interface index may request module masses, centres of gravity, chassis ratings, axle information and equipment-state definitions because another reviewer needs those inputs. It should not publish a proposed allocation or infer acceptable axle loads. Record the appointed calculator, the controlled input set, the output document ID and any change trigger; then use the payload review for the calculation-specific workflow.
 
 <!-- audit-section: evidence-tradeoffs -->
 The package must balance early coordination with controlled uncertainty. More vehicle detail can improve interface review, but copying unverified brochure values creates false precision. The better trade-off is to name each needed input, its source and owner, then reserve loads, legality, registration and route conclusions for the appointed specialists.
@@ -130,7 +158,7 @@ Keep contractual and statutory roles separate. A party may coordinate commercial
 
 ### Local inspection path
 
-A dated U.S. example, <a href="https://www.nhtsa.gov/interpretations/23064rbm" target="_blank" rel="noopener noreferrer">NHTSA interpretation 23064.rbm</a>, discusses how a pre-sale alteration in its specific U.S. context can affect an alterer's FMVSS certification responsibilities. It is not current transaction advice, not a global rule and not a determination for an ARCLIFT-related chassis.
+<a href="https://www.nhtsa.gov/nhtsa-interpretation-file-search" target="_blank" rel="noopener noreferrer">NHTSA's interpretation-file overview</a> explains that its interpretation letters address the facts presented at the time and are guidance without the force of law. A dated U.S. example, <a href="https://www.nhtsa.gov/interpretations/23064rbm" target="_blank" rel="noopener noreferrer">NHTSA interpretation 23064.rbm</a>, discusses how a pre-sale alteration in its specific context can affect an alterer's FMVSS certification responsibilities. It is not current transaction advice, not a global rule and not a determination for an ARCLIFT-related chassis.
 
 Use that example only to prompt an early question: who owns destination-specific vehicle review after modification? The answer must come from current local rules, the actual transaction and competent advisers. The <a href="https://www.iso.org/standard/51528.html" target="_blank" rel="noopener noreferrer">ISO 12100:2010 official record</a> can locate a machinery interface-risk methodology, but it does not provide vehicle calculations or approval.
 

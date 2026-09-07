@@ -1,5 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import GuideLinks from '../../components/GuideLinks.astro';
+import { getGuideLinks } from '../../lib/guide-navigation';
+const stadiumGuides = getGuideLinks(['stadium-ceiling-access-platform-planning', 'ceiling-platform-overhead-clearance-survey', 'large-deck-crawler-platform-work-zone-layout'], await getCollection('blog'));
 ---
 
 <BaseLayout
@@ -24,26 +28,33 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
   <section class="sec sec--gray">
     <div class="sec__header reveal">
-      <div class="sec__overline">Recommended Models</div>
-      <h2 class="sec__title">FOR STADIUM WORK</h2>
+      <div class="sec__overline">Reference concepts</div>
+      <h2 class="sec__title">REVIEW THE WORK ZONES AND EVIDENCE</h2>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1000px;margin:0 auto;">
+    <div class="application-reference-grid">
       <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F35 — Reference High-Reach Concept</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">For early feasibility checks at taller work zones. Model-specific proof of reach, platform geometry, load chart and transport data is required.</p>
-        <a href="/products/arc-f35-crawler-ceiling-platform/" class="btn btn--outline-blue">View Model →</a>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F35 — Reference concept</h3>
+        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">Review the recorded evidence limits before discussing a configuration. The concept does not demonstrate stadium suitability, reach, platform geometry or transport capability.</p>
+        <a href="/products/arc-f35-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
       </div>
       <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F31 — High-Reach</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">A second reference size for projects where access and bearing constraints rule out the largest concept. Compare approved drawings, not model names alone.</p>
-        <a href="/products/arc-f31-crawler-ceiling-platform/" class="btn btn--outline-blue">View Model →</a>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F31 — Reference concept</h3>
+        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">This is a separate reference entry, not a proven smaller substitute for another concept. Compare configuration-specific documents before making an access or support decision.</p>
+        <a href="/products/arc-f31-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
       </div>
     </div>
   </section>
 
+  <div class="application-guides"><GuideLinks id="stadium-guides" title="Connect the event window to the work area" introduction="Start with stadium access planning, then examine overhead clearance and the proposed work-zone layout." links={stadiumGuides} /></div>
+
   <section class="cta">
     <h2>PLANNING STADIUM CEILING WORK?</h2>
-    <p>Tell us your roof height and access constraints — we'll spec the right ARC configuration.</p>
+    <p>Share a non-sensitive outline of the ceiling task and access constraints. ARCLIFT can help organize the questions for configuration review as a technical selection and supply partner.</p>
     <a href="/contact/" class="btn--white">Get a Project Assessment →</a>
   </section>
+  <style>
+    .application-reference-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto; }
+    .application-guides { max-width: 1000px; margin: 0 auto; padding: 1rem 24px; }
+    @media (max-width: 680px) { .application-reference-grid { grid-template-columns: 1fr; } }
+  </style>
 </BaseLayout>

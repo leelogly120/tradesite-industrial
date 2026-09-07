@@ -2,7 +2,7 @@
 title: "Crawler vs Truck Roll-Forming Systems: Site Guide"
 description: "Compare crawler and truck-mounted roll-forming lift architectures by access, support area, site movement, road transfer, and local chassis rules."
 date: 2026-07-24
-updated: 2026-07-25
+updated: 2026-09-07
 author: "ARCLIFT Technical Editorial"
 tags: ["Equipment Selection", "Crawler Systems", "Truck-Mounted Systems"]
 coverImage: "/images/editorial/truck-site-roll-forming-lift.webp"
@@ -11,7 +11,7 @@ coverCaption: "AI-assisted editorial composite for architecture comparison; it i
 draft: false
 ---
 
-Choose the mobility architecture before choosing a model number. A crawler configuration is usually the stronger candidate when controlled movement within a large site and repeated repositioning dominate the plan. A truck-mounted configuration deserves attention when transfer between sites and integration with an acceptable road chassis matter more. Neither is inherently better; access, support reactions, setup space, road rules, service conditions, and the material workflow decide the fit.
+Choose the mobility architecture before choosing a model number, but do not collapse mobility into one question. Compare three states separately: **transport** to or between sites, **setup** at each work zone, and **work** while forming and handing off panels. A crawler configuration may deserve investigation when controlled on-site relocation dominates the plan. A truck-mounted configuration may deserve investigation when inter-site transfer and an acceptable destination chassis are central. Neither is inherently better, and an advantage in one state can create a constraint in another.
 
 <!-- audit-section: buyer-intent -->
 ## Choose the movement problem first
@@ -35,6 +35,18 @@ A truck-mounted system adds a different set of interfaces. The base vehicle must
 
 At the work face, check turning radius, approach angle, overhead clearance, parking orientation, outrigger or stabilizer footprint, reaction loads, and escape route. A truck that transfers efficiently between projects may need more carefully planned support space at each setup. Conversely, a crawler unit that moves well on site may require separate transport equipment for public-road transfer.
 
+### Compare transport, setup and work as separate states
+
+Complete each state from controlled project and configuration records. A blank or `Open` cell is a stop signal for that part of the comparison, not permission to borrow a value from another model or destination.
+
+| State | Crawler investigation | Truck-mounted investigation | Evidence to request |
+| --- | --- | --- | --- |
+| Transport to site / between sites | Define loading state, transport equipment, route envelope, handling interfaces and destination unloading responsibility. | Define destination chassis status, road route, registered/transport state, axle and dimensional review, and any shipment-to-chassis boundary. | Configuration drawing; mass/envelope record; route or road review; loading/handling plan; named owner. |
+| Setup at a work zone | Define unloading or arrival state, ground route, turning area, setup footprint, support condition and change from travel to setup. | Define approach and parking orientation, chassis-to-superstructure interface, stabilizer/support area, reaction review and setup boundary. | Site plan; ground/support record; configuration-specific setup drawing; interface schedule; reviewer status. |
+| Work and panel handover | Define authorized work state, forming-line arrangement, coil/feed route, output direction, handover zone and movement restriction. | Define the same work interfaces independently of road status; confirm the chassis and support state required for the reviewed work configuration. | Signed technical schedule; line/interface drawing; load chart or other applicable controlled data; approved site method. |
+
+The crawler transport question continues in the [crawler access-route survey](/blog/crawler-roll-forming-lift-access-route-survey/) and [ground-support review](/blog/crawler-roll-forming-lift-ground-support-review/). The truck question separates further into the [chassis-interface review](/blog/truck-mounted-roll-forming-chassis-interface-review/), [jobsite setup review](/blog/truck-mounted-forming-lift-jobsite-setup-review/), and [road-transport document guide](/blog/truck-mounted-forming-lift-road-transport-documents/). These pages identify different evidence owners; none supplies missing configuration values.
+
 ![Editorial diagram comparing crawler and truck configuration questions](/images/editorial/crawler-truck-selection-matrix.svg)
 
 *Editorial diagram. It illustrates a truck-mounted layout only; chassis approval, dimensions, axle loads, reach, and operating performance remain unverified here.*
@@ -53,6 +65,8 @@ Service planning changes too. Identify who can inspect and maintain the chassis,
 Historical records refer to several equipment classes, including 8, 11, and 20 t. These are historic equipment-class references, not personnel payloads, platform ratings, line allowances, or proof of current availability. For selection, request the exact operating mass, transport mass, component masses, support reactions, load chart, and permitted line configuration.
 
 Project frequency should be described in operational terms. Record how many separate sites are expected, their typical distance apart, how long each work front remains active, and whether the same transport and setup resources will be available at every location. This can change the preferred architecture more than one headline dimension.
+
+Do not let a transport advantage silently decide the setup or work columns. A truck may have a resolved road-transfer path while its support zone or chassis interface remains open. A crawler may have a resolved on-site route while its delivery, loading, or public-road transfer remains open. Keep a separate owner and evidence status for every state, then compare only the states supported by current documents. For repeated crawler moves inside the project, use the [work-zone relocation guide](/blog/crawler-roll-forming-lift-work-zone-relocation/) to prepare the next record without assuming a permitted travel condition.
 
 [![Editorial diagram comparing crawler and truck configuration questions](/images/editorial/crawler-truck-selection-matrix.svg)](/images/editorial/crawler-truck-selection-matrix.svg)
 

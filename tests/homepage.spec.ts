@@ -93,7 +93,8 @@ test.describe('Task 6 homepage at 1440 × 900', () => {
     await dots.first().click();
     const trustedFirstTitle = page.locator('#hero-title');
     await expect(trustedFirstTitle.locator('br')).toHaveCount(1);
-    await expect(trustedFirstTitle.locator('em')).toHaveText('HEIGHT');
+    await expect(trustedFirstTitle.locator('em')).toHaveText('PLATFORMS');
+    await expect(trustedFirstTitle).toHaveText('ROLL-FORMING LIFTS& CRAWLER PLATFORMS');
 
     await hero.hover();
     await expect(hero).toHaveAttribute('data-autoplay', 'paused');

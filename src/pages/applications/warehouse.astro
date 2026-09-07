@@ -1,54 +1,65 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import GuideLinks from '../../components/GuideLinks.astro';
+import { getGuideLinks } from '../../lib/guide-navigation';
+const warehouseGuides = getGuideLinks(['warehouse-ceiling-access-platform-planning', 'roof-level-roll-forming-long-panels', 'large-crawler-work-platform-building-entry-survey'], await getCollection('blog'));
 ---
 
 <BaseLayout
   title="Warehouse & Steel Structure Ceiling Work — ARCLIFT"
-  description="Crawler under-ceiling platforms for industrial warehouse ceiling construction, crane rail installation, and steel structure mezzanine work."
+  description="Review warehouse roof-forming and ceiling-access tasks separately, with guides to building entry, floor conditions and configuration-specific evidence."
   transparentNav={false}
 >
 
   <section class="hero-banner" style="--banner-image:url('/images/banners/warehouse.webp');--banner-position:center 58%;">
     <div class="overline">Warehouse & Factory</div>
     <h1>INDUSTRIAL CEILING CONSTRUCTION</h1>
-    <p>High-bay ceiling construction, overhead crane rail installation, mezzanine work, and routine maintenance.</p>
+    <p>Separate roof-panel forming from under-ceiling access before comparing equipment, travel routes and work areas.</p>
   </section>
 
   <section class="sec">
     <div style="max-width:800px;margin:0 auto;">
       <h2 style="font-size:28px;font-weight:800;margin-bottom:20px;">Industrial Ceiling Projects</h2>
-      <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:16px;">Steel-structure warehouses, logistics hubs, and manufacturing plants need ceiling access for panel installation, overhead crane rail mounting, lighting, sprinkler systems, and insulation. These are massive, repetitive installations — ceiling panels measured in thousands of square meters, crane rails spanning hundreds of meters.</p>
+      <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:16px;">Warehouse ceiling work can involve panels, lighting, services or inspection. Start by identifying what people and materials must reach, which aisles remain in use, and how the equipment enters and leaves the work area. Suspended-load handling and personnel access require separate task definitions; a platform reference does not establish a method for installing crane rails.</p>
       <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:16px;">Two specialized workflows may apply: raising a roll-forming line near roof level to reduce long-panel handling, or using a large-deck platform for under-ceiling work. Travel-at-height, diesel/electric operation, deck load and floor pressure are configuration-specific and must be verified.</p>
     </div>
   </section>
 
   <section class="sec sec--gray">
     <div class="sec__header reveal">
-      <div class="sec__overline">Recommended Models</div>
-      <h2 class="sec__title">FOR WAREHOUSE WORK</h2>
+      <div class="sec__overline">Reference entries</div>
+      <h2 class="sec__title">CHECK EACH REFERENCE'S EVIDENCE STATUS</h2>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1200px;margin:0 auto;">
+    <div class="application-reference-grid">
       <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F20 — Compact</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">Reference concept for lower work zones. Confirm actual working height, deck size, route, bearing and power requirements.</p>
-        <a href="/products/arc-f20-crawler-ceiling-platform/" class="btn btn--outline-blue">View Model →</a>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F20 — Archived reference</h3>
+        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">Use the archived context to identify missing configuration documents. The reference is not proof of compact dimensions, available working height or warehouse suitability.</p>
+        <a href="/products/arc-f20-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
       </div>
       <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F25 — Mid-Range</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">Reference mid-range concept. Panel or component load must be included in the approved platform load calculation.</p>
-        <a href="/products/arc-f25-crawler-ceiling-platform/" class="btn btn--outline-blue">View Model →</a>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F25 — Reference concept</h3>
+        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">A concept entry for an early discussion, not a verified load or height option. Obtain the evidence for the actual task, people, tools and materials before selection.</p>
+        <a href="/products/arc-f25-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
       </div>
       <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F31 — High-Bay</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">Reference high-reach concept for feasibility comparison. Request model-specific drawings and verification evidence.</p>
-        <a href="/products/arc-f31-crawler-ceiling-platform/" class="btn btn--outline-blue">View Model →</a>
+        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F31 — Reference concept</h3>
+        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">Review the stated unknowns before comparing this entry. Building clearance, support and reach cannot be established from the reference label or editorial images.</p>
+        <a href="/products/arc-f31-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
       </div>
     </div>
   </section>
+
+  <div class="application-guides"><GuideLinks id="warehouse-guides" title="Choose the workflow before the equipment reference" introduction="Use the warehouse planning guide for access tasks, the roof-level guide for forming-line placement, and the entry survey for the route between delivery and work area." links={warehouseGuides} /></div>
 
   <section class="cta">
     <h2>WAREHOUSE CEILING PROJECT STARTING SOON?</h2>
     <p>Compare a roll-forming lift, large-deck platform and conventional access plan using your bay dimensions and site constraints.</p>
     <a href="/contact/" class="btn--white">Request a Comparison →</a>
   </section>
+  <style>
+    .application-reference-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto; }
+    .application-guides { max-width: 1200px; margin: 0 auto; padding: 1rem 24px; }
+    @media (max-width: 680px) { .application-reference-grid { grid-template-columns: 1fr; } }
+  </style>
 </BaseLayout>
