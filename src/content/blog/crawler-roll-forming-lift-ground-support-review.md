@@ -2,6 +2,7 @@
 title: "Ground Support Review for Crawler Roll-Forming Lifts"
 description: "Structure a ground-support review for crawler roll-forming lifts using route segments, surface records, underground hazards, open items and competent decisions."
 date: 2026-08-07
+updated: 2026-09-09
 author: "ARCLIFT Technical Editorial"
 tags: ["crawler lift ground support", "site surface review", "roll forming lift", "project risk"]
 coverImage: "/images/editorial/indoor-floor-load-review.svg"
@@ -10,129 +11,196 @@ coverCaption: "AI-assisted editorial image; not evidence of equipment, configura
 draft: false
 ---
 
-Ground support review begins by locating every place where the equipment may stand or travel and identifying who can evaluate it. It does not begin by dividing a published machine mass by a contact area. Actual reactions vary with configuration, state, load and movement, while site support depends on slabs, soils, underground features, edges and temporary conditions. A disciplined review connects equipment data to site evidence without allowing either side to make the other party's decision.
+A crawler roll-forming lift ground-support package is ready to send to a competent structural or geotechnical reviewer only when the proposed equipment state, the exact site zone and the controlled evidence for both can be matched without guessing. If the configuration or state is unidentified, the zone record is incomplete, the equipment-side load basis is incompatible with the site-side review basis, or no competent reviewer owns the return decision, the package is not ready. The useful output is the missing-input or conflict record—not a provisional ground approval.
 
-For adjacent decisions, use [indoor floor and ground-pressure guide](/blog/indoor-aerial-platform-ground-pressure-guide/) and [crawler platform buyer guide](/blog/crawler-under-ceiling-platform-buyers-guide/); [ARC-C crawler lift page](/products/arc-c32-crawler-roll-forming-lift/) provides another project boundary.
+This article organizes that handoff. It does not calculate reactions, determine allowable bearing, design temporary support, approve slabs or soil, or provide operating instructions. For the separate indoor floor decision, use the [indoor ground-pressure guide](/blog/indoor-aerial-platform-ground-pressure-guide/). Route geometry belongs in the [crawler access-route survey](/blog/crawler-roll-forming-lift-access-route-survey/), movement and change control in the [work-zone relocation guide](/blog/crawler-roll-forming-lift-work-zone-relocation/), and truck layout integration in the [truck jobsite setup review](/blog/truck-mounted-forming-lift-jobsite-setup-review/).
 
 **Contents**
 
-- Define the support question by equipment state
-- Build a site evidence package for each zone
-- Control calculations, assumptions and releases
-- Select around verified support constraints
+- Decide whether the package is ready for specialist review
+- Match equipment-state evidence to site-zone evidence
+- Build the two-way evidence exchange
+- Resolve conflicts and record a bounded handoff
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Define the support question by equipment state
+## Decide whether the package is ready for specialist review
 
-Transport, travel, setup, operation, relocation and parking can create different support questions. The review should list those states, the proposed zones and the configuration data needed for each. A single ground description for the whole site is rarely enough.
+### Apply one readiness rule
 
-### List load states without estimating reactions
+Use one test for every proposed travel, setup, work or parking condition: can a reviewer trace the equipment input to a controlled configuration and state, trace the site input to a named zone and current record, and see who must resolve any mismatch? A package can be incomplete even when it contains many drawings. Volume is not traceability.
 
-Identify people, forming module, material, tools, attachments and any changing orientation that belongs to each state. Ask the equipment reviewer for controlled masses, contact information and reactions appropriate to the configuration and analysis. Do not reconstruct missing values from a brochure or a neighboring model. Until the correct data exist, the site review should record the state as pending rather than approve it with a conservative-looking guess.
+Four missing inputs are decisive holds. The equipment record does not identify the configuration and relevant state; the site record does not identify the support zone and its current condition; the load or contact representation lacks the assumptions needed by the reviewer; or the project has not appointed a competent person to review the relevant structure or ground. Record the exact gap. Do not replace it with a brochure value, a neighboring model, a photograph or a general site description.
 
-### Map travel and stationary zones separately
+### Keep this decision separate from nearby reviews
 
-A route introduces transitions, edges and dynamic movement questions, while a stationary work zone introduces duration, leveling, adjacent operations and repeated loading questions. Draw both. Mark where the equipment may pause, turn or relocate, not only the final work position. This gives the site specialist a realistic boundary and helps the equipment team understand whether a proposed operating sequence changes the support review.
+A geometric route survey asks whether the proposed equipment state can physically enter, pass restrictions and withdraw. A relocation review asks what changes between departure and arrival and which releases must be repeated. A truck jobsite review integrates a vehicle, route, setup area, material flow and work face. An indoor floor review focuses on a building floor and its supporting structure.
 
-### Name each decision owner
+This page asks a narrower evidence question across crawler roll-forming lift ground and support zones: does each state-zone pair have enough compatible information for the appointed structural or geotechnical reviewer to begin a defensible project review? The answer may be “ready to review” while the final engineering conclusion remains open. Keeping those two decisions separate prevents a complete submission index from being mistaken for site acceptance.
 
-The equipment side supplies controlled configuration information. The project side supplies site records and appoints competent structural or geotechnical review. The site team controls route and work-zone release. Put these roles in writing. ARCLIFT can coordinate selection inputs, but commercial supply does not transfer the project's authority to approve slabs, soils, temporary works or movement methods.
+### Define the specialist return record
+
+Before sending data, ask the project reviewer what the return document must identify. At minimum, it should refer to the exact configuration record, equipment state, zone, site evidence revision, assumptions, exclusions and unresolved items that bound the conclusion. The project decides the form, signatory and acceptance route; this article does not.
+
+A statement about “the site” is too broad when only named areas were examined. A statement about “the machine” is too broad when the evidence covers only one configuration or state. The final project documents should preserve the exact configuration-state-zone link so a later change can be compared with the reviewed basis rather than absorbed into an ambiguous approval.
 
 ![Ground support decision path](/images/editorial/crawler-roll-forming-lift-ground-support-review.svg)
 
 *AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Escalation map only; it does not calculate allowable bearing pressure or support adequacy.*
 
+<a href="/images/editorial/crawler-roll-forming-lift-ground-support-review.svg" target="_blank" rel="noopener noreferrer">View full-size diagram</a>
+
 <!-- audit-section: conditions -->
-## Build a site evidence package for each zone
+## Match equipment-state evidence to site-zone evidence
 
-A site package should make uncertainty visible. Plans, investigations and observations have different evidentiary value, and each needs a revision and area reference. Where records are missing, the response is further review or a changed concept, not invented capacity.
+### Request controlled equipment-side evidence
 
-### Identify slabs, soils and transitions
+The equipment side should identify the proposed configuration, the issuing party and document revision. For every relevant state, request the mass, reaction, contact or other support-interface information that the competent reviewer says is necessary, together with the conditions under which that information applies. The record should state inclusions, exclusions, attachments, task load, material state and any distribution or movement assumptions relevant to the supplied data.
 
-Divide the route and work area by support type: ground-bearing slab, suspended floor, compacted fill, pavement, temporary platform or other known condition. Mark joints, ramps, thresholds, shoulders and transitions. Attach the relevant controlled records and state what they actually cover. A document for one bay should not be used to describe another. If the construction differs from the record, open a verification item.
+These are request fields, not public specifications. The review therefore needs configuration-specific controlled technical documents; no value in this article substitutes for them. If the required controlled input is unavailable, mark that state open. Do not reconstruct it from contact dimensions, archived family labels, editorial images or a different configuration.
 
-### Locate underground and edge hazards
+### Build site evidence around named zones
 
-Map trenches, pits, basements, culverts, drains, covers, service ducts, recent excavations and proximity to unsupported edges. These features can matter even when the visible surface looks uniform. Show their known extents and evidence status. The competent reviewer should decide required setbacks, support measures or exclusions from configuration-specific information and the actual construction record.
+Divide every proposed area at changes in construction, condition or supporting context. A zone record can include the support type, drawing or investigation reference, current observations, repair or alteration status, edges, covers, excavations, fill, drainage, underground features and any temporary support already proposed by the project. The appointed reviewer decides which records are sufficient and what further investigation is needed.
 
-### Account for weather and deterioration
+IPAF’s <a href="https://www.ipaf.org/en/operator-feeds/do-you-know-what-look-when-assessing-ground-conditions" target="_blank" rel="noopener noreferrer">general ground-condition guidance</a> includes both the final work area and ground travelled over, and calls attention to visible or hidden weak spots such as underground services and drainage. HSE’s <a href="https://www.hse.gov.uk/construction/safetytopics/mewp.htm" target="_blank" rel="noopener noreferrer">UK MEWP guidance</a> identifies localized features such as trenches, manholes and uncompacted backfill, and notes that temporary covers must withstand applied pressure. These sources help define a general inspection scope; they do not classify an ARCLIFT product, prove compliance, supply reactions or decide support capacity for a project.
 
-Rain, freeze-thaw, heat, leakage, construction traffic and repeated loading can change the condition between survey and use. Record drainage, softening, damage and repair areas with dates. The project should define inspection triggers and who can close them. Avoid universal thresholds in a procurement article. The useful selection input is whether the site can maintain a controlled support condition through the planned work window.
+### Separate a distribution assumption from site capacity
+
+An equipment-side distribution assumption explains how a supplied input represents the support interface for a named state. It may define what contact, load path, inclusion or exclusion the equipment-originating document assumes. It is part of the question sent to the site reviewer.
+
+Site capacity is a separate project-side determination. It depends on the actual construction, geometry, material, condition, hidden features, edges, environmental changes and the competent reviewer’s applicable method and destination requirements. A broad contact representation does not establish how a slab, pavement, fill or soil will respond. Conversely, a general site rating may not address the local interface or state represented by the equipment data.
+
+The two records become useful only when their bases are compatible. If one uses a state, contact condition, zone boundary or load representation that the other does not address, record an interface conflict. Do not compare unlike values or add an unpublished allowance to make the documents appear consistent.
+
+### Define the state boundary before requesting data
+
+“Travel” or “work” may still be too broad for an evidence request. The reviewer needs to know which attachments, forming-line elements, task materials and other included items belong to the state covered by the equipment document. The request should also say whether the state applies at a route transition, a turn, a stationary position or another proposed support interface. These descriptions organize evidence; they do not state that the state is permitted.
+
+Height, outreach or work geometry belongs in this ground-support package only when the equipment data owner or appointed reviewer says it changes the support case. Likewise, coil or other material information belongs only where it changes the represented state. This keeps the ground handoff precise without absorbing the separate work-envelope or material-handling review.
+
+Transport state needs the same discipline. If a transport arrangement uses a support zone that is part of this review, link that state to its zone and controlled equipment basis. If transport ends outside the reviewed boundary, leave it in the logistics record instead of copying it into every ground row. The goal is neither the longest state list nor the smallest one; it is a complete set of support cases for the proposed site use.
+
+### Test whether site records describe the present condition
+
+A construction drawing can establish intended arrangement within its scope, while an investigation, inspection or dated observation can address other aspects of actual condition. None should silently substitute for the others. The zone index should say what each record contributes and what remains unknown. Where fill, repairs, covers, drainage, excavation or temporary work has changed since the record was issued, the discrepancy becomes an open item for the reviewer.
+
+Condition evidence also needs a location boundary. A photograph without a traceable zone can show a surface but cannot connect it to a support case. A site note that says “typical throughout” may still need confirmation where the route crosses a transition or approaches a local feature. The reviewer decides whether the evidence is representative; the exchange matrix simply makes that question visible.
+
+<!-- audit-section: project-checklist -->
+## Build the two-way evidence exchange
+
+### Use this blank equipment/site matrix
+
+Copy the blank matrix into the controlled project record. Keep one row for each evidence relationship rather than filling it with a fictional completed example. Bracketed fields are prompts; they are not acceptance criteria or a project result.
+
+On smaller screens, swipe the tables to see all columns.
+
+| Equipment-side evidence | Site-side evidence | Link or disposition |
+| :-- | :-- | :-- |
+| [configuration reference, issuer, revision and status] | [zone plan reference, issuer, revision and status] | [matched references or named open item] |
+| [state and boundaries of supplied data] | [exact zone and proposed use of that zone] | [state-zone pair or incompatibility] |
+| [reaction/contact/load representation requested by reviewer] | [support record and reviewer’s required input basis] | [compatible basis or clarification owner] |
+| [distribution assumptions, inclusions and exclusions] | [construction, condition, edges and hidden features] | [assumption accepted for review or conflict] |
+| [equipment-side change triggers] | [site-side change triggers and observation date] | [re-review trigger and responsible owner] |
+| [final controlled equipment document] | [specialist review record] | [exact configuration-state-zone cross-reference] |
+
+The matrix is an editorial template, not evidence that a submission is complete. The appointed parties define the real fields, document status and review outcome.
+
+### Run a ground-evidence readiness check
+
+- Confirm that the equipment configuration reference and technical-document revision are controlled, current for the proposal and available to the reviewer.
+- List each transport, route-travel, turning, setup, work or parking state that creates a distinct support question, without inferring that every state is permitted.
+- Assign an exact zone reference to every state and show the boundary on the site record.
+- Record route slope, transition or ground geometry only where it defines the support interface sent for review.
+- Index the available ground, floor, slab, pavement, soil, fill, foundation, temporary-work or investigation records by the zones they actually cover.
+- Identify coil or other task-material state only where it belongs to the supported equipment input.
+- Identify power or control equipment only where its included or excluded mass changes the stated configuration basis.
+- Record covers, drains, services, trenches, excavations, edges, repairs, deterioration and other local features with their evidence status.
+- Record the destination documentation requirements given by the appointed reviewer without claiming local compliance.
+- Ask the reviewer to confirm whether the equipment input basis and site-capacity review basis are compatible; keep any mismatch open.
+- Give every missing document, conflict and changed condition one owner, required closure record and review status.
+- Name the competent structural, geotechnical or other project reviewer responsible for the relevant support question.
+- Require the final signed project-specific documents to cross-reference the exact configuration, state and zone rather than relying on a general site statement.
+
+The list is deliberately limited to evidence readiness and specialist handoff.
+
+### Control references instead of copying conclusions
+
+Keep a document index beside the matrix. For each item, record its title, issuer, revision, status, applicable state or zone, and the party authorized to interpret it. Link to the controlled record rather than copying an isolated value or conclusion into an email. If a document is superseded, the matrix should show which state-zone pair must be reopened.
+
+Photographs can record visible condition and location when the project controls their provenance and privacy. They cannot prove hidden construction, capacity or the full extent of an underground feature. Label the date and zone, and route any discrepancy between a photograph and a drawing to the appointed reviewer.
 
 ![Blank site survey record](/images/editorial/clearance-obstruction-survey-sheet.svg)
 
 *AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Example record structure; fields and acceptance criteria must be set by the project.*
 
-<!-- audit-section: project-checklist -->
-## Control calculations, assumptions and releases
+<a href="/images/editorial/clearance-obstruction-survey-sheet.svg" target="_blank" rel="noopener noreferrer">View full-size diagram</a>
 
-The review package should link each proposed equipment state to the correct site zone, site record and responsible reviewer. It should also show which decisions remain conditional on final configuration data.
+<!-- audit-section: evidence-tradeoffs -->
+## Resolve conflicts and record a bounded handoff
 
-- Create a zone map that separates travel, turning, setup, operation, parking and withdrawal.
-- List underground features, edges, repairs and temporary support areas with evidence status.
-- Record working height and outreach assumptions without treating them as an approved operating envelope.
-- Describe roof slope or building geometry, nearby edges and any changing work-face condition.
-- List task material, panel length, coil or feed information only where it affects the reviewed interface.
-- Assign weather and wind monitoring to the site team under its approved work method.
-- Provide ground or floor records and name the competent party responsible for support review.
-- Map access and route states from delivery through setup, task work and withdrawal.
-- State destination, transport and chassis constraints that belong to local or integration review.
-- Record voltage, power, control and documentation requirements with revision status and owner.
+### Reconcile incompatible evidence explicitly
 
-### Use a data exchange sheet
+Early equipment information may be useful for screening, while site records may be detailed but limited to another area or construction state. The trade-off is not “more caution versus faster selection.” It is whether the project can preserve a transparent preliminary status while the exact interface is resolved. A clearly owned open item lets reviewers request the missing evidence. A seemingly precise comparison of incompatible records hides the reason the decision is uncertain.
 
-The sheet should request configuration identifier, state, intended loading, contact or support arrangement and any movement assumption, then connect those inputs to the site zone. Keep the fields blank until controlled data are supplied. The site reviewer should return the governing conditions and limitations in a signed record. This two-way exchange prevents an equipment sketch from being mistaken for a support calculation.
+Use stable statuses such as available for review, clarification required, specialist investigation required, configuration change proposed, zone excluded or superseded. The project may choose different terms, but each term should have one meaning and one closure route. Avoid “pass” or “approved” in the exchange sheet unless the authorized project process defines who can issue that conclusion and for what bounded scope.
 
-### Record assumptions beside conclusions
+### Use a conflict and open-item disposition
 
-If a preliminary review uses an assumed state or exclusion, show it directly beside the result. State what change invalidates the review and which party monitors it. An assumption buried in an email is easily lost during procurement or mobilization. A visible assumption register lets the project compare options honestly and prevents a later configuration change from bypassing the support review.
+| Conflict or open item | Disposition | Evidence needed to close |
+| :-- | :-- | :-- |
+| Configuration or state on the equipment record is unclear | Hold that state-zone link; return to equipment evidence owner | Controlled record naming the proposed configuration, state and applicable basis |
+| Site document covers another zone or an earlier condition | Hold the affected zone; route to site evidence owner | Current zone-specific record or specialist-directed investigation |
+| Distribution assumption does not match the reviewer’s required basis | Do not calculate a conversion in the exchange sheet | Compatible supplier input or reviewer-confirmed method and limitations |
+| Drawing, observation and underground-feature record disagree | Mark the conflict and keep the zone unresolved | Reconciled controlled record and reviewer disposition |
+| Equipment or site revision changes after review begins | Reopen only the affected links and assess dependencies | Change comparison plus reissued or reconfirmed project records |
+| No competent reviewer or return-document owner is appointed | Package is not ready to send as a review request | Named role, agreed scope and required return record |
 
-### Release zones, not the entire site
+The disposition table directs information, not equipment. It contains no sequence for travel, setup or operation and no support-design recommendation.
 
-A competent review may apply only to named segments and states. Mark those boundaries on the plan and keep other areas out of use. If relocation adds a new path, reopen the review for that path. The site team should confirm current conditions before access and preserve the signed basis with the equipment and work method records.
+### Keep final documents tied to the reviewed basis
+
+A technical schedule, drawing, zone map and specialist record should cross-reference one another using the project’s own controlled identifiers. The reference must make the configuration, equipment state, site zone and document revisions unambiguous. If the final supplier document changes, the project can then identify which specialist conclusions depend on it. If a zone changes, the equipment evidence remains available but the site conclusion for that link may need review again.
+
+Do not detach a reaction, contact description, site capacity statement or limitation from the document that defines its basis. A copied value without state and revision context is not a reliable handoff. Likewise, a signed site note with no configuration-state-zone reference may be too broad to support the intended decision.
 
 ![Editorial diagram of crawler platform selection path](/images/editorial/crawler-platform-selection-path.svg)
 
 *Editorial diagram. AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conditional selection prompt; no configuration is approved by the diagram.*
 
-<!-- audit-section: evidence-tradeoffs -->
-## Select around verified support constraints
-
-### Compare route flexibility with support uncertainty
-
-Crawler mobility can support movement between work areas, but more route use creates more support zones to verify. Reducing movement may simplify the ground review while increasing material handling or relocation planning elsewhere. The trade-off should be expressed in zones, states and evidence requirements. Do not assume that a larger contact area resolves every slab, edge or underground concern, and do not reject an option solely from an unverified site estimate.
-
-The practical trade-off is between early coordination and false precision. A useful record exposes each constraint, interface and unresolved owner; it does not convert preliminary information into an approval.
-
-For general planning context, see the <a href="https://www.hse.gov.uk/pubns/geis6.htm" target="_blank" rel="noopener noreferrer">HSE guidance on MEWP selection and ground-condition planning</a>. It supports general work-planning principles only. It does not verify an ARCLIFT configuration, settle destination rules or approve a site.
+<a href="/images/editorial/crawler-platform-selection-path.svg" target="_blank" rel="noopener noreferrer">View full-size diagram</a>
 
 <!-- audit-section: limitations-not-fit -->
-### Stop when site evidence is not decision-ready
+### Stop when the package is not fit for review
 
-This method may not fit a project that lacks controlled site information, named decision owners or a safe way to close open items. This framework cannot calculate reactions, allowable bearing, slab capacity, soil behavior or temporary support. It should not be used where the actual configuration is unknown or where site records do not match construction. A dry surface photograph, an old general arrangement or a verbal statement cannot close a high-consequence support question. Keep the zone on hold until the appointed reviewer provides the required record.
+The package is not fit for specialist review when the proposed configuration or relevant state cannot be identified, the support zone has no controlled boundary, current construction or condition cannot be reconciled with its record, a hidden feature remains unlocated where the reviewer requires it, the equipment input basis is missing or incompatible, or the project has not appointed the competent reviewer. State the exact missing input and responsible owner. Do not call the package conservative, provisionally suitable or approved.
+
+This framework also stops short of calculation, temporary-support design, ground approval, operating authorization and compliance assessment. General HSE or IPAF guidance cannot close a configuration-specific or jurisdiction-specific question. A reviewer may require information beyond this template, and that requirement becomes the governing project input.
 
 <!-- audit-section: cta-editorial-note -->
-### Send a zone-based ground review request
+### Send a bounded ground-evidence request
 
-Provide the state table, zone map, route survey, site record index, underground-hazard map, condition photos and responsibility matrix. Ask the equipment and site reviewers to identify missing data on the same sheet. Preserve assumptions, exclusions and change triggers so a commercial comparison never appears to approve the support condition.
+Send ARCLIFT the proposed configuration reference, equipment states, zone map, controlled site-record index and the reviewer’s input questions through the project’s secure channel. As an integrated equipment supplier and technical selection and supply partner, ARCLIFT can coordinate the relevant equipment-side documents and identify unavailable inputs; it does not decide site capacity or approve ground.
 
-Send the site, destination, transport, work-zone and ground or floor records through a controlled project channel. The final, signed, project-specific package must identify open items and responsible reviewers. ARCLIFT can support preliminary selection as an integrated equipment supplier and technical selection and supply partner. Editorial images on this page are planning aids only and cannot replace controlled drawings, calculations, inspections or local review.
+Where a floor zone or transport state forms part of the support question, identify it on the same state-zone matrix. State the destination reviewer and the project documentation basis they require rather than inferring a local rule or acceptance criterion.
+
+Send the appointed structural or geotechnical reviewer the same matrix, condition evidence, feature register and open-item log. Ask for a final signed project-specific return record that links every conclusion and limitation to the exact configuration, state, zone and document revision. The three body visuals and cover image on this page are editorial planning aids only; they cannot replace controlled equipment evidence, site investigation, calculation, inspection or competent review.
 
 ## FAQ
 
-#### Can ground pressure be checked from a brochure?
+#### Is the package ready if the site drawing and equipment brochure are attached?
 
-Not reliably. The project needs controlled data for the actual configuration and state, plus competent review of the specific slab, soil, underground features, edges and movement plan.
+Not necessarily. Readiness depends on traceable, compatible inputs for the proposed configuration, state and exact zone. A brochure may not state the controlled load basis, while a site drawing may not represent current construction, condition or hidden features. Record the missing link instead of treating attachment count as completeness.
 
-#### Who approves the ground or floor?
+#### Can an equipment distribution assumption be compared directly with a site capacity?
 
-The project should appoint the competent structural, geotechnical or other relevant reviewer and define the signed closure record. Equipment supply or preliminary selection does not approve the site support condition.
+Only when the appointed reviewer confirms that the bases are compatible. A distribution assumption describes the equipment-side representation for a named state; site capacity is determined from the actual zone and the reviewer’s applicable method. This article provides neither a conversion nor an acceptance criterion.
 
-#### Should travel routes and work zones use one review?
+#### Who decides whether ground evidence is sufficient?
 
-They can share a record, but they should remain separate zones and states. Movement, turns, pauses and transitions may introduce conditions that do not exist at the stationary operating position.
+The project should appoint the competent structural, geotechnical or other relevant reviewer and define the return record. The equipment side provides controlled configuration information, while the site side provides zone evidence. ARCLIFT can coordinate selection inputs but does not approve the site.
 
-#### What changes should reopen the review?
+#### What change reopens a completed evidence link?
 
-Configuration, load state, route, excavation, repair, weather damage, drainage, temporary works, floor use or proximity to edges can all trigger re-review. The project-specific record should name its exact triggers.
+A change to configuration, state, supplied data, zone boundary, construction, condition, drainage, underground feature, edge condition, temporary support or governing document may affect the link. The controlled review record should state which changes require reconsideration and who owns that decision.
