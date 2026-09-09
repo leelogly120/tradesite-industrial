@@ -8,6 +8,8 @@ const AI_ASSISTED_COMPOSITE = 'AI-assisted editorial composite';
 const DISCLOSURE = 'Editorial planning visual — not model-specific evidence';
 const PRODUCT_VISUAL_DISCLOSURE = `${AI_ASSISTED_VISUAL}. ${DISCLOSURE}`;
 const COMPARE_VISUAL_DISCLOSURE = `${AI_ASSISTED_COMPOSITE}. ${DISCLOSURE}`;
+const SCHEMATIC_DISCLOSURE = 'AI-assisted editorial schematic — not to scale; not model-specific evidence.';
+const COMPACT_REFERENCE_BOUNDARY = 'Editorial planning visual — not model-specific evidence. Card values are archived orientation or reference-concept records only. Signed technical schedules, approved drawings and approved load charts control configuration and project suitability.';
 const PRODUCT_SLUGS = [
   'arc-c17-crawler-roll-forming-lift',
   'arc-c21-crawler-roll-forming-lift',
@@ -282,7 +284,14 @@ export async function auditBuildOutput({
   const builtCss = (await Promise.all(files
     .filter(file => file.endsWith('.css'))
     .map(file => readFile(file, 'utf8')))).join('\n');
-  const requiredProductCardSelectors = [
+  const schematicLayout = elementsWithClass(productIndex, 'figure', 'equipment-diagram').length > 0;
+  const requiredProductCardSelectors = schematicLayout ? [
+    /\.reference-card(?:\[[^\]]+\])?\s*\{[^}]*min-width:\s*0(?:[;}\s])/,
+    /\.reference-card__topline\b/,
+    /\.family-reference-boundary\b/,
+    /\.reference-orientation\b/,
+    /\.reference-gate\b/,
+  ] : [
     /\.reference-card__visual\b/,
     /\.reference-card__visual(?:\[[^\]]+\])?\s+img\b/,
     /\.reference-card__disclosure\b/,
@@ -291,19 +300,43 @@ export async function auditBuildOutput({
   ];
   const productCardLayoutRules = [
     /\.reference-grid[^{}]*\{[^}]*grid-template-columns:\s*repeat\(3,\s*minmax\(0,\s*1fr\)\)/,
-    /@media\s*\((?:max-width:\s*)?900px|width\s*<=\s*900px\)[\s\S]*?\.reference-grid[^}]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/,
-    /@media\s*\((?:max-width:\s*)?720px|width\s*<=\s*720px\)[\s\S]*?\.reference-grid[^}]*grid-template-columns:\s*1fr/,
+    /@media\s*\((?:max-width:\s*900px|width\s*<=\s*900px)\)[^@]*?\.reference-grid[^}]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/,
+    /@media\s*\((?:max-width:\s*720px|width\s*<=\s*720px)\)[^@]*?\.reference-grid[^}]*grid-template-columns:\s*1fr/,
   ];
   if (builtCss.includes('`r`n')
       || requiredProductCardSelectors.some(selector => !selector.test(builtCss))
       || productCardLayoutRules.some(rule => !rule.test(builtCss))) {
     errors.push('/products/ must emit complete reference-card CSS without literal newline artifacts, including desktop, 900px, and 390px-safe grid containment');
   }
+  if (schematicLayout) {
+    const figures = elementsWithClass(productIndex, 'div', 'family-card__image-wrap')
+      .flatMap(element => elementsWithClass(element.body, 'figure', 'equipment-diagram'));
+    const families = figures.map(figure => attribute(figure.attributes, 'data-equipment-family')).sort();
+    if (figures.length !== 4 || families.join(',') !== 'ceiling,crawler,former,truck'
+        || figures.some(figure => !/<svg\b[^>]*role="img"[^>]*aria-label="[^"]+"/i.test(figure.body)
+          || !exactTextInClass(figure.body, 'figcaption', '', SCHEMATIC_DISCLOSURE))) {
+      errors.push('/products/ must place four distinct family schematics with adjacent exact AI-assisted editorial schematic disclosures');
+    }
+    const boundaries = elementsWithClass(productIndex, 'aside', 'family-reference-boundary');
+    if (boundaries.length !== 4 || boundaries.some(boundary => !exactTextInClass(boundary.body, 'p', '', COMPACT_REFERENCE_BOUNDARY))) {
+      errors.push('/products/ must retain the full signed-document evidence boundary for all four families');
+    }
+    const cards = elementsWithClass(productIndex, 'article', 'reference-card');
+    const links = cards.flatMap(card => elementsWithClass(card.body, 'a', 'detail-link'))
+      .map(link => attribute(link.attributes, 'href')).sort();
+    const expectedLinks = PRODUCT_SLUGS.map(slug => `/products/${slug}/`).sort();
+    if (cards.length !== 15 || JSON.stringify(links) !== JSON.stringify(expectedLinks)
+        || cards.some(card => ['status-note', 'reference-orientation'].some(className =>
+          !elementsWithClass(card.body, 'p', className).some(element => normalizedText(element.body).length > 0)))) {
+      errors.push('/products/ compact reference cards must retain all 15 distinct detail links, status notes and orientation boundaries');
+    }
+  } else {
   const disclosedFamilyVisuals = elementsWithClass(productIndex, 'div', 'family-card__image-wrap')
     .filter(element => /<img\b[^>]*class=(?:"[^"]*\bfamily-card__image\b[^"]*"|'[^']*\bfamily-card__image\b[^']*')/i.test(element.body))
     .filter(element => exactTextInClass(element.body, 'p', 'image-disclosure', PRODUCT_VISUAL_DISCLOSURE));
   if (disclosedFamilyVisuals.length !== 4) {
     errors.push(`/products/ must place four adjacent ${AI_ASSISTED_VISUAL} disclosures with the exact evidence boundary`);
+  }
   }
   for (const slug of PRODUCT_SLUGS) {
     const route = `/products/${slug}/`;

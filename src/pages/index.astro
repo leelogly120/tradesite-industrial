@@ -1,57 +1,53 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import EquipmentDiagram from '../components/EquipmentDiagram.astro';
 import { getCollection } from 'astro:content';
 
-const allProducts = (await getCollection('products')).filter(p => !p.data.draft);
-
+const allProducts = (await getCollection('products')).filter((product) => !product.data.draft);
 const HOME_CATEGORIES = [
   {
     id: 'crawler-roll-forming-lifts',
+    family: 'crawler',
     name: 'Crawler Roll Forming Lifts',
     range: 'Archived model references',
-    desc: 'Crawler options for reviewing roof-level forming-line access, ground conditions and panel feed direction.',
-    image: '/images/editorial/roof-level-workflow.svg',
+    desc: 'Self-propelled crawler base concepts for positioning a compatible forming line near roof level.',
   },
   {
     id: 'truck-mounted-roll-forming-lifts',
+    family: 'truck',
     name: 'Truck-Mounted Roll Forming Lifts',
     range: 'Route review required',
-    desc: 'Truck-mounted options reviewed against local chassis, road limits, shipping plan and commissioning route.',
-    image: '/images/editorial/truck-site-roll-forming-lift.webp',
+    desc: 'Truck-mounted concepts where road transfer, chassis, stabilizer space and working position drive selection.',
   },
   {
     id: 'crawler-ceiling-platforms',
+    family: 'ceiling',
     name: 'Crawler Ceiling Platforms',
     range: 'Working envelope by model',
-    desc: 'Large-deck concepts for under-ceiling and wall-panel work; height, load and travel mode require model and site review.',
-    image: '/images/editorial/large-deck-steel-structure.webp',
-    imageSmall: '/images/editorial/large-deck-steel-structure-800.webp',
-    imageWidth: 1600,
-    imageHeight: 900,
+    desc: 'Large-deck crawler concepts for under-ceiling and wall-panel work, separate from the roof-forming workflow.',
   },
   {
     id: 'roll-forming-machines',
+    family: 'former',
     name: 'Roll Forming Machines',
     range: 'Profile-led selection',
-    desc: 'Forming-line options selected from the profile drawing, material, thickness, coil and electrical inputs.',
-    image: '/images/editorial/roll-forming-input-map.svg',
+    desc: 'Compatible forming lines selected from the profile drawing, material, thickness, coil and electrical inputs.',
   },
-];
+] as const;
 
-const homeCats = HOME_CATEGORIES.map(cat => ({
-  ...cat,
-  items: allProducts.filter(p => p.data.category === cat.name),
+const homeCats = HOME_CATEGORIES.map((category) => ({
+  ...category,
+  items: allProducts.filter((product) => product.data.category === category.name),
 }));
-
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.com';
+const editorialDisclosure = 'AI-assisted editorial visual — representative only; not model-specific evidence.';
 ---
 
 <BaseLayout
-  title="High-Altitude Roll Forming Lifts & Crawler Ceiling Platforms"
-  description="Crawler and truck-mounted lifting systems for roll forming at roof level, plus engineered crawler platforms for under-ceiling and wall-panel work."
+  title="Roof-Level Roll Forming Lifts & Crawler Ceiling Platforms"
+  description="Technical selection and supply support for crawler and truck-mounted roof-level roll-forming systems, plus large-deck crawler ceiling-platform concepts."
   ogImage="/images/og-home.jpg"
 >
-
   <script type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -67,310 +63,137 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     },
   })} />
 
-  <!-- HERO WITH CAROUSEL -->
-  <section class="hero" data-autoplay="pending">
-    <div class="hero__carousel" id="hero-carousel" aria-live="off">
-      <div class="hero__slide hero__slide--brand hero__slide--active" role="img" aria-label="AI-assisted editorial visual of an ARCLIFT-branded red crawler platform in a steel structure" aria-hidden="false" data-index="0" data-background-loaded="true" style="background-image: url('/images/hero/hero-1-arclift.webp');" data-overline="Roof-Level Forming & Ceiling Access" data-title="ROLL-FORMING LIFTS & CRAWLER PLATFORMS" data-desc="Technical selection and supply support for crawler and truck-mounted roll-forming lifts, plus large-deck platforms for ceiling and wall-panel work."></div>
-      <div class="hero__slide" role="img" aria-label="Editorial visual of roof-level roll forming and long-panel feed direction" aria-hidden="true" data-index="1" data-background="/images/hero/hero-2.webp" data-overline="Roof-Level Forming Review" data-title="PLAN THE PANEL FEED PATH" data-desc="Compare eave height, profile, material, panel length, forming-line mass, ground access and wind controls before choosing a lifting route."></div>
-      <div class="hero__slide" role="img" aria-label="AI-assisted representative visual of port handling and equipment logistics planning" aria-hidden="true" data-index="2" data-background="/images/editorial/port-loading-logistics.webp" data-overline="Destination Requirement Review" data-title="REVIEW THE SHIPPING ROUTE" data-desc="Compare module envelope, mass, packing plan, carrier limits, local chassis and site access. Container fit requires a destination requirement review."></div>
-      <div class="hero__slide" role="img" aria-label="AI-assisted representative visual of truck-mounted equipment at a project site" aria-hidden="true" data-index="3" data-background="/images/editorial/truck-site-roll-forming-lift.webp" data-overline="Site Mobility Review" data-title="COMPARE ROAD AND SITE ACCESS" data-desc="Review road transfer, stabilizer space, ground support and working position before selecting a truck-mounted route."></div>
-      <div class="hero__slide" role="img" aria-label="Editorial visual of a large platform positioned for wall-panel access" aria-hidden="true" data-index="4" data-background="/images/hero/hero-5.webp" data-overline="Wall-Panel Access Review" data-title="CHECK THE WORKING ENVELOPE" data-desc="Review platform reach, wall clearance, load placement, floor conditions and the proposed work sequence for facade or wall-panel access."></div>
-    </div>
-    <div class="hero__overlay"></div>
-    <div class="hero__content">
-      <div class="hero__overline" id="hero-overline">Roof-Level Forming & Ceiling Access</div>
-      <h1 class="hero__title" id="hero-title">ROLL-FORMING LIFTS<br>& CRAWLER <em>PLATFORMS</em></h1>
-      <p class="hero__desc" id="hero-desc">Technical selection and supply support for crawler and truck-mounted roll-forming lifts, plus large-deck platforms for ceiling and wall-panel work.</p>
-      <div class="hero__actions">
-        <a href="/contact/" class="btn btn--primary">Get a Quote →</a>
-        <a href="/products/" class="btn btn--outline">Explore Products</a>
+  <section class="hero hero--product-first">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <div class="hero__overline">Specialized roof-level forming equipment</div>
+        <h1 class="hero__title" id="hero-title">Roll-forming lifts for roof-level panel production</h1>
+        <p class="hero__desc">ARCLIFT is an integrated equipment supplier for crawler and truck-mounted roof-level roll-forming lifts, plus separate large-deck crawler ceiling platforms.</p>
+        <div class="hero__actions">
+          <a href="/products/" class="btn btn--primary">Explore Products</a>
+          <a href="/contact/" class="btn btn--outline">Get a Quote →</a>
+        </div>
       </div>
-    </div>
-    <div class="hero__dots">
-      <button type="button" class="hero__dot hero__dot--active" data-index="0" aria-label="Show slide 1 of 5" aria-controls="hero-carousel" aria-current="true"></button>
-      <button type="button" class="hero__dot" data-index="1" aria-label="Show slide 2 of 5" aria-controls="hero-carousel" aria-current="false"></button>
-      <button type="button" class="hero__dot" data-index="2" aria-label="Show slide 3 of 5" aria-controls="hero-carousel" aria-current="false"></button>
-      <button type="button" class="hero__dot" data-index="3" aria-label="Show slide 4 of 5" aria-controls="hero-carousel" aria-current="false"></button>
-      <button type="button" class="hero__dot" data-index="4" aria-label="Show slide 5 of 5" aria-controls="hero-carousel" aria-current="false"></button>
-    </div>
-    <div class="hero__scroll">
-      <div class="hero__scroll-line"></div>
-      <span>Scroll</span>
+      <div class="hero__diagram">
+        <EquipmentDiagram family="crawler" />
+      </div>
     </div>
   </section>
 
-  <script>
-    const slides = document.querySelectorAll('.hero__slide');
-    const dots = document.querySelectorAll('.hero__dot');
-    const heroOverline = document.getElementById('hero-overline');
-    const heroTitle = document.getElementById('hero-title');
-    const heroDesc = document.getElementById('hero-desc');
-    const heroSection = document.querySelector('.hero');
-    const heroReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const heroDesktopAutoplay = window.matchMedia('(min-width: 769px) and (pointer: fine)');
-    let currentSlide = 0;
-    let carouselTimer;
-    let backgroundWarmupTimer: number | undefined;
-    let heroHovered = false;
-    let heroFocused = false;
-    const slideInterval = 6000;
-    const trustedTitleHtml = [
-      'ROLL-FORMING LIFTS<br>& CRAWLER <em>PLATFORMS</em>',
-      'PLAN THE PANEL FEED PATH',
-      'REVIEW THE SHIPPING ROUTE',
-      'COMPARE ROAD AND SITE ACCESS',
-      'CHECK THE WORKING ENVELOPE',
-    ];
-
-    function ensureSlideBackground(slide: Element | undefined) {
-      if (!(slide instanceof HTMLElement) || slide.dataset.backgroundLoaded === 'true') return;
-
-      const background = slide.dataset.background;
-      if (!background) return;
-
-      slide.style.backgroundImage = `url("${background}")`;
-      slide.dataset.backgroundLoaded = 'true';
-    }
-
-    function goToSlide(index) {
-      if (!slides.length || !dots.length) return;
-      const nextIndex = (index + slides.length) % slides.length;
-      ensureSlideBackground(slides[nextIndex]);
-      slides[currentSlide]?.classList.remove('hero__slide--active');
-      slides[currentSlide]?.setAttribute('aria-hidden', 'true');
-      dots[currentSlide]?.classList.remove('hero__dot--active');
-      dots[currentSlide]?.setAttribute('aria-current', 'false');
-
-      currentSlide = nextIndex;
-      const slide = slides[currentSlide];
-      const dot = dots[currentSlide];
-      slide?.classList.add('hero__slide--active');
-      slide?.setAttribute('aria-hidden', 'false');
-      dot?.classList.add('hero__dot--active');
-      dot?.setAttribute('aria-current', 'true');
-
-      if (slide instanceof HTMLElement) {
-        if (heroOverline) heroOverline.textContent = slide.dataset.overline ?? '';
-        if (heroTitle) heroTitle.innerHTML = trustedTitleHtml[currentSlide] ?? '';
-        if (heroDesc) heroDesc.textContent = slide.dataset.desc ?? '';
-      }
-    }
-
-    function nextSlide() {
-      goToSlide((currentSlide + 1) % slides.length);
-    }
-
-    function stopAutoplay(state = 'paused') {
-      if (carouselTimer) window.clearInterval(carouselTimer);
-      carouselTimer = undefined;
-      if (backgroundWarmupTimer) window.clearTimeout(backgroundWarmupTimer);
-      backgroundWarmupTimer = undefined;
-      if (heroSection instanceof HTMLElement) heroSection.dataset.autoplay = state;
-    }
-
-    function scheduleNextBackground() {
-      if (!heroDesktopAutoplay.matches || heroReducedMotion.matches) return;
-      if (backgroundWarmupTimer) window.clearTimeout(backgroundWarmupTimer);
-
-      backgroundWarmupTimer = window.setTimeout(() => {
-        ensureSlideBackground(slides[(currentSlide + 1) % slides.length]);
-      }, 1_500);
-    }
-
-    function startAutoplay() {
-      if (heroReducedMotion.matches) {
-        stopAutoplay('disabled');
-        return;
-      }
-      if (!heroDesktopAutoplay.matches) {
-        stopAutoplay(window.matchMedia('(max-width: 768px)').matches ? 'disabled-mobile' : 'disabled-input');
-        return;
-      }
-      if (heroHovered || heroFocused) {
-        stopAutoplay('paused');
-        return;
-      }
-      stopAutoplay('paused');
-      scheduleNextBackground();
-      carouselTimer = window.setInterval(() => {
-        nextSlide();
-        scheduleNextBackground();
-      }, slideInterval);
-      if (heroSection instanceof HTMLElement) heroSection.dataset.autoplay = 'running';
-    }
-
-    dots.forEach((dot, i) => {
-      dot.addEventListener('click', () => goToSlide(i));
-    });
-
-    heroSection?.addEventListener('mouseenter', () => {
-      heroHovered = true;
-      stopAutoplay();
-    });
-    heroSection?.addEventListener('mouseleave', () => {
-      heroHovered = false;
-      startAutoplay();
-    });
-    heroSection?.addEventListener('focusin', () => {
-      heroFocused = true;
-      stopAutoplay();
-    });
-    heroSection?.addEventListener('focusout', () => {
-      window.setTimeout(() => {
-        heroFocused = Boolean(heroSection?.contains(document.activeElement));
-        startAutoplay();
-      }, 0);
-    });
-    heroReducedMotion.addEventListener('change', startAutoplay);
-    heroDesktopAutoplay.addEventListener('change', startAutoplay);
-    startAutoplay();
-  </script>
-
-  <!-- TRUST BAR -->
   <div class="trust">
     <span class="trust__text">Technical selection and supply support</span>
     <div class="trust__items">
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> 12–32m Historical Reference</div>
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Crawler & Truck Options</div>
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Destination Requirement Review</div>
-      <div class="trust__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Quote After Input Review</div>
+      <div class="trust__item">✓ 12–32m Historical Reference</div>
+      <div class="trust__item">✓ Crawler & Truck Options</div>
+      <div class="trust__item">✓ Destination Requirement Review</div>
+      <div class="trust__item">✓ Quote After Input Review</div>
     </div>
   </div>
 
-  <!-- PRODUCTS BY CATEGORY -->
-  <section class="sec sec--white">
+  <section class="sec sec--white" aria-labelledby="product-families-title">
     <div class="sec__header reveal">
-      <div class="sec__overline">Our Products</div>
-      <h2 class="sec__title">FOUR PRODUCT LINES</h2>
-      <p class="sec__desc">Roll forming lifts, large-deck platform concepts and forming machines — {allProducts.length} reference models organized by project workflow</p>
+      <div class="sec__overline">Choose an equipment architecture</div>
+      <h2 class="sec__title" id="product-families-title">FOUR PRODUCT FAMILIES</h2>
+      <p class="sec__desc">Start with the work task and system architecture, then review the {allProducts.length} retained references and their evidence limits.</p>
     </div>
-    <div class="products">
-      {homeCats.map((cat, i) => (
-        <a href={`/products/#${cat.id}`} class:list={['p-card', 'reveal', `reveal-d${i + 1}`]}>
-          <div class="p-card__img"><img
-            src={cat.image}
-            srcset={cat.imageSmall ? `${cat.imageSmall} 800w, ${cat.image} ${cat.imageWidth}w` : undefined}
-            sizes={cat.imageSmall ? '(max-width: 768px) calc(100vw - 48px), (max-width: 1024px) calc(50vw - 34px), calc(25vw - 35px)' : undefined}
-            width={cat.imageWidth}
-            height={cat.imageHeight}
-            alt={`${cat.name} representative editorial visual`}
-            loading="lazy"
-          /></div>
-          <div class="p-card__body">
-            <div class="p-card__tag">{cat.items.length} {cat.items.length === 1 ? 'Model' : 'Models'}</div>
-            <div class="p-card__name">{cat.name}</div>
-            <div class="p-card__specs">
-              <span class="p-card__spec"><b>{cat.range}</b></span>
-            </div>
-            <p style="font-size:13px;color:#64748b;margin:8px 0 12px;line-height:1.5;">{cat.desc}</p>
-            <span class="p-card__link">View Models →</span>
+    <div class="family-paths">
+      {homeCats.map((category) => (
+        <a href={`/products/#${category.id}`} class="family-path reveal">
+          <EquipmentDiagram family={category.family} compact />
+          <div class="family-path__body">
+            <div class="p-card__tag">{category.items.length} retained {category.items.length === 1 ? 'reference' : 'references'}</div>
+            <h3>{category.name}</h3>
+            <strong>{category.range}</strong>
+            <p>{category.desc}</p>
+            <span class="p-card__link">Review this family →</span>
           </div>
         </a>
       ))}
     </div>
   </section>
 
-  <!-- FEATURE 1: Repositioning review -->
   <section class="sec sec--gray">
-    <div class="split reveal">
-      <div class="split__visual"><img src="/images/home/under-ceiling-field-v2.webp" srcset="/images/home/under-ceiling-field-v2-800.webp 800w, /images/home/under-ceiling-field-v2.webp 1200w" sizes="(max-width: 1024px) calc(100vw - 48px), 50vw" alt="ARCLIFT-branded large crawler under-ceiling platform working inside a steel structure" width="1200" height="800" loading="lazy" /></div>
-      <div class="split__text">
-        <div class="sec__overline" style="text-align:left;">Workflow Review</div>
-        <h3>ON-SITE REPOSITIONING REVIEW</h3>
-        <p>For selected ARC-F references, review deck use, travel state, allowable load, floor pressure and route clearance against the chosen equipment data and actual site conditions.</p>
-        <a href="/products/" class="link">Learn More →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURE 2: Dual Power -->
-  <section class="sec sec--white">
     <div class="split split--reverse reveal">
-      <div class="split__visual"><img src="/images/home/roof-panel-output.webp" alt="Long standing-seam roof panels fed from a roll forming line at roof level" width="1200" height="800" loading="lazy" /></div>
+      <figure class="split__visual">
+        <img src="/images/home/roof-panel-output.webp" alt="Long standing-seam roof panels fed from a roll forming line at roof level" width="1200" height="800" loading="lazy" />
+        <figcaption>{editorialDisclosure}</figcaption>
+      </figure>
       <div class="split__text">
-        <div class="sec__overline" style="text-align:left;">Roofing Workflow</div>
-        <h3>FORM AT ROOF LEVEL</h3>
+        <div class="sec__overline" style="text-align:left;">Primary workflow</div>
+        <h2>FORM PANELS NEAR ROOF LEVEL</h2>
         <p>A compatible forming line may be positioned near eave level so long panels move toward the roof crew with fewer handling steps. Selection still depends on profile, material, panel length, line mass, feed direction and the site wind plan.</p>
         <a href="/products/#crawler-roll-forming-lifts" class="link">See Roll Forming Lifts →</a>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
-  <section class="sec sec--dark spec-band" id="key-specifications">
-    <div class="stats reveal">
-      <div class="stat">
-        <div class="stat__num"><span>12–32</span><small class="stat__unit">m</small></div>
-        <div class="stat__label"><span>Historical lift-height reference</span><small>Archived range; verify the selected model</small></div>
-      </div>
-      <div class="stat">
-        <div class="stat__num"><span>8 / 11 / 20</span><small class="stat__unit">t</small></div>
-        <div class="stat__label"><span>Historical equipment classes</span><small>Not platform or personnel payload</small></div>
-      </div>
-      <div class="stat">
-        <div class="stat__num"><span>0.3–1.0</span><small class="stat__unit">mm</small></div>
-        <div class="stat__label"><span>Historical sheet-thickness reference</span><small>Material and profile dependent</small></div>
-      </div>
-      <div class="stat">
-        <div class="stat__num"><span>380</span><small class="stat__unit">V</small></div>
-        <div class="stat__label"><span>Common line-voltage reference</span><small>Destination and project specific</small></div>
+  <section class="sec sec--white">
+    <div class="split reveal">
+      <figure class="split__visual">
+        <img src="/images/home/under-ceiling-field-v2.webp" srcset="/images/home/under-ceiling-field-v2-800.webp 800w, /images/home/under-ceiling-field-v2.webp 1200w" sizes="(max-width: 1024px) calc(100vw - 48px), 50vw" alt="ARCLIFT-branded large crawler under-ceiling platform working inside a steel structure" width="1200" height="800" loading="lazy" />
+        <figcaption>{editorialDisclosure}</figcaption>
+      </figure>
+      <div class="split__text">
+        <div class="sec__overline" style="text-align:left;">Separate access family</div>
+        <h2>LARGE-DECK UNDER-CEILING ACCESS</h2>
+        <p>For selected ARC-F references, review deck use, travel state, allowable load, floor pressure and route clearance against the chosen equipment data and actual site conditions.</p>
+        <a href="/products/#crawler-ceiling-platforms" class="link">Review Ceiling Platforms →</a>
       </div>
     </div>
   </section>
 
-  <!-- APPLICATIONS -->
+  <section class="sec sec--dark spec-band" id="key-specifications">
+    <div class="stats reveal">
+      <div class="stat"><div class="stat__num"><span>12–32</span><small class="stat__unit">m</small></div><div class="stat__label"><span>Historical lift-height reference</span><small>Archived range; verify the selected model</small></div></div>
+      <div class="stat"><div class="stat__num"><span>8 / 11 / 20</span><small class="stat__unit">t</small></div><div class="stat__label"><span>Historical equipment classes</span><small>Not platform or personnel payload</small></div></div>
+      <div class="stat"><div class="stat__num"><span>0.3–1.0</span><small class="stat__unit">mm</small></div><div class="stat__label"><span>Historical sheet-thickness reference</span><small>Material and profile dependent</small></div></div>
+      <div class="stat"><div class="stat__num"><span>380</span><small class="stat__unit">V</small></div><div class="stat__label"><span>Common line-voltage reference</span><small>Destination and project specific</small></div></div>
+    </div>
+  </section>
+
   <section class="sec sec--white">
     <div class="sec__header reveal">
       <div class="sec__overline">Applications</div>
-      <h2 class="sec__title">PLATFORMS FOR HIGH-BAY INTERIORS</h2>
-      <p class="sec__desc">Application routes to evaluate against the building, access plan, loads and local requirements</p>
+      <h2 class="sec__title">START WITH THE SITE AND WORK TASK</h2>
+      <p class="sec__desc">Application routes organize the inputs to review; they do not establish model suitability.</p>
     </div>
     <div class="apps">
-      <a href="/applications/stadium/" class="app reveal reveal-d1" aria-label="Stadium and arena planning route. Representative application visual.">
-        <div class="app__media"><img class="app__image" src="/images/home/wall-panel-platform.webp" alt="Representative wall-panel platform visual in a steel structure" width="1200" height="800" loading="lazy" /></div>
-        <div class="app__arrow">→</div>
-        <div class="app__body"><span class="app__caption">Representative application visual</span><h3>Stadium & Arena</h3><p>Review span, floor loading, work zone and panel handling.</p></div>
-      </a>
-      <a href="/applications/airport/" class="app reveal reveal-d2" aria-label="Airport terminal planning route. Representative application visual.">
-        <div class="app__media"><img class="app__image" src="/images/home/under-ceiling-field-v2.webp" srcset="/images/home/under-ceiling-field-v2-800.webp 800w, /images/home/under-ceiling-field-v2.webp 1200w" sizes="(max-width: 1024px) calc(100vw - 48px), 33vw" alt="Representative under-ceiling platform visual in a steel structure" width="1200" height="800" loading="lazy" /></div>
-        <div class="app__arrow">→</div>
-        <div class="app__body"><span class="app__caption">Representative application visual</span><h3>Airport Terminal</h3><p>Review access windows, ceiling services and public-area controls.</p></div>
-      </a>
-      <a href="/applications/warehouse/" class="app reveal reveal-d3" aria-label="Warehouse and industrial-building planning route. Representative application visual.">
-        <div class="app__media"><img class="app__image" src="/images/home/roof-panel-output.webp" alt="Representative roof-panel forming visual in an industrial structure" width="1200" height="800" loading="lazy" /></div>
-        <div class="app__arrow">→</div>
-        <div class="app__body"><span class="app__caption">Representative application visual</span><h3>Warehouse & Industrial Building</h3><p>Review aisle width, floor condition, overhead services and work sequence.</p></div>
-      </a>
+      {[
+        { href: '/applications/stadium/', image: '/images/home/wall-panel-platform.webp', alt: 'Representative wall-panel platform visual in a steel structure', title: 'Stadium & Arena', text: 'Review span, floor loading, work zone and panel handling.' },
+        { href: '/applications/airport/', image: '/images/home/under-ceiling-field-v2.webp', small: '/images/home/under-ceiling-field-v2-800.webp', alt: 'Representative under-ceiling platform visual in a steel structure', title: 'Airport Terminal', text: 'Review access windows, ceiling services and public-area controls.' },
+        { href: '/applications/warehouse/', image: '/images/home/roof-panel-output.webp', alt: 'Representative roof-panel forming visual in an industrial structure', title: 'Warehouse & Industrial Building', text: 'Review aisle width, floor condition, overhead services and work sequence.' },
+      ].map((application) => (
+        <a href={application.href} class="app reveal" aria-label={`${application.title} planning route. ${editorialDisclosure}`}>
+          <div class="app__media"><img class="app__image" src={application.image} srcset={application.small ? `${application.small} 800w, ${application.image} 1200w` : undefined} sizes={application.small ? '(max-width: 1024px) calc(100vw - 48px), 33vw' : undefined} alt={application.alt} width="1200" height="800" loading="lazy" /></div>
+          <div class="app__arrow">→</div>
+          <div class="app__body"><span class="app__caption">{editorialDisclosure}</span><h3>{application.title}</h3><p>{application.text}</p></div>
+        </a>
+      ))}
     </div>
   </section>
 
-  <!-- COMPARISON -->
   <section class="sec sec--gray">
     <div class="sec__header reveal">
-      <div class="sec__overline">Why ARCLIFT</div>
-      <h2 class="sec__title">CHOOSE BY PROJECT FIT</h2>
+      <div class="sec__overline">Selection map</div>
+      <h2 class="sec__title">COMPARE THE ARCHITECTURE FIRST</h2>
     </div>
     <div class="comp reveal">
       <table>
-        <thead><tr><th>Planning Factor</th><th class="hl">ARC Large-Deck Concept</th><th>Spider Lift</th><th>Scaffolding</th></tr></thead>
+        <thead><tr><th>Family</th><th>Primary task</th><th>Decision-driving inputs</th><th>Evidence boundary</th></tr></thead>
         <tbody>
-          <tr><td>Working Area</td><td class="hl">Large-deck concept; verify selected option</td><td>Compact personnel basket</td><td>Site-built working bays</td></tr>
-          <tr><td>Elevated Repositioning</td><td class="hl">Requires model and site review</td><td>Check selected model</td><td class="no">✗ Static access system</td></tr>
-          <tr><td>Setup Method</td><td class="hl">Integrated platform concept</td><td>Outrigger cycle</td><td>Bay-by-bay erection</td></tr>
-          <tr><td>Indoor Operation</td><td class="hl">Electric-drive option for review</td><td>Check selected model</td><td>N/A</td></tr>
-          <tr><td>Control Arrangement</td><td class="hl">Remote-control option for review</td><td>Check selected model</td><td class="no">Manual access system</td></tr>
+          <tr><td>Crawler roll-forming lift</td><td>Position a compatible forming line near the roof work face</td><td>Ground, height, line mass, feed path</td><td>Archived model data; verify configuration</td></tr>
+          <tr><td>Truck-mounted roll-forming lift</td><td>Combine road-transfer concept with roof-level forming</td><td>Chassis, road limits, stabilizer space, site access</td><td>Destination and local chassis review required</td></tr>
+          <tr><td>Crawler ceiling platform</td><td>Large-deck under-ceiling or wall-panel access</td><td>Envelope, load, floor pressure, travel route</td><td>Model and site review required</td></tr>
+          <tr><td>Roll-forming machine</td><td>Form the specified panel profile</td><td>Drawing, material, thickness, coil, electrical supply</td><td>Profile-led configuration; no universal line</td></tr>
         </tbody>
       </table>
     </div>
-    <div style="text-align:center;margin-top:2rem;">
-      <a href="/compare/" class="btn btn--primary">View Full Comparison →</a>
-    </div>
+    <div style="text-align:center;margin-top:2rem;"><a href="/compare/" class="btn btn--primary">Open the Comparison Workspace →</a></div>
   </section>
 
-  <!-- CTA -->
   <section class="cta">
     <h2>READY TO REVIEW YOUR PROJECT INPUTS?</h2>
-    <p>Send the building height, panel profile, coil and former mass, site layout and destination market. We will review relevant references, outline open engineering inputs and identify items requiring local confirmation.</p>
+    <p>Send the building height, panel profile, coil and former mass, site layout and destination market. ARCLIFT will review relevant references, outline open engineering inputs and identify items requiring local confirmation.</p>
     <a href="/contact/" class="btn--white">Send Project Details →</a>
     <div class="cta__contacts">
       <a href="https://wa.me/8615617687185">WhatsApp: +86 15617687185</a>

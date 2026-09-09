@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import EquipmentDiagram from '../../components/EquipmentDiagram.astro';
 import { getCollection } from 'astro:content';
 import GuideLinks from '../../components/GuideLinks.astro';
 import { getGuideLinks } from '../../lib/guide-navigation';
@@ -7,22 +8,30 @@ const warehouseGuides = getGuideLinks(['warehouse-ceiling-access-platform-planni
 ---
 
 <BaseLayout
-  title="Warehouse & Steel Structure Ceiling Work — ARCLIFT"
-  description="Review warehouse roof-forming and ceiling-access tasks separately, with guides to building entry, floor conditions and configuration-specific evidence."
+  title="Industrial Roof-Level Forming & Ceiling Access — ARCLIFT"
+  description="Separate roof-level panel forming from under-ceiling access, then review the line interface, route, support conditions and configuration evidence."
   transparentNav={false}
 >
-
-  <section class="hero-banner" style="--banner-image:url('/images/banners/warehouse.webp');--banner-position:center 58%;">
-    <div class="overline">Warehouse & Factory</div>
-    <h1>INDUSTRIAL CEILING CONSTRUCTION</h1>
-    <p>Separate roof-panel forming from under-ceiling access before comparing equipment, travel routes and work areas.</p>
+  <section class="hero-banner application-hero">
+    <div class="overline">Warehouse & factory tasks</div>
+    <h1>INDUSTRIAL ROOF-LEVEL FORMING AND CEILING ACCESS</h1>
+    <p>Choose the workflow before the equipment reference: forming panels near roof level and reaching an under-ceiling workface are different tasks.</p>
   </section>
 
   <section class="sec">
-    <div style="max-width:800px;margin:0 auto;">
-      <h2 style="font-size:28px;font-weight:800;margin-bottom:20px;">Industrial Ceiling Projects</h2>
-      <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:16px;">Warehouse ceiling work can involve panels, lighting, services or inspection. Start by identifying what people and materials must reach, which aisles remain in use, and how the equipment enters and leaves the work area. Suspended-load handling and personnel access require separate task definitions; a platform reference does not establish a method for installing crane rails.</p>
-      <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:16px;">Two specialized workflows may apply: raising a roll-forming line near roof level to reduce long-panel handling, or using a large-deck platform for under-ceiling work. Travel-at-height, diesel/electric operation, deck load and floor pressure are configuration-specific and must be verified.</p>
+    <div class="application-intro">
+      <div>
+        <h2>Define the roof-forming system first</h2>
+        <p>For roof-level panel production, start with the profile, material, forming-line mass and geometry, cutter-outlet height datum, panel handover path, mobility route and support conditions. A crawler or truck-mounted lift must be reviewed as an integrated system with the compatible forming line.</p>
+        <nav class="application-family-links" aria-label="Roof-forming equipment families">
+          <a href="/products/#crawler-roll-forming-lifts">Review crawler roll-forming lifts →</a>
+          <a href="/products/#truck-mounted-roll-forming-lifts">Review truck-mounted roll-forming lifts →</a>
+        </nav>
+        <p>Ceiling panels, lighting, services and inspection create a separate access task. People, tools and materials, active aisles, openings, floor evidence and recovery arrangements must be defined without transferring assumptions from the forming-lift family.</p>
+      </div>
+      <div class="application-diagram">
+        <EquipmentDiagram family="crawler" compact />
+      </div>
     </div>
   </section>
 
@@ -32,34 +41,49 @@ const warehouseGuides = getGuideLinks(['warehouse-ceiling-access-platform-planni
       <h2 class="sec__title">CHECK EACH REFERENCE'S EVIDENCE STATUS</h2>
     </div>
     <div class="application-reference-grid">
-      <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F20 — Archived reference</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">Use the archived context to identify missing configuration documents. The reference is not proof of compact dimensions, available working height or warehouse suitability.</p>
-        <a href="/products/arc-f20-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
+      <div class="reference-card">
+        <h3>ARC-F20 — Archived reference</h3>
+        <p>Use the archived context to identify missing configuration documents. The reference is not proof of compact dimensions, available working height or warehouse suitability.</p>
+        <a href="/products/arc-f20-crawler-ceiling-platform/" class="btn btn--outline-blue">View reference →</a>
       </div>
-      <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F25 — Reference concept</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">A concept entry for an early discussion, not a verified load or height option. Obtain the evidence for the actual task, people, tools and materials before selection.</p>
-        <a href="/products/arc-f25-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
+      <div class="reference-card">
+        <h3>ARC-F25 — Reference concept</h3>
+        <p>A concept entry for an early discussion, not a verified load or height option. Obtain evidence for the actual task, people, tools and materials before selection.</p>
+        <a href="/products/arc-f25-crawler-ceiling-platform/" class="btn btn--outline-blue">View reference →</a>
       </div>
-      <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F31 — Reference concept</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">Review the stated unknowns before comparing this entry. Building clearance, support and reach cannot be established from the reference label or editorial images.</p>
-        <a href="/products/arc-f31-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
+      <div class="reference-card">
+        <h3>ARC-F31 — Reference concept</h3>
+        <p>Review the stated unknowns before comparing this entry. Building clearance, support and reach cannot be established from the label or editorial imagery.</p>
+        <a href="/products/arc-f31-crawler-ceiling-platform/" class="btn btn--outline-blue">View reference →</a>
       </div>
     </div>
   </section>
 
-  <div class="application-guides"><GuideLinks id="warehouse-guides" title="Choose the workflow before the equipment reference" introduction="Use the warehouse planning guide for access tasks, the roof-level guide for forming-line placement, and the entry survey for the route between delivery and work area." links={warehouseGuides} /></div>
+  <div class="application-guides"><GuideLinks id="warehouse-guides" title="Choose the workflow before the equipment reference" introduction="Use the warehouse guide for access tasks, the roof-level guide for forming-line placement, and the entry survey for the route between delivery and work area." links={warehouseGuides} /></div>
 
   <section class="cta">
-    <h2>WAREHOUSE CEILING PROJECT STARTING SOON?</h2>
-    <p>Compare a roll-forming lift, large-deck platform and conventional access plan using your bay dimensions and site constraints.</p>
-    <a href="/contact/" class="btn--white">Request a Comparison →</a>
+    <h2>PREPARE AN INDUSTRIAL WORKFLOW BRIEF</h2>
+    <p>Compare roof-forming and ceiling-access routes using the actual bay, line, delivery and support inputs.</p>
+    <a href="/contact/" class="btn--white">Send project inputs →</a>
   </section>
   <style>
-    .application-reference-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto; }
-    .application-guides { max-width: 1200px; margin: 0 auto; padding: 1rem 24px; }
-    @media (max-width: 680px) { .application-reference-grid { grid-template-columns: 1fr; } }
+    .application-hero { background-image:radial-gradient(circle at 82% 25%,rgba(37,99,235,.34),transparent 32%),linear-gradient(120deg,#071426,#0f2b52 58%,#164a8a); }
+    .application-intro { display:grid; grid-template-columns:minmax(0,1fr) minmax(320px,.85fr); gap:clamp(32px,5vw,72px); max-width:1200px; margin:0 auto; align-items:center; }
+    .application-intro > *, .application-diagram { min-width:0; }
+    .application-intro h2 { margin:0 0 20px; font-size:clamp(28px,3vw,38px); line-height:1.15; }
+    .application-intro p, .reference-card p { color:#475569; font-size:16px; line-height:1.8; }
+    .application-intro p { margin:0 0 16px; }
+    .application-family-links { display:flex; flex-wrap:wrap; gap:10px 20px; margin:0 0 22px; }
+    .application-family-links a { color:#1d4ed8; font-size:14px; font-weight:700; text-underline-offset:3px; }
+    .application-reference-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; max-width:1200px; margin:0 auto; }
+    .reference-card { padding:32px; background:#fff; border-radius:16px; border:1px solid #e2e8f0; }
+    .reference-card h3 { margin:0 0 12px; font-size:20px; }
+    .reference-card p { margin:0 0 20px; font-size:15px; }
+    .application-guides { max-width:1200px; margin:0 auto; padding:1rem 24px; }
+    @media (max-width:768px) {
+      .application-hero { padding-top:124px; }
+      .application-intro, .application-reference-grid { grid-template-columns:minmax(0,1fr); }
+      .application-intro > *, .reference-card { min-width:0; }
+    }
   </style>
 </BaseLayout>

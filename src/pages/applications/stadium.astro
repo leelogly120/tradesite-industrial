@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import EquipmentDiagram from '../../components/EquipmentDiagram.astro';
 import { getCollection } from 'astro:content';
 import GuideLinks from '../../components/GuideLinks.astro';
 import { getGuideLinks } from '../../lib/guide-navigation';
@@ -7,22 +8,26 @@ const stadiumGuides = getGuideLinks(['stadium-ceiling-access-platform-planning',
 ---
 
 <BaseLayout
-  title="Stadium Ceiling Maintenance & Construction — ARCLIFT"
-  description="Project screening for crawler platforms used in stadium acoustic-panel, lighting and overhead service work, with bearing, access, exclusion-zone and rescue checks."
+  title="Stadium Ceiling Access Planning — ARCLIFT"
+  description="Plan stadium ceiling access around work zones, bearing, route, clearance, exclusion controls and recovery evidence before reviewing a crawler platform concept."
   transparentNav={false}
 >
-
-  <section class="hero-banner" style="--banner-image:url('/images/banners/stadium.webp');--banner-position:center 58%;">
-    <div class="overline">Stadium & Arena</div>
-    <h1>STADIUM CEILING SOLUTIONS</h1>
-    <p>Large-span steel structures, acoustic panel installation, rigging access, and lighting maintenance.</p>
+  <section class="hero-banner application-hero">
+    <div class="overline">Stadium & arena task</div>
+    <h1>STADIUM CEILING ACCESS STARTS WITH THE WORK ZONES</h1>
+    <p>Map the ceiling task, event window, route, support conditions and recovery method before discussing a large-deck crawler platform concept.</p>
   </section>
 
   <section class="sec">
-    <div style="max-width:800px;margin:0 auto;">
-      <h2 style="font-size:28px;font-weight:800;margin-bottom:20px;">Stadium Project Screening</h2>
-      <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:16px;">Stadium work may involve acoustic panels, lighting grids, services and periodic inspection across a large plan area. The available route, field or concourse bearing, roof geometry, event calendar and safe recovery method determine whether a large-deck crawler is practical.</p>
-      <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:16px;">ARC-F pages describe reference concepts rather than a guaranteed one-machine solution. A project study must confirm reachable work zones, deck load, stabilizing method, floor protection, exclusion zones and local work-at-height requirements.</p>
+    <div class="application-intro">
+      <div>
+        <h2>Screen the venue before the equipment reference</h2>
+        <p>Stadium work may involve acoustic panels, lighting grids, services and periodic inspection across a large plan area. The route, field or concourse bearing, roof geometry, event calendar and safe recovery method determine whether a crawler platform concept deserves further review.</p>
+        <p>ARCLIFT is a technical selection and supply partner, not the venue designer or work-method approver. The project team must confirm reachable work zones, proposed deck task and load, stabilising approach, floor protection, exclusion zones and local work-at-height requirements.</p>
+      </div>
+      <div class="application-diagram">
+        <EquipmentDiagram family="ceiling" compact />
+      </div>
     </div>
   </section>
 
@@ -32,15 +37,15 @@ const stadiumGuides = getGuideLinks(['stadium-ceiling-access-platform-planning',
       <h2 class="sec__title">REVIEW THE WORK ZONES AND EVIDENCE</h2>
     </div>
     <div class="application-reference-grid">
-      <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F35 — Reference concept</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">Review the recorded evidence limits before discussing a configuration. The concept does not demonstrate stadium suitability, reach, platform geometry or transport capability.</p>
-        <a href="/products/arc-f35-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
+      <div class="reference-card">
+        <h3>ARC-F35 — Reference concept</h3>
+        <p>Review the recorded evidence limits before discussing a configuration. The concept does not demonstrate stadium suitability, reach, platform geometry or transport capability.</p>
+        <a href="/products/arc-f35-crawler-ceiling-platform/" class="btn btn--outline-blue">View reference →</a>
       </div>
-      <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F31 — Reference concept</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">This is a separate reference entry, not a proven smaller substitute for another concept. Compare configuration-specific documents before making an access or support decision.</p>
-        <a href="/products/arc-f31-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
+      <div class="reference-card">
+        <h3>ARC-F31 — Reference concept</h3>
+        <p>This is a separate reference entry, not a proven smaller substitute for another concept. Compare configuration-specific documents before making an access or support decision.</p>
+        <a href="/products/arc-f31-crawler-ceiling-platform/" class="btn btn--outline-blue">View reference →</a>
       </div>
     </div>
   </section>
@@ -48,13 +53,26 @@ const stadiumGuides = getGuideLinks(['stadium-ceiling-access-platform-planning',
   <div class="application-guides"><GuideLinks id="stadium-guides" title="Connect the event window to the work area" introduction="Start with stadium access planning, then examine overhead clearance and the proposed work-zone layout." links={stadiumGuides} /></div>
 
   <section class="cta">
-    <h2>PLANNING STADIUM CEILING WORK?</h2>
-    <p>Share a non-sensitive outline of the ceiling task and access constraints. ARCLIFT can help organize the questions for configuration review as a technical selection and supply partner.</p>
-    <a href="/contact/" class="btn--white">Get a Project Assessment →</a>
+    <h2>PREPARE A STADIUM WORK-ZONE BRIEF</h2>
+    <p>Share a non-sensitive outline of the ceiling task, work windows and access constraints for a configuration evidence review.</p>
+    <a href="/contact/" class="btn--white">Send project inputs →</a>
   </section>
   <style>
-    .application-reference-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto; }
-    .application-guides { max-width: 1000px; margin: 0 auto; padding: 1rem 24px; }
-    @media (max-width: 680px) { .application-reference-grid { grid-template-columns: 1fr; } }
+    .application-hero { background-image: radial-gradient(circle at 82% 25%, rgba(37,99,235,.34), transparent 32%), linear-gradient(120deg,#071426,#0f2b52 58%,#164a8a); }
+    .application-intro { display:grid; grid-template-columns:minmax(0,1fr) minmax(320px,.85fr); gap:clamp(32px,5vw,72px); max-width:1200px; margin:0 auto; align-items:center; }
+    .application-intro > *, .application-diagram { min-width:0; }
+    .application-intro h2 { margin:0 0 20px; font-size:clamp(28px,3vw,38px); line-height:1.15; }
+    .application-intro p, .reference-card p { color:#475569; font-size:16px; line-height:1.8; }
+    .application-intro p { margin:0 0 16px; }
+    .application-reference-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; max-width:1000px; margin:0 auto; }
+    .reference-card { padding:32px; background:#fff; border-radius:16px; border:1px solid #e2e8f0; }
+    .reference-card h3 { margin:0 0 12px; font-size:20px; }
+    .reference-card p { margin:0 0 20px; font-size:15px; }
+    .application-guides { max-width:1000px; margin:0 auto; padding:1rem 24px; }
+    @media (max-width:768px) {
+      .application-hero { padding-top:124px; }
+      .application-intro, .application-reference-grid { grid-template-columns:minmax(0,1fr); }
+      .application-intro > *, .reference-card { min-width:0; }
+    }
   </style>
 </BaseLayout>

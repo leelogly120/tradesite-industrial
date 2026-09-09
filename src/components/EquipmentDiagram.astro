@@ -1,0 +1,123 @@
+---
+interface Props {
+  family: 'crawler' | 'truck' | 'ceiling' | 'former';
+  compact?: boolean;
+}
+
+const { family, compact = false } = Astro.props;
+const content = {
+  crawler: {
+    label: 'Crawler roll-forming lift family concept schematic',
+    legend: ['Crawler base and reviewed support', 'Lifting structure', 'Compatible forming-line position', 'Panel output toward the roof work face'],
+  },
+  truck: {
+    label: 'Truck-mounted roll-forming lift family concept schematic',
+    legend: ['Destination chassis interface', 'Stabilized working position', 'Lifting structure and forming-line module', 'Panel output toward the roof work face'],
+  },
+  ceiling: {
+    label: 'Large-deck crawler ceiling-platform family concept schematic',
+    legend: ['Crawler base and floor interface', 'Lifting structure', 'Large-deck work-area concept', 'Under-ceiling or wall-panel work face'],
+  },
+  former: {
+    label: 'Roll-forming line family concept schematic',
+    legend: ['Coil and feed entry', 'Profile-specific forming stands', 'Cut and control interface', 'Supported panel output path'],
+  },
+} as const;
+const item = content[family];
+---
+
+<figure class:list={['equipment-diagram', { 'equipment-diagram--compact': compact }]} data-equipment-family={family}>
+  <svg viewBox="0 0 640 400" role="img" aria-label={item.label}>
+    <rect class="diagram-floor" x="36" y="358" width="568" height="12" rx="6" />
+    {family === 'crawler' && (
+      <>
+        <path class="diagram-ink" d="M108 300h238l34 26H90z" />
+        <path class="diagram-blue" d="M150 286l78-178 32 14-58 164zm104-16 118-126 27 24-92 118z" />
+        <rect class="diagram-ink" x="264" y="126" width="176" height="72" rx="9" />
+        <circle class="diagram-line" cx="292" cy="162" r="15" /><circle class="diagram-line" cx="333" cy="162" r="15" /><circle class="diagram-line" cx="374" cy="162" r="15" />
+        <path class="diagram-panel" d="M440 150h154v16H440z" />
+        <path class="diagram-workface" d="M422 96h184" />
+        <rect class="diagram-track-band" x="102" y="288" width="232" height="58" rx="29" />
+        <circle class="diagram-track-wheel" cx="135" cy="317" r="18" /><circle class="diagram-track-wheel" cx="301" cy="317" r="18" />
+      </>
+    )}
+    {family === 'truck' && (
+      <>
+        <path class="diagram-ink" d="M76 286h280v42H66l-20-42z" />
+        <path class="diagram-ink" d="M76 232h92l38 54H76z" />
+        <circle class="diagram-wheel" cx="114" cy="326" r="27" /><circle class="diagram-wheel" cx="292" cy="326" r="27" />
+        <path class="diagram-blue" d="M300 274l72-166 31 14-50 164zm70-10 82-111 28 22-62 99z" />
+        <rect class="diagram-ink" x="394" y="130" width="126" height="62" rx="9" />
+        <circle class="diagram-line" cx="421" cy="161" r="13" /><circle class="diagram-line" cx="458" cy="161" r="13" /><circle class="diagram-line" cx="495" cy="161" r="13" />
+        <path class="diagram-panel" d="M520 150h82v15h-82z" />
+        <path class="diagram-workface" d="M382 96h224" />
+        <path class="diagram-track" d="M244 328v25m104-25v25" />
+      </>
+    )}
+    {family === 'ceiling' && (
+      <>
+        <path class="diagram-ink" d="M112 300h220l28 26H94z" />
+        <rect class="diagram-track-band" x="98" y="288" width="250" height="58" rx="29" />
+        <circle class="diagram-track-wheel" cx="131" cy="317" r="18" /><circle class="diagram-track-wheel" cx="315" cy="317" r="18" />
+        <path class="diagram-blue" d="M174 290l76-174 32 14-54 160zm86-14 94-126 28 22-72 112z" />
+        <rect class="diagram-deck" x="304" y="112" width="246" height="66" rx="8" />
+        <path class="diagram-line" d="M320 112V78m72 34V78m72 34V78m70 34V78M314 78h226" />
+        <path class="diagram-ceiling" d="M258 48h328v16H258z" />
+      </>
+    )}
+    {family === 'former' && (
+      <>
+        <circle class="diagram-coil" cx="108" cy="234" r="60" /><circle class="diagram-floor" cx="108" cy="234" r="25" />
+        <path class="diagram-panel" d="M168 224h62v18h-62z" />
+        <rect class="diagram-ink" x="230" y="156" width="244" height="140" rx="12" />
+        <circle class="diagram-line" cx="270" cy="224" r="18" /><circle class="diagram-line" cx="325" cy="224" r="18" /><circle class="diagram-line" cx="380" cy="224" r="18" /><circle class="diagram-line" cx="435" cy="224" r="18" />
+        <path class="diagram-panel" d="M474 215h132v18H474z" />
+        <rect class="diagram-blue" x="402" y="112" width="78" height="52" rx="7" />
+        <path class="diagram-track" d="M246 296v30m212-30v30" />
+      </>
+    )}
+    {[1, 2, 3, 4].map((number, index) => {
+      const positions = family === 'former'
+        ? [[78, 124], [286, 124], [450, 88], [562, 190]]
+        : family === 'ceiling'
+          ? [[82, 278], [210, 120], [428, 144], [566, 42]]
+          : family === 'truck'
+            ? [[112, 204], [342, 330], [428, 108], [574, 124]]
+            : [[104, 278], [190, 98], [352, 112], [570, 124]];
+      const [x, y] = positions[index];
+      return <g class="diagram-marker"><circle cx={x} cy={y} r="22" /><text x={x} y={y + 1}>{number}</text></g>;
+    })}
+  </svg>
+  <ol class="equipment-diagram__legend">
+    {item.legend.map((label) => <li>{label}</li>)}
+  </ol>
+  <figcaption>AI-assisted editorial schematic — not to scale; not model-specific evidence.</figcaption>
+</figure>
+
+<style>
+  .equipment-diagram { margin: 0; color: #334155; }
+  .equipment-diagram svg { background: linear-gradient(145deg, #f8fbff, #e8f1fb); border: 1px solid #cbd8e7; border-radius: 18px; display: block; height: auto; width: 100%; }
+  .diagram-floor { fill: #cbd5e1; }
+  .diagram-ink { fill: #16345a; }
+  .diagram-blue { fill: #2563eb; }
+  .diagram-panel { fill: #60a5fa; }
+  .diagram-deck { fill: #dbeafe; stroke: #174f94; stroke-width: 6; }
+  .diagram-ceiling { fill: #94a3b8; }
+  .diagram-line, .diagram-track { fill: none; stroke: #dbeafe; stroke-linecap: round; stroke-width: 8; }
+  .diagram-track { stroke: #0f172a; }
+  .diagram-track-band { fill: #0f172a; stroke: #64748b; stroke-width: 7; }
+  .diagram-track-wheel { fill: #334155; stroke: #94a3b8; stroke-width: 5; }
+  .diagram-workface { fill: none; stroke: #94a3b8; stroke-dasharray: 12 9; stroke-linecap: round; stroke-width: 6; }
+  .diagram-wheel { fill: #0f172a; stroke: #64748b; stroke-width: 7; }
+  .diagram-coil { fill: #2563eb; stroke: #174f94; stroke-width: 8; }
+  .diagram-marker circle { fill: #f59e0b; stroke: #fff; stroke-width: 4; }
+  .diagram-marker text { fill: #111827; font: 800 19px/1 system-ui, sans-serif; text-anchor: middle; dominant-baseline: middle; }
+  .equipment-diagram__legend { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem 1rem; list-style: none; margin: .9rem 0 .7rem; padding: 0; }
+  .equipment-diagram__legend li { counter-increment: diagram-item; font-size: .86rem; line-height: 1.45; padding-left: 2rem; position: relative; }
+  .equipment-diagram__legend { counter-reset: diagram-item; }
+  .equipment-diagram__legend li::before { align-items: center; background: #f59e0b; border-radius: 50%; color: #111827; content: counter(diagram-item); display: flex; font-size: .72rem; font-weight: 800; height: 1.4rem; justify-content: center; left: 0; position: absolute; top: 0; width: 1.4rem; }
+  .equipment-diagram figcaption { border-left: 3px solid #2563eb; color: #475569; font-size: .76rem; line-height: 1.5; padding-left: .65rem; }
+  .equipment-diagram--compact .equipment-diagram__legend { grid-template-columns: 1fr; }
+  .equipment-diagram--compact .equipment-diagram__legend li { font-size: .79rem; }
+  @media (max-width: 420px) { .equipment-diagram__legend { grid-template-columns: 1fr; } }
+</style>

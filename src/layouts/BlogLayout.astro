@@ -60,7 +60,7 @@ const formattedDate = new Date(date).toLocaleDateString('en-US', {
   })} />
 
   <!-- HERO BANNER -->
-  <section class="hero-banner" style="background-image:linear-gradient(90deg,rgba(10,10,10,.94),rgba(10,10,10,.45)),url('/images/banners/blog.webp');background-size:cover;background-position:center;">
+  <section class="hero-banner">
     <div class="overline">{tags.length > 0 ? tags[0] : 'Blog'}</div>
     <h1>{title}</h1>
     <div class="meta">
@@ -87,7 +87,7 @@ const formattedDate = new Date(date).toLocaleDateString('en-US', {
   <article class="article">
     {coverImage && (
       <figure class="article__hero">
-        <img src={coverImage} alt={coverAlt} />
+        <img src={coverImage} alt={coverAlt} loading="eager" decoding="async" fetchpriority="high" />
         <figcaption>{coverCaption}</figcaption>
       </figure>
     )}
@@ -221,6 +221,7 @@ const formattedDate = new Date(date).toLocaleDateString('en-US', {
   .article__hero img {
     display: block;
     width: 100%;
+    height: auto;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -304,6 +305,7 @@ const formattedDate = new Date(date).toLocaleDateString('en-US', {
   }
   .article-content :global(img) {
     width: 100%;
+    height: auto;
     border-radius: 16px;
     margin: 32px 0;
   }

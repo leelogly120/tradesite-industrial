@@ -4,6 +4,7 @@ import { getCollection, render } from 'astro:content';
 import { buildProductView, getRelatedProductSlugs } from '../../lib/product-selection';
 import { getProductGuides } from '../../lib/guide-navigation';
 import GuideLinks from '../../components/GuideLinks.astro';
+import EquipmentDiagram from '../../components/EquipmentDiagram.astro';
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
@@ -21,6 +22,18 @@ const productView = buildProductView(product);
 if (!productView) throw new Error(`Unknown product reference: ${product.id}`);
 const model = productView.model;
 const category = productView.family.name;
+const familyDetails = {
+  'crawler-roll-forming-lifts': { name: 'Crawler Roll Forming Lift', diagram: 'crawler' },
+  'truck-mounted-roll-forming-lifts': { name: 'Truck-Mounted Roll Forming Lift', diagram: 'truck' },
+  'crawler-ceiling-platforms': { name: 'Crawler Ceiling Platform', diagram: 'ceiling' },
+  'roll-forming-machines': { name: 'Roll Forming Line', diagram: 'former' },
+} as const;
+const familyDetail = familyDetails[productView.family.id];
+const metaTitle = product.id === 'arc-f20-crawler-ceiling-platform'
+  ? 'ARC-F20 Ceiling Platform — Archived Reference Class'
+  : product.id === 'arc-t25hq-truck-mounted-roll-forming-lift-40hq'
+    ? 'ARC-T25HQ Truck-Mounted Lift — Planning Route'
+    : data.title;
 const productGuides = getProductGuides(productView.family.id, await getCollection('blog'));
 const quoteUrl = `/contact/?product=${encodeURIComponent(model)}`;
 const datasheetUrl = `/contact/?product=${encodeURIComponent(model)}&request=datasheet`;
@@ -71,7 +84,7 @@ const pageSchema = {
 };
 ---
 
-<BaseLayout title={data.title} description={data.description} ogImage={data.images?.[0]} transparentNav={false}>
+<BaseLayout title={metaTitle} description={data.description} ogImage={data.images?.[0]} transparentNav={false}>
   <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
 
   {data.faq && data.faq.length > 0 && (
@@ -100,7 +113,43 @@ const pageSchema = {
     <a href="/">Home</a> / <a href="/products/">Products</a> / <span>{model}</span>
   </div>
 
-  <section class="product-hero">
+  <section class="product-intro">
+    <div class="product-intro__copy">
+      <div class="product-hero__tag">{category}</div>
+      <h1 class="product-hero__name">{model} {familyDetail.name}</h1>
+      <div class="reference-status">
+        <span>{productView.status}</span>
+        <strong>{productView.statusNote}</strong>
+      </div>
+      <p class="scope-statement">{productView.scopeStatement}</p>
+      <p class="product-workflow" data-product-workflow>{productView.family.workflow}</p>
+      <div class="specs-mini">
+        <div class="spec-mini">
+          <div class="spec-mini__label">{productView.orientation.label}</div>
+          <div class="spec-mini__val">{productView.orientation.value}</div>
+          <div class="spec-mini__scope">{productView.orientation.scope}</div>
+        </div>
+        <div class="spec-mini">
+          <div class="spec-mini__label">Confirmation gate</div>
+          <div class="spec-mini__val">{productView.confirmationGate}</div>
+        </div>
+      </div>
+      <div class="product-hero__btns">
+        <a href={quoteUrl} class="btn btn--primary" data-product-primary-cta>Request a project review →</a>
+        <a href={datasheetUrl} class="btn btn--outline-blue">Request available reference documents</a>
+      </div>
+    </div>
+
+    <div class="product-intro__diagram" data-product-diagram>
+      <EquipmentDiagram family={familyDetail.diagram} />
+    </div>
+  </section>
+
+  <section class="product-gallery-section">
+    <div class="product-gallery-heading">
+      <p>Editorial planning gallery</p>
+      <h2>Review the equipment context before the archive record</h2>
+    </div>
     <div class="product-hero__gallery" aria-label={`${model} editorial planning gallery`}>
       {data.images && data.images.length > 0 ? (
         <div class="decision-gallery">
@@ -114,32 +163,6 @@ const pageSchema = {
       ) : (
         <div class="product-hero__main">{model}</div>
       )}
-    </div>
-
-    <div class="product-hero__info">
-      <div class="product-hero__tag">{category}</div>
-      <h1 class="product-hero__name">{model}</h1>
-      <p class="product-hero__sub">{data.title.split(' — ')[1] || category}</p>
-      <div class="reference-status">
-        <span>{productView.status}</span>
-        <strong>{productView.statusNote}</strong>
-      </div>
-      <p class="scope-statement">{productView.scopeStatement}</p>
-      <div class="specs-mini">
-        <div class="spec-mini">
-          <div class="spec-mini__label">{productView.orientation.label}</div>
-          <div class="spec-mini__val">{productView.orientation.value}</div>
-          <div class="spec-mini__scope">{productView.orientation.scope}</div>
-        </div>
-        <div class="spec-mini">
-          <div class="spec-mini__label">Confirmation gate</div>
-          <div class="spec-mini__val">{productView.confirmationGate}</div>
-        </div>
-      </div>
-      <div class="product-hero__btns">
-        <a href={quoteUrl} class="btn btn--primary">Request a project review →</a>
-        <a href={datasheetUrl} class="btn btn--outline-blue">Request available reference documents</a>
-      </div>
     </div>
   </section>
 
@@ -286,6 +309,52 @@ const pageSchema = {
   </section>
 
   <style>
+    .product-intro,
+    .product-gallery-section {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding-inline: var(--section-px);
+    }
+    .product-intro {
+      display: grid;
+      grid-template-columns: minmax(0, .95fr) minmax(360px, 1.05fr);
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: center;
+      padding-block: clamp(2rem, 5vw, 4.5rem);
+    }
+    .product-intro__copy {
+      min-width: 0;
+    }
+    .product-intro__diagram {
+      min-width: 0;
+    }
+    .product-workflow {
+      margin: 1rem 0 1.5rem;
+      color: #334155;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    .product-gallery-section {
+      padding-block: 1rem clamp(2.5rem, 5vw, 4.5rem);
+    }
+    .product-gallery-heading {
+      max-width: 720px;
+      margin-bottom: 1.25rem;
+    }
+    .product-gallery-heading p {
+      margin: 0 0 .4rem;
+      color: #2563eb;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .product-gallery-heading h2 {
+      margin: 0;
+      color: #0f172a;
+      font-size: clamp(1.45rem, 3vw, 2rem);
+      line-height: 1.2;
+    }
     .decision-gallery {
       display: grid;
       grid-auto-flow: column;
@@ -347,8 +416,8 @@ const pageSchema = {
     }
     .decision-nav {
       position: sticky;
-      top: 0;
-      z-index: 5;
+      top: var(--nav-height);
+      z-index: 12;
       display: flex;
       gap: 8px;
       max-width: var(--max-w);
@@ -375,7 +444,7 @@ const pageSchema = {
       padding: 0 var(--section-px);
     }
     .decision-section {
-      scroll-margin-top: 92px;
+      scroll-margin-top: calc(var(--nav-height) + 5rem);
       padding: 72px 0;
       border-bottom: 1px solid #e2e8f0;
     }
@@ -533,6 +602,10 @@ const pageSchema = {
       font-weight: 700;
     }
     @media (max-width: 768px) {
+      .product-intro {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+      }
       .reference-summary,
       .decision-list,
       .workflow-grid,
@@ -544,6 +617,9 @@ const pageSchema = {
       }
       .documents-panel__actions {
         min-width: 0;
+      }
+      :global(#product-guides) {
+        scroll-margin-top: calc(var(--nav-height) + 5rem);
       }
     }
   </style>

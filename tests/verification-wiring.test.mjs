@@ -27,7 +27,16 @@ describe('permanent verification wiring', () => {
   });
 
   it('runs the built-output audit after Astro emits dist', () => {
-    expect(packageJson.scripts.build).toMatch(/^astro build && npm run audit:build$/);
+    expect(packageJson.scripts.build.split(' && ')).toEqual(['astro build', 'node scripts/optimize-build-images.mjs', 'npm run audit:build']);
     expect(packageJson.scripts['audit:build']).toBe('node scripts/audit-build.mjs');
+  });
+
+  it('keeps static rules, image output and buyer-route regressions in the release gate', () => {
+    expect(packageJson.scripts.verify).toContain('npm run test:site');
+    expect(packageJson.scripts['test:site']).toContain('tests/static-asset-rules.test.mjs');
+    expect(packageJson.scripts['test:site']).toContain('tests/build-image-markup.test.mjs');
+    for (const file of ['site-refinement', 'product-discovery', 'application-refinement']) {
+      expect(packageJson.scripts['test:e2e']).toContain(`tests/${file}.spec.ts`);
+    }
   });
 });

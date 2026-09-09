@@ -5,73 +5,89 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
 ---
 
 <BaseLayout
-  title="About ARCLIFT — Project-Engineered Roll Forming & Access Systems"
-  description="ARCLIFT is an integrated equipment supplier coordinating technical selection, configuration review and international supply for roll forming lift and large-deck platform projects."
+  title="About ARCLIFT — Equipment Selection & Supply Partner"
+  description="ARCLIFT is an integrated equipment supplier coordinating technical selection, source-document review and international supply for roof-level forming and crawler platform projects."
   transparentNav={false}
 >
-
-  <!-- HERO BANNER -->
-  <section class="hero-banner" style="--banner-image:url('/images/banners/about.webp');--banner-position:center 60%;">
-    <div class="overline">About Us</div>
-    <h1>BUILDING THE FUTURE OF<br>WORKING AT HEIGHT</h1>
-    <p>An equipment solutions supplier connecting project requirements, available evidence and configuration-by-configuration technical review.</p>
+  <section class="hero-banner about-hero">
+    <div class="overline">About ARCLIFT</div>
+    <h1>SPECIALIZED EQUIPMENT, SELECTED AROUND THE JOB</h1>
+    <p>An integrated equipment supplier connecting buyer requirements, available source documents and configuration-by-configuration review.</p>
   </section>
 
-  <!-- COMPANY STORY -->
   <section class="sec">
     <div class="story reveal">
-      <div class="story__visual"><img src="/images/home/roll-forming-line.webp" alt="Roll forming line and project support equipment" width="1200" height="800" loading="lazy" /></div>
+      <figure class="story__visual" data-editorial-visual>
+        <img src="/images/home/roll-forming-line.webp" alt="Illustrative roll-forming line and project interface equipment" width="1200" height="800" loading="lazy" />
+        <figcaption>AI-assisted editorial composite — illustrates roll-forming equipment and interfaces; not evidence of a current model, configuration, factory or project.</figcaption>
+      </figure>
       <div class="story__text">
-        <h2>How ARCLIFT Works</h2>
-        <p>ARCLIFT is an integrated equipment supplier for specialized roll forming lift systems, truck-mounted configurations, large-deck crawler platforms and profile-specific roll forming lines. We organize product evidence and buyer requirements into a traceable project brief before a configuration is discussed.</p>
-        <p>As a technical selection and supply partner, ARCLIFT starts with the building and the job sequence: eave or ceiling height, panel profile, sheet material, access route, bearing conditions, transport limits and destination rules. A model page is a reference starting point, not a substitute for an approved technical schedule.</p>
-        <p>Evidence depth varies by equipment family and model. Buyers should verify model-specific drawings, field imagery, safety functions, transport arrangements and destination-market documentation before an order is finalized.</p>
+        <h2>How ARCLIFT supports a selection review</h2>
+        <p>ARCLIFT is an integrated equipment supplier for specialized roof-level roll-forming lift systems, crawler and truck-mounted mobility routes, large-deck crawler platforms and compatible roll-forming lines.</p>
+        <p>As a technical selection and supply partner, ARCLIFT starts with the building and job sequence: the required height datum, panel profile and material, forming-line interfaces, access route, support conditions, transport limits and destination requirements. A model page is a reference starting point, not an approved technical schedule.</p>
+        <p>ARCLIFT coordinates the buyer's project brief with available source documents and the proposed supply configuration. Manufacturing, project design, certification, site approval and operation remain with the responsible parties identified for that project.</p>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
   <section class="sec sec--dark">
-    <div class="stats reveal">
-      <div class="stat"><div class="stat__num">4</div><div class="stat__label">Equipment Families</div></div>
-      <div class="stat"><div class="stat__num">2</div><div class="stat__label">Mobility Architectures</div></div>
-      <div class="stat"><div class="stat__num">1</div><div class="stat__label">Project Data Brief</div></div>
-      <div class="stat"><div class="stat__num">DATA</div><div class="stat__label">Project-Specific Review</div></div>
+    <div class="sec__header family-header">
+      <div class="sec__overline">Equipment architecture</div>
+      <h2 class="sec__title">FOUR FAMILIES, DIFFERENT PROJECT INPUTS</h2>
+    </div>
+    <div class="family-overview">
+      <article>
+        <span>01</span>
+        <h3>Crawler roof-forming lifts</h3>
+        <p>Review forming-line fit, output datum, crawler route, stabilisation and work-zone support together.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Truck-mounted roof-forming lifts</h3>
+        <p>Coordinate the compatible line with chassis, payload allocation, road transport and jobsite setup records.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Crawler ceiling and wall platforms</h3>
+        <p>Treat overhead or vertical access as a separate task with its own route, workface, floor and recovery inputs.</p>
+      </article>
+      <article>
+        <span>04</span>
+        <h3>Roll-forming lines</h3>
+        <p>Define profile, material, tooling, coil route, power, controls and the mounting interface for the proposed system.</p>
+      </article>
     </div>
   </section>
 
-  <!-- ORDER VERIFICATION -->
   <section class="sec">
     <div class="sec__header reveal">
-      <div class="sec__overline">Before You Order</div>
-      <h2 class="sec__title">VERIFY THE PROJECT CONFIGURATION</h2>
+      <div class="sec__overline">Source-document coordination</div>
+      <h2 class="sec__title">BUILD A REVIEWABLE CONFIGURATION FILE</h2>
     </div>
     <div class="certs">
-      <div class="cert reveal"><div class="icon">01</div><h3>Technical Schedule</h3><p>Confirm height, payload, platform, power, controls and safety functions in writing.</p></div>
-      <div class="cert reveal"><div class="icon">02</div><h3>Destination Rules</h3><p>Identify the applicable machine, road, electrical and work-at-height requirements.</p></div>
-      <div class="cert reveal"><div class="icon">03</div><h3>Configuration Documents</h3><p>Review drawings, component lists, test records and the exact documentation offered for the selected unit.</p></div>
-      <div class="cert reveal"><div class="icon">04</div><h3>Visual Confirmation</h3><p>Match approval photos and videos to the chassis, deck and accessories in the quotation.</p></div>
+      <div class="cert reveal"><div class="icon">01</div><h3>Project input brief</h3><p>Record the task, measurement datums, route, support, workface and destination requirements.</p></div>
+      <div class="cert reveal"><div class="icon">02</div><h3>Configuration schedule</h3><p>Request the dimensions, masses, interfaces, power, controls and options for the exact proposed equipment.</p></div>
+      <div class="cert reveal"><div class="icon">03</div><h3>Source documents</h3><p>Match drawings, component lists, test records and offered destination documents to that configuration.</p></div>
+      <div class="cert reveal"><div class="icon">04</div><h3>Open-item register</h3><p>Keep unresolved evidence, responsible reviewers and approval boundaries visible before the commercial decision.</p></div>
     </div>
   </section>
 
-  <!-- VALUES -->
   <section class="sec sec--gray">
     <div class="sec__header reveal">
-      <div class="sec__overline">Our Values</div>
-      <h2 class="sec__title">WHAT DRIVES US</h2>
+      <div class="sec__overline">Working principles</div>
+      <h2 class="sec__title">WHAT GUIDES THE SUPPLY REVIEW</h2>
     </div>
     <div class="values">
-      <div class="value reveal"><div class="icon">01</div><h3>Evidence Before Claims</h3><p>Published parameters are tied to available evidence, and important gaps are disclosed. Final safety functions and compliance remain unit- and market-specific.</p></div>
-      <div class="value reveal"><div class="icon">02</div><h3>Workflow Engineering</h3><p>The equipment is configured around how panels, crews and materials move through the site—not around a generic aerial-lift specification alone.</p></div>
-      <div class="value reveal"><div class="icon">03</div><h3>Supply Partnership</h3><p>We coordinate project information, configuration review and supply communication so buyers can confirm requirements before commercial decisions are made.</p></div>
+      <div class="value reveal"><div class="icon">01</div><h3>Evidence before claims</h3><p>Published references retain their limitations, and current configuration statements require matching documents.</p></div>
+      <div class="value reveal"><div class="icon">02</div><h3>Workflow fit</h3><p>Selection begins with how panels, equipment, people and materials move through the site.</p></div>
+      <div class="value reveal"><div class="icon">03</div><h3>Clear responsibility</h3><p>Supply coordination does not replace the buyer's project design, compliance review, site approval or operating plan.</p></div>
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="cta">
-    <h2>JOIN OUR GLOBAL NETWORK</h2>
-    <p>Share your market, application and project requirements to start a focused supply discussion.</p>
-    <a href="/contact/" class="btn--white">Contact Us →</a>
+    <h2>START WITH A DOCUMENTED SELECTION BRIEF</h2>
+    <p>Share non-sensitive application and project inputs to begin a focused equipment-supply review.</p>
+    <a href="/contact/" class="btn--white">Contact ARCLIFT →</a>
   </section>
 
   <script type="application/ld+json" set:html={JSON.stringify({
@@ -79,7 +95,73 @@ const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.
     '@type': 'Organization',
     name: 'ARCLIFT Equipment Co., Ltd.',
     url: siteUrl,
-    description: 'Integrated equipment supplier and technical selection partner for roll forming lift systems and large-deck crawler platform projects.',
+    description: 'Integrated equipment supplier and technical selection and supply partner for roof-level forming lift systems and crawler ceiling or wall platform projects.',
     contactPoint: { '@type': 'ContactPoint', contactType: 'sales', availableLanguage: ['English', 'Chinese'] },
   })} />
+
+  <style>
+    .about-hero {
+      background-image:
+        radial-gradient(circle at 80% 24%, rgba(37, 99, 235, .34), transparent 34%),
+        linear-gradient(120deg, #071426 0%, #0f2b52 58%, #164a8a 100%);
+    }
+    .about-hero p { max-width: 760px; }
+    .story {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .story > *,
+    .story__text,
+    .story__visual { min-width: 0; }
+    .story__visual {
+      min-height: 0;
+      margin: 0;
+      display: block;
+      background: #e2e8f0;
+    }
+    .story__visual img {
+      width: 100%;
+      height: auto;
+      min-height: 0;
+      display: block;
+      object-fit: contain;
+    }
+    .story__visual figcaption {
+      padding: 12px 16px;
+      border-top: 1px solid #cbd5e1;
+      background: #f8fafc;
+      color: #475569;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .story__text h2,
+    .family-overview h3 { overflow-wrap: anywhere; }
+    .family-header .sec__title { color: #fff; }
+    .family-overview {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .family-overview article {
+      min-width: 0;
+      padding: 28px;
+      border: 1px solid rgba(148, 163, 184, .22);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, .06);
+    }
+    .family-overview span { color: #60a5fa; font-size: 13px; font-weight: 800; letter-spacing: .12em; }
+    .family-overview h3 { margin: 10px 0; color: #fff; font-size: 20px; }
+    .family-overview p { margin: 0; color: #cbd5e1; font-size: 15px; line-height: 1.7; }
+    @media (max-width: 768px) {
+      .about-hero { padding-top: 124px; }
+      .about-hero h1,
+      .story__text h2,
+      .sec__title { overflow-wrap: anywhere; }
+      .story,
+      .family-overview { grid-template-columns: minmax(0, 1fr); }
+      .story { gap: 32px; }
+      .certs { grid-template-columns: minmax(0, 1fr); }
+    }
+  </style>
 </BaseLayout>

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import EquipmentDiagram from '../../components/EquipmentDiagram.astro';
 import { getCollection } from 'astro:content';
 import GuideLinks from '../../components/GuideLinks.astro';
 import { getGuideLinks } from '../../lib/guide-navigation';
@@ -7,22 +8,26 @@ const airportGuides = getGuideLinks(['airport-terminal-maintenance-access-planni
 ---
 
 <BaseLayout
-  title="Airport Terminal Ceiling Access — ARCLIFT"
-  description="Project screening for crawler platforms used in airport terminal ceiling, lighting and HVAC work, including floor-load, route, power and occupied-space checks."
+  title="Airport Terminal Ceiling Access Planning — ARCLIFT"
+  description="Plan airport terminal ceiling access around the measured route, floor evidence, work window, power requirements and occupied-space controls."
   transparentNav={false}
 >
-
-  <section class="hero-banner" style="--banner-image:url('/images/banners/airport.webp');--banner-position:center 58%;">
-    <div class="overline">Airport Terminal</div>
-    <h1>AIRPORT CEILING MAINTENANCE</h1>
-    <p>Ceiling panels, lighting and HVAC access—subject to floor-load, route, power, security and occupied-space verification.</p>
+  <section class="hero-banner application-hero">
+    <div class="overline">Airport terminal task</div>
+    <h1>AIRPORT CEILING ACCESS STARTS WITH THE ROUTE</h1>
+    <p>Connect the gate or landside workface to a measured delivery path, floor evidence, work window and recovery plan before equipment selection.</p>
   </section>
 
   <section class="sec">
-    <div style="max-width:800px;margin:0 auto;">
-      <h2 style="font-size:28px;font-weight:800;margin-bottom:20px;">Airport Project Screening</h2>
-      <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:16px;">Airport terminals combine high clearances, security-controlled routes, passenger flow, sensitive finishes and strict work windows. Equipment selection starts with measured height, doorway and turning envelope, slab capacity, exclusion-zone plan and emergency recovery method.</p>
-      <p style="font-size:16px;color:#475569;line-height:1.8;margin-bottom:16px;">The ARC-F family is presented as a reference platform concept. Electric operation, noise, crawler contact pressure and travel-at-height capability must be demonstrated for the exact quoted machine before it is accepted for an occupied terminal.</p>
+    <div class="application-intro">
+      <div>
+        <h2>Separate the access method from terminal permission</h2>
+        <p>Terminals combine high clearances, security-controlled routes, passenger flow, sensitive finishes and limited work windows. Screening starts with the task height datum, doorway and turning envelope, floor or slab information, exclusion-zone plan and emergency recovery method.</p>
+        <p>The crawler ceiling-platform family is a reference concept, not evidence of airport acceptance. If electric operation, a particular sound limit or travel state is proposed, the exact quoted configuration must supply the relevant evidence and the airport team must decide whether it fits the operating plan.</p>
+      </div>
+      <div class="application-diagram">
+        <EquipmentDiagram family="ceiling" compact />
+      </div>
     </div>
   </section>
 
@@ -32,29 +37,42 @@ const airportGuides = getGuideLinks(['airport-terminal-maintenance-access-planni
       <h2 class="sec__title">REVIEW THE EVIDENCE BEFORE SELECTION</h2>
     </div>
     <div class="application-reference-grid">
-      <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F25 — Reference concept</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">This page records a concept for discussion, not a verified configuration for an airport. Review its evidence status before requesting configuration-specific drawings or floor-load data.</p>
-        <a href="/products/arc-f25-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
+      <div class="reference-card">
+        <h3>ARC-F25 — Reference concept</h3>
+        <p>This page records a concept for discussion, not a verified configuration for an airport. Review its evidence status before requesting configuration-specific drawings or floor-support data.</p>
+        <a href="/products/arc-f25-crawler-ceiling-platform/" class="btn btn--outline-blue">View reference →</a>
       </div>
-      <div style="padding:32px;background:#fff;border-radius:16px;border:1px solid #f1f5f9;">
-        <h3 style="font-size:20px;font-weight:700;margin-bottom:12px;">ARC-F31 — Reference concept</h3>
-        <p style="font-size:15px;color:#64748b;line-height:1.7;margin-bottom:20px;">The reference label does not establish reach, power mode or an approved working envelope. The selected configuration and terminal conditions require their own documented review.</p>
-        <a href="/products/arc-f31-crawler-ceiling-platform/" class="btn btn--outline-blue">View Reference →</a>
+      <div class="reference-card">
+        <h3>ARC-F31 — Reference concept</h3>
+        <p>The reference label does not establish reach, power mode or a working envelope. The selected configuration and terminal conditions require their own documented review.</p>
+        <a href="/products/arc-f31-crawler-ceiling-platform/" class="btn btn--outline-blue">View reference →</a>
       </div>
     </div>
   </section>
 
-  <div class="application-guides"><GuideLinks id="airport-guides" title="Plan the work window, then survey the route" introduction="The phasing guide addresses when work can take place; the route guide addresses how the equipment reaches the work face. Keep both decisions separate from model approval." links={airportGuides} /></div>
+  <div class="application-guides"><GuideLinks id="airport-guides" title="Plan the work window, then survey the route" introduction="The phasing guide addresses when work can take place; the route guide addresses how equipment reaches the workface. Keep both decisions separate from model review." links={airportGuides} /></div>
 
   <section class="cta">
-    <h2>AIRPORT CEILING PROJECT ON THE HORIZON?</h2>
-    <p>Share a non-sensitive summary of the task, work windows and route constraints. ARCLIFT can organize the open selection questions as a technical selection and supply partner.</p>
-    <a href="/contact/" class="btn--white">Request a Project Review →</a>
+    <h2>PREPARE AN AIRPORT ACCESS BRIEF</h2>
+    <p>Share a non-sensitive summary of the task, route, work windows and terminal interfaces for a configuration evidence review.</p>
+    <a href="/contact/" class="btn--white">Send project inputs →</a>
   </section>
   <style>
-    .application-reference-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto; }
-    .application-guides { max-width: 1000px; margin: 0 auto; padding: 1rem 24px; }
-    @media (max-width: 680px) { .application-reference-grid { grid-template-columns: 1fr; } }
+    .application-hero { background-image:radial-gradient(circle at 82% 25%,rgba(37,99,235,.34),transparent 32%),linear-gradient(120deg,#071426,#0f2b52 58%,#164a8a); }
+    .application-intro { display:grid; grid-template-columns:minmax(0,1fr) minmax(320px,.85fr); gap:clamp(32px,5vw,72px); max-width:1200px; margin:0 auto; align-items:center; }
+    .application-intro > *, .application-diagram { min-width:0; }
+    .application-intro h2 { margin:0 0 20px; font-size:clamp(28px,3vw,38px); line-height:1.15; }
+    .application-intro p, .reference-card p { color:#475569; font-size:16px; line-height:1.8; }
+    .application-intro p { margin:0 0 16px; }
+    .application-reference-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; max-width:1000px; margin:0 auto; }
+    .reference-card { padding:32px; background:#fff; border-radius:16px; border:1px solid #e2e8f0; }
+    .reference-card h3 { margin:0 0 12px; font-size:20px; }
+    .reference-card p { margin:0 0 20px; font-size:15px; }
+    .application-guides { max-width:1000px; margin:0 auto; padding:1rem 24px; }
+    @media (max-width:768px) {
+      .application-hero { padding-top:124px; }
+      .application-intro, .application-reference-grid { grid-template-columns:minmax(0,1fr); }
+      .application-intro > *, .reference-card { min-width:0; }
+    }
   </style>
 </BaseLayout>

@@ -215,6 +215,53 @@ describe('built output audit', () => {
     expect(error).toBeInstanceOf(Error);
     expect(error.message).toMatch(/reference-card CSS/i);
   });
+
+  async function makeSchematicFixture() {
+    const root = await makeValidFixture();
+    const families = ['crawler', 'truck', 'ceiling', 'former'];
+    const figures = families.map(family => `<div class="family-card__image-wrap"><figure class="equipment-diagram" data-equipment-family="${family}"><svg viewBox="0 0 640 400" role="img" aria-label="${family} schematic"></svg><figcaption>AI-assisted editorial schematic — not to scale; not model-specific evidence.</figcaption></figure></div><aside class="family-reference-boundary"><strong>Reference boundary</strong><p>Editorial planning visual — not model-specific evidence. Card values are archived orientation or reference-concept records only. Signed technical schedules, approved drawings and approved load charts control configuration and project suitability.</p></aside>`).join('');
+    const cards = productSlugs.map(slug => `<article class="reference-card"><p class="status-note">Reference only</p><p class="reference-orientation">Archived orientation only</p><a class="detail-link" href="/products/${slug}/">Reference details</a></article>`).join('');
+    await write(root, 'dist/products/index.html', page('/products/', figures + cards));
+    await write(root, 'dist/assets/products.css', [
+      '.reference-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }',
+      '.reference-card { min-width: 0; }', '.reference-card__topline {}',
+      '.family-reference-boundary {}', '.reference-orientation {}', '.reference-gate {}',
+      '@media (max-width: 900px) { .reference-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }',
+      '@media (max-width: 720px) { .reference-grid { grid-template-columns: 1fr; } }',
+    ].join('\n'));
+    return root;
+  }
+
+  it('accepts compact references only with all four disclosed family schematics and unchanged evidence boundaries', async () => {
+    const root = await makeSchematicFixture();
+    await expect(auditBuildOutput({ root })).resolves.toMatchObject({ productRouteCount: 15 });
+  });
+
+  it.each([
+    ['AI-assisted editorial schematic', 'Editorial schematic'],
+    ['not to scale; not model-specific evidence.', 'verified equipment evidence.'],
+    ['data-equipment-family="truck"', 'data-equipment-family="crawler"'],
+    ['Signed technical schedules, approved drawings and approved load charts', 'Model labels'],
+    ['class="status-note"', 'class="missing-status"'],
+    ['class="reference-orientation"', 'class="missing-orientation"'],
+    ['href="/products/arc-c17-crawler-roll-forming-lift/"', 'href="/wrong/"'],
+  ])('rejects incomplete compact reference evidence: %s', async (before, after) => {
+    const root = await makeSchematicFixture();
+    const path = resolve(root, 'dist/products/index.html');
+    await writeFile(path, (await readFile(path, 'utf8')).replace(before, after), 'utf8');
+    await expect(auditBuildOutput({ root })).rejects.toThrow(/products.*(?:schematic|compact reference|evidence boundary)/i);
+  });
+
+  it.each([
+    ['min-width: 0', 'min-width: 400px'],
+    ['repeat(2, minmax(0, 1fr))', 'repeat(2, 500px)'],
+    ['grid-template-columns: 1fr', 'grid-template-columns: 500px'],
+  ])('rejects unsafe compact grid CSS: %s', async (before, after) => {
+    const root = await makeSchematicFixture();
+    const path = resolve(root, 'dist/assets/products.css');
+    await writeFile(path, (await readFile(path, 'utf8')).replace(before, after), 'utf8');
+    await expect(auditBuildOutput({ root })).rejects.toThrow(/reference-card CSS/i);
+  });
   it('rejects a noindex route in the sitemap and unsafe structured data', async () => {
     const root = await makeValidFixture();
     const sitemapPath = resolve(root, 'dist/sitemap-0.xml');

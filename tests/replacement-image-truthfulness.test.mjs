@@ -66,17 +66,19 @@ describe('Replacement image truthfulness', () => {
   });
 
   it('places an AI-assisted label and exact evidence boundary beside every scoped visual', async () => {
-    const [selectionDomain, productList, productDetail, comparePage] = await Promise.all([
+    const [selectionDomain, productList, productDetail, comparePage, equipmentDiagram] = await Promise.all([
       readFile(resolve(root, 'src/lib/product-selection.ts'), 'utf8'),
       readFile(productListPath, 'utf8'),
       readFile(productDetailPath, 'utf8'),
       readFile(comparePagePath, 'utf8'),
+      readFile(resolve(root, 'src/components/EquipmentDiagram.astro'), 'utf8'),
     ]);
 
     expect(selectionDomain).toContain(`const IMAGE_DISCLOSURE = '${productDisclosure}'`);
-    expect(productList).toMatch(
-      new RegExp(`<img class="family-card__image"[\\s\\S]{0,500}<p class="image-disclosure">${productVisualDisclosure}<\\/p>`),
-    );
+    expect(productList).toMatch(/<EquipmentDiagram family=\{family\.diagramFamily\} compact \/>/);
+    expect(productList).toContain(`<p>${productDisclosure}. Card values are archived orientation or reference-concept records only. Signed technical schedules, approved drawings and approved load charts control configuration and project suitability.</p>`);
+    expect(equipmentDiagram).toMatch(/<figure[^>]*data-equipment-family=\{family\}[^>]*>/);
+    expect(equipmentDiagram).toMatch(/<figcaption>AI-assisted editorial schematic — not to scale; not model-specific evidence\.<\/figcaption>/);
     expect(productDetail).toMatch(
       /<figure class="decision-gallery__figure">[\s\S]{0,500}<figcaption>AI-assisted editorial visual\. \{productView\.imageDisclosure\}<\/figcaption>[\s\S]{0,100}<\/figure>/,
     );

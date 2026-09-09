@@ -13,7 +13,7 @@ describe('published guide reading paths', () => {
   it('reserves fixed-navigation space for the product introduction and guide anchors', () => {
     const listing = readFileSync(resolve('src/pages/products/index.astro'), 'utf8');
     const guides = readFileSync(resolve('src/components/GuideLinks.astro'), 'utf8');
-    expect(listing).toMatch(/padding-top:\s*calc\(var\(--nav-height\)\s*\+/);
+    expect(listing).toMatch(/\.selector-hero\s*\{[^}]*padding(?:-top)?:\s*calc\(var\(--nav-height\)\s*\+/);
     expect(guides).toMatch(/scroll-margin-top:\s*calc\(var\(--nav-height\)\s*\+/);
   });
   it('connects a route-survey reader to ground review and relocation without linking to itself', async () => {

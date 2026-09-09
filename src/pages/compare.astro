@@ -7,6 +7,42 @@ import {
   buildCompareView,
 } from '../lib/product-selection';
 import { renderCompareRegion } from '../lib/product-compare';
+import EquipmentDiagram from '../components/EquipmentDiagram.astro';
+
+const familyOrientations = [
+  {
+    family: 'crawler',
+    heading: 'Crawler raised forming line',
+    description: 'Frame the review around the site route and the raised forming-line workflow.',
+    input: 'Bring the roof plan, route constraints and work-zone information.',
+    href: '/products/#crawler-roll-forming-lifts',
+    link: 'Crawler lift family',
+  },
+  {
+    family: 'truck',
+    heading: 'Truck-mounted raised forming line',
+    description: 'Frame the review around the chassis, road access, setup area and outrigger interface.',
+    input: 'Bring route, site-access, chassis and support-condition information.',
+    href: '/products/#truck-mounted-roll-forming-lifts',
+    link: 'Truck-mounted lift family',
+  },
+  {
+    family: 'ceiling',
+    heading: 'Separate ceiling work-deck concept',
+    description: 'Treat this as a separate work-deck concept for the workface, not as a forming-line variant.',
+    input: 'Bring the workface geometry and documented load-approval inputs.',
+    href: '/products/#crawler-ceiling-platforms',
+    link: 'Ceiling platform family',
+  },
+  {
+    family: 'former',
+    heading: 'Panel-forming line',
+    description: 'Frame the review around panel shaping and the profile, material and interface requirements.',
+    input: 'Bring the target profile, material definition and line-interface information.',
+    href: '/products/#roll-forming-machines',
+    link: 'Roll-forming line family',
+  },
+] as const;
 
 const publicProducts = (await getCollection('products')).filter(product => !product.data.draft);
 const productsBySlug = new Map(publicProducts.map(product => [product.id, product]));
@@ -45,10 +81,27 @@ const defaultCompareHtml = renderCompareRegion(defaultCompareViews);
       <p class="eyebrow">Reference comparison</p>
       <h2>Start with scope, not a performance ranking</h2>
       <p>
-        The default view keeps four crawler ceiling-platform references available without JavaScript.
+        The default view keeps ARC-C25, ARC-T25, ARC-F20 and ARC-RF8 available without JavaScript.
         Selections from the product list replace only the comparison below when browser scripting is available.
       </p>
       <a href="/products/" class="selector-link">Change selected references</a>
+    </div>
+
+    <nav class="family-orientation-nav" aria-label="Compare equipment families">
+      {familyOrientations.map(item => <a href={item.href}>{item.link}</a>)}
+    </nav>
+    <div class="family-orientation-grid">
+      {familyOrientations.map(item => (
+        <article>
+          <EquipmentDiagram family={item.family} compact />
+          <div>
+            <h3>{item.heading}</h3>
+            <p>{item.description}</p>
+            <p><strong>Input orientation:</strong> {item.input}</p>
+            <a href={item.href}>{item.link} →</a>
+          </div>
+        </article>
+      ))}
     </div>
 
     <div
@@ -96,6 +149,8 @@ const defaultCompareHtml = renderCompareRegion(defaultCompareViews);
   }
 
   .compare-intro,
+  .family-orientation-nav,
+  .family-orientation-grid,
   .comparison-region,
   .comparison-boundary {
     margin-inline: auto;
@@ -149,6 +204,65 @@ const defaultCompareHtml = renderCompareRegion(defaultCompareViews);
     min-height: 44px;
     padding: .7rem .9rem;
     text-underline-offset: .2em;
+  }
+
+  .family-orientation-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .55rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .family-orientation-nav a {
+    min-height: 44px;
+    padding: .7rem .9rem;
+    border: 1px solid #bfd2e8;
+    border-radius: 999px;
+    color: #174f94;
+    font-weight: 750;
+    text-decoration: none;
+  }
+
+  .family-orientation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .family-orientation-grid article {
+    display: grid;
+    grid-template-columns: minmax(150px, .75fr) minmax(0, 1.25fr);
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #d9e2ec;
+    border-radius: 12px;
+    background: white;
+  }
+
+  .family-orientation-grid article > * {
+    min-width: 0;
+  }
+
+  .family-orientation-grid h3 {
+    margin: 0 0 .55rem;
+    color: #102a43;
+    font-size: 1.15rem;
+  }
+
+  .family-orientation-grid p {
+    margin: .35rem 0;
+    color: #52657a;
+    line-height: 1.55;
+  }
+
+  .family-orientation-grid a {
+    display: inline-block;
+    margin-top: .4rem;
+    color: #174f94;
+    font-weight: 800;
   }
 
   .selector-link:focus-visible,
@@ -245,6 +359,14 @@ const defaultCompareHtml = renderCompareRegion(defaultCompareViews);
     :global(.comparison-table th),
     :global(.comparison-table td) {
       padding: .8rem;
+    }
+
+    .family-orientation-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .family-orientation-grid article {
+      grid-template-columns: 1fr;
     }
   }
 </style>

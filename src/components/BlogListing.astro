@@ -2,7 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
 import GuideLinks from './GuideLinks.astro';
-import { getGuideLinks, STARTER_GUIDES } from '../lib/guide-navigation';
+import { getGuideLinks, GUIDE_TOPICS, STARTER_GUIDES } from '../lib/guide-navigation';
 
 interface Props {
   posts: CollectionEntry<'blog'>[];
@@ -14,7 +14,15 @@ interface Props {
 }
 
 const { posts, pageNum, totalPages, totalPosts, prev, next } = Astro.props;
-const starterGuides = pageNum === 1 ? getGuideLinks(STARTER_GUIDES, await getCollection('blog')) : [];
+const allGuides = pageNum === 1 ? await getCollection('blog') : [];
+const starterGuides = pageNum === 1 ? getGuideLinks(STARTER_GUIDES, allGuides) : [];
+const guideDirectory = pageNum === 1
+  ? GUIDE_TOPICS.map(topic => ({
+      name: topic.name,
+      links: getGuideLinks(topic.slugs, allGuides),
+    }))
+  : [];
+const guideCount = guideDirectory.reduce((count, topic) => count + topic.links.length, 0);
 
 function readingMinutes(body: string) {
   const words = body.match(/[A-Za-z0-9]+(?:[-'][A-Za-z0-9]+)*/g)?.length ?? 0;
@@ -25,11 +33,39 @@ function readingMinutes(body: string) {
 <section class="hero-banner">
   <div class="overline">Project Decision Guides</div>
   <h1>ROLL-FORMING LIFT & PLATFORM GUIDES{pageNum > 1 && ` — PAGE ${pageNum}`}</h1>
-  <p>Practical guidance for roll-forming lift, transport, line-integration, and large-deck platform project decisions.</p>
+  <p>Practical guidance for roll-forming lift, transport, line-integration and large-deck platform project decisions.</p>
 </section>
 
 <section class="sec">
-  {pageNum === 1 && <div class="starter-guides"><GuideLinks id="start-here" title="Start with the equipment decision" introduction="Choose a core guide, then follow the specific route, interface or handover questions for your project." links={starterGuides} /></div>}
+  {pageNum === 1 && (
+    <>
+      <div class="starter-guides">
+        <GuideLinks id="start-here" title="Start with the equipment decision" introduction="Choose a core guide, then follow the specific route, interface or handover questions for your project." links={starterGuides} />
+      </div>
+      <section class="guide-directory" data-guide-directory aria-labelledby="guide-directory-title">
+        <div class="guide-directory__header">
+          <p class="overline">All decision paths</p>
+          <h2 id="guide-directory-title">Browse all {guideCount} project guides</h2>
+          <p>Open a topic to find focused guidance for equipment architecture, site access, interfaces, transport, documentation and project handover decisions.</p>
+        </div>
+        <div class="guide-directory__topics">
+          {guideDirectory.map(topic => (
+            <details class="guide-topic">
+              <summary>
+                <span>{topic.name}</span>
+                <span aria-label={`${topic.links.length} guides`}>{topic.links.length}</span>
+              </summary>
+              <ul>
+                {topic.links.map(link => (
+                  <li><a href={link.href}>{link.title}</a></li>
+                ))}
+              </ul>
+            </details>
+          ))}
+        </div>
+      </section>
+    </>
+  )}
   <p class="sec__count">Page {pageNum} of {totalPages} — {totalPosts} articles</p>
 
   <div class="blog-grid">
@@ -68,7 +104,7 @@ function readingMinutes(body: string) {
 <section class="project-cta">
   <p class="overline">Project Data Review</p>
   <h2>TURN YOUR SITE DATA INTO A REVIEWABLE BRIEF</h2>
-  <p>Send the work zones, panel or platform task, access and ground conditions, transport route, destination, and required interfaces. ARCLIFT will organize the questions that must be confirmed before a project-specific quotation.</p>
+  <p>Send the work zones, panel or platform task, access and ground conditions, transport route, destination and required interfaces. ARCLIFT will organize the questions that must be confirmed before a project-specific quotation.</p>
   <a href="/contact/" class="btn">Send Project Data →</a>
 </section>
 
@@ -76,8 +112,8 @@ function readingMinutes(body: string) {
   .hero-banner {
     padding: 160px clamp(24px, 5vw, 80px) 80px;
     background:
-      linear-gradient(90deg, rgba(10, 10, 10, .94), rgba(10, 10, 10, .45)),
-      url('/images/banners/blog.webp') center / cover;
+      radial-gradient(circle at 84% 20%, rgba(59, 130, 246, .36), transparent 32%),
+      linear-gradient(120deg, #061326 0%, #0f2a4d 56%, #174d8d 100%);
   }
   .overline {
     margin: 0 0 14px;
@@ -99,13 +135,11 @@ function readingMinutes(body: string) {
   .project-cta > p:not(.overline) {
     max-width: 760px;
     margin: 0;
-    color: rgba(255, 255, 255, .72);
+    color: rgba(255, 255, 255, .78);
     font-size: 17px;
     line-height: 1.7;
   }
-  .sec {
-    padding: clamp(56px, 8vw, 96px) clamp(24px, 5vw, 80px);
-  }
+  .sec { padding: clamp(56px, 8vw, 96px) clamp(24px, 5vw, 80px); }
   .sec__count {
     max-width: 1400px;
     margin: 0 auto 26px;
@@ -113,6 +147,64 @@ function readingMinutes(body: string) {
     font-size: 14px;
   }
   .starter-guides { max-width: 1400px; margin: 0 auto 3rem; }
+  .guide-directory {
+    max-width: 1400px;
+    margin: 0 auto 3rem;
+    padding: clamp(24px, 4vw, 40px);
+    border: 1px solid #cbd5e1;
+    border-radius: 18px;
+    background: #f8fafc;
+  }
+  .guide-directory__header { max-width: 780px; margin-bottom: 24px; }
+  .guide-directory__header .overline { color: #2563eb; }
+  .guide-directory__header h2 { margin: 0 0 10px; color: #0f172a; font-size: clamp(26px, 3vw, 36px); }
+  .guide-directory__header > p:last-child { margin: 0; color: #475569; font-size: 15px; line-height: 1.7; }
+  .guide-directory__topics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .guide-topic {
+    min-width: 0;
+    border: 1px solid #dbe4ef;
+    border-radius: 12px;
+    background: #fff;
+  }
+  .guide-topic summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 18px;
+    color: #0f172a;
+    font-size: 15px;
+    font-weight: 750;
+    line-height: 1.4;
+    cursor: pointer;
+    list-style: none;
+  }
+  .guide-topic summary::-webkit-details-marker { display: none; }
+  .guide-topic summary span:first-child { min-width: 0; margin-right: auto; overflow-wrap: anywhere; }
+  .guide-topic summary span:last-child {
+    flex: 0 0 auto;
+    min-width: 30px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    text-align: center;
+    font-size: 12px;
+  }
+  .guide-topic summary::after {
+    content: '+';
+    flex: 0 0 auto;
+    width: 1.5rem;
+    color: #1d4ed8;
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1;
+    text-align: center;
+  }
+  .guide-topic[open] summary::after { content: '−'; }
+  .guide-topic ul { margin: 0; padding: 0 18px 18px 36px; }
+  .guide-topic li { margin: 8px 0; color: #94a3b8; }
+  .guide-topic a { color: #1d4ed8; font-size: 14px; line-height: 1.45; text-decoration-thickness: 1px; text-underline-offset: 3px; }
   .blog-card__body .blog-card__disclosure { padding-bottom: 12px; margin-bottom: 16px; border-bottom: 1px solid #e2e8f0; color: #475569; font-size: 12px; line-height: 1.5; }
   .blog-grid {
     display: grid;
@@ -122,6 +214,7 @@ function readingMinutes(body: string) {
     margin: 0 auto;
   }
   .blog-card {
+    min-width: 0;
     overflow: hidden;
     border: 1px solid #e2e8f0;
     border-radius: 18px;
@@ -130,21 +223,10 @@ function readingMinutes(body: string) {
     text-decoration: none;
     transition: transform .25s ease, box-shadow .25s ease;
   }
-  .blog-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 44px rgba(15, 23, 42, .1);
-  }
-  .blog-card__img {
-    position: relative;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-    background: #e2e8f0;
-  }
-  .blog-card__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  .blog-card:hover { transform: translateY(-5px); box-shadow: 0 20px 44px rgba(15, 23, 42, .1); }
+  .blog-card:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+  .blog-card__img { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #e2e8f0; }
+  .blog-card__img img { width: 100%; height: 100%; object-fit: cover; }
   .blog-card__tag,
   .blog-card__date {
     position: absolute;
@@ -156,62 +238,27 @@ function readingMinutes(body: string) {
     font-weight: 700;
   }
   .blog-card__tag { left: 14px; background: #2563eb; }
-  .blog-card__date { right: 14px; background: rgba(10, 10, 10, .72); }
-  .blog-card__body { padding: 25px; }
-  .blog-card__body h2 {
-    margin: 0 0 12px;
-    color: #0f172a;
-    font-size: 20px;
-    line-height: 1.35;
-  }
-  .blog-card__body p {
-    margin: 0 0 20px;
-    color: #64748b;
-    font-size: 14px;
-    line-height: 1.7;
-  }
-  .blog-card__meta {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 8px 16px;
-    margin-bottom: 17px;
-    color: #94a3b8;
-    font-size: 12px;
-  }
+  .blog-card__date { right: 14px; background: rgba(10, 10, 10, .76); }
+  .blog-card__body { min-width: 0; padding: 25px; }
+  .blog-card__body h2 { margin: 0 0 12px; color: #0f172a; font-size: 20px; line-height: 1.35; overflow-wrap: anywhere; }
+  .blog-card__body p { margin: 0 0 20px; color: #64748b; font-size: 14px; line-height: 1.7; }
+  .blog-card__meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; margin-bottom: 17px; color: #94a3b8; font-size: 12px; }
   .blog-card__link { color: #2563eb; font-size: 14px; font-weight: 700; }
-  .pagination {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    max-width: 1400px;
-    margin: 40px auto 0;
-    color: #64748b;
-  }
+  .pagination { display: flex; justify-content: space-between; gap: 16px; max-width: 1400px; margin: 40px auto 0; color: #64748b; }
   .pagination a { color: #2563eb; font-weight: 700; text-decoration: none; }
-  .project-cta {
-    padding: 76px clamp(24px, 5vw, 80px);
-    background: linear-gradient(135deg, #0f172a, #1e3a8a);
-    text-align: center;
-  }
+  .project-cta { padding: 76px clamp(24px, 5vw, 80px); background: linear-gradient(135deg, #0f172a, #1e3a8a); text-align: center; }
   .project-cta > * { margin-right: auto; margin-left: auto; }
   .project-cta h2 { max-width: 900px; font-size: clamp(28px, 4vw, 42px); }
   .project-cta > p:not(.overline) { margin-bottom: 28px; }
-  .btn {
-    display: inline-flex;
-    padding: 15px 26px;
-    border-radius: 9px;
-    background: #fff;
-    color: #1d4ed8;
-    font-weight: 750;
-    text-decoration: none;
-  }
+  .btn { display: inline-flex; padding: 15px 26px; border-radius: 9px; background: #fff; color: #1d4ed8; font-weight: 750; text-decoration: none; }
   @media (max-width: 980px) {
-    .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .blog-grid,
+    .guide-directory__topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
   @media (max-width: 680px) {
     .hero-banner { padding-top: 132px; }
-    .blog-grid { grid-template-columns: 1fr; }
+    .blog-grid,
+    .guide-directory__topics { grid-template-columns: minmax(0, 1fr); }
     .pagination { align-items: center; flex-direction: column; }
   }
 </style>

@@ -69,14 +69,16 @@ describe('final ARCLIFT review regressions', () => {
     ]);
   });
 
-  it('uses shared card views, frontmatter-related links, adjacent disclosures, and only one main landmark', async () => {
-    const [list, detail] = await Promise.all([
+  it('uses shared card views, family-level evidence boundaries, frontmatter-related links, and only one main landmark', async () => {
+    const [list, detail, diagram] = await Promise.all([
       readFile(new URL('../src/pages/products/index.astro', import.meta.url), 'utf8'),
       readFile(new URL('../src/pages/products/[slug].astro', import.meta.url), 'utf8'),
+      readFile(new URL('../src/components/EquipmentDiagram.astro', import.meta.url), 'utf8'),
     ]);
     expect(list).toMatch(/buildProductView\(product\)/);
-    expect(list).toMatch(/reference-card__visual/);
-    expect(list).toMatch(/reference-card__disclosure/);
+    expect(list).toMatch(/<EquipmentDiagram family=\{family\.diagramFamily\} compact \/>/);
+    expect(list).toMatch(/<aside class="family-reference-boundary">[\s\S]*?Editorial planning visual — not model-specific evidence\.[\s\S]*?Signed technical schedules, approved drawings and approved load charts control configuration and project suitability\.[\s\S]*?<\/aside>/);
+    expect(diagram).toMatch(/<figure[^>]*data-equipment-family=\{family\}[^>]*>[\s\S]*?<figcaption>AI-assisted editorial schematic — not to scale; not model-specific evidence\.<\/figcaption>[\s\S]*?<\/figure>/);
     expect(list).toMatch(/reference\.orientation\.value/);
     expect(list).toMatch(/reference\.confirmationGate/);
     expect(detail).toMatch(/getRelatedProductSlugs\(product\.id, data\.relatedProducts\)/);
@@ -116,9 +118,11 @@ const mutatedHtml = renderCompareRegion(view ? [{ ...view, orientation: { ...vie
   it('keeps the listing card CSS real, complete, and independently verified', async () => {
     const list = await readFile(new URL('../src/pages/products/index.astro', import.meta.url), 'utf8');
     expect(list).not.toContain('`r`n');
-    for (const selector of ['.reference-card__visual', '.reference-card__visual img', '.reference-card__disclosure', '.reference-orientation', '.reference-gate']) {
+    for (const selector of ['.reference-card', '.reference-card__topline', '.family-reference-boundary', '.reference-orientation', '.reference-gate']) {
       expect(list).toContain(selector);
     }
+    expect(list).toMatch(/\.reference-card\s*\{[^}]*min-width:\s*0[^}]*overflow-wrap:\s*anywhere/);
+    expect(list).toMatch(/\.reference-card__topline\s*\{[^}]*flex-wrap:\s*wrap/);
   });
 
   it('runs this regression suite in the permanent content-test wiring', async () => {

@@ -4,12 +4,21 @@ import { PRODUCT_FAMILIES, PRODUCT_REFERENCES, buildProductView } from '../../li
 import { getCollection } from 'astro:content';
 import GuideLinks from '../../components/GuideLinks.astro';
 import { getProductGuides } from '../../lib/guide-navigation';
+import EquipmentDiagram from '../../components/EquipmentDiagram.astro';
+
+function diagramFamily(familyId: string): 'crawler' | 'truck' | 'ceiling' | 'former' {
+  if (familyId === 'crawler-roll-forming-lifts') return 'crawler';
+  if (familyId === 'truck-mounted-roll-forming-lifts') return 'truck';
+  if (familyId === 'crawler-ceiling-platforms') return 'ceiling';
+  return 'former';
+}
 
 const allProducts = (await getCollection('products')).filter(product => !product.data.draft);
 const allGuides = await getCollection('blog');
 const productsBySlug = new Map(allProducts.map(product => [product.id, product]));
 const familySections = PRODUCT_FAMILIES.map(family => ({
   ...family,
+  diagramFamily: diagramFamily(family.id),
   references: PRODUCT_REFERENCES
     .filter(reference => reference.familyId === family.id)
     .map(reference => {
@@ -52,27 +61,18 @@ const itemListSchema = {
     </div>
   </section>
 
-  <section class="inputs" aria-labelledby="inputs-title">
-    <div class="inputs__intro">
-      <p class="eyebrow">Before you compare</p>
-      <h2 id="inputs-title">Prepare these inputs</h2>
-      <p>Bring the project facts that change the work route, interfaces and required documentation.</p>
-    </div>
-    <div class="inputs__grid">
-      {familySections.map(family => (
-        <article class="input-card">
-          <h3>{family.shortName}</h3>
-          <ul>
-            {family.projectInputs.map(input => <li>{input}</li>)}
-          </ul>
-        </article>
-      ))}
-    </div>
-  </section>
-
   <nav class="family-nav" aria-label="Equipment families">
     {familySections.map(family => <a href={`#${family.anchor}`}>{family.shortName}</a>)}
   </nav>
+
+  <section class="comparison" aria-labelledby="comparison-title">
+    <div>
+      <p class="eyebrow">Progressive comparison</p>
+      <h2 id="comparison-title">Compare selected references</h2>
+      <p id="compare-summary" aria-live="polite">No references selected. Choose up to four references.</p>
+    </div>
+    <button type="button" class="compare-button" data-compare-button disabled>Compare selected</button>
+  </section>
 
   <section id="families" class="families" aria-labelledby="families-title">
     <div class="families__heading">
@@ -83,10 +83,6 @@ const itemListSchema = {
     {familySections.map(family => (
       <section class="family-section" id={family.anchor}>
         <div class="family-card">
-          <div class="family-card__image-wrap">
-            <img class="family-card__image" src={family.editorialImage} alt={family.editorialAlt} loading="lazy" />
-            <p class="image-disclosure">AI-assisted editorial visual. Editorial planning visual — not model-specific evidence</p>
-          </div>
           <div class="family-card__content">
             <p class="eyebrow">{family.category}</p>
             <h2>{family.name}</h2>
@@ -106,6 +102,9 @@ const itemListSchema = {
               </div>
             </div>
           </div>
+          <div class="family-card__image-wrap">
+            <EquipmentDiagram family={family.diagramFamily} compact />
+          </div>
         </div>
         <GuideLinks id={`${family.id}-guides`} title={`Guides for ${family.shortName.toLowerCase()}`} introduction="Understand the project questions before comparing reference configurations." links={getProductGuides(family.id, allGuides)} compact />
 
@@ -116,21 +115,23 @@ const itemListSchema = {
           </div>
           <p>Open an ordinary detail link for the archived or conceptual reference context before adding it to a comparison.</p>
         </div>
+        <aside class="family-reference-boundary">
+          <strong>Reference boundary</strong>
+          <p>Editorial planning visual — not model-specific evidence. Card values are archived orientation or reference-concept records only. Signed technical schedules, approved drawings and approved load charts control configuration and project suitability.</p>
+        </aside>
         <div class="reference-grid">
           {family.references.map(reference => (
             <article class="reference-card">
-              <figure class="reference-card__visual">
-                <img src={reference.product.data.images?.[0] ?? reference.family.editorialImage} alt={reference.family.editorialAlt} loading="lazy" />
-                <figcaption class="reference-card__disclosure">AI-assisted editorial visual. {reference.imageDisclosure}</figcaption>
-              </figure>
               <div class="reference-card__topline">
                 <p>{reference.model}</p>
                 <span class="status-badge">{reference.status}</span>
               </div>
               <p class="status-note">{reference.statusNote}</p>
-              <p>{reference.scopeStatement}</p>
+              {reference.status !== 'Archived reference' && <p class="reference-exception">{reference.scopeStatement}</p>}
               <p class="reference-orientation"><strong>{reference.orientation.label}:</strong> {reference.orientation.value}</p>
-              <p class="reference-gate"><strong>Project confirmation required:</strong> {reference.confirmationGate}</p>
+              {reference.confirmationGate.includes('packing plan') && (
+                <p class="reference-gate"><strong>Additional route gate:</strong> {reference.confirmationGate}</p>
+              )}
               <p class="buyer-question">{reference.buyerQuestion}</p>
               <a class="detail-link" href={`/products/${reference.slug}/`}>Open {reference.model} reference details <span aria-hidden="true">→</span></a>
               <label class="compare-choice">
@@ -144,13 +145,22 @@ const itemListSchema = {
     ))}
   </section>
 
-  <section class="comparison" aria-labelledby="comparison-title">
-    <div>
-      <p class="eyebrow">Progressive comparison</p>
-      <h2 id="comparison-title">Compare selected references when their project inputs are ready.</h2>
-      <p id="compare-summary" aria-live="polite">No references selected. Choose up to four references.</p>
+  <section id="product-inputs" class="inputs" aria-labelledby="inputs-title">
+    <div class="inputs__intro">
+      <p class="eyebrow">Prepare the review</p>
+      <h2 id="inputs-title">Prepare these inputs</h2>
+      <p>Bring the project facts that change the work route, interfaces and required documentation.</p>
     </div>
-    <button type="button" class="compare-button" data-compare-button disabled>Compare selected</button>
+    <div class="inputs__grid">
+      {familySections.map(family => (
+        <article class="input-card">
+          <h3>{family.shortName}</h3>
+          <ul>
+            {family.projectInputs.map(input => <li>{input}</li>)}
+          </ul>
+        </article>
+      ))}
+    </div>
   </section>
 
   <section class="cta">
@@ -170,6 +180,7 @@ const itemListSchema = {
 
     function updateComparison() {
       const selected = selectedReferences();
+      document.querySelector<HTMLElement>('.comparison')?.classList.toggle('comparison--active', selected.length > 0);
       for (const item of compareItems) item.disabled = !item.checked && selected.length >= 4;
       if (compareButton) compareButton.disabled = selected.length === 0;
       if (compareSummary) {
@@ -188,7 +199,7 @@ const itemListSchema = {
   </script>
 
   <style>
-    .selector-hero { background: #10233c; color: white; padding: clamp(4rem, 10vw, 7rem) 1.5rem; padding-top: calc(var(--nav-height) + clamp(3rem, 8vw, 6rem)); }
+    .selector-hero { background: #10233c; color: white; padding: calc(var(--nav-height) + 3.5rem) 1.5rem 3rem; }
     .selector-hero__inner, .inputs, .families, .comparison { max-width: 1180px; margin: 0 auto; }
     .selector-hero__inner { max-width: 800px; }
     .selector-hero h1 { max-width: 760px; font-size: clamp(2.3rem, 5vw, 4.7rem); line-height: 1.02; margin: .4rem 0 1.2rem; }
@@ -196,7 +207,7 @@ const itemListSchema = {
     .selector-hero .btn { display: inline-flex; margin-top: 1rem; min-height: 44px; align-items: center; }
     .eyebrow { margin: 0; color: #2563eb; font-size: .77rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
     .selector-hero .eyebrow { color: #93c5fd; }
-    .inputs { padding: 4.5rem 1.5rem 2rem; }
+    .inputs { padding: 4.5rem 1.5rem; }
     .inputs__intro { max-width: 650px; }
     .inputs h2, .families h2, .comparison h2 { margin: .35rem 0 .8rem; color: #10233c; font-size: clamp(1.7rem, 3vw, 2.5rem); line-height: 1.12; }
     .inputs__intro > p:last-child, .reference-heading > p, .comparison p { color: #526273; line-height: 1.65; }
@@ -205,18 +216,16 @@ const itemListSchema = {
     .input-card { padding: 1.2rem; }
     .input-card h3 { margin: 0; color: #10233c; font-size: 1rem; }
     .input-card ul, .family-card ul { margin: .8rem 0 0; padding-left: 1.1rem; color: #526273; line-height: 1.55; }
-    .family-nav { display: flex; flex-wrap: wrap; gap: .7rem; justify-content: center; padding: 1.5rem; border-block: 1px solid #e2e8f0; }
+    .family-nav { display: flex; flex-wrap: wrap; gap: .7rem; justify-content: center; padding: 1rem 1.5rem; border-block: 1px solid #e2e8f0; }
     .family-nav a { align-items: center; border: 1px solid #cbd5e1; border-radius: 999px; color: #16345a; display: inline-flex; min-height: 44px; padding: 0 .9rem; text-decoration: none; font-weight: 700; }
     .family-nav a:hover { background: #eff6ff; border-color: #2563eb; }
-    .families { padding: 4.5rem 1.5rem; }
+    .families { padding: 2.5rem 1.5rem 4.5rem; }
     .families__heading { max-width: 700px; }
     .family-section { margin-top: 3.75rem; scroll-margin-top: calc(var(--nav-height) + 1rem); }
     #families { scroll-margin-top: calc(var(--nav-height) + 1rem); }
     .family-card { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); border: 1px solid #d9e2ec; border-radius: 18px; overflow: hidden; background: #fff; }
-    .family-card__image-wrap { background: #f1f5f9; }
-    .family-card__image { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; }
-    .image-disclosure { margin: 0; padding: .7rem 1rem; background: #e8eef5; color: #334e68; font-size: .82rem; line-height: 1.45; }
-    .family-card__content { padding: clamp(1.4rem, 3vw, 2.5rem); }
+    .family-card__image-wrap { min-width: 0; overflow: hidden; background: #f1f5f9; padding: 1rem; }
+    .family-card__content { min-width: 0; padding: clamp(1.4rem, 3vw, 2.5rem); }
     .family-card__content > p:not(.eyebrow) { color: #475569; line-height: 1.65; }
     .family-card__columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.3rem; margin-top: 1.5rem; }
     .family-card__columns h3 { color: #10233c; font-size: .94rem; margin: 0; }
@@ -224,14 +233,15 @@ const itemListSchema = {
     .reference-heading h3 { margin: .3rem 0 0; color: #10233c; }
     .reference-heading > p { margin: 0; }
     .reference-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-    .reference-card { display: flex; flex-direction: column; padding: 1.25rem; }
-    .reference-card__visual { margin: 0 0 1rem; background: #f1f5f9; }
-    .reference-card__visual img { aspect-ratio: 4 / 3; display: block; object-fit: contain; width: 100%; }
-    .reference-card__disclosure { color: #334e68; font-size: .78rem; line-height: 1.45; margin: 0; padding: .6rem .75rem; }
+    .reference-card { min-width: 0; overflow: hidden; overflow-wrap: anywhere; display: flex; flex-direction: column; padding: 1.25rem; }
+    .family-reference-boundary { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .5rem 1rem; margin: 0 0 1rem; padding: .9rem 1rem; border-left: 3px solid #93c5fd; background: #f0f7ff; color: #475569; }
+    .family-reference-boundary strong { color: #174f94; }
+    .family-reference-boundary p { margin: 0; line-height: 1.55; }
+    .reference-exception { color: #475569; font-size: .88rem; line-height: 1.55; }
     .reference-orientation, .reference-gate { font-size: .88rem; }
-    .reference-card__topline { display: flex; align-items: start; justify-content: space-between; gap: .75rem; }
+    .reference-card__topline { display: flex; flex-wrap: wrap; align-items: start; justify-content: space-between; gap: .5rem .75rem; }
     .reference-card__topline p { color: #10233c; font-size: 1.15rem; font-weight: 800; margin: 0; }
-    .status-badge { border-radius: 999px; background: #e8eef5; color: #294866; font-size: .72rem; font-weight: 800; padding: .35rem .55rem; white-space: nowrap; }
+    .status-badge { max-width: 100%; overflow-wrap: anywhere; border-radius: 999px; background: #e8eef5; color: #294866; font-size: .72rem; font-weight: 800; padding: .35rem .55rem; }
     .status-note { color: #1d4ed8; font-weight: 700; font-size: .84rem; margin: .75rem 0 .4rem; }
     .reference-card > p:not(.status-note) { color: #526273; line-height: 1.55; margin: .35rem 0; }
     .buyer-question { margin-bottom: 1rem !important; }
@@ -239,13 +249,14 @@ const itemListSchema = {
     .detail-link:hover { text-decoration: underline; }
     .compare-choice { display: flex; align-items: center; gap: .6rem; color: #334e68; cursor: pointer; font-size: .9rem; font-weight: 700; min-height: 44px; margin-top: .4rem; }
     .compare-choice input { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
-    .comparison { align-items: center; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 18px; display: flex; justify-content: space-between; gap: 1.5rem; margin-bottom: 4.5rem; padding: clamp(1.5rem, 4vw, 2.5rem); }
+    .comparison { align-items: center; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 14px; display: flex; justify-content: space-between; gap: 1rem; margin: 1rem auto 0; padding: 1rem 1.25rem; position: sticky; top: calc(var(--nav-height) + .5rem); z-index: 8; }
+    .comparison > * { min-width: 0; }
     .comparison h2 { font-size: clamp(1.4rem, 2.8vw, 2rem); }
     .comparison p { margin-bottom: 0; }
     .compare-button { background: #174f94; border: 0; border-radius: 8px; color: white; cursor: pointer; flex: 0 0 auto; font: inherit; font-weight: 800; min-height: 44px; padding: 0 1.1rem; }
     .compare-button:disabled { background: #94a3b8; cursor: not-allowed; }
     :global(a:focus-visible), :global(button:focus-visible), :global(input:focus-visible) { outline: 3px solid #f59e0b; outline-offset: 3px; }
     @media (max-width: 900px) { .inputs__grid, .reference-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-    @media (max-width: 720px) { .family-card, .reference-heading, .comparison { grid-template-columns: 1fr; display: grid; } .family-card__columns { grid-template-columns: 1fr; } .inputs__grid, .reference-grid { grid-template-columns: 1fr; } .comparison { align-items: start; } .compare-button { width: 100%; } }
+    @media (max-width: 720px) { .selector-hero { padding: calc(var(--nav-height) + 3rem) 1.25rem 2rem; } .selector-hero h1 { font-size: clamp(2rem, 10vw, 2.8rem); } .family-card, .reference-heading { grid-template-columns: 1fr; display: grid; } .family-card__columns { grid-template-columns: 1fr; } .inputs__grid, .reference-grid { grid-template-columns: 1fr; } .comparison { align-items: center; display: flex; position: static; margin-inline: .75rem; padding: .75rem; } .comparison--active { position: fixed; inset-inline: .75rem; top: auto; bottom: 6rem; max-width: none; margin: 0; box-shadow: 0 12px 32px rgb(15 23 42 / 22%); z-index: 20; } .comparison h2 { font-size: 1rem; margin-bottom: .25rem; } .comparison .eyebrow { display: none; } .comparison p { font-size: .78rem; } .compare-button { min-width: 128px; } }
   </style>
 </BaseLayout>

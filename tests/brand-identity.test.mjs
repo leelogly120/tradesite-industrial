@@ -243,7 +243,7 @@ describe('public ARCLIFT identity', () => {
     const about = await readProjectFile('src/pages/about.astro');
 
     expect(about).toMatch(/integrated equipment supplier/i);
-    expect(about).toMatch(/equipment solutions supplier/i);
+    expect(about).not.toMatch(/equipment solutions supplier/i);
     expect(about).not.toMatch(/100%\s*<\/div>\s*<div[^>]*>\s*Project-Specific Review/i);
     expect(about).toMatch(/technical selection and supply partner/i);
   });

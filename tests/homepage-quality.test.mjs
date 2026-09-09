@@ -1,29 +1,19 @@
-import { access, readFile } from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import sharp from 'sharp';
 import { describe, expect, it } from 'vitest';
 
 const root = resolve(import.meta.dirname, '..');
+const readProjectFile = (path) => readFile(resolve(root, path), 'utf8');
 
-async function readProjectFile(path) {
-  return readFile(resolve(root, path), 'utf8');
-}
-
-async function exists(path) {
-  try {
-    await access(resolve(root, path));
-    return true;
-  } catch {
-    return false;
-  }
-}
-
-describe('Task 6 homepage claims and decision language', () => {
-  it('removes manufacturing, guarantee-like, and absolute workflow wording', async () => {
+describe('homepage claims and decision language', () => {
+  it('keeps the supplier role and avoids manufacturing, guarantee-like, and absolute wording', async () => {
     const homepage = await readProjectFile('src/pages/index.astro');
     const footer = await readProjectFile('src/layouts/BaseLayout.astro');
     const publicCopy = `${homepage}\n${footer}`;
 
+    expect(publicCopy).toMatch(/Integrated equipment supplier supporting technical selection/i);
+    expect(publicCopy).toMatch(/destination requirement review/i);
+    expect(publicCopy).toMatch(/identify items requiring local confirmation/i);
     for (const phrase of [
       'confirmed before production',
       '40HQ-compatible configurations are available',
@@ -34,15 +24,10 @@ describe('Task 6 homepage claims and decision language', () => {
     ]) {
       expect(publicCopy).not.toContain(phrase);
     }
-
-    expect(publicCopy).toMatch(/destination requirement review/i);
-    expect(publicCopy).toMatch(/on-site repositioning review/i);
-    expect(publicCopy).toMatch(/identify items requiring local confirmation/i);
   });
 
   it('states each key specification as a historical reference with its boundary', async () => {
     const homepage = await readProjectFile('src/pages/index.astro');
-
     expect(homepage).toMatch(/12–32[\s\S]{0,180}Historical lift-height reference/i);
     expect(homepage).toMatch(/8\s*\/\s*11\s*\/\s*20[\s\S]{0,180}Historical equipment classes[\s\S]{0,120}Not platform or personnel payload/i);
     expect(homepage).toMatch(/0\.3–1\.0[\s\S]{0,180}Historical sheet-thickness reference[\s\S]{0,120}Material and profile dependent/i);
@@ -51,97 +36,71 @@ describe('Task 6 homepage claims and decision language', () => {
   });
 });
 
-describe('Task 6 homepage image routing and disclosure', () => {
-  it('uses five safe hero slides and never references the workshop hero', async () => {
+describe('static product-first homepage structure', () => {
+  it('leads with roof-level forming and four family architecture paths without a carousel', async () => {
     const homepage = await readProjectFile('src/pages/index.astro');
-    const slideMatches = homepage.match(/class="hero__slide[^"]*"/g) ?? [];
-
-    expect(slideMatches).toHaveLength(5);
-    expect(homepage).toContain('/images/hero/hero-1-arclift.webp');
-    expect(homepage).toContain('/images/editorial/truck-site-roll-forming-lift.webp');
-    expect(homepage).toContain('/images/editorial/port-loading-logistics.webp');
-    expect(homepage).not.toContain('/images/hero/hero-4.webp');
-    expect(homepage).not.toContain('/images/home/roll-forming-line.webp');
-    expect(homepage.match(/role="img"/g)).toHaveLength(5);
-    expect(homepage.match(/aria-label="[^"]+"/g)?.length ?? 0).toBeGreaterThanOrEqual(10);
-  });
-
-  it('maps homepage product categories to reviewed editorial assets', async () => {
-    const homepage = await readProjectFile('src/pages/index.astro');
-
-    expect(homepage).toContain("image: '/images/editorial/roll-forming-input-map.svg'");
-    expect(homepage).not.toMatch(/cat\.items\[0\]\?\.data\.images/);
-  });
-
-  it('publishes homepage images in the public manifest as editorial', async () => {
-    const manifest = JSON.parse(await readProjectFile('public/images/asset-manifest.json'));
-    const records = [
-      ...(manifest.campaigns?.hero ?? []),
-      ...(manifest.campaigns?.home ?? []),
-      ...(manifest.campaigns?.editorial ?? []),
-    ];
-    const required = [
-      '/images/hero/hero-1-arclift.webp',
-      '/images/home/under-ceiling-field-v2.webp',
-      '/images/home/roof-panel-output.webp',
-      '/images/home/wall-panel-platform.webp',
-      '/images/editorial/truck-site-roll-forming-lift.webp',
-      '/images/editorial/port-loading-logistics.webp',
-      '/images/editorial/roll-forming-input-map.svg',
-    ];
-
-    for (const url of required) {
-      const record = records.find((candidate) => candidate.url === url);
-      expect(record, `${url} must have a manifest record`).toBeDefined();
-      expect(record?.classification).toBe('editorial');
-      expect(await exists(`public${url}`)).toBe(true);
+    expect(homepage).toContain("import EquipmentDiagram from '../components/EquipmentDiagram.astro'");
+    expect(homepage).toContain('Roll-forming lifts for roof-level panel production');
+    for (const family of ['crawler', 'truck', 'ceiling', 'former']) {
+      expect(homepage).toContain(`family: '${family}'`);
     }
-
-    const newHero = records.find((record) => record.url === '/images/hero/hero-1-arclift.webp');
-    expect(newHero?.disclosure).toBe('AI-assisted editorial composite');
-    expect(records.some((record) => record.url === '/images/hero/hero-4.webp')).toBe(false);
+    expect(homepage).not.toMatch(/hero__slide|hero__dot|hero__carousel|data-autoplay/);
+    expect(homepage).not.toMatch(/\/images\/hero\//);
+    expect(homepage).not.toContain('/images/editorial/port-loading-logistics.webp');
   });
 
-  it('stores the new 16:9 hero with only trained-algorithmic-media XMP', async () => {
-    const metadata = await sharp(resolve(root, 'public/images/hero/hero-1-arclift.webp')).metadata();
-    const xmp = metadata.xmp?.toString('utf8') ?? '';
+  it('renders accessible self-contained schematics and truthful per-image disclosures', async () => {
+    const homepage = await readProjectFile('src/pages/index.astro');
+    const diagram = await readProjectFile('src/components/EquipmentDiagram.astro');
+    expect(diagram).toContain("family: 'crawler' | 'truck' | 'ceiling' | 'former'");
+    expect(diagram).toContain('viewBox="0 0 640 400"');
+    expect(diagram).toContain('role="img"');
+    expect(diagram).toContain('AI-assisted editorial schematic — not to scale; not model-specific evidence.');
+    expect(homepage).toContain('AI-assisted editorial visual — representative only; not model-specific evidence.');
+    expect(homepage.match(/class="app__image"/g)).toHaveLength(1);
+    expect(homepage).toContain("const editorialDisclosure = 'AI-assisted editorial visual — representative only; not model-specific evidence.'");
+  });
 
-    expect(metadata.format).toBe('webp');
-    expect(metadata.width).toBe(1600);
-    expect(metadata.height).toBe(900);
-    expect(metadata.exif).toBeUndefined();
-    expect(metadata.icc).toBeUndefined();
-    expect(metadata.iptc).toBeUndefined();
-    expect(xmp).toContain('trainedAlgorithmicMedia');
-    expect(xmp).not.toMatch(/(?:gps|camera|photoshop|creator|author|location)/i);
+  it('preserves all homepage family and inquiry destinations', async () => {
+    const homepage = await readProjectFile('src/pages/index.astro');
+    for (const destination of [
+      "id: 'crawler-roll-forming-lifts'",
+      "id: 'truck-mounted-roll-forming-lifts'",
+      "id: 'crawler-ceiling-platforms'",
+      "id: 'roll-forming-machines'",
+      'href={`/products/#${category.id}`}',
+      '/products/',
+      '/compare/',
+      '/contact/',
+      'https://wa.me/8615617687185',
+      'mailto:leelogly120@gmail.com',
+    ]) {
+      expect(homepage).toContain(destination);
+    }
   });
 });
 
-describe('Task 6 homepage interaction hooks and responsive media', () => {
-  it('exposes accessible carousel controls and reduced-motion behavior', async () => {
-    const homepage = await readProjectFile('src/pages/index.astro');
-
-    expect(homepage.match(/class="hero__dot(?:\s|")[^"]*"/g)).toHaveLength(5);
-    expect(homepage.match(/aria-label="Show slide \d of 5"/g) ?? []).toHaveLength(5);
-    expect(homepage).toContain('aria-current="true"');
-    expect(homepage).toMatch(/setAttribute\(['"]aria-current['"]/);
-    expect(homepage).toMatch(/prefers-reduced-motion:\s*reduce/);
-    expect(homepage).toMatch(/focusin/);
-    expect(homepage).toMatch(/focusout/);
-  });
-
-  it('uses non-cropping responsive media and representative application captions', async () => {
-    const homepage = await readProjectFile('src/pages/index.astro');
+describe('homepage responsive and no-JavaScript contract', () => {
+  it('keeps content visible without JavaScript and provides responsive grids', async () => {
     const styles = await readProjectFile('src/styles/global.css');
-
-    expect(homepage.match(/<span class="app__caption">Representative application visual<\/span>/g) ?? []).toHaveLength(3);
-    expect(homepage.match(/aria-label="[^"]*Representative application visual[^"]*"/g) ?? []).toHaveLength(3);
-    expect(homepage.match(/class="app__image"/g)).toHaveLength(3);
+    expect(styles).toMatch(/\.reveal\s*\{[^}]*opacity:\s*1[^}]*transform:\s*none/s);
+    expect(styles).toMatch(/\.hero__inner[\s\S]{0,220}grid-template-columns:/i);
+    expect(styles).toMatch(/\.family-paths[\s\S]{0,180}grid-template-columns:/i);
     expect(styles).toMatch(/\.split__visual[\s\S]{0,220}aspect-ratio:\s*3\s*\/\s*2/i);
     expect(styles).toMatch(/\.split__visual img[\s\S]{0,220}object-fit:\s*contain/i);
     expect(styles).toMatch(/\.app__media[\s\S]{0,220}aspect-ratio:\s*3\s*\/\s*2/i);
     expect(styles).not.toMatch(/\.app\s*\{[^}]*height:\s*480px/s);
-    expect(styles).toMatch(/\.hero__scroll[\s\S]{0,360}pointer-events:\s*none/i);
     expect(styles).toMatch(/\.spec-band \.stat__label[\s\S]{0,180}min-height:/i);
+  });
+
+  it('uses a dialog drawer, focus trap, resize cleanup, and persistent solid inner-page navigation', async () => {
+    const layout = await readProjectFile('src/layouts/BaseLayout.astro');
+    expect(layout).toContain('role="dialog"');
+    expect(layout).toContain('aria-modal="true"');
+    expect(layout).toContain('aria-controls="mobile-drawer"');
+    expect(layout).toContain("e.key === 'Tab'");
+    expect(layout).toContain("window.matchMedia('(min-width: 769px)')");
+    expect(layout).toContain("nav.dataset.transparent !== 'true' || window.scrollY > 80");
+    expect(layout).not.toContain('IntersectionObserver');
   });
 });

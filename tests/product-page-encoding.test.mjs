@@ -102,7 +102,8 @@ describe('product page encoding regression', () => {
       readFile(resolve(root, 'src/lib/product-selection.ts'), 'utf8'),
     ]);
 
-    expect(detail).toContain("data.title.split(' — ')");
+    expect(detail).toContain('ARC-F20 Ceiling Platform — Archived Reference Class');
+    expect(detail).toContain('ARC-T25HQ Truck-Mounted Lift — Planning Route');
     expect(detail).toContain('Request a project review →');
     expect(compare).toContain(' — ${view.statusNote}');
     expect(domain).toContain('Editorial planning visual — not model-specific evidence');
