@@ -2,6 +2,7 @@
 title: "Roof Panel Handover Zones for Elevated Roll Forming"
 description: "Plan roof-panel handover zones for elevated roll forming by defining custody, support, communication, exclusion areas, stop conditions and receiving records."
 date: 2026-08-07
+updated: 2026-09-10
 author: "ARCLIFT Technical Editorial"
 tags: ["roof panel handover", "elevated roll forming", "receiving zone", "work planning"]
 coverImage: "/images/editorial/roof-level-workflow.svg"
@@ -10,129 +11,200 @@ coverCaption: "AI-assisted editorial image; not evidence of equipment, configura
 draft: false
 ---
 
-A roof-panel handover zone is the controlled boundary where a formed panel changes custody, support arrangement and communication responsibility. The line is not simply the machine exit. It depends on panel condition, roof geometry, receiving sequence, edge exposure, nearby work and the actual equipment configuration. A clear handover plan lets forming and roof teams coordinate without turning a conceptual diagram into a panel-lifting method or structural approval. It also gives shift teams a stable reference when the roof workface or receiving sequence changes.
+A roof-panel handover should be drawn as four connected interfaces: **forming exit → immediate runout support → custody and receiving → installation**. Combining them into one line hides the exact place where a panel can be outside a defined support basis or between owners. The record must identify what evidence governs each interface, who owns it and what change reopens review. It must not invent a support layout or a handling method.
 
-For adjacent decisions, use [roof-level long-panel workflow guide](/blog/roof-level-roll-forming-long-panels/) and [panel profile and tooling data guide](/blog/roof-panel-profile-material-tooling-data/); [ARC-C crawler lift page](/products/arc-c21-crawler-roll-forming-lift/) provides another project boundary.
+This guide is deliberately narrower than the [roof-level long-panel workflow guide](/blog/roof-level-roll-forming-long-panels/), which compares complete material routes, and the [panel profile and tooling data guide](/blog/roof-panel-profile-material-tooling-data/), which controls profile and material inputs. It begins at the forming outlet reference and ends when the installation team accepts the panel under its own approved method. Equipment matching, roof approval and support design remain separate decisions.
 
 **Contents**
 
-- Define the handover event and custody line
-- Lay out support, exclusion and communication zones
-- Issue a panel handover control sheet
-- Choose a handover concept that stays controllable
+- Draw the four handover interfaces
+- Make the support boundary reviewable
+- Use a blank runout and support record
+- Choose a coupling concept without hiding ownership
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Define the handover event and custody line
+## Draw the four handover interfaces
 
-Write the transfer as a sequence with a start condition, custody change and completion record. Name the parties on both sides and show what stops the transfer before the panel enters an uncontrolled state.
+Begin with the physical panel path, not an organization chart. On one plan and one elevation, mark the controlled forming outlet reference, the part of the panel that first needs support outside the line, the point where receiving custody changes and the point where installation control begins. A project may place those boundaries close together or separate them; the editorial sequence does not prescribe their location.
 
-### Describe the panel state at transfer
+### Anchor the sequence at the forming exit
 
-Record the governing profile, material, length category, orientation, support status and any temporary restraint or protection as inputs. Do not derive a handling method from these fields. The appointed specialists decide how the actual panel is supported and moved. If the panel specification changes, reopen the handover review because stiffness, exposure, route and receiving needs may also change.
+The forming exit is a configuration reference, not a vague arrow beside the machine. Identify the controlled drawing or document that defines the cutter or panel outlet, output direction and proposed equipment state. Link that reference to the governing panel profile and material revision. If the outlet definition, line arrangement or panel definition is still provisional, the handover record should say so instead of drawing a false fixed boundary.
 
-### Name the giving and receiving roles
+The exit record does not prove how the emerging panel behaves. Panel characteristics, line settings, exposure and the project method can all affect what must be reviewed. Keep actual behavior, acceptable condition and operating controls as open project questions unless controlled evidence closes them.
 
-The forming operator, material-handling team and roof receiver may have separate responsibilities. Define who confirms panel identity, who controls the exit zone, who accepts custody and who stops work. Avoid a shared team label that leaves the transition unowned. The project method should state communication channels and confirmation words appropriate to the site, while this planning record only shows the responsibility boundary.
+### Give immediate runout support its own interface
 
-### Set the completion condition
+Immediate runout support starts wherever the project-specific design says the panel first depends on support beyond the forming line. That boundary is not automatically the roof edge, the custody line or the first installation position. Record the support-design reference, design owner, inspection or release record and current status without reproducing a support arrangement in this article.
 
-A handover is complete only when the receiving side has the panel under its approved control, the forming exit is clear and discrepancies are recorded. The condition should be observable and documented. Do not use production pace as the definition of completion. If the receiving team cannot maintain the agreed state, the plan needs a controlled pause and escalation route before another panel enters the boundary.
+Do not add a convenient distance, spacing, load, reaction or support type to make the diagram look complete. Those values depend on the actual panel, temporary works, roof geometry, configuration and work method. The handover record only exposes the missing interface and routes it to the competent project parties.
 
-![Roof panel handover boundary zones](/images/editorial/elevated-roll-forming-roof-panel-handover-zones.svg)
+### Separate receipt from installation
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Custody sequence only; it does not define a lifting or panel-support method.*
+Receiving custody answers who accepts panel identity, observed condition and control at the agreed transfer point. Installation answers a later question: when the panel enters the roof team's approved placement method. A receiver may accept custody before installation is ready, but that creates a defined intermediate state whose support, access, weather exposure and duration need their own approved basis. Do not let the word “received” silently mean “safe to install.”
+
+State an observable completion condition for each interface. A record can, for example, require the relevant owner to confirm the governing revision and close named open items; the exact confirmation method belongs to the project. Production pace, an informal gesture or the absence of a visible defect is not, by itself, a documented transfer condition.
+
+![Editorial sequence from forming exit through runout support and receiving to installation](/images/editorial/elevated-roll-forming-roof-panel-handover-zones.svg)
+
+*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Interface sequence only; it does not define support geometry, a handling method or an installation method.*
 
 <!-- audit-section: conditions -->
-## Lay out support, exclusion and communication zones
+## Make the support boundary reviewable
 
-Map space and time together. The panel route may pass through changing roof edges, temporary structures and adjacent work, so the drawing should show both physical boundaries and the work sequence that keeps them controlled.
+The plan should let a reviewer trace where the forming-line scope ends, which temporary support record takes over and where custody changes. It should also show the roof features and work phases that can invalidate that sequence. A tidy drawing is useful only when its references, owners and status remain visible.
 
-### Separate forming exit from receiving work
+### Join records without merging responsibilities
 
-Show the forming exit, immediate support area, custody line, receiving path and any buffer defined by the project. Keep people and unrelated materials outside controlled zones. A buffer can help decouple forming and roof work, but it also needs a verified support arrangement and clear ownership. Do not create a storage area by leaving the handover line undefined.
+Use common identifiers across the equipment arrangement, panel definition, temporary-support design, roof-zone survey and receiving method. “Support S-1” on the handover plan should point to the controlled support record rather than become a substitute for it. Record the responsible issuer and revision of each input. Where contracts divide supply, design, inspection and site control among different organizations, preserve those divisions instead of assigning everything to a generic “site team.”
 
-### Map edges, openings and obstructions
+The interface record can be coordinated by one owner, but it cannot transfer professional responsibility by formatting a table. The project documents determine who designs, checks, provides, inspects and releases each element.
 
-Locate roof edges, openings, fragile areas, service routes, temporary barriers and overhead or lateral obstructions. Connect each to the roof-zone survey revision. The layout should state what condition the survey represents and when a recheck is required. Panel movement near these features needs the approved project method; the selection review uses them only to test whether a controlled concept is possible.
+### Test a realistic conditional conflict
 
-### Plan communication failure states
+Consider a hypothetical review in which the roof team marks the eave as its receiving boundary, while the forming arrangement ends its responsibility at the defined outlet. If the approved runout-support record does not cover the panel state between those two references, the drawing contains an ownership gap. This is not a report of an actual project, and it does not say a gap will exist on every layout. It shows why two plausible boundaries must be reconciled before the sequence is accepted.
 
-Identify what happens when visual contact is lost, a radio channel is unavailable, instructions conflict or an unauthorized person enters the zone. Exact responses belong to the site method, but the workflow should require a safe stop and a named role to reset communication. Selection should consider whether the equipment and work layout permit reliable coordination throughout the panel journey.
+The remedy cannot be guessed from the sketch. The relevant designers, equipment-document owners and site team must establish the actual references, support basis and responsibilities. Changing the outlet position, eave line or custody point should reopen the affected interface rather than prompt someone to stretch an old approval across the new gap.
 
-![Material task load path](/images/editorial/task-load-path.svg)
+### Keep temporary-support design outside this guide
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conceptual material journey; actual support and handling controls require project review.*
+Temporary support may be part of the project solution, but this article does not select it, size it or explain how to install, move, use or remove it. The interface record should ask for the controlled design basis, applicable manufacturer information, checking status, inspection or release evidence and the owner authorized to close open items.
+
+For Great Britain construction context, HSE describes temporary works as engineered solutions that need planning and management, and notes that temporary-support selection and use should follow manufacturer instructions with design and checking appropriate to the situation. See the <a href="https://www.hse.gov.uk/construction/safetytopics/temporary-works.htm" target="_blank" rel="noopener noreferrer">HSE temporary-works guidance</a>. That page does not design a support system for this task, prove an ARCLIFT configuration or replace destination rules and competent project review.
+
+![Editorial material path used to locate an unowned handover interface](/images/editorial/task-load-path.svg)
+
+*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conceptual path only; actual support, handling and installation controls require project review.*
 
 <!-- audit-section: project-checklist -->
-## Issue a panel handover control sheet
+## Use a blank runout and support record
 
-The control sheet should link the panel record, equipment state, roof-zone plan, receiving method and responsible roles. It should also capture changes rather than relying on verbal continuity between shifts.
+Copy this table into the controlled project package and complete it from current drawings, design records, equipment documents and site decisions. It is an **editorial blank**, not a completed project record and not a support calculation. Add or divide rows when the real sequence contains more interfaces.
 
-- Mark the forming exit, custody line, support zones, receiving route and exclusion boundaries.
-- List panel identity, condition, receiving owner, communication status and discrepancy record.
-- Record working height and outreach assumptions without treating them as an approved operating envelope.
-- Describe roof slope or building geometry, nearby edges and any changing work-face condition.
-- List task material, panel length, coil or feed information only where it affects the reviewed interface.
-- Assign weather and wind monitoring to the site team under its approved work method.
-- Provide ground or floor records and name the competent party responsible for support review.
-- Map access and route states from delivery through setup, task work and withdrawal.
-- State destination, transport and chassis constraints that belong to local or integration review.
-- Record voltage, power, control and documentation requirements with revision status and owner.
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Interface to close</th>
+      <th scope="col">Project value or reference</th>
+      <th scope="col">Required evidence / revision</th>
+      <th scope="col">Responsible owner and acceptance condition</th>
+      <th scope="col">Status, change trigger and close-out record</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Forming outlet / cutter reference and output direction</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Panel definition used for this handover review</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">First point governed by immediate runout support</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Temporary-support design and checking basis</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Custody / receiving boundary</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Accepted receiving state before installation</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Installation-method release boundary</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Roof edge, opening, obstruction or adjacent-work interface</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Hold, discrepancy and restart authority</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+  </tbody>
+</table>
 
-### Use panel and zone identifiers
+Before circulating the record, make sure it contains:
 
-Give the work zone and panel batch controlled identifiers that connect drawings, material records and handover logs. The identifier should not expose customer or site details in public material. If several profiles or lengths are present, prevent the wrong handover plan from being used by displaying the governing record at the workface under the project's document-control process.
+- The controlled forming outlet or cutter reference, required outlet height, reference datum and output direction.
+- The governing panel profile, material and review revision.
+- The immediate runout-support design reference, reviewer and release status.
+- The custody boundary, named receiving owner and observable receiving condition.
+- The installation-method boundary and the record that releases that later activity.
+- The current roof-zone geometry, roof access and receiving route, including relevant edges and openings.
+- The ground or floor setup reference where it changes the outlet-to-roof relationship.
+- The project wind or weather record where it changes panel exposure or receiving readiness.
+- The targeted change triggers, interface holds, discrepancy owner and controlled documentation.
 
-### Record hold points and discrepancies
+### Control identifiers and revisions
 
-Hold points may include missing profile evidence, changed weather, unavailable receiving space, support uncertainty, route obstruction or communication loss. Record who can close each condition. Bent edges, coating damage, identity mismatch or incomplete support should follow the project quality and safety process. The editorial guide does not set acceptance limits, but it requires a traceable route for observations.
+Give the roof zone, handover arrangement and panel definition controlled identifiers. Tie every photograph, drawing, support record and discrepancy to those identifiers and its own revision. Use anonymized references during preliminary external review; customer names, project locations, contacts and site-security details do not belong in a public example.
 
-### Reset the handover after changes
+If several profile or material revisions are under discussion, record exactly which one the handover review uses. A similarly shaped panel is not interchangeable evidence. When the governing definition changes, the table should show whether the interface has been reviewed again or remains open.
 
-A new roof bay, edge condition, receiving crew, panel type, equipment position or work window can change the boundary. Update the zone drawing and briefing record, then confirm affected roles before work resumes. Repetition should make the process clearer, not allow an old layout to remain in use after the workface has moved.
+### Define changes before they happen
 
-![Roof system responsibility boundary](/images/editorial/roof-system-tooling-boundary.svg)
+Name conditions that expire the record: a new roof bay, revised panel definition, different forming outlet or equipment state, altered support design, moved eave protection, changed receiving team, new adjacent work, changed weather basis or a different installation sequence. For each trigger, identify which rows reopen and who decides whether a wider review is necessary.
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Decision boundary only; it does not approve the panel, profile or roof system.*
+Avoid a blanket “review if anything changes” note. It sounds cautious but gives a shift team no usable boundary. A targeted trigger links the changed fact to the drawing, support, custody or installation interface that depended on it.
+
+### Record discrepancies at the interface where they arise
+
+Use the project quality and safety processes for observations such as an identity mismatch, unexpected panel condition, missing support release or unavailable receiving state. This article does not set acceptance limits or tell the crew how to handle a panel. The record should show where the observation occurred, which interface was held, who owns the disposition and which controlled record closes it.
+
+Communication loss or conflicting instructions also need an owner and a project-defined hold condition. The exact words, signals and restart method belong to the approved site method. The selection question here is whether the proposed layout can support unambiguous communication across every interface.
+
+![Editorial comparison of roof-system approval and tooling proposal responsibilities](/images/editorial/roof-system-tooling-boundary.svg)
+
+*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. It compares roof-system approval with tooling-proposal responsibility; here it only reinforces that a handover record cannot transfer either approval or define temporary support or installation.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## Choose a handover concept that stays controllable
+## Choose a coupling concept without hiding ownership
 
-### Balance continuous forming with receiving control
+### Compare direct receipt with an intermediate state
 
-A closely coupled workflow can reduce intermediate moves, but it requires reliable receiving readiness and communication. A buffer can absorb short interruptions, yet it adds support, space and custody questions. The trade-off should be tested against panel characteristics, roof geometry, weather exposure and crew organization. Do not promise output from a conceptual sequence. The right concept is the one whose hold points and ownership remain workable under expected changes.
+A direct forming-to-receiving concept may leave fewer intermediate states to document, but it depends on the receiving condition remaining available whenever output reaches the handover boundary. An intermediate state may separate the timing of forming and installation, yet it introduces another support, custody, exposure and release interface. Neither concept is inherently suitable. Compare them using the real panel definition, roof geometry, equipment state, support evidence and work sequence.
 
-The practical trade-off is between early coordination and false precision. A useful record exposes each constraint, interface and unresolved owner; it does not convert preliminary information into an approval.
+Do not convert that comparison into a productivity promise. A concept that looks continuous on paper can still be unsuitable when a hold point cannot be maintained. A concept with an intermediate state can be equally unsuitable when the project has not approved that state or assigned its ownership.
 
-For general planning context, see the <a href="https://www.hse.gov.uk/construction/safetytopics/mewp.htm" target="_blank" rel="noopener noreferrer">HSE mobile elevating work platform planning page</a>. It supports general work-planning principles only. It does not verify an ARCLIFT configuration, settle destination rules or approve a site.
+### Preserve the roof-work boundary
+
+The interface drawing should locate edges, openings, fragile areas and access boundaries from the current [roof-zone survey record](/blog/roof-zone-survey-roll-forming-lift-selection/), but it cannot approve work near them. The <a href="https://www.hse.gov.uk/construction/safetytopics/roofwork.htm" target="_blank" rel="noopener noreferrer">HSE roof-work guidance</a> for Great Britain treats roof work as work that requires organization and planning, with access, edges, openings and fragile surfaces among the key concerns. The destination project must apply its own legal framework, competent review and approved work method.
 
 <!-- audit-section: limitations-not-fit -->
-### Keep detailed panel handling with appointed specialists
+### Stop when an interface has no defensible owner
 
-This method may not fit a project that lacks controlled site information, named decision owners or a safe way to close open items. This framework cannot design panel supports, lifting accessories, restraint, roof installation or edge protection. It may not fit a project where the receiving method, panel data or structural boundary is unresolved. Stop the selection decision when the panel would pass through an unowned zone or when the project cannot define a safe pause between forming and receipt.
+This planning method is not fit for releasing work when the panel definition, forming outlet, runout-support basis, custody condition or installation boundary is unresolved. It cannot design temporary works, calculate loads, set support spacing, approve lifting accessories, prescribe handling, define weather limits or authorize roof installation. If the project cannot show who owns the panel and which approved evidence applies at every point, keep the handover concept on Hold and retain an alternative material-route discussion.
 
 <!-- audit-section: cta-editorial-note -->
-### Send a handover-zone review package
+### Send only the interface package for preliminary review
 
-Provide the controlled profile and material basis, panel categories, forming exit state, roof-zone plan, proposed custody line, receiving sequence, support-review status, communication roles and discrepancy process. Ask technical and site reviewers to identify open interfaces and hold points before the workflow is included in procurement or scheduling.
+Provide the controlled panel/profile basis, proposed equipment state, required forming-outlet height and reference datum, cutter or outlet definition, roof-zone revision, runout-support design status, custody condition, receiving owner, installation release boundary, change triggers and open-item log through a secure project channel. Ask each responsible party to return its missing evidence and closure record rather than a broad verbal approval.
 
-Send the site, destination, transport, work-zone and ground or floor records through a controlled project channel. The final, signed, project-specific package must identify open items and responsible reviewers. ARCLIFT can support preliminary selection as an integrated equipment supplier and technical selection and supply partner. Editorial images on this page are planning aids only and cannot replace controlled drawings, calculations, inspections or local review.
+ARCLIFT can organize preliminary configuration questions as an integrated equipment supplier and technical selection and supply partner. Final temporary-works design, panel handling, installation, roof safety, structural review and site authorization remain with the competent parties identified by the project. Every editorial image on this page is a planning aid, not project evidence.
 
 ## FAQ
 
 #### Where should the panel custody line be placed?
 
-Place it where the project can define a clear transfer condition, controlled support and named receiving owner. Its location depends on actual equipment, panel, roof and work-method evidence.
+Place it where the controlled project documents define an observable transfer condition and a named receiving owner. Do not assume it is the forming outlet or eave; its location depends on the approved panel, support, equipment, roof and work-method evidence.
 
 #### Can the handover zone act as panel storage?
 
-Only if the project separately reviews and controls storage support, capacity, access, weather and custody. A transfer buffer should not become unplanned storage under schedule pressure.
+Not by default. Any intermediate state needs its own approved support, access, exposure, duration and custody basis. Calling the area a buffer does not turn it into approved storage.
 
 #### What stops a panel handover?
 
-The project-specific method should define exact stops. Planning inputs include loss of receiving readiness, support uncertainty, weather change, route obstruction, communication failure and an unidentified or damaged panel.
+The project-specific method defines the exact hold and restart conditions. The interface record should link changes such as missing support release, loss of receiving readiness, conflicting communication, a changed panel definition or a moved roof boundary to the owner and close-out evidence.
 
 #### Does this guide set panel support spacing?
 
-No. Support and handling design require the actual panel system, material, configuration and competent project review. The article only organizes the questions and responsibilities.
+No. It intentionally provides no spacing, load, reaction, support type or handling instruction. Those decisions require the actual panel, configuration, temporary-works information, manufacturer instructions where applicable and competent project design and review.

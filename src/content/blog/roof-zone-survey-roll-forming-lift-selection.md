@@ -2,6 +2,7 @@
 title: "Roof-Zone Survey Guide for Roll-Forming Lift Selection"
 description: "Survey roof-level work zone for roll-forming lift selection by recording access, structure, obstructions, handover points, responsibilities and open conditions."
 date: 2026-08-07
+updated: 2026-09-10
 author: "ARCLIFT Technical Editorial"
 tags: ["roof zone survey", "roll forming lift selection", "site planning", "panel handover"]
 coverImage: "/images/editorial/roof-level-workflow.svg"
@@ -10,129 +11,222 @@ coverCaption: "AI-assisted editorial image; not evidence of equipment, configura
 draft: false
 ---
 
-A roof-zone survey should explain the place where forming, lifting and panel receiving meet. A roof plan alone is not enough. Selection depends on the approach route, changing equipment states, edges and openings, structural review boundary, panel handover path, weather controls and the people who own each decision. The survey should capture those conditions without pretending to approve the roof or the operating method. Its purpose is to make configuration questions visible before procurement narrows the options.
+A useful roof-zone survey puts four references on the same controlled drawing: the project **datum**, the proposed forming line's **cutter or panel-outlet reference**, the **eave coordinate** and the relevant **roof coordinates**. It then keeps three different evidence layers separate: what was measured, which equipment state is being proposed and what structural information a competent reviewer will use. A nominal “working height” cannot join those layers when its reference point is undefined.
 
-For adjacent decisions, use [roof-level long-panel workflow guide](/blog/roof-level-roll-forming-long-panels/) and [panel profile and tooling input guide](/blog/roof-panel-profile-material-tooling-data/); [crawler roll-forming lift overview](/products/arc-c25-crawler-roll-forming-lift/) provides another project boundary.
+This guide owns that roof-zone geometry and evidence handoff. The [crawler access-route survey](/blog/crawler-roll-forming-lift-access-route-survey/) owns the journey from site entry to the work face; the [roof-level long-panel workflow guide](/blog/roof-level-roll-forming-long-panels/) compares complete material routes; and the [profile and tooling input guide](/blog/roof-panel-profile-material-tooling-data/) controls panel-definition inputs. None of those pages, and no survey sketch, approves a roof or selects a model.
 
 **Contents**
 
-- Set the survey boundary around the real task
-- Capture evidence without approving the roof
-- Issue a roof-zone record that can be reviewed
-- Use the survey to narrow options conditionally
+- Establish one reference chain
+- Keep three evidence layers separate
+- Issue a blank roof-zone record
+- Use the survey without turning it into approval
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Set the survey boundary around the real task
+## Establish one reference chain
 
-Begin with the complete material journey and the intended work sequence. Mark where the survey starts, where it ends and which adjacent zones can affect the work. A narrow focus on the final forming position can miss the route, staging and receiving constraints that decide whether the concept is workable.
+Begin by naming the coordinate convention, reference source and equipment state. A measured roof point and an equipment dimension become comparable only when both can be related to the same datum and orientation. The survey record should make that relationship reviewable without pretending that geometry alone establishes clearance, capacity or suitability.
 
-### Map the material journey
+### Choose and describe the datum
 
-Trace coil or sheet material from delivery through storage, staging, controlled transfer, forming and panel receipt. Name the custody owner at every change. Mark areas where people, suspended loads, equipment or completed panels could conflict. This is not a lifting instruction. It is a boundary map that tells the project which detailed plans are still required and which material assumptions the selection review is using.
+A datum is the agreed point or plane from which coordinates or elevations in this survey are stated. Record its identifier, source document, revision, units, orientation and how it was checked in the field. If the building drawing, site survey and equipment arrangement use different references, preserve each source and show the controlled transformation or keep the comparison open for the appropriate reviewer.
 
-### Record every equipment state
+Do not call “ground level” a datum unless the record identifies which ground or setup surface, where it was observed and whether it can change. A slope, slab step, temporary working platform or later construction stage can make an informal ground reference ambiguous.
 
-A configuration may occupy different envelopes during transport, entry, setup, operation, repositioning and withdrawal. Survey each state instead of using one outline. Record overhead and side obstructions, edges, openings, temporary works and areas that change during construction. The survey should distinguish measured clearance from planned clearance and identify who will recheck conditions before the equipment enters the zone.
+### Define the cutter or panel-outlet reference
 
-### Include adjacent operations
+The cutter or panel outlet is the configuration point from which the proposed panel-output elevation and direction are described. Its exact definition must come from the controlled equipment or forming-line document for the proposed state. Record whether the reference is a point, centerline, edge or plane and which drawing view governs it. Do not infer it from the top of a platform, the end of an illustration or a generic machine photograph.
 
-Roof work rarely happens in isolation. Cranes, delivery vehicles, other trades, partially completed decking, temporary edge protection and panel crews may share the area or sequence through it. Show time as well as space: which activity must finish first, which zone must remain isolated and who releases it. If the work window changes, the survey record should trigger a coordination review rather than assume the original layout still applies.
+The proposed output direction matters with the reference point. A point elevation without direction does not show where the emerging panel path relates to an eave, roof slope or obstruction. Keep that path conceptual until the configuration and project method are controlled; the survey is not an operating diagram.
 
-![Roof-zone survey decision layers](/images/editorial/roof-zone-survey-roll-forming-lift-selection.svg)
+### Record eave and roof coordinates, not one roof height
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Survey-layer prompt only; it is not a roof assessment or approved operating layout.*
+An eave reference needs a horizontal location as well as an elevation because the roof edge can change along the building. Identify the surveyed point or line, drawing revision and relationship to the project datum. For the roof zone, record the points needed to describe the relevant plane, slope, openings, rooflights, edge protection, penetrations, temporary works and proposed [receiving boundary](/blog/elevated-roll-forming-roof-panel-handover-zones/).
+
+Avoid collapsing those observations into a single “roof height.” The forming outlet may need to be compared with several roof-zone points and with a proposed output direction. The receiving interface may also move as work progresses. The record should retain coordinates and conditions that explain the comparison rather than a single number stripped of location.
+
+### Keep personnel working height separate
+
+A personnel working-height term may refer to a worker access or working position for a different equipment purpose. It is not automatically the cutter height, panel-outlet height, platform elevation, eave elevation or horizontal reach. Use it only when the controlled equipment document defines the term and the proposed state establishes its relationship to the forming outlet.
+
+This distinction also protects product-family boundaries. A roof-level forming configuration and a personnel access platform may use different reference points and approval questions. Never use a familiar height label from one family to fill a missing outlet coordinate in another.
+
+![Editorial reference chain from survey datum to outlet, eave and roof coordinates](/images/editorial/roof-zone-survey-roll-forming-lift-selection.svg)
+
+*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Reference logic only; it is not scaled geometry, an equipment-fit result or a roof approval.*
 
 <!-- audit-section: conditions -->
-## Capture evidence without approving the roof
+## Keep three evidence layers separate
 
-The survey gathers information for competent reviewers. It should not state that the roof, slab or support zone is adequate. Instead, connect every structural or access question to the party and document expected to close it.
+Put measured geometry, a proposed equipment state and structural-adequacy evidence in separate fields. They can be reviewed together, but they do not become the same kind of fact. The distinction prevents an accurate measurement from being presented as proof that an unverified configuration fits or that a structure can support it.
 
-### Separate geometry from capacity
+### Layer one: measured geometry
 
-Measured dimensions describe geometry; they do not establish allowable loads. Record levels, slopes, transitions, bearing areas, openings and proposed equipment zones, then reference the controlled structural information available to the project. Loads, reactions and support arrangements belong to configuration-specific review. When structural records are incomplete, show the exact missing area and keep the equipment decision conditional.
+Record coordinates, levels, slopes and observed boundaries with their method, date, units, author and status. Distinguish field measurements from values taken from drawings, estimates and unknowns. If two sources differ, retain both identifiers and open a query. Do not silently choose the value that makes a preferred arrangement appear to fit.
 
-### Locate obstructions and fragile areas
+Measured geometry can locate a slab edge, roof opening, eave point or proposed setup zone. It cannot establish allowable load, bearing performance, structural condition or a safe clearance. Those conclusions require their own evidence and review.
 
-Mark permanent and temporary obstructions, rooflights, penetrations, service routes, incomplete decking and areas restricted by the site team. Use a stable coordinate system and dated photographs linked to the plan. Do not rely on memory or a cropped image. The record should also state whether an obstruction can be removed, protected, isolated or must remain, because each answer changes the route and work-zone options.
+### Layer two: proposed equipment state
 
-### Define the panel handover line
+Identify the exact revision and state used for the preliminary overlay: for example, the project may need separate controlled records for entry, setup, forming or relocation. This article does not define those states or their envelopes. The technical package must do so. Mark every outline, outlet reference or direction as proposed until configuration-specific information is issued.
 
-Show where a formed panel becomes the responsibility of the receiving team, how it is supported and what stops the transfer. Record communication roles and the condition required before forming continues. The line should account for edge exposure, changing panel length, wind-management responsibilities and other work in the receiving zone. Detailed panel support and lifting arrangements remain with the appointed project specialists.
+Do not scale a marketing image or reuse an outline from another model. Likewise, do not treat a preliminary overlay as an as-built location. If equipment position, support arrangement, forming-line mounting, output direction or configuration revision changes, reopen the affected geometry comparison.
 
-![Four-state clearance review diagram](/images/editorial/clearance-four-state-section.svg)
+### Layer three: structural-adequacy evidence
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conceptual state comparison; actual clearances require measured and controlled site records.*
+List the structural or geotechnical records available for the proposed setup, support and roof interface, the competent reviewer, the required configuration inputs and the closure status. Keep equipment loads, reactions and temporary-support arrangements tied to the exact configuration and design record. A measured slab thickness, visible surface condition or roof drawing alone is not an adequacy finding.
+
+When the necessary structural record is missing, identify the area and input that remain open. Do not fill the gap with a generic ground-pressure statement, an assumed load distribution or a historic product value. Selection remains conditional until the appointed reviewer issues the required conclusion.
+
+![Editorial comparison of proposed equipment states against recorded geometry](/images/editorial/clearance-four-state-section.svg)
+
+*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conceptual state comparison only; actual geometry and equipment envelopes require controlled project records.*
 
 <!-- audit-section: project-checklist -->
-## Issue a roof-zone record that can be reviewed
+## Issue a blank roof-zone record
 
-A useful record lets a remote technical reviewer understand the survey basis while preserving the difference between observation and approval. Keep a drawing index, photo log, open-item register and responsibility table together.
+Use the following as a **blank editorial template**, not a completed survey, approval sheet or model-selection result. Add rows for the actual roof geometry and keep each value linked to its source. Empty cells are deliberate; they must be completed from controlled project and equipment records.
 
-- Mark the forming position, receiving line, material staging and exclusion boundaries on one coordinated plan.
-- Identify temporary conditions and the date or construction stage at which they are expected to change.
-- Record working height and outreach assumptions without treating them as an approved operating envelope.
-- Describe roof slope or building geometry, nearby edges and any changing work-face condition.
-- List task material, panel length, coil or feed information only where it affects the reviewed interface.
-- Assign weather and wind monitoring to the site team under its approved work method.
-- Provide ground or floor records and name the competent party responsible for support review.
-- Map access and route states from delivery through setup, task work and withdrawal.
-- State destination, transport and chassis constraints that belong to local or integration review.
-- Record voltage, power, control and documentation requirements with revision status and owner.
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Record item</th>
+      <th scope="col">Project value / reference</th>
+      <th scope="col">Evidence class and source revision</th>
+      <th scope="col">Owner / reviewer</th>
+      <th scope="col">Status and change trigger</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Datum identifier, units and orientation</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Datum field-check or transformation record</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Proposed equipment state and revision</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Cutter / panel-outlet reference definition</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Proposed output direction</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Eave point or line coordinates</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Roof-plane points and relevant boundaries</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Openings, rooflights, penetrations and temporary features</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Receiving / handover coordinate boundary</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Structural or geotechnical evidence and required configuration input</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <th scope="row">Resurvey / re-review trigger and closure record</th>
+      <td></td><td></td><td></td><td></td>
+    </tr>
+  </tbody>
+</table>
 
-### Use measured fields and status labels
+Before issuing the survey package, check that it includes:
 
-Label each value as measured, drawn, estimated or unknown. Include the measurement date, method and person responsible for the record. A clean status label is more useful than a precise-looking number copied from an outdated plan. Where two records disagree, preserve both references and open a query. Do not silently choose the value that makes the preferred equipment appear to fit.
+- The datum identifier, units, axes, orientation, source revision and field-check status.
+- The proposed equipment state, controlled cutter or panel-outlet definition and meaning of any height term.
+- The forming outlet coordinate and output direction related to the project datum.
+- The eave point or line, roof geometry and roof coordinates relevant to the receiving zone.
+- The panel profile or material revision where it changes the handover geometry.
+- A status for every value: measured, drawing-derived, proposed, specialist-review required or unknown.
+- The ground or floor datum and structural or geotechnical record index, reviewer and closure state.
+- The access-route boundary and proposed arrival state, linked to the separate route record.
+- The project wind or weather record where exposure or temporary conditions affect the survey.
+- The indexed photographs and drawings tied to locations, directions, dates and revisions.
+- The specific geometry, equipment-state, construction and documentation changes that reopen review.
 
-### Create a photo and drawing index
+### Preserve provenance in every field
 
-Give each photo a location, direction and date, then link it to the plan. List drawing numbers and revisions rather than attaching unnamed screenshots. Remove customer, worker and site identifiers from any material intended for broader technical circulation. The index should make it possible to update one area without losing the context of the whole roof-zone review.
+Use status labels such as measured, taken from controlled drawing, proposed, specialist review required or unknown. Pair the label with date, revision and owner. The label tells the reviewer what a value can support. It should not be upgraded merely because several people have copied it into later documents.
 
-### Record hold points and change triggers
+If a conversion or coordinate transformation is necessary, record who issued it and which source points it uses. A spreadsheet result without the input revisions and method is not a controlled reference chain.
 
-Typical hold points include incomplete structural information, an unverified route, a moving edge-protection line, unclear panel custody or a missing weather plan. Name the person who can close each point and the record they must issue. Changes to roof geometry, panel specification, staging or adjacent work should reopen the affected section of the survey even if the equipment model has not changed.
+### Tie photographs to the coordinate record
 
-![Roof system responsibility boundary](/images/editorial/roof-system-tooling-boundary.svg)
+Give each photograph an anonymized identifier, location, viewing direction, date and related plan point. Photographs help explain conditions but do not establish scale unless the measurement method does so separately. Keep full context available to the authorized project reviewers rather than relying on a cropped image that hides adjacent edges or changes.
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Responsibility prompt only; it does not approve a roof system, profile or forming setup.*
+List drawing identifiers and revisions instead of pasting unnamed screenshots. Remove customer, worker, location, security and contact details from material shared for preliminary external review, and use a controlled project channel for the minimum necessary information.
+
+### Reopen only what a change affects
+
+Define triggers against the fields they can invalidate. A moved eave protection line or newly opened penetration reopens the roof-boundary review. A different equipment position, forming-line arrangement, outlet definition or output direction reopens the proposed-state overlay. A revised panel definition can reopen the handover coordinates. A changed slab, temporary platform or structural document reopens the adequacy evidence.
+
+Also set the survey stage or expiry condition. Construction progress, temporary works and adjacent trades can change faster than the equipment discussion. A targeted trigger is more useful than a generic “subject to site conditions” note because it names the dependent record and the reviewer who must close it.
+
+![Editorial comparison of roof-system approval and tooling proposal responsibilities](/images/editorial/roof-system-tooling-boundary.svg)
+
+*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. It compares roof-system approval with tooling-proposal responsibility; here it only reinforces that survey observations do not transfer either approval or establish structural adequacy.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## Use the survey to narrow options conditionally
+## Use the survey without turning it into approval
 
-### Compare access freedom with work-zone demands
+### Keep the access route in its own record
 
-One architecture may offer a simpler road-to-site transition while another may better support movement inside a controlled project area. A larger setup zone can improve workflow separation but compete with material staging. A compact route does not automatically mean a suitable operating envelope. Compare these trade-offs against the measured sequence and keep any unsupported roof or ground assumption open. The survey should explain why an option advances, not merely show that its outline fits on a plan.
+This roof-zone record starts where the defined work-face review begins. It may reference the arrival state at that boundary, but it does not survey gates, turns, ramps, thresholds, route surfaces, traffic interfaces or withdrawal. Keep those questions in the [crawler access-route survey guide](/blog/crawler-roll-forming-lift-access-route-survey/) or the corresponding project logistics record.
 
-The practical trade-off is between early coordination and false precision. A useful record exposes each constraint, interface and unresolved owner; it does not convert preliminary information into an approval.
+This separation avoids a common false shortcut: a clear roof overlay does not prove the proposed equipment can reach that position. Conversely, a viable route does not prove the roof-zone geometry, structural evidence or forming outlet relationship is resolved.
 
-For general planning context, see the <a href="https://www.hse.gov.uk/construction/safetytopics/mewp.htm" target="_blank" rel="noopener noreferrer">HSE mobile elevating work platform planning page</a>. It supports general work-planning principles only. It does not verify an ARCLIFT configuration, settle destination rules or approve a site.
+### Expose an incompatible-reference conflict
+
+Consider a hypothetical package in which the building drawing states an eave elevation from the project datum while an equipment sheet lists “working height” without defining its reference point or proposed state. Subtracting one number from the other would create a precise-looking clearance with no defensible meaning. This is a conditional example, not a real project or an equipment result.
+
+The appropriate next step is to request the controlled outlet definition and equipment state, relate them to the project datum, and keep the comparison open until the owners confirm the references. Do not relabel the working-height value as outlet height or alter the site datum to make the values align.
+
+### Read the roof context without claiming compliance
+
+For Great Britain construction context, the <a href="https://www.hse.gov.uk/construction/safetytopics/roofwork.htm" target="_blank" rel="noopener noreferrer">HSE roof-work guidance</a> says roof work should be organized and planned, and highlights access, edges, openings and fragile surfaces. It provides useful context for recording those features. It does not approve this roof, establish structural adequacy, verify an ARCLIFT configuration or replace the destination project's legal and competent-review requirements.
 
 <!-- audit-section: limitations-not-fit -->
-### Know when the roof survey is incomplete
+### Hold the decision when references cannot be reconciled
 
-This method may not fit a project that lacks controlled site information, named decision owners or a safe way to close open items. The method cannot close structural adequacy, load distribution, edge protection, rescue planning, wind limits or panel handling design. It should remain preliminary when construction is changing faster than records can be controlled, when the receiving sequence is undecided or when the route is based only on photographs. In those cases, define a resurvey point before configuration release.
+The survey is not fit for equipment release when the datum, outlet reference, equipment state, eave or relevant roof coordinates remain undefined or incompatible. It also cannot close structural adequacy, load distribution, temporary-works design, access capability, edge protection, rescue planning, weather limits, panel handling or personnel access. Keep an alternative arrangement under review when conditions change faster than the record can be controlled.
 
 <!-- audit-section: cta-editorial-note -->
-### Share a controlled survey package
+### Submit the coordinate and evidence package
 
-Send the anonymized plan, equipment-state overlays, photo index, material journey, panel handover line, structural record index and open-item log. Ask the technical reviewer to return a list of configuration questions and document gaps. Keep final roof approval, work methods and site authorization with the competent parties appointed by the project.
+Send the anonymized datum definition, coordinate table, current roof plan and elevations, indexed photographs, proposed equipment-state revision, cutter/outlet definition, structural-record index, handover boundary and change-trigger log through a secure project channel. Ask reviewers to return reference conflicts and missing inputs, not a model recommendation based on nominal height.
 
-Send the site, destination, transport, work-zone and ground or floor records through a controlled project channel. The final, signed, project-specific package must identify open items and responsible reviewers. ARCLIFT can support preliminary selection as an integrated equipment supplier and technical selection and supply partner. Editorial images on this page are planning aids only and cannot replace controlled drawings, calculations, inspections or local review.
+ARCLIFT can organize preliminary configuration questions as an integrated equipment supplier and technical selection and supply partner. The project's appointed parties retain structural review, roof safety, temporary works, work methods and final authorization. Editorial diagrams here explain record relationships only and cannot replace controlled drawings, calculations, inspections or approvals.
 
 ## FAQ
 
 #### Does a roof-zone survey approve the support structure?
 
-No. It records geometry, known conditions and the location of proposed activities. A competent structural review using configuration-specific loads and controlled project information is still required.
+No. It records geometry and proposed locations. Adequacy requires the controlled structural or geotechnical information, configuration-specific inputs and conclusion of the competent reviewer appointed by the project.
 
 #### How current should the survey be?
 
-Current enough to represent the construction stage used for selection. The record should name change triggers and a resurvey date or milestone, especially where decking, edge protection, services or access routes are still changing.
+State the construction stage, survey date and targeted change triggers. Recheck the affected fields when roof geometry, temporary features, equipment state, outlet definition, support area or structural evidence changes; do not rely only on a calendar interval.
 
 #### What photographs are most useful?
 
-Use dated, indexed views of access transitions, overhead and side obstructions, roof edges, openings, proposed staging and handover zones. Locate each view on the plan and add measurements rather than expecting the image to establish scale.
+Use dated, indexed views tied to coordinates and viewing directions for eaves, roof planes, openings, rooflights, obstructions, temporary features and the proposed handover zone. Photographs explain context; they do not establish scale or structural adequacy.
 
 #### Can the survey choose between crawler and truck systems?
 
-It can provide evidence for a conditional comparison. The decision still depends on transport, route, setup, work sequence, ground or floor review, vehicle interfaces and destination requirements beyond the roof zone itself.
+No—not by itself. It provides roof-zone geometry and evidence status. System comparison also needs the separate access route, proposed equipment states, setup/support review, transport or chassis interfaces, material sequence and destination requirements.

@@ -1,28 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title>PANEL HANDOVER decision diagram</title>
-  <desc>elevated roof panel handover boundary zones. An editorial planning diagram with four decision stages and no equipment specification.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Editorial handover sequence from forming exit through runout support and receiving custody to installation">
+  <title>PANEL HANDOVER interface diagram</title>
+  <desc>Four unscaled editorial interface cards for forming exit, runout support, custody and installation. The diagram gives no support design or equipment specification.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4F8F7"/><stop offset="1" stop-color="#E5EEF1"/></linearGradient>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#1677A3"/></marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5F9F8"/>
+      <stop offset="1" stop-color="#E5EEF1"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#1677A3"/>
+    </marker>
   </defs>
   <rect width="1600" height="900" rx="44" fill="url(#bg)"/>
   <rect x="60" y="54" width="1480" height="792" rx="34" fill="none" stroke="#C5D5D9" stroke-width="4"/>
-  <text x="100" y="145" font-family="Arial, sans-serif" font-size="66" font-weight="800" fill="#172A34">PANEL HANDOVER</text>
-  <text x="100" y="218" font-family="Arial, sans-serif" font-size="44" fill="#425E68">Define custody, communication and stop conditions</text>
-  <text x="1495" y="140" text-anchor="end" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#1677A3">ARCLIFT</text>
-  <text x="1495" y="205" text-anchor="end" font-family="Arial, sans-serif" font-size="42" fill="#526B73">EDITORIAL DECISION MAP</text>
-  <path d="M 250 440 C 320 440, 340 580, 410 580" fill="none" stroke="#1677A3" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow)"/>
-    <path d="M 610 580 C 680 580, 700 440, 770 440" fill="none" stroke="#1677A3" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow)"/>
-    <path d="M 970 440 C 1040 440, 1060 580, 1130 580" fill="none" stroke="#1677A3" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow)"/>
-  
-    <circle cx="150" cy="440" r="96" fill="#FFFFFF" stroke="#1677A3" stroke-width="12"/>
-    <text x="150" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#172A34" data-role="decision-label">Form</text>
-    <circle cx="510" cy="580" r="96" fill="#FFFFFF" stroke="#1677A3" stroke-width="12"/>
-    <text x="510" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#172A34" data-role="decision-label">Support</text>
-    <circle cx="870" cy="440" r="96" fill="#FFFFFF" stroke="#1677A3" stroke-width="12"/>
-    <text x="870" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#172A34" data-role="decision-label">Transfer</text>
-    <circle cx="1230" cy="580" r="96" fill="#FFFFFF" stroke="#1677A3" stroke-width="12"/>
-    <text x="1230" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#172A34" data-role="decision-label">Receive</text>
-  <rect x="100" y="750" width="1400" height="58" rx="29" fill="#1677A3" opacity="0.12"/>
-  <text x="800" y="791" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#273F48">Confirm conditions, responsibilities and open items before release.</text>
+  <text x="100" y="140" font-family="Arial, sans-serif" font-size="64" font-weight="800" fill="#172A34">PANEL HANDOVER</text>
+  <text x="1495" y="138" text-anchor="end" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#1677A3">ARCLIFT</text>
+  <text x="800" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="#425E68">Forming exit → runout support → receiving custody → installation</text>
+
+  <path d="M410 465 H445" stroke="#1677A3" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M780 465 H815" stroke="#1677A3" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M1150 465 H1185" stroke="#1677A3" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <rect x="80" y="340" width="330" height="250" rx="32" fill="#FFFFFF" stroke="#1677A3" stroke-width="8"/>
+  <rect x="450" y="340" width="330" height="250" rx="32" fill="#FFFFFF" stroke="#1677A3" stroke-width="8"/>
+  <rect x="820" y="340" width="330" height="250" rx="32" fill="#FFFFFF" stroke="#1677A3" stroke-width="8"/>
+  <rect x="1190" y="340" width="330" height="250" rx="32" fill="#FFFFFF" stroke="#1677A3" stroke-width="8"/>
+
+  <circle cx="245" cy="410" r="34" fill="#1677A3"/>
+  <circle cx="615" cy="410" r="34" fill="#1677A3"/>
+  <circle cx="985" cy="410" r="34" fill="#1677A3"/>
+  <circle cx="1355" cy="410" r="34" fill="#1677A3"/>
+  <text x="245" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">1</text>
+  <text x="615" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">2</text>
+  <text x="985" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">3</text>
+  <text x="1355" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF">4</text>
+  <text x="245" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#172A34" data-role="decision-label">EXIT</text>
+  <text x="615" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#172A34" data-role="decision-label">RUNOUT</text>
+  <text x="985" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#172A34" data-role="decision-label">CUSTODY</text>
+  <text x="1355" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#172A34" data-role="decision-label">INSTALL</text>
+
+  <rect x="100" y="720" width="1400" height="82" rx="28" fill="#1677A3" opacity="0.12"/>
+  <text x="800" y="776" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" fill="#273F48">Record the evidence, owner and change trigger at each interface.</text>
 </svg>
