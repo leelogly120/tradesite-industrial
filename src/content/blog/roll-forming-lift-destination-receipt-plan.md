@@ -2,6 +2,7 @@
 title: "Destination Receipt Plan for Roll-Forming Lift Systems"
 description: "Plan destination receipt for a roll-forming lift by controlling handoff, identity, condition evidence, discrepancies, storage, documents and staged release."
 date: 2026-08-08
+updated: 2026-09-14
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming lift", "destination receipt plan", "shipment condition evidence", "equipment logistics"]
 coverImage: "/images/editorial/port-loading-logistics.webp"
@@ -12,7 +13,9 @@ draft: false
 
 A destination receipt plan for a roll-forming lift should preserve identity, condition and custody before installation work begins. It tells the receiving team who controls the handoff, which transport and packing records are expected, how packages are identified, what visible condition evidence is captured, where discrepancies are held, how modules are stored and which authority can release each next stage. Receipt is not commissioning, site acceptance or permission to operate. A clean delivery note does not prove internal condition, configuration completeness or safe installation. Equally, a damaged package does not by itself identify the affected component or the correct disposition. The useful decision chain is staged: make the unloading and opening boundary safe under the approved local method; match transport-unit, seal and package identifiers to controlled records where applicable; preserve dated condition evidence before items move; separate shortages, damage and document conflicts; protect stored modules under equipment-specific requirements; then issue a limited release for inspection, assembly or another named activity. This approach gives procurement, logistics, technical and site teams a shared record without asking the receiving clerk to make engineering judgments.
 
-For adjacent decisions, use the [40HQ shipment planning guide](/blog/40hq-shipping-truck-mounted-roll-forming-lift/) and [site acceptance records guide](/blog/crawler-ceiling-platform-site-acceptance-records/). The [ARC-T25HQ truck-mounted lift reference](/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq/) keeps project-specific packing and carrier confirmation outside the public model summary.
+The often-missed handoff is **from the receiving team to whoever is responsible for the equipment's custody and protection while it waits**. Delivery evidence describes one point in time. A useful receipt plan also keeps the package or module traceable through storage moves, protection checks, discrepancies and the next named release.
+
+Use the [40HQ shipment planning guide](/blog/40hq-shipping-truck-mounted-roll-forming-lift/) for transport-package questions, the [crawler access-route survey](/blog/crawler-roll-forming-lift-access-route-survey/) for the site journey, and the [lift-and-roll-forming commissioning plan](/blog/lift-roll-forming-system-commissioning-plan/) for the later test-evidence boundary. Receipt and storage records feed those decisions; they do not replace them.
 
 **Contents**
 
@@ -67,18 +70,15 @@ Use neutral observations such as torn cover, displaced blocking, wet surface, be
 <!-- audit-section: project-checklist -->
 ### Use a destination receipt checklist with project boundaries
 
-- Record working height and outreach identifiers only to distinguish the expected configuration, not to approve an operating envelope.
-- Note roof slope, building geometry or work-face information only where it changes storage, access or later release planning.
-- Link profile, material, thickness, panel length, coil and feed records to the expected forming-line configuration.
-- Keep wind and weather limits for unloading or storage under the approved site and carrier method.
-- Confirm the unloading and storage ground or floor review with the competent party responsible for support conditions.
-- Map access and route states for carrier arrival, unloading, package movement, storage and later withdrawal.
-- Record outrigger or stabilizer requirements only from controlled handling or equipment instructions for the actual state.
-- State destination roles, customs or local document requirements and the location of controlled originals.
-- Match chassis, road transport and carrier handoff information to the expected shipment state.
-- Record container number, seal, package map and module split where the shipment uses them.
-- Protect voltage, power, control and battery-related modules according to configuration-specific storage instructions.
-- Link compliance and documentation records to their actual purpose without treating receipt as approval.
+- Reconcile container or vehicle, package and module identifiers against the current packing-list revision where applicable.
+- Identify the expected forming-line configuration and associated profile or material records without treating a label as proof of completeness.
+- Index the approved wind and weather controls for receipt and storage; do not derive limits from a delivery forecast.
+- Attach the ground or floor review reference for the unloading and storage locations, with its responsible owner.
+- Map the access route between receipt, storage and the next work zone, including any different movement state.
+- Name the destination document custodian and separate carrier records from technical discrepancy decisions.
+- Match the transport handoff record to the condition evidence captured at that boundary.
+- Reference equipment-specific protection requirements for power, control or battery modules where present; do not substitute generic storage advice.
+- Record each storage location, custody change, protection check and outstanding documentation item before the next stage is released.
 
 ## Control discrepancies, storage and release
 
@@ -96,6 +96,28 @@ The technical owner should decide whether the record needs more inspection, addi
 
 Use separate releases for continued storage, package movement, unpacking, assembly, installation checks, commissioning and use where the project process requires them. Record storage location, protection state, access control, periodic checks and any movement between locations. When a module leaves storage, link its current condition and identifier to the next handover. This prevents a receipt record from becoming disconnected from the equipment before site acceptance starts.
 
+### Keep a preservation history for stored items
+
+Use this **blank editorial template** as an index to controlled records, not as a preservation method or completed receipt certificate. The equipment-specific instructions must define the protection, inspection method and interval. This article supplies no temperature, humidity, lubrication, battery-maintenance or storage-duration limits.
+
+<table>
+<caption>Blank storage handover record — one item or defined group</caption>
+<thead><tr><th scope="col">Record field</th><th scope="col">Project entry</th></tr></thead>
+<tbody>
+<tr><th scope="row">Package-to-module identity and current location</th><td></td></tr>
+<tr><th scope="row">Receipt condition record and unresolved discrepancy references</th><td></td></tr>
+<tr><th scope="row">Applicable storage instruction and revision</th><td></td></tr>
+<tr><th scope="row">Protection state, dated observation and evidence reference</th><td></td></tr>
+<tr><th scope="row">Required next check or event trigger and responsible role</th><td></td></tr>
+<tr><th scope="row">Location or custody change, date and receiving role</th><td></td></tr>
+<tr><th scope="row">Authorized disposition and next-stage release reference</th><td></td></tr>
+</tbody>
+</table>
+
+Append a new event when custody, location or protection changes; retain the earlier record. Moving a package does not necessarily mean its condition changed, but the record must let the next reviewer establish what was checked and under which instruction. A missing entry is an evidence gap, not proof of damage and not proof of satisfactory condition. The technical owner should decide what additional review is needed for the affected stage.
+
+Consider a hypothetical module that has an intact-condition photograph at receipt, then moves to another storage area without a linked protection record. The first photograph remains evidence of the original observation. It cannot establish the later storage state. The receiving and storage owners should reconcile the identifiers, movement record and applicable requirements before the commissioning team treats the preservation prerequisite as closed. Do not manufacture continuity by copying the delivery date into the later handover.
+
 ![Blank receipt and acceptance record structure](/images/editorial/blank-fat-sat-record.svg)
 
 *AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Example record fields only; criteria and authority remain project-specific.*
@@ -109,11 +131,11 @@ Too little evidence leaves condition, identity and custody uncertain. Too much u
 
 ### Distinguish receipt inspection from use inspection
 
-Destination receipt focuses on custody, identity, completeness indicators, visible condition, documents and storage. Equipment inspection before use or after installation has a different purpose, competence requirement and criterion. The <a href="https://www.hse.gov.uk/work-equipment-machinery/inspection.htm" target="_blank" rel="noopener noreferrer">HSE guidance on work-equipment inspection</a> explains that inspection scope should follow risk assessment and equipment-specific recommendations. It is useful planning context, not universal destination law and not evidence that a received ARCLIFT configuration is safe to use.
+Destination receipt focuses on custody, identity, completeness indicators, visible condition, documents and storage. Equipment inspection before use or after installation has a different purpose, competence requirement and criterion. In Great Britain, <a href="https://www.hse.gov.uk/work-equipment-machinery/inspection.htm" target="_blank" rel="noopener noreferrer">HSE guidance on work-equipment inspection</a> links inspection scope and frequency to risk assessment and equipment-specific recommendations. It is planning context here, not universal destination law or evidence that a received ARCLIFT configuration is safe to use.
 
 ### Compare escalation and storage ownership
 
-Ask how quickly a receiving team can identify the right technical contact, protect an affected item, preserve evidence and receive a controlled disposition. Also ask who owns stored modules after the delivery note is signed. A detailed packing list cannot compensate for an absent discrepancy route, and a fast unloading team cannot compensate for unverified handling information. Mature receipt planning makes holds visible and prevents schedule pressure from becoming silent acceptance.
+Ask how quickly a receiving team can identify the right technical contact, protect an affected item, preserve evidence and receive a controlled disposition. Also ask which role is responsible for the custody and protection of stored modules after the delivery note is signed. A detailed packing list cannot compensate for an absent discrepancy route, and a fast unloading team cannot compensate for unverified handling information. Mature receipt planning makes holds visible and prevents schedule pressure from becoming silent acceptance.
 
 <!-- audit-section: limitations-not-fit -->
 ### Recognize when this method may not fit

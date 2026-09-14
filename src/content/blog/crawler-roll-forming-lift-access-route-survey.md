@@ -2,6 +2,7 @@
 title: "Crawler Roll-Forming Lift Access Route Survey Guide"
 description: "Plan crawler roll-forming lift access route by surveying entry, travel, setup and withdrawal states, surface changes, obstructions and control responsibilities."
 date: 2026-08-07
+updated: 2026-09-14
 author: "ARCLIFT Technical Editorial"
 tags: ["crawler roll forming lift", "access route survey", "site logistics", "work zone planning"]
 coverImage: "/images/editorial/crawler-truck-selection-matrix.svg"
@@ -12,7 +13,9 @@ draft: false
 
 A crawler route survey is a state-by-state logistics record, not a claim that equipment can travel anywhere a person can walk. The route must support delivery, unloading or assembly as applicable, entry, controlled travel, setup, relocation and withdrawal. Each state may have a different envelope, surface demand and traffic-control need. The survey gives technical and site reviewers a common baseline, while leaving final travel capability, support adequacy and operating authorization to configuration-specific evidence and competent site review.
 
-For adjacent decisions, use [crawler versus truck system guide](/blog/crawler-vs-truck-mounted-roll-forming-system/) and [indoor ground and floor review guide](/blog/indoor-aerial-platform-ground-pressure-guide/); [ARC-C crawler lift selection page](/products/arc-c28-crawler-roll-forming-lift/) provides another project boundary.
+The useful unit of review is **one route segment, one equipment state and one construction stage**. A gate measured before delivery and the same gate needed for withdrawal may be two different planning records. Keep them linked, but do not let the first review stand in for the second.
+
+Use the [crawler versus truck system guide](/blog/crawler-vs-truck-mounted-roll-forming-system/) for the wider logistics choice. The [crawler support-evidence guide](/blog/crawler-roll-forming-lift-ground-support-review/) addresses setup support separately; at the work face, hand over the location and proposed state to the [roof-zone survey](/blog/roof-zone-survey-roll-forming-lift-selection/). This article owns the journey, not roof coordinates or a support design.
 
 **Contents**
 
@@ -71,18 +74,37 @@ A route plan becomes actionable when unknowns have owners and changes have relea
 
 - Give each gate, turn, slope, threshold and surface transition a route-segment identifier.
 - Name the site role that confirms route isolation and the record used to release each move.
-- Record working height and outreach assumptions without treating them as an approved operating envelope.
-- Describe roof slope or building geometry, nearby edges and any changing work-face condition.
-- List task material, panel length, coil or feed information only where it affects the reviewed interface.
-- Assign weather and wind monitoring to the site team under its approved work method.
-- Provide ground or floor records and name the competent party responsible for support review.
-- Map access and route states from delivery through setup, task work and withdrawal.
-- State destination, transport and chassis constraints that belong to local or integration review.
-- Record voltage, power, control and documentation requirements with revision status and owner.
+- Identify the travel-state height, width and configuration drawing; keep nominal working height out of clearance calculations.
+- Record slope, crossfall, threshold geometry and approach direction against the same segment reference.
+- List forming modules, panel material or attachments only where their presence changes the proposed movement state.
+- Link weather and wind change triggers to the approved movement method, without supplying generic limits.
+- Index ground or floor evidence and the named reviewer; separate measured surface geometry from support conclusions.
+- Pair every entry route with the construction stage and equipment state expected for withdrawal.
+- Link the transport handoff and destination traffic-control boundary to the receiving team's record.
+- Track drawing revisions, access permissions and outstanding documentation by segment, not only by project name.
 
 ### Build a route constraint register
 
 For every segment, list the observed constraint, evidence status, responsible reviewer and closure document. Use simple status terms such as measured, document pending, specialist review required or route change proposed. Avoid labeling a segment pass before the actual equipment envelope and support data are available. The register should follow the same revision as the plan and photo index.
+
+Use the following **blank editorial record** once for each segment/state combination. It is a communication template, not a route approval. An actual entry should retain the source and date of every measurement, plus the equipment-document revision used for comparison. If that revision is unavailable, leave the comparison unresolved rather than estimating an envelope from a photograph.
+
+<table>
+<caption>Blank route-segment record — project information required</caption>
+<thead><tr><th scope="col">Record field</th><th scope="col">Project entry</th></tr></thead>
+<tbody>
+<tr><th scope="row">Segment identifier, start and end references</th><td></td></tr>
+<tr><th scope="row">Movement direction, equipment state and drawing revision</th><td></td></tr>
+<tr><th scope="row">Construction stage, survey date and measurement source</th><td></td></tr>
+<tr><th scope="row">Transition geometry and adjacent obstruction references</th><td></td></tr>
+<tr><th scope="row">Ground or floor evidence, reviewer and open questions</th><td></td></tr>
+<tr><th scope="row">Traffic-control owner and movement-release reference</th><td></td></tr>
+<tr><th scope="row">Withdrawal dependency and change-trigger owner</th><td></td></tr>
+<tr><th scope="row">Status, affected scope and closure evidence</th><td></td></tr>
+</tbody>
+</table>
+
+Keep observations and decisions in separate entries. “Opening measured” reports a survey result; “proposed state reviewed against that opening” records a different action. Neither closes a missing support assessment. This distinction makes it possible to update a drawing without accidentally carrying forward an approval that depended on an earlier state.
 
 ### Define stop and reset conditions
 
@@ -91,6 +113,8 @@ A route release should end when weather, visibility, ground condition, obstructi
 ### Preserve a withdrawal route
 
 Selection often focuses on getting equipment into place and overlooks removal. Confirm that the route can still be controlled after materials, finished work and temporary structures occupy the site. Mark any dependency on dismantling, reverse travel, alternate gates or schedule windows. If withdrawal depends on a future condition, keep it as a procurement and site-planning hold point.
+
+For example, suppose an entry survey records a clear passage, while the later construction programme places stored panels beside that passage before removal is planned. This is a hypothetical document conflict, not a reported project. The initial width measurement may still be correct for its date; it no longer describes the proposed withdrawal condition. Link the storage plan to the affected segment, identify who can resolve the conflict and obtain a current route review. Do not assume that reversing the arrival sequence or removing a forming module will make the exit suitable.
 
 ![Transport entry task withdrawal states](/images/editorial/clearance-four-state-section.svg)
 
@@ -103,9 +127,9 @@ Selection often focuses on getting equipment into place and overlooks removal. C
 
 A crawler concept may reduce dependence on a road-going carrier inside the site, yet it still needs a controlled route, verified support conditions and space for its work state. A narrower path can favor one arrangement while the setup envelope or material route favors another. The trade-off must be evaluated across the whole journey, not at the tightest doorway alone. Record which segment drives the decision and what evidence remains provisional.
 
-The practical trade-off is between early coordination and false precision. A useful record exposes each constraint, interface and unresolved owner; it does not convert preliminary information into an approval.
+There is a useful distinction between a route that needs more evidence and a route concept that depends on a different construction sequence. The first needs a named information owner; the second needs the site team to revisit the logistics arrangement. Labeling both simply “access pending” conceals the decision that procurement is waiting for.
 
-For general planning context, see the <a href="https://www.hse.gov.uk/pubns/geis6.htm" target="_blank" rel="noopener noreferrer">HSE guidance on selecting and managing mobile elevating work platforms</a>. It supports general work-planning principles only. It does not verify an ARCLIFT configuration, settle destination rules or approve a site.
+For Great Britain planning context, <a href="https://www.hse.gov.uk/workplacetransport/information/safeworkplace.htm" target="_blank" rel="noopener noreferrer">HSE's workplace-transport guidance</a> addresses route layout, obstructions, separation of vehicles and pedestrians, and temporary routes that change as work progresses. These principles support recording the changing route context. They do not establish crawler capability, approve a particular traffic arrangement or replace the destination project's requirements.
 
 <!-- audit-section: limitations-not-fit -->
 ### Do not turn the survey into a travel promise
@@ -115,9 +139,9 @@ This method may not fit a project that lacks controlled site information, named 
 <!-- audit-section: cta-editorial-note -->
 ### Submit a route package for preliminary review
 
-Provide the segment plan, measurement table, surface record, photo index, movement states, traffic interfaces, change triggers, withdrawal strategy and open-item log. Identify the proposed equipment state for each movement. Request a list of missing inputs and configuration questions rather than a simple yes or no route answer.
+Send an anonymized segment plan, the proposed travel-state drawing, measured restriction references, ground or floor evidence index and the construction stages expected at entry and withdrawal. Include the site traffic owner, destination transport handoff and work-zone boundary. Ask which configuration inputs are still needed for each unresolved segment, rather than asking for a blanket statement that the equipment “fits the site.”
 
-Send the site, destination, transport, work-zone and ground or floor records through a controlled project channel. The final, signed, project-specific package must identify open items and responsible reviewers. ARCLIFT can support preliminary selection as an integrated equipment supplier and technical selection and supply partner. Editorial images on this page are planning aids only and cannot replace controlled drawings, calculations, inspections or local review.
+ARCLIFT can organize those preliminary questions as an integrated equipment supplier and technical selection and supply partner. The appointed site and technical parties retain final, signed, project-specific route, support and movement decisions. Keep the route record linked to the [destination receipt plan](/blog/roll-forming-lift-destination-receipt-plan/) when packages or modules change custody. The editorial images explain record relationships only; they are not route measurements, equipment instructions or permissions to move.
 
 ## FAQ
 

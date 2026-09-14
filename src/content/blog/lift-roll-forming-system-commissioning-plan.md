@@ -2,6 +2,7 @@
 title: "Commissioning Plan for Lift-and-Roll-Forming Systems"
 description: "Plan lift-and-roll-forming system commissioning with prerequisites, interface checks, staged trials, evidence records, open items and release decisions."
 date: 2026-08-07
+updated: 2026-09-14
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming commissioning", "lift system acceptance", "staged trials", "evidence records"]
 coverImage: "/images/editorial/fat-sat-evidence-chain.svg"
@@ -10,9 +11,11 @@ coverCaption: "AI-assisted editorial image; not evidence of equipment, configura
 draft: false
 ---
 
-Commissioning connects the delivered configuration to controlled evidence that interfaces, functions, documentation and project conditions have been reviewed in stages. It should not be a demonstration arranged after everything is assembled. The plan begins with prerequisites, identifies safe test states, assigns witnesses and records deviations. Final operational release remains a project-specific decision under contracts, local requirements and competent review; the article organizes the evidence without supplying procedures or acceptance values. The plan should also define how an interrupted or aborted trial is recorded. Preserve the last known state, reason for stopping, material status, temporary controls and the checks required before repetition. A retest should identify whether it repeats the whole stage or only a justified part, and the reviewer should confirm that earlier observations still apply to the corrected configuration. Record that scope decision before the test schedule and witness plan are reset.
+For a lift-and-roll-forming system, commissioning readiness is not a percentage of boxes completed. Each proposed trial needs a defined configuration, an approved method and criterion, the prerequisite evidence it depends on, and a named release authority. One unresolved prerequisite can block that trial even when many unrelated checks are complete.
 
-For adjacent decisions, use [FAT and SAT evidence guide](/blog/roll-forming-line-fat-sat-acceptance-checklist/) and [electrical and control interface guide](/blog/roll-forming-line-electrical-control-interfaces/); [ARC-RF8 roll-forming machine page](/products/arc-rf8-roll-forming-machine/) provides another project boundary.
+This guide organizes **prerequisites, recorded trials, deviations and evidence validity after a change**. It does not supply test sequences, operating instructions or acceptance values. The key question after a correction is not simply whether the next trial passed, but which earlier results still apply to the configuration now being presented for release.
+
+Use the [FAT and SAT evidence guide](/blog/roll-forming-line-fat-sat-acceptance-checklist/) for acceptance-record scope and the [electrical and control interface guide](/blog/roll-forming-line-electrical-control-interfaces/) for its separate control boundary. The [destination receipt and storage record](/blog/roll-forming-lift-destination-receipt-plan/) supplies the incoming condition history; it cannot by itself close commissioning prerequisites.
 
 **Contents**
 
@@ -52,6 +55,8 @@ Move from documents and static condition checks toward functional and integrated
 
 Confirm the controlled configuration, assembly and inspection records, utility status, interface closures, manuals, test instruments, personnel roles, work zone and emergency arrangements required by the project. This is not a universal list. The commissioning plan should reference the actual approved documents and mark any temporary condition. If a prerequisite remains open, state which later test is blocked.
 
+Bring the storage history forward by reference rather than copying a delivery signature into the commissioning sheet. Identify the module, current location, applicable protection record and any open discrepancy. If the evidence stops at receipt, the appointed owner must decide what review closes the gap to the present condition. A commercial handover date is not a technical conclusion about that interval.
+
 ### Use dry and no-material checks deliberately
 
 Where the equipment-specific method provides them, preliminary checks can verify states, communications, indications and interfaces before material is introduced. The plan should not invent sequences or bypass conditions. Record the intended state, criterion, instrument or observation, result and witness. An unexpected response opens a deviation and returns the system to a controlled state under the approved procedure.
@@ -71,22 +76,46 @@ A commissioning record should let another reviewer see what was tested, under wh
 
 - Link each inspection and trial to the exact configuration, criterion, witness and result record.
 - Separate deviations, temporary concessions, retests and final operational release decisions.
-- Record working height and outreach assumptions without treating them as an approved operating envelope.
-- Describe roof slope or building geometry, nearby edges and any changing work-face condition.
-- List task material, panel length, coil or feed information only where it affects the reviewed interface.
-- Assign weather and wind monitoring to the site team under its approved work method.
-- Provide ground or floor records and name the competent party responsible for support review.
-- Map access and route states from delivery through setup, task work and withdrawal.
-- State destination, transport and chassis constraints that belong to local or integration review.
-- Record voltage, power, control and documentation requirements with revision status and owner.
+- State the outlet-height reference and proposed test configuration without borrowing a personnel working-height value.
+- Link relevant roof geometry and the receiving boundary to the current work-zone record for any proposed integrated trial.
+- Identify the profile, material and panel-length inputs governed by the approved trial method, not a generic product summary.
+- Reference the project's wind and weather criteria and the role responsible for confirming test conditions.
+- Link ground or floor support evidence to the actual test state and the appointed reviewer.
+- Identify the access and material-route prerequisites that the particular trial needs, rather than approving the whole site by implication.
+- Distinguish destination installation and inspection obligations from the transport receipt record.
+- Preserve power, control and interface-document revisions with each result and any authorized change.
 
 ### Use condition-based test sheets
 
 Record date, location category, configuration, prerequisites, test state, criterion, method reference, measuring device if applicable, observation, result, witnesses and attachments. Avoid pass boxes without a recorded basis. If a test is not applicable, name who decided and why. Keep sensitive names or site information inside the controlled project record, not public editorial copies.
 
+The following **blank editorial template** records one dependency between a proposed trial and its prerequisite. It does not define what must be tested or what result is acceptable. Use separate records when different configurations or authorities are involved, and identify where the actual signed evidence is held.
+
+<table>
+<caption>Blank trial-dependency record — no test or acceptance data</caption>
+<thead><tr><th scope="col">Record field</th><th scope="col">Project entry</th></tr></thead>
+<tbody>
+<tr><th scope="row">Proposed trial identifier and configuration revision</th><td></td></tr>
+<tr><th scope="row">Governing method, criterion and issuing authority</th><td></td></tr>
+<tr><th scope="row">Prerequisite record, owner and current status</th><td></td></tr>
+<tr><th scope="row">Blocked scope if the prerequisite remains open</th><td></td></tr>
+<tr><th scope="row">Result, witness and observation-record references</th><td></td></tr>
+<tr><th scope="row">Deviation or change and affected earlier evidence</th><td></td></tr>
+<tr><th scope="row">Retest or retained-evidence decision and approval reference</th><td></td></tr>
+</tbody>
+</table>
+
 ### Control deviations and retests
 
 A deviation should describe the condition, affected requirement or interface, immediate control, owner, disposition, due date and retest need. Do not close it with fixed unless the evidence shows the corrected configuration and result. Temporary concessions need scope, authorization, expiry and restrictions. A changed part or setting may require review beyond the single failed step.
+
+### Decide whether earlier evidence still applies
+
+Retain the original result when something changes; add a reviewed decision about its applicability. Separate evidence that remains applicable, evidence needing a defined repeat or extension, and evidence whose status is still unresolved. The appointed technical reviewer must explain the boundary using the changed configuration and governing method. A successful retest does not automatically validate unrelated interfaces, while a small change does not automatically require repeating every observation.
+
+For a hypothetical example, an interface-document revision changes after a recorded preliminary check. A later material trial completes, but nobody records whether the earlier check still represents the revised interface. The missing item is the applicability decision, not necessarily another full trial. Preserve both revisions and let the authorized reviewer determine the required scope. This example is not a reported ARCLIFT project and supplies no control logic or retest procedure.
+
+An interrupted trial needs the same traceability. Record the last documented state, reason for interruption, affected material or records, and the authority deciding what evidence can be retained. The approved method governs how the equipment is made safe and how testing resumes; a scheduling note cannot perform that role.
 
 ### Separate technical completion from use release
 
@@ -103,9 +132,9 @@ Completing planned tests does not automatically authorize operation. The project
 
 A test that is too narrow may miss important interfaces, while a broad integrated trial can introduce material, personnel and site exposure before prerequisites are ready. The trade-off is staged evidence with clear stop points. Each stage should answer a defined question and preserve its conditions. Do not turn a single demonstration, video or witness impression into a claim about every operating mode, site or future configuration.
 
-The practical trade-off is between early coordination and false precision. A useful record exposes each constraint, interface and unresolved owner; it does not convert preliminary information into an approval.
+Readiness and completion therefore need different views. The readiness view shows which prerequisite blocks the next proposed activity. The completion view shows which recorded results remain applicable and what still prevents final release. A single percentage can hide both a critical open prerequisite and a result that belongs to a superseded configuration.
 
-For general planning context, see the <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.453" target="_blank" rel="noopener noreferrer">OSHA official aerial-lift regulation page</a>. It supports general work-planning principles only. It does not verify an ARCLIFT configuration, settle destination rules or approve a site.
+For Great Britain context, <a href="https://www.hse.gov.uk/work-equipment-machinery/inspection.htm" target="_blank" rel="noopener noreferrer">HSE's work-equipment inspection guidance</a> distinguishes installation-related inspection and review after circumstances that may jeopardise safety. Inspection extent depends on the equipment, use and conditions. This supports keeping inspection evidence separate from a demonstration; it does not prescribe commissioning stages, establish a system's legal classification or approve an ARCLIFT configuration in any destination.
 
 <!-- audit-section: limitations-not-fit -->
 ### Keep procedures and acceptance values project-specific
@@ -115,9 +144,9 @@ This method may not fit a project that lacks controlled site information, named 
 <!-- audit-section: cta-editorial-note -->
 ### Send a commissioning evidence plan
 
-Provide the configuration index, acceptance basis, prerequisite register, staged test matrix, witness roles, deviation process, retest rules, document deliverables and operational release authority. Ask all interface owners to confirm their inputs before the schedule is fixed. Keep public claims separate from project records and limited to evidence cleared for that purpose.
+Send the anonymized configuration index, prerequisite dependencies, storage-condition handoff, proposed trial references and open-deviation list through a controlled project channel. Identify the site work zone, outlet-height reference and ground or floor evidence relevant to each proposed state. Ask the responsible reviewers which records block readiness and which earlier results require an applicability decision before fixing the witness schedule.
 
-Send the site, destination, transport, work-zone and ground or floor records through a controlled project channel. The final, signed, project-specific package must identify open items and responsible reviewers. ARCLIFT can support preliminary selection as an integrated equipment supplier and technical selection and supply partner. Editorial images on this page are planning aids only and cannot replace controlled drawings, calculations, inspections or local review.
+ARCLIFT can coordinate these preliminary information questions as an integrated equipment supplier and technical selection and supply partner. The appointed parties retain the final, signed, project-specific test methods, acceptance criteria and operational release. Editorial images on this page illustrate record structure only; they cannot replace equipment instructions, controlled calculations, inspections or authorized results.
 
 ## FAQ
 
