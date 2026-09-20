@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Dual-power duty planning questions: zone, mode, supply, air and backup">
   <title>Dual power crawler platform duty cycle</title>
   <desc>ARCLIFT editorial diagram linking work zone, power mode, charging or fuel, ventilation, and backup questions.</desc>
   <rect width="1600" height="900" fill="#f4f7f8"/>
@@ -6,10 +6,10 @@
   <text x="120" y="155" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#123c4a">ARCLIFT DUTY CYCLE</text>
   <text x="120" y="225" font-family="Arial, sans-serif" font-size="48" fill="#41636d">Map energy source and controls to every work phase</text>
   <g font-family="Arial, sans-serif" font-size="48" font-weight="700" text-anchor="middle" fill="#123c4a">
-    <circle cx="240" cy="460" r="120" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="240" y="476" font-size="48">WORK ZONE</text>
-    <circle cx="520" cy="460" r="120" fill="#f8eee7" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="520" y="476" font-size="48">POWER MODE</text>
-    <circle cx="800" cy="460" r="120" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="800" y="476" font-size="48">CHARGE / FUEL</text>
-    <circle cx="1080" cy="460" r="120" fill="#f8eee7" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="1080" y="476" font-size="48">VENTILATION</text>
+    <circle cx="240" cy="460" r="120" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="240" y="476" font-size="48">ZONE</text>
+    <circle cx="520" cy="460" r="120" fill="#f8eee7" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="520" y="476" font-size="48">MODE</text>
+    <circle cx="800" cy="460" r="120" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="800" y="476" font-size="48">SUPPLY</text>
+    <circle cx="1080" cy="460" r="120" fill="#f8eee7" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="1080" y="476" font-size="48">AIR</text>
     <circle cx="1360" cy="460" r="120" fill="#e9f2f4" stroke="#123c4a" stroke-width="6"/><text data-role="decision-label" x="1360" y="476" font-size="48">BACKUP</text>
   </g>
   <g stroke="#e07132" stroke-width="16" stroke-linecap="round">

@@ -2,6 +2,7 @@
 title: "Truck-Mounted Roll-Forming Payload Allocation Review"
 description: "Define the buyer-side mass-property schedule needed before specialist axle-load review of a truck-mounted roll-forming system, with limits and handoffs."
 date: 2026-08-13
+updated: 2026-09-20
 author: "ARCLIFT Technical Editorial"
 tags: ["truck-mounted roll forming", "payload allocation", "mass property schedule", "chassis integration"]
 coverImage: "/images/editorial/truck-site-roll-forming-lift.webp"
@@ -47,7 +48,7 @@ Current <a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part
 
 ![Editorial payload allocation input chain](/images/editorial/truck-mounted-roll-forming-payload-allocation-review.svg)
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. It illustrates an information handoff only and contains no mass, centre-of-gravity, axle or rating value.*
+*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Legend: “State” means the declared mass state, “Axes” means the common coordinate reference, and “Case” means a condition awaiting specialist review; “Source” and “Owner” identify evidence and responsibility. These labels are not parameters. The diagram illustrates an information handoff only and contains no mass, centre-of-gravity, axle or rating value.*
 
 <!-- audit-section: conditions -->
 ## Build a controlled mass-property schedule
@@ -66,6 +67,48 @@ For every chassis, module, subassembly, tool set, fluid, coil or other carried i
 
 Mark the source as a controlled drawing, signed schedule, verified weighing record, current data sheet or explicitly provisional engineering input. Record the source identifier and revision in the private project package. A public article, photograph or archived range page is not a source for a project value.
 
+### Declare inclusion before comparing totals
+
+Every mass entry needs an inclusion statement and an exclusion statement. “Lifting module” is incomplete if one source includes the working platform, hydraulic fluid and removable accessories while another does not. Options also need a configuration status: proposed, ordered, installed, carried separately, removed for transport or not part of the reviewed state. That status controls whether the item belongs in a particular schedule; its presence in a brochure or preliminary layout does not.
+
+Use the following two-column prompt to establish status and ownership before any value is handed to the calculation owner. It is an editorial template, not a completed vehicle record, weighing result or engineering calculation.
+
+<table>
+  <caption>Mass-entry inclusion and exclusion review by configuration state</caption>
+  <thead>
+    <tr>
+      <th scope="col">State or ownership question</th>
+      <th scope="col">Required project record</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Is the base vehicle included?</td>
+      <td>Name the exact chassis state, body or subframe boundary, source revision and chassis-data owner.</td>
+    </tr>
+    <tr>
+      <td>Which installed assemblies are included?</td>
+      <td>List the lifting structure, forming module, platform, guards, supports, utilities and the assembly record that contains them.</td>
+    </tr>
+    <tr>
+      <td>Which options are fitted?</td>
+      <td>Give each removable or optional attachment a configuration status, state, storage position and responsible data owner.</td>
+    </tr>
+    <tr>
+      <td>Which variable items are present?</td>
+      <td>Separate material, tooling, spares, fluids, people and loose service items for each declared state.</td>
+    </tr>
+    <tr>
+      <td>What is deliberately excluded?</td>
+      <td>Identify transport aids, packaging, site-only equipment and separately carried items, with the record that controls their handling.</td>
+    </tr>
+    <tr>
+      <td>Who reconciles the total?</td>
+      <td>Name the register owner, calculation owner, review status and change event that requires the schedule to be totalled again.</td>
+    </tr>
+  </tbody>
+</table>
+
 ### Keep consumables and variable loads visible
 
 Variable items should not disappear inside a general allowance. List the relevant fluid state, tooling, spares, personnel, materials and removable accessories as separate controlled inputs when they form part of the declared use case. Define who confirms the operating range or governing case; do not invent a maximum or apply a generic assumption.
@@ -77,6 +120,8 @@ The same discipline applies to material loaded into a roll-forming workflow. The
 Give each row a status such as missing, provisional, confirmed or reviewed, plus an owner and next action. If uncertainty is used by the responsible specialist, record how it was derived and where it applies. Do not present a tolerance, allowance or contingency as though it were measured fact.
 
 A useful change log shows the previous value or state, new value or state, reason, affected load cases, reviewer and release date. That traceability matters because a small physical change can be irrelevant in one location and important in another. The buyer-side record should trigger review, not predict the outcome.
+
+Reconcile the schedule whenever its level of detail changes. In a hypothetical review, an earlier assembly entry might already include a removable service attachment; adding the same attachment later as a separate confirmed row would count it twice. The opposite error occurs when a provisional assembly value excludes an option but the option never receives its own row. When a parent assembly is replaced by component-level entries, mark the parent as superseded or excluded from the total, preserve the source trail and ask the register owner to re-total every affected state. If the mounting position also changes, reopen the relevant boundary in the [lifted roll-forming mounting interface review](/blog/lifted-roll-forming-line-mounting-interface-review/); mass ownership and mounting geometry are linked inputs, not interchangeable approvals.
 
 ![Editorial chassis and module interface layers](/images/editorial/chassis-interface-stack.svg)
 

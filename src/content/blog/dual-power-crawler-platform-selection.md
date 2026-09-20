@@ -2,6 +2,7 @@
 title: "Dual-Power Crawler Platform Selection and Site Guide"
 description: "Select a dual-power crawler platform by mapping work zones, duty cycle, charging, fuel, ventilation, emissions, changeover, backup, and local review needs."
 date: 2026-07-27
+updated: 2026-09-20
 author: "ARCLIFT Technical Editorial"
 tags: ["Dual Power", "Crawler Platforms", "Site Planning"]
 coverImage: "/images/banners/stadium.webp"
@@ -10,7 +11,9 @@ coverCaption: "AI-assisted editorial composite for power-planning orientation; i
 draft: false
 ---
 
-Select a dual-power crawler platform by mapping where each power mode may operate, what every shift requires, how the machine moves between zones, where charging or refueling occurs, what ventilation and emissions controls apply, how cables are managed, and what happens when the preferred source is unavailable. “Diesel plus electric” is not a complete specification. Actual architecture, permitted changeover, runtime, electrical input, charger, engine, emissions, and operating limits require signed configuration data. This guide helps buyers build a duty plan without promising continuous operation or assuming that a second source removes site constraints.
+Start a dual-power crawler platform selection by asking **which source powers which function, in which machine state**. An engine and an electric motor might offer alternative ways to drive a lifting pump without both powering travel. An electrical connection might feed a pump directly rather than charge a traction battery. Those distinctions change the indoor route, cable plan and response to a failed source before runtime even becomes a useful question.
+
+Map the actual architecture first, then the work zones, shift sequence, supply points and permitted changeover. A second source does not prove uninterrupted operation, indoor permission or emergency capability. This guide produces a function-and-source review sheet; it does not select a circuit, estimate runtime or authorize a power mode.
 
 The [ceiling-work technology evidence guide](/blog/ceiling-work-technology-trends/) explains how to test a power-feature label against interfaces, controlled evidence, site verification and decision ownership. Use this page for the detailed duty-cycle and infrastructure package after that boundary is clear.
 
@@ -30,7 +33,7 @@ The [ceiling-work technology evidence guide](/blog/ceiling-work-technology-trend
 
 Mark unloading, external travel, entrances, indoor routes, work bays, charging, refueling, maintenance, and emergency parking. For each zone, state which energy sources the site permits and why. Indoor work may restrict combustion engines because of exhaust and air-quality risks; hazardous areas may have additional equipment restrictions; public or live facilities may impose noise and cable controls.
 
-Do not assume electric operation covers the entire indoor shift. Record travel distance, number of work-front changes, raising and lowering cycles, platform task time, standby time, lighting or accessory demand, temperature, gradients, and the opportunity to recharge. These inputs help define the duty, but only configuration-specific data can establish expected behavior.
+Do not assume electric operation covers the entire indoor shift. Record travel distance, work-front changes, raising and lowering cycles, platform task time, standby, lighting or accessory demand, temperature and gradients. Add charging opportunities only if the proposed system actually uses a rechargeable power source. These inputs define the intended duty; configuration-specific evidence must establish which functions are available throughout it.
 
 ### Define the reason for two modes
 
@@ -49,11 +52,13 @@ The [crawler platform buyer's guide](/blog/crawler-under-ceiling-platform-buyers
 
 Record voltage, frequency, phase, connection arrangement, available current, protective devices, earthing, charger location, charging time window, cable length and routing, connector control, environmental protection, and who may connect or isolate the supply. Confirm these against the destination installation and quoted configuration.
 
-Battery chemistry and charging architecture affect the site plan. Obtain the operating and maintenance information for the actual system, including ventilation, fire precautions, charger protection, inspection, isolation, spill response where relevant, and battery condition monitoring. OSHA's <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.441" target="_blank" rel="noopener noreferrer">battery-charging requirements for construction</a> call for designated charging installations and ventilation to prevent gas accumulation for the covered battery arrangements. The applicable destination rules and battery instructions must control the project.
+First distinguish a mains-fed motor, a battery-fed system and an auxiliary control battery. They answer different questions. A control battery does not establish electric propulsion; a motor rating does not define the complete site supply requirement. Ask the electrical reviewer to identify the pumps, controls, accessories and other consumers included in the declared demand, including any permitted simultaneous functions.
+
+Where a rechargeable battery is part of the proposed architecture, obtain its specific operating and maintenance instructions, charger requirements and applicable ventilation, fire, inspection and isolation arrangements. Ask the responsible electrical and site reviewers to identify the destination requirements for that battery arrangement. Do not copy a charging plan from another battery chemistry or assume that a generic platform category establishes which system is installed.
 
 ### Map fuel and exhaust controls
 
-Define approved fuel, storage, transfer, refueling area, ignition control, spill response, engine inspection, exhaust direction, ventilation, monitoring, and restrictions on engine use. OSHA notes that diesel exhaust contains gases and fine particles that can create a health hazard when not controlled; its <a href="https://www.osha.gov/diesel-exhaust" target="_blank" rel="noopener noreferrer">diesel exhaust overview</a> links hazard recognition, exposure evaluation, and control measures.
+Define approved fuel, storage, transfer, refueling area, ignition control, spill response, engine inspection, exhaust direction, ventilation, monitoring, and restrictions on engine use. The U.S. OSHA <a href="https://www.osha.gov/diesel-exhaust/hazards" target="_blank" rel="noopener noreferrer">diesel exhaust hazard-recognition page</a> links evidence about exposure to the mixture of gases and particles. That hazard background does not establish acceptable exposure, ventilation or emissions compliance for the proposed machine or site.
 
 Do not treat an open doorway as a ventilation design. The site should determine whether combustion operation is permitted, what controls and monitoring are required, and how exhaust is prevented from reaching workers or air intakes. If indoor engine operation is prohibited, the method must prevent unintended start or mode selection.
 
@@ -63,7 +68,7 @@ If the platform receives external electrical power during work, plan the cable f
 
 [![Editorial diagram showing a dual-power duty cycle](/images/editorial/dual-power-duty-cycle.svg)](/images/editorial/dual-power-duty-cycle.svg)
 
-*Editorial diagram. Tap to open the full-size editorial diagram. It organizes work-zone, power-mode, charging or fuel, ventilation, and backup questions; it is not a runtime or emissions claim.*
+*Editorial diagram. AI-assisted and illustrative; not evidence of equipment, configuration, runtime, emissions or backup capability. Tap to open the full-size editorial diagram. Zone means the work location; mode identifies the active source; supply covers its infrastructure; air means ventilation review; backup means a question to resolve, not a supplied emergency system.*
 
 <!-- audit-section: evidence-tradeoffs -->
 ## Evaluate changeover and operating trade-offs
@@ -82,11 +87,11 @@ Build operational margin through a documented charging or refueling plan, not an
 
 ### Maintenance and handover must cover both systems
 
-Pre-use checks should address the relevant battery, charger, cable, connector, engine, fuel, exhaust, leaks, warnings, isolation, and control functions. Handover should explain mode selection, restrictions, emergency response, maintenance intervals, storage, and destination documentation. Only trained and authorized people should perform tasks assigned by the instructions and site rules.
+The equipment-specific pre-use information should cover installed components: battery and charger if fitted, external cable and connector if used, engine, fuel, exhaust, warnings and relevant control functions. Handover should explain mode selection, restrictions, emergency response, maintenance intervals, storage, and destination documentation. Only trained and authorized people should perform tasks assigned by the instructions and site rules.
 
 [![Editorial diagram of ceiling-platform project inputs](/images/editorial/ceiling-platform-project-data.svg)](/images/editorial/ceiling-platform-project-data.svg)
 
-*Editorial diagram. Tap to open the full-size editorial diagram. It is a planning aid and cannot confirm power behavior, runtime, charging, fuel use, controls, or suitability.*
+*Editorial diagram. AI-assisted and illustrative; not evidence of equipment, configuration, power behavior, runtime, charging, fuel use, controls or suitability. Tap to open the full-size editorial diagram. This is a project-input planning aid.*
 
 <!-- audit-section: limitations-not-fit -->
 ## Identify not-fit conditions before quotation
@@ -114,7 +119,7 @@ Do not infer electrical compatibility, engine emissions, hazardous-area approval
 - Function-by-function power mode, permitted machine state, changeover process, and control indication
 - Shift duration, travel, lifting, lowering, work time, standby, accessories, temperature, and contingency
 - Voltage, frequency, phase, available current, protection, earthing, connectors, and destination supply
-- Charger, battery type, charging area, ventilation, isolation, inspection, fire, and spill arrangements
+- If batteries are fitted: charger, battery type, charging area, ventilation, isolation, inspection, fire, and spill arrangements
 - Fuel type, storage, refueling, ignition control, exhaust route, ventilation, monitoring, and spill response
 - Cable route, reel, protection, crossings, doors, water, vehicles, pedestrians, and relocation procedure
 - Pre-use checks, maintenance, service area, responsible roles, spares, storage, and documentation
@@ -124,6 +129,27 @@ Do not infer electrical compatibility, engine emissions, hazardous-area approval
 ### Turn the schedule into a shift plan
 
 Assign the active mode and supporting controls to every phase. Include connection, isolation, charging or refueling, inspections, mode changes, work-front moves, emergency response, and end-of-shift storage. Reassess when the machine, route, load, supply, ventilation, crew, or work sequence changes.
+
+### Check functions before comparing running hours
+
+Use the following blank review structure for each proposed configuration. Each answer needs a source revision and responsible reviewer. Leave unavailable information unresolved; an empty cell is not permission to operate. This is an editorial information sheet, not a control specification or operating sequence.
+
+<table>
+<caption>Power-source and function questions for configuration review</caption>
+<thead><tr><th scope="col">Function or state</th><th scope="col">Evidence to request</th></tr></thead>
+<tbody>
+<tr><th scope="row">Travel and steering</th><td>Which source serves them, in which permitted machine state, and with what supply connection status?</td></tr>
+<tr><th scope="row">Lifting and positioning</th><td>Which pump and controls each mode uses; which functions are excluded or restricted.</td></tr>
+<tr><th scope="row">Task equipment</th><td>Separate supply requirements for fitted tools, lighting or a compatible forming module; do not assume they share the lift supply.</td></tr>
+<tr><th scope="row">Changeover</th><td>Required state, source indication, authorization and equipment-specific procedure reference.</td></tr>
+<tr><th scope="row">Loss of the preferred source</th><td>Functions remaining available, common dependencies and the approved response reference.</td></tr>
+<tr><th scope="row">End of work</th><td>Isolation, storage and replenishment requirements for the components actually installed.</td></tr>
+</tbody>
+</table>
+
+Consider a hypothetical indoor job where electric mode is documented for lifting but the quotation does not identify an electric travel function. The floor plan still contains a move between work bays. The unresolved question is how that move is permitted under the equipment instructions and site rules, not how large a battery to order. No battery architecture has been established. That gap should remain open until the configuration and method are clarified.
+
+Two sources may also share a pump, controller or other component. The reviewer must establish those dependencies before calling the second source a backup. A source-change option alone cannot demonstrate recovery after failure of a shared component. For the separate personnel-access decision, use the [emergency-lowering and rescue planning guide](/blog/aerial-platform-emergency-lowering-rescue-plan/); do not use a power selection table as a rescue procedure.
 
 <!-- audit-section: cta-editorial-note -->
 ## Close the duty and infrastructure questions
