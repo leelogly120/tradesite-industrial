@@ -46,19 +46,34 @@ const itemListSchema = {
 ---
 
 <BaseLayout
-  title="Roll-Forming Lifts & Crawler Ceiling Platforms"
-  description="Explore crawler and truck-mounted roll-forming lifts, large-deck ceiling platforms and forming-line references, with technical guides for project selection."
+  title="Truck & Crawler Roll-Forming Lifts | ARCLIFT Equipment"
+  description="Compare truck-mounted and crawler-mounted lifting equipment for roof-panel roll formers. Explore ceiling platforms and prepare a project-specific equipment brief."
   transparentNav={false}
 >
   <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
 
-  <section class="selector-hero">
-    <div class="selector-hero__inner">
-      <p class="eyebrow">Product selection</p>
-      <h1>Roll-forming lifts & large-deck crawler platforms</h1>
-      <p>Compare equipment families for roof-level panel forming and under-ceiling or wall-panel access. ARCLIFT is an integrated equipment supplier and technical selection and supply partner; each reference requires project-specific confirmation.</p>
-      <a class="btn btn--primary" href="#families">Explore four equipment families</a>
+  <section class="a2-page-head a2-shell">
+    <p class="a2-eyebrow">Lifting systems / Equipment overview</p>
+    <h1>Roll-forming lifts.<br />Matched to your machine.</h1>
+    <p class="a2-lead">Truck-mounted and crawler-mounted lifts for roof-panel roll formers. Start with the machine interface and the site—not a height figure alone.</p>
+    <div class="a2-actions"><a class="a2-button" href="#equipment-routes">Explore lifting systems</a><a class="a2-text-link" href="/contact/">Discuss your equipment brief →</a></div>
+  </section>
+  <section class="a2-shell a2-product-routes" id="equipment-routes" aria-label="Roof-forming lifting arrangements">
+    <div class="a2-route-grid">
+      <article class="a2-route">
+        <figure><div class="a2-route-photo"><img src="/images/equipment/coil-handling-workflow.jpg" width="494" height="412" alt="Truck-carried lifting equipment handling a coil alongside the structure" fetchpriority="high" /></div><figcaption class="a2-caption">Truck-carried handling reference—not roof-panel production or a model specification.</figcaption></figure>
+        <h2>Truck-mounted</h2><p>Coordinate the chassis, forming machine and setup space as one equipment brief.</p>
+        <details class="a2-route-checklist"><summary>What to bring to the review</summary><ul><li>Chassis information and destination requirements.</li><li>Roll-former dimensions, weight and mounting arrangement.</li><li>Setup layout, output position and transport constraints.</li></ul></details>
+        <a class="a2-text-link" href="#truck-mounted-roll-forming-lifts">View truck-mounted references →</a>
+      </article>
+      <article class="a2-route">
+        <figure><div class="a2-route-photo"><img class="a2-crawler-photo" src="/images/equipment/crawler-transport.jpg" width="543" height="306" alt="Folded crawler lifting equipment carried on a lowboy trailer" /></div><figcaption class="a2-caption">Crawler transport reference—not an operating setup or ground-support approval.</figcaption></figure>
+        <h2>Crawler-mounted</h2><p>Bring the access route, support conditions and delivery arrangement into selection.</p>
+        <details class="a2-route-checklist"><summary>What to bring to the review</summary><ul><li>Measured access route and setup space.</li><li>Ground or floor information for competent review.</li><li>Transport arrangement, machine interface and panel receiving area.</li></ul></details>
+        <a class="a2-text-link" href="#crawler-roll-forming-lifts">View crawler-mounted references →</a>
+      </article>
     </div>
+    <div class="a2-secondary-route"><p><strong>Working below a ceiling?</strong> Large-deck ceiling platforms are a separate product line—not a third base option for the same roof-forming task.</p><a class="a2-text-link" href="#crawler-ceiling-platforms">Explore ceiling platforms →</a></div>
   </section>
 
   <nav class="family-nav" aria-label="Equipment families">
@@ -76,8 +91,9 @@ const itemListSchema = {
 
   <section id="families" class="families" aria-labelledby="families-title">
     <div class="families__heading">
-      <p class="eyebrow">Select a family</p>
-      <h2 id="families-title">Four routes for a documented project review</h2>
+      <p class="eyebrow">Equipment reference library</p>
+      <h2 id="families-title">Explore the configuration questions.</h2>
+      <p>ARCLIFT is an integrated equipment supplier and technical selection and supply partner. These retained references explain open questions; they are not current offers or approved specifications.</p>
     </div>
 
     {familySections.map(family => (
@@ -173,6 +189,14 @@ const itemListSchema = {
     const compareItems = Array.from(document.querySelectorAll<HTMLInputElement>('[data-compare-item]'));
     const compareButton = document.querySelector<HTMLButtonElement>('[data-compare-button]');
     const compareSummary = document.querySelector<HTMLElement>('#compare-summary');
+    const comparison = document.querySelector<HTMLElement>('.comparison');
+
+    function measureComparison() {
+      const height = comparison && getComputedStyle(comparison).position === 'sticky'
+        ? comparison.getBoundingClientRect().height
+        : 0;
+      document.documentElement.style.setProperty('--comparison-offset', `${height}px`);
+    }
 
     function selectedReferences() {
       return compareItems.filter(item => item.checked).map(item => item.value).slice(0, 4);
@@ -180,7 +204,7 @@ const itemListSchema = {
 
     function updateComparison() {
       const selected = selectedReferences();
-      document.querySelector<HTMLElement>('.comparison')?.classList.toggle('comparison--active', selected.length > 0);
+      comparison?.classList.toggle('comparison--active', selected.length > 0);
       for (const item of compareItems) item.disabled = !item.checked && selected.length >= 4;
       if (compareButton) compareButton.disabled = selected.length === 0;
       if (compareSummary) {
@@ -188,8 +212,11 @@ const itemListSchema = {
           ? `${selected.length} reference${selected.length === 1 ? '' : 's'} selected. You can compare up to four.`
           : 'No references selected. Choose up to four references.';
       }
+      measureComparison();
     }
 
+    if (comparison && 'ResizeObserver' in window) new ResizeObserver(measureComparison).observe(comparison);
+    window.addEventListener('resize', measureComparison, { passive: true });
     compareItems.forEach(item => item.addEventListener('change', updateComparison));
     compareButton?.addEventListener('click', () => {
       const selected = selectedReferences();
@@ -199,6 +226,18 @@ const itemListSchema = {
   </script>
 
   <style>
+    .a2-product-routes { padding-bottom: 56px; }
+    .a2-product-routes h2 { margin-top: 24px; font-size: 32px; color: #123b50; }
+    .a2-route-checklist { border-block: 1px solid #c4d0d7; margin: 20px 0 10px; }
+    .a2-route-checklist summary { cursor: pointer; padding: 14px 0; min-height: 48px; font-weight: 600; color: #123b50; }
+    .a2-route-checklist ul { margin: 0 0 18px; padding-left: 20px; color: #526570; font-size: 17px; }
+    .a2-route-checklist li { margin-block: 8px; }
+    .a2-secondary-route { display: flex; align-items: center; gap: 40px; background: #eaf0f3; padding: 26px 30px; margin-top: 42px; }
+    .a2-secondary-route p { max-width: 720px; font-size: 17px; color: #526570; }
+    .a2-secondary-route strong { color: #123b50; font-weight: 600; }
+    .a2-secondary-route a { flex: 0 0 auto; }
+    .families__heading>p:last-child { color: #526570; font-size: 18px; line-height: 1.6; }
+    @media(max-width:720px) { .a2-secondary-route { display: block; padding: 24px; } .a2-secondary-route a { margin-top: 12px; } }
     .selector-hero { background: #10233c; color: white; padding: calc(var(--nav-height) + 3.5rem) 1.5rem 3rem; }
     .selector-hero__inner, .inputs, .families, .comparison { max-width: 1180px; margin: 0 auto; }
     .selector-hero__inner { max-width: 800px; }

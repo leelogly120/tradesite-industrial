@@ -4,6 +4,11 @@ import { describe, expect, it } from 'vitest';
 const packageJson = JSON.parse(await readFile(new URL('../package.json', import.meta.url), 'utf8'));
 
 describe('permanent verification wiring', () => {
+  it('rebuilds current HTML before tests inspect the generated pages', () => {
+    const steps = packageJson.scripts.verify.split(' && ');
+    expect(steps.indexOf('npm run build')).toBeLessThan(steps.indexOf('npm run test:content'));
+    expect(packageJson.scripts['test:e2e']).toContain('tests/a2-rebuild.spec.ts');
+  });
   it('runs all focused product selection, card, copy, and encoding tests in npm run verify', () => {
     const verifyCommand = packageJson.scripts.verify;
     const testContentCommand = packageJson.scripts['test:content'];

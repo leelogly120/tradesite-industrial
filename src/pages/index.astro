@@ -1,203 +1,122 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import EquipmentDiagram from '../components/EquipmentDiagram.astro';
-import { getCollection } from 'astro:content';
-
-const allProducts = (await getCollection('products')).filter((product) => !product.data.draft);
-const HOME_CATEGORIES = [
-  {
-    id: 'crawler-roll-forming-lifts',
-    family: 'crawler',
-    name: 'Crawler Roll Forming Lifts',
-    range: 'Archived model references',
-    desc: 'Self-propelled crawler base concepts for positioning a compatible forming line near roof level.',
-  },
-  {
-    id: 'truck-mounted-roll-forming-lifts',
-    family: 'truck',
-    name: 'Truck-Mounted Roll Forming Lifts',
-    range: 'Route review required',
-    desc: 'Truck-mounted concepts where road transfer, chassis, stabilizer space and working position drive selection.',
-  },
-  {
-    id: 'crawler-ceiling-platforms',
-    family: 'ceiling',
-    name: 'Crawler Ceiling Platforms',
-    range: 'Working envelope by model',
-    desc: 'Large-deck crawler concepts for under-ceiling and wall-panel work, separate from the roof-forming workflow.',
-  },
-  {
-    id: 'roll-forming-machines',
-    family: 'former',
-    name: 'Roll Forming Machines',
-    range: 'Profile-led selection',
-    desc: 'Compatible forming lines selected from the profile drawing, material, thickness, coil and electrical inputs.',
-  },
-] as const;
-
-const homeCats = HOME_CATEGORIES.map((category) => ({
-  ...category,
-  items: allProducts.filter((product) => product.data.category === category.name),
-}));
-const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.com';
-const editorialDisclosure = 'AI-assisted editorial visual — representative only; not model-specific evidence.';
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://www.arclifteq.com';
 ---
 
 <BaseLayout
-  title="Roof-Level Roll Forming Lifts & Crawler Ceiling Platforms"
-  description="Technical selection and supply support for crawler and truck-mounted roof-level roll-forming systems, plus large-deck crawler ceiling-platform concepts."
-  ogImage="/images/og-home.jpg"
+  title="Elevated Roll-Forming Lifts & Large-Deck Platforms"
+  description="Explore truck-mounted and crawler-mounted lifts for roof-panel roll formers, plus large-deck ceiling platforms. ARCLIFT supports technical selection and supply."
+  ogImage="/images/equipment/elevated-roll-forming-platform.jpg"
+  transparentNav={false}
 >
   <script type="application/ld+json" set:html={JSON.stringify({
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'ARCLIFT Equipment Co., Ltd.',
-    url: siteUrl,
-    logo: `${siteUrl}/images/logo.png`,
-    description: 'Integrated equipment supplier supporting technical selection for roof-level roll forming lifts and large-deck crawler platform concepts.',
-    contactPoint: {
-      '@type': 'ContactPoint',
-      telephone: '+86 15617687185',
-      contactType: 'sales',
-      availableLanguage: ['English', 'Chinese'],
-    },
+    '@context': 'https://schema.org', '@type': 'Organization',
+    name: 'ARCLIFT Equipment Co., Ltd.', url: siteUrl, logo: `${siteUrl}/images/logo.png`,
+    description: 'Integrated equipment supplier supporting technical selection for roof-level roll forming lifts and large-deck crawler platforms.',
+    contactPoint: { '@type': 'ContactPoint', telephone: '+86 15617687185', contactType: 'sales', availableLanguage: ['English', 'Chinese'] },
   })} />
 
-  <section class="hero hero--product-first">
-    <div class="hero__inner">
-      <div class="hero__content">
-        <div class="hero__overline">Specialized roof-level forming equipment</div>
-        <h1 class="hero__title" id="hero-title">Roll-forming lifts for roof-level panel production</h1>
-        <p class="hero__desc">ARCLIFT is an integrated equipment supplier for crawler and truck-mounted roof-level roll-forming lifts, plus separate large-deck crawler ceiling platforms.</p>
-        <div class="hero__actions">
-          <a href="/products/" class="btn btn--primary">Explore Products</a>
-          <a href="/contact/" class="btn btn--outline">Get a Quote →</a>
+  <section class="a2-hero a2-shell" aria-labelledby="hero-title">
+    <div class="a2-hero-layout">
+      <div class="a2-hero-title">
+        <p class="a2-eyebrow">Roof-level roll-forming equipment</p>
+        <h1 id="hero-title">Lift the roll former.<br />Form closer to the roof.</h1>
+      </div>
+      <div class="a2-hero-media" data-equipment-hero>
+        <div class="a2-equipment-stage">
+          <figure class="a2-equipment-main">
+            <img src="/images/equipment/elevated-roll-forming-platform.jpg" width="349" height="405" alt="Extended lifting structure carrying an equipment platform above a crawler base" fetchpriority="high" />
+          </figure>
+          <figure class="a2-equipment-detail">
+            <img src="/images/equipment/elevated-platform-detail.jpg" width="312" height="405" alt="A separate reference view of the elevated equipment platform and folding support" />
+            <figcaption>Platform and support detail</figcaption>
+          </figure>
+        </div>
+        <p class="a2-caption">Equipment reference views. Final configuration and application require review.</p>
+      </div>
+      <div class="a2-hero-copy">
+        <p>Truck-mounted and crawler-mounted lifting equipment for roof-panel roll formers.</p>
+        <div class="a2-actions">
+          <a class="a2-button" href="/products/">Explore lifting systems</a>
+          <a class="a2-text-link" href="#matching">What to prepare</a>
         </div>
       </div>
-      <div class="hero__diagram">
-        <EquipmentDiagram family="crawler" />
-      </div>
     </div>
   </section>
 
-  <div class="trust">
-    <span class="trust__text">Technical selection and supply support</span>
-    <div class="trust__items">
-      <div class="trust__item">✓ 12–32m Historical Reference</div>
-      <div class="trust__item">✓ Crawler & Truck Options</div>
-      <div class="trust__item">✓ Destination Requirement Review</div>
-      <div class="trust__item">✓ Quote After Input Review</div>
-    </div>
+  <div class="a2-shell a2-identity">
+    <p><strong>ARCLIFT</strong> is an integrated equipment supplier and technical selection and supply partner.</p>
+    <p class="a2-identity-scope">Roof-level forming<br />Under-ceiling platforms</p>
   </div>
 
-  <section class="sec sec--white" aria-labelledby="product-families-title">
-    <div class="sec__header reveal">
-      <div class="sec__overline">Choose an equipment architecture</div>
-      <h2 class="sec__title" id="product-families-title">FOUR PRODUCT FAMILIES</h2>
-      <p class="sec__desc">Start with the work task and system architecture, then review the {allProducts.length} retained references and their evidence limits.</p>
+  <section class="a2-shell a2-section" aria-labelledby="systems-title">
+    <div class="a2-section-head">
+      <h2 id="systems-title">Two lifting arrangements.<br />Start with your site.</h2>
+      <p>The roll former, site access and transport plan help define the equipment route.</p>
     </div>
-    <div class="family-paths">
-      {homeCats.map((category) => (
-        <a href={`/products/#${category.id}`} class="family-path reveal">
-          <EquipmentDiagram family={category.family} compact />
-          <div class="family-path__body">
-            <div class="p-card__tag">{category.items.length} retained {category.items.length === 1 ? 'reference' : 'references'}</div>
-            <h3>{category.name}</h3>
-            <strong>{category.range}</strong>
-            <p>{category.desc}</p>
-            <span class="p-card__link">Review this family →</span>
-          </div>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <section class="sec sec--gray">
-    <div class="split split--reverse reveal">
-      <figure class="split__visual">
-        <img src="/images/home/roof-panel-output.webp" alt="Long standing-seam roof panels fed from a roll forming line at roof level" width="1200" height="800" loading="lazy" />
-        <figcaption>{editorialDisclosure}</figcaption>
-      </figure>
-      <div class="split__text">
-        <div class="sec__overline" style="text-align:left;">Primary workflow</div>
-        <h2>FORM PANELS NEAR ROOF LEVEL</h2>
-        <p>A compatible forming line may be positioned near eave level so long panels move toward the roof crew with fewer handling steps. Selection still depends on profile, material, panel length, line mass, feed direction and the site wind plan.</p>
-        <a href="/products/#crawler-roll-forming-lifts" class="link">See Roll Forming Lifts →</a>
-      </div>
+    <div class="a2-route-grid">
+      <article class="a2-route">
+        <figure>
+          <div class="a2-route-photo"><img src="/images/equipment/coil-handling-workflow.jpg" width="494" height="412" alt="Truck-carried lifting equipment shown handling a steel coil alongside the structure" loading="lazy" /></div>
+          <figcaption class="a2-caption">Reference: truck-carried material handling, not roof-panel production.</figcaption>
+        </figure>
+        <h3>Truck-mounted</h3>
+        <p>Bring the chassis interface, machine layout and available setup area into the same discussion.</p>
+        <a class="a2-text-link" href="/products/#truck-mounted-roll-forming-lifts">Explore truck-mounted systems <span aria-hidden="true">↗</span></a>
+        <p class="a2-route-input"><strong>Prepare:</strong> chassis information, machine dimensions, site layout.</p>
+      </article>
+      <article class="a2-route">
+        <figure>
+          <div class="a2-route-photo"><img class="a2-crawler-photo" src="/images/equipment/crawler-transport.jpg" width="543" height="306" alt="Folded crawler lifting equipment secured on a lowboy trailer" loading="lazy" /></div>
+          <figcaption class="a2-caption">Reference: crawler equipment in transport, not an operating setup.</figcaption>
+        </figure>
+        <h3>Crawler-mounted</h3>
+        <p>Plan the access route, support conditions and transport arrangement around the machine.</p>
+        <a class="a2-text-link" href="/products/#crawler-roll-forming-lifts">Explore crawler-mounted systems <span aria-hidden="true">↗</span></a>
+        <p class="a2-route-input"><strong>Prepare:</strong> access details, ground information, transport plan.</p>
+      </article>
     </div>
   </section>
 
-  <section class="sec sec--white">
-    <div class="split reveal">
-      <figure class="split__visual">
-        <img src="/images/home/under-ceiling-field-v2.webp" srcset="/images/home/under-ceiling-field-v2-800.webp 800w, /images/home/under-ceiling-field-v2.webp 1200w" sizes="(max-width: 1024px) calc(100vw - 48px), 50vw" alt="ARCLIFT-branded large crawler under-ceiling platform working inside a steel structure" width="1200" height="800" loading="lazy" />
-        <figcaption>{editorialDisclosure}</figcaption>
-      </figure>
-      <div class="split__text">
-        <div class="sec__overline" style="text-align:left;">Separate access family</div>
-        <h2>LARGE-DECK UNDER-CEILING ACCESS</h2>
-        <p>For selected ARC-F references, review deck use, travel state, allowable load, floor pressure and route clearance against the chosen equipment data and actual site conditions.</p>
-        <a href="/products/#crawler-ceiling-platforms" class="link">Review Ceiling Platforms →</a>
-      </div>
+  <section class="a2-band" id="matching" aria-labelledby="matching-title">
+    <div class="a2-shell">
+      <div class="a2-section-head"><h2 id="matching-title">The lift starts with<br />the forming machine.</h2><p>Height alone is not a complete selection brief. Gather these inputs before comparing configurations.</p></div>
+      <dl class="a2-inputs">
+        <div><dt>Machine &amp; interface</dt><dd>Roll-former weight, dimensions and mounting arrangement.</dd></div>
+        <div><dt>Outlet &amp; receiving area</dt><dd>Target outlet height, roof edge and planned panel handover.</dd></div>
+        <div><dt>Site &amp; transport</dt><dd>Access, setup space, support conditions and destination.</dd></div>
+      </dl>
+      <a class="a2-text-link" href="/blog/high-altitude-roll-forming-lift-rfq-data/">Build a useful equipment brief <span aria-hidden="true">→</span></a>
     </div>
   </section>
 
-  <section class="sec sec--dark spec-band" id="key-specifications">
-    <div class="stats reveal">
-      <div class="stat"><div class="stat__num"><span>12–32</span><small class="stat__unit">m</small></div><div class="stat__label"><span>Historical lift-height reference</span><small>Archived range; verify the selected model</small></div></div>
-      <div class="stat"><div class="stat__num"><span>8 / 11 / 20</span><small class="stat__unit">t</small></div><div class="stat__label"><span>Historical equipment classes</span><small>Not platform or personnel payload</small></div></div>
-      <div class="stat"><div class="stat__num"><span>0.3–1.0</span><small class="stat__unit">mm</small></div><div class="stat__label"><span>Historical sheet-thickness reference</span><small>Material and profile dependent</small></div></div>
-      <div class="stat"><div class="stat__num"><span>380</span><small class="stat__unit">V</small></div><div class="stat__label"><span>Common line-voltage reference</span><small>Destination and project specific</small></div></div>
+  <section class="a2-shell a2-section a2-split" id="ceiling" aria-labelledby="ceiling-title">
+    <figure class="a2-ceiling-photo">
+      <img src="/images/equipment/under-ceiling-large-deck.jpg" width="611" height="452" alt="Large-deck platform positioned below the steel roof structure inside a building" loading="lazy" />
+      <figcaption class="a2-caption">Under-ceiling platform reference. Main-deck and extension-zone loads need separate confirmation.</figcaption>
+    </figure>
+    <div class="a2-split-copy">
+      <p class="a2-eyebrow">A separate product line</p>
+      <h2 id="ceiling-title">More working area.<br />Beneath the ceiling.</h2>
+      <p>Large-deck platforms for under-ceiling work. Review deck layout and overhead clearance separately from roof-forming equipment.</p>
+      <a class="a2-text-link" href="/products/#crawler-ceiling-platforms">Explore ceiling platforms <span aria-hidden="true">↗</span></a>
     </div>
   </section>
 
-  <section class="sec sec--white">
-    <div class="sec__header reveal">
-      <div class="sec__overline">Applications</div>
-      <h2 class="sec__title">START WITH THE SITE AND WORK TASK</h2>
-      <p class="sec__desc">Application routes organize the inputs to review; they do not establish model suitability.</p>
+  <section class="a2-reading a2-shell" aria-labelledby="reading-title">
+    <div class="a2-section-head"><h2 id="reading-title">Plan the interfaces,<br />not just the height.</h2><a class="a2-text-link" href="/blog/">All technical guides <span aria-hidden="true">→</span></a></div>
+    <div class="a2-reading-links">
+      <a href="/blog/crawler-vs-truck-mounted-roll-forming-system/"><span>Equipment selection</span><h3>Crawler or truck-mounted?</h3><p>Compare the route, setup and transport questions.</p><span aria-hidden="true">↗</span></a>
+      <a href="/blog/elevated-roll-forming-roof-panel-handover-zones/"><span>Roof interface</span><h3>Where does the panel go next?</h3><p>Think through the outlet, support and receiving area.</p><span aria-hidden="true">↗</span></a>
+      <a href="/blog/40hq-shipping-truck-mounted-roll-forming-lift/"><span>Delivery planning</span><h3>What needs a packing review?</h3><p>Separate a shipping concept from an approved load plan.</p><span aria-hidden="true">↗</span></a>
     </div>
-    <div class="apps">
-      {[
-        { href: '/applications/stadium/', image: '/images/home/wall-panel-platform.webp', alt: 'Representative wall-panel platform visual in a steel structure', title: 'Stadium & Arena', text: 'Review span, floor loading, work zone and panel handling.' },
-        { href: '/applications/airport/', image: '/images/home/under-ceiling-field-v2.webp', small: '/images/home/under-ceiling-field-v2-800.webp', alt: 'Representative under-ceiling platform visual in a steel structure', title: 'Airport Terminal', text: 'Review access windows, ceiling services and public-area controls.' },
-        { href: '/applications/warehouse/', image: '/images/home/roof-panel-output.webp', alt: 'Representative roof-panel forming visual in an industrial structure', title: 'Warehouse & Industrial Building', text: 'Review aisle width, floor condition, overhead services and work sequence.' },
-      ].map((application) => (
-        <a href={application.href} class="app reveal" aria-label={`${application.title} planning route. ${editorialDisclosure}`}>
-          <div class="app__media"><img class="app__image" src={application.image} srcset={application.small ? `${application.small} 800w, ${application.image} 1200w` : undefined} sizes={application.small ? '(max-width: 1024px) calc(100vw - 48px), 33vw' : undefined} alt={application.alt} width="1200" height="800" loading="lazy" /></div>
-          <div class="app__arrow">→</div>
-          <div class="app__body"><span class="app__caption">{editorialDisclosure}</span><h3>{application.title}</h3><p>{application.text}</p></div>
-        </a>
-      ))}
-    </div>
+    <p class="a2-related-line">Also explore <a href="/products/#roll-forming-machines">roll-forming machine references</a> or the <a href="/compare/">equipment comparison workspace</a>.</p>
   </section>
 
-  <section class="sec sec--gray">
-    <div class="sec__header reveal">
-      <div class="sec__overline">Selection map</div>
-      <h2 class="sec__title">COMPARE THE ARCHITECTURE FIRST</h2>
-    </div>
-    <div class="comp reveal">
-      <table>
-        <thead><tr><th>Family</th><th>Primary task</th><th>Decision-driving inputs</th><th>Evidence boundary</th></tr></thead>
-        <tbody>
-          <tr><td>Crawler roll-forming lift</td><td>Position a compatible forming line near the roof work face</td><td>Ground, height, line mass, feed path</td><td>Archived model data; verify configuration</td></tr>
-          <tr><td>Truck-mounted roll-forming lift</td><td>Combine road-transfer concept with roof-level forming</td><td>Chassis, road limits, stabilizer space, site access</td><td>Destination and local chassis review required</td></tr>
-          <tr><td>Crawler ceiling platform</td><td>Large-deck under-ceiling or wall-panel access</td><td>Envelope, load, floor pressure, travel route</td><td>Model and site review required</td></tr>
-          <tr><td>Roll-forming machine</td><td>Form the specified panel profile</td><td>Drawing, material, thickness, coil, electrical supply</td><td>Profile-led configuration; no universal line</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div style="text-align:center;margin-top:2rem;"><a href="/compare/" class="btn btn--primary">Open the Comparison Workspace →</a></div>
-  </section>
-
-  <section class="cta">
-    <h2>READY TO REVIEW YOUR PROJECT INPUTS?</h2>
-    <p>Send the building height, panel profile, coil and former mass, site layout and destination market. ARCLIFT will review relevant references, outline open engineering inputs and identify items requiring local confirmation.</p>
-    <a href="/contact/" class="btn--white">Send Project Details →</a>
-    <div class="cta__contacts">
-      <a href="https://wa.me/8615617687185">WhatsApp: +86 15617687185</a>
-      <a href="mailto:leelogly120@gmail.com">leelogly120@gmail.com</a>
+  <section class="a2-inquiry" aria-labelledby="inquiry-title">
+    <div class="a2-shell a2-inquiry-inner">
+      <h2 id="inquiry-title">Tell us about<br />your roll former.</h2>
+      <div><p>Planning a project or sourcing for your market? Start with the machine, the output position and the site.</p><a class="a2-button a2-button--orange" href="/contact/">Send your equipment brief</a><div class="a2-contact-links"><a href="https://wa.me/8615617687185">WhatsApp: +86 15617687185</a><a href="mailto:leelogly120@gmail.com">leelogly120@gmail.com</a></div></div>
     </div>
   </section>
 </BaseLayout>

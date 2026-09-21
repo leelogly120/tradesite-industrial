@@ -23,7 +23,10 @@ test.describe('family-first product discovery', () => {
 
     expect(familyTop).toBeLessThan(inputsTop);
     expect(firstFamilyTop).toBeLessThan(inputsTop);
-    expect(firstFamilyTop).toBeLessThan(844 * 1.75);
+    const firstPrimaryRouteTop = (await page.locator('#equipment-routes .a2-route').first().boundingBox())!.y;
+    expect(firstPrimaryRouteTop).toBeLessThan(844 * 1.75);
+    await expect(page.locator('#equipment-routes a[href="#crawler-roll-forming-lifts"]')).toBeVisible();
+    await expect(page.locator('#equipment-routes a[href="#truck-mounted-roll-forming-lifts"]')).toBeVisible();
 
     const hrefs = await page.locator('a[href^="/products/"]').evaluateAll((links) =>
       links.map((link) => link.getAttribute('href') ?? '').filter((href) => /^\/products\/arc-[a-z0-9-]+\/$/.test(href)),

@@ -1,6 +1,7 @@
 ---
 import SEOHead from '../components/SEOHead.astro';
 import '../styles/global.css';
+import '../styles/equipment-design.css';
 
 interface Props {
   title: string;
@@ -50,15 +51,15 @@ function isActive(href: string) {
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
-  <body>
+  <body class={currentPath.replace(/\/+$/, '') === '/contact' ? 'design-contact' : 'design-a2'}>
     <a href="#main-content" class="skip-link">Skip to content</a>
 
     <!-- NAVBAR -->
-    <nav class:list={['nav', { 'nav--solid': !transparentNav }]} id="nav" data-transparent={transparentNav ? 'true' : 'false'}>
-      <a href="/" class="nav__logo">ARCLIFT</a>
+    <nav class="nav nav--solid" id="nav" data-transparent="false" aria-label="Primary navigation">
+      <a href="/" class="nav__logo" aria-label="ARCLIFT home"><img src="/images/logo.png" width="174" height="55" alt="ARCLIFT" /></a>
       <div class="nav__links">
         {navLinks.map(link => (
-          <a href={link.href} class={isActive(link.href) ? 'active' : ''}>
+          <a href={link.href} class={isActive(link.href) ? 'active' : ''} aria-current={isActive(link.href) ? 'page' : undefined}>
             {link.label}
           </a>
         ))}
@@ -104,7 +105,7 @@ function isActive(href: string) {
     <footer class="footer">
       <div class="footer__grid">
         <div>
-          <div class="footer__brand">ARCLIFT</div>
+          <div class="footer__brand"><img src="/images/logo.png" width="174" height="55" alt="ARCLIFT" loading="lazy" /></div>
           <p class="footer__brand-desc">Technical selection and supply support for crawler and truck-mounted roof-level roll-forming systems, plus large-deck concepts for under-ceiling and wall-panel work.</p>
         </div>
         <div>

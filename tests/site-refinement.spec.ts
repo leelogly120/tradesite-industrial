@@ -13,7 +13,9 @@ test('content remains visible when scripts are unavailable', async ({ browser })
 
   await page.goto('/');
 
-  await expect(page.locator('.reveal').first()).toHaveCSS('opacity', '1');
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+  await expect(page.locator('[data-equipment-hero]')).toBeVisible();
+  await expect(page.locator('.a2-route')).toHaveCount(2);
   await context.close();
 });
 

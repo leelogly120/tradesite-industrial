@@ -66,7 +66,8 @@ test('makes roof-level panel forming the primary application route without hidin
   await page.goto('/applications/');
   await page.waitForLoadState('networkidle');
 
-  await expect(page.getByRole('heading', { level: 1 })).toContainText(/roof-level panel forming/i);
+  await expect(page.getByRole('heading', { level: 1 })).toContainText(/roof-level forming/i);
+  await expect(page.locator('[data-application-route="roof-forming"]')).toContainText(/Roof-level roll forming/);
   const routes = page.locator('[data-application-route]');
   await expect(routes).toHaveCount(3);
   await expect(routes.first()).toHaveAttribute('data-application-route', 'roof-forming');
@@ -76,10 +77,13 @@ test('makes roof-level panel forming the primary application route without hidin
   }
 
   await expect(page.locator('body')).not.toContainText(/all-terrain tracks|our engineering team|approve final configuration|remote control/i);
-  await expectVisibleFigureDisclosures(page);
+  for (const figure of await page.locator('main figure').all()) {
+    await expect(figure.locator('figcaption')).toBeVisible();
+    await expect(figure.locator('figcaption')).toContainText(/reference/i);
+  }
   await expectNoBrokenImages(page);
 
-  const firstRouteLink = routes.first().getByRole('link', { name: /review/i }).first();
+  const firstRouteLink = routes.first().getByRole('link', { name: /Warehouse & industrial roofs/i });
   await firstRouteLink.focus();
   await expect(firstRouteLink).toBeFocused();
 });

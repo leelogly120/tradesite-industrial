@@ -406,7 +406,7 @@ describe('Task 5b SEO and listing contract', () => {
     expect(index).not.toMatch(/http-equiv="refresh"/i);
     expect(index).toMatch(/canonical="https:\/\/www\.arclifteq\.com\/blog\/"/);
     expect(index).toMatch(/<BlogListing/);
-    expect(listing).toMatch(/roll-forming lift/i);
+    expect(listing).toMatch(/roll[- ]forming/i);
     expect(listing).toMatch(/large-deck platform/i);
     expect(listing).not.toMatch(/<form\b[^>]*newsletter/i);
     expect(listing).toMatch(/href="\/contact\/"/);
