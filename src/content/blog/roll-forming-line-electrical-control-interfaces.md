@@ -2,6 +2,7 @@
 title: "Electrical Interface List for a Roll-Forming Project"
 description: "Define power, signal, safety and handover interfaces before an approved electrical schedule; this guide does not specify wiring, control brands or compliance."
 date: 2026-07-27
+updated: 2026-10-01
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "electrical interfaces", "control handover", "project documentation"]
 coverImage: "/images/editorial/electrical-interface-boundary.svg"
@@ -42,6 +43,22 @@ For every interface, identify whether it is power, command, permissive, status, 
 Site systems may request availability, receive status or coordinate upstream and downstream equipment. The interface list should describe the required business or process outcome without selecting a protocol, network, address structure or cybersecurity design. Those details belong in approved project documents.
 
 Separate remote observation from remote control. A status displayed elsewhere does not automatically authorise commands, resets or bypasses. Record who may request each function, where final authority sits and which risk or electrical document will define the behaviour.
+
+### Ask both sides of each interface
+
+Where a project arrangement connects a roll former with a lift carrier or remote station, a line on a block diagram is not enough. One party may describe what it can send while the other is waiting for a different meaning. Use the questions below to expose that gap before a designer assigns signals or states. The lift-carrier questions apply only if that carrier is part of the selected arrangement.
+
+*On smaller screens, scroll the table sideways to read all three columns.*
+
+| Interface to be defined | Question for the sending or supplying side | Question for the receiving or relying side |
+| --- | --- | --- |
+| Site supply to the roll former | Which documented supply condition is actually offered at the agreed boundary, and who owns changes to it? | Which input conditions must the machine designer confirm before calling the equipment available? |
+| Roll former and lift carrier | Which movement or equipment status, if any, is proposed to cross the boundary? | What does the other designer need that status to mean, and is it information or a requested permission? |
+| Roll former and material handoff | What event or condition is being reported at the feed or exit boundary? | What action is the neighbouring system expected to consider, and who resolves disagreement between the two descriptions? |
+| Remote observation from either equipment group | Which state can be reported, how current is it, and what does it not show? | Could an observer mistake a delayed or partial display for confirmation of a safe state? |
+| Remote command request to either equipment group | Who is intended to request a function, from where, and under which project authority? | Which designer decides whether the request may be accepted, rejected or deferred in each relevant state? |
+
+These are interface questions, not a proposed exchange scheme. The answer may be that no status or command should cross a particular boundary. That decision belongs in the approved project design, with the risk implications considered by the responsible reviewers.
 
 ![Non-wiring diagram of electrical and control boundaries](/images/editorial/electrical-interface-boundary.svg)
 
@@ -96,6 +113,12 @@ For each exchange, record the initiating system, receiving system, purpose, norm
 
 Alarms require an expected response and an authority model. A message without a defined owner can produce noise rather than control. If the project has not decided whether an alarm stops equipment, blocks a start or only informs an operator, label the behaviour unresolved.
 
+### Keep availability, readiness, permission and reset distinct
+
+“Power available” can mean only that the documented supply condition is present at a defined boundary. It does not answer whether a machine is ready for a process request. “Ready” needs its own project meaning: ready for what function, in which configuration, and according to which side's information? “Permission” is a separate decision about whether a requested action is authorised in that state. “Reset” concerns how a fault or interruption is acknowledged and what evidence is needed before any renewed request can be considered. None of these labels should be treated as a complete safety function or as interchangeable shorthand.
+
+Ask the designers what each side would report after a fault, a lost remote connection or an interruption to site power. Which information may be stale? What remains unknown when power returns? Can a request made before the interruption still be meaningful, or must its authority and the equipment state be reconsidered? Who defines the visible indication, the conditions for any renewed permission and the point at which a person must review the situation? The interface list records those unresolved questions; the approved risk and control design determines the behaviour. It is not a restart instruction.
+
 ### Normal stop and safeguard states
 
 Define the questions before the logic: what initiates the state, which subsystems respond, what energy or movement remains, what indication appears and who may reset. The <a href="https://www.iso.org/standard/73481.html" target="_blank" rel="noopener noreferrer">ISO 13849-1:2023 official standard record</a> locates a methodology for safety-related parts of control systems. It does not select this project's safety functions or performance levels.
@@ -130,7 +153,7 @@ An I/O count is an output of design, not a procurement shortcut. The number can 
 
 Every change should identify the initiating requirement, affected interfaces, risk-review impact, document revisions and authorising roles. A change to upstream equipment, a product recipe, a site system or a safeguard can cross several boundaries even if the request appears local.
 
-Maintain one change register that links technical decisions to controlled drawings and test records. Do not rely on marked-up screenshots or chat messages as the final configuration record. Preserve the superseded revision according to the project document plan.
+Link the changed decision to the affected drawings and test evidence. A marked-up screenshot or chat message may explain the request, but it should not become the final configuration record. Preserve superseded revisions according to the project document plan.
 
 ### Risk-review sign-off
 

@@ -2,6 +2,7 @@
 title: "Panel Profile Data for a Roll-Forming Tooling Review"
 description: "Prepare a profile, coil and roof-system input record before requesting a project tooling proposal; it does not promise line capability or panel performance."
 date: 2026-07-27
+updated: 2026-10-01
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "tooling review", "roof panels", "project data"]
 coverImage: "/images/editorial/profile-input-sheet.svg"
@@ -66,6 +67,8 @@ Direction can matter in rolled sheet. The <a href="https://www.nist.gov/programs
 
 Capture the ordered grade or designation, available yield and tensile information, elongation basis, coating description, surface condition and certificate status. If any value is provisional, label it provisional. Do not claim equivalence between ASTM, EN or another system unless project documentation and a competent reviewer establish the comparison.
 
+The comparison needs to follow the material actually intended for purchase, not just a designation copied from an early enquiry. Ask whether the proposed sample, the material evidence and the purchase description refer to the same condition. If they do not, a reviewer can still use the earlier work for its stated purpose, but should not silently carry its conclusion forward.
+
 ### Coil width, ID, OD and mass fields
 
 The coil record should provide width, inside diameter, outside diameter and mass as controlled project inputs, plus the evidence source and variation expected across deliveries. Those fields inform later handling and feed reviews; they do not by themselves choose a decoiler, loading device or line.
@@ -97,11 +100,27 @@ State what physically exists. A reference panel may be available, unavailable, d
 
 If a trial is proposed, define what material will be used, who supplies it, how it is identified and what observations will be recorded. A trial on substitute material can still answer a limited setup question, but only if the record says what it cannot answer.
 
+### Trace changes through the tooling question
+
+A revision can alter the meaning of an earlier sample without making that sample worthless. Compare each proposed change with the drawing, purchase description, trial material and acceptance basis that supported the previous discussion. This is a question map for the project reviewers, not a prediction that a particular change will force new tooling or a new trial.
+
+*On smaller screens, scroll the table sideways to read all three columns.*
+
+| Changed input | Earlier evidence that may no longer cover the question | Review to reopen before relying on it |
+| --- | --- | --- |
+| Profile drawing revision, including a mating feature or end detail | A sample measured against the previous drawing says nothing conclusive about the revised feature. | Identify the affected geometry and ask whether the tooling proposal, sample objective and measurement reference still match. |
+| Ordered material designation or mechanical condition | Forming observations belong to the material condition actually sampled. | Compare the intended purchase description with the sampled material evidence; ask which observations remain relevant and which need project review. |
+| Coating description or thickness basis | A visual sample or an unqualified thickness figure cannot establish the revised coated input. | Clarify the ordered coating and thickness convention, then revisit the input assumptions and observation plan. |
+| Sample source or sample identification | An unidentified panel or coil cannot be tied confidently to the proposed purchase condition. | Establish provenance and limit any earlier trial conclusion to the material and drawing it actually used. |
+| Acceptance source or measurement method | A result judged by an earlier method may not answer a newly defined acceptance question. | Ask the drawing and roof-system authorities which document now controls the observation; keep tooling and roof approval separate. |
+
+For example, assume the profile drawing is unchanged but the project later specifies a different material condition or coating from the coil used for an earlier short sample. The old panel may still show how a feature on that drawing was interpreted and what was observed on that particular sample. It cannot, merely because the outline looks similar, demonstrate how the newly ordered material will form or whether it meets the new purchase description. The reviewer can retain the old observation with its original material and method attached, then decide what further comparison, material evidence or trial—if any—is needed. A new tooling design is not an automatic consequence of the change.
+
 ### Unknowns reserved for signed tooling
 
 Roller material, number of stations, pass schedule, drive arrangement, cut concept, line speed, profile tolerance and the likely outcome remain unknown until project-specific review. Do not fill those blanks from another machine page or from the [ARC-RF8 product context](/products/arc-rf8-roll-forming-machine/). A product page can orient the discussion; it is not a signed tooling schedule.
 
-Reserve these decisions in an “open items” table with owner, needed evidence and closure document. This prevents preliminary discussion from being quoted later as a fixed configuration. It also shows which unknown blocks a proposal and which can remain open until a later gate.
+For each unresolved design choice, ask what evidence would allow it to be proposed and what must wait for a later decision. An early conversation should not be quoted as a fixed machine configuration.
 
 ### Drawing and document ownership
 
@@ -110,7 +129,7 @@ Record who may issue, revise and approve each input. The profile owner may not b
 Define the permitted distribution, file format, units, revision convention and retention expectation. Use anonymised document identifiers during preliminary review. Customer names, project locations, contacts and traceable drawing identifiers should not appear in public forms, analytics or editorial material.
 
 <!-- audit-section: evidence-tradeoffs -->
-The evidence trade-off is deliberate: a compact input record speeds review only when it preserves provenance and uncertainty. Adding unverified detail makes the package look complete while weakening it. Leaving a controlled blank, naming the owner and stating the closure evidence creates a clearer interface than copying a value from an unrelated line.
+An input sheet is useful when a buyer can tell which drawing and coil a conclusion belongs to. The trade-off is between carrying forward an earlier observation quickly and losing the conditions that made it meaningful. A borrowed value may make the sheet look complete while hiding a mismatch. Keeping the earlier sample's identity, material condition and observation method attached to it preserves the useful evidence; an honest blank points to the precise question still open.
 
 ![Conceptual split between roof-system approval and tooling proposal responsibilities](/images/editorial/roof-system-tooling-boundary.svg)
 

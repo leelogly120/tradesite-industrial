@@ -2,6 +2,7 @@
 title: "Weather Hold-Point Planning for Roof-Level Roll Forming"
 description: "Plan weather hold points for roof-level roll forming by assigning monitoring, stop, inspection and restart decisions to controlled project roles and records."
 date: 2026-08-07
+updated: 2026-10-01
 author: "ARCLIFT Technical Editorial"
 tags: ["roof-level roll forming weather", "weather hold points", "restart planning", "site controls"]
 coverImage: "/images/editorial/truck-site-roll-forming-lift.webp"
@@ -10,7 +11,7 @@ coverCaption: "AI-assisted editorial image; not evidence of equipment, configura
 draft: false
 ---
 
-Weather hold points connect changing conditions to a controlled decision: continue, pause, secure, inspect or restart. They should be defined for the actual equipment, roof, panel, work sequence and local requirements by competent project roles. A universal number in an article cannot make that decision. The useful planning task is to identify what is monitored, who has authority, which work states are affected and what evidence is required before the system returns to service. Shift handover should carry forward the last observation, any active hold, the equipment and material state, unavailable instruments and the next authorized decision. A new crew must not treat the passage of time as a restart. It needs the current register and a clear statement of which inspections or reviews remain open.
+The buyer's question is what the project will leave behind, inspect and release when weather interrupts roof-level forming. A pause during setup is different from a pause with an unfinished panel or a coil awaiting transfer. Project-specific criteria must come from the actual equipment, roof, work sequence and local requirements; this article supplies no universal weather number or ARCLIFT wind capability. Shift handover should identify the last observed condition, affected work state and outstanding release decision. Better weather alone does not answer what happened to the material or whether the receiving team is ready.
 
 For adjacent decisions, use [roof-level long-panel planning guide](/blog/roof-level-roll-forming-long-panels/) and [emergency lowering and rescue planning guide](/blog/aerial-platform-emergency-lowering-rescue-plan/); [ARC-C crawler lift page](/products/arc-c25-crawler-roll-forming-lift/) provides another project boundary.
 
@@ -39,6 +40,8 @@ State who obtains forecasts, who observes site conditions, where instruments are
 
 For each project-defined trigger, reference the approved response rather than writing generic instructions in the register. Show whether the affected activity pauses, materials are secured, the zone is cleared or further review is required. Exact actions depend on the actual system and site. The planning record should make clear which document controls and how personnel receive the current revision.
 
+The trigger should identify the work item it interrupts. If a panel is between forming and roof receipt, a simple “forming stopped” entry hides the separate receiving decision. If a coil has been released from staging but not accepted at its destination, the next shift needs to know its actual location and whether the intended receiving zone remains available. These are status questions for the approved project method, not instructions for moving or securing either item.
+
 ![Weather hold-point decision loop](/images/editorial/roof-level-roll-forming-weather-hold-points.svg)
 
 *AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Decision loop only; no universal limit or operating permission is shown.*
@@ -58,7 +61,7 @@ Rain can affect surfaces and visibility; temperature can affect ice or material 
 
 ### Preserve the decision trail
 
-Record the person, time, work state, observation, applicable criterion, action and open items. If work continues under a project-defined condition, preserve the basis. If work stops, show which inspections and approvals are required later. This trail supports learning and shift handover without turning a past decision into automatic permission for a future day.
+Keep the time, observation source, affected work state and decision together. A forecast update, an observation at the workface and a decision under the project criterion are different evidence. Note which item remained in process when the hold began and whether its acceptance had already occurred. A previous shift's decision is context for the next shift, not continuing permission when conditions or the work state have changed.
 
 ![Editorial diagram of roof-level forming workflow map](/images/editorial/roof-level-workflow.svg)
 
@@ -67,22 +70,32 @@ Record the person, time, work state, observation, applicable criterion, action a
 <!-- audit-section: project-checklist -->
 ## Plan secure shutdown and disciplined restart
 
-Stopping is only half the control. The project must know how work reaches a stable state and what must be rechecked before people, material and equipment return to the planned sequence.
+Stopping is only half the decision. The project must know which items are unfinished, which handovers are pending and what evidence a restart reviewer will need. The table is a blank editorial prompt for the approved site method, not a secure-state procedure.
 
-- List project-defined weather sources, site observations, decision roles and affected work states.
-- Reference approved secure-state, inspection, communication and restart records for every hold.
-- Record working height and outreach assumptions without treating them as an approved operating envelope.
-- Describe roof slope or building geometry, nearby edges and any changing work-face condition.
-- List task material, panel length, coil or feed information only where it affects the reviewed interface.
-- Assign weather and wind monitoring to the site team under its approved work method.
-- Provide ground or floor records and name the competent party responsible for support review.
-- Map access and route states from delivery through setup, task work and withdrawal.
-- State destination, transport and chassis constraints that belong to local or integration review.
-- Record voltage, power, control and documentation requirements with revision status and owner.
+*On smaller screens, scroll the table sideways to read all three columns.*
+
+| State at the hold | What the next team needs to know | Evidence before restart decision |
+| --- | --- | --- |
+| Unfinished panel | Its location, length or stage as relevant, and whether the receiving team accepted it | Project inspection and panel disposition under the current method |
+| Coil awaiting transfer | Its actual location, identification and whether the destination accepted custody | Material condition, route and receiving-zone status |
+| Forming and lift equipment | The recorded state when work paused and any change or exposure during the hold | Applicable equipment inspection and configuration review |
+| Roof workface and access | Which zones and routes remain affected, including any surface or support concern | Site inspection and any required structural or access review |
+| Receiving crew and downstream work | Whether people, communication and the next activity are available under the revised plan | Briefing and acceptance of changed handover conditions |
+
+Do not collapse these rows into a single “weather clear” tick. A panel can require a disposition decision even when equipment checks pass; a receiving crew may still be unavailable when the workface is released. Keep each unresolved item visible until the relevant competent role makes the project-specific decision.
+
+Before the project sets its hold-point document, request these six inputs:
+
+- Roof workface and geometry information that identifies where exposed materials and receiving work occur.
+- The current panel and coil status categories used by the material and forming teams.
+- The site's wind and other weather criteria, observation sources and decision roles for each affected work state.
+- Ground or floor support and access concerns that may need inspection after the weather event.
+- The route and destination status for panels or coils whose handover was interrupted.
+- Controlled equipment documentation and restart requirements, including who signs each release.
 
 ### Define a secure-state boundary
 
-The actual equipment instructions and project method should define how the system, coil, panel, utilities and work zone are left when a hold begins. The planning register should reference those documents and identify who verifies the state. It must not invent securing steps. Selection should test whether the concept has a realistic route to a controlled state within the available site organization.
+The actual equipment instructions and project method should define how the system, coil, panel, utilities and work zone are left when a hold begins. For planning, ask what information confirms that state was reached and whether any material was still between teams. Do not invent securing steps. A proposed workflow is incomplete if no one can explain how an in-process panel or pending coil handover is represented in the approved hold method.
 
 ### Inspect after the condition passes
 
@@ -90,7 +103,13 @@ A clear sky does not automatically restore the previous baseline. The project ma
 
 ### Authorize restart and brief changes
 
-Record the restart decision separately from the observation that conditions improved. Confirm the equipment state, work zone, panel route, receiving team and open items. Brief any changed controls to the affected people and preserve the acknowledgment required by the site. If the baseline changed, reopen technical or structural review rather than issuing a routine restart.
+The restart sign-off should be separate from the observation that conditions improved. It needs the current weather criterion, post-hold inspection results, disposition of unfinished panels and pending coils, equipment and workface status, and confirmation that the receiving team understands the next handover. If any configuration, route, support condition or work sequence changed, the affected technical review should be reopened. Only then can the named site authority release the relevant work state under the current method; one release need not cover every activity.
+
+### Make the restart sign-off state-specific
+
+A useful sign-off names the activity being released: for example, continued material receipt is a different decision from resuming forming or roof handover. It references the relevant inspection and disposition results rather than treating a forecast update as a substitute for them. If an unfinished panel remains in the process, its status must be decided before the receiving team is asked to resume that handover. If a coil transfer remains pending, confirmation of its location and acceptance is needed before the next route is released.
+
+The sign-off also needs a clear exception path. An inspection may close the weather concern while exposing a changed support condition, damaged material or unavailable receiving area. Those findings belong to the relevant technical or site review. They should not be hidden by a general restart approval, and the unaffected activities need not be described as identical to the held activity.
 
 ![Worksite readiness review loop](/images/editorial/rescue-readiness-loop.svg)
 
@@ -103,9 +122,7 @@ Record the restart decision separately from the observation that conditions impr
 
 A highly restrictive plan can make the workflow impractical, while a vague plan leaves crews without clear authority. The trade-off is resolved through configuration-specific criteria, reliable monitoring, early holds and a realistic secure-state path. Selection should compare how each concept exposes panels, material, routes and personnel, but it should not claim that one configuration removes weather risk. The project still owns the approved criteria and method.
 
-The practical trade-off is between early coordination and false precision. A useful record exposes each constraint, interface and unresolved owner; it does not convert preliminary information into an approval.
-
-For general planning context, see the <a href="https://www.hse.gov.uk/pubns/geis6.htm" target="_blank" rel="noopener noreferrer">HSE guidance on planning and managing mobile elevating work platforms</a>. It supports general work-planning principles only. It does not verify an ARCLIFT configuration, settle destination rules or approve a site.
+For UK context, the <a href="https://www.hse.gov.uk/construction/faq-height.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height and roof-work FAQ</a> notes that weather can affect roof work. It does not publish a universal stop or restart threshold for this workflow, establish an ARCLIFT wind capability or approve a particular roof-level forming plan. Outside the UK, the applicable local framework still needs its own review.
 
 <!-- audit-section: limitations-not-fit -->
 ### Reject universal weather numbers

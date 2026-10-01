@@ -2,6 +2,7 @@
 title: "Coil Loading Plan for Roof-Level Roll-Forming Lifts"
 description: "Plan coil loading for roof-level roll-forming lift by controlling delivery, staging, transfer, feed data, exclusion zones, responsibilities and stop conditions."
 date: 2026-08-07
+updated: 2026-10-01
 author: "ARCLIFT Technical Editorial"
 tags: ["coil loading plan", "roof level roll forming", "material handling", "feed planning"]
 coverImage: "/images/editorial/coil-route-journey-map.svg"
@@ -10,7 +11,7 @@ coverCaption: "AI-assisted editorial image; not evidence of equipment, configura
 draft: false
 ---
 
-Coil loading is a chain of custody and controlled interfaces from delivery to feed entry. The plan should state which coil is expected, where it is received, how it is identified, which zones it passes through and who owns every transfer. It should also keep lifting methods, equipment limits and site authorization with the competent parties using the actual configuration. A clean journey map helps technical selection without turning an editorial guide into a rigging instruction. Where several coils are planned, add sequence, storage location and profile linkage so the wrong unit cannot enter a later shift unnoticed. The record should also show how residual material, packaging and empty supports leave the work zone. These return flows affect floor space, traffic separation and housekeeping, and they deserve the same custody discipline as the incoming coil. Record each handover.
+The buyer's first question is not how to lift a coil. It is whether the delivered coil can be identified, accepted and handed to the proposed forming feed point without an undefined transfer between teams or equipment. The answer depends on the actual layout: a ground-fed arrangement and one that places a coil at height would have different interfaces, if either is proposed for the project. Neither arrangement is assumed to be an ARCLIFT operating configuration here. Keep lifting methods, equipment limits and site authorization with competent parties using controlled configuration and site information. Where several coils are planned, link identity and sequence to the profile, then account for residual material, packaging and empty supports on the return route.
 
 For adjacent decisions, use [coil handling and feeding guide](/blog/coil-handling-roll-forming-line-feeding-plan/) and [roof-level long-panel workflow](/blog/roof-level-roll-forming-long-panels/); [ARC-RF8 roll-forming machine page](/products/arc-rf8-roll-forming-machine/) provides another project boundary.
 
@@ -60,6 +61,12 @@ Define stable staging areas, protection from contamination or weather, spacing, 
 
 Show where coil-handling responsibility transfers to the forming system, which orientation and identification must be confirmed, and what stops feeding. Guarding, lifting, threading and operating procedures must come from the actual equipment and approved method. The interface record should state which parties verify material identity, equipment readiness and area isolation before controlled work begins.
 
+### Separate ground handover from a possible elevated handover
+
+Start with the receiving location shown on the current layout, not a photograph or a product-family label. If the coil remains at ground level and material reaches the forming feed by a separate arrangement, the project must identify that arrangement and its interface with the forming line. If a proposal instead requires the coil to be received at height, the receiving position, supporting structure, people and equipment states become different review inputs. A roof-level forming concept alone does not prove that the whole coil travels with a lift.
+
+Mark the point at which the delivery team's responsibility ends, the point at which the appointed handling team's begins, and the point at which the forming team's feed responsibility begins. These may be three different places. A gap is not solved by naming one overall contractor: the project needs a controlled answer for the coil's location and condition while no team has yet accepted the next interface.
+
 ![Blank incoming coil data card](/images/editorial/blank-coil-data-card.svg)
 
 *AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Example input fields; no material or equipment value is implied.*
@@ -67,22 +74,32 @@ Show where coil-handling responsibility transfers to the forming system, which o
 <!-- audit-section: project-checklist -->
 ## Build a load plan with hold points
 
-The plan should connect coil identity, route zone, handling responsibility, equipment state and required evidence. A concise hold-point table is more useful than a long narrative that leaves ownership unclear.
+The plan should connect coil identity, location, proposed configuration state and the evidence needed at each acceptance boundary. The questions below are an editorial review template, not completed project instructions.
 
-- Link each coil identifier to the current material, profile and tooling records.
-- Mark receipt, staging, transfer and feed boundaries with custody and isolation owners.
-- Record working height and outreach assumptions without treating them as an approved operating envelope.
-- Describe roof slope or building geometry, nearby edges and any changing work-face condition.
-- List task material, panel length, coil or feed information only where it affects the reviewed interface.
-- Assign weather and wind monitoring to the site team under its approved work method.
-- Provide ground or floor records and name the competent party responsible for support review.
-- Map access and route states from delivery through setup, task work and withdrawal.
-- State destination, transport and chassis constraints that belong to local or integration review.
-- Record voltage, power, control and documentation requirements with revision status and owner.
+*On smaller screens, scroll the table sideways to read all three columns.*
+
+| Interface to resolve | Question for the project team | Evidence or decision needed |
+| --- | --- | --- |
+| Delivery to ground receipt | Who accepts the identified coil, its condition and its documents when the vehicle leaves? | Coil identifier, material/profile revision and receiving record |
+| Ground staging to proposed transfer | Where is the coil held if the next equipment or receiving zone is not ready? | Approved staging location, support review and quarantine decision where relevant |
+| Proposed lift or other transfer | Which controlled layout actually shows whether the coil remains at ground level or is received at height? | Configuration drawing and separate competent lifting/handling plan, if required |
+| Transfer to receiving position | Who confirms the destination is available, and what happens if it is not? | Receiving-zone status, communication boundary and unresolved-item decision |
+| Receiving position to feed entry | Which team confirms the correct coil and forming input before accepting feed responsibility? | Material identity, current profile/tooling basis and equipment-readiness record |
+
+This matrix deliberately stops at interfaces. It does not specify a lifting point, accessory, restraint, loading sequence or permissible load. If the proposed transfer device, receiving surface or equipment state changes, the affected project reviewers must revisit the corresponding row before treating the route as ready.
+
+For a first interface review, gather these six project inputs alongside the matrix:
+
+- Current coil identity, material and profile documents, with discrepancies marked before feed acceptance.
+- A route drawing that distinguishes delivery, ground staging, any transfer and the final feed boundary.
+- Ground or floor support evidence for each proposed holding position, reviewed by the appropriate project discipline.
+- Roof geometry and receiving-zone availability if the proposal places any coil handling or feed interface at height.
+- The site's wind and weather decision source where exposure could interrupt a planned handover.
+- Controlled equipment and handling documentation showing the proposed configuration and who can resolve an unaccepted transfer.
 
 ### Use a coil journey record
 
-Give every planned movement a start zone, end zone, coil state, responsible role, required equipment record and release status. The record should identify the actual handling device without deriving capability from appearance. If one movement changes, reassess adjacent staging and traffic interfaces. Preserve the completed journey record with material and forming documentation for traceability.
+For each proposed movement, show the start and end zones, coil identity and condition, the team handing it over, and the team accepting it. Include a pending state: a delivery can be complete while the next transfer is not released. Identify the actual handling device from controlled project records, never from its appearance. If the destination or device changes, revisit both the staging space left behind and the receiving space ahead; the original route drawing is no longer enough.
 
 ### Separate lift planning from selection data
 
@@ -91,6 +108,8 @@ Technical selection needs coil dimensions, mass data, route and interface condit
 ### Record stop and escalation conditions
 
 Examples include identity mismatch, damaged packaging, missing material evidence, changed route, occupied exclusion zone, unsuitable surface, weather change or equipment-state discrepancy. The project should set exact criteria and response roles. The planning record should make it easy to stop without losing custody or schedule context, then show what evidence is needed before release.
+
+A mismatch should remain attached to the affected coil, rather than disappearing into a general shift note. For example, a coil may be physically at the destination but not yet accepted for feed because its identification or profile revision is unresolved. Distinguish physical arrival, quality acceptance and feed release. That distinction prevents a route-completion tick from being mistaken for a forming authorization.
 
 ![Coil route responsibility zones](/images/editorial/coil-zone-responsibility-overlay.svg)
 
@@ -103,9 +122,9 @@ Examples include identity mismatch, damaged packaging, missing material evidence
 
 Placing coils close to feed entry can shorten the journey but may compete with equipment setup, vehicle movement or panel receiving. Remote staging can separate activities while adding transfers and custody changes. The trade-off should be evaluated through the actual site plan, coil data and handling ownership. Do not call one route efficient without considering quarantine space, weather protection, support conditions and the timing of roof work.
 
-The practical trade-off is between early coordination and false precision. A useful record exposes each constraint, interface and unresolved owner; it does not convert preliminary information into an approval.
+Ask whether the proposed route still works when a coil is rejected, the receiving position is unavailable or the forming input changes. Those cases reveal more than a drawing of the successful pass. A ground-fed proposal and a coil-at-height proposal may distribute these constraints differently; neither can be selected from this article alone.
 
-For general planning context, see the <a href="https://unece.org/transport/intermodal-transport/imoilounece-code-practice-packing-cargo-transport-units-ctu-code" target="_blank" rel="noopener noreferrer">UNECE page for the IMO ILO UNECE CTU Code</a>. It supports general work-planning principles only. It does not verify an ARCLIFT configuration, settle destination rules or approve a site.
+For UK planning context, see the <a href="https://www.hse.gov.uk/work-equipment-machinery/planning-organising-lifting-operations.htm" target="_blank" rel="noopener noreferrer">HSE guidance on planning and organising lifting operations</a>. It concerns competent planning and supervision of lifting operations under UK requirements. It does not establish that a particular coil transfer is a lifting operation, define its method, verify an ARCLIFT configuration or grant engineering approval for this site.
 
 <!-- audit-section: limitations-not-fit -->
 ### Keep loading procedures outside the editorial plan

@@ -33,7 +33,7 @@ function frontmatterValue(markdown, key) {
 }
 
 function visibleWordCount(markdown) {
-  const body = markdown.split('---', 3)[2] ?? markdown;
+  const body = markdown.replace(/^---\r?\n[\s\S]*?\r?\n---(?:\r?\n|$)/, '');
   const visible = body
     .replace(/<!--[\s\S]*?-->/g, ' ')
     .replace(/<[^>]+>/g, ' ')
@@ -43,6 +43,11 @@ function visibleWordCount(markdown) {
 }
 
 describe('twenty lift-platform article release contract', () => {
+  it('counts the full visible body after a Markdown table separator', () => {
+    const markdown = '---\ntitle: "Not body text"\n---\nBefore table.\n\n| Entry | Value |\n| --- | --- |\n| After | Complete |\n\nFinal paragraph.';
+    expect(visibleWordCount(markdown)).toBe(8);
+  });
+
   it('keeps 20 unique approved articles and the protected 24-page baseline', () => {
     expect(LIFT_PLATFORM_ARTICLES).toHaveLength(20);
     expect(new Set(LIFT_PLATFORM_ARTICLE_SLUGS).size).toBe(20);

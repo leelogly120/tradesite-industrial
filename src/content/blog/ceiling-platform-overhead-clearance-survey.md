@@ -2,6 +2,7 @@
 title: "Overhead Clearance Register for Ceiling Access Review"
 description: "Record measured overhead conditions by route, setup and work state before configuration review; it does not prove equipment fit, clearance or site approval."
 date: 2026-07-27
+updated: 2026-10-01
 author: "ARCLIFT Technical Editorial"
 tags: ["Overhead Clearance", "Ceiling Access", "Site Survey"]
 coverImage: "/images/editorial/clearance-four-state-section.svg"
@@ -10,7 +11,7 @@ coverCaption: "AI-assisted editorial diagram; not evidence of ARCLIFT equipment,
 draft: false
 ---
 
-Create a measured clearance register that describes overhead conditions for each route, setup, elevated task and withdrawal state before configuration or method review. Record the obstruction, measured elevation and offset, service status, data source, date, work state and reviewer. The register does not select equipment, calculate reach or load, approve electrical separation, prove clearance, or replace a site method and rescue plan.
+For a large-deck ceiling platform, the useful survey is not just the height of the ceiling. It connects the lowest relevant obstruction to the floor reference, the task location and the building-service state that will actually exist during the work. Record transport, setup, elevated task and withdrawal separately. A clear entrance does not establish a clear working position or a clear way back. This guide explains what to measure and what to keep unresolved until exact configuration information is available; it does not calculate equipment clearance, approve electrical separation or authorise a work method.
 
 **Contents**
 
@@ -62,6 +63,25 @@ Use a defined coordinate or reference system and state the instrument, method, d
 
 Include measurement uncertainty and access limitations where the project process requires them. If an item could not be reached, observed or identified, mark the field unknown. Never substitute a convenient value from a marketing drawing, editorial diagram or archival product page.
 
+### Put floor and obstruction measurements on the same reference
+
+A building drawing may give the underside of a beam as an elevation relative to the project's survey datum. An equipment drawing may describe height above its supporting surface. Those descriptions are not interchangeable. Ask the survey team to identify the floor reference at the relevant position, any difference between floor levels and the datum used for each overhead measurement. Let the configuration reviewer establish how that information relates to the actual support arrangement.
+
+Keep the measured building geometry separate from the space required for equipment, people, tools and the task. The difference between two drawing dimensions is not automatically usable clearance: the sources may describe different states or omit a feature that controls access. A missing equipment envelope should remain a missing input, not be replaced by an outline traced from a photograph.
+
+The following comparison is a survey brief, not a set of permitted movements. Complete only the states relevant to the proposed method and add any state that the exact configuration requires.
+
+*On smaller screens, scroll the table sideways to read all three columns.*
+
+| State being reviewed | Geometry and status to capture together | Question that remains for configuration review |
+| --- | --- | --- |
+| Passage through an opening | Lowest obstruction, floor reference, approach and exit alignment, door or service position | Which approved transport configuration is being compared with these measurements? |
+| Setup at the work zone | Surrounding structure and services, floor references across the area, temporary obstructions | What space does the documented setup arrangement require, including any configuration changes? |
+| Work beneath the ceiling | Task-face location, lateral offsets, service status and the proposed position of task materials | Can the equipment, people and task be assessed together using the exact approved information? |
+| Withdrawal from the task | Return path, remaining materials, changed services and temporary installations | Is the reviewed way out still available in the condition expected after the task? |
+
+Keep a separate source or drawing reference beside each entry in the private survey. If floor and service measurements were made at different times, state that explicitly rather than presenting them as a single verified site condition.
+
 ### Control drawing revisions and site changes
 
 Compare current measurements with available as-built or design records, but do not assume a drawing is current merely because it is labelled as-built. Record the drawing number, revision, date and owner in the secure record, then note any field conflict.
@@ -86,6 +106,12 @@ Record the line or service owner, status, applicable jurisdiction and responsibl
 Overhead doors, cranes, curtains, hoists, screens, lighting rigs, conveyors and maintenance systems can occupy different positions. Record every state that may coincide with transport, setup, task or withdrawal. Name the owner who can isolate or control movement.
 
 The trade-off is additional coordination: a static snapshot is simpler, but it can miss the condition that actually controls the work. A useful register identifies the allowed state, evidence of that state and what happens when the item cannot be controlled.
+
+Consider a proposed work position near an overhead door. A measurement made with the door closed says nothing about the space occupied when the door changes position. If the work depends on one door state, the project needs the door owner's confirmation of how that state is controlled for the relevant work window. If that confirmation is unavailable, mark the interface unresolved; do not make the route appear acceptable by omitting the other state. This is a hypothetical review question, not a report of an ARCLIFT project.
+
+The same distinction applies when the building changes during the task. If a new cable tray, ceiling panel or temporary installation occupies part of the previously surveyed withdrawal path, the old entry measurement remains a historical observation but no longer answers the return-path question. Identify the changed item and the affected state so the project can commission the necessary review without discarding unrelated survey evidence.
+
+For risk-identification context, <a href="https://www.ipaf.org/en-gb/operator-feeds/avoid-overhead-obstructions" target="_blank" rel="noopener noreferrer">IPAF's guidance on overhead obstructions</a> describes contact and entrapment hazards for MEWPs near structures. That guidance explains why the people and task matter as well as the machine outline. It does not establish the classification, required clearance or protective measures for a particular ARCLIFT configuration.
 
 ### Escalate missing as-built data
 
@@ -144,7 +170,7 @@ This article is editorial survey guidance, not a configuration schedule, electri
 
 #### Why record more than ceiling height?
 
-Ceiling height is one vertical value. A route and task are three-dimensional and state-dependent; beams, services, offsets, turns, worker position and withdrawal can control the method.
+Ceiling height is one vertical value. The reviewer also needs the floor reference, lowest relevant obstruction, horizontal offsets and service state at the actual task. A nominal clear height does not describe a changing door, an offset beam or the space occupied by people and task materials.
 
 #### Which work states need measurement?
 
