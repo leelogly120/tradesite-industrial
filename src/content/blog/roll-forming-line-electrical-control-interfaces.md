@@ -2,7 +2,7 @@
 title: "Electrical Interface List for a Roll-Forming Project"
 description: "Define power, signal, safety and handover interfaces before an approved electrical schedule; this guide does not specify wiring, control brands or compliance."
 date: 2026-07-27
-updated: 2026-10-01
+updated: 2026-10-03
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "electrical interfaces", "control handover", "project documentation"]
 coverImage: "/images/editorial/electrical-interface-boundary.svg"
@@ -79,7 +79,7 @@ Do not infer cable size, protective devices, short-circuit rating, electromagnet
 
 Distinguish an operating stop, an emergency stop, a safeguard response and energy isolation. The project risk and electrical documents must define the functions and their relationships. An emergency-stop device is not, by itself, a complete isolation procedure.
 
-In covered U.S. servicing and maintenance context, <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147" target="_blank" rel="noopener noreferrer">OSHA 29 CFR 1910.147</a> addresses control of hazardous energy. That is U.S. jurisdiction-specific context, not a global design rule. Record who provides isolating means, who controls site procedures and how subsystem energy sources are documented.
+In covered U.S. servicing and maintenance context, <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147" target="_blank" rel="noopener noreferrer">OSHA 29 CFR 1910.147</a> addresses control of hazardous energy. Section 1910.147(a)(1)(ii)(A) excludes construction employment, so this reference does not establish the rule applicable to a construction-site activity. That is U.S. jurisdiction-specific context, not a global design rule. Record who provides isolating means, who controls site procedures and how subsystem energy sources are documented.
 
 ### Cable-route constraints
 

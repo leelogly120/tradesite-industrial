@@ -2,7 +2,7 @@
 title: "Weather Hold-Point Planning for Roof-Level Roll Forming"
 description: "Plan weather hold points for roof-level roll forming by assigning monitoring, stop, inspection and restart decisions to controlled project roles and records."
 date: 2026-08-07
-updated: 2026-10-01
+updated: 2026-10-03
 author: "ARCLIFT Technical Editorial"
 tags: ["roof-level roll forming weather", "weather hold points", "restart planning", "site controls"]
 coverImage: "/images/editorial/truck-site-roll-forming-lift.webp"
@@ -122,7 +122,7 @@ The sign-off also needs a clear exception path. An inspection may close the weat
 
 A highly restrictive plan can make the workflow impractical, while a vague plan leaves crews without clear authority. The trade-off is resolved through configuration-specific criteria, reliable monitoring, early holds and a realistic secure-state path. Selection should compare how each concept exposes panels, material, routes and personnel, but it should not claim that one configuration removes weather risk. The project still owns the approved criteria and method.
 
-For UK context, the <a href="https://www.hse.gov.uk/construction/faq-height.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height and roof-work FAQ</a> notes that weather can affect roof work. It does not publish a universal stop or restart threshold for this workflow, establish an ARCLIFT wind capability or approve a particular roof-level forming plan. Outside the UK, the applicable local framework still needs its own review.
+For context in Great Britain, the <a href="https://www.hse.gov.uk/construction/faq-height.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height and roof-work FAQ</a> notes that weather can affect roof work. It does not publish a universal stop or restart threshold for this workflow, establish an ARCLIFT wind capability or approve a particular roof-level forming plan. Outside Great Britain, the applicable local framework still needs its own review.
 
 <!-- audit-section: limitations-not-fit -->
 ### Reject universal weather numbers

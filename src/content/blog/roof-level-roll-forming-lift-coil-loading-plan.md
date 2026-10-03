@@ -2,7 +2,7 @@
 title: "Coil Loading Plan for Roof-Level Roll-Forming Lifts"
 description: "Plan coil loading for roof-level roll-forming lift by controlling delivery, staging, transfer, feed data, exclusion zones, responsibilities and stop conditions."
 date: 2026-08-07
-updated: 2026-10-01
+updated: 2026-10-03
 author: "ARCLIFT Technical Editorial"
 tags: ["coil loading plan", "roof level roll forming", "material handling", "feed planning"]
 coverImage: "/images/editorial/coil-route-journey-map.svg"
@@ -124,7 +124,7 @@ Placing coils close to feed entry can shorten the journey but may compete with e
 
 Ask whether the proposed route still works when a coil is rejected, the receiving position is unavailable or the forming input changes. Those cases reveal more than a drawing of the successful pass. A ground-fed proposal and a coil-at-height proposal may distribute these constraints differently; neither can be selected from this article alone.
 
-For UK planning context, see the <a href="https://www.hse.gov.uk/work-equipment-machinery/planning-organising-lifting-operations.htm" target="_blank" rel="noopener noreferrer">HSE guidance on planning and organising lifting operations</a>. It concerns competent planning and supervision of lifting operations under UK requirements. It does not establish that a particular coil transfer is a lifting operation, define its method, verify an ARCLIFT configuration or grant engineering approval for this site.
+For planning context in Great Britain, see the <a href="https://www.hse.gov.uk/work-equipment-machinery/planning-organising-lifting-operations.htm" target="_blank" rel="noopener noreferrer">HSE guidance on planning and organising lifting operations</a>. It concerns competent planning and supervision of lifting operations under requirements applicable in Great Britain. It does not establish that a particular coil transfer is a lifting operation, define its method, verify an ARCLIFT configuration or grant engineering approval for this site.
 
 <!-- audit-section: limitations-not-fit -->
 ### Keep loading procedures outside the editorial plan
