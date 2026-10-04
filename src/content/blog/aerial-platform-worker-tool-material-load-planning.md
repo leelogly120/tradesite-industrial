@@ -2,6 +2,7 @@
 title: "Task-Load Schedule for Aerial Platform Project Review"
 description: "Create a task-by-task people, tools and materials schedule for comparison with exact approved limits; it does not calculate capacity or authorize load handling."
 date: 2026-07-27
+updated: 2026-10-04
 author: "ARCLIFT Technical Editorial"
 tags: ["Task Load", "Aerial Platform", "Project Review"]
 coverImage: "/images/editorial/task-load-schedule.svg"
@@ -35,11 +36,13 @@ Give every input a source, date, owner and revision. People counts should come f
 
 Do not copy a number from an archival product range, photograph, sales message or unrelated configuration. The [ARC-F20 page](/products/arc-f20-crawler-ceiling-platform/) may provide archival category context, but this article makes no capacity, crew, attachment or handling statement about it.
 
-### Keep the exact configuration dependency visible
+### Name the platform arrangement before listing loads
 
 Limits can depend on the exact configuration, platform arrangement, permitted attachment, task state and instructions. Record the document identifier and applicable configuration beside every comparison. If the schedule and approved document do not use the same definition, stop and ask the responsible technical owner to reconcile them.
 
-Avoid generic formulas. A total arithmetic sum does not by itself establish load distribution, attachment effects, dynamic effects, permitted position or travel state. The artifact is a structured input for review, not an engineering calculation.
+Identify whether the documents describe the main platform, an extension region, a removable platform or a combination explicitly covered by one configuration. These are separate descriptions, not interchangeable names for the same usable area. A large removable platform is not automatically an option for every host machine. The [under-ceiling platform buyer guide](/blog/crawler-under-ceiling-platform-buyers-guide/) explains how to establish that procurement boundary.
+
+A total arithmetic sum does not establish load distribution, attachment effects, permitted position or travel state. First make the schedule and the document describe the same physical arrangement; only then can the responsible reviewer assess the inputs.
 
 [![Blank task-load schedule with source and location fields](/images/editorial/task-load-schedule.svg)](/images/editorial/task-load-schedule.svg)
 
@@ -65,6 +68,25 @@ Do not assume that a tool bag, rack, overhanging item or long component is permi
 The schedule should show what is present at one time, not the total material consumed during a shift. Mark where people and items are intended to be placed and how the arrangement changes during the task. Include removed components and waste if they remain in the work area.
 
 This positional record does not calculate distribution. It lets the competent reviewer identify concentrated, offset, unsecured or changing conditions that need exact technical information. Treat any uncertain position as an open item.
+
+### Keep a separate row for each documented region
+
+Use the region names from the exact configuration drawing. The following blank structure is a way to organise questions, not a statement that a particular machine has all of these regions. Mark an absent region as not applicable with its document reference; leave an unconfirmed region unresolved.
+
+| Region or unresolved location | What the task owner records | What the equipment record must clarify |
+| --- | --- | --- |
+| Main platform, if identified | People, items and proposed positions present together | Applicable limit, distribution conditions and whether other regions are considered simultaneously |
+| Extension region, if documented | Extension arrangement, proposed occupants or items and task state | Region-specific conditions and their relationship to the main platform; no addition of separate ratings |
+| Removable platform, if documented | Platform identity, mounting arrangement and any fixtures included in the proposal | Approved host/configuration relationship and the definitions used for platform and attachment mass |
+| Position not yet assigned | The item, its purpose and the unresolved location | Which region and conditions apply before the comparison can be completed |
+
+Keep the proposed task position in the same row as its evidence. A single combined list can hide a material bundle assigned to an extension or a tool fixture whose region has never been identified. An empty field means information is missing; it does not mean zero load or unrestricted placement.
+
+### Describe simultaneous states without double counting
+
+Consider a hypothetical maintenance task with the same tools and replacement components throughout. In one proposed state, the task owner assigns the components to the main platform; in another, their proposed location changes to a documented extension region. The total item mass has not changed, but the location comparison has. The second state needs review against its own applicable conditions. This example does not authorise either arrangement or movement between them.
+
+Use a state identifier to connect each region row to the people and items present at that time. If removed components coexist with replacements, show that state explicitly. If an item appears in successive states, distinguish those states rather than treating the two entries as two simultaneously present items. This gives the reviewer a traceable proposal without inventing a distribution formula.
 
 <!-- audit-section: evidence-tradeoffs -->
 ## Map the load path and unresolved interfaces
@@ -94,11 +116,13 @@ Moving or long items can create effects beyond a static list. Do not estimate th
 <!-- audit-section: limitations-not-fit -->
 ## Escalate every task against approved limits
 
-### Use the exact manufacturer document
+### Reconcile the meaning of each stated limit
 
-U.S. OSHA <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.453" target="_blank" rel="noopener noreferrer">29 CFR 1926.453</a> states, within its covered U.S. construction scope for listed vehicle-mounted aerial devices, that manufacturer-specified boom and basket load limits must not be exceeded. That bounded rule does not classify an ARC-F reference, establish that the rule applies to it, or provide a permitted capacity.
+U.S. OSHA <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.453" target="_blank" rel="noopener noreferrer">29 CFR 1926.453(b)(2)(vi)</a>, in its U.S. construction provisions for extensible and articulating boom platforms, requires observance of manufacturer-specified boom and basket load limits. That bounded rule does not classify an ARC-F reference, establish that the rule applies to it, or provide a permitted capacity.
 
 For the project, obtain the current manufacturer instructions and approved configuration records. Verify document revision, equipment identity and task state. A source about a general class cannot replace those exact records.
+
+Ask the technical document owner to identify what each figure includes: task payload, platform self-weight, installed fixtures, or another defined quantity. Check whether a removable platform or attachment is already accounted for in the relevant record. Do not add or subtract its weight from a published limit based on an assumed definition. Likewise, a support-reaction record serves a different comparison from a task payload limit. Both need matching configuration references; they are not interchangeable figures.
 
 ### Require competent project review
 
@@ -122,19 +146,21 @@ Do not continue on the basis of remaining arithmetic margin. The applicable docu
 - Site and destination jurisdiction, work-zone height, ceiling geometry, task owner and revision
 - Access and transport route, floor or ground status, staging point and withdrawal path
 - Exact task state, work sequence, simultaneous activity and change trigger
+- Documented main, extension or removable platform region, including unresolved locations
 - People by role, protective equipment where applicable, training-record owner and source date
 - Tools, batteries, cables, hoses, test devices, consumables and controlled quantities
 - Materials, components, containers, removed items, dimensions, locations and securing proposal
 - Attachment, rack, holder, fixture or tether status and exact approved document reference
 - Entry, transfer, staging, task and removal method with each responsible role
 - Exact configuration identifier, manufacturer instruction, applicable limit and document revision
+- Definition of each stated limit and confirmation of which platform or attachment masses it includes
 - Unresolved dynamic, concentrated, offset, travel or transfer condition routed to competent review
 - Site communications, rescue access, emergency interface and stop-work trigger
 
 <!-- audit-section: cta-editorial-note -->
 ### Send only the schedule for controlled comparison
 
-Send only the task-load schedule through a secure project channel to ARCLIFT as an integrated equipment supplier. Include the site and zone, height and task state, access and transport route, floor status, people, tools, materials, attachment questions, destination context and exact source records. This request does not promise suitability, fit, approval, quotation, configuration, availability, result or response time. Final use requires project-specific signed documents from the responsible employer, manufacturer information and competent reviewers.
+Send the task-load schedule to ARCLIFT as an integrated equipment supplier for a configuration-specific discussion. Include the site and zone, height and task state, access and transport route, floor status, region assignments and exact source records. Identify who owns each unresolved definition so that it can be directed to the appropriate technical reviewer. Final use requires project-specific signed documents from the responsible employer, manufacturer information and competent reviewers.
 
 This article is editorial planning guidance, not a capacity calculation, load chart, material-handling permission, training document or operating instruction. Its AI-assisted editorial diagrams cannot establish a platform limit, handling function, configuration, capability or result.
 
@@ -151,6 +177,14 @@ List people by role, relevant protective equipment, tools, materials, containers
 #### Who confirms limits?
 
 The exact manufacturer instructions supply configuration-specific information, while the employer and competent project reviewers decide how it applies to the task and site method.
+
+#### Can main and extension platform ratings be added?
+
+Separate ratings do not establish an allowable combined total. They may refer to different positions, arrangements or conditions. Obtain the exact document that explains their relationship for the proposed simultaneous state; if that relationship is absent, the comparison remains unresolved.
+
+#### Does an unchanged total mean the previous review still applies?
+
+Only if the relevant configuration, positions, attachments and task conditions remain within the documented review scope. Moving the proposed location of a component to another region changes the question even when its mass is unchanged. Record the revised state and refer it to the responsible reviewer.
 
 #### Can the platform be treated as a crane?
 

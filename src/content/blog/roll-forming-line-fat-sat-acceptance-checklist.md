@@ -2,6 +2,7 @@
 title: "Contract-Defined FAT and SAT Evidence for Roll Forming"
 description: "Agree contract-defined factory and site test conditions, witnesses and records before shipment; FAT and SAT record evidence, not certification or acceptance."
 date: 2026-07-27
+updated: 2026-10-04
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "FAT", "SAT", "test protocol", "handover evidence"]
 coverImage: "/images/editorial/fat-sat-evidence-chain.svg"
@@ -10,7 +11,7 @@ coverCaption: "Representative protocol concept. AI-assisted editorial diagram; n
 draft: false
 ---
 
-Write the test protocol before equipment is staged and witnesses are booked. Otherwise, FAT and SAT are labels searching for a scope. A **signed-protocol evidence record** fixes the conditions, method, roles, observations and deviation path needed before shipment and handover decisions. It can record evidence against those signed conditions; it cannot set universal limits, certify a roll-forming line or prove site, roof or production performance.
+The buyer needs to know which questions factory evidence can answer and which remain open after transport, assembly and connection at the site. FAT and SAT labels cannot make that distinction on their own. A **signed-protocol evidence record** connects each contractual question to the configuration, material, method, observation and person authorised to decide its status. This guide explains that evidence handover, including profile and cut-length records. It supplies no tolerances, sample quantities, test procedure, acceptance signature or proof of roof performance.
 
 **Contents**
 
@@ -31,6 +32,22 @@ A factory record can document observations made under the signed factory configu
 
 State each condition as an observable requirement or a document check. Name the source clause, method, instrument or record, witness role and permitted result vocabulary. If a function cannot be exercised in the factory condition, mark it for another gate instead of implying that the factory record covers it.
 
+### Carry factory evidence into the site question
+
+The distinction is clearest when each question has an explicit boundary. The following table is an editorial scope worksheet. It does not report a completed test, decide what a contract requires or authorise closure. For a roof-level arrangement, the roll former and its lifting carrier also need identifiable boundaries; a test of one does not automatically cover the assembled system.
+
+*On smaller screens, scroll the table sideways to read all three columns.*
+
+| Question in the signed protocol | What the factory record can support within its stated scope | What remains to resolve after transport or at the site |
+| --- | --- | --- |
+| Which profile, tooling and material were observed? | Identification of the drawing, tooling revision and actual trial material linked to the observations | Whether the delivered configuration and intended site material match that evidence, and how any difference affects its use |
+| What was recorded about cut length? | Observations under the agreed nominal length, measurement basis and factory conditions | Whether changed material, assembly or feed and support interfaces alter the question; the authorised reviewer decides any further evidence needed |
+| Which equipment configuration was addressed? | The included subsystems, settings record and excluded or unavailable options | Identity, condition and reassembly records for what arrived; confirmation of the installed configuration and unresolved changes |
+| Which interfaces and functions were within scope? | Evidence for the actual factory supply, connections and functions covered by the protocol | Site utilities, lift-carrier interfaces and neighbouring systems that were absent, temporary or different at the factory |
+| Which deviations received a disposition? | The original observation, corrective evidence and authorised factory-stage status | Whether the disposition was limited to shipment or also addressed later stages, and which site-linked items remain open |
+
+The practical question is not whether the same checklist title appears twice. It is whether the conditions behind an earlier answer still exist. A factory item may be complete for its stated scope while a related site item remains unexamined. Keep both statuses visible and let the contract-defined authority decide what each permits.
+
 ### What neither record proves
 
 FAT does not prove future site output, roof-system performance, installation quality or operation under every material and environmental condition. SAT does not erase factory deviations or establish performance beyond its signed configuration and method. Both records are bounded snapshots.
@@ -43,9 +60,9 @@ Name who prepares the protocol, supplies evidence, performs each observation, wi
 
 Define whether a witness is present, remote or represented by a controlled record. Also define what happens when a witness is unavailable or declines to sign. A missing signature should have an agreed status, not be quietly treated as positive evidence.
 
-![Conceptual evidence chain from signed conditions to closure status](/images/editorial/fat-sat-evidence-chain.svg)
+[![Conceptual evidence chain from signed conditions to closure status](/images/editorial/fat-sat-evidence-chain.svg)](/images/editorial/fat-sat-evidence-chain.svg)
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Illustrative workflow; the signed protocol alone defines conditions, criteria, witnesses and release.*
+*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Illustrative workflow; the signed protocol alone defines conditions, criteria, witnesses and release. Tap to open the full-size editorial diagram.*
 
 <!-- audit-section: conditions -->
 ## Freeze preconditions
@@ -70,9 +87,17 @@ For each item, identify the method, instrument, calibration or verification stat
 
 The protocol should distinguish direct measurement, visual observation, document review and functional demonstration. Those evidence types are not interchangeable. A photograph may record a setup or visible state, but it should not be treated as measurement data unless the method explicitly establishes that use.
 
-![Blank protocol fields for conditions method observation and closure](/images/editorial/blank-fat-sat-record.svg)
+### Keep cut-length observations traceable
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Template example; it contains no ARCLIFT test data, result, acceptance or certification.*
+A cut-length result needs more context than a number beside a panel photograph. Link the observation to the controlled profile revision, actual sample material, requested nominal length, units and the measurement basis specified in the signed protocol. Keep the evidence reference, date, relevant configuration and observer with the result. The agreed protocol must supply any tolerance, sampling plan, instrument requirements and method; this article supplies none of them.
+
+Keep three things distinct in the record: what the contract asked for, what was observed under the stated conditions, and the authorised decision about that observation. A blank measurement field is not a pass. An observation outside a stated criterion is not automatically a diagnosis of a tooling, control or material problem. Record the deviation without inventing its cause.
+
+If a later entry uses another material condition or a revised measurement basis, connect it to the earlier entry as a different observation. Do not merge the two into an apparently continuous result. The reviewer needs to see what changed before deciding whether the records are comparable, whether further evidence is needed and what contractual status is justified.
+
+[![Blank protocol fields for conditions method observation and closure](/images/editorial/blank-fat-sat-record.svg)](/images/editorial/blank-fat-sat-record.svg)
+
+*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Template example; it contains no ARCLIFT test data, result, acceptance or certification. Tap to open the full-size editorial diagram.*
 
 <!-- audit-section: project-checklist -->
 ## Record controlled evidence
@@ -102,6 +127,12 @@ A deviation entry should name the condition, actual observation, affected revisi
 
 If a correction changes configuration, material, method or software, decide whether earlier evidence needs to be repeated. Keep the original observation and the later record connected. Editing the first entry to look clean destroys the history needed for a credible decision.
 
+### Follow a deviation across shipment and assembly
+
+Consider a hypothetical factory observation made with a temporary material-support arrangement. If the signed protocol allowed that arrangement for a limited question, the record can remain useful within that limit. It does not establish the installed site's support interface. The handover should name the temporary condition, the question it addressed and the site evidence still assigned to a responsible party.
+
+The same discipline applies to a deviation given a shipment-only disposition. Its status does not become final acceptance merely because the equipment arrived. Preserve the original deviation reference, scope of the disposition and later verification record. When assembly changes the affected interface, ask the designated reviewer whether the proposed corrective evidence still addresses the original issue. The editorial worksheet cannot answer that on the reviewer's behalf.
+
 ### Evidence ownership
 
 Define where records are stored, who can edit them, who receives them and how long they remain controlled. Photographs, videos, measurements, witness notes and software records may contain project identifiers or sensitive details. Use minimum necessary access.
@@ -111,9 +142,9 @@ ARCLIFT can receive the signed-protocol evidence record as a technical selection
 <!-- audit-section: evidence-tradeoffs -->
 The protocol creates a deliberate trade-off between breadth and traceability. A long checklist can appear thorough while mixing unverified conditions, undefined methods and unrelated observations. A narrower signed set can produce more useful evidence because each item has a source, method, witness and closure rule. Add scope only when the project can control those elements.
 
-![Conceptual comparison of factory and site evidence boundaries](/images/editorial/fat-sat-boundary-comparison.svg)
+[![Conceptual comparison of factory and site evidence boundaries](/images/editorial/fat-sat-boundary-comparison.svg)](/images/editorial/fat-sat-boundary-comparison.svg)
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. FAT/SAT can record evidence against signed factory/site conditions; they are defined only by the signed protocol and are not universal performance proof.*
+*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. FAT/SAT can record evidence against signed factory/site conditions; they are defined only by the signed protocol and are not universal performance proof. Tap to open the full-size editorial diagram.*
 
 <!-- audit-section: limitations-not-fit -->
 ## Close site readiness
@@ -134,12 +165,12 @@ Do not use a photograph of a repaired item as automatic closure. Link it to the 
 
 ### Contractual closure status
 
-As of 27 July 2026, the official ISO records list <a href="https://www.iso.org/standard/62085.html" target="_blank" rel="noopener noreferrer">ISO 9001:2015</a> and <a href="https://www.iso.org/standard/88431.html" target="_blank" rel="noopener noreferrer">Amendment 1:2024</a> as Published. The <a href="https://www.iso.org/standard/88464.html" target="_blank" rel="noopener noreferrer">edition 6 record</a> is at stage 60.00, under publication with an ISO-listed date of 2026-09, and is expected to replace the 2015 edition. Recheck status at use.
+The official <a href="https://www.iso.org/standard/88464.html" target="_blank" rel="noopener noreferrer">ISO 9001:2026 record</a>, checked on 4 October 2026, concerns quality-management-system requirements. That catalogue entry does not supply a FAT/SAT method, establish an ARCLIFT certification or determine equipment acceptance.
 
-ISO 9001 is a generic quality-management-system requirement; its catalogue records do not supply a universal FAT/SAT script, product result or acceptance value. The project's signed protocol and contract define the closure vocabulary. A status should identify the authorised signatory, date, scope, revision, deviations and effect.
+The project's signed protocol and contract define the closure vocabulary. A status should identify the authorised signatory, date, scope, revision, deviations and effect. If a contract refers to an earlier standards edition, its responsible parties must resolve the applicable document basis; this article does not change that contract or determine a transition arrangement.
 
 <!-- audit-section: cta-editorial-note -->
-Send only the signed-protocol evidence record through a secure project channel to ARCLIFT as a technical selection and supply partner. Include the controlled profile and sample, factory or site power conditions, floor and route readiness, transport and installation boundary, destination requirements, witnesses and final signed closure authority. Keep roof performance, work-zone height and wider site acceptance in their own project-specific records. This request does not promise suitability, fit, approval, quotation, configuration, availability, result or response time. Editorial diagrams are blank explanatory concepts and cannot serve as test evidence or replace the signed protocol.
+Send only the signed-protocol evidence record through a secure project channel to ARCLIFT as a technical selection and supply partner. Include the controlled profile and sample, factory or site power conditions, floor and route readiness, transport and installation boundary, destination requirements, witnesses and final signed closure authority. Keep roof performance, work-zone height and wider site acceptance in their own project-specific records. Receipt supports evidence coordination; acceptance remains with the parties authorised by the signed contract. Editorial diagrams are blank explanatory concepts and cannot serve as test evidence or replace the signed protocol.
 
 ## FAQ
 

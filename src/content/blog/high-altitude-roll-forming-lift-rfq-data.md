@@ -2,11 +2,11 @@
 title: "RFQ Data Guide for High-Altitude Roll-Forming Lifts"
 description: "Prepare a reviewable RFQ for a high-altitude roll-forming lift by defining the work zone, panel inputs, interfaces, documents and unresolved decisions."
 date: 2026-08-07
-updated: 2026-09-07
+updated: 2026-10-04
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming lift RFQ", "high-altitude equipment", "project data", "technical selection"]
 coverImage: "/images/editorial/truck-site-roll-forming-lift.webp"
-coverAlt: "Editorial high-altitude roll-forming lift planning scene"
+coverAlt: "Editorial illustration of a truck-mounted lifting concept beside a building under construction"
 coverCaption: "AI-assisted editorial image; not evidence of equipment, configuration, project, capability or result. Representative planning context only; not a site approval, technical drawing or performance record."
 draft: false
 ---
@@ -40,13 +40,29 @@ A useful duty statement can remain blank and neutral:
 
 Ask the reviewer to return one of a small number of clearly described outcomes: proceed to configuration review, request a defined missing record, compare an alternate architecture, or hold the affected decision. This is more useful than asking whether the project is simply “possible.” The response should repeat its governing inputs and list exclusions so that a later revision can be compared against the original basis.
 
+### Turn an old reference into a current configuration question
+
+A buyer may start with an earlier quotation, a public model page or a saved image. Keep that reference so the reviewer can understand the enquiry, then identify what it leaves unanswered. ARCLIFT codes such as ARC-C, ARC-T, ARC-F and ARC-RF are public references; a suffix or similar appearance does not independently establish an original equipment model, height, load or current supply configuration. Ask for the relationship to the proposed equipment to be confirmed explicitly.
+
+*On smaller screens, scroll the table sideways to read all three columns.*
+
+| Reference in the enquiry | Useful role in the first review | Evidence still needed for the proposed configuration |
+| --- | --- | --- |
+| Public code, product page or old model label | Identifies the reference the buyer has seen and the reason it attracted interest. | A current configuration identifier, scope and traceable confirmation of how it relates to that reference. |
+| Height shown in an earlier sheet | Records the source term without renaming it. | The measurement datum and whether it describes cutter exit, platform, working or roof-output height; then the relationship to the project work position. |
+| Tonnage or a load entry | Raises a question about what the source means by load. | The applicable state, height range if relevant, included equipment or platform mass, and controlled limits for the proposed arrangement. |
+| Photograph or unscaled layout | Helps explain a visible arrangement or the buyer's intended task. | Drawings and instructions defining dimensions, interfaces and permitted states; the image cannot supply those values. |
+| Earlier quotation or option list | Shows what was discussed under an earlier scope. | Confirmation of the currently offered modules, exclusions, availability and destination responsibilities. |
+
+For example, two replies may use the same height label while one means cutter-exit height and the other means platform height. Procurement cannot rank them by that label alone. Preserve both descriptions, request their datums and compare them with the required roof handover position. The [roof-zone survey guide](/blog/roof-zone-survey-roll-forming-lift-selection/) explains that measurement input; the RFQ records which answer is still needed.
+
 ### Assign owners before attaching files
 
 Use role names rather than exposing individuals in a public or reusable form. Typical roles may include buyer, roof-system reviewer, site or route owner, chassis integrator, forming-line reviewer, logistics reviewer and local compliance adviser. The contract and destination process determine the actual responsibilities. ARCLIFT may participate as an integrated equipment supplier or technical selection and supply partner; that role does not absorb duties assigned to other reviewers.
 
-![RFQ input gates for lift review](/images/editorial/high-altitude-roll-forming-lift-rfq-data.svg)
+[![RFQ input gates for lift review](/images/editorial/high-altitude-roll-forming-lift-rfq-data.svg)](/images/editorial/high-altitude-roll-forming-lift-rfq-data.svg)
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Decision map for organizing buyer inputs; not a quotation form or equipment specification.*
+*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Decision map for organizing buyer inputs; not a quotation form or equipment specification. Tap to open the full-size editorial diagram.*
 
 <!-- audit-section: conditions -->
 ## Copy the minimum first-pass RFQ template
@@ -73,7 +89,9 @@ The response date is a commercial input, not a promise that unresolved technical
 
 ```text
 Roof or work-zone description: [blank]
-Required height and horizontal relationship: [survey reference / estimate / unknown]
+Height term used in the source: [cutter exit / platform / working / roof output / unknown]
+Height datum, units and source revision: [blank / unknown]
+Required roof handover position and horizontal relationship: [survey / estimate / unknown]
 Panel handover point and receiving owner: [blank]
 Profile drawing ID and revision: [blank]
 Material specification owner and record: [blank]
@@ -104,9 +122,9 @@ Open decisions that must not be assumed: [blank]
 
 Scope words should describe supply boundaries, not imply that an item is available. If the buyer expects a calculation, drawing, certificate, manual or test record, enter it in a proposed deliverable register and request an availability response. The separate [technical document package guide](/blog/roll-forming-lift-technical-document-package/) explains that later procurement task.
 
-![Editorial diagram of roll-forming project input map](/images/editorial/roll-forming-input-map.svg)
+[![Editorial diagram of roll-forming project input map](/images/editorial/roll-forming-input-map.svg)](/images/editorial/roll-forming-input-map.svg)
 
-*Editorial diagram. AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conceptual input groups; every field remains subject to controlled project evidence.*
+*Editorial diagram. AI-assisted ARCLIFT illustration; not evidence of equipment, configuration, project, capability or result. Conceptual input groups; every field remains subject to controlled project evidence. Tap to open the full-size editorial diagram.*
 
 <!-- audit-section: project-checklist -->
 ## Add records only when the review reaches them
@@ -136,9 +154,9 @@ Every gap should show its consequence. Write `needed before architecture screen`
 
 Ask the reviewer to return the input-register revision used, explicit assumptions, exclusions and open items with the response. This snapshot does not prove the inputs correct. It makes the commercial comparison traceable and prevents a later attachment from silently changing the basis of selection.
 
-![Editorial diagram of roof-level workflow decision map](/images/editorial/roof-level-workflow.svg)
+[![Editorial diagram of roof-level workflow decision map](/images/editorial/roof-level-workflow.svg)](/images/editorial/roof-level-workflow.svg)
 
-*Editorial diagram. AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Workflow prompt only; it does not establish a safe method, output or equipment fit.*
+*Editorial diagram. AI-assisted ARCLIFT illustration; not evidence of equipment, configuration, project, capability or result. Workflow prompt only; it does not establish a safe method, output or equipment fit. Tap to open the full-size editorial diagram.*
 
 <!-- audit-section: evidence-tradeoffs -->
 ## Route missing data without false precision
@@ -158,7 +176,7 @@ Early procurement often has incomplete site and equipment information. The usefu
 
 Check whether each reply repeats the same scope, distinguishes included and locally supplied items, identifies assumptions, lists requested deliverables and routes open questions to named roles. Do not compare only the headline price. A lower price may simply omit chassis integration, tooling, packing, local services or document scope that another response includes.
 
-For general planning context, the <a href="https://www.hse.gov.uk/pubns/geis6.htm" target="_blank" rel="noopener noreferrer">HSE GEIS6 page on selecting and managing mobile elevating work platforms</a> discusses task- and site-based selection in its own UK MEWP scope. It does not classify this equipment, verify an ARCLIFT configuration or settle destination requirements.
+For planning context in Great Britain, the <a href="https://www.hse.gov.uk/pubns/geis6.htm" target="_blank" rel="noopener noreferrer">HSE GEIS6 page on selecting and managing mobile elevating work platforms</a> introduces its 2014 information sheet on MEWP selection and risk management. Its scope is MEWPs; it does not classify a roll-forming lift, verify an ARCLIFT configuration or settle destination requirements.
 
 <!-- audit-section: limitations-not-fit -->
 ### Stop when the RFQ cannot support the decision
@@ -182,7 +200,7 @@ Yes, for a bounded screen if the missing survey is identified and the reply is r
 
 #### Should a preferred model appear in the RFQ?
 
-It may appear as a comparison reference, provided the RFQ explains why and allows the reviewer to identify conflicts or alternatives. A reference label is not evidence of current configuration, availability or project fit.
+It may appear as a comparison reference, provided the RFQ explains why and allows the reviewer to identify conflicts or alternatives. Ask for its relationship to the current proposed configuration to be confirmed; neither its suffix nor a matching photograph establishes height, load, availability or project fit.
 
 #### How should suppliers respond to an unknown field?
 

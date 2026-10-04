@@ -10,7 +10,7 @@
   <text x="100" y="145" font-family="Arial, sans-serif" font-size="66" font-weight="800" fill="#172A34">RFQ INPUT GATES</text>
   <text x="100" y="218" font-family="Arial, sans-serif" font-size="44" fill="#425E68">Turn unknowns into reviewable project inputs</text>
   <text x="1495" y="140" text-anchor="end" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#0B6E69">ARCLIFT</text>
-  <text x="1495" y="205" text-anchor="end" font-family="Arial, sans-serif" font-size="42" fill="#526B73">EDITORIAL DECISION MAP</text>
+  <text x="100" y="295" text-anchor="start" font-family="Arial, sans-serif" font-size="42" fill="#526B73">EDITORIAL DECISION MAP</text>
   <path d="M 250 440 C 320 440, 340 580, 410 580" fill="none" stroke="#0B6E69" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow)"/>
     <path d="M 610 580 C 680 580, 700 440, 770 440" fill="none" stroke="#0B6E69" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow)"/>
     <path d="M 970 440 C 1040 440, 1060 580, 1130 580" fill="none" stroke="#0B6E69" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow)"/>

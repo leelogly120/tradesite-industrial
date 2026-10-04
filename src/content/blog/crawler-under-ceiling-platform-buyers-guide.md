@@ -2,12 +2,12 @@
 title: "How to Choose a Crawler Under-Ceiling Work Platform"
 description: "Choose a crawler under-ceiling work platform by mapping reach, access, floor, overhead, load, power, controls, rescue, and local review needs for procurement."
 date: 2026-07-27
-updated: 2026-09-07
+updated: 2026-10-04
 author: "ARCLIFT Technical Editorial"
 tags: ["Crawler Platforms", "Ceiling Work", "Buyer Guide"]
 coverImage: "/images/banners/category-ceiling.webp"
-coverAlt: "Editorial view of a crawler platform arranged for work beneath a large building ceiling."
-coverCaption: "AI-assisted editorial composite for category orientation; it is not proof of a model, reach, load, floor pressure, operating state, or project result."
+coverAlt: "Editorial illustration of a raised deck beneath a building roof."
+coverCaption: "AI-assisted editorial composite; not evidence of ARCLIFT equipment, configuration, project, capability or result. Category context only; it does not identify a base machine, platform option or approved arrangement."
 draft: false
 ---
 
@@ -24,6 +24,22 @@ Choosing a crawler under-ceiling work platform starts with the building and the 
 
 <!-- audit-section: buyer-intent -->
 ## Start with the work outcome, not nominal height
+
+### Identify the product and configuration being requested
+
+Large-deck ceiling access is a separate ARCLIFT product line from the systems that lift roll-forming equipment toward a roof. Its procurement question concerns a work area for the defined ceiling or wall task. It is not a third chassis choice alongside crawler and truck-mounted roof-forming systems.
+
+Two descriptions can appear in equipment discussions: a standalone crawler platform and a large-platform option associated with a particular host machine. Those descriptions require different evidence. A broad deck shown on a host does not establish that the same option can be fitted to another host, nor that the standalone series shares its dimensions, load limits or instructions. Identify which route the enquiry actually means before using the selection screens below.
+
+*On smaller screens, scroll the table sideways to read all three columns.*
+
+| Procurement route | Decision to resolve first | Evidence needed to continue |
+| --- | --- | --- |
+| A standalone crawler ceiling platform | Which complete configuration is proposed for the task? | Its own configuration record, transport and work envelopes, platform arrangement and applicable instructions. |
+| A large-platform option for an identified host | Is this exact host-and-platform combination documented? | Explicit compatibility and scope confirmation, the configuration after the change, and the records governing that arrangement. |
+| An image, public code or unspecified “large platform” | Does the reference describe either route clearly enough to investigate? | Identification of the proposed equipment and supply boundary before dimensions or load entries are compared. |
+
+If an existing roof-forming host is involved, state whether the enquiry asks about a separate machine or a proposed change to that host. Keep the current host configuration and the proposed arrangement distinct. An option description is a reason to request review, not permission to remove a forming line, attach a deck or use the altered equipment. This guide provides no changeover procedure or compatibility finding.
 
 ### Describe the worker and material position
 
@@ -50,9 +66,9 @@ If one row points to a different access method, compare that method before colle
 
 The [crawler ceiling platform project-data guide](/blog/crawler-ceiling-wall-panel-platform-project-data/) expands the input list. The [crawler platform category](/products/arc-f20-crawler-ceiling-platform/) provides orientation to ARCLIFT's supply scope, but selection remains conditional on the project package.
 
-![Large-deck platform shown below an industrial structure](/images/editorial/large-deck-steel-structure.webp)
+![Editorial illustration of a raised work deck below steel roof framing](/images/editorial/large-deck-steel-structure.webp)
 
-*AI-assisted editorial composite. It illustrates a general under-ceiling planning context and cannot prove a machine identity, rated load, reach, floor interface, or site suitability.*
+*AI-assisted editorial composite; not evidence of ARCLIFT equipment, configuration, project, capability or result. It illustrates an under-ceiling context without identifying a standalone platform, a compatible host or an approved option.*
 
 <!-- audit-section: conditions -->
 ## Convert the building into selection zones
@@ -61,7 +77,7 @@ The [crawler ceiling platform project-data guide](/blog/crawler-ceiling-wall-pan
 
 For each zone, provide finished-floor elevation, required platform elevation, required horizontal position, and the nearest overhead and side obstructions. Mark trusses, bracing, purlins, ducts, sprinklers, cable trays, lights, cranes, walls, mezzanines, temporary works, and partially installed materials. Include the approach path as well as the final work position.
 
-OSHA's aerial-lift guidance tells employers to inspect work zones for hazards such as unstable surfaces, inadequate ceiling height, floor obstructions, overhead services, and people nearby. It also says load limits must include workers, tools, and materials. See the <a href="https://www.osha.gov/etools/scaffolding/aerial-lifts" target="_blank" rel="noopener noreferrer">OSHA aerial-lift guidance</a>. That list is a useful minimum prompt, not a substitute for the rules that apply at the destination.
+The U.S. <a href="https://www.osha.gov/etools/scaffolding/aerial-lifts" target="_blank" rel="noopener noreferrer">OSHA Aerial Lifts eTool</a> identifies unstable surfaces, ceiling height, obstructions, overhead services and nearby people as work-area concerns. It also includes workers, tools and materials in load considerations. This is U.S. aerial-lift planning context; it does not classify an ARC-F reference, set its limits or establish which rules apply to the proposed equipment.
 
 ### Walk the access route
 
@@ -73,11 +89,11 @@ Do not treat transport dimensions as operating dimensions. Guards, platform elem
 
 Provide floor construction, slab thickness where known, supporting layout, allowable loading information, suspended areas, joints, weak edges, trenches, covers, coatings, cleanliness limits, and protection requirements. Machine mass alone does not describe local effects. Contact area, load distribution, movement, turning, surface irregularity, support reactions, and temporary protection can all matter.
 
-IPAF's <a href="https://www.ipaf.org/en/operator-feeds/do-you-know-what-look-when-assessing-ground-conditions" target="_blank" rel="noopener noreferrer">ground-condition guidance</a> emphasizes assessing both the intended operating position and the route to it, and obtaining competent structural or geotechnical advice when required. The project team should decide who accepts the floor route and what supporting calculation or drawing is needed.
+IPAF's <a href="https://www.ipaf.org/en/operator-feeds/do-you-know-what-look-when-assessing-ground-conditions" target="_blank" rel="noopener noreferrer">ground-condition guidance</a> covers the operating area and travel route, including surface conditions and visible or hidden weak spots. It is general MEWP guidance, not a floor calculation or a finding about an ARCLIFT configuration. The project team should identify who reviews the building floor and which structural records that reviewer needs.
 
 [![Editorial diagram showing a crawler platform selection path](/images/editorial/crawler-platform-selection-path.svg)](/images/editorial/crawler-platform-selection-path.svg)
 
-*Editorial diagram. Tap to open the full-size editorial diagram. It organizes the work-zone, reach, access, floor, and task-plan review; it does not verify dimensions, reactions, stability, or suitability.*
+*Editorial diagram. AI-assisted illustration; not evidence of ARCLIFT equipment, configuration, project, capability or result. Tap to open the full-size editorial diagram. It connects selection questions without verifying dimensions, reactions, stability or suitability.*
 
 <!-- audit-section: evidence-tradeoffs -->
 ## Review the complete machine-to-site interface
@@ -100,11 +116,11 @@ State whether the work is indoors, outdoors, or transitions between both. Record
 
 Remote control may allow the operator to choose a viewing position during some movements. The limitation is that the operator still needs a clear control zone, reliable communication, a defined stop response, and protection from moving equipment and nearby traffic. Control type does not remove the need for trained operators, pre-use checks, guarded controls, emergency lowering, or a practised rescue method.
 
-The <a href="https://www.hse.gov.uk/construction/safetytopics/mewp.htm" target="_blank" rel="noopener noreferrer">HSE MEWP guidance</a> highlights entrapment, overturning, falls, and collision, and calls for a rescue plan that is practised by someone who knows the ground controls. Use those principles to test the proposed configuration and method together.
+For Great Britain, the <a href="https://www.hse.gov.uk/construction/safetytopics/mewp.htm" target="_blank" rel="noopener noreferrer">HSE MEWP guidance</a> discusses entrapment, overturning, falls and collision. It calls for a practised rescue plan and someone on the ground who knows the emergency actions and ground controls. These are MEWP planning considerations, not an ARC-F classification or approval; the project must establish the requirements for its actual equipment and destination.
 
 [![Editorial diagram showing ceiling-platform project inputs](/images/editorial/ceiling-platform-project-data.svg)](/images/editorial/ceiling-platform-project-data.svg)
 
-*Editorial diagram. Tap to open the full-size editorial diagram. It is a question map, not a rated-load schedule, operating instruction, floor approval, or compliance record.*
+*Editorial diagram. AI-assisted illustration; not evidence of ARCLIFT equipment, configuration, project, capability or result. Tap to open the full-size editorial diagram. This question map is not a rated-load schedule, operating instruction, floor approval or compliance record.*
 
 <!-- audit-section: limitations-not-fit -->
 ## Recognize where the crawler concept may not fit
@@ -129,6 +145,8 @@ Other reasons to pause include unresolved emissions rules, missing charging arra
 ### Inputs for a meaningful configuration review
 
 Prepare one marked drawing set and a short schedule covering the points below. Photographs can help describe access and obstructions when identities and sensitive information are removed, but dimensions and acceptance boundaries should be recorded separately.
+
+Begin with the procurement route: standalone machine, proposed option on an identified host, or still unresolved. Attach the corresponding configuration reference so the work-zone records are compared with the correct equipment description.
 
 Use the four-screen matrix as the cover sheet for this package. Give each row its own revision, evidence owner and status so a resolved entry route cannot be mistaken for a resolved work face or accepted floor condition.
 
