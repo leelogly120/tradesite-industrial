@@ -120,6 +120,12 @@ body.design-a2{--nav-height:88px;--max-w:1248px;--section-px:max(24px,calc((100v
 .design-a2 #main-content .article-content a:not(:has(img)){color:#123b50;text-decoration:underline;text-underline-offset:4px}
 .design-a2 #main-content .article__hero img{border-radius:0;object-fit:contain;background:#eaf0f3}
 .design-a2 #main-content .article__hero figcaption{border-radius:0;background:#f4f7f8;font-size:14px;color:#526570}
+/* Reference photographs keep their native proportions and never enlarge small archive images. */
+.design-a2 #main-content .article__hero:has(img[src*="-real-"]){background:#f4f7f8}
+.design-a2 #main-content .article__hero img[src^="/images/equipment/"][src*="-real-"]{width:auto;height:auto;max-width:100%;max-height:620px;aspect-ratio:auto;margin-inline:auto;object-fit:contain;background:none}
+.design-a2 #main-content .article-content img[src^="/images/equipment/"][src*="-real-"]{display:block;width:auto;height:auto;max-width:100%;max-height:700px;aspect-ratio:auto;object-fit:contain;margin:40px auto 12px}
+.design-a2 #main-content .article-content p:has(>img[src*="-real-"])+p{font-size:15px;line-height:1.6;color:#526570;border-bottom:1px solid #c4d0d7;padding-bottom:20px}
+.design-a2 #main-content .blog-card__img img[src^="/images/equipment/"][src*="-real-"]{object-fit:contain;background:#eaf0f3}
 .design-a2 #main-content .key-takeaways{background:#eaf0f3;border:0;border-left:3px solid #123b50;border-radius:0;padding:24px 28px;margin-bottom:40px}
 .design-a2 #main-content .key-takeaways :is(h4,li){color:#273c47}
 .design-a2 #main-content .article-content :is(img,blockquote){border-radius:0}

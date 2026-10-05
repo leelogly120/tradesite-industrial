@@ -4,6 +4,7 @@ import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { auditArticle, LAUNCH_SLUGS } from '../scripts/audit-content.mjs';
 import { RECOVERED_RANKED_ARTICLE_SLUGS } from '../scripts/lift-platform-article-registry.mjs';
+import { REFERENCE_PHOTO_ARTICLES } from '../scripts/reference-photo-articles.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const approvedNewSlugs = [
@@ -317,6 +318,14 @@ describe('Task 5b article metadata and presentation contract', () => {
     expect(internalLinkCount).toBeGreaterThanOrEqual(2);
     expect(externalLinkCount).toBeGreaterThanOrEqual(1);
     expect(faqQuestionCount).toBeGreaterThanOrEqual(4);
+    const photoArticle = REFERENCE_PHOTO_ARTICLES.find((entry) => entry.slug === slug);
+    if (photoArticle) {
+      const cover = article.match(/^coverImage:\s*"([^"]+)"/m)?.[1] ?? '';
+      const bodyImages = [...article.matchAll(/!\[[^\]]+\]\((\/images\/[^)]+)\)/g)].map((match) => match[1]);
+      expect(cover).toBe(photoArticle.cover[0]);
+      expect(bodyImages).toEqual(photoArticle.body);
+      expect(new Set([cover, ...bodyImages]).size).toBe(4);
+    }
   });
   it('gives each known AI-assisted asset an explicit per-image AI-assisted caption', async () => {
     const aiAssistedUses = [

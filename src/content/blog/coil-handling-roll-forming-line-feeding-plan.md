@@ -2,158 +2,165 @@
 title: "Coil Route Planning for a Roll-Forming Line Feed System"
 description: "Prepare a coil-route review package; it does not select lifting equipment, a feeder, or the final safety arrangement for the roll-forming line project."
 date: 2026-07-27
+updated: 2026-10-05
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "coil handling", "feed planning", "material flow"]
-coverImage: "/images/editorial/coil-route-journey-map.svg"
-coverAlt: "Conceptual coil journey from receiving through staging to a guarded line boundary"
-coverCaption: "Representative planning material. AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Cover is a representative editorial concept only; it is not source evidence or an approved drawing."
+coverImage: "/images/equipment/coil-real-cover.webp"
+coverAlt: "Coil suspended beside red vehicle-mounted equipment in an outdoor yard"
+coverCaption: "Reference photograph from equipment documentation; identifying details are blurred. The suspended coil is visible, but the image does not verify an approved handling method, offered configuration or ARCLIFT project."
 draft: false
 ---
 
-Receiving and feed entry are often owned by different teams, yet the coil crosses every space between them. Review that journey as one chain: identification, storage, orientation, unwrapping, lifting and handover. A **coil-route review package** puts coil condition, people, space, equipment interfaces and responsibility on the same controlled map. It is prepared before the handling arrangement is selected and deliberately leaves lifting equipment, feeder choice, crane or forklift size, tooling, controls and the final safety arrangement unresolved.
+A coil can arrive on schedule and still be unavailable to the forming line. Its delivery label may not match the production record, its wrapping may hide the identification needed at feed entry, or the receiving team may have accepted material that the forming team has not reviewed. A coil-route package connects those decisions before delivery, so arrival, custody and permission to feed remain distinguishable.
+
+This guide concerns the information passed from receiving through ground staging to the forming input. The separate [roof-level coil loading plan](/blog/roof-level-roll-forming-lift-coil-loading-plan/) covers proposed transfer boundaries and the project inputs needed for a loading review. Neither article selects lifting equipment or provides handling instructions. Here, the practical question is: what must the buyer, material supplier, site team and forming-equipment reviewer agree so the delivered coil can be matched to the intended feed system?
 
 **Contents**
 
-- Treat the coil path as one decision
-- Capture incoming-coil conditions
-- Map people, equipment and zones
-- Issue the review package
+- Match delivered coils to the forming order
+- Control ground staging and custody
+- Close the feed-entry interfaces
+- Issue a route package that survives changes
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Treat the coil path as one decision
+## Match delivered coils to the forming order
 
-The useful procurement question is not “Which decoiler looks suitable?” It is “Can the complete coil journey be reviewed against controlled project inputs?” That question belongs beside, but does not duplicate, the broader [roll-forming line specification](/blog/roll-forming-line-specification-long-span-roof-panels/) or the separate [roof-level route decision](/blog/roof-level-roll-forming-long-panels/).
+### Keep commercial and technical identities connected
 
-### Receiving boundary
+A purchase-order line may cover several coils, while the production schedule assigns individual coils to different panel runs. Record the relationship between order line, delivery record, coil identifier and intended material specification. Keep the supplier's identifier alongside the site's working identifier; replacing one with the other can break traceability when a delivery discrepancy needs investigation.
 
-Begin where custody changes. Record the delivery unit, unloading responsibility, identification method, inspection point and the status that allows the coil to move into storage. A receiving label should connect the physical coil to the ordered material record without exposing customer, supplier or project identity in public systems.
+The forming reference should identify the current profile and material revision. The [profile, material and tooling data guide](/blog/roof-panel-profile-material-tooling-data/) explains that separate review. A material certificate, delivery label and production instruction answer different questions. Record which document controls each field and who resolves disagreement, instead of assuming the newest document supersedes every other record.
 
-Identify who deals with visible damage, broken restraint, uncertain mass, moisture or an unreadable label. Do not let a receiving exception drift into production because everyone assumed another party had checked it. The route package should show the hold location and the person authorised to resolve the discrepancy.
+### Request the delivery condition, not just nominal strip size
 
-### Staging boundary
+The initial data sheet should include coil width, inside and outside diameter, mass data, eye orientation, winding information, packaging and the condition in which the delivery will arrive. Mark each field as supplier-declared, measured, provisional or unresolved, with its document reference. Values needed for handling review must remain available to the appointed handling owner; this article supplies no limits or selection rules.
 
-Temporary storage is part of the route even when a coil is expected to move quickly. Show the support method, restraint concept, permitted orientation, identification visibility, surface-protection needs and the owner of housekeeping. Avoid treating an empty floor area as an automatically suitable staging zone.
+Include packaging dimensions and supports where they affect the route review. Distinguish the coil from its delivery package so the forming reviewer does not mistake an overall packed dimension for a feed-interface dimension. If successive deliveries can differ, list the permitted variants from controlled records and the person who checks which variant has arrived.
 
-In U.S. general-industry context, <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.176" target="_blank" rel="noopener noreferrer">OSHA 29 CFR 1910.176</a> addresses clear mechanical-handling passageways and stable, non-hazardous storage. That U.S. rule is jurisdiction-specific planning context, not a global coil-handling design rule and not a conclusion about this project.
+### Give discrepancies a record that follows the coil
 
-### Feed-entry boundary
+For example, the delivery paperwork may identify a finish while the coil label carries an unfamiliar material code. Record both references against the coil, name the material owner who can resolve the difference and keep feed acceptance pending. A photograph of a label may help a private review, but it does not settle the specification by itself.
 
-Mark where general material handling ends and the guarded line system begins. Define the condition expected at that point: orientation, packaging removed or retained, identification confirmed, lifting attachment status, operator position and handover signal. The package should not prescribe a threading sequence unless an approved operating document owns it.
+The receiving record should distinguish visible condition observations from acceptance decisions. Record the observed condition, the reporting person, the affected identifier and the decision reference. Avoid a single “received” tick that could mean delivered, checked, accepted or released for production depending on who reads it.
 
-The feed-entry boundary also needs a stop rule. If the coil differs from the recorded geometry, is damaged, lacks identification or cannot enter the planned zone without an improvised movement, the review should return to the responsible owner. A smooth-looking path on a layout does not close those conditions.
+![Coils in the foreground beside elevated equipment and a steel building frame](/images/equipment/coil-real-handling.webp)
 
-![Conceptual coil route from receiving to guarded feed entry](/images/editorial/coil-route-journey-map.svg)
-
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Illustrative flow; handling method, safeguards and responsibilities are project-specific.*
+*Reference photograph with identifying details blurred. Ground-level coils, elevated equipment and the building occupy the same scene; their proximity does not verify a feed arrangement, permissible load or approved work method.*
 
 <!-- audit-section: conditions -->
-## Capture incoming-coil conditions
+## Control ground staging and custody
 
-The route package should describe the coil actually expected, not a generic cylinder. Geometry, packaging, surface condition and orientation affect which interfaces need review. Keep each value tied to its source, revision and permitted variation.
+### Describe the actual holding location
 
-### Geometry and mass fields
+Show each proposed staging location on the current route drawing, including receiving, accepted stock and material awaiting a decision. Record access constraints, floor or ground information, environmental exposure and the discipline responsible for reviewing support and storage conditions. A marked rectangle on a drawing does not confirm that the surface or storage arrangement is suitable.
 
-Record width, inside diameter, outside diameter and mass for the proposed delivery condition. Identify whether each value comes from a purchase specification, supplier record, packing record, measurement or preliminary assumption. Use a range only when a controlled source supplies it; do not invent margins in editorial copy.
+Ask the production planner how long a coil may wait and what happens when feed entry is unavailable. A delivery slot and a forming slot are different commitments. The package should identify who owns material during the gap and where its status is recorded, including when custody crosses a shift or contractor boundary.
 
-These fields help reviewers assess route geometry and lifting interfaces. They do not select a loading device or prove that any existing equipment is suitable. If deliveries can differ, show how each incoming coil will be checked against the released route package.
+### Assign packaging and identification decisions
 
-### Eye orientation and packaging
+The material supplier's packing record should describe what arrives; the approved project documents must determine how packaging and restraints are handled. The route package records who owns those decisions, where the relevant instructions can be found and how coil identity remains accessible through the handover. It does not prescribe removal of bands, wrapping or supports.
 
-State whether the coil is expected eye-to-sky or eye-to-side at each handoff, and record how that orientation is maintained or changed. Describe restraint, pallet or cradle, wrapping, edge protection and any packaging that must be removed before the next step. The lifting owner must decide how the package and coil are handled; the route diagram is only an interface record.
+Record what happens when packaging conceals the identifier required by the next team. The decision may need the material supplier and site quality owner, rather than an improvised relabel. Likewise, a change in protective packaging should trigger review of exposed surfaces and contact conditions where relevant. Keep packaging waste and returnable supports visible in the space plan without turning the diagram into a handling sequence.
 
-Packaging can obscure labels or damage. Define when identity is confirmed, who may remove restraints, where waste is placed and how an exception is isolated. Do not assume a supplier's packing method remains appropriate for every intermediate movement.
+### Preserve custody across pauses and returns
 
-### Surface protection
+A staged coil needs a named custodian, current location, acceptance status and the next intended handoff. If production pauses or the coil is returned from the feed area, update those fields against the same identity. The record should show whether material condition, packaging or remaining quantity has changed and which reviewer must accept that change.
 
-Some coils require controls for moisture, contamination, scratches or edge damage. Record the project requirement and the evidence that supports it. State where contact points occur and who confirms that the handling arrangement is consistent with the approved material plan.
+For U.S. general-industry context, <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.176" target="_blank" rel="noopener noreferrer">OSHA 29 CFR 1910.176</a> addresses clear mechanical-handling passageways and stable storage. It is jurisdiction-specific background for planning discussions, not a global storage design rule or confirmation of this site's arrangement. Applicable local requirements and the project's competent review remain necessary.
 
-Surface protection creates a trade-off with inspection access: more wrapping may protect the material while hiding damage or identification. Resolve that interface in the project package. Do not imply that a generic protective layer establishes finished-panel appearance.
+![Equipment module in a suspended transfer scene](/images/equipment/coil-real-module.webp)
 
-![Blank incoming-coil planning card with controlled data fields](/images/editorial/blank-coil-data-card.svg)
-
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Planning template only; values come from buyer documentation and the approved handling plan.*
+*Reference photograph with identifying details blurred. A machine module is suspended beside the apparatus; this is distinct from material feeding. The image does not verify attachment points, compatibility or an approved lifting method.*
 
 <!-- audit-section: project-checklist -->
-## Map people, equipment and zones
+## Close the feed-entry interfaces
 
-A review package needs enough information to expose conflicts without pretending to be the final lifting or safeguarding plan. Include:
+### Separate a material match from a physical fit
 
-- Coil **geometry**, mass, packaging and eye orientation linked to a controlled record.
-- Receiving, temporary storage, lifting and **feed** boundaries with named owners.
-- The travel **route**, turning constraints, overhead clearance and access-control points.
-- **Floor** condition, level changes and the party responsible for structural or ground review.
-- Lifting attachment and handling-equipment status, with selection reserved to the competent owner.
-- Operator positions, visibility, communication and exclusion **zone** assumptions.
-- Available **power** and line-isolation interface status where it affects the route.
-- Destination rules, risk-review inputs and required **documentation** language.
-- Changeover sequence status and the signed document that will define actual actions.
+A coil matching the ordered material does not establish that the proposed feed equipment can receive it. Ask the forming-equipment reviewer to return the configuration-specific input requirements and the document revision behind them. Compare the supplied coil data with those requirements field by field. Record open items without filling gaps from a similar-looking machine, an earlier project or a brochure photograph.
 
-### Lifting interface
+The review should distinguish coil support, material entry and the forming module. If these are supplied by different parties, each interface needs an owner. Request the controlled drawing reference for the proposed arrangement, the state in which it applies and the missing information needed to assess it. Do not infer that a roof-level forming concept places the whole coil at height.
 
-Identify the approved lifting points or attachment method only from controlled documentation. Show where the lifting equipment approaches, where the coil is picked, how orientation changes and where the load is released. If the method is not yet selected, state that it is open and name the evidence needed.
+### Define the information handed to the line team
 
-The route package should never convert a visual icon into a rigging instruction. Equipment selection, inspection, attachment, exclusion and operation remain with the competent parties under the applicable destination rules and project risk process.
+Before feed acceptance, the line team needs the coil identity, current material/profile reference, disposition of receiving exceptions and the readiness records required by the approved project procedure. The equipment documentation must own threading, guarding and operating actions. The coordination package only identifies the documents and people responsible for those actions.
 
-### Operator positions
+Where separate feed and forming equipment are proposed, request an interface record covering material-entry geometry, direction, mounting boundaries and relevant power or control connections. The [electrical and control interface guide](/blog/roll-forming-line-electrical-control-interfaces/) provides the adjacent documentation discussion. Naming an interlock or control function in a request does not establish its presence or adequacy; the actual configuration must be reviewed.
 
-Map where people are expected during receiving, storage, lifting, unwrapping and feed entry. Note visibility, communication, access restriction and possible conflict with moving material or equipment. These are review prompts; the project risk assessment must define final positions and safeguards.
+### Use a handoff table with a pending state
 
-Separate routine operation from fault recovery. A position that is acceptable for observing a normal handoff may be inappropriate when a coil is jammed, a restraint is damaged or identification is uncertain. The approved procedure should state who stops the task and how the zone is made safe before intervention.
+The table below is an example of coordination fields, not an approved operating sequence. Give every unresolved item a responsible party and a closure reference. A completed transport entry must not automatically close the feed-acceptance record.
 
-### Changeover responsibilities
+Attach six records for the first interface review:
 
-List who releases the previous coil, controls residual material, prepares the new coil, confirms identity and hands the feed state to the line operator. Where several organisations share the site, contractual names should replace vague labels such as “operator” or “supplier.”
+- Coil identity register linked to the material and profile revisions, including unresolved delivery discrepancies.
+- Proposed feed-entry geometry with each height datum identified and the controlling drawing requested where missing.
+- Current access route and staging layout, with floor or ground review responsibility recorded for each holding location.
+- Delivery packaging and transport description showing which condition is actually expected at receipt.
+- Feed-to-forming power and control interface requests, each assigned to the party responsible for the proposed equipment.
+- Destination documentation requirements and the named owner who can accept each outstanding interface decision.
 
-Changeover details may depend on the final feeder and guarding arrangement, which are still unknown at this stage. Mark those steps as reserved for the approved equipment and risk documents. The package can define interfaces without inventing an operating sequence.
+*On smaller screens, scroll the table sideways to read all three columns.*
+
+| Handoff | Information passed forward | What can remain pending |
+| --- | --- | --- |
+| Delivery to receiving | Coil identifier, delivery record, package description and observed condition | Material-code discrepancy or missing record |
+| Receiving to staging | Identified holding location, current custodian and material-status reference | Storage review or quality disposition |
+| Staging to feed review | Coil data, profile revision and the proposed equipment interface | Configuration-specific fit or missing interface drawing |
+| Feed review to line acceptance | Resolved exceptions and the readiness records required by the project | Equipment readiness or a changed production instruction |
+
+Use explicit statuses such as “awaiting material disposition” with an owner, rather than a bare red cell. The point is to make the next decision visible. It is not to let a spreadsheet replace the controlled handling, equipment or risk documents.
+
+![Long light-colored sheet beside raised red apparatus and a steel building](/images/equipment/coil-real-panel.webp)
+
+*Reference photograph cropped at the right edge to exclude an identifying banner. The long sheet and building show spatial context only; the image does not establish active production, panel dimensions or an ARCLIFT delivery case.*
 
 <!-- audit-section: evidence-tradeoffs -->
-The central trade-off is between layout simplicity and operational truth. A single arrow is easy to read, but it can hide temporary storage, orientation changes, people, packaging and exception handling. Add only the detail supported by project evidence, and leave equipment choice open until the route, coil and responsibility records can be reviewed together.
+## Issue a route package that survives changes
 
-![Conceptual zones and owners around a coil handoff](/images/editorial/coil-zone-responsibility-overlay.svg)
+### Compare routes through their unresolved interfaces
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Conceptual map; contracts, risk assessment and destination rules govern the arrangement.*
+Placing staging near the feed point may reduce the distance between recorded handoffs, while consuming space needed for equipment access or panel receiving. A more distant location may separate activities but introduce further custody changes. Compare these conditions using the actual layout and project records; a shorter arrow is not enough to establish a better route.
+
+Show doorways, turning constraints, overhead restrictions, level changes and the relevant work zone boundaries. Identify the owner of the floor or ground review and the source of each dimension. Keep a location for unresolved material visible in the coordination plan. The relevant question is whether the arrangement can accommodate a delayed decision without losing identity or custody.
+
+### Reopen only the decisions affected by a change
+
+Suppose a replacement delivery has the same ordered strip specification but different packaging or coil outside diameter. The material specification may remain unchanged while the receiving, staging and feed-interface reviews need new information. Link the change to the affected records, name the reviewers and retain the previous issued revision so the site can distinguish the two.
+
+Conversely, a profile or finish change may leave the drawn route untouched while requiring another material and forming review. Ask each affected owner for a documented disposition. This approach keeps the review focused without letting “same route” become an assumption that all technical inputs are unchanged.
 
 <!-- audit-section: limitations-not-fit -->
-## Issue the review package
+### Keep coordination separate from operating authority
 
-Treat the coil-route review package as a coordination map, not an operating instruction. Lift authorisation, storage-load decisions, threading instructions and universal safety declarations sit outside its scope and are not fit uses of the package. What it does control is the route, its inputs, owners and unresolved decisions.
+This package is not fit for selecting a lifting accessory, approving a storage support, setting a capacity or prescribing coil threading. It cannot establish compatibility from photographs. Missing coil identity, unresolved geometry, absent equipment documentation or an unassigned handoff prevents a meaningful review of the affected interface; naming an overall contractor does not resolve the missing input.
 
-### Route and floor constraints
-
-Show doorways, aisles, turns, level changes, overhead restrictions, drainage features and protected areas that affect movement. Record the floor or ground information available and the owner of any structural review. Do not publish dimensions or load conclusions from an unapproved site drawing.
-
-Plan both the normal route and the exception route. A rejected coil, damaged package or blocked aisle may need a safe holding location. If the package cannot show how the route remains controlled under those conditions, keep the arrangement preliminary.
-
-### Hazard-review ownership
-
-The <a href="https://www.iso.org/standard/51528.html" target="_blank" rel="noopener noreferrer">ISO 12100:2010 official standard record</a> locates a framework for hazard identification and risk reduction. It is a scope record, not an accessible project procedure and not evidence that a particular arrangement has been reviewed.
-
-Name the party that leads the project risk process, the parties that supply interface information and the document that closes actions. Local rules, equipment instructions and competent review remain necessary. ARCLIFT appears here only as a technical selection and supply partner.
-
-### Secure drawing transfer
-
-Send route drawings through a secure project channel. Remove customer names, site addresses, access-control details, contacts, security boundaries, unrelated equipment identifiers and revision histories that are not required for the task. Anonymised zone labels are normally enough for preliminary discussion.
-
-Restrict access to the minimum review group and record which revision was issued. Do not paste a project plan into a public inquiry form or reuse it as a marketing image. Any wider use requires written, scope-specific approval.
+The photographs on this page come from supplied reference material and illustrate visible scenes only. They do not establish which configuration is offered, whether a shown movement is permissible or who owned the project. Actual operating instructions and approvals must refer to the selected equipment, material, destination and site conditions.
 
 <!-- audit-section: cta-editorial-note -->
-Send only the coil-route review package through a secure project channel to ARCLIFT as a technical selection and supply partner. Include coil geometry, controlled route and floor information, operator and exclusion-zone assumptions, available site power where relevant, destination documentation and the signed owner for each handoff. Keep roof height, transport access and any project-specific lifting decision in their proper review streams. This request does not promise suitability, fit, approval, quotation, configuration, availability, result or response time. The editorial visuals show planning fields only and cannot replace the final handling plan or signed risk documents.
+### Send a compact, controlled review package
+
+Provide the coil identity register, material/profile references, delivery and packaging data, route drawing, staging and floor information, feed-interface drawing requests, custody table and open-item log. Include the destination requirements, available power where relevant and the signed project-specific records already issued. Mark preliminary fields clearly, including any unresolved height or geometry datum.
+
+ARCLIFT acts as an integrated equipment supplier and technical selection and supply partner. Send the package through a secure project channel with unnecessary customer names, site-security details and personal identifiers removed. Ask which configuration and project records are still required to complete the review; the request itself does not establish suitability, availability or approval.
+
+The reference images provide editorial context; use controlled project drawings and equipment documents for the technical review.
 
 ## FAQ
 
-#### Which coil data is needed first?
+#### Is a delivery receipt enough to release a coil to the forming line?
 
-Start with width, inside diameter, outside diameter, mass, eye orientation, packaging, surface condition and identification method. Tie each field to a controlled source and label preliminary values.
+No. Receipt records arrival and custody. Material acceptance and feed acceptance require their own project-defined records, including resolution of discrepancies and the applicable equipment interface review.
 
-#### Who owns the lifting plan?
+#### What if packaging hides the coil identity?
 
-The project must name the competent party under its contracts and destination rules. A roll-forming equipment discussion or route diagram does not assign that responsibility automatically.
+Record the mismatch between the next team's information need and the delivered condition. The appointed material and site owners must resolve it through controlled instructions; this article does not authorize opening packaging or removing restraints.
 
-#### Does the route include temporary staging?
+#### Does this guide decide where the coil is supported during forming?
 
-Yes, if the coil can pause between receipt and feed entry. Record restraint, support, identification, protection, access and the owner of the area rather than treating staging as unused floor space.
+No. That depends on the proposed feed and forming configuration. Request the controlled arrangement and interface records rather than inferring coil location from a roof-level forming description or photograph.
 
-#### Can a generic feeder arrangement be assumed?
+#### Which changes should trigger another route review?
 
-No. Feeder, loading, threading and safeguarding decisions remain open until coil data, route constraints, interfaces and project-specific risk documents are reviewed.
+Changes to packaging, coil geometry, staging, access or feed equipment can affect the route. Changes to material or profile can reopen forming acceptance even when the physical route remains the same.

@@ -3,6 +3,7 @@ import { constants } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { EXTENDED_LAUNCH_SLUGS } from '../scripts/audit-lift-platform-content.mjs';
+import { REFERENCE_PHOTO_ARTICLES } from '../scripts/reference-photo-articles.mjs';
 import {
   AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS,
   AUGUST_13_LIFT_PLATFORM_ARTICLE_SLUGS,
@@ -91,7 +92,13 @@ describe('twenty lift-platform article release contract', () => {
     expect((markdown.match(/^####\s+.+\?$/gm) ?? []).length).toBeGreaterThanOrEqual(4);
     expect(bodyImages).toHaveLength(3);
     expect(new Set([cover, ...bodyImages]).size).toBe(4);
-    expect(bodyImages).toContain(`/images/editorial/${diagram}`);
+    const photoArticle = REFERENCE_PHOTO_ARTICLES.find((article) => article.slug === slug);
+    if (photoArticle) {
+      expect(cover).toBe(photoArticle.cover[0]);
+      expect(bodyImages).toEqual(photoArticle.body);
+    } else {
+      expect(bodyImages).toContain(`/images/editorial/${diagram}`);
+    }
     expect(new Set(internalLinks).size).toBeGreaterThanOrEqual(2);
     expect(markdown).toMatch(/<a href="https:\/\/[^"\s]+" target="_blank" rel="noopener noreferrer">/);
     for (const marker of markers) expect(markdown).toContain(`<!-- audit-section: ${marker} -->`);

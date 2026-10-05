@@ -3,6 +3,7 @@ import { constants } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { EXTENDED_LAUNCH_SLUGS } from '../scripts/audit-lift-platform-content.mjs';
+import { REFERENCE_PHOTO_ARTICLES } from '../scripts/reference-photo-articles.mjs';
 import {
   ALL_LIFT_PLATFORM_ARTICLES,
   BASELINE_BLOG_SLUGS,
@@ -44,7 +45,7 @@ function frontmatterValue(markdown, key) {
 }
 
 function visibleWordCount(markdown) {
-  const body = markdown.split('---', 3)[2] ?? markdown;
+  const body = markdown.replace(/^---\r?\n[\s\S]*?\r?\n---(?:\r?\n|$)/, '');
   const visible = body
     .replace(/<!--[\s\S]*?-->/g, ' ')
     .replace(/<[^>]+>/g, ' ')
@@ -54,6 +55,11 @@ function visibleWordCount(markdown) {
 }
 
 describe('2026-08-10 two-article release contract', () => {
+  it('counts the full visible body after a Markdown table separator', () => {
+    const markdown = '---\ntitle: "Not body text"\n---\nBefore table.\n\n| Entry | Value |\n| --- | --- |\n| After | Complete |\n\nFinal paragraph.';
+    expect(visibleWordCount(markdown)).toBe(8);
+  });
+
   it('adds only the two approved pages while retaining all 43 published routes', async () => {
     const approvedSlugs = AUGUST_10_ARTICLES.map(({ slug }) => slug);
     const registrySlugs = ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug);
@@ -71,6 +77,8 @@ describe('2026-08-10 two-article release contract', () => {
     expect(await exists(path), path).toBe(true);
     const markdown = await readFile(path, 'utf8');
     const description = frontmatterValue(markdown, 'description');
+    const actualCover = frontmatterValue(markdown, 'coverImage');
+    const photoArticle = REFERENCE_PHOTO_ARTICLES.find((article) => article.slug === slug);
     const bodyImages = [...markdown.matchAll(/!\[[^\]]+\]\((\/images\/[^)]+)\)/g)].map((match) => match[1]);
     const h2 = [...markdown.matchAll(/^##\s+\S.+$/gm)];
     const h3Plus = [...markdown.matchAll(/^#{3,4}\s+\S.+$/gm)];
@@ -78,7 +86,7 @@ describe('2026-08-10 two-article release contract', () => {
 
     expect(frontmatterValue(markdown, 'title')).toBe(title);
     expect(frontmatterValue(markdown, 'date')).toBe('2026-08-10');
-    expect(frontmatterValue(markdown, 'coverImage')).toBe(cover);
+    expect(actualCover).toBe(photoArticle?.cover[0] ?? cover);
     expect(title.length).toBeGreaterThanOrEqual(50);
     expect(title.length).toBeLessThanOrEqual(60);
     expect(`${title} | ARCLIFT`.length).toBeLessThanOrEqual(70);
@@ -92,11 +100,17 @@ describe('2026-08-10 two-article release contract', () => {
     expect(h3Plus.length).toBeGreaterThanOrEqual(12);
     expect((markdown.match(/^####\s+.+\?$/gm) ?? []).length).toBe(4);
     expect(bodyImages).toHaveLength(3);
-    expect(new Set([cover, ...bodyImages]).size).toBe(4);
-    expect(bodyImages).toContain(`/images/editorial/${diagram}`);
+    expect(new Set([actualCover, ...bodyImages]).size).toBe(4);
+    if (photoArticle) {
+      expect(bodyImages).toEqual(photoArticle.body);
+    } else {
+      expect(bodyImages).toContain(`/images/editorial/${diagram}`);
+    }
     expect(new Set(internalLinks).size).toBeGreaterThanOrEqual(2);
     expect(markdown).toMatch(/<a href="https:\/\/[^"\s]+" target="_blank" rel="noopener noreferrer">/);
-    expect((markdown.match(/not evidence of (?:ARCLIFT )?equipment, configuration, project, capability or result/gi) ?? []).length).toBeGreaterThanOrEqual(4);
+    if (!photoArticle) {
+      expect((markdown.match(/not evidence of (?:ARCLIFT )?equipment, configuration, project, capability or result/gi) ?? []).length).toBeGreaterThanOrEqual(4);
+    }
     expect(markdown).not.toMatch(/(?:^|[\s"'(])(?:[A-Za-z]:[\\/])|Henan\s+Huaying|河南华鹰|source factory|our factory|we manufacture/imu);
     for (const marker of markers) expect(markdown).toContain(`<!-- audit-section: ${marker} -->`);
   });

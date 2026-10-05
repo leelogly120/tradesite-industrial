@@ -939,5 +939,103 @@
         "classification": "editorial"
       }
     ]
-  }
+  },
+  "referencePhotos": [
+    {
+      "url": "/images/equipment/transport-real-cover.webp",
+      "width": 744,
+      "height": 419,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
+    },
+    {
+      "url": "/images/equipment/transport-real-carrier.webp",
+      "width": 502,
+      "height": 370,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
+    },
+    {
+      "url": "/images/equipment/transport-real-loading.webp",
+      "width": 683,
+      "height": 370,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
+    },
+    {
+      "url": "/images/equipment/transport-real-stowed.webp",
+      "width": 637,
+      "height": 374,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
+    },
+    {
+      "url": "/images/equipment/coil-real-cover.webp",
+      "width": 680,
+      "height": 562,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
+    },
+    {
+      "url": "/images/equipment/coil-real-module.webp",
+      "width": 607,
+      "height": 563,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
+    },
+    {
+      "url": "/images/equipment/coil-real-handling.webp",
+      "width": 593,
+      "height": 411,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
+    },
+    {
+      "url": "/images/equipment/coil-real-panel.webp",
+      "width": 638,
+      "height": 841,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
+    },
+    {
+      "url": "/images/equipment/entry-real-cover.webp",
+      "width": 838,
+      "height": 622,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
+    },
+    {
+      "url": "/images/equipment/entry-real-approach.webp",
+      "width": 570,
+      "height": 465,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
+    },
+    {
+      "url": "/images/equipment/entry-real-interior.webp",
+      "width": 874,
+      "height": 656,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
+    },
+    {
+      "url": "/images/equipment/entry-real-clearance.webp",
+      "width": 551,
+      "height": 730,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
+    }
+  ]
 }
