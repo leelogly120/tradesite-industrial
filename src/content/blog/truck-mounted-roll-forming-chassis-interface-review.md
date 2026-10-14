@@ -2,189 +2,156 @@
 title: "Truck Chassis Integration Review for Roll-Forming Lines"
 description: "Review truck chassis integration for mobile roll-forming lines, including interfaces, payload allocation, stability inputs, utilities, and verification records."
 date: 2026-07-27
-updated: 2026-09-07
+updated: 2026-10-14
 author: "ARCLIFT Technical Editorial"
 tags: ["truck mounted roll forming", "chassis interface", "vehicle integration", "project review"]
-coverImage: "/images/editorial/chassis-interface-stack.svg"
-coverAlt: "Conceptual chassis body roll-forming module and work-zone interface stack"
-coverCaption: "Representative interface concept. AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Cover is a representative editorial concept only; it is not source evidence, an approved vehicle drawing or a load calculation."
+coverImage: "/images/equipment/coil-real-cover.webp"
+coverAlt: "Truck-mounted apparatus with a suspended coil beside the rear of the vehicle"
+coverCaption: "Reference photograph of a truck-mounted arrangement and nearby coil. It does not verify chassis compatibility, mounting design, load limits or an approved handling method."
 draft: false
 ---
 
-Truck chassis integration begins with ownership, not with choosing a truck from a brochure. The chassis, body or attachment, equipment module, road route, site route and work zone each bring a different interface owner. Gather those inputs in a **preliminary chassis-interface package** so the relevant parties can decide whether integration review can begin. Loads, stability, road use, registration, compliance, final architecture and chassis fit remain undecided.
+Truck chassis integration for a roll-forming lift means coordinating a vehicle with the equipment that raises the forming machine toward the roof-panel production position. The review must connect physical space, attachment locations, load information, power and service access for one candidate arrangement. A truck's name or nominal rating cannot resolve those interfaces. Loads, stability, road use, registration, compliance, final architecture and chassis fit remain undecided until the responsible specialists complete their reviews.
 
-For the controlled input set that precedes mass-property and axle-load engineering, use the separate [payload allocation review](/blog/truck-mounted-roll-forming-payload-allocation-review/). This page defines who supplies chassis and module records, who reviews each interface, and which document closes the question. It does not allocate payload, calculate axle reactions or release a mounting design.
+This guide helps a buyer identify what must physically meet and which records are needed to review that meeting. The separate [payload allocation review](/blog/truck-mounted-roll-forming-payload-allocation-review/) develops the mass-property input schedule; [destination chassis sourcing](/blog/truck-mounted-lift-destination-chassis-sourcing/) addresses who purchases the vehicle. Neither replaces the equipment-to-vehicle integration work described here.
 
 **Contents**
 
-- Set the vehicle-use boundary
-- Collect controlled chassis inputs
-- Map integration interfaces
-- Release a review package
+- Define the vehicle and equipment pairing
+- Put physical interfaces on the same drawing basis
+- Resolve power, access and assembly conflicts
+- Decide whether the candidate is ready to progress
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Set the vehicle-use boundary
+## Define the vehicle and equipment pairing
 
-The buyer's immediate question is not “Which truck should we order?” It is “Which use case, documents, interfaces and responsibility owners must exist before vehicle integration can be reviewed?” This is narrower than the [crawler-versus-truck architecture comparison](/blog/crawler-vs-truck-mounted-roll-forming-system/) and separate from the [modular shipping discussion](/blog/40hq-shipping-truck-mounted-roll-forming-lift/).
+### Describe the equipment the chassis will carry
 
-### Road, site-only or mixed use
+List the lifting assembly, forming machine, support equipment, power components and carried accessories included in the proposal. Identify which items remain installed during transport and which are removed or supplied separately. The resulting equipment list should match the proposed arrangement drawing; otherwise a vehicle reviewer may assess a layout that omits part of the actual scope.
 
-State where the assembled concept is expected to move: public roads, controlled industrial roads, a closed construction site or a mix. Record whether equipment remains attached during movement, changes state for transport, or is transferred to another support arrangement. These are inputs, not legal conclusions.
+The [ARC-T25 archived truck-mounted reference](/products/arc-t25-truck-mounted-roll-forming-lift/) is useful for framing this architecture question. It does not identify a currently approved chassis or promise a working envelope. Use the signed configuration schedule and drawings for the quoted arrangement when the project reaches technical selection.
 
-The route category affects which parties and destination rules enter the review. A site-only assumption should not be made merely because public-road use looks difficult; the actual logistics plan may still require road transport. Likewise, a road-capable base vehicle does not make the completed integration road-authorised.
+### State what the vehicle must do
 
-### Decision owner
+Distinguish transfer between sites, movement within a site, positioning, setup and supported work. Each state presents a different question. A road-transport envelope is not the complete deployed envelope, and a drawing of the equipment working beside a building does not establish its travel condition.
 
-Name the party that owns the operating concept, the vehicle record, body or attachment design, equipment interface, final integration, destination inspection and work-zone plan. ARCLIFT's permitted role is limited to integrated equipment supplier or technical selection and supply partner.
+Give the reviewer the intended road-use boundary and destination market without assuming an approval route. If the vehicle is intended only for controlled-site movement, say so explicitly; do not treat that description as permission to bypass local review. The vehicle specialist needs the actual duty and proposed configuration before determining what records apply.
 
-Avoid a single “supplier” box when responsibilities are split. The chassis provider may control frame information; an integrator may control attachment and calculations; a local specialist may control registration steps; the project owner may control routes and work zones. The package should make these interfaces explicit.
+### Ask for candidate-specific vehicle records
 
-### Destination-rule confirmation
+A dealer's general model sheet can start a discussion, but the review needs the build information for the candidate offered. Relevant inputs may include the frame layout, axle arrangement, wheelbase, installed components, bodybuilder provisions and applicable restrictions on modification. Ask the vehicle-side party which controlled records describe that exact candidate and which are still provisional.
 
-Identify the country, region and intended use classification through a controlled project record. List the authority, appointed specialist or integrator responsible for determining applicable vehicle, machinery, road and site requirements. Do not use an international standards page as a substitute for destination rules.
+For example, <a href="https://www.volvotrucks.com.au/en-au/trucks/features/bodybuilding.html" target="_blank" rel="noopener noreferrer">Volvo's official bodybuilder information page</a> lists chassis drawings, wiring diagrams and data sheets among its resources. This illustrates the kinds of vehicle-side information to request; it does not recommend that brand, establish compatibility or authorize modifications to any chassis.
 
-For preliminary work, the public copy needs only an anonymised destination category. Keep registration documents, vehicle identifiers, addresses and named contacts out of public forms and analytics. Detailed records belong in a secure project channel.
+![Blue machine module suspended beside a red lifting assembly in a yard](/images/equipment/coil-real-module.webp)
 
-![Conceptual stack of chassis body module and work-zone interfaces](/images/editorial/chassis-interface-stack.svg)
-
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Illustrative architecture, not an approved vehicle drawing, load chart or installation design.*
+*Reference photograph of a machine module beside lifting apparatus. It does not verify a truck mounting interface, component compatibility or an approved lifting method.*
 
 <!-- audit-section: conditions -->
-## Collect controlled chassis inputs
+## Put physical interfaces on the same drawing basis
 
-Vehicle integration depends on controlled data, not a model nickname. Gather the current build record, frame and axle information, proposed equipment interface and responsibility status. Label every preliminary field.
+### Match datums before comparing positions
 
-### Build and incomplete-vehicle records
+Ask the integrator to define the reference points used by the vehicle and equipment drawings. A location measured from an axle, frame end or equipment base cannot be compared directly with a location using another origin unless the relationship is established. Mark the drawing revision and equipment state beside the coordinate information, especially when the folded arrangement differs from the working arrangement.
 
-Request the documents appropriate to the destination and the vehicle's stage of completion. These may identify the base vehicle, build status, permitted modification boundaries, body-builder instructions and certification responsibilities. The designated integrator and local specialists decide which records apply.
+Start with a clear overlay that shows the proposed equipment footprint, support interfaces and vehicle components. It should expose conflicts for engineering review. It should not invite procurement staff to choose attachment locations or alter a frame from a photograph.
 
-A sales brochure or online specification is not a controlled build record. Confirm revision, issuing organisation and relationship to the actual vehicle. If a chassis has already been modified, the package should identify who owns the updated configuration documentation.
+### Distinguish an attachment location from an approved load path
 
-### Frame and axle data
+An open area on a frame drawing is a spatial observation. It is not an approved mounting point. The appointed integrator needs the equipment-side interface forces and moments, attachment requirements and vehicle-side bodybuilder restrictions appropriate to the proposed state. The resulting connection design and verification belong to that specialist scope.
 
-Collect controlled frame drawings, material or modification restrictions, wheelbase and axle information, suspension and tyre records, available interface points and manufacturer or integrator instructions as relevant. Do not publish those records or derive a permissible equipment arrangement in the article.
+Similarly, placing a total equipment mass beside a truck rating does not establish acceptable axle distribution, stability or frame behavior. Keep the [payload input schedule](/blog/truck-mounted-roll-forming-payload-allocation-review/) linked to this drawing review, so a changed component location is sent back to the person evaluating its consequences. Do not let a layout revision and a mass revision develop independently.
 
-Axle reactions, centre of gravity, reinforcement, support reactions and stability remain calculation outputs. Mark the responsible specialist, required inputs and closure document. A preliminary equipment envelope may support discussion, but it cannot replace the vehicle and integration calculations.
+### Record conflicts in a small interface matrix
 
-### Anonymised preliminary identifier
+The editorial matrix below is a request format, not an approved design. Complete each row using the proposed pairing; use “unknown” where the supporting record has not been supplied. A clear unresolved row is more useful than a general statement that the chassis is suitable.
 
-Use an anonymised project and chassis identifier during early review. It should connect documents inside the controlled workspace without exposing the customer, location, registration, VIN or sensitive commercial data. Keep a separate access-controlled mapping if the project needs one.
+| Interface to review | Equipment-side input | Vehicle-side input | What closes the question |
+| --- | --- | --- | --- |
+| Footprint and reference positions | Arrangement and attachment coordinates | Candidate frame and component layout | Integrator's coordinated drawing |
+| Attachment and load transfer | Connection requirements and state-specific load information | Applicable bodybuilder provisions and constraints | Reviewed connection design and its verification scope |
+| Axle and mass distribution | Configuration-linked mass-property schedule | Candidate vehicle mass and axle information | Vehicle specialist's assessment for the defined states |
+| Support deployment | Proposed support positions and movement envelope | Chassis obstructions and protected components | Coordinated geometry and support-system review |
+| Cab and service access | Folded envelope and maintenance access needs | Cab, service and component access information | Recorded conflict resolution for the selected layout |
+| Power and control boundary | Equipment demand and interface description | Permitted vehicle-side connection information | Agreed electrical/control interface documents |
 
-A VIN should be requested only when genuinely needed through the designated integrator's controlled documentation process. Limit access and record the purpose. Do not put a VIN, partial VIN or traceable vehicle label into public inquiry fields, diagrams, marketing assets or analytics.
+Use the matrix to ask a specific question: which interface is open, what evidence is missing and can another review legitimately proceed without it? Avoid a single overall “approved” label while a critical row remains unresolved.
 
-![Generic coordination lanes for vehicle integration responsibilities](/images/editorial/chassis-responsibility-swimlane.svg)
+![Coils and elevated apparatus positioned beside an unfinished steel building](/images/equipment/coil-real-handling.webp)
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Example coordination map; contractual and legal responsibilities vary by destination and project.*
-
-<!-- audit-section: project-checklist -->
-## Map interface responsibilities and required records
-
-The preliminary package should show what must connect without calculating the final vehicle. Start with a responsibility matrix. The role names below are placeholders; contracts, the transaction stage and destination rules determine the actual parties and authority.
-
-<table>
-  <thead>
-    <tr><th>Interface role</th><th>Controlled inputs expected</th><th>Review output or closure record</th><th>Keep unresolved on this page</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Equipment-module provider</td><td>Configuration reference, module envelope, mass-property input record, interface loads or reactions when available, utilities and prohibited zones</td><td>Supplier interface-data issue and response to integrator queries</td><td>Chassis suitability, payload allocation and vehicle approval</td></tr>
-    <tr><td>Chassis provider</td><td>Build-stage record, frame and axle documents, body-builder instructions, modification restrictions and current vehicle configuration</td><td>Controlled chassis-data issue and change notification</td><td>Equipment attachment design and final integration</td></tr>
-    <tr><td>Body builder or appointed integrator</td><td>Chassis and module inputs, attachment boundary, calculation criteria and destination requirements</td><td>Released integration drawings, calculation references, installation and inspection records as contracted</td><td>Authority belonging to vehicle or local regulators</td></tr>
-    <tr><td>Project owner or buyer</td><td>Intended use category, road and site route, work-zone needs, locally supplied scope and appointed reviewers</td><td>Signed responsibility map, accepted scope boundary and project decisions</td><td>Engineering conclusions not issued by competent parties</td></tr>
-    <tr><td>Destination specialist or authority</td><td>Actual transaction, vehicle state, intended use and local submission package</td><td>Applicable review, registration, inspection or other destination record</td><td>Global conclusions inferred from another jurisdiction</td></tr>
-  </tbody>
-</table>
-
-This matrix records handoffs. It does not imply that every project uses all five roles, that one company cannot hold more than one role, or that a commercial supplier automatically becomes the legal modifier, designer or certifier.
-
-### Build the required-record index
-
-Use one line per interface question and identify its input owner, receiving reviewer, current revision, required output and hold point:
-
-- Intended road, controlled-site or mixed **transport** use and the decision owner.
-- Controlled **chassis**, frame, axle and build-stage documentation, with issuer and revision status.
-- Proposed module envelope and mass-property evidence, with payload allocation, reactions and suitability routed to the separate calculation review.
-- Body or attachment boundary, prohibited modification zones and the integrator responsible for released design information.
-- Work/support **zone**, roof interface, height relationship and operating-geometry assumptions needed to define vehicle states.
-- Public-road, gate and internal-site **access and route** constraints, with the local review owner and governing record.
-- Ground or **floor** condition input and the specialist responsible for support or stability review.
-- Equipment **voltage, power and control** interface status where it affects chassis or auxiliary systems.
-- Destination inspection, registration, compliance and other **documentation requirements**, with the appointed local owner.
-- Secure identifier process, interface-query log, change register and final signed responsibility map for every open interface.
-
-For each line, use statuses such as `input requested`, `issued for interface review`, `query open`, `revised input required` and `closure record issued` only after the project defines them. A status is workflow information, not evidence that the underlying engineering or approval is complete.
-
-### Body and attachment boundary
-
-Define which structure belongs to the chassis, body builder, equipment module and any support system. Identify proposed attachment regions only from controlled documents. Do not show drilling, welding, reinforcement or fastener detail unless the authorised integrator has issued it.
-
-The interface package should state what data each party supplies: envelopes, masses, reactions, prohibited zones, service access and change-control conditions. It should also state who performs the calculations and who releases fabrication information.
-
-The equipment-module record and the chassis record are inputs to integration; neither should silently overwrite the other. When the integrator changes an attachment concept, module position or vehicle assumption, the change register should identify which supplier records and calculation outputs need another review. Fabrication should use only the integrator’s released information, not the public checklist on this page.
-
-### Work and support zone
-
-Map the transition from transport state to work state. Show the area that may be needed for positioning, support, material handling, exclusion and operator access. These are planning zones, not equipment dimensions or a site approval.
-
-The work-zone review should connect to roof height, panel route, wind-management responsibility, ground information and adjacent operations where relevant. The [roof-level route guide](/blog/roof-level-roll-forming-long-panels/) addresses that wider workflow. Do not bury those project constraints in a vehicle drawing.
-
-### Route and access constraints
-
-Separate public-road restrictions, site-gate access, internal route and final work-face positioning. Record turning, gradient, overhead, width, surface and traffic-control questions only as project inputs until local owners provide controlled information.
-
-A route that works for a base truck may not work for the completed integration. Conversely, a conceptual module envelope cannot establish the final vehicle dimensions. Keep both records preliminary until the integrator closes the configuration.
-
-### Keep payload work in its own decision path
-
-The interface index may request module masses, centres of gravity, chassis ratings, axle information and equipment-state definitions because another reviewer needs those inputs. It should not publish a proposed allocation or infer acceptable axle loads. Record the appointed calculator, the controlled input set, the output document ID and any change trigger; then use the payload review for the calculation-specific workflow.
+*Reference photograph of material staging and elevated apparatus beside a structure. It cannot establish vehicle load distribution, ground adequacy or a reviewed chassis arrangement.*
 
 <!-- audit-section: evidence-tradeoffs -->
-The package must balance early coordination with controlled uncertainty. More vehicle detail can improve interface review, but copying unverified brochure values creates false precision. The better trade-off is to name each needed input, its source and owner, then reserve loads, legality, registration and route conclusions for the appointed specialists.
+## Resolve power, access and assembly conflicts
 
-![Fictional route from public road through site gate to work face](/images/editorial/road-workface-route-map.svg)
+### Preserve access that the finished layout needs
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Concept only; routes, permits, ground conditions and vehicle limits require local verification.*
+Equipment occupying the frame can affect access to existing vehicle components and to its own service points. Request the space and movement information needed for cab access, routine inspection, fluid or energy-system servicing and component replacement. Review these needs in the relevant equipment state rather than assuming every task occurs with the structure folded.
+
+A layout can appear compact in plan view while leaving a service item inaccessible from the side. The trade-off is then between equipment placement, service access and the engineering implications of a change. The solution must come from the relevant technical parties; moving a tank, changing a component or adding a platform is not an editorial recommendation.
+
+### Define the energy connection instead of assuming it
+
+State whether the equipment proposal uses an independent power source, an external supply or a vehicle connection still to be reviewed. Name the equipment-side demands and the vehicle-side information needed to assess the proposed connection. Do not infer a suitable power take-off or electrical interface because a candidate truck offers one as an option.
+
+The [electrical and control interface guide](/blog/roll-forming-line-electrical-control-interfaces/) can organize ownership of the connection documents. Keep the forming machine, lifting equipment and vehicle boundaries explicit. A power connection does not establish compatible controls, agreed interlocks or an emergency-response arrangement; those questions need their own scope and verification.
+
+### Review changes across all affected interfaces
+
+Consider a proposed layout change that shifts an equipment assembly to clear a service area. It may resolve the visible obstruction while changing mass location, attachment positions, cable routes or the folded envelope. This hypothetical conflict illustrates why the updated drawing should return to all affected reviewers, rather than being accepted solely by the party requesting better access.
+
+Keep the assembly and transport plan in view as well. If the equipment arrives as separate modules, identify what is installed at destination and which interfaces will be checked there. The [40HQ shipping guide](/blog/40hq-shipping-truck-mounted-roll-forming-lift/) addresses that supply boundary. It does not determine whether the resulting vehicle design is acceptable.
+
+![Raised red forming apparatus positioned beside a building with supports visible](/images/equipment/entry-real-clearance.webp)
+
+*Reference photograph of elevated apparatus in an exterior work area. It does not confirm a truck chassis design, service clearance or any permitted movement state.*
+
+## Decide whether the candidate is ready to progress
 
 <!-- audit-section: limitations-not-fit -->
-## Release a review package
+### Identify a mismatch before it becomes a purchase
 
-Ordering a chassis, fabricating attachments, issuing a load chart, registering a vehicle, approving a route and authorising operation do not fit within this preliminary package. It coordinates questions rather than deciding them. Final decisions require the actual chassis, equipment and destination evidence.
+A candidate may not fit when its available geometry, bodybuilder provisions or service-access constraints cannot be reconciled with the equipment proposal. It is also not ready for a selection decision when load information, reference points or the final build state are missing. Distinguish an engineering rejection from an incomplete information set; they call for different next actions.
 
-### Integrator responsibilities
+Do not resolve missing information by substituting a drawing from a similar chassis or a photograph of another installation. If the dealer proposes a different wheelbase, component arrangement or vehicle option, ask the integrator which parts of the review must reopen. An accepted earlier candidate does not automatically cover the replacement.
 
-The integrator should be identified before detailed configuration begins. The package should state who controls vehicle data, attachment design, calculations, final-stage documentation, machinery interfaces, installation records and change control. Do not imply that the equipment supplier automatically owns those duties.
+<!-- audit-section: project-checklist -->
+### Send the physical pairing for review
 
-Keep contractual and statutory roles separate. A party may coordinate commercial supply without being the legal vehicle modifier or engineering authority. Record the exact role and the document through which it is exercised.
+- Identify the candidate chassis, proposed transport state and exact equipment-scope revisions through the agreed secure channel.
+- Provide frame geometry, equipment attachment references and the coordinate relationship between their drawings.
+- State the required production height and roof-panel outlet relationship, keeping them separate from vehicle dimensions.
+- Identify the forming-line, profile and coil scope that determines the equipment items included in the review.
+- Show support locations, access routes and ground conditions requiring a separate jobsite assessment.
+- Provide the proposed power and control boundaries, available records and service-access requirements.
+- State the destination, intended road/site duty, local review owner and documentation still required before ordering.
 
-### Local inspection path
+### Make the review output specific
 
-<a href="https://www.nhtsa.gov/nhtsa-interpretation-file-search" target="_blank" rel="noopener noreferrer">NHTSA's interpretation-file overview</a> explains that its interpretation letters address the facts presented at the time and are guidance without the force of law. A dated U.S. example, <a href="https://www.nhtsa.gov/interpretations/23064rbm" target="_blank" rel="noopener noreferrer">NHTSA interpretation 23064.rbm</a>, discusses how a pre-sale alteration in its specific context can affect an alterer's FMVSS certification responsibilities. It is not current transaction advice, not a global rule and not a determination for an ARCLIFT-related chassis.
+Ask for the candidate identity, reviewed configuration, resolved interfaces, remaining holds and the next permitted procurement step. An integration review may conclude that another candidate is needed or that more equipment information is required. Those are useful decisions when they name the reason and prevent an unsuitable order.
 
-Use that example only to prompt an early question: who owns destination-specific vehicle review after modification? The answer must come from current local rules, the actual transaction and competent advisers. The <a href="https://www.iso.org/standard/51528.html" target="_blank" rel="noopener noreferrer">ISO 12100:2010 official record</a> can locate a machinery interface-risk methodology, but it does not provide vehicle calculations or approval.
-
-### Secure VIN process
-
-Define why a VIN is needed, who requests it, who may access it, where it is stored and when it is removed from working copies. Preliminary review should use anonymised identifiers whenever possible. Drawings should also be stripped of customer, site, contact and unrelated vehicle information.
-
-Share only the minimum necessary fields through the secure project channel. Do not paste vehicle documents into public forms or reuse them for editorial graphics. Written, scope-specific permission is needed for any use outside the controlled project purpose.
+Sensitive vehicle identifiers and detailed project drawings belong in a controlled exchange, not a public enquiry description. An anonymised preliminary reference can organize early discussion; the responsible reviewers will need the exact identity at the appropriate stage.
 
 <!-- audit-section: cta-editorial-note -->
-Send only the preliminary chassis-interface package through a secure project channel to ARCLIFT as a technical selection and supply partner. Include the anonymised chassis record, proposed module boundary, transport and site route, ground or floor condition, roof-height and work-zone constraints, destination documentation and the final signed responsibility map. Use the controlled VIN process only when the designated integrator genuinely needs it. This request does not promise suitability, fit, approval, quotation, configuration, availability, result or response time. The editorial visuals are fictional coordination aids and cannot replace vehicle calculations, local review or signed integration documents.
+### Request a focused integration discussion
+
+Send ARCLIFT the candidate vehicle information, equipment scope, site conditions, required height, destination and intended transport duty. As a technical selection and supply partner, ARCLIFT can organize the equipment-side questions for a project-specific discussion with the appointed vehicle and integration specialists. Final chassis fit, load behavior, connection design and acceptance depend on their issued records. The editorial photographs show reference arrangements only and cannot confirm the proposed pairing, its current availability or its performance.
 
 ## FAQ
 
-#### Which chassis documents are needed?
+#### Can a truck be selected from its advertised load rating?
 
-The designated integrator and destination reviewers should define them. Preliminary inputs usually include controlled build status, frame and axle records, body-builder instructions, proposed module data and the documents that assign modification responsibilities.
+That rating alone does not answer where the equipment can be attached, how the mass is distributed or whether other vehicle components remain accessible. The candidate needs a coordinated equipment, chassis and duty review before a suitability conclusion.
 
-#### When is a VIN needed?
+#### Who decides the mounting positions and connection details?
 
-Only when a controlled review genuinely requires identification of the actual vehicle. Request it through the designated integrator, restrict access and keep it out of public forms, diagrams and analytics.
+The appointed integration specialists must define and verify them using equipment-side requirements and the applicable vehicle-side information. This guide helps collect those inputs. It does not provide a mounting design, fastening pattern or frame-modification instruction.
 
-#### Who owns final-stage integration?
+#### Is this the same task as payload allocation?
 
-The contracts, transaction stage and destination rules determine that role. Name the responsible integrator or other authorised party explicitly; do not infer it from the equipment-supply relationship.
+No. Payload allocation organizes mass and location inputs for the vehicle assessment. This review connects physical geometry, attachments, access, utilities and evidence ownership. The two tasks must exchange revisions because a change in one can affect the other.
 
-#### Does local chassis supply settle compliance?
+#### Does a similar photographed installation confirm compatibility?
 
-No. A locally sourced chassis still needs project-specific review of modifications, integration, road or site use, registration path, machinery interfaces and the responsibilities assigned under applicable rules.
+No. The photograph may omit the chassis identity, connection design, installed options and operating state. It can clarify a visible arrangement but cannot replace the records for the candidate under review or demonstrate approval by its responsible specialists.

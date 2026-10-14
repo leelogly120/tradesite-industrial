@@ -349,6 +349,14 @@ describe('Task 5b article metadata and presentation contract', () => {
     for (const { slug, image, placement } of aiAssistedUses) {
       const article = await readFile(resolve(root, 'src/content/blog', `${slug}.md`), 'utf8');
 
+      const photoArticle = REFERENCE_PHOTO_ARTICLES.find((entry) => entry.slug === slug);
+      if (photoArticle) {
+        expect(article).not.toContain(image);
+        expect(article).toContain(`coverImage: "${photoArticle.cover[0]}"`);
+        for (const url of photoArticle.body) expect(article).toContain(`](${url})`);
+        continue;
+      }
+
       if (placement === 'cover') {
         expect(article).toContain(`coverImage: "${image}"`);
         const coverCaption = article.match(/^coverCaption:\s*"([^"]+)"/m)?.[1] ?? '';
@@ -393,6 +401,13 @@ describe('Task 5b article metadata and presentation contract', () => {
       'warehouse-ceiling-access-platform-planning',
     ]) {
       const article = await readFile(resolve(root, 'src/content/blog', `${slug}.md`), 'utf8');
+      const photoArticle = REFERENCE_PHOTO_ARTICLES.find((entry) => entry.slug === slug);
+      if (photoArticle) {
+        const images = [...article.matchAll(/!\[[^\]]+\]\((\/images\/[^)]+)\)/g)].map((match) => match[1]);
+        expect(images).toEqual(photoArticle.body);
+        expect(article).not.toMatch(/!\[[^\]]*\]\([^)]*\.svg\)/);
+        continue;
+      }
       expect(article).toMatch(/\[!\[[^\]]+\]\((\/images\/editorial\/[^)]+\.svg)\)\]\(\1\)/);
       expect(article).toContain('Tap to open the full-size editorial diagram.');
     }

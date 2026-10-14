@@ -10,6 +10,16 @@ const expectedArticles = [
   { slug: 'large-crawler-platform-transport-data-package', date: '2026-08-10', images: ['transport-real-cover', 'transport-real-carrier', 'transport-real-loading', 'transport-real-stowed'] },
   { slug: 'coil-handling-roll-forming-line-feeding-plan', date: '2026-07-27', images: ['coil-real-cover', 'coil-real-handling', 'coil-real-module', 'coil-real-panel'] },
   { slug: 'large-crawler-work-platform-building-entry-survey', date: '2026-08-07', images: ['entry-real-cover', 'entry-real-approach', 'entry-real-interior', 'entry-real-clearance'] },
+  {"slug":"roof-level-roll-forming-long-panels","date":"2026-07-24","images":["entry-real-clearance","coil-real-handling","coil-real-panel","transport-real-stowed"]},
+  {"slug":"crawler-vs-truck-mounted-roll-forming-system","date":"2026-07-24","images":["transport-real-cover","coil-real-cover","transport-real-stowed","entry-real-clearance"]},
+  {"slug":"roll-forming-line-specification-long-span-roof-panels","date":"2026-07-24","images":["coil-real-handling","coil-real-module","coil-real-panel","entry-real-clearance"]},
+  {"slug":"40hq-shipping-truck-mounted-roll-forming-lift","date":"2026-07-24","images":["transport-real-cover","transport-real-carrier","transport-real-stowed","coil-real-module"]},
+  {"slug":"truck-mounted-roll-forming-chassis-interface-review","date":"2026-07-27","images":["coil-real-cover","coil-real-module","coil-real-handling","entry-real-clearance"]},
+  {"slug":"truck-mounted-lift-destination-chassis-sourcing","date":"2026-08-07","images":["coil-real-module","coil-real-cover","transport-real-cover","transport-real-stowed"]},
+  {"slug":"truck-mounted-forming-lift-jobsite-setup-review","date":"2026-08-07","images":["coil-real-cover","entry-real-clearance","coil-real-handling","coil-real-panel"]},
+  {"slug":"crawler-roll-forming-lift-ground-support-review","date":"2026-08-07","images":["transport-real-stowed","entry-real-clearance","transport-real-carrier","coil-real-handling"]},
+  {"slug":"elevated-roll-forming-roof-panel-handover-zones","date":"2026-08-07","images":["coil-real-panel","coil-real-handling","entry-real-clearance","coil-real-module"]},
+  {"slug":"crawler-roll-forming-lift-access-route-survey","date":"2026-08-07","images":["entry-real-clearance","transport-real-stowed","transport-real-cover","transport-real-loading"]},
 ];
 const expectedDimensions = {
   'transport-real-cover': [744, 419],
@@ -52,7 +62,7 @@ function assertPhotoDisclosure({ alt, caption }, context) {
 }
 
 describe('approved reference photographs', () => {
-  it('limits the photo replacement to three fixed articles and twelve distinct URLs', async () => {
+  it('limits the photo replacement to thirteen fixed articles and twelve distinct photograph URLs', async () => {
     expect(REFERENCE_PHOTO_ARTICLES).toEqual(expectedArticles.map(({ slug, images }) => ({
       slug,
       cover: [photoUrl(images[0])],

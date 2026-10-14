@@ -1,117 +1,161 @@
 ---
-title: "Specify a Roll-Forming Line for Long Roof Panels"
-description: "Build a usable roll-forming specification from the profile, material, coil, cutting, controls, power, tolerance, and handling requirements."
+title: "Roof-Panel Roll-Forming Lines: Specification for Lifts"
+description: "Specify a roof-panel roll-forming line for elevated use. Connect panel quality, machine geometry, coil feed and electrical inputs before choosing a lift."
 date: 2026-07-24
-updated: 2026-09-07
+updated: 2026-10-14
 author: "ARCLIFT Technical Editorial"
 tags: ["Roll Forming", "Roofing Panels", "Technical Specification"]
-coverImage: "/images/hero/hero-4.webp"
-coverAlt: "Roll-forming line represented in an indoor production-workflow setting."
-coverCaption: "AI-assisted editorial composite for line-interface discussion; it does not prove tooling, compatibility, output quality, or performance."
+coverImage: "/images/equipment/coil-real-handling.webp"
+coverAlt: "Ground coils beside elevated forming apparatus and a steel building frame."
+coverCaption: "Reference photograph of coils and elevated apparatus near a building; it does not verify a line specification, material compatibility or production performance."
 draft: false
 ---
 
-Define the panel and acceptance method before matching a roll-forming line to a lift. A useful specification includes the controlled profile drawing, material grade and coating, sheet thickness, strip width, coil data, target panel lengths, dimensional tolerances, cut method, power supply, controls, tooling scope, and downstream handling. Without those inputs, a model name or roller count cannot establish whether the line will produce an acceptable long-span panel.
+Specifying a roof-panel roll-forming line for elevated use involves two connected questions: can the proposed line produce the required panel, and can that particular machine be integrated with the lifting system? A roll-forming lift raises the forming equipment toward the roof receiving level. It does not determine the tooling, material range, panel quality or machine attachment. Begin with the finished panel, then connect the proposed line's physical arrangement to its lift and site interfaces.
+
+**Contents**
+
+- Describe the panel before the machine
+- Connect the line to the lifting system
+- Compare proposals on the same production task
+- Prepare the specification for supplier review
+- FAQ
 
 <!-- audit-section: buyer-intent -->
-## Specify the finished panel first
+## Describe the panel before the machine
 
-The buyer is not selecting a line in isolation. The line must turn a specified coil into a panel that can be inspected, supported, moved, and installed under the project’s conditions. For long panels, the interfaces can matter as much as the forming stands: decoiling, feed alignment, exit support, cutting, length measurement, panel reception, and the route to the roof.
+### A panel name is not a profile definition
 
-Begin with one controlled profile revision. Mark all dimensions that affect fit, seaming, drainage, fasteners, overlap, and connection to adjacent work. State which dimensions are critical and how they will be measured. If several profiles are required, identify whether changeover means separate tooling, interchangeable cassettes, adjusted spacers, or another reviewed method. The [ARC-RF8 roll-forming line page](/products/arc-rf8-roll-forming-machine/) can frame an initial discussion, but its images are not a substitute for a signed tooling proposal.
+A buying description such as “long roof panel” does not define the section the line must produce. The profile drawing identifies the shape and dimensions that the equipment proposal must address. The material description identifies what will pass through the line. Keep those inputs together; a drawing without its material assumptions leaves part of the forming task unspecified.
 
-![Editorial diagram of roll-forming project inputs](/images/editorial/roll-forming-input-map.svg)
+Use the controlled drawing revision and identify which features the project will inspect. Include the intended surface finish and the panel's connection details where they affect the required section. The [profile, material and tooling guide](/blog/roof-panel-profile-material-tooling-data/) develops those inputs. This article uses them to connect line selection to elevated installation rather than repeating the tooling review.
 
-*Editorial diagram. It does not prove tooling geometry, compatible material, speed, tolerance, output length, or electrical specification.*
+### Panel length includes an onward handling question
+
+State the planned panel lengths and how the project intends to receive them. A requested maximum length alone does not describe the normal production task, the sequence of roof zones or the available output path. The line proposal and the downstream receiving arrangement should refer to the same panel requirements.
+
+Separate the ability to form a sample from the ability to handle the proposed panel along the site's complete route. A sample can be examined for its stated material and test conditions; it does not establish every longer-panel or site condition. The [roof-level forming comparison](/blog/roof-level-roll-forming-long-panels/) helps identify whether elevated forming is the route the project should investigate.
+
+### Identify whether the buyer already owns the line
+
+For an existing machine, start with its actual identification, available drawings, dimensions, mass information and current arrangement. Do not assume that a similar-looking line in a photograph provides missing interface data. Record changes or accessories that may make the machine differ from the original description.
+
+For a new line, ask the supplier to keep the proposed forming scope and physical arrangement linked as the design develops. If line supply and lifting-equipment supply are separate, identify who coordinates the interface. A proposal can address the panel correctly while leaving the elevated installation unresolved.
+
+![Blue machine module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
+
+*Reference photograph showing a separate machine module beside a lifting structure. It cannot establish the module's mass, compatibility, attachment details or an approved handling method.*
 
 <!-- audit-section: conditions -->
-## Translate the panel into line inputs
+## Connect the line to the lifting system
 
-Material description must go beyond a generic metal name. Provide substrate grade, yield or tensile requirements where relevant, coating type and mass, paint or film system, surface that must remain visible, acceptable marking, and applicable material standard. Samples or traceable material data may be needed for tooling review and trial criteria.
+### Treat the machine envelope as more than overall length
 
-Sheet thickness interacts with material strength, coating, bend radii, springback, roll pressure, and profile depth. Historical records contain references around 0.3–1.0 mm for related work, but that interval is conditional. It cannot be applied to a new profile without reviewing material properties, tooling, line arrangement, and acceptance tolerances.
+Overall dimensions are a starting point. The review also needs the positions of support and attachment interfaces, feed entry, panel outlet, controls and areas requiring access. A line that fits inside a rectangular outline may still create a conflict at its inlet or outlet when placed on a lifting assembly.
 
-Coil data affects the front of the line. State maximum and minimum strip width, coil mass, inner diameter, outer diameter, winding direction, edge condition, and how the coil will be loaded. Define whether the decoiler is powered, how feed tension is controlled, and what guards or restraints the project requires. Coil availability should be verified against the same data used for line selection.
+Keep the forming machine's own support references separate from the lifting platform and the building datum. The required panel-outlet height is not interchangeable with platform height. Identify the line state represented by each drawing so that reviewers are not comparing a packed machine with an operating arrangement.
 
-Length requirements affect measurement, cutting, support, and handling. Historic documents include output-length discussions from approximately 1 to 200 m under different configurations. That is not a universal line capability. For a new project, specify the normal length mix, longest planned panel, permitted length deviation, cut-end condition, batch identification, and how the emerging panel will be supported through its full path.
+### Ask for mass information at the right boundary
 
-Power information must include voltage, frequency, phase, permissible variation, connection method, earthing approach, cable route, environmental conditions, and any backup arrangement. A 380 V supply appears as a common historical reference, not a default for every destination. Controls, motors, protection devices, plugs, and documentation have to match the agreed project supply.
+Clarify which items are included in the proposed line mass: the main machine, attached modules and other equipment that belongs to the reviewed arrangement. The parties responsible for the equipment assessment need the corresponding mass distribution and relevant operating information. Buyers should request those inputs rather than calculate a permissible lift from a brochure total.
 
-### Copy this profile, material and interface input table
+Coil and feed equipment require particular attention to scope. State which items are proposed to remain on the ground and which, if any, are part of the elevated assembly. This is a question for the actual configuration, not an assumption to make from the presence of coils in a reference photograph. The [lifted-line mounting-interface guide](/blog/lifted-roll-forming-line-mounting-interface-review/) develops the physical connection.
 
-The project-value cells are intentionally blank. Copy the table into the request package, preserve the source revision for every entry, and attach the referenced record. `Open` is a valid status; an assumed value is not.
+### Follow services through the proposed arrangement
 
-| Input block | Controlled input requested | Project value | Source / revision | Evidence owner | Status |
-| --- | --- | --- | --- | --- | --- |
-| Profile | Drawing ID; effective width; section dimensions; radii; seams; overlaps; critical tolerances |  |  |  |  |
-| Material | Substrate/grade; property requirement; coating/finish; visible face; thickness and tolerance; strip width |  |  |  |  |
-| Coil and feed | Coil mass; inner/outer diameter; winding direction; edge condition; loading method; feed direction |  |  |  |  |
-| Tooling / change scope | Profile set; proposed tooling boundary; changeover requirement; reference sample; change-control owner |  |  |  |  |
-| Length / cut / identification | Normal and longest requested panel; length tolerance; cut-end requirement; batch mark; measurement method |  |  |  |  |
-| Exit and handling | Exit support; output direction; available path; handover point; downstream handling owner |  |  |  |  |
-| Electrical supply | Voltage; frequency; phase; permitted variation; connection/earthing boundary; cable route |  |  |  |  |
-| Controls and records | Required functions; language; access roles; recipe/data needs; drawings/manuals; service boundary |  |  |  |  |
-| Lift / mounting interface, if applicable | Available envelope; support/restraint interface; mass/centre-of-gravity data; feed/output orientation; service access |  |  |  |  |
-| Acceptance | Trial material; sample plan; measurement record; visual/dimensional/seaming criteria; approver; change disposition |  |  |  |  |
+Identify the electrical supply point and the line functions that must coordinate with other equipment. Supply information, control functions and the permissions for equipment movement are different questions. A shared power source or remote control does not establish that the combined system has the required safeguards or responses.
 
-If the profile revision, purchase description, material certificate, coil record, sample, and acceptance sheet disagree, return the conflict to the named owner before equipment matching. The [profile, material and tooling data guide](/blog/roof-panel-profile-material-tooling-data/) expands the first four rows; the [electrical and control interface guide](/blog/roll-forming-line-electrical-control-interfaces/) expands the supply and controls rows. Neither page turns an incomplete value into a machine specification.
+The official <a href="https://webstore.iec.ch/en/publication/71256" target="_blank" rel="noopener noreferrer">IEC 60204-1:2016+AMD1:2021 consolidated record</a> describes machinery electrical equipment from its supply connection and includes coordinated groups of machines in its scope. That catalog description helps locate the electrical interface. It does not supply a wiring design, settle destination applicability or demonstrate conformity of a proposed line and lift.
 
-[![Editorial diagram of roll-forming project inputs](/images/editorial/roll-forming-input-map.svg)](/images/editorial/roll-forming-input-map.svg)
+Use the [electrical and control interface guide](/blog/roll-forming-line-electrical-control-interfaces/) for the next discussion. The output needed at this stage is a clear division between incoming site supply, line equipment, lifting equipment and their proposed connections. The responsible designers then determine the applicable technical solution.
 
-*Editorial diagram. Tap to open the full-size editorial diagram. It organizes specification inputs and cannot verify line compatibility, tooling design, output quality, or operating performance.*
+| Specification boundary | What the buyer should identify | What the equipment proposal must address |
+| --- | --- | --- |
+| Finished panel | Controlled profile, material, finish and intended lengths. | The proposed forming scope and how the specified output will be assessed. |
+| Machine arrangement | Existing line information or the required supply boundary. | Dimensions, mass information, attachment references and configuration state. |
+| Coil and feed | Material supply, delivery route and intended feed arrangement. | Which equipment is included and how its interfaces are defined. |
+| Elevated installation | Outlet reference, lifting arrangement and access needs. | The line-to-lift connection and responsibilities for its review. |
+| Electrical and controls | Site supply information and required coordination. | Defined connection boundaries, functions and supporting technical documents. |
+| Panel receipt | Output direction and the project's receiving task. | Where the line scope ends and downstream support begins. |
+
+Use this table to separate questions, not to declare them answered. If a proposed line changes during selection, revisit the affected rows together. A different arrangement can alter an interface even when the requested panel remains the same.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Balance adjustment against control
+## Compare proposals on the same production task
 
-A visible line can confirm broad elements such as forming stands, feed path, cutting area, frame, and control position. It cannot reveal the working roll contours, shaft loads, material assumptions, tolerance stack, control logic, or result for a buyer’s panel. Useful evidence for selection comes from drawings, agreed samples, material data, tooling proposal, test method, and configuration-specific technical documents.
+### Keep output quality tied to the agreed material
 
-More forming stations may distribute shape changes gradually, but station count alone is not a quality measure. Roll design, shaft stiffness, alignment, material behavior, support, and setup are linked. Likewise, a faster nominal line is not necessarily better for very long panels if cutting, support, communication, or installation pace controls the process.
+Ask how the proposed line will be assessed against the specified profile and material, including the intended surface condition and cut-end requirements. A trial record needs its material and configuration context. Otherwise the buyer cannot tell which part of the current requirement an earlier observation actually addresses.
 
-The central trade-off is between a tightly defined line for one controlled panel and a more adjustable system intended to cover several profiles or materials. Flexibility can be valuable, but it adds setup, tooling, verification, and change-control questions that must be written into the acceptance plan.
+If the project later changes a material condition or coating, an earlier sample does not automatically answer the revised question. Keep the original result for what it shows and ask the responsible parties what further review is needed. This does not imply that every change requires new tooling; it means the connection between requirement and evidence must remain explicit.
 
-Cutting before forming and cutting after forming create different tooling and edge considerations. The decision should account for profile distortion, burr control, coating protection, length accuracy, blade or saw maintenance, and how the panel is supported at the cut. The acceptance document should state the chosen method rather than leave it implied.
+![Long light-colored panel beside a building frame and red apparatus](/images/equipment/coil-real-panel.webp)
 
-Automation can improve repeatability of length entry, batch counting, and operating sequences, yet it also introduces requirements for controls support, sensors, language, backups, electrical documentation, and troubleshooting. Select the level of control that the operating team can maintain.
+*Reference photograph of a panel beside a building frame. It does not verify the panel's length, tolerances, finish acceptance or the capability of a proposed roll-forming line.*
 
-Integration with a lifting system adds mass, geometry, restraint, power, communication, and maintenance interfaces. The line must fit the available mounting or support arrangement without assuming that an image proves compatibility. Review lifting position, feed direction, output path, center-of-gravity data, allowed operating states, and access for coil change and service. The [roof-level forming decision guide](/blog/roof-level-roll-forming-long-panels/) explains the site side of that interface.
+### Describe the intended cutting and receiving sequence
 
-Treat the lift/mounting row as its own document boundary. A line specification can be complete for forming review while the mounting interface remains open, or vice versa. The [lifted-line mounting-interface review](/blog/lifted-roll-forming-line-mounting-interface-review/) identifies the records that join those packages without implying that a line image establishes the interface.
+Ask the line supplier to identify the proposed cutting arrangement and the state of the panel at each relevant stage. The buyer needs to understand where the machine's scope ends and where the project's support and receiving arrangement takes over. Avoid comparing a nominal machine output figure while those interfaces differ between proposals.
 
-[![Editorial diagram of roof-level roll-forming workflow questions](/images/editorial/roof-level-workflow.svg)](/images/editorial/roof-level-workflow.svg)
+The receiving team also needs the proposed output direction and the intended sequence of roof work. A line proposal may describe a machine clearly yet leave the project without an agreed place to receive its panel. The [roof-panel handover guide](/blog/elevated-roll-forming-roof-panel-handover-zones/) separates immediate output support, receipt and installation responsibilities.
 
-*Editorial diagram. Tap to open the full-size editorial diagram. It explains workflow dependencies and cannot demonstrate a particular line, panel profile, lift model, or site result.*
+### Distinguish a single-panel brief from a changing product mix
+
+If several profiles or material conditions are required, list them separately and ask how each is covered by the proposal. Do not let a phrase such as “adjustable line” stand in for a defined tooling and changeover scope. The buyer needs to know what equipment is included, what changes between products and how the resulting output is to be assessed.
+
+Likewise, an existing line with a known production history still needs its current arrangement reviewed for elevated use. Previous ground-level operation does not settle the line-to-lift attachment, service routing or the roof receiving interface. The [ARC-RF8 roll-forming machine reference](/products/arc-rf8-roll-forming-machine/) can frame the product discussion; it is not confirmation that a buyer's profile or lifting arrangement is compatible.
+
+Consider a hypothetical comparison in which one offer includes a new forming line and another assumes the buyer will supply an existing machine. A price comparison made before that scope difference is resolved could conceal missing equipment and integration work. First align the deliverables, then compare the technical evidence for the agreed task. No saving or performance conclusion follows from the example.
+
+![Elevated apparatus beside a building with coils and ground equipment nearby](/images/equipment/entry-real-clearance.webp)
+
+*Reference photograph showing the relationship between elevated apparatus and a building-side area. It cannot establish a selected line's service access, outlet alignment or site suitability.*
+
+## Prepare the specification for supplier review
 
 <!-- audit-section: limitations-not-fit -->
-## When the line brief is not ready
+### Identify what prevents meaningful selection
 
-A line proposal may not fit when the profile drawing is preliminary, the material grade is unknown, or thickness is stated without tolerance and coating information. It also may not fit when coil sizes exceed the proposed decoiler, when the exit path cannot support the longest panel, or when the chosen cut method conflicts with the required end condition.
+A proposed line may not fit when its forming scope does not address the controlled panel definition or its physical arrangement cannot be reconciled with the lifting and receiving interfaces. An enquiry is also premature if it names a panel length while leaving material, output direction or the receiving task unknown.
 
-Do not accept a specification based only on a finished-panel photograph, a generic machine image, or a claimed length range. Long panels can amplify camber, twist, oil canning, marking, support, and handling problems. The acceptance method should distinguish dimensional checks, visual checks, seaming fit, sample length, and any project-specific functional review.
-
-The forming line does not define the entire installation outcome. Coil consistency, setup, operator procedure, weather, handling supports, roof geometry, storage, lifting, and installation practice can influence the delivered panel. A line that is suitable for one material and profile may require different tooling or setup for another.
-
-If the project needs many unrelated profiles in small batches, if source material varies widely, or if the site cannot provide a controlled feed and output route, another sourcing or forming strategy may be more practical. Resolve those operating assumptions before fixing the line architecture.
+A machine image, a roller count or a historical range cannot close those gaps. Keep current product requirements and supplier proposals separate until they have been compared. If the buyer needs unrelated profiles with an unresolved changeover concept, or cannot establish a viable feed and output arrangement, further process definition should precede a machine commitment.
 
 <!-- audit-section: project-checklist -->
-## Issue a controlled specification package
+### Supply a concise, connected set of inputs
 
-- Issue the controlled profile drawing with dimensions, radii, seams, overlaps, critical tolerances, and revision status.
-- State substrate, material grade, coating, paint or film, sheet thickness and tolerance, strip width, and visible surface.
-- Provide coil mass, inner diameter, outer diameter, winding direction, edge condition, loading method, and feed path.
-- List normal panel lengths, maximum target length, length tolerance, batch sizes, identification needs, and output sequence.
-- Define profile tolerance, straightness, camber, twist, surface-marking, cut-end, burr, and sample acceptance criteria.
-- Select the cutting concept and specify cut timing, edge condition, guarding, consumables, maintenance, and scrap handling.
-- Confirm voltage, frequency, phase, variation limits, earthing, cable route, controls language, and available backup power.
-- Describe control functions, recipes, counters, sensor needs, data retention, operator access, and service expectations.
-- Map line position, entry and exit support, roof slope, working height, wind exposure, panel handover, and lifting interfaces.
-- Identify destination documentation, electrical review, guarding review, training, inspection, tooling records, and spare parts.
-- State the trial material, sample length, measurement tools, acceptance roles, change-control process, and record format.
+- Issue the profile drawing, material and finish requirements, thickness information and intended panel lengths as one consistent requirement.
+- Identify the existing line or proposed supply scope, including its dimensions, mass-information status and attachment references.
+- Mark the outlet height, roof geometry and receiving zone so that machine and building references can be reconciled.
+- Describe coil delivery, feed direction and site access around the proposed machine position, with unknown interfaces labelled.
+- Provide ground or floor information and available outrigger or support space for the lifting arrangement's separate review.
+- State the electrical power information, connection boundary and required coordination between line and lifting equipment.
+- Identify wind and weather assessment responsibilities where the proposed output and receiving route are exposed.
+- State the destination, transport and packing expectations, including whether the line travels installed or as a separate module under the proposed plan.
 
-Use this information when contacting any line or lifting-system supplier. It turns a vague request for “a long-panel machine” into a reviewable technical package. Keep the proposed checks and their acceptance owners in a separate protocol; the [roll-forming FAT/SAT guide](/blog/roll-forming-line-fat-sat-acceptance-checklist/) can be used to structure that handoff without claiming that a trial has occurred.
+Attach the intended acceptance requirements to this brief rather than treating them as a later purchasing detail. The [roll-forming FAT/SAT guide](/blog/roll-forming-line-fat-sat-acceptance-checklist/) helps distinguish which observations belong to which agreed test context. It does not supply default tolerances, sample sizes or a completed acceptance result.
+
+### Ask for answers at the same level of detail
+
+When a supplier replies with a different assumption, identify it beside the original requirement. For example, a proposed machine arrangement may depend on a feed position the site has not accepted. That is an open interface for the relevant parties to resolve, not a detail to hide in a general statement that the line is suitable.
 
 <!-- audit-section: cta-editorial-note -->
-## Move from inputs to signed review
 
-Send ARCLIFT the controlled profile drawing, material and thickness data, coil dimensions, target lengths, tolerances, cut preference, working height and site route, available power, destination requirements, and planned handling method. As a technical selection and supply partner, ARCLIFT can organize line and lifting interfaces for project-specific review.
+Send ARCLIFT the panel definition, line information, required outlet height, site arrangement, destination and transport expectations for a project-specific discussion. As a technical selection and supply partner, ARCLIFT can organise the forming-line and lifting-equipment questions around the same brief. Final selection requires the agreed technical documents and acceptance scope. The reference photographs offer editorial context for visible arrangements; they do not prove tooling compatibility, output quality, lifting approval or a completed ARCLIFT project.
 
-This guide does not approve tooling, material compatibility, output quality, speed, length, electrical design, or a lifting configuration. The representative configuration image and editorial diagrams are explanatory visuals only. They cannot prove model identity or performance. Final selection requires signed drawings, material confirmation, agreed acceptance criteria, and configuration-specific technical documents.
+## FAQ
+
+#### Can an existing ground-level roll former be installed on a lift?
+
+That requires review of the actual machine and lifting arrangement. Producing the required panel is one part of the question. Dimensions, mass distribution, support and attachment, feed direction, services, access and output interfaces must also be addressed for the proposed elevated configuration.
+
+#### Does a stated panel length establish line capability?
+
+No. It is a requirement to evaluate with the profile, material, cutting arrangement and agreed acceptance scope. The project must also establish how the emerging panel is supported and received. A historical length reference cannot determine the answer for a different machine or site.
+
+#### Should the roll former and lift be specified together?
+
+Their interfaces should be coordinated even when different parties supply them. Each equipment scope still needs its own definition, while shared geometry, mass information, services and operating relationships require compatible answers. One combined quotation does not remove the need to resolve those boundaries.
+
+#### What should be agreed before comparing quotations?
+
+Align the panel requirement, material, forming-line supply boundary, elevated installation scope and acceptance expectations. Identify buyer-supplied equipment and unresolved site conditions. This lets the buyer compare proposals for the same task rather than treating different inclusions or assumptions as equivalent offers.
