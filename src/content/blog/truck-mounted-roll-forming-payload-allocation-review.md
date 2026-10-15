@@ -1,202 +1,171 @@
 ---
 title: "Truck-Mounted Roll-Forming Payload Allocation Review"
-description: "Define the buyer-side mass-property schedule needed before specialist axle-load review of a truck-mounted roll-forming system, with limits and handoffs."
+description: "Review truck-mounted roll-forming lift mass inputs by separating chassis, installed equipment, coils and accessories across road, arrival and working states."
 date: 2026-08-13
-updated: 2026-09-20
+updated: 2026-10-16
 author: "ARCLIFT Technical Editorial"
 tags: ["truck-mounted roll forming", "payload allocation", "mass property schedule", "chassis integration"]
-coverImage: "/images/editorial/truck-site-roll-forming-lift.webp"
-coverAlt: "Editorial truck-mounted roll-forming system in a generic site context"
-coverCaption: "AI-assisted editorial composite; not evidence of ARCLIFT equipment, configuration, project, capability or result. It does not show an approved chassis, a released load state or a completed-vehicle calculation."
+coverImage: "/images/equipment/coil-real-cover.webp"
+coverAlt: "Red lifting equipment beside a vehicle and a suspended metal coil"
+coverCaption: "Reference photograph showing lifting equipment beside a suspended coil and a vehicle. It does not establish what travels on that vehicle, an allowable payload or approved coil-handling conditions."
 draft: false
 ---
 
-A truck-mounted roll-forming payload review should begin with a controlled mass-property schedule, not an assumed payload figure. The immediate buyer decision is whether every item added to, carried by or consumed on the completed vehicle has a declared state, traceable source, agreed coordinate reference, responsible owner and revision status. That package can then be handed to the competent vehicle specialist who owns axle reactions, ratings, stability, structural integration and destination approval. This article does not calculate those results, approve a chassis or assert that any configuration is road legal. It defines the information boundary that must be closed before those decisions are credible.
+A payload review for a truck-mounted roll-forming lift starts by identifying what will actually be on the vehicle in each proposed state. The lifting assembly, roof-panel roll former, connecting structure, accessories, fluids and any carried materials may come from different supply scopes. A single equipment-weight figure can hide omissions or double counting. Buyers need an item-by-item account of mass and location before the responsible vehicle specialist can examine the completed arrangement.
 
-This narrow scope complements the broader [truck chassis integration review](/blog/truck-mounted-roll-forming-chassis-interface-review/) and the procurement-focused [destination chassis sourcing guide](/blog/truck-mounted-lift-destination-chassis-sourcing/). It is not a substitute for either.
+The equipment raises a compatible forming machine toward the roof-panel receiving level. Its lifting duty is a different question from the vehicle's road-going mass distribution. This guide prepares the inputs for that vehicle review; it does not calculate axle loads or state an available payload. Use the [chassis integration guide](/blog/truck-mounted-roll-forming-chassis-interface-review/) for the broader physical pairing and [destination chassis sourcing guide](/blog/truck-mounted-lift-destination-chassis-sourcing/) for procurement responsibilities.
 
 **Contents**
 
-- Define the payload-allocation boundary
-- Build a controlled mass-property schedule
-- Hand controlled inputs to the vehicle specialist
-- Release a review package with explicit hold points
+- Identify the vehicle and the items included
+- Separate road, arrival and working arrangements
+- Compare changes through mass and position
+- Prepare a useful package for the vehicle specialist
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Define the payload-allocation boundary
+## Identify the vehicle and the items included
 
-The useful output is an input schedule that another responsible party can audit. It should show what is included, what state each item represents, how the source can be retrieved, what remains provisional and which change would reopen the review. A single “equipment weight” field cannot do that job because it hides the boundaries between the base vehicle, installed module, carried materials, tools, fluids, people and temporary items.
+### Begin with a particular chassis proposal
 
-### Name the completed-vehicle state
+Identify the chassis specification and the configuration represented by its mass data. Options and installed equipment can make a general model description insufficient. Ask which fuel, fluid and equipment assumptions are included in the supplied baseline. The buyer does not need to reconstruct a chassis specification from photographs; the chassis supplier must identify the actual proposal and its applicable information.
 
-Start by naming the state being reviewed in ordinary project language. Is it a transport state, a site-movement state, a setup state or another defined condition? Which components remain attached? Which items are stowed, transferred or absent? Which tanks or consumables are represented, and at what declared state? The terms need to match the controlled project records, not a marketing label.
+If the vehicle is already owned, distinguish its current condition from its original specification. Record relevant changes and the available documentation or measurement information. Do not assume that an old unladen figure describes the vehicle after modifications. The integration reviewer needs to know which physical starting point the subsequent additions will be applied to.
 
-More than one state may require review. Keep each state as a separate record rather than merging convenient values from different configurations. If a component moves between transport and work positions, the schedule should identify both states and preserve the relationship between them. It should not assume that a result from one state applies to another.
+### Break the upper assembly into accountable items
 
-### Separate payload language from engineering decisions
+Identify the lifting assembly, forming machine, intermediate support, hydraulic or electrical equipment, access components, guards and permanent accessories as applicable. Each should have an owner who can explain the mass scope. If one supplier provides a combined figure, identify exactly which of these items that figure includes before adding figures from another quotation.
 
-“Payload” is often used loosely in early discussions. One team may mean the rated carrying allowance of an incomplete chassis; another may mean all equipment above the bare frame; another may mean only material carried during operation. The review package should avoid that ambiguity by listing physical items and boundaries explicitly.
+The [truck-mounted roll-forming lift reference](/products/arc-t18-truck-mounted-roll-forming-lift/) helps identify the product family, but a public model name cannot define an order-specific mass schedule. The schedule must describe the proposed assembly. An item supplied by the buyer still belongs in the review when it is carried or installed on the vehicle.
 
-Axle ratings, tyre limits, completed-vehicle mass limits, structural reactions, stability, braking, steering, registration and road approval remain specialist decisions. The schedule supplies inputs; it does not certify their acceptability. This separation also prevents a nominal chassis figure from being treated as unused capacity available to a proposed module.
+### Distinguish equipment from material and temporary items
 
-### Assign owners across the completion chain
+List coils, tools, spares, support accessories and other carried items separately from the permanent installed assembly. Record whether each is included in the proposed road journey, delivered by another vehicle, or present only for a particular site activity. Do not infer any of these arrangements from a coil-handling photograph.
 
-Record who controls the chassis data, installed-module data, body or subframe definition, mounting arrangement, consumables, carried tools and material state. Also name the party responsible for the completed calculation and the party responsible for destination acceptance. “Supplier” or “engineering” is too broad when a discrepancy needs a decision.
+Temporary transport frames and packaging also need a stated boundary. A component shipped in protective packaging may have a different declared mass from the installed component. The useful question is not which figure is larger, but which physical item and condition each figure describes. That distinction prevents a shipping gross mass from quietly becoming an installed-machine value.
 
-Current <a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-568" target="_blank" rel="noopener noreferrer">U.S. eCFR Part 568</a> defines responsibilities and document handoffs for vehicles manufactured in two or more stages. It is U.S.-specific legal context, not a calculation method, global rule or approval for a particular vehicle. Use it only as a prompt to identify the actual roles and current destination requirements for the project.
+![Blue machine module suspended beside red equipment](/images/equipment/coil-real-module.webp)
 
-![Editorial payload allocation input chain](/images/editorial/truck-mounted-roll-forming-payload-allocation-review.svg)
-
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Legend: “State” means the declared mass state, “Axes” means the common coordinate reference, and “Case” means a condition awaiting specialist review; “Source” and “Owner” identify evidence and responsibility. These labels are not parameters. The diagram illustrates an information handoff only and contains no mass, centre-of-gravity, axle or rating value.*
+*Reference photograph showing a suspended blue machine module. It does not show a coil, disclose the module's mass or establish whether the module travels installed on a particular vehicle.*
 
 <!-- audit-section: conditions -->
-## Build a controlled mass-property schedule
+## Separate road, arrival and working arrangements
 
-A reviewable schedule is closer to a register than a brochure table. Each row represents a defined item or assembly, and each column carries enough context for an independent reviewer to understand the value without guessing. Unknown information remains visibly unknown; it is not converted into a convenient estimate merely to complete the sheet.
+### Describe the proposed road journey
 
-### Establish one coordinate reference
+Identify the installed and carried items for the road-going arrangement, together with their proposed positions. Show which components remain on the vehicle and which arrive separately. Ask the responsible equipment party to identify the documented transport configuration rather than describing it only as folded or lowered.
 
-The project needs one documented origin, axis direction and unit convention for location data. A sketch should show where that reference sits on the controlled chassis or integration drawing. If an upstream source uses another coordinate system, retain the source convention and record the controlled transformation rather than silently copying coordinates.
+A road review also needs the actual chassis information and destination requirements. Keep that work with the appropriate vehicle and transport specialists. The [road-transport document guide](/blog/truck-mounted-forming-lift-road-transport-documents/) connects these inputs to the transport task. It should receive an identified configuration, not a total assembled from different states.
 
-The schedule should distinguish the centre of gravity of an item from its mounting-point coordinates and envelope. Those data serve different decisions. A centre-of-gravity location without the corresponding mass state, orientation and source revision is incomplete, even when the number looks precise.
+### Record what changes when equipment arrives
 
-### Record the state behind each mass entry
+Arrival can introduce separately delivered components or materials, while transport-only items may be removed under the applicable arrangements. List those changes as changes of state. If an accessory is stored beside the equipment after arrival, that does not establish whether it was included on the vehicle during the preceding journey.
 
-For every chassis, module, subassembly, tool set, fluid, coil or other carried item, state what the entry includes. Identify installed options, guards, supports, cables, service items and packaging only when they belong to the reviewed state. Avoid double counting an item embedded in a higher-level assembly.
+Use a simple presence field for each item: included, excluded or unresolved for the named state. An unresolved entry is an information request, not a zero mass. This keeps the arrival account connected to the road account without assuming they are identical.
 
-Mark the source as a controlled drawing, signed schedule, verified weighing record, current data sheet or explicitly provisional engineering input. Record the source identifier and revision in the private project package. A public article, photograph or archived range page is not a source for a project value.
+### Keep the working arrangement as a separate review case
 
-### Declare inclusion before comparing totals
+During the proposed roof-forming work, support conditions and component positions may differ from those represented by the road arrangement. The equipment parties must define the applicable working cases and their own mass, load and support inputs. A road mass schedule is not a substitute for that review.
 
-Every mass entry needs an inclusion statement and an exclusion statement. “Lifting module” is incomplete if one source includes the working platform, hydraulic fluid and removable accessories while another does not. Options also need a configuration status: proposed, ordered, installed, carried separately, removed for transport or not part of the reviewed state. That status controls whether the item belongs in a particular schedule; its presence in a brochure or preliminary layout does not.
+For example, identifying the mass of a forming line does not establish a lifting rating at the requested outlet height. Nor does a completed-vehicle weight settle ground reactions at extended supports. Keep those questions visible and route them to the responsible specialists through the [jobsite setup review](/blog/truck-mounted-forming-lift-jobsite-setup-review/).
 
-Use the following two-column prompt to establish status and ownership before any value is handed to the calculation owner. It is an editorial template, not a completed vehicle record, weighing result or engineering calculation.
+### Name the reference used for every position
 
-<table>
-  <caption>Mass-entry inclusion and exclusion review by configuration state</caption>
-  <thead>
-    <tr>
-      <th scope="col">State or ownership question</th>
-      <th scope="col">Required project record</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Is the base vehicle included?</td>
-      <td>Name the exact chassis state, body or subframe boundary, source revision and chassis-data owner.</td>
-    </tr>
-    <tr>
-      <td>Which installed assemblies are included?</td>
-      <td>List the lifting structure, forming module, platform, guards, supports, utilities and the assembly record that contains them.</td>
-    </tr>
-    <tr>
-      <td>Which options are fitted?</td>
-      <td>Give each removable or optional attachment a configuration status, state, storage position and responsible data owner.</td>
-    </tr>
-    <tr>
-      <td>Which variable items are present?</td>
-      <td>Separate material, tooling, spares, fluids, people and loose service items for each declared state.</td>
-    </tr>
-    <tr>
-      <td>What is deliberately excluded?</td>
-      <td>Identify transport aids, packaging, site-only equipment and separately carried items, with the record that controls their handling.</td>
-    </tr>
-    <tr>
-      <td>Who reconciles the total?</td>
-      <td>Name the register owner, calculation owner, review status and change event that requires the schedule to be totalled again.</td>
-    </tr>
-  </tbody>
-</table>
+For the vehicle review, ask the specialist which position references and input format are required. Item locations and centre-of-gravity information must relate to a shared vehicle coordinate system. A location measured from the rear of one assembly cannot be combined with another measured from the front axle without a defined relationship.
 
-### Keep consumables and variable loads visible
+Preserve the supplier's stated uncertainty and the status of provisional inputs. An assumed centre position should not be recorded as measured. If the relevant mass location is unavailable, show the gap and request the needed information. Drawing a box at the centre of a machine does not establish its centre of gravity.
 
-Variable items should not disappear inside a general allowance. List the relevant fluid state, tooling, spares, personnel, materials and removable accessories as separate controlled inputs when they form part of the declared use case. Define who confirms the operating range or governing case; do not invent a maximum or apply a generic assumption.
+![Crawler equipment positioned on a low-bed road carrier](/images/equipment/transport-real-carrier.webp)
 
-The same discipline applies to material loaded into a roll-forming workflow. The coil or other feed material may influence the vehicle review, handling plan and work-state boundary, but its permitted quantity and location must come from project-specific engineering. The [coil loading plan for roof-level systems](/blog/roof-level-roll-forming-lift-coil-loading-plan/) addresses that separate operational interface.
-
-### Expose uncertainty instead of hiding it
-
-Give each row a status such as missing, provisional, confirmed or reviewed, plus an owner and next action. If uncertainty is used by the responsible specialist, record how it was derived and where it applies. Do not present a tolerance, allowance or contingency as though it were measured fact.
-
-A useful change log shows the previous value or state, new value or state, reason, affected load cases, reviewer and release date. That traceability matters because a small physical change can be irrelevant in one location and important in another. The buyer-side record should trigger review, not predict the outcome.
-
-Reconcile the schedule whenever its level of detail changes. In a hypothetical review, an earlier assembly entry might already include a removable service attachment; adding the same attachment later as a separate confirmed row would count it twice. The opposite error occurs when a provisional assembly value excludes an option but the option never receives its own row. When a parent assembly is replaced by component-level entries, mark the parent as superseded or excluded from the total, preserve the source trail and ask the register owner to re-total every affected state. If the mounting position also changes, reopen the relevant boundary in the [lifted roll-forming mounting interface review](/blog/lifted-roll-forming-line-mounting-interface-review/); mass ownership and mounting geometry are linked inputs, not interchangeable approvals.
-
-![Editorial chassis and module interface layers](/images/editorial/chassis-interface-stack.svg)
-
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. The layers are conceptual and do not define a mounting arrangement, load path or completed vehicle.*
+*Reference photograph showing crawler equipment on a low-bed carrier. It is a carrier-and-cargo scene, not evidence of a truck-mounted roll-forming configuration or an approved road-load distribution.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## Hand controlled inputs to the vehicle specialist
+## Compare changes through mass and position
 
-The quality of the handoff affects how many assumptions the specialist must make. A concise package of controlled records is usually more useful than a large folder with unexplained duplicates. The trade-off is between early visibility and false certainty: preliminary data can expose interface gaps sooner, but only controlled evidence can support a released calculation. The objective is not to remove professional judgement; it is to make the judgement boundary, source limitations and unresolved inputs visible.
+### Test a change in where the coil travels
 
-### Supply the chassis record in the right state
+Consider a hypothetical proposal in which the forming equipment travels on its assigned vehicle and coil material arrives on a separate carrier. A later request asks to carry a coil with the forming equipment. That request changes the road configuration and requires a stated coil scope, proposed position, handling interface and review by the responsible parties. It is not a scheduling detail that can be absorbed into an old equipment-weight figure.
 
-Request the exact chassis identity and the current documents relevant to the proposed completion. The responsible specialist determines which ratings, geometry, suspension, tyre, frame, braking, steering, electrical, hydraulic and regulatory records are required. The buyer should not extract isolated figures from a sales page or assume that a related chassis variant is equivalent.
+The alternative arrangement may affect logistics, but the trade-off cannot be decided by counting vehicles alone. The project must establish the configuration and review requirements associated with each proposal. This example supplies no permission to carry a coil, no restraint design and no estimate of spare vehicle capacity.
 
-If the chassis will be sourced at destination, preserve the distinction between a preliminary candidate and a released base vehicle. A preliminary schedule can help expose missing information, but it should carry a hold status until the exact chassis record and responsibility chain are agreed.
+### Follow a relocated component even when mass is unchanged
 
-### Define load cases without calculating them
+Suppose a supplier proposes moving an auxiliary cabinet to provide service access. Its declared mass may remain unchanged, while its position on the vehicle changes. The overall mass total therefore cannot show the complete effect of the proposal. Send the revised arrangement and position information to the vehicle specialist as well as to the integration designer.
 
-The schedule should name the conditions the project expects the specialist to review: for example, the declared transport state, site-movement state and relevant stationary work state. The responsible engineer decides whether those cases are sufficient, what combinations apply and which calculations or tests are necessary.
+Volvo's official <a href="https://www.volvotrucks.us/media/vtna/files/shared/body-builder/manuals/2025/p6700-section-0.pdf" target="_blank" rel="noopener noreferrer">VNL body-builder instructions, Section 0</a> include a weight-distribution discussion that relates loads to their positions. It is a manufacturer document for its stated vehicle scope, used here to explain why position inputs matter. Its examples do not select a chassis or validate an ARCLIFT arrangement, and its calculations are not reproduced here.
 
-Do not publish or reuse axle reactions, centre-of-gravity envelopes or stability conclusions outside their released configuration. Those results can depend on equipment position, consumables, support condition, attachments and chassis specification. A change-control note should identify which released cases may be affected and return them to the calculation owner.
+### Identify the consequence of each proposal
 
-### Resolve conflicting sources through ownership
+| Proposed item or change | Information to establish | Review that receives it |
+| :-- | :-- | :-- |
+| A different forming machine | Its actual mass scope, position and mounting arrangement | Vehicle and machine-to-lift integration reviews |
+| A coil proposed on the road vehicle | Inclusion in that journey, proposed location and applicable material-handling scope | Vehicle, transport and equipment review parties |
+| An auxiliary unit moved on the assembly | Revised location and any changed installation items | Vehicle mass-distribution and physical-interface reviews |
+| Transport supports removed after arrival | Which state includes their mass and how the next arrangement is identified | Road configuration and destination-receipt records |
+| A heavier combined quotation figure | Whether it includes packaging, adapters or items listed elsewhere | Scope reconciliation before specialist calculations |
+| An item with no confirmed mass information | Responsible supplier and required evidence | An open input request rather than an assumed allowance |
 
-When two records disagree, do not average the values or select the newer-looking document. Place the affected item on hold, retain both source identifiers, and ask the named data owner to release a corrected record. The same rule applies when the physical item differs from its drawing or the coordinate reference is unclear.
-
-Current <a href="https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-567" target="_blank" rel="noopener noreferrer">U.S. eCFR Part 567</a> covers vehicle certification labels and related duties. That scope reinforces the need for a named responsibility owner, but it remains U.S.-specific and cannot resolve a project's engineering or legal conflict in another destination.
-
-![Editorial responsibility handoff for chassis integration](/images/editorial/chassis-responsibility-swimlane.svg)
-
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. It is a generic responsibility map, not a contract, calculation approval or regulatory workflow.*
-
-<!-- audit-section: limitations-not-fit -->
-## Release a package with explicit hold points
-
-The allocation package is ready for specialist review when its boundary is clear, required source records are retrievable, statuses are honest and owners accept their responsibilities. It is not fit for release when the base vehicle is unidentified, mass states are mixed, coordinate systems conflict, variable loads are hidden, source revisions cannot be traced or the completed-vehicle calculation owner is absent.
-
-### Use a buyer-side release checklist
+These examples show why the schedule should preserve individual items. If only a combined total is kept, a later change can require reconstructing the entire scope before its significance is understood. The schedule helps the specialist receive coherent inputs; it does not replace that specialist's assessment.
 
 <!-- audit-section: project-checklist -->
-- Confirm the exact chassis identity or mark the candidate as preliminary.
-- Name every transport and work-site state and define what changes between states.
-- Freeze one chassis geometry origin, axis convention and unit convention.
-- List installed equipment, coil material, subassemblies and removable items without double counting.
-- Record the documentation source, revision, state and owner for every mass-property entry.
-- Separate fluids, materials, tools, people and other variable loads for each transport state.
-- Mark missing, provisional, confirmed and reviewed entries against the project requirement.
-- Identify the competent owner of axle-load, stability, chassis and completed-vehicle engineering.
-- Identify current destination compliance requirements and the party responsible for approval.
-- Link every change to the affected transport state, load case, reviewer and release record.
-- Hold any conflicting route, floor, geometry or chassis input instead of filling the gap.
+## Prepare a useful package for the vehicle specialist
 
-### Define the released deliverable
+### Gather the item and state information
 
-The deliverable can include a mass-property register, coordinate sketch, state matrix, source index, assumptions-and-unknowns list, responsibility matrix, change log and formal handoff note. Keep sensitive vehicle identifiers, drawings and signed records in the controlled project channel. The public website and general inquiry form are not appropriate repositories for them.
+- Identify the actual chassis proposal, configuration and mass-data source with its included options and fluids.
+- List the forming machine, lifting assembly, mounting structure and permanent accessories without overlapping scope.
+- State the material and coil assumptions for the road journey separately from site-only handling tasks.
+- Record each item's mass basis and position in the coordinate format requested by the vehicle specialist.
+- Describe road, arrival and working states, including which items are present, absent or unresolved.
+- Identify the roof task and required outlet height so the working review is kept distinct from road transport.
+- Connect proposed outrigger or other support arrangements to the separate ground or floor review.
+- Mark the access route and destination transport requirements relevant to the intended vehicle journey.
+- Include power, hydraulic and control accessories where they form part of the installed or carried scope.
+- Identify container packaging or transport frames separately where their gross mass differs from installed equipment.
+- State the documentation owner for unknown masses, provisional positions and changes to the proposed configuration.
+
+### Reconcile two supplier figures before adding them
+
+Ask whether the lifting-assembly figure already includes the hydraulic power unit, connecting structure or other quoted accessories. Ask whether the forming-line figure describes the machine alone or includes its packaging and loose equipment. Write the inclusions beside each value before the figures are passed onward.
+
+Where boundaries remain unclear, flag the overlapping item and obtain a corrected scope statement. Do not solve uncertainty by silently dropping an item or adding a guessed allowance. A specialist may request a particular conservative assumption, but that instruction and its purpose should remain explicit rather than appearing as supplier-confirmed data.
+
+### Preserve changes without inventing a pass result
+
+When a component or material arrangement changes, identify the affected state and revise the relevant item entry. Send the changed inputs to the responsible reviewers with the previous arrangement available for comparison. A lower total mass does not automatically preserve a previous conclusion if positions, mounting or support arrangements have also changed.
+
+The [configuration-change guide](/blog/roll-forming-lift-configuration-change-control/) covers this wider review path. The buyer's useful output here is a consistent account of the vehicle and its contents. The vehicle specialist remains responsible for the applicable calculations, ratings and destination assessment.
+
+![Folded crawler equipment with its ground supports extended](/images/equipment/transport-real-stowed.webp)
+
+*Reference photograph showing folded crawler equipment on extended supports. It does not show a confirmed travel state, a truck chassis or a usable vehicle-payload allowance.*
+
+<!-- audit-section: limitations-not-fit -->
+### Recognize when the proposed vehicle route may not fit
+
+The proposed route may not fit when the installed and carried scope cannot be reconciled with the selected vehicle, required data remains unavailable, or the responsible review identifies a conflict. Reconsidering the chassis, separately transporting an item or changing an assembly is a new proposal requiring its own assessment.
+
+This article provides no axle-load formula, allowable payload, centre-of-gravity limit or stability calculation. It also supplies no road-permit or equipment-lifting conclusion. A complete item schedule is useful because it exposes these questions early, not because it can answer them without the actual vehicle and equipment information.
 
 <!-- audit-section: cta-editorial-note -->
-### Request a scoped technical review
+### Send the changed item or state that needs review
 
-Provide the intended vehicle use, candidate chassis status, installed-module definition, declared transport and work states, site and route assumptions, controlled mass sources, coordinate reference, variable-load list, destination, responsibility owners and unresolved conflicts through a secure project channel. Ask the final vehicle specialist to confirm the project-specific calculation scope, required evidence and signed release authority in writing. ARCLIFT can coordinate the preliminary information package as an integrated equipment supplier and technical selection and supply partner, but it does not replace project-specific engineering, certification or destination approval. Every image on this page is an editorial visual and cannot prove a value, configuration, completed vehicle or result.
+Provide ARCLIFT with the chassis proposal, forming-line identity, included assemblies, item schedule, proposed transport state, roof task height, site context and destination. Highlight missing or changed mass and position inputs. ARCLIFT acts as an integrated equipment supplier and technical selection and supply partner for preliminary equipment questions. Final project-specific vehicle, support and transport decisions remain with the appointed specialists. These reference photographs provide editorial context; they cannot establish a mass figure, permitted load or approved operating state.
 
 ## FAQ
 
-#### Is chassis payload enough to select a truck-mounted system?
+#### Is vehicle payload the same as the lift's rated load?
 
-No. A nominal payload figure does not define the completed configuration, item locations, axle reactions, variable loads, stability cases or destination obligations. Those questions require controlled project data and competent vehicle review.
+No. They concern different boundaries and conditions. Vehicle review addresses the completed vehicle and its contents; the lifting review addresses the identified equipment arrangement and applicable working cases.
 
-#### Who should calculate the final axle loads?
+#### Can the buyer subtract equipment weight from a truck rating?
 
-The named competent vehicle-integration or engineering party should own the calculation under the applicable project and destination framework. The buyer-side schedule organizes inputs but does not replace that responsibility.
+That subtraction does not provide a complete vehicle assessment. The responsible specialist needs the actual chassis, included items, positions and applicable requirements before examining the proposed arrangement.
 
-#### Can preliminary values be used in an RFQ?
+#### Should a coil appear in the road mass schedule?
 
-They can be identified as provisional inputs to expose information gaps and compare review scope. They should not be presented as confirmed values, released ratings or proof that a chassis and equipment concept are compatible.
+Only according to the proposed road configuration, with its status stated explicitly. If it travels separately, identify that arrangement. If its travel location is unresolved, retain an open question rather than treating it as absent.
 
-#### What changes should reopen the allocation review?
+#### Does moving an accessory matter if its mass stays the same?
 
-Any change to chassis, installed equipment, position, mounting concept, tools, materials, fluids, personnel assumptions, operating state, coordinate reference or source record should be screened by the responsible reviewer for possible reanalysis.
+Yes, it changes a position input and may affect other interfaces. Submit the revised arrangement to the responsible reviewers instead of treating the unchanged total mass as proof that earlier conclusions still apply.

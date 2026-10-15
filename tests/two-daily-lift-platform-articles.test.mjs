@@ -3,6 +3,7 @@ import { constants } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { EXTENDED_LAUNCH_SLUGS } from '../scripts/audit-lift-platform-content.mjs';
+import { REFERENCE_PHOTO_ARTICLES } from '../scripts/reference-photo-articles.mjs';
 import {
   AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS,
   AUGUST_13_LIFT_PLATFORM_ARTICLE_SLUGS,
@@ -19,12 +20,12 @@ const markers = ['buyer-intent', 'conditions', 'evidence-tradeoffs', 'limitation
 const DAILY_ARTICLES = Object.freeze([
   {
     slug: 'roll-forming-lift-configuration-change-control',
-    title: 'Change Control for Roll-Forming Lift Configurations',
+    title: 'Roll-Forming Lift Changes: Recheck the Right Interfaces',
     diagram: 'roll-forming-lift-configuration-change-control.svg',
   },
   {
     slug: 'roll-forming-lift-destination-receipt-plan',
-    title: 'Destination Receipt Plan for Roll-Forming Lift Systems',
+    title: 'Roll-Forming Lift Delivery: Receipt and Assembly Readiness',
     diagram: 'roll-forming-lift-destination-receipt-plan.svg',
   },
 ]);
@@ -44,7 +45,7 @@ function frontmatterValue(markdown, key) {
 }
 
 function visibleWordCount(markdown) {
-  const body = markdown.split('---', 3)[2] ?? markdown;
+  const body = markdown.replace(/^---\r?\n[\s\S]*?\r?\n---(?:\r?\n|$)/, '');
   const visible = body
     .replace(/<!--[\s\S]*?-->/g, ' ')
     .replace(/<[^>]+>/g, ' ')
@@ -54,6 +55,11 @@ function visibleWordCount(markdown) {
 }
 
 describe('2026-08-08 two-article release contract', () => {
+  it('counts the full visible body after a Markdown table separator', () => {
+    const markdown = '---\ntitle: "Not body text"\n---\nBefore table.\n\n| Entry | Value |\n| --- | --- |\n| After | Complete |\n\nFinal paragraph.';
+    expect(visibleWordCount(markdown)).toBe(8);
+  });
+
   it('adds exactly two unique approved pages without deleting the frozen 41-page library', async () => {
     const expected = [...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_ARTICLES.map(({ slug }) => slug)];
     expect(new Set(expected).size).toBe(46);
@@ -89,7 +95,13 @@ describe('2026-08-08 two-article release contract', () => {
     expect((markdown.match(/^####\s+.+\?$/gm) ?? []).length).toBeGreaterThanOrEqual(4);
     expect(bodyImages).toHaveLength(3);
     expect(new Set([cover, ...bodyImages]).size).toBe(4);
-    expect(bodyImages).toContain(`/images/editorial/${diagram}`);
+    const photoArticle = REFERENCE_PHOTO_ARTICLES.find((article) => article.slug === slug);
+    if (photoArticle) {
+      expect(cover).toBe(photoArticle.cover[0]);
+      expect(bodyImages).toEqual(photoArticle.body);
+    } else {
+      expect(bodyImages).toContain(`/images/editorial/${diagram}`);
+    }
     expect(new Set(internalLinks).size).toBeGreaterThanOrEqual(2);
     expect(markdown).toMatch(/<a href="https:\/\/[^"\s]+" target="_blank" rel="noopener noreferrer">/);
     for (const marker of markers) expect(markdown).toContain(`<!-- audit-section: ${marker} -->`);

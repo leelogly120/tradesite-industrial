@@ -1,181 +1,164 @@
 ---
 title: "Mounting Interface Review for Lifted Roll-Forming Lines"
-description: "Review mounting interfaces for lifted roll-forming lines by controlling geometry, loads, utilities, access, responsibilities, revisions and unresolved inputs."
+description: "Review the mounting of a roof-panel roll former on a lift through machine geometry, mass inputs, attachment boundaries, service space and integration ownership."
 date: 2026-08-07
-updated: 2026-09-20
+updated: 2026-10-16
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming mounting interface", "lifted forming line", "interface control", "technical review"]
-coverImage: "/images/editorial/electrical-interface-boundary.svg"
-coverAlt: "Editorial roll-forming interface boundary map"
-coverCaption: "AI-assisted editorial image; not evidence of equipment, configuration, project, capability or result. Representative planning context only; not a site approval, technical drawing or performance record."
+coverImage: "/images/equipment/coil-real-module.webp"
+coverAlt: "Blue machine module suspended beside red lifting equipment"
+coverCaption: "Reference photograph showing a suspended blue machine module beside lifting equipment. It does not identify approved lifting points, mounting details or compatibility with another machine."
 draft: false
 ---
 
-A mounting interface is the controlled boundary between the roll-forming module and the structure that carries, lifts or positions it. The review must connect geometry, masses, reactions, attachment regions, utilities, controls, guarding and service access without allowing one party's sketch to become another party's release. A strong interface-control document lists inputs, owners, revisions and open calculations. It supports coordination while leaving final design and approval with the appointed specialists. The same record should identify tolerance ownership, inspection datums, measurement methods and the boundary for site adjustment. Otherwise, two correct drawings can still create an unresolved fit because they use different references or assume that the other party will absorb variation. Any field modification needs a controlled technical query, impact review and updated as-built record; it should not become an undocumented solution at the work face. The interface owner should record that closure before assembly continues.
+A roof-panel roll former that produces the required profile still needs a separate review before it can be mounted on a lifting structure. The forming machine's frame, mounting regions, mass distribution, inlet and outlet positions, and service access must be understood together. A match in overall length or nominal weight does not settle that interface. Buyers need to know what connects to what, which information describes the actual machine, and who will resolve the combined arrangement before ordering or modification proceeds.
 
-For adjacent decisions, use [roll-forming electrical interface guide](/blog/roll-forming-line-electrical-control-interfaces/) and [FAT and SAT evidence guide](/blog/roll-forming-line-fat-sat-acceptance-checklist/); [ARC-RF8 forming machine page](/products/arc-rf8-roll-forming-machine/) provides another project boundary.
+This guide concerns the boundary between the forming line and the structure supporting it on the lift. The [truck chassis integration guide](/blog/truck-mounted-roll-forming-chassis-interface-review/) deals with the separate chassis-to-upper-assembly boundary. Use the [roof-panel forming-line specification guide](/blog/roll-forming-line-specification-long-span-roof-panels/) to establish the production requirement, then bring the selected machine's information into this mounting review.
 
 **Contents**
 
-- Define the physical and functional boundary
-- Coordinate utilities and control responsibilities
-- Operate one interface-control document
-- Release integration only after boundary closure
+- Identify the machine and the interface under review
+- Connect mounting geometry to the complete arrangement
+- Compare the consequences of two machine proposals
+- Request the inputs needed before integration
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Define the physical and functional boundary
+## Identify the machine and the interface under review
 
-Draw a simple interface line and list what crosses it. The goal is to prevent gaps and overlaps among the forming module, carrier structure, lifting arrangement, material path and work zone.
+### Start differently for an existing machine and a new line
 
-### Control the reference geometry
+For an existing roll former, identify the machine and its present arrangement, including subsequent alterations. Collect the applicable drawings and compare them with the physical configuration. Guards, electrical cabinets, hydraulic equipment and material-guiding attachments can change the interface even if the main frame appears unchanged. An old sales outline may not describe the equipment now available for integration.
 
-Agree datums, coordinate systems, orientation, transport and work states, permitted interface regions and required access envelopes. Use controlled drawings with revision identifiers. A convenient screenshot or model view is not enough if parties use different origins or states. The interface record should state who owns each datum and how discrepancies are resolved before fabrication or procurement proceeds.
+For a new line, ask which geometry and mass information is established and which remains provisional. The buyer should understand whether the proposal describes a selected machine, a developing design or an approximate envelope. A preliminary footprint can support an early discussion, but its unresolved items need to remain visible when the lifting structure is considered.
 
-### Separate support, attachment and output references
+### Draw the boundary between the supplied assemblies
 
-Three nearby locations can serve different decisions. The **support position** describes where the forming module transfers reactions into its carrier. The **attachment position** describes the approved region and detail used to restrain that module. The **output reference** describes where the formed panel leaves the cutter or downstream guide relative to the receiving work face. Substitution requires review of the actual configuration.
+Mark the forming-machine frame, any proposed intermediate support, the lifting structure and relevant accessories as separate items. Identify who supplies each item and who owns the design at their meeting points. A quotation for a roll former and a quotation for a lift can both be complete within their own scope while leaving the connecting arrangement unassigned.
 
-In a hypothetical concept, two rails might support the module, separate plates might contain the permitted attachment points, and the cutter centreline might set the panel-exit datum. Moving the module for panel alignment could change reactions, fastener geometry and access even when the outline fits. Record each reference independently, together with its tolerance owner, measurement method and permitted adjustment. The table is an editorial review prompt, not a completed interface record or design.
+The [roll-forming machine reference](/products/arc-rf8-roll-forming-machine/) introduces the forming equipment family; it does not confirm that a particular machine fits every lifting configuration. If an adaptor or support frame is proposed, identify it explicitly in the supply scope. Do not let the phrase mounting included conceal an undefined component or design responsibility.
 
-<table>
-  <caption>Mounting-interface boundaries to resolve before design release</caption>
-  <thead>
-    <tr>
-      <th scope="col">Interface question</th>
-      <th scope="col">What must be controlled before release</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Where is the module supported?</td>
-      <td>Support regions, reaction inputs, contact condition, state and the lifting-structure owner who accepts the load path.</td>
-    </tr>
-    <tr>
-      <td>Where is it fixed?</td>
-      <td>Permitted attachment regions, restraint intent, adjustment method and the controlled detail issued by the appointed designers.</td>
-    </tr>
-    <tr>
-      <td>What sets panel exit?</td>
-      <td>Cutter or guide datum, panel direction, receiving-work-face reference, tolerance chain and the party responsible for alignment.</td>
-    </tr>
-    <tr>
-      <td>What must stay clear?</td>
-      <td>Movement envelope, feed and discharge path, guarding, inspection, replacement route and service position in every declared state.</td>
-    </tr>
-  </tbody>
-</table>
+### Separate handling features from permanent support features
 
-### Request loads and reactions from owners
+A machine may have provisions associated with transport, lifting, floor installation or permanent mounting. Identify the intended purpose of each feature from the applicable machine information. A visible hole, bracket or frame member does not by itself establish where a lifting structure may support or attach to the machine.
 
-List masses, centers, reactions, dynamic or process considerations and support states that the appointed designers need. Keep fields open until controlled configuration data and analysis are issued. Do not derive values from a similar line or convert a sales mass into a mounting load. The carrier or lifting-structure specialist must state what data are required and how the final interface is released.
+The suspended blue module in the cover photograph illustrates why these distinctions matter: a transfer scene raises questions about handling, but it does not disclose a permanent mounting design. The responsible parties must provide the actual handling and installation information. This review does not specify lifting points, connection details or an assembly procedure.
 
-### Include service and guarding space
+![Red lifting equipment beside a suspended coil and a vehicle](/images/equipment/coil-real-cover.webp)
 
-Mounting is not only a bolt pattern. Map material feeding, panel exit, adjustment, inspection, guarding, maintenance, cleaning and component replacement access. Identify areas that must remain clear through the work state. A compact arrangement that blocks safe service or forces work across another hazard may fail the task even if the geometry appears to connect.
-
-Static alignment is only one checkpoint. A module can align with a roof reference while stationary yet conflict with a guard, cable route or service door during lifting, slewing, setup or withdrawal. Review the swept envelope and access route separately: one defines movement; the other defines how an appointed person reaches a service point under the approved method. Neither approves the other.
-
-### Keep three support boundaries distinct
-
-The forming-module owner should define the module interface and the inputs needed at its support points. The lifting-structure owner should define what the carrier can accept, how it moves and which structural records close that boundary. The roof or building-side specialist should define the receiving support for the panel and any temporary or permanent work-face arrangement. Panel discharge toward a roof does not transfer the roof-support decision to the machine mount, and a lifting-platform support drawing does not approve the building-side support. If one drawing crosses all three boundaries, label the owner and release status of each rather than treating the sheet as one combined approval.
-
-![Mounting interface decision layers](/images/editorial/lifted-roll-forming-line-mounting-interface-review.svg)
-
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Legend: “Datums” means the controlled geometry references discussed in this article; the other labels remain planning categories, not dimensions or released values. It is not a mounting design or engineering release.*
+*Reference photograph showing lifting equipment beside a suspended coil and a vehicle. It does not establish how a forming machine is mounted or approve a lifting, feeding or support arrangement.*
 
 <!-- audit-section: conditions -->
-## Coordinate utilities and control responsibilities
+## Connect mounting geometry to the complete arrangement
 
-Power, control and communication interfaces need the same discipline as structure. Record required inputs and owners without publishing project wiring or making broad compatibility claims.
+### Use shared references for the frame and outlet
 
-### Define supply and isolation boundaries
+Ask for identifiable reference points on the forming-machine frame and the proposed supporting structure. Show the panel travel direction, inlet and cutter or outlet position relative to those references. Mounting coordinates expressed from one frame end cannot be compared with a lift drawing measured from another point unless their relationship is made explicit.
 
-List intended voltage, frequency, available power, connection point, protective and isolation responsibilities, and any temporary supply assumptions as project inputs. The authorized electrical parties decide the final design. A stated supply value does not establish suitability of a component or installation. Link the interface sheet to the controlled electrical documents and update both when the configuration changes.
+Overall dimensions also need a stated condition. A cabinet door, service panel or removable guard may occupy a different space when accessed. Keep the machine's closed envelope, required service space and any handling arrangement distinct. The integration reviewer needs all relevant envelopes, not a single rectangle used for every purpose.
 
-### Map signals by function and owner
+### Request mass and support inputs from the responsible party
 
-Identify the machine states, commands, permissives, stop conditions and status information that cross the boundary, but leave detailed logic to the controlled design. State which party defines each signal, which verifies it and how tests are recorded. Do not assume that a common label means the same behavior on both systems. Resolve definitions before integration testing.
+Identify the machine mass represented by the data, the included attachments and the relevant centre-of-gravity information. The designer responsible for the forming machine should define the mounting and support information required at its boundary, including applicable load cases and restrictions. The lifting-equipment party needs those inputs for its own review of the combined arrangement.
 
-### Plan cable and hose routing as an envelope
+Do not replace this exchange with an assumption that a lighter machine must fit. Position and support arrangement matter as well as mass. Where the forming line changes configuration, identify which information changes with it. The buyer can organize that question without calculating connection forces, frame stresses or permissible load distribution.
 
-Show protected routing zones, movement ranges, bend and service access questions, connector ownership and separation from material paths as interface requirements. Final routing needs the actual configuration and approved design. Temporary installation should not become the undocumented baseline. If the equipment changes position or work state, confirm that the routing review covers every state.
+### Preserve the material path through both ends
 
-![Structural interface stack concept](/images/editorial/chassis-interface-stack.svg)
+The inlet may need an agreed relationship to feeding equipment, while the outlet must serve the roof-panel receiving arrangement. Show both on the integration drawing. A proposed mounting position that clears the frame can still move the cutter or inlet away from the intended interface. Resolve that relationship before considering the mechanical connection alone to be complete.
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conceptual layers; actual loads and attachment details require controlled calculations.*
+The [coil-feeding plan](/blog/coil-handling-roll-forming-line-feeding-plan/) and [roof-zone survey](/blog/roof-zone-survey-roll-forming-lift-selection/) develop those adjacent questions. Here, their outputs should identify the material-side requirements that the mounting arrangement has to accommodate. They should not be assumed to adjust automatically around a machine chosen only for profile capability.
 
-<!-- audit-section: project-checklist -->
-## Operate one interface-control document
+### Check service access and utility crossings together
 
-The interface-control document should be the agreed index of boundaries, inputs, decisions and evidence. It does not replace detailed drawings; it tells each party which controlled document closes each question.
+Locate cabinets, inspection points, lubrication access, removable components and the spaces required by the applicable maintenance information. Ask whether the proposed support or surrounding lift structure obstructs those tasks. A machine can fit within an outline while leaving a necessary panel inaccessible or a replacement component without a reviewed removal route.
 
-- List datums, states, envelopes, loads, utilities, controls, guarding and service interfaces.
-- Assign every input, calculation, drawing, test and release decision to a named role.
-- Record working height and outreach assumptions without treating them as an approved operating envelope.
-- Describe roof slope or building geometry, nearby edges and any changing work-face condition.
-- List task material, panel length, coil or feed information only where it affects the reviewed interface.
-- Assign weather and wind monitoring to the site team under its approved work method.
-- Provide ground or floor records and name the competent party responsible for support review.
-- Map access and route states from delivery through setup, task work and withdrawal.
-- State destination, transport and chassis constraints that belong to local or integration review.
-- Record voltage, power, control and documentation requirements with revision status and owner.
+Also identify where cables, hoses and other services cross between assemblies, including the states in which their relationship changes. Route detailed electrical and control questions to the [electrical-interface guide](/blog/roll-forming-line-electrical-control-interfaces/). The mounting review should preserve the physical space and responsibility for those connections without inventing a cable route, supply rating or control function.
 
-Where the carrier mass state or removable attachment set is still open, link the interface record to the [truck-mounted payload allocation review](/blog/truck-mounted-roll-forming-payload-allocation-review/) rather than copying an unqualified mass into the mounting sheet.
+![Elevated equipment close to an industrial building frame](/images/equipment/entry-real-clearance.webp)
 
-### Use a responsibility and data matrix
-
-For each interface item, name the data supplier, reviewer, design owner, verifier and closure record. Distinguish information from approval. ARCLIFT can coordinate equipment inputs as a technical selection and supply partner, while carrier, structural, electrical and site specialists retain their appointed responsibilities. A blank owner is a hold point, not an invitation for another party to assume the role.
-
-### Control revisions across linked documents
-
-Give the interface sheet and every referenced drawing a revision. When geometry, load, utility or state changes, identify affected documents and tests. Do not update only the general arrangement while leaving the mounting or control record unchanged. A revision-impact table helps procurement understand whether a change affects fabrication, transport, commissioning or spare parts.
-
-### Close interfaces with evidence
-
-Define what closes each item: approved drawing, calculation, inspection, measured record, test result or signed decision. A meeting note saying agreed may support context but should not replace the required technical record. Preserve open deviations and temporary concessions with owners, expiry conditions and the event that returns the interface to its intended baseline.
-
-![Controlled electrical document stack](/images/editorial/electrical-document-stack.svg)
-
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Document workflow prompt; it does not provide wiring or control logic.*
+*Reference photograph showing the relationship between elevated equipment and a building face. It cannot establish mounting clearances, permitted service access or the envelope of a different configuration.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## Release integration only after boundary closure
+## Compare the consequences of two machine proposals
 
-### Balance early packaging with interface maturity
+### Compare more than the forming specification
 
-Early layout work can reveal access and transport conflicts, but committing attachment or utility details before loads and states are controlled creates rework and hidden risk. Waiting for a complete final design can also delay useful coordination. The trade-off is staged maturity: reserve envelopes, close critical loads and ownership, then release detail in controlled gates. Every early dimension should say what it can and cannot authorize.
+Consider two hypothetical machines proposed for the same panel profile. One has its cabinet beside the forming frame; the other places auxiliary equipment near an end. Even if their quoted overall lengths appear similar, they may present different mounting, service and material-interface questions. The buyer should request the arrangement for each actual proposal rather than carry one integration assumption across both.
 
-The practical trade-off is between early coordination and false precision. A useful record exposes each constraint, interface and unresolved owner; it does not convert preliminary information into an approval.
+The trade-off is not a claim that either layout is better. One may require examination of side access, while the other changes the space near the inlet or outlet. Procurement needs to see those consequences before price comparison treats the two forming lines as interchangeable parts of the lifting system.
 
-For topic-location only, the <a href="https://www.iso.org/standard/51528.html" target="_blank" rel="noopener noreferrer">ISO official record for ISO 12100</a> identifies the standard's scope as machinery design, risk assessment and risk reduction. The record does not provide the controlled text, prove applicability, verify an ARCLIFT configuration, settle destination rules or approve a site.
+### Trace a proposed offset through the interfaces
+
+Suppose a forming machine is proposed farther along its support structure to clear a cabinet. That proposed change may also alter the outlet location, mass position and relationship to the feeding equipment. Resolving the cabinet conflict therefore creates several linked questions. The original support review cannot simply be retained because the same machine is still being used.
+
+Record the proposal and let the responsible designers decide whether it is viable and what verification is required. This is an example of why an interface change needs coordinated review; it is not a recommendation to reposition equipment in the field. Use the [configuration-change guide](/blog/roll-forming-lift-configuration-change-control/) once the arrangement has an agreed baseline.
+
+### Distinguish a measured fit from a complete mounting answer
+
+| Finding at the interface | What it answers | What still needs resolution |
+| :-- | :-- | :-- |
+| Overall machine envelope is identified | Which space the stated arrangement occupies | Mounting regions, service envelopes and support requirements |
+| Frame reference points are coordinated | How the two drawings relate geometrically | Connection design and permitted variation |
+| Machine mass and included items are identified | What the declared mass describes | Applicable mass positions, load cases and combined-system review |
+| Cabinet access is shown clear | Whether the specified opening task has space in that state | Other maintenance tasks and access arrangements |
+| Outlet location matches the survey request | Which geometric proposal is being assessed | Receiving arrangement, equipment conditions and project review |
+| Utility crossing is assigned to an owner | Who must develop that interface | The actual routing, control integration and verification |
+
+The table keeps partial answers useful without treating them as final approval. A buyer can progress a specific unresolved item instead of asking for a vague confirmation that the machine fits. Each additional answer should remain tied to the same proposed configuration.
+
+<!-- audit-section: project-checklist -->
+## Request the inputs needed before integration
+
+### Collect a package describing the actual interfaces
+
+- Identify the forming machine, its revision and whether it is existing equipment or a new supply proposal.
+- Provide frame geometry, proposed mounting regions and a common coordinate reference for the supporting structure.
+- State the panel profile, material and coil/feed arrangement that define the intended production task.
+- Record cutter or outlet height and position relative to the machine frame, keeping platform height separate.
+- Identify machine mass, included attachments and the party responsible for centre-of-gravity and support inputs.
+- Show service access, cabinet openings and component-removal spaces from the applicable equipment information.
+- Mark power, control, hydraulic and other service boundaries between the supplied assemblies.
+- Identify transport and installation states so temporary handling items are not confused with permanent connections.
+- Connect the roof-zone request and ground or floor review to the proposed overall arrangement.
+- State the destination, responsible integration party and documentation still needed for each open interface.
+
+### Agree who resolves an installation conflict
+
+The <a href="https://www.hse.gov.uk/work-equipment-machinery/are-you.htm" target="_blank" rel="noopener noreferrer">HSE guidance for equipment installers and purchasers</a> emphasizes following the manufacturer's installation information and raising concerns about an unsafe resulting installation. That is Great Britain regulatory context, not a classification or approval of this equipment. It supports identifying responsibility before assembly; project-specific requirements must be established for the destination.
+
+If an actual interface differs from the agreed information, identify the affected parts and obtain the responsible technical response. Drilling, welding, spacing or moving components cannot be treated as routine solutions from this article. The commercial arrangement should make clear who can answer the technical query and who must accept any resulting change in supply or schedule.
+
+![Raised equipment with a long platform near steel building members](/images/equipment/coil-real-handling.webp)
+
+*Reference photograph showing an elevated equipment arrangement near a building structure. It does not reveal its attachment design, support reactions or compatibility with a buyer's forming line.*
 
 <!-- audit-section: limitations-not-fit -->
-### Do not use the interface sheet as a design
+### Recognize when the integration concept may not fit
 
-This framework cannot design a mount, calculate structure, select fasteners, issue wiring, define safety logic or approve integration. It may not fit a project where the carrier structure or forming configuration is still unidentified. Keep fabrication and procurement on hold when governing loads, datums, states or decision owners are missing, even if a conceptual drawing looks complete.
+The concept may not fit if the machine's intended mounting and support information is unavailable, the proposed arrangement blocks essential service tasks, or the inlet and outlet relationships cannot be reconciled with the project. An unresolved design owner is also a procurement problem: two suppliers' separate scopes do not establish a complete integration responsibility.
+
+This guide provides no mounting dimensions, fastener selections, weld details, tolerance allowances or structural calculations. An adaptor, a different machine position or a substituted forming line is a proposal for technical review, not an assumed remedy. Preserve the unresolved physical issue when considering alternatives.
 
 <!-- audit-section: cta-editorial-note -->
-### Send an interface review package
+### Request a review of the machine-to-lift boundary
 
-Provide controlled forming-module and carrier drawings, state definitions, data-request sheets, load status, utility and control boundaries, service envelopes, responsibility matrix and open-item register. Ask each appointed specialist to return the document and test required for closure. Keep all early layouts clearly marked as preliminary coordination records.
-
-Send the site, destination, transport, work-zone and ground or floor records through a controlled project channel. The final, signed, project-specific package must identify open items and responsible reviewers. ARCLIFT can support preliminary selection as an integrated equipment supplier and technical selection and supply partner. Editorial images on this page are planning aids only and cannot replace controlled drawings, calculations, inspections or local review.
+Send ARCLIFT the machine arrangement, mounting information, mass scope, inlet and outlet references, intended roof height and site zone, destination and supply responsibilities. Highlight the physical conflict or missing input that prevents a decision. ARCLIFT acts as an integrated equipment supplier and technical selection and supply partner. Final project-specific connection design, installation and release decisions belong to the appointed technical parties. The reference photographs provide editorial context and cannot replace the actual machine information or establish a compatible mounting arrangement.
 
 ## FAQ
 
-#### Is a mounting drawing enough for interface review?
+#### Does matching machine weight establish compatibility?
 
-No. The review also needs controlled states, loads, carrier data, utilities, controls, guarding, material paths, service access, owners and closure evidence.
+No. Mass is one input. Its position, support arrangement, mounting regions, material path and service access also need review for the actual forming machine and lifting configuration.
 
-#### Who calculates the carrier or lifting structure?
+#### Can an existing floor-mounted roll former be used on a lift?
 
-The project should appoint the responsible specialist and define the controlled inputs and signed output. Equipment data supply does not transfer that calculation responsibility.
+It requires a specific review. Identify the machine and obtain the relevant mounting, support and integration information. Its previous use on a floor does not establish suitability for an elevated arrangement.
 
-#### Can preliminary geometry be used for procurement?
+#### Is the mounting review the same as chassis integration?
 
-Only within an explicit gate and assumption boundary. Critical attachment, load, utility and access interfaces should remain on hold until the responsible parties release them.
+No. This review concerns the forming line and its supporting lift structure. Chassis integration addresses the separate relationship between the vehicle and the upper assembly. Their inputs must be coordinated where they interact.
 
-#### What changes reopen the interface review?
+#### Who should resolve a mounting discrepancy found on arrival?
 
-Changes in orientation, state, forming module, carrier, load, support, material route, utilities, controls, guarding or service access can affect the controlled boundary.
+Refer it to the parties responsible for the affected machine, supporting structure and integration design. The buyer should identify the discrepancy and required decision without authorizing an improvised physical modification.

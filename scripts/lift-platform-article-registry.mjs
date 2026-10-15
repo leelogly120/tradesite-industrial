@@ -57,14 +57,14 @@ export const LIFT_PLATFORM_ARTICLES = Object.freeze([
   ['crawler-roll-forming-lift-work-zone-relocation', 'Relocating Crawler Roll-Forming Lifts Between Work Zones', 'crawler'],
   ['truck-mounted-forming-lift-jobsite-setup-review', 'Jobsite Setup Review for Truck-Mounted Forming Lifts', 'truck'],
   ['truck-mounted-lift-destination-chassis-sourcing', 'Destination Chassis Sourcing for Truck-Mounted Lifts', 'truck'],
-  ['truck-mounted-forming-lift-road-transport-documents', 'Road Transport Documents for Truck-Mounted Forming Lifts', 'truck'],
+  ['truck-mounted-forming-lift-road-transport-documents', 'Road Transport Review for Truck-Mounted Forming Lifts', 'truck'],
   ['lifted-roll-forming-line-mounting-interface-review', 'Mounting Interface Review for Lifted Roll-Forming Lines', 'interface'],
   ['roof-level-roll-forming-lift-coil-loading-plan', 'Coil Loading Plan for Roof-Level Roll-Forming Lifts', 'interface'],
   ['elevated-roll-forming-roof-panel-handover-zones', 'Roof Panel Handover Zones for Elevated Roll Forming', 'roof-level'],
   ['roof-level-roll-forming-weather-hold-points', 'Weather Hold-Point Planning for Roof-Level Roll Forming', 'roof-level'],
-  ['lift-roll-forming-system-commissioning-plan', 'Commissioning Plan for Lift-and-Roll-Forming Systems', 'interface'],
-  ['roll-forming-lift-technical-document-package', 'Technical Document Package Guide for Roll-Forming Lifts', 'interface'],
-  ['large-deck-crawler-platform-vs-basket-lift', 'Large-Deck Crawler Platform vs Basket Lift Selection', 'large-deck'],
+  ['lift-roll-forming-system-commissioning-plan', 'Roll-Forming Lift Commissioning: Prepare the Interfaces', 'interface'],
+  ['roll-forming-lift-technical-document-package', 'Roll-Forming Lift Documents: Read and Compare Offers', 'interface'],
+  ['large-deck-crawler-platform-vs-basket-lift', 'Large-Deck Crawler Platforms vs Basket Lifts for Work', 'large-deck'],
   ['large-crawler-work-platform-building-entry-survey', 'Building Entry Survey for Large Crawler Work Platforms', 'large-deck'],
   ['large-deck-crawler-platform-work-zone-layout', 'Work-Zone Layout Guide for Large-Deck Crawler Platforms', 'large-deck'],
   ['large-deck-platform-wall-panel-access-planning', 'Wall-Panel Access Planning with Large-Deck Platforms', 'large-deck'],
@@ -75,8 +75,8 @@ export const LIFT_PLATFORM_ARTICLES = Object.freeze([
 export const LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
 
 export const DAILY_LIFT_PLATFORM_ARTICLES = Object.freeze([
-  ['roll-forming-lift-configuration-change-control', 'Change Control for Roll-Forming Lift Configurations', 'interface'],
-  ['roll-forming-lift-destination-receipt-plan', 'Destination Receipt Plan for Roll-Forming Lift Systems', 'logistics'],
+  ['roll-forming-lift-configuration-change-control', 'Roll-Forming Lift Changes: Recheck the Right Interfaces', 'interface'],
+  ['roll-forming-lift-destination-receipt-plan', 'Roll-Forming Lift Delivery: Receipt and Assembly Readiness', 'logistics'],
 ].map(([slug, title, cluster]) => Object.freeze({ slug, title, cluster, diagram: `${slug}.svg` })));
 
 export const DAILY_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(DAILY_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));

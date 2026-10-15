@@ -20,6 +20,16 @@ const expectedArticles = [
   {"slug":"crawler-roll-forming-lift-ground-support-review","date":"2026-08-07","images":["transport-real-stowed","entry-real-clearance","transport-real-carrier","coil-real-handling"]},
   {"slug":"elevated-roll-forming-roof-panel-handover-zones","date":"2026-08-07","images":["coil-real-panel","coil-real-handling","entry-real-clearance","coil-real-module"]},
   {"slug":"crawler-roll-forming-lift-access-route-survey","date":"2026-08-07","images":["entry-real-clearance","transport-real-stowed","transport-real-cover","transport-real-loading"]},
+  {"slug":"roof-zone-survey-roll-forming-lift-selection","date":"2026-08-07","images":["entry-real-clearance","coil-real-handling","coil-real-panel","transport-real-stowed"]},
+  {"slug":"lifted-roll-forming-line-mounting-interface-review","date":"2026-08-07","images":["coil-real-module","coil-real-cover","entry-real-clearance","coil-real-handling"]},
+  {"slug":"truck-mounted-roll-forming-payload-allocation-review","date":"2026-08-13","images":["coil-real-cover","coil-real-module","transport-real-carrier","transport-real-stowed"]},
+  {"slug":"lift-roll-forming-system-commissioning-plan","date":"2026-08-07","images":["coil-real-handling","coil-real-module","entry-real-clearance","coil-real-panel"]},
+  {"slug":"roll-forming-lift-destination-receipt-plan","date":"2026-08-08","images":["transport-real-cover","transport-real-loading","coil-real-module","transport-real-carrier"]},
+  {"slug":"roll-forming-lift-configuration-change-control","date":"2026-08-08","images":["entry-real-clearance","coil-real-module","coil-real-cover","coil-real-panel"]},
+  {"slug":"roll-forming-lift-technical-document-package","date":"2026-08-07","images":["coil-real-module","entry-real-clearance","transport-real-cover","coil-real-panel"]},
+  {"slug":"truck-mounted-forming-lift-road-transport-documents","date":"2026-08-07","images":["transport-real-carrier","transport-real-cover","transport-real-stowed","coil-real-cover"]},
+  {"slug":"crawler-ceiling-wall-panel-platform-project-data","date":"2026-07-24","images":["entry-real-cover","entry-real-interior","entry-real-approach","transport-real-stowed"]},
+  {"slug":"large-deck-crawler-platform-vs-basket-lift","date":"2026-08-07","images":["entry-real-approach","entry-real-cover","entry-real-interior","transport-real-stowed"]},
 ];
 const expectedDimensions = {
   'transport-real-cover': [744, 419],
@@ -62,7 +72,7 @@ function assertPhotoDisclosure({ alt, caption }, context) {
 }
 
 describe('approved reference photographs', () => {
-  it('limits the photo replacement to thirteen fixed articles and twelve distinct photograph URLs', async () => {
+  it('limits the photo replacement to twenty-three fixed articles and twelve distinct photograph URLs', async () => {
     expect(REFERENCE_PHOTO_ARTICLES).toEqual(expectedArticles.map(({ slug, images }) => ({
       slug,
       cover: [photoUrl(images[0])],
