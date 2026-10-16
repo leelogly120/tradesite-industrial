@@ -1,180 +1,156 @@
 ---
 title: "Panel Profile Data for a Roll-Forming Tooling Review"
-description: "Prepare a profile, coil and roof-system input record before requesting a project tooling proposal; it does not promise line capability or panel performance."
+description: "Connect roof panel profiles, material records and samples to the roll former proposed for a lift, with clear tooling, machine and roof-system review boundaries."
 date: 2026-07-27
-updated: 2026-10-01
+updated: 2026-10-16
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "tooling review", "roof panels", "project data"]
-coverImage: "/images/editorial/profile-input-sheet.svg"
-coverAlt: "Blank panel profile and material fields arranged as a tooling-review input record"
-coverCaption: "Representative planning material. AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Cover is a representative editorial concept only; it is not source evidence or an approved drawing."
+coverImage: "/images/equipment/coil-real-panel.webp"
+coverAlt: "Red elevated equipment beside a building with a long light-coloured panel-shaped object"
+coverCaption: "Reference photograph showing red equipment beside a building and a long panel-shaped object. It does not establish profile dimensions, material identity, forming quality or an approved roof system."
 draft: false
 ---
 
-A profile drawing can look complete while leaving material condition, sample status and approval ownership unresolved. Put those gaps beside the controlled geometry before a tooling discussion advances. The resulting **tooling-review input record** answers one preliminary question: are the profile, coil, sample and responsibility inputs mature enough for a project-specific proposal to begin? It stops there. Line selection, feed and electrical design, roof-system approval, panel performance and acceptance results remain outside this record.
+A roof-panel profile is part of the purchasing decision for a roll-forming lift because the lift carries a particular forming machine, and that machine must process the proposed material into the required panel. A drawing that identifies the roof shape does not establish the tooling, feed arrangement, cutter or machine package. Buyers need to connect these items before treating a roll former as an interchangeable load on an elevated system.
+
+This guide follows the panel from its intended roof connection back to material and tooling inputs. Use the [complete line specification guide](/blog/roll-forming-line-specification-long-span-roof-panels/) for the wider machine scope and the [mounting-interface review](/blog/lifted-roll-forming-line-mounting-interface-review/) for its connection to the lift. The [roof-level forming overview](/blog/roof-level-roll-forming-long-panels/) explains the production concept; none of these pages confirms that a particular machine is compatible.
 
 **Contents**
 
-- Define the finished-panel decision
-- Build the profile and coil input record
-- Request a tooling-review package
-- Set the release boundary
+- Connect the required panel to the proposed machine
+- Read material and sample evidence together
+- Compare two tooling procurement situations
+- Prepare a bounded tooling enquiry
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Define the finished-panel decision
+## Connect the required panel to the proposed machine
 
-The buyer is not asking a generic machine to “make this shape.” The buyer is asking whether a controlled set of inputs is mature enough to enter a tooling proposal. That distinction keeps a profile review separate from the broader [roll-forming line specification](/blog/roll-forming-line-specification-long-span-roof-panels/) and from the site decision described in the [roof-level long-panel guide](/blog/roof-level-roll-forming-long-panels/).
+### Start with the mating features
 
-### Separate roof-system approval from line review
+Identify which parts of the profile interact with adjacent sheets, clips, fasteners or another specified roof component. Record the roof-system drawing that governs those relationships. Cover width, rib shape, returns and edge details describe different aspects of the panel; a familiar profile name cannot replace their dimensions and interpretation. Where the roof-system designer has not selected a detail, show the unresolved choice to the machine reviewer.
 
-A roof system has interfaces that extend beyond the roll-formed shape: supporting construction, clips or fasteners, laps, end conditions, penetrations, drainage, installation method and the destination's approval path. A tooling review can consider whether a documented profile and material can be taken into a project proposal. It cannot transfer responsibility for the roof assembly to the line discussion.
+The distinction matters commercially. A proposal based on an approximate cross-section may answer whether further discussion is worthwhile, while a tooling commitment needs the agreed geometry and material basis. Label those two response types so a budget discussion does not become an assumed promise to reproduce every detail of an existing roof.
 
-Keep two approval tracks on the record. One track owns the roof-system requirements and the evidence demanded by the project. The other owns the tooling proposal, trial conditions and deviations. If those tracks use the same word—such as “tolerance” or “approved”—identify which document and which party give that word meaning.
+### Locate the input and output boundaries
 
-### Identify the controlled profile revision
+Ask which proposed components receive strip, form the section, cut the panel and present it to the next handling arrangement. The boundaries may involve separately supplied equipment. A tooling drawing can describe the forming result without settling the inlet orientation, cutter interface or outlet position of the complete line. Those unresolved items should remain visible in the lift project.
 
-Give the profile drawing a revision, date, units and document owner. Mark the nominal cover width, overall developed geometry, rib and return features, stiffeners, hems, seams and any region that must mate with another component. A dimension without its datum or interpretation rule can create competing readings even when the number itself is clear.
+For an elevated installation, the outlet belongs in the roof-zone geometry review. Do not substitute the nominal platform height for the actual cutter or panel-outlet reference. A change to the selected machine can alter the physical arrangement that was used for a preliminary lift discussion, even when the requested panel remains unchanged.
 
-Do not replace a controlled drawing with a marketing image, sample photograph or unversioned CAD export. A photo can help a reviewer understand intent, but perspective and lens distortion make it a poor measurement record. If the profile is derived from a roof-system document, state which revision controls the tooling request and which later changes require a new review.
+### Separate an existing machine from a proposed machine
 
-### Record handedness and end-detail intent
+If the buyer owns a roll former, identify its current assemblies, available drawings, alterations and documented material scope. Previous production can be useful evidence when its conditions are known, but it does not establish suitability for a new roof panel or for installation on a lift. Missing machine information is an integration question as well as a tooling question.
 
-Some profile features are symmetric; others are not. Record the viewing direction, panel handedness and how the drawing relates to the feed direction. Describe whether the cut end is square, shaped, notched, punched or left for another process, but do not assume that a downstream operation is part of the roll-forming scope.
+If a new line is being purchased, request a clear account of what the tooling offer includes. Forming stands, cutting equipment, change parts, samples and support arrangements should not disappear inside the phrase complete line. The lift reviewer needs the eventual machine package identified; the tooling reviewer needs the agreed panel and material. Neither review can supply the other's missing evidence.
 
-End details also affect sample planning. A short sample intended only to inspect a cross-section is different from a sample intended to review cut-end condition or an assembly interface. Name the intended observation instead of asking for a sample that is expected to prove every downstream result.
+![Blue machine module suspended beside a red lifting structure in a yard](/images/equipment/coil-real-module.webp)
 
-![Fictional tooling-review sheet with blank profile material and coil fields](/images/editorial/profile-input-sheet.svg)
-
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Illustrative input sheet; not an approved ARCLIFT profile, tooling drawing or performance commitment.*
+*Reference photograph showing a blue machine module suspended beside a red lifting structure. The visible module is not a coil; the image does not establish its tooling, mounting dimensions or compatibility.*
 
 <!-- audit-section: conditions -->
-## Build the profile and coil input record
+## Read material and sample evidence together
 
-The record should connect the finished-panel definition to the actual material proposed for review. A nominal profile on one page and an unrelated coil label on another leave the reviewer to infer the link. Put the controlled identifiers, stated conditions and unresolved questions together.
+### State the thickness and coating basis
 
-### Cover width, thickness and tolerance fields
+Give the material designation, ordered condition, thickness basis and coating information from the actual project records. Identify whether a thickness statement includes coating and who resolves inconsistencies between the order, certificate and sample label. A nominal thickness alone leaves a reviewer guessing about the material being offered for assessment.
 
-Separate nominal values from acceptance conditions. Record the drawing's cover width and the material thickness basis used by the project, then identify where tolerance requirements originate. Do not invent a universal tolerance because a similar profile appears elsewhere. State whether coating is included in a quoted thickness and whether the value comes from a purchase specification, mill record, roof-system document or preliminary assumption.
+The official <a href="https://store.astm.org/a0792_a0792m-25a.html" target="_blank" rel="noopener noreferrer">ASTM A792/A792M record</a> concerns aluminum-zinc alloy-coated steel sheet. It identifies a material-standard context, not the certificate for a buyer's coil. Referencing it does not confirm a material grade, machine capability or roof-system approval. Use the specification actually required by the project and retain its edition and ordered condition.
 
-Add fields for cross-section measurement method, straightness, camber, twist, surface marking, burr and cut-end observations only when the project needs them. Every field should have an owner, units and a planned evidence source. An empty field marked “project team to confirm” is safer than a convenient number without provenance.
+### Distinguish a display sample from a review sample
 
-### Grade, yield-data and coating evidence
+A short panel may show the intended shape or surface appearance. It may also have an unknown material source, an uncertain production date or no link to the machine under consideration. Describe what the sample is supposed to answer before asking a supplier to use it. A useful label connects the sample to its drawing, material and known production conditions.
 
-Material designation is more than a familiar standard number. Where ASTM A792/A792M is called up, its official record distinguishes grades or designations, mechanical properties, coating mass and bend testing. The current project still needs to identify which designation and ordered condition apply. The <a href="https://store.astm.org/a0792_a0792m-25a.html" target="_blank" rel="noopener noreferrer">ASTM A792/A792M-25a official standard record</a> is useful for locating scope; it is not the buyer's material certificate and not an ARCLIFT compliance claim.
+Keep a photographed sample separate from a measured sample. Photographs can explain an edge or a surface concern, but perspective cannot establish dimensions. If the project expects observations about straightness, twist, surface marking or cut ends, agree who defines the observation method and acceptance basis. The article supplies none of those limits.
 
-Direction can matter in rolled sheet. The <a href="https://www.nist.gov/programs-projects/ncal-multiaxial-material-performance" target="_blank" rel="noopener noreferrer">NIST material-performance page</a> describes research around direction-dependent material behaviour. Use that as a reason to request project material data, not as a basis for prescribing a test or predicting forming behaviour.
+### Connect coil geometry to the feed discussion
 
-Capture the ordered grade or designation, available yield and tensile information, elongation basis, coating description, surface condition and certificate status. If any value is provisional, label it provisional. Do not claim equivalence between ASTM, EN or another system unless project documentation and a competent reviewer establish the comparison.
+Coil width, inner and outer dimensions, mass information, winding direction and packaging status belong with the proposed material identity. They help the responsible parties identify what the feed and handling review must address. They do not select an uncoiler or authorize loading. The [coil-loading boundary guide](/blog/roof-level-roll-forming-lift-coil-loading-plan/) handles the relationship to the elevated machine.
 
-The comparison needs to follow the material actually intended for purchase, not just a designation copied from an early enquiry. Ask whether the proposed sample, the material evidence and the purchase description refer to the same condition. If they do not, a reviewer can still use the earlier work for its stated purpose, but should not silently carry its conclusion forward.
+For example, a buyer may send a finished sample that is familiar to the tooling supplier while proposing a differently documented coil for the project. The supplier should identify which sample observations remain relevant and which material questions are open. Treating the shape as familiar should not erase the difference between the sample material and the intended production input.
 
-### Coil width, ID, OD and mass fields
+![Raised red equipment beside building steelwork with coils visible at ground level](/images/equipment/coil-real-handling.webp)
 
-The coil record should provide width, inside diameter, outside diameter and mass as controlled project inputs, plus the evidence source and variation expected across deliveries. Those fields inform later handling and feed reviews; they do not by themselves choose a decoiler, loading device or line.
-
-Also record edge condition, telescoping or packaging restrictions, eye orientation, identification method and surface-protection needs. Keep lifting and storage decisions in their own controlled package. The companion [coil-route planning article](/blog/coil-handling-roll-forming-line-feeding-plan/) addresses that boundary without turning this tooling record into a lifting plan.
-
-![Profile coil and sample inputs feeding a controlled tooling review](/images/editorial/profile-tooling-decision-map.svg)
-
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Project-review workflow; final suitability requires signed project documentation.*
-
-<!-- audit-section: project-checklist -->
-## Request a tooling-review package
-
-Before issuing the record, check that it is useful to each reviewer and does not smuggle assumptions into the proposal. A concise release checklist can include:
-
-- Controlled **profile geometry**, material thickness and drawing revision with named owners.
-- **Roof** assembly requirements that affect the panel, clearly separated from tooling responsibility.
-- Coil width, ID, OD, mass, edge and **feed** orientation with evidence status.
-- Sample panel and sample coil status, including the observation each sample is intended to support.
-- Cut **length**, end-detail intent and downstream process boundaries.
-- Available site **power** or electrical-interface status, explicitly reserved for a separate review.
-- Material transport, storage and protected **route** conditions where they affect sample integrity.
-- Destination **documentation requirements**, units, language and applicable project approval path.
-- Secure access rules for drawings and a redacted public identifier rather than customer or site identity.
-
-### Sample-panel and sample-coil status
-
-State what physically exists. A reference panel may be available, unavailable, damaged, coated differently or taken from an earlier revision. A sample coil may match the intended purchase condition, represent only a trial material or not yet be ordered. Tie each sample to its record; never imply that visual similarity proves chemical, mechanical or coating identity.
-
-If a trial is proposed, define what material will be used, who supplies it, how it is identified and what observations will be recorded. A trial on substitute material can still answer a limited setup question, but only if the record says what it cannot answer.
-
-### Trace changes through the tooling question
-
-A revision can alter the meaning of an earlier sample without making that sample worthless. Compare each proposed change with the drawing, purchase description, trial material and acceptance basis that supported the previous discussion. This is a question map for the project reviewers, not a prediction that a particular change will force new tooling or a new trial.
-
-*On smaller screens, scroll the table sideways to read all three columns.*
-
-| Changed input | Earlier evidence that may no longer cover the question | Review to reopen before relying on it |
-| --- | --- | --- |
-| Profile drawing revision, including a mating feature or end detail | A sample measured against the previous drawing says nothing conclusive about the revised feature. | Identify the affected geometry and ask whether the tooling proposal, sample objective and measurement reference still match. |
-| Ordered material designation or mechanical condition | Forming observations belong to the material condition actually sampled. | Compare the intended purchase description with the sampled material evidence; ask which observations remain relevant and which need project review. |
-| Coating description or thickness basis | A visual sample or an unqualified thickness figure cannot establish the revised coated input. | Clarify the ordered coating and thickness convention, then revisit the input assumptions and observation plan. |
-| Sample source or sample identification | An unidentified panel or coil cannot be tied confidently to the proposed purchase condition. | Establish provenance and limit any earlier trial conclusion to the material and drawing it actually used. |
-| Acceptance source or measurement method | A result judged by an earlier method may not answer a newly defined acceptance question. | Ask the drawing and roof-system authorities which document now controls the observation; keep tooling and roof approval separate. |
-
-For example, assume the profile drawing is unchanged but the project later specifies a different material condition or coating from the coil used for an earlier short sample. The old panel may still show how a feature on that drawing was interpreted and what was observed on that particular sample. It cannot, merely because the outline looks similar, demonstrate how the newly ordered material will form or whether it meets the new purchase description. The reviewer can retain the old observation with its original material and method attached, then decide what further comparison, material evidence or trial—if any—is needed. A new tooling design is not an automatic consequence of the change.
-
-### Unknowns reserved for signed tooling
-
-Roller material, number of stations, pass schedule, drive arrangement, cut concept, line speed, profile tolerance and the likely outcome remain unknown until project-specific review. Do not fill those blanks from another machine page or from the [ARC-RF8 product context](/products/arc-rf8-roll-forming-machine/). A product page can orient the discussion; it is not a signed tooling schedule.
-
-For each unresolved design choice, ask what evidence would allow it to be proposed and what must wait for a later decision. An early conversation should not be quoted as a fixed machine configuration.
-
-### Drawing and document ownership
-
-Record who may issue, revise and approve each input. The profile owner may not be the roof-system approver; the material purchaser may not own the tooling trial; the equipment supplier may not own destination approval. A document matrix should make those separations visible.
-
-Define the permitted distribution, file format, units, revision convention and retention expectation. Use anonymised document identifiers during preliminary review. Customer names, project locations, contacts and traceable drawing identifiers should not appear in public forms, analytics or editorial material.
+*Reference photograph showing ground-level coils, raised equipment and surrounding building steelwork. It does not connect a specific coil certificate or sample to the visible machinery.*
 
 <!-- audit-section: evidence-tradeoffs -->
-An input sheet is useful when a buyer can tell which drawing and coil a conclusion belongs to. The trade-off is between carrying forward an earlier observation quickly and losing the conditions that made it meaningful. A borrowed value may make the sheet look complete while hiding a mismatch. Keeping the earlier sample's identity, material condition and observation method attached to it preserves the useful evidence; an honest blank points to the precise question still open.
+## Compare two tooling procurement situations
 
-![Conceptual split between roof-system approval and tooling proposal responsibilities](/images/editorial/roof-system-tooling-boundary.svg)
+### Keep the roof requirement constant
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Conceptual responsibility split; contracts define final responsibilities.*
+Consider a hypothetical buyer assessing an existing roll former and a newly proposed line for the same roof requirement. The existing machine offers a physical object to inspect, but its current drawings or tooling history may be incomplete. The new line can be specified around the requirement, but its final assemblies and mounting information may still be developing. These different constraints affect what can be established about the tooling and lift interface. Neither route wins simply because one already exists.
+
+Compare both routes against the same profile revision, material basis and roof-system responsibility. Otherwise a seemingly simpler offer may quietly assume a different panel detail or exclude the cutter and feed components. The comparison should expose those differences before lift compatibility is discussed as a settled result.
+
+### Ask a different question for each evidence gap
+
+| Evidence presented | What it can help explain | Question still requiring an answer |
+| :-- | :-- | :-- |
+| Controlled profile drawing | Intended cross-section and mating details | Which material and acceptance basis accompany it? |
+| Existing machine with production history | The identified machine and recorded prior output | Do those records describe the current tooling and proposed material? |
+| Sample panel with incomplete identification | Visible shape and surface concerns | Which observations can be used without a material and process link? |
+| New tooling proposal | The supplier's proposed scope and assumptions | Which feed, cutting and change components are included? |
+| Coil certificate linked to the order | Documented material identity and properties | Does it correspond to the sample and proposed production input? |
+| Machine arrangement drawing | Equipment envelope and inlet/outlet references | Which revision will the mounting and lift reviewers receive? |
+
+### Follow a material change without predicting its outcome
+
+Suppose the roof geometry stays unchanged but the intended material supply changes. The buyer should identify the old and new material records, the sample evidence affected and the parties who must review the change. It would be premature to announce either that the same tooling will work or that new tooling is inevitable. Those are conclusions for the actual technical review.
+
+Also identify the downstream questions that depend on the changed input. Coil handling may need different information, the trial basis may need revision, and the supplier may need to amend its exclusions. Keep these consequences separate from the roof-system designer's decision. A tooling response does not establish watertightness, structural performance or installation suitability.
+
+![Elevated red equipment beside a building with ground supports and nearby coils](/images/equipment/entry-real-clearance.webp)
+
+*Reference photograph showing equipment, supports and a nearby building. It does not provide a measured outlet reference or confirm that a proposed forming machine fits the roof arrangement.*
+
+<!-- audit-section: project-checklist -->
+## Prepare a bounded tooling enquiry
+
+### Send information that explains the physical proposal
+
+The first package should let the reviewer identify the panel, proposed material and machine route without searching through unrelated documents. Use project references rather than customer names in broadly circulated copies. Mark estimates and unresolved items explicitly.
+
+- Provide the controlled panel profile, roof-system reference and the owner of mating details.
+- Identify material designation, thickness basis, coating and the source of each stated property.
+- Link sample panels and sample coils to the observations requested and their known history.
+- State whether the forming machine is existing, newly proposed or still undecided.
+- Show the requested outlet height reference and roof receiving relationship where these affect the machine arrangement.
+- Identify coil delivery and feed route assumptions without prescribing the handling method.
+- Note ground or floor and support-space constraints that may affect the proposed machine package.
+- List site wind or weather questions affecting outdoor material exposure for separate project review.
+- Record available power information and the party responsible for the electrical interface.
+- State destination, transport envelope and documentation requirements relevant to the final supplied assembly.
+
+### Define the reply before comparing prices
+
+Ask the supplier to distinguish input clarification, a conditional tooling proposal and evidence obtained under an agreed trial. Each is useful at a different stage. The reply should identify its profile and material basis, included components, exclusions and unresolved physical interfaces. A lower tooling price is not comparable if it excludes the cutter or assumes a different sample programme.
+
+Keep commercial changes tied to their physical reason. If the machine package changes after the tooling discussion, send its new arrangement to the mounting and lift reviewers. If only a document label changes, establish whether the underlying material or geometry also changed. This prevents both unnecessary repetition and the silent reuse of evidence for a different object.
 
 <!-- audit-section: limitations-not-fit -->
-## Set the release boundary
+### Recognize a request that cannot advance
 
-This preliminary record may not fit any decision that authorises production, purchases coil, approves a roof system or releases a machine. Its useful boundary is earlier: it shows where evidence exists, where a conditional inference is reasonable and where the project must stop.
-
-### Trial evidence versus roof performance
-
-A tooling trial can record observations under defined material, configuration, method and measurement conditions. Those observations do not establish watertightness, wind resistance, fire behaviour, corrosion performance or installation quality for a roof. Those outcomes depend on the complete roof system, project conditions and the applicable approval process.
-
-Write the trial objective narrowly. “Record cross-section measurements against the signed profile drawing using the agreed sample” is bounded. “Prove the roof panel works” is not. If an observation is outside the trial method, mark it outside scope rather than converting it into a favourable conclusion.
-
-### Approval gates and deviations
-
-Name the gate that allows the proposal to advance: complete input record, controlled material evidence, drawing ownership, trial protocol or another signed condition. A deviation should identify the affected revision, observation, decision owner and permitted next step. Silence is not closure.
-
-Changes to profile geometry, material condition, coating, thickness basis, sample source or acceptance method should trigger a documented review. Whether a change requires new tooling work or a new trial is project-specific; the article cannot decide it in advance.
-
-### Secure and redacted data transfer
-
-Use a secure project channel and send only the minimum material needed for the tooling-review input record. Redact customer and project identity, commercial details, contacts, site security information and unrelated drawing layers. Use controlled permissions rather than public upload links.
-
-Keep the public discussion generic. A fictional diagram may illustrate field names, but it must not reproduce a project profile, certificate number or drawing identifier. Written, scope-specific approval is required before any project data is reused beyond its controlled purpose.
+The enquiry may not fit a configuration decision when the governing profile is disputed, material identity is missing, samples cannot be linked to their purpose, or no party owns the roof-system requirements. A photograph or familiar profile name cannot close those gaps. Keep the response at the level the available inputs support; do not use this guide to authorize production or installation.
 
 <!-- audit-section: cta-editorial-note -->
-Send only the tooling-review input record through a secure project channel to ARCLIFT as a technical selection and supply partner. Include the controlled profile, material and coil evidence, roof geometry boundary, sample status, destination documentation and the signed owner of each open item. If height, site access, floor or route conditions later affect transport or a roof-level work zone, place them in their own project-specific review rather than this record. This request does not promise suitability, fit, approval, quotation, configuration, availability, result or response time. Every editorial visual on this page is explanatory and cannot replace final signed documents.
+### Request a profile and machine boundary review
+
+Send ARCLIFT the profile revision, material basis, sample status and the existing or proposed machine identity through a controlled project channel. Include the site roof relationship, outlet height reference, destination and transport assumptions that could change the machine package. As a technical selection and supply partner, ARCLIFT can coordinate questions across tooling and lift interfaces. Final compatibility and acceptance require project-specific engineering and commercial confirmation. This editorial guide and its reference photographs explain the questions; they are not trial results or approval of a roof system.
 
 ## FAQ
 
-#### What belongs in a tooling-review input record?
+#### Does a matching profile name establish tooling compatibility?
 
-Include the controlled profile revision, material and coating evidence, coil geometry, handedness, end-detail intent, sample status, acceptance sources, document owners and open items. Label assumptions and unknowns rather than converting them into fixed values.
+No. The controlled geometry, material condition, machine identity and agreed evidence matter. Similar commercial names can leave different edge details, coating conditions or acceptance expectations unresolved.
 
-#### Does a profile drawing prove line capability?
+#### Can an existing roll former be assessed for a lift project?
 
-No. A drawing defines an intended geometry only when its revision, dimensions and interpretation are controlled. Line configuration and outcome remain subject to project-specific tooling review, material evidence and any agreed trial.
+Its current drawings, assembly identity, alterations and production records can support an assessment. Compatibility with the proposed lift, material and roof arrangement still needs specific review; existing ownership does not establish it.
 
-#### Why is coil data needed with the profile?
+#### What should accompany a sample panel?
 
-Material condition and coil geometry connect the finished shape to a real project input. They also reveal questions that belong in separate handling and feed reviews. The data does not, by itself, select equipment.
+Provide its purpose, drawing revision, material identity and known production history. Identify which observations are requested and which information is unavailable, so appearance is not mistaken for a complete technical record.
 
-#### Who approves roof-system performance?
+#### Does a tooling trial prove roof performance?
 
-The signed project documents must identify that authority. A tooling supplier's trial record and an equipment supply discussion do not replace the roof-system designer, relevant specialists, project owner or destination approval process.
+No. A trial addresses the questions defined by its agreed conditions and observations. The complete roof assembly, installation and project approval remain separate responsibilities.

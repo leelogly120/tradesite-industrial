@@ -1,183 +1,156 @@
 ---
 title: "Electrical Interface List for a Roll-Forming Project"
-description: "Define power, signal, safety and handover interfaces before an approved electrical schedule; this guide does not specify wiring, control brands or compliance."
+description: "Review power and control interfaces for an elevated roll-forming machine, including ground supply, changing service routes, separate suppliers and design scope."
 date: 2026-07-27
-updated: 2026-10-03
+updated: 2026-10-16
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "electrical interfaces", "control handover", "project documentation"]
-coverImage: "/images/editorial/electrical-interface-boundary.svg"
-coverAlt: "Conceptual boundary between site supply, a coordinated machine group, and handover systems"
-coverCaption: "Conceptual planning material. AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Cover is a representative editorial concept only; it is not source evidence, a wiring diagram or an approved schedule."
+coverImage: "/images/equipment/coil-real-module.webp"
+coverAlt: "Blue machine module suspended beside a red lifting structure in a yard"
+coverCaption: "Reference photograph showing a blue machine module beside a red lifting structure. It does not show wiring, connection requirements, control functions or an integrated electrical design."
 draft: false
 ---
 
-Electrical discussions become unreliable when a buyer asks for a voltage and receives a control-system promise. A useful first artifact is narrower: an **electrical interface list** that names incoming supply, coordinated subsystems, signals, states, isolation responsibilities and document owners before an approved schedule exists. The list does not specify wiring, choose a PLC or HMI, design cybersecurity, certify a safety function or establish compliance. It gives the project team a controlled place to separate known interfaces from design decisions that remain open.
+Putting a roof-panel roll former on a lift changes the electrical discussion. The forming machine, lifting assembly, material feed and roof receiving activity may sit in different places and belong to different suppliers. A voltage label cannot explain how power reaches the proposed arrangement, which functions share information or who owns the design at their boundaries. Buyers need these relationships described before comparing an integrated offer with a collection of separate machines.
+
+This guide develops the electrical and control questions for that procurement decision. The [mounting-interface review](/blog/lifted-roll-forming-line-mounting-interface-review/) covers physical installation, while the [commissioning preparation guide](/blog/lift-roll-forming-system-commissioning-plan/) covers readiness for coordinated verification. The [roll-forming lift overview](/blog/roof-level-roll-forming-long-panels/) supplies the product context: the equipment elevates a compatible forming machine toward the roof receiving level.
 
 **Contents**
 
-- Draw the machine boundary
-- Record power and isolation inputs
-- Build the handover list
-- Release controlled documents
+- Draw the physical boundaries before the signal list
+- Describe power and controls by equipment state
+- Compare integrated and separate supply offers
+- Prepare the electrical review inputs
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Draw the machine boundary
+## Draw the physical boundaries before the signal list
 
-The buyer's immediate decision is whether the electrical interfaces are defined well enough for a project-specific schedule to begin. This is not the whole line specification covered in the [long-panel roll-forming guide](/blog/roll-forming-line-specification-long-span-roof-panels/), and it is not the operating-zone discussion in the [remote-control safety planning article](/blog/remote-control-aerial-platform-safety-planning/).
+### Identify every equipment owner
 
-### Incoming supply point
+Name the forming machine, lift, proposed feed equipment and other powered components actually included in the concept. Mark optional or locally supplied items as such. A supplier may cover the lift while another provides the roll former; the buyer may supply the incoming electrical installation. The quotation needs to identify who coordinates these parties and what each provides for the combined review.
 
-Identify the boundary where the site's electrical installation hands supply to the machine or coordinated machine group. Record the document that defines the point, the responsible party on each side and the information still needed. The boundary should be visible on an interface diagram without pretending to be a wiring diagram.
+Do not infer a shared control system from a shared frame or a drawing showing machines in one line. Equally, separate supply contracts do not remove the need to consider their interactions. The useful first drawing shows equipment identities, physical locations and responsibility boundaries, with unresolved functions stated in words rather than invented circuit detail.
 
-The official consolidated record for <a href="https://webstore.iec.ch/en/publication/71256" target="_blank" rel="noopener noreferrer">IEC 60204-1:2016+AMD1:2021 CSV</a> identifies edition 6.1 and describes electrical, electronic and programmable electronic equipment of machines beginning at the point of connection of the supply. That scope helps locate an interface; it does not prescribe this project's wiring and is not evidence of ARCLIFT or project compliance.
+### Locate incoming power and the moving boundary
 
-### Coordinated subsystems
+Identify where the site supply meets the proposed equipment and which parts of the arrangement change position between storage, setup and elevated work. Ask who develops the service route across each boundary. Record site obstructions, access restrictions and the destination conditions requested by the responsible electrical designer. Cable sizing, protection and routing design remain that designer's work.
 
-A roll-forming project may connect material handling, a feeder, forming stands, cutting equipment, runout support, marking, packaging or other functions. Do not assume that sharing a line layout means sharing one control owner. List each subsystem, its current design status and the physical or informational boundary it presents.
+The official <a href="https://webstore.iec.ch/en/publication/71256" target="_blank" rel="noopener noreferrer">IEC 60204-1 consolidated record</a> describes machine electrical equipment beginning at its supply connection and includes coordinated machine groups within its scope. That helps frame a boundary question; it does not determine the applicable design or demonstrate that this project complies with the standard.
 
-For every interface, identify whether it is power, command, permissive, status, alarm, timing, material flow or documentation. Mark bidirectional exchanges explicitly. If a subsystem is future, optional or supplied by another party, show that status rather than drawing it as a settled part of the machine.
+### Distinguish material communication from machine control
 
-### Site-control boundary
+The roof receiving team may communicate that its work area is available. A feeder may provide a machine status. A lift may have configuration-specific conditions associated with a permitted state. These statements have different meanings and different owners. Document their intended purpose before using a single word such as ready across the whole project.
 
-Site systems may request availability, receive status or coordinate upstream and downstream equipment. The interface list should describe the required business or process outcome without selecting a protocol, network, address structure or cybersecurity design. Those details belong in approved project documents.
+A verbal handover, an ordinary status signal and a safety-related function are not interchangeable. Ask which messages are merely information and which functions require a defined engineering response. The project integrator and responsible designers must settle that distinction. An editorial interface list cannot assign a safety function, performance level or control architecture.
 
-Separate remote observation from remote control. A status displayed elsewhere does not automatically authorise commands, resets or bypasses. Record who may request each function, where final authority sits and which risk or electrical document will define the behaviour.
+![Elevated red equipment beside a building with ground supports and nearby coils](/images/equipment/entry-real-clearance.webp)
 
-### Ask both sides of each interface
-
-Where a project arrangement connects a roll former with a lift carrier or remote station, a line on a block diagram is not enough. One party may describe what it can send while the other is waiting for a different meaning. Use the questions below to expose that gap before a designer assigns signals or states. The lift-carrier questions apply only if that carrier is part of the selected arrangement.
-
-*On smaller screens, scroll the table sideways to read all three columns.*
-
-| Interface to be defined | Question for the sending or supplying side | Question for the receiving or relying side |
-| --- | --- | --- |
-| Site supply to the roll former | Which documented supply condition is actually offered at the agreed boundary, and who owns changes to it? | Which input conditions must the machine designer confirm before calling the equipment available? |
-| Roll former and lift carrier | Which movement or equipment status, if any, is proposed to cross the boundary? | What does the other designer need that status to mean, and is it information or a requested permission? |
-| Roll former and material handoff | What event or condition is being reported at the feed or exit boundary? | What action is the neighbouring system expected to consider, and who resolves disagreement between the two descriptions? |
-| Remote observation from either equipment group | Which state can be reported, how current is it, and what does it not show? | Could an observer mistake a delayed or partial display for confirmation of a safe state? |
-| Remote command request to either equipment group | Who is intended to request a function, from where, and under which project authority? | Which designer decides whether the request may be accepted, rejected or deferred in each relevant state? |
-
-These are interface questions, not a proposed exchange scheme. The answer may be that no status or command should cross a particular boundary. That decision belongs in the approved project design, with the risk implications considered by the responsible reviewers.
-
-![Non-wiring diagram of electrical and control boundaries](/images/editorial/electrical-interface-boundary.svg)
-
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Conceptual diagram, not a wiring diagram, safety circuit or approved schedule.*
+*Reference photograph showing elevated equipment beside a building with ground supports visible. It does not establish cable routing, supply conditions or an approved moving service interface.*
 
 <!-- audit-section: conditions -->
-## Record power and isolation inputs
+## Describe power and controls by equipment state
 
-The interface list should capture the buyer's destination conditions and ownership questions without converting them into a technical design. Values must come from controlled site and project records. Unknowns stay open.
+### Separate transported and assembled arrangements
 
-### Voltage, frequency and earthing fields
+The electrical equipment present during transport may differ from the arrangement assembled for work. Identify which modules travel together, which interfaces are completed at destination and which documents describe the resulting system. A shipping photograph does not reveal connector identity, cable condition or the checks required after assembly.
 
-Record nominal voltage, frequency, phase arrangement, known variation limits and the earthing information requested by the competent electrical reviewer. State the source, revision, units and owner for each value. A website field or email shorthand is not enough for final design.
+This matters when the buyer receives a forming machine and lift under separate schedules. A complete machine manual for each item may still leave the connection between them undefined. Ask for the planned responsibility at that interface before assuming that arrival of both items means electrical readiness. The [destination receipt guide](/blog/roll-forming-lift-destination-receipt-plan/) addresses the preceding physical handover.
 
-Do not infer cable size, protective devices, short-circuit rating, electromagnetic measures or power demand from the nominal supply alone. Those outputs depend on the approved configuration, destination rules and detailed design. The interface list only establishes which data must cross the boundary.
+### Describe the proposed elevated arrangement
 
-### Isolation ownership
+Show the relationship between the supply point, lifting structure, roll former and ground-side equipment at the proposed working positions. The purpose is to reveal which services cross moving or changing boundaries. Do not assume a service arrangement remains suitable merely because it reached the first position on a sketch.
 
-Distinguish an operating stop, an emergency stop, a safeguard response and energy isolation. The project risk and electrical documents must define the functions and their relationships. An emergency-stop device is not, by itself, a complete isolation procedure.
+Consider a hypothetical change from one roof receiving zone to another. The forming machine may remain unchanged, while the available supply point, cable route and communication position differ. The electrical review needs those changed site inputs. It cannot rely on a model name or an earlier connection record that describes another layout.
 
-In covered U.S. servicing and maintenance context, <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147" target="_blank" rel="noopener noreferrer">OSHA 29 CFR 1910.147</a> addresses control of hazardous energy. Section 1910.147(a)(1)(ii)(A) excludes construction employment, so this reference does not establish the rule applicable to a construction-site activity. That is U.S. jurisdiction-specific context, not a global design rule. Record who provides isolating means, who controls site procedures and how subsystem energy sources are documented.
+### Ask about interruption and recovery without designing them
 
-### Cable-route constraints
+For each actual subsystem, ask what documentation defines normal stopping, loss of supply, loss of a required signal, emergency stopping and subsequent recovery. Identify which equipment and material states are relevant to the answer. The buyer's task is to expose gaps between suppliers, not to write the sequence or test the behaviour from a generic article.
 
-Map the permitted route, entry direction, distance constraints, environmental conditions, mechanical protection needs and separation requirements as project inputs. Do not publish a cable route taken from a sensitive site plan. A preliminary diagram can use anonymised zones and blank distances.
+Avoid the claim that a common emergency-stop label settles isolation or coordinated response. The actual risk assessment, control design and instructions must establish those matters. If a supplier can explain only its own machine, record the remaining system question and who is responsible for resolving it before integrated work is considered ready.
 
-Include interfaces with moving structures, access ways, material travel and maintenance positions. If the route crosses another contractor's scope, name the handover document and owner. Do not let a cable-path assumption become an unrecorded installation constraint.
+![Raised red equipment beside building steelwork with coils visible at ground level](/images/equipment/coil-real-handling.webp)
 
-![Blank matrix for machine states signals responses and owners](/images/editorial/electrical-state-responsibility-matrix.svg)
-
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Illustrative states; approved risk and electrical documents define final functions.*
-
-<!-- audit-section: project-checklist -->
-## Build the handover list
-
-The electrical interface list should be short enough to control and rich enough to expose missing owners. A project release check can include:
-
-- Incoming **power** point, voltage, frequency, phase and earthing evidence status.
-- Each coordinated subsystem and its material **feed** or process boundary.
-- Normal stop, safeguard, fault and recovery **control** states requiring definition.
-- Site **access** and cable-route constraints, including protected work zones.
-- Isolation points and the signed owner of operating and maintenance procedures.
-- Destination electrical review and required **documentation** language.
-- Profile or product **length** signals that cross an upstream or downstream boundary.
-- Roof, floor or support **geometry** only where it affects route or interface placement.
-- Transport and installation handoffs that change the electrical configuration.
-- Open assumptions, evidence owner, target document and change-control status.
-
-### Signals and alarms
-
-For each exchange, record the initiating system, receiving system, purpose, normal state, abnormal state and owner. Use functional names such as “ready to receive material” or “cut cycle complete” before assigning a technology. That keeps the list readable to mechanical, electrical and operational reviewers.
-
-Alarms require an expected response and an authority model. A message without a defined owner can produce noise rather than control. If the project has not decided whether an alarm stops equipment, blocks a start or only informs an operator, label the behaviour unresolved.
-
-### Keep availability, readiness, permission and reset distinct
-
-“Power available” can mean only that the documented supply condition is present at a defined boundary. It does not answer whether a machine is ready for a process request. “Ready” needs its own project meaning: ready for what function, in which configuration, and according to which side's information? “Permission” is a separate decision about whether a requested action is authorised in that state. “Reset” concerns how a fault or interruption is acknowledged and what evidence is needed before any renewed request can be considered. None of these labels should be treated as a complete safety function or as interchangeable shorthand.
-
-Ask the designers what each side would report after a fault, a lost remote connection or an interruption to site power. Which information may be stale? What remains unknown when power returns? Can a request made before the interruption still be meaningful, or must its authority and the equipment state be reconsidered? Who defines the visible indication, the conditions for any renewed permission and the point at which a person must review the situation? The interface list records those unresolved questions; the approved risk and control design determines the behaviour. It is not a restart instruction.
-
-### Normal stop and safeguard states
-
-Define the questions before the logic: what initiates the state, which subsystems respond, what energy or movement remains, what indication appears and who may reset. The <a href="https://www.iso.org/standard/73481.html" target="_blank" rel="noopener noreferrer">ISO 13849-1:2023 official standard record</a> locates a methodology for safety-related parts of control systems. It does not select this project's safety functions or performance levels.
-
-Avoid the phrase “the E-stop makes the line safe.” A project needs a complete risk-based concept that considers hazards, states, energy and intervention. The interface list records where those decisions will be documented; it does not make them.
-
-### Maintenance energy isolation
-
-List every energy domain identified by the project and the boundary owner for each isolating means. Include stored or supplied energy only when the approved risk process identifies it. Do not turn a generic list into an assertion about a configuration that has not been defined.
-
-Record the document that will govern lockout, verification, release and return to service. In a multi-supplier system, each supplier should provide controlled information for its boundary while the project owner coordinates the site procedure.
+*Reference photograph showing equipment and coils at different positions around building steelwork. It does not identify electrical ownership, control signals or the behaviour of connected equipment.*
 
 <!-- audit-section: evidence-tradeoffs -->
-Interface detail has a useful stopping point. Too little detail hides signal ownership and hazardous assumptions; too much preliminary detail freezes a brand or logic architecture before the risk review and design are ready. The trade-off is managed by defining functions, states, owners and evidence first, then reserving implementation for approved schedules.
+## Compare integrated and separate supply offers
 
-![Layered example of an electrical handover document stack](/images/editorial/electrical-document-stack.svg)
+### Hold the intended duty constant
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Example set; required documents depend on configuration and destination requirements.*
+Compare offers against the same machine arrangement, project power information and proposed working states. One offer may include coordination drawings and interface development; another may stop at terminals or a standalone machine. The difference is commercial scope with technical consequences. It should be visible beside the price rather than discovered during assembly.
+
+An integrated offer still needs a stated boundary with the site. A separately supplied arrangement still needs an identified integration owner. Neither description proves compatibility, and neither determines the destination approval route. Ask the bidder to say which inputs it used and which outputs are included at the present stage.
+
+### Use an interface comparison that names both sides
+
+| Boundary | Buyer or site input | Supply or integration question |
+| :-- | :-- | :-- |
+| Site installation to equipment | Available supply information and connection location | Who defines the equipment connection requirements and final design? |
+| Ground services to elevated assembly | Proposed states, positions and service-route constraints | Who designs the changing service interface and documents its scope? |
+| Feed equipment to forming machine | Material-flow concept and equipment identities | Which commands, status or other functions require agreement? |
+| Forming machine to lift | Current machine information and proposed combined arrangement | Which interactions are included in the integration review? |
+| Equipment to roof receiving activity | Receiving responsibility and communication concept | Which site messages remain distinct from machine control? |
+| Transported modules to assembled system | Delivery split and local installation responsibility | Who reconciles the resulting electrical configuration? |
+
+### Examine an ambiguous ready signal
+
+Suppose a quotation mentions a ready signal between two separately supplied units. Ask what equipment state that word describes, who creates the information, who receives it and what assumptions each party makes. A forming-machine supplier might describe material readiness while another party assumes it means the entire work zone is available. The same label can hide two different questions.
+
+The procurement response should identify the intended function and the remaining design responsibility. It should not invent a wiring connection or declare that the signal performs a protective function. Once the meaning is agreed, the responsible designers can determine the required implementation and verification within the actual system. Keep any site personnel communication separate unless the approved design explicitly addresses it.
+
+![Folded red crawler equipment in a yard with lateral supports extended](/images/equipment/transport-real-stowed.webp)
+
+*Reference photograph showing folded crawler equipment with supports extended. It does not show a final travel state or establish electrical disconnection, isolation or assembly requirements.*
+
+<!-- audit-section: project-checklist -->
+## Prepare the electrical review inputs
+
+### Collect information that changes the interface
+
+Use the following list to brief the responsible parties. It asks for the basis of a design discussion, not permission to connect or energize equipment. Unknown values remain unknown until their owner provides suitable evidence.
+
+- Identify the roll former, lift and every included powered or controlled subsystem.
+- Provide site power information, its source and the intended connection boundary.
+- Show outlet height references and proposed equipment positions relative to the roof receiving zone.
+- Describe material feed and panel handover responsibilities where they interact with controls.
+- Map service routes, access restrictions and changes between assembly and elevated work.
+- Identify ground or floor and support layouts where they affect service access or equipment placement.
+- State the site's weather and wind responsibilities affecting exposed work and temporary services.
+- Define the transported modules and destination assembly or local integration scope.
+- List required documentation language, current machine records and responsible electrical reviewers.
+- Identify functions whose meaning remains unclear, including status, stop, fault and recovery descriptions.
+
+### Ask for a usable design deliverable
+
+Specify which interface descriptions, drawings and instructions the supplier will deliver and at what stage. Early information can describe boundaries and assumptions. Final documents need to match the actual assembled configuration and the responsibilities agreed for it. Do not accept a generic brochure as the only explanation of how independently supplied items will work together.
+
+Also agree how changes reach the affected parties. A replacement roll former, a different supply location or a revised delivery split can alter the electrical discussion without changing the roof-panel order. Ask for the specific impact on the interface and deliverables, rather than merely requesting a new document date. The [configuration-change guide](/blog/roll-forming-lift-configuration-change-control/) addresses those wider changes.
 
 <!-- audit-section: limitations-not-fit -->
-## Release controlled documents
+### Keep unresolved integration outside a ready claim
 
-Construction, connection, software implementation, commissioning and functional-safety declarations belong after controlled design. The electrical interface list would not fit those purposes because it records boundaries and open decisions, not an approved solution. Keep every open item visible until the responsible reviewer closes it in signed project documents.
-
-### I/O and document language
-
-Agree the language, units, naming convention, tag structure, revision method and required deliverable formats. Decide which records are editable working files and which are controlled release documents. Avoid publishing actual I/O lists, network information or site identifiers.
-
-An I/O count is an output of design, not a procurement shortcut. The number can change with configuration, safeguards, diagnostics and integration. Keep the preliminary interface list functional and let the approved design establish detailed points.
-
-### Change control
-
-Every change should identify the initiating requirement, affected interfaces, risk-review impact, document revisions and authorising roles. A change to upstream equipment, a product recipe, a site system or a safeguard can cross several boundaries even if the request appears local.
-
-Link the changed decision to the affected drawings and test evidence. A marked-up screenshot or chat message may explain the request, but it should not become the final configuration record. Preserve superseded revisions according to the project document plan.
-
-### Risk-review sign-off
-
-The project should identify who owns the machinery risk process, electrical design review, site installation review, cybersecurity decisions and destination acceptance path. A supplier's interface data supports those reviews but does not replace them.
-
-Sign-off should state the scope, revision and unresolved items. If an interface remains provisional, the document should say what activities are blocked. A signature without a clear scope can create false confidence.
+The proposal may not fit a final configuration decision if the supply boundary, equipment identities, moving service interfaces or integration owner are missing. This guide cannot supply wiring, protective-device choices, diagnostic actions or control logic. A collection of individually described machines should not be presented as an electrically completed system until the actual interfaces have been resolved by the responsible parties.
 
 <!-- audit-section: cta-editorial-note -->
-Send only the electrical interface list through a secure project channel to ARCLIFT as a technical selection and supply partner. Include controlled site power information, machine and feed boundaries, signal purposes, isolation owners, destination documentation and signed open-item responsibility. If height, floor, roof geometry, transport route or work-zone access affects cable or subsystem placement, identify it as a project-specific input for the proper reviewer. This request does not promise suitability, fit, approval, quotation, configuration, availability, result or response time. The editorial diagrams are non-wiring explanations and cannot replace final signed electrical, risk or commissioning documents.
+### Request a defined electrical scope
+
+Send ARCLIFT the proposed machine arrangement, available site power records, roof-zone and height references, destination responsibilities and transport split. Identify whether the forming machine is already owned and which electrical documentation is available. ARCLIFT can coordinate supply and selection questions with the appropriate parties; final design, installation and verification need project-specific professional responsibility. This editorial explanation and the reference photographs identify visible equipment context, not wiring, permitted control behaviour or evidence that an integrated system is ready for use.
 
 ## FAQ
 
-#### What starts the electrical interface list?
+#### Is voltage enough for an electrical quotation?
 
-Start with the incoming supply boundary, coordinated subsystems, site-control boundary, required functions and responsible parties. Add controlled destination inputs and label every unresolved design output.
+No. It is one input alongside the equipment scope, supply boundary, proposed states, service-route constraints and integration responsibilities. Detailed design outputs cannot be inferred from a nominal voltage.
 
-#### Is an E-stop an isolation procedure?
+#### Do separate machines automatically share a stop function?
 
-No. Emergency stopping and hazardous-energy isolation address different conditions. The project risk, electrical and site procedures must define their functions and relationship under applicable destination rules.
+No. Their interactions require explicit design and documentation. A shared layout, control label or status message does not establish coordinated stopping or a safety-related function.
 
-#### Who defines handover signals?
+#### Who defines the service route to elevated equipment?
 
-The parties on both sides of each interface should agree the purpose, states, response, ownership and controlled record. The project integrator or designated authority coordinates the complete system.
+The project must identify the responsible designer and the parties providing equipment and site inputs. The route depends on the actual arrangement and states; this article does not design it.
 
-#### Does the record specify a PLC brand?
+#### Does this list replace commissioning documents?
 
-No. It defines functional interfaces before implementation. Brand, hardware, software, connectivity and detailed I/O remain subject to approved project design and documentation.
+No. It identifies inputs and responsibilities before design and integration are complete. Commissioning preparation and approved verification records address the actual assembled system at a later stage.

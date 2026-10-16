@@ -1,151 +1,168 @@
 ---
 title: "Ground Pressure Guide for Indoor Aerial Work Platforms"
-description: "Review indoor aerial platform ground pressure through machine data, contact conditions, travel routes, floor structure, protection, and approval decisions."
+description: "Compare indoor platform floor inputs by route, contact points, structure and work state before accepting a crawler platform configuration for a project."
 date: 2026-07-27
+updated: 2026-10-16
 author: "ARCLIFT Technical Editorial"
 tags: ["Ground Pressure", "Indoor Platforms", "Floor Planning"]
-coverImage: "/images/home/under-ceiling-field-v2.webp"
-coverAlt: "Editorial view of an aerial work platform moving beneath an indoor steel structure."
-coverCaption: "AI-assisted editorial composite for floor-route orientation; it does not prove machine mass, contact pressure, floor strength, or site approval."
+coverImage: "/images/equipment/entry-real-cover.webp"
+coverAlt: "Red broad platform beneath beams inside a steel building"
+coverCaption: "Reference photograph: a broad platform and its lifting structure beneath steel beams. The scene does not establish floor strength, support reactions or an accepted work position."
 draft: false
 ---
 
-Ground pressure for an indoor aerial work platform cannot be accepted from one brochure number. The review must connect the exact machine configuration, total and distributed mass, track or wheel contact, movement and turning, stabilizer reactions, floor surface, slab and supporting structure, local weak features, travel route, work positions, and temporary protection. A low nominal value may still hide local effects or an unsuitable suspended floor. This guide explains what buyers should collect, what a competent floor reviewer needs, and where equipment selection must pause. It is a planning framework, not a structural calculation or permission to operate.
+An indoor platform floor review starts with two different questions: what loads the proposed machine places on a particular location, and what that location can accept. A brochure ground-pressure figure answers neither question completely. For a large-deck crawler platform, the buyer needs a connection between the quoted equipment state, the route through the building, the working positions and the floor structure. This guide explains how to request that information without turning an average contact figure into a floor approval. It covers under-ceiling and wall-work platforms, the separate product line from systems that lift compatible roof-panel roll-forming machines.
 
 **Contents**
 
-- Define the floor decision
-- Build the machine and route input set
-- Understand contact and structural trade-offs
-- Know when the review is incomplete
-- Prepare a floor-review package
-- Close open questions and FAQs
+- Identify the floor decision and location
+- Match equipment inputs to the proposed state
+- Compare support cases without assuming equivalence
+- Recognize proposals that do not fit
+- Prepare a useful request for floor review
+- Resolve buyer questions before configuration selection
 
 <!-- audit-section: buyer-intent -->
-## Define the floor decision before asking for a number
+## Identify the floor decision and location
 
-### Separate surface condition from structural support
+### Start with the building beneath the finish
 
-“The floor looks strong” is not an engineering input. A finished surface may cover a ground-bearing slab, suspended slab, hollow-core system, raised floor, service trench, basement, loading bay, or a sequence of different zones. Coatings and tiles can also have protection limits even when the supporting structure is adequate.
+A polished surface tells a buyer little about the structure below. A route may cross a slab on ground, a suspended floor, a service trench, a loading interface and a repaired area that look similar from above. Describe each change of construction where known. Where it is unknown, identify the location and the building representative who can help establish it.
 
-State what must be decided: transport over a route, turning at a junction, static setup, raised operation, stabilizer deployment, or temporary parking. These cases can have different load paths. Mark each on the drawing instead of asking whether the entire building supports the machine.
+This is a procurement question because a proposed platform can be a reasonable match for the ceiling task while lacking the information needed to enter the building. Obtain an early view of the floor-review requirements before treating a quotation as a usable solution. Otherwise the buyer may compare machine prices while excluding the work needed to establish access.
 
-### Identify who accepts the route
+### Separate passage, waiting and work positions
 
-The equipment supplier can provide configuration-specific machine inputs. The buyer and site team provide the building, route, and operating method. A competent structural reviewer may need to assess the floor and supporting system. The responsible site organization then controls the approved route and conditions. Keep those roles separate so a machine data sheet is not mistaken for floor approval.
+The route to the task is part of the decision. A machine may pass through a corridor, wait beside a column, turn in an intersection and occupy a different area while raised. These locations should not be compressed into one statement that the building has a specified floor rating. Ask which equipment state the reviewer needs for each location.
 
-The [crawler platform buyer's guide](/blog/crawler-under-ceiling-platform-buyers-guide/) places the floor review beside reach, access, power, and rescue. The [ceiling-platform project-data guide](/blog/crawler-ceiling-wall-panel-platform-project-data/) helps organize the building inputs.
+A practical drawing identifies the delivery interface, travel route, possible waiting area and proposed work positions. It also marks locations that remain uncertain. The drawing need not claim to be an operating plan; its immediate purpose is to make the quotation and the building review refer to the same places.
 
-![Platform represented beneath a large indoor structure](/images/editorial/large-deck-steel-structure.webp)
+### Give each party an answerable question
 
-*AI-assisted editorial composite. It shows a general indoor context and cannot prove machine configuration, mass, contact area, floor strength, or an approved route.*
+The equipment provider supplies configuration information. The building team provides available structural records and condition information. The responsible project reviewer determines which loading cases need assessment. Ask for these contributions separately, then connect them. A supplier cannot infer a suspended slab's condition from an equipment photograph, and a structural reviewer should not have to guess which accessories the quotation includes.
+
+For the wider selection context, use the [ceiling-platform project-data guide](/blog/crawler-ceiling-wall-panel-platform-project-data/). Keep this page focused on the equipment-to-floor interface.
 
 <!-- audit-section: conditions -->
-## Build the machine and route input set
+## Match equipment inputs to the proposed state
 
-### Request the exact configuration data
+### Request the quoted configuration, including its additions
 
-Ask for transport mass and operating mass for the quoted configuration, not a family label. Record attachments, platform elements, occupants, tools, materials, fuel, batteries, cables, racks, and any removable parts. Request wheel or track arrangement, contact assumptions, axle or track loads where applicable, stabilizer reactions, permitted travel state, turning method, slope limits, and the conditions under which values apply.
+Ask what is included in the mass information: main platform, extensions, removable accessories, power equipment and other installed items. Describe the task's people, tools and materials separately. Their proposed locations matter as well as their presence. A family-level figure can conceal differences between the equipment being compared.
 
-A nominal average pressure can be informative, but it is not the whole interface. Actual contact may change with surface irregularity, track tension, steering, turning, acceleration, braking, articulation, leveling, raised geometry, or support deployment. The signed equipment information should make clear which state each value represents.
+Request the applicable track or wheel arrangement and, where relevant, the support-point reactions and their stated conditions. The answer should identify the machine state it represents. A drawing of a folded structure cannot establish whether the supports, load or operating state match the number supplied alongside it.
 
-### Survey the complete path
+### Distinguish an average from the required loading cases
 
-Walk from unloading to every work zone. Mark thresholds, ramps, joints, covers, drains, pits, trenches, openings, edges, changes in slab type, suspended areas, dock plates, embedded services, damaged surfaces, soft finishes, and narrow turns. Record where the platform must stop, turn, set up, or cross a transition.
+A nominal average ground-pressure value may describe an assumed mass and contact area. It does not by itself identify local contact effects, reactions at deployed supports or loading of a floor feature. Ask the equipment provider for the basis of the figure and ask the floor reviewer whether that basis answers the project question.
 
-IPAF's <a href="https://www.ipaf.org/en/operator-feeds/do-you-know-what-look-when-assessing-ground-conditions" target="_blank" rel="noopener noreferrer">ground-condition guidance</a> says the assessment should include the operating position and the route to it, with competent structural or geotechnical advice where needed. HSE also notes that temporary covers must withstand applied pressure and identifies trenches, manholes, and uncompacted areas as overturning concerns in its <a href="https://www.hse.gov.uk/construction/safetytopics/mewp.htm" target="_blank" rel="noopener noreferrer">MEWP guidance</a>.
+Do not perform a quick division of total mass by an apparent track area and present the result as an allowable floor requirement. The review may need information that is absent from that calculation. The useful procurement outcome is a clear list of missing machine inputs, rather than a plausible number that nobody can apply.
 
-### Describe the floor and support system
+### Include local features and current condition
 
-Provide drawings and verified data available for the slab, beams, columns, foundations, suspended zones, joints, penetrations, and design loads. Note alterations, deterioration, repairs, water exposure, construction-stage conditions, and areas where records are uncertain. A general floor rating may not address a concentrated load near an opening or a route across several structural bays.
+Mark joints, covers, openings, edges, drains, thresholds, changes of level and known repairs. Add the condition information available to the building team. A route that avoids a weak feature on a plan may still depend on a turning area or waiting location whose construction has not been identified.
 
-[![Editorial diagram showing an indoor floor-load review](/images/editorial/indoor-floor-load-review.svg)](/images/editorial/indoor-floor-load-review.svg)
+<a href="https://www.hse.gov.uk/construction/safetytopics/mewp.htm" target="_blank" rel="noopener noreferrer">HSE's MEWP guidance</a> identifies temporary covers and localized ground features as concerns. This is Great Britain guidance used for general context; it does not approve this platform, floor or destination project.
 
-*Editorial diagram. Tap to open the full-size editorial diagram. It connects machine, contact, route, floor, and protection questions; it is not a pressure calculation or structural approval.*
+![Yellow broad platform and lifting structure inside steel framing](/images/equipment/entry-real-interior.webp)
+
+*Reference photograph: a yellow platform, people and lifting structure inside a steel building. The image cannot establish equipment mass, permitted occupancy, support reactions or the construction of the floor below.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## Understand contact and structural trade-offs
+## Compare support cases without assuming equivalence
 
-### Tracks change contact, not the duty to review
+### Keep surface protection separate from structural acceptance
 
-Tracks can create a longer contact interface than a small wheel footprint. The trade-off is that nominal area does not establish uniform loading. Turning can introduce scrub and local surface stress; debris or an uneven floor can reduce effective contact; transitions can redistribute load. Floor finishes may need protection against marking, abrasion, indentation, or contamination even when the structure is accepted.
+A floor owner may be concerned about staining, abrasion, indentation or contamination. Those concerns are different from the strength of the slab and its supporting structure. A proposed protection product may address one issue without answering the other. Request its intended purpose and the party responsible for reviewing that purpose.
 
-Do not advertise “low ground pressure” as a site result without the exact configuration, calculation basis, operating state, and floor acceptance. Ask the reviewer whether the concern is global slab action, local punching or bearing, supporting beams, edge distance, covers, surface damage, or several of these.
+The trade-off is easy to miss during purchasing: a crawler arrangement may look attractive for its broad contact geometry, yet the building owner may need additional information about a particular transition or surface finish. Neither an attractive footprint nor a protection proposal closes the structural question. Compare the complete interface, including any unresolved dependency.
 
-### Static work and travel are different cases
+### Treat deployed support points as their own case
 
-A static operating position may concentrate reactions differently from a lowered travel state. Stabilizers, where used, transfer load through defined points and may need spreader arrangements. A machine that can cross a floor in one state is not automatically accepted to work there in another.
+Where a configuration uses supports or outriggers, their location and the applicable reaction information belong in the review. The crawler footprint and the deployed support footprint are different descriptions. A photograph showing both should prompt a question about which arrangement applies, not a conclusion that either is acceptable.
 
-Movement adds route control. Turning location, acceleration, braking, slope, transition angle, surface contamination, and nearby traffic can affect the method. If the route depends on mats or plates, define their material, size, placement, support, inspection, movement sequence, and approval. Protection that saves a coating may not distribute structural load unless designed to do so.
+Similarly, a floor review for passage does not automatically cover a work position. The platform, materials and supporting arrangement may differ between those states. Ask for the scope of each conclusion in plain language so that a project coordinator can see which part remains unresolved.
 
-### Build useful communication between disciplines
+| Proposed situation | Information to request | What the comparison must not assume |
+| --- | --- | --- |
+| Travel through a corridor | Applicable equipment state and route geometry | That a work-position review covers passage |
+| Waiting beside an opening | Machine state, location and supporting construction | That an unused area has unrestricted capacity |
+| Work with deployed supports | Applicable support locations and reactions | That track-average pressure describes the supports |
+| Crossing a floor transition | Construction and condition on both sides | That a continuous finish means continuous structure |
+| Use of temporary protection | Intended purpose and reviewed arrangement | That surface protection establishes load spreading |
 
-The structural reviewer needs clear machine cases. The equipment team needs the route and work positions. The site team needs an unambiguous approved map with limitations. A short table connecting machine state, location, load input, supporting document, and decision owner is more useful than exchanging isolated PDFs.
+### Compare quotations against the same route
 
-Use drawings with numbered zones. For example, “Route R1, lowered and unoccupied,” “Turn T2,” and “Work position W3 with stated task load” make assumptions visible. This is an editorial example, not a real project result.
+If one proposal includes a removable platform section and another assumes the platform remains assembled, the indoor route may be different. Ask each provider to identify the arrangement used in its access information. A smaller transport description is not enough if the buyer has not established where assembly or storage would occur.
 
-[![Editorial diagram showing ceiling-platform project data inputs](/images/editorial/ceiling-platform-project-data.svg)](/images/editorial/ceiling-platform-project-data.svg)
+Consider a hypothetical building where a direct route passes over an undocumented service cover while a longer route has clearer construction records. That is a route-review choice, not proof that either machine can proceed. The buyer can request information for both options and understand the unresolved work before selecting a configuration.
 
-*Editorial diagram. Tap to open the full-size editorial diagram. It organizes buyer questions and cannot prove floor pressure, allowable reactions, operating state, or project suitability.*
+![Red empty broad platform outside industrial building openings](/images/equipment/entry-real-approach.webp)
+
+*Reference photograph: an empty broad platform outside building openings. The scene does not establish its entry dimensions, indoor travel state or floor compatibility.*
 
 <!-- audit-section: limitations-not-fit -->
-## Know when the review is incomplete
+## Recognize proposals that do not fit
 
-### Stop at missing building or machine data
+### Missing load information can prevent a useful comparison
 
-The proposed platform may not fit when exact configuration mass and reactions are unavailable, the route crosses an undocumented suspended floor, covers cannot be identified, weak edges cannot be isolated, or the reviewer cannot connect the machine case to the supporting structure. A generic category value is not enough.
+A proposal may not fit the project when the provider cannot identify the equipment state behind its mass or support figures, when the route crosses an unknown suspended area, or when the building team cannot connect a proposed position to structural information. The next useful action is to resolve that specific gap, rather than accept a category label such as low ground pressure.
 
-Pause if the working state differs from the state used for the supplied number, if accessories or materials were omitted, or if the planned turning method is not represented. Also stop when floor protection is described only as “use plates” without design, placement, and responsibility.
+A different platform arrangement or access method may deserve consideration, but lower total mass alone does not complete the comparison. The alternative still needs to reach the task, accommodate its materials and fit the route and working area.
 
-### Avoid false reassurance
+### A changed route can invalidate the earlier question
 
-Non-marking tracks concern visible marking; they do not prove structural suitability. A broad track does not eliminate local loading. A floor drawing does not confirm its current condition. A structural acceptance for one zone does not automatically extend to another zone or to a changed task load.
+If storage, temporary works or another contractor moves the route, compare the changed locations with the scope of the earlier review. The same machine is not sufficient reason to assume continuity. Changes to platform equipment, task materials or support arrangements also need to be visible to the relevant reviewer.
 
-A crawler concept may be replaced by a lighter or differently supported access method when floor information cannot support the proposed route. The comparison still needs to address reach, task load, setup, rescue, and other site hazards. Selecting the lightest machine alone does not close the work-at-height decision.
+For entry geometry, refer to the [building-entry survey guide](/blog/large-crawler-work-platform-building-entry-survey/). For shared space around the position, use the [work-zone layout guide](/blog/large-deck-crawler-platform-work-zone-layout/).
 
 <!-- audit-section: project-checklist -->
-## Prepare a floor-review package
+## Prepare a useful request for floor review
 
-### Minimum information for traceable review
+### Collect information that changes the decision
 
-- Machine model or configuration reference, transport and operating mass, and signed document revision
-- Occupants, tools, material dimensions, material mass, accessories, fuel, batteries, and load distribution
-- Track or wheel geometry, axle or track loads, contact assumptions, and permitted travel state
-- Stabilizer or outrigger reactions, spreader requirements, leveling, and operating envelope
-- Route drawing with access, turns, ramps, gradients, thresholds, joints, covers, drains, edges, and openings
-- Work-position drawing with height, outreach, task geometry, roof or ceiling obstructions, and exclusion zone
-- Floor construction, slab and support information, suspended zones, alterations, damage, and uncertainty
-- Surface finish, cleanliness, marking limits, mat or plate details, placement method, and inspections
-- Voltage, power or fuel condition, cable route, destination requirements, and related operating constraints
-- Structural reviewer, site owner, operator, spotter, supplier, transport, and documentation responsibilities
-- Approval limitations, weather or indoor conditions, inspection frequency, change control, and expiry
-- Rescue route, ground-control access, emergency response, traffic segregation, and communication method
+- Working height and the separate platform-height basis required for the task.
+- Ceiling geometry, columns and the proposed work-position locations.
+- People, tools and material quantities, dimensions and proposed placement.
+- Floor construction records, current condition and areas of uncertainty.
+- Access route, turns, thresholds, covers and changes of structure.
+- Track or wheel geometry and the configuration behind the supplied data.
+- Outrigger or support locations and applicable reaction information where relevant.
+- Transport and assembled states, including removable components and storage needs.
+- Power equipment and accessories included in the proposed configuration.
+- Destination requirements and the appointed floor or structural reviewer.
+- Documentation showing the basis and limitations of each equipment input.
+- Surface protection requirements and their separation from structural review.
 
-### Turn the review into a site control
+### Make unresolved locations easy to find
 
-Issue the accepted route in a form operators and supervisors can use. Mark prohibited zones, required machine state, turning locations, protection, setup points, task-load limits, spotter areas, and what triggers reassessment. Control changes to the machine, load, route, floor, or surrounding work.
+A useful package connects a location on the drawing with a question and the information needed to answer it. For example, a cover may lack construction information while a work position lacks an applicable support case. Keep those as two visible gaps. A general statement that floor checks are pending gives the purchaser much less help when comparing proposals.
+
+![Folded red crawler apparatus with supports deployed in a yard](/images/equipment/transport-real-stowed.webp)
+
+*Reference photograph: folded crawler equipment with supports deployed in a yard. This forming-equipment reference shows different track and support footprints; it does not show the assessed ceiling-platform configuration or an approved indoor state.*
 
 <!-- audit-section: cta-editorial-note -->
-## Close the floor interface before configuration approval
+## Resolve buyer questions before configuration selection
 
-Send ARCLIFT the route drawing, floor and supporting information, work positions, height and outreach needs, task-load breakdown, destination, transport boundary, power conditions, and reviewer questions. As an integrated equipment supplier, ARCLIFT can organize the project-specific machine inputs needed for an independent floor review and signed configuration schedule.
+### Ask ARCLIFT for the missing equipment inputs
+
+Send ARCLIFT the site route, floor information, proposed work zone, height and geometry needs, material schedule, destination and transport arrangement. As an integrated equipment supplier and technical selection partner, ARCLIFT can coordinate the machine information requested by the project reviewer. Identify unknown building conditions early so the response can distinguish a configuration question from a floor-information gap. Final suitability requires project-specific review; this editorial guide and its reference photographs provide neither a structural calculation nor permission to use a floor.
 
 ### Frequently asked questions
 
-#### Is machine mass enough to approve an indoor floor?
+#### Can a brochure ground-pressure value approve the route?
 
-No. The review may need load distribution, contact geometry, movement state, turning, stabilizer reactions, route features, floor construction, supporting structure, and current condition.
+No. First establish its equipment state and calculation basis, then ask the project reviewer what additional machine and building information is needed for the actual locations.
 
-#### Does low nominal ground pressure protect a finished floor?
+#### Are non-marking tracks a structural solution?
 
-Not automatically. Structural response and surface protection are separate questions. Turning, debris, transitions, contact irregularity, coatings, cleanliness, and protection design may matter.
+A description concerning surface marking does not establish the capacity of a slab, cover or supporting structure. Surface requirements and structural questions need separate answers.
 
-#### Should the route and work position be checked separately?
+#### Is a work-position review enough for delivery access?
 
-Yes. A lowered travel state, turn, ramp, static raised position, and stabilizer setup can create different cases. Mark each state and location for review.
+The scope may be different. Delivery, passage, waiting and work positions can involve different locations and machine arrangements. Identify each required case explicitly.
 
-#### Who approves the floor?
+#### Should floor protection be included in the quotation?
 
-The responsible project organization should appoint competent review. The supplier provides machine inputs; the building and site teams provide floor information and control the accepted route.
-
-This article is planning guidance, not a structural calculation, floor approval, operating authorization, or local compliance statement. Its AI-assisted composites and code-native editorial diagrams cannot establish actual pressure, reactions, floor strength, route condition, or suitability. Final decisions require verified project data, competent review, site controls, and signed documents.
+Clarify who specifies and supplies it, what purpose it serves and who reviews its use. Inclusion in a price does not establish that it solves the building's structural or finish requirements.

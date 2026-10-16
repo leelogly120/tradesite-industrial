@@ -3,6 +3,7 @@ import { constants } from 'node:fs';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import * as registry from '../scripts/lift-platform-article-registry.mjs';
+import { REFERENCE_PHOTO_ARTICLES } from '../scripts/reference-photo-articles.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const editorialDisclosure = 'AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result';
@@ -106,9 +107,11 @@ describe('ranked URL recovery contract', () => {
     expect(article.title.length).toBeLessThanOrEqual(60);
     expect(article.description.length).toBeGreaterThanOrEqual(150);
     expect(article.description.length).toBeLessThanOrEqual(160);
-    expect(frontmatterValue(markdown, 'coverImage')).toBe(article.cover);
-    expect(images).toEqual(article.bodyImages);
-    expect(new Set([article.cover, ...images]).size).toBe(4);
+    const photoArticle = REFERENCE_PHOTO_ARTICLES.find(({ slug }) => slug === article.slug);
+    const expectedCover = photoArticle?.cover[0] ?? article.cover;
+    expect(frontmatterValue(markdown, 'coverImage')).toBe(expectedCover);
+    expect(images).toEqual(photoArticle?.body ?? article.bodyImages);
+    expect(new Set([expectedCover, ...images]).size).toBe(4);
     expect(visibleWordCount(markdown)).toBeGreaterThanOrEqual(1500);
     expect(visibleWordCount(markdown)).toBeLessThanOrEqual(3000);
     expect((markdown.match(/^##\s+\S.+$/gm) ?? []).length).toBeGreaterThanOrEqual(4);
@@ -116,7 +119,9 @@ describe('ranked URL recovery contract', () => {
     expect((markdown.match(/^#{3,4}\s+\S.+$/gm) ?? []).length).toBeGreaterThanOrEqual(12);
     expect((markdown.match(/^####\s+.+\?$/gm) ?? []).length).toBeGreaterThanOrEqual(4);
     for (const marker of auditMarkers) expect(markdown).toContain(`<!-- audit-section: ${marker} -->`);
-    for (const image of images) expect(markdown).toMatch(new RegExp(`${image.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')}[\\s\\S]{0,500}${editorialDisclosure.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')}`));
+    if (!photoArticle) {
+      for (const image of images) expect(markdown).toMatch(new RegExp(`${image.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')}[\\s\\S]{0,500}${editorialDisclosure.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')}`));
+    }
     for (const link of article.requiredLinks) expect(links).toContain(link);
     expect(markdown).toMatch(/<a href="https:\/\/[^"\s]+" target="_blank" rel="noopener noreferrer">/);
     expect(markdown).not.toMatch(/(?:^|[\s"'(>])(?:[A-Za-z]:[\\/]|\/(?:Users|home)\/)|source factory|customer project identity/imu);

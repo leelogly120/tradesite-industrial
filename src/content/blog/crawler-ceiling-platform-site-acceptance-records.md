@@ -2,137 +2,138 @@
 title: "Site Acceptance Records for Crawler Ceiling Platforms"
 description: "Build site acceptance records for a crawler ceiling platform by linking configuration, inspections, staged checks, deviations, documents and release authority."
 date: 2026-08-07
+updated: 2026-10-16
 author: "ARCLIFT Technical Editorial"
 tags: ["crawler ceiling platform", "site acceptance records", "inspection evidence", "handover controls"]
-coverImage: "/images/editorial/ceiling-platform-underside.webp"
-coverAlt: "Editorial crawler ceiling platform work context"
-coverCaption: "AI-assisted editorial image; not evidence of equipment, configuration, project, capability or result. Representative planning context only; not a site approval, technical drawing or performance record."
+coverImage: "/images/equipment/entry-real-cover.webp"
+coverAlt: "Red large-deck platform beneath roof framing inside a building"
+coverCaption: "Reference photograph of a large-deck platform beneath roof framing. It does not establish equipment identity, suitability or an approved project arrangement."
 draft: false
 ---
 
-Site acceptance records should show which crawler ceiling platform configuration arrived, which documents and conditions were checked, what staged tests occurred, what deviations remain and who has authority to release the next phase. They are not a signature page added after a demonstration. The record begins with configuration and prerequisite control, then preserves observations and open items without claiming that a supplier test replaces local inspection, work-method approval or site authorization. Identify any measuring device or reference used, its status, and the person who controls the original reading. If an agreed witness is absent, record whether the check stops, proceeds for information, or requires repetition; do not convert attendance after the event. Where only part of the configuration or work zone is accepted, draw that boundary and keep other states on hold. Preserve raw readings, signed sheets and discrepancy attachments in the controlled project repository, while the summary index shows where they belong and who may access them. Record the event time, test state and issue revision together so later reviewers can reconstruct the sequence when several checks or corrections occur on the same day.
+Site acceptance records for a crawler ceiling platform should distinguish the equipment received, the configuration assembled, the site conditions reviewed and the contractual scope accepted. Those are related stages with different evidence and decision owners. A delivery receipt or a successful demonstration cannot silently cover all of them. This guide helps a buyer specify the records and interfaces required at the destination; it is not an installation procedure, test instruction or declaration that a platform is ready for work.
 
-For adjacent decisions, use [crawler ceiling platform project-data guide](/blog/crawler-ceiling-wall-panel-platform-project-data/) and [FAT and SAT acceptance checklist](/blog/roll-forming-line-fat-sat-acceptance-checklist/); [ARC-F crawler ceiling platform page](/products/arc-f31-crawler-ceiling-platform/) provides another project boundary.
+Begin with the ceiling task and supply boundary agreed during procurement. The [crawler ceiling platform project-data guide](/blog/crawler-ceiling-wall-panel-platform-project-data/) describes those inputs. Acceptance then asks what arrived and what has actually been established against that agreement. Keep the discussion about the large-deck platform, its supplied assemblies, site interfaces and responsible parties rather than importing a roll-forming machine's production tests.
 
 **Contents**
 
-- Freeze the site configuration and acceptance basis
-- Stage site checks and preserve conditions
-- Operate a deviation and release system
-- Use acceptance records as lifecycle evidence
-- FAQ
+- Define the stages that the acceptance record covers
+- Match the delivered configuration to the destination
+- Link each finding to a criterion and decision owner
+- Prepare a stage-specific handover package
+- Questions about site acceptance
 
 <!-- audit-section: buyer-intent -->
-## Freeze the site configuration and acceptance basis
+## Define the stages that the acceptance record covers
 
-Identify the delivered platform, attachments, power or control state, documents, approved deviations and site conditions covered by the acceptance event. A result should not float free of this baseline.
+### Separate delivery receipt from technical acceptance
 
-### Create a delivered-configuration index
+The receiving team may confirm package identity, apparent condition and quantities against shipping information. Record what was available to inspect and any discrepancy without treating receipt as approval of the assembled machine. If an assembly remains packed or inaccessible, say so. The purchaser should agree who receives the equipment, who records condition and who can resolve supply discrepancies. Those roles may be different from the people who later assess installation, site matching or contractual acceptance. The record should preserve that distinction in its headings and signature purpose.
 
-Record equipment identifiers, relevant assemblies, document revisions, software or control revision where applicable, accessories and approved changes. Use anonymized project references in any broadly shared copy. Compare packing, receipt and as-built records and open a discrepancy when they differ. The index should let maintainers and reviewers understand exactly what the acceptance record covers.
+### State the delivered and assembled boundaries
 
-### Define criteria and decision owners
+Ask which assemblies, accessories and documents are included, which arrive separately and which site services remain outside the supply. If assembly or commissioning support is agreed, identify its provider and scope in the contract. The acceptance package should make clear whether a finding refers to the transport state, a partially assembled state or the documented final arrangement. Do not assume a missing guard, accessory or connection is intentional because it was absent from an early photograph. Resolve the discrepancy with the responsible information provider.
 
-List contractual checks, site prerequisites, local requirements, document deliverables and release decisions separately. Name who defines, witnesses, records, reviews and accepts each item. Do not create acceptance criteria in the article or assume that a commercial buyer can approve technical and site matters alone. Missing criteria or owners should stop the affected stage before testing begins.
+### Keep contractual completion and permission for work distinct
 
-### Separate condition records from approval
+A commercial acceptance milestone can address agreed deliverables while site work still depends on separate decisions. Define those decisions rather than assigning every meaning to the phrase accepted. The responsible local parties determine applicable inspections, operating authorization and task controls. A purchaser should ask how outstanding site conditions are reflected in the record and whether they affect the contractual milestone. This is a scope discussion, not a proposed legal clause; any legal or contractual interpretation belongs with the relevant project advisers.
 
-A delivery photo, inspection note or observed function can document condition, but it does not by itself approve the platform or site. Link observations to the applicable criterion and reviewer. Mark information, witness and acceptance statuses clearly. This prevents a complete-looking folder from overstating what its records actually decide.
+Include the handover destination for each record: purchasing may need the agreed deliverable status, while the receiving equipment manager needs current instructions and unresolved technical items. Naming those recipients helps prevent important qualifications from disappearing when a short acceptance summary is circulated without its attachments.
 
-![Site acceptance record chain](/images/editorial/crawler-ceiling-platform-site-acceptance-records.svg)
+![Yellow platform beneath structural beams within a building](/images/equipment/entry-real-interior.webp)
 
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Evidence sequence only; it is not a test procedure or acceptance result.*
+*Reference photograph of a platform inside a building. It does not document a site acceptance event, an inspection result or the completion of installation.*
 
 <!-- audit-section: conditions -->
-## Stage site checks and preserve conditions
+## Match the delivered configuration to the destination
 
-Move from receipt and static inspections toward controlled functional checks only after prerequisites close. Keep the actual equipment instructions and approved project method as the governing procedure.
+### Reconcile the equipment information before judging results
 
-### Record receipt and condition
+Use the delivered equipment identity, supplied drawings, instruction revisions and agreed option list to define the item being reviewed. Compare those references with the accepted offer and record discrepancies. A result associated only with a product-family name leaves uncertainty about what it covers. If the equipment has changed since a prior assessment, ask the responsible technical provider to identify which earlier information remains applicable. Keep traceable serial and project information in the secure handover file, while general summaries use non-sensitive references.
 
-Check identity, package or shipment discrepancies, visible condition, loose items, documentation and storage status under the project receipt process. Record photographs with date and identifier while protecting customer and site privacy. Damage or missing items should enter a discrepancy log with immediate control and owner. Receipt does not authorize assembly or use.
+### Identify the site inputs needed by the reviewers
 
-### Close site and interface prerequisites
+The acceptance team needs current task positions, ceiling geometry, floor information, access constraints and the intended work-zone layout. Reference the applicable survey and equipment data instead of copying provisional values into multiple forms. A facility representative may confirm availability of an area without having authority to approve its structural suitability. Name the relevant reviewer for each interface. The [work-zone layout guide](/blog/large-deck-crawler-platform-work-zone-layout/) can organize space questions; acceptance should record the scope considered and the decisions actually received.
 
-Confirm the controlled floor or ground review, route and work-zone status, power or charging arrangement, overhead-clearance record, emergency and rescue planning inputs, authorized roles and required documents. The exact list is project-specific. Each prerequisite should reference a signed or controlled record and show which test or release it blocks if left open.
+### Specify the inspection and assessment responsibilities
 
-### Run controlled checks with traceable results
+The <a href="https://www.hse.gov.uk/work-equipment-machinery/inspection.htm" target="_blank" rel="noopener noreferrer">HSE inspection guidance for Great Britain</a> describes inspection after installation or reassembly where equipment safety depends on installation conditions. Its applicability and the destination requirements need competent review. A supplier's contractual demonstration does not automatically replace such responsibilities. Ask the project team to identify the required assessments, their owners and their relationship to the acceptance event. This guide sets no test loads, inspection intervals, pass values or operating sequences.
 
-Use equipment-specific procedures and approved test sheets for the actual configuration. Record state, criterion, method reference, observation, instrument where applicable, result and witness. Do not bypass controls or invent steps for convenience. If a check is interrupted, preserve the last known state, reason, temporary controls and retest scope before the schedule resumes.
+![Raised red crawler apparatus alongside an industrial building](/images/equipment/entry-real-approach.webp)
 
-![Blank acceptance record template](/images/editorial/blank-fat-sat-record.svg)
-
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Example fields only; criteria must come from contract and project requirements.*
-
-<!-- audit-section: project-checklist -->
-## Operate a deviation and release system
-
-Acceptance is credible when problems remain visible until they are dispositioned and retested as required. A punch list should connect every issue to configuration, risk, owner and next decision.
-
-- Link configuration, receipt, prerequisites, inspections, tests and document deliverables in one index.
-- Record deviations, temporary controls, retest scope, closure evidence and release authority separately.
-- Record working height and outreach assumptions without treating them as an approved operating envelope.
-- Describe roof slope or building geometry, nearby edges and any changing work-face condition.
-- List task material, panel length, coil or feed information only where it affects the reviewed interface.
-- Assign weather and wind monitoring to the site team under its approved work method.
-- Provide ground or floor records and name the competent party responsible for support review.
-- Map access and route states from delivery through setup, task work and withdrawal.
-- State destination, transport and chassis constraints that belong to local or integration review.
-- Record voltage, power, control and documentation requirements with revision status and owner.
-
-### Write condition-based deviations
-
-Describe what was observed, the expected criterion, affected interface or function, immediate control, owner, due date and proposed disposition. Avoid vague entries such as adjust later. If a temporary concession is allowed, record authority, scope, expiry and limitations. Public editorial content should never reuse traceable site details or turn an issue into a performance story.
-
-### Verify corrections and affected scope
-
-A corrected item may affect drawings, manuals, parts records, training or another test. Record the actual corrected configuration and decide which checks repeat. The owner should close the deviation only with the required evidence and review. Do not treat a photograph of changed hardware as sufficient when the criterion requires measurement, function or a signed technical record.
-
-### Issue conditional or final release deliberately
-
-State who can release storage, assembly, testing, training, maintenance or operation and whether the release is conditional. List open items that remain compatible with that stage and those that are not. A final supplier handover does not automatically provide local or site authorization. Preserve the release with the controlled configuration and current limitations.
-
-![Acceptance evidence and closure chain](/images/editorial/fat-sat-evidence-chain.svg)
-
-*AI-assisted ARCLIFT editorial diagram; not evidence of equipment, configuration, project, capability or result. Conceptual document flow; no equipment, site or result is represented.*
+*Reference photograph of apparatus near a building. It cannot establish an accepted site location, approved ground conditions or the configuration covered by a project handover.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## Use acceptance records as lifecycle evidence
+## Link each finding to a criterion and decision owner
 
-### Balance practical site checks with traceability
+### Agree the criterion before collecting the result
 
-A short checklist can be usable at the workface but may hide criteria and configuration. A detailed record can become unwieldy and encourage unchecked boxes. The trade-off is a concise test sheet linked to controlled prerequisites, methods and evidence. Record enough context to reproduce the decision without copying every sensitive document. The package should help maintenance later, not only close the delivery milestone.
+For every contractual check, identify the agreed criterion, applicable configuration, responsible reviewer and evidence to be retained. A statement that the platform was demonstrated is too broad to establish what was assessed. Keep the agreed method in the appropriate controlled project document; do not invent it in the acceptance summary. If no criterion exists, record the item as needing agreement rather than creating a pass label after an observation. This protects the meaning of the record for both purchaser and supplier.
 
-The practical trade-off is between early coordination and false precision. A useful record exposes each constraint, interface and unresolved owner; it does not convert preliminary information into an approval.
+### Use stages to expose incomplete interfaces
 
-For general planning context, see the <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.453" target="_blank" rel="noopener noreferrer">OSHA official aerial-lift regulation page</a>. It supports general work-planning principles only. It does not verify an ARCLIFT configuration, settle destination rules or approve a site.
+The editorial matrix below separates typical record purposes. Its rows are planning prompts, not a mandatory test programme or a completed inspection. The trade-off is between a compact summary and enough detail to prevent one stage's result being applied to another. A concise stage record can still be useful when it clearly references the supporting document and states the limits of its decision.
+
+| Stage or interface | Record to identify | Decision owner to name | What remains separate |
+| --- | --- | --- | --- |
+| Arrival and receipt | Packing reconciliation and condition observations | Receiving party and supply discrepancy contact | Assembled configuration acceptance |
+| Supplied assemblies | Delivered configuration and document index | Technical information provider and purchaser | Local site suitability |
+| Assembly responsibility | Agreed scope and completion evidence | Assigned assembly provider and reviewer | Authorization for the ceiling task |
+| Site matching | Current floor, access and work-zone review references | Appropriate site and technical reviewers | Unreviewed locations or conditions |
+| Contractual acceptance | Agreed criteria, results and open items | Contractually assigned parties | Other required inspections and permissions |
+
+### Record exceptions without disguising their status
+
+An exception record should identify the issue, affected equipment or stage, responsible owner and the evidence needed for resolution. Do not label an item minor simply because it is inconvenient to resolve. Technical significance needs assessment by the relevant person. If a contractual decision is limited to part of the supply, draw that boundary explicitly. Keep any deferred item linked to the stage it affects. A closed commercial invoice or shipment claim does not automatically close a technical question in the equipment handover.
+
+![Yellow and blue crawler equipment at a low-bed loading transition](/images/equipment/transport-real-loading.webp)
+
+*Reference photograph of different equipment near a low-bed carrier. It does not verify an unloading method, arrival inspection or acceptance result for the ceiling platform.*
 
 <!-- audit-section: limitations-not-fit -->
-### Do not confuse supplier handover with site permission
+## Prepare a stage-specific handover package
 
-This method may not fit a project that lacks controlled site information, named decision owners or a safe way to close open items. This guide cannot define tests, acceptance values, statutory inspections, operator authorization or local release. It may not fit a project with no controlled configuration, no criteria or no witness authority. Keep the relevant stage on hold when site prerequisites, equipment instructions or deviation ownership are missing, even if the platform appears to function during a demonstration.
+An acceptance event may not fit the planned scope when key assemblies are absent, the applicable instructions are unresolved, site conditions differ from the agreed basis or required reviewers are unavailable. Record the affected stage and missing prerequisite. A photograph, supplier attendance or general signature cannot replace the evidence needed to decide that stage.
+
+### Collect the inputs for the actual destination stage
+
+<!-- audit-section: project-checklist -->
+- Delivered equipment identity, supplied assembly list and applicable drawing and instruction revisions.
+- Task height, ceiling geometry and the work zones included in the site review.
+- Materials and tools proposed for the platform task, with outstanding load inputs identified.
+- Floor information, support assumptions and the reviewer responsible for matching equipment and building data.
+- Access route and available space for the agreed delivery and assembly scope.
+- Wind or environmental exposure questions affecting any external part of the planned activity.
+- Destination requirements, required inspections and the parties responsible for confirming applicability.
+- Transport state, packing reconciliation and separately arriving assemblies or documents.
+- Power interface information and the specialist responsibilities needed before the relevant stage.
+- Acceptance criteria, planned witnesses, exception owners and the records required to close each stage.
+
+### Preserve the difference between scheduled and completed work
+
+Use dates and status fields that show whether an assessment is planned, performed, reviewed or accepted within its stated scope. If a witness was absent, record what occurred and ask the designated decision owner how that affects the agreement. Do not imply that a later signature proves attendance at an earlier event. Link revised findings to their earlier issue so the receiving team can see which conditions changed. Keep original observations available to authorized project participants rather than replacing them with a clean-looking summary.
+
+### Transfer open obligations into the next handover
+
+The operating organization needs to know which documents, parts or decisions remain outstanding after delivery and contractual acceptance. Route instruction and parts questions into the [maintenance and spares handover](/blog/crawler-platform-maintenance-spares-handover/), with owners and the affected configuration. Route personnel information into the familiarization process. The site team retains responsibility for the task and area decisions within its scope. A useful acceptance package connects these handovers without claiming that completion of one resolves all the others.
 
 <!-- audit-section: cta-editorial-note -->
-### Send an acceptance-record matrix
+Send ARCLIFT the agreed platform supply scope, destination, transport and arrival plan, task height, site work-zone layout and available floor information. Identify the delivery, assembly, document and acceptance interfaces you need clarified. As a technical selection and supply partner, ARCLIFT can organize the proposed supply records and questions for the responsible parties. Final acceptance criteria and site decisions must be project-specific. This editorial matrix and its reference photographs are neither test instructions nor evidence of a completed project acceptance.
 
-Provide the configuration index, contract criteria, site prerequisites, receipt record, staged test plan, witness roles, deviation process, document deliverables, training or maintenance handover status and release authority. Ask each owner to confirm closure evidence before the event. Keep private site records in the controlled channel.
+## Questions about site acceptance
 
-Send the site, destination, transport, work-zone and ground or floor records through a controlled project channel. The final, signed, project-specific package must identify open items and responsible reviewers. ARCLIFT can support preliminary selection as an integrated equipment supplier and technical selection and supply partner. Editorial images on this page are planning aids only and cannot replace controlled drawings, calculations, inspections or local review.
+#### Does signing a delivery receipt mean the platform is accepted for use?
 
-## FAQ
+Its meaning depends on the actual document and agreed responsibilities. The record should identify whether it confirms receipt, condition or another limited matter. Technical acceptance, required inspections and site authorization should not be inferred from a general delivery signature.
 
-#### Is a successful demonstration site acceptance?
+#### Can an earlier supplier test replace the destination review?
 
-Not automatically. Acceptance depends on agreed criteria, configuration, prerequisites, witnesses, documented results, deviations and the authority defined by the project and local requirements.
+Only the responsible review can establish what earlier evidence covers. Its configuration, conditions and criteria may differ from the delivered and installed state. Reference applicable prior evidence precisely and identify the destination interfaces it does not address.
 
-#### What should a site acceptance record identify?
+#### What if only one work zone has been reviewed?
 
-Identify the configuration, governing documents, condition and prerequisites, check or test, criterion, result, witness, deviation status and release decision.
+State that boundary explicitly. The record should not imply that every location in the building is included. New zones, routes or task conditions need consideration by the relevant project parties before earlier findings are applied to them.
 
-#### Can open items remain at handover?
+#### How should incomplete documents be handled at handover?
 
-Only under a project-defined conditional release with named authority, scope, controls, due dates and limits. Items that affect the next stage should keep that stage on hold.
-
-#### Should acceptance records be kept for maintenance?
-
-Yes. They establish the delivered and accepted baseline, approved deviations and open items that can affect later inspection, parts, troubleshooting and change control.
+List the missing document, applicable configuration, responsible provider and affected decision. The designated reviewer must determine the consequence for the stage concerned. Recording the gap is useful; treating a promised future document as already received or approved is not.

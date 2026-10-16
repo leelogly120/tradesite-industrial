@@ -127,4 +127,104 @@ export const REFERENCE_PHOTO_ARTICLES = Object.freeze([
     cover: Object.freeze(["/images/equipment/entry-real-approach.webp"]),
     body: Object.freeze(["/images/equipment/entry-real-cover.webp","/images/equipment/entry-real-interior.webp","/images/equipment/transport-real-stowed.webp"]),
   }),
+  Object.freeze({
+    slug: "roof-panel-profile-material-tooling-data",
+    cover: Object.freeze(["/images/equipment/coil-real-panel.webp"]),
+    body: Object.freeze(["/images/equipment/coil-real-module.webp","/images/equipment/coil-real-handling.webp","/images/equipment/entry-real-clearance.webp"]),
+  }),
+  Object.freeze({
+    slug: "roll-forming-line-electrical-control-interfaces",
+    cover: Object.freeze(["/images/equipment/coil-real-module.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-clearance.webp","/images/equipment/coil-real-handling.webp","/images/equipment/transport-real-stowed.webp"]),
+  }),
+  Object.freeze({
+    slug: "roof-level-roll-forming-lift-coil-loading-plan",
+    cover: Object.freeze(["/images/equipment/coil-real-cover.webp"]),
+    body: Object.freeze(["/images/equipment/coil-real-module.webp","/images/equipment/coil-real-handling.webp","/images/equipment/entry-real-clearance.webp"]),
+  }),
+  Object.freeze({
+    slug: "roof-level-roll-forming-weather-hold-points",
+    cover: Object.freeze(["/images/equipment/entry-real-clearance.webp"]),
+    body: Object.freeze(["/images/equipment/coil-real-panel.webp","/images/equipment/coil-real-handling.webp","/images/equipment/transport-real-stowed.webp"]),
+  }),
+  Object.freeze({
+    slug: "crawler-roll-forming-lift-work-zone-relocation",
+    cover: Object.freeze(["/images/equipment/transport-real-stowed.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-clearance.webp","/images/equipment/transport-real-loading.webp","/images/equipment/transport-real-cover.webp"]),
+  }),
+  Object.freeze({
+    slug: "high-altitude-roll-forming-lift-rfq-data",
+    cover: Object.freeze(["/images/equipment/coil-real-handling.webp"]),
+    body: Object.freeze(["/images/equipment/coil-real-module.webp","/images/equipment/entry-real-clearance.webp","/images/equipment/transport-real-carrier.webp"]),
+  }),
+  Object.freeze({
+    slug: "roll-forming-line-fat-sat-acceptance-checklist",
+    cover: Object.freeze(["/images/equipment/coil-real-module.webp"]),
+    body: Object.freeze(["/images/equipment/coil-real-cover.webp","/images/equipment/entry-real-clearance.webp","/images/equipment/coil-real-panel.webp"]),
+  }),
+  Object.freeze({
+    slug: "indoor-aerial-platform-ground-pressure-guide",
+    cover: Object.freeze(["/images/equipment/entry-real-cover.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-interior.webp","/images/equipment/entry-real-approach.webp","/images/equipment/transport-real-stowed.webp"]),
+  }),
+  Object.freeze({
+    slug: "large-deck-crawler-platform-work-zone-layout",
+    cover: Object.freeze(["/images/equipment/entry-real-interior.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-cover.webp","/images/equipment/entry-real-approach.webp","/images/equipment/transport-real-stowed.webp"]),
+  }),
+  Object.freeze({
+    slug: "large-deck-platform-wall-panel-access-planning",
+    cover: Object.freeze(["/images/equipment/entry-real-interior.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-approach.webp","/images/equipment/entry-real-cover.webp","/images/equipment/transport-real-loading.webp"]),
+  }),
+  Object.freeze({
+    slug: "warehouse-ceiling-access-platform-planning",
+    cover: Object.freeze(["/images/equipment/entry-real-cover.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-interior.webp","/images/equipment/entry-real-approach.webp","/images/equipment/transport-real-cover.webp"]),
+  }),
+  Object.freeze({
+    slug: "stadium-ceiling-access-platform-planning",
+    cover: Object.freeze(["/images/equipment/entry-real-approach.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-cover.webp","/images/equipment/entry-real-interior.webp","/images/equipment/transport-real-stowed.webp"]),
+  }),
+  Object.freeze({
+    slug: "dual-power-crawler-platform-selection",
+    cover: Object.freeze(["/images/equipment/entry-real-interior.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-cover.webp","/images/equipment/entry-real-approach.webp","/images/equipment/transport-real-stowed.webp"]),
+  }),
+  Object.freeze({
+    slug: "remote-control-aerial-platform-safety-planning",
+    cover: Object.freeze(["/images/equipment/entry-real-approach.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-interior.webp","/images/equipment/entry-real-cover.webp","/images/equipment/transport-real-loading.webp"]),
+  }),
+  Object.freeze({
+    slug: "aerial-platform-emergency-lowering-rescue-plan",
+    cover: Object.freeze(["/images/equipment/entry-real-cover.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-interior.webp","/images/equipment/entry-real-approach.webp","/images/equipment/transport-real-stowed.webp"]),
+  }),
+  Object.freeze({
+    slug: "aerial-platform-familiarization-handover",
+    cover: Object.freeze(["/images/equipment/entry-real-approach.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-interior.webp","/images/equipment/entry-real-cover.webp","/images/equipment/transport-real-stowed.webp"]),
+  }),
+  Object.freeze({
+    slug: "ceiling-maintenance-safety-checklist",
+    cover: Object.freeze(["/images/equipment/entry-real-cover.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-interior.webp","/images/equipment/entry-real-approach.webp","/images/equipment/transport-real-stowed.webp"]),
+  }),
+  Object.freeze({
+    slug: "ceiling-work-technology-trends",
+    cover: Object.freeze(["/images/equipment/entry-real-approach.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-cover.webp","/images/equipment/entry-real-interior.webp","/images/equipment/transport-real-stowed.webp"]),
+  }),
+  Object.freeze({
+    slug: "crawler-ceiling-platform-site-acceptance-records",
+    cover: Object.freeze(["/images/equipment/entry-real-cover.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-interior.webp","/images/equipment/entry-real-approach.webp","/images/equipment/transport-real-loading.webp"]),
+  }),
+  Object.freeze({
+    slug: "crawler-platform-maintenance-spares-handover",
+    cover: Object.freeze(["/images/equipment/transport-real-stowed.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-cover.webp","/images/equipment/entry-real-interior.webp","/images/equipment/transport-real-loading.webp"]),
+  }),
 ]);

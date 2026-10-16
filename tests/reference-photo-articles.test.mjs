@@ -30,6 +30,26 @@ const expectedArticles = [
   {"slug":"truck-mounted-forming-lift-road-transport-documents","date":"2026-08-07","images":["transport-real-carrier","transport-real-cover","transport-real-stowed","coil-real-cover"]},
   {"slug":"crawler-ceiling-wall-panel-platform-project-data","date":"2026-07-24","images":["entry-real-cover","entry-real-interior","entry-real-approach","transport-real-stowed"]},
   {"slug":"large-deck-crawler-platform-vs-basket-lift","date":"2026-08-07","images":["entry-real-approach","entry-real-cover","entry-real-interior","transport-real-stowed"]},
+  {"slug":"roof-panel-profile-material-tooling-data","date":"2026-07-27","images":["coil-real-panel","coil-real-module","coil-real-handling","entry-real-clearance"]},
+  {"slug":"roll-forming-line-electrical-control-interfaces","date":"2026-07-27","images":["coil-real-module","entry-real-clearance","coil-real-handling","transport-real-stowed"]},
+  {"slug":"roof-level-roll-forming-lift-coil-loading-plan","date":"2026-08-07","images":["coil-real-cover","coil-real-module","coil-real-handling","entry-real-clearance"]},
+  {"slug":"roof-level-roll-forming-weather-hold-points","date":"2026-08-07","images":["entry-real-clearance","coil-real-panel","coil-real-handling","transport-real-stowed"]},
+  {"slug":"crawler-roll-forming-lift-work-zone-relocation","date":"2026-08-07","images":["transport-real-stowed","entry-real-clearance","transport-real-loading","transport-real-cover"]},
+  {"slug":"high-altitude-roll-forming-lift-rfq-data","date":"2026-08-07","images":["coil-real-handling","coil-real-module","entry-real-clearance","transport-real-carrier"]},
+  {"slug":"roll-forming-line-fat-sat-acceptance-checklist","date":"2026-07-27","images":["coil-real-module","coil-real-cover","entry-real-clearance","coil-real-panel"]},
+  {"slug":"indoor-aerial-platform-ground-pressure-guide","date":"2026-07-27","images":["entry-real-cover","entry-real-interior","entry-real-approach","transport-real-stowed"]},
+  {"slug":"large-deck-crawler-platform-work-zone-layout","date":"2026-08-07","images":["entry-real-interior","entry-real-cover","entry-real-approach","transport-real-stowed"]},
+  {"slug":"large-deck-platform-wall-panel-access-planning","date":"2026-08-07","images":["entry-real-interior","entry-real-approach","entry-real-cover","transport-real-loading"]},
+  {"slug":"warehouse-ceiling-access-platform-planning","date":"2026-07-27","images":["entry-real-cover","entry-real-interior","entry-real-approach","transport-real-cover"]},
+  {"slug":"stadium-ceiling-access-platform-planning","date":"2026-07-27","images":["entry-real-approach","entry-real-cover","entry-real-interior","transport-real-stowed"]},
+  {"slug":"dual-power-crawler-platform-selection","date":"2026-07-27","images":["entry-real-interior","entry-real-cover","entry-real-approach","transport-real-stowed"]},
+  {"slug":"remote-control-aerial-platform-safety-planning","date":"2026-07-27","images":["entry-real-approach","entry-real-interior","entry-real-cover","transport-real-loading"]},
+  {"slug":"aerial-platform-emergency-lowering-rescue-plan","date":"2026-07-27","images":["entry-real-cover","entry-real-interior","entry-real-approach","transport-real-stowed"]},
+  {"slug":"aerial-platform-familiarization-handover","date":"2026-08-10","images":["entry-real-approach","entry-real-interior","entry-real-cover","transport-real-stowed"]},
+  {"slug":"ceiling-maintenance-safety-checklist","date":"2026-08-11","images":["entry-real-cover","entry-real-interior","entry-real-approach","transport-real-stowed"]},
+  {"slug":"ceiling-work-technology-trends","date":"2026-08-11","images":["entry-real-approach","entry-real-cover","entry-real-interior","transport-real-stowed"]},
+  {"slug":"crawler-ceiling-platform-site-acceptance-records","date":"2026-08-07","images":["entry-real-cover","entry-real-interior","entry-real-approach","transport-real-loading"]},
+  {"slug":"crawler-platform-maintenance-spares-handover","date":"2026-08-07","images":["transport-real-stowed","entry-real-cover","entry-real-interior","transport-real-loading"]},
 ];
 const expectedDimensions = {
   'transport-real-cover': [744, 419],
@@ -72,7 +92,7 @@ function assertPhotoDisclosure({ alt, caption }, context) {
 }
 
 describe('approved reference photographs', () => {
-  it('limits the photo replacement to twenty-three fixed articles and twelve distinct photograph URLs', async () => {
+  it('limits the photo replacement to forty-three fixed articles and twelve distinct photograph URLs', async () => {
     expect(REFERENCE_PHOTO_ARTICLES).toEqual(expectedArticles.map(({ slug, images }) => ({
       slug,
       cover: [photoUrl(images[0])],
