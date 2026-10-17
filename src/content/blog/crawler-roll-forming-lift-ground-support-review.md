@@ -2,7 +2,7 @@
 title: "Ground Support Review for Crawler Roll-Forming Lifts"
 description: "Structure a ground-support review for crawler roll-forming lifts using route segments, surface records, underground hazards, open items and competent decisions."
 date: 2026-08-07
-updated: 2026-10-14
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["crawler lift ground support", "site surface review", "roll forming lift", "project risk"]
 coverImage: "/images/equipment/transport-real-stowed.webp"
@@ -68,6 +68,14 @@ The <a href="https://www.hse.gov.uk/construction/safetytopics/excavations.htm" t
 An issued drawing and the current site can describe different conditions. A drainage trench may have been backfilled, a slab repaired, material stacked nearby or temporary works installed since the original record. Mark those changes and provide dated observations without assuming that a recent repair improves or reduces capacity by a known amount.
 
 Water and excavation changes can also alter the review context. A site note saying “dry when visited” records an observation, not an enduring ground property. The appointed specialist should establish which conditions bound the assessment and what changes require another look. Those conditions need to remain available to the site team.
+
+### Check which support locations the records actually cover
+
+A report for the site can contain different zones, exclusions or investigation locations. Ask the ground specialist to relate that coverage to the proposed equipment supports. The useful overlay shows the equipment arrangement and the relevant site-record boundaries together. Having a report in the project folder does not establish that every support location falls within its assessed area or assumptions.
+
+Consider a hypothetical yard where the proposed support arrangement crosses an original paved area and a later drainage repair. The available report describes the original construction; the repair record identifies a trench but leaves its final extent unclear. The purchasing question is whether the equipment case can be assessed at the proposed locations with that evidence. Neither the continuous-looking surface nor the absence of visible damage answers it. The specialist may need information about the repaired area and its relationship to the other support locations before returning a bounded conclusion.
+
+Record a boundary that is uncertain as uncertain. Do not draw an invented dividing line or allocate part of a support load to each side using a simple area ratio. Likewise, shifting the machine on the sketch to place a support inside a documented zone changes the proposed geometry and needs review. The buyer's comparison should show which candidate positions have relevant evidence, which cross different construction zones, and which still need investigation. It should leave capacity and support-design decisions with the appointed specialists.
 
 ### Keep the approach route distinct from the final position
 

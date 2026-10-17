@@ -2,7 +2,7 @@
 title: "Coil Route Planning for a Roll-Forming Line Feed System"
 description: "Prepare a coil-route review package; it does not select lifting equipment, a feeder, or the final safety arrangement for the roll-forming line project."
 date: 2026-07-27
-updated: 2026-10-05
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "coil handling", "feed planning", "material flow"]
 coverImage: "/images/equipment/coil-real-cover.webp"
@@ -11,7 +11,7 @@ coverCaption: "Reference photograph from equipment documentation; identifying de
 draft: false
 ---
 
-A coil can arrive on schedule and still be unavailable to the forming line. Its delivery label may not match the production record, its wrapping may hide the identification needed at feed entry, or the receiving team may have accepted material that the forming team has not reviewed. A coil-route package connects those decisions before delivery, so arrival, custody and permission to feed remain distinguishable.
+A coil can arrive on schedule and still be unavailable to the forming line. Another delivery may occupy its proposed route, its label may not match the production record, or the receiving team may have accepted material that the forming team has not reviewed. A coil-route package connects those decisions before delivery, so arrival, custody and permission to feed remain distinguishable.
 
 This guide concerns the information passed from receiving through ground staging to the forming input. The separate [roof-level coil loading plan](/blog/roof-level-roll-forming-lift-coil-loading-plan/) covers proposed transfer boundaries and the project inputs needed for a loading review. Neither article selects lifting equipment or provides handling instructions. Here, the practical question is: what must the buyer, material supplier, site team and forming-equipment reviewer agree so the delivered coil can be matched to the intended feed system?
 
@@ -57,6 +57,21 @@ Show each proposed staging location on the current route drawing, including rece
 
 Ask the production planner how long a coil may wait and what happens when feed entry is unavailable. A delivery slot and a forming slot are different commitments. The package should identify who owns material during the gap and where its status is recorded, including when custody crosses a shift or contractor boundary.
 
+### Check whether arrival order matches the next material request
+
+A staging layout can show space for every delivered coil while hiding the route needed for the next production request. In a hypothetical programme, material for a later panel run arrives before the coil intended for the first run. Ask the site planner to show the proposed path from each identified holding position to the ground-level feed boundary in that actual arrival state. A line on an otherwise empty drawing does not answer whether the same path remains available with the earlier delivery present.
+
+The review also needs an assumed pause state. If partly used material is expected to return from the feed boundary, show the proposed holding location and whether it overlaps the next receiving area, another coil's proposed path or access required by the forming equipment. These are requests for a spatial review; this article does not choose a handling machine, describe how to move a coil or decide whether a proposed position is acceptable.
+
+| Planning snapshot | Physical relationship to show | Question for the site and production planners |
+| --- | --- | --- |
+| First delivery is stored | Actual occupied positions and the next coil's proposed route | Is the material needed first distinguishable and reachable under the proposed plan? |
+| A later delivery is expected | Receiving space alongside existing material | Does the next arrival depend on a holding position already being vacated? |
+| Feed entry is unavailable | Proposed waiting position and equipment-access boundary | Which spatial assumption changes while the material is waiting? |
+| Remaining material is expected back | Return position, next receipt and next feed request together | Are two different uses being assigned to the same space at the same time? |
+
+Keep production priority separate from delivery identity. If the run order changes, annotate the affected snapshot rather than changing labels to make the old route appear current. The useful output is a list of spatial conflicts for the appointed planners to resolve, including unknown dimensions or handling envelopes, before the route is relied upon.
+
 ### Assign packaging and identification decisions
 
 The material supplier's packing record should describe what arrives; the approved project documents must determine how packaging and restraints are handled. The route package records who owns those decisions, where the relevant instructions can be found and how coil identity remains accessible through the handover. It does not prescribe removal of bands, wrapping or supports.
@@ -92,7 +107,7 @@ Where separate feed and forming equipment are proposed, request an interface rec
 
 The table below is an example of coordination fields, not an approved operating sequence. Give every unresolved item a responsible party and a closure reference. A completed transport entry must not automatically close the feed-acceptance record.
 
-Attach six records for the first interface review:
+Attach the following records for the first interface review:
 
 - Coil identity register linked to the material and profile revisions, including unresolved delivery discrepancies.
 - Proposed feed-entry geometry with each height datum identified and the controlling drawing requested where missing.
@@ -100,6 +115,8 @@ Attach six records for the first interface review:
 - Delivery packaging and transport description showing which condition is actually expected at receipt.
 - Feed-to-forming power and control interface requests, each assigned to the party responsible for the proposed equipment.
 - Destination documentation requirements and the named owner who can accept each outstanding interface decision.
+- Arrival-order and production-order snapshots showing the proposed route with other material present.
+- Proposed returned-material positions checked against the next receipt and feed requests.
 
 *On smaller screens, scroll the table sideways to read all three columns.*
 

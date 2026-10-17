@@ -2,7 +2,7 @@
 title: "40HQ Planning for Truck-Mounted Roll-Forming Lifts"
 description: "Review 40HQ shipping for roll-forming lifts by comparing complete vehicles, equipment modules, local chassis supply, packing boundaries and destination work."
 date: 2026-07-24
-updated: 2026-10-14
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["40HQ Logistics", "Truck-Mounted Systems", "Project Delivery"]
 coverImage: "/images/equipment/transport-real-cover.webp"
@@ -87,6 +87,22 @@ Separating assemblies can change the transport envelope, but each separated inte
 
 Consider a proposed option that removes a forming module from its supporting arrangement. Before accepting it, the buyer should be able to locate the permitted separation boundary, packing provisions, receiving resources and reconnection deliverables. This is a planning example, not an instruction to disconnect a machine. If those records are absent, the interface is unresolved regardless of how attractive the freight estimate looks.
 
+### Check whether the package groups support destination work
+
+The packing proposal should show where the items needed for each agreed destination activity will arrive. A main module, its identified connecting components and the relevant instructions might be delivered in different packages. Their combined presence on one order does not establish that they will be available together when the integration team needs them.
+
+Consider a hypothetical packing revision that puts a forming module in one shipment and its specified adapter components in another. The revised arrangement may reduce the size of one package, but it also creates a dependency between deliveries. Before choosing it, ask the appointed installer which items and information must be available for the agreed receiving and integration stages. A buyer should not assume that the visible main machine is enough to begin the next stage.
+
+Record three relationships in the packing discussion:
+
+- Each equipment assembly should refer to the packages containing its separately supplied interface items, with exclusions visible.
+- Each planned destination activity should identify the equipment, information and temporary items it depends on, using the installer's requirements.
+- Each proposed split shipment should identify what can be received independently and what later activity remains dependent on the other arrival.
+
+This is a comparison of package scope and dependencies, not a loading, unpacking or assembly sequence. The packing and handling specialists must establish physical access, restraint and handling arrangements. If a proposal depends on retrieving an item before another package can be dealt with, they need to resolve that condition in their own plan; this guide does not authorize reaching into a load or altering its securing.
+
+The result may be a different package grouping, a clarified delivery boundary or an expressly deferred integration activity. Keep that consequence beside the freight proposal so the buyer can compare complete routes. The [destination receipt guide](/blog/roll-forming-lift-destination-receipt-plan/) then records what actually arrived against those package relationships.
+
 ### Coordinate the local chassis before packing closes
 
 An equipment-only route shifts the vehicle purchase into a separate workstream. That workstream must still converge with the equipment design. Use the [destination chassis sourcing guide](/blog/truck-mounted-lift-destination-chassis-sourcing/) to define who buys the vehicle and the [truck chassis interface review](/blog/truck-mounted-roll-forming-chassis-interface-review/) to define the information needed for physical integration.
@@ -121,6 +137,7 @@ Keep “information missing” separate from “reviewed and unsuitable.” The 
 - Record the ground or floor conditions and receiving-space constraints that the handling planner must review.
 - State whether chassis supply and transport are included, separate or local, with their interface-review status.
 - List destination assembly, power and control reconnection work, required documentation and the party providing each deliverable.
+- Link separately packed interface components to their assemblies and identify which destination activities depend on another shipment arriving.
 - Identify the shipment changes that reopen the study and the person who can release revised booking information.
 
 ### Record the decision without hiding exclusions

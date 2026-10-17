@@ -227,4 +227,19 @@ export const REFERENCE_PHOTO_ARTICLES = Object.freeze([
     cover: Object.freeze(["/images/equipment/transport-real-stowed.webp"]),
     body: Object.freeze(["/images/equipment/entry-real-cover.webp","/images/equipment/entry-real-interior.webp","/images/equipment/transport-real-loading.webp"]),
   }),
+  Object.freeze({
+    slug: "crawler-under-ceiling-platform-buyers-guide",
+    cover: Object.freeze(["/images/equipment/entry-real-cover.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-approach.webp","/images/equipment/entry-real-interior.webp","/images/equipment/transport-real-stowed.webp"]),
+  }),
+  Object.freeze({
+    slug: "aerial-platform-worker-tool-material-load-planning",
+    cover: Object.freeze(["/images/equipment/entry-real-interior.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-cover.webp","/images/equipment/entry-real-approach.webp","/images/equipment/transport-real-stowed.webp"]),
+  }),
+  Object.freeze({
+    slug: "ceiling-platform-overhead-clearance-survey",
+    cover: Object.freeze(["/images/equipment/entry-real-approach.webp"]),
+    body: Object.freeze(["/images/equipment/entry-real-cover.webp","/images/equipment/entry-real-interior.webp","/images/equipment/transport-real-stowed.webp"]),
+  }),
 ]);

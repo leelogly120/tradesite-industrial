@@ -2,7 +2,7 @@
 title: "Crawler vs Truck-Mounted Roll-Forming Lifts Compared"
 description: "Compare crawler and truck-mounted roll-forming lifts by site access, support space, panel outlet position, road transfer and destination chassis requirements."
 date: 2026-07-24
-updated: 2026-10-14
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["Equipment Selection", "Crawler Systems", "Truck-Mounted Systems"]
 coverImage: "/images/equipment/transport-real-cover.webp"
@@ -128,6 +128,22 @@ Neither option is ready when the forming line, outlet reference or panel receivi
 - Identify wind and weather decision responsibilities that could affect forming, receipt and changes between work zones.
 
 Add a short supply-scope statement beside each proposal: what is included, what must be obtained separately and which interface remains open. In a destination-chassis route, use the [chassis sourcing guide](/blog/truck-mounted-lift-destination-chassis-sourcing/). If a modular shipment is being considered, the [40HQ planning guide](/blog/40hq-shipping-truck-mounted-roll-forming-lift/) explains the packing-study question without assuming container fit.
+
+### Compare the resources behind each mobility claim
+
+Ask what each offer assumes will already be available at the destination. “Delivered to site” may end at the carrier's arrival point, while “mobile system” may describe an installed vehicle without including the arrangements needed to reach its working position. These phrases need a physical handover boundary before they help compare architectures.
+
+In a hypothetical comparison, a crawler offer includes a carrier for delivery but leaves collection to the buyer. A truck-mounted offer includes the equipment vehicle but assumes that separate arriving items can be received locally. Both offers could describe their included equipment accurately. Neither description answers who supplies the missing part of the complete journey. The difference is a purchasing dependency, not evidence that one base is more mobile.
+
+| Resource to compare | What to ask for in each proposal | What an unanswered item means |
+| --- | --- | --- |
+| Transport to the destination | Actual carrier or vehicle scope and delivery endpoint | The arrival route is not yet fully priced or assigned |
+| Arrival handling | Which equipment items change carrier or support at the handover | Site resources may be assumed outside the offer |
+| Separately arriving modules | Their delivery boundary and proposed receiving arrangement | Vehicle arrival may precede complete equipment receipt |
+| Temporary holding space | Whether the proposal depends on a carrier, module or accessory waiting onsite | The site must assess an occupation not shown by the work footprint |
+| Collection or the next destination | Who provides the next transport arrangement and its review inputs | Initial delivery does not settle later transfers |
+
+Complete these rows for both candidates without assigning a generic advantage to either architecture. If the buyer already has a suitable service provider for an excluded task, record that as a project-specific provision requiring confirmation. If no provider or space has been identified, keep the dependency open. This makes the offers comparable without inventing operating permissions, availability or ownership costs.
 
 ### Read the comparison as a set of dependencies
 

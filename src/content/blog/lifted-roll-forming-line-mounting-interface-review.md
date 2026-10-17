@@ -2,7 +2,7 @@
 title: "Mounting Interface Review for Lifted Roll-Forming Lines"
 description: "Review the mounting of a roof-panel roll former on a lift through machine geometry, mass inputs, attachment boundaries, service space and integration ownership."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming mounting interface", "lifted forming line", "interface control", "technical review"]
 coverImage: "/images/equipment/coil-real-module.webp"
@@ -37,6 +37,14 @@ For a new line, ask which geometry and mass information is established and which
 Mark the forming-machine frame, any proposed intermediate support, the lifting structure and relevant accessories as separate items. Identify who supplies each item and who owns the design at their meeting points. A quotation for a roll former and a quotation for a lift can both be complete within their own scope while leaving the connecting arrangement unassigned.
 
 The [roll-forming machine reference](/products/arc-rf8-roll-forming-machine/) introduces the forming equipment family; it does not confirm that a particular machine fits every lifting configuration. If an adaptor or support frame is proposed, identify it explicitly in the supply scope. Do not let the phrase mounting included conceal an undefined component or design responsibility.
+
+### Identify both sides of an intermediate adaptor
+
+An intermediate support creates two interfaces: the machine base to the adaptor, and the adaptor to the lifting structure. Ask which drawing describes each face and whether quoted dimensions include the intermediate item. A machine mounting dimension and a platform dimension may appear inconsistent because one includes an adaptor that the other omits. Alternatively, apparently matching outlines may conceal different connection references. Identify the actual parts before asking for a fit decision.
+
+For a hypothetical split-supply offer, the forming-line supplier includes a base frame while the lift supplier includes a separate connecting frame. The buyer needs to establish whether these are two required items, alternative descriptions of one item, or proposals that have not yet been coordinated. Each agreed item should have a recognizable identity, supplier and drawing reference. This makes the purchase scope understandable without letting procurement choose a connection detail.
+
+Also ask what information will demonstrate the relevant interfaces once the assembly is complete. A later-installed cabinet, cover or auxiliary module might conceal an area that the responsible reviewer needs to verify. Clarify whether the agreed evidence is produced before that area is covered, remains accessible in the completed arrangement, or requires a different technical proposal. The appointed parties determine the necessary checks and access provisions. The purpose of this question is to avoid buying an integration package whose promised verification cannot be connected to the delivered parts; it is not an inspection sequence or permission to remove a cover.
 
 ### Separate handling features from permanent support features
 

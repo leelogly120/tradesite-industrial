@@ -2,7 +2,7 @@
 title: "Road Transport Review for Truck-Mounted Forming Lifts"
 description: "Review road transport for truck-mounted forming lifts by separating vehicle installations, carried equipment, transport states and destination responsibilities."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["road transport documents", "truck mounted forming lift", "configuration records", "logistics handover"]
 coverImage: "/images/equipment/transport-real-carrier.webp"
@@ -101,6 +101,14 @@ The trade-off is not simply “truck versus crawler.” A crawler may be transpo
 Keeping equipment integrated may reduce some destination assembly interfaces, while introducing vehicle-integration questions that need closure before dispatch. Separating modules may move work into the destination assembly stage. These are possible scope differences, not promises of lower cost, quicker travel or simpler approval.
 
 Ask the commercial parties to identify the work and records retained at each end of the journey. Use the [destination receipt guide](/blog/roll-forming-lift-destination-receipt-plan/) for the receiving boundary and the [40HQ planning guide](/blog/40hq-shipping-truck-mounted-roll-forming-lift/) when container shipment is actually proposed. A container label does not resolve a road leg before or after the sea movement.
+
+### Compare the return journey with the outward load
+
+The delivery record describes the journey to the site. A later departure can involve a different set of installed items, carried equipment and packaging, even when the same vehicle returns along the same road. Ask the vehicle and carrier parties to identify the intended return configuration alongside the outward configuration. The comparison should say what remains installed, what travels as separate cargo, what stays at the site and what leaves by another carrier.
+
+For a hypothetical delivery, a module and its protective frame arrive together, but the module stays for installation while the empty frame returns with loose accessories. The outward cargo description no longer identifies the return load. In another hypothetical arrangement, an accessory is detached during site preparation and subsequently travels on the same vehicle in a different location. Detachment alone does not establish that the vehicle has less cargo or that an earlier transport decision remains applicable.
+
+Some records may still describe the same vehicle or unchanged component. Preserve those references while asking the responsible parties which load, state and journey records need revision. A receipt list helps show what was handed over, but it does not decide the conditions for the next public-road movement. This comparison is useful when agreeing responsibility for return packaging and equipment collection: include the information needed for the actual departure in that scope. It does not authorize removal of components, select a securing method or establish that the return trip qualifies as empty running.
 
 ![Coil suspended beside red vehicle-mounted equipment in an outdoor yard](/images/equipment/coil-real-cover.webp)
 

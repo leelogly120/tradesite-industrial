@@ -2,7 +2,7 @@
 title: "Truck-Mounted Roll-Forming Payload Allocation Review"
 description: "Review truck-mounted roll-forming lift mass inputs by separating chassis, installed equipment, coils and accessories across road, arrival and working states."
 date: 2026-08-13
-updated: 2026-10-16
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["truck-mounted roll forming", "payload allocation", "mass property schedule", "chassis integration"]
 coverImage: "/images/equipment/coil-real-cover.webp"
@@ -62,6 +62,8 @@ A road review also needs the actual chassis information and destination requirem
 Arrival can introduce separately delivered components or materials, while transport-only items may be removed under the applicable arrangements. List those changes as changes of state. If an accessory is stored beside the equipment after arrival, that does not establish whether it was included on the vehicle during the preceding journey.
 
 Use a simple presence field for each item: included, excluded or unresolved for the named state. An unresolved entry is an information request, not a zero mass. This keeps the arrival account connected to the road account without assuming they are identical.
+
+Distinguish removal from an assembly from removal from the vehicle. In a hypothetical return arrangement, a transport frame is detached from the machine but placed elsewhere on the same vehicle. Its installation status and position change; it has not disappeared from that vehicle's contents. If the frame instead leaves on another carrier, identify that separate journey. The schedule should state where the item is in the named case, rather than using “removed” as an unexplained exclusion.
 
 ### Keep the working arrangement as a separate review case
 
@@ -126,9 +128,11 @@ These examples show why the schedule should preserve individual items. If only a
 
 ### Reconcile two supplier figures before adding them
 
-Ask whether the lifting-assembly figure already includes the hydraulic power unit, connecting structure or other quoted accessories. Ask whether the forming-line figure describes the machine alone or includes its packaging and loose equipment. Write the inclusions beside each value before the figures are passed onward.
+Consider a hypothetical quotation that gives one total for the lifting assembly, then lists a connecting frame and hydraulic power package on separate commercial lines. Separate prices do not establish separate masses to add: those items may already be inside the assembly total. A second quotation for the forming machine may include a transport frame and loose accessories that will not all remain installed. Reconcile the physical inclusions before combining the figures.
 
-Where boundaries remain unclear, flag the overlapping item and obtain a corrected scope statement. Do not solve uncertainty by silently dropping an item or adding a guessed allowance. A specialist may request a particular conservative assumption, but that instruction and its purpose should remain explicit rather than appearing as supplier-confirmed data.
+For each combined total, record which identified subitems it covers and whether their individual figures are an explanatory breakdown or additional items. A breakdown can help locate a later change without being added to its own parent total. Where one subitem is excluded from the combined figure, identify that exclusion explicitly and retain its separate basis. The aim is one complete, non-overlapping description of the named state, not the largest total obtainable from all available numbers.
+
+If the suppliers cannot yet establish whether the connecting frame or power package is included, keep that specific scope question open. Do not silently drop the item or invent an allowance. Ask the issuing party to return the reconciled assembly scope, with any remaining provisional inputs visible. The vehicle specialist can then decide what further evidence or assumptions are needed for its assessment. This example explains how to organize mass inputs; it supplies no mass value, permitted vehicle load or calculation method.
 
 ### Preserve changes without inventing a pass result
 

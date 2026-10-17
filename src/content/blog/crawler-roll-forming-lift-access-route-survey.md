@@ -2,7 +2,7 @@
 title: "Crawler Roll-Forming Lift Access Route Survey Guide"
 description: "Plan crawler roll-forming lift access route by surveying entry, travel, setup and withdrawal states, surface changes, obstructions and control responsibilities."
 date: 2026-08-07
-updated: 2026-10-14
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["crawler roll forming lift", "access route survey", "site logistics", "work zone planning"]
 coverImage: "/images/equipment/entry-real-clearance.webp"
@@ -62,6 +62,14 @@ Keep the measurement source and date beside the location. A nominal architectura
 On a plan, a route line can turn sharply at a corner. The equipment occupies an area throughout the manoeuvre, and its relevant geometry must be assessed by the appropriate parties. Record the surrounding boundaries and approach directions so a reviewer can examine the turn using the actual state.
 
 Crawler tracks do not justify an assumption that the complete machine can turn anywhere within its parked outline. Attachments and the selected configuration still matter, as do the permitted movement conditions. If a turn is unresolved, identify it as a specific selection constraint rather than replacing it with a straight-line width check.
+
+### Check the joins between surveyed segments
+
+Read neighbouring segments together before treating the route as continuous. The end of one survey should connect to the beginning of the next through a described space, with the same proposed equipment state and relevant construction stage. Two width measurements can each be accurate while omitting the area in which the equipment changes direction between them. A line joining their centre points does not supply that missing geometry.
+
+Consider a hypothetical entrance with a measured approach lane and a measured passage inside the building. The entrance opens into a shared unloading bay before the passage begins. If the survey records only the two narrow sections, it may omit the bay boundaries, the direction of approach to the passage and the time when stored deliveries occupy that space. The equipment reviewer needs that connecting area described before considering the route as a whole. This is an information gap, not a finding that the machine can or cannot pass.
+
+If the site concept includes waiting before a gate or after a transfer, identify the proposed waiting space as well. Ask whether it is available for the same configuration and time window used in the route review. A clear passage during a survey does not establish that an adjacent holding area will be available on delivery day. These questions help procurement compare delivery timing or entrance proposals; they provide no steering sequence, turning radius, clearance allowance or permission to move the equipment.
 
 ### Record changes in level and overhead conditions
 

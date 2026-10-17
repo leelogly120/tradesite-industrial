@@ -2,7 +2,7 @@
 title: "Destination Chassis Sourcing for Truck-Mounted Lifts"
 description: "Plan destination chassis sourcing for truck-mounted lift by assigning vehicle, integration, documentation and local review responsibilities before procurement."
 date: 2026-08-07
-updated: 2026-10-14
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["destination chassis sourcing", "truck mounted lift", "vehicle integration", "procurement planning"]
 coverImage: "/images/equipment/coil-real-module.webp"
@@ -128,7 +128,17 @@ A named integrator alone does not settle the issue if its quotation excludes the
 
 ### Align arrival with the integration workspace
 
-Coordinate equipment delivery, vehicle readiness and the resources needed for integration. If modules arrive before the chassis, identify storage conditions, custody and the permitted receiving state. If the vehicle arrives first, confirm where it will wait and who controls changes while the equipment information is being finalized. The dates should reflect the actual dependencies.
+Coordinate equipment delivery, vehicle readiness and the resources needed for integration. Separate the expected arrival dates from the conditions that make the next activity possible. An equipment delivery can be commercially on schedule while the vehicle pairing or integration workspace remains unresolved. Conversely, a vehicle can be available while the equipment drawings still describe a provisional arrangement.
+
+Consider a hypothetical equipment-first delivery. The forming and lifting modules are due to arrive while the buyer is still comparing local chassis candidates. The receiving team needs an agreed place and equipment-specific conditions for holding those modules. The purchasing team also needs to know which equipment assumptions depend on the final vehicle. Receipt can establish what arrived; it cannot close the open pairing or establish when the combined system will be ready.
+
+Now consider a hypothetical vehicle-first delivery. The purchased truck reaches the destination, but the appointed integrator has not received the equipment arrangement used during selection. Vehicle availability does not resolve that missing input. Ask whether the delivered build still matches the reviewed candidate and which specific records the integrator needs before it can confirm its own work scope. The answer may affect the planned sequence even though neither supplier has changed its delivery date.
+
+### Distinguish delivery milestones from completion milestones
+
+Put the two purchase schedules beside the integration scope. For each proposed milestone, state the physical item or deliverable being handed over and the prerequisite supplied by the other party. “Vehicle delivered” identifies an arrival. “Equipment installed on the identified vehicle” describes a different boundary and depends on an agreed technical arrangement and appointed work scope. “Handover complete” needs its own defined deliverables rather than borrowing either earlier label.
+
+Ask each offering party to acknowledge the milestones within its scope and identify excluded work. This does not require a buyer to design the installation or predict its duration. It makes a timing conflict visible before a deposit, shipment or local purchase is treated as proof that the finished system's delivery plan is settled. Storage, custody and technical support commitments should come from the actual offers, not an assumed benefit of buying locally.
 
 Use the [40HQ logistics guide](/blog/40hq-shipping-truck-mounted-roll-forming-lift/) for shipment-scope decisions and the [destination receipt plan](/blog/roll-forming-lift-destination-receipt-plan/) for arrival discrepancies. Neither document should imply that receipt authorizes assembly or use. The handover plan needs to name the later stages separately.
 

@@ -2,7 +2,7 @@
 title: "Roof-Panel Roll-Forming Lines: Specification for Lifts"
 description: "Specify a roof-panel roll-forming line for elevated use. Connect panel quality, machine geometry, coil feed and electrical inputs before choosing a lift."
 date: 2026-07-24
-updated: 2026-10-14
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["Roll Forming", "Roofing Panels", "Technical Specification"]
 coverImage: "/images/equipment/coil-real-handling.webp"
@@ -98,6 +98,21 @@ If the project later changes a material condition or coating, an earlier sample 
 Ask the line supplier to identify the proposed cutting arrangement and the state of the panel at each relevant stage. The buyer needs to understand where the machine's scope ends and where the project's support and receiving arrangement takes over. Avoid comparing a nominal machine output figure while those interfaces differ between proposals.
 
 The receiving team also needs the proposed output direction and the intended sequence of roof work. A line proposal may describe a machine clearly yet leave the project without an agreed place to receive its panel. The [roof-panel handover guide](/blog/elevated-roll-forming-roof-panel-handover-zones/) separates immediate output support, receipt and installation responsibilities.
+
+### Separate the purchased line from each installed arrangement
+
+A line order can include items that are not all installed together. Ask the supplier to distinguish the complete purchase from the specific machine arrangement submitted for elevated use. Otherwise, an overall quotation description may be mistaken for the physical assembly whose dimensions, mass and service connections are being reviewed.
+
+For a hypothetical enquiry covering more than one panel requirement, a supplier might propose one base machine with separately identified replacement tooling or modules. Another might propose a different machine scope. These are possibilities to clarify, not capabilities attributed to the reference equipment. The buyer's task is to make each proposal explain what is fitted for each required product and what is delivered separately.
+
+| Item in the line proposal | Scope question | Input passed to the elevated-installation review |
+| --- | --- | --- |
+| Main forming machine | Which configuration does the offered machine description cover? | The identified assembly and its physical records |
+| Proposed replacement tooling or module | Is it included, optional or outside the offer, and when is it fitted? | The arrangement for each proposed installed combination |
+| Cutting or auxiliary equipment | Is it attached to the forming machine or separately supported? | The relevant inlet, outlet, support and service boundaries |
+| Spare items and supplied accessories | Are they installed, separately delivered or proposed to travel with the assembly? | Their inclusion or exclusion from the stated machine condition |
+
+This distinction prevents two opposite errors: adding every purchased item to a machine state in which it is not present, or omitting an attached accessory because it appears on a separate quotation line. It also gives the supplier a precise clarification request when an offer says only “complete line.” The [mounting-interface review](/blog/lifted-roll-forming-line-mounting-interface-review/) can then use the identified installed arrangement. It should not have to discover the production and supply scope from a photograph or infer that a tooling change is supported.
 
 ### Distinguish a single-panel brief from a changing product mix
 

@@ -2,12 +2,12 @@
 title: "Task-Load Schedule for Aerial Platform Project Review"
 description: "Create a task-by-task people, tools and materials schedule for comparison with exact approved limits; it does not calculate capacity or authorize load handling."
 date: 2026-07-27
-updated: 2026-10-04
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["Task Load", "Aerial Platform", "Project Review"]
-coverImage: "/images/editorial/task-load-schedule.svg"
-coverAlt: "Blank task-load schedule separating people, protective equipment, tools, materials, location, and source."
-coverCaption: "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. This blank format states no platform capacity, approved load or permitted handling method."
+coverImage: "/images/equipment/entry-real-interior.webp"
+coverAlt: "People on a yellow raised platform beneath steel roof framing inside a building"
+coverCaption: "Reference photograph of people on a raised platform beneath roof framing. It does not establish a permitted occupant count, task load, working method or approved arrangement."
 draft: false
 ---
 
@@ -44,9 +44,9 @@ Identify whether the documents describe the main platform, an extension region, 
 
 A total arithmetic sum does not establish load distribution, attachment effects, permitted position or travel state. First make the schedule and the document describe the same physical arrangement; only then can the responsible reviewer assess the inputs.
 
-[![Blank task-load schedule with source and location fields](/images/editorial/task-load-schedule.svg)](/images/editorial/task-load-schedule.svg)
+![Red lifting structure with a broad raised platform beneath steel building framing](/images/equipment/entry-real-cover.webp)
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Tap to open the full-size editorial diagram. This example format contains no approved values; exact documents and competent project review control actual limits.*
+*Reference photograph of a broad platform and red lifting structure within a building. It does not establish the proposed model, dimensions, load limits or approval for a ceiling task.*
 
 <!-- audit-section: conditions -->
 ## Build a traceable people-tools-materials schedule
@@ -82,11 +82,24 @@ Use the region names from the exact configuration drawing. The following blank s
 
 Keep the proposed task position in the same row as its evidence. A single combined list can hide a material bundle assigned to an extension or a tool fixture whose region has never been identified. An empty field means information is missing; it does not mean zero load or unrestricted placement.
 
-### Describe simultaneous states without double counting
+### Show new and removed material in the same snapshot
 
-Consider a hypothetical maintenance task with the same tools and replacement components throughout. In one proposed state, the task owner assigns the components to the main platform; in another, their proposed location changes to a documented extension region. The total item mass has not changed, but the location comparison has. The second state needs review against its own applicable conditions. This example does not authorise either arrangement or movement between them.
+In a hypothetical ceiling-maintenance proposal, a replacement component is present before the old component leaves the task area. A schedule that lists only the replacement understates that proposed coexistence; a shift-total list can make the opposite mistake by counting every component as present together. Ask the task owner to describe the actual simultaneous proposal, including containers and retained packaging, without treating the schedule as permission to perform the replacement.
 
-Use a state identifier to connect each region row to the people and items present at that time. If removed components coexist with replacements, show that state explicitly. If an item appears in successive states, distinguish those states rather than treating the two entries as two simultaneously present items. This gives the reviewer a traceable proposal without inventing a distribution formula.
+| Proposed snapshot | Objects whose presence needs a record | Ambiguity to resolve |
+| --- | --- | --- |
+| Task preparation | People, tools, replacement component and any container proposed on the platform | Which materials are still at ground staging and therefore outside this platform snapshot? |
+| Old and new components coexist | Replacement, removed component, tools and retained packaging or waste | Has the removed item been omitted because it is no longer useful material? |
+| Removed component has left | Items still on the platform and the source confirming the changed state | Was removal only planned, or does the next proposal rely on it already having occurred? |
+| Another task is proposed | Remaining tools, unused material and any waste still present, plus the next task's additions | Is leftover material being carried into the new record or silently set to zero? |
+
+The rows describe possible information states, not a permitted work sequence. An unresolved transfer remains a separate question for the equipment and site method owners. The schedule should neither assume a transfer function nor prescribe how a component enters or leaves the platform.
+
+### Separate a quantity change from a location change
+
+A second hypothetical comparison keeps the same replacement component and tools but assigns a component to a documented extension region instead of the main platform. The total item mass is unchanged; the physical location being reviewed is different. Retain the first proposal and identify the changed region on the second, together with the relevant configuration drawing. Do not treat an unchanged total as evidence that the earlier assessment covers both states.
+
+Use an item identifier across the snapshots so a repeated component is traceable without being counted twice in one simultaneous state. “Location unresolved” is more informative than assigning it to the centre for convenience. The [work-zone layout guide](/blog/large-deck-crawler-platform-work-zone-layout/) discusses spatial organization; this schedule records which people and objects are actually proposed together in each documented region.
 
 <!-- audit-section: evidence-tradeoffs -->
 ## Map the load path and unresolved interfaces
@@ -109,9 +122,9 @@ Record proposed racks, holders, fixtures, power leads, tool tethers, material su
 
 Moving or long items can create effects beyond a static list. Do not estimate those effects in marketing copy. Route them to the manufacturer documentation and competent project review that apply to the exact equipment and method.
 
-[![Editorial task-load path without an equipment depiction](/images/editorial/task-load-path.svg)](/images/editorial/task-load-path.svg)
+![Raised red platform structure outside an industrial building with open bays](/images/equipment/entry-real-approach.webp)
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Tap to open the full-size editorial diagram. This workflow does not state that ARCLIFT equipment may hoist, carry, travel with or transfer any depicted load.*
+*Reference photograph of a raised platform outside an industrial building. It does not verify an entry route, transport envelope, task clearance or suitability for another site.*
 
 <!-- audit-section: limitations-not-fit -->
 ## Escalate every task against approved limits
@@ -134,11 +147,11 @@ The [indoor floor and ground-pressure guide](/blog/indoor-aerial-platform-ground
 
 The current task may not fit when an item is missing from the schedule, a value lacks a traceable source, the configuration reference differs, an attachment is unresolved, the task position changes, the transfer method is unapproved, or the exact limit cannot be confirmed. Stop and reissue the schedule.
 
-Do not continue on the basis of remaining arithmetic margin. The applicable documents may include conditions that a simple total cannot represent. No editorial diagram, preliminary comparison or supplier discussion authorises use.
+Do not continue on the basis of remaining arithmetic margin. The applicable documents may include conditions that a simple total cannot represent. No reference photograph, preliminary comparison or supplier discussion authorises use.
 
-[![Task-load red-flag matrix](/images/editorial/task-load-red-flag-matrix.svg)](/images/editorial/task-load-red-flag-matrix.svg)
+![Folded red crawler apparatus outdoors with support beams extended to the ground](/images/equipment/transport-real-stowed.webp)
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Tap to open the full-size editorial diagram. This editorial screen neither calculates capacity nor authorises load handling; actual use requires exact-machine and project-authority determination.*
+*Reference photograph of a separate folded crawler apparatus with extended supports. It does not show the same machine as the platform photographs or establish a permitted travel state, conversion or platform option.*
 
 <!-- audit-section: project-checklist -->
 ### Issue the task-load schedule
@@ -162,7 +175,7 @@ Do not continue on the basis of remaining arithmetic margin. The applicable docu
 
 Send the task-load schedule to ARCLIFT as an integrated equipment supplier for a configuration-specific discussion. Include the site and zone, height and task state, access and transport route, floor status, region assignments and exact source records. Identify who owns each unresolved definition so that it can be directed to the appropriate technical reviewer. Final use requires project-specific signed documents from the responsible employer, manufacturer information and competent reviewers.
 
-This article is editorial planning guidance, not a capacity calculation, load chart, material-handling permission, training document or operating instruction. Its AI-assisted editorial diagrams cannot establish a platform limit, handling function, configuration, capability or result.
+This article is editorial planning guidance, not a capacity calculation, load chart, material-handling permission, training document or operating instruction. The reference photographs cannot establish a platform limit, handling function, configuration, capability or result.
 
 ## FAQ
 
@@ -188,4 +201,4 @@ Only if the relevant configuration, positions, attachments and task conditions r
 
 #### Can the platform be treated as a crane?
 
-Not from this article, a category label or a diagram. Any lifting or transfer proposal requires express exact-equipment documentation and project approval; otherwise the task remains on hold.
+Not from this article, a category label or a reference photograph. Any lifting or transfer proposal requires express exact-equipment documentation and project approval; otherwise the task remains on hold.

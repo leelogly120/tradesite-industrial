@@ -2,12 +2,12 @@
 title: "Overhead Clearance Register for Ceiling Access Review"
 description: "Record measured overhead conditions by route, setup and work state before configuration review; it does not prove equipment fit, clearance or site approval."
 date: 2026-07-27
-updated: 2026-10-01
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["Overhead Clearance", "Ceiling Access", "Site Survey"]
-coverImage: "/images/editorial/clearance-four-state-section.svg"
-coverAlt: "Conceptual four-state clearance section for transport, setup, elevated task, and withdrawal review."
-coverCaption: "AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. The states contain no equipment dimensions and are not an operating envelope or approved drawing."
+coverImage: "/images/equipment/entry-real-approach.webp"
+coverAlt: "Raised red platform structure outside an industrial building with open bays"
+coverCaption: "Reference photograph of a raised platform outside an industrial building. It does not verify an entry route, transport envelope, task clearance or suitability for another site."
 draft: false
 ---
 
@@ -44,9 +44,9 @@ Describe the worker position, task face, tools, materials and likely hand moveme
 
 Withdrawal deserves its own check. A route that appears open for approach may become restricted after tools, temporary barriers, nearby equipment or service states change. Record the path back to the safe handover point and the trigger for a new survey.
 
-[![Four-state overhead clearance section](/images/editorial/clearance-four-state-section.svg)](/images/editorial/clearance-four-state-section.svg)
+![Red lifting structure with a broad raised platform beneath steel building framing](/images/equipment/entry-real-cover.webp)
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Tap to open the full-size editorial diagram. These conceptual states are not a load chart, operating envelope, clearance calculation or approved drawing.*
+*Reference photograph of a broad platform and red lifting structure within a building. It does not establish the proposed model, dimensions, load limits or approval for a ceiling task.*
 
 <!-- audit-section: conditions -->
 ## Measure current overhead conditions
@@ -62,6 +62,14 @@ Do not infer status from appearance. A cable can be live, isolated, abandoned or
 Use a defined coordinate or reference system and state the instrument, method, date and responsible survey role. Record both vertical and horizontal relationships because a single floor-to-ceiling height cannot describe a three-dimensional route or work face. Attach the floor level and work state to every entry.
 
 Include measurement uncertainty and access limitations where the project process requires them. If an item could not be reached, observed or identified, mark the field unknown. Never substitute a convenient value from a marketing drawing, editorial diagram or archival product page.
+
+### Draw the task materials separately from the machine
+
+In a hypothetical ceiling-panel proposal, the equipment outline appears to fit the surveyed work position. That comparison still says nothing about the space needed for the proposed packaged panels, long trim or tools beside the task. Ask for those objects to be shown separately on the task section, with their source dimensions and proposed orientation. Do not enlarge the machine outline by an assumed allowance and call the resulting shape a verified task envelope.
+
+For example, the packaging dimension used for a receiving review may differ from the component geometry relevant to the ceiling task. Both can matter at different stages. Label which state the task owner proposes and where a packaging or material decision remains open; the drawing must not imply permission to open, turn or lift an item in that position. A tool or fixture whose position depends on an undocumented attachment is another unresolved object, not part of a confirmed platform outline.
+
+Distinguish three conclusions in the survey response: the building geometry has been recorded; the proposed objects have been identified; the configuration and task have been assessed together. Completing the first two does not establish the third. The [task-load schedule](/blog/aerial-platform-worker-tool-material-load-planning/) records simultaneous people and material quantities; this survey contributes their spatial relationship to the overhead surroundings.
 
 ### Put floor and obstruction measurements on the same reference
 
@@ -88,9 +96,9 @@ Compare current measurements with available as-built or design records, but do n
 
 Re-survey after ceiling work, temporary installations, service movement, floor-level changes, route changes or task changes. In a live building, the register should identify its valid work window. The [stadium planning guide](/blog/stadium-ceiling-access-platform-planning/) shows why event, changeover and isolated states should remain separate in venue environments.
 
-[![Blank overhead obstruction survey sheet](/images/editorial/clearance-obstruction-survey-sheet.svg)](/images/editorial/clearance-obstruction-survey-sheet.svg)
+![People on a yellow raised platform beneath steel roof framing inside a building](/images/equipment/entry-real-interior.webp)
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Tap to open the full-size editorial diagram. This blank example does not provide measurements; qualified project personnel must verify dimensions, status and source records.*
+*Reference photograph of people on a raised platform beneath roof framing. It does not establish a permitted occupant count, task load, working method or approved arrangement.*
 
 <!-- audit-section: evidence-tradeoffs -->
 ## Escalate unknown hazards and missing records
@@ -115,13 +123,15 @@ For risk-identification context, <a href="https://www.ipaf.org/en-gb/operator-fe
 
 ### Escalate missing as-built data
 
-When records are absent or conflict with the site, do not fill the gap with assumptions. Request a qualified survey, opening-up work or owner confirmation appropriate to the risk. Record the unresolved item, action owner and release condition.
+When records are absent or conflict with the site, identify the information needed and ask the responsible owner to arrange an appropriate investigation. A concealed void behind a ceiling panel or a service hidden by other equipment remains unobserved until a competent project process establishes its contents and geometry. A photograph of the visible face cannot fill that volume with assumed empty space.
+
+Give the unknown area its own entry, state why it was not observed and mark which task position depends on the answer. Keep that uncertainty distinct from a confirmed obstruction: the next request is for reliable information, not automatically for removal or an alternative machine. This register does not authorize opening a ceiling, disturbing services or choosing a survey access method.
 
 Secure handling matters. Detailed service drawings, electrical status, security installations and site identifiers must not appear in public content or open forms. Use anonymised references and share only the minimum necessary extract through the controlled project channel.
 
-[![Overhead clearance escalation tree](/images/editorial/clearance-escalation-tree.svg)](/images/editorial/clearance-escalation-tree.svg)
+![Folded red crawler apparatus outdoors with support beams extended to the ground](/images/equipment/transport-real-stowed.webp)
 
-*AI-assisted editorial diagram; not evidence of ARCLIFT equipment, configuration, project, capability or result. Tap to open the full-size editorial diagram. This screening aid is not an electrical procedure or clearance approval; applicable jurisdiction, utility and site controls govern the task.*
+*Reference photograph of a separate folded crawler apparatus with extended supports. It does not show the same machine as the platform photographs or establish a permitted travel state, conversion or platform option.*
 
 <!-- audit-section: limitations-not-fit -->
 ## Use the register without overstating it
@@ -142,7 +152,7 @@ Possible project responses include another route, a different work window, remov
 
 A surveyor records conditions; that act does not approve equipment fit. A supplier can organise questions; it does not approve structure, electrical separation, work method or rescue. The site owner or employer and competent reviewers retain their respective decisions.
 
-Do not publish “fits under,” “zero-clearance,” “safe near live services,” generic clearance dimensions or an assumption that a drawing establishes the current site. Editorial images on this page are explanation tools only.
+Do not publish “fits under,” “zero-clearance,” “safe near live services,” generic clearance dimensions or an assumption that a drawing establishes the current site. Reference photographs on this page provide context only and cannot supply missing site measurements.
 
 <!-- audit-section: project-checklist -->
 ### Issue a measured clearance register
@@ -164,7 +174,7 @@ Do not publish “fits under,” “zero-clearance,” “safe near live service
 
 Send only the measured clearance register through a secure project channel to ARCLIFT as an integrated equipment supplier. Include the site zone, height and ceiling records, access and transport route, floor reference, work states, obstruction status, destination context and unresolved interfaces. This request does not promise suitability, fit, approval, quotation, configuration, availability, result or response time. Final decisions require project-specific signed information from the responsible site and competent reviewers.
 
-This article is editorial survey guidance, not a configuration schedule, electrical assessment, operating instruction, site approval or rescue plan. Its AI-assisted editorial diagrams cannot establish an equipment envelope, service status, clearance, capability or result.
+This article is editorial survey guidance, not a configuration schedule, electrical assessment, operating instruction, site approval or rescue plan. The reference photographs cannot establish an equipment envelope, service status, clearance, capability or result.
 
 ## FAQ
 

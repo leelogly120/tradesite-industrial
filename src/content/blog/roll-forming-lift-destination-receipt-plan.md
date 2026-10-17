@@ -2,7 +2,7 @@
 title: "Roll-Forming Lift Delivery: Receipt and Assembly Readiness"
 description: "Plan roll-forming lift delivery receipt around actual modules, shortages, condition and storage, so the receiving record supports later installation decisions."
 date: 2026-08-08
-updated: 2026-10-16
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming lift", "destination receipt plan", "shipment condition evidence", "equipment logistics"]
 coverImage: "/images/equipment/transport-real-cover.webp"
@@ -94,9 +94,20 @@ The table below distinguishes common receipt situations. It assigns a question t
 
 *Local reference photograph of a separate blue machine module; it does not identify the contents of a particular shipment or establish an approved handling arrangement.*
 
-### Test the process with a partial-delivery example
+### Keep split deliveries paired at the installation boundary
 
-In a hypothetical purchase, the lifting assembly arrives first, a compatible forming machine is supplied separately, and a package of agreed connection items arrives later. The first delivery record should identify what arrived without declaring the whole system complete. The later records should connect to the same project and preserve their own observations. Once all expected objects are accounted for, the installation team still needs to confirm the current interfaces and site prerequisites. This is an illustrative scenario, not a reported shipment or customer result.
+Consider a hypothetical order in which the main assembly, a forming module and an agreed adapter package arrive from different dispatch points. A small accessory bag travels with the main assembly although its destination is the separately shipped module. Three receipts marked “complete” would not explain that relationship. The installation team needs the link from each original package identifier to the intended interface, including the issuer of that association. This example describes a procurement record, not a shipment completed by ARCLIFT.
+
+Retain the package identifier even if the project gives its contents a new storage label. Beside it, record the intended module or interface, current location, stated quantity and evidence reference. When a delivery is divided for storage under the project's receiving arrangements, the record should preserve which new labels came from which original package. Do not identify a matching part merely because two holes, colors or dimensions appear similar; the intended association comes from the responsible supplier's records.
+
+| Pairing observation | Receipt question | What it does not establish |
+| --- | --- | --- |
+| An expected adapter package has not arrived | Is it outstanding, separately supplied or outside the order? | A substitute adapter is acceptable |
+| A package arrives with another module's reference | Is the identifier wrong, or was the wrong item dispatched? | The visible part can be installed |
+| One accessory bag serves items in two arrival batches | Which listed contents belong to each interface, and where are they now? | The entire bag belongs to the first assembly received |
+| Matching references are present across all arrivals | Are the issuer's intended associations traceable to the stored objects? | Connections, tolerances or integration have been verified |
+
+Missing and mismatched items therefore need different questions. A shortage asks where the agreed item is; a suspected mismatch asks whether the delivered object is the intended item at all. Closing the first question cannot close the second. Pass this pairing record to the installation team with unresolved associations visible. The [mounting-interface guide](/blog/lifted-roll-forming-line-mounting-interface-review/) handles the later connection review; receipt preserves the facts needed to start it.
 
 <!-- audit-section: limitations-not-fit -->
 ## Hand over only the scope that is ready

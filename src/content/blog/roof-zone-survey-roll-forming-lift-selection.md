@@ -2,7 +2,7 @@
 title: "Roof-Zone Survey Guide for Roll-Forming Lift Selection"
 description: "Survey roof zones for a roll-forming lift by connecting panel outlet height, receiving position, equipment stand area, obstructions and construction-stage data."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["roof zone survey", "roll forming lift selection", "site planning", "panel handover"]
 coverImage: "/images/equipment/entry-real-clearance.webp"
@@ -37,6 +37,14 @@ Separate zones when their receiving elevation, direction, building edge or propo
 Use a shared project datum for the ground surface and receiving point. Ask the equipment party to identify the cutter or panel-outlet reference on its arrangement drawing. The lift-platform elevation is another reference, and a personnel working-height description belongs to a different question. Values with different reference points cannot be compared simply because they all contain the word height.
 
 For a sloping roof, locate the particular receiving point rather than entering the ridge height for every zone. Record which levels come from drawings and which have been surveyed. Where the ground level varies along the proposed stand area, show that variation rather than choosing a convenient single elevation. The equipment review must connect these site measurements to the actual configuration.
+
+### Reconcile the references used by different teams
+
+The roof designer, site surveyor and equipment supplier may describe the same proposed relationship using different reference systems. A building elevation, a local site benchmark and a dimension from the machine base need a confirmed relationship before their values can be compared. Ask the responsible survey and equipment parties to provide that relationship on the coordinated plan and section, including units, reference directions and the points to which each value applies. Procurement should not infer a conversion from similar-looking numbers.
+
+In a hypothetical enquiry, the roof drawing gives a design receiving elevation while a site note reports a ground reading from a temporary benchmark. The equipment sketch gives the outlet position relative to its own support reference. All three entries could be valid within their own documents, yet they do not establish the requested outlet relationship until the reference systems are connected. Forward the source references and request the missing connection instead of presenting an arithmetic difference as the required machine height.
+
+Keep measured conditions, design targets and unmeasured items visibly distinct after coordination. A desired receiving position is not a survey result, and a dimension carried over from a drawing is not a fresh site measurement. If a reference cannot be recovered or a point was inaccessible, identify the unresolved item. That distinction allows an early equipment discussion to proceed on an explicitly provisional basis while showing which geometry must be confirmed before configuration selection can be completed.
 
 ### Put direction and offset on the same drawing
 

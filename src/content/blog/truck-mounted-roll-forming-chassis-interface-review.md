@@ -2,7 +2,7 @@
 title: "Truck Chassis Integration Review for Roll-Forming Lines"
 description: "Review truck chassis integration for mobile roll-forming lines, including interfaces, payload allocation, stability inputs, utilities, and verification records."
 date: 2026-07-27
-updated: 2026-10-14
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["truck mounted roll forming", "chassis interface", "vehicle integration", "project review"]
 coverImage: "/images/equipment/coil-real-cover.webp"
@@ -56,6 +56,21 @@ For example, <a href="https://www.volvotrucks.com.au/en-au/trucks/features/bodyb
 Ask the integrator to define the reference points used by the vehicle and equipment drawings. A location measured from an axle, frame end or equipment base cannot be compared directly with a location using another origin unless the relationship is established. Mark the drawing revision and equipment state beside the coordinate information, especially when the folded arrangement differs from the working arrangement.
 
 Start with a clear overlay that shows the proposed equipment footprint, support interfaces and vehicle components. It should expose conflicts for engineering review. It should not invite procurement staff to choose attachment locations or alter a frame from a photograph.
+
+### Compare the candidate build, not only its model and wheelbase
+
+Two candidate vehicles can share a model description and wheelbase while the records supplied for them show different installed equipment. The integration question is whether those differences affect the space or interfaces used by the proposed lifting assembly. Ask the vehicle-side party to identify the actual build and the equipment-side party to show the corresponding arrangement; do not fill missing areas of one drawing from the other candidate.
+
+In a hypothetical comparison, the same region behind the cab is shown empty on a general chassis outline but occupied by an option on the offered vehicle. A proposed equipment component overlaps that region. The immediate finding is a drawing conflict requiring resolution, not permission to move either component. The reviewer needs the installed option's envelope, access requirements and any restrictions from the vehicle maker before considering alternatives.
+
+| Candidate detail | What to compare with the equipment arrangement | Why the model name is insufficient |
+| --- | --- | --- |
+| Components already mounted beside or above the frame | Their actual positions against attachments and support-system space | A family illustration may omit the offered options |
+| Access covers or components requiring movement for service | The relevant opening or removal envelope in the reviewed state | A closed outline does not describe the service space |
+| Connections reserved for proposed equipment | Their identity, location and applicable vehicle-side restrictions | The existence of an option does not confirm its inclusion |
+| Equipment supplied separately from the vehicle | Its final installed position and interface responsibility | A delivery list does not show the completed arrangement |
+
+These comparisons help the buyer ask for a missing build record or a revised coordinated drawing. They do not select fastening positions, authorize removal of vehicle equipment or establish that an alternative layout will work. Keep unresolved physical conflicts attached to the exact candidate, so a later commercial substitution cannot quietly inherit the earlier integration discussion.
 
 ### Distinguish an attachment location from an approved load path
 
@@ -125,6 +140,7 @@ Do not resolve missing information by substituting a drawing from a similar chas
 - Identify the forming-line, profile and coil scope that determines the equipment items included in the review.
 - Show support locations, access routes and ground conditions requiring a separate jobsite assessment.
 - Provide the proposed power and control boundaries, available records and service-access requirements.
+- Identify the candidate's installed vehicle options and their opening or removal envelopes on the actual build drawing, highlighting conflicts with the equipment layout.
 - State the destination, intended road/site duty, local review owner and documentation still required before ordering.
 
 ### Make the review output specific

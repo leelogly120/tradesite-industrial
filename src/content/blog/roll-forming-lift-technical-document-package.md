@@ -2,7 +2,7 @@
 title: "Roll-Forming Lift Documents: Read and Compare Offers"
 description: "Read roll-forming lift documents by their purpose, configuration and issue status, then compare quotation scope, interface evidence and unresolved deliverables."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["technical document package", "roll forming lift", "document control", "equipment handover"]
 coverImage: "/images/equipment/coil-real-module.webp"
@@ -64,6 +64,21 @@ The following matrix is an editorial comparison aid. It lists questions to ask a
 | Instructions and maintenance information | What use and maintenance scope does the identified document cover? | Match to delivered equipment, required language and handover arrangements |
 | Inspection or test record | What activity was completed, against which criteria, on which configuration? | Uncovered interfaces, later changes and site-specific acceptance |
 | Packing or transport record | What is included in the identified shipment and transport state? | Carrier planning, route review and destination receipt conditions |
+
+### Normalize similar labels before comparing their values
+
+In a hypothetical quotation comparison, both bidders provide a file called “general arrangement” and a row called “machine mass.” Those labels may conceal different boundaries. One drawing may show only the lifting assembly; the other may include the forming line and its connection. One mass may include packaging and loose accessories; the other may describe an assembled machine. Neither difference, by itself, establishes a better offer.
+
+Use a definition column before requesting another number. The examples below are possible ambiguities to resolve, not descriptions of any actual bidder or proposed configuration.
+
+| Shared label | Possible meaning in one offer | Different meaning in another | Clarification needed for comparison |
+| --- | --- | --- | --- |
+| General arrangement | Lifting assembly outline | Assembly plus identified forming line | Drawn objects, omitted interfaces and equipment state |
+| Machine mass | Packed shipment including loose items | Assembled equipment without packaging | Included objects, exclusions and weighing or calculation basis |
+| Working height | Forming-machine outlet relative to its reference | Personnel-platform elevation | Physical point, datum and task; these are different product questions |
+| Electrical package | Connection information for the supplied module | Coordinated lift-and-line interface records | Equipment boundary, responsible integrator and issue stage |
+
+Record an unresolved definition as “not yet comparable.” Do not align the numbers by subtracting guessed packaging mass or converting one height label into another. First ask each issuer to identify the same physical objects and state. Only then can the reviewer decide whether a missing value, an additional interface record or a genuinely different supply scope explains the gap. This keeps the clarification proportional: a renamed column may resolve an ambiguity, while a polished extra brochure may add no usable answer.
 
 ### Distinguish a planned check from its result
 

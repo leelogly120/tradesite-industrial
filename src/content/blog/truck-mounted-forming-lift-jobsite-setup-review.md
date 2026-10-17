@@ -2,7 +2,7 @@
 title: "Jobsite Setup Review for Truck-Mounted Forming Lifts"
 description: "Review truck-mounted forming lift setup from site gate to work face by documenting routes, setup zones, ground conditions, interfaces and local decisions."
 date: 2026-08-07
-updated: 2026-10-14
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["truck mounted forming lift", "jobsite setup", "work zone review", "site logistics"]
 coverImage: "/images/equipment/coil-real-cover.webp"
@@ -68,6 +68,21 @@ Send the equipment-specific support information and the corresponding ground loc
 Draw where incoming coil or other material is received, where it is staged under the project arrangement, and how the feeding interface connects to the forming line. Keep the delivery vehicle envelope and handling operation separate from the forming equipment footprint. Otherwise the plan may reserve space for stored material while overlooking the space needed to deliver it.
 
 Use the [coil handling and feeding guide](/blog/coil-handling-roll-forming-line-feeding-plan/) for material identity and feed coordination. On the setup drawing, the useful question is whether material supply can coexist with the proposed equipment and receiving zones. The loading method, lifting accessories and operating controls require their own configuration and site review.
+
+### Test repeated deliveries while the position remains occupied
+
+A drawing showing the first coil delivery does not necessarily describe the supply route for the rest of the proposed work period. Ask which spaces remain occupied by the truck, support arrangement and material staging after that arrival. Then identify the route assumed for later material deliveries. The comparison needs the intended equipment state at those times; it must not assume that supports can be withdrawn or the machine moved to create a gap.
+
+For a hypothetical work position, suppose the first material arrives before the truck occupies its proposed area. Later material is expected through the same lane. The early delivery fits the programme, but it does not answer whether the later delivery can reach its intended handover point. The open question is whether the site can provide a separately reviewed supply arrangement while the forming position remains occupied.
+
+| Time or activity in the proposed work period | Space to show on the layout | Assumption to challenge |
+| --- | --- | --- |
+| Initial equipment and material arrival | Receiving areas and the proposed order of occupation | That access available before setup remains available afterwards |
+| Later coil or material delivery | Delivery approach, handover and staging boundaries | That the first delivery drawing covers replenishment |
+| Waiting between receiving windows | Areas still occupied by equipment and material | That a pause automatically releases the support or access area |
+| Other trades using the adjacent lane | Their required route and proposed time of use | That the same space is available to both activities without coordination |
+
+The site team can use these questions to compare an alternative position, a different material-delivery arrangement or a revised construction allocation. Each alternative still needs its own equipment and site assessment. The useful output is a layout tied to the period for which its spaces are needed, not just a photograph of an empty lane or a successful first arrival.
 
 ### Make utilities and people visible
 

@@ -50,6 +50,9 @@ const expectedArticles = [
   {"slug":"ceiling-work-technology-trends","date":"2026-08-11","images":["entry-real-approach","entry-real-cover","entry-real-interior","transport-real-stowed"]},
   {"slug":"crawler-ceiling-platform-site-acceptance-records","date":"2026-08-07","images":["entry-real-cover","entry-real-interior","entry-real-approach","transport-real-loading"]},
   {"slug":"crawler-platform-maintenance-spares-handover","date":"2026-08-07","images":["transport-real-stowed","entry-real-cover","entry-real-interior","transport-real-loading"]},
+  {"slug":"crawler-under-ceiling-platform-buyers-guide","date":"2026-07-27","images":["entry-real-cover","entry-real-approach","entry-real-interior","transport-real-stowed"]},
+  {"slug":"aerial-platform-worker-tool-material-load-planning","date":"2026-07-27","images":["entry-real-interior","entry-real-cover","entry-real-approach","transport-real-stowed"]},
+  {"slug":"ceiling-platform-overhead-clearance-survey","date":"2026-07-27","images":["entry-real-approach","entry-real-cover","entry-real-interior","transport-real-stowed"]},
 ];
 const expectedDimensions = {
   'transport-real-cover': [744, 419],
@@ -92,7 +95,7 @@ function assertPhotoDisclosure({ alt, caption }, context) {
 }
 
 describe('approved reference photographs', () => {
-  it('limits the photo replacement to forty-three fixed articles and twelve distinct photograph URLs', async () => {
+  it('limits the photo replacement to forty-six fixed articles and twelve distinct photograph URLs', async () => {
     expect(REFERENCE_PHOTO_ARTICLES).toEqual(expectedArticles.map(({ slug, images }) => ({
       slug,
       cover: [photoUrl(images[0])],

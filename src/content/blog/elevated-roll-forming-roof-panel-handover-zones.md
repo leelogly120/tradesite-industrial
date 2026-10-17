@@ -2,7 +2,7 @@
 title: "Roof Panel Handover Zones for Elevated Roll Forming"
 description: "Plan roof-panel handover zones for elevated roll forming by defining custody, support, communication, exclusion areas, stop conditions and receiving records."
 date: 2026-08-07
-updated: 2026-10-14
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["roof panel handover", "elevated roll forming", "receiving zone", "work planning"]
 coverImage: "/images/equipment/coil-real-panel.webp"
@@ -56,6 +56,14 @@ If the programme places time between receipt and installation, describe that int
 Use the same profile, material and intended length information for the forming-line discussion, support review and receiving plan. A roof drawing that names only a panel family may not communicate the detail used in the forming proposal. Resolve that difference before the parties evaluate separate parts of the route on different assumptions.
 
 The [panel profile and tooling guide](/blog/roof-panel-profile-material-tooling-data/) explains the manufacturing inputs. At handover, keep the relevant identity linked to the panel that the receiver expects. This helps distinguish a production question from a receiving question when a drawing revision changes the material or panel schedule. It does not make the receiver responsible for approving the tooling design.
+
+### Connect the physical panel to its intended roof zone
+
+An agreed order or cutting list describes what should be produced. The handover discussion also needs a way to associate the particular panel being received with its intended roof zone and the direction shown on the project drawing. Ask the forming and receiving parties how that association will remain recognizable at their boundary. Any marking or identification proposal must respect the panel supplier's requirements; this guide does not prescribe marks on the product.
+
+Use descriptions that distinguish material still connected to the forming line, a cut panel not yet accepted by the receiver, and a panel already received for the nominated next stage. These descriptions expose different ownership and support questions. They are not handling steps, nor do they establish that an intermediate condition is permitted. The project parties must identify which conditions exist in their proposed method and which equipment and support information covers them.
+
+For a hypothetical project with the same panel profile serving two roof zones, the visible shape alone may not identify the intended destination. A revised length schedule or direction reference could apply to one zone while the other remains unchanged. The buyer should ask how the receiver will distinguish the affected panels and which drawing defines their destination. If that link cannot be explained, a correct forming order still leaves a gap at receipt. Resolve the identity question alongside the physical handover arrangement, without asking a photograph or a completed cutting entry to stand in for acceptance.
 
 ### Show the relationship in plan and elevation
 

@@ -2,7 +2,7 @@
 title: "Roof-Level Roll-Forming Lifts for Long Roof Panels"
 description: "Compare roof-level and ground roll forming for long roof panels. Review the lifted machine, panel route, coil supply and site conditions before selection."
 date: 2026-07-24
-updated: 2026-10-14
+updated: 2026-10-17
 author: "ARCLIFT Technical Editorial"
 tags: ["Roof-Level Roll Forming", "Long-Span Panels", "Project Planning"]
 coverImage: "/images/equipment/entry-real-clearance.webp"
@@ -72,6 +72,21 @@ Use the same panel definition and roof zone for both candidates. Otherwise, one 
 | What could leave the option unresolved? | A missing approved transfer or receiving method. | A missing line/lift interface, support assessment or receiving method. |
 
 For a useful first comparison, write a short answer in every row and mark the source of the answer. The purpose is to reveal the unresolved physical connection. A longer list of equipment names will not compensate for a missing route between the line and the roof.
+
+### Compare the order in which the roof can receive panels
+
+The comparison also needs the proposed order of roof work. A maximum panel length says little about whether the next panel has an available destination. Ask the roof team which zones can receive material, whether that availability changes during the planned forming period, and whether the production order is still provisional. These are project inputs, not a request to infer a production rate from the equipment.
+
+Consider a hypothetical project where the first roof zone can accept its panels but the following zone remains occupied by another trade. A ground-forming proposal might assume that completed panels wait in a reviewed holding area. An elevated-forming proposal might assume that the receiver remains available whenever a panel emerges. Neither assumption is established by the line's ability to make the specified profile. The buyer needs to know whether each proposed route actually includes the intermediate condition on which it relies.
+
+| Programme assumption in the comparison | Ground-forming question | Elevated-forming question |
+| --- | --- | --- |
+| The receiver is available for the stated production period | Does the reviewed transfer route serve that same period? | Does the outlet arrangement connect to that available receiver? |
+| Roof zones become available in a different order | Where does the proposed panel sequence leave completed items? | Can the proposed output position serve the revised destination? |
+| The proposal relies on holding finished panels | Which separate holding and transfer arrangement is included? | Is a holding stage actually defined beyond the outlet, or only assumed? |
+| The next receiving window is still unknown | Which part of the production and transfer proposal remains provisional? | Which part of the forming and receiving concept remains provisional? |
+
+Use the answers to qualify the comparison before choosing equipment. A route that depends on an unavailable holding area has a different unresolved condition from one whose receiver is not yet assigned. The useful next request is therefore a missing arrangement or a revised work-zone brief, not a promise of faster output. The detailed treatment of an emerging panel remains with the project's receiving and support specialists.
 
 <!-- audit-section: evidence-tradeoffs -->
 ## Test the route against the building
