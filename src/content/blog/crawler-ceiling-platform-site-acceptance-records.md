@@ -2,7 +2,7 @@
 title: "Site Acceptance Records for Crawler Ceiling Platforms"
 description: "Build site acceptance records for a crawler ceiling platform by linking configuration, inspections, staged checks, deviations, documents and release authority."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["crawler ceiling platform", "site acceptance records", "inspection evidence", "handover controls"]
 coverImage: "/images/equipment/entry-real-cover.webp"
@@ -81,6 +81,14 @@ The editorial matrix below separates typical record purposes. Its rows are plann
 | Assembly responsibility | Agreed scope and completion evidence | Assigned assembly provider and reviewer | Authorization for the ceiling task |
 | Site matching | Current floor, access and work-zone review references | Appropriate site and technical reviewers | Unreviewed locations or conditions |
 | Contractual acceptance | Agreed criteria, results and open items | Contractually assigned parties | Other required inspections and permissions |
+
+### Keep a late accessory outside the earlier observed combination
+
+A staged delivery can separate the equipment physically present from the combination described in the supply agreement. Consider a hypothetical purchase in which the main platform arrives before an optional extension included in the agreed scope. The first destination record can identify the main platform and the observations actually made on that delivered arrangement. The absent extension remains an identified supply item, with its affected contractual scope visible. Its inclusion on the order does not make it part of the configuration observed that day.
+
+When the extension arrives, its package receipt answers an arrival question. The record also needs a response from the responsible technical parties about the now-proposed combination: which supplied assemblies and current documents define it, and what earlier observations, if any, remain applicable. The buyer should ask for that scope determination rather than merely changing the accessory row from pending to received and treating the entire proposed arrangement as already covered. The main platform finding may remain useful within its original boundary; it should not be relabelled as a finding about an arrangement absent from the event.
+
+This distinction supports a practical purchasing decision. A limited milestone can remain linked to the main platform actually presented, while the later combination has its own outstanding questions tied to the agreed supply and site task. Ask the contract parties what each milestone covers and the technical reviewers which evidence is relevant. If the accessory changes a working region or site interface, identify that proposed physical difference for their response; do not presume either that new testing is always required or that earlier evidence is sufficient. No extension availability or compatibility is asserted here. The example explains how to preserve the meaning of observations across separate deliveries without prescribing assembly, demonstrations or acceptance tests.
 
 ### Record exceptions without disguising their status
 

@@ -2,7 +2,7 @@
 title: "Panel Profile Data for a Roll-Forming Tooling Review"
 description: "Connect roof panel profiles, material records and samples to the roll former proposed for a lift, with clear tooling, machine and roof-system review boundaries."
 date: 2026-07-27
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "tooling review", "roof panels", "project data"]
 coverImage: "/images/equipment/coil-real-panel.webp"
@@ -31,6 +31,21 @@ This guide follows the panel from its intended roof connection back to material 
 Identify which parts of the profile interact with adjacent sheets, clips, fasteners or another specified roof component. Record the roof-system drawing that governs those relationships. Cover width, rib shape, returns and edge details describe different aspects of the panel; a familiar profile name cannot replace their dimensions and interpretation. Where the roof-system designer has not selected a detail, show the unresolved choice to the machine reviewer.
 
 The distinction matters commercially. A proposal based on an approximate cross-section may answer whether further discussion is worthwhile, while a tooling commitment needs the agreed geometry and material basis. Label those two response types so a budget discussion does not become an assumed promise to reproduce every detail of an existing roof.
+
+### Make the profile's viewing direction explicit
+
+For a profile with different edge details, ask the drawing owner to define the direction from which the cross-section is viewed. Connect that convention to the specified exposed face, any face-specific finish and the intended panel direction. An isolated sketch marked left and right can be read differently when another party views the opposite end. The useful input is an agreed orientation reference, not a guess based on the sample photograph.
+
+The following blank orientation note is an editorial enquiry aid. The roof-system, material and tooling parties should supply or confirm its entries for the actual proposal.
+
+| Relationship to clarify | Information to request |
+| --- | --- |
+| Cross-section view | Identified viewing direction and drawing reference |
+| Panel faces | Which face is specified as exposed and which material record defines its finish |
+| Different mating edges | Edge identities tied to that same view, rather than unqualified left and right |
+| Proposed machine output | A reference connecting the agreed section view to the proposed discharge direction |
+
+Suppose, hypothetically, two tooling replies reproduce the same outline but label the exposed face from opposite views. The buyer has not yet established whether the replies describe different physical proposals or merely different drawing conventions. Clarifying that distinction can prevent an unnecessary tooling change request, or reveal a real unresolved difference. The note does not establish that material may be reversed, that a machine can produce either orientation, or that the roof assembly is approved. Those conclusions remain with the actual technical reviews.
 
 ### Locate the input and output boundaries
 

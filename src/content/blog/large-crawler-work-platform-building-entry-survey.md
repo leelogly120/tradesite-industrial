@@ -2,7 +2,7 @@
 title: "Building Entry Survey for Large Crawler Work Platforms"
 description: "Survey building entry for a large crawler work platform across transport, doorway, internal travel, task and withdrawal states with controlled measurements."
 date: 2026-08-07
-updated: 2026-10-05
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["large crawler work platform", "building entry survey", "indoor access route", "clearance planning"]
 coverImage: "/images/equipment/entry-real-cover.webp"
@@ -57,7 +57,22 @@ Record the available space on both sides of the opening, nearby columns or walls
 
 Identify the reference planes and the actual features that reduce the opening: frames, overhead door mechanisms, fittings, guards or temporary services. Preserve width and height observations separately, with their locations and measurement status. A nominal architectural opening may differ from the usable geometry. The reviewer needs to know what was measured and what equipment state is being compared, rather than receive one rounded statement that the door is large enough.
 
-### Record the threshold as a transition
+### Locate restrictions at successive cross-sections
+
+The narrowest width and lowest overhead feature may occur at different depths along an entrance. Sending those two minima as the dimensions of one rectangular doorway creates a section that was never surveyed. Keep each limiting feature at its actual position so the equipment reviewer can compare a connected passage with the configuration-specific envelope.
+
+For example, a hypothetical entrance might have an external guard beside the approach, a narrower frame farther along, and a door mechanism projecting downward inside. These observations describe successive restrictions. Their relationship matters because different portions of the equipment may be beside or beneath them at a given position. Only the equipment and access reviewers can determine the implications; this example supplies no movement path, allowance or fit conclusion.
+
+| Survey section | Reference to preserve | Observation to record | Relationship to the next section |
+| --- | --- | --- | --- |
+| Outside approach | Marked plane beside the external guard | Side obstruction and available approach geometry | Locate it relative to the frame |
+| Door frame | Marked frame face | Width and height at that plane | Locate the inside mechanism from this face |
+| Internal mechanism | Plane through the projecting feature | Local overhead and side restrictions | Show its depth within the passage |
+| Inside transition | Marked end of the restricted passage | Space and floor transition beyond the opening | Connect it to the internal route |
+
+This blank example gives the survey a useful shape without inventing measurements. Use common references in the plan and sections, and identify the depth of each observation along the passage. If a location cannot be surveyed, mark that section missing. A responsible assessor may deliberately combine restrictions into a conservative screening envelope. Label that envelope as derived, retain the actual section locations and distinguish it from a surveyed opening. Neither the derived envelope nor the survey alone establishes fit. This entrance comparison remains separate from the raised platform's work-volume review.
+
+### Describe the surfaces on either side
 
 A threshold connects surfaces and equipment positions, not just two floor elevations. Document the transition length, level difference, slope or crossfall information, nearby joints or channels, and approach space. Mark inaccessible points and uncertain datums. Do not propose ramp dimensions, bridging or a traversal technique from the resulting photograph. Any temporary arrangement requires its own design and review, while equipment-specific information must establish which transition questions need resolution.
 
@@ -93,7 +108,7 @@ For each observation, record location, direction, datum, method, date, survey ow
 
 ### Reconcile the register before handover
 
-Check these six relationships before issuing the package:
+Check these eight relationships before issuing the package:
 
 - Match each route segment's endpoint to the next segment's start, including the approach and turning geometry.
 - Tie opening width and height observations to the same location, datum and survey revision used in the comparison.
@@ -101,6 +116,8 @@ Check these six relationships before issuing the package:
 - Link each floor zone to its structural record coverage and the named owner of unresolved support questions.
 - Match the proposed transport or travel state to the governing equipment documentation, including unresolved removable elements.
 - Record destination-site access restrictions, survey date, construction changes and the person responsible for the next recheck.
+- Locate each external guard, frame face and internal overhead mechanism at its own cross-section along the entrance.
+- Preserve the distance and orientation between those sections so separate minima are not presented as one measured opening.
 
 These checks test the consistency of the handover information. They do not set a clearance allowance or authorize entry.
 

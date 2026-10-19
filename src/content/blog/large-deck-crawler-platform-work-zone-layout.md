@@ -2,7 +2,7 @@
 title: "Work-Zone Layout Guide for Large-Deck Crawler Platforms"
 description: "Plan a large-deck crawler platform work zone by matching task area, people, materials, nearby activity and access needs before comparing equipment proposals."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["large deck work zone", "crawler platform layout", "ceiling work planning", "material staging"]
 coverImage: "/images/equipment/entry-real-interior.webp"
@@ -96,6 +96,21 @@ Neither arrangement should be accepted from a generic illustration. Ask the task
 Imagine a ceiling task beside a building entrance. The first sketch places materials beside the platform because that area is empty during the survey. The site team later identifies it as the delivery route during the planned work period. The machine's nominal height has not changed, yet the proposal now needs another material location or another work window.
 
 This example does not establish which solution is acceptable. It shows why simultaneous activity belongs in the enquiry. Ask the provider to respond to the revised space assumptions, rather than letting a drawing of the machine stand in for a coordinated site arrangement.
+
+### Overlay adjacent platform zones for the same period
+
+Two individually drawn work positions can depend on the same patch of floor. Consider a separate hypothetical project with platforms proposed for neighboring ceiling bands. The first plan reserves space beside one machine for material presentation. The second plan places the neighboring team's access or control approach in that space. Each drawing can appear complete when viewed alone because neither contains the other's requirement.
+
+Request a combined plan for the period in which both activities are proposed. Keep the base and support outlines, material areas, team access, control-approach areas and building routes identifiable for each candidate. Label whether a space is required throughout the task or during a particular proposed activity. These are project intentions for coordination, not instructions to position equipment or a schedule authorizing simultaneous work.
+
+| Shared-plan relationship | Information the separate plans can hide | Question for project coordination |
+| --- | --- | --- |
+| One support outline beside the other zone | An area already claimed by the neighboring arrangement | Which proposed positions depend on the same space? |
+| Material presentation beside team access | A transfer interface crossing the neighboring team's approach | Are these demands proposed during the same period? |
+| Stored items beside a control approach | A control-related access area omitted from the storage sketch | What area does the actual control proposal require? |
+| Equipment zones beside a building route | Combined occupation beyond either isolated outline | Which building functions must remain available? |
+
+The resulting comparison can identify alternatives for the site team to assess: revised positions, a different material area, separate proposed periods or another equipment concept. It does not select among them. Structural loading for objects proposed together belongs with the floor reviewer, while control identity and visibility belong with the control proposal. This layout review supplies the shared spatial picture those specialists and the project coordinator would otherwise have to reconstruct from separate drawings.
 
 ![Raised empty platform outside a building with open entrance bays](/images/equipment/entry-real-approach.webp)
 

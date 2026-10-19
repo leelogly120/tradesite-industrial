@@ -2,7 +2,7 @@
 title: "Electrical Interface List for a Roll-Forming Project"
 description: "Review power and control interfaces for an elevated roll-forming machine, including ground supply, changing service routes, separate suppliers and design scope."
 date: 2026-07-27
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "electrical interfaces", "control handover", "project documentation"]
 coverImage: "/images/equipment/coil-real-module.webp"
@@ -62,6 +62,14 @@ This matters when the buyer receives a forming machine and lift under separate s
 Show the relationship between the supply point, lifting structure, roll former and ground-side equipment at the proposed working positions. The purpose is to reveal which services cross moving or changing boundaries. Do not assume a service arrangement remains suitable merely because it reached the first position on a sketch.
 
 Consider a hypothetical change from one roof receiving zone to another. The forming machine may remain unchanged, while the available supply point, cable route and communication position differ. The electrical review needs those changed site inputs. It cannot rely on a model name or an earlier connection record that describes another layout.
+
+### Describe which functions are proposed together
+
+Alongside the equipment list, give the electrical designer a description of the intended activity states. Identify which forming, feed and lifting functions the project proposes to use together, which belong to different states and which relationships are still unknown. These are inputs for review, not permission to perform concurrent functions. The applicable equipment and integration information must establish the permitted arrangement.
+
+For a hypothetical comparison, one offer might describe a former and separately powered feed unit, while another includes a coordinated package. Both may supply individual electrical data, yet leave different questions about the combined site interface. Ask each bidder which configuration and activity assumptions its connection information represents. Listing every nameplate does not state whether the proposal assumes simultaneous use, separate use or an interaction still awaiting design.
+
+A useful reply connects the proposed functions to the relevant supplied subsystems and states what the responsible designer still needs from the site. Procurement can then distinguish missing equipment data from an unresolved activity assumption. It can also compare an offer covering only individual machine connections with one that includes development of the combined interface. This is not a calculation of required supply capacity. Do not add ratings, select protection or infer control behaviour from the activity description; those are design decisions for the actual equipment and installation.
 
 ### Ask about interruption and recovery without designing them
 

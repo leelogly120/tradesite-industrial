@@ -2,7 +2,7 @@
 title: "Large-Deck Crawler Platforms vs Basket Lifts for Work"
 description: "Compare a large-deck crawler platform with a basket lift using the task, team interaction, material flow, site constraints and configuration-specific evidence."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["large deck crawler platform", "basket lift comparison", "indoor access method", "platform selection"]
 coverImage: "/images/equipment/entry-real-approach.webp"
@@ -96,7 +96,23 @@ A shared working area may be worth investigating where adjacent tasks and materi
 
 These are conditional work-planning hypotheses, not measured productivity results. Do not attach a time-saving percentage or cost advantage without project evidence. Compare the full sequence and its unresolved interfaces. If only one candidate has detailed records, distinguish an evidence gap from a demonstrated disadvantage of the other candidate.
 
-### Avoid a total score that hides a stopping condition
+### Compare complete coverage with a divided equipment scope
+
+The purchase need not be framed as one category serving every point. A hypothetical project might contain a continuous installation band, a few recessed corners and scattered follow-up inspection points. Compare a proposal assigning all of them to one identified candidate with a proposal separating the main band from the exceptional points. Neither arrangement has a presumed cost or speed advantage; each must account for the same complete task list.
+
+For the single-candidate proposal, ask for a response at the corners and inspection points as well as the repeating band. A useful answer identifies which positions are addressed by the documented arrangement and which remain unresolved. For a divided proposal, name the candidate and task boundary for each part. An unspecified “small lift later” leaves the exception unanswered just as an unsupported whole-project coverage claim does.
+
+| Purchasing comparison | Single candidate across the task list | Explicitly divided equipment scope |
+| --- | --- | --- |
+| Repeating installation band | Describe its proposed working arrangement | Describe the candidate assigned to that band |
+| Recessed corners | Show the response for each distinct position | Identify the candidate proposed for each exception |
+| Follow-up inspection points | Address the completed building stage | Assign the later task and its required site information |
+| Material and ground interfaces | Include all associated presentation and staging needs | Identify interfaces added or shared between the scopes |
+| Site occupation | Describe the space required for the proposed activities | State whether candidates are proposed in the same or different periods |
+
+The divided scope may introduce another delivery, material boundary or claim on site space that deserves investigation. The single-candidate scope may leave an exceptional work position unexplained. Asking both proposals to show remaining tasks and supporting interfaces makes the comparison useful. The project-data guide defines those task rows; this purchasing comparison establishes how offers account for them, without deciding the work method or promising that either category reaches the difficult point.
+
+### Keep critical questions visible beside the comparison
 
 A checklist can organize the discussion, but a weighted total may conceal an unresolved floor, clearance or rescue-planning issue. Identify which conditions need closure before further consideration. A good answer about task organization cannot compensate for the absence of information needed to assess a critical site interface.
 

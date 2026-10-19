@@ -2,7 +2,7 @@
 title: "RFQ Data Guide for High-Altitude Roll-Forming Lifts"
 description: "Prepare a clear RFQ for a roll-forming lift by defining the forming machine, panel task, roof geometry, supply scope, destination and unresolved project inputs."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming lift RFQ", "high-altitude equipment", "project data", "technical selection"]
 coverImage: "/images/equipment/coil-real-handling.webp"
@@ -37,6 +37,14 @@ Then state the decision wanted from the supplier. It may be an initial architect
 Show the roof receiving point and the ground location under consideration, using a common project reference where available. Distinguish roof level, requested panel-outlet or cutter level and any lift-platform reference. Do not replace all of them with one working-height figure or infer a machine's capability from a model suffix.
 
 If the survey is incomplete, identify which values are estimates and what record will replace them. The first enquiry can still explain the intended relationship. The [roof-zone survey guide](/blog/roof-zone-survey-roll-forming-lift-selection/) provides the detailed follow-up; the RFQ should identify that dependency rather than invent a convenient geometry.
+
+### Distinguish requirements from permitted alternatives
+
+An RFQ can keep the architecture open while fixing the production question. Separate the required result, site constraints and choices that a bidder may propose. The required result could be the identified panel task and roof receiving relationship. A site constraint could be an access boundary awaiting survey confirmation. An open choice could be whether to assess the buyer's existing former or include a new line. Mark the status of each; an unconfirmed constraint is not a fixed equipment specification.
+
+Consider a hypothetical enquiry that permits either crawler or truck-mounted proposals for the same roof zone. Ask for a response to that common task, followed by a separately identified alternative if the bidder proposes another receiving position or a different forming-machine package. The alternative should show which physical relationship changes: arrival route, standing area, feed side, outlet position or destination integration. It should not quietly replace the task used by the other bidders.
+
+This gives the buyer a useful next decision. A reply meeting the stated task with unresolved machine data needs an interface follow-up. A reply depending on a different receiving location needs the project team to consider that location first. Both may deserve investigation, but they answer different questions. Keeping the baseline and alternative visible allows procurement to explore options without making the first quotation's assumptions the project requirements.
 
 ### Name the supply boundary
 

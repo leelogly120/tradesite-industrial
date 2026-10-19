@@ -2,7 +2,7 @@
 title: "Relocating Crawler Roll-Forming Lifts Between Work Zones"
 description: "Review crawler roll-forming lift relocation by comparing work zones, machine states, panel receiving geometry, material access, supports and service interfaces."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["crawler lift relocation", "roll forming work zones", "site movement plan", "change control"]
 coverImage: "/images/equipment/transport-real-stowed.webp"
@@ -78,9 +78,13 @@ For separately supplied feed equipment, ask whether the next zone uses the same 
 
 ### Compare two neighbouring roof zones
 
-Consider a hypothetical project where Zone A is beside an open delivery strip, while Zone B is beside a newly enclosed wall. The panel requirement is unchanged, but the second position may have a different receiving relationship and less material-side space. A short route between them does not resolve those differences.
+Consider a hypothetical project where Zone A receives panels in one direction, while the next roof area calls for a differently oriented outlet relationship in Zone B. The same panel order continues and the ground positions are close together. On the first sketch, however, the proposed ground-side feed position and site supply point have been copied unchanged into the second zone. The machine and the surrounding site have not necessarily changed orientation together.
 
-Ask the reviewer to identify the changed inputs rather than approve both zones from one photograph. The same machine data may remain useful, while the support location, outlet geometry and feed concept need separate consideration. Conversely, evidence should not be discarded merely because the zone name changes; its owner should identify whether its original conditions still apply.
+Compare the two zones from named inlet and outlet references on the machine, then relate those references to the receiver, proposed feed equipment, supports and services in each plan. Use common building references so a reversed drawing view cannot be mistaken for a physical change. Ask which objects or interfaces the second proposal actually relocates and which remain where they were. A roof arrow alone cannot describe that complete relationship.
+
+This gives procurement a more precise comparison than counting moves. One concept may retain the previously described feed relationship but need another receiving review. Another may keep the receiver relationship while leaving the material-side arrangement unresolved. Those are hypothetical alternatives to investigate, not findings that either arrangement is feasible. Ask what equipment information and local services each proposal includes for its changed interfaces.
+
+The same machine data may remain useful, while support location, outlet geometry or the feed concept need separate consideration. Do not discard evidence merely because the zone name changes; identify whether its original conditions still apply. Equally, a short route or unchanged profile cannot establish that the previous arrangement can simply be mirrored. The resulting zone comparison should state the physical differences without giving movement, reconnection or feed instructions.
 
 ### Make the next dependency visible
 

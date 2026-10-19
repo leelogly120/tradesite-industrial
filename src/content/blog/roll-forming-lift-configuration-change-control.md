@@ -2,7 +2,7 @@
 title: "Roll-Forming Lift Changes: Recheck the Right Interfaces"
 description: "Review roll-forming lift changes to machine, coil, chassis and site inputs and identify which interfaces, quotation assumptions and prior decisions need review."
 date: 2026-08-08
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming lift", "configuration change control", "interface review", "technical procurement"]
 coverImage: "/images/equipment/entry-real-clearance.webp"
@@ -92,7 +92,22 @@ Previous evidence need not be discarded indiscriminately, but it should not be c
 
 ### Test a proposed change against a concrete scenario
 
-Consider a hypothetical buyer who changes the forming line after the carrier and lift arrangement have been discussed. The new machine is described as producing the same roof panel, but the outlet position and machine mass information differ. Procurement should supply the revised data and request review of the affected mounting, load allocation and outlet assumptions before accepting the substitution. It should also ask what this means for quotation scope and delivery planning. This scenario illustrates a decision chain, not an actual project or a claim that either machine can be accommodated.
+Consider a hypothetical buyer who changes the forming line while the site team changes the receiving zone. The replacement former has a different outlet position; the new zone requires a different panel-output direction. A reply about the replacement machine against the original zone and a reply about the new zone with the original machine address two different combinations. Neither reply describes the buyer's final proposal by itself.
+
+Put the proposed former and receiving zone on the same plan and section. Show the outlet reference, machine orientation, receiving direction and available standing area together. Procurement can then ask whether the previously discussed changes remain applicable in that combination, which interfaces require further information and whether the supply proposal changes. The purpose is to expose their relationship, not to predict acceptance or insist that the combination is unsuitable.
+
+### Compare combined changes as one physical proposal
+
+A before-and-after comparison is especially useful when different parties introduce changes. Keep the combinations visible rather than collecting separate answers under one general revision label:
+
+| Combination | What the discussion covers | Question still to answer |
+| --- | --- | --- |
+| Original former and original zone | Earlier selection basis | Which stated assumptions remain relevant? |
+| Replacement former and original zone | Changed machine against earlier site geometry | Does that answer address the newly proposed receiving direction? |
+| Original former and revised zone | Changed site with earlier machine geometry | Does that answer address the replacement outlet location? |
+| Replacement former and revised zone | Buyer's intended combined proposal | What joint interface decision is required? |
+
+The same reasoning applies if an accessory is added while the usable standing area narrows. One response may describe the accessory with the earlier support-space assumption; another may discuss the narrower area without that item. Ask the integration and site reviewers to consider the proposed equipment and space together. This remains configuration-change work: the specialist interface guides supply the detailed inputs, while this comparison keeps separately discussed changes from being mistaken for one reviewed arrangement.
 
 ### Keep external inspection guidance in context
 

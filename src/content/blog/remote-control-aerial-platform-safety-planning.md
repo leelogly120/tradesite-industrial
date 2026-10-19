@@ -2,7 +2,7 @@
 title: "Remote-Control Aerial Platform Safety Planning Guide"
 description: "Review crawler platform remote-control proposals through permitted functions, position, visibility and site responsibilities before equipment selection."
 date: 2026-07-27
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["Remote Control", "Aerial Platforms", "Safety Planning"]
 coverImage: "/images/equipment/entry-real-approach.webp"
@@ -91,6 +91,14 @@ This matters for handover as well as purchasing. A device without a clear associ
 | What happens outside normal conditions? | Relevant equipment documents and responsible review | That a generic wireless system has a known response |
 | Which device is delivered? | Configuration identity and handover information | That another handset is a compatible replacement |
 | How does the task involve occupants? | Explicit conditions for the proposed state | That remote control permits occupied movement |
+
+### Make the command target clear in a multi-machine enquiry
+
+Describe a multi-machine situation explicitly if similar platforms may occupy neighboring work areas. The purchasing question has two parts: what parts of the intended machine and its surroundings can be seen from the proposed control location, and what supplied information establishes which machine the handheld device belongs to. A clear view of a platform does not answer the second question. A documented device association does not answer the first.
+
+Consider a hypothetical hall with two similar platforms beyond the same row of columns. From the location proposed for review, the base of one and part of the other deck are visible. A site sketch can identify the intended command target and the visible and obscured regions of each machine. Ask the equipment provider how its delivery information identifies the controller with the offered machine configuration, and ask the project parties to review that visual relationship for the requested functions. This does not authorize the proposed location or establish how either controller behaves.
+
+Keep the comparison focused on an answer the buyer can use: does the proposal identify the delivered device and intended controlled machine clearly, and does it address the multi-machine setting described in the enquiry? If an offer answers only the single-machine case, ask for clarification of the missing situation. Similar appearance, proximity or an unobstructed view of some equipment is insufficient identification evidence. Avoid inferring that devices can be swapped, that several machines can share a controller, or that a particular radio arrangement prevents confusion. Technical pairing, configuration, fault checks and any changes remain outside this purchasing discussion. The work-zone layout addresses the space the machines share; this question concerns the identity of the command target within that space.
 
 ### Test a visibility change in the enquiry
 

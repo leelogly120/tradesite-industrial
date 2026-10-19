@@ -2,7 +2,7 @@
 title: "Contract-Defined FAT and SAT Evidence for Roll Forming"
 description: "Define FAT and SAT scope for a roll-forming lift by matching factory and site evidence to the actual machine, material, integration and receiving interfaces."
 date: 2026-07-27
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "FAT", "SAT", "test protocol", "handover evidence"]
 coverImage: "/images/equipment/coil-real-module.webp"
@@ -56,6 +56,14 @@ A successful factory observation can remain valuable without being stretched int
 Connect any panel evidence to the material and profile revision used. If a factory uses reference material while the project will use another supply, identify that difference explicitly. The responsible parties must decide what the earlier evidence can support; a visually similar sample is not a universal statement about all materials sharing a trade description.
 
 The [profile and tooling guide](/blog/roof-panel-profile-material-tooling-data/) develops those input questions. In the acceptance record, the important relationship is between the observed result and its actual basis. Preserve the sample identity, agreed criterion and observation record so the buyer can understand the result without reconstructing the event from photographs.
+
+### Match the sample to the observation being claimed
+
+Describe the physical sample used for each agreed panel observation, including its length reference, condition and the support arrangement recorded for that observation. A short section retained to show mating geometry and a cut panel used for an agreed end or longitudinal observation are different evidence objects. Ask which question each is intended to answer rather than treating both as an undifferentiated approved sample.
+
+Consider a hypothetical offer supported by a short display section while the contract also requests observations concerning the ordered panels along their length. The buyer should ask which of those observations have actually been made, on what identified samples and under which agreed conditions. The display section may remain useful for its limited purpose. Its existence does not establish a result for a different length or observation that was never covered.
+
+This distinction helps define a proportionate acceptance discussion. If the gap concerns a profile detail, clarify that detail and its agreed evidence. If it concerns another observation on a different sample, identify that separate question before assigning a milestone. Do not prescribe a full-length trial merely because a short sample exists. The authorized parties determine the required sample, method, criteria and stage. Record whether the response supplies existing evidence, proposes later work or leaves the question open, so the purchaser knows what the quotation actually includes.
 
 ### Identify the assembled and connected equipment
 

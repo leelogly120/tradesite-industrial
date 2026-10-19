@@ -2,7 +2,7 @@
 title: "Ground Pressure Guide for Indoor Aerial Work Platforms"
 description: "Compare indoor platform floor inputs by route, contact points, structure and work state before accepting a crawler platform configuration for a project."
 date: 2026-07-27
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["Ground Pressure", "Indoor Platforms", "Floor Planning"]
 coverImage: "/images/equipment/entry-real-cover.webp"
@@ -90,6 +90,14 @@ Similarly, a floor review for passage does not automatically cover a work positi
 | Work with deployed supports | Applicable support locations and reactions | That track-average pressure describes the supports |
 | Crossing a floor transition | Construction and condition on both sides | That a continuous finish means continuous structure |
 | Use of temporary protection | Intended purpose and reviewed arrangement | That surface protection establishes load spreading |
+
+### Show other equipment in the proposed review area
+
+A review request for one platform can omit objects expected nearby during the same project period. Ask the site team whether another platform, material-handling equipment or a staged material package is proposed in the area being submitted for structural review. Describe each object's location, configuration or state, and whether its presence is expected to overlap with the platform task. The structural reviewer determines which relationships require assessment; the purchaser should not decide that visible separation makes the objects independent.
+
+For example, in a hypothetical hall the platform quotation describes one ceiling-work position. The project layout also shows a second platform working in an adjoining bay and a material vehicle waiting between them. A response based on the first machine alone leaves a different question from a response covering the proposed overlapping presence. Send the common layout and the equipment information available for each object to the appointed reviewer, asking whether the earlier scope includes that combination. A shared floor finish cannot identify the structural area involved, and adjacency does not establish that the loads act on the same structural element.
+
+The useful comparison is between the actual requested cases: the platform alone at its identified position, the platform with the named nearby objects, or a different site arrangement proposed for review. Mark their expected presence periods without calculating combined reactions or selecting an acceptable separation. If the other equipment is still unknown, describe that uncertainty so the reviewer can identify the missing input. The buyer then knows whether a quotation has usable configuration data for the review being requested. The separate work-zone enquiry addresses competing space; this floor enquiry asks whether the structural assessment covers the described equipment combination. Neither enquiry substitutes for the other's conclusion.
 
 ### Compare quotations against the same route
 

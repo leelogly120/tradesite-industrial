@@ -2,7 +2,7 @@
 title: "Transport Data Package for Large Crawler Platforms"
 description: "Build a transport data package for large crawler platforms by coordinating machine, carrier, route, stowage, handling, role and handover information safely."
 date: 2026-08-10
-updated: 2026-10-05
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["crawler platform transport", "transport data package", "equipment logistics", "large work platform"]
 coverImage: "/images/equipment/transport-real-cover.webp"
@@ -53,7 +53,22 @@ The data sheet should distinguish identifiers and verified values from assumptio
 
 Include machine and configuration identifiers, prepared transport length, width and height, total mass, detachable component masses and dimensions, and the coordinate convention used for drawings. Add tolerances or verification requirements where the responsible specialist needs them. Do not infer these values from public product cards or editorial imagery. If a weighbridge, drawing or measurement will supply the final value, state the pending evidence and hold point.
 
-### Identify center-of-gravity and support boundaries
+### Describe companion cargo beyond the main machine envelope
+
+Confirmed dimensions for the prepared machine do not describe every item in the shipment. A removed option, separately packed component or accessory can have its own outer dimensions and mass information. Ask which items are included in the machine record and which are separate cargo. Keep the actual package outline distinct from the unpacked component outline wherever packaging changes the information supplied to the transport party.
+
+Consider a hypothetical platform shipment with the main unit and a removed optional section. The buyer is comparing carriage together, on separate vehicles or in different delivery batches. The main unit's data may be identical across these proposals, while the cargo presented to each carrier and the items available at each site handover differ. Obtain item-specific data and the transport party's proposed cargo arrangement for each option. This describes an enquiry comparison, not a loading or securing design.
+
+| Proposed shipment scope | Item information to request | Question for the transport and receiving parties |
+| --- | --- | --- |
+| Prepared main unit | State-specific dimensions, mass and included items | Does this record include all fitted shipment items? |
+| Removed option on the same vehicle | Its packaged outline, mass and item identity | What combined cargo arrangement is being assessed? |
+| Option on a separate vehicle | Its own package and carrier references | Which site access and receipt record applies to that vehicle? |
+| Option arriving in a later batch | Package data and planned delivery boundary | Which configuration items will be available at the first handover? |
+
+The useful comparison is not simply whether the machine fits a carrier. It is whether each proposed carriage scope has enough data for its own review, and whether the delivery grouping matches what the site expects to receive. A later component arrival belongs in the receiving and assembly coordination as well as the transport enquiry. No complete-machine operating state follows from receiving the main unit alone.
+
+### Provide support information for the stated cargo
 
 Carrier, lifting and restraint reviews may require center-of-gravity information, support zones, ground-clearance limits, track contact information or allowable reactions. The exact needs depend on the method. Record what controlled information exists and which competent party interprets it. A visual balance point, track midpoint or geometric center is not a safe substitute for released center-of-gravity data. Similarly, a crawler track is not automatically an approved tie-down or lifting point.
 
@@ -66,7 +81,7 @@ List only interfaces identified for the relevant purpose in the controlled equip
 
 A status should explain how the information can be used. The following is a suggested project register, not a certification scheme.
 
-Before circulating that register, attach these six inputs with their current status:
+Before circulating that register, attach these eight inputs with their current status:
 
 - Machine-state record identifying installed and removed items, with prepared length, width and height tied to controlled drawings or measurements.
 - Carrier data describing deck geometry, loading interfaces and the transport party's document revision, separately from machine data.
@@ -74,6 +89,8 @@ Before circulating that register, attach these six inputs with their current sta
 - Ground or floor information for loading, temporary holding and receipt areas, with unresolved support questions assigned to the site reviewer.
 - Equipment documentation identifying the applicable restraint, support and handling interfaces, without treating them as interchangeable.
 - Custody and loose-item register linking package identifiers, receiving owners, observed condition and the next required decision.
+- Separate dimensions and mass information for removed options and packaged accessories, identifying what the main machine data excludes.
+- Proposed grouping of those items by vehicle or delivery batch, matched to each carrier and destination handover.
 
 | Information status | Useful buyer decision | Evidence still needed before wider use |
 | --- | --- | --- |

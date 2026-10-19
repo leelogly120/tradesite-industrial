@@ -2,7 +2,7 @@
 title: "Dual-Power Crawler Platform Selection and Site Guide"
 description: "Compare crawler platform power proposals against task periods, site supply, charging or fuel needs and service responsibilities before choosing a configuration."
 date: 2026-07-27
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["Dual Power", "Crawler Platforms", "Site Planning"]
 coverImage: "/images/equipment/entry-real-interior.webp"
@@ -91,6 +91,14 @@ A useful response explains both the stated capability and its limitations. The p
 | Replenishment dependency | Required equipment, space and responsible party | That an idle period resolves the arrangement |
 | Claimed runtime or duty | Configuration and conditions behind the evidence | That a category-level value applies to this task |
 | Auxiliary or emergency provision | Separate function description and applicable documents | That a second source is an emergency system |
+
+### Put runtime evidence on the same task timeline
+
+Before comparing duration answers, ask where each stated period begins and ends. One response might describe a particular working function, while another describes an elapsed period that also contains waiting or movement between zones. Their headings may both say runtime while answering different questions. Request the activities represented and whether replenishment or another energy source occurs inside the described period. This establishes the boundary of the evidence without estimating energy demand.
+
+A hypothetical project enquiry can show an unnumbered timeline: arrival at the work area, the intended ceiling-work period with its stated interruptions, a proposed transfer to another zone, and the next required task period. Those labels describe the project's intended activity, not an authorized machine sequence. Ask the provider to mark which part its evidence addresses, the configuration and energy-source assumptions used, and any parts for which no applicable evidence has been supplied. The site party separately identifies whether the assumed replenishment opportunity or supply is actually available. Do not turn a gap between tasks into an assumed charging opportunity.
+
+Suppose one offer's duration evidence starts after replenishment and covers a defined equipment function. Another offer discusses an elapsed site period but does not say whether idle time or an external source was included. The purchaser can request both answers against the same project timeline before treating them as alternatives for the required work window. If only the narrower function is supported by evidence, keep that coverage visible rather than extending it to the whole period. Different evidence boundaries need clarification, not a simple ranking of the longest figure. This comparison does not calculate runtime, recommend an energy mode or promise that the task can be completed between replenishments.
 
 ### Test a change of work location
 

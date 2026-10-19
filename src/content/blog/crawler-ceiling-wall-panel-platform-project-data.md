@@ -2,7 +2,7 @@
 title: "Crawler Ceiling Platform Project Data for Procurement"
 description: "Turn ceiling and wall-panel tasks into comparable platform inputs: work packages, people, material transfers, site conditions and defined supply boundaries."
 date: 2026-07-24
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["Crawler Platforms", "Ceiling Work", "Project Data"]
 coverImage: "/images/equipment/entry-real-cover.webp"
@@ -38,7 +38,22 @@ Mark the component location on the current drawing, then describe where the work
 
 Keep height, horizontal offset, nearby structure and the expected orientation visible on the task record. If the team cannot yet describe a workable position, mark the question open. Do not convert a reach estimate into a permitted operating envelope or assume that a worker may climb, lean beyond the approved arrangement or alter guarding to close the gap.
 
-### Separate repeated tasks from exceptional locations
+### Separate first installation from later access to the same work
+
+A ceiling strip can appear on several work-package rows even though its location and nominal height stay the same. Initial installation may occur before adjacent services or closure pieces are present. Inspection or corrective work may occur after those items occupy space beside the workface. The buyer needs to describe the worker and tool position for each stage, rather than assume that access to the unfinished strip answers every later task.
+
+Consider a hypothetical ceiling band installed beside a service route. The initial task brief shows an open side from which the team expects to present material. A later inspection requires a view or tool approach at an edge partly bordered by completed work. Record which side needs access and which neighboring elements are present at that later stage. The task owner should identify the actual approach requirement; the equipment proposal should then respond to it. This example does not specify installation or corrective-work techniques.
+
+| Task row for the same ceiling band | Building stage to describe | Worker or tool relationship to identify |
+| --- | --- | --- |
+| Initial installation | Adjacent elements still absent or incomplete | Intended material presentation side and working position |
+| Inspection of completed work | Nearby elements in their completed positions | Required viewing side and inspection-tool access |
+| Local corrective work | Completed elements retained around the affected point | Specific edge or face requiring access and room for the task tools |
+| Final review at an exceptional point | Actual closure stage at a corner or end bay | Any remaining approach that differs from the repeating task |
+
+These rows make later access visible in the purchase scope. A supplier may address the repeating installation band while an exceptional follow-up point remains to be assessed separately. Keeping that point explicit allows the buyer to compare a defined platform scope with an additional access requirement. It avoids asking one broadly described configuration to cover tasks that share an address but require different spatial relationships.
+
+### Group the genuinely repeating positions
 
 Group genuinely similar work positions, then list the exceptions: end bays, corners, areas beside services, wall returns or positions affected by unfinished construction. A broad recurring task may justify reviewing a shared working area, while a few isolated positions may need a separate access method.
 
@@ -67,7 +82,7 @@ The [worker, tool and material load-planning guide](/blog/aerial-platform-worker
 
 The same bay can present different access conditions before and after service installation, wall closure or material deliveries. Identify the construction stage for each work package. Link the brief to the drawings and floor information that represent that stage, and state which temporary obstructions or traffic arrangements remain uncertain.
 
-Britain's <a href="https://www.hse.gov.uk/pubns/geis6.htm" target="_blank" rel="noopener noreferrer">HSE guidance on selecting and managing MEWPs</a> asks selectors to consider the work, access, supporting ground, people and materials. It supports collecting task and site information; it does not establish that a particular broad-deck configuration is suitable or determine requirements outside its jurisdiction.
+Britain's <a href="https://www.hse.gov.uk/pubns/geis6.htm" target="_blank" rel="noopener noreferrer">HSE guidance on selecting and managing MEWPs</a> addresses choosing a MEWP for work at height and assessing the risks of its use. It supports collecting task and site information; it does not establish that a particular broad-deck configuration is suitable or determine requirements outside its jurisdiction.
 
 ![Red crawler-supported broad empty platform raised outside an industrial building](/images/equipment/entry-real-approach.webp)
 

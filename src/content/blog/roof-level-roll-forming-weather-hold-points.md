@@ -2,7 +2,7 @@
 title: "Weather Hold-Point Planning for Roof-Level Roll Forming"
 description: "Plan weather responsibilities around roof-level roll forming, linking unfinished panels, coil interfaces, equipment conditions and roof receiving availability."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["roof-level roll forming weather", "weather hold points", "restart planning", "site controls"]
 coverImage: "/images/equipment/entry-real-clearance.webp"
@@ -62,6 +62,14 @@ For Great Britain context, <a href="https://www.hse.gov.uk/Construction/faq-heig
 Forecast information supports scheduling; an observation describes conditions at a particular location and time. The responsible site parties should determine what information they need and how it relates to the work areas. A distant weather report cannot be presented as proof of the conditions around the forming outlet or roof receiver.
 
 The enquiry can ask who provides monitoring resources, who receives information and who has authority over each activity. It should not specify instrument positions or thresholds without project design. If different contractors use different information sources, the coordination question needs an owner before their decisions are expected to work together.
+
+### Relate the review to the building's enclosure stage
+
+The equipment can remain at the same ground position while the surrounding building changes. Ask which roof sections, wall openings and temporary enclosures the environmental review describes at the planned work stage. Keep the forming outlet, ground-side coil area and roof receiver identifiable within that description. Their locations may be unchanged while the information describing their surroundings no longer matches the project.
+
+In a hypothetical two-phase programme, the first review concerns an unfinished bay; later work is planned after nearby wall and roof elements are installed. Compare the two phases using the actual construction drawings and planned temporary arrangements. Ask the responsible parties which exposure assumptions still apply to each part of the work package and what information is needed for the later phase. Do not predict airflow or declare the later phase more sheltered or more demanding from enclosure alone.
+
+For purchasing, this comparison distinguishes an equipment-information question from a construction-stage dependency. The supplier may need the intended environmental scope clarified; the site team may need to resolve what building condition will exist during the proposed production window. Procurement can request answers for both phases without buying an unsupported all-weather promise. The output is a phase-specific list of questions, not a revised weather threshold or permission to continue work.
 
 ### Define the equipment information that procurement needs
 

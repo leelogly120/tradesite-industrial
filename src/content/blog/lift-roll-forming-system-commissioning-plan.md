@@ -2,7 +2,7 @@
 title: "Roll-Forming Lift Commissioning: Prepare the Interfaces"
 description: "Prepare roll-forming lift commissioning by connecting machine fit, feed arrangement, outlet geometry and site readiness before agreeing project-specific trials."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming commissioning", "lift system acceptance", "staged trials", "evidence records"]
 coverImage: "/images/equipment/coil-real-handling.webp"
@@ -86,7 +86,22 @@ A useful readiness register says what question remains open, which activity depe
 | Different site power proposed | Applicable equipment and connection requirements | Electrical readiness | Equipment and electrical specialists |
 | Delivery discrepancy remains unresolved | Identified component and documented disposition | Affected installation or verification activity | Receiving and responsible technical teams |
 
-### Avoid a calendar-driven definition of readiness
+### Compare the visit arrangement with the intended production arrangement
+
+Before scheduling a coordinated verification visit, place its proposed layout beside the intended production layout. Identify the actual former and lift, feed equipment, supply connection location and receiving area on each. A temporary item can answer a limited preparation question while leaving a production interface unrepresented. Procurement needs that distinction to decide what the visit can usefully cover and what equipment or site work is still needed.
+
+Consider a hypothetical project with the specified former and lift available, a temporary feed unit proposed for the visit, and the permanent receiving area still under construction. The team can ask the responsible specialists which planned observations relate to the equipment present. It can also identify questions about the permanent feed connection and receiving geometry that require their own preparation. This is a comparison of scope, not a proposed trial method or permission to use temporary equipment.
+
+| Interface | Arrangement proposed for the visit | Intended production arrangement | Preparation question |
+| --- | --- | --- | --- |
+| Former and lifting support | Identify the actual equipment and installed items present | Identify the specified equipment combination | Are both drawings describing the same assembly? |
+| Feed equipment | Name the temporary or permanent unit proposed | Name the feed unit and its intended position | Which connection and orientation are represented? |
+| Power interface | Locate the proposed supply boundary | Locate the destination production supply boundary | Which connection information differs for electrical review? |
+| Panel receiving area | Mark the area actually available for the visit | Mark the intended roof receiving area | Which outlet-to-building relationship is represented? |
+
+A useful visit description can therefore say that a named arrangement is prepared for a defined scope, with the permanent receiving interface still outstanding. That gives procurement a concrete basis for coordinating deliveries and specialist attendance. The separate FAT/SAT records should later state what was actually observed; a commissioning-preparation note should first make clear what will be present.
+
+### Match attendance to the remaining dependencies
 
 Booking personnel or transport does not close a technical gap. There is a trade-off between arranging resources early and exposing the project to changes in the agreed configuration. Record assumptions before committing the affected activity, and distinguish confirmed attendance from confirmed technical readiness. Commercial teams can then discuss timing using the actual dependency rather than promising that every outstanding item will be resolved during the visit. No generic commissioning duration follows from the product category.
 

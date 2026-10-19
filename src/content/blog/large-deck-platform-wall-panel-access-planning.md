@@ -2,7 +2,7 @@
 title: "Wall-Panel Access Planning with Large-Deck Platforms"
 description: "Compare wall-panel access proposals by worker position, panel presentation, fixing zones and material responsibilities before selecting a large-deck platform."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["wall panel access", "large deck platform", "panel installation planning", "workface logistics"]
 coverImage: "/images/equipment/entry-real-interior.webp"
@@ -57,6 +57,14 @@ The access provider needs to understand the task's physical demands, while the p
 An elevation locates the fixing zones; a section can reveal projections, recesses and the relationship between the platform and the wall. Columns, sills, braces, service runs and temporary works may affect that relationship. Include the floor area available below, rather than presenting a wall drawing with no possible machine position.
 
 Exterior and partly enclosed work also require the project to identify environmental conditions and the applicable equipment and material limitations. Do not infer suitability from a photograph of an outdoor platform. The configuration and task must be reviewed for the actual conditions, including any relevant wind exposure.
+
+### Distinguish access to the front and reverse faces
+
+Locate the worker and tool approach for each fixing, inspection or sealing task on the relevant side of the wall. A fixing point drawn on an elevation identifies a target; it may leave unanswered whether the task needs access from the visible face, the reverse face or both. Ask the installation party to describe that distinction in the wall section and relate it to the proposed platform position. The access provider can then answer a physical question about a defined approach, rather than a broad request to reach the wall.
+
+Consider a hypothetical enclosure where initial fixing is described from the open interior, while a later joint inspection requires a view from the opposite side. Nearby lining and services are expected to be present by that later stage. The same fixing location and height therefore appear in both task descriptions, but the available space on the required side may differ. Neither the earlier open interior nor a front elevation establishes access for the later task. The purchaser can keep the later approach as a separate question in the equipment comparison, including whether another access concept needs evaluation.
+
+Use a short task annotation that connects the relevant wall face, worker position, tool approach and expected construction stage. Where the installer has not established which face is needed, identify that missing task information before asking the platform provider for a reach conclusion. Where two faces are needed, ask each proposal which it addresses and which remains outside its scope. This helps distinguish a proposal covering the main fixing band from one also addressing the reverse-face task, without assuming that the platform can pass around the wall or support the panel. The annotation describes access needs; it does not determine a fixing sequence or temporary support method.
 
 ### Connect delivery, staging and the work face
 

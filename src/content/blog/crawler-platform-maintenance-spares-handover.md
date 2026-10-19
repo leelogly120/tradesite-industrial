@@ -2,7 +2,7 @@
 title: "Maintenance and Spares Handover for Crawler Platforms"
 description: "Plan crawler platform maintenance and spares handover by controlling configuration, ownership, parts identity, service records, storage and revision updates."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["crawler platform maintenance", "spares handover", "lifecycle records", "service planning"]
 coverImage: "/images/equipment/transport-real-stowed.webp"
@@ -67,6 +67,14 @@ Ask what delivery information, identification and accompanying documentation the
 ### Separate included spares from future purchasing support
 
 An initial spare package, access to parts information and an agreement to help with later requests are different deliverables. Ask for the included-item list and its relationship to the supplied configuration. Confirm who answers identification questions and who provides a quotation after identification is resolved. Do not infer stock commitments, response times or lifetime availability from the presence of a service contact. Those commitments require explicit agreement. A clear boundary allows the buyer to compare offers without combining several unconfirmed services into one attractive label.
+
+### Check the physical access needed by the proposed service scope
+
+A platform may fit its ceiling-work position while the proposed service location remains undefined. When comparing service offers, ask the intended service provider what physical access and facilities its stated scope depends on. The answer should identify the relevant equipment configuration and the access information needed from the site. A service contact and a parts list cannot establish that the work can take place at the operating location.
+
+Consider a hypothetical facility where the platform's work area is bordered by a finished partition and stored panel packages. The purchaser is also considering a service agreement that could involve an assembly being sent elsewhere for specialist work. Ask the provider to identify, within its proposed scope, the space needed to approach the relevant equipment areas, the description of any item expected to leave the site, its proposed packaging boundary, and the information needed to review its exit route. A route suitable for an incoming spare package is not necessarily the route described for an outgoing assembly. The provider must establish the applicable requirements; the buyer should not derive them from the complete machine's entry dimensions.
+
+The site response can distinguish available space, space occupied by other work, temporary storage options requiring agreement, and routes whose dimensions or destination are still unknown. Include any handling equipment or external facilities the service offer assumes, identifying whether they are supplied or left to the owner. These are inputs for comparing the service boundary, not instructions for removing a component or arranging lifting equipment. If the intended location cannot yet be matched to the provider's stated access needs, keep an alternative location or external service scope visible in the purchasing discussion. This lets the buyer compare what the site would actually have to provide. It does not establish that onsite repair is feasible, that an assembly is removable in a particular way, or that a service response time is available.
 
 ### Compare the evidence needed for each request type
 

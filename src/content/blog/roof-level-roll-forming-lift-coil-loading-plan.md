@@ -2,7 +2,7 @@
 title: "Coil Loading Plan for Roof-Level Roll-Forming Lifts"
 description: "Define coil support, loading and feed boundaries for a roof-level roll-forming lift, separating material custody, equipment scope and project review decisions."
 date: 2026-08-07
-updated: 2026-10-16
+updated: 2026-10-19
 author: "ARCLIFT Technical Editorial"
 tags: ["coil loading plan", "roof level roll forming", "material handling", "feed planning"]
 coverImage: "/images/equipment/coil-real-cover.webp"
@@ -37,6 +37,14 @@ Do not use a single weight entry for objects whose inclusion is unclear. Coil ma
 If the concept places coil support or feed equipment at ground level, show how the proposal relates spatially to the elevated forming machine. Identify the parties responsible for evaluating the intervening material and equipment interfaces. Do not assume that a line on a drawing establishes a workable strip path or that an ordinary ground installation can simply be extended upward.
 
 The buyer's useful question is what information the responsible parties need to assess the concept. That may include equipment identities, the proposed positions, material details and the boundaries of supplied components. Detailed feed geometry, support, guarding and operation belong in the project design and instructions, not in a generic procurement article.
+
+### Compare the inlet relationship, not just the nearby space
+
+A concept drawing should identify the proposed material-entry side of the roll former and the orientation of the separate coil-support or feed equipment. Link the winding and material-face information supplied for review to those references. A coil symbol beside a machine says where an object is proposed; it does not tell the reviewer which side of the machine receives material or how the two items relate in section.
+
+For a hypothetical comparison, imagine two concept drawings for the same roof receiver and the same machine-outlet reference. One places the coil-support and feed equipment on one side of the proposed machine; the other places them on the opposite side, without defining the inlet relationship in section. Ask each provider to identify the material-entry reference and show how its proposed support position relates to the supplied winding and material-face information. The buyer can then see whether the drawings describe different feed concepts or merely leave the same relationship undefined. The diagram is a request for assessment, not a material path design.
+
+The response can help decide whether both concepts are ready for a common supply comparison or whether one still needs a defined feed proposal. Do not assume that reversing a sketch, turning a coil or changing a winding description resolves the interface. This guide proposes none of those actions; the actual material and equipment relationship needs its own technical answer.
 
 ### Treat a proposed elevated coil arrangement separately
 
