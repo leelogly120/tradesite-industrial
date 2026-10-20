@@ -2,7 +2,7 @@
 title: "Roof-Panel Roll-Forming Lines: Specification for Lifts"
 description: "Specify a roof-panel roll-forming line for elevated use. Connect panel quality, machine geometry, coil feed and electrical inputs before choosing a lift."
 date: 2026-07-24
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["Roll Forming", "Roofing Panels", "Technical Specification"]
 coverImage: "/images/equipment/coil-real-handling.webp"
@@ -116,11 +116,15 @@ This distinction prevents two opposite errors: adding every purchased item to a 
 
 ### Distinguish a single-panel brief from a changing product mix
 
-If several profiles or material conditions are required, list them separately and ask how each is covered by the proposal. Do not let a phrase such as “adjustable line” stand in for a defined tooling and changeover scope. The buyer needs to know what equipment is included, what changes between products and how the resulting output is to be assessed.
+List the combinations the project actually needs. A list of profiles beside a separate list of materials can be ambiguous: it may mean a particular material for each profile, or every listed material with every profile. Those are different purchasing requirements. Ask the roof-system and material owners to identify the intended pairings before the line supplier responds.
 
-Likewise, an existing line with a known production history still needs its current arrangement reviewed for elevated use. Previous ground-level operation does not settle the line-to-lift attachment, service routing or the roof receiving interface. The [ARC-RF8 roll-forming machine reference](/products/arc-rf8-roll-forming-machine/) can frame the product discussion; it is not confirmation that a buyer's profile or lifting arrangement is compatible.
+In a hypothetical enquiry, the main roof uses one profile with a specified coated material, while an adjoining area uses another profile with a different finish. A supplier's statement covering the profiles and a separate statement covering the materials do not establish that every possible pairing is included. Nor does evidence for one required pairing answer the other. Request a response against each actual profile, material and finish combination, with the relevant thickness and length requirements supplied by the project.
 
-Consider a hypothetical comparison in which one offer includes a new forming line and another assumes the buyer will supply an existing machine. A price comparison made before that scope difference is resolved could conceal missing equipment and integration work. First align the deliverables, then compare the technical evidence for the agreed task. No saving or performance conclusion follows from the example.
+For each required combination, the proposal should identify the installed machine arrangement, the forming scope it addresses and the evidence or future assessment offered for that scope. Where a change of tooling or another module is proposed, link it to the separately identified supply items above. A description such as “adjustable line” leaves these questions unanswered. The supplier must establish which changes its actual proposal supports; this guide assumes none.
+
+Keep a possible future product separate from the present purchase requirement. Ask whether it is included now, offered as a defined option, or left for a later enquiry. A future possibility should not enlarge today's accepted production scope simply because it appears in the same brochure. Conversely, a combination required for the current project must not disappear into an unspecified future upgrade.
+
+Use these distinctions for an existing line as well. Its production history needs to identify the actual combination and machine arrangement being discussed; it does not resolve elevated mounting or other unexamined products. The [ARC-RF8 roll-forming machine reference](/products/arc-rf8-roll-forming-machine/) can frame that discussion, while the project-specific response determines what is actually proposed.
 
 ![Elevated apparatus beside a building with coils and ground equipment nearby](/images/equipment/entry-real-clearance.webp)
 
@@ -138,7 +142,7 @@ A machine image, a roller count or a historical range cannot close those gaps. K
 <!-- audit-section: project-checklist -->
 ### Supply a concise, connected set of inputs
 
-- Issue the profile drawing, material and finish requirements, thickness information and intended panel lengths as one consistent requirement.
+- Issue each required profile, material and finish combination with its thickness and panel-length requirements; distinguish present requirements from optional future products.
 - Identify the existing line or proposed supply scope, including its dimensions, mass-information status and attachment references.
 - Mark the outlet height, roof geometry and receiving zone so that machine and building references can be reconciled.
 - Describe coil delivery, feed direction and site access around the proposed machine position, with unknown interfaces labelled.

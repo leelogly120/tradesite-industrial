@@ -2,7 +2,7 @@
 title: "Crawler Roll-Forming Lift Access Route Survey Guide"
 description: "Plan crawler roll-forming lift access route by surveying entry, travel, setup and withdrawal states, surface changes, obstructions and control responsibilities."
 date: 2026-08-07
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["crawler roll forming lift", "access route survey", "site logistics", "work zone planning"]
 coverImage: "/images/equipment/entry-real-clearance.webp"
@@ -42,7 +42,11 @@ Do not use a route survey to prescribe ramps, lifting points, restraint removal 
 
 The proposed entry state should have a controlled arrangement reference. It must identify the equipment envelope and relevant attachments, including components that change the usable clearance. A maximum working-height description is not an entry height. A folded appearance in a photo does not establish a permitted travel state.
 
-Where more than one package or module follows a different route, show those journeys separately. The main crawler may reach the work area while another required component cannot. Procurement needs to see that dependency before treating the equipment delivery as a complete access solution.
+Where packages or modules follow different routes, identify both their individual journeys and the place where those journeys must meet. An access concept can cover each item on an empty site while leaving their shared destination unresolved. Record what the receiving area is expected to contain when each separate item arrives, using the proposed delivery states supplied by the responsible parties.
+
+For a hypothetical split delivery, the crawler is already in the nominated area when a separately supplied forming module reaches its final approach. The crawler's presence may occupy space shown as available on the module's earlier route sketch. The question is whether the module's described route still connects to its agreed receiving boundary in that occupied condition. This is different from asking whether either item fits through the entrance alone.
+
+Ask for a common plan showing the arriving items, the equipment already present and the actual handoff locations at that destination. A route ending beside the area and a receiving plan beginning inside it can leave an unexamined gap. The relevant parties must reconcile that gap before procurement treats the separate routes as one complete arrival concept. This comparison does not select an arrival order, assembly sequence or way of moving the module.
 
 ![Folded crawler equipment standing in an outdoor area](/images/equipment/transport-real-stowed.webp)
 
@@ -102,7 +106,7 @@ Use the following record once for each relevant segment. It is a blank survey st
 | Proposed equipment state | Arrangement and revision: ___ | Defines which equipment envelope is being assessed |
 | Restriction and surrounding geometry | Measurement source and date: ___ | Captures the opening, turn or transition in context |
 | Surface and underground features | Records and unknown areas: ___ | Identifies the support evidence needed for that location |
-| Construction stage and shared use | Programme and traffic owner: ___ | Shows whether the measured space will be available |
+| Construction stage and shared use | Programme, arriving items and equipment already present: ___ | Shows whether each route reaches its receiving boundary in the expected occupied condition |
 | Open question and decision owner | Required information: ___ | Distinguishes missing evidence from an unsuitable concept |
 
 ### Collect the details that affect entry
@@ -112,7 +116,7 @@ Use the following record once for each relevant segment. It is a blank survey st
 - Survey route geometry, turns, slope, crossfall, thresholds and approach space at the actual restrictions.
 - Identify forming modules, coil-related attachments or other material carried only where included in the proposed entry state.
 - Map the ground or floor construction and unknown underground features for each relevant segment.
-- Show where the route reaches the final setup zone and where the outrigger or other work-support review begins.
+- Show where each item's route meets the receiving or setup zone, what already occupies that space, and where the separate work-support review begins.
 - Identify the site's weather and wind change procedure where it affects the proposed movement conditions.
 - Mark power cables, temporary services and other obstructions that change the available access space.
 - Record destination access requirements, traffic ownership and the documents needed to close each unresolved constraint.
@@ -121,7 +125,7 @@ Use the following record once for each relevant segment. It is a blank survey st
 
 “Measurement missing” means the project needs a better description of a physical restriction. “Equipment input missing” means the site is described but the proposed state cannot yet be compared. “Access concept unresolved” means the available information reveals a conflict that requires a different position, sequence or delivery concept to be evaluated.
 
-These outcomes should not all become “access pending.” They ask different parties to do different work. For example, a measured opening does not settle an unknown travel-state height. Conversely, a confirmed equipment outline does not make an occupied approach available. A precise result lets procurement resolve the controlling issue without collecting unrelated documents.
+These outcomes should not all become “access pending.” They ask different parties to do different work. For example, a measured opening does not settle an unknown travel-state height. Conversely, a confirmed equipment outline does not make an occupied approach available. If individual routes are described but their shared destination is not, report that endpoint question explicitly. Procurement can then request the missing combined arrangement without repeating surveys of unchanged remote route segments.
 
 <!-- audit-section: evidence-tradeoffs -->
 ## Compare access concepts before committing equipment

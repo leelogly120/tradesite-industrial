@@ -2,7 +2,7 @@
 title: "How to Choose a Crawler Under-Ceiling Work Platform"
 description: "Choose a crawler under-ceiling work platform by mapping reach, access, floor, overhead, load, power, controls, rescue, and local review needs for procurement."
 date: 2026-07-27
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["Crawler Platforms", "Ceiling Work", "Buyer Guide"]
 coverImage: "/images/equipment/entry-real-cover.webp"
@@ -11,7 +11,7 @@ coverCaption: "Reference photograph of a broad platform and red lifting structur
 draft: false
 ---
 
-Choosing a crawler under-ceiling work platform starts with the building and the task, not a model name or maximum height. Map the work faces, required worker position, access route, floor structure, overhead obstructions, task load, power conditions, control arrangement, and rescue method before comparing configurations. A tracked base and broad platform may suit repeated work across a large interior, but that concept can also create access, turning, floor-loading, and exclusion-zone constraints. This guide shows procurement, engineering, and site teams how to turn a general request into a reviewable selection brief. It does not replace the equipment instructions, a structural review, operator training, a site-specific method, or destination requirements.
+Choosing a crawler under-ceiling work platform starts with the building and task. Map the work faces, worker position, access route, floor, obstructions, task load, power, controls and rescue responsibilities before comparing configurations. A tracked base and broad platform introduce their own space and support questions. This guide turns those questions into a selection brief; equipment instructions, structural review, training, the site method and destination requirements remain separate.
 
 **Contents**
 
@@ -29,17 +29,19 @@ Choosing a crawler under-ceiling work platform starts with the building and the 
 
 Large-deck ceiling access is a separate ARCLIFT product line from the systems that lift roll-forming equipment toward a roof. Its procurement question concerns a work area for the defined ceiling or wall task. It is not a third chassis choice alongside crawler and truck-mounted roof-forming systems.
 
-Two descriptions can appear in equipment discussions: a standalone crawler platform and a large-platform option associated with a particular host machine. Those descriptions require different evidence. A broad deck shown on a host does not establish that the same option can be fitted to another host, nor that the standalone series shares its dimensions, load limits or instructions. Identify which route the enquiry actually means before using the selection screens below.
+Distinguish a standalone crawler platform from a large-platform option associated with a particular host. A pictured deck does not establish compatibility with another host or shared dimensions, limits and instructions across the two routes. Investigate a host option only where the supplier identifies a proposal for that exact combination.
 
 *On smaller screens, scroll the table sideways to read all three columns.*
 
 | Procurement route | Decision to resolve first | Evidence needed to continue |
 | --- | --- | --- |
 | A standalone crawler ceiling platform | Which complete configuration is proposed for the task? | Its own configuration record, transport and work envelopes, platform arrangement and applicable instructions. |
-| A large-platform option for an identified host | Is this exact host-and-platform combination documented? | Explicit compatibility and scope confirmation, the configuration after the change, and the records governing that arrangement. |
+| A supplier-confirmed option proposal for an identified host | Is the combination documented, and which tasks would depend on the same host? | Compatibility and scope confirmation, proposed task availability, changeover responsibilities and subsequent configuration review. |
 | An image, public code or unspecified “large platform” | Does the reference describe either route clearly enough to investigate? | Identification of the proposed equipment and supply boundary before dimensions or load entries are compared. |
 
-If an existing roof-forming host is involved, state whether the enquiry asks about a separate machine or a proposed change to that host. Keep the current host configuration and the proposed arrangement distinct. An option description is a reason to request review, not permission to remove a forming line, attach a deck or use the altered equipment. This guide provides no changeover procedure or compatibility finding.
+Where that specific option proposal has been confirmed, compare resource use as well as compatibility. A hypothetical project may need roof forming and ceiling work during the same period. If both proposals depend on one host, confirmation that each configuration exists does not show that both tasks have an available machine when required. Ask the project planner to identify overlapping demands rather than counting the same host as two independent resources.
+
+The offer must also explain the supply boundary around the proposed change: where the other module is intended to remain, who provides applicable changeover documentation and services, and which subsequent checks belong to whom. Those answers require the actual proposal; no conversion method, duration or cost is assumed here. A standalone candidate has its own access and support review, while a confirmed host option adds this shared-resource dependency. Neither route is selected by the comparison.
 
 ### Describe the worker and material position
 
@@ -51,7 +53,7 @@ For every zone, identify the work activity: inspection, fastening, panel handlin
 
 Consider two hypothetical briefs for the same building. One describes installing a continuous ceiling run, with materials needed beside successive fixing positions. The other describes inspecting separate service points with gaps between them. A common ceiling height does not make these equivalent tasks. The installation brief needs the task owner to define the proposed material position, work-front progression and space left for the work. The inspection brief needs the location and access conditions of each point, including any point hidden behind a beam or service.
 
-These examples do not establish that a broad platform is preferable for installation or that another category suits inspection. They show why procurement needs the work package before comparing deck dimensions. Ask whether each proposed position serves the defined task, which locations require another arrangement, and whether material staging occupies the approach or work space. Keep that answer separate from any permitted machine movement; movement states must come from the exact equipment information.
+Ask whether each proposed position serves the defined task, which locations need another arrangement, and whether material staging occupies the approach or work space. The examples select no platform category. Permitted movement remains a separate question for the exact equipment documents.
 
 For selection context, Great Britain's <a href="https://www.hse.gov.uk/pubns/geis6.htm" target="_blank" rel="noopener noreferrer">HSE GEIS6 information sheet</a> concerns MEWP selection and intended-use risk assessment. Its scope supports asking about the task before choosing equipment; it does not select or approve an ARCLIFT configuration.
 
@@ -148,11 +150,7 @@ Other reasons to pause include unresolved emissions rules, missing charging arra
 
 ### Inputs for a meaningful configuration review
 
-Prepare one marked drawing set and a short schedule covering the points below. Photographs can help describe access and obstructions when identities and sensitive information are removed, but dimensions and acceptance boundaries should be recorded separately.
-
-Begin with the procurement route: standalone machine, proposed option on an identified host, or still unresolved. Attach the corresponding configuration reference so the work-zone records are compared with the correct equipment description.
-
-Use the four-screen matrix as the cover sheet for this package. Give each row its own revision, evidence owner and status so a resolved entry route cannot be mistaken for a resolved work face or accepted floor condition.
+Prepare marked drawings and a schedule tied to the standalone configuration or supplier-confirmed host proposal. Use the four-screen matrix as a cover sheet, with a source, revision and status for each row. Redacted photographs can describe conditions but cannot supply dimensions or acceptance.
 
 - Work-zone height, required outreach, worker position, task geometry, and sequence
 - Ceiling, roof, wall, truss, service, crane, and temporary-work obstructions
@@ -165,7 +163,7 @@ Use the four-screen matrix as the cover sheet for this package. Give each row it
 - Control preference, operator position, spotter communication, stop rules, and traffic segregation
 - Emergency lowering, rescue route, trained roles, daily checks, and incident response
 - Destination requirements, documentation, inspection, training, transport, and acceptance process
-- Project schedule, work shifts, shared-zone constraints, maintenance access, and technical contacts
+- Project schedule, shared-zone constraints, technical contacts and any competing tasks assigned to the same confirmed host proposal
 
 ### Send the first input that can change the selection
 

@@ -2,7 +2,7 @@
 title: "40HQ Planning for Truck-Mounted Roll-Forming Lifts"
 description: "Review 40HQ shipping for roll-forming lifts by comparing complete vehicles, equipment modules, local chassis supply, packing boundaries and destination work."
 date: 2026-07-24
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["40HQ Logistics", "Truck-Mounted Systems", "Project Delivery"]
 coverImage: "/images/equipment/transport-real-cover.webp"
@@ -58,9 +58,15 @@ Use the following editorial comparison before seeking a freight quotation. The r
 
 ### Start with the largest indivisible item
 
-Ask the equipment-side reviewer to identify the largest item that cannot be separated under the proposed supply and assembly plan. Then request its controlled packed dimensions, mass, orientation restrictions and support requirements. The smallest workable packing study begins with this item, because a long list of small accessories cannot compensate for one unresolved governing package.
+Ask the equipment-side reviewer to identify the largest item that cannot be separated under the proposed supply and assembly plan. Request its controlled packed dimensions, mass, orientation restrictions and support requirements. An unresolved governing package can prevent a meaningful route comparison, regardless of how readily the smaller items appear to fit.
 
-Do not derive these values from a model designation or a photograph. Where the equipment configuration is still changing, identify which options affect the package and when their selection must close. A late change to the forming machine, power equipment or support arrangement may require the packing study to be revisited even if the main lift structure remains the same.
+Once that item has been described, ask whether the packing study covers it alone or the complete proposed load. Separate drawings that place each package inside a container outline do not show that the packages can occupy their intended positions together. The packing professional needs the complete manifest and a coordinated arrangement covering the proposed supports, protection, securing and handling access. This is a request for the packing basis, not an instruction to arrange the cargo.
+
+For a hypothetical order, the main lifting module is unchanged while a separately packed forming module, connecting frame and accessory package are added to the shipment scope. A previous sketch of the main module remains useful for identifying it. It does not establish where the additional packages belong, whether their interfaces are accounted for, or which transport units the revised proposal requires. The buyer should request the complete revised arrangement instead of treating the unchanged largest item as proof that the booking basis is unchanged.
+
+Keep three descriptions connected: the equipment being purchased, the packages that contain it, and the complete loading proposal. If a required item is absent from the packing arrangement, ask whether it is omitted, separately transported or still under review. Do not infer that a loose accessory can use an apparently empty gap. Its protection and transport arrangements still belong to the responsible packing party.
+
+Obtain dimensions and mass from the actual package records, not a model designation or photograph. A change to an option, frame or protective provision needs to be compared with the full packing basis even when it leaves the main equipment envelope unchanged.
 
 ### Trace loading and unloading space
 
@@ -132,7 +138,7 @@ Keep “information missing” separate from “reviewed and unsuitable.” The 
 ### Check the booking basis against the purchase scope
 
 - Match the equipment and forming-line configuration to the ordered panel profile and material scope, including options still open.
-- Identify packed length, width and height records for every package, including its frame and protective projections.
+- Match the complete package manifest to the proposed loading arrangement, including each package's dimensions, frame, protection and separately transported items.
 - Confirm the container and access-route information used for loading, port handling and destination unloading.
 - Record the ground or floor conditions and receiving-space constraints that the handling planner must review.
 - State whether chassis supply and transport are included, separate or local, with their interface-review status.
@@ -142,7 +148,7 @@ Keep “information missing” separate from “reviewed and unsuitable.” The 
 
 ### Record the decision without hiding exclusions
 
-Finish the review with one identifiable equipment scope, packing-study revision and receiving plan. Record the accepted route, outstanding conditions and the stage at which each must close. A booking may have commercial deadlines; those deadlines should be visible beside unresolved technical inputs rather than treated as evidence that the inputs are acceptable.
+Finish the review with one identifiable equipment scope, complete package manifest, packing-study revision and receiving plan. Record whether the transport proposal covers that whole set or only named packages, together with outstanding conditions and their required decisions. A commercial booking deadline cannot establish a missing package arrangement; keep that gap visible to the parties agreeing the shipment.
 
 <!-- audit-section: cta-editorial-note -->
 ### Request a scoped shipping-route review

@@ -2,7 +2,7 @@
 title: "Road Transport Review for Truck-Mounted Forming Lifts"
 description: "Review road transport for truck-mounted forming lifts by separating vehicle installations, carried equipment, transport states and destination responsibilities."
 date: 2026-08-07
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["road transport documents", "truck mounted forming lift", "configuration records", "logistics handover"]
 coverImage: "/images/equipment/transport-real-carrier.webp"
@@ -53,7 +53,9 @@ The same discipline applies to photographs. They can show a carrier, a visible f
 
 ### Separate the road journey from the site movement
 
-Describe the journey in stages: dispatch location, public road, any terminal or border handover, destination gate, unloading area and internal route. The responsible parties may change between stages. Equipment accepted by a carrier has not thereby been accepted for the building floor, and a suitable site entrance does not settle the public-road route.
+Describe the journey in stages: dispatch location, public road, any intermediate carrier handover, destination gate, unloading area and internal route. Identify what carries the equipment on each road leg. A single delivery destination can conceal a change of vehicle or trailer before the equipment reaches the site.
+
+For a hypothetical proposal, an unchanged equipment module is carried to an intermediate terminal and a different carrier is proposed for the remaining road journey. Its equipment identity may remain applicable, but the first carrier's acceptance does not establish the second loaded arrangement. Ask which party supplies the information for the onward carrier, what receiving boundary has been proposed at the terminal, and who resolves missing inputs before the onward movement is agreed. This describes a scope question, not a transfer method.
 
 The final destination may also involve a different equipment state. A packed module can arrive before a local chassis is ready. A machine carried on a trailer may need a separate internal-movement review after unloading. State the intended handover condition so logistics does not assume the receiving team will resolve an undefined transition.
 
@@ -65,6 +67,7 @@ This is an editorial planning matrix, not a universal legal document list. The d
 | --- | --- | --- |
 | What is being moved? | Configuration list and state drawing with attached and separate items | Equipment supplier and integrator |
 | What carries the equipment? | Identified vehicle, trailer or other carrier arrangement | Vehicle owner, carrier and destination adviser |
+| Does the carrier change during the journey? | Each proposed carrier-and-load combination and the intermediate receiving boundary | Outward carrier, onward carrier and handover coordinator |
 | Which dimensions and masses apply? | State-specific records with source, revision and exclusions | Record issuer and transport reviewer |
 | How will cargo be secured? | Applicable cargo information and a reviewed securing arrangement | Consignor, carrier and relevant specialists |
 | Which public-road route is proposed? | Route restrictions and locally determined permissions | Carrier and competent destination parties |
@@ -92,7 +95,15 @@ The [chassis interface guide](/blog/truck-mounted-roll-forming-chassis-interface
 
 ### Keep cargo questions with the carrier and load
 
-When equipment travels on a separate trailer, the carrier and cargo remain distinct objects. Information about the equipment alone does not describe the loaded combination. The carrier needs the relevant load description, its transport state and the data required to assess the proposed carriage arrangement.
+When equipment travels on a separate trailer, the carrier and cargo remain distinct objects. Information about the equipment alone does not describe the loaded combination. A change of carrier can leave the machine record intact while changing the vehicle, trailer, proposed cargo position and overall transport geometry that the onward reviewer needs.
+
+For the hypothetical terminal handover, distinguish what is being retained from what is being proposed:
+
+- The equipment identifier and unchanged component records can remain references where they still describe the actual cargo.
+- The onward carrier identity, attached or separately carried items, proposed loading arrangement and resulting dimensions need records for that combination.
+- The intermediate receiving location and handover state need confirmation by the parties responsible for that boundary; the original dispatch arrangement does not define them.
+
+This comparison does not require every equipment document to be recreated. It prevents an unchanged module description from being used as if it also described a different carrier and load. Any change in the module's own preparation or packaging needs to remain visible in its state information as well.
 
 The trade-off is not simply “truck versus crawler.” A crawler may be transported as cargo, and modules intended for a truck-mounted system may also be transported separately. Compare the actual journey and handovers. Do not turn a photograph of trailer carriage into evidence that the equipment shares the trailer's road status or can move independently on public roads.
 
@@ -122,6 +133,7 @@ Some records may still describe the same vehicle or unchanged component. Preserv
 Prepare a concise movement brief with references to controlled project records. The aim is to help the destination parties identify missing information, not to declare the movement authorized. Keep private identifiers, driver details and route-security information in the appropriate project channel.
 
 - Identify the transported object and its relationship to the vehicle or carrier.
+- Identify any intermediate carrier change, the onward combination and the party responsible for connecting the two receiving and dispatch boundaries.
 - State the transport height and other envelope data sources, with their applicable state.
 - Link the intended roof work and site geometry to the destination setup location.
 - Identify forming material, panel length, coil and feed items included or carried separately.

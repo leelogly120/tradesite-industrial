@@ -2,7 +2,7 @@
 title: "Roof-Zone Survey Guide for Roll-Forming Lift Selection"
 description: "Survey roof zones for a roll-forming lift by connecting panel outlet height, receiving position, equipment stand area, obstructions and construction-stage data."
 date: 2026-08-07
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["roof zone survey", "roll forming lift selection", "site planning", "panel handover"]
 coverImage: "/images/equipment/entry-real-clearance.webp"
@@ -48,7 +48,9 @@ Keep measured conditions, design targets and unmeasured items visibly distinct a
 
 ### Put direction and offset on the same drawing
 
-A section explains elevation, but a plan is needed to show the intended panel direction and the horizontal relationship between the equipment and building. Mark the proposed outlet line, receiving point, building face and stand area on coordinated drawings. Include the direction from which panels approach the receiving arrangement.
+A section explains elevation, but a plan is needed to show the intended panel direction and horizontal relationship to the building. Mark the outlet reference, receiving point, building face and stand area on coordinated drawings. State what the outlet line represents: a centreline, an edge or another equipment reference. A line without that definition can be mistaken for the full space occupied by the proposed arrangement.
+
+Include the panel's specified width and orientation, together with the actual forming-equipment boundary provided by its supplier. Relate both to the side structures near the outlet and receiving point. A surveyed centre position can be correct while the lateral extent remains unrecorded. Where the equipment outline is still provisional, keep that gap visible instead of supplying an assumed margin around the centreline.
 
 Do not assume the machine can rotate, reach sideways or alter its outlet relationship to solve a drawing conflict. Those are configuration questions. A preliminary layout should expose the requested relationship clearly enough for the equipment party to say what information or alternative arrangement needs review.
 
@@ -61,7 +63,9 @@ Do not assume the machine can rotate, reach sideways or alter its outlet relatio
 
 ### Examine the building edge as a three-dimensional boundary
 
-Record columns, beams, bracing, eaves, gutters, façade projections and temporary edge works near the proposed outlet and receiving point. A plan may show an open strip beside the wall while a section reveals a projecting member above it. Include features below the target receiving level where they affect the proposed equipment envelope.
+Record columns, beams, bracing, eaves, gutters, façade projections and temporary edge works across the proposed panel and equipment width, as well as along the centreline. Identify where each feature lies in plan and elevation. A view along the outlet can show an open central path while omitting bracing beside it or a projection crossing only part of the proposed width.
+
+Consider two hypothetical panel schedules using the same outlet centre reference and receiving elevation but specifying different panel widths. The recorded centre measurements can remain relevant to both, yet they do not establish that the survey covers both lateral extents. Ask which side features were located and which parts of the requested space remain unmeasured. The same question arises if a new side projection is installed while the centreline stays clear. Neither situation can be resolved by adding a generic clearance allowance to the old line.
 
 Ask the surveyor to connect photographs to the drawing locations. A photograph looking along the building can explain which member is being discussed, but perspective cannot supply an unmeasured offset. For partially completed structures, distinguish what is present from what will be installed before the equipment arrives.
 
@@ -99,6 +103,7 @@ The following comparison is a planning example, not a finding about equipment ca
 | Survey finding | What it changes | Next review question |
 | :-- | :-- | :-- |
 | Same roof zone, different ground elevation | Relationship between site datum and requested outlet level | Which configuration reference matches each proposed stand position? |
+| Centreline recorded but lateral limits omitted | Survey coverage across the panel and forming-equipment width | Which side features and equipment boundaries need to be located before the full geometry can be compared? |
 | Receiving point behind a projecting eave | Space between equipment outlet and roof receiver | Can the proposed geometry be assessed without assuming unconfirmed outreach? |
 | Preferred stand area crosses a delivery lane | Availability of the working and material areas | Can the construction sequence provide the area when required? |
 | Support area includes an underground feature | Evidence needed for that particular location | Which ground records and equipment support cases must the specialist examine? |
@@ -121,8 +126,8 @@ This example illustrates why a survey is more than a list of maximum dimensions.
 
 - Identify each roof zone and its first receiving point with a shared drawing or grid reference.
 - Record ground level, roof receiving elevation and requested panel-outlet height against the same datum.
-- Mark roof slope, eaves, bracing and the horizontal geometry between the proposed machine and receiver.
-- State panel profile, material and intended length information needed to identify the receiving task.
+- Mark roof slope, eaves, bracing and side features across the proposed machine-to-receiver space, distinguishing measured coverage from unmeasured areas.
+- State panel profile, material, length, width and orientation, with the supplier's actual equipment outline kept separate from the outlet centre reference.
 - Show the coil or feed-side space and the delivery interface still requiring separate review.
 - Mark ground or floor construction, buried features and unresolved support evidence at each stand area.
 - Identify the requested outrigger or other support zone without inventing dimensions for an unselected configuration.

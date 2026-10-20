@@ -2,7 +2,7 @@
 title: "Truck-Mounted Roll-Forming Payload Allocation Review"
 description: "Review truck-mounted roll-forming lift mass inputs by separating chassis, installed equipment, coils and accessories across road, arrival and working states."
 date: 2026-08-13
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["truck-mounted roll forming", "payload allocation", "mass property schedule", "chassis integration"]
 coverImage: "/images/equipment/coil-real-cover.webp"
@@ -119,6 +119,7 @@ These examples show why the schedule should preserve individual items. If only a
 - State the material and coil assumptions for the road journey separately from site-only handling tasks.
 - Record each item's mass basis and position in the coordinate format requested by the vehicle specialist.
 - Describe road, arrival and working states, including which items are present, absent or unresolved.
+- Tie any whole-vehicle measurement record to the vehicle identity, installed and carried items, fluid assumptions and arrangement represented at that time.
 - Identify the roof task and required outlet height so the working review is kept distinct from road transport.
 - Connect proposed outrigger or other support arrangements to the separate ground or floor review.
 - Mark the access route and destination transport requirements relevant to the intended vehicle journey.
@@ -134,11 +135,15 @@ For each combined total, record which identified subitems it covers and whether 
 
 If the suppliers cannot yet establish whether the connecting frame or power package is included, keep that specific scope question open. Do not silently drop the item or invent an allowance. Ask the issuing party to return the reconciled assembly scope, with any remaining provisional inputs visible. The vehicle specialist can then decide what further evidence or assumptions are needed for its assessment. This example explains how to organize mass inputs; it supplies no mass value, permitted vehicle load or calculation method.
 
-### Preserve changes without inventing a pass result
+### Reconcile a whole-vehicle measurement with the item schedule
 
-When a component or material arrangement changes, identify the affected state and revise the relevant item entry. Send the changed inputs to the responsible reviewers with the previous arrangement available for comparison. A lower total mass does not automatically preserve a previous conclusion if positions, mounting or support arrangements have also changed.
+A measurement record for the completed vehicle describes the vehicle state identified in that record. It can provide a useful whole-vehicle observation without establishing the mass or location of every component. Keep it alongside the item schedule and identify the relationship between their scopes. Neither record should silently replace the other.
 
-The [configuration-change guide](/blog/roll-forming-lift-configuration-change-control/) covers this wider review path. The buyer's useful output here is a consistent account of the vehicle and its contents. The vehicle specialist remains responsible for the applicable calculations, ratings and destination assessment.
+For a hypothetical offer, the supplier returns a vehicle measurement while the item schedule still describes a proposed arrangement. The measurement includes loose transport accessories, but the schedule has not resolved whether those accessories travel on that vehicle; the two records also use different fluid assumptions. If the reported total differs from the schedule's expected total, that difference cannot simply be assigned to the roll former. First ask the issuing parties to reconcile what was actually present with what the schedule describes.
+
+The comparison needs the vehicle identity, installed and carried items, relevant fuel or fluid condition, and configuration at the time of the measurement. Preserve anything that the record does not establish as an open input. Agreement between overall totals would still not identify where individual items sit, while a difference would identify a question without identifying its cause. The responsible specialist determines how the records can be used and whether further evidence is needed.
+
+When an item or position changes after that observation, retain the measured state as its own reference and identify the changed proposal. The [configuration-change guide](/blog/roll-forming-lift-configuration-change-control/) covers the wider review path. This reconciliation supplies no weighing method, adjustment formula, spare-payload estimate or pass result.
 
 ![Folded crawler equipment with its ground supports extended](/images/equipment/transport-real-stowed.webp)
 

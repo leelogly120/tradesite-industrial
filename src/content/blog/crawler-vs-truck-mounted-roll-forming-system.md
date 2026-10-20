@@ -2,7 +2,7 @@
 title: "Crawler vs Truck-Mounted Roll-Forming Lifts Compared"
 description: "Compare crawler and truck-mounted roll-forming lifts by site access, support space, panel outlet position, road transfer and destination chassis requirements."
 date: 2026-07-24
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["Equipment Selection", "Crawler Systems", "Truck-Mounted Systems"]
 coverImage: "/images/equipment/transport-real-cover.webp"
@@ -53,7 +53,11 @@ Ask what the quotation includes: an integrated vehicle, an equipment module for 
 
 Describe the expected journey between projects before assuming that mobility has been solved. For the crawler proposal, identify the separate carrier, transport state and loading interfaces that need review. For the truck-mounted proposal, identify the vehicle configuration and destination-specific road review. Neither a crawler label nor a truck appearance provides that information.
 
-Frequency also matters as a project input. A buyer expecting several independent projects must describe the routes and resources available at each destination. Another buyer may have one long-duration project with many work positions inside its boundary. These patterns create different investigation priorities; they do not establish a universal cost advantage for either architecture.
+For equipment intended to serve several projects, retain a separate arrival-to-work description for each destination. A frequent transfer between well-defined locations asks a different question from an occasional move to a site whose unloading or final approach is unknown. Frequency alone cannot express that difference or establish a cost advantage.
+
+Give each destination its own controlling question: an unassigned carrier handoff, a restricted final approach, an unresolved vehicle proposal, or a working position that has not been connected to the roof receiver. Ask both architecture proposals to address that same question. Do not combine one site's accessible delivery area with another site's clear building approach and present the result as a representative route. No actual destination may offer that combination.
+
+A shortlist can therefore have different coverage for different sites. Record which locations have enough information for configuration review, which depend on a named missing arrangement, and which are outside the offer. These categories describe the enquiry's progress; they do not score crawler or truck performance. A requirement to serve every named site needs a response for every site, including the difficult exception.
 
 ### Follow the final approach beside the building
 
@@ -100,7 +104,7 @@ For work extending along a building, list the proposed positions and the route c
 
 Use the [crawler work-zone relocation guide](/blog/crawler-roll-forming-lift-work-zone-relocation/) after the architecture comparison to develop that question. For a truck proposal, the [jobsite setup review](/blog/truck-mounted-forming-lift-jobsite-setup-review/) connects the vehicle position to the forming work area. These linked topics develop distinct parts of the selection; they do not supply an operating procedure.
 
-Consider a hypothetical site with one suitable arrival area and several forming positions separated by unfinished ground. Both proposals still need a route assessment. A buyer should compare the actual restrictions and available resources for each candidate, rather than assuming that tracks solve the ground problem or that road mobility solves the last approach.
+Consider a hypothetical purchase for a current project and a later destination. The current project has an identified carrier handoff and measured internal route. For the later destination, only the public-road arrival point is known. Evidence for the first project can describe the candidate equipment, but it cannot supply the missing approach or support information at the second. Ask the supplier to state whether its proposal covers the current project alone or remains conditional on the later site's inputs. This keeps an unresolved destination from disappearing inside a claim of multi-site mobility.
 
 ![Elevated red forming apparatus positioned beside a building lane](/images/equipment/entry-real-clearance.webp)
 
@@ -128,6 +132,8 @@ Neither option is ready when the forming line, outlet reference or panel receivi
 - Identify wind and weather decision responsibilities that could affect forming, receipt and changes between work zones.
 
 Add a short supply-scope statement beside each proposal: what is included, what must be obtained separately and which interface remains open. In a destination-chassis route, use the [chassis sourcing guide](/blog/truck-mounted-lift-destination-chassis-sourcing/). If a modular shipment is being considered, the [40HQ planning guide](/blog/40hq-shipping-truck-mounted-roll-forming-lift/) explains the packing-study question without assuming container fit.
+
+For a multi-site purchase, attach the individual destination descriptions to that common brief. Keep equipment requirements shared where they are unchanged, but retain each site's route, local resources and uncovered work beside its own name or anonymised reference. Procurement can then see whether a proposed exclusion is a minor missing input or an entire project still outside the comparison.
 
 ### Compare the resources behind each mobility claim
 

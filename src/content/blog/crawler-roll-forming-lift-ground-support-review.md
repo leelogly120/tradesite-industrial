@@ -2,7 +2,7 @@
 title: "Ground Support Review for Crawler Roll-Forming Lifts"
 description: "Structure a ground-support review for crawler roll-forming lifts using route segments, surface records, underground hazards, open items and competent decisions."
 date: 2026-08-07
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["crawler lift ground support", "site surface review", "roll forming lift", "project risk"]
 coverImage: "/images/equipment/transport-real-stowed.webp"
@@ -65,9 +65,11 @@ The <a href="https://www.hse.gov.uk/construction/safetytopics/excavations.htm" t
 
 ### Notice construction changes that records may miss
 
-An issued drawing and the current site can describe different conditions. A drainage trench may have been backfilled, a slab repaired, material stacked nearby or temporary works installed since the original record. Mark those changes and provide dated observations without assuming that a recent repair improves or reduces capacity by a known amount.
+An outdoor forming position can remain in the same place while the construction around it changes. Record nearby excavation or backfilling, temporary material stacks, other equipment positions and temporary works against the proposed support locations. Include when those activities are expected to be present. Separate plans for the forming lift and the neighbouring work may describe different moments in the construction programme.
 
-Water and excavation changes can also alter the review context. A site note saying “dry when visited” records an observation, not an enduring ground property. The appointed specialist should establish which conditions bound the assessment and what changes require another look. Those conditions need to remain available to the site team.
+Consider a hypothetical roof-forming proposal beside a yard used for deliveries. The equipment support case describes elevated forming; a separate site record describes temporary material storage near a drainage repair. The buyer needs to establish whether that storage is expected to remain during the proposed forming period and whether the ground specialist's response covers that combined site condition. Separate reports for each activity do not answer that question unless their assessed conditions connect. Equally, proximity alone does not establish that the activities affect the same supporting construction.
+
+Give the specialist the locations, construction-stage information and anticipated overlap. Do not combine equipment reactions with a guessed stack load or infer an influence boundary from a photograph. Water, excavation and repair changes also remain part of the review context: a note saying “dry when visited” is a dated observation, not an enduring ground property.
 
 ### Check which support locations the records actually cover
 
@@ -109,14 +111,16 @@ Give each proposed location a reference on the site plan. Alongside it, identify
 - Describe the coil, forming module or other material state only where it belongs to the supplied load basis.
 - Map travel access, slope and surface transitions separately from the final stationary work position.
 - Locate outriggers or other supports according to the configuration documents, with their applicable input references.
-- Provide ground, floor, slab and underground records for the actual locations, including unknown or altered areas.
+- Provide ground, floor, slab and underground records for the actual locations, with nearby construction, temporary storage and other equipment identified for the same proposed period.
 - Identify transport or unloading interfaces that use the same ground, without assuming those cases are already covered.
 - Record the site's weather and wind change procedure where it affects the proposed state or review assumptions.
 - Confirm destination documentation requirements and who can return the final ground or structural decision.
 
 ### Ask for a bounded answer
 
-The useful return from the appointed specialist identifies the equipment information, state, site zone and conditions that were assessed. It should also identify unresolved information or exclusions so procurement and the site team know what remains open. A generic statement that the “yard is suitable” can lose the distinction between the travel route and one particular support position.
+The useful return from the appointed specialist identifies the equipment information, state, site zone and surrounding conditions assessed. For the hypothetical yard, it should make clear whether the response covers the forming position with the nearby storage present, a different construction stage, or neither until more information is available. A conclusion based on the area being clear is not evidence for a proposal that assumes simultaneous storage there.
+
+Where the two activities have separate reviewers, ask which party will resolve the relationship between their assessment boundaries. A suitable answer may identify further information rather than a capacity or permission. Preserve that distinction when comparing candidate positions: one may have evidence for the intended period, while another has evidence only for a site condition the programme does not currently provide.
 
 Keep this conclusion separate from the equipment operating authorization. A completed ground assessment does not establish line compatibility, wind limits, roof receiving readiness or permission to travel while elevated. Each decision uses its own evidence. Connecting them in the project record prevents one approval from quietly expanding into another.
 

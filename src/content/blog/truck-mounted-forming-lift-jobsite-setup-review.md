@@ -2,7 +2,7 @@
 title: "Jobsite Setup Review for Truck-Mounted Forming Lifts"
 description: "Review truck-mounted forming lift setup from site gate to work face by documenting routes, setup zones, ground conditions, interfaces and local decisions."
 date: 2026-08-07
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["truck mounted forming lift", "jobsite setup", "work zone review", "site logistics"]
 coverImage: "/images/equipment/coil-real-cover.webp"
@@ -99,7 +99,15 @@ The <a href="https://www.hse.gov.uk/workplacetransport/information/safeworkplace
 
 ### Compare physical boundaries together
 
-Use a common site drawing for the proposed truck position, support locations, material arrival and roof receiving area. A separate drawing for each contractor is useful only when the interfaces can be compared on the same coordinates and construction stage. The following table identifies what each boundary contributes; it is not a completed site assessment.
+Use a common site drawing for the proposed truck position, support locations, material arrival and roof receiving area. Bring the relevant sections onto the same coordinates and construction stage. A plan can distinguish the ground footprints while leaving the space above them unresolved.
+
+For a hypothetical position beside a building, the truck and a neighbouring delivery bay occupy separate marked rectangles. The proposed panel-output region extends beyond the forming machine, while temporary building works project above part of the bay. The separated ground rectangles do not describe those relationships. Ask the responsible parties to show the equipment, proposed panel path and adjacent works in plan and section before treating the bay as independently available.
+
+Use the actual objects and states in that comparison. A parked delivery vehicle outline may not describe the space required by the receiving activity proposed there. A building drawing may show completed cladding but omit the temporary works present during forming. Request the relevant spatial information from each activity owner; do not enlarge outlines by an invented allowance or assume that one activity can pass beneath another.
+
+The useful result identifies the conflicting or unrecorded volume and the activity depending on it. The site team can then investigate a different allocation, period or equipment position, with the affected configuration and project reviews retained. This does not authorize simultaneous work or define a separation distance. The [roof-zone survey](/blog/roof-zone-survey-roll-forming-lift-selection/) supplies the measured building relationship; the setup discussion connects it to the other uses surrounding the truck.
+
+The following table identifies what each boundary contributes. Its entries are review prompts, not a completed site assessment.
 
 | Layout feature | Information to put beside it | Decision it supports |
 | :-- | :-- | :-- |
@@ -108,7 +116,7 @@ Use a common site drawing for the proposed truck position, support locations, ma
 | Support area | Configuration-specific locations and site evidence references | Which ground or structural review applies |
 | Material supply | Delivery position, staging boundary and feed interface | Whether supply conflicts with the reserved work area |
 | Roof receiving zone | Receiving owner, geometry and current roof-work revision | Whether production has a defined destination |
-| Shared access | Traffic, pedestrian and emergency routes | Which activities need different space or timing |
+| Shared access and adjacent activity | Traffic, pedestrian and emergency routes, plus relevant occupied space in section | Which uses conflict at ground level or above it and need a project decision |
 
 ### Collect the inputs that can change the position
 
@@ -117,7 +125,7 @@ Use a common site drawing for the proposed truck position, support locations, ma
 - Plot the access route and the turn into the proposed position, with the current site traffic arrangement.
 - Locate ground or floor features under the intended support area, including underground records still missing.
 - Attach the controlled outrigger or other support arrangement applicable to the proposed equipment state.
-- Show coil, panel material and feed staging boundaries alongside the delivery vehicle's planned access.
+- Show coil, panel material and feed staging boundaries alongside delivery access; include the proposed output region and adjacent activities in the corresponding sections.
 - Locate the proposed voltage supply, power connection and control access that affect the equipment position.
 - Identify the weather and wind decision owner and the project method that governs changes to the work arrangement.
 - Record the destination documentation requirements and who resolves conflicts between the equipment and site drawings.

@@ -2,7 +2,7 @@
 title: "Roll-Forming Lift Delivery: Receipt and Assembly Readiness"
 description: "Plan roll-forming lift delivery receipt around actual modules, shortages, condition and storage, so the receiving record supports later installation decisions."
 date: 2026-08-08
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming lift", "destination receipt plan", "shipment condition evidence", "equipment logistics"]
 coverImage: "/images/equipment/transport-real-cover.webp"
@@ -63,6 +63,10 @@ Useful records show the item identifier, the relevant area and enough context to
 
 A missing item, a condition concern and a drawing mismatch need different answers. Procurement may resolve whether an accessory belongs to the order; a technical specialist may assess a suspected damaged connection; the document owner may resolve conflicting revisions. Record who owns each issue and which next activity depends on its resolution. An open commercial question should not be disguised as an engineering rejection, and an engineering concern should not be closed merely because the delivery paperwork has been signed.
 
+A replacement arrival adds another question: what is the relationship between the new object and the original discrepancy? Suppose a supplier dispatches another module while the first, whose identity is disputed, remains in storage. The second receipt establishes that another object arrived. It does not establish that both modules belong in the installation, that the disputed module is an accepted spare, or that the order is now complete. Link the replacement's identifier to the issue it is intended to resolve and obtain the supplier's stated role for each object.
+
+Keep the original receipt visible, including the original item's current location and unresolved status. If a supposedly missing item arrives after its replacement, preserve both arrival records rather than merging them into one quantity. Ask whether the supplier's response addresses delivery shortage, technical substitution or disposition of an extra item; those are different answers. This is a hypothetical receipt problem, not permission to install, repair or return either object. The later configuration decision belongs with the responsible technical parties.
+
 ### Treat cargo guidance as context, not a site method
 
 The <a href="https://www.ilo.org/publications/imoilounece-code-practice-packing-cargo-transport-units" target="_blank" rel="noopener noreferrer">IMO/ILO/UNECE CTU Code publication</a> describes guidance for packing and securing cargo transport units. That scope is relevant when discussing what shipment information the transport parties should supply. It does not make a generic receipt article an unloading plan, confirm the condition of a delivered machine or establish compliance for every destination. Equipment-specific and local requirements still need their responsible owners.
@@ -87,6 +91,7 @@ The table below distinguishes common receipt situations. It assigns a question t
 | Main assembly arrives, accessories are in another shipment | Identity and observed condition of this arrival | Completeness for the proposed installation | Logistics schedule and installation dependency |
 | Outer package has a condition concern | The observed package condition and time | Internal equipment condition and technical consequence | Receiving team and relevant technical provider |
 | Module identifier differs from expected list | A documented identity mismatch | Whether it is the ordered or an approved substitute item | Supplier and project configuration owner |
+| Replacement arrives while the original remains onsite | Two identifiable arrivals linked to one discrepancy | Intended role and disposition of each object | Supplier clarification and the owner of the open issue |
 | Items are moved into temporary storage | New location and custody if recorded | Suitability of protection and later readiness | Storage owner and equipment provider |
 | Delivered items match the list | Receipt against the identified list | Installed fit, controls and site suitability | Responsible installation and integration team |
 
@@ -131,7 +136,7 @@ This receipt approach may not fit an unidentified used machine, a shipment with 
 - Retain mounting, power and control documentation with the correct revision.
 - Link the later outlet height and roof geometry inputs to the installation team.
 - Identify applicable storage instructions and the person responsible for custody.
-- Record missing items, condition concerns and document conflicts separately.
+- Record missing items, condition concerns and document conflicts separately, linking replacement arrivals without erasing the original object's location or status.
 - Name the party authorized to release each defined next activity.
 
 ![Folded crawler lifting equipment carried on a road transport trailer](/images/equipment/transport-real-carrier.webp)

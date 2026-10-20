@@ -2,7 +2,7 @@
 title: "Coil Route Planning for a Roll-Forming Line Feed System"
 description: "Prepare a coil-route review package; it does not select lifting equipment, a feeder, or the final safety arrangement for the roll-forming line project."
 date: 2026-07-27
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "coil handling", "feed planning", "material flow"]
 coverImage: "/images/equipment/coil-real-cover.webp"
@@ -80,7 +80,11 @@ Record what happens when packaging conceals the identifier required by the next 
 
 ### Preserve custody across pauses and returns
 
-A staged coil needs a named custodian, current location, acceptance status and the next intended handoff. If production pauses or the coil is returned from the feed area, update those fields against the same identity. The record should show whether material condition, packaging or remaining quantity has changed and which reviewer must accept that change.
+A staged coil needs a named custodian, current location, acceptance status and next intended handoff. For partly used material proposed to return from the feed area, keep the original identifier and material references connected to the returned object. Those records can preserve the material's documented origin without establishing its current physical condition.
+
+Separate the fields that still apply from those that need current information. A delivery record for a full coil may identify the ordered material, while its recorded mass, outside dimensions, packaging and observed condition describe the earlier receipt. Ask the responsible material and site parties which current records describe the remainder and what the route and feed reviewers still need. Leave missing fields unresolved; do not derive the present mass or geometry from a panel-production count, an apparent remaining proportion or the original delivery values.
+
+For example, a returned coil could retain its material identity while its packaging or proposed holding condition differs from the first arrival. In that hypothetical case, “previously accepted material” and “current route inputs available” are separate statements. Record the current-condition source and date beside the continuing identity, then identify the review needed for the next proposed handoff. This does not prescribe measuring, repacking, moving or feeding the coil, and an earlier acceptance does not authorize its re-entry.
 
 For U.S. general-industry context, <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.176" target="_blank" rel="noopener noreferrer">OSHA 29 CFR 1910.176</a> addresses clear mechanical-handling passageways and stable storage. It is jurisdiction-specific background for planning discussions, not a global storage design rule or confirmation of this site's arrangement. Applicable local requirements and the project's competent review remain necessary.
 
@@ -99,7 +103,7 @@ The review should distinguish coil support, material entry and the forming modul
 
 ### Define the information handed to the line team
 
-Before feed acceptance, the line team needs the coil identity, current material/profile reference, disposition of receiving exceptions and the readiness records required by the approved project procedure. The equipment documentation must own threading, guarding and operating actions. The coordination package only identifies the documents and people responsible for those actions.
+Before feed acceptance, the line team needs the coil identity, current material/profile reference, disposition of receiving exceptions and the readiness records required by the approved project procedure. For returned material, distinguish the continuing material record from the current physical inputs; flag any field still referring only to the original full-coil receipt. The equipment documentation must own threading, guarding and operating actions. The coordination package only identifies the documents and people responsible for those actions.
 
 Where separate feed and forming equipment are proposed, request an interface record covering material-entry geometry, direction, mounting boundaries and relevant power or control connections. The [electrical and control interface guide](/blog/roll-forming-line-electrical-control-interfaces/) provides the adjacent documentation discussion. Naming an interlock or control function in a request does not establish its presence or adequacy; the actual configuration must be reviewed.
 
@@ -116,7 +120,7 @@ Attach the following records for the first interface review:
 - Feed-to-forming power and control interface requests, each assigned to the party responsible for the proposed equipment.
 - Destination documentation requirements and the named owner who can accept each outstanding interface decision.
 - Arrival-order and production-order snapshots showing the proposed route with other material present.
-- Proposed returned-material positions checked against the next receipt and feed requests.
+- Proposed returned-material positions checked against the next receipt and feed requests, with current condition data separated from the original full-coil record.
 
 *On smaller screens, scroll the table sideways to read all three columns.*
 

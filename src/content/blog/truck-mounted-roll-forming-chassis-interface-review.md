@@ -2,7 +2,7 @@
 title: "Truck Chassis Integration Review for Roll-Forming Lines"
 description: "Review truck chassis integration for mobile roll-forming lines, including interfaces, payload allocation, stability inputs, utilities, and verification records."
 date: 2026-07-27
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["truck mounted roll forming", "chassis interface", "vehicle integration", "project review"]
 coverImage: "/images/equipment/coil-real-cover.webp"
@@ -57,6 +57,8 @@ Ask the integrator to define the reference points used by the vehicle and equipm
 
 Start with a clear overlay that shows the proposed equipment footprint, support interfaces and vehicle components. It should expose conflicts for engineering review. It should not invite procurement staff to choose attachment locations or alter a frame from a photograph.
 
+Ask which states the overlay actually covers. A drawing of the finished transport arrangement and another of the supported work arrangement describe their respective endpoints. If the equipment proposal requires a change between them, the integrator also needs the equipment party's information about the space and restrictions relevant to that change. An unoccupied region in both endpoint drawings is not evidence that no component needs it between those states. Do not sketch an assumed path or infer that a particular movement is permitted.
+
 ### Compare the candidate build, not only its model and wheelbase
 
 Two candidate vehicles can share a model description and wheelbase while the records supplied for them show different installed equipment. The integration question is whether those differences affect the space or interfaces used by the proposed lifting assembly. Ask the vehicle-side party to identify the actual build and the equipment-side party to show the corresponding arrangement; do not fill missing areas of one drawing from the other candidate.
@@ -104,7 +106,11 @@ Use the matrix to ask a specific question: which interface is open, what evidenc
 
 Equipment occupying the frame can affect access to existing vehicle components and to its own service points. Request the space and movement information needed for cab access, routine inspection, fluid or energy-system servicing and component replacement. Review these needs in the relevant equipment state rather than assuming every task occurs with the structure folded.
 
-A layout can appear compact in plan view while leaving a service item inaccessible from the side. The trade-off is then between equipment placement, service access and the engineering implications of a change. The solution must come from the relevant technical parties; moving a tank, changing a component or adding a platform is not an editorial recommendation.
+A layout can appear compact in plan view while leaving a service item inaccessible from the side. Separate the space occupied by the closed component from the space its documented service activity needs. The same distinction applies to any equipment transition that the supplier actually proposes: request its documented spatial requirements alongside the vehicle's installed components.
+
+Consider a hypothetical review in which a vehicle-side option is clear of the lifting equipment in both supplied endpoint drawings. The equipment party has not yet supplied the intermediate envelope relevant to its proposed transition. The review can record the visible endpoint separation, but it cannot close the transition question. Ask the integrator to identify the missing equipment information and the vehicle region with which it must be compared. There may be a conflict, or the missing information may resolve it; neither conclusion follows from the drawings already received.
+
+Keep service access and equipment transitions separately named. A documented cab-access condition does not establish that the same space is available during a different equipment state. The responsible parties must reconcile those uses and any resulting design changes. This discussion provides no movement sequence, clearance allowance or permission to relocate vehicle components.
 
 ### Define the energy connection instead of assuming it
 
@@ -140,7 +146,7 @@ Do not resolve missing information by substituting a drawing from a similar chas
 - Identify the forming-line, profile and coil scope that determines the equipment items included in the review.
 - Show support locations, access routes and ground conditions requiring a separate jobsite assessment.
 - Provide the proposed power and control boundaries, available records and service-access requirements.
-- Identify the candidate's installed vehicle options and their opening or removal envelopes on the actual build drawing, highlighting conflicts with the equipment layout.
+- Identify installed vehicle options and their service envelopes; ask which equipment transitions are documented and where their spatial requirements still need comparison with the actual build.
 - State the destination, intended road/site duty, local review owner and documentation still required before ordering.
 
 ### Make the review output specific

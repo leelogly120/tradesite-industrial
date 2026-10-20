@@ -2,7 +2,7 @@
 title: "Roof-Level Roll-Forming Lifts for Long Roof Panels"
 description: "Compare roof-level and ground roll forming for long roof panels. Review the lifted machine, panel route, coil supply and site conditions before selection."
 date: 2026-07-24
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["Roof-Level Roll Forming", "Long-Span Panels", "Project Planning"]
 coverImage: "/images/equipment/entry-real-clearance.webp"
@@ -109,7 +109,13 @@ Support review concerns the equipment reactions and the ground or structure rece
 
 ### Account for a changing work front
 
-A usable position for the first roof zone does not prove the next zone can use the same arrangement. Roof geometry, access, ground conditions and other trades may change along the building. List the proposed forming positions and identify which inputs carry forward and which require a fresh check. This is a selection question before it becomes a relocation question.
+A usable position for the main roof does not settle the production route for every adjoining area. Separate zones where the receiving direction, support space or construction stage changes, then state which zones each proposal covers. This lets the buyer compare a whole-project proposal with one that addresses only part of the roof without mistaking their different scope for an equipment advantage.
+
+Consider a hypothetical main hall and adjoining roof area requiring the same panel profile. The main hall has a proposed elevated outlet and an identified receiver. The adjoining area has a different approach and no agreed location for the lifting assembly. A quotation based on the main hall does not answer the second area's problem. Equally, the unresolved adjoining area does not invalidate the main hall's measured geometry. Keep each finding attached to its zone.
+
+The project can ask for a single-route proposal and a proposal with explicitly divided scope. For the latter, identify which zones would use elevated forming and which would rely on ground forming with a separately reviewed finished-panel transfer. Require each part to identify its forming location, material supply, receiving arrangement and outstanding conditions. If both parts assume use of the same forming machine, its availability and proposed transfer between assignments remain questions; do not count it as available to both at once.
+
+The resulting comparison may retain a route for one zone while another needs further planning. It is incomplete if a quotation simply excludes the difficult area and the overall programme still assumes all roof panels will be supplied. Ask for that uncovered work to remain visible beside the proposal. This is a way to define the purchase, not a recommendation to combine methods or a finding that either arrangement is feasible.
 
 Weather belongs in that comparison because it can affect the proposed material route and the availability of the work area. Ask the responsible project team to define the assessment and decision process for the actual equipment and panel; do not adopt a universal wind number from another machine. The [weather hold-point guide](/blog/roof-level-roll-forming-weather-hold-points/) helps organise those decisions without prescribing operating limits.
 
@@ -132,7 +138,7 @@ Retain ground forming as a comparison where its transfer route is already establ
 ### Send the information that changes the decision
 
 - Identify the panel profile, material, thickness and required lengths so both forming routes address the same finished product.
-- Mark the outlet height reference, roof geometry, receiving location and direction of panel movement on the same project drawing.
+- Mark the outlet height reference, roof geometry, receiving location and direction of panel movement for each zone; show which zones each proposed forming route covers.
 - Map site access, coil delivery and the route between proposed work zones, including locations where other activities intersect them.
 - Provide ground or floor information for each machine position and identify the owner of the support assessment.
 - Show the proposed outrigger or support-area boundary, distinguishing available space from an approved support arrangement.

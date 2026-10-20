@@ -2,7 +2,7 @@
 title: "Task-Load Schedule for Aerial Platform Project Review"
 description: "Create a task-by-task people, tools and materials schedule for comparison with exact approved limits; it does not calculate capacity or authorize load handling."
 date: 2026-07-27
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["Task Load", "Aerial Platform", "Project Review"]
 coverImage: "/images/equipment/entry-real-interior.webp"
@@ -59,7 +59,7 @@ Do not publish personal names, medical information or individual identifiers. Us
 
 ### List tools, materials and containers
 
-Identify each tool, battery, cable, hose, test device, consumable, replacement component, fastener, waste item and container. Record quantity, individual source value where controlled, combined task quantity, dimensions and any storage or securing method proposed by the task owner.
+Identify each tool, battery, cable, hose, test device, consumable, replacement component, fastener, waste item and container. Record quantity, individual source value where controlled, combined task quantity, dimensions and any storage or securing method proposed by the task owner. Identify objects that extend beyond the platform, with their proposed connections and support locations; do not omit them because only part is visible in the work area.
 
 Do not assume that a tool bag, rack, overhanging item or long component is permitted. Do not use lifting-system tonnage as a platform limit. If an item requires a fixture or attachment, list that interface separately and hold the task until the approved documentation addresses it.
 
@@ -120,7 +120,11 @@ U.S. OSHA’s <a href="https://www.osha.gov/etools/scaffolding/aerial-lifts" tar
 
 Record proposed racks, holders, fixtures, power leads, tool tethers, material supports and other interfaces as unresolved until exact documentation confirms their status. Include how their position changes and whether they remain attached during transport, setup, task or withdrawal.
 
-Moving or long items can create effects beyond a static list. Do not estimate those effects in marketing copy. Route them to the manufacturer documentation and competent project review that apply to the exact equipment and method.
+A service hose or cable may connect a tool in the task area to equipment outside it. A long material item may also cross the platform boundary in a proposed arrangement. Listing only the length visible on the platform, or assigning an assumed fraction of the object's weight to it, leaves the external relationship unexplained. The schedule needs the object identified as a whole, its proposed route or position, where it connects, and who defines any support or attachment. Unknown connections and positions remain explicit questions.
+
+Ask the equipment and task technical owners which effects of that relationship need assessment for the documented task state and what information is missing. This is not a method for distributing weight, calculating forces or treating the building as an available support. A drawing that shows an external contact or a line leading off the platform does not authorize leaning, suspending, pulling or supporting material there.
+
+Keep the distinction visible when the proposal changes. The same tool and cable listed in two states may have different external connections or routes. An unchanged item count cannot establish that the previous assessment covers the revised relationship. Refer the changed connection or position to the responsible reviewers without inventing a load allowance.
 
 ![Raised red platform structure outside an industrial building with open bays](/images/equipment/entry-real-approach.webp)
 
@@ -161,9 +165,9 @@ Do not continue on the basis of remaining arithmetic margin. The applicable docu
 - Exact task state, work sequence, simultaneous activity and change trigger
 - Documented main, extension or removable platform region, including unresolved locations
 - People by role, protective equipment where applicable, training-record owner and source date
-- Tools, batteries, cables, hoses, test devices, consumables and controlled quantities
+- Tools, batteries, cables, hoses, test devices, consumables and controlled quantities, including any object crossing the platform boundary
 - Materials, components, containers, removed items, dimensions, locations and securing proposal
-- Attachment, rack, holder, fixture or tether status and exact approved document reference
+- Attachment, rack, holder, fixture or tether status, external connections and proposed support locations, with the exact approved document reference or unresolved question
 - Entry, transfer, staging, task and removal method with each responsible role
 - Exact configuration identifier, manufacturer instruction, applicable limit and document revision
 - Definition of each stated limit and confirmation of which platform or attachment masses it includes

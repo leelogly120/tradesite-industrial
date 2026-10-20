@@ -2,7 +2,7 @@
 title: "Roll-Forming Lift Documents: Read and Compare Offers"
 description: "Read roll-forming lift documents by their purpose, configuration and issue status, then compare quotation scope, interface evidence and unresolved deliverables."
 date: 2026-08-07
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["technical document package", "roll forming lift", "document control", "equipment handover"]
 coverImage: "/images/equipment/coil-real-module.webp"
@@ -101,9 +101,13 @@ Ask which equipment boundary a cited document addresses and who is responsible f
 
 ### Follow one interface through the records
 
-Choose a meaningful boundary, such as where the forming machine connects to the lift. Compare the module designation, mounting references and arrangement revision in the technical schedule, layout and interface record. If those references differ, record the discrepancy. Do not decide which file is correct from its appearance or by choosing the newest date alone.
+Matching statements can conceal an unresolved input as easily as conflicting statements can expose one. In a hypothetical enquiry, the buyer supplies a provisional forming-machine outline because the actual machine drawing is not yet available. The lift supplier uses that outline in a discussion layout, and a later quotation repeats it. The three documents agree, but they may all depend on the same preliminary input. Repetition does not show that anyone has confirmed the actual machine's envelope or its connection to the lift.
 
-The practical trade-off is between a short offer that leaves important interfaces implicit and a large document set that obscures contradictory versions. A concise cross-reference sheet can expose both problems. It should lead the reviewer to the controlling records without copying technical values into another uncontrolled summary.
+Trace that statement back to its origin. Record who supplied the outline, which object and state it described, and whether its provisional status remains visible in each returned document. Then ask the actual machine-information owner for the applicable record and the lift-interface reviewer for the scope of the answer based on it. A later issue date or a new issuer's letterhead does not, by itself, turn a reused assumption into a separate confirmation.
+
+The same reading problem can arise when a requested outlet position is repeated as though it were the offered equipment's confirmed capability. Keep “buyer requirement,” “assumption used for layout” and “supplier's configuration-specific response” distinct. A useful clarification asks which of those roles the statement has, what underlying record supports it, and which decision still depends on confirmation. It does not ask for another copy of the same number.
+
+The trade-off is between an easy-to-read summary and visibility of its dependencies. Follow the controlling source without treating document count as evidence strength. If the returned record confirms only one interface, retain that narrow scope; confirmation of a machine outline still does not settle mounting, site clearance or the complete arrangement.
 
 ### Keep transport and work states distinct
 
@@ -137,7 +141,7 @@ Keep the sheet tied to the actual question in the offer. A useful row contains t
 - Clarify outrigger or support-interface records without assuming a reaction value.
 - Assign destination, chassis and container documentation to the responsible parties.
 - Identify voltage, power, controls and connection information included in the offer.
-- State which records are preliminary, conditional, by others or due after an activity.
+- State which records are preliminary, conditional, by others or due after an activity, and trace repeated inputs to their origin rather than counting each reuse as confirmation.
 
 Each answer should change a comparison row or resolve a named uncertainty. Retain a clear distinction between “supplier has answered the commercial scope question” and “the technical reviewer has accepted the solution.” Those are different decisions and may occur at different times.
 

@@ -2,7 +2,7 @@
 title: "Overhead Clearance Register for Ceiling Access Review"
 description: "Record measured overhead conditions by route, setup and work state before configuration review; it does not prove equipment fit, clearance or site approval."
 date: 2026-07-27
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["Overhead Clearance", "Ceiling Access", "Site Survey"]
 coverImage: "/images/equipment/entry-real-approach.webp"
@@ -53,13 +53,17 @@ Withdrawal deserves its own check. A route that appears open for approach may be
 
 ### Build an obstruction inventory
 
-Give every obstruction a stable anonymised ID, type, location and owner. Typical categories include structure, fixed building service, electrical line, moving service, temporary installation, stored item and task-generated obstruction. Photograph or sketch only when the source and publication authority allow it.
+Give every obstruction a stable anonymised ID, type, location and owner. Typical categories include structure, fixed building service, electrical line, moving service, temporary installation, stored item and task-generated obstruction. Record the object's extent in plan as well as its elevation: which part of the route or task zone lies beneath or beside it? A point measurement should identify the point or surface it represents, not silently describe the whole bay. Photograph or sketch only when the source and publication authority allow it.
 
 Do not infer status from appearance. A cable can be live, isolated, abandoned or unidentified; a duct or rail can move; a panel can hide another service. Record unknown status explicitly and route it to the responsible owner. The purpose is to make uncertainty visible, not to turn the register into a declaration of safety.
 
 ### Record offsets, elevations and measurement sources
 
-Use a defined coordinate or reference system and state the instrument, method, date and responsible survey role. Record both vertical and horizontal relationships because a single floor-to-ceiling height cannot describe a three-dimensional route or work face. Attach the floor level and work state to every entry.
+Use a defined coordinate or reference system and state the instrument, method, date and responsible survey role. Connect each obstruction's measured point or surface, plan extent and elevation to the task position and local floor reference. Keep the work state attached to that relationship.
+
+Consider a hypothetical bay with a low duct along one edge and a higher beam above the proposed task line. A single “minimum height” reports the duct but loses where that measurement applies; an average of the two elevations loses both objects. Neither summary explains the beam's relationship to the task. Retain both objects on the same referenced plan and section, so the reviewer can distinguish a local low point from an obstruction extending across the required area.
+
+That distinction does not establish that avoiding the lowest object makes a task feasible. The approach, proposed equipment, people and materials still need their own defined space and review. If only a spot measurement is available, mark the unobserved extent as missing rather than extending the measured height across the zone.
 
 Include measurement uncertainty and access limitations where the project process requires them. If an item could not be reached, observed or identified, mark the field unknown. Never substitute a convenient value from a marketing drawing, editorial diagram or archival product page.
 
@@ -85,7 +89,7 @@ The following comparison is a survey brief, not a set of permitted movements. Co
 | --- | --- | --- |
 | Passage through an opening | Lowest obstruction, floor reference, approach and exit alignment, door or service position | Which approved transport configuration is being compared with these measurements? |
 | Setup at the work zone | Surrounding structure and services, floor references across the area, temporary obstructions | What space does the documented setup arrangement require, including any configuration changes? |
-| Work beneath the ceiling | Task-face location, lateral offsets, service status and the proposed position of task materials | Can the equipment, people and task be assessed together using the exact approved information? |
+| Work beneath the ceiling | Task-face location, each obstruction's plan extent and measured surface, service status and task-material positions | Can the equipment, people and task be assessed together using the exact approved information? |
 | Withdrawal from the task | Return path, remaining materials, changed services and temporary installations | Is the reviewed way out still available in the condition expected after the task? |
 
 Keep a separate source or drawing reference beside each entry in the private survey. If floor and service measurements were made at different times, state that explicitly rather than presenting them as a single verified site condition.
@@ -161,7 +165,7 @@ Do not publish “fits under,” “zero-clearance,” “safe near live service
 - Work-zone height, ceiling geometry, task position and horizontal outreach relationship
 - Access and transport route, openings, turns, floor levels, gradients and temporary restrictions
 - Transport, setup, elevated task and withdrawal states, each with a clear state definition
-- Obstruction ID, type, owner, measured elevation, horizontal offset and measurement source
+- Obstruction ID, type, owner, plan extent, measured point or surface, elevation, horizontal offset and measurement source
 - Structure, services, electrical lines, moving items, temporary works and stored obstructions
 - Floor reference, support-path status and connection between level data and each measurement
 - Electrical status owner, applicable review, isolation record and unresolved separation question
@@ -180,7 +184,7 @@ This article is editorial survey guidance, not a configuration schedule, electri
 
 #### Why record more than ceiling height?
 
-Ceiling height is one vertical value. The reviewer also needs the floor reference, lowest relevant obstruction, horizontal offsets and service state at the actual task. A nominal clear height does not describe a changing door, an offset beam or the space occupied by people and task materials.
+Ceiling height is one vertical value. The reviewer also needs each relevant obstruction's location and extent, the floor reference and service state at the actual task. A local minimum cannot represent an entire bay; a nominal clear height does not describe a changing door, an offset beam or the space occupied by people and task materials.
 
 #### Which work states need measurement?
 

@@ -2,7 +2,7 @@
 title: "Roof Panel Handover Zones for Elevated Roll Forming"
 description: "Plan roof-panel handover zones for elevated roll forming by defining custody, support, communication, exclusion areas, stop conditions and receiving records."
 date: 2026-08-07
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["roof panel handover", "elevated roll forming", "receiving zone", "work planning"]
 coverImage: "/images/equipment/coil-real-panel.webp"
@@ -40,9 +40,11 @@ Identify where the forming-line supply scope ends and which project record cover
 
 ### Separate receiving from installation
 
-Receipt means the nominated party accepts the panel under the project's agreed condition and transfer process. Installation means it enters the roof team's placement and fixing method. These events can occur close together, but they answer different questions. A cut panel has not automatically been received, and a received panel has not automatically been accepted for installation.
+Distinguish physical arrival at the receiving boundary, the nominated party's acceptance of custody, and acceptance for the intended installation stage. The project may connect these events, but it should define them explicitly. A cut panel has not automatically been received, and a received panel may still have an unresolved identity, condition or destination question.
 
-If the programme places time between receipt and installation, describe that intermediate condition explicitly. The project then needs to address its supporting arrangement, exposure, access and ownership. Calling it a short pause does not remove those requirements. The receiving and installation parties should agree how they recognize that each boundary has been reached.
+In a hypothetical project, a panel has reached the receiver but its identification does not clearly match the revised schedule for that roof zone. The receiver can know which physical panel is present without yet confirming that it belongs in the installation queue. The planning question is where the reviewed arrangement accommodates that exception, who is responsible for it while the question is resolved, and which party determines its next destination. This example sets no marking rule, inspection tolerance or disposition method.
+
+Compare a proposal that describes only accepted panels moving directly into installation with one that also defines the support, space and responsibility needed for a panel awaiting a decision. The latter is complete only if that waiting condition is covered by the actual project information; an “exceptions area” label supplies no support design. Do not assume the panel can return along the outlet path or occupy the next installation position. Either proposal needs an answer for the exception before its handover scope can be considered complete.
 
 ![Coils on the ground beside elevated forming equipment](/images/equipment/coil-real-handling.webp)
 
@@ -79,7 +81,7 @@ Use the [electrical and control interface guide](/blog/roll-forming-line-electri
 
 ### Include the condition when production cannot continue
 
-A receiving arrangement must be considered when the next installation position is unavailable, the receiving area changes or another project hold applies. Ask the responsible parties what approved state covers the panel and equipment in that circumstance. This is especially relevant when part of the panel path is outside the forming-line supplier's scope.
+A receiving arrangement must be considered when the next installation position is unavailable, the receiving area changes or a received panel awaits a decision. Identify whether the uncertainty concerns material still connected to the line, a cut panel at the transfer boundary or a panel in the receiver's custody. Ask which project-specific arrangement covers that condition and whether it occupies space needed for subsequent receipt. A quality decision and a physical support arrangement answer different questions; completing one does not supply the other.
 
 The answer belongs in the project-specific method and equipment information, not in an improvised instruction on a web page. For procurement, the value is discovering whether an essential stopped or waiting condition has been omitted from the proposed workflow. That omission can affect the feasibility of an otherwise attractive production concept.
 
@@ -100,7 +102,7 @@ Start with the physical interface and then assign the responsible party. The sam
 | External runout support | Project support design and applicable panel conditions | Who covers the path beyond the supplied forming line? |
 | Receiving transfer | Named receiver and agreed acceptance condition | How is transfer recognized for the intended panel? |
 | Installation entry | Roof-work method, location and installation owner | What confirms that the next work stage can accept it? |
-| Waiting or changed condition | Applicable equipment information and project method | Which reviewed arrangement applies when the planned sequence cannot continue? |
+| Waiting or changed condition | Applicable equipment information, support scope and decision owner | Where does the plan account for a panel that has arrived but is not yet accepted for installation? |
 
 ### Bring the connected inputs to the review
 
@@ -110,6 +112,7 @@ Start with the physical interface and then assign the responsible party. The sam
 - Locate the ground setup zone and the corresponding ground or floor review status.
 - Show site access, receiving access and transport or material-delivery boundaries that interact with the panel route.
 - Identify the runout-support design owner, drawing revision and release status without substituting a generic spacing.
+- Identify the proposed space, support responsibility and decision owner for a received panel whose condition, identity or destination remains unresolved.
 - Define the power and control interfaces that the equipment parties must confirm for coordinated production.
 - Reference the project's wind and weather hold decisions and the party responsible for receiving readiness.
 - Record destination documentation requirements, installation ownership and unresolved interfaces before agreeing the supply scope.

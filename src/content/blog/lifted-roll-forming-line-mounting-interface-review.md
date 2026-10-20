@@ -2,7 +2,7 @@
 title: "Mounting Interface Review for Lifted Roll-Forming Lines"
 description: "Review the mounting of a roof-panel roll former on a lift through machine geometry, mass inputs, attachment boundaries, service space and integration ownership."
 date: 2026-08-07
-updated: 2026-10-17
+updated: 2026-10-20
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming mounting interface", "lifted forming line", "interface control", "technical review"]
 coverImage: "/images/equipment/coil-real-module.webp"
@@ -48,7 +48,11 @@ Also ask what information will demonstrate the relevant interfaces once the asse
 
 ### Separate handling features from permanent support features
 
-A machine may have provisions associated with transport, lifting, floor installation or permanent mounting. Identify the intended purpose of each feature from the applicable machine information. A visible hole, bracket or frame member does not by itself establish where a lifting structure may support or attach to the machine.
+A machine may have provisions associated with transport, lifting, floor installation or permanent mounting. Identify the intended purpose of each feature from the applicable machine information. Also distinguish the machine's outer footprint from the regions its designer identifies for support or attachment. Space inside the footprint is not automatically an available bearing surface.
+
+Consider two hypothetical formers with similar overall base dimensions. One supplier's information identifies particular support regions, while the other proposal provides only an outline. Those offers are at different levels of interface definition even if both outlines sit inside the proposed platform. The buyer needs the second machine's intended support information before the two mounting scopes can be compared. This is an information difference, not a conclusion that either machine needs a particular beam layout.
+
+Ask the machine party to identify designated support and attachment regions, areas that must remain clear, and any part of the underside whose purpose is still undefined. Keep those categories distinct on the drawing. A visible member might belong to guarding, transport provision or another function; procurement should not assign it a permanent support role. Where the machine documentation does not resolve the underside, the missing design input remains open.
 
 The suspended blue module in the cover photograph illustrates why these distinctions matter: a transfer scene raises questions about handling, but it does not disclose a permanent mounting design. The responsible parties must provide the actual handling and installation information. This review does not specify lifting points, connection details or an assembly procedure.
 
@@ -63,7 +67,9 @@ The suspended blue module in the cover photograph illustrates why these distinct
 
 Ask for identifiable reference points on the forming-machine frame and the proposed supporting structure. Show the panel travel direction, inlet and cutter or outlet position relative to those references. Mounting coordinates expressed from one frame end cannot be compared with a lift drawing measured from another point unless their relationship is made explicit.
 
-Overall dimensions also need a stated condition. A cabinet door, service panel or removable guard may occupy a different space when accessed. Keep the machine's closed envelope, required service space and any handling arrangement distinct. The integration reviewer needs all relevant envelopes, not a single rectangle used for every purpose.
+Use the same references for the underside view and the supporting structure. The reviewer should be able to distinguish a dimension locating the outer edge from one locating a designated interface region. If a drawing shows only the perimeter, ask for the information defining the intended contact and attachment boundaries; do not fill the interior with assumed support points.
+
+Overall dimensions also need a stated condition. A cabinet door, service panel or removable guard may occupy a different space when accessed. Keep the closed envelope, required service space and handling arrangement distinct from the defined support regions. A drawing can establish that the machine fits within an area while leaving how it is supported entirely unresolved.
 
 ### Request mass and support inputs from the responsible party
 
@@ -107,7 +113,7 @@ Record the proposal and let the responsible designers decide whether it is viabl
 | Finding at the interface | What it answers | What still needs resolution |
 | :-- | :-- | :-- |
 | Overall machine envelope is identified | Which space the stated arrangement occupies | Mounting regions, service envelopes and support requirements |
-| Frame reference points are coordinated | How the two drawings relate geometrically | Connection design and permitted variation |
+| Designated support regions use shared references | Where the machine party defines the interface, separately from its outer outline | Corresponding support design, attachment details and permitted variation |
 | Machine mass and included items are identified | What the declared mass describes | Applicable mass positions, load cases and combined-system review |
 | Cabinet access is shown clear | Whether the specified opening task has space in that state | Other maintenance tasks and access arrangements |
 | Outlet location matches the survey request | Which geometric proposal is being assessed | Receiving arrangement, equipment conditions and project review |
@@ -121,7 +127,7 @@ The table keeps partial answers useful without treating them as final approval. 
 ### Collect a package describing the actual interfaces
 
 - Identify the forming machine, its revision and whether it is existing equipment or a new supply proposal.
-- Provide frame geometry, proposed mounting regions and a common coordinate reference for the supporting structure.
+- Provide frame geometry, designer-identified support and attachment regions, areas to keep clear and a common reference for the supporting structure.
 - State the panel profile, material and coil/feed arrangement that define the intended production task.
 - Record cutter or outlet height and position relative to the machine frame, keeping platform height separate.
 - Identify machine mass, included attachments and the party responsible for centre-of-gravity and support inputs.
