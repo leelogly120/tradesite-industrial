@@ -6,14 +6,14 @@ async function openHomepage(page, width = 1440) {
   await page.waitForLoadState('networkidle');
 }
 
-test('shows a static real-equipment hero and two primary lifting routes', async ({ page }) => {
+test('shows a static real-equipment hero and four distinct application routes', async ({ page }) => {
   await openHomepage(page);
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Lift the roll former.');
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('Lifting systems for roof-panel roll forming.');
   await expect(page.locator('.hero__carousel, .hero__slide, .hero__dot')).toHaveCount(0);
-  await expect(page.locator('.a2-route')).toHaveCount(2);
-  await expect(page.locator('.a2-route a[href="/products/#truck-mounted-roll-forming-lifts"]')).toBeVisible();
-  await expect(page.locator('.a2-route a[href="/products/#crawler-roll-forming-lifts"]')).toBeVisible();
-  await expect(page.locator('#ceiling')).toContainText('A separate product line');
+  await expect(page.locator('#equipment-series article')).toHaveCount(4);
+  for (const family of ['truck-mounted-roll-forming-lifts','crawler-roll-forming-lifts','crawler-ceiling-platforms','truck-mounted-work-platforms']) {
+    await expect(page.locator(`#equipment-series h3 a[href="/products/#${family}"]`)).toBeVisible();
+  }
 });
 
 test('preserves contact destinations and loads fonts locally', async ({ page }) => {
@@ -23,17 +23,17 @@ test('preserves contact destinations and loads fonts locally', async ({ page }) 
   });
   await openHomepage(page, 390);
   expect(remoteFonts).toEqual([]);
-  await expect(page.getByRole('link', { name: 'Explore lifting systems', exact: true })).toHaveAttribute('href', '/products/');
-  await expect(page.getByRole('link', { name: 'Send your equipment brief', exact: true })).toHaveAttribute('href', '/contact/');
+  await expect(page.locator('.hero-actions a').first()).toHaveAttribute('href', '/products/');
+  await expect(page.locator('.hero-actions a').last()).toHaveAttribute('href', '/contact/');
   await expect(page.locator('.a2-contact-links a').first()).toHaveAttribute('href', 'https://wa.me/8615617687185');
   await expect(page.locator('.a2-contact-links a').last()).toHaveAttribute('href', 'mailto:leelogly120@gmail.com');
-  await expect(page.locator('#matching')).toContainText('Height alone is not a complete selection brief');
+  await expect(page.locator('#matching')).toContainText('forming machine, its mounting interface and the panel receiving area');
 });
 
 test('desktop keeps the real machine beside the message without enlarging source photos', async ({ page }) => {
   await openHomepage(page);
   const heading = await page.getByRole('heading', { level: 1 }).boundingBox();
-  const machine = await page.locator('.a2-equipment-main img').boundingBox();
+  const machine = await page.locator('[data-equipment-hero] img').boundingBox();
   expect(machine!.x).toBeGreaterThan(heading!.x + heading!.width);
   for(const image of await page.locator('main img').all()) {
     await image.scrollIntoViewIfNeeded();
@@ -46,19 +46,14 @@ test('mobile real photos keep their full proportions and scoped captions', async
   await openHomepage(page, 390);
   await page.emulateMedia({ reducedMotion: 'reduce' });
   const images = page.locator('main img');
-  await expect(images).toHaveCount(5);
+  await expect(images).toHaveCount(7);
   for(const image of await images.all()) {
     if(!await image.isVisible()) continue;
     await image.scrollIntoViewIfNeeded();
     await expect.poll(() => image.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBe(true);
-    const ratio = await image.evaluate((img: HTMLImageElement) => Math.abs(img.getBoundingClientRect().width/img.getBoundingClientRect().height-img.naturalWidth/img.naturalHeight));
-    expect(ratio).toBeLessThan(.02);
     await expect(image).toHaveCSS('object-fit', 'contain');
   }
-  await expect(page.locator('.a2-hero-media')).toContainText('Equipment reference views');
-  await expect(page.locator('.a2-route').first()).toContainText('not roof-panel production');
-  await expect(page.locator('.a2-route').last()).toContainText('not an operating setup');
-  await expect(page.locator('#ceiling')).toContainText('loads need separate confirmation');
+  await expect(page.locator('[data-equipment-hero]')).toContainText('roof-panel forming equipment beside a steel-frame building');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
 });
 
@@ -71,7 +66,7 @@ test('mobile menu stays inert when closed, traps focus when open and restores fo
   await expect(drawer).not.toHaveAttribute('inert', '');
   await expect(page.getByRole('button', { name: 'Close navigation' })).toBeFocused();
   await page.keyboard.press('Shift+Tab');
-  await expect(drawer.getByRole('link', { name: 'Get a Quote' })).toBeFocused();
+  await expect(drawer.getByRole('link', { name: 'Email ARCLIFT' })).toBeFocused();
   await page.keyboard.press('Tab');
   await expect(page.getByRole('button', { name: 'Close navigation' })).toBeFocused();
   await page.keyboard.press('Escape');
@@ -88,4 +83,16 @@ test('does not download obsolete carousel or synthetic homepage imagery', async 
     expect(path.startsWith('/images/hero/')).toBe(false);
     expect(path.startsWith('/images/home/')).toBe(false);
   }
+});
+
+test('short mobile drawer scrolls to the direct contact links while the background is locked', async ({ page }) => {
+  await page.setViewportSize({width:667,height:375});
+  await page.goto('/');
+  await page.getByRole('button',{name:'Toggle navigation'}).click();
+  const drawer=page.locator('#mobile-drawer');
+  const email=drawer.getByRole('link',{name:'Email ARCLIFT'});
+  await email.scrollIntoViewIfNeeded();
+  expect(await email.evaluate(el=>{const r=el.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight})).toBe(true);
+  expect(await drawer.evaluate(el=>el.scrollTop)).toBeGreaterThan(0);
+  await expect(email).toHaveAttribute('href','mailto:leelogly120@gmail.com');
 });

@@ -2,7 +2,7 @@
 title: "Panel Profile Data for a Roll-Forming Tooling Review"
 description: "Connect roof panel profiles, material records and samples to the roll former proposed for a lift, with clear tooling, machine and roof-system review boundaries."
 date: 2026-07-27
-updated: 2026-10-19
+updated: 2026-10-22
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "tooling review", "roof panels", "project data"]
 coverImage: "/images/equipment/coil-real-panel.webp"
@@ -11,9 +11,9 @@ coverCaption: "Reference photograph showing red equipment beside a building and 
 draft: false
 ---
 
-A roof-panel profile is part of the purchasing decision for a roll-forming lift because the lift carries a particular forming machine, and that machine must process the proposed material into the required panel. A drawing that identifies the roof shape does not establish the tooling, feed arrangement, cutter or machine package. Buyers need to connect these items before treating a roll former as an interchangeable load on an elevated system.
+A useful tooling enquiry distinguishes the panel features the roof requires from those the buyer is allowed to change. That distinction affects both the price of the forming machine and whether two proposals describe the same roof product. A lower tooling price is not an equivalent offer if it quietly changes an edge that must mate with an existing panel or specified component.
 
-This guide follows the panel from its intended roof connection back to material and tooling inputs. Use the [complete line specification guide](/blog/roll-forming-line-specification-long-span-roof-panels/) for the wider machine scope and the [mounting-interface review](/blog/lifted-roll-forming-line-mounting-interface-review/) for its connection to the lift. The [roof-level forming overview](/blog/roof-level-roll-forming-long-panels/) explains the production concept; none of these pages confirms that a particular machine is compatible.
+The profile also matters to the lift purchase: the system raises a compatible roof-panel roll former, whose tooling, cutter and arrangement must reflect the chosen panel and material. This guide works back from the roof connection to the profile brief. The [complete line guide](/blog/roll-forming-line-specification-long-span-roof-panels/) covers the wider machine package, while the [mounting review](/blog/lifted-roll-forming-line-mounting-interface-review/) addresses its connection to the lift. The [forming-machine catalog section](/products/#roll-forming-machines) is a related integration route to discuss alongside a crawler or truck-mounted forming lift.
 
 **Contents**
 
@@ -22,15 +22,28 @@ This guide follows the panel from its intended roof connection back to material 
 - Compare two tooling procurement situations
 - Prepare a bounded tooling enquiry
 - FAQ
+- Ask for a proposal against the marked profile
 
 <!-- audit-section: buyer-intent -->
 ## Connect the required panel to the proposed machine
 
 ### Start with the mating features
 
-Identify which parts of the profile interact with adjacent sheets, clips, fasteners or another specified roof component. Record the roof-system drawing that governs those relationships. Cover width, rib shape, returns and edge details describe different aspects of the panel; a familiar profile name cannot replace their dimensions and interpretation. Where the roof-system designer has not selected a detail, show the unresolved choice to the machine reviewer.
+Mark the parts of the panel that interact with adjacent sheets, clips, fasteners or another specified roof component. The governing drawing should identify cover width, ribs, returns, edge details and the intended face wherever those features matter to the roof requirement. Give each mandatory feature its drawing reference. Where the responsible roof-system party has left a choice open, label it as open rather than filling the gap with a familiar commercial profile name.
 
-The distinction matters commercially. A proposal based on an approximate cross-section may answer whether further discussion is worthwhile, while a tooling commitment needs the agreed geometry and material basis. Label those two response types so a budget discussion does not become an assumed promise to reproduce every detail of an existing roof.
+The tooling supplier needs to know whether it is being asked to reproduce a defined section or propose a section for further roof-system consideration. Those are different enquiries. A manufacturing proposal can identify what the machine would produce; the responsible project party decides whether that product meets the roof requirement.
+
+### Hypothetical application one: matching an existing roof interface
+
+Imagine an extension where the project drawing requires a new panel to connect to a specified existing roof detail. The buyer marks the mating-edge geometry, exposed face and other required connection features as fixed. A sample of the existing panel can help explain the request, but the drawing and its interpretation remain essential, especially when the sample's material or history is uncertain.
+
+If a provider proposes a similar section with a different return or mating edge, request an annotated difference against the required detail. The next question belongs to the roof-system party: is that changed connection permitted in this project? Only after that question is addressed can the buyer compare the alternative's tooling price on a meaningful basis. Calling both sections the same panel family does not remove the physical difference.
+
+### Hypothetical application two: a roof detail still being selected
+
+Now imagine a new building where the project requirements exist but the roof-system party has not finalized the panel edge and connection detail. The buyer can state the fixed project requirements and ask for a proposed profile, clearly marking the edge choices as subject to roof-system review. The drawing should also show which face and finish requirements are already fixed and which need confirmation.
+
+In this case an alternative profile may be within the intended enquiry. Ask each provider to identify the proposed connection features and any dependency on other roof components. The buyer is then comparing proposed roof-product definitions as well as tooling prices. An open choice is useful when it is deliberate; it becomes a gap when neither the supplier nor the buyer knows who may decide it.
 
 ### Make the profile's viewing direction explicit
 
@@ -49,9 +62,9 @@ Suppose, hypothetically, two tooling replies reproduce the same outline but labe
 
 ### Locate the input and output boundaries
 
-Ask which proposed components receive strip, form the section, cut the panel and present it to the next handling arrangement. The boundaries may involve separately supplied equipment. A tooling drawing can describe the forming result without settling the inlet orientation, cutter interface or outlet position of the complete line. Those unresolved items should remain visible in the lift project.
+The agreed profile needs a corresponding machine arrangement: strip entry, forming equipment, cutting and the outlet to the next supporting arrangement. A tooling drawing may define the cross-section while leaving those items outside its scope. Ask which are included before using the proposed machine as the basis of a lift discussion.
 
-For an elevated installation, the outlet belongs in the roof-zone geometry review. Do not substitute the nominal platform height for the actual cutter or panel-outlet reference. A change to the selected machine can alter the physical arrangement that was used for a preliminary lift discussion, even when the requested panel remains unchanged.
+For elevated forming, identify the actual cutter or outlet reference against the roof receiver. Platform height is a different datum. A new cutter or machine arrangement can change that relationship even when the required panel profile stays the same.
 
 ### Separate an existing machine from a proposed machine
 
@@ -72,11 +85,11 @@ Give the material designation, ordered condition, thickness basis and coating in
 
 The official <a href="https://store.astm.org/a0792_a0792m-25a.html" target="_blank" rel="noopener noreferrer">ASTM A792/A792M record</a> concerns aluminum-zinc alloy-coated steel sheet. It identifies a material-standard context, not the certificate for a buyer's coil. Referencing it does not confirm a material grade, machine capability or roof-system approval. Use the specification actually required by the project and retain its edition and ordered condition.
 
-### Distinguish a display sample from a review sample
+### Give the sample a specific purpose
 
-A short panel may show the intended shape or surface appearance. It may also have an unknown material source, an uncertain production date or no link to the machine under consideration. Describe what the sample is supposed to answer before asking a supplier to use it. A useful label connects the sample to its drawing, material and known production conditions.
+Identify whether a sample is intended to illustrate a mating edge, explain a surface requirement or support a defined observation. Attach its profile reference, material identity and known production history. Where those facts are missing, state the gap. A photographed sample can communicate appearance, while dimensions and agreed observations require the corresponding evidence.
 
-Keep a photographed sample separate from a measured sample. Photographs can explain an edge or a surface concern, but perspective cannot establish dimensions. If the project expects observations about straightness, twist, surface marking or cut ends, agree who defines the observation method and acceptance basis. The article supplies none of those limits.
+If the purchase calls for observations of straightness, twist, surface marking or cut ends, the authorized parties need to define their basis. The [FAT and SAT guide](/blog/roll-forming-line-fat-sat-acceptance-checklist/) explains how observations are tied to their samples and conditions. The profile brief should identify the question without inventing a trial method or tolerance.
 
 ### Connect coil geometry to the feed discussion
 
@@ -93,9 +106,15 @@ For example, a buyer may send a finished sample that is familiar to the tooling 
 
 ### Keep the roof requirement constant
 
-Consider a hypothetical buyer assessing an existing roll former and a newly proposed line for the same roof requirement. The existing machine offers a physical object to inspect, but its current drawings or tooling history may be incomplete. The new line can be specified around the requirement, but its final assemblies and mounting information may still be developing. These different constraints affect what can be established about the tooling and lift interface. Neither route wins simply because one already exists.
+Use the same marked profile and material brief when comparing an existing roll former with a new line. In the extension example, both routes must address the fixed mating interfaces unless the roof-system party permits an alternative. An owned machine's current output may help frame the comparison, but its existence is not a reason to redefine the roof connection. A new tooling offer also needs to identify any proposed departure.
 
-Compare both routes against the same profile revision, material basis and roof-system responsibility. Otherwise a seemingly simpler offer may quietly assume a different panel detail or exclude the cutter and feed components. The comparison should expose those differences before lift compatibility is discussed as a settled result.
+In the new-building example, separate the base proposal from permitted profile alternatives. Ask each supplier to show the actual changed edge, face or associated connection requirement. A price difference may reflect a different product definition, a different included cutter or simply different commercial scope. The buyer needs to see which explanation applies.
+
+### Compare current tooling with proposed tooling
+
+An existing machine provides a physical object and potentially useful production records. Confirm whether those records describe its current tooling, alterations and the proposed material. A new line can be proposed around the agreed requirement, but its final assemblies and mounting information may still be developing. Neither situation supplies the other's missing information.
+
+The useful response identifies the profile and material basis, the actual machine or tooling proposed and what remains to be resolved. Keep any allowed profile alternative separately priced or clearly described. That lets the buyer return to the responsible roof-system party with a specific changed connection, rather than a vague request to approve a cheaper machine.
 
 ### Ask a different question for each evidence gap
 
@@ -121,36 +140,31 @@ Also identify the downstream questions that depend on the changed input. Coil ha
 <!-- audit-section: project-checklist -->
 ## Prepare a bounded tooling enquiry
 
-### Send information that explains the physical proposal
+### Send a marked profile brief
 
-The first package should let the reviewer identify the panel, proposed material and machine route without searching through unrelated documents. Use project references rather than customer names in broadly circulated copies. Mark estimates and unresolved items explicitly.
+Prepare one brief that distinguishes mandatory interfaces from permitted alternatives. The following checklist keeps the panel decision visible while identifying the site inputs that may affect the eventual machine package:
 
-- Provide the controlled panel profile, roof-system reference and the owner of mating details.
-- Identify material designation, thickness basis, coating and the source of each stated property.
-- Link sample panels and sample coils to the observations requested and their known history.
-- State whether the forming machine is existing, newly proposed or still undecided.
-- Show the requested outlet height reference and roof receiving relationship where these affect the machine arrangement.
-- Identify coil delivery and feed route assumptions without prescribing the handling method.
-- Note ground or floor and support-space constraints that may affect the proposed machine package.
-- List site wind or weather questions affecting outdoor material exposure for separate project review.
-- Record available power information and the party responsible for the electrical interface.
-- State destination, transport envelope and documentation requirements relevant to the final supplied assembly.
+- Mark fixed mating edges, returns, cover width and face requirements against the governing roof drawing.
+- Identify open profile choices and the roof-system party responsible for deciding them.
+- Retain a common viewing direction for the section, exposed face and proposed machine output.
+- Attach actual material designation, thickness basis, coating information and relevant sample identities.
+- State whether the former is owned, newly proposed or undecided, with current machine records where available.
+- Show outlet height and roof geometry; identify feed, access and transport constraints affecting the assembly.
+- Note ground or floor support constraints, weather exposure questions and the available power information for separate technical review.
+- State destination documentation needs and ask which tooling, cutting and related components are included.
+
+This brief is the buyer's output from the article. It should let a reviewer identify exactly which feature can change, who may decide that change and which material the proposal must address.
 
 ### Define the reply before comparing prices
 
-Ask the supplier to distinguish input clarification, a conditional tooling proposal and evidence obtained under an agreed trial. Each is useful at a different stage. The reply should identify its profile and material basis, included components, exclusions and unresolved physical interfaces. A lower tooling price is not comparable if it excludes the cutter or assumes a different sample programme.
+Request the supplier's proposed profile and material basis, included tooling and machine components, and a clear description of any alternative. Ask which roof connection changes and which additional project decision that change requires. If no alternatives are allowed, say so in the enquiry rather than expecting the supplier to infer it from a sample.
 
-Keep commercial changes tied to their physical reason. If the machine package changes after the tooling discussion, send its new arrangement to the mounting and lift reviewers. If only a document label changes, establish whether the underlying material or geometry also changed. This prevents both unnecessary repetition and the silent reuse of evidence for a different object.
+Keep price changes linked to the physical scope. An offer for tooling alone differs from one including the cutter or other line components. If the resulting machine package changes, its revised arrangement needs to reach the lift and mounting reviewers. A tooling discussion is complete for purchasing purposes only when the buyer can tell what product and equipment the price describes.
 
 <!-- audit-section: limitations-not-fit -->
 ### Recognize a request that cannot advance
 
 The enquiry may not fit a configuration decision when the governing profile is disputed, material identity is missing, samples cannot be linked to their purpose, or no party owns the roof-system requirements. A photograph or familiar profile name cannot close those gaps. Keep the response at the level the available inputs support; do not use this guide to authorize production or installation.
-
-<!-- audit-section: cta-editorial-note -->
-### Request a profile and machine boundary review
-
-Send ARCLIFT the profile revision, material basis, sample status and the existing or proposed machine identity through a controlled project channel. Include the site roof relationship, outlet height reference, destination and transport assumptions that could change the machine package. As a technical selection and supply partner, ARCLIFT can coordinate questions across tooling and lift interfaces. Final compatibility and acceptance require project-specific engineering and commercial confirmation. This editorial guide and its reference photographs explain the questions; they are not trial results or approval of a roof system.
 
 ## FAQ
 
@@ -169,3 +183,10 @@ Provide its purpose, drawing revision, material identity and known production hi
 #### Does a tooling trial prove roof performance?
 
 No. A trial addresses the questions defined by its agreed conditions and observations. The complete roof assembly, installation and project approval remain separate responsibilities.
+
+<!-- audit-section: cta-editorial-note -->
+## Ask for a proposal against the marked profile
+
+[Request advice for forming-machine integration](/contact/?product=ARC-RF8&request=advice) with the marked profile brief, actual material basis and sample references. State which roof interfaces are mandatory, whether alternatives are allowed and whether the former is owned or part of the purchase. ARC-RF8 is the related forming-machine reference for the discussion; identify the intended lifting family separately. Ask ARCLIFT to coordinate a response showing the proposed profile, included machine scope and any changed roof connection requiring your project party's decision.
+
+Include the outlet height, site roof relationship and destination where they affect the machine package. This editorial brief organizes the enquiry; final roof-system choices and machine compatibility remain separate project-specific decisions.

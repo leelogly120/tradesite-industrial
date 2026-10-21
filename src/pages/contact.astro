@@ -6,7 +6,7 @@ const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://www.arclifteq.com';
 
 <BaseLayout
   title="Get a Quote — ARCLIFT"
-  description="Share your project height, panel profile, site conditions and destination for an engineering configuration review."
+  description="Ask ARCLIFT for an equipment quote, available technical documents or selection advice for roof-forming lifts and work platforms."
   transparentNav={false}
 >
 
@@ -37,57 +37,72 @@ const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://www.arclifteq.com';
     ],
   })} />
 
-  <!-- HERO BANNER -->
-  <section class="hero-banner" style="--banner-image:url('/images/banners/contact.webp');--banner-position:center 58%;">
-    <div class="overline">Contact</div>
-    <h1>GET A QUOTE</h1>
-    <p>Share your project height, panel profile, site conditions and destination for an engineering configuration review.</p>
+  <section class="contact-intro">
+    <div class="contact-shell">
+      <p class="contact-eyebrow">CONTACT ARCLIFT</p>
+      <h1>Let's find the right equipment for your job.</h1>
+      <p>Request a quote, ask for technical documents or get help choosing a lift or work platform. A short introduction is enough to start.</p>
+    </div>
   </section>
 
-  <!-- SPLIT LAYOUT -->
-  <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:64px;max-width:1200px;margin:0 auto;padding:clamp(60px,8vw,100px) var(--section-px);align-items:start;">
-    <!-- FORM -->
-    <div class="form-card">
-      <h2>Tell Us About Your Project</h2>
-      <p class="sub">Share the project conditions our engineering team needs to review the configuration.</p>
+  <div class="contact-shell contact-layout">
+    <section class="inquiry-card" aria-labelledby="inquiry-heading">
+      <h2 id="inquiry-heading">How can we help?</h2>
+      <p class="inquiry-intro">Your name and one contact method are required. Add any project details you already have.</p>
       <InquiryForm variant="contact" />
-    </div>
+      <noscript><p>Please enable JavaScript to use this form, or contact us directly by email or WhatsApp.</p></noscript>
+    </section>
 
-    <!-- SIDEBAR -->
-    <div style="padding-top:8px;">
-      <div class="contact-card">
-        <h3>Contact Us Directly</h3>
-        <div class="ci">
-          <div class="ci__icon">📱</div>
-          <div class="ci__text"><b>WhatsApp</b>+86 15617687185</div>
-        </div>
-        <div class="ci">
-          <div class="ci__icon">✉️</div>
-          <div class="ci__text"><b>Email</b>leelogly120@gmail.com</div>
-        </div>
-        <div class="ci">
-          <div class="ci__icon">🕐</div>
-          <div class="ci__text"><b>Working Hours</b>Mon–Sat, 9:00–18:00 (GMT+8)</div>
-        </div>
-      </div>
-      <div class="contact-card">
-        <h3>Why ARCLIFT</h3>
-        <div class="trust-badges">
-          <div class="trust-badge">✓ Engineering Review</div>
-          <div class="trust-badge">✓ Configuration Confirmed</div>
-          <div class="trust-badge">✓ Configuration Documentation</div>
-        </div>
-      </div>
-    </div>
+    <aside class="contact-sidebar" aria-label="Direct contact and next steps">
+      <section class="direct-contact">
+        <h2>Speak with us directly</h2>
+        <a href="https://wa.me/8615617687185"><span>WhatsApp</span><strong>+86 15617687185</strong><span aria-hidden="true">↗</span></a>
+        <a href="mailto:leelogly120@gmail.com"><span>Email</span><strong>leelogly120@gmail.com</strong><span aria-hidden="true">↗</span></a>
+        <p>English &amp; Chinese<br />Mon–Sat, 9:00–18:00 (GMT+8)</p>
+      </section>
+      <section class="next-steps">
+        <h2>What happens next</h2>
+        <ol>
+          <li><strong>Understand your application.</strong> Roof-panel forming, ceiling installation or wall work.</li>
+          <li><strong>Narrow the equipment options.</strong> Discuss the machine, working area, access and destination.</li>
+          <li><strong>Confirm the proposed configuration.</strong> Review the available documents and quotation details before ordering.</li>
+        </ol>
+        <p>Documents depend on the model and proposed configuration; this form sends a request rather than starting an automatic download.</p>
+        <a href="/products/">Browse equipment families →</a>
+      </section>
+    </aside>
   </div>
 </BaseLayout>
 
 
 <style>
-  @media (max-width: 768px) {
-    div[style*="grid-template-columns:1.2fr"] {
-      grid-template-columns: 1fr !important;
-      gap: 40px !important;
-    }
+  .contact-shell { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+  .contact-intro { padding: calc(var(--nav-height) + 48px) 0 42px; background: #eaf0f3; color: #273c47; border-bottom: 1px solid #c4d0d7; }
+  .contact-eyebrow { font-size: .8rem; font-weight: 700; letter-spacing: .12em; color: #123b50; margin-bottom: 15px; }
+  .contact-intro h1 { max-width: 850px; font-size: clamp(36px, 4.2vw, 58px); }
+  .contact-intro h1 + p { max-width: 780px; font-size: 1.1rem; margin-top: 18px; color: #526570; }
+  .contact-layout { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .85fr); gap: 64px; padding-block: 50px 76px; color: #273c47; }
+  .inquiry-card { min-width: 0; }
+  .inquiry-card h2, .contact-sidebar h2 { font-size: 1.6rem; margin-bottom: 14px; }
+  .inquiry-intro { color: #526570; margin: 0 0 25px; max-width: 50ch; font-size: 1rem; }
+  .contact-sidebar { min-width: 0; }
+  .direct-contact { background: #eaf0f3; padding: 28px; border: 1px solid #c4d0d7; }
+  .direct-contact a { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 17px 0; border-bottom: 1px solid #c4d0d7; min-height: 60px; }
+  .direct-contact a > span:first-child { grid-column: 1; color: #526570; font-size: .85rem; }
+  .direct-contact a strong { grid-column: 1; font-size: 1rem; overflow-wrap: anywhere; }
+  .direct-contact a > span:last-child { grid-column: 2; grid-row: 1 / 3; align-self: center; color: #123b50; }
+  .direct-contact a:hover strong { text-decoration: underline; text-underline-offset: 4px; }
+  .direct-contact p { margin-top: 20px; font-size: .9rem; color: #526570; }
+  .next-steps { margin-top: 36px; }
+  .next-steps ol { padding-left: 24px; }
+  .next-steps li { padding-left: 4px; margin-bottom: 18px; color: #526570; font-size: 1rem; }
+  .next-steps li strong { color: #273c47; }
+  .next-steps > p { margin-top: 25px; font-size: .85rem; color: #526570; }
+  .next-steps > a { display: inline-flex; align-items: center; min-height: 48px; margin-top: 18px; color: #123b50; font-weight: 600; }
+  .next-steps > a:hover { text-decoration: underline; text-underline-offset: 4px; }
+  @media (max-width: 800px) {
+    .contact-intro { padding-top: calc(var(--nav-height) + 30px); padding-bottom: 32px; }
+    .contact-layout { grid-template-columns: minmax(0, 1fr); gap: 40px; padding-top: 32px; }
+    .direct-contact { padding: 24px; }
   }
 </style>

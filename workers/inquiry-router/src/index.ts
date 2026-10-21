@@ -106,8 +106,14 @@ const markdown = (value: string, max: number) =>
     .map((character) => (markdownCharacters.has(character) ? `\\${character}` : character))
     .join('');
 
+const requestTypeLabels = {
+  quote: 'Quote',
+  datasheet: 'Technical documents',
+  advice: 'Selection advice',
+} as const;
+
 const formspreePayload = (inquiry: Inquiry, requestId: string) => ({
-  _subject: `ARCLIFT inquiry — ${inquiry.model || inquiry.product || 'Project review'}`,
+  _subject: `ARCLIFT ${requestTypeLabels[inquiry.requestType]} — ${inquiry.model || inquiry.product || 'Equipment inquiry'}`,
   requestId,
   ...inquiry,
 });
@@ -117,6 +123,7 @@ const dingTalkPayload = (inquiry: Inquiry, requestId: string) => {
   const lines = [
     `### ${title}`,
     `- Request ID: ${markdown(requestId, 80)}`,
+    `- Request type: ${requestTypeLabels[inquiry.requestType]}`,
     `- Name: ${markdown(inquiry.name, 120)}`,
     `- Company: ${markdown(inquiry.company, 160)}`,
     `- Country: ${markdown(inquiry.country, 100)}`,

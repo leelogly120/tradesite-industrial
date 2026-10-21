@@ -174,7 +174,7 @@ describe('inquiry worker', () => {
     });
   });
 
-  it('requires name, valid email and phone for contact submissions', async () => {
+  it('requires name and validates any supplied contact details', async () => {
     const fetchMock = vi.fn();
     const response = await handleRequest(
       request({
@@ -194,10 +194,25 @@ describe('inquiry worker', () => {
       fields: {
         name: expect.any(String),
         email: expect.any(String),
-        phone: expect.any(String),
       },
     });
     expect(fetchMock).not.toHaveBeenCalled();
+  });
+
+  it('routes a one-contact document request with normalized intent to both notifications', async () => {
+    const fetchMock = vi.fn()
+      .mockResolvedValueOnce(new Response('{}', { status: 200 }))
+      .mockResolvedValueOnce(new Response('{"errcode":0}', { status: 200 }));
+    const response = await handleRequest(request({
+      ...contactPayload, phone: '', model: 'ARC-C25', requestType: ' DATASHEET ',
+    }), env(), deps(fetchMock));
+    expect(response.status).toBe(200);
+    const formspree = JSON.parse(String(fetchMock.mock.calls[0]?.[1]?.body));
+    const dingTalk = JSON.parse(String(fetchMock.mock.calls[1]?.[1]?.body));
+    expect(formspree).toMatchObject({ requestType: 'datasheet', model: 'ARC-C25', phone: '' });
+    expect(formspree._subject).toContain('Technical documents');
+    expect(dingTalk.markdown.text).toContain('Request type: Technical documents');
+    expect(dingTalk.markdown.text).toContain('ARC');
   });
 
   it('keeps the full product-form validation threshold', async () => {

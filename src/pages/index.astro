@@ -1,122 +1,56 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { EQUIPMENT_CATALOG } from '../lib/equipment-catalog';
 const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://www.arclifteq.com';
 ---
-
-<BaseLayout
-  title="Elevated Roll-Forming Lifts & Large-Deck Platforms"
-  description="Explore truck-mounted and crawler-mounted lifts for roof-panel roll formers, plus large-deck ceiling platforms. ARCLIFT supports technical selection and supply."
-  ogImage="/images/equipment/elevated-roll-forming-platform.jpg"
-  transparentNav={false}
->
+<BaseLayout title="Elevated Roll-Forming Lifts & Large-Deck Platforms"
+  description="Truck-mounted and crawler-mounted lifts for roof-panel roll formers, plus large work platforms for ceiling and wall installation. Explore ARCLIFT equipment and request a quote."
+  ogImage="/images/equipment/coil-real-handling.webp" transparentNav={false}>
   <script type="application/ld+json" set:html={JSON.stringify({
-    '@context': 'https://schema.org', '@type': 'Organization',
-    name: 'ARCLIFT Equipment Co., Ltd.', url: siteUrl, logo: `${siteUrl}/images/logo.png`,
-    description: 'Integrated equipment supplier supporting technical selection for roof-level roll forming lifts and large-deck crawler platforms.',
-    contactPoint: { '@type': 'ContactPoint', telephone: '+86 15617687185', contactType: 'sales', availableLanguage: ['English', 'Chinese'] },
+    '@context':'https://schema.org','@type':'Organization',name:'ARCLIFT Equipment Co., Ltd.',url:siteUrl,logo:`${siteUrl}/images/logo.png`,
+    description:'Integrated equipment supplier supporting technical selection for roof-panel roll-forming lifts and large work platforms.',
+    contactPoint:{'@type':'ContactPoint',telephone:'+86 15617687185',contactType:'sales',availableLanguage:['English','Chinese']},
   })} />
-
-  <section class="a2-hero a2-shell" aria-labelledby="hero-title">
-    <div class="a2-hero-layout">
-      <div class="a2-hero-title">
-        <p class="a2-eyebrow">Roof-level roll-forming equipment</p>
-        <h1 id="hero-title">Lift the roll former.<br />Form closer to the roof.</h1>
-      </div>
-      <div class="a2-hero-media" data-equipment-hero>
-        <div class="a2-equipment-stage">
-          <figure class="a2-equipment-main">
-            <img src="/images/equipment/elevated-roll-forming-platform.jpg" width="349" height="405" alt="Extended lifting structure carrying an equipment platform above a crawler base" fetchpriority="high" />
-          </figure>
-          <figure class="a2-equipment-detail">
-            <img src="/images/equipment/elevated-platform-detail.jpg" width="312" height="405" alt="A separate reference view of the elevated equipment platform and folding support" />
-            <figcaption>Platform and support detail</figcaption>
-          </figure>
-        </div>
-        <p class="a2-caption">Equipment reference views. Final configuration and application require review.</p>
-      </div>
-      <div class="a2-hero-copy">
-        <p>Truck-mounted and crawler-mounted lifting equipment for roof-panel roll formers.</p>
-        <div class="a2-actions">
-          <a class="a2-button" href="/products/">Explore lifting systems</a>
-          <a class="a2-text-link" href="#matching">What to prepare</a>
-        </div>
-      </div>
-    </div>
+  <section class="home-hero a2-shell" aria-labelledby="hero-title">
+    <div class="home-hero-title"><p class="a2-eyebrow">ARCLIFT / Roof-forming equipment</p><h1 id="hero-title">Lifting systems for roof-panel roll forming.</h1><p class="hero-lead">Truck-mounted and crawler-mounted systems that raise compatible roof-panel roll formers toward roof level.</p></div>
+    <figure class="hero-photo" data-equipment-hero><img src="/images/equipment/coil-real-handling.webp" width="593" height="411" alt="Elevated red roof-panel forming equipment beside a steel-frame building, with a long panel at the roof edge" fetchpriority="high" /><figcaption>Elevated roof-panel forming equipment beside a steel-frame building.</figcaption></figure>
+    <div class="hero-actions"><div class="a2-actions"><a class="a2-button" href="/products/">View products <span aria-hidden="true">↗</span></a><a class="a2-button quote-outline" href="/contact/">Get a quote</a></div><p>Equipment selection &amp; supply · Xinxiang, Henan, China</p></div>
   </section>
-
-  <div class="a2-shell a2-identity">
-    <p><strong>ARCLIFT</strong> is an integrated equipment supplier and technical selection and supply partner.</p>
-    <p class="a2-identity-scope">Roof-level forming<br />Under-ceiling platforms</p>
-  </div>
-
-  <section class="a2-shell a2-section" aria-labelledby="systems-title">
-    <div class="a2-section-head">
-      <h2 id="systems-title">Two lifting arrangements.<br />Start with your site.</h2>
-      <p>The roll former, site access and transport plan help define the equipment route.</p>
-    </div>
-    <div class="a2-route-grid">
-      <article class="a2-route">
-        <figure>
-          <div class="a2-route-photo"><img src="/images/equipment/coil-handling-workflow.jpg" width="494" height="412" alt="Truck-carried lifting equipment shown handling a steel coil alongside the structure" loading="lazy" /></div>
-          <figcaption class="a2-caption">Reference: truck-carried material handling, not roof-panel production.</figcaption>
-        </figure>
-        <h3>Truck-mounted</h3>
-        <p>Bring the chassis interface, machine layout and available setup area into the same discussion.</p>
-        <a class="a2-text-link" href="/products/#truck-mounted-roll-forming-lifts">Explore truck-mounted systems <span aria-hidden="true">↗</span></a>
-        <p class="a2-route-input"><strong>Prepare:</strong> chassis information, machine dimensions, site layout.</p>
-      </article>
-      <article class="a2-route">
-        <figure>
-          <div class="a2-route-photo"><img class="a2-crawler-photo" src="/images/equipment/crawler-transport.jpg" width="543" height="306" alt="Folded crawler lifting equipment secured on a lowboy trailer" loading="lazy" /></div>
-          <figcaption class="a2-caption">Reference: crawler equipment in transport, not an operating setup.</figcaption>
-        </figure>
-        <h3>Crawler-mounted</h3>
-        <p>Plan the access route, support conditions and transport arrangement around the machine.</p>
-        <a class="a2-text-link" href="/products/#crawler-roll-forming-lifts">Explore crawler-mounted systems <span aria-hidden="true">↗</span></a>
-        <p class="a2-route-input"><strong>Prepare:</strong> access details, ground information, transport plan.</p>
-      </article>
-    </div>
+  <section class="a2-shell home-section" id="equipment-series" aria-labelledby="series-title">
+    <div class="home-section-head"><div><p class="a2-eyebrow">Product series</p><h2 id="series-title">Choose equipment<br />around the work.</h2></div><p>Roof-panel forming lifts carry the machine. Large work platforms provide access for ceiling and wall installation.</p></div>
+    <div class="series-grid">{EQUIPMENT_CATALOG.map((family,index)=>(<article class="series-card">
+      <a class="series-photo" href={`/products/#${family.id}`} aria-label={`Explore ${family.name}`}><img src={family.image.src} width={family.image.width} height={family.image.height} alt={family.image.alt} loading="lazy" /></a>
+      <p class="series-number">0{index+1} / {index<2?'Roof-panel forming':'Ceiling & wall access'}</p><h3><a href={`/products/#${family.id}`}>{family.name}</a></h3><p>{family.description}</p><ul>{family.features.slice(0,3).map(feature=><li>{feature}</li>)}</ul><a class="a2-text-link" href={`/products/#${family.id}`}>Explore series <span aria-hidden="true">→</span></a>
+    </article>))}</div>
+    <p class="related-equipment">Planning the complete forming arrangement? See <a href="/products/#roll-forming-machines">forming-machine integration</a> and the <a href="/compare/">reference comparison</a>.</p>
   </section>
-
-  <section class="a2-band" id="matching" aria-labelledby="matching-title">
-    <div class="a2-shell">
-      <div class="a2-section-head"><h2 id="matching-title">The lift starts with<br />the forming machine.</h2><p>Height alone is not a complete selection brief. Gather these inputs before comparing configurations.</p></div>
-      <dl class="a2-inputs">
-        <div><dt>Machine &amp; interface</dt><dd>Roll-former weight, dimensions and mounting arrangement.</dd></div>
-        <div><dt>Outlet &amp; receiving area</dt><dd>Target outlet height, roof edge and planned panel handover.</dd></div>
-        <div><dt>Site &amp; transport</dt><dd>Access, setup space, support conditions and destination.</dd></div>
-      </dl>
-      <a class="a2-text-link" href="/blog/high-altitude-roll-forming-lift-rfq-data/">Build a useful equipment brief <span aria-hidden="true">→</span></a>
-    </div>
+  <section class="application-band" id="matching" aria-labelledby="application-title"><div class="a2-shell application-grid">
+    <figure><img src="/images/equipment/coil-real-module.webp" width="607" height="563" alt="Blue forming-machine module suspended beside a red crawler lifting structure" loading="lazy" /><figcaption>A forming-machine module beside crawler lifting equipment.</figcaption></figure>
+    <div><p class="a2-eyebrow">How the equipment fits the job</p><h2 id="application-title">Bring the forming machine closer to the panel handover.</h2><p>The lifting structure positions a compatible roll former near the planned roof-level outlet. The forming machine, its mounting interface and the panel receiving area are considered together.</p><dl><div><dt>Machine &amp; lift</dt><dd>Machine mass, mounting layout, power and controls.</dd></div><div><dt>Roof &amp; panel</dt><dd>Outlet position, panel path and the receiving work area.</dd></div><div><dt>Site &amp; delivery</dt><dd>Access, setup space, support conditions and destination.</dd></div></dl><a class="a2-text-link" href="/blog/roof-level-roll-forming-long-panels/">Explore roof-level roll forming →</a></div>
+  </div></section>
+  <section class="a2-shell home-section company-grid" aria-labelledby="company-title">
+    <div><p class="a2-eyebrow">About ARCLIFT</p><h2 id="company-title">A clear route from your project to an equipment proposal.</h2><p>ARCLIFT is an integrated equipment supplier and technical selection and supply partner based in Xinxiang, Henan, China.</p><p>We help contractors, distributors and importers connect the installation task, machine layout and transport requirements into a clear supply scope.</p><ol><li><strong>Understand the task</strong><span>Roof-panel forming, ceiling installation or wall access.</span></li><li><strong>Match the arrangement</strong><span>Lift, forming machine or work deck, and the site interfaces.</span></li><li><strong>Define the supply</strong><span>Equipment, agreed options, documents and transport requirements.</span></li></ol><a class="a2-text-link" href="/about/">Meet ARCLIFT →</a></div>
+    <figure><img src="/images/equipment/transport-real-cover.webp" width="744" height="419" alt="Folded red crawler equipment on a low-bed carrier beside a building" loading="lazy" /><figcaption>Crawler equipment on a low-bed carrier. Transport dimensions and the supply scope are part of equipment selection.</figcaption></figure>
   </section>
-
-  <section class="a2-shell a2-section a2-split" id="ceiling" aria-labelledby="ceiling-title">
-    <figure class="a2-ceiling-photo">
-      <img src="/images/equipment/under-ceiling-large-deck.jpg" width="611" height="452" alt="Large-deck platform positioned below the steel roof structure inside a building" loading="lazy" />
-      <figcaption class="a2-caption">Under-ceiling platform reference. Main-deck and extension-zone loads need separate confirmation.</figcaption>
-    </figure>
-    <div class="a2-split-copy">
-      <p class="a2-eyebrow">A separate product line</p>
-      <h2 id="ceiling-title">More working area.<br />Beneath the ceiling.</h2>
-      <p>Large-deck platforms for under-ceiling work. Review deck layout and overhead clearance separately from roof-forming equipment.</p>
-      <a class="a2-text-link" href="/products/#crawler-ceiling-platforms">Explore ceiling platforms <span aria-hidden="true">↗</span></a>
-    </div>
-  </section>
-
   <section class="a2-reading a2-shell" aria-labelledby="reading-title">
-    <div class="a2-section-head"><h2 id="reading-title">Plan the interfaces,<br />not just the height.</h2><a class="a2-text-link" href="/blog/">All technical guides <span aria-hidden="true">→</span></a></div>
+    <div class="home-section-head"><div><p class="a2-eyebrow">Technical guides</p><h2 id="reading-title">Practical answers before you buy.</h2></div><a class="a2-text-link" href="/blog/">All guides →</a></div>
     <div class="a2-reading-links">
-      <a href="/blog/crawler-vs-truck-mounted-roll-forming-system/"><span>Equipment selection</span><h3>Crawler or truck-mounted?</h3><p>Compare the route, setup and transport questions.</p><span aria-hidden="true">↗</span></a>
-      <a href="/blog/elevated-roll-forming-roof-panel-handover-zones/"><span>Roof interface</span><h3>Where does the panel go next?</h3><p>Think through the outlet, support and receiving area.</p><span aria-hidden="true">↗</span></a>
-      <a href="/blog/40hq-shipping-truck-mounted-roll-forming-lift/"><span>Delivery planning</span><h3>What needs a packing review?</h3><p>Separate a shipping concept from an approved load plan.</p><span aria-hidden="true">↗</span></a>
-    </div>
-    <p class="a2-related-line">Also explore <a href="/products/#roll-forming-machines">roll-forming machine references</a> or the <a href="/compare/">equipment comparison workspace</a>.</p>
-  </section>
-
-  <section class="a2-inquiry" aria-labelledby="inquiry-title">
-    <div class="a2-shell a2-inquiry-inner">
-      <h2 id="inquiry-title">Tell us about<br />your roll former.</h2>
-      <div><p>Planning a project or sourcing for your market? Start with the machine, the output position and the site.</p><a class="a2-button a2-button--orange" href="/contact/">Send your equipment brief</a><div class="a2-contact-links"><a href="https://wa.me/8615617687185">WhatsApp: +86 15617687185</a><a href="mailto:leelogly120@gmail.com">leelogly120@gmail.com</a></div></div>
+      <a href="/blog/crawler-vs-truck-mounted-roll-forming-system/"><span>Choose a base</span><h3>Crawler or truck-mounted?</h3><p>Compare site positioning, setup and transport needs.</p><span aria-hidden="true">↗</span></a>
+      <a href="/blog/elevated-roll-forming-roof-panel-handover-zones/"><span>Plan the output</span><h3>Where does the panel go next?</h3><p>Connect the machine outlet to the roof receiving area.</p><span aria-hidden="true">↗</span></a>
+      <a href="/blog/40hq-shipping-truck-mounted-roll-forming-lift/"><span>Define delivery</span><h3>What is included in shipment?</h3><p>Compare the packed equipment, chassis and assembly scope.</p><span aria-hidden="true">↗</span></a>
     </div>
   </section>
+  <section class="a2-inquiry" aria-labelledby="inquiry-title"><div class="a2-shell a2-inquiry-inner"><h2 id="inquiry-title">Let's find the right<br />equipment arrangement.</h2><div><p>Tell us what you need to form or install and where the equipment will work. Start with a short inquiry.</p><a class="a2-button a2-button--orange" href="/contact/">Get a quote</a><div class="a2-contact-links"><a href="https://wa.me/8615617687185">WhatsApp: +86 15617687185</a><a href="mailto:leelogly120@gmail.com">leelogly120@gmail.com</a></div></div></div></section>
+  <style>
+    img{object-fit:contain}
+    .home-hero{padding-block:calc(var(--nav-height) + 46px) 58px;display:grid;grid-template-columns:1fr 1.02fr;gap:0 50px;align-items:center}.home-hero-title{grid-column:1;grid-row:1}.home-hero h1{font-size:clamp(40px,4.1vw,60px);max-width:620px;margin:0;color:#123b50;line-height:1.05}.hero-lead{font-size:21px;line-height:1.5;margin:24px 0 0;max-width:45ch}
+    .hero-photo{grid-column:2;grid-row:1/3;margin:0;background:#eaf0f3;padding:16px;align-self:stretch;display:flex;flex-direction:column;justify-content:center;border-bottom:4px solid #dc681c}.hero-photo img{width:100%;height:auto;display:block}.hero-photo figcaption{font-size:13px;padding:12px 2px 0;line-height:1.5;color:#526570}.hero-actions{grid-column:1;grid-row:2;align-self:start}.hero-actions>p{font-size:14px;color:#526570;margin:20px 0 0}.quote-outline{background:transparent;color:#123b50;border:1px solid #123b50}.quote-outline:hover{color:#fff}
+    .home-section{padding-block:60px;border-top:1px solid #c4d0d7}.home-section-head{display:flex;align-items:end;justify-content:space-between;gap:36px;margin-bottom:34px}.home-section-head h2,.application-grid h2,.company-grid h2{font-size:40px;color:#123b50;margin:0;max-width:19ch}.home-section-head>p{max-width:42ch;font-size:18px;line-height:1.6;margin:0}
+    .series-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px}.series-card{min-width:0;display:flex;flex-direction:column}.series-photo{display:flex;height:202px;background:#eaf0f3;padding:12px;align-items:center;justify-content:center}.series-photo img{width:100%;height:100%;object-fit:contain}.series-number{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#526570;margin:18px 0 10px}.series-card h3{font-size:26px;line-height:1.13;margin:0 0 14px;color:#123b50}.series-card h3 a{color:inherit}.series-card h3 a:hover{text-decoration:underline}.series-card>p:not(.series-number){font-size:16px;line-height:1.6;margin:0 0 18px}.series-card ul{list-style:none;padding:0;margin:0 0 20px;font-size:15px;line-height:1.5}.series-card li{padding:8px 0;border-top:1px solid #dbe3e7}.series-card>.a2-text-link{margin-top:auto;font-size:16px}.related-equipment{border-top:1px solid #c4d0d7;margin:32px 0 0;padding-top:20px;font-size:16px}.related-equipment a{color:#123b50;text-decoration:underline;text-underline-offset:3px}
+    .application-band{background:#eaf0f3;padding-block:60px}.application-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.application-grid figure,.company-grid figure{margin:0}.application-grid figure img{display:block;width:100%;height:auto;max-height:460px;object-fit:contain}.application-grid figcaption,.company-grid figcaption{font-size:13px;color:#526570;line-height:1.5;padding-top:12px}.application-grid p{margin:20px 0}.application-grid dl{margin:28px 0}.application-grid dl>div{display:grid;grid-template-columns:140px 1fr;gap:16px;border-top:1px solid #c4d0d7;padding-block:12px}.application-grid dt{font-weight:600}.application-grid dd{font-size:16px;margin:0}
+    .company-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.company-grid p{margin:20px 0}.company-grid ol{list-style:none;counter-reset:steps;padding:0;margin:26px 0}.company-grid li{counter-increment:steps;display:grid;grid-template-columns:35px 1fr;gap:3px 10px;padding:12px 0;border-top:1px solid #dbe3e7}.company-grid li:before{content:'0' counter(steps);grid-row:1/3;font-size:14px;color:#a94808}.company-grid li span{font-size:16px;grid-column:2}.company-grid img{width:100%;height:auto;display:block}.a2-reading{padding-top:20px}.a2-reading h2{max-width:20ch}.a2-inquiry h2{font-size:42px}
+    @media(max-width:1100px){.home-hero{gap:0 30px}.series-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:38px 28px}.series-photo{height:260px}.application-grid,.company-grid{gap:36px}}
+    @media(max-width:768px){.home-hero{padding-top:calc(var(--nav-height) + 30px);gap:24px;grid-template-columns:1fr}.home-hero-title,.hero-photo,.hero-actions{grid-column:1;grid-row:auto}.home-hero h1{font-size:43px;max-width:16ch}.hero-lead{font-size:19px}.hero-photo{padding:12px}.hero-actions .a2-actions{margin-top:0}.home-section,.application-band{padding-block:42px}.home-section-head{display:block}.home-section-head>p{margin-top:20px}.home-section-head h2,.application-grid h2,.company-grid h2{font-size:34px}.application-grid,.company-grid{grid-template-columns:1fr;gap:30px}.application-grid figure,.company-grid figure{order:2}.application-grid dl>div{grid-template-columns:120px 1fr}.series-card h3{font-size:25px}.a2-inquiry h2{font-size:34px}}
+    @media(max-width:520px){.series-grid{grid-template-columns:1fr;gap:38px}.series-photo{height:auto;min-height:200px}.series-photo img{max-height:280px}.series-card h3{max-width:18ch}.hero-actions .a2-actions{gap:10px}.home-hero h1{font-size:39px}.application-grid dl>div{grid-template-columns:1fr;gap:4px}}
+  </style>
 </BaseLayout>

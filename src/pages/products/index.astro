@@ -1,220 +1,115 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { PRODUCT_FAMILIES, PRODUCT_REFERENCES, buildProductView } from '../../lib/product-selection';
+import { EQUIPMENT_CATALOG, RELATED_FORMING_EQUIPMENT } from '../../lib/equipment-catalog';
 import { getCollection } from 'astro:content';
-import GuideLinks from '../../components/GuideLinks.astro';
-import { getProductGuides } from '../../lib/guide-navigation';
-import EquipmentDiagram from '../../components/EquipmentDiagram.astro';
-
-function diagramFamily(familyId: string): 'crawler' | 'truck' | 'ceiling' | 'former' {
-  if (familyId === 'crawler-roll-forming-lifts') return 'crawler';
-  if (familyId === 'truck-mounted-roll-forming-lifts') return 'truck';
-  if (familyId === 'crawler-ceiling-platforms') return 'ceiling';
-  return 'former';
-}
 
 const allProducts = (await getCollection('products')).filter(product => !product.data.draft);
-const allGuides = await getCollection('blog');
 const productsBySlug = new Map(allProducts.map(product => [product.id, product]));
-const familySections = PRODUCT_FAMILIES.map(family => ({
-  ...family,
-  diagramFamily: diagramFamily(family.id),
-  references: PRODUCT_REFERENCES
-    .filter(reference => reference.familyId === family.id)
-    .map(reference => {
-      const product = productsBySlug.get(reference.slug);
-      if (!product) throw new Error(`Missing public product entry: ${reference.slug}`);
-      const view = buildProductView(product);
-      if (!view) throw new Error(`Missing public product view: ${reference.slug}`);
-      return { ...view, product };
-    }),
+const referencesByFamily = new Map<string, NonNullable<ReturnType<typeof buildProductView>>[]>(PRODUCT_FAMILIES.map(family => [family.id, PRODUCT_REFERENCES
+  .filter(reference => reference.familyId === family.id)
+  .map(reference => {
+    const product = productsBySlug.get(reference.slug);
+    if (!product) throw new Error(`Missing public product entry: ${reference.slug}`);
+    const view = buildProductView(product);
+    if (!view) throw new Error(`Missing public product view: ${reference.slug}`);
+    return view;
+  })]));
+const familySections = [...EQUIPMENT_CATALOG, RELATED_FORMING_EQUIPMENT].map(equipment => ({
+  ...equipment,
+  references: equipment.referenceFamilyId ? referencesByFamily.get(equipment.referenceFamilyId) ?? [] : [],
+  quoteUrl: `/contact/?product=${equipment.id === 'roll-forming-machines' ? 'ARC-RF8' : equipment.id}&request=quote`,
 }));
 const itemListSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'ItemList',
-  name: 'ARCLIFT equipment reference index',
+  '@context': 'https://schema.org', '@type': 'ItemList', name: 'ARCLIFT equipment reference index',
   itemListElement: PRODUCT_REFERENCES.map((reference, position) => ({
-    '@type': 'ListItem',
-    position: position + 1,
-    item: {
-      '@type': 'WebPage',
-      name: `${reference.model} reference page`,
-      url: new URL(`/products/${reference.slug}/`, Astro.url).href,
-    },
+    '@type': 'ListItem', position: position + 1,
+    item: { '@type': 'WebPage', name: `${reference.model} reference page`, url: new URL(`/products/${reference.slug}/`, Astro.url).href },
   })),
 };
 ---
 
-<BaseLayout
-  title="Truck & Crawler Roll-Forming Lifts | ARCLIFT Equipment"
-  description="Compare truck-mounted and crawler-mounted lifting equipment for roof-panel roll formers. Explore ceiling platforms and prepare a project-specific equipment brief."
-  transparentNav={false}
->
+<BaseLayout title="Truck & Crawler Roll-Forming Lifts | ARCLIFT Equipment" description="Explore truck and crawler roof-forming lifts, large-deck crawler platforms and truck-mounted work platforms. Compare equipment references and request a project quote." transparentNav={false}>
   <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
-
-  <section class="a2-page-head a2-shell">
-    <p class="a2-eyebrow">Lifting systems / Equipment overview</p>
-    <h1>Roll-forming lifts.<br />Matched to your machine.</h1>
-    <p class="a2-lead">Truck-mounted and crawler-mounted lifts for roof-panel roll formers. Start with the machine interface and the site—not a height figure alone.</p>
-    <div class="a2-actions"><a class="a2-button" href="#equipment-routes">Explore lifting systems</a><a class="a2-text-link" href="/contact/">Discuss your equipment brief →</a></div>
-  </section>
-  <section class="a2-shell a2-product-routes" id="equipment-routes" aria-label="Roof-forming lifting arrangements">
-    <div class="a2-route-grid">
-      <article class="a2-route">
-        <figure><div class="a2-route-photo"><img src="/images/equipment/coil-handling-workflow.jpg" width="494" height="412" alt="Truck-carried lifting equipment handling a coil alongside the structure" fetchpriority="high" /></div><figcaption class="a2-caption">Truck-carried handling reference—not roof-panel production or a model specification.</figcaption></figure>
-        <h2>Truck-mounted</h2><p>Coordinate the chassis, forming machine and setup space as one equipment brief.</p>
-        <details class="a2-route-checklist"><summary>What to bring to the review</summary><ul><li>Chassis information and destination requirements.</li><li>Roll-former dimensions, weight and mounting arrangement.</li><li>Setup layout, output position and transport constraints.</li></ul></details>
-        <a class="a2-text-link" href="#truck-mounted-roll-forming-lifts">View truck-mounted references →</a>
-      </article>
-      <article class="a2-route">
-        <figure><div class="a2-route-photo"><img class="a2-crawler-photo" src="/images/equipment/crawler-transport.jpg" width="543" height="306" alt="Folded crawler lifting equipment carried on a lowboy trailer" /></div><figcaption class="a2-caption">Crawler transport reference—not an operating setup or ground-support approval.</figcaption></figure>
-        <h2>Crawler-mounted</h2><p>Bring the access route, support conditions and delivery arrangement into selection.</p>
-        <details class="a2-route-checklist"><summary>What to bring to the review</summary><ul><li>Measured access route and setup space.</li><li>Ground or floor information for competent review.</li><li>Transport arrangement, machine interface and panel receiving area.</li></ul></details>
-        <a class="a2-text-link" href="#crawler-roll-forming-lifts">View crawler-mounted references →</a>
-      </article>
+  <section class="catalog-intro catalog-shell">
+    <div class="catalog-intro__copy">
+      <p class="eyebrow">ARCLIFT equipment</p>
+      <h1>Roof-forming lifts<br />and large work platforms.</h1>
+      <p>Raise the forming machine for roof-panel production, or position a working deck for installation. Find the equipment route for your project.</p>
+      <a class="catalog-link" href="/contact/?request=advice">Get help choosing equipment →</a>
     </div>
-    <div class="a2-secondary-route"><p><strong>Working below a ceiling?</strong> Large-deck ceiling platforms are a separate product line—not a third base option for the same roof-forming task.</p><a class="a2-text-link" href="#crawler-ceiling-platforms">Explore ceiling platforms →</a></div>
+    <figure class="catalog-intro__photo" data-catalog-photo>
+      <img src="/images/equipment/coil-real-handling.webp" width="593" height="411" alt="Elevated roof-forming equipment beside a steel-frame building, with sheet output extending to the right" fetchpriority="high" />
+      <figcaption>Elevated forming-equipment setup beside building steelwork.</figcaption>
+    </figure>
   </section>
-
-  <nav class="family-nav" aria-label="Equipment families">
-    {familySections.map(family => <a href={`#${family.anchor}`}>{family.shortName}</a>)}
+  <nav id="equipment-routes" class="family-nav catalog-shell" aria-label="Equipment families">
+    {EQUIPMENT_CATALOG.map(equipment => <a href={`#${equipment.id}`}>{equipment.shortName}</a>)}
   </nav>
-
   <section class="comparison" aria-labelledby="comparison-title">
-    <div>
-      <p class="eyebrow">Progressive comparison</p>
-      <h2 id="comparison-title">Compare selected references</h2>
-      <p id="compare-summary" aria-live="polite">No references selected. Choose up to four references.</p>
-    </div>
+    <div><h2 id="comparison-title">Compare selected references</h2><p id="compare-summary" aria-live="polite">No references selected. Choose up to four references.</p></div>
     <button type="button" class="compare-button" data-compare-button disabled>Compare selected</button>
   </section>
-
-  <section id="families" class="families" aria-labelledby="families-title">
-    <div class="families__heading">
-      <p class="eyebrow">Equipment reference library</p>
-      <h2 id="families-title">Explore the configuration questions.</h2>
-      <p>ARCLIFT is an integrated equipment supplier and technical selection and supply partner. These retained references explain open questions; they are not current offers or approved specifications.</p>
-    </div>
-
-    {familySections.map(family => (
-      <section class="family-section" id={family.anchor}>
+  <div id="families" class="catalog-shell families">
+    <aside class="family-reference-boundary">
+      <strong>About the model references</strong>
+      <p>Model codes and numerical classes below are archived or concept references for an initial discussion. Current specifications and options are confirmed in the signed technical schedule, approved drawings and applicable load chart. Photographs show equipment families and working contexts, not individual ARC models.</p>
+    </aside>
+    {familySections.map((family, index) => (
+      <section class:list={['family-section', { 'family-section--related': index === 4 }]} id={family.id}>
         <div class="family-card">
           <div class="family-card__content">
-            <p class="eyebrow">{family.category}</p>
+            <p class="eyebrow">{index === 4 ? 'Related equipment' : `Equipment ${String(index + 1).padStart(2, '0')}`}</p>
             <h2>{family.name}</h2>
-            <p>{family.workflow}</p>
-            <div class="family-card__columns">
-              <div>
-                <h3>Review these workflows</h3>
-                <ul>
-                  {family.workflowsToAssess.map(workflow => <li>{workflow}</li>)}
-                </ul>
-              </div>
-              <div>
-                <h3>Bring these documents</h3>
-                <ul>
-                  {family.requiredDocuments.map(document => <li>{document}</li>)}
-                </ul>
-              </div>
-            </div>
+            <p>{family.description}</p>
+            <ul class="equipment-features" data-equipment-features>{family.features.map(feature => <li>{feature}</li>)}</ul>
+            <a class="catalog-button" href={family.quoteUrl}>Request a quote →</a>
           </div>
-          <div class="family-card__image-wrap">
-            <EquipmentDiagram family={family.diagramFamily} compact />
+          <figure class="family-card__photo" data-equipment-photo>
+            <img src={family.image.src} width={family.image.width} height={family.image.height} alt={family.image.alt} loading={index === 0 ? 'eager' : 'lazy'} fetchpriority={index === 0 ? 'high' : 'auto'} />
+            <figcaption>{family.image.caption}</figcaption>
+          </figure>
+        </div>
+        {family.references.length > 0 ? (
+          <div class="reference-grid" aria-label={`${family.name} model references`}>
+            {family.references.map(reference => (
+              <article class="reference-card">
+                <div class="reference-card__topline"><strong>{reference.model}</strong><span class="status-badge">{reference.status}</span></div>
+                <p class="reference-orientation"><span>{reference.orientation.label}:</span> {reference.orientation.value}</p>
+                {reference.confirmationGate.includes('packing plan') && <p class="reference-gate">40HQ route requires project-specific packing confirmation.</p>}
+                <a class="detail-link" href={`/products/${reference.slug}/`}>View {reference.model} details <span aria-hidden="true">→</span></a>
+                <label class="compare-choice"><input type="checkbox" value={reference.slug} data-compare-item /><span>Compare {reference.model}</span></label>
+              </article>
+            ))}
           </div>
-        </div>
-        <GuideLinks id={`${family.id}-guides`} title={`Guides for ${family.shortName.toLowerCase()}`} introduction="Understand the project questions before comparing reference configurations." links={getProductGuides(family.id, allGuides)} compact />
-
-        <div class="reference-heading">
-          <div>
-            <p class="eyebrow">Retained references</p>
-            <h3>{family.references.length} detail {family.references.length === 1 ? 'page' : 'pages'} for this family</h3>
-          </div>
-          <p>Open an ordinary detail link for the archived or conceptual reference context before adding it to a comparison.</p>
-        </div>
-        <aside class="family-reference-boundary">
-          <strong>Reference boundary</strong>
-          <p>Editorial planning visual — not model-specific evidence. Card values are archived orientation or reference-concept records only. Signed technical schedules, approved drawings and approved load charts control configuration and project suitability.</p>
-        </aside>
-        <div class="reference-grid">
-          {family.references.map(reference => (
-            <article class="reference-card">
-              <div class="reference-card__topline">
-                <p>{reference.model}</p>
-                <span class="status-badge">{reference.status}</span>
-              </div>
-              <p class="status-note">{reference.statusNote}</p>
-              {reference.status !== 'Archived reference' && <p class="reference-exception">{reference.scopeStatement}</p>}
-              <p class="reference-orientation"><strong>{reference.orientation.label}:</strong> {reference.orientation.value}</p>
-              {reference.confirmationGate.includes('packing plan') && (
-                <p class="reference-gate"><strong>Additional route gate:</strong> {reference.confirmationGate}</p>
-              )}
-              <p class="buyer-question">{reference.buyerQuestion}</p>
-              <a class="detail-link" href={`/products/${reference.slug}/`}>Open {reference.model} reference details <span aria-hidden="true">→</span></a>
-              <label class="compare-choice">
-                <input type="checkbox" value={reference.slug} data-compare-item />
-                <span>Add {reference.model} to comparison</span>
-              </label>
-            </article>
-          ))}
-        </div>
+        ) : (
+          <p class="configuration-note">Discuss the working-deck layout, truck chassis and installation task together. This configuration route is quoted around the project; it has no separate ARC model reference in this catalogue.</p>
+        )}
       </section>
     ))}
+  </div>
+  <section id="product-inputs" class="catalog-shell inputs">
+    <div><p class="eyebrow">Start a useful conversation</p><h2>Prepare these inputs</h2><p>Send the work height and working area, forming-machine or deck task, site access, support conditions and destination. We use these details to define the equipment and supply scope.</p></div>
+    <a class="catalog-button" href="/contact/?request=advice">Discuss your project →</a>
   </section>
-
-  <section id="product-inputs" class="inputs" aria-labelledby="inputs-title">
-    <div class="inputs__intro">
-      <p class="eyebrow">Prepare the review</p>
-      <h2 id="inputs-title">Prepare these inputs</h2>
-      <p>Bring the project facts that change the work route, interfaces and required documentation.</p>
-    </div>
-    <div class="inputs__grid">
-      {familySections.map(family => (
-        <article class="input-card">
-          <h3>{family.shortName}</h3>
-          <ul>
-            {family.projectInputs.map(input => <li>{input}</li>)}
-          </ul>
-        </article>
-      ))}
-    </div>
-  </section>
-
-  <section class="cta">
-    <h2>READY TO ORGANIZE A PROJECT REVIEW?</h2>
-    <p>Send the work zones, drawings, route conditions and documentation available for the selected workflow.</p>
-    <a href="/contact/" class="btn--white">Request a Project Review →</a>
-  </section>
-
   <script>
     const compareItems = Array.from(document.querySelectorAll<HTMLInputElement>('[data-compare-item]'));
     const compareButton = document.querySelector<HTMLButtonElement>('[data-compare-button]');
     const compareSummary = document.querySelector<HTMLElement>('#compare-summary');
     const comparison = document.querySelector<HTMLElement>('.comparison');
-
     function measureComparison() {
-      const height = comparison && getComputedStyle(comparison).position === 'sticky'
-        ? comparison.getBoundingClientRect().height
-        : 0;
+      const height = comparison && getComputedStyle(comparison).position === 'sticky' ? comparison.getBoundingClientRect().height : 0;
       document.documentElement.style.setProperty('--comparison-offset', `${height}px`);
     }
-
-    function selectedReferences() {
-      return compareItems.filter(item => item.checked).map(item => item.value).slice(0, 4);
-    }
-
+    function selectedReferences() { return compareItems.filter(item => item.checked).map(item => item.value).slice(0, 4); }
     function updateComparison() {
       const selected = selectedReferences();
       comparison?.classList.toggle('comparison--active', selected.length > 0);
       for (const item of compareItems) item.disabled = !item.checked && selected.length >= 4;
       if (compareButton) compareButton.disabled = selected.length === 0;
-      if (compareSummary) {
-        compareSummary.textContent = selected.length
-          ? `${selected.length} reference${selected.length === 1 ? '' : 's'} selected. You can compare up to four.`
-          : 'No references selected. Choose up to four references.';
-      }
+      if (compareSummary) compareSummary.textContent = selected.length ? `${selected.length} reference${selected.length === 1 ? '' : 's'} selected. You can compare up to four.` : 'No references selected. Choose up to four references.';
       measureComparison();
     }
-
     if (comparison && 'ResizeObserver' in window) new ResizeObserver(measureComparison).observe(comparison);
     window.addEventListener('resize', measureComparison, { passive: true });
     compareItems.forEach(item => item.addEventListener('change', updateComparison));
@@ -224,78 +119,82 @@ const itemListSchema = {
     });
     updateComparison();
   </script>
-
   <style>
-    .a2-product-routes { padding-bottom: 56px; }
-    .a2-product-routes h2 { margin-top: 24px; font-size: 32px; color: #123b50; }
-    .a2-route-checklist { border-block: 1px solid #c4d0d7; margin: 20px 0 10px; }
-    .a2-route-checklist summary { cursor: pointer; padding: 14px 0; min-height: 48px; font-weight: 600; color: #123b50; }
-    .a2-route-checklist ul { margin: 0 0 18px; padding-left: 20px; color: #526570; font-size: 17px; }
-    .a2-route-checklist li { margin-block: 8px; }
-    .a2-secondary-route { display: flex; align-items: center; gap: 40px; background: #eaf0f3; padding: 26px 30px; margin-top: 42px; }
-    .a2-secondary-route p { max-width: 720px; font-size: 17px; color: #526570; }
-    .a2-secondary-route strong { color: #123b50; font-weight: 600; }
-    .a2-secondary-route a { flex: 0 0 auto; }
-    .families__heading>p:last-child { color: #526570; font-size: 18px; line-height: 1.6; }
-    @media(max-width:720px) { .a2-secondary-route { display: block; padding: 24px; } .a2-secondary-route a { margin-top: 12px; } }
-    .selector-hero { background: #10233c; color: white; padding: calc(var(--nav-height) + 3.5rem) 1.5rem 3rem; }
-    .selector-hero__inner, .inputs, .families, .comparison { max-width: 1180px; margin: 0 auto; }
-    .selector-hero__inner { max-width: 800px; }
-    .selector-hero h1 { max-width: 760px; font-size: clamp(2.3rem, 5vw, 4.7rem); line-height: 1.02; margin: .4rem 0 1.2rem; }
-    .selector-hero p { max-width: 690px; font-size: 1.12rem; line-height: 1.7; color: #dbeafe; }
-    .selector-hero .btn { display: inline-flex; margin-top: 1rem; min-height: 44px; align-items: center; }
-    .eyebrow { margin: 0; color: #2563eb; font-size: .77rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-    .selector-hero .eyebrow { color: #93c5fd; }
-    .inputs { padding: 4.5rem 1.5rem; }
-    .inputs__intro { max-width: 650px; }
-    .inputs h2, .families h2, .comparison h2 { margin: .35rem 0 .8rem; color: #10233c; font-size: clamp(1.7rem, 3vw, 2.5rem); line-height: 1.12; }
-    .inputs__intro > p:last-child, .reference-heading > p, .comparison p { color: #526273; line-height: 1.65; }
-    .inputs__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin-top: 1.5rem; }
-    .input-card, .reference-card { border: 1px solid #d9e2ec; border-radius: 14px; background: #fff; }
-    .input-card { padding: 1.2rem; }
-    .input-card h3 { margin: 0; color: #10233c; font-size: 1rem; }
-    .input-card ul, .family-card ul { margin: .8rem 0 0; padding-left: 1.1rem; color: #526273; line-height: 1.55; }
-    .family-nav { display: flex; flex-wrap: wrap; gap: .7rem; justify-content: center; padding: 1rem 1.5rem; border-block: 1px solid #e2e8f0; }
-    .family-nav a { align-items: center; border: 1px solid #cbd5e1; border-radius: 999px; color: #16345a; display: inline-flex; min-height: 44px; padding: 0 .9rem; text-decoration: none; font-weight: 700; }
-    .family-nav a:hover { background: #eff6ff; border-color: #2563eb; }
-    .families { padding: 2.5rem 1.5rem 4.5rem; }
-    .families__heading { max-width: 700px; }
-    .family-section { margin-top: 3.75rem; scroll-margin-top: calc(var(--nav-height) + 1rem); }
-    #families { scroll-margin-top: calc(var(--nav-height) + 1rem); }
-    .family-card { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); border: 1px solid #d9e2ec; border-radius: 18px; overflow: hidden; background: #fff; }
-    .family-card__image-wrap { min-width: 0; overflow: hidden; background: #f1f5f9; padding: 1rem; }
-    .family-card__content { min-width: 0; padding: clamp(1.4rem, 3vw, 2.5rem); }
-    .family-card__content > p:not(.eyebrow) { color: #475569; line-height: 1.65; }
-    .family-card__columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.3rem; margin-top: 1.5rem; }
-    .family-card__columns h3 { color: #10233c; font-size: .94rem; margin: 0; }
-    .reference-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .9fr); align-items: end; gap: 1.5rem; margin: 1.7rem 0 1rem; }
-    .reference-heading h3 { margin: .3rem 0 0; color: #10233c; }
-    .reference-heading > p { margin: 0; }
-    .reference-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-    .reference-card { min-width: 0; overflow: hidden; overflow-wrap: anywhere; display: flex; flex-direction: column; padding: 1.25rem; }
-    .family-reference-boundary { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .5rem 1rem; margin: 0 0 1rem; padding: .9rem 1rem; border-left: 3px solid #93c5fd; background: #f0f7ff; color: #475569; }
-    .family-reference-boundary strong { color: #174f94; }
-    .family-reference-boundary p { margin: 0; line-height: 1.55; }
-    .reference-exception { color: #475569; font-size: .88rem; line-height: 1.55; }
-    .reference-orientation, .reference-gate { font-size: .88rem; }
-    .reference-card__topline { display: flex; flex-wrap: wrap; align-items: start; justify-content: space-between; gap: .5rem .75rem; }
-    .reference-card__topline p { color: #10233c; font-size: 1.15rem; font-weight: 800; margin: 0; }
-    .status-badge { max-width: 100%; overflow-wrap: anywhere; border-radius: 999px; background: #e8eef5; color: #294866; font-size: .72rem; font-weight: 800; padding: .35rem .55rem; }
-    .status-note { color: #1d4ed8; font-weight: 700; font-size: .84rem; margin: .75rem 0 .4rem; }
-    .reference-card > p:not(.status-note) { color: #526273; line-height: 1.55; margin: .35rem 0; }
-    .buyer-question { margin-bottom: 1rem !important; }
-    .detail-link { color: #174f94; font-weight: 800; line-height: 1.45; margin-top: auto; min-height: 44px; display: flex; align-items: center; text-decoration: none; }
+    .catalog-shell { width: min(1180px, calc(100% - 64px)); margin-inline: auto; }
+    .catalog-intro { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center; padding-block: calc(var(--nav-height) + 40px) 30px; }
+    .catalog-intro__copy { min-width: 0; }
+    .catalog-intro__photo { min-width: 0; margin: 0; background: #eaf0f3; }
+    .catalog-intro__photo img { display: block; width: 100%; height: auto; max-height: 370px; object-fit: contain; }
+    .catalog-intro__photo figcaption { padding: 10px 14px; color: #526570; font-size: 13px; line-height: 1.5; }
+    .eyebrow { margin: 0 0 10px; color: #a4411c; font-size: 13px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+    h1 { margin: 0 0 18px; color: #123b50; font-size: clamp(36px, 4.1vw, 58px); line-height: 1.04; letter-spacing: -.035em; }
+    .catalog-intro__copy > p:not(.eyebrow) { margin-bottom: 14px; color: #526570; font-size: 18px; line-height: 1.6; }
+    .catalog-link { color: #123b50; font-size: 16px; font-weight: 700; display: inline-flex; min-height: 44px; align-items: center; }
+    .family-nav { display: flex; flex-wrap: wrap; gap: 10px; padding-block: 20px; border-block: 1px solid #c8d5dc; }
+    .family-nav a { display: inline-flex; align-items: center; min-height: 46px; padding: 10px 16px; background: #eaf0f3; color: #123b50; text-decoration: none; font-weight: 650; }
+    .family-nav a:hover { background: #dce7ed; }
+    .comparison { max-width: 1180px; width: calc(100% - 64px); margin: 22px auto 0; padding: 16px 20px; display: flex; gap: 20px; align-items: center; justify-content: space-between; background: #f3f6f8; border: 1px solid #d2dde3; position: sticky; top: calc(var(--nav-height) + 8px); z-index: 8; }
+    .comparison h2 { margin: 0 0 5px; color: #123b50; font-size: 18px; }
+    .comparison p { margin: 0; font-size: 14px; color: #526570; line-height: 1.5; }
+    .compare-button { min-height: 44px; flex-shrink: 0; padding: 10px 18px; background: #123b50; color: #fff; border: 0; font: inherit; font-weight: 700; cursor: pointer; }
+    .compare-button:disabled { background: #d2dce2; color: #475966; cursor: not-allowed; }
+    .family-reference-boundary { margin: 26px 0 0; padding: 0 0 0 16px; border-left: 3px solid #b4c7d1; color: #526570; font-size: 14px; line-height: 1.6; }
+    .family-reference-boundary strong { color: #123b50; }
+    .family-reference-boundary p { margin: 4px 0 0; }
+    .family-section { padding-block: 48px; border-bottom: 1px solid #ccd8df; scroll-margin-top: calc(var(--nav-height) + 150px); }
+    .family-card { display: grid; grid-template-columns: 1.12fr 1fr; gap: 40px; align-items: center; }
+    .family-card__content, .family-card__photo { min-width: 0; }
+    .family-card h2 { margin: 0 0 16px; color: #123b50; font-size: clamp(28px, 3vw, 40px); line-height: 1.12; letter-spacing: -.025em; }
+    .family-card__content > p:not(.eyebrow) { color: #526570; font-size: 17px; line-height: 1.65; }
+    .equipment-features { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; margin: 22px 0; padding: 0; list-style: none; }
+    .equipment-features li { padding-left: 14px; border-left: 2px solid #b04b26; color: #123b50; font-size: 15px; line-height: 1.5; }
+    .catalog-button { display: inline-flex; align-items: center; min-height: 48px; padding: 12px 20px; background: #123b50; color: #fff; text-decoration: none; font-weight: 700; }
+    .catalog-button:hover { background: #20536b; }
+    .family-card__photo { margin: 0; background: #eaf0f3; }
+    .family-card__photo img { display: block; width: 100%; height: auto; max-height: 370px; object-fit: contain; }
+    .family-card__photo figcaption { padding: 12px 16px; color: #526570; background: #f3f6f8; font-size: 13px; line-height: 1.5; }
+    .reference-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 26px; }
+    .reference-card { min-width: 0; overflow-wrap: anywhere; display: flex; flex-direction: column; padding: 16px 18px; background: #f7f9fa; border: 1px solid #d7e0e5; }
+    .reference-card__topline { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; color: #123b50; }
+    .reference-card__topline strong { font-size: 18px; }
+    .status-badge { color: #526570; font-size: 12px; }
+    .reference-orientation, .reference-gate { color: #526570; font-size: 13px; line-height: 1.5; margin: 10px 0; }
+    .reference-orientation span { font-weight: 700; }
+    .detail-link { display: flex; gap: 10px; align-items: center; min-height: 44px; margin-top: auto; color: #123b50; font-weight: 700; text-decoration: none; }
     .detail-link:hover { text-decoration: underline; }
-    .compare-choice { display: flex; align-items: center; gap: .6rem; color: #334e68; cursor: pointer; font-size: .9rem; font-weight: 700; min-height: 44px; margin-top: .4rem; }
-    .compare-choice input { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
-    .comparison { align-items: center; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 14px; display: flex; justify-content: space-between; gap: 1rem; margin: 1rem auto 0; padding: 1rem 1.25rem; position: sticky; top: calc(var(--nav-height) + .5rem); z-index: 8; }
-    .comparison > * { min-width: 0; }
-    .comparison h2 { font-size: clamp(1.4rem, 2.8vw, 2rem); }
-    .comparison p { margin-bottom: 0; }
-    .compare-button { background: #174f94; border: 0; border-radius: 8px; color: white; cursor: pointer; flex: 0 0 auto; font: inherit; font-weight: 800; min-height: 44px; padding: 0 1.1rem; }
-    .compare-button:disabled { background: #94a3b8; cursor: not-allowed; }
-    :global(a:focus-visible), :global(button:focus-visible), :global(input:focus-visible) { outline: 3px solid #f59e0b; outline-offset: 3px; }
-    @media (max-width: 900px) { .inputs__grid, .reference-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-    @media (max-width: 720px) { .selector-hero { padding: calc(var(--nav-height) + 3rem) 1.25rem 2rem; } .selector-hero h1 { font-size: clamp(2rem, 10vw, 2.8rem); } .family-card, .reference-heading { grid-template-columns: 1fr; display: grid; } .family-card__columns { grid-template-columns: 1fr; } .inputs__grid, .reference-grid { grid-template-columns: 1fr; } .comparison { align-items: center; display: flex; position: static; margin-inline: .75rem; padding: .75rem; } .comparison--active { position: fixed; inset-inline: .75rem; top: auto; bottom: 6rem; max-width: none; margin: 0; box-shadow: 0 12px 32px rgb(15 23 42 / 22%); z-index: 20; } .comparison h2 { font-size: 1rem; margin-bottom: .25rem; } .comparison .eyebrow { display: none; } .comparison p { font-size: .78rem; } .compare-button { min-width: 128px; } }
+    .compare-choice { display: flex; align-items: center; gap: 9px; min-height: 44px; color: #526570; font-size: 14px; cursor: pointer; }
+    .compare-choice input { width: 18px; height: 18px; accent-color: #123b50; }
+    .configuration-note { max-width: 760px; margin: 20px 0 0; padding: 16px 20px; background: #f3f6f8; color: #526570; font-size: 15px; line-height: 1.6; }
+    .family-section--related .family-card__photo img { max-height: 300px; }
+    .inputs { display: flex; align-items: center; justify-content: space-between; gap: 40px; padding-block: 54px 64px; }
+    .inputs > div { max-width: 760px; }
+    .inputs h2 { margin: 0 0 12px; color: #123b50; font-size: 34px; }
+    .inputs p:last-child { color: #526570; line-height: 1.65; }
+    .inputs > a { flex-shrink: 0; }
+    a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #c7592e; outline-offset: 4px; }
+    @media (max-width: 850px) { .family-card { gap: 24px; } .equipment-features { grid-template-columns: 1fr; } .reference-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 720px) {
+      .catalog-shell { width: calc(100% - 40px); }
+      .catalog-intro { grid-template-columns: 1fr; gap: 20px; padding-block: calc(var(--nav-height) + 24px) 20px; }
+      .catalog-intro__copy > p:not(.eyebrow) { font-size: 16px; }
+      .catalog-intro__photo img { max-height: 240px; }
+      .family-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+      .family-nav a { font-size: 14px; padding: 10px 12px; line-height: 1.4; }
+      .family-card { grid-template-columns: 1fr; }
+      .family-card__photo { order: 2; }
+      .family-section { padding-block: 34px; scroll-margin-top: calc(var(--nav-height) + 20px); }
+      .reference-grid { grid-template-columns: 1fr; margin-top: 16px; }
+      .reference-card { padding: 14px 16px; }
+      .reference-orientation { margin-block: 7px; }
+      .reference-card__topline { gap: 6px; }
+      .family-reference-boundary { font-size: 13px; }
+      .comparison { position: static; width: calc(100% - 40px); padding: 12px; gap: 12px; }
+      .comparison h2 { font-size: 15px; }
+      .comparison p { font-size: 12px; }
+      .compare-button { font-size: 13px; padding-inline: 12px; }
+      .comparison--active { position: fixed; inset-inline: 12px; top: auto; bottom: 6rem; width: auto; margin: 0; z-index: 20; box-shadow: 0 12px 32px rgb(15 23 42 / 20%); }
+      .inputs { display: block; padding-block: 38px 48px; }
+      .inputs > a { margin-top: 18px; }
+    }
   </style>
 </BaseLayout>

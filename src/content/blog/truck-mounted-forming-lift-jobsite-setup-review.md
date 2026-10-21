@@ -2,7 +2,7 @@
 title: "Jobsite Setup Review for Truck-Mounted Forming Lifts"
 description: "Review truck-mounted forming lift setup from site gate to work face by documenting routes, setup zones, ground conditions, interfaces and local decisions."
 date: 2026-08-07
-updated: 2026-10-20
+updated: 2026-10-22
 author: "ARCLIFT Technical Editorial"
 tags: ["truck mounted forming lift", "jobsite setup", "work zone review", "site logistics"]
 coverImage: "/images/equipment/coil-real-cover.webp"
@@ -11,9 +11,9 @@ coverCaption: "Reference photograph showing a coil and truck-mounted lifting str
 draft: false
 ---
 
-A truck-mounted roll-forming lift raises a compatible roof-panel forming machine so its outlet can serve a planned receiving level. At the jobsite, the important layout question is how the truck, lifting structure, forming line, coil supply and roof receiving area fit together. A truck can reach the building and still face the wrong direction for production, occupy the delivery lane or leave its proposed support area over an unresolved underground feature.
+A useful truck work position connects **the forming outlet, roof receiver, support area and recurring material supply**. The [truck-mounted roll-forming lift family](/products/#truck-mounted-roll-forming-lifts) carries a compatible roof-panel roll former on a vehicle-mounted lifting structure. The truck, stabilisers and machine layout are selected together. A parking bay beside the building becomes a candidate forming position only when that complete arrangement can serve the roof and coexist with the surrounding site work.
 
-Start with the panel outlet and work backwards through the equipment to the ground layout. Then test that arrangement against delivery traffic and the construction programme. This guide explains that physical coordination. The [chassis integration review](/blog/truck-mounted-roll-forming-chassis-interface-review/) covers equipment-to-vehicle matching, while the [roof-panel handover guide](/blog/elevated-roll-forming-roof-panel-handover-zones/) develops the receiving interface. The [truck-mounted roll-forming lift product reference](/products/arc-t18-truck-mounted-roll-forming-lift/) introduces the equipment family; the final configuration still needs project-specific confirmation.
+Start with the intended outlet and compare complete positions. This guide explains the jobsite layout question; the [chassis-interface review](/blog/truck-mounted-roll-forming-chassis-interface-review/) addresses the vehicle pairing, and the [panel handover guide](/blog/elevated-roll-forming-roof-panel-handover-zones/) develops emerging-panel support and receipt.
 
 **Contents**
 
@@ -22,6 +22,7 @@ Start with the panel outlet and work backwards through the equipment to the grou
 - Check a proposed truck setup on one layout
 - Compare arrangements as the site changes
 - FAQ
+- Request the arrangement for your candidate position
 
 <!-- audit-section: buyer-intent -->
 ## Start with the forming outlet and receiving area
@@ -38,11 +39,13 @@ Mark the intended roof receiving position on a plan and elevation. Identify its 
 
 This step can expose a layout problem before anyone discusses a particular model. A position that appears close to the building may not align with the intended receiving area. Revisit the proposed position or receiving concept using the [roof-zone survey](/blog/roof-zone-survey-roll-forming-lift-selection/), rather than assuming extra reach or a different panel direction is available.
 
-### Check direction before parking convenience
+### Compare proximity with usable space
 
-A convenient vehicle position is only one input. Consider which side of the site it places the material supply on, where the forming outlet points, and whether the resulting panel path crosses another work area. The exact equipment arrangement must establish which orientations are possible. A site plan cannot assume that the line reverses, swivels or feeds from either end.
+Consider two hypothetical positions serving the same receiver. Position A lies close to the building, but its proposed feed side faces a shared delivery lane. Position B occupies a wider ground area farther away, while changing the outlet-to-receiver relationship. The useful comparison asks whether each complete arrangement can work; distance to the wall is only one input.
 
-For example, a hypothetical parking bay beside an eave may leave the proposed coil delivery area inside a shared vehicle lane. Moving the bay could clear the lane but change the outlet relationship. That is a choice between complete layouts, not a reason to treat the feed side as interchangeable.
+For A, show the actual support locations, material handover and occupied delivery space. For B, request the equipment geometry needed to assess the changed outlet position. The extra ground space does not establish additional reach, and the shorter panel route at A does not justify occupying the lane. Each candidate has a different controlling question.
+
+Keep the forming line's direction explicit. The inlet, outlet, cutting equipment and access positions belong to the proposed assembly. Do not turn the line around on a sketch or assume it can feed from either end. The buyer needs an arrangement drawing corresponding to the required position and equipment state, rather than a generic truck outline with a height added.
 
 ![Elevated forming equipment beside a building lane](/images/equipment/entry-real-clearance.webp)
 
@@ -69,20 +72,11 @@ Draw where incoming coil or other material is received, where it is staged under
 
 Use the [coil handling and feeding guide](/blog/coil-handling-roll-forming-line-feeding-plan/) for material identity and feed coordination. On the setup drawing, the useful question is whether material supply can coexist with the proposed equipment and receiving zones. The loading method, lifting accessories and operating controls require their own configuration and site review.
 
-### Test repeated deliveries while the position remains occupied
+### Test recurring supply during the occupied work period
 
-A drawing showing the first coil delivery does not necessarily describe the supply route for the rest of the proposed work period. Ask which spaces remain occupied by the truck, support arrangement and material staging after that arrival. Then identify the route assumed for later material deliveries. The comparison needs the intended equipment state at those times; it must not assume that supports can be withdrawn or the machine moved to create a gap.
+Return to Position A's shared lane. The first coil could arrive before the truck occupies its work area, while later deliveries need the same lane after supports and material staging are present. A successful first arrival therefore does not answer the supply question for the whole forming period. Show the later delivery position and its relationship to the equipment state expected at that time.
 
-For a hypothetical work position, suppose the first material arrives before the truck occupies its proposed area. Later material is expected through the same lane. The early delivery fits the programme, but it does not answer whether the later delivery can reach its intended handover point. The open question is whether the site can provide a separately reviewed supply arrangement while the forming position remains occupied.
-
-| Time or activity in the proposed work period | Space to show on the layout | Assumption to challenge |
-| --- | --- | --- |
-| Initial equipment and material arrival | Receiving areas and the proposed order of occupation | That access available before setup remains available afterwards |
-| Later coil or material delivery | Delivery approach, handover and staging boundaries | That the first delivery drawing covers replenishment |
-| Waiting between receiving windows | Areas still occupied by equipment and material | That a pause automatically releases the support or access area |
-| Other trades using the adjacent lane | Their required route and proposed time of use | That the same space is available to both activities without coordination |
-
-The site team can use these questions to compare an alternative position, a different material-delivery arrangement or a revised construction allocation. Each alternative still needs its own equipment and site assessment. The useful output is a layout tied to the period for which its spaces are needed, not just a photograph of an empty lane or a successful first arrival.
+The project can investigate another delivery allocation, a different material handover or Position B. It cannot assume that supports will be withdrawn or the equipment moved whenever a delivery appears. A proposal should account for the spaces that remain occupied between roof receiving windows as well as during production. This keeps a practical replenishment dependency visible without prescribing an operating sequence.
 
 ### Make utilities and people visible
 
@@ -97,15 +91,13 @@ The <a href="https://www.hse.gov.uk/workplacetransport/information/safeworkplace
 <!-- audit-section: project-checklist -->
 ## Check a proposed truck setup on one layout
 
-### Compare physical boundaries together
+### Compare the same arrangement in plan and section
 
-Use a common site drawing for the proposed truck position, support locations, material arrival and roof receiving area. Bring the relevant sections onto the same coordinates and construction stage. A plan can distinguish the ground footprints while leaving the space above them unresolved.
+The plan connects the truck, support positions, material arrival and roof receiver. The corresponding section shows their vertical relationships and nearby works. Both views must describe the same equipment arrangement and construction stage. Separate ground rectangles alone cannot establish that activities occupy separate space.
 
-For a hypothetical position beside a building, the truck and a neighbouring delivery bay occupy separate marked rectangles. The proposed panel-output region extends beyond the forming machine, while temporary building works project above part of the bay. The separated ground rectangles do not describe those relationships. Ask the responsible parties to show the equipment, proposed panel path and adjacent works in plan and section before treating the bay as independently available.
+For Position A, the material bay might be clear of the truck footprint while temporary building works project above the proposed receiving activity. For Position B, the ground space might be open while the panel-output region crosses another occupied area. Show those volumes using information from the equipment and activity providers. A parked delivery vehicle outline is different from the space its material-handling task needs.
 
-Use the actual objects and states in that comparison. A parked delivery vehicle outline may not describe the space required by the receiving activity proposed there. A building drawing may show completed cladding but omit the temporary works present during forming. Request the relevant spatial information from each activity owner; do not enlarge outlines by an invented allowance or assume that one activity can pass beneath another.
-
-The useful result identifies the conflicting or unrecorded volume and the activity depending on it. The site team can then investigate a different allocation, period or equipment position, with the affected configuration and project reviews retained. This does not authorize simultaneous work or define a separation distance. The [roof-zone survey](/blog/roof-zone-survey-roll-forming-lift-selection/) supplies the measured building relationship; the setup discussion connects it to the other uses surrounding the truck.
+Highlight the conflict on the paired views and ask the relevant parties for a complete alternative. Do not add an invented clearance or assume one activity can pass beneath another. The [roof-zone survey](/blog/roof-zone-survey-roll-forming-lift-selection/) supplies the measured building relationship; this layout brings the neighbouring uses into the same decision.
 
 The following table identifies what each boundary contributes. Its entries are review prompts, not a completed site assessment.
 
@@ -130,26 +122,26 @@ The following table identifies what each boundary contributes. Its entries are r
 - Identify the weather and wind decision owner and the project method that governs changes to the work arrangement.
 - Record the destination documentation requirements and who resolves conflicts between the equipment and site drawings.
 
-### Record a useful conclusion
+### State the conflict that controls the position
 
-The layout conclusion should identify the constraint that still determines the position. “Outlet alignment unresolved” tells the team to revisit the equipment-to-roof relationship. “Material delivery occupies the support zone” calls for a spatial or scheduling decision. “Underground construction unknown” calls for site evidence and specialist review. These conclusions lead to different actions.
+For A, the conclusion might be “recurring material delivery overlaps the occupied support area.” For B, it might be “the required outlet offset has no equipment answer yet.” The first calls for another complete layout or site allocation; the second calls for a configuration drawing. An unknown underground feature is a different issue again, requiring site evidence and the corresponding support assessment.
 
-Keep a surveyed dimension separate from its acceptance. A measured lane width remains a useful fact even when the vehicle arrangement is not yet available. Equally, a confirmed equipment outline does not close an unknown support condition. Procurement can then see what is known without treating a partly completed layout as permission to begin work.
+Retain useful measured facts while those questions are answered. A surveyed lane width remains valid even if the truck drawing is missing. The buyer can therefore request the missing equipment information without repeating the whole survey or treating the partly resolved position as accepted.
 
 <!-- audit-section: evidence-tradeoffs -->
 ## Compare arrangements as the site changes
 
-### Compare proximity with usable space
+### Carry the controlling trade-off into the proposal
 
-Locating equipment nearer the receiving area may simplify one part of the panel path while reducing room for support, access or material supply. A position farther away may provide a less congested ground layout but require a different receiving concept that the equipment and project may not support. Neither distance alone decides the better arrangement.
+The preferred position should remain attached to its whole arrangement: line, truck, supports, outlet and material supply. A quotation based on a different line orientation or vehicle layout may change the constraint that made it preferable. Request the state drawing used for the offer and compare it with the candidate site position before treating the layout question as closed.
 
-Compare this trade-off using each alternative's complete combination of outlet location, configuration, support area and material flow. Do not compare the best feature of one sketch with an assumed feature of another. If a required geometry is unavailable, keep that alternative provisional until the issuing party answers it.
+This is also a commercial boundary. If the forming line, coil-handling equipment or utilities come from another party, the proposal must identify the interfaces their arrangements need to meet. A truck-lift quotation alone cannot describe all of the space those separately supplied functions require.
 
 ### Test the next construction stage
 
-Consider a hypothetical layout that is clear when the truck arrives but will share its material lane with façade deliveries the following week. The dimensions have not changed; the allocation of space has. The site team must decide whether the sequence changes, another supply location is reviewed, or the proposed setup is no longer suitable.
+Tie the chosen position to the period when its spaces are available. Later façade deliveries, scaffold or stored material may take over the lane used in the comparison. The site team can then assess a revised allocation or another position against the changed condition. The dimension has not necessarily changed; the competing use has.
 
-Check withdrawal as well. Installed cladding, scaffolding or stored panels can change the departure route. A successful arrival does not resolve that later condition. Record which construction milestone requires the layout to be revisited, without prescribing a vehicle movement or assuming a particular dismantling option.
+Include the eventual departure route in that review. An open arrival route can become restricted as cladding or other work progresses. The resulting question is which construction change requires another layout review, not an instruction to move or dismantle the equipment in a particular way.
 
 ![Long light-coloured panel beside a building](/images/equipment/coil-real-panel.webp)
 
@@ -161,11 +153,6 @@ Check withdrawal as well. Installed cladding, scaffolding or stored panels can c
 A truck-mounted forming-lift concept may not fit where the available position cannot connect a supported equipment arrangement to the roof receiving area, or where material supply and essential site access cannot be reconciled. Unknown ground conditions, missing configuration drawings or an unreviewed roof interface prevent a defensible selection. They do not become acceptable because the truck can park nearby.
 
 Consider another position or a different overall production route with the project team. The comparison may include ground-level forming and a separately reviewed panel transfer, but no alternative should inherit an approval from the rejected layout.
-
-<!-- audit-section: cta-editorial-note -->
-### Discuss the position that controls your project
-
-Send ARCLIFT the proposed site layout, outlet height and roof receiving reference, transport state, material supply position and destination, with the specific conflict highlighted. Include the ground-review status and current equipment arrangement so preliminary selection can address the physical question. ARCLIFT acts as an integrated equipment supplier and technical selection and supply partner. Final project-specific support, traffic, operating and roof-work decisions remain with the appointed parties. The reference photographs are editorial illustrations of visible arrangements, not records of an approved configuration or ARCLIFT customer project.
 
 ## FAQ
 
@@ -184,3 +171,8 @@ Do not assume the areas can overlap. The site team and equipment parties must as
 #### Does this review decide which chassis to buy?
 
 No. It supplies site constraints to equipment selection. Chassis integration needs the vehicle and lifting-equipment interface information; the jobsite layout then uses the resulting configuration to assess the proposed position.
+
+<!-- audit-section: cta-editorial-note -->
+## Request the arrangement for your candidate position
+
+[Ask for truck-family configuration advice](/contact/?product=truck-mounted-roll-forming-lifts&request=advice) with the paired site plan and section, outlet height reference, receiver, support area and material-delivery position. Highlight the conflict controlling the choice, and include destination and transport expectations. Request the actual state drawing and equipment scope needed to assess that position. ARCLIFT acts as a technical selection and supply partner; final project-specific ground, traffic and work-method decisions remain with the appointed parties. The editorial photographs retain the limitations stated in their captions.

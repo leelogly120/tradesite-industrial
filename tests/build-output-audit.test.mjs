@@ -237,6 +237,66 @@ describe('built output audit', () => {
     await expect(auditBuildOutput({ root })).resolves.toMatchObject({ productRouteCount: 15 });
   });
 
+  async function makeRealPhotoFixture() {
+    const root = await makeValidFixture();
+    const familyPhotos = [
+      ['truck-mounted-roll-forming-lifts', 'coil-real-cover.webp'],
+      ['crawler-roll-forming-lifts', 'transport-real-stowed.webp'],
+      ['crawler-ceiling-platforms', 'entry-real-cover.webp'],
+      ['truck-mounted-work-platforms', 'entry-real-interior.webp'],
+      ['roll-forming-machines', 'coil-real-module.webp'],
+    ];
+    const navigation = `<nav class="family-nav">${familyPhotos.slice(0, 4).map(([id]) => `<a href="#${id}">${id}</a>`).join('')}</nav>`;
+    const sections = familyPhotos.map(([id, file]) => `<section class="family-section" id="${id}"><figure class="family-card__photo" data-equipment-photo><img src="/images/equipment/${file}" width="600" height="400" alt="Equipment family context"><figcaption>Equipment family reference scene.</figcaption></figure></section>`).join('');
+    const boundary = '<aside class="family-reference-boundary"><p>Model codes and numerical classes below are archived or concept references for an initial discussion. Current specifications and options are confirmed in the signed technical schedule, approved drawings and applicable load chart. Photographs show equipment families and working contexts, not individual ARC models.</p></aside>';
+    const cards = productSlugs.map(slug => `<article class="reference-card"><span class="status-badge">Archived reference</span><p class="reference-orientation">Archived height: 20m class</p><a class="detail-link" href="/products/${slug}/">View details</a></article>`).join('');
+    await write(root, 'dist/products/index.html', page('/products/', navigation + boundary + sections + cards));
+    for (const [, file] of familyPhotos) await write(root, `dist/images/equipment/${file}`, 'approved photo fixture');
+    await write(root, 'dist/assets/products.css', [
+      '.reference-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }',
+      '.reference-card { min-width: 0; overflow-wrap: anywhere; }',
+      '.reference-card__topline { flex-wrap: wrap; }',
+      '.family-card__photo img { object-fit: contain; }',
+      '.family-reference-boundary {}', '.reference-orientation {}', '.reference-gate {}',
+      '@media (max-width: 850px) { .reference-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }',
+      '@media (max-width: 720px) { .reference-grid { grid-template-columns: 1fr; } }',
+    ].join('\n'));
+    return root;
+  }
+
+  it('accepts four real-photo application routes, related forming equipment, and fifteen historical references', async () => {
+    const root = await makeRealPhotoFixture();
+    await expect(auditBuildOutput({ root })).resolves.toMatchObject({ productRouteCount: 15 });
+  });
+
+  it.each([
+    ['href="#truck-mounted-work-platforms"', 'href="#roll-forming-machines"'],
+    ['coil-real-module.webp', 'coil-real-cover.webp'],
+    ['<figcaption>Equipment family reference scene.</figcaption>', ''],
+    ['signed technical schedule, approved drawings and applicable load chart', 'model name'],
+    ['not individual ARC models', 'verified ARC models'],
+    ['class="status-badge"', 'class="missing-status"'],
+    ['href="/products/arc-c17-crawler-roll-forming-lift/"', 'href="/wrong/"'],
+  ])('rejects incomplete real-photo catalog evidence: %s', async (before, after) => {
+    const root = await makeRealPhotoFixture();
+    const path = resolve(root, 'dist/products/index.html');
+    await writeFile(path, (await readFile(path, 'utf8')).replace(before, after), 'utf8');
+    await expect(auditBuildOutput({ root })).rejects.toThrow(/products.*(?:photograph|routes|reference|boundary)/i);
+  });
+
+  it.each([
+    ['overflow-wrap: anywhere', 'overflow-wrap: normal'],
+    ['flex-wrap: wrap', 'flex-wrap: nowrap'],
+    ['object-fit: contain', 'object-fit: cover'],
+    ['repeat(2, minmax(0, 1fr))', 'repeat(2, 500px)'],
+    ['grid-template-columns: 1fr', 'grid-template-columns: 500px'],
+  ])('rejects unsafe real-photo catalog CSS: %s', async (before, after) => {
+    const root = await makeRealPhotoFixture();
+    const path = resolve(root, 'dist/assets/products.css');
+    await writeFile(path, (await readFile(path, 'utf8')).replace(before, after), 'utf8');
+    await expect(auditBuildOutput({ root })).rejects.toThrow(/reference-card CSS/i);
+  });
+
   it.each([
     ['AI-assisted editorial schematic', 'Editorial schematic'],
     ['not to scale; not model-specific evidence.', 'verified equipment evidence.'],

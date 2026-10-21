@@ -123,10 +123,12 @@ describe('ARCLIFT family-first product selector', () => {
 
   it('gives buyers project inputs and exposes the evidence boundary through visible family and reference content', () => {
     expect(productListSource).toMatch(/Prepare these inputs/);
-    expect(productListSource).toMatch(/projectInputs/);
-    expect(productListSource).toContain(disclosure);
+    expect(productListSource).toContain('work height and working area, forming-machine or deck task, site access, support conditions and destination');
+    expect(productListSource).toContain('signed technical schedule, approved drawings and applicable load chart');
+    expect(productListSource).toContain('archived or concept references');
+    expect(productListSource).toContain('Photographs show equipment families and working contexts, not individual ARC models');
     expect(productListSource).toMatch(/reference\.status/);
-    expect(productListSource).toMatch(/reference\.statusNote/);
+    expect(productListSource).toMatch(/reference\.orientation\.value/);
   });
 
   it('keeps comparison progressive and sends selected slugs to the existing compare route', () => {
@@ -191,7 +193,9 @@ describe('ARCLIFT buyer-decision product detail template', () => {
     expect(productDetailSource).toContain('Request available reference documents');
     expect(productDetailSource).toMatch(/productView\.family\.requiredDocuments\.map/);
     expect(productDetailSource).toContain('getRelatedProductSlugs(product.id, data.relatedProducts)');
-    expect(productDetailSource).toMatch(/related-card__disclosure/);
+    const relatedCards = productDetailSource.match(/<a href=\{`\/products\/\$\{rp\.id\}\/`\} class="related-card">[\s\S]*?<\/a>/)?.[0] ?? '';
+    expect(relatedCards).toContain('relatedView.status');
+    expect(relatedCards).not.toMatch(/<img|background-image/);
   });
 
   it('limits top-level structured data to WebPage, FAQPage, and BreadcrumbList', () => {

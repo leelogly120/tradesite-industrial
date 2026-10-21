@@ -19,18 +19,28 @@ test('product-family deep links clear both the site header and comparison bar', 
   }).toBe(true);
 });
 
-test('Contact keeps its legacy form styling with either pathname spelling', async ({ page }) => {
+test('Contact shares the equipment site styling with either pathname spelling', async ({ page }) => {
   for (const path of ['/contact', '/contact/']) {
     await page.goto(path);
-    await expect(page.locator('body')).toHaveClass('design-contact');
+    await expect(page.locator('body')).toHaveClass('design-a2');
     await expect(page.locator('#inquiry-form')).toBeVisible();
   }
+});
+
+test('model breadcrumb links remain below the fixed navigation and direct contact strip', async ({page})=>{
+  await page.setViewportSize({width:1440,height:900});
+  await page.goto('/products/arc-c25-crawler-roll-forming-lift/');
+  const nav=await page.locator('#nav').boundingBox();
+  const crumb=await page.locator('.bread a').first().boundingBox();
+  expect(crumb!.y).toBeGreaterThanOrEqual(nav!.y+nav!.height);
 });
 
 test('mobile hero actions are not covered by the persistent WhatsApp control', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/');
-  for (const link of await page.locator('.a2-hero .a2-actions a').all()) {
+  const links = page.locator('.home-hero .a2-actions a');
+  await expect(links).toHaveCount(2);
+  for (const link of await links.all()) {
     await link.scrollIntoViewIfNeeded();
     expect(await link.evaluate(el => {
       const box = el.getBoundingClientRect();
@@ -56,10 +66,10 @@ test('equipment-led home shows a real complete machine before its inquiry action
   await expect.poll(() => photo.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);
   const title = await page.getByRole('heading', { level: 1 }).boundingBox();
   const image = await photo.boundingBox();
-  const action = await page.getByRole('link', { name: 'Explore lifting systems', exact: true }).boundingBox();
+  const action = await page.locator('.hero-actions a').first().boundingBox();
   expect(title!.y + title!.height).toBeLessThan(image!.y);
   expect(image!.y + image!.height).toBeLessThan(action!.y);
-  await page.getByRole('link', { name: 'Explore lifting systems', exact: true }).click();
+  await page.locator('.hero-actions a').first().click();
   await expect(page).toHaveURL(/\/products\/$/);
   await expect(page.locator('#truck-mounted-roll-forming-lifts')).toBeAttached();
   await expect(page.locator('#crawler-roll-forming-lifts')).toBeAttached();

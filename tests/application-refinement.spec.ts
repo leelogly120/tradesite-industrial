@@ -36,9 +36,9 @@ test.describe('About page mobile integrity', () => {
       await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
       await expect(page.getByText('integrated equipment supplier', { exact: false }).first()).toBeVisible();
       await expect(page.getByText('technical selection and supply partner', { exact: false }).first()).toBeVisible();
-      await expect(page.locator('.about-hero')).not.toContainText(/equipment solutions supplier/i);
+      await expect(page.locator('main')).not.toContainText(/equipment solutions supplier/i);
 
-      const story = page.locator('.story');
+      const story = page.locator('.about-intro');
       const columns = await story.evaluate((element) => getComputedStyle(element).gridTemplateColumns);
       expect(columns.trim().split(/\s+/)).toHaveLength(1);
 

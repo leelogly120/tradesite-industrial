@@ -10,6 +10,14 @@ const PRODUCT_VISUAL_DISCLOSURE = `${AI_ASSISTED_VISUAL}. ${DISCLOSURE}`;
 const COMPARE_VISUAL_DISCLOSURE = `${AI_ASSISTED_COMPOSITE}. ${DISCLOSURE}`;
 const SCHEMATIC_DISCLOSURE = 'AI-assisted editorial schematic — not to scale; not model-specific evidence.';
 const COMPACT_REFERENCE_BOUNDARY = 'Editorial planning visual — not model-specific evidence. Card values are archived orientation or reference-concept records only. Signed technical schedules, approved drawings and approved load charts control configuration and project suitability.';
+const PHOTOGRAPH_REFERENCE_BOUNDARY = 'Model codes and numerical classes below are archived or concept references for an initial discussion. Current specifications and options are confirmed in the signed technical schedule, approved drawings and applicable load chart. Photographs show equipment families and working contexts, not individual ARC models.';
+const CATALOG_PHOTOGRAPHS = [
+  ['truck-mounted-roll-forming-lifts', 'coil-real-cover.webp'],
+  ['crawler-roll-forming-lifts', 'transport-real-stowed.webp'],
+  ['crawler-ceiling-platforms', 'entry-real-cover.webp'],
+  ['truck-mounted-work-platforms', 'entry-real-interior.webp'],
+  ['roll-forming-machines', 'coil-real-module.webp'],
+];
 const PRODUCT_SLUGS = [
   'arc-c17-crawler-roll-forming-lift',
   'arc-c21-crawler-roll-forming-lift',
@@ -285,7 +293,8 @@ export async function auditBuildOutput({
     .filter(file => file.endsWith('.css'))
     .map(file => readFile(file, 'utf8')))).join('\n');
   const schematicLayout = elementsWithClass(productIndex, 'figure', 'equipment-diagram').length > 0;
-  const requiredProductCardSelectors = schematicLayout ? [
+  const photographLayout = /data-equipment-photo\b/.test(productIndex);
+  const requiredProductCardSelectors = schematicLayout || photographLayout ? [
     /\.reference-card(?:\[[^\]]+\])?\s*\{[^}]*min-width:\s*0(?:[;}\s])/,
     /\.reference-card__topline\b/,
     /\.family-reference-boundary\b/,
@@ -298,17 +307,52 @@ export async function auditBuildOutput({
     /\.reference-orientation\b/,
     /\.reference-gate\b/,
   ];
+  if (photographLayout) requiredProductCardSelectors.push(
+    /\.reference-card(?:\[[^\]]+\])?\s*\{[^}]*overflow-wrap:\s*anywhere/,
+    /\.reference-card__topline(?:\[[^\]]+\])?\s*\{[^}]*flex-wrap:\s*wrap/,
+    /\.family-card__photo(?:\[[^\]]+\])?\s+img[^{}]*\{[^}]*object-fit:\s*contain/,
+  );
   const productCardLayoutRules = [
     /\.reference-grid[^{}]*\{[^}]*grid-template-columns:\s*repeat\(3,\s*minmax\(0,\s*1fr\)\)/,
-    /@media\s*\((?:max-width:\s*900px|width\s*<=\s*900px)\)[^@]*?\.reference-grid[^}]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/,
+    /@media\s*\((?:max-width:\s*(?:850|900)px|width\s*<=\s*(?:850|900)px)\)[^@]*?\.reference-grid[^}]*grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\)/,
     /@media\s*\((?:max-width:\s*720px|width\s*<=\s*720px)\)[^@]*?\.reference-grid[^}]*grid-template-columns:\s*1fr/,
   ];
   if (builtCss.includes('`r`n')
       || requiredProductCardSelectors.some(selector => !selector.test(builtCss))
       || productCardLayoutRules.some(rule => !rule.test(builtCss))) {
-    errors.push('/products/ must emit complete reference-card CSS without literal newline artifacts, including desktop, 900px, and 390px-safe grid containment');
+    errors.push('/products/ must emit complete reference-card CSS without literal newline artifacts, including desktop, tablet, and 390px-safe grid containment');
   }
-  if (schematicLayout) {
+  if (photographLayout) {
+    const sections = elementsWithClass(productIndex, 'section', 'family-section');
+    const navigation = elementsWithClass(productIndex, 'nav', 'family-nav');
+    const routeLinks = navigation.flatMap(nav => [...nav.body.matchAll(/<a\b([^>]*)>/gi)].map(match => attribute(match[1], 'href')));
+    if (JSON.stringify(routeLinks) !== JSON.stringify(CATALOG_PHOTOGRAPHS.slice(0, 4).map(([id]) => `#${id}`))) {
+      errors.push('/products/ must expose the four primary application routes separately from related forming equipment');
+    }
+    if (sections.length !== CATALOG_PHOTOGRAPHS.length || CATALOG_PHOTOGRAPHS.some(([id, file]) => {
+      const matchingSections = sections.filter(section => attribute(section.attributes, 'id') === id);
+      const figures = matchingSections.flatMap(section => elementsWithClass(section.body, 'figure', 'family-card__photo'));
+      const images = figures.flatMap(figure => [...figure.body.matchAll(/<img\b([^>]*)>/gi)]);
+      return matchingSections.length !== 1 || figures.length !== 1 || images.length !== 1
+        || attribute(images[0]?.[1] ?? '', 'src') !== `/images/equipment/${file}`
+        || !(attribute(images[0]?.[1] ?? '', 'alt') ?? '').trim()
+        || !files.includes(resolve(distDir, 'images/equipment', file))
+        || !figures[0]?.body.match(/<figcaption\b[^>]*>\s*[^<]+<\/figcaption>/i);
+    })) errors.push('/products/ must retain five relevant local family photographs with adjacent factual captions');
+    const boundaries = elementsWithClass(productIndex, 'aside', 'family-reference-boundary');
+    if (boundaries.length !== 1 || !exactTextInClass(boundaries[0]?.body ?? '', 'p', '', PHOTOGRAPH_REFERENCE_BOUNDARY)) {
+      errors.push('/products/ must retain the consolidated historical-reference and family-photograph evidence boundary');
+    }
+    const cards = elementsWithClass(productIndex, 'article', 'reference-card');
+    const links = cards.flatMap(card => elementsWithClass(card.body, 'a', 'detail-link')).map(link => attribute(link.attributes, 'href')).sort();
+    if (cards.length !== 15 || JSON.stringify(links) !== JSON.stringify(PRODUCT_SLUGS.map(slug => `/products/${slug}/`).sort())
+        || cards.some(card => !elementsWithClass(card.body, 'span', 'status-badge').some(element => normalizedText(element.body))
+          || !elementsWithClass(card.body, 'p', 'reference-orientation').some(element => normalizedText(element.body)))) {
+      errors.push('/products/ real-photo catalog must retain all 15 distinct reference links, status labels and historical orientation');
+    }
+    const truckDeck = sections.find(section => attribute(section.attributes, 'id') === 'truck-mounted-work-platforms');
+    if (/data-compare-item\b/.test(truckDeck?.body ?? '')) errors.push('/products/ truck work-platform route must not invent a comparable model reference');
+  } else if (schematicLayout) {
     const figures = elementsWithClass(productIndex, 'div', 'family-card__image-wrap')
       .flatMap(element => elementsWithClass(element.body, 'figure', 'equipment-diagram'));
     const families = figures.map(figure => attribute(figure.attributes, 'data-equipment-family')).sort();

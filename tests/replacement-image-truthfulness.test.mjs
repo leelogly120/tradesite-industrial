@@ -75,8 +75,9 @@ describe('Replacement image truthfulness', () => {
     ]);
 
     expect(selectionDomain).toContain(`const IMAGE_DISCLOSURE = '${productDisclosure}'`);
-    expect(productList).toMatch(/<EquipmentDiagram family=\{family\.diagramFamily\} compact \/>/);
-    expect(productList).toContain(`<p>${productDisclosure}. Card values are archived orientation or reference-concept records only. Signed technical schedules, approved drawings and approved load charts control configuration and project suitability.</p>`);
+    expect(productList).not.toMatch(/<EquipmentDiagram|family\.diagramFamily|\/images\/(?:editorial|hero)\//);
+    expect(productList).toMatch(/<figure class="family-card__photo" data-equipment-photo>[\s\S]*?<figcaption>\{family\.image\.caption\}<\/figcaption>/);
+    expect(productList).toContain('Photographs show equipment families and working contexts, not individual ARC models.');
     expect(equipmentDiagram).toMatch(/<figure[^>]*data-equipment-family=\{family\}[^>]*>/);
     expect(equipmentDiagram).toMatch(/<figcaption>AI-assisted editorial schematic — not to scale; not model-specific evidence\.<\/figcaption>/);
     expect(productDetail).toMatch(

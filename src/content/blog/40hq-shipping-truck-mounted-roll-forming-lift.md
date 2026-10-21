@@ -2,7 +2,7 @@
 title: "40HQ Planning for Truck-Mounted Roll-Forming Lifts"
 description: "Review 40HQ shipping for roll-forming lifts by comparing complete vehicles, equipment modules, local chassis supply, packing boundaries and destination work."
 date: 2026-07-24
-updated: 2026-10-20
+updated: 2026-10-22
 author: "ARCLIFT Technical Editorial"
 tags: ["40HQ Logistics", "Truck-Mounted Systems", "Project Delivery"]
 coverImage: "/images/equipment/transport-real-cover.webp"
@@ -11,26 +11,25 @@ coverCaption: "Reference photograph of crawler equipment on a carrier. It does n
 draft: false
 ---
 
-A 40HQ shipping plan for a truck-mounted roll-forming lift starts by deciding what will cross the border: a complete vehicle, separate equipment modules, or equipment to be integrated with a chassis bought at destination. These are different purchases and different packing problems. The lift raises a roll-forming machine toward the roof-panel production position; its operating arrangement does not describe its shipping envelope. Container fit must be checked against the actual packed items, loading path and receiving plan before booking.
-
-The useful first deliverable is a shipment-scope comparison. It should show what arrives assembled, what arrives separately and what still has to be supplied or completed locally. A short equipment quotation can leave all three unclear. Resolving them early lets the buyer ask for comparable transport proposals instead of treating the words “40HQ” or “truck-mounted” as a complete logistics specification.
+Before requesting a 40HQ freight price, decide **what must arrive and what the buyer expects to be complete at destination**. A truck-mounted roll-forming lift is a vehicle-mounted system carrying a compatible roof-panel roll former. The catalog architecture does not establish whether a quotation includes the vehicle, separate equipment assemblies or local integration. Those choices determine the shipment to study. Container fit is a later question about the actual packages and loading plan.
 
 **Contents**
 
 - Choose the shipment boundary
-- Review the packed item and its path
 - Compare destination work as well as freight
+- Review the packed item and its path
 - Make the booking decision reviewable
 - FAQ
+- Request a scoped shipping-route review
 
 <!-- audit-section: buyer-intent -->
 ## Choose the shipment boundary
 
 ### Ask whether the vehicle is included
 
-Request a direct statement of vehicle scope. A reference to truck-mounted equipment may describe the finished architecture without including a chassis in the offer. Conversely, a complete-vehicle proposal brings vehicle dimensions, mass, road documentation and unloading questions into the transport review. Do not compare its freight quotation with an equipment-only shipment as though the two deliveries contain the same thing.
+Begin with the [truck-mounted roll-forming lift family](/products/#truck-mounted-roll-forming-lifts), then ask for a project-specific supply description. Does it include an identified vehicle, or is the equipment being discussed for a separately sourced chassis? The answer must come from the offer. “Truck-mounted” describes the completed arrangement, not everything in the shipment.
 
-The [ARC-T25HQ archived transport-oriented reference](/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq/) can help identify the proposed discussion route. It is not a packing drawing, a current vehicle specification or confirmation that a complete unit fits a container. Ask which exact equipment-scope revision the packing proposal covers.
+If a vehicle-included option is actually offered, compare its transport and destination obligations with the equipment-only candidate. If only equipment supply is proposed, identify the local chassis and integration work before seeking a complete-delivery price. The [ARC-T25HQ archived reference](/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq/) is a discussion reference, not proof of current modular supply or a complete truck fitting a container.
 
 ### Separate a module from its packing frame
 
@@ -40,33 +39,62 @@ Make the forming line, lifting structure, controls, hydraulic or electrical item
 
 ### Compare equivalent arrival conditions
 
-Use the following editorial comparison before seeking a freight quotation. The routes are possible subjects for review, not promises that any configuration supports them.
+Ask each offering party to describe the physical condition at delivery. Equipment packages received at a local integrator and a completed vehicle delivered to a destination site are different outcomes. To compare them, add the work each requires to reach the buyer's chosen completion point. The following alternatives are questions to investigate with actual providers, not a list of confirmed supply options.
 
-| Proposed supply route | What the shipping scope must state | Work still to resolve at destination | Decision that remains open |
-| --- | --- | --- | --- |
-| Complete vehicle | Vehicle, installed equipment and separately carried items | Receipt, local vehicle review and site preparation | Carrier route and completed-vehicle acceptance |
-| Equipment modules with separately shipped chassis | Every equipment package and the vehicle shipment boundary | Matching, integration and verification | Whether separate transport creates an acceptable total route |
-| Equipment modules with destination chassis | Included equipment, excluded vehicle and interface deliverables | Chassis supply, integration and local review | Exact candidate chassis and division of work |
-| Larger assembled module using another transport route | Actual packed envelope and carrier proposal | Unloading and remaining connections | Whether less disassembly is worth the alternative route |
+| Supply boundary under discussion | What crosses the shipping boundary | What destination work must be included or separately obtained |
+| --- | --- | --- |
+| Vehicle-included proposal, if offered | Identified vehicle, installed equipment and separate items | Receipt, destination vehicle review and any unfinished handover work |
+| Equipment for a destination chassis | Defined assemblies and their interface information | Local vehicle purchase, integration, inspection and completion records |
+| Equipment and vehicle arriving separately | Equipment packages plus an identified vehicle shipment | Receipt of both, matching and the agreed integration scope |
+| A larger assembly on another transport route | The proposed packed assembly with fewer separated interfaces | Its handling and remaining local work, compared at the same endpoint |
+
+For example, an equipment-only freight estimate may look attractive because it omits the truck. That is not a saving until the buyer can compare the local vehicle, installation resources and technical services with the vehicle-included offer, if one exists. Conversely, a vehicle-included quotation may still exclude local review or arrival handling. Read both completion boundaries before judging either price.
 
 ![Folded crawler apparatus on a low-bed carrier with support legs visible](/images/equipment/transport-real-carrier.webp)
 
 *Reference photograph of crawler equipment on a carrier with supports visible. It does not depict a 40HQ packing arrangement or verify a road-ready transport state.*
 
 <!-- audit-section: conditions -->
+## Compare destination work as well as freight
+
+### Count the interfaces created by disassembly
+
+Separating assemblies can change the transport envelope, but each separated interface needs a destination action. Ask which connections require identification, preservation, controlled reassembly, inspection or testing, and who provides that work. The useful comparison is between complete arrival-to-use routes, not between container prices alone.
+
+Consider a proposed option that removes a forming module from its supporting arrangement. Before accepting it, the buyer should be able to locate the permitted separation boundary, packing provisions, receiving resources and reconnection deliverables. This is a planning example, not an instruction to disconnect a machine. If those records are absent, the interface is unresolved regardless of how attractive the freight estimate looks.
+
+### Check whether separate arrivals support destination work
+
+Suppose a forming module arrives in one shipment and its specified adapter components in another. The receiving team may be able to record the first arrival, while the agreed integration activity still depends on the second. Ask the appointed installer which assemblies, interface items and information must be present for its scope of work.
+
+The shipment proposal should identify that dependency and any required holding space. The buyer can then compare a different package grouping or a deferred integration activity with the freight estimate. The [destination receipt guide](/blog/roll-forming-lift-destination-receipt-plan/) records what actually arrived; receipt alone does not make the combined assembly complete. Physical loading, securing and unpacking arrangements remain the work of the appointed specialists.
+
+### Coordinate the local chassis before packing closes
+
+An equipment-only route shifts the vehicle purchase into a separate workstream. That workstream must still converge with the equipment design. Use the [destination chassis sourcing guide](/blog/truck-mounted-lift-destination-chassis-sourcing/) to define who buys the vehicle and the [truck chassis interface review](/blog/truck-mounted-roll-forming-chassis-interface-review/) to define the information needed for physical integration.
+
+A description such as “local truck supplied by buyer” is insufficient if mounting provisions, power connections, control interfaces and responsibility for completed-vehicle review remain unassigned. The equipment might arrive before the vehicle is ready, or the available vehicle might differ from the candidate used for the equipment review. The packing schedule should expose that dependency.
+
+### Compare delivered scope and unfinished work
+
+Use the same completion point for every price: for example, equipment received by the integrator, or the identified equipment installed with specified handover deliverables. Include freight, receiving resources, local chassis supply, integration services and remaining documentation as separate scope items. This explains the difference between offers without assuming a general cost advantage for modular shipping.
+
+Ask what technical help is included at destination. Sending connection documents, answering integration questions and attending the site are distinct services. A promise of support should identify the actual deliverable, while excluded work needs a provider or a separate quotation. Temporary frames and protection also need an agreed destination disposition and space; they should not disappear from the comparison after the vessel arrives.
+
+![Folded red crawler apparatus standing on deployed supports in a yard](/images/equipment/transport-real-stowed.webp)
+
+*Reference photograph of folded crawler equipment in a supported stationary state. It cannot establish a packed envelope, permitted disassembly or suitability for container transport.*
+
+<!-- audit-section: evidence-tradeoffs -->
 ## Review the packed item and its path
 
 ### Start with the largest indivisible item
 
-Ask the equipment-side reviewer to identify the largest item that cannot be separated under the proposed supply and assembly plan. Request its controlled packed dimensions, mass, orientation restrictions and support requirements. An unresolved governing package can prevent a meaningful route comparison, regardless of how readily the smaller items appear to fit.
+Ask the equipment party to identify the largest assembly that remains intact under its proposed supply and destination plan. Obtain the packed dimensions, mass, support and orientation information for that actual item, including frames and protection. Its loading path can be the governing constraint even if smaller packages appear straightforward.
 
-Once that item has been described, ask whether the packing study covers it alone or the complete proposed load. Separate drawings that place each package inside a container outline do not show that the packages can occupy their intended positions together. The packing professional needs the complete manifest and a coordinated arrangement covering the proposed supports, protection, securing and handling access. This is a request for the packing basis, not an instruction to arrange the cargo.
+Then request the complete loading plan. A drawing showing the main lifting module inside a container does not show where a separately supplied roll former, connecting parts and accessories will go. In a hypothetical order adding those items, the unchanged main module does not mean the original booking remains valid. The packing study must address the whole shipment and identify anything travelling separately.
 
-For a hypothetical order, the main lifting module is unchanged while a separately packed forming module, connecting frame and accessory package are added to the shipment scope. A previous sketch of the main module remains useful for identifying it. It does not establish where the additional packages belong, whether their interfaces are accounted for, or which transport units the revised proposal requires. The buyer should request the complete revised arrangement instead of treating the unchanged largest item as proof that the booking basis is unchanged.
-
-Keep three descriptions connected: the equipment being purchased, the packages that contain it, and the complete loading proposal. If a required item is absent from the packing arrangement, ask whether it is omitted, separately transported or still under review. Do not infer that a loose accessory can use an apparently empty gap. Its protection and transport arrangements still belong to the responsible packing party.
-
-Obtain dimensions and mass from the actual package records, not a model designation or photograph. A change to an option, frame or protective provision needs to be compared with the full packing basis even when it leaves the main equipment envelope unchanged.
+Keep the equipment list, package list and complete arrangement connected. The aim is a transport proposal for the equipment actually purchased, not a collection of independent sketches proving that individual objects can occupy the same empty container.
 
 ### Trace loading and unloading space
 
@@ -79,47 +107,6 @@ At destination, check whether the receiver has an accessible unloading area, app
 Request the packing professional's basis for supporting and securing the actual package during the proposed transport chain. Packed mass, support locations and package orientation must refer to the same configuration. A container selection, a lifting arrangement and a securing arrangement answer different questions; acceptance of one should not silently be used as approval of the others.
 
 The <a href="https://www.ilo.org/publications/imoilounece-code-practice-packing-cargo-transport-units" target="_blank" rel="noopener noreferrer">ILO publication page for the IMO/ILO/UNECE CTU Code</a> identifies guidance for cargo-unit packing and securing. It provides a reference for the packing discussion, not confirmation of this equipment's container fit, restraint design or destination acceptance. The responsible parties still need the actual shipment records and applicable requirements.
-
-![Folded red crawler apparatus standing on deployed supports in a yard](/images/equipment/transport-real-stowed.webp)
-
-*Reference photograph of folded crawler equipment in a supported stationary state. It cannot establish a packed envelope, permitted disassembly or suitability for container transport.*
-
-<!-- audit-section: evidence-tradeoffs -->
-## Compare destination work as well as freight
-
-### Count the interfaces created by disassembly
-
-Separating assemblies can change the transport envelope, but each separated interface needs a destination action. Ask which connections require identification, preservation, controlled reassembly, inspection or testing, and who provides that work. The useful comparison is between complete arrival-to-use routes, not between container prices alone.
-
-Consider a proposed option that removes a forming module from its supporting arrangement. Before accepting it, the buyer should be able to locate the permitted separation boundary, packing provisions, receiving resources and reconnection deliverables. This is a planning example, not an instruction to disconnect a machine. If those records are absent, the interface is unresolved regardless of how attractive the freight estimate looks.
-
-### Check whether the package groups support destination work
-
-The packing proposal should show where the items needed for each agreed destination activity will arrive. A main module, its identified connecting components and the relevant instructions might be delivered in different packages. Their combined presence on one order does not establish that they will be available together when the integration team needs them.
-
-Consider a hypothetical packing revision that puts a forming module in one shipment and its specified adapter components in another. The revised arrangement may reduce the size of one package, but it also creates a dependency between deliveries. Before choosing it, ask the appointed installer which items and information must be available for the agreed receiving and integration stages. A buyer should not assume that the visible main machine is enough to begin the next stage.
-
-Record three relationships in the packing discussion:
-
-- Each equipment assembly should refer to the packages containing its separately supplied interface items, with exclusions visible.
-- Each planned destination activity should identify the equipment, information and temporary items it depends on, using the installer's requirements.
-- Each proposed split shipment should identify what can be received independently and what later activity remains dependent on the other arrival.
-
-This is a comparison of package scope and dependencies, not a loading, unpacking or assembly sequence. The packing and handling specialists must establish physical access, restraint and handling arrangements. If a proposal depends on retrieving an item before another package can be dealt with, they need to resolve that condition in their own plan; this guide does not authorize reaching into a load or altering its securing.
-
-The result may be a different package grouping, a clarified delivery boundary or an expressly deferred integration activity. Keep that consequence beside the freight proposal so the buyer can compare complete routes. The [destination receipt guide](/blog/roll-forming-lift-destination-receipt-plan/) then records what actually arrived against those package relationships.
-
-### Coordinate the local chassis before packing closes
-
-An equipment-only route shifts the vehicle purchase into a separate workstream. That workstream must still converge with the equipment design. Use the [destination chassis sourcing guide](/blog/truck-mounted-lift-destination-chassis-sourcing/) to define who buys the vehicle and the [truck chassis interface review](/blog/truck-mounted-roll-forming-chassis-interface-review/) to define the information needed for physical integration.
-
-A description such as “local truck supplied by buyer” is insufficient if mounting provisions, power connections, control interfaces and responsibility for completed-vehicle review remain unassigned. The equipment might arrive before the vehicle is ready, or the available vehicle might differ from the candidate used for the equipment review. The packing schedule should expose that dependency.
-
-### Compare delivered scope and unfinished work
-
-Place freight, destination handling, integration work and outstanding technical services in separate comparison rows. Ask for included and excluded scope rather than predicting a saving. One offer may include packing frames and another may leave them for a later quotation; one may include connection documents while another leaves destination engineering outside its scope.
-
-Also identify temporary items that travel with the equipment but do not remain in service. Their removal, storage or return can affect receiving space and handover responsibilities. The [destination receipt plan](/blog/roll-forming-lift-destination-receipt-plan/) covers condition recording and discrepancy handling after arrival; it should receive the same package identities used by the packing study.
 
 ![Blue machine module suspended beside red lifting apparatus in an outdoor yard](/images/equipment/coil-real-module.webp)
 
@@ -148,12 +135,7 @@ Keep “information missing” separate from “reviewed and unsuitable.” The 
 
 ### Record the decision without hiding exclusions
 
-Finish the review with one identifiable equipment scope, complete package manifest, packing-study revision and receiving plan. Record whether the transport proposal covers that whole set or only named packages, together with outstanding conditions and their required decisions. A commercial booking deadline cannot establish a missing package arrangement; keep that gap visible to the parties agreeing the shipment.
-
-<!-- audit-section: cta-editorial-note -->
-### Request a scoped shipping-route review
-
-Send ARCLIFT the intended equipment supply, site receiving arrangements, required production height, destination market and proposed transport route. Include the forming-line scope, chassis responsibility and any container constraint so the technical selection and supply partner can organize a project-specific packing discussion. Final shipment scope, packing, integration and acceptance must follow the issued records for the quoted configuration. The editorial photographs describe reference scenes only; they are not shipment history, current supply evidence or approval of a handling method.
+The buying decision should name the supplied equipment, vehicle responsibility, destination completion point and transport study covering that scope. A route with missing package information needs that information; a route whose essential package cannot be accommodated needs a changed transport or supply proposal. A booking deadline cannot resolve either issue.
 
 ## FAQ
 
@@ -172,3 +154,8 @@ Bare dimensions are useful inputs but do not describe added packing frames, prot
 #### What if a local chassis has not been selected?
 
 Keep the equipment-to-chassis interface open and identify what can be reviewed provisionally. Do not present the entire delivery route as resolved. Close the candidate vehicle and integration responsibilities before relying on them in the final equipment and shipment plan.
+
+<!-- audit-section: cta-editorial-note -->
+## Request a scoped shipping-route review
+
+[Request a truck-family shipment proposal](/contact/?product=truck-mounted-roll-forming-lifts&request=quote) with the destination, preferred vehicle or chassis-sourcing route, forming-line scope and desired completion boundary. Include site receiving arrangements, production height and transport constraints. Ask ARCLIFT, as a technical selection and supply partner, to identify included equipment, local work and exclusions before a container study is commissioned. Final packing and integration are configuration-specific. The editorial photographs show the reference scenes described in their captions, not a verified 40HQ shipment.

@@ -2,7 +2,7 @@
 title: "Roof-Zone Survey Guide for Roll-Forming Lift Selection"
 description: "Survey roof zones for a roll-forming lift by connecting panel outlet height, receiving position, equipment stand area, obstructions and construction-stage data."
 date: 2026-08-07
-updated: 2026-10-20
+updated: 2026-10-22
 author: "ARCLIFT Technical Editorial"
 tags: ["roof zone survey", "roll forming lift selection", "site planning", "panel handover"]
 coverImage: "/images/equipment/entry-real-clearance.webp"
@@ -11,20 +11,21 @@ coverCaption: "Reference photograph showing equipment beside a building with gro
 draft: false
 ---
 
-A roof-zone survey for a roll-forming lift must connect the place where a roof panel will be received with the place where the forming machine could stand. The equipment raises a compatible roof-panel roll former toward the receiving level. A roof height alone cannot describe that relationship: the panel outlet, building edge, ground position and intervening structure all matter. The useful survey gives equipment reviewers a common plan and section on which to examine those relationships before a configuration is selected.
+A useful roof-zone enquiry needs two coordinated views: **an elevation connecting the forming outlet to the receiver, and a plan connecting that relationship to the available ground area**. A roll-forming lift carries a compatible roof-panel roll former toward the receiving level. Roof height alone leaves out direction, horizontal offset, panel width and the space occupied by the equipment. The survey should make the dimension or obstruction controlling selection easy to find.
 
-Start with the [roof-level roll-forming overview](/blog/roof-level-roll-forming-long-panels/) if the production approach is still being compared with ground forming and subsequent panel transfer. This article addresses the next question: which roof zones and stand positions need equipment-specific review? The [crawler roll-forming lift reference](/products/arc-c25-crawler-roll-forming-lift/) provides product context, while the survey supplies the project geometry.
+The [crawler roll-forming family](/products/#crawler-roll-forming-lifts) and [truck-mounted roll-forming family](/products/#truck-mounted-roll-forming-lifts) offer different equipment architectures to investigate. Both need a configuration drawing that can be compared with the same project geometry. If the production approach itself is undecided, begin with the [roof-level forming overview](/blog/roof-level-roll-forming-long-panels/).
 
 **Contents**
 
-- Connect the roof receiving point to the machine position
-- Survey the spaces between the two positions
+- Draw the outlet-to-receiver elevation
+- Draw the approach and working area in plan
 - Compare two proposed roof-zone arrangements
 - Prepare the package for an equipment review
 - FAQ
+- Request the configuration drawing that answers the survey
 
 <!-- audit-section: buyer-intent -->
-## Connect the roof receiving point to the machine position
+## Draw the outlet-to-receiver elevation
 
 ### Identify the panel destination in each roof zone
 
@@ -32,42 +33,40 @@ Mark where the emerging panel is intended to reach the roof-side receiving arran
 
 Separate zones when their receiving elevation, direction, building edge or proposed ground approach changes. A lower adjoining roof can require a different arrangement even when it belongs to the same building. Conversely, several adjacent areas may share a candidate arrangement, provided the relevant geometry and construction stage remain the same.
 
-### Name each height before recording its value
+### Name the height points before comparing values
 
-Use a shared project datum for the ground surface and receiving point. Ask the equipment party to identify the cutter or panel-outlet reference on its arrangement drawing. The lift-platform elevation is another reference, and a personnel working-height description belongs to a different question. Values with different reference points cannot be compared simply because they all contain the word height.
+Record the receiving elevation and ground surface against the project's shared datum. Ask the equipment party to identify the panel outlet or cutter reference on the proposed arrangement. The platform supporting the machine is another point, and a personnel working-height description answers a different question. A line mounted above a platform changes the relationship between those references.
 
-For a sloping roof, locate the particular receiving point rather than entering the ridge height for every zone. Record which levels come from drawings and which have been surveyed. Where the ground level varies along the proposed stand area, show that variation rather than choosing a convenient single elevation. The equipment review must connect these site measurements to the actual configuration.
+For a sloping roof, identify the actual receiving location rather than using the ridge height throughout. If the ground varies across the candidate stand area, show its levels at the relevant locations. The equipment drawing must connect those observations to its own support and outlet references.
 
-### Reconcile the references used by different teams
+The catalog family names identify architecture, not a universal height datum. For any quoted height, request the point being measured, its ground or support reference and the applicable machine state. A model suffix, historical label or photograph cannot provide that information for the proposed arrangement.
 
-The roof designer, site surveyor and equipment supplier may describe the same proposed relationship using different reference systems. A building elevation, a local site benchmark and a dimension from the machine base need a confirmed relationship before their values can be compared. Ask the responsible survey and equipment parties to provide that relationship on the coordinated plan and section, including units, reference directions and the points to which each value applies. Procurement should not infer a conversion from similar-looking numbers.
+### Reconcile building, survey and equipment references
 
-In a hypothetical enquiry, the roof drawing gives a design receiving elevation while a site note reports a ground reading from a temporary benchmark. The equipment sketch gives the outlet position relative to its own support reference. All three entries could be valid within their own documents, yet they do not establish the requested outlet relationship until the reference systems are connected. Forward the source references and request the missing connection instead of presenting an arithmetic difference as the required machine height.
+A roof designer may use a building datum, a site note a temporary benchmark, and an equipment drawing its support reference. Those values can all be correct without yet being comparable. Have the responsible survey and equipment parties connect the references, units and measurement points on the paired drawings. Keep design targets, site measurements and inaccessible areas identifiable; procurement should not infer a conversion from similar-looking numbers.
 
-Keep measured conditions, design targets and unmeasured items visibly distinct after coordination. A desired receiving position is not a survey result, and a dimension carried over from a drawing is not a fresh site measurement. If a reference cannot be recovered or a point was inaccessible, identify the unresolved item. That distinction allows an early equipment discussion to proceed on an explicitly provisional basis while showing which geometry must be confirmed before configuration selection can be completed.
-
-### Put direction and offset on the same drawing
-
-A section explains elevation, but a plan is needed to show the intended panel direction and horizontal relationship to the building. Mark the outlet reference, receiving point, building face and stand area on coordinated drawings. State what the outlet line represents: a centreline, an edge or another equipment reference. A line without that definition can be mistaken for the full space occupied by the proposed arrangement.
-
-Include the panel's specified width and orientation, together with the actual forming-equipment boundary provided by its supplier. Relate both to the side structures near the outlet and receiving point. A surveyed centre position can be correct while the lateral extent remains unrecorded. Where the equipment outline is still provisional, keep that gap visible instead of supplying an assumed margin around the centreline.
-
-Do not assume the machine can rotate, reach sideways or alter its outlet relationship to solve a drawing conflict. Those are configuration questions. A preliminary layout should expose the requested relationship clearly enough for the equipment party to say what information or alternative arrangement needs review.
+The useful output is a specific relationship, such as a required receiver tied to a surveyed stand area and a requested outlet point. If one reference remains missing, send the known geometry and ask for that connection. This allows a focused preliminary enquiry without turning an estimated height into a model selection.
 
 ![Raised forming equipment near an unfinished building structure](/images/equipment/coil-real-handling.webp)
 
 *Reference photograph showing a raised equipment arrangement, surrounding building structure and coils at ground level. It does not provide surveyed elevations, an approved feeding arrangement or the geometry of a proposed roof zone.*
 
 <!-- audit-section: conditions -->
-## Survey the spaces between the two positions
+## Draw the approach and working area in plan
 
-### Examine the building edge as a three-dimensional boundary
+### Put orientation, offset and lateral extent together
 
-Record columns, beams, bracing, eaves, gutters, façade projections and temporary edge works across the proposed panel and equipment width, as well as along the centreline. Identify where each feature lies in plan and elevation. A view along the outlet can show an open central path while omitting bracing beside it or a projection crossing only part of the proposed width.
+Mark the candidate stand area, outlet reference, first receiver and intended panel direction on one plan. Show the approach from the transport handoff or site route, including the turn into the proposed position. The drawing should let the equipment reviewer see how the required output direction relates to the available orientation of the base.
 
-Consider two hypothetical panel schedules using the same outlet centre reference and receiving elevation but specifying different panel widths. The recorded centre measurements can remain relevant to both, yet they do not establish that the survey covers both lateral extents. Ask which side features were located and which parts of the requested space remain unmeasured. The same question arises if a new side projection is installed while the centreline stays clear. Neither situation can be resolved by adding a generic clearance allowance to the old line.
+State whether the outlet line is a centreline, an edge or another equipment reference. Add the specified panel width and orientation, then overlay the forming-equipment boundary supplied for the proposed state. A correct centre position can still leave a side obstruction unrecorded. If the equipment outline is missing, identify that gap rather than adding an assumed clearance around the line.
 
-Ask the surveyor to connect photographs to the drawing locations. A photograph looking along the building can explain which member is being discussed, but perspective cannot supply an unmeasured offset. For partially completed structures, distinguish what is present from what will be installed before the equipment arrives.
+Do not resolve a conflict by assuming that the line can rotate, reach sideways or feed in reverse. The purpose of the plan is to ask whether a documented configuration can address the required relationship.
+
+### Locate obstructions across the whole requested width
+
+Record columns, bracing, eaves, gutters and temporary works in plan and elevation across the proposed panel and equipment width. An open centreline does not show whether a side projection crosses the requested space. Connect each relevant photograph to a drawing location; perspective cannot supply an unmeasured offset.
+
+Consider two hypothetical panel schedules with the same outlet centre and receiving elevation but different widths. The original centre measurements remain useful, yet the wider requirement may extend beyond the surveyed area. The next survey request should identify those side features. It should not replace the missing coverage with a generic margin. The same logic applies when façade works add a projection beside an otherwise unchanged centreline.
 
 ### Define the stand area beyond the base outline
 
@@ -90,11 +89,11 @@ The <a href="https://www.hse.gov.uk/workplacetransport/information/safeworkplace
 <!-- audit-section: evidence-tradeoffs -->
 ## Compare two proposed roof-zone arrangements
 
-### Keep the production objective constant
+### Compare the same receiver from two ground positions
 
-Consider a hypothetical building where the same roof area could be served from two proposed ground positions. Position A is nearer the desired receiving line but shares space with a delivery route. Position B leaves that route open but changes the horizontal relationship to the roof edge. The choice cannot be made from roof height, nor can a presumed reach adjustment settle it.
+Suppose Position A aligns closely with the intended receiving direction but occupies part of a delivery lane. Position B leaves the lane available but changes the horizontal offset to the building. Draw both using the same panel, receiver and construction stage. The trade-off is then visible: A needs a site-space answer, while B needs an equipment-geometry answer.
 
-Ask both concepts to serve the same panel destination and construction stage. Then compare the inputs that differ. This prevents the more convenient sketch from quietly changing the work objective. The trade-off may involve building geometry, material access and available support space together, requiring a revised concept before a model discussion can continue.
+A lower ground level at B would also change the outlet-to-receiver elevation. A wider panel could change the side-obstruction question at either position. These are reasons to compare the paired views, not to select equipment from the greatest roof height on a schedule. Ask for a proposed configuration corresponding to each geometry still under consideration.
 
 ### Use differences to assign the next question
 
@@ -109,11 +108,9 @@ The following comparison is a planning example, not a finding about equipment ca
 | Support area includes an underground feature | Evidence needed for that particular location | Which ground records and equipment support cases must the specialist examine? |
 | Later façade works occupy the same strip | Duration for which the concept remains relevant | Does the programme require another position or a revised work sequence? |
 
-### Follow a receiving-point change through the layout
+### Follow a receiving-point change through both views
 
-Suppose the roof contractor moves the intended receiving point from one bay to the next. The roof elevation may remain unchanged, but the outlet direction, nearby bracing and ground stand area may change. The original height entry therefore remains accurate without preserving the original layout decision. Update the affected plan and section together, then show the equipment reviewer what moved.
-
-This example illustrates why a survey is more than a list of maximum dimensions. It connects a particular receiving task to a particular position. If that connection changes, reuse only the measurements that still describe the revised proposal; do not extend the earlier conclusion to an unreviewed zone.
+Moving the receiver to another bay can leave its elevation unchanged while altering the outlet direction, side bracing and stand area. Update plan and elevation together, retaining the measurements that still describe the new proposal. An unchanged height does not preserve the previous layout decision. The [panel handover-zone guide](/blog/elevated-roll-forming-roof-panel-handover-zones/) develops the separate question of how the emerging panel is supported and received.
 
 ![Long light-colored panel beside elevated equipment and a building](/images/equipment/coil-real-panel.webp)
 
@@ -136,11 +133,11 @@ This example illustrates why a survey is more than a list of maximum dimensions.
 - Identify the wind and weather review owner and the conditions requiring a fresh site assessment.
 - State the destination, construction stage, survey date and documentation needed to close unresolved geometry.
 
-### Separate missing measurements from equipment questions
+### Ask for the missing measurement or equipment answer
 
-An unknown receiving elevation is a survey gap. A measured receiving elevation paired with an unidentified outlet reference is an equipment-information gap. A known receiving point obstructed by a planned structure is a concept question. Give each issue its own location and owner so the buyer can request the right response.
+An unknown receiving level is a survey gap. A measured receiver paired with an unidentified machine outlet is an equipment-information gap. A surveyed obstruction in the requested path is a layout problem. State which one controls the enquiry, with its drawing location and source, so the next response can address it directly.
 
-Include the measurement method and any inaccessible areas. Where drawings and site observations disagree, preserve the discrepancy rather than averaging values. Procurement needs to understand whether an outline quotation is based on confirmed geometry or a condition still to be resolved.
+Include inaccessible areas and differences between design drawings and site observations. The survey locates the physical question; it does not decide support adequacy or supply a panel-support method. The [truck jobsite setup guide](/blog/truck-mounted-forming-lift-jobsite-setup-review/) develops how this geometry combines with deliveries, neighbouring activities and the complete work position.
 
 ![Folded crawler equipment standing with ground supports extended](/images/equipment/transport-real-stowed.webp)
 
@@ -152,11 +149,6 @@ Include the measurement method and any inaccessible areas. Where drawings and si
 The proposed concept may not fit where the required outlet relationship cannot be matched to a documented equipment arrangement, the needed stand area is unavailable, or building and support constraints remain unresolved. A different ground position or receiving plan is a new proposal to assess, not an adjustment that can be assumed available.
 
 This survey does not prescribe panel-support spacing, permissible gaps, wind limits or equipment movements. Those decisions need the actual equipment, panel system and responsible project parties. A complete survey makes the unanswered physical questions visible; it does not turn a sketch into a work authorization.
-
-<!-- audit-section: cta-editorial-note -->
-### Send the roof relationship that needs an equipment answer
-
-Share the coordinated plan and section, roof-zone reference, receiving and ground levels, proposed stand area, construction stage and destination with ARCLIFT. Highlight the height or offset that controls the choice, together with the access and ground-review questions. ARCLIFT acts as an integrated equipment supplier and technical selection and supply partner. Final project-specific geometry, support and work-method decisions remain with the appointed parties. The reference photographs are editorial context and cannot replace a measured site survey or configuration drawing.
 
 ## FAQ
 
@@ -175,3 +167,8 @@ It can contain several zones, but each must retain its own receiving point, stan
 #### Does a clear stand area confirm that the ground is suitable?
 
 No. Available space and support suitability answer different questions. The survey locates the proposed working area; the ground review needs the corresponding equipment cases and site evidence before reaching its conclusion.
+
+<!-- audit-section: cta-editorial-note -->
+## Request the configuration drawing that answers the survey
+
+[Send a roof-zone enquiry to ARCLIFT](/contact/?product=crawler-roll-forming-lifts&request=advice) with the coordinated plan and elevation, receiving and ground levels, approach, outlet direction, panel width and candidate stand area. Choose the truck family if that is your preferred base. Highlight the controlling dimension or obstruction and include site stage, destination and transport route. Ask for the configuration drawing and height reference needed for a project-specific comparison. ARCLIFT acts as a technical selection and supply partner; the editorial photographs retain their captioned limitations and cannot replace the survey.

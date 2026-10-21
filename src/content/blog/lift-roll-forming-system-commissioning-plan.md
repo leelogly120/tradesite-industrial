@@ -2,7 +2,7 @@
 title: "Roll-Forming Lift Commissioning: Prepare the Interfaces"
 description: "Prepare roll-forming lift commissioning by connecting machine fit, feed arrangement, outlet geometry and site readiness before agreeing project-specific trials."
 date: 2026-08-07
-updated: 2026-10-19
+updated: 2026-10-22
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming commissioning", "lift system acceptance", "staged trials", "evidence records"]
 coverImage: "/images/equipment/coil-real-handling.webp"
@@ -11,156 +11,167 @@ coverCaption: "Local reference photograph of coils and elevated equipment; it do
 draft: false
 ---
 
-A roll-forming lift can arrive with its lifting assembly checked while the combined production arrangement is still unready. The forming machine may have a different mounting layout, the coil feed may be outside the agreed supply, or the roof receiving position may have changed. Commissioning preparation should connect these interfaces before a team agrees which project-specific trials can proceed.
+A commissioning visit is useful when its scope matches the equipment and site interfaces that will actually be available. Delivery of a lift does not establish a connected production arrangement: the former may come from another provider, the feed equipment may remain outside the order, or the permanent roof receiving area may be unfinished. Before buying attendance, describe what the visit is meant to resolve and what each participating party must supply.
 
-The equipment discussed here raises a compatible roof-panel roll-forming machine toward its intended production position. It is not a general personnel basket or a substitute for a separate finished-panel handling system. This guide helps buyers organize readiness across suppliers; it does not provide operating steps, test loads, trial sequences or acceptance limits.
-
-Use the [FAT and SAT guide](/blog/roll-forming-line-fat-sat-acceptance-checklist/) for the separate acceptance-record scope. Here the focus is the earlier question: what must be known about the actual combined arrangement before a commissioning plan can be released?
+This guide concerns lifting a compatible roof-panel roll former toward its intended output position. It helps buyers prepare the combined arrangement and request defined coordination services. The [FAT and SAT guide](/blog/roll-forming-line-fat-sat-acceptance-checklist/) covers the separate question of observations and acceptance records. Neither a visit booking nor this article supplies a trial procedure, operating limit or acceptance decision.
 
 **Contents**
 
-- Identify the arrangement being commissioned
-- Connect the five physical interfaces
-- Resolve readiness gaps before scheduling trials
-- Prepare a useful commissioning handover
+- Define the service the project needs
+- Prepare the five physical interfaces
+- Compare the visit with the production arrangement
+- Purchase a bounded visit scope
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Identify the arrangement being commissioned
+## Define the service the project needs
 
-### Start with the forming machine, not a lift label
+### Identify the equipment that will be present
 
-A model name on a quotation does not describe the complete installation. Record the proposed roll-forming machine, its mounting drawing, equipment mass information and the intended material path. A line supplied by another party may need interface review even when its output profile resembles an earlier project. Include the equipment revision that the buyer actually intends to install, not an older catalogue example selected only because the photograph looks similar.
+Name the actual former, lift, feed equipment and supplied accessories. Include current drawings and revisions, particularly where the forming line comes from another supplier. A similar profile or familiar machine photograph does not establish that the same mounting, mass distribution, controls or outlet relationship applies. The appointment must refer to the equipment the project intends to combine.
 
-### Separate assembled, transported and working states
-
-The machine can be delivered separately from the lift, transported in a stowed arrangement and later installed for elevated work. These states have different boundaries. A transport photograph cannot establish the working configuration, and an installed arrangement cannot automatically be treated as road-ready. Identify which components are present for each proposed activity and which temporary shipping fixtures are covered by equipment-specific instructions. The team responsible for installation should confirm that the state named in the plan matches the equipment in front of it.
+The [crawler roll-forming lift catalog](/products/#crawler-roll-forming-lifts) and [truck-mounted roll-forming lift catalog](/products/#truck-mounted-roll-forming-lifts) describe the two lift architectures. Selection of either leaves project interfaces to be defined. For a truck arrangement, identify the actual vehicle integration boundary; for a crawler, distinguish carrier delivery from the intended site setup.
 
 ### Name the parties at each connection
 
-ARCLIFT acts as an integrated equipment supplier and technical selection and supply partner. Depending on the contract, the forming machine, coil handling equipment, carrier, site preparation and receiving arrangement may come from different parties. The buyer needs a named contact for each interface and a person authorized to resolve disagreements between them. A single commercial contact is useful, but it does not replace the technical responsibility assigned to the integrator, equipment provider or site team.
+Identify who supplies information about the lift, forming machine, feed arrangement, electrical connection and site receiving area. Also identify who is responsible for assessing their integration. A coordinator can gather answers, but the service description should say which technical decisions that coordinator is qualified and contracted to make.
+
+ARCLIFT's role is an integrated equipment supplier and technical selection and supply partner. Ask what equipment information and coordination it proposes for this order. Do not assume that every service described in this guide is available, included or performed by ARCLIFT; machine providers and local specialists may have separate responsibilities.
+
+### Distinguish three possible visit purposes
+
+A preparation visit might establish the actual equipment and outstanding site inputs. An interface coordination visit might bring the responsible providers together to resolve questions about a defined combination. Attendance during agreed verification might support a separately approved project plan. Those are different services, even if each quotation calls them commissioning.
+
+For each requested service, name the deliverable: for example, a record of the equipment present, a response on an identified interface, or a report covering the agreed attendance scope. Ask who issues it and what it excludes. Buying an undefined number of days on site does not explain what question those days can answer.
 
 ![Blue machine module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
 
 *Local reference photograph of a suspended blue machine module; it does not show a verified mounting connection or establish that the pictured components are compatible with the proposed project.*
 
 <!-- audit-section: conditions -->
-## Connect the five physical interfaces
+## Prepare the five physical interfaces
 
 ### Machine to lifting support
 
-The mounting interface includes geometry, permitted attachment locations, support arrangement and the equipment information needed for engineering review. A forming machine that appears to fit within the platform outline may still conflict with a service access point, an accessory or the intended support arrangement. Ask for an interface disposition tied to the current drawings. The [mounting interface guide](/blog/lifted-roll-forming-line-mounting-interface-review/) explains the procurement inputs without turning a buyer's sketch into an installation design.
+Provide the former's mounting geometry, attachment information, equipment mass data and associated accessories. Include service-access needs and the proposed support arrangement. A machine can sit within the platform outline while a connection or access requirement remains incompatible with the proposed layout. The [mounting interface guide](/blog/lifted-roll-forming-line-mounting-interface-review/) explains which inputs support that review.
+
+If the visit is intended to address this connection, ask which drawings must be available and which responsible provider must attend or respond. A specialist cannot be expected to determine an undocumented machine interface merely because both items have arrived at the site. The service scope should identify the decision it can support and any further design work it assumes.
 
 ### Coil feed to the forming line
 
-Confirm who supplies the coil support, feed-related equipment and their connection information. A coil located beside elevated apparatus does not establish how material will be introduced into the line. The agreed arrangement needs its own equipment documentation and review. Changes in coil information, feed direction or the position of a separate supply item should be visible to the commissioning coordinator. Otherwise the lifting equipment can appear ready while a critical production dependency remains unresolved.
+Identify the coil support and feed equipment, their provider and their intended relationship to the former. A coil shown at ground level beside elevated equipment does not establish a connected material path. Describe which part of the feed arrangement is within the purchase and which part the buyer must source elsewhere.
+
+A requested feed-interface review needs the actual unit and applicable connection information, not only a coil description. If that unit will be absent during the visit, ask what preparation work can still be completed and what remains dependent on it. This prevents a lift-focused attendance scope from being mistaken for readiness of the entire material path.
 
 ### Forming outlet to the roof receiving area
 
-Platform height, forming outlet height and the roof receiving elevation are separate dimensions. A discussion that mentions only the building height leaves the outlet relationship uncertain. Connect the surveyed reference point, proposed machine orientation and receiving location to the same project drawing. The [roof survey guide](/blog/roof-zone-survey-roll-forming-lift-selection/) covers these inputs. A changed building zone or receiving point should return to that review before the commissioning appointment is treated as fixed.
+Use one project drawing to relate the former's outlet, the roof receiving point and the intended machine orientation. Platform height, outlet height and receiving elevation are separate references. The [roof survey guide](/blog/roof-zone-survey-roll-forming-lift-selection/) provides the detailed input questions.
+
+State whether the permanent receiving area will exist at the time of the visit. If a different location is proposed, the service description should name the geometry it represents. Observations about one receiving area cannot silently settle the relationship with another. The project needs a specific response on the outstanding outlet-to-building interface.
 
 ### Equipment to power and controls
 
-Ask which party supplies the power connection information and which party owns the control interface. A machine power requirement alone does not describe how the combined equipment is coordinated. Any connection, interlock, control responsibility or required function must come from the applicable equipment and integration documents. This article supplies no wiring instructions. Use the [electrical and control interface guide](/blog/roll-forming-line-electrical-control-interfaces/) to identify the questions to assign to qualified personnel.
+Identify the party supplying power-connection information and the party responsible for control integration. A former's power requirement does not describe the combined equipment's control responsibilities, functions or connection boundary. The [electrical and control interface guide](/blog/roll-forming-line-electrical-control-interfaces/) helps assign these questions to the appropriate specialists.
 
-### Equipment to the actual site
+Ask which site supply and equipment documents they need before attendance. If a temporary source is proposed for the visit, locate it and distinguish it from the production supply. This is a coordination requirement, not permission to connect the equipment or a wiring instruction. Any proposed electrical work must remain within the responsible provider's actual scope.
 
-The destination setup depends on more than the machine combination. Access, standing area, ground or floor information, support arrangement, nearby obstructions and the relevant environmental conditions belong to the site assessment. A successful check elsewhere cannot establish that a new floor or roof zone is suitable. Nor does a crawler undercarriage, by itself, establish permission to travel while elevated. The applicable equipment instructions and site review must identify the allowed states and activities.
+### Equipment to the site and its working state
+
+Provide the intended standing position, route, ground or floor information, support arrangement, nearby obstructions and relevant environmental inputs. Identify whether the equipment will be delivered, assembled or configured for the proposed visit. Those conditions affect what can be assessed. A transport arrangement does not establish the working state, and an elevated arrangement does not imply permission to travel.
+
+If local site preparation is outside the service quotation, make its required inputs explicit. The visitor's scope should say whether it includes collecting site information, assessing specified conditions or merely receiving the project's existing assessment. These descriptions have different deliverables and must not be treated as equivalent assurance.
 
 ![Elevated forming apparatus beside a building with nearby coils and supports](/images/equipment/entry-real-clearance.webp)
 
 *Local reference photograph of equipment beside a building; it does not measure outlet elevation, demonstrate clearance or approve the standing area shown.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## Resolve readiness gaps before scheduling trials
+## Compare the visit with the production arrangement
 
-### Turn an unknown into a specific dependency
+### Keep the two layouts visible
 
-A useful readiness register says what question remains open, which activity depends on it and who supplies the answer. “Awaiting documents” is too broad. “Current machine mounting drawing required before the proposed connection can be reviewed” explains the interface and its consequence. This keeps technical coordination focused without inventing a universal checklist. It also helps procurement distinguish an equipment omission from a site input that has not yet been provided.
+Before arranging a coordinated visit, place its proposed layout beside the intended production layout. Identify the former and lift, feed unit, supply boundary and receiving area on both. The comparison exposes whether the appointment addresses the final combination or a limited preparation question.
 
-| Open issue | Information needed | Decision affected | Appropriate owner to identify |
+| Interface | Arrangement proposed for the visit | Intended production arrangement | Scope question |
 | --- | --- | --- | --- |
-| Forming machine changed after quotation | Current geometry, mass and connection information | Mounting and integration review | Machine supplier and integration reviewer |
-| Coil arrangement remains outside supply | Defined feed equipment and connection boundary | Readiness of the combined production arrangement | Buyer and feed equipment provider |
-| Roof receiving location moved | Revised survey with common height references | Outlet position and site arrangement | Site survey and project technical team |
-| Different site power proposed | Applicable equipment and connection requirements | Electrical readiness | Equipment and electrical specialists |
-| Delivery discrepancy remains unresolved | Identified component and documented disposition | Affected installation or verification activity | Receiving and responsible technical teams |
+| Former and lifting support | Actual machines and fitted items present | Specified equipment combination | Which connection is represented by the current drawings? |
+| Feed equipment | Named temporary or permanent unit | Intended production feed unit and position | Which material-side interface can the visit address? |
+| Power and controls | Available supply boundary and documentation | Destination production boundary | Which differences require the electrical provider's response? |
+| Outlet and receiver | Receiving location actually available | Required roof receiving area | Which geometry is represented and which remains outstanding? |
+| Standing area and supports | Site position available during attendance | Intended production position | Which site assessment belongs to each arrangement? |
 
-### Compare the visit arrangement with the intended production arrangement
+This table is a scope aid, not a verification plan. It gives procurement a way to buy an appointment whose purpose can be explained before travel and attendance costs are committed.
 
-Before scheduling a coordinated verification visit, place its proposed layout beside the intended production layout. Identify the actual former and lift, feed equipment, supply connection location and receiving area on each. A temporary item can answer a limited preparation question while leaving a production interface unrepresented. Procurement needs that distinction to decide what the visit can usefully cover and what equipment or site work is still needed.
+### Use a temporary arrangement for a defined question
 
-Consider a hypothetical project with the specified former and lift available, a temporary feed unit proposed for the visit, and the permanent receiving area still under construction. The team can ask the responsible specialists which planned observations relate to the equipment present. It can also identify questions about the permanent feed connection and receiving geometry that require their own preparation. This is a comparison of scope, not a proposed trial method or permission to use temporary equipment.
+Consider a hypothetical project with the specified former and lift available, a temporary feed unit proposed for the visit and the permanent receiving area still under construction. The responsible specialists should say which questions the available arrangement can address. They should also identify what information or later attendance is needed for the permanent feed and receiving interfaces.
 
-| Interface | Arrangement proposed for the visit | Intended production arrangement | Preparation question |
-| --- | --- | --- | --- |
-| Former and lifting support | Identify the actual equipment and installed items present | Identify the specified equipment combination | Are both drawings describing the same assembly? |
-| Feed equipment | Name the temporary or permanent unit proposed | Name the feed unit and its intended position | Which connection and orientation are represented? |
-| Power interface | Locate the proposed supply boundary | Locate the destination production supply boundary | Which connection information differs for electrical review? |
-| Panel receiving area | Mark the area actually available for the visit | Mark the intended roof receiving area | Which outlet-to-building relationship is represented? |
+The buyer can then compare two service requests: a bounded visit covering the present equipment, or a later coordinated visit after the missing interfaces are available. The earlier option may leave separate work to purchase; the later option depends on the site's programme. Neither is automatically preferable, and the example does not authorize temporary equipment or prescribe trials.
 
-A useful visit description can therefore say that a named arrangement is prepared for a defined scope, with the permanent receiving interface still outstanding. That gives procurement a concrete basis for coordinating deliveries and specialist attendance. The separate FAT/SAT records should later state what was actually observed; a commissioning-preparation note should first make clear what will be present.
+Ask each proposal to state the consequence of an unavailable prerequisite. Does the service change to information gathering, require rescheduling, or leave a named deliverable outstanding? That answer is more useful than a promise to complete commissioning regardless of the actual arrangement.
 
-### Match attendance to the remaining dependencies
+### Match attendance to the dependency
 
-Booking personnel or transport does not close a technical gap. There is a trade-off between arranging resources early and exposing the project to changes in the agreed configuration. Record assumptions before committing the affected activity, and distinguish confirmed attendance from confirmed technical readiness. Commercial teams can then discuss timing using the actual dependency rather than promising that every outstanding item will be resolved during the visit. No generic commissioning duration follows from the product category.
+A mounting question calls for the relevant machine and integration information. A changed power boundary calls for the equipment and electrical providers' input. An unfinished receiving area calls for current site geometry. Bringing only one provider to site cannot be assumed to resolve all three.
 
-### Use a hypothetical interface problem to test the plan
-
-Consider a hypothetical project where the lift arrives as ordered, but the buyer substitutes a forming line with a different discharge location. The transport receipt can remain accurate while the previous outlet arrangement no longer answers the current question. The next task is to identify which mounting, height and receiving assumptions changed, assign their review, and revise the relevant commissioning prerequisites. Repeating unrelated checks would not resolve the missing geometry. This example is a planning scenario, not an ARCLIFT customer result.
-
-### Keep inspection guidance within its scope
-
-The British HSE's <a href="https://www.hse.gov.uk/work-equipment-machinery/inspection.htm" target="_blank" rel="noopener noreferrer">work equipment inspection guidance</a> identifies installation conditions and reassembly at a new location as relevant inspection circumstances. It also ties inspection scope to risk assessment and equipment recommendations. That is useful context for separating equipment delivery from installation readiness. It is Great Britain guidance, not a universal approval process or a commissioning method for an ARCLIFT configuration; the destination project needs its own applicable requirements and competent review.
+For Great Britain context, the British HSE's <a href="https://www.hse.gov.uk/work-equipment-machinery/inspection.htm" target="_blank" rel="noopener noreferrer">work equipment inspection guidance</a> addresses installation-dependent equipment and reassembly at a new location, with inspection scope determined through risk assessment and equipment recommendations. It does not define a universal commissioning service or approve this configuration. Applicable destination requirements remain part of the project brief.
 
 ![Long light-colored roof panel beside a steel building and equipment](/images/equipment/coil-real-panel.webp)
 
 *Local reference photograph of a long panel beside a building; it does not establish panel dimensions, production quality, output rate or a completed commissioning result.*
 
-<!-- audit-section: limitations-not-fit -->
-## Prepare a useful commissioning handover
-
-### Recognize when this planning approach may not fit
-
-This guide may not fit equipment with an unknown identity, an undocumented modification or an undefined integration boundary. In those circumstances, first establish what equipment exists and which responsible party can assess it. A public article cannot release a trial, determine a safe operating limit or replace the equipment instructions, project engineering, required inspection and site authorization.
-
 <!-- audit-section: project-checklist -->
-### Send inputs that answer the readiness questions
+## Purchase a bounded visit scope
 
-- Identify the forming machine revision and current mounting documentation.
-- State the required outlet height using an identified survey reference.
-- Provide roof geometry and the intended receiving zone.
-- Describe profile, material and coil feed information within the agreed supply.
-- Assign responsibility for ground or floor assessment at the site.
-- Describe the access route and planned equipment standing location.
-- Identify transport state, carrier or chassis information where applicable.
-- Supply power and control interface requirements from the responsible providers.
-- Record destination requirements, open discrepancies and their owners.
-- Identify environmental inputs, including wind conditions, for competent project review.
+### Send the inputs that affect attendance
 
-### Connect the handover to the next decision
+Keep the request focused on the combined arrangement and the service being purchased:
 
-The resulting handover should make it clear which arrangement is being considered, which prerequisites are closed and which remain open. Keep any actual trial method and acceptance criteria in the controlled project documentation. Use the [configuration change guide](/blog/roll-forming-lift-configuration-change-control/) when equipment or site inputs change after this handover. That preserves the connection between a readiness decision and the configuration it actually covered.
+- Actual former and lift identities, revisions, mounting records and included accessories.
+- Panel profile, material and coil/feed information relevant to the proposed equipment.
+- Outlet height references, roof geometry, orientation and receiving area for the visit and production.
+- Ground or floor information, route and standing-area conditions for site review.
+- Transport state, carrier or chassis boundary and planned delivery scope.
+- Power and control interface documents and their responsible providers.
+- Wind or other environmental inputs affecting the proposed work location.
+- Destination requirements and requested document language or handover format.
+- Missing interfaces, who will provide them and when they are expected to be available.
+- The service requested, its intended deliverable and which participants are needed.
 
-<!-- audit-section: cta-editorial-note -->
-### Ask ARCLIFT to define its supply and coordination scope
+The list should distinguish supplied facts from proposed arrangements. A missing mounting drawing and an unfinished receiving area create different dependencies; naming them lets a provider explain the attendance scope precisely.
 
-Send ARCLIFT the forming machine information, intended outlet height, site and roof zone survey, destination, transport arrangement and floor or ground inputs. Ask which equipment and interface information ARCLIFT can supply, which inputs remain with other parties, and what is required for a project-specific review. The [crawler roll-forming lift reference](/products/arc-c25-crawler-roll-forming-lift/) is a starting point for selection discussions; final suitability depends on the confirmed configuration. Photographs in this editorial guide come from local reference material and illustrate equipment context only. They do not certify commissioning readiness or establish a project result.
+### Compare the quotation against the promised deliverable
+
+Ask what preparation, attendance and follow-up are included. Identify responsibility for local equipment, electrical services, site preparation, translation and any additional visit. Compare travel and rescheduling assumptions alongside the technical scope. A lower attendance price may cover less of the combined arrangement, while a broader coordination description still needs named boundaries.
+
+Keep acceptance criteria and actual observations in the project's controlled FAT/SAT documentation. Use the [configuration-change guide](/blog/roll-forming-lift-configuration-change-control/) if the former or site changes after the service scope is agreed. The buyer should be able to see whether that change affects the planned visit, the required participants or the deliverable being purchased.
+
+<!-- audit-section: limitations-not-fit -->
+### Resolve identity and responsibility gaps first
+
+A visit proposal may not fit the project when it depends on unidentified equipment, undocumented modifications or an integration boundary that no party accepts. Establish those basics before purchasing a general promise of completion. This preparation guide cannot release trials, set operating limits or replace project engineering, applicable inspection and site authorization.
 
 ## FAQ
 
-#### Is delivery of the lift enough to begin commissioning?
+#### Is delivery of the lift enough to arrange a complete commissioning service?
 
-No. Receipt establishes what arrived and its recorded condition. The combined equipment, installation and site prerequisites still need review against the current project arrangement and the applicable instructions.
+Delivery identifies one part of the arrangement. The former, feed equipment, receiving geometry, power and site prerequisites determine what the requested service can cover. Name those interfaces before agreeing the appointment.
 
-#### Can a previous forming machine trial cover a replacement line?
+#### Can a temporary visit arrangement cover permanent production?
 
-Only the responsible technical review can determine what remains applicable. A replacement can change mounting, mass information, feed, outlet position or controls even if the finished profile appears similar.
+Only to the extent determined by the responsible technical review. Describe the differences explicitly. The service may answer questions about equipment present while leaving the permanent feed, supply or receiving interface outstanding.
 
-#### Does this guide provide a sequence for running trials?
+#### Who should attend when two suppliers share an interface?
 
-No. It organizes procurement and coordination inputs. Authorized personnel must use the approved project method, equipment instructions and defined acceptance criteria for any actual trial.
+Ask which providers' information and decisions are required and who coordinates their integration. Attendance can be useful only when the relevant parties can address the identified boundary; one commercial contact does not automatically own every technical decision.
 
-#### Who should resolve an interface shared by two suppliers?
+#### Does ARCLIFT supply every service described here?
 
-The project should identify the responsible integration reviewer and obtain input from both providers. An unresolved shared boundary should remain explicit rather than being assigned by assumption to the commissioning visit.
+No such scope should be assumed. These are questions for the actual quotation. Ask ARCLIFT to define its equipment information, coordination and any proposed attendance, then identify the functions retained by other providers and the project.
+
+<!-- audit-section: cta-editorial-note -->
+### Request a service scope for the combined arrangement
+
+[Discuss a crawler roll-forming lift service enquiry with ARCLIFT](/contact/?product=crawler-roll-forming-lifts&request=advice). Send the visit and production layouts, name the missing interfaces, and ask what preparation, participation and deliverable can be included for the specific appointment. State if the project instead requires a truck-mounted configuration so the supply discussion follows the actual equipment.
+
+Identify outlet height, site readiness and destination attendance requirements. This editorial guide helps define the service; final verification activities and acceptance decisions belong to the authorized project arrangements.

@@ -76,13 +76,14 @@ describe('final ARCLIFT review regressions', () => {
       readFile(new URL('../src/components/EquipmentDiagram.astro', import.meta.url), 'utf8'),
     ]);
     expect(list).toMatch(/buildProductView\(product\)/);
-    expect(list).toMatch(/<EquipmentDiagram family=\{family\.diagramFamily\} compact \/>/);
-    expect(list).toMatch(/<aside class="family-reference-boundary">[\s\S]*?Editorial planning visual — not model-specific evidence\.[\s\S]*?Signed technical schedules, approved drawings and approved load charts control configuration and project suitability\.[\s\S]*?<\/aside>/);
+    expect(list).toMatch(/<figure class="family-card__photo" data-equipment-photo>[\s\S]*?<img src=\{family\.image\.src\}[\s\S]*?<figcaption>\{family\.image\.caption\}<\/figcaption>/);
+    expect(list).toMatch(/<aside class="family-reference-boundary">[\s\S]*?archived or concept references[\s\S]*?signed technical schedule, approved drawings and applicable load chart[\s\S]*?not individual ARC models\.[\s\S]*?<\/aside>/);
     expect(diagram).toMatch(/<figure[^>]*data-equipment-family=\{family\}[^>]*>[\s\S]*?<figcaption>AI-assisted editorial schematic — not to scale; not model-specific evidence\.<\/figcaption>[\s\S]*?<\/figure>/);
     expect(list).toMatch(/reference\.orientation\.value/);
     expect(list).toMatch(/reference\.confirmationGate/);
     expect(detail).toMatch(/getRelatedProductSlugs\(product\.id, data\.relatedProducts\)/);
-    expect(detail).toMatch(/related-card__disclosure/);
+    expect(detail).toMatch(/Family reference photograph, not an image of this ARC model/);
+    expect(detail).toMatch(/<details class="product-gallery-section">/);
     expect(detail).not.toMatch(/<main class="decision-page">/);
   });
 });

@@ -253,7 +253,7 @@ describe('public ARCLIFT identity', () => {
     const blogLayout = await readProjectFile('src/layouts/BlogLayout.astro');
 
     expect(contact).toMatch(/['"]@type['"]:\s*['"]Organization['"]/);
-    expect(contact).toMatch(/Configuration Documentation/i);
+    expect(contact).toMatch(/Documents depend on the model and proposed configuration/i);
     expect(blogLayout).toMatch(/evidence files/i);
     expect(blogLayout).toMatch(/working height/i);
     expect(blogLayout).toMatch(/destination market/i);

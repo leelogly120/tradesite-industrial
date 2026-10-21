@@ -30,6 +30,12 @@ const models = [
 ];
 const defaultModel =
   models.find((model) => model !== 'Not sure' && productName.startsWith(model)) || 'Not sure';
+const families = [
+  ['truck-mounted-roll-forming-lifts', 'Truck-Mounted Roll Forming Lifts'],
+  ['crawler-roll-forming-lifts', 'Crawler Roll Forming Lifts'],
+  ['crawler-ceiling-platforms', 'Crawler Ceiling & Wall Platforms'],
+  ['truck-mounted-work-platforms', 'Truck-Mounted Work Platforms'],
+];
 const countries = [
   'Select...',
   'United States',
@@ -64,16 +70,40 @@ const countries = [
     aria-hidden="true"
   />
 
+  <div class:list={variant === 'contact' ? ['fg'] : ['form-group']}>
+    <label for="requestType">I need</label>
+    <select id="requestType" name="requestType" aria-describedby="request-help">
+      <option value="quote">A quote</option>
+      <option value="datasheet">Technical documents</option>
+      <option value="advice">Help choosing equipment</option>
+    </select>
+    <p id="request-help" class="field-help" data-request-help>Start with the equipment or application you have in mind.</p>
+    <span class="field-error" data-error-for="requestType"></span>
+  </div>
+
   {
     variant === 'contact' ? (
       <div class="contact-fields">
+        <div class="fg">
+          <label for="model">Product / Model</label>
+          <select id="model" name="model">
+            <option value="Not sure">Not sure — help me choose</option>
+            <optgroup label="Equipment families">
+              {families.map(([value, name]) => <option value={value}>{name}</option>)}
+            </optgroup>
+            <optgroup label="Model references">
+              {models.filter(model => model !== 'Not sure').map(model => <option value={model}>{model}</option>)}
+            </optgroup>
+          </select>
+        </div>
         <div class="fg">
           <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
           <input id="name" name="name" maxlength="120" autocomplete="name" placeholder="Your full name" required />
           <span class="field-error" data-error-for="name"></span>
         </div>
         <div class="fg">
-          <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+          <p id="contact-help" class="field-help contact-help">Provide an email address or a WhatsApp / phone number so we can reply.</p>
+          <label for="email">Email</label>
           <input
             id="email"
             name="email"
@@ -81,13 +111,13 @@ const countries = [
             maxlength="254"
             autocomplete="email"
             placeholder="your@email.com"
-            required
+            aria-describedby="contact-help"
           />
           <span class="field-error" data-error-for="email"></span>
         </div>
         <div class="fg">
           <label for="phone">
-            WhatsApp / Phone <span class="req" aria-hidden="true">*</span>
+            WhatsApp / Phone
           </label>
           <input
             id="phone"
@@ -95,11 +125,12 @@ const countries = [
             type="tel"
             maxlength="50"
             autocomplete="tel"
-            placeholder="+86 156 1768 7185"
-            required
+            placeholder="Include country code"
+            aria-describedby="contact-help"
           />
           <span class="field-error" data-error-for="phone"></span>
         </div>
+        <p class="field-error contact-error" data-error-for="contact"></p>
         <div class="fg">
           <label for="company">Company</label>
           <input id="company" name="company" maxlength="160" autocomplete="organization" placeholder="Your company name" />
@@ -107,7 +138,7 @@ const countries = [
         </div>
         <div class="fg">
           <label for="message">Message</label>
-          <textarea id="message" name="message" maxlength="5000" placeholder="Tell us about your project requirements, working height, load capacity, site conditions..."></textarea>
+          <textarea id="message" name="message" maxlength="5000" placeholder="A few details are enough to start: your application, destination or a question."></textarea>
           <span class="field-error" data-error-for="message"></span>
         </div>
       </div>
@@ -204,7 +235,7 @@ const countries = [
     style="width:100%;"
   >
     <span data-submit-label>
-      {variant === 'contact' ? 'Submit Quote Request →' : 'Submit Inquiry'}
+      {variant === 'contact' ? 'Send Request →' : 'Submit Inquiry'}
     </span>
     <span data-submit-progress hidden>Submitting…</span>
   </button>
@@ -234,14 +265,31 @@ const countries = [
     }
   };
 
-  const queryProduct = new URLSearchParams(window.location.search).get('product') || '';
+  const query = new URLSearchParams(window.location.search);
   const model = form?.querySelector<HTMLSelectElement>('#model');
-  if (queryProduct && model && [...model.options].some((option) => option.value === queryProduct)) {
-    model.value = queryProduct;
+  const pageModel = model?.value || '';
+  const queryProduct = query.get('product') || query.get('family') || '';
+  const matchingModel = model && [...model.options].find(option => option.value.toLowerCase() === queryProduct.toLowerCase());
+  if (matchingModel && model) {
+    model.value = matchingModel.value;
   }
+  const requestType = form?.querySelector<HTMLSelectElement>('#requestType');
+  const queryRequest = (query.get('request') || '').toLowerCase();
+  if (requestType && ['quote', 'datasheet', 'advice'].includes(queryRequest)) requestType.value = queryRequest;
+  const updateRequestHelp = () => {
+    const help = form?.querySelector<HTMLElement>('[data-request-help]');
+    if (help) help.textContent = requestType?.value === 'datasheet'
+      ? 'Tell us which equipment interests you. We will confirm the available technical documents for that configuration.'
+      : requestType?.value === 'advice'
+        ? 'Tell us what you need to do. We can help narrow down the equipment and the next details to check.'
+        : 'Start with the equipment or application you have in mind.';
+  };
+  requestType?.addEventListener('change', updateRequestHelp);
+  updateRequestHelp();
 
   form?.addEventListener('submit', async (event) => {
     event.preventDefault();
+    if (submit?.disabled) return;
     clearErrors();
 
     const data = Object.fromEntries(new FormData(form).entries()) as Record<string, string>;
@@ -252,10 +300,9 @@ const countries = [
 
     if (formVariant === 'contact') {
       if (!value('name')) errors.name = 'Please enter your name.';
-      if (!value('email')) errors.email = 'Please enter your email address.';
-      else if (!emailPattern.test(value('email'))) errors.email = 'Enter a valid email address.';
-      if (!value('phone')) errors.phone = 'Please enter your WhatsApp/phone number.';
-      else if (!phonePattern.test(value('phone'))) {
+      if (!value('email') && !value('phone')) errors.contact = 'Enter an email address or WhatsApp/phone number.';
+      if (value('email') && !emailPattern.test(value('email'))) errors.email = 'Enter a valid email address.';
+      if (value('phone') && (!phonePattern.test(value('phone')) || value('phone').replace(/\D/g, '').length < 7)) {
         errors.phone = 'Enter a valid WhatsApp/phone number.';
       }
     } else {
@@ -285,7 +332,9 @@ const countries = [
     const payload = {
       ...data,
       formVariant,
-      product: form.dataset.product || queryProduct,
+      product: formVariant === 'contact'
+        ? (value('model') === 'Not sure' ? '' : value('model'))
+        : (value('model') !== pageModel ? value('model') : form.dataset.product || ''),
       productSlug: form.dataset.productSlug || '',
       sourcePage: `${window.location.pathname}${window.location.search}`,
       submittedAt: new Date().toISOString(),
@@ -312,9 +361,12 @@ const countries = [
       }
 
       form.reset();
+      if (model) model.value = value('model');
+      if (requestType) requestType.value = value('requestType');
+      updateRequestHelp();
       if (status) {
         status.setAttribute('role', 'status');
-        status.textContent = 'Thank you. Your project information was sent for engineering review.';
+        status.textContent = 'Thank you. Your request was sent. We will reply using your contact details.';
       }
     } catch {
       if (status) {
@@ -341,30 +393,60 @@ const countries = [
 
   form[data-form-variant='contact'] {
     width: 100%;
-    max-width: 434px;
+    max-width: 100%;
   }
 
   form[data-form-variant='contact'] .fg {
     margin-bottom: 20px;
   }
 
-  form[data-form-variant='contact'] input {
+  form[data-form-variant='contact'] input,
+  form[data-form-variant='contact'] select {
     height: 54px;
     box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    border: 1px solid #c4d0d7;
+    border-radius: 3px;
+    background: #fff;
+    color: #273c47;
+    padding: 0 14px;
+    font: inherit;
   }
 
   form[data-form-variant='contact'] textarea {
     width: 100%;
-    height: 100px;
+    height: 120px;
     min-height: 100px;
     box-sizing: border-box;
+    border: 1px solid #c4d0d7;
+    border-radius: 3px;
+    padding: 12px 14px;
+    background: #fff;
+    color: #273c47;
+    font: inherit;
+    resize: vertical;
   }
 
   form[data-form-variant='contact'] .submit {
     height: 58px;
     box-sizing: border-box;
     padding: 0 16px;
+    border: 0;
+    border-radius: 3px;
+    background: #123b50;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
   }
+
+  form[data-form-variant='contact'] .submit:hover { background: #20566f; }
+  form[data-form-variant='contact'] .submit:disabled { opacity: .65; cursor: wait; }
+  form[data-form-variant='contact'] label { display: block; margin-bottom: 6px; font-weight: 650; color: #273c47; }
+  form[data-form-variant='contact'] .req { color: #123b50; }
+  .field-help { margin: 7px 0 0; color: #526570; font-size: .9rem; line-height: 1.5; }
+  .contact-help { margin: 0 0 12px; }
 
   .field-error {
     display: block;

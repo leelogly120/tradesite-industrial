@@ -72,4 +72,46 @@ describe('inquiry contract', () => {
     expect(result.ok).toBe(true);
     if (result.ok) expect(result.value).not.toHaveProperty('admin');
   });
+
+  it.each([
+    { email: 'jane@roof.test', phone: '' },
+    { email: '', phone: '+1 416 555 0182' },
+  ])('accepts a contact introduction with one contact method: %j', (contact) => {
+    const result = validateInquiry({
+      formVariant: 'contact', name: 'Jane Buyer', ...contact,
+      model: 'truck-mounted-work-platforms', requestType: ' DATASHEET ',
+      sourcePage: '/contact/?product=truck-mounted-work-platforms&request=datasheet',
+    }, new Date());
+    expect(result).toMatchObject({ ok: true, value: {
+      formVariant: 'contact', ...contact, company: '', country: '', message: '',
+      model: 'truck-mounted-work-platforms', requestType: 'datasheet',
+    } });
+  });
+
+  it('keeps older clients compatible by defaulting an absent request intent to quote', () => {
+    expect(validateInquiry(valid, new Date())).toMatchObject({
+      ok: true, value: { requestType: 'quote' },
+    });
+  });
+
+  it('rejects unrecognized request intents and missing or malformed contact methods', () => {
+    expect(validateInquiry({
+      formVariant: 'contact', name: 'Jane Buyer', requestType: 'download-now', sourcePage: '/contact/',
+    }, new Date())).toMatchObject({ ok: false, fields: {
+      contact: expect.any(String), requestType: expect.any(String),
+    } });
+    expect(validateInquiry({
+      formVariant: 'contact', name: 'Jane Buyer', email: 'bad', phone: 'bad', sourcePage: '/contact/',
+    }, new Date())).toMatchObject({ ok: false, fields: {
+      email: expect.any(String), phone: expect.any(String),
+    } });
+  });
+
+  it('does not treat punctuation or fewer than seven digits as a phone contact', () => {
+    for (const phone of ['+++++++', '+1 23 45']) {
+      expect(validateInquiry({
+        formVariant: 'contact', name: 'Jane Buyer', phone, sourcePage: '/contact/',
+      }, new Date())).toMatchObject({ ok: false, fields: { phone: expect.any(String) } });
+    }
+  });
 });

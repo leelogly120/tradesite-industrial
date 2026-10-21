@@ -2,7 +2,7 @@
 title: "Contract-Defined FAT and SAT Evidence for Roll Forming"
 description: "Define FAT and SAT scope for a roll-forming lift by matching factory and site evidence to the actual machine, material, integration and receiving interfaces."
 date: 2026-07-27
-updated: 2026-10-19
+updated: 2026-10-22
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "FAT", "SAT", "test protocol", "handover evidence"]
 coverImage: "/images/equipment/coil-real-module.webp"
@@ -11,9 +11,9 @@ coverCaption: "Reference photograph showing a blue machine module beside a red l
 draft: false
 ---
 
-Factory and site acceptance discussions for a roll-forming lift should identify what is being accepted: the forming machine, the lift assembly, their integration or a defined part of the installed production arrangement. A factory panel sample cannot answer every question about the machine at roof level, and the arrival of an assembled system does not prove that its site interfaces have been accepted. Buyers need the contract to connect each observation to the equipment and conditions it actually covers.
+Factory acceptance testing (FAT) and site acceptance testing (SAT) need different scope discussions when the supplier provides a new forming line and lift, and when the buyer already owns the former. The important difference is the actual equipment available for the agreed observations. An offer can use the same milestone names while covering very different physical combinations.
 
-This guide explains that evidence boundary without supplying a test procedure or acceptance values. The [commissioning preparation guide](/blog/lift-roll-forming-system-commissioning-plan/) addresses readiness for coordinated verification. The [line specification guide](/blog/roll-forming-line-specification-long-span-roof-panels/) defines the forming purchase, while the [technical-document guide](/blog/roll-forming-lift-technical-document-package/) helps buyers interpret the supplied information. FAT and SAT labels alone cannot replace those definitions.
+The system raises a compatible roof-panel roll former. Buyers therefore need evidence tied to the identified former, lift and their integration, alongside a clear statement of later site-dependent work included in the price. This guide helps define that purchase; it supplies no test method or acceptance values. The [commissioning guide](/blog/lift-roll-forming-system-commissioning-plan/) covers preparation for activity, and the [technical-document guide](/blog/roll-forming-lift-technical-document-package/) explains returned records. Here the question is what the contracted factory and site observations can actually cover.
 
 **Contents**
 
@@ -22,15 +22,26 @@ This guide explains that evidence boundary without supplying a test procedure or
 - Compare factory coverage with site dependencies
 - Agree an acceptance scope before delivery
 - FAQ
+- Request evidence for the actual former and lift combination
 
 <!-- audit-section: buyer-intent -->
 ## Define the object and question being accepted
 
-### Identify the forming-machine scope
+### Case one: a new forming line and lift
 
-State which forming, feed and cutting components the contract covers and the panel requirement used for their review. If the buyer owns part of the line, identify it separately. The acceptance discussion needs the same equipment boundary as the purchase; otherwise a demonstration of one component may be mistaken for evidence about the complete package.
+Identify which forming, feed and cutting components are in the proposed supply, then ask which actual items will be available together for the factory work. A single purchase order does not establish that the complete line and lift will be assembled or connected in one place. The proposal should name the equipment configuration for each group of observations and any component expected to arrive later or be supplied locally.
 
-Ask which questions the agreed observations are intended to answer. Cross-section, cut length, surface observations and component identity are different subjects, and each needs its own defined basis where included. This article supplies no tolerances, sample quantities or measurement method. Those belong to the parties authorized to agree the actual protocol.
+This allows the buyer to distinguish panel observations on the identified line from observations involving the line installed on its proposed lift. Both may have value, but their scope is different. Ask which integration questions remain for the real combined arrangement and what later activities the quotation includes to address them.
+
+### Case two: a buyer-owned forming machine
+
+Name the current former, its relevant assemblies and available records separately from the lift purchase. Ask which factory observations concern the offered lift and supplied components, and which questions concern the eventual combination with the owned machine. Do not let a factory milestone imply that an absent former was present or that its interface was observed.
+
+The useful commercial response identifies the remaining combined-machine scope, where the parties propose to address it and which services and deliverables are included. This does not prescribe moving the owned machine to the factory or substituting another machine for it. The authorized parties must agree an evidence plan suited to the actual equipment available.
+
+### Define the observation before the milestone
+
+Cross-section, cut length, surface observations, component identity and machine integration are different subjects. Each included subject needs an agreed basis and a link to the actual equipment and sample. Describe that subject before assigning it to FAT or SAT; otherwise a broad milestone name can hide a narrow demonstration. Criteria, methods and witness responsibilities belong in the actual agreement.
 
 ### Identify the lift and mounting scope
 
@@ -67,15 +78,15 @@ This distinction helps define a proportionate acceptance discussion. If the gap 
 
 ### Identify the assembled and connected equipment
 
-Record which components, accessories and relevant configurations were present when an observation was made. A forming machine assessed separately from its proposed lift has a different evidence boundary from an integrated arrangement. The difference should be stated without suggesting that one observation substitutes for every later activity.
+The observation record should identify the components, accessories and relevant configuration present. In the new-line case, this reveals whether the actual former, cutter, feed equipment and lift were covered together or in separate arrangements. In the owned-former case, it makes clear which supplied components were observed before the buyer's machine became part of the combination.
 
-Similarly, factory power and connected equipment may differ from destination services or locally supplied components. Identify those differences in the planned acceptance scope. The [electrical-interface guide](/blog/roll-forming-line-electrical-control-interfaces/) explains the underlying responsibility questions; the protocol determines how the applicable, agreed questions are verified.
+The same distinction applies to electrical services and locally supplied equipment. Factory services may differ from those at the destination. Ask which integration question is left for the real combined arrangement and which later scope is included in the offer. The [electrical-interface guide](/blog/roll-forming-line-electrical-control-interfaces/) defines the purchase boundary; the acceptance agreement defines the observations used to address it.
 
-### Distinguish a planned check from a completed record
+### Distinguish an agreed activity from a completed record
 
-An agreed protocol states what the parties intend to examine and how decisions will be made. A completed record states what occurred under identified conditions. Keep those documents and statuses distinct. A blank checklist, booking confirmation or photograph of assembled equipment should not be presented as a completed acceptance result.
+A protocol describes intended observations, conditions and decision responsibilities. A completed record identifies what occurred, with its relevant criterion, method reference, witness role and any deviation. Keep that distinction clear when payment or shipment depends on a milestone. A booking or blank checklist is not the record of a completed event.
 
-The record should identify the observation, criterion, relevant method reference, witness role and any deviation. If an event is interrupted or a witness is unavailable, the project parties need to determine the effect under their agreement. Do not fill a gap later by implying that attendance or completion occurred when it did not.
+If a component or agreed condition was unavailable, the parties should identify which question remains unanswered under the agreement. That is more useful than describing the entire equipment package as either accepted or unaccepted without identifying the affected scope.
 
 ![Elevated red equipment beside a building with ground supports and nearby coils](/images/equipment/entry-real-clearance.webp)
 
@@ -86,20 +97,22 @@ The record should identify the observation, criterion, relevant method reference
 
 ### Use the same production objective in both discussions
 
-Consider a hypothetical contract for a line and lift intended to serve a particular roof zone. Factory observations may address the identified equipment and agreed sample conditions. Destination assembly, local services and the actual receiving position introduce additional dependencies. The buyer should identify these before assigning the terms FAT and SAT to milestones.
+For a hypothetical comparison, a buyer considers a new line-and-lift package and a lift proposal around an owned former for the same roof-panel requirement. Use the same profile, material basis and intended roof receiving relationship in both discussions. Then ask which actual components and conditions each offer covers at the factory, which questions remain for the combined installation and what the price includes for that later work.
 
-Do not assume that every project divides the questions in the same way. The contract and responsible parties define the scope. What matters is that no necessary interface is lost between milestones and that the final record says which configuration and conditions were actually covered. A general checklist cannot decide the required test programme.
+The new package may have more equipment available within the supplier's scope, but that availability must be stated. The owned-former route may involve more interface work at another location, but its scope should also be described specifically. Neither label settles the acceptance programme. The comparison exposes the evidence and service differences that the buyer must resolve before ordering.
 
-### Mark where earlier evidence stops
+### Compare actual coverage and the later purchase question
 
-| Evidence or question | Boundary to preserve | Site or contract dependency to identify |
+| Subject | Factory coverage to identify | Remaining combined or site scope to ask about |
 | :-- | :-- | :-- |
-| Panel observations using material agreed for the factory review | The profile, material and method actually used | Treatment of different project material or revised requirements |
-| Forming-machine observations before installation on a lift | The standalone machine configuration | Questions arising from the final integrated arrangement |
-| Lift or mounting records | The exact assembly and stated scope | Changes introduced by another machine or accessory |
-| Electrical observations using factory services | The connected equipment and supply conditions present | Local power and separately supplied interface responsibilities |
-| Equipment condition at dispatch | The identified dispatched items and recorded condition | Receipt, assembly and any discrepancy at destination |
-| Roof-side receiving relationship | The actual site zone and project arrangement | Criteria and authority for the site-specific decision |
+| New line with lift | Actual supplied line components and lift configuration available | Any integration or local item absent from that arrangement |
+| Lift for an owned former | Lift and supplied components actually present | Interface with the identified owned former and the activities included later |
+| Panel observations | Profile, material, sample and conditions actually used | Treatment of project requirements outside those observations |
+| Mounting and accessories | Exact assembly represented by the relevant evidence | Differences in the eventual mounted equipment package |
+| Power and controls | Connected components and factory services present | Destination supply and separately supplied interface coverage |
+| Roof receiving relationship | Any explicitly agreed factory scope concerning the outlet | Actual site geometry, external support and receiving-party dependencies |
+
+The final column is a buying question, not a prescribed test list. Ask which later attendance, coordination, records or other activities the bidder includes where applicable, and which the buyer must arrange separately. This helps compare a supply price that includes defined later support with one that leaves it outside the contract.
 
 ### Distinguish contractual acceptance from local duties
 
@@ -116,34 +129,28 @@ Where a contract allows a limited acceptance with open items, name the affected 
 
 ### List the inputs that determine the scope
 
-The following questions help buyers prepare for a protocol discussion. They do not prescribe tests or establish a pass condition. Each item should identify the relevant record and the party authorized to define its treatment in the project agreement.
+Prepare the evidence request around the actual supply case:
 
-- Identify the forming machine, lift, mounting arrangement and included accessories.
-- Link the panel profile, material and sample identity to the proposed observations.
-- State which factory configuration and services will be available and what remains excluded.
-- Show the intended roof receiving zone and outlet height reference for site-dependent questions.
-- Identify ground or floor and support reviews required for the proposed site arrangement.
-- Describe access routes, delivery and assembly boundaries that affect destination readiness.
-- Name the site's wind and weather responsibilities where outdoor observations or work depend on them.
-- List power, control and feed interfaces involving equipment supplied by other parties.
-- State destination documentation, language and local-review responsibilities separately from contract milestones.
-- Identify witnesses, decision authority, deviation handling and the evidence required for each agreed status.
+- State whether the former is newly supplied or buyer owned; identify the machine, lift, cutter, feed equipment and accessories.
+- Link the panel profile and material to the observations requested, with distinct sample identities and purposes.
+- Ask which actual components, connected arrangement and services will be available at the factory.
+- Identify the combined-machine questions that remain when components are available in different places.
+- Show the intended outlet height reference, roof geometry and receiving zone for site-dependent questions.
+- Name ground or floor support reviews, access and delivery constraints affecting the intended arrangement.
+- Identify wind and weather responsibilities for outdoor activity and the relevant power/control boundaries.
+- Split transport, destination assembly, local integration and documentation requirements from the contractual milestones.
+- Ask which later activities and evidence are included, together with criteria, witness roles and decision authority agreed by the responsible parties.
 
-### Resolve a mismatch before calling it accepted
+### Tie an open item to the affected physical scope
 
-Suppose the contract refers to one forming-machine revision but a later arrangement includes a different cutting component. The first question is what physically changed and which agreed observations or interfaces are affected. The parties should resolve that scope before relying on earlier evidence. Changing a document title alone does not establish that the revised assembly was covered.
+Suppose a new-line contract names one cutting assembly while the proposed delivered arrangement includes another. Ask which observation or integration question that change affects. In an owned-former project, a newly identified alteration can create a similar question at the machine-to-lift boundary. An earlier record remains bounded by what it actually describes.
 
-Likewise, if a site prerequisite is unavailable, identify the particular question it prevents the project from answering. A missing roof receiver is different from an unresolved power interface or a damaged delivered component. Keep those differences in the acceptance discussion so the next action is tied to the actual gap, not an undifferentiated incomplete status.
+The contract should explain the treatment of those open items, including the decision authority and commercial effect where relevant. It should also distinguish a missing site prerequisite from an equipment difference. A roof receiver that is unavailable raises a different question from an undocumented local electrical interface; the next agreed action should address the particular gap.
 
 <!-- audit-section: limitations-not-fit -->
 ### Recognize evidence that cannot support the claimed scope
 
 The record may not fit an acceptance decision when the equipment identity, material basis, criteria or authorized decision owner is missing. This guide supplies no test sequence, load, tolerance or approval signature. A factory demonstration, reference photograph or completed-looking folder cannot establish acceptance of conditions that were never defined or observed under the project agreement.
-
-<!-- audit-section: cta-editorial-note -->
-### Request clarification of factory and site coverage
-
-Send ARCLIFT the proposed equipment scope, agreed panel and material basis, and the questions assigned to factory and site milestones. Include the roof-zone and height references, destination, transport and assembly split, floor or ground review status and local integration responsibilities. ARCLIFT can coordinate supply information and unresolved interfaces as a technical selection and supply partner. Final acceptance requires project-specific evidence and the authority defined by the actual agreement. This editorial guide and its reference photographs are explanatory material, not completed FAT or SAT records.
 
 ## FAQ
 
@@ -162,3 +169,10 @@ It may support the observations agreed for its identified material and condition
 #### When can a record use the word accepted?
 
 When the agreement defines that status and the authorized party records it against the identified scope and evidence, with any open conditions made explicit. Silence or a photograph does not establish acceptance.
+
+<!-- audit-section: cta-editorial-note -->
+## Request evidence for the actual former and lift combination
+
+Review the [crawler forming-lift family](/products/#crawler-roll-forming-lifts), then [request a quotation with defined factory and site scope](/contact/?product=crawler-roll-forming-lifts&request=quote). State whether the former is owned or newly required, identify the components expected to be available together, and ask which observations and later integration activities the offer covers. Include the panel/material basis and roof relationship. ARCLIFT can coordinate the supply response around that specific combination; the agreement must define the final acceptance authority and evidence.
+
+Name the destination, transport split and site arrangements on which the later scope depends. This editorial checklist is an evidence request, not a completed acceptance record.

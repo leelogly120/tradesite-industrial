@@ -5,6 +5,45 @@ const referenceLinkPattern = /^\/products\/(?:arc-[a-z0-9-]+)\/$/;
 test.describe('family-first product discovery', () => {
   test.use({ viewport: { width: 390, height: 844 } });
 
+  test('offers the truck work-platform route separately from the retained forming-machine reference', async ({ page }) => {
+    await page.goto('/products/');
+    const navigation = page.getByRole('navigation', { name: 'Equipment families' });
+    await expect(navigation.getByRole('link', { name: 'Truck work platforms', exact: true })).toHaveAttribute('href', '#truck-mounted-work-platforms');
+    await navigation.getByRole('link', { name: 'Truck work platforms', exact: true }).click();
+    const truckDeck = page.locator('#truck-mounted-work-platforms');
+    await expect(truckDeck.getByRole('heading', { name: 'Truck-Mounted Work Platforms', exact: true })).toBeVisible();
+    await expect(truckDeck.locator('[data-equipment-features] li')).toHaveCount(4);
+    await expect(truckDeck.locator('[data-compare-item]')).toHaveCount(0);
+    await expect(truckDeck.locator('a[href*="request=quote"]')).toHaveAttribute('href', '/contact/?product=truck-mounted-work-platforms&request=quote');
+    await expect(page.locator('#roll-forming-machines a[href="/products/arc-rf8-roll-forming-machine/"]')).toHaveCount(1);
+    await expect(page.locator('[data-equipment-photo] img')).toHaveCount(5);
+    const sources = await page.locator('[data-equipment-photo] img').evaluateAll(images => images.map(image => image.getAttribute('src')));
+    expect(sources.every(src => src?.startsWith('/images/equipment/'))).toBe(true);
+    await expect(page.locator('[data-compare-item]')).toHaveCount(15);
+    await truckDeck.locator('a[href*="request=quote"]').click();
+    await expect(page.locator('#model')).toHaveValue('truck-mounted-work-platforms');
+    await expect(page.locator('#requestType')).toHaveValue('quote');
+  });
+
+  test('shows real equipment in the catalog introduction and preserves all catalog quote selections', async ({ page }) => {
+    await page.goto('/products/');
+    const photograph = page.locator('[data-catalog-photo] img');
+    await expect(photograph).toHaveAttribute('src', '/images/equipment/coil-real-handling.webp');
+    expect((await photograph.boundingBox())!.y).toBeLessThan(844);
+    for (const [id, selection] of [
+      ['truck-mounted-roll-forming-lifts', 'truck-mounted-roll-forming-lifts'],
+      ['crawler-roll-forming-lifts', 'crawler-roll-forming-lifts'],
+      ['crawler-ceiling-platforms', 'crawler-ceiling-platforms'],
+      ['truck-mounted-work-platforms', 'truck-mounted-work-platforms'],
+      ['roll-forming-machines', 'ARC-RF8'],
+    ]) {
+      await page.goto('/products/');
+      await page.locator(`#${id} a[href*="request=quote"]`).click();
+      await expect(page.locator('#model')).toHaveValue(selection);
+      await expect(page.locator('#requestType')).toHaveValue('quote');
+    }
+  });
+
   test('keeps four family routes and all fifteen detail links visible without JavaScript', async ({ browser }) => {
     const context = await browser.newContext({
       javaScriptEnabled: false,
@@ -23,7 +62,7 @@ test.describe('family-first product discovery', () => {
 
     expect(familyTop).toBeLessThan(inputsTop);
     expect(firstFamilyTop).toBeLessThan(inputsTop);
-    const firstPrimaryRouteTop = (await page.locator('#equipment-routes .a2-route').first().boundingBox())!.y;
+    const firstPrimaryRouteTop = (await familyNavigation.getByRole('link').first().boundingBox())!.y;
     expect(firstPrimaryRouteTop).toBeLessThan(844 * 1.75);
     await expect(page.locator('#equipment-routes a[href="#crawler-roll-forming-lifts"]')).toBeVisible();
     await expect(page.locator('#equipment-routes a[href="#truck-mounted-roll-forming-lifts"]')).toBeVisible();
@@ -109,7 +148,7 @@ test.describe('family-first product discovery', () => {
 test.describe('product detail decision order', () => {
   test.use({ viewport: { width: 390, height: 844 } });
 
-  test('puts the functional model-family introduction and project CTA before editorial imagery', async ({ page }) => {
+  test('introduces the equipment with a real family photograph and keeps editorial imagery optional', async ({ page }) => {
     await page.goto('/products/arc-c21-crawler-roll-forming-lift/');
 
     const heading = page.getByRole('heading', { level: 1 });
@@ -118,21 +157,29 @@ test.describe('product detail decision order', () => {
     await expect(page.locator('[data-product-workflow]')).toBeVisible();
 
     const order = await page.locator('main').evaluate((main) => {
-      const nodes = [...main.querySelectorAll('h1, [data-product-workflow], [data-product-primary-cta], [data-product-diagram], .product-hero__gallery, #archive-reference')];
+      const nodes = [...main.querySelectorAll('h1, [data-product-workflow], [data-product-primary-cta], [data-product-photo], .product-hero__gallery, #archive-reference')];
       return nodes.map((node) => {
         if (node.matches('h1')) return 'h1';
         if (node.matches('[data-product-workflow]')) return 'workflow';
         if (node.matches('[data-product-primary-cta]')) return 'cta';
-        if (node.matches('[data-product-diagram]')) return 'diagram';
+        if (node.matches('[data-product-photo]')) return 'photo';
         if (node.matches('.product-hero__gallery')) return 'gallery';
         return 'archive';
       });
     });
 
     expect(order.indexOf('h1')).toBeLessThan(order.indexOf('workflow'));
-    expect(order.indexOf('workflow')).toBeLessThan(order.indexOf('diagram'));
+    expect(order.indexOf('workflow')).toBeLessThan(order.indexOf('photo'));
     expect(order.indexOf('cta')).toBeLessThan(order.indexOf('gallery'));
-    expect(order.indexOf('gallery')).toBeLessThan(order.indexOf('archive'));
+    expect(order.indexOf('archive')).toBeLessThan(order.indexOf('gallery'));
+    await expect(page.locator('[data-product-photo] img')).toHaveAttribute('src', '/images/equipment/transport-real-stowed.webp');
+    await expect(page.locator('[data-product-photo] figcaption')).toContainText('not an image of this ARC model');
+    await expect(page.locator('[data-product-primary-cta]')).toHaveAttribute('href', '/contact/?product=ARC-C21&request=quote');
+    await expect(page.getByRole('link', { name: 'Request specifications', exact: true })).toHaveAttribute('href', '/contact/?product=ARC-C21&request=datasheet');
+    await expect(page.locator('.product-hero__gallery')).toBeHidden();
+    await page.getByText('Optional equipment planning illustrations', { exact: true }).click();
+    await expect(page.locator('.product-hero__gallery')).toBeVisible();
+    for (const caption of await page.locator('.decision-gallery__figure figcaption').allTextContents()) expect(caption).toContain('AI-assisted editorial visual. Editorial planning visual — not model-specific evidence');
   });
 
   test('keeps the sticky decision navigation and its anchor target below the shared header', async ({ page }) => {

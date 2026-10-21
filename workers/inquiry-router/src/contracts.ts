@@ -16,6 +16,7 @@ export const FIELD_LIMITS = {
 
 export interface Inquiry {
   formVariant: 'product' | 'contact';
+  requestType: 'quote' | 'datasheet' | 'advice';
   name: string;
   company: string;
   country: string;
@@ -44,8 +45,11 @@ const phonePattern = /^[+()\d\s.-]{7,50}$/;
 export function validateInquiry(input: Record<string, unknown>, receivedAt: Date): ValidationResult {
   const requestedVariant = clean(input.formVariant);
   const formVariant = requestedVariant === 'contact' ? 'contact' : 'product';
+  const requestedType = clean(input.requestType).toLowerCase();
+  const requestType = requestedType === 'datasheet' || requestedType === 'advice' ? requestedType : 'quote';
   const value: Inquiry = {
     formVariant,
+    requestType,
     name: clean(input.name),
     company: clean(input.company),
     country: clean(input.country),
@@ -71,10 +75,14 @@ export function validateInquiry(input: Record<string, unknown>, receivedAt: Date
     fields.formVariant = 'Invalid form variant.';
   }
   if (!value.name) fields.name = 'Please enter your full name.';
+  if (requestedType && !['quote', 'datasheet', 'advice'].includes(requestedType)) {
+    fields.requestType = 'Choose a quote, technical documents or selection advice.';
+  }
 
   if (value.formVariant === 'contact') {
-    if (!value.email) fields.email = 'Please enter your email address.';
-    if (!value.phone) fields.phone = 'Please enter your WhatsApp/phone number.';
+    if (!value.email && !value.phone) {
+      fields.contact = 'Enter an email address or WhatsApp/phone number.';
+    }
   } else {
     if (!value.company) fields.company = 'Please enter your company name.';
     if (!value.country || value.country === 'Select...') {
@@ -89,7 +97,7 @@ export function validateInquiry(input: Record<string, unknown>, receivedAt: Date
   if (value.email && !emailPattern.test(value.email)) {
     fields.email = 'Enter a valid email address.';
   }
-  if (value.phone && !phonePattern.test(value.phone)) {
+  if (value.phone && (!phonePattern.test(value.phone) || value.phone.replace(/\D/g, '').length < 7)) {
     fields.phone = 'Enter a valid WhatsApp/phone number.';
   }
   if (!value.sourcePage.startsWith('/') || value.sourcePage.startsWith('//')) {

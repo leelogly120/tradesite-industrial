@@ -15,7 +15,7 @@ test('content remains visible when scripts are unavailable', async ({ browser })
 
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
   await expect(page.locator('[data-equipment-hero]')).toBeVisible();
-  await expect(page.locator('.a2-route')).toHaveCount(2);
+  await expect(page.locator('#equipment-series article')).toHaveCount(4);
   await context.close();
 });
 
@@ -38,7 +38,7 @@ test('mobile navigation has ordinary links when scripts are unavailable', async 
   await page.goto('/');
   const fallback = page.getByRole('navigation', { name: 'Navigation without JavaScript' });
   await expect(fallback.getByRole('link', { name: 'Products', exact: true })).toBeVisible();
-  await expect(fallback.getByRole('link')).toHaveCount(5);
+  await expect(fallback.getByRole('link')).toHaveCount(6);
   await fallback.getByRole('link', { name: 'Products', exact: true }).click();
   await expect(page).toHaveURL(/\/products\/$/);
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(mobile.width);
@@ -59,7 +59,7 @@ test('mobile navigation traps focus and restores the menu trigger', async ({ pag
   await expect(close).toBeFocused();
 
   await page.keyboard.press('Shift+Tab');
-  await expect(drawer.getByRole('link', { name: 'Get a Quote' })).toBeFocused();
+  await expect(drawer.getByRole('link', { name: 'Email ARCLIFT' })).toBeFocused();
   await page.keyboard.press('Tab');
   await expect(close).toBeFocused();
 

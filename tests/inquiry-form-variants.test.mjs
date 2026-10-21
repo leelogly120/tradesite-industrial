@@ -52,7 +52,7 @@ describe('InquiryForm variant wiring', () => {
     for (const label of ['Name', 'Email', 'WhatsApp / Phone', 'Company', 'Message']) {
       expect(component).toContain(label);
     }
-    expect(component).toContain('Submit Quote Request');
+    expect(component).toContain('Send Request');
     expect(component).toContain('Submitting' + String.fromCodePoint(0x2026));
   });
 });

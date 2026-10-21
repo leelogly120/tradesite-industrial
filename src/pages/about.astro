@@ -1,167 +1,28 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://arclifteq.com';
+import { EQUIPMENT_CATALOG } from '../lib/equipment-catalog';
+const siteUrl = Astro.site?.toString().replace(/\/$/, '') || 'https://www.arclifteq.com';
 ---
-
-<BaseLayout
-  title="About ARCLIFT — Equipment Selection & Supply Partner"
-  description="ARCLIFT is an integrated equipment supplier coordinating technical selection, source-document review and international supply for roof-level forming and crawler platform projects."
-  transparentNav={false}
->
-  <section class="hero-banner about-hero">
-    <div class="overline">About ARCLIFT</div>
-    <h1>SPECIALIZED EQUIPMENT, SELECTED AROUND THE JOB</h1>
-    <p>An integrated equipment supplier connecting buyer requirements, available source documents and configuration-by-configuration review.</p>
+<BaseLayout title="About ARCLIFT — Equipment Selection & Supply Partner"
+  description="ARCLIFT supports equipment selection and supply for roof-panel forming lifts and ceiling and wall work platforms. Based in Xinxiang, Henan, China."
+  ogImage="/images/equipment/transport-real-cover.webp" transparentNav={false}>
+  <section class="a2-page-head a2-shell"><p class="a2-eyebrow">About ARCLIFT</p><h1>Specialized equipment.<br />Selected around your job.</h1><p class="a2-lead">Equipment selection and supply for roof-panel forming, ceiling installation and wall-panel access.</p></section>
+  <section class="a2-shell about-intro" aria-labelledby="about-title">
+    <figure><img src="/images/equipment/transport-real-cover.webp" width="744" height="419" alt="Folded red crawler lifting equipment carried on a low-bed trailer" fetchpriority="high" /><figcaption>Crawler equipment on a low-bed carrier. A reference scene for equipment and transport planning.</figcaption></figure>
+    <div><p class="a2-eyebrow">Xinxiang, Henan, China</p><h2 id="about-title">Your equipment selection and supply partner.</h2><p>ARCLIFT is an integrated equipment supplier and technical selection and supply partner. We help contractors, distributors and importers turn a work requirement into a clear equipment proposal.</p><p>Our focus is lifting systems for compatible roof-panel roll formers and large work platforms for ceiling and wall installation. We connect the equipment arrangement with the building, site access and delivery requirements.</p><a class="a2-text-link" href="/contact/?request=advice">Discuss your project →</a></div>
   </section>
-
-  <section class="sec">
-    <div class="story reveal">
-      <figure class="story__visual" data-editorial-visual>
-        <img src="/images/home/roll-forming-line.webp" alt="Illustrative roll-forming line and project interface equipment" width="1200" height="800" loading="lazy" />
-        <figcaption>AI-assisted editorial composite — illustrates roll-forming equipment and interfaces; not evidence of a current model, configuration, factory or project.</figcaption>
-      </figure>
-      <div class="story__text">
-        <h2>How ARCLIFT supports a selection review</h2>
-        <p>ARCLIFT is an integrated equipment supplier for specialized roof-level roll-forming lift systems, crawler and truck-mounted mobility routes, large-deck crawler platforms and compatible roll-forming lines.</p>
-        <p>As a technical selection and supply partner, ARCLIFT starts with the building and job sequence: the required height datum, panel profile and material, forming-line interfaces, access route, support conditions, transport limits and destination requirements. A model page is a reference starting point, not an approved technical schedule.</p>
-        <p>ARCLIFT coordinates the buyer's project brief with available source documents and the proposed supply configuration. Manufacturing, project design, certification, site approval and operation remain with the responsible parties identified for that project.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec sec--dark">
-    <div class="sec__header family-header">
-      <div class="sec__overline">Equipment architecture</div>
-      <h2 class="sec__title">FOUR FAMILIES, DIFFERENT PROJECT INPUTS</h2>
-    </div>
-    <div class="family-overview">
-      <article>
-        <span>01</span>
-        <h3>Crawler roof-forming lifts</h3>
-        <p>Review forming-line fit, output datum, crawler route, stabilisation and work-zone support together.</p>
-      </article>
-      <article>
-        <span>02</span>
-        <h3>Truck-mounted roof-forming lifts</h3>
-        <p>Coordinate the compatible line with chassis, payload allocation, road transport and jobsite setup records.</p>
-      </article>
-      <article>
-        <span>03</span>
-        <h3>Crawler ceiling and wall platforms</h3>
-        <p>Treat overhead or vertical access as a separate task with its own route, workface, floor and recovery inputs.</p>
-      </article>
-      <article>
-        <span>04</span>
-        <h3>Roll-forming lines</h3>
-        <p>Define profile, material, tooling, coil route, power, controls and the mounting interface for the proposed system.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="sec">
-    <div class="sec__header reveal">
-      <div class="sec__overline">Source-document coordination</div>
-      <h2 class="sec__title">BUILD A REVIEWABLE CONFIGURATION FILE</h2>
-    </div>
-    <div class="certs">
-      <div class="cert reveal"><div class="icon">01</div><h3>Project input brief</h3><p>Record the task, measurement datums, route, support, workface and destination requirements.</p></div>
-      <div class="cert reveal"><div class="icon">02</div><h3>Configuration schedule</h3><p>Request the dimensions, masses, interfaces, power, controls and options for the exact proposed equipment.</p></div>
-      <div class="cert reveal"><div class="icon">03</div><h3>Source documents</h3><p>Match drawings, component lists, test records and offered destination documents to that configuration.</p></div>
-      <div class="cert reveal"><div class="icon">04</div><h3>Open-item register</h3><p>Keep unresolved evidence, responsible reviewers and approval boundaries visible before the commercial decision.</p></div>
-    </div>
-  </section>
-
-  <section class="sec sec--gray">
-    <div class="sec__header reveal">
-      <div class="sec__overline">Working principles</div>
-      <h2 class="sec__title">WHAT GUIDES THE SUPPLY REVIEW</h2>
-    </div>
-    <div class="values">
-      <div class="value reveal"><div class="icon">01</div><h3>Evidence before claims</h3><p>Published references retain their limitations, and current configuration statements require matching documents.</p></div>
-      <div class="value reveal"><div class="icon">02</div><h3>Workflow fit</h3><p>Selection begins with how panels, equipment, people and materials move through the site.</p></div>
-      <div class="value reveal"><div class="icon">03</div><h3>Clear responsibility</h3><p>Supply coordination does not replace the buyer's project design, compliance review, site approval or operating plan.</p></div>
-    </div>
-  </section>
-
-  <section class="cta">
-    <h2>START WITH A DOCUMENTED SELECTION BRIEF</h2>
-    <p>Share non-sensitive application and project inputs to begin a focused equipment-supply review.</p>
-    <a href="/contact/" class="btn--white">Contact ARCLIFT →</a>
-  </section>
-
-  <script type="application/ld+json" set:html={JSON.stringify({
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'ARCLIFT Equipment Co., Ltd.',
-    url: siteUrl,
-    description: 'Integrated equipment supplier and technical selection and supply partner for roof-level forming lift systems and crawler ceiling or wall platform projects.',
-    contactPoint: { '@type': 'ContactPoint', contactType: 'sales', availableLanguage: ['English', 'Chinese'] },
-  })} />
-
+  <section class="about-band" aria-labelledby="scope-title"><div class="a2-shell"><div class="about-heading"><p class="a2-eyebrow">Equipment scope</p><h2 id="scope-title">Four application groups.<br />One clear starting point.</h2></div><div class="about-families">{EQUIPMENT_CATALOG.map((family,index)=><article><span>0{index+1}</span><h3><a href={`/products/#${family.id}`}>{family.name}</a></h3><p>{family.description}</p></article>)}</div><p class="about-related">The forming-machine interface is part of system selection. Explore <a href="/products/#roll-forming-machines">related forming-equipment references</a>.</p></div></section>
+  <section class="a2-shell about-process" aria-labelledby="process-title"><div class="about-heading"><p class="a2-eyebrow">Working with ARCLIFT</p><h2 id="process-title">From the task to the supply scope.</h2><p>Begin with the job you need to do. Detailed documents can follow as the arrangement takes shape.</p></div><ol>
+    <li><span class="step">01</span><h3>Tell us about the work</h3><p>Share the roof-panel profile or installation task, target work area, project location and any equipment you already have.</p><p class="result"><strong>Starting point:</strong> a shared description of the application.</p></li>
+    <li><span class="step">02</span><h3>Match the configuration</h3><p>Bring the lift, forming machine or work deck together with the site route, setup footprint, power and transport requirements.</p><p class="result"><strong>Selection:</strong> the proposed equipment arrangement and its interfaces.</p></li>
+    <li><span class="step">03</span><h3>Define what is included</h3><p>Separate supplied equipment, agreed options, locally sourced items and assembly responsibilities. Identify the drawings and technical documents available for that proposal.</p><p class="result"><strong>Proposal:</strong> an equipment schedule and a clearly stated supply scope.</p></li>
+  </ol></section>
+  <section class="a2-shell about-details" aria-labelledby="proposal-title"><div><h2 id="proposal-title">Useful detail for a purchasing decision.</h2><p>A project proposal should identify the exact height datum, loads and load distribution, machine or deck dimensions, support footprint, transport envelope and power/control arrangement.</p><p>Historical model references remain available on this site for orientation. The technical schedule, drawings and load information for the proposed configuration establish its specifications. Destination requirements and site approval are addressed with the responsible parties for the project.</p></div><aside><h3>Contact ARCLIFT</h3><p>Xinxiang, Henan, China</p><a href="mailto:leelogly120@gmail.com">leelogly120@gmail.com</a><a href="https://wa.me/8615617687185">WhatsApp: +86 15617687185</a><a class="a2-button" href="/contact/">Get a quote</a></aside></section>
+  <script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@type':'Organization',name:'ARCLIFT Equipment Co., Ltd.',url:siteUrl,description:'Integrated equipment supplier and technical selection and supply partner for roof-panel forming lifts and ceiling or wall work platforms.',contactPoint:{'@type':'ContactPoint',telephone:'+86 15617687185',contactType:'sales',availableLanguage:['English','Chinese']}})} />
   <style>
-    .about-hero {
-      background-image:
-        radial-gradient(circle at 80% 24%, rgba(37, 99, 235, .34), transparent 34%),
-        linear-gradient(120deg, #071426 0%, #0f2b52 58%, #164a8a 100%);
-    }
-    .about-hero p { max-width: 760px; }
-    .story {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    .story > *,
-    .story__text,
-    .story__visual { min-width: 0; }
-    .story__visual {
-      min-height: 0;
-      margin: 0;
-      display: block;
-      background: #e2e8f0;
-    }
-    .story__visual img {
-      width: 100%;
-      height: auto;
-      min-height: 0;
-      display: block;
-      object-fit: contain;
-    }
-    .story__visual figcaption {
-      padding: 12px 16px;
-      border-top: 1px solid #cbd5e1;
-      background: #f8fafc;
-      color: #475569;
-      font-size: 13px;
-      line-height: 1.55;
-    }
-    .story__text h2,
-    .family-overview h3 { overflow-wrap: anywhere; }
-    .family-header .sec__title { color: #fff; }
-    .family-overview {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .family-overview article {
-      min-width: 0;
-      padding: 28px;
-      border: 1px solid rgba(148, 163, 184, .22);
-      border-radius: 16px;
-      background: rgba(255, 255, 255, .06);
-    }
-    .family-overview span { color: #60a5fa; font-size: 13px; font-weight: 800; letter-spacing: .12em; }
-    .family-overview h3 { margin: 10px 0; color: #fff; font-size: 20px; }
-    .family-overview p { margin: 0; color: #cbd5e1; font-size: 15px; line-height: 1.7; }
-    @media (max-width: 768px) {
-      .about-hero { padding-top: 124px; }
-      .about-hero h1,
-      .story__text h2,
-      .sec__title { overflow-wrap: anywhere; }
-      .story,
-      .family-overview { grid-template-columns: minmax(0, 1fr); }
-      .story { gap: 32px; }
-      .certs { grid-template-columns: minmax(0, 1fr); }
-    }
+    .about-intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding-bottom:64px}.about-intro figure{margin:0}.about-intro img{width:100%;height:auto;display:block;object-fit:contain}.about-intro figcaption{font-size:13px;color:#526570;line-height:1.5;padding-top:12px}.about-intro h2,.about-heading h2,.about-details h2{font-size:38px;color:#123b50;margin:0}.about-intro p,.about-details p{margin:20px 0;line-height:1.65}.about-band{padding-block:60px;background:#eaf0f3}.about-heading{max-width:760px;margin-bottom:36px}.about-heading p:not(.a2-eyebrow){margin-top:20px}.about-families{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px}.about-families article{border-top:1px solid #b3c5cf;padding-top:18px}.about-families span,.step{font-size:14px;color:#a94808;letter-spacing:.08em}.about-families h3{font-size:25px;margin:14px 0}.about-families h3 a{color:#123b50}.about-families h3 a:hover{text-decoration:underline}.about-families p{font-size:16px;line-height:1.6}.about-related{font-size:16px;margin:30px 0 0}.about-related a{color:#123b50;text-decoration:underline}.about-process{padding-block:64px}.about-process ol{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:38px;margin:0;padding:0}.about-process li{border-top:1px solid #c4d0d7;padding-top:20px}.about-process h3{font-size:27px;color:#123b50;margin:16px 0}.about-process p{font-size:17px;line-height:1.65}.about-process .result{font-size:15px;background:#f4f7f8;padding:15px;margin-top:20px}.about-details{border-top:1px solid #c4d0d7;padding-block:50px 70px;display:grid;grid-template-columns:1.4fr 1fr;gap:80px}.about-details aside{background:#eaf0f3;padding:30px;align-self:start}.about-details aside h3{font-size:26px;color:#123b50}.about-details aside a{display:block;color:#123b50;overflow-wrap:anywhere;margin:12px 0}.about-details aside .a2-button{color:#fff;display:inline-flex;margin-top:20px}
+    @media(max-width:1000px){.about-families{grid-template-columns:1fr 1fr}.about-intro{gap:35px}.about-details{gap:35px}}
+    @media(max-width:768px){.about-intro,.about-process ol,.about-details{grid-template-columns:1fr}.about-intro{gap:28px}.about-intro>div{order:-1}.about-intro h2,.about-heading h2,.about-details h2{font-size:32px}.about-band,.about-process{padding-block:42px}.about-process ol{gap:26px}.about-details{padding-bottom:48px}.about-details aside{padding:24px}}
+    @media(max-width:480px){.about-families{grid-template-columns:1fr;gap:24px}}
   </style>
 </BaseLayout>

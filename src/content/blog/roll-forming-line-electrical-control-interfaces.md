@@ -2,7 +2,7 @@
 title: "Electrical Interface List for a Roll-Forming Project"
 description: "Review power and control interfaces for an elevated roll-forming machine, including ground supply, changing service routes, separate suppliers and design scope."
 date: 2026-07-27
-updated: 2026-10-19
+updated: 2026-10-22
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming", "electrical interfaces", "control handover", "project documentation"]
 coverImage: "/images/equipment/coil-real-module.webp"
@@ -11,9 +11,9 @@ coverCaption: "Reference photograph showing a blue machine module beside a red l
 draft: false
 ---
 
-Putting a roof-panel roll former on a lift changes the electrical discussion. The forming machine, lifting assembly, material feed and roof receiving activity may sit in different places and belong to different suppliers. A voltage label cannot explain how power reaches the proposed arrangement, which functions share information or who owns the design at their boundaries. Buyers need these relationships described before comparing an integrated offer with a collection of separate machines.
+An electrical quotation for an elevated roll-forming project should show both sides of each connection: what the equipment provider delivers and what the site must supply. That boundary is the basis for comparing a coordinated package with separately purchased machines. A voltage entry or a list of individual nameplates does not describe the integration work included in either price.
 
-This guide develops the electrical and control questions for that procurement decision. The [mounting-interface review](/blog/lifted-roll-forming-line-mounting-interface-review/) covers physical installation, while the [commissioning preparation guide](/blog/lift-roll-forming-system-commissioning-plan/) covers readiness for coordinated verification. The [roll-forming lift overview](/blog/roof-level-roll-forming-long-panels/) supplies the product context: the equipment elevates a compatible forming machine toward the roof receiving level.
+The system raises a compatible roof-panel roll former near the receiving level. Its forming machine, lift and any separate feed equipment may have different electrical and control requirements. This guide turns that arrangement into a purchase-scope request. Use the [commissioning guide](/blog/lift-roll-forming-system-commissioning-plan/) for preparation before a particular verification visit, and the [mounting review](/blog/lifted-roll-forming-line-mounting-interface-review/) for physical installation. The [crawler forming-lift catalog](/products/#crawler-roll-forming-lifts) and [truck-mounted catalog](/products/#truck-mounted-roll-forming-lifts) identify architectures to discuss; neither family name defines a universal site power arrangement.
 
 **Contents**
 
@@ -22,15 +22,16 @@ This guide develops the electrical and control questions for that procurement de
 - Compare integrated and separate supply offers
 - Prepare the electrical review inputs
 - FAQ
+- Request the equipment and site boundary in the offer
 
 <!-- audit-section: buyer-intent -->
 ## Draw the physical boundaries before the signal list
 
-### Identify every equipment owner
+### Identify each subsystem being purchased
 
-Name the forming machine, lift, proposed feed equipment and other powered components actually included in the concept. Mark optional or locally supplied items as such. A supplier may cover the lift while another provides the roll former; the buyer may supply the incoming electrical installation. The quotation needs to identify who coordinates these parties and what each provides for the combined review.
+List the former, lift, proposed feed equipment and other powered components actually included in the concept. Beside each item, identify the equipment provider and the electrical information included in its offer. Then name the party responsible for the interaction between items. A buyer supplying the incoming installation needs that distinction before estimating local work.
 
-Do not infer a shared control system from a shared frame or a drawing showing machines in one line. Equally, separate supply contracts do not remove the need to consider their interactions. The useful first drawing shows equipment identities, physical locations and responsibility boundaries, with unresolved functions stated in words rather than invented circuit detail.
+A shared frame does not establish shared controls. Separate contracts also leave interactions that need a defined integration scope. Ask whether the offer includes only individual connection requirements, development of the combined interface, or a more limited set of identified deliverables. This gives a practical meaning to integrated instead of treating it as a product adjective.
 
 ### Locate incoming power and the moving boundary
 
@@ -51,11 +52,11 @@ A verbal handover, an ordinary status signal and a safety-related function are n
 <!-- audit-section: conditions -->
 ## Describe power and controls by equipment state
 
-### Separate transported and assembled arrangements
+### Identify the destination assembly boundary
 
-The electrical equipment present during transport may differ from the arrangement assembled for work. Identify which modules travel together, which interfaces are completed at destination and which documents describe the resulting system. A shipping photograph does not reveal connector identity, cable condition or the checks required after assembly.
+Describe which modules arrive together and which interfaces are completed at destination. Request the equipment-side documents needed by the appointed local party and ask whether the quoted integration scope covers the resulting combination. A manual for each separate machine can leave a connection between them outside both contracts.
 
-This matters when the buyer receives a forming machine and lift under separate schedules. A complete machine manual for each item may still leave the connection between them undefined. Ask for the planned responsibility at that interface before assuming that arrival of both items means electrical readiness. The [destination receipt guide](/blog/roll-forming-lift-destination-receipt-plan/) addresses the preceding physical handover.
+The [destination receipt guide](/blog/roll-forming-lift-destination-receipt-plan/) addresses physical arrival. For this purchase, the question is narrower: which supplier delivers the information for the assembled electrical arrangement, and which local activities remain to be arranged? Name that boundary before comparing transport and installation prices.
 
 ### Describe the proposed elevated arrangement
 
@@ -65,11 +66,15 @@ Consider a hypothetical change from one roof receiving zone to another. The form
 
 ### Describe which functions are proposed together
 
-Alongside the equipment list, give the electrical designer a description of the intended activity states. Identify which forming, feed and lifting functions the project proposes to use together, which belong to different states and which relationships are still unknown. These are inputs for review, not permission to perform concurrent functions. The applicable equipment and integration information must establish the permitted arrangement.
+Give the responsible designer the intended activity states as well as the equipment list. Identify which forming, feed and lifting functions the project proposes to use together, which are expected in separate states and which relationships remain unknown. These are questions for review, not permission to perform concurrent functions. The applicable equipment and integration information determines the permitted arrangement.
 
-For a hypothetical comparison, one offer might describe a former and separately powered feed unit, while another includes a coordinated package. Both may supply individual electrical data, yet leave different questions about the combined site interface. Ask each bidder which configuration and activity assumptions its connection information represents. Listing every nameplate does not state whether the proposal assumes simultaneous use, separate use or an interaction still awaiting design.
+For a hypothetical comparison, one offer describes a former and separately powered feed unit; another includes a coordinated package. Ask which configuration and activity assumptions their electrical information represents. A list of nameplates does not say whether the proposal assumes simultaneous use, separate use or an interaction awaiting design. Hold the intended duty constant while asking each bidder to identify its equipment-side deliverables and the site information still needed. Supply capacity, protective devices and control behavior remain design decisions for the actual installation.
 
-A useful reply connects the proposed functions to the relevant supplied subsystems and states what the responsible designer still needs from the site. Procurement can then distinguish missing equipment data from an unresolved activity assumption. It can also compare an offer covering only individual machine connections with one that includes development of the combined interface. This is not a calculation of required supply capacity. Do not add ratings, select protection or infer control behaviour from the activity description; those are design decisions for the actual equipment and installation.
+### Ask for a defined arrangement at each known site
+
+Consider a hypothetical buyer expecting the same equipment package to serve two known sites. Site A has documented supply information and a proposed connection location. Site B has a different documented supply arrangement and a different relationship between that point and the roof zone. Send those records separately, keeping the former, feed scope and proposed activity states common where they genuinely are common.
+
+Ask which documented equipment input arrangement or configuration the provider proposes for each site, what the quote includes to address those requirements and which site inputs remain missing. If Site B's information is incomplete, request a bounded follow-up rather than assuming the Site A proposal covers it. This enquiry makes no assumption that a converter, generator, alternative source or automatic adaptation is available. It asks the supplier to describe the arrangement actually offered.
 
 ### Ask about interruption and recovery without designing them
 
@@ -86,26 +91,28 @@ Avoid the claim that a common emergency-stop label settles isolation or coordina
 
 ### Hold the intended duty constant
 
-Compare offers against the same machine arrangement, project power information and proposed working states. One offer may include coordination drawings and interface development; another may stop at terminals or a standalone machine. The difference is commercial scope with technical consequences. It should be visible beside the price rather than discovered during assembly.
+Give both bidders the same former, lift and feed scope, site power records, roof relationship and proposed activity states. Then compare their deliverables. One price may cover standalone equipment connection information while another includes coordination of the combined arrangement. Those are different purchases even when the individual machines appear similar.
 
-An integrated offer still needs a stated boundary with the site. A separately supplied arrangement still needs an identified integration owner. Neither description proves compatibility, and neither determines the destination approval route. Ask the bidder to say which inputs it used and which outputs are included at the present stage.
+An integrated offer still has a boundary with the site's incoming installation and local work. A separate-machine offer still needs someone to develop the interfaces it excludes. Ask each bidder to state the actual design or coordination work included, the documents it will provide and the site information on which that work depends. The comparison should let the buyer identify the remaining local scope and price it separately.
 
 ### Use an interface comparison that names both sides
 
-| Boundary | Buyer or site input | Supply or integration question |
+| Boundary or subsystem | Equipment-side deliverable to request | Site-side input or purchase decision |
 | :-- | :-- | :-- |
-| Site installation to equipment | Available supply information and connection location | Who defines the equipment connection requirements and final design? |
-| Ground services to elevated assembly | Proposed states, positions and service-route constraints | Who designs the changing service interface and documents its scope? |
-| Feed equipment to forming machine | Material-flow concept and equipment identities | Which commands, status or other functions require agreement? |
-| Forming machine to lift | Current machine information and proposed combined arrangement | Which interactions are included in the integration review? |
-| Equipment to roof receiving activity | Receiving responsibility and communication concept | Which site messages remain distinct from machine control? |
-| Transported modules to assembled system | Delivery split and local installation responsibility | Who reconciles the resulting electrical configuration? |
+| Incoming supply to equipment | Connection requirements for the offered configuration and stated design boundary | Site supply records, proposed connection point and local installation responsibility |
+| Ground services to elevated assembly | Defined scope and documents for the changing service interface | Working positions, route constraints, access and relevant layout information |
+| Feed equipment to former | Equipment identities and the functions covered by the integration scope | Buyer-supplied feed details and the agreed material-flow concept |
+| Former to lift | Description of included electrical/control interaction work | Current former records and the proposed combined arrangement |
+| Equipment to receiving activity | Clear distinction between supplied machine functions and external communication | The receiving party's communication concept and its intended meaning |
+| Delivered modules to assembled equipment | Documents and coordination scope for the destination combination | Assembly split, appointed local parties and destination requirements |
+
+Read each row across. If the supplier cannot yet identify a deliverable, request the specific missing input. If an item is outside the offer, the buyer has a concrete integration task to arrange. A total price is more useful once these boundaries describe the same work.
 
 ### Examine an ambiguous ready signal
 
-Suppose a quotation mentions a ready signal between two separately supplied units. Ask what equipment state that word describes, who creates the information, who receives it and what assumptions each party makes. A forming-machine supplier might describe material readiness while another party assumes it means the entire work zone is available. The same label can hide two different questions.
+Suppose an offer includes a ready signal between a feeder and former. Ask what state that word describes, which item provides it and which receives it. If the buyer reads ready as roof-receiving availability while the provider means material status at the feeder, the offer has not answered the same question.
 
-The procurement response should identify the intended function and the remaining design responsibility. It should not invent a wiring connection or declare that the signal performs a protective function. Once the meaning is agreed, the responsible designers can determine the required implementation and verification within the actual system. Keep any site personnel communication separate unless the approved design explicitly addresses it.
+The reply should define the intended information and the remaining design responsibility. An ordinary status message, site communication and a safety-related function are different matters. This enquiry does not assign a protective function or prescribe wiring; the responsible designers determine implementation and verification for the actual arrangement.
 
 ![Folded red crawler equipment in a yard with lateral supports extended](/images/equipment/transport-real-stowed.webp)
 
@@ -116,34 +123,28 @@ The procurement response should identify the intended function and the remaining
 
 ### Collect information that changes the interface
 
-Use the following list to brief the responsible parties. It asks for the basis of a design discussion, not permission to connect or energize equipment. Unknown values remain unknown until their owner provides suitable evidence.
+Prepare a short scope request organized around actual electrical boundaries:
 
-- Identify the roll former, lift and every included powered or controlled subsystem.
-- Provide site power information, its source and the intended connection boundary.
-- Show outlet height references and proposed equipment positions relative to the roof receiving zone.
-- Describe material feed and panel handover responsibilities where they interact with controls.
-- Map service routes, access restrictions and changes between assembly and elevated work.
-- Identify ground or floor and support layouts where they affect service access or equipment placement.
-- State the site's weather and wind responsibilities affecting exposed work and temporary services.
-- Define the transported modules and destination assembly or local integration scope.
-- List required documentation language, current machine records and responsible electrical reviewers.
-- Identify functions whose meaning remains unclear, including status, stop, fault and recovery descriptions.
+- Name the former, lift and each included or buyer-supplied powered subsystem.
+- Attach available supply records for each known site, with the proposed connection point and unresolved inputs.
+- Describe intended activity states, including proposed simultaneous functions, for equipment-party review.
+- Mark the actual outlet height, roof receiver and the positions affecting service interfaces.
+- Show access restrictions and the ground or floor support layout where they constrain equipment or service placement.
+- State the feed and panel-handover responsibilities that affect communication or control questions.
+- Identify wind and weather dependencies for exposed equipment and temporary services without choosing limits.
+- Split transport modules, destination assembly and local electrical work; specify required documentation and language.
+- Ask which connection, coordination and interface deliverables are included and which remain outside the offer.
 
-### Ask for a usable design deliverable
+### Request deliverables for the offered arrangement
 
-Specify which interface descriptions, drawings and instructions the supplier will deliver and at what stage. Early information can describe boundaries and assumptions. Final documents need to match the actual assembled configuration and the responsibilities agreed for it. Do not accept a generic brochure as the only explanation of how independently supplied items will work together.
+The response should name the equipment configuration, supplied interface documents, included integration work and remaining site inputs. It should also identify what information will be provided later as the arrangement is finalized. This is more useful than asking for all electrical documents without saying which boundary they must explain.
 
-Also agree how changes reach the affected parties. A replacement roll former, a different supply location or a revised delivery split can alter the electrical discussion without changing the roof-panel order. Ask for the specific impact on the interface and deliverables, rather than merely requesting a new document date. The [configuration-change guide](/blog/roll-forming-lift-configuration-change-control/) addresses those wider changes.
+If the former, supply location or assembly split changes, ask which specific deliverable or design input is affected. The [configuration-change guide](/blog/roll-forming-lift-configuration-change-control/) covers that broader review. For this purchase, keep the electrical scope connected to the actual configuration being priced.
 
 <!-- audit-section: limitations-not-fit -->
 ### Keep unresolved integration outside a ready claim
 
 The proposal may not fit a final configuration decision if the supply boundary, equipment identities, moving service interfaces or integration owner are missing. This guide cannot supply wiring, protective-device choices, diagnostic actions or control logic. A collection of individually described machines should not be presented as an electrically completed system until the actual interfaces have been resolved by the responsible parties.
-
-<!-- audit-section: cta-editorial-note -->
-### Request a defined electrical scope
-
-Send ARCLIFT the proposed machine arrangement, available site power records, roof-zone and height references, destination responsibilities and transport split. Identify whether the forming machine is already owned and which electrical documentation is available. ARCLIFT can coordinate supply and selection questions with the appropriate parties; final design, installation and verification need project-specific professional responsibility. This editorial explanation and the reference photographs identify visible equipment context, not wiring, permitted control behaviour or evidence that an integrated system is ready for use.
 
 ## FAQ
 
@@ -162,3 +163,10 @@ The project must identify the responsible designer and the parties providing equ
 #### Does this list replace commissioning documents?
 
 No. It identifies inputs and responsibilities before design and integration are complete. Commissioning preparation and approved verification records address the actual assembled system at a later stage.
+
+<!-- audit-section: cta-editorial-note -->
+## Request the equipment and site boundary in the offer
+
+[Request advice on a crawler forming-lift electrical scope](/contact/?product=crawler-roll-forming-lifts&request=advice) with the subsystem list, available site power records and proposed layout. Identify any truck-mounted alternative, owned former or additional site. Ask ARCLIFT to coordinate a response stating the offered input arrangement, included electrical/control integration work and site information still required. The result should help you define the remaining local scope before comparing prices.
+
+Mark the outlet height, destination assembly and transport split on the supplied information. This editorial scope request does not define connections; final electrical design and verification belong to the responsible project parties.

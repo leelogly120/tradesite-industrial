@@ -8,6 +8,7 @@ const root = resolve(import.meta.dirname, '..');
 const productRoot = resolve(root, 'src/content/products');
 
 const activeProductFiles = [
+  'src/lib/equipment-catalog.ts',
   'src/lib/product-selection.ts',
   'src/lib/product-compare.ts',
   'src/pages/products/index.astro',
@@ -104,7 +105,7 @@ describe('product page encoding regression', () => {
 
     expect(detail).toContain('ARC-F20 Ceiling Platform — Archived Reference Class');
     expect(detail).toContain('ARC-T25HQ Truck-Mounted Lift — Planning Route');
-    expect(detail).toContain('Request a project review →');
+    expect(detail).toContain('Request a quote →');
     expect(compare).toContain(' — ${view.statusNote}');
     expect(domain).toContain('Editorial planning visual — not model-specific evidence');
   });
