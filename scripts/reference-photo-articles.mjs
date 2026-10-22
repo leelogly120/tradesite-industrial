@@ -242,4 +242,9 @@ export const REFERENCE_PHOTO_ARTICLES = Object.freeze([
     cover: Object.freeze(["/images/equipment/entry-real-approach.webp"]),
     body: Object.freeze(["/images/equipment/entry-real-cover.webp","/images/equipment/entry-real-interior.webp","/images/equipment/transport-real-stowed.webp"]),
   }),
+  Object.freeze({
+    slug: 'crawler-platform-vs-spider-lift-vs-scaffolding',
+    cover: Object.freeze(['/images/equipment/entry-real-cover.webp']),
+    body: Object.freeze(['/images/equipment/entry-real-interior.webp', '/images/equipment/entry-real-approach.webp', '/images/equipment/transport-real-cover.webp']),
+  }),
 ]);

@@ -2,7 +2,7 @@
 title: "Overhead Clearance Register for Ceiling Access Review"
 description: "Record measured overhead conditions by route, setup and work state before configuration review; it does not prove equipment fit, clearance or site approval."
 date: 2026-07-27
-updated: 2026-10-20
+updated: 2026-10-22
 author: "ARCLIFT Technical Editorial"
 tags: ["Overhead Clearance", "Ceiling Access", "Site Survey"]
 coverImage: "/images/equipment/entry-real-approach.webp"
@@ -11,38 +11,38 @@ coverCaption: "Reference photograph of a raised platform outside an industrial b
 draft: false
 ---
 
-For a large-deck ceiling platform, the useful survey is not just the height of the ceiling. It connects the lowest relevant obstruction to the floor reference, the task location and the building-service state that will actually exist during the work. Record transport, setup, elevated task and withdrawal separately. A clear entrance does not establish a clear working position or a clear way back. This guide explains what to measure and what to keep unresolved until exact configuration information is available; it does not calculate equipment clearance, approve electrical separation or authorise a work method.
+Describe the ceiling work as a volume: the local floor reference below, beams and services around it, and the proposed platform, people, tools and materials within it. A low duct beside the task and a higher beam directly above it create different questions. One minimum height cannot explain both. The useful enquiry shows each obstruction's location and extent and asks the equipment provider which proposed arrangement it has compared with that geometry. This guide supplies survey inputs, not a clearance value, electrical assessment or work authorization.
 
 **Contents**
 
-- Define every zone and work state
+- Start with the task section and its surroundings
 - Measure current overhead conditions
-- Escalate unknown hazards and missing records
-- Use the clearance register without overstating it
-- Answer practical survey questions
+- Describe changing services during the work window
+- Use the register without overstating it
+- FAQ
 
 <!-- audit-section: buyer-intent -->
-## Define every zone and work state
+## Start with the task section and its surroundings
 
-### Record the transport state
+### Locate the actual ceiling task
 
-Trace the approved route from unloading or staging to the work area. At each opening, turn, gradient and floor transition, record the overhead item that controls clear passage. Door closers, signs, lights, sprinklers, ducts, cable trays, beams and temporary works can create a lower point than the nominal ceiling.
+Mark the fastening, inspection or installation position in plan and section. Show the adjacent structure and services, not just the ceiling plane. A task beneath a beam differs from one beside it, even where the building drawings give the same general ceiling elevation. The work face should be identifiable before a platform outline is added.
 
-Use clear measured dimensions rather than plan labels. Record the configuration reference as unknown until exact approved information is available; do not draw an assumed ARC-F outline. The [ceiling-platform project-data guide](/blog/crawler-ceiling-wall-panel-platform-project-data/) explains the broader selection inputs, while this register stays narrowly focused on overhead geometry and status.
+Request the proposed configuration's task arrangement rather than tracing a reference photograph or assuming an ARC-F outline. Distinguish platform elevation, personnel task position and the surveyed building elevation. The [ceiling-platform project-data guide](/blog/crawler-ceiling-wall-panel-platform-project-data/) supplies the broader application brief; this survey contributes the located overhead geometry.
 
 Place the resulting register inside the broader [ceiling maintenance pre-task checklist](/blog/ceiling-maintenance-safety-checklist/), where route, floor, task load, work-zone and rescue owners can see which decisions remain on hold. The checklist does not convert the survey into equipment clearance or work authorization.
 
-### Record the setup state
+### Draw the equipment and task objects separately
 
-Setup may change the occupied volume. Access panels, guard components, stabilising arrangements, work platforms or other configuration elements may move between transport and task states, but no specific function or movement should be assumed. Request the exact approved setup information for the candidate configuration.
+Show the equipment outline supplied for the candidate, then identify the people, tool, fixture and material positions the task owner proposes. These are separate objects with separate information sources. Long trim, packaged panels or a proposed accessory can occupy space beyond the machine outline. Spare space in a photograph does not define a task envelope.
 
-Measure overhead items around the full setup area, not only above the centreline. Include columns, bracing, services, adjacent equipment, doors and movable installations. Record who controls each item and whether its state can change during the work window.
+Ask which of those positions the equipment proposal actually addresses. Keep an unconfirmed attachment or material orientation visible as a question. The [task-load schedule](/blog/aerial-platform-worker-tool-material-load-planning/) records simultaneous quantities and locations; this page addresses their relationship with beams, ducts and other overhead objects.
 
-### Record the elevated task and withdrawal states
+### Connect entry, work and the way out
 
-Describe the worker position, task face, tools, materials and likely hand movement around the task. The register should show where the worker and task items may approach structure or services, but it must not invent a platform or worker envelope. Connect each measurement to a labelled work state.
+The arrangement that passes the entrance may differ from the one proposed beneath the ceiling. Ask for the relevant entry, setup and task information, including the occupied volume of documented configuration changes. Measure the surrounding area for each applicable state; clearance above a folded centreline cannot describe a broad raised deck.
 
-Withdrawal deserves its own check. A route that appears open for approach may become restricted after tools, temporary barriers, nearby equipment or service states change. Record the path back to the safe handover point and the trigger for a new survey.
+Include the expected withdrawal condition. Materials, temporary installations or changed building services can occupy a previously clear return area. The state table below combines these questions without prescribing a movement sequence. The [entry-survey guide](/blog/large-crawler-work-platform-building-entry-survey/) develops the separate connected entrance geometry.
 
 ![Red lifting structure with a broad raised platform beneath steel building framing](/images/equipment/entry-real-cover.webp)
 
@@ -69,17 +69,15 @@ Include measurement uncertainty and access limitations where the project process
 
 ### Draw the task materials separately from the machine
 
-In a hypothetical ceiling-panel proposal, the equipment outline appears to fit the surveyed work position. That comparison still says nothing about the space needed for the proposed packaged panels, long trim or tools beside the task. Ask for those objects to be shown separately on the task section, with their source dimensions and proposed orientation. Do not enlarge the machine outline by an assumed allowance and call the resulting shape a verified task envelope.
+In the hypothetical duct-and-beam bay, a platform-only outline could leave the long ceiling component beside the task undefined. Ask the task owner for that component's geometry and proposed position, including whether the enquiry concerns the packaged or working form. These can be different objects at different stages. Do not enlarge the machine outline by an assumed allowance and call the result a verified work volume.
 
-For example, the packaging dimension used for a receiving review may differ from the component geometry relevant to the ceiling task. Both can matter at different stages. Label which state the task owner proposes and where a packaging or material decision remains open; the drawing must not imply permission to open, turn or lift an item in that position. A tool or fixture whose position depends on an undocumented attachment is another unresolved object, not part of a confirmed platform outline.
-
-Distinguish three conclusions in the survey response: the building geometry has been recorded; the proposed objects have been identified; the configuration and task have been assessed together. Completing the first two does not establish the third. The [task-load schedule](/blog/aerial-platform-worker-tool-material-load-planning/) records simultaneous people and material quantities; this survey contributes their spatial relationship to the overhead surroundings.
+The practical output is a section that distinguishes surveyed building surfaces, supplier-provided equipment geometry and task-owner material positions. It should make the remaining question explicit: has the proposed arrangement been assessed with all those objects, or does the response address the machine alone? The drawing itself does not authorize opening packaging, turning material or using a proposed attachment.
 
 ### Put floor and obstruction measurements on the same reference
 
 A building drawing may give the underside of a beam as an elevation relative to the project's survey datum. An equipment drawing may describe height above its supporting surface. Those descriptions are not interchangeable. Ask the survey team to identify the floor reference at the relevant position, any difference between floor levels and the datum used for each overhead measurement. Let the configuration reviewer establish how that information relates to the actual support arrangement.
 
-Keep the measured building geometry separate from the space required for equipment, people, tools and the task. The difference between two drawing dimensions is not automatically usable clearance: the sources may describe different states or omit a feature that controls access. A missing equipment envelope should remain a missing input, not be replaced by an outline traced from a photograph.
+The difference between two drawing dimensions is not automatically usable clearance. One may start at a different floor level or describe another equipment state. Keep the source and datum visible, then ask the reviewer how the actual support arrangement relates to that local floor reference. This survey supplies no clearance allowance.
 
 The following comparison is a survey brief, not a set of permitted movements. Complete only the states relevant to the proposed method and add any state that the exact configuration requires.
 
@@ -87,7 +85,7 @@ The following comparison is a survey brief, not a set of permitted movements. Co
 
 | State being reviewed | Geometry and status to capture together | Question that remains for configuration review |
 | --- | --- | --- |
-| Passage through an opening | Lowest obstruction, floor reference, approach and exit alignment, door or service position | Which approved transport configuration is being compared with these measurements? |
+| Passage through an opening | Lowest obstruction, floor reference, approach and exit alignment, door or service position | Which documented entry/travel arrangement is being compared with these measurements? |
 | Setup at the work zone | Surrounding structure and services, floor references across the area, temporary obstructions | What space does the documented setup arrangement require, including any configuration changes? |
 | Work beneath the ceiling | Task-face location, each obstruction's plan extent and measured surface, service status and task-material positions | Can the equipment, people and task be assessed together using the exact approved information? |
 | Withdrawal from the task | Return path, remaining materials, changed services and temporary installations | Is the reviewed way out still available in the condition expected after the task? |
@@ -98,14 +96,14 @@ Keep a separate source or drawing reference beside each entry in the private sur
 
 Compare current measurements with available as-built or design records, but do not assume a drawing is current merely because it is labelled as-built. Record the drawing number, revision, date and owner in the secure record, then note any field conflict.
 
-Re-survey after ceiling work, temporary installations, service movement, floor-level changes, route changes or task changes. In a live building, the register should identify its valid work window. The [stadium planning guide](/blog/stadium-ceiling-access-platform-planning/) shows why event, changeover and isolated states should remain separate in venue environments.
+Identify the work window the information describes and the changes that require further survey or review. Ceiling installation, service movement, floor-level changes or revised task materials can affect only part of the section or several states. The [stadium planning guide](/blog/stadium-ceiling-access-platform-planning/) provides a venue example of separating event, changeover and maintenance conditions.
 
 ![People on a yellow raised platform beneath steel roof framing inside a building](/images/equipment/entry-real-interior.webp)
 
 *Reference photograph of people on a raised platform beneath roof framing. It does not establish a permitted occupant count, task load, working method or approved arrangement.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## Escalate unknown hazards and missing records
+## Describe changing services during the work window
 
 ### Route electrical-line status to its owner
 
@@ -117,11 +115,9 @@ Record the line or service owner, status, applicable jurisdiction and responsibl
 
 Overhead doors, cranes, curtains, hoists, screens, lighting rigs, conveyors and maintenance systems can occupy different positions. Record every state that may coincide with transport, setup, task or withdrawal. Name the owner who can isolate or control movement.
 
-The trade-off is additional coordination: a static snapshot is simpler, but it can miss the condition that actually controls the work. A useful register identifies the allowed state, evidence of that state and what happens when the item cannot be controlled.
+The trade-off is between a simple static section and a proposal that addresses the actual work window. Keep fixed beam/duct geometry distinct from the space a moving service can occupy. Its owner must establish the relevant state and applicable control arrangements; a survey cannot supply them by assumption.
 
-Consider a proposed work position near an overhead door. A measurement made with the door closed says nothing about the space occupied when the door changes position. If the work depends on one door state, the project needs the door owner's confirmation of how that state is controlled for the relevant work window. If that confirmation is unavailable, mark the interface unresolved; do not make the route appear acceptable by omitting the other state. This is a hypothetical review question, not a report of an ARCLIFT project.
-
-The same distinction applies when the building changes during the task. If a new cable tray, ceiling panel or temporary installation occupies part of the previously surveyed withdrawal path, the old entry measurement remains a historical observation but no longer answers the return-path question. Identify the changed item and the affected state so the project can commission the necessary review without discarding unrelated survey evidence.
+In a hypothetical work window near an overhead door, the site proposes ceiling work while the door remains in a specified position. Ask the door owner which geometry and arrangements apply for that period; a photograph with the door closed cannot answer for all positions. Then show whether the intended withdrawal area remains available after the ceiling component is present. If either condition is unresolved, name that dependency in the proposal enquiry. This is a planning illustration, not an ARCLIFT case or instruction to operate or isolate the door.
 
 For risk-identification context, <a href="https://www.ipaf.org/en-gb/operator-feeds/avoid-overhead-obstructions" target="_blank" rel="noopener noreferrer">IPAF's guidance on overhead obstructions</a> describes contact and entrapment hazards for MEWPs near structures. That guidance explains why the people and task matter as well as the machine outline. It does not establish the classification, required clearance or protective measures for a particular ARCLIFT configuration.
 
@@ -131,7 +127,7 @@ When records are absent or conflict with the site, identify the information need
 
 Give the unknown area its own entry, state why it was not observed and mark which task position depends on the answer. Keep that uncertainty distinct from a confirmed obstruction: the next request is for reliable information, not automatically for removal or an alternative machine. This register does not authorize opening a ceiling, disturbing services or choosing a survey access method.
 
-Secure handling matters. Detailed service drawings, electrical status, security installations and site identifiers must not appear in public content or open forms. Use anonymised references and share only the minimum necessary extract through the controlled project channel.
+Share service details and sensitive site drawings through the agreed private project channel. An anonymised preliminary section can still identify the specific missing geometry or service-status question without publishing the site information.
 
 ![Folded red crawler apparatus outdoors with support beams extended to the ground](/images/equipment/transport-real-stowed.webp)
 
@@ -174,9 +170,9 @@ Do not publish “fits under,” “zero-clearance,” “safe near live service
 - Redacted drawings, secure transfer record, sensitive-data owner and publication boundary
 
 <!-- audit-section: cta-editorial-note -->
-### Send only the clearance register for review
+### Ask for an equipment response to the located geometry
 
-Send only the measured clearance register through a secure project channel to ARCLIFT as an integrated equipment supplier. Include the site zone, height and ceiling records, access and transport route, floor reference, work states, obstruction status, destination context and unresolved interfaces. This request does not promise suitability, fit, approval, quotation, configuration, availability, result or response time. Final decisions require project-specific signed information from the responsible site and competent reviewers.
+[Ask ARCLIFT about the proposed work-platform arrangement](/contact/?product=crawler-ceiling-platforms&request=advice) using the located plan and task section. Include height/floor references, beam and duct extents, material positions, service states, entry and transport boundary, work window and destination. Identify whether the missing answer concerns site geometry or the candidate's equipment/task envelope. ARCLIFT supports equipment selection and supply coordination; final fit, service separation and work-method decisions remain with the responsible project reviewers and signed information.
 
 This article is editorial survey guidance, not a configuration schedule, electrical assessment, operating instruction, site approval or rescue plan. The reference photographs cannot establish an equipment envelope, service status, clearance, capability or result.
 

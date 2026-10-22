@@ -54,6 +54,7 @@ const expectedArticles = [
   {"slug":"aerial-platform-worker-tool-material-load-planning","date":"2026-07-27","images":["entry-real-interior","entry-real-cover","entry-real-approach","transport-real-stowed"]},
   {"slug":"ceiling-platform-overhead-clearance-survey","date":"2026-07-27","images":["entry-real-approach","entry-real-cover","entry-real-interior","transport-real-stowed"]},
 ];
+expectedArticles.push({ slug: 'crawler-platform-vs-spider-lift-vs-scaffolding', date: '2026-07-27', images: ['entry-real-cover', 'entry-real-interior', 'entry-real-approach', 'transport-real-cover'] });
 const expectedDimensions = {
   'transport-real-cover': [744, 419],
   'transport-real-carrier': [502, 370],
@@ -95,7 +96,7 @@ function assertPhotoDisclosure({ alt, caption }, context) {
 }
 
 describe('approved reference photographs', () => {
-  it('limits the photo replacement to forty-six fixed articles and twelve distinct photograph URLs', async () => {
+  it('limits the photo replacement to forty-seven fixed articles and twelve distinct photograph URLs', async () => {
     expect(REFERENCE_PHOTO_ARTICLES).toEqual(expectedArticles.map(({ slug, images }) => ({
       slug,
       cover: [photoUrl(images[0])],

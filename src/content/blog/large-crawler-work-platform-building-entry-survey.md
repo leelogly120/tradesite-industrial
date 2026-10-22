@@ -2,7 +2,7 @@
 title: "Building Entry Survey for Large Crawler Work Platforms"
 description: "Survey building entry for a large crawler work platform across transport, doorway, internal travel, task and withdrawal states with controlled measurements."
 date: 2026-08-07
-updated: 2026-10-19
+updated: 2026-10-22
 author: "ARCLIFT Technical Editorial"
 tags: ["large crawler work platform", "building entry survey", "indoor access route", "clearance planning"]
 coverImage: "/images/equipment/entry-real-cover.webp"
@@ -11,7 +11,7 @@ coverCaption: "Reference photograph from equipment documentation; identifying de
 draft: false
 ---
 
-A building-entry survey must connect the approach, turn, opening, threshold and internal route to the equipment state proposed at each boundary. A generous doorway cannot resolve an inaccessible approach or an unreviewed floor transition. The useful outcome is a traceable measurement register: it identifies which conditions were measured, which remain unknown, which equipment documents are needed and who must close each question. It also preserves a way out after the building changes. The register supports a conditional access review; it does not authorize movement or prescribe how a platform should be driven.
+Survey a large platform's entrance as a connected approach, turn, opening, threshold and inside transition. In a hypothetical building, an external guard limits the approach, the frame narrows the passage, and an internal door mechanism projects downward farther inside. A quoted doorway width and height cannot describe that whole chain. The useful buying question is which actual entry arrangement the supplier proposes, and which located restriction still controls its review. The survey records geometry for that discussion; it gives no driving method or movement permission.
 
 This guide concerns entry geometry for a large crawler work platform, including a separately reviewed under-ceiling platform. The [crawler transport data package](/blog/large-crawler-platform-transport-data-package/) covers carrier and transport handovers. The [overhead-clearance survey](/blog/ceiling-platform-overhead-clearance-survey/) covers work-state obstructions, while the [floor-support guide](/blog/indoor-aerial-platform-ground-pressure-guide/) addresses the separate support review. Keep their results linked without treating one as approval of the others.
 
@@ -19,8 +19,8 @@ This guide concerns entry geometry for a large crawler work platform, including 
 
 - Define the journey and equipment states
 - Measure the connected entry geometry
-- Build a register another reviewer can use
-- Resolve a hypothetical handover conflict
+- Prepare one entrance package for the candidate
+- Compare entry and withdrawal assumptions
 - FAQ
 
 <!-- audit-section: buyer-intent -->
@@ -30,15 +30,17 @@ Start outside the building and finish at the intended withdrawal point after the
 
 ### Name the state that crosses each boundary
 
-Use controlled equipment information to distinguish transport, proposed entry, internal travel, setup and task states. Record which documents define folded, extended or removable elements. Do not assume that an arrangement shown on a carrier is also an allowed travel arrangement, or that a visible deck can be removed. If the required state is unresolved, the corresponding route comparison remains open. Changes of state need their own approved instructions; this survey does not supply them.
+Ask for the candidate's entry drawing with the components actually present: base, lifting structure, deck, guards, power equipment and accessories as applicable. If the supplier proposes an arrangement different from the complete working platform, ask what is supplied in that state, where the remaining items go and what later assembly/services the offer includes. A small transport envelope is incomplete as a buying answer when no location or service is identified for reaching the working arrangement.
+
+Keep carrier transport, proposed entry, internal travel and task states distinct. A carrier photograph does not establish an allowed entry state, and a visible deck cannot be assumed removable. Configuration-specific instructions and review govern any change; this page supplies none.
 
 ### Connect segments without leaving gaps
 
-Give each segment a start, end and direction, using references shared by the plan, photographs and measurement register. One segment might end at the outside face of an opening, with the next starting at that same reference. A gap between separate teams' drawings can hide the turn, threshold or short passage that controls entry. Record who owns each connecting area, including any boundary between a delivery contractor's responsibility and the site's internal route.
+Join the outside approach to the frame, the frame to the internal mechanism and that mechanism to the inside turning area. Give each restriction a position along the same route. A drawing ending at the outside wall and another starting beyond the entrance can omit the short passage that controls the candidate. Include the delivery-to-site boundary so the equipment proposal and survey begin at the same place.
 
 ### Reserve the withdrawal route from the beginning
 
-A platform may enter before partitions, door fittings, stored material or services restrict the route. Ask which building stage will exist when it leaves, and identify the party controlling that information. An intended exit that depends on an unfinished opening, temporary access permission or a future work window is a conditional arrangement. Record that dependency without assuming it will remain available. Successful entry cannot close the later withdrawal review.
+Compare the building stage at entry with the expected stage at withdrawal. A platform admitted before partitions or door fittings are installed may face a different route later. Ask what the supplier's withdrawal arrangement assumes and whether the site programme preserves that route. This can change the choice between an assembled candidate and a proposal involving separately handled components; neither is selected from the entrance dimensions alone.
 
 ![Raised crawler apparatus outside a building with several ground-level openings](/images/equipment/entry-real-approach.webp)
 
@@ -89,7 +91,7 @@ An indoor platform photograph can orient a reader to a deck, surrounding structu
 *Reference photograph with faces and identifying text blurred. The platform and surrounding steelwork are visible; the image does not establish permitted occupancy, floor support, doorway fit or a current offered configuration.*
 
 <!-- audit-section: project-checklist -->
-## Build a register another reviewer can use
+## Prepare one entrance package for the candidate
 
 A useful register connects geometry, equipment state and the decision still required. The following blank structure is an editorial review aid, not a completed site survey. Use the project's controlled identifiers and measurement method; no example value or acceptance margin is supplied here.
 
@@ -121,26 +123,26 @@ Check these eight relationships before issuing the package:
 
 These checks test the consistency of the handover information. They do not set a clearance allowance or authorize entry.
 
-### Separate an observation from its closure record
+### Separate a site measurement from an equipment answer
 
-A surveyor can establish a measured site condition without deciding equipment suitability. An equipment-document owner can identify a declared envelope without approving the floor or site movement. Record who provides information, who reviews the combined question and which document closes it. Keep unresolved items visible when the package changes hands. A transmittal marked received means that information arrived, not that all access decisions have been accepted.
+The package should distinguish a missing measurement from a missing candidate detail. If the frame is measured but the supplier has not identified the entry configuration, another site photograph cannot close the gap. If the configuration is defined but the internal mechanism's projection is unknown, another equipment brochure cannot answer it. Ask for the missing half of the comparison and keep the floor question with its structural reviewer.
 
-### Index photographs without exposing the site
+### Use photographs to locate the restrictions
 
-Give project survey photographs a controlled location reference, viewing direction and date. Explain any crop that removes context relevant to the measurement. Keep faces, signs, access credentials, customer identity and sensitive drawings out of material circulated for preliminary selection. Preserve the authoritative originals in the authorized project system. Public reference photographs on this page illustrate questions only; they are not records of the reader's route.
+Use photographs to identify the guard, frame, door mechanism and adjacent surfaces on the survey. Retain the direction and date, and explain a crop that removes relevant context. Dimensions still come from the survey. Share identifying site information through the agreed private project channel; public reference photographs cannot describe the reader's actual entrance.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Resolve a hypothetical handover conflict
+## Compare entry and withdrawal assumptions
 
-Consider a fictional building where the early survey covers an opening and the passage beyond it. The buyer has a preliminary platform outline, but the equipment state associated with that outline is not yet confirmed. Before mobilization, a partition changes the approach and a revised construction programme places stored material along the intended withdrawal route. This is a planning example, not an actual project or a driving sequence.
+Return to the hypothetical entrance chain. Suppose the frame and threshold remain unchanged, but a new partition reduces the inside turning area and stored materials occupy the proposed withdrawal route. The useful comparison is now between equipment and site arrangements that address those changes. This is an enquiry example, not an actual delivery or a movement sequence.
 
 ### Identify what the earlier record can still establish
 
-The original survey may retain useful dated observations of unchanged surfaces. It cannot establish the new approach geometry, the current storage boundary or the equipment state behind the preliminary outline. Keep those limits attached to the records. Do not erase useful measurements merely because a change occurred, but do not extend them into conditions they never covered. Ask the appointed reviewers which observations remain applicable and which require a new survey.
+The located frame measurements can still describe an unchanged frame. They cannot describe the new turning area or prove that the planned exit remains available. Ask for the affected geometry and building-stage information, retaining the unchanged sections as references. This focuses the next enquiry on what has changed rather than requiring the buyer to recreate every record.
 
 ### Hand the disagreement to the right owners
 
-The site survey owner must address the changed partition and route observations. The equipment-document owner must identify the applicable state and controlled envelope. The site planning owner must resolve the intended exit window and storage dependency. If the threshold crosses a floor zone without support documentation, that question goes to the structural reviewer separately. The handover record should show these distinct open items and their required responses instead of one ambiguous note saying access is being checked.
+Request three specific answers: the measured inside restriction from the site, the corresponding entry/withdrawal arrangement from the equipment provider, and the route's availability from the site planner. If the threshold crosses a floor area without structural records, ask the appointed floor reviewer what is missing. A shared note saying “access pending” hides those different questions.
 
 ### Compare access options without hiding the trade-off
 
@@ -160,7 +162,7 @@ This approach may not fit a project whose equipment state remains unidentified, 
 <!-- audit-section: cta-editorial-note -->
 ### Send the measured chain for a conditional review
 
-Provide the site route plan, approach and opening observations, threshold register, floor-record index, equipment-state documentation and anticipated withdrawal stage. Include the height references, destination restrictions and transport-to-site handover boundary, together with every unresolved item and its owner. ARCLIFT can organize equipment questions as an integrated equipment supplier and technical selection and supply partner. Final project-specific decisions remain with the appointed reviewers and signed project documents. Each reference image is illustrative and cannot replace their survey, support or movement decisions.
+[Ask ARCLIFT for an entry-configuration response](/contact/?product=crawler-ceiling-platforms&request=advice) against the connected approach, turn, opening and threshold. Include the measured height references, interior route, floor-record gaps, task geometry, transport handover, destination and expected withdrawal stage. Name the restriction still controlling the enquiry and ask which actual arrangement the proposal assumes. ARCLIFT coordinates equipment selection and supply; the appointed reviewers and final project documents determine access and support suitability. The editorial reference images are not a survey, customer project or movement approval.
 
 ## FAQ
 

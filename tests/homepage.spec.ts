@@ -25,7 +25,7 @@ test('preserves contact destinations and loads fonts locally', async ({ page }) 
   expect(remoteFonts).toEqual([]);
   await expect(page.locator('.hero-actions a').first()).toHaveAttribute('href', '/products/');
   await expect(page.locator('.hero-actions a').last()).toHaveAttribute('href', '/contact/');
-  await expect(page.locator('.a2-contact-links a').first()).toHaveAttribute('href', 'https://wa.me/8615617687185');
+  await expect(page.locator('.a2-contact-links a').first()).toHaveAttribute('href', 'https://wa.me/8615515922444');
   await expect(page.locator('.a2-contact-links a').last()).toHaveAttribute('href', 'mailto:leelogly120@gmail.com');
   await expect(page.locator('#matching')).toContainText('forming machine, its mounting interface and the panel receiving area');
 });

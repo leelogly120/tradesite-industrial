@@ -61,13 +61,13 @@ describe('equipment-led homepage discovery and media', () => {
   });
   it('preserves all family, comparison and inquiry destinations as actual HTML links', () => {
     const links=new Set(all.filter(n=>n.tagName==='a').map(n=>attr(n,'href')));
-    for(const destination of ['/products/#crawler-roll-forming-lifts','/products/#truck-mounted-roll-forming-lifts','/products/#crawler-ceiling-platforms','/products/#truck-mounted-work-platforms','/products/#roll-forming-machines','/products/','/compare/','/contact/','https://wa.me/8615617687185','mailto:leelogly120@gmail.com']) expect(links.has(destination),destination).toBe(true);
+    for(const destination of ['/products/#crawler-roll-forming-lifts','/products/#truck-mounted-roll-forming-lifts','/products/#crawler-ceiling-platforms','/products/#truck-mounted-work-platforms','/products/#roll-forming-machines','/products/','/compare/','/contact/','https://wa.me/8615515922444','mailto:leelogly120@gmail.com']) expect(links.has(destination),destination).toBe(true);
   });
   it('provides a normal Contact navigation entry and direct desktop contact links', () => {
     const nav=all.find(n=>attr(n,'aria-label')==='Primary navigation');
     expect(nodes(nav).some(n=>n.tagName==='a'&&words(n)==='Contact'&&attr(n,'href')==='/contact/')).toBe(true);
     const contacts=all.find(n=>attr(n,'aria-label')==='Direct contact');
-    expect(nodes(contacts).filter(n=>n.tagName==='a').map(n=>attr(n,'href'))).toEqual(expect.arrayContaining(['mailto:leelogly120@gmail.com','https://wa.me/8615617687185']));
+    expect(nodes(contacts).filter(n=>n.tagName==='a').map(n=>attr(n,'href'))).toEqual(expect.arrayContaining(['mailto:leelogly120@gmail.com','https://wa.me/8615515922444']));
   });
   it('retains accessible, truthfully disclosed schematics for the protected detail pages', async () => {
     const diagram=await readFile(resolve(root,'src/components/EquipmentDiagram.astro'),'utf8');
