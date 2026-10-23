@@ -1,0 +1,333 @@
+{
+  "baseline": "5eb58062101d807de92e904e6f02584ad71a0fc7",
+  "articles": [
+    {
+      "slug": "40hq-shipping-truck-mounted-roll-forming-lift",
+      "sha256": "bcd65398143a73c86fb53074e44ee342e5275785584c1a304a04c86478c5cc6b"
+    },
+    {
+      "slug": "aerial-platform-emergency-lowering-rescue-plan",
+      "sha256": "7aa0e322e67c9bcc5bcd4303f9307e97831e851d82ae23b0ede3944f57cd085d"
+    },
+    {
+      "slug": "aerial-platform-familiarization-handover",
+      "sha256": "c192b8ad95d865895ab0fb7a9269fdd1705c4211e4066060a7b483943657a7e7"
+    },
+    {
+      "slug": "aerial-platform-worker-tool-material-load-planning",
+      "sha256": "b86ee2072c6d94f1eca8f64cab5ab33ac224ff609427596db85a990bdf33ea92"
+    },
+    {
+      "slug": "airport-terminal-ceiling-access-route-survey-guide",
+      "sha256": "9c3351ffd9372adf14843257235d7d73aa41fa9be6661173565d7e403e79c848"
+    },
+    {
+      "slug": "airport-terminal-maintenance-access-planning",
+      "sha256": "2f58fab81bef9b2e8a02b809cf76080f2b84b5d57bd60724a9fa3303ddd79d99"
+    },
+    {
+      "slug": "ceiling-maintenance-safety-checklist",
+      "sha256": "33298b82feadf864cf7af90267f2a9f67b9b6a0ab44de36c28cb8c895770b4f9"
+    },
+    {
+      "slug": "ceiling-platform-overhead-clearance-survey",
+      "sha256": "040bfd540743a213aa78216332aa6345e6a14d1bb051d525339b6d7340c80f82"
+    },
+    {
+      "slug": "ceiling-work-technology-trends",
+      "sha256": "f8d890c17e16116ee86d302bb223e20749306667a39ec9f04866dac571e92958"
+    },
+    {
+      "slug": "coil-handling-roll-forming-line-feeding-plan",
+      "sha256": "771931ecb981b75b8195ef9d1f05ed71c9a930f4ecb4734db81cb90047ab847c"
+    },
+    {
+      "slug": "crawler-ceiling-platform-site-acceptance-records",
+      "sha256": "252a05bdaa156bb1969893fa956a65eecb244a45296cb78c5ff800a46bad2def"
+    },
+    {
+      "slug": "crawler-ceiling-wall-panel-platform-project-data",
+      "sha256": "aa83109a4dc528a3f7fbb60bfcd5783f7f27a12e5f447a44cca17083d19ba9e9"
+    },
+    {
+      "slug": "crawler-platform-maintenance-spares-handover",
+      "sha256": "1bcf9085a69f6a9b115bb1bd5ac075d68bb92f27aec099f9b1a2d1b7348b7125"
+    },
+    {
+      "slug": "crawler-platform-vs-spider-lift-vs-scaffolding",
+      "sha256": "b72693594bf05cc615e285502cb15c7ae7cfe6cb161905d5b3329bd42343c671"
+    },
+    {
+      "slug": "crawler-roll-forming-lift-access-route-survey",
+      "sha256": "3ca1f4f92d2c54f53da8afdc3559e635178ebc2499ebeb1c4e472358f8d6b25e"
+    },
+    {
+      "slug": "crawler-roll-forming-lift-ground-support-review",
+      "sha256": "8e13645f4805f17799977baaad94a0ec29291a2276eae49d2780a07e03384536"
+    },
+    {
+      "slug": "crawler-roll-forming-lift-work-zone-relocation",
+      "sha256": "71635d30b5414b007e683b51740d1fdd1ebd2140087a404f92fca35e534ddb97"
+    },
+    {
+      "slug": "crawler-under-ceiling-platform-buyers-guide",
+      "sha256": "70e9f39dbc14b39a912bd28fa8f2c9702a847e53b641b007158868517833ebae"
+    },
+    {
+      "slug": "crawler-vs-truck-mounted-roll-forming-system",
+      "sha256": "5d0a037301e6e50b1d5eed16943f3869e5dfd2a48df0fd6b717ce5342bc5047e"
+    },
+    {
+      "slug": "dual-power-crawler-platform-selection",
+      "sha256": "a5db8d9e17a3cd332f48a3374203f04d7394e099620640910e8c6d213a4ad297"
+    },
+    {
+      "slug": "elevated-roll-forming-roof-panel-handover-zones",
+      "sha256": "f1f5044edfe8e198ceafba2a30c23446b9ecf4d7a9963a866704d764abb588e7"
+    },
+    {
+      "slug": "high-altitude-roll-forming-lift-rfq-data",
+      "sha256": "a3e0c9fd99155737cfeb64ff4f0219574aff3863ea1238911ec652dc818fa5b3"
+    },
+    {
+      "slug": "indoor-aerial-platform-ground-pressure-guide",
+      "sha256": "30aacc04bf26960687e9ed8ef3af40a243fa469fa6ad20c26843bd477fc24402"
+    },
+    {
+      "slug": "large-crawler-platform-transport-data-package",
+      "sha256": "2dd655793c8979541ff1465bc8d54c3fa5665ade694a24cd48ac2250aba8a301"
+    },
+    {
+      "slug": "large-crawler-work-platform-building-entry-survey",
+      "sha256": "0e45155532aeb3714383ec86758db42c04783103cba8d090b52001cd4f187c22"
+    },
+    {
+      "slug": "large-deck-crawler-platform-vs-basket-lift",
+      "sha256": "d896ec59e708af54cc40a782b480749d3d94e05606a88ece0e6d1f50263e3aad"
+    },
+    {
+      "slug": "large-deck-crawler-platform-work-zone-layout",
+      "sha256": "805baab585529e9ea8cb86be2238d5d99c3b056440247d836ad187af3429bdc4"
+    },
+    {
+      "slug": "large-deck-platform-wall-panel-access-planning",
+      "sha256": "936230f420b74010d7fd27fefa55195564cf732031a5fcfcc953f9d92d86b0db"
+    },
+    {
+      "slug": "lift-roll-forming-system-commissioning-plan",
+      "sha256": "7243ce883290535de840ac04d0ee9c759bd2bdfd773b650b3d18905ca81d57bd"
+    },
+    {
+      "slug": "lifted-roll-forming-line-mounting-interface-review",
+      "sha256": "435a1eb2e3133b65d62baf67d8f4d81992086309b30b08127bd5142a51edb4de"
+    },
+    {
+      "slug": "pick-and-carry-vs-spider-lift",
+      "sha256": "18d49c920f023d7305b493bca5fbcf856b27b6d37717d120abb6aafc3bf11563"
+    },
+    {
+      "slug": "remote-control-aerial-platform-safety-planning",
+      "sha256": "4fe8e33ef0bd668f8e280ac499e57fe36e55aba4f572e26f59a8c83000e410ab"
+    },
+    {
+      "slug": "roll-forming-lift-configuration-change-control",
+      "sha256": "a8cf70042666d51f7b893750c7c14a5ce7c932d52f0b81284166733a6f7bb5fe"
+    },
+    {
+      "slug": "roll-forming-lift-destination-receipt-plan",
+      "sha256": "0dec56cd727f628b4902569d9cf3d6ee76b9d04417ff9771b9b79e73a3259f2d"
+    },
+    {
+      "slug": "roll-forming-lift-technical-document-package",
+      "sha256": "9621628a7167c6b0ad5ddf2b42cd03f20dffdc7ea64efbf78bf89ec4c9c39c66"
+    },
+    {
+      "slug": "roll-forming-line-electrical-control-interfaces",
+      "sha256": "c11dce19d0908d3512d77484d7e58dae498c71f5dc0e5d93b738e14542e435d4"
+    },
+    {
+      "slug": "roll-forming-line-fat-sat-acceptance-checklist",
+      "sha256": "d9f56cd62e63423776e5aac9b6873a8247437ee4298081824de5d51f686238bf"
+    },
+    {
+      "slug": "roll-forming-line-specification-long-span-roof-panels",
+      "sha256": "d170f435d3d136111b810719f45becf490e80a5f61e59ef35d97da45fab2ec55"
+    },
+    {
+      "slug": "roof-level-roll-forming-lift-coil-loading-plan",
+      "sha256": "3ee4781481e630b5a2251c8f847ef6d252cc17b9cb6c3f267c1362a45fa6c06e"
+    },
+    {
+      "slug": "roof-level-roll-forming-long-panels",
+      "sha256": "b6bebe318763c5f8873e63b481f111076c8bee55f05ce4e3f118b7ad41ad7131"
+    },
+    {
+      "slug": "roof-level-roll-forming-weather-hold-points",
+      "sha256": "7834f92fd4bb5676ae4d5c682b039d411723bee6675e442b9e46d1055b0e9ca9"
+    },
+    {
+      "slug": "roof-panel-profile-material-tooling-data",
+      "sha256": "72f8760cc3b4bbb8e31cc61ab932ec6ff18498c8a42db37a535edc7433ff58a8"
+    },
+    {
+      "slug": "roof-zone-survey-roll-forming-lift-selection",
+      "sha256": "bd3460a7c3e05763fa31870e351dc57bce0d6c8e5ccd812765028d51958a8453"
+    },
+    {
+      "slug": "stadium-ceiling-access-platform-planning",
+      "sha256": "5056ac808394d708d5800d9703ef8bf6a8f315372ecae30f363e63295d502176"
+    },
+    {
+      "slug": "truck-mounted-forming-lift-jobsite-setup-review",
+      "sha256": "cc7d4c112a673235eeda81fc21c66657401b3b5fa33a8cab9dbe9819d8004739"
+    },
+    {
+      "slug": "truck-mounted-forming-lift-road-transport-documents",
+      "sha256": "f4bacdd181f3d0a22037f6dfdb4955971aa5c8baec1079b85470173958bd5fe9"
+    },
+    {
+      "slug": "truck-mounted-lift-destination-chassis-sourcing",
+      "sha256": "cd841fc132ac3be884e637d2909e7ffdbf91f709264aeb70da8fdeeaa86c1e8e"
+    },
+    {
+      "slug": "truck-mounted-roll-forming-chassis-interface-review",
+      "sha256": "af2470cdec358a9ecf20e8a5bbe804be53058310d16ac1eae85a78ca46b19947"
+    },
+    {
+      "slug": "truck-mounted-roll-forming-payload-allocation-review",
+      "sha256": "b641491a4d8f7b70c83bd7ee84f6fc31ba40d24bc2d97589057ea39221e23165"
+    },
+    {
+      "slug": "warehouse-ceiling-access-platform-planning",
+      "sha256": "69d123a872ecd7cc8d6f69a21e723befe82e8973956229ca151b5ffe557896ab"
+    }
+  ],
+  "photos": [
+    {
+      "url": "/images/equipment/coil-real-cover.webp",
+      "sha256": "5f2303c4024cd59b243af37aa8e0786c9c733cf8328e0cdfa9deddea65c23c85"
+    },
+    {
+      "url": "/images/equipment/coil-real-handling.webp",
+      "sha256": "918f5155f7e6bad327f150d7d8a9cdcd047da811b50b2d8423815c32e27e09e5"
+    },
+    {
+      "url": "/images/equipment/coil-real-module.webp",
+      "sha256": "28b6b46da1304cb82d9c374f747b665610ea054126890fd92a21116186e4e471"
+    },
+    {
+      "url": "/images/equipment/coil-real-panel.webp",
+      "sha256": "ebbd6fb7dca979fde996bbfea066a678242ab99455af4974a9a0ba9ab1e82e79"
+    },
+    {
+      "url": "/images/equipment/entry-real-approach.webp",
+      "sha256": "1cf1e0f49108886dce80216d262255764391f2ea60b590e0323aa340b9453231"
+    },
+    {
+      "url": "/images/equipment/entry-real-clearance.webp",
+      "sha256": "0b00a5a7902cf6722ba9a3c87fd0189549d90144c200f15260639397c9fdfe44"
+    },
+    {
+      "url": "/images/equipment/entry-real-cover.webp",
+      "sha256": "0d3740adab56d16cd1967ae0ea8de21a25b5ca6284e166e99c6065d9885b8bc9"
+    },
+    {
+      "url": "/images/equipment/entry-real-interior.webp",
+      "sha256": "3ef30a591f568c607876ad835042500e0494dd782d6f0e91cbdcc6607714c2af"
+    },
+    {
+      "url": "/images/equipment/transport-real-carrier.webp",
+      "sha256": "b9e4b7b5f6b75c4f30611ca33230dfe9cedc4e1f2a921e3c50d03696117185ff"
+    },
+    {
+      "url": "/images/equipment/transport-real-cover.webp",
+      "sha256": "b58559ef8dfb9b1cda576a9093fde7e51493416405aa9fc1519b14e683d14855"
+    },
+    {
+      "url": "/images/equipment/transport-real-loading.webp",
+      "sha256": "6ea578f460060585eb97a4591e9e1288445aa7d242de983ea19346266fb2fa57"
+    },
+    {
+      "url": "/images/equipment/transport-real-stowed.webp",
+      "sha256": "0b90d6a6657fa9280eb07db2ca50343d3a1f8f9aef867a208370e962faa741d4"
+    }
+  ],
+  "sitemapUrls": [
+    "https://www.arclifteq.com/",
+    "https://www.arclifteq.com/about/",
+    "https://www.arclifteq.com/applications/",
+    "https://www.arclifteq.com/applications/airport/",
+    "https://www.arclifteq.com/applications/stadium/",
+    "https://www.arclifteq.com/applications/warehouse/",
+    "https://www.arclifteq.com/blog/",
+    "https://www.arclifteq.com/blog/40hq-shipping-truck-mounted-roll-forming-lift/",
+    "https://www.arclifteq.com/blog/aerial-platform-emergency-lowering-rescue-plan/",
+    "https://www.arclifteq.com/blog/aerial-platform-familiarization-handover/",
+    "https://www.arclifteq.com/blog/aerial-platform-worker-tool-material-load-planning/",
+    "https://www.arclifteq.com/blog/airport-terminal-ceiling-access-route-survey-guide/",
+    "https://www.arclifteq.com/blog/airport-terminal-maintenance-access-planning/",
+    "https://www.arclifteq.com/blog/ceiling-maintenance-safety-checklist/",
+    "https://www.arclifteq.com/blog/ceiling-platform-overhead-clearance-survey/",
+    "https://www.arclifteq.com/blog/ceiling-work-technology-trends/",
+    "https://www.arclifteq.com/blog/coil-handling-roll-forming-line-feeding-plan/",
+    "https://www.arclifteq.com/blog/crawler-ceiling-platform-site-acceptance-records/",
+    "https://www.arclifteq.com/blog/crawler-ceiling-wall-panel-platform-project-data/",
+    "https://www.arclifteq.com/blog/crawler-platform-maintenance-spares-handover/",
+    "https://www.arclifteq.com/blog/crawler-platform-vs-spider-lift-vs-scaffolding/",
+    "https://www.arclifteq.com/blog/crawler-roll-forming-lift-access-route-survey/",
+    "https://www.arclifteq.com/blog/crawler-roll-forming-lift-ground-support-review/",
+    "https://www.arclifteq.com/blog/crawler-roll-forming-lift-work-zone-relocation/",
+    "https://www.arclifteq.com/blog/crawler-under-ceiling-platform-buyers-guide/",
+    "https://www.arclifteq.com/blog/crawler-vs-truck-mounted-roll-forming-system/",
+    "https://www.arclifteq.com/blog/dual-power-crawler-platform-selection/",
+    "https://www.arclifteq.com/blog/elevated-roll-forming-roof-panel-handover-zones/",
+    "https://www.arclifteq.com/blog/high-altitude-roll-forming-lift-rfq-data/",
+    "https://www.arclifteq.com/blog/indoor-aerial-platform-ground-pressure-guide/",
+    "https://www.arclifteq.com/blog/large-crawler-platform-transport-data-package/",
+    "https://www.arclifteq.com/blog/large-crawler-work-platform-building-entry-survey/",
+    "https://www.arclifteq.com/blog/large-deck-crawler-platform-vs-basket-lift/",
+    "https://www.arclifteq.com/blog/large-deck-crawler-platform-work-zone-layout/",
+    "https://www.arclifteq.com/blog/large-deck-platform-wall-panel-access-planning/",
+    "https://www.arclifteq.com/blog/lift-roll-forming-system-commissioning-plan/",
+    "https://www.arclifteq.com/blog/lifted-roll-forming-line-mounting-interface-review/",
+    "https://www.arclifteq.com/blog/page/2/",
+    "https://www.arclifteq.com/blog/page/3/",
+    "https://www.arclifteq.com/blog/pick-and-carry-vs-spider-lift/",
+    "https://www.arclifteq.com/blog/remote-control-aerial-platform-safety-planning/",
+    "https://www.arclifteq.com/blog/roll-forming-lift-configuration-change-control/",
+    "https://www.arclifteq.com/blog/roll-forming-lift-destination-receipt-plan/",
+    "https://www.arclifteq.com/blog/roll-forming-lift-technical-document-package/",
+    "https://www.arclifteq.com/blog/roll-forming-line-electrical-control-interfaces/",
+    "https://www.arclifteq.com/blog/roll-forming-line-fat-sat-acceptance-checklist/",
+    "https://www.arclifteq.com/blog/roll-forming-line-specification-long-span-roof-panels/",
+    "https://www.arclifteq.com/blog/roof-level-roll-forming-lift-coil-loading-plan/",
+    "https://www.arclifteq.com/blog/roof-level-roll-forming-long-panels/",
+    "https://www.arclifteq.com/blog/roof-level-roll-forming-weather-hold-points/",
+    "https://www.arclifteq.com/blog/roof-panel-profile-material-tooling-data/",
+    "https://www.arclifteq.com/blog/roof-zone-survey-roll-forming-lift-selection/",
+    "https://www.arclifteq.com/blog/stadium-ceiling-access-platform-planning/",
+    "https://www.arclifteq.com/blog/truck-mounted-forming-lift-jobsite-setup-review/",
+    "https://www.arclifteq.com/blog/truck-mounted-forming-lift-road-transport-documents/",
+    "https://www.arclifteq.com/blog/truck-mounted-lift-destination-chassis-sourcing/",
+    "https://www.arclifteq.com/blog/truck-mounted-roll-forming-chassis-interface-review/",
+    "https://www.arclifteq.com/blog/truck-mounted-roll-forming-payload-allocation-review/",
+    "https://www.arclifteq.com/blog/warehouse-ceiling-access-platform-planning/",
+    "https://www.arclifteq.com/contact/",
+    "https://www.arclifteq.com/products/",
+    "https://www.arclifteq.com/products/arc-c17-crawler-roll-forming-lift/",
+    "https://www.arclifteq.com/products/arc-c21-crawler-roll-forming-lift/",
+    "https://www.arclifteq.com/products/arc-c25-crawler-roll-forming-lift/",
+    "https://www.arclifteq.com/products/arc-c28-crawler-roll-forming-lift/",
+    "https://www.arclifteq.com/products/arc-c32-crawler-roll-forming-lift/",
+    "https://www.arclifteq.com/products/arc-f20-crawler-ceiling-platform/",
+    "https://www.arclifteq.com/products/arc-f25-crawler-ceiling-platform/",
+    "https://www.arclifteq.com/products/arc-f31-crawler-ceiling-platform/",
+    "https://www.arclifteq.com/products/arc-f35-crawler-ceiling-platform/",
+    "https://www.arclifteq.com/products/arc-rf8-roll-forming-machine/",
+    "https://www.arclifteq.com/products/arc-t12-truck-mounted-roll-forming-lift/",
+    "https://www.arclifteq.com/products/arc-t18-truck-mounted-roll-forming-lift/",
+    "https://www.arclifteq.com/products/arc-t25-truck-mounted-roll-forming-lift/",
+    "https://www.arclifteq.com/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq/",
+    "https://www.arclifteq.com/products/arc-t31-truck-mounted-roll-forming-lift/"
+  ]
+}

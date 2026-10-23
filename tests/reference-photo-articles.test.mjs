@@ -55,6 +55,28 @@ const expectedArticles = [
   {"slug":"ceiling-platform-overhead-clearance-survey","date":"2026-07-27","images":["entry-real-approach","entry-real-cover","entry-real-interior","transport-real-stowed"]},
 ];
 expectedArticles.push({ slug: 'crawler-platform-vs-spider-lift-vs-scaffolding', date: '2026-07-27', images: ['entry-real-cover', 'entry-real-interior', 'entry-real-approach', 'transport-real-cover'] });
+expectedArticles.push(
+  {"slug": "roll-forming-lift-price-quotation-cost-scope", "date": "2026-10-24", "images": ["coil-real-cover", "coil-real-handling", "transport-real-cover", "coil-real-module"]},
+  {"slug": "roll-forming-lift-buy-vs-rent-project-decision", "date": "2026-10-24", "images": ["transport-real-cover", "transport-real-stowed", "coil-real-module", "coil-real-handling"]},
+  {"slug": "existing-roof-panel-former-lift-retrofit-purchase", "date": "2026-10-24", "images": ["coil-real-handling", "coil-real-module", "coil-real-cover", "coil-real-panel"]},
+  {"slug": "used-roll-forming-lift-purchase-records", "date": "2026-10-24", "images": ["transport-real-cover", "transport-real-stowed", "coil-real-module", "coil-real-handling"]},
+  {"slug": "roll-forming-lift-importer-distributor-supply-package", "date": "2026-10-24", "images": ["coil-real-cover", "coil-real-handling", "transport-real-cover", "coil-real-module"]},
+  {"slug": "roll-forming-lift-maintenance-spares-supply", "date": "2026-10-24", "images": ["transport-real-cover", "transport-real-stowed", "coil-real-module", "coil-real-handling"]},
+  {"slug": "roll-forming-lift-procurement-delivery-dependencies", "date": "2026-10-24", "images": ["coil-real-cover", "coil-real-handling", "transport-real-cover", "coil-real-module"]},
+  {"slug": "roll-forming-lift-supplier-demonstration-request", "date": "2026-10-24", "images": ["coil-real-handling", "coil-real-module", "coil-real-cover", "coil-real-panel"]},
+  {"slug": "roof-panel-roll-forming-production-route-cost-comparison", "date": "2026-10-24", "images": ["coil-real-handling", "coil-real-module", "coil-real-cover", "coil-real-panel"]},
+  {"slug": "roll-forming-lift-multiple-project-fleet-fit", "date": "2026-10-24", "images": ["transport-real-cover", "transport-real-stowed", "coil-real-module", "coil-real-handling"]},
+  {"slug": "crawler-roll-forming-lift-carrier-supply-scope", "date": "2026-10-24", "images": ["transport-real-cover", "transport-real-stowed", "coil-real-module", "coil-real-handling"]},
+  {"slug": "roll-forming-lift-coil-handling-option-vs-separate-equipment", "date": "2026-10-24", "images": ["coil-real-handling", "coil-real-module", "coil-real-cover", "coil-real-panel"]},
+  {"slug": "roll-forming-lift-height-specification-datum", "date": "2026-10-24", "images": ["coil-real-handling", "coil-real-module", "coil-real-cover", "coil-real-panel"]},
+  {"slug": "roll-forming-lift-capacity-load-scope-questions", "date": "2026-10-24", "images": ["coil-real-handling", "coil-real-module", "coil-real-cover", "coil-real-panel"]},
+  {"slug": "truck-vs-crawler-ceiling-work-platform-purchase", "date": "2026-10-24", "images": ["entry-real-cover", "entry-real-interior", "entry-real-approach", "transport-real-cover"]},
+  {"slug": "crawler-ceiling-platform-rental-enquiry-scope", "date": "2026-10-24", "images": ["entry-real-cover", "entry-real-interior", "entry-real-approach", "transport-real-cover"]},
+  {"slug": "ceiling-work-platform-deck-extension-option", "date": "2026-10-24", "images": ["entry-real-cover", "entry-real-interior", "entry-real-approach", "transport-real-cover"]},
+  {"slug": "ceiling-platform-material-replenishment-supply", "date": "2026-10-24", "images": ["entry-real-cover", "entry-real-interior", "entry-real-approach", "transport-real-cover"]},
+  {"slug": "ceiling-platform-refurbishment-vs-new-installation", "date": "2026-10-24", "images": ["entry-real-cover", "entry-real-interior", "entry-real-approach", "transport-real-cover"]},
+  {"slug": "ceiling-platform-purchase-service-support-package", "date": "2026-10-24", "images": ["entry-real-cover", "entry-real-interior", "entry-real-approach", "transport-real-cover"]},
+);
 const expectedDimensions = {
   'transport-real-cover': [744, 419],
   'transport-real-carrier': [502, 370],
@@ -96,7 +118,7 @@ function assertPhotoDisclosure({ alt, caption }, context) {
 }
 
 describe('approved reference photographs', () => {
-  it('limits the photo replacement to forty-seven fixed articles and twelve distinct photograph URLs', async () => {
+  it('preserves forty-seven fixed photo articles and registers twenty new articles using the same twelve photographs', async () => {
     expect(REFERENCE_PHOTO_ARTICLES).toEqual(expectedArticles.map(({ slug, images }) => ({
       slug,
       cover: [photoUrl(images[0])],

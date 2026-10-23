@@ -96,6 +96,6 @@ test('product overview keeps all fifteen references and guides reachable without
   expect(links).toHaveLength(15);
   await page.goto('/blog/');
   const guides = await page.locator('[data-guide-directory] a').count();
-  expect(guides).toBe(50);
+  expect(guides).toBe(70);
   await context.close();
 });
