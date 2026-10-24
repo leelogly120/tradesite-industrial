@@ -122,7 +122,7 @@ test('keeps every application detail page task-specific, disclosed and connected
   }
 });
 
-test('publishes a compact first-page directory linking to all 70 published guides', async ({ page }) => {
+test('publishes a compact first-page directory linking to all 90 published guides', async ({ page }) => {
   await page.goto('/blog/');
   await page.waitForLoadState('networkidle');
 
@@ -130,9 +130,9 @@ test('publishes a compact first-page directory linking to all 70 published guide
   await expect(directory).toBeVisible();
   await expect(directory.locator('details')).toHaveCount(10);
   const directoryLinks = directory.locator('a[href^="/blog/"]');
-  await expect(directoryLinks).toHaveCount(70);
+  await expect(directoryLinks).toHaveCount(90);
   const hrefs = await directoryLinks.evaluateAll((links) => links.map((link) => link.getAttribute('href')));
-  expect(new Set(hrefs).size).toBe(70);
+  expect(new Set(hrefs).size).toBe(90);
   await expect(directory).not.toContainText(/ordinary page link|does not create new article URLs/i);
   const firstTopic = directory.locator('details').first();
   const firstSummary = firstTopic.locator('summary');

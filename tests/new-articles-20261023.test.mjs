@@ -13,7 +13,9 @@ const baseline = JSON.parse(await readFile(resolve(root, 'tests/fixtures/october
 const oldSlugs = baseline.articles.map(a => a.slug);
 const newArticles = registry.OCTOBER_23_LIFT_PLATFORM_ARTICLES ?? [];
 const newSlugs = newArticles.map(a => a.slug);
-const allSlugs = [...oldSlugs, ...newSlugs];
+const allSlugs = [...oldSlugs, ...newSlugs]; // Fixed original fifty plus the preceding twenty.
+const campaignSlugs = registry.OCTOBER_24_CAMPAIGN_DAY1_ARTICLE_SLUGS ?? [];
+const currentSlugs = [...allSlugs, ...campaignSlugs];
 const origin = 'https://www.arclifteq.com';
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 const nodes = n => [n, ...(n.childNodes ?? []).flatMap(nodes)];
@@ -22,16 +24,17 @@ const built = async route => nodes(parse(await readFile(resolve(root, 'dist', `.
 const front = (source, key) => source.match(/^---\r?\n([\s\S]*?)\r?\n---/)?.[1].match(new RegExp(`^${key}:\\s*["']?([^"'\\r\\n]+)`, 'm'))?.[1]?.trim();
 
 describe('2026-10-23 twenty genuinely new article URLs', () => {
-  it('adds twenty distinct approved slugs outside the frozen fifty and audits all seventy', async () => {
+  it('retains the twenty approved slugs outside the frozen fifty while auditing the current ninety', async () => {
     expect(baseline.articles).toHaveLength(50);
     expect(newArticles).toHaveLength(20);
     expect(new Set(newSlugs).size).toBe(20);
     expect(newSlugs.filter(slug => oldSlugs.includes(slug))).toEqual([]);
-    expect([...EXTENDED_LAUNCH_SLUGS].sort()).toEqual([...allSlugs].sort());
-    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(70);
+    expect(new Set(allSlugs).size).toBe(70);
+    expect([...EXTENDED_LAUNCH_SLUGS].sort()).toEqual([...currentSlugs].sort());
+    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(90);
     const actual = (await readdir(resolve(root, 'src/content/blog'))).filter(p => p.endsWith('.md')).map(p => p.slice(0, -3));
-    expect(actual.sort()).toEqual([...allSlugs].sort());
-    expect(actual).toHaveLength(70);
+    expect(actual.sort()).toEqual([...currentSlugs].sort());
+    expect(actual).toHaveLength(90);
   });
 
   it('preserves every prior article source and all twelve approved photo files', async () => {
@@ -64,38 +67,40 @@ describe('2026-10-23 twenty genuinely new article URLs', () => {
   it('assigns every guide once and supplies an incoming contextual link to every new guide', () => {
     expect(newArticles).toHaveLength(20);
     const assigned = GUIDE_TOPICS.flatMap(t => t.slugs);
-    expect(assigned).toHaveLength(70);
-    expect([...assigned].sort()).toEqual([...allSlugs].sort());
-    const posts = allSlugs.map(id => ({ id, data: { title: id, description: 'Guide.', draft: false } }));
-    const incoming = new Set(allSlugs.flatMap(slug => getRelatedGuides(slug, posts).map(link => link.href)));
+    expect(assigned).toHaveLength(90);
+    expect([...assigned].sort()).toEqual([...currentSlugs].sort());
+    const posts = currentSlugs.map(id => ({ id, data: { title: id, description: 'Guide.', draft: false } }));
+    const incoming = new Set(currentSlugs.flatMap(slug => getRelatedGuides(slug, posts).map(link => link.href)));
     for (const slug of newSlugs) expect(incoming.has(`/blog/${slug}/`), slug).toBe(true);
   });
 
-  it('discovers all seventy through the built topic directory and four complete pagination pages', async () => {
+  it('keeps the preceding cohort discoverable in the current ninety-guide directory and five pagination pages', async () => {
     expect(newArticles).toHaveLength(20);
     const first = await built('/blog/');
     const directory = first.find(n => n.attrs?.some(a => a.name === 'data-guide-directory'));
     const directoryLinks = nodes(directory).filter(n => n.tagName === 'a').map(n => attr(n, 'href'));
-    expect(directoryLinks.sort()).toEqual(allSlugs.map(s => `/blog/${s}/`).sort());
+    expect(directoryLinks.sort()).toEqual(currentSlugs.map(s => `/blog/${s}/`).sort());
     const cards = [];
-    for (const [index, count] of [20, 20, 20, 10].entries()) {
+    for (const [index, count] of [20, 20, 20, 20, 10].entries()) {
       const page = index === 0 ? first : await built(`/blog/page/${index + 1}/`);
       const links = page.filter(n => n.tagName === 'a' && (attr(n, 'class') ?? '').split(/\s+/).includes('blog-card')).map(n => attr(n, 'href'));
       expect(links, `page ${index + 1}`).toHaveLength(count);
-      if (index === 0) expect([...links].sort()).toEqual(newSlugs.map(s => `/blog/${s}/`).sort());
+      // The preceding cohort and campaign day1 share October24; no tie-order claim.
       cards.push(...links);
     }
-    expect(cards.sort()).toEqual(allSlugs.map(s => `/blog/${s}/`).sort());
+    expect(cards.sort()).toEqual(currentSlugs.map(s => `/blog/${s}/`).sort());
   });
 
-  it('adds exactly twenty article sitemap URLs plus page four, preserving all seventy-six prior URLs', async () => {
+  it('preserves the fixed preceding97 sitemap URLs within the current118 URL release', async () => {
     expect(newArticles).toHaveLength(20);
     const xml = await readFile(resolve(root, 'dist/sitemap-0.xml'), 'utf8');
     const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
     const expected = [...baseline.sitemapUrls, ...newSlugs.map(s => `${origin}/blog/${s}/`), `${origin}/blog/page/4/`];
-    expect(urls).toHaveLength(97);
-    expect(new Set(urls).size).toBe(97);
-    expect([...urls].sort()).toEqual(expected.sort());
+    expect(new Set(expected).size).toBe(97);
+    const currentExpected = [...expected, ...campaignSlugs.map(s => `${origin}/blog/${s}/`), `${origin}/blog/page/5/`];
+    expect(urls).toHaveLength(118);
+    expect(new Set(urls).size).toBe(118);
+    expect([...urls].sort()).toEqual(currentExpected.sort());
     for (const slug of newSlugs) {
       const page = await built(`/blog/${slug}/`);
       expect(page.filter(n => n.tagName === 'link' && attr(n, 'rel') === 'canonical').map(n => attr(n, 'href')), slug).toEqual([`${origin}/blog/${slug}/`]);

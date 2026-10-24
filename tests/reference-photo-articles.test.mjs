@@ -77,6 +77,11 @@ expectedArticles.push(
   {"slug": "ceiling-platform-refurbishment-vs-new-installation", "date": "2026-10-24", "images": ["entry-real-cover", "entry-real-interior", "entry-real-approach", "transport-real-cover"]},
   {"slug": "ceiling-platform-purchase-service-support-package", "date": "2026-10-24", "images": ["entry-real-cover", "entry-real-interior", "entry-real-approach", "transport-real-cover"]},
 );
+// Frozen day1 expectations are independent of the live photo registry.
+const day1 = JSON.parse(await readFile(resolve(root, 'tests/fixtures/october-24-campaign-day1-baseline.json'), 'utf8'));
+expectedArticles.push(...day1.plannedArticles.map(({ slug, date, photos }) => ({
+  slug, date, images: photos.map(({ url }) => url.split('/').at(-1).replace(/\.webp$/, '')),
+})));
 const expectedDimensions = {
   'transport-real-cover': [744, 419],
   'transport-real-carrier': [502, 370],
@@ -118,7 +123,7 @@ function assertPhotoDisclosure({ alt, caption }, context) {
 }
 
 describe('approved reference photographs', () => {
-  it('preserves forty-seven fixed photo articles and registers twenty new articles using the same twelve photographs', async () => {
+  it('preserves all sixty-seven prior photo articles and registers twenty campaign articles using the same twelve photographs', async () => {
     expect(REFERENCE_PHOTO_ARTICLES).toEqual(expectedArticles.map(({ slug, images }) => ({
       slug,
       cover: [photoUrl(images[0])],
