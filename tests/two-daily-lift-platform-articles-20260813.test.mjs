@@ -10,6 +10,7 @@ import {
   BASELINE_BLOG_SLUGS,
   OCTOBER_23_LIFT_PLATFORM_ARTICLE_SLUGS,
   OCTOBER_24_CAMPAIGN_DAY1_ARTICLE_SLUGS,
+  OCTOBER_25_CAMPAIGN_DAY2_ARTICLE_SLUGS,
 } from '../scripts/lift-platform-article-registry.mjs';
 
 const root = resolve(import.meta.dirname, '..');
@@ -74,9 +75,9 @@ describe('2026-08-13 two-article release contract', () => {
       diagram,
       cluster: expect.any(String),
     })));
-    expect(new Set(expected.filter(slug => !OCTOBER_23_LIFT_PLATFORM_ARTICLE_SLUGS.includes(slug) && !OCTOBER_24_CAMPAIGN_DAY1_ARTICLE_SLUGS.includes(slug))).size).toBe(50);
-    expect(new Set(expected).size).toBe(90);
-    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(90);
+    expect(new Set(expected.filter(slug => !OCTOBER_23_LIFT_PLATFORM_ARTICLE_SLUGS.includes(slug) && !OCTOBER_24_CAMPAIGN_DAY1_ARTICLE_SLUGS.includes(slug) && !OCTOBER_25_CAMPAIGN_DAY2_ARTICLE_SLUGS.includes(slug))).size).toBe(50);
+    expect(new Set(expected).size).toBe(110);
+    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(110);
     const actual = (await readdir(blogRoot)).filter((name) => name.endsWith('.md')).map((name) => name.slice(0, -3)).sort();
     expect(actual).toEqual(expected.sort());
   });

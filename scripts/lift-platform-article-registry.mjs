@@ -146,6 +146,32 @@ export const OCTOBER_24_CAMPAIGN_DAY1_ARTICLES = Object.freeze([
 
 export const OCTOBER_24_CAMPAIGN_DAY1_ARTICLE_SLUGS = Object.freeze(OCTOBER_24_CAMPAIGN_DAY1_ARTICLES.map(({ slug }) => slug));
 
+// Campaign day2 adds twenty further URLs without refreshing the prior ninety.
+export const OCTOBER_25_CAMPAIGN_DAY2_ARTICLES = Object.freeze([
+  {"slug":"roll-forming-lift-coated-coil-surface-evidence","title":"Roll-Forming Lift Enquiries for Coated Coil Materials","cluster":"forming-material-brief"},
+  {"slug":"roll-forming-lift-standing-seam-profile-inputs","title":"Roll-Forming Lift Inputs for Standing-Seam Roof Profiles","cluster":"forming-material-brief"},
+  {"slug":"roll-forming-lift-trapezoidal-profile-width","title":"Roll-Forming Lift Inputs for Trapezoidal Panel Widths","cluster":"forming-material-brief"},
+  {"slug":"roll-forming-lift-coil-feed-handedness","title":"Roll-Forming Lift Layout: Specify Coil Feed Handedness","cluster":"forming-material-brief"},
+  {"slug":"roll-forming-lift-standard-versus-custom-tooling","title":"Roll-Forming Lift Tooling: Existing Design or Custom Scope","cluster":"forming-material-brief"},
+  {"slug":"roll-forming-lift-coil-change-supply-boundary","title":"Roll-Forming Lift Coil Changes: Define the Supply Boundary","cluster":"forming-material-brief"},
+  {"slug":"roll-forming-lift-material-strength-identification","title":"Roll-Forming Lift Enquiries: Identify the Coil Material","cluster":"forming-material-brief"},
+  {"slug":"roll-forming-lift-cut-length-measurement-basis","title":"Roll-Forming Lift Offers: Define the Panel Length Basis","cluster":"forming-material-brief"},
+  {"slug":"roll-forming-lift-tooling-ownership-custody","title":"Roll-Forming Lift Tooling: Agree Ownership and Custody","cluster":"forming-material-brief"},
+  {"slug":"roll-forming-lift-profile-tolerance-documents","title":"Roll-Forming Lift Enquiries: Record Profile Tolerances","cluster":"forming-material-brief"},
+  {"slug":"roll-forming-lift-protective-film-interface","title":"Roll-Forming Lift Enquiries for Film-Covered Coil Stock","cluster":"forming-material-brief"},
+  {"slug":"roll-forming-lift-panel-bundle-staging-scope","title":"Roll-Forming Lift Projects: Define Panel Staging Scope","cluster":"forming-material-brief"},
+  {"slug":"roll-forming-lift-variable-panel-length-schedule","title":"Roll-Forming Lift Enquiries with Mixed Panel Lengths","cluster":"forming-material-brief"},
+  {"slug":"roll-forming-lift-nominated-former-tender","title":"Roll-Forming Lift Tenders with a Nominated Roll Former","cluster":"forming-material-brief"},
+  {"slug":"wall-panel-platform-panel-orientation-inputs","title":"Wall-Panel Work Platforms: Describe Panel Orientation","cluster":"platform-task-brief"},
+  {"slug":"ceiling-platform-long-panels-versus-small-units","title":"Ceiling Platforms for Long Panels or Small Tile Units","cluster":"platform-task-brief"},
+  {"slug":"ceiling-platform-lighting-workface-access","title":"Ceiling Platforms for Lighting Work: Describe the Task","cluster":"platform-task-brief"},
+  {"slug":"ceiling-platform-ductwork-access-positions","title":"Ceiling Platforms Near Ductwork: Define Access Positions","cluster":"platform-task-brief"},
+  {"slug":"ceiling-platform-noise-evidence-enquiry","title":"Ceiling Platform Noise Data: Ask What Was Actually Measured","cluster":"platform-task-brief"},
+  {"slug":"ceiling-platform-training-service-purchase","title":"Ceiling Platform Training Services: Define the Purchase","cluster":"platform-task-brief"},
+].map(article => Object.freeze(article)));
+
+export const OCTOBER_25_CAMPAIGN_DAY2_ARTICLE_SLUGS = Object.freeze(OCTOBER_25_CAMPAIGN_DAY2_ARTICLES.map(({ slug }) => slug));
+
 export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...LIFT_PLATFORM_ARTICLES,
   ...DAILY_LIFT_PLATFORM_ARTICLES,
@@ -153,6 +179,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...AUGUST_13_LIFT_PLATFORM_ARTICLES,
   ...OCTOBER_23_LIFT_PLATFORM_ARTICLES,
   ...OCTOBER_24_CAMPAIGN_DAY1_ARTICLES,
+  ...OCTOBER_25_CAMPAIGN_DAY2_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));

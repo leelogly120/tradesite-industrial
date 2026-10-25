@@ -10,6 +10,7 @@ import {
   BASELINE_BLOG_SLUGS,
   OCTOBER_23_LIFT_PLATFORM_ARTICLE_SLUGS,
   OCTOBER_24_CAMPAIGN_DAY1_ARTICLE_SLUGS,
+  OCTOBER_25_CAMPAIGN_DAY2_ARTICLE_SLUGS,
   LIFT_PLATFORM_ARTICLE_SLUGS,
 } from '../scripts/lift-platform-article-registry.mjs';
 
@@ -66,9 +67,9 @@ describe('2026-08-08 two-article release contract', () => {
     const expected = [...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_ARTICLES.map(({ slug }) => slug)];
     expect(new Set(expected).size).toBe(46);
     expect(EXTENDED_LAUNCH_SLUGS).toEqual(expect.arrayContaining(DAILY_ARTICLES.map(({ slug }) => slug)));
-    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(90);
+    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(110);
     const actual = (await readdir(blogRoot)).filter((name) => name.endsWith('.md')).map((name) => name.slice(0, -3)).sort();
-    expect(actual).toEqual([...expected, ...AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS, ...AUGUST_13_LIFT_PLATFORM_ARTICLE_SLUGS, ...OCTOBER_23_LIFT_PLATFORM_ARTICLE_SLUGS, ...OCTOBER_24_CAMPAIGN_DAY1_ARTICLE_SLUGS].sort());
+    expect(actual).toEqual([...expected, ...AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS, ...AUGUST_13_LIFT_PLATFORM_ARTICLE_SLUGS, ...OCTOBER_23_LIFT_PLATFORM_ARTICLE_SLUGS, ...OCTOBER_24_CAMPAIGN_DAY1_ARTICLE_SLUGS, ...OCTOBER_25_CAMPAIGN_DAY2_ARTICLE_SLUGS].sort());
   });
 
   it.each(DAILY_ARTICLES)('$slug satisfies the evidence-first long-form contract', async ({ slug, title, diagram }) => {
