@@ -172,6 +172,32 @@ export const OCTOBER_25_CAMPAIGN_DAY2_ARTICLES = Object.freeze([
 
 export const OCTOBER_25_CAMPAIGN_DAY2_ARTICLE_SLUGS = Object.freeze(OCTOBER_25_CAMPAIGN_DAY2_ARTICLES.map(({ slug }) => slug));
 
+// Campaign day3 adds twenty further URLs while preserving all110 published articles.
+export const OCTOBER_26_CAMPAIGN_DAY3_ARTICLES = Object.freeze([
+  {"slug":"roll-forming-lift-site-power-enquiry","title":"Roll-Forming Lift Site Power: Prepare a Supply Enquiry","cluster":"forming-power-control-brief"},
+  {"slug":"roll-forming-lift-generator-package-boundary","title":"Roll-Forming Lifts with Generators: Define Package Scope","cluster":"forming-power-control-brief"},
+  {"slug":"roll-forming-lift-site-cable-supply-scope","title":"Roll-Forming Lift Power Cables: Define the Supply Scope","cluster":"forming-power-control-brief"},
+  {"slug":"roll-forming-lift-separate-former-power","title":"Roll-Forming Lift Power: Separate Lift and Former Loads","cluster":"forming-power-control-brief"},
+  {"slug":"roll-forming-lift-supply-frequency-mismatch","title":"Roll-Forming Lift Offers: Check Supply Frequency Data","cluster":"forming-power-control-brief"},
+  {"slug":"roll-forming-lift-control-language-request","title":"Roll-Forming Lift Controls: Specify Language Requirements","cluster":"forming-power-control-brief"},
+  {"slug":"roll-forming-lift-radio-control-market-enquiry","title":"Roll-Forming Lift Radio Controls: Destination Questions","cluster":"forming-power-control-brief"},
+  {"slug":"roll-forming-lift-local-versus-remote-controls","title":"Roll-Forming Lift Controls: Local and Remote Scope Data","cluster":"forming-power-control-brief"},
+  {"slug":"roll-forming-lift-former-emergency-stop-boundary","title":"Roll-Forming Lift Systems: Clarify Stop-Control Boundaries","cluster":"forming-power-control-brief"},
+  {"slug":"roll-forming-lift-cutting-signal-interface","title":"Roll-Forming Lifts: Define the Former's Cutting Signals","cluster":"forming-power-control-brief"},
+  {"slug":"roll-forming-lift-order-before-former-selection","title":"Ordering a Roll-Forming Lift Before the Former Is Final","cluster":"forming-power-control-brief"},
+  {"slug":"roll-forming-lift-hydraulic-power-package","title":"Roll-Forming Lift Offers: Identify Hydraulic Power Scope","cluster":"forming-power-control-brief"},
+  {"slug":"roll-forming-lift-remote-support-access-scope","title":"Roll-Forming Lift Remote Support: Define Access Scope","cluster":"forming-power-control-brief"},
+  {"slug":"roll-forming-lift-control-cabinet-site-conditions","title":"Roll-Forming Lift Control Cabinets: Describe Site Exposure","cluster":"forming-power-control-brief"},
+  {"slug":"ceiling-platform-dual-power-task-boundary","title":"Ceiling Platform Dual Power: Match Each Intended Task","cluster":"platform-power-control-brief"},
+  {"slug":"ceiling-platform-charging-and-parking-brief","title":"Ceiling Platforms: Include Charging and Parking in the Brief","cluster":"platform-power-control-brief"},
+  {"slug":"ceiling-platform-independent-inspection-purchase","title":"Ceiling Platform Inspection Services: Agree the Scope","cluster":"platform-power-control-brief"},
+  {"slug":"ceiling-platform-indoor-emissions-enquiry","title":"Ceiling Platform Power: Record Indoor Air Constraints","cluster":"platform-power-control-brief"},
+  {"slug":"ceiling-platform-occupied-building-work-hours","title":"Ceiling Platforms in Occupied Buildings: Work-Hour Inputs","cluster":"platform-power-control-brief"},
+  {"slug":"ceiling-platform-control-view-between-workfaces","title":"Ceiling Platform Controls: Define Each Workface View","cluster":"platform-power-control-brief"},
+].map(article => Object.freeze(article)));
+
+export const OCTOBER_26_CAMPAIGN_DAY3_ARTICLE_SLUGS = Object.freeze(OCTOBER_26_CAMPAIGN_DAY3_ARTICLES.map(({ slug }) => slug));
+
 export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...LIFT_PLATFORM_ARTICLES,
   ...DAILY_LIFT_PLATFORM_ARTICLES,
@@ -180,6 +206,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...OCTOBER_23_LIFT_PLATFORM_ARTICLES,
   ...OCTOBER_24_CAMPAIGN_DAY1_ARTICLES,
   ...OCTOBER_25_CAMPAIGN_DAY2_ARTICLES,
+  ...OCTOBER_26_CAMPAIGN_DAY3_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));

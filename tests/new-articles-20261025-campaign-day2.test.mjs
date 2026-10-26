@@ -15,6 +15,8 @@ const planned = baseline.plannedArticles;
 const oldSlugs = baseline.articles.map(a => a.slug);
 const newSlugs = planned.map(a => a.slug);
 const allSlugs = [...oldSlugs, ...newSlugs];
+const laterSlugs = registry.OCTOBER_26_CAMPAIGN_DAY3_ARTICLE_SLUGS;
+const currentSlugs = [...allSlugs, ...laterSlugs];
 const origin = 'https://www.arclifteq.com';
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 const nodes = n => n ? [n, ...(n.childNodes ?? []).flatMap(nodes)] : [];
@@ -39,7 +41,8 @@ describe('2026-10-25 campaign day2: twenty new URLs after the published ninety',
     expect(planned.filter(a => a.family === 'forming')).toHaveLength(14);
     expect(planned.filter(a => a.family === 'platform')).toHaveLength(6);
     expect(registry.OCTOBER_25_CAMPAIGN_DAY2_ARTICLES ?? []).toEqual(planned.map(({ slug, title, cluster }) => ({ slug, title, cluster })));
-    expect([...EXTENDED_LAUNCH_SLUGS].sort()).toEqual([...allSlugs].sort());
+    expect(new Set(allSlugs).size).toBe(110);
+    expect([...EXTENDED_LAUNCH_SLUGS].sort()).toEqual([...currentSlugs].sort());
   });
 
   it('retains the full published ninety, all public assets and the inquiry/WhatsApp implementation', async () => {
@@ -63,17 +66,17 @@ describe('2026-10-25 campaign day2: twenty new URLs after the published ninety',
     }
   });
 
-  it('has exactly 110 article files and 110 executable audit targets without replacements', async () => {
+  it('retains the fixed 110 day2 articles within 130 current source files and executable audit targets', async () => {
     const actual = (await readdir(resolve(root, 'src/content/blog'))).filter(p => p.endsWith('.md')).map(p => p.slice(0, -3));
-    expect(actual).toHaveLength(110);
-    expect(actual.sort()).toEqual([...allSlugs].sort());
-    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(110);
-    expect([...EXTENDED_LAUNCH_SLUGS].sort()).toEqual([...allSlugs].sort());
+    expect(actual).toHaveLength(130);
+    expect(actual.sort()).toEqual([...currentSlugs].sort());
+    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(130);
+    expect([...EXTENDED_LAUNCH_SLUGS].sort()).toEqual([...currentSlugs].sort());
   });
 
   it('preserves every prior photo mapping and appends the four exact ordered references for the new cohort', async () => {
     expect(baseline.referencePhotoArticles).toHaveLength(87);
-    expect(REFERENCE_PHOTO_ARTICLES).toEqual([...baseline.referencePhotoArticles, ...planned.map(({ slug, photos }) => ({
+    expect(REFERENCE_PHOTO_ARTICLES.filter(a => allSlugs.includes(a.slug))).toEqual([...baseline.referencePhotoArticles, ...planned.map(({ slug, photos }) => ({
       slug, cover: [photos[0].url], body: photos.slice(1).map(p => p.url),
     }))]);
     for (const article of planned) {
@@ -85,9 +88,9 @@ describe('2026-10-25 campaign day2: twenty new URLs after the published ninety',
   it('keeps all original topic memberships and gives each new guide a contextual incoming link', () => {
     expect(GUIDE_TOPICS.map(t => ({ name: t.name, slugs: t.slugs.filter(s => oldSlugs.includes(s)) }))).toEqual(baseline.guideTopics);
     const assigned = GUIDE_TOPICS.flatMap(t => t.slugs);
-    expect(assigned).toHaveLength(110);
-    expect([...assigned].sort()).toEqual([...allSlugs].sort());
-    const posts = allSlugs.map(id => ({ id, data: { title: id, description: 'Guide.', draft: false } }));
+    expect(assigned).toHaveLength(130);
+    expect([...assigned].sort()).toEqual([...currentSlugs].sort());
+    const posts = currentSlugs.map(id => ({ id, data: { title: id, description: 'Guide.', draft: false } }));
     for (const article of planned) {
       expect(getGuideTopic(article.slug)?.name, article.slug).toBe(article.topic);
       expect(getRelatedGuides(article.nearestExisting70, posts).map(link => link.href), article.slug).toContain(`/blog/${article.slug}/`);
@@ -149,32 +152,34 @@ describe('2026-10-25 campaign day2: twenty new URLs after the published ninety',
       .toBeGreaterThanOrEqual(1);
   });
 
-  it('discovers all 110 once across six pagination pages and places only the Oct25 cohort on page1', async () => {
+  it('retains day2 discovery within 130 guides and places its twenty articles on page two', async () => {
     const first = await built('/blog/');
     const directory = first.find(n => n.attrs?.some(a => a.name === 'data-guide-directory'));
     expect(directory).toBeDefined();
     const directoryLinks = nodes(directory).filter(n => n.tagName === 'a').map(n => attr(n, 'href'));
-    expect(directoryLinks.sort()).toEqual(allSlugs.map(s => `/blog/${s}/`).sort());
+    expect(directoryLinks.sort()).toEqual(currentSlugs.map(s => `/blog/${s}/`).sort());
     const cards = [];
-    for (const [index, count] of [20, 20, 20, 20, 20, 10].entries()) {
+    for (const [index, count] of [20, 20, 20, 20, 20, 20, 10].entries()) {
       const page = index === 0 ? first : await built(`/blog/page/${index + 1}/`);
       const links = page.filter(n => n.tagName === 'a' && hasClass(n, 'blog-card')).map(n => attr(n, 'href'));
       expect(links, `page ${index + 1}`).toHaveLength(count);
-      if (index === 0) expect([...links].sort()).toEqual(newSlugs.map(s => `/blog/${s}/`).sort());
+      if (index === 1) expect([...links].sort()).toEqual(newSlugs.map(s => `/blog/${s}/`).sort());
       cards.push(...links);
     }
-    expect(cards.sort()).toEqual(allSlugs.map(s => `/blog/${s}/`).sort());
-    expect(new Set(cards).size).toBe(110);
+    expect(cards.sort()).toEqual(currentSlugs.map(s => `/blog/${s}/`).sort());
+    expect(new Set(cards).size).toBe(130);
   });
 
-  it('adds precisely twenty article URLs and page six to the protected 118 sitemap URLs', async () => {
+  it('preserves the fixed 139 day2 sitemap URLs within the current 160 URL release', async () => {
     expect(baseline.sitemapUrls).toHaveLength(118);
     const xml = await readFile(resolve(root, 'dist/sitemap-0.xml'), 'utf8');
     const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
     const expected = [...baseline.sitemapUrls, ...newSlugs.map(s => `${origin}/blog/${s}/`), `${origin}/blog/page/6/`];
-    expect(urls).toHaveLength(139);
-    expect(new Set(urls).size).toBe(139);
-    expect([...urls].sort()).toEqual(expected.sort());
+    expect(new Set(expected).size).toBe(139);
+    const currentExpected = [...expected, ...laterSlugs.map(s => `${origin}/blog/${s}/`), `${origin}/blog/page/7/`];
+    expect(urls).toHaveLength(160);
+    expect(new Set(urls).size).toBe(160);
+    expect([...urls].sort()).toEqual(currentExpected.sort());
     for (const slug of newSlugs) {
       const page = await built(`/blog/${slug}/`);
       expect(page.filter(n => n.tagName === 'link' && attr(n, 'rel') === 'canonical').map(n => attr(n, 'href'))).toEqual([`${origin}/blog/${slug}/`]);

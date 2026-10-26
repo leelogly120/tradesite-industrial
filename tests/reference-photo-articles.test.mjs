@@ -87,6 +87,11 @@ const day2 = JSON.parse(await readFile(resolve(root, 'tests/fixtures/october-25-
 expectedArticles.push(...day2.plannedArticles.map(({ slug, date, photos }) => ({
   slug, date, images: photos.map(({ url }) => url.split('/').at(-1).replace(/\.webp$/, '')),
 })));
+// Day3 adds twenty further fixed photo uses without changing prior cohorts.
+const day3 = JSON.parse(await readFile(resolve(root, 'tests/fixtures/october-26-campaign-day3-baseline.json'), 'utf8'));
+expectedArticles.push(...day3.plannedArticles.map(({ slug, date, photos }) => ({
+  slug, date, images: photos.map(({ url }) => url.split('/').at(-1).replace(/\.webp$/, '')),
+})));
 const expectedDimensions = {
   'transport-real-cover': [744, 419],
   'transport-real-carrier': [502, 370],
@@ -128,7 +133,7 @@ function assertPhotoDisclosure({ alt, caption }, context) {
 }
 
 describe('approved reference photographs', () => {
-  it('preserves all eighty-seven prior photo articles and registers twenty day2 articles using the same twelve photographs', async () => {
+  it('preserves all107 prior photo articles and registers twenty day3 articles using the same twelve photographs', async () => {
     expect(REFERENCE_PHOTO_ARTICLES).toEqual(expectedArticles.map(({ slug, images }) => ({
       slug,
       cover: [photoUrl(images[0])],
