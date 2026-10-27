@@ -20,7 +20,7 @@ const hasClass = (node, name) => (attr(node, 'class') || '').split(/\s+/).includ
 describe('equipment-led homepage publishable claims', () => {
   it('makes the supplier role visible without manufacturing or guarantee-like promises', () => {
     expect(content).toMatch(/integrated equipment supplier and technical selection and supply partner/i);
-    expect(words(dom)).toMatch(/identif(?:y|ies) items requiring local confirmation/i);
+    expect(words(dom)).toContain('Catalog figures are for selection only. Ordered configuration is confirmed by quotation, drawings, and load chart.');
     for (const phrase of ['confirmed before production','40HQ-compatible configurations are available','Project-Specific Compliance','confirm compliance path','our factory','our manufacturing','guaranteed capacity']) expect(content.toLowerCase()).not.toContain(phrase.toLowerCase());
   });
   it('explains the selection inputs without using archival numbers as a current sales promise', () => {

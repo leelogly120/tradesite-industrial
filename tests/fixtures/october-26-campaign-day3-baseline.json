@@ -2220,11 +2220,11 @@
     },
     {
       "path": "src/layouts/BaseLayout.astro",
-      "sha256": "3eece55be0356bd081477020d6de99bf7d70d08762d7bb3f61e3e93b8098b8ee",
-      "workspaceSha256": "3eece55be0356bd081477020d6de99bf7d70d08762d7bb3f61e3e93b8098b8ee",
+      "sha256": "d1f18d350e7e23837ac0e02a1f01d882c4f7665e9e196c4d4849ad3e08430ae8",
+      "workspaceSha256": "d1f18d350e7e23837ac0e02a1f01d882c4f7665e9e196c4d4849ad3e08430ae8",
       "normalizeNewlines": true,
-      "gitSha256": "3eece55be0356bd081477020d6de99bf7d70d08762d7bb3f61e3e93b8098b8ee",
-      "gitBlobSha1": "fe8533f65da7df69336ba7942ef7dce3ba78ccc2"
+      "gitSha256": "d1f18d350e7e23837ac0e02a1f01d882c4f7665e9e196c4d4849ad3e08430ae8",
+      "gitBlobSha1": "74866c0e32fea8b7eec1cbdfa70309b4d7dd9b09"
     },
     {
       "path": "workers/inquiry-router/src/contracts.ts",
