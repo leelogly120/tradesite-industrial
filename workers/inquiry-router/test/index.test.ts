@@ -213,8 +213,8 @@ describe('inquiry worker', () => {
     expect(formspree).toMatchObject({ requestType: 'datasheet', model: 'ARC-C25', phone: '', _replyto: 'jane@roof.test' });
     expect(formspree._subject).toContain('Technical documents');
     expect(dingTalk.markdown.text).toContain('Request type: Technical documents');
-    expect(dingTalk.markdown.text).toContain('Email: jane@roof.test');
-    expect(dingTalk.markdown.text).toContain('ARCLIFT email: leelogly120@gmail.com');
+    expect(dingTalk.markdown.text).toContain('Email: jane@roof\\.test');
+    expect(dingTalk.markdown.text).toContain('ARCLIFT email: leelogly120@gmail\\.com');
     expect(dingTalk.markdown.text).toContain('ARC');
   });
 
@@ -231,7 +231,7 @@ describe('inquiry worker', () => {
     expect(formspree.email).toBe('');
     expect(formspree._replyto).toBe('leelogly120@gmail.com');
     expect(dingTalk.markdown.text).toContain('Email: Not supplied');
-    expect(dingTalk.markdown.text).toContain('ARCLIFT email: leelogly120@gmail.com');
+    expect(dingTalk.markdown.text).toContain('ARCLIFT email: leelogly120@gmail\\.com');
   });
 
   it('keeps the full product-form validation threshold', async () => {
