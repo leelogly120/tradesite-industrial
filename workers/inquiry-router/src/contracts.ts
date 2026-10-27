@@ -12,6 +12,14 @@ export const FIELD_LIMITS = {
   application: 160,
   message: 5000,
   sourcePage: 500,
+  work_height_m: 200,
+  panel_profile: 200,
+  machine_mass: 200,
+  coil_data: 200,
+  site_access: 2000,
+  chassis_included: 20,
+  destination: 200,
+  timeline_qty: 200,
 } as const;
 
 export interface Inquiry {
@@ -28,6 +36,14 @@ export interface Inquiry {
   application: string;
   message: string;
   sourcePage: string;
+  work_height_m: string;
+  panel_profile: string;
+  machine_mass: string;
+  coil_data: string;
+  site_access: string;
+  chassis_included: string;
+  destination: string;
+  timeline_qty: string;
   submittedAt: string;
   receivedAt: string;
 }
@@ -61,6 +77,14 @@ export function validateInquiry(input: Record<string, unknown>, receivedAt: Date
     application: clean(input.application),
     message: clean(input.message),
     sourcePage: clean(input.sourcePage),
+    work_height_m: clean(input.work_height_m),
+    panel_profile: clean(input.panel_profile),
+    machine_mass: clean(input.machine_mass),
+    coil_data: clean(input.coil_data),
+    site_access: clean(input.site_access),
+    chassis_included: clean(input.chassis_included),
+    destination: clean(input.destination),
+    timeline_qty: clean(input.timeline_qty),
     submittedAt: clean(input.submittedAt),
     receivedAt: receivedAt.toISOString(),
   };

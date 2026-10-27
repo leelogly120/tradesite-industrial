@@ -11,152 +11,116 @@ coverCaption: "Reference photograph of a truck-mounted arrangement and nearby co
 draft: false
 ---
 
-A truck chassis integration review for roof forming pairs a particular vehicle with a lifting assembly and a compatible roll former. The review asks how those objects meet: their occupied space, attachment boundary, load inputs, support arrangement, utilities and service access. A truck model name or an advertised load rating cannot explain that physical pairing.
-
-The buyer should be able to see the actual candidate vehicle beneath the proposed upper assembly, with the differences between road, positioning and supported work arrangements identified. This guide develops that comparison. The [payload allocation guide](/blog/truck-mounted-roll-forming-payload-allocation-review/) organizes mass and position inputs; [destination chassis sourcing](/blog/truck-mounted-lift-destination-chassis-sourcing/) addresses the purchase and integration responsibilities.
+A truck chassis integration review treats the roll-forming lift as a pairing, not a paint color. The vehicle, the lift module, and the former each have a mass, a footprint, and a service side. The quote is useful when those three are drawn on one elevation in the road position and again in the work position. A model name does not do that drawing.
 
 **Contents**
 
-- Identify the vehicle and upper equipment being paired
-- Compare physical boundaries on one drawing basis
-- Resolve the interfaces that make the pairing useful
-- Turn a candidate conflict into a focused supplier question
-- FAQ
+- Name the vehicle you actually mean
+- Draw the interface before the brochure
+- Utilities, axle, and service access
+- Conflicts that should stop the file
+- What to send ARCLIFT
 
 <!-- audit-section: buyer-intent -->
-## Identify the vehicle and upper equipment being paired
+## Name the vehicle before the lift class
 
-### Describe what remains installed and what arrives separately
+### Whose chassis is in the price
+Say yes, no, or unsure. "Unsure" is a valid RFQ answer. It tells us whether [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) or [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) is being quoted as a module onto a destination truck, or as a package that includes a chassis. Those are different supply scopes. Do not leave the word "truck" to imply a registered vehicle.
 
-List the lifting assembly, forming machine, support equipment, power components and carried accessories included in the proposal. Identify which items remain installed during transport and which are removed or supplied separately. The resulting equipment list should match the proposed arrangement drawing; otherwise a vehicle reviewer may assess a layout that omits part of the actual scope.
+### The class is not the axle
+18.5m and 25m are catalog height classes. They are not axle loads, not a wheelbase, and not a statement that the finished vehicle is road-legal anywhere. If the destination already has a chassis candidate, send the manufacturer, wheelbase, cab position, and any body that must stay. If it does not, say the chassis is open and ask the quote to list what the module needs.
 
-The [truck-mounted forming-lift category](/products/#truck-mounted-roll-forming-lifts) describes this equipment route. An order-specific pairing still needs an identified chassis and upper assembly; a public model reference cannot settle that selection.
+### Former first, then the deck it sits on
 
-### State the road and site duties separately
+The former's outline should show the decoiler, the shear, and the direction the panel leaves. Put a box around anything that hangs past the chassis frame in the work position. If a coil car is a separate purchase, say whether it travels on the truck or arrives on its own trailer. Mixing those stories is how a quote looks complete and then fails at the port. Write one sentence: "The coil is loaded from the left / right / either side, by a forklift / crane / coil car." If you cannot finish the sentence, that is the first question in the RFQ, ahead of color and cab trim.
 
-Distinguish transfer between sites, movement within a site, positioning, setup and supported work. Each state presents a different question. A road-transport envelope is not the complete deployed envelope, and a drawing of the equipment working beside a building does not establish its travel condition.
+### A second setup is still the same chassis
+If the truck must form on two eaves, the road position between them is part of the interface. Note gates, overhead wires, and the surface it drives on while folded. A chassis that works on the first pad and cannot leave it is not a truck-mounted solution for that roof. Say how many moves you expect in a day only as a site fact, not as a cycle-time promise.
 
-Give the reviewer the intended road-use boundary and destination market without assuming an approval route. If the vehicle is intended only for controlled-site movement, say so explicitly; do not treat that description as permission to bypass local review. The vehicle specialist needs the actual duty and proposed configuration before determining what records apply.
-
-### Ask for the candidate build information
-
-A dealer's general model sheet can start a discussion, but the review needs the build information for the candidate offered. Relevant inputs may include the frame layout, axle arrangement, wheelbase, installed components, bodybuilder provisions and applicable restrictions on modification. Ask the vehicle-side party which controlled records describe that exact candidate and which are still provisional.
-
-For example, <a href="https://www.volvotrucks.com.au/en-au/trucks/features/bodybuilding.html" target="_blank" rel="noopener noreferrer">Volvo's official bodybuilder information page</a> lists chassis drawings, wiring diagrams and data sheets among its resources. This illustrates the kinds of vehicle-side information to request; it does not recommend that brand, establish compatibility or authorize modifications to any chassis.
+The former's mass and coil side drive the interface. [ARC-RF8](/products/arc-rf8-roll-forming-machine/) is the catalog line when you are also buying the former. If the former is already yours, send its outline instead of a catalog photo. A suspended module in a yard photograph is not your machine.
 
 ![Blue machine module suspended beside a red lifting assembly in a yard](/images/equipment/coil-real-module.webp)
 
 *Reference photograph of a machine module beside lifting apparatus. It does not verify a truck mounting interface, component compatibility or an approved lifting method.*
 
 <!-- audit-section: conditions -->
-## Compare physical boundaries on one drawing basis
+## Put road position and work position on the same sheet
 
-### Match vehicle and equipment references
+### Road position
+Cab, lift folded, former stowed or removed, outriggers in, overall height and width as you expect them to travel. Mark overhangs. This is the drawing a transport reviewer argues with. We will not invent clearances you did not measure.
 
-Ask the integrator to define the reference points used by the vehicle and equipment drawings. A location measured from an axle, frame end or equipment base cannot be compared directly with a location using another origin unless the relationship is established. Mark the drawing revision and equipment state beside the coordinate information, especially when the folded arrangement differs from the working arrangement.
+### Work position
+Outriggers or stabilisers down, former at the outlet you care about, coil on the feed side, run-out going toward the roof. Show the exclusion zone for people. If the same chassis cannot reach both the road envelope and this work envelope, the file has a conflict, not a detail to hide in an appendix.
 
-Start with a clear overlay that shows the proposed equipment footprint, support interfaces and vehicle components. It should expose conflicts for engineering review. It should not invite procurement staff to choose attachment locations or alter a frame from a photograph.
+### Ground under the stabilisers
+Soil, slab, or a mat. Note slopes and covers. The catalog page will not publish a bearing pressure. Your note lets the quotation ask for a pad design instead of pretending the yard is flat.
 
-### Read the offered vehicle options rather than a family outline
-
-Two candidate vehicles can share a model description and wheelbase while the records supplied for them show different installed equipment. The integration question is whether those differences affect the space or interfaces used by the proposed lifting assembly. Ask the vehicle-side party to identify the actual build and the equipment-side party to show the corresponding arrangement; do not fill missing areas of one drawing from the other candidate.
-
-In a hypothetical comparison, the same region behind the cab is shown empty on a general chassis outline but occupied by an option on the offered vehicle. A proposed equipment component overlaps that region. The immediate finding is a drawing conflict requiring resolution, not permission to move either component. The reviewer needs the installed option's envelope, access requirements and any restrictions from the vehicle maker before considering alternatives.
-
-### Keep spatial fit distinct from an approved connection
-
-An open area on a frame drawing is a spatial observation. It is not an approved mounting point. The appointed integrator needs the equipment-side interface forces and moments, attachment requirements and vehicle-side bodybuilder restrictions appropriate to the proposed state. The resulting connection design and verification belong to that specialist scope.
-
-Similarly, placing a total equipment mass beside a truck rating does not establish acceptable axle distribution, stability or frame behavior. Keep the [payload input schedule](/blog/truck-mounted-roll-forming-payload-allocation-review/) linked to this drawing review, so a changed component location is sent back to the person evaluating its consequences. Do not let a layout revision and a mass revision develop independently.
+### Where the mechanic stands
+Service doors, hose routes, and the control side need a person. If the former's decoiler occupies that side, say so now. Moving a cabinet after the chassis is built is the expensive version of this conversation.
 
 ![Coils and elevated apparatus positioned beside an unfinished steel building](/images/equipment/coil-real-handling.webp)
 
 *Reference photograph of material staging and elevated apparatus beside a structure. It cannot establish vehicle load distribution, ground adequacy or a reviewed chassis arrangement.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## Resolve the interfaces that make the pairing useful
+## The trade-off is a complete vehicle against a local chassis
 
-### Include cab and equipment service space
+Shipping a complete vehicle can simplify the first start-up and complicate destination registration. Shipping a lift module for a local chassis does the opposite: the destination builder owns the vehicle rules, and the interface drawing becomes the contract between you and that builder. The constraint is the interface, not the slogan on the door. ![Raised red forming apparatus positioned beside a building with supports visible](/images/equipment/entry-real-clearance.webp)
 
-Equipment occupying the frame can affect access to existing vehicle components and to its own service points. Request the space and movement information needed for cab access, routine inspection, fluid or energy-system servicing and component replacement. Review these needs in the relevant equipment state rather than assuming every task occurs with the structure folded.
+*Reference photograph of elevated apparatus in an exterior work area. It does not confirm a truck chassis design, service clearance or any permitted movement state.* is only a scene. It does not show your chassis.
 
-A layout can appear compact in plan view while leaving a service item inaccessible from the side. Separate the space occupied by the closed component from the space its documented service activity needs. The same distinction applies to any equipment transition that the supplier actually proposes: request its documented spatial requirements alongside the vehicle's installed components.
+### Power and controls across the joint
+Write who supplies lift power and who supplies former power. A shared generator, a chassis PTO, and a site cable are three different interfaces. Name connectors only if you already know them. Otherwise ask the quote to propose the split.
 
-### Request transition information where the proposal needs it
+### Coil side versus traffic side
+The feed side of the former and the traffic side of the truck often want the same space. Pick one. If the coil must be loaded from the street, the outrigger on that side cannot occupy the truck. Draw it.
 
-Ask which states the overlay actually covers. A drawing of the finished transport arrangement and another of the supported work arrangement describe their respective endpoints. If the equipment proposal requires a change between them, the integrator also needs the equipment party's information about the space and restrictions relevant to that change. An unoccupied region in both endpoint drawings is not evidence that no component needs it between those states. Do not sketch an assumed path or infer that a particular movement is permitted.
+### Axle groups and the fold you can actually drive
+List the axle groups you expect to remain legal after the module is mounted, and the fold height you must stay under for the bridges on the real route. Do not copy a number from a different country's drawing. If you do not have the numbers, write "unknown" beside each axle and beside the folded height. A blank is more useful than a guessed tonne. The quotation can then mark those lines as open instead of designing a chassis around fiction. Add the route's lowest bridge or gate if one bridge is the reason you are worried. That single obstruction often matters more than the catalog class.
 
-Keep service access and equipment transitions separately named. A documented cab-access condition does not establish that the same space is available during a different equipment state. The responsible parties must reconcile those uses and any resulting design changes. This discussion provides no movement sequence, clearance allowance or permission to relocate vehicle components.
-
-### Define the energy boundary and related controls
-
-State whether the equipment proposal uses an independent power source, an external supply or a vehicle connection still to be reviewed. Name the equipment-side demands and the vehicle-side information needed to assess the proposed connection. Do not infer a suitable power take-off or electrical interface because a candidate truck offers one as an option.
-
-The [electrical and control interface guide](/blog/roll-forming-line-electrical-control-interfaces/) can organize ownership of the connection documents. Keep the forming machine, lifting equipment and vehicle boundaries explicit. A power connection does not establish compatible controls, agreed interlocks or an emergency-response arrangement; those questions need their own scope and verification.
-
-| Candidate pairing detail | Compare with the upper assembly | Decision or missing input |
-| --- | --- | --- |
-| Installed option behind the cab | Equipment footprint and connection regions | Does the candidate drawing show a physical conflict? |
-| Cab/service access | Closed envelope and documented opening/removal space | Which arrangement preserves the specified task? |
-| Frame/bodybuilder restrictions | Equipment connection requirements and applicable loads | What must the appointed integrator design and verify? |
-| Support deployment | Vehicle components and support-system geometry | Which configuration-specific spaces still need coordination? |
-| Vehicle energy connection | Equipment demands and proposed control boundary | Is the interface included, optional or unresolved? |
-| Revised component position | Attachment, mass-location and service records | Which reviewers need the changed arrangement? |
-
-![Raised red forming apparatus positioned beside a building with supports visible](/images/equipment/entry-real-clearance.webp)
-
-*Reference photograph of elevated apparatus in an exterior work area. It does not confirm a truck chassis design, service clearance or any permitted movement state.*
-
-<!-- audit-section: project-checklist -->
-## Turn a candidate conflict into a focused supplier question
-
-### Trace one layout change through its consequences
-
-Consider a proposed layout change that shifts an equipment assembly to clear a service area. It may resolve the visible obstruction while changing mass location, attachment positions, cable routes or the folded envelope. This hypothetical conflict illustrates why the updated drawing should return to all affected reviewers, rather than being accepted solely by the party requesting better access.
-
-Keep the assembly and transport plan in view as well. If the equipment arrives as separate modules, identify what is installed at destination and which interfaces will be checked there. The [40HQ shipping guide](/blog/40hq-shipping-truck-mounted-roll-forming-lift/) addresses that supply boundary. It does not determine whether the resulting vehicle design is acceptable.
-
-### Ask for the remaining decision on the actual candidate
-
-Ask for the candidate identity, reviewed configuration, resolved interfaces, remaining holds and the next permitted procurement step. An integration review may conclude that another candidate is needed or that more equipment information is required. Those are useful decisions when they name the reason and prevent an unsuitable order.
-
-Sensitive vehicle identifiers and detailed project drawings belong in a controlled exchange, not a public enquiry description. An anonymised preliminary reference can organize early discussion; the responsible reviewers will need the exact identity at the appropriate stage. Loads, stability, road use, registration, compliance, final architecture and chassis fit remain undecided until the responsible parties complete the configuration-specific review.
-
-### Send the actual vehicle and equipment information
-
-- Identify the candidate chassis, proposed transport state and exact equipment-scope revisions through the agreed secure channel.
-- Provide frame geometry, equipment attachment references and the coordinate relationship between their drawings.
-- State the required production height and roof-panel outlet relationship, keeping them separate from vehicle dimensions.
-- Identify the forming-line, profile and coil scope that determines the equipment items included in the review.
-- Show support locations, access routes and ground conditions requiring a separate jobsite assessment.
-- Provide the proposed power and control boundaries, available records and service-access requirements.
-- Identify installed vehicle options and their service envelopes; ask which equipment transitions are documented and where their spatial requirements still need comparison with the actual build.
-- State the destination, intended road/site duty, local review owner and documentation still required before ordering.
+### What a photograph cannot settle
+Reference photographs show families of equipment. They do not show axle group loads, a fifth-wheel height, or a passed inspection. Treat them as reminders of what to photograph on your own candidate truck.
 
 <!-- audit-section: limitations-not-fit -->
-### When this proposal may not fit
+## This pairing may not fit
 
-A chassis candidate may not fit when the actual build conflicts with the equipment footprint, support arrangement, service access or vehicle-maker restrictions. Missing interface loads or an unidentified final build can also prevent a useful selection decision. Distinguish incomplete evidence from a technical rejection. A similar chassis drawing or earlier installation photograph cannot close either condition, and this guide authorizes no frame alteration or component relocation.
+It may not fit when the candidate chassis is already at its legal length, when the former is heavier than any number you are willing to write down, when the destination forbids the stabiliser spread, or when you need the machine to move between roofs on tracks rather than on a road vehicle. In that last case, leave the truck page and open a crawler catalog model. Do not ask a chassis drawing to solve a tracked-site problem. Until a signed schedule exists, loads, stability, road use, registration, compliance, final architecture and chassis fit remain undecided.
+
+<!-- audit-section: project-checklist -->
+## Chassis RFQ inputs
+
+- Work height and outreach measured to the outlet or deck, not copied from a brochure class
+- Roof slope, parapet, obstructions, and the geometry of each handover point
+- Panel profile, material grade, thickness, coil width, and the feed direction
+- Wind exposure and who stops work when the limit is reached
+- Ground or floor bearing under outriggers, tracks, or the deck path
+- Access route from the gate or door to the first setup pad
+- Outrigger or track footprint and the exclusion zone around it
+- Destination country, port, and the road or floor rules that apply there
+- Chassis or carrier included, local, or still unknown
+- Transport fold size and whether a container is even in the conversation
+- Voltage, power, and who owns the controls at the former and at the lift
+- Compliance documents the destination reviewer will actually ask to see
+
+### Extra lines that belong only on a truck file
+- Candidate chassis brand, wheelbase, and whether the cab stays
+- Road position envelope and work position envelope on one sheet
+- Who registers the vehicle and in which country
+- Stabiliser spread the site can actually accept
 
 <!-- audit-section: cta-editorial-note -->
-### Request a review of the candidate pairing
+## Send the pairing, not a slogan
 
-[Share the candidate vehicle and equipment pairing](/contact/?product=truck-mounted-roll-forming-lifts&request=advice). Include the actual chassis build, upper-equipment scope, site context, required outlet height, destination and intended transport duty. Point to the physical interface that needs an answer rather than requesting a general assurance of fit. ARCLIFT can coordinate equipment-side questions as a technical selection and supply partner. Final project-specific chassis fit, connection design, vehicle behavior and acceptance depend on the appointed specialists' issued records. The editorial photographs do not verify the proposed pairing or its current availability.
+Send the work height you need at the outlet, the site pad, the destination, the transport assumption, the work zone, and the floor or ground under the stabilisers. The signed technical schedule is project-specific. Editorial images on this page do not set a price or a delivery week. Start from [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) or [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), and use [request a quote](/contact/?request=quote). The <a href="https://www.fmcsa.dot.gov/regulations" target="_blank" rel="noopener noreferrer">FMCSA regulations index</a> is a United States road-rule doorway. It is not an approval of any ARCLIFT arrangement.
 
-## FAQ
+#### Is a truck chassis included?
+Only if the RFQ says yes. The catalog default is "confirm on RFQ".
 
-#### Can a truck be selected from its advertised load rating?
+#### Will the vehicle be road-legal in my country?
+Not from this page. Registration is a destination question. Send the country and who owns that filing.
 
-That rating alone does not answer where the equipment can be attached, how the mass is distributed or whether other vehicle components remain accessible. The candidate needs a coordinated equipment, chassis and duty review before a suitability conclusion.
+#### Can the former stay on the chassis during travel?
+Sometimes, and sometimes it is a separate package. The road-position drawing is how you ask the question without guessing.
 
-#### Who decides the mounting positions and connection details?
-
-The appointed integration specialists must define and verify them using equipment-side requirements and the applicable vehicle-side information. This guide helps collect those inputs. It does not provide a mounting design, fastening pattern or frame-modification instruction.
-
-#### Is this the same task as payload allocation?
-
-No. Payload allocation organizes mass and location inputs for the vehicle assessment. This review connects physical geometry, attachments, access, utilities and evidence ownership. The two tasks must exchange revisions because a change in one can affect the other.
-
-#### Does a similar photographed installation confirm compatibility?
-
-No. The photograph may omit the chassis identity, connection design, installed options and operating state. It can clarify a visible arrangement but cannot replace the records for the candidate under review or demonstrate approval by its responsible specialists.
+#### What if 40HQ packing is the hard limit?
+Open the ARC-T25HQ packing-route page and treat container fit as unproven until a packing study says otherwise.

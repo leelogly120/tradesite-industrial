@@ -1,9 +1,9 @@
 ---
-title: "ARC-F20 Crawler Under-Ceiling Platform — Archived Reference Class"
-description: "Archived 20m orientation reference class; final scope, configuration and documents need project confirmation."
+title: "ARC-F20 Crawler Large-Deck Ceiling Work Platform (20m Class)"
+description: "ARC-F20 large-deck catalog reference for the 20m class. Deck load and documents are confirmed on RFQ."
 category: "Crawler Ceiling Platforms"
 specifications:
-  "Archived Height Class": "Archived reference — 20m class; project-specific confirmation required"
+  "Archived Height Class": "Catalog reference — confirm on RFQ; 20m class; project-specific confirmation required"
   "Platform Envelope": "Historical reference — large-deck concept; final deck dimensions, extension and guard arrangement require review"
   "Load Basis": "To be confirmed — crew, tools, materials, point loads and allowable distribution follow the approved load chart"
   "Travel Mode": "Reference configuration — crawler travel concept; floor route, slope and movement restrictions require approval"

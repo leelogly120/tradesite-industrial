@@ -167,12 +167,11 @@ describe('2026-10-24 campaign day1: twenty new URLs after the published seventy'
     expect(baseline.sitemapUrls).toHaveLength(97);
     const xml = await readFile(resolve(root, 'dist/sitemap-0.xml'), 'utf8');
     const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
-    const expected = [...baseline.sitemapUrls, ...newSlugs.map(s => `${origin}/blog/${s}/`), `${origin}/blog/page/5/`];
-    expect(new Set(expected).size).toBe(118);
-    const currentExpected = [...expected, ...laterSlugs.map(s => `${origin}/blog/${s}/`), `${origin}/blog/page/6/`, `${origin}/blog/page/7/`];
-    expect(urls).toHaveLength(160);
-    expect(new Set(urls).size).toBe(160);
-    expect([...urls].sort()).toEqual(currentExpected.sort());
+    const articleUrls = (list) => list.filter(url => !/\/blog\/page\/\d+\/$/.test(url));
+    const expected = articleUrls([...baseline.sitemapUrls, ...newSlugs.map(s => `${origin}/blog/${s}/`)]);
+    const currentExpected = articleUrls([...expected, ...laterSlugs.map(s => `${origin}/blog/${s}/`)]);
+    expect(xml).not.toMatch(/\/blog\/page\/\d+\//);
+    expect([...articleUrls(urls)].sort()).toEqual(currentExpected.sort());
     for (const slug of newSlugs) {
       const page = await built(`/blog/${slug}/`);
       expect(page.filter(n => n.tagName === 'link' && attr(n, 'rel') === 'canonical').map(n => attr(n, 'href'))).toEqual([`${origin}/blog/${slug}/`]);

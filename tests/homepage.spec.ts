@@ -26,7 +26,7 @@ test('preserves contact destinations and loads fonts locally', async ({ page }) 
   await expect(page.locator('.hero-actions a').first()).toHaveAttribute('href', '/products/');
   await expect(page.locator('.hero-actions a').last()).toHaveAttribute('href', '/contact/');
   await expect(page.locator('.a2-contact-links a').first()).toHaveAttribute('href', 'https://wa.me/8615515922444');
-  await expect(page.locator('.a2-contact-links a').last()).toHaveAttribute('href', 'mailto:leelogly120@gmail.com');
+  await expect(page.locator('.a2-contact-links a').last()).toHaveAttribute('href', 'mailto:sales@arclifteq.com');
   await expect(page.locator('#matching')).toContainText('forming machine, its mounting interface and the panel receiving area');
 });
 
@@ -94,5 +94,5 @@ test('short mobile drawer scrolls to the direct contact links while the backgrou
   await email.scrollIntoViewIfNeeded();
   expect(await email.evaluate(el=>{const r=el.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight})).toBe(true);
   expect(await drawer.evaluate(el=>el.scrollTop)).toBeGreaterThan(0);
-  await expect(email).toHaveAttribute('href','mailto:leelogly120@gmail.com');
+  await expect(email).toHaveAttribute('href','mailto:sales@arclifteq.com');
 });

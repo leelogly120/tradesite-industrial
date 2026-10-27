@@ -11,196 +11,109 @@ coverCaption: "Reference photograph of a broad platform and red lifting structur
 draft: false
 ---
 
-A broad crawler work deck is worth investigating when the ceiling or wall task needs working space across a continuing face. Start by distinguishing that task from visits to isolated points. Then screen the actual task, entrance, overhead work area and floor together: a useful deck must reach the building and put the required people, tools and materials beside the work. This guide helps choose an access concept to discuss and the first site input that controls it. It supplies no operating method or configuration approval.
+A crawler under-ceiling platform is a place to put people, tools, and materials along a face. It is not a roll-forming lift, and it is not a scaffold quote with a different name. Buy it when the work is a continuous ceiling or wall, and the crew needs a deck that can be moved and then parked. If you only need to visit points, say that, because a basket may be the shorter conversation.
 
 **Contents**
 
-- Start with the work outcome, not nominal height
-- Convert the building into selection zones
-- Review the complete machine-to-site interface
-- Recognize where the crawler concept may not fit
-- Assemble a project data package
-- Resolve the final questions before selection
+- The job the deck is for
+- The building as a sequence of zones
+- Load, power, and rescue as inputs
+- When a large deck is the wrong tool
+- Which catalog page to open
 
 <!-- audit-section: buyer-intent -->
-## Start with the work outcome, not nominal height
+## Start from the face you have to touch
 
-### Identify the broad-deck access concept
+### Continuous face or a list of points
+Walk the ceiling or wall and mark the length that must be reached without climbing down. A long face with the same task, such as fixing panels or services, is the reason to look at [ARC-F25](/products/arc-f25-crawler-ceiling-platform/) in the 25m catalog class or the neighbouring large-deck classes. A handful of lamps in a hall is a different machine. Write which one you have before you ask for a price you will not get from this page.
 
-The crawler concept combines a tracked base, lifting structure, supports where specified and a broad working deck. Ask how the proposed arrangement would place the task within the working area, with its entry and support space included. Ceiling and wall work platforms are a separate application from equipment that raises a compatible roof-panel roll former. Buying a forming lift does not establish that a personnel deck is included or interchangeable.
+### People, tools, and the thing they are fixing
+Name the crew count you expect on the deck and what they carry: hand tools, a panel bundle, a coil of cable, a welder. Do not convert that into a kilogram rating yourself. The quotation compares your list with a load chart that does not exist on the website. "Two fitters and a stack of panels" is a better RFQ line than a made-up tonne.
 
-Begin with the [crawler work-platform route](/products/#crawler-ceiling-platforms). If the project instead needs a vehicle-based access proposal, the [truck-mounted work-platform route](/products/#truck-mounted-work-platforms) is a separate configuration discussion. Compare the vehicle, entrance, supports, deck and intended work position together. Neither route's name establishes current model ratings, indoor suitability or road registration.
-
-*On smaller screens, scroll the table sideways to read all three columns.*
-
-| Access concept | First practical question | Information that changes the shortlist |
-| --- | --- | --- |
-| Standalone crawler work deck | Does the proposed deck serve the work face and have a connected site route? | Complete configuration, entry envelope, work arrangement and support inputs |
-| Truck-mounted working deck | Can the vehicle and supported work position be considered within the building/site arrangement? | Actual vehicle/lift/deck proposal, access and occupied support area |
-| Other access method | Are the tasks mainly separated points or inaccessible behind obstacles? | The same task locations and material needs for the alternative provider |
-| Deck option on an identified host | Is that exact combination documented and available for the intended task period? | Supplier-confirmed scope, applicable instructions and shared-host dependencies |
-
-A host option becomes relevant only after the supplier identifies the exact combination. If forming and ceiling work overlap, ask whether both depend on the same host; one host is not two available resources. Keep the associated services and later configuration review in the offer. No changeover method, timing or compatibility is inferred from a photograph.
-
-### Describe the worker and material position
-
-A ceiling elevation is only one coordinate. Record where the worker's hands, tools, and materials must be relative to the ceiling, wall, truss, service, or panel edge. A task below a flat ceiling may need mainly vertical access. A task behind a beam or beside a wall may need a different horizontal relationship. Dividing the building into work zones prevents a single maximum height from hiding these differences.
-
-For every zone, identify the work activity: inspection, fastening, panel handling, service installation, coating, repair, or another defined task. Note the expected number of occupants, hand tools, consumables, materials, temporary racks, and handling accessories. These are separate inputs. A machine-class reference is not a platform rating, and a wide deck in a reference photograph does not establish what may be carried.
-
-### Compare a continuous work face with separated task points
-
-Consider two hypothetical briefs for the same building. One describes installing a continuous ceiling run, with materials needed beside successive fixing positions. The other describes inspecting separate service points with gaps between them. A common ceiling height does not make these equivalent tasks. The installation brief needs the task owner to define the proposed material position, work-front progression and space left for the work. The inspection brief needs the location and access conditions of each point, including any point hidden behind a beam or service.
-
-Ask whether each proposed position serves the defined task, which locations need another arrangement, and whether material staging occupies the approach or work space. The examples select no platform category. Permitted movement remains a separate question for the exact equipment documents.
-
-For selection context, Great Britain's <a href="https://www.hse.gov.uk/pubns/geis6.htm" target="_blank" rel="noopener noreferrer">HSE GEIS6 information sheet</a> concerns MEWP selection and intended-use risk assessment. Its scope supports asking about the task before choosing equipment; it does not select or approve an ARCLIFT configuration.
-
-### Use four screens to choose the next evidence pack
-
-Use these four screens as the centre of the first enquiry. A continuous face may make a broad deck worth considering, but an entrance or local floor gap can control the next decision. Identify that gap before collecting detail that cannot yet change the shortlist. The table routes questions to specialist guides rather than awarding a category a score.
-
-| Screen | Question to close | Minimum record for the next review | If it is open, go next to |
-| --- | --- | --- | --- |
-| Task | Where must people, tools and materials be placed, in what sequence, and with what separate load breakdown? | Marked task position plus occupant/tool/material/accessory schedule and record owner | [Worker, tool and material load planning](/blog/aerial-platform-worker-tool-material-load-planning/) |
-| Entry | Can the documented entry/travel arrangement be assessed against every gate, turn, threshold and staging point after the transport handover? | Route drawing or survey with each restriction identified and its reviewer/status | [Large crawler platform building-entry survey](/blog/large-crawler-work-platform-building-entry-survey/) |
-| Work face | Can the reviewed platform/work arrangement reach the task without conflict with the ceiling, structure, services or adjacent traffic? | Zone section/elevation, work-position requirement and obstruction/clearance schedule | [Ceiling-platform overhead-clearance survey](/blog/ceiling-platform-overhead-clearance-survey/) |
-| Floor | Can the route and each support/work zone be reviewed for the applicable machine state and contact arrangement? | Floor/route information, machine-state data request, local features, protection plan and competent reviewer | [Indoor floor and ground-pressure review](/blog/indoor-aerial-platform-ground-pressure-guide/) |
-
-If one row points to a different access method, compare that method before collecting model-specific data. If all four remain plausible, combine their controlled records into the selection brief and then identify the still-missing power, control, transport, rescue and destination reviews. The [emergency lowering and rescue-plan guide](/blog/aerial-platform-emergency-lowering-rescue-plan/) is the next document path for assigned rescue responsibilities; it is not a generic rescue procedure.
-
-The [crawler ceiling platform project-data guide](/blog/crawler-ceiling-wall-panel-platform-project-data/) expands the input list. The [crawler platform category](/products/arc-f20-crawler-ceiling-platform/) provides orientation to ARCLIFT's supply scope, but selection remains conditional on the project package.
+### Not a former lift
+[ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) raises a roll former. ARC-F25 is a work deck. If the RFQ says both, split it into two lines so nobody quotes a basket as a former mount. Warehouse, stadium, and terminal jobs in the applications pages are deck jobs when the sentence is about access, and forming jobs when the sentence is about a panel leaving a machine.
 
 ![Raised red platform structure outside an industrial building with open bays](/images/equipment/entry-real-approach.webp)
 
 *Reference photograph of a raised platform outside an industrial building. It does not verify an entry route, transport envelope, task clearance or suitability for another site.*
 
 <!-- audit-section: conditions -->
-## Convert the building into selection zones
+## Break the building into zones you can lose
 
-### Build a geometry schedule
+### Door, ramp, and the first turn
+Measure the opening the machine must pass: width, height, and anything that sticks into it. Then the first turn. A deck that works under the ceiling and cannot enter the building is not a candidate. Say if a wall is still open during installation and will be closed later. That sequence changes the transport story.
 
-For each zone, provide finished-floor elevation, required platform elevation, required horizontal position, and the nearest overhead and side obstructions. Mark trusses, bracing, purlins, ducts, sprinklers, cable trays, lights, cranes, walls, mezzanines, temporary works, and partially installed materials. Include the approach path as well as the final work position.
+### Floor from the door to the last pad
+Slabs, joints, trenches, raised floors, and covers. Note where a track would cross a joint you do not trust. The catalog will not publish a bearing pressure. Your note is what makes the reviewer ask for a mat or refuse the route.
 
-The U.S. <a href="https://www.osha.gov/etools/scaffolding/aerial-lifts" target="_blank" rel="noopener noreferrer">OSHA Aerial Lifts eTool</a> identifies unstable surfaces, ceiling height, obstructions, overhead services and nearby people as work-area concerns. It also includes workers, tools and materials in load considerations. This is U.S. aerial-lift planning context; it does not classify an ARC-F reference, set its limits or establish which rules apply to the proposed equipment.
+### Overhead, not just height
+Ducts, purlins, lights, scoreboards, and cranes occupy the space the deck wants. Mark the lowest obstruction in each zone and the horizontal offset from the face. A 25m class label does not clear a duct at 11m. The section does.
 
-### Walk the access route
+### Occupied building versus an empty shell
+A terminal or a shop that stays open is not the same RFQ as a shell with no public underneath. Say the hours the deck may stand in a aisle, what barrier you can build, and whether materials can be staged overnight. Those facts change the travel path more than the catalog class does. If you cannot close the area, write that in the first paragraph so the quotation does not assume an empty floor. Add the hour the public returns, because a deck that must be folded and moved before opening is a different setup from one that can stay parked overnight.
 
-A route review begins at the transport handover, not at the first work bay. Record openings, turns, slopes, thresholds, covers and local restrictions along the connected route. Include proposed waiting, charging and service areas as locations needing their own review. A clear final bay cannot resolve a restriction before it.
-
-Do not treat transport dimensions as operating dimensions. Guards, platform elements, lifting structure, stabilizers, or accessories may change the envelope between transport, setup, and work states. Those values must come from configuration-specific signed data. If a route requires removal or folding of an element, define who may perform the change and how the configuration will be checked before use.
-
-### Review the floor as a route and a support
-
-Provide floor construction, slab thickness where known, supporting layout, allowable loading information, suspended areas, joints, weak edges, trenches, covers, coatings, cleanliness limits, and protection requirements. Machine mass alone does not describe local effects. Contact area, load distribution, movement, turning, surface irregularity, support reactions, and temporary protection can all matter.
-
-IPAF's <a href="https://www.ipaf.org/en/operator-feeds/do-you-know-what-look-when-assessing-ground-conditions" target="_blank" rel="noopener noreferrer">ground-condition guidance</a> covers the operating area and travel route, including surface conditions and visible or hidden weak spots. It is general MEWP guidance, not a floor calculation or a finding about an ARCLIFT configuration. The project team should identify who reviews the building floor and which structural records that reviewer needs.
+### Rescue and who is in charge
+Who can lower the deck, where the second way out is, and whether the building is occupied. Indoor work often fails on rescue and communication, not on the catalog class. Name the person who will sign the method, even if that person is not you.
 
 ![People on a yellow raised platform beneath steel roof framing inside a building](/images/equipment/entry-real-interior.webp)
 
 *Reference photograph of people on a raised platform beneath roof framing. It does not establish a permitted occupant count, task load, working method or approved arrangement.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## Review the complete machine-to-site interface
+## The trade-off is deck area against the building envelope
 
-### Balance deck utility against the envelope
+A large deck lets a crew keep materials beside the work. It also needs a door, a floor, and a path that a basket never asked for. The constraint is that envelope: entry, turn, overhead, and the floor under the parked machine. A spider or a scaffold can win when the door is small or the floor is a finished surface you cannot mark. A deck wins when the face is long and the materials cannot live in a basket. Compare those constraints on one sketch, not on slogans.
 
-A broad deck offers physical space to discuss adjacent task positions, tools and materials together. The trade-off is the space that the actual deck, lifting structure and supported base occupy. Ask what part of the continuous face the proposal covers and which exceptional positions need another arrangement. A larger outline is of little use if the task sits behind a beam or the route cannot bring that configuration to the position.
+### Power at the deck
+Say if the tools need power on the platform and who provides it. A cable dragged from a wall and a circuit on the machine are different interfaces. Leave the voltage as a fact from the site, not a guess copied from another country.
 
-Main deck and extensions need their own documented conditions. Show the intended people, tools, materials and accessories by position; spare visible area is not spare capacity. The [task-load guide](/blog/aerial-platform-worker-tool-material-load-planning/) develops that input without deriving a rating from deck size or a reference photograph.
-
-### Separate travel, setup, and work states
-
-Identify the transport, setup and task states in the candidate's actual documents. The allowed travel state, occupancy and surface conditions cannot be inferred from tracks or a photograph. A folded structure with extended supports does not prove that the apparatus is ready to move.
-
-Where supports are documented, request their occupied space and configuration-specific reaction information for the site reviewer. An entry-route comparison cannot settle the separate work-state footprint. Keep different bays separate when their floor, obstruction or traffic conditions differ.
-
-### Match power and controls to the work zone
-
-State whether the work is indoors, outdoors, or transitions between both. Record ventilation and emissions controls, permitted energy sources, available electrical supply, charging location, cable route, noise limits, fire controls, temperature, dust, and backup expectations. A request for “electric mode” is incomplete without duty cycle and charging information.
-
-Ask which controls, viewing positions and ground-access requirements belong to the candidate arrangement. Remote control is not evidence of a particular permitted movement or of reduced site staffing. The project still has to provide the applicable competence, communications and emergency arrangements; this purchase comparison specifies no control or rescue procedure.
-
-For Great Britain, the <a href="https://www.hse.gov.uk/construction/safetytopics/mewp.htm" target="_blank" rel="noopener noreferrer">HSE MEWP guidance</a> discusses entrapment, overturning, falls and collision. It calls for a practised rescue plan and someone on the ground who knows the emergency actions and ground controls. These are MEWP planning considerations, not an ARC-F classification or approval; the project must establish the requirements for its actual equipment and destination.
+### What the interior photograph is for
+The photograph shows people on a platform under steel. It does not show your hall, your load, or a permitted method. Use it to remember to photograph your own obstruction and your own floor joint.
 
 ![Folded red crawler apparatus outdoors with support beams extended to the ground](/images/equipment/transport-real-stowed.webp)
 
 *Reference photograph of a separate folded crawler apparatus with extended supports. It does not show the same machine as the platform photographs or establish a permitted travel state, conversion or platform option.*
 
 <!-- audit-section: limitations-not-fit -->
-## Recognize where the crawler concept may not fit
+## A large deck may not fit
 
-### Stop when geometry or floor information is unresolved
-
-A crawler under-ceiling platform may not fit when the route is narrower than the confirmed transport envelope, turns cannot be completed, gradients exceed signed limits, or overhead services block the required approach. It may also be the wrong route when floor supporting information is unknown, suspended areas cannot be checked, weak edges cannot be isolated, or stabilizer reactions cannot be accepted.
-
-The concept may not fit dense ceiling zones where the platform cannot approach the work face without placing people against fixed structures. If workers would need to climb, lean beyond the approved arrangement, modify guardrails, or improvise a higher working position, stop the comparison and review another access method.
-
-### Compare other access methods honestly
-
-Compare alternative access methods against the same marked task positions and site conditions. A smaller-looking machine does not establish passage, while a larger deck does not establish usable access to every task. Ask each proposed method to address the actual openings, work faces, materials and building constraints.
-
-The [crawler, spider lift, and scaffolding comparison](/blog/crawler-platform-vs-spider-lift-vs-scaffolding/) examines those method interfaces. No category is a universal winner. The better method is the one that can be supported by the actual route, work face, floor, task, rescue plan, and local requirements.
-
-Other reasons to pause include unresolved emissions rules, missing charging arrangements, uncontrolled pedestrian traffic, no rescue access, no competent operator plan, or insufficient signed technical data. Procurement pressure does not convert an open interface into an accepted condition.
+It may not fit when the machine cannot pass the door, when the floor is unknown, when the work is really a roll former at the eave, or when rescue cannot be described. It may not fit when the ceiling is a scatter of points and you would rather hire a basket for a week. Stop and change the RFQ. Forcing ARC-F25 onto a forming specification wastes the review.
 
 <!-- audit-section: project-checklist -->
-## Assemble a project data package
+## Deck RFQ inputs
 
-### Inputs for a meaningful configuration review
-
-Prepare marked drawings and a schedule tied to the standalone configuration or supplier-confirmed host proposal. Use the four-screen matrix as a cover sheet, with a source, revision and status for each row. Redacted photographs can describe conditions but cannot supply dimensions or acceptance.
-
-- Work-zone height, required outreach, worker position, task geometry, and sequence
-- Ceiling, roof, wall, truss, service, crane, and temporary-work obstructions
-- Occupants, tools, material dimensions, material mass, racks, accessories, and distribution
-- Floor construction, allowable information, joints, openings, edges, slopes, covers, and protection
-- Access route, gate dimensions, aisle width, turn geometry, ramps, staging, and transport boundary
-- Stabilizer or outrigger space, support reactions, leveling, exclusion zone, and setup frequency
-- Indoor ventilation, emissions policy, noise, temperature, dust, lighting, and fire controls
-- Voltage, frequency, phase, charging area, cable route, power mode, and backup expectation
-- Control preference, operator position, spotter communication, stop rules, and traffic segregation
-- Emergency lowering, rescue route, trained roles, daily checks, and incident response
-- Destination requirements, documentation, inspection, training, transport, and acceptance process
-- Project schedule, shared-zone constraints, technical contacts and any competing tasks assigned to the same confirmed host proposal
-
-### Send the first input that can change the selection
-
-Match the enquiry to its present maturity. The following routes are editorial triage examples, not equipment acceptance stages.
-
-| Enquiry condition | Useful first submission | Decision it can support |
-| --- | --- | --- |
-| The task is still described only as “ceiling work” | Marked task points, intended work outcome and proposed material use | Identify which work-package definition is missing before a configuration is compared |
-| The task is defined but site constraints are unknown | Task brief plus known route, floor and overhead records, with absent fields named | Assign the surveys or technical inputs needed for a meaningful comparison |
-| Candidate configurations and site records are available | The same task/site brief beside each candidate's stated arrangement and open conditions | Compare whether the candidates address the same task and supply boundary |
-
-Do not delay a useful first enquiry simply to fill every box with estimates. Send the known facts and the specific decision that is blocked. The detailed project-data page can organize the later complete package; this guide helps identify which missing input deserves attention first.
+- Work height and outreach measured to the deck or outlet, not copied from a brochure class
+- Roof or ceiling geometry, slope, obstructions, and each work face
+- Panel, material, or tool load you intend to park on the deck, described not guessed as a rating
+- Wind or indoor air movement and who stops the task
+- Floor or ground bearing along the whole travel path
+- Access from the door or gate to the first setup
+- Outrigger, track, or stabilizer footprint and the exclusion zone
+- Destination and the local rule that will review the method
+- Carrier included or not, and how the machine enters the building
+- Transport fold and any container assumption, left open if unknown
+- Voltage, power, and who holds the controls
+- Documents the reviewer will ask for before people go up
 
 <!-- audit-section: cta-editorial-note -->
-## Resolve the final questions before selection
+## Open the large-deck catalog model
 
-Use the four screens to [ask ARCLIFT about a crawler work-platform concept](/contact/?product=crawler-ceiling-platforms&request=advice). Describe the continuous work face or separate task points, the height/position relationship and the first entrance, floor or overhead restriction controlling your enquiry. Add destination, transport route, material needs and known power conditions. ARCLIFT supports equipment selection and supply coordination; final configuration and site acceptance require the responsible project review. The reference photographs are editorial context for different apparatus, not a proposed machine or customer case.
+Send the work height at the face, the site plan, the destination, how it will be transported in, the work zone, and the floor it must cross. The signed schedule is project-specific. Editorial images here do not set a deck load or a lead time. Start with [ARC-F25](/products/arc-f25-crawler-ceiling-platform/) and [request a quote](/contact/?request=quote). The <a href="https://www.osha.gov/fall-protection" target="_blank" rel="noopener noreferrer">OSHA fall-protection overview</a> is a United States doorway for the buyer’s own reviewer. It is not an ARCLIFT certificate.
 
-### Frequently asked questions
+### Zones worth writing in full sentences
+Write one sentence per zone: what the crew does there, what sits overhead, and how they leave. Five honest sentences beat a single "ceiling work" line. Include the zone you hope to avoid, such as a trench or a public concourse, because that zone is usually the one that kills the route.
 
-#### Is ceiling height enough to choose a crawler platform?
+### Materials that must ride the deck
+List materials that cannot be passed up by hand. A bundle of panels, a glass unit, or a cable drum changes the conversation even when you refuse to invent a kilogram rating. Say the count and the rough size you can measure with a tape. Leave the allowable load to the chart in the quotation.
 
-No. Height must be reviewed with horizontal task position, overhead obstructions, platform load, transport and operating envelopes, floor conditions, movement state, stabilization, power, controls, rescue, and destination requirements.
+#### Is ARC-F25 a roll-forming lift?
+No. It is a large-deck catalog model for ceiling and wall access. Forming lifts are the ARC-T and ARC-C pages.
 
-#### Do crawler tracks prove low floor pressure?
+#### Does 25m mean I can reach every point in the hall?
+No. 25m is the catalog height class. Ducts, offsets, and the floor route decide the real face you can touch.
 
-No. Tracks describe a contact concept, not an approved floor result. Machine configuration, mass distribution, contact condition, turning, surface, supports, local features, and the building structure must be reviewed.
+#### What should I send if the floor drawing is unfinished?
+Send the drawing you have and mark the zones as unknown. Unknown is allowed. A guessed slab capacity is not.
 
-#### Can the platform travel while elevated?
-
-Only the specific signed instructions can define permitted travel states, occupancy, load, surface, slope, and other limits. Do not transfer a travel capability from a different model or a category image.
-
-#### Is remote control automatically safer?
-
-No. It changes where and how the operator may control a movement. The project still needs a clear viewing position, exclusion zone, communication, emergency-stop response, ground controls, rescue method, training, and supervision.
-
-#### What should be sent first?
-
-Send marked plans and sections, a zone schedule, route dimensions, floor information, load breakdown, power conditions, and destination. Clear project inputs are more useful than selecting a model name first.
-
-This article is selection guidance, not an operating instruction, structural approval, work-at-height method, or destination compliance statement. Its reference photographs show different apparatus and provide visual context only; they do not document a proposed configuration or customer project. Final suitability, dimensions, loads, reactions, power behavior, travel state, rescue arrangements, and local acceptance require project review and signed documents.
+#### Can the carrier be included?
+Say yes, no, or unsure. Entry through the building and transport to the site are different lines on the RFQ.

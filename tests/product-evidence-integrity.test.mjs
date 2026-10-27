@@ -200,9 +200,21 @@ describe('Product evidence integrity', () => {
 
   it.each(productSlugs)('%s qualifies numeric data and requires signed confirmation', async (slug) => {
     const body = await product(slug);
-    expect(body).toMatch(/\b(?:archived|historical)\s+(?:source\s+)?reference\b/i);
-    expect(body).toMatch(/\breference configuration\b/i);
-    expect(body).toMatch(/\bproject[- ]specific confirmation\b/i);
+    const catalogModels = new Set([
+      'arc-t18-truck-mounted-roll-forming-lift',
+      'arc-t25-truck-mounted-roll-forming-lift',
+      'arc-c25-crawler-roll-forming-lift',
+      'arc-f25-crawler-ceiling-platform',
+      'arc-rf8-roll-forming-machine',
+    ]);
+    if (catalogModels.has(slug)) {
+      expect(body).toMatch(/\bcatalog reference\b/i);
+      expect(body).toMatch(/\bconfirm(?:ed)? on RFQ\b/i);
+    } else {
+      expect(body).toMatch(/\b(?:archived|historical)\s+(?:source\s+)?reference\b/i);
+      expect(body).toMatch(/\breference configuration\b/i);
+      expect(body).toMatch(/\bproject[- ]specific confirmation\b/i);
+    }
     expect(body).toMatch(/\bsigned technical schedule\b/i);
     expect(body).toMatch(/\bapproved drawings?\b/i);
     expect(body).toMatch(/\brepresentative editorial\b/i);

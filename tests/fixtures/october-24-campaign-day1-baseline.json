@@ -4,8 +4,8 @@
   "articles": [
     {
       "slug": "40hq-shipping-truck-mounted-roll-forming-lift",
-      "sha256": "bcd65398143a73c86fb53074e44ee342e5275785584c1a304a04c86478c5cc6b",
-      "workspaceSha256": "bcd65398143a73c86fb53074e44ee342e5275785584c1a304a04c86478c5cc6b",
+      "sha256": "abd40d5a736194833517ac777d75e5ba7c1b81fa28874af21381d12da86faa56",
+      "workspaceSha256": "abd40d5a736194833517ac777d75e5ba7c1b81fa28874af21381d12da86faa56",
       "title": "\"40HQ Planning for Truck-Mounted Roll-Forming Lifts\"",
       "date": "2026-07-24",
       "updated": "2026-10-22"
@@ -188,16 +188,16 @@
     },
     {
       "slug": "crawler-under-ceiling-platform-buyers-guide",
-      "sha256": "70e9f39dbc14b39a912bd28fa8f2c9702a847e53b641b007158868517833ebae",
-      "workspaceSha256": "48b2ef60caa28f81305d5416084c2f5730a129eaa98fc0903f4cc2fede511ac5",
+      "sha256": "ba682b020bf52771cd0783329f519ad950a39cefd1872831640cb6518b7b8520",
+      "workspaceSha256": "ba682b020bf52771cd0783329f519ad950a39cefd1872831640cb6518b7b8520",
       "title": "\"How to Choose a Crawler Under-Ceiling Work Platform\"",
       "date": "2026-07-27",
       "updated": "2026-10-22"
     },
     {
       "slug": "crawler-vs-truck-mounted-roll-forming-system",
-      "sha256": "5d0a037301e6e50b1d5eed16943f3869e5dfd2a48df0fd6b717ce5342bc5047e",
-      "workspaceSha256": "5d0a037301e6e50b1d5eed16943f3869e5dfd2a48df0fd6b717ce5342bc5047e",
+      "sha256": "7b128e70876a08d78d359b6269a38df2a522318aad4256ff858069756665dc2b",
+      "workspaceSha256": "7b128e70876a08d78d359b6269a38df2a522318aad4256ff858069756665dc2b",
       "title": "\"Crawler vs Truck-Mounted Roll-Forming Lifts Compared\"",
       "date": "2026-07-24",
       "updated": "2026-10-22"
@@ -212,8 +212,8 @@
     },
     {
       "slug": "elevated-roll-forming-roof-panel-handover-zones",
-      "sha256": "f1f5044edfe8e198ceafba2a30c23446b9ecf4d7a9963a866704d764abb588e7",
-      "workspaceSha256": "f1f5044edfe8e198ceafba2a30c23446b9ecf4d7a9963a866704d764abb588e7",
+      "sha256": "3c279843e2c84cda8cfe505f3d7f60dd18a959db621556f7a56639bccf96871b",
+      "workspaceSha256": "3c279843e2c84cda8cfe505f3d7f60dd18a959db621556f7a56639bccf96871b",
       "title": "\"Roof Panel Handover Zones for Elevated Roll Forming\"",
       "date": "2026-08-07",
       "updated": "2026-10-22"
@@ -228,8 +228,8 @@
     },
     {
       "slug": "high-altitude-roll-forming-lift-rfq-data",
-      "sha256": "a3e0c9fd99155737cfeb64ff4f0219574aff3863ea1238911ec652dc818fa5b3",
-      "workspaceSha256": "a3e0c9fd99155737cfeb64ff4f0219574aff3863ea1238911ec652dc818fa5b3",
+      "sha256": "697db7a5e36223b5faea1294a83686ed770bf39314656c3f78015bca563cedd9",
+      "workspaceSha256": "697db7a5e36223b5faea1294a83686ed770bf39314656c3f78015bca563cedd9",
       "title": "\"RFQ Data Guide for High-Altitude Roll-Forming Lifts\"",
       "date": "2026-08-07",
       "updated": "2026-10-22"
@@ -316,8 +316,8 @@
     },
     {
       "slug": "roll-forming-lift-buy-vs-rent-project-decision",
-      "sha256": "dd911bef4b68cf46118f28276541f0d227307b6143121c2a07cff9e32bcc9c05",
-      "workspaceSha256": "a0cfb9a7e420e8ce57d150fcbc97669eeccd1c421608b3abf780f672c8aa5189",
+      "sha256": "2b0595f069e27d3a1507a35a32e4307a4612277a0aeda1ba889a71f00e598382",
+      "workspaceSha256": "2b0595f069e27d3a1507a35a32e4307a4612277a0aeda1ba889a71f00e598382",
       "title": "\"Buy or Rent a Roll-Forming Lift? Compare the Project Need\"",
       "date": "2026-10-24",
       "updated": null
@@ -364,8 +364,8 @@
     },
     {
       "slug": "roll-forming-lift-importer-distributor-supply-package",
-      "sha256": "95b13766d0f395494a6d3d31f2d210d37a56d80bd57d7b8dc496b3a1a2e5b2a8",
-      "workspaceSha256": "da54aa191e1867970c87a4d077ac00314b62a2e29d12f1b7aa422e2acb984b0b",
+      "sha256": "5f39c315b85ee7d2fa3505029af7637bd91954742a80c6b95899ad2a10a49e56",
+      "workspaceSha256": "5f39c315b85ee7d2fa3505029af7637bd91954742a80c6b95899ad2a10a49e56",
       "title": "\"Roll-Forming Lifts for Importers: Define the Supply Package\"",
       "date": "2026-10-24",
       "updated": null
@@ -436,8 +436,8 @@
     },
     {
       "slug": "roll-forming-line-specification-long-span-roof-panels",
-      "sha256": "d170f435d3d136111b810719f45becf490e80a5f61e59ef35d97da45fab2ec55",
-      "workspaceSha256": "d170f435d3d136111b810719f45becf490e80a5f61e59ef35d97da45fab2ec55",
+      "sha256": "73578472d90ade5f7c4ec68dca1f7ff9d832bfc40ee3e81506d95b6c7fc7b47f",
+      "workspaceSha256": "73578472d90ade5f7c4ec68dca1f7ff9d832bfc40ee3e81506d95b6c7fc7b47f",
       "title": "\"Roof-Panel Roll-Forming Lines: Specification for Lifts\"",
       "date": "2026-07-24",
       "updated": "2026-10-22"
@@ -452,8 +452,8 @@
     },
     {
       "slug": "roof-level-roll-forming-long-panels",
-      "sha256": "b6bebe318763c5f8873e63b481f111076c8bee55f05ce4e3f118b7ad41ad7131",
-      "workspaceSha256": "b6bebe318763c5f8873e63b481f111076c8bee55f05ce4e3f118b7ad41ad7131",
+      "sha256": "95be17fbcd8a265c9b9503bea3181347be1866d12236b5f979ee7cf08f9edc86",
+      "workspaceSha256": "95be17fbcd8a265c9b9503bea3181347be1866d12236b5f979ee7cf08f9edc86",
       "title": "\"Roof-Level Roll-Forming Lifts for Long Roof Panels\"",
       "date": "2026-07-24",
       "updated": "2026-10-22"
@@ -524,8 +524,8 @@
     },
     {
       "slug": "truck-mounted-roll-forming-chassis-interface-review",
-      "sha256": "af2470cdec358a9ecf20e8a5bbe804be53058310d16ac1eae85a78ca46b19947",
-      "workspaceSha256": "af2470cdec358a9ecf20e8a5bbe804be53058310d16ac1eae85a78ca46b19947",
+      "sha256": "905957e2eacc91e943dffc912632bb8173be5731ef5ee853473ad07ea96fc2fd",
+      "workspaceSha256": "905957e2eacc91e943dffc912632bb8173be5731ef5ee853473ad07ea96fc2fd",
       "title": "\"Truck Chassis Integration Review for Roll-Forming Lines\"",
       "date": "2026-07-27",
       "updated": "2026-10-22"
@@ -616,14 +616,14 @@
   "preservedFiles": [
     {
       "path": "public/_headers",
-      "sha256": "5e9abfcfcf7f824677bebb74ccfd5dfb66067d455b8f1122bd5e71b4a0846cce",
-      "workspaceSha256": "5e9abfcfcf7f824677bebb74ccfd5dfb66067d455b8f1122bd5e71b4a0846cce",
+      "sha256": "68a8f0c947ed81b049f4f8cdf1bb21ff00d2374ab557361bcb706db022afa92b",
+      "workspaceSha256": "68a8f0c947ed81b049f4f8cdf1bb21ff00d2374ab557361bcb706db022afa92b",
       "normalizeNewlines": false
     },
     {
       "path": "public/_redirects",
-      "sha256": "fd387d55c27408badc9ae1170123cd645ed221313b4e32b74ac4caf373edb506",
-      "workspaceSha256": "fd387d55c27408badc9ae1170123cd645ed221313b4e32b74ac4caf373edb506",
+      "sha256": "e0036dcdd9e3658a67ec9ba475bc0000d59946e375414db1cbedb1673696f495",
+      "workspaceSha256": "e0036dcdd9e3658a67ec9ba475bc0000d59946e375414db1cbedb1673696f495",
       "normalizeNewlines": false
     },
     {
@@ -1408,32 +1408,32 @@
     },
     {
       "path": "src/components/InquiryForm.astro",
-      "sha256": "8b673ff3ed12e270cb975e58a2d1aee585a0a2e6517bc8dcd5e6eae2bccfea15",
-      "workspaceSha256": "9696f9bacabefa03aea4cf8e4c7f35d338d70a4652d5232b13eab59b5a19f60f",
+      "sha256": "0ca9c5fb54d37987d267f2c736389770bc34232016b4595d83e8298411923676",
+      "workspaceSha256": "0ca9c5fb54d37987d267f2c736389770bc34232016b4595d83e8298411923676",
       "normalizeNewlines": true
     },
     {
       "path": "src/layouts/BaseLayout.astro",
-      "sha256": "0a64fb1f3db0ab2d6696c04bd60e7e1eab171e0f8280775692cc4e590d0c7b03",
-      "workspaceSha256": "4a4f434bef6cd7b4e9055917e83b8e121d774dd8c5cd10646a541a19f6f72596",
+      "sha256": "dd5678dbd057b8391ad50ea81443a619c06017f9c024498295e787ecc44e657f",
+      "workspaceSha256": "dd5678dbd057b8391ad50ea81443a619c06017f9c024498295e787ecc44e657f",
       "normalizeNewlines": true
     },
     {
       "path": "workers/inquiry-router/src/contracts.ts",
-      "sha256": "568def2c7392cdd2e13aa3cc70d0e5ac6d6c9824fed1a5ed6dee6b78de61025d",
-      "workspaceSha256": "c19e3cb60d1213cba293ca3645c9f29997e9ce63c45456de2604d03f98dc538f",
+      "sha256": "e3ad22c723de97f6019f8b76d1b35d0c2ff3d96638f055098ec245eaaf0152cb",
+      "workspaceSha256": "e3ad22c723de97f6019f8b76d1b35d0c2ff3d96638f055098ec245eaaf0152cb",
       "normalizeNewlines": true
     },
     {
       "path": "workers/inquiry-router/src/index.ts",
-      "sha256": "633a196e634d91ccd78f4db849ef09bb4685cbea0b98b51aca7be11b9e21714a",
-      "workspaceSha256": "8cf8b537fe731b3c159aab89d9d5ed12a9bb16f6ca8ccb5e5c6883e6532ef936",
+      "sha256": "b19ab1373a72bee41c25497440d536d101a622d6c60239362452d7e0f13d8489",
+      "workspaceSha256": "b19ab1373a72bee41c25497440d536d101a622d6c60239362452d7e0f13d8489",
       "normalizeNewlines": true
     },
     {
       "path": "workers/inquiry-router/test/contracts.test.ts",
-      "sha256": "91ebef9b32898a0fe7c10b9ace61fbce0ff1a0c4671f96d576cea51f56f098fb",
-      "workspaceSha256": "5f32c5e4bb2572c6fe179406835402e7cf280df848fce61d5390eb42795bf944",
+      "sha256": "df99b1eb248ea003cb15626ccb2b8e4c5987d2f2c6563486cc09d98b71fcee7e",
+      "workspaceSha256": "df99b1eb248ea003cb15626ccb2b8e4c5987d2f2c6563486cc09d98b71fcee7e",
       "normalizeNewlines": true
     },
     {

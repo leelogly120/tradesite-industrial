@@ -1,63 +1,51 @@
 ---
-title: "ARC-F25 Crawler Under-Ceiling Platform — Reference Concept"
-description: "Reference concept with a 25m archived orientation class; final scope, configuration and documents need project confirmation."
+title: "ARC-F25 Crawler Large-Deck Ceiling Work Platform (25m Class)"
+description: "ARC-F25 crawler large-deck platform for ceiling and wall-panel work. 25m catalog height class. Deck load is confirmed on RFQ."
 category: "Crawler Ceiling Platforms"
 specifications:
-  "Archived Height Class": "Archived reference — 25m class; project-specific confirmation required"
-  "Platform Envelope": "Historical reference — large-deck concept; final deck dimensions, extension and guard arrangement require review"
-  "Load Basis": "To be confirmed — crew, tools, materials, point loads and allowable distribution follow the approved load chart"
-  "Travel Mode": "Reference configuration — crawler travel concept; floor route, slope and movement restrictions require approval"
-  "Archived Power Basis": "Historical reference — electric or diesel options were recorded; final supply and controls are destination-specific"
-  "Floor Interface": "To be confirmed — wheel or track loads, support reactions, slab capacity and protection method"
-  "Final Confirmation": "Signed technical schedule, approved drawings and approved load chart"
+  "Archived Height Class": "Catalog reference — 25m class; deck load and transport confirm on RFQ"
+  "Platform load": "Confirm on RFQ"
+  "Transport size": "Confirm on RFQ"
+  "Chassis included": "Confirm on RFQ"
 images:
   - "/images/editorial/large-deck-steel-structure.webp"
   - "/images/editorial/ceiling-platform-underside.webp"
   - "/images/editorial/ceiling-platform-project-data.svg"
 features:
-  - "Zone-by-zone review — height, outreach, underside geometry and task are mapped for every work area"
-  - "Load planning — people, tools, materials and point loads are listed before platform size is selected"
-  - "Floor-route control — slab capacity, joints, openings, slopes, clearances and protection method require review"
-  - "Editorial visual boundary — page images explain work context and do not prove a model-specific platform"
+  - "Large-deck catalog model for under-ceiling and wall-panel access"
+  - "25m catalog height class for RFQ screening"
+  - "Deck load, entry route, and carrier scope confirmed on RFQ"
 faq:
-  - question: "Is ARC-F25 verified for a 25m working height?"
-    answer: "No. 25m is an archived source reference class. The actual platform height, outreach, deck, load distribution and movement limits require project-specific confirmation."
-  - question: "What project data is needed for a large-deck platform review?"
-    answer: "Send reflected ceiling plans, sections, work-zone heights, obstructions, floor route and slab data, openings and joints, task sequence, crew, tools, material loads, power and local access requirements."
+  - question: "Is ARC-F25 a 25m catalog platform I can enquire on?"
+    answer: "Yes. 25m is the catalog height class. Actual platform height, outreach, deck size, load distribution, and movement limits for your building are confirmed in the quotation package."
+  - question: "What project data speeds up a large-deck review?"
+    answer: "Reflected ceiling plans, sections, work-zone heights, obstructions, floor route and slab information, openings, the task sequence, crew and materials, power, and local access rules."
+  - question: "Is this the same as a roof-panel roll former lift?"
+    answer: "No. ARC-F25 is a work platform for ceiling and wall access. To lift a roll former, see ARC-T18, ARC-T25, or ARC-C25."
   - question: "Which documents define the final platform?"
-    answer: "The signed technical schedule, approved drawings, approved load chart, floor-route review and transport or packing data define the final configuration. Website visuals are not model evidence."
+    answer: "The technical schedule, approved drawings, load chart, floor-route review, and transport or packing data for the agreed arrangement."
 relatedProducts:
   - "arc-f20-crawler-ceiling-platform"
   - "arc-f31-crawler-ceiling-platform"
-  - "arc-f35-crawler-ceiling-platform"
+  - "arc-c25-crawler-roll-forming-lift"
 date: 2026-07-25
 draft: false
 ---
 
-## Use the 25m reference concept to expose missing access data
+## Enquire on a large-deck ceiling platform, not a former lift
 
-ARC-F25 is a 25m reference concept, not an exact-model offer. Its purpose is to test whether the buyer has enough building, access, floor, and task information to continue a higher-zone platform discussion. ARCLIFT works as a technical selection and supply partner and makes no deck, load, travel, power, or suitability claim for this concept.
+ARC-F25 is the 25m catalog model for buyers who need a broad working deck under a ceiling or along a wall. Warehouse, stadium, and terminal jobs belong in this conversation when a basket is too small for the crew and materials. If the job is raising a roll former, leave this page and open a truck or crawler forming-lift model instead.
 
-Start with zones around trusses, services, walls, and restricted approaches. If those zones cannot be drawn with their access and task basis, the concept should remain unresolved.
+## Building inputs for the deck quote
 
-## Separate the access envelope from the height label
+Send clear height, obstructions, the indoor access path, floor or ground bearing, and the deck, crew, and tool basis, plus rescue and local rules. Add the destination, whether the carrier is included, and the timing. Deck load and the entry route stay on the RFQ.
 
-For this 25m concept, the configuration may change when floor or ground bearing evidence, indoor access through doors and ramps, clear height, obstructions, the deck, crew, and tool basis, or rescue and local rules remain open. Include aisle widths, turns, slab joints, openings, finishes, underside offsets, materials, and handling aids.
+The configuration may change when slab data, door openings, or the workface sequence differ from the first sketch. This large-deck catalog model may not fit if the building entry or the floor route cannot accept the proposed deck.
 
-Inputs for concept screening:
+The signed technical schedule and approved drawings control the final configuration.
 
-- Floor or ground bearing basis, slab records, openings, and protection limits
-- Indoor access route with doors, turns, ramps, and staging constraints
-- Clear height, required position, wall offset, and obstructions for each zone
-- Deck, crew, and tool basis, including materials and point-load assumptions
-- Rescue and local rules, exclusion zones, task sequence, and review owners
+ARCLIFT acts as an integrated equipment supplier. Ask ARCLIFT to review the ceiling workface before anyone reads the 25m label as a finished platform.
 
-## Stop if the floor-to-zone path is not defensible
+**Image disclosure:** Representative editorial image — not model-specific evidence. The **AI-assisted editorial composite** shows a large-deck context beneath steelwork, not a verified ARC-F25 rating plate.
 
-This concept may not fit if the indoor route is too restricted for any reviewed arrangement, floor evidence is absent, task loads cannot be bounded, or rescue planning does not cover the work zones. A 25m archive label cannot fill those gaps.
-
-## Keep the request at concept-review level
-
-The signed technical schedule and approved drawings control the final configuration. Any approved load chart, floor-route review, and packing data must be issued for the eventual arrangement. Ask ARCLIFT to review the missing-input list as an integrated equipment supplier, not to confirm ARC-F25 from this page.
-
-**Image disclosure:** Representative editorial image — not model-specific evidence. Each raster is an **AI-assisted editorial composite**; with the input diagram, they explain platform planning only and are not ARC-F25 evidence.
+Request an ARC-F25 quote on the contact form or WhatsApp +86 15515922444. sales@arclifteq.com is the TODO company address until that inbox is live.

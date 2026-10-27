@@ -1,9 +1,9 @@
 ---
-title: "ARC-C32 Crawler Roll Forming Lift — Archived Reference"
-description: "ARC-C32 archived 30–32m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
+title: "ARC-C32 Crawler Roll Forming Lift — 30–32m Catalog Model"
+description: "ARC-C32 crawler catalog reference for the 30–32m class. Load, transport, and documents are confirmed on RFQ."
 category: "Crawler Roll Forming Lifts"
 specifications:
-  "Archived Height Class": "Archived reference — 30–32m class; project-specific confirmation required"
+  "Archived Height Class": "Catalog reference — confirm on RFQ; 30–32m class; project-specific confirmation required"
   "Archived Payload Class": "Historical reference — 8t class; final allowable load follows the approved load chart"
   "Archived Sheet Thickness": "Historical reference — 0.3–1.0mm; final material, profile, yield and tooling require confirmation"
   "Archived Power Basis": "Historical reference — 380V-class supply; final voltage, frequency and phase are destination-specific"

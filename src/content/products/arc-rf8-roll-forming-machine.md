@@ -1,63 +1,51 @@
 ---
-title: "ARC-RF8 Roll Forming Line — Archived Reference"
-description: "ARC-RF8 covers a 0.3–1.0mm archived reference sheet class. Profile, material, tooling, power and interfaces require project-specific confirmation."
+title: "ARC-RF8 Roof Panel / Standing Seam Roll Forming Line"
+description: "ARC-RF8 roll forming line for roof panels and standing seam. Sheet class 0.3–1.0mm is a catalog reference. Confirm mass on RFQ."
 category: "Roll Forming Machines"
 specifications:
-  "Archived Sheet Thickness": "Archived reference — 0.3–1.0mm class; project-specific confirmation required"
-  "Profile Basis": "Historical reference — standing-seam and roof-panel concepts; final tooling follows the approved profile drawing"
-  "Archived Power Basis": "Historical reference — 380V-class supply; final voltage, frequency, phase and controls are destination-specific"
-  "Material Boundary": "To be confirmed — grade, yield, coating, width, thickness tolerance and surface protection"
-  "Line Interface": "Reference configuration — footprint, mass, feed height, direction, shear, run-out and lift integration require review"
-  "Acceptance Basis": "To be confirmed — sample material, inspection method, tolerances and signed acceptance protocol"
-  "Final Confirmation": "Signed technical schedule, approved drawings and signed tooling proposal"
+  "Archived Sheet Thickness": "Catalog reference — 0.3–1.0mm sheet class; machine mass and transport confirm on RFQ"
+  "Machine mass": "Confirm on RFQ"
+  "Transport size": "Confirm on RFQ"
+  "Chassis included": "N/A — machine module; see lift models"
 images:
   - "/images/editorial/roll-forming-input-map.svg"
   - "/images/editorial/roof-level-workflow.svg"
+  - "/images/editorial/crawler-truck-selection-matrix.svg"
 features:
-  - "Profile-first review — tooling starts from a controlled drawing, critical dimensions and approved sample material"
-  - "Material boundary — grade, yield, coating and tolerance are checked with thickness rather than treated as one number"
-  - "Interface control — footprint, mass, power, feed direction, shear and run-out are reviewed with the selected support system"
-  - "Editorial visual boundary — diagrams explain inputs and workflow and do not prove a supplied machine or output"
+  - "Catalog roll forming line for roof panels and standing-seam profiles"
+  - "0.3–1.0mm sheet class is a catalog reference, not a profile guarantee"
+  - "Mass, power, tooling, and lift interface confirmed on RFQ"
 faq:
-  - question: "Does the archived 0.3–1.0mm range apply to every profile and material?"
-    answer: "No. It is an archived source reference class. Feasibility depends on profile geometry, material grade and yield, coating, width, thickness tolerance, tooling, drive and acceptance criteria."
-  - question: "What is needed for a tooling proposal?"
-    answer: "Provide the controlled profile drawing, critical dimensions and tolerances, material specification, sample coil or strip, surface requirements, target lengths, cut method, production context and acceptance method."
+  - question: "Does the 0.3–1.0mm range apply to every profile?"
+    answer: "It is a catalog sheet class. Feasibility still depends on profile geometry, material grade and yield, coating, width, tolerances, tooling, and acceptance criteria. Confirm those on the RFQ with drawings."
+  - question: "What do you need for a tooling proposal?"
+    answer: "A controlled profile drawing, critical dimensions, a material specification, a sample strip when possible, surface requirements, target lengths, the cut method, and the acceptance method."
+  - question: "Can ARC-RF8 be quoted with a lift platform?"
+    answer: "Yes. Enquire on a combined scope and name both the former and the ARC-T or ARC-C lift so interfaces and loads are reviewed once. Chassis scope stays on the lift model."
   - question: "Which documents define the final line?"
-    answer: "The signed technical schedule, approved drawings, signed tooling proposal, electrical schedule and acceptance protocol define the final configuration. Editorial diagrams are not machine evidence."
+    answer: "The technical schedule, approved drawings, tooling proposal, electrical schedule, and acceptance protocol matched to the approved inputs."
 relatedProducts:
+  - "arc-c17-crawler-roll-forming-lift"
   - "arc-c25-crawler-roll-forming-lift"
   - "arc-t25-truck-mounted-roll-forming-lift"
-  - "arc-t25hq-truck-mounted-roll-forming-lift-40hq"
 date: 2026-07-25
 draft: false
 ---
 
-## Begin with profile, material, and tooling
+## Specify the former with the lift, not as a separate guess
 
-ARC-RF8 is an archived sheet-class reference for deciding whether a roll-forming review has a controlled profile, material, and tooling basis. The 0.3–1.0mm archive range does not confirm any profile, material, output, or power package. ARCLIFT acts as an integrated equipment supplier and can coordinate the selection review from issued inputs.
+ARC-RF8 is the catalog roll forming line for roof panels and standing-seam profiles that will be discussed with a matching ARCLIFT lift. The published sheet class is 0.3–1.0mm as a catalog reference. Profile, material, and tooling still have to be proven from drawings. Machine mass, mounting, output direction, and destination power are confirmed on RFQ.
 
-The approved profile drawing comes first. It should identify critical dimensions, tolerances, seam geometry, interfaces, and the inspection method; a profile name or photograph is not enough.
+## Drawing inputs that make a line quote useful
 
-## Define the material and line boundaries
+Send an approved profile drawing, material, yield, and coating, the thickness range you expect to process, seam and tooling notes, output direction, run-out length, and the power and lift interface. Name the preferred lift model, the destination, and the quantity.
 
-The configuration review changes with the approved profile drawing, material, yield, and coating, thickness range, seam and tooling requirements, output direction, run-out, and power and lift interface. Coil dimensions, feed orientation, cut method, controls, sample material, surface expectations, and acceptance criteria also remain project inputs.
+The configuration may change when the drawing, coating, or panel length does not match the first sheet-class assumption. ARC-RF8 may not fit the job if the profile cannot be tooled from the documents you can release.
 
-Please provide:
+The signed technical schedule and approved drawings control the final configuration.
 
-- Approved profile drawing with controlled revision, dimensions, and tolerances
-- Material, yield, and coating basis plus thickness range and samples
-- Seam and tooling definition, critical interfaces, and inspection method
-- Coil data, feed and output direction, cut method, and panel-length context
-- Run-out area, access, line footprint, support, and control boundaries
-- Power and lift interface, destination electrical basis, and documents
+ARCLIFT acts as an integrated equipment supplier. Ask ARCLIFT to review the profile, material, and tooling package together with the lift interface.
 
-## Do not select a line from the archive range
+**Image disclosure:** Representative editorial image — not model-specific evidence. The editorial diagram explains project inputs only and is not model-specific evidence of an ARC-RF8 line.
 
-The route may not fit if the drawing revision is uncontrolled, material samples are unavailable, tolerances have no acceptance method, run-out is blocked, or support and control interfaces cannot be checked. This page does not promise tooling, formed quality, rate, capacity, or electrical demand.
-
-## Release the technical basis in signed records
-
-The signed technical schedule and approved drawings control the final configuration. The signed tooling proposal, electrical schedule, and acceptance protocol must match the approved inputs. Ask ARCLIFT to review the drawing and interface pack as a technical selection and supply partner, without treating an archive range as a result.
-
-**Image disclosure:** Representative editorial image — not model-specific evidence. Both diagrams are ARCLIFT editorial explanations; they do not prove machine identity, profile compatibility, tooling, output, power, or performance.
+Spec ARC-RF8 with the lift on the contact form or WhatsApp +86 15515922444. sales@arclifteq.com is a TODO placeholder for the company inbox.

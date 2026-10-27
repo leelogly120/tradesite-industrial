@@ -77,7 +77,7 @@ describe('final ARCLIFT review regressions', () => {
     ]);
     expect(list).toMatch(/buildProductView\(product\)/);
     expect(list).toMatch(/<figure class="family-card__photo" data-equipment-photo>[\s\S]*?<img src=\{family\.image\.src\}[\s\S]*?<figcaption>\{family\.image\.caption\}<\/figcaption>/);
-    expect(list).toMatch(/<aside class="family-reference-boundary">[\s\S]*?archived or concept references[\s\S]*?signed technical schedule, approved drawings and applicable load chart[\s\S]*?not individual ARC models\.[\s\S]*?<\/aside>/);
+    expect(list).toMatch(/<aside class="family-reference-boundary">[\s\S]*?catalog references for selection and RFQ[\s\S]*?technical schedule, approved drawings, and applicable load chart[\s\S]*?not individual ARC models\.[\s\S]*?<\/aside>/);
     expect(diagram).toMatch(/<figure[^>]*data-equipment-family=\{family\}[^>]*>[\s\S]*?<figcaption>AI-assisted editorial schematic — not to scale; not model-specific evidence\.<\/figcaption>[\s\S]*?<\/figure>/);
     expect(list).toMatch(/reference\.orientation\.value/);
     expect(list).toMatch(/reference\.confirmationGate/);
@@ -105,13 +105,11 @@ const mutatedHtml = renderCompareRegion(view ? [{ ...view, orientation: { ...vie
     expect(orientationRow).not.toContain('unsafe status fallback');
   });
 
-  it('maps F20 as an archived reference class and F25/F31/F35 as explicit reference concepts', () => {
-    const f20 = buildProductView(product('arc-f20-crawler-ceiling-platform', { 'Archived Height Class': '20m class' }));
-    expect(f20).toMatchObject({ status: 'Archived reference class', orientation: { scope: 'Archived reference only' } });
-    for (const slug of ['arc-f25-crawler-ceiling-platform', 'arc-f31-crawler-ceiling-platform', 'arc-f35-crawler-ceiling-platform']) {
-      const view = buildProductView(product(slug, { 'Archived Height Class': 'concept class' }));
-      expect(view).toMatchObject({ status: 'Reference concept', orientation: { scope: 'Reference concept only' } });
-      expect(view?.scopeStatement).toMatch(/concept/i);
+  it('maps ceiling platforms as catalog models with an RFQ confirmation scope', () => {
+    for (const slug of ['arc-f20-crawler-ceiling-platform', 'arc-f25-crawler-ceiling-platform', 'arc-f31-crawler-ceiling-platform', 'arc-f35-crawler-ceiling-platform']) {
+      const view = buildProductView(product(slug, { 'Archived Height Class': 'catalog class' }));
+      expect(view).toMatchObject({ status: 'Catalog model', orientation: { scope: 'Catalog reference — confirm on RFQ' } });
+      expect(view?.scopeStatement).toMatch(/confirmed on RFQ/i);
       expect(view?.scopeStatement).not.toMatch(/archived reference configuration/i);
     }
   });

@@ -1,31 +1,29 @@
 ---
-title: "ARC-C25 Crawler Roll Forming Lift — Archived Reference"
-description: "ARC-C25 archived 25m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
+title: "ARC-C25 Crawler Roof Panel Roll Former Lift Platform (25m Class)"
+description: "ARC-C25 crawler lift for positioning a roof-panel roll former. 25m catalog height class. Low-bed transport is confirmed on RFQ."
 category: "Crawler Roll Forming Lifts"
 specifications:
-  "Archived Height Class": "Archived reference — 25m class; project-specific confirmation required"
-  "Archived Payload Class": "Historical reference — 8t class; final allowable load follows the approved load chart"
-  "Archived Sheet Thickness": "Historical reference — 0.3–1.0mm; final material, profile, yield and tooling require confirmation"
-  "Archived Power Basis": "Historical reference — 380V-class supply; final voltage, frequency and phase are destination-specific"
-  "Mobility Concept": "Reference configuration — crawler base and support system; final ground pressure, reactions and travel conditions require review"
-  "Forming-Line Interface": "To be confirmed — footprint, mass, feed direction, power, controls and access clearances"
-  "Final Confirmation": "Signed technical schedule, approved drawings and approved load chart"
+  "Archived Height Class": "Catalog reference — 25m class; platform load and transport confirm on RFQ"
+  "Platform load": "Confirm on RFQ"
+  "Transport size": "Confirm on RFQ"
+  "Chassis included": "Confirm on RFQ"
 images:
   - "/images/hero/hero-2.webp"
+  - "/images/editorial/crawler-truck-selection-matrix.svg"
   - "/images/editorial/roof-level-workflow.svg"
-  - "/images/editorial/roll-forming-input-map.svg"
 features:
-  - "Site-data review — selection begins with height, outreach, roof geometry, access route, ground information and weather limits"
-  - "Interface control — the forming line, support structure, power and material path are checked as one project package"
-  - "Document gate — quoted dimensions and operating limits become controlling only in signed project documents"
-  - "Editorial visual boundary — page images explain the equipment family and do not prove this model or its performance"
+  - "Tracked catalog model for moving a roof-panel former between setup pads"
+  - "25m catalog height class for RFQ screening"
+  - "Platform load, low-bed transport size, and carrier scope confirmed on RFQ"
 faq:
-  - question: "Does ARC-C25 currently guarantee a 25m working height?"
-    answer: "No. 25m is an archived source reference class, not a current-model guarantee. The required work height, outreach and configuration must be checked against the project geometry and confirmed in the signed technical schedule and approved drawings."
-  - question: "What must be supplied before a configuration review?"
-    answer: "Send roof plans and sections, required work zones, panel profile and material, coil and forming-line data, ground or support information, access constraints, destination power and local documentation requirements."
-  - question: "Which documents control the final order?"
-    answer: "The signed technical schedule, approved general-arrangement drawings, approved load chart, interface list and project packing data control the final configuration. Website text and editorial visuals do not."
+  - question: "Does ARC-C25 guarantee a 25m working height on every site?"
+    answer: "No. 25m is the catalog height class. Required work height, outreach, and the configuration for your geometry are confirmed in the quotation technical schedule and drawings."
+  - question: "Should I enquire on a truck-mounted model or ARC-C25?"
+    answer: "If public-road travel of a mounted vehicle dominates, start with the ARC-T series. If on-site relocation and ground conditions dominate, start with ARC-C25 and share the position schedule."
+  - question: "What should I send before a configuration review?"
+    answer: "Roof plans, work zones, panel profile, former data, ground or support information, access constraints, and destination power or documentation needs."
+  - question: "Which documents define the order?"
+    answer: "The signed technical schedule, approved drawings, approved load chart, interface list, and packing data for the agreed configuration."
 relatedProducts:
   - "arc-c21-crawler-roll-forming-lift"
   - "arc-c28-crawler-roll-forming-lift"
@@ -34,30 +32,20 @@ date: 2026-07-25
 draft: false
 ---
 
-## Test a mid-range archive-height route against the whole roof plan
+## Choose the 25m crawler catalog model for several setup positions
 
-The ARC-C25 page frames a decision about a mid-range archive-height reference where multiple setup positions may be under consideration. The 25m class is historical orientation, not a current work envelope. ARCLIFT acts as an integrated equipment supplier and can coordinate configuration questions without claiming that this reference resolves the project.
+ARC-C25 is the tracked catalog model for positioning a roof-panel roll former around a worksite when a truck road envelope is secondary to on-site mobility. The 25m catalog height class is the published screen. Ground bearing, low-bed transport, and the former interface are confirmed on RFQ rather than assumed from the model code.
 
-Use the roof plan to compare setup positions, required transfers, and alternative handling routes. A taller archive label does not by itself reduce movements or establish access to a work zone.
+## Site inputs that control a crawler quote
 
-## Review what changes between setup positions
+Bring the access route between pads, ground bearing and support geometry, the work elevation, panel run-out, and weather and rescue controls. Add former mass, coil data if needed, whether a separate carrier is in scope, the destination, and the timeline.
 
-The configuration review changes with the access route, ground bearing conditions, support geometry, work elevation and horizontal demand, panel run-out, and weather and rescue controls. Mark the movement sequence and the forming-line handover for each position so incompatible assumptions are visible early.
+The configuration may change when pad spacing, soft ground, or the outlet datum does not match the first sketch. ARC-C25 may not fit if the crawler route between positions cannot be kept inside the surveyed support area.
 
-Required inputs include:
+The signed technical schedule and approved drawings control the final configuration.
 
-- Access route and setup sequence, including turning and isolation space
-- Ground bearing information for each position and proposed support geometry
-- Work elevation, roof slope, edge distance, and obstruction map
-- Panel run-out, transfer direction, forming-line footprint, and control boundary
-- Weather and rescue controls for travel, setup, and roof handover
+ARCLIFT acts as an integrated equipment supplier. Ask ARCLIFT to review the multiple setup positions before comparing this 25m class with a truck-mounted route.
 
-## Do not force the reference into an incomplete plan
+**Image disclosure:** Representative editorial image — not model-specific evidence. The **AI-assisted editorial composite** shows a roof-level forming context, not a measured ARC-C25 machine.
 
-The route may not fit where position changes cannot be controlled, the ground basis varies without investigation, the panel path crosses obstructions, or support and rescue arrangements have no competent review. ARC-C25 does not confirm allowable loads, material behavior, power, or production results.
-
-## Request only the review the evidence supports
-
-The signed technical schedule and approved drawings control the final configuration. The matching approved load chart, interface schedule, and packing data are also required before an order or site plan can rely on the arrangement. Ask ARCLIFT to review the position schedule and unresolved interfaces as a technical selection and supply partner.
-
-**Image disclosure:** Representative editorial image — not model-specific evidence. The main raster is an **AI-assisted editorial composite**; the two diagrams are planning aids and do not establish ARC-C25 configuration or outcome.
+Enquire on ARC-C25 through the contact form or WhatsApp +86 15515922444. sales@arclifteq.com remains a TODO company-inbox placeholder.

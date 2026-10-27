@@ -59,9 +59,9 @@ describe('ARCLIFT evidence-safe product selection domain', () => {
   });
 
   it('preserves special reference statuses and the 40HQ planning boundary', () => {
-    expect(getProductReference('arc-t25hq-truck-mounted-roll-forming-lift-40hq')).toMatchObject({ status: 'Planning route', statusNote: '40HQ planning route only' });
-    for (const model of ['ARC-F25', 'ARC-F31', 'ARC-F35']) {
-      expect(PRODUCT_REFERENCES.find(reference => reference.model === model)?.status).toBe('Reference concept');
+    expect(getProductReference('arc-t25hq-truck-mounted-roll-forming-lift-40hq')).toMatchObject({ status: 'Catalog model — packing route', statusNote: '40HQ packing route — confirm on RFQ' });
+    for (const model of ['ARC-F20', 'ARC-F25', 'ARC-F31', 'ARC-F35']) {
+      expect(PRODUCT_REFERENCES.find(reference => reference.model === model)?.status).toBe('Catalog model');
     }
   });
 
@@ -72,10 +72,10 @@ describe('ARCLIFT evidence-safe product selection domain', () => {
     const ceiling = buildProductView(product('arc-f25-crawler-ceiling-platform', { 'Archived Height Class': '25m class', 'Load Basis': 'unsafe payload', 'Archived Power Basis': 'unsafe power' }));
     const rollFormer = buildProductView(product('arc-rf8-roll-forming-machine', { 'Archived Sheet Thickness': '0.3–1.0mm', 'Archived Power Basis': '380V-class' }));
 
-    expect(crawler.orientation).toEqual({ sourceKey: 'Archived Height Class', label: 'Archived height', scope: 'Archived reference only', value: '17m class' });
-    expect(truck.orientation).toEqual({ sourceKey: 'Archived Height Class', label: 'Archived height', scope: 'Archived reference only', value: '12m class' });
-    expect(ceiling.orientation).toEqual({ sourceKey: 'Archived Height Class', label: 'Reference height', scope: 'Reference concept only', value: '25m class' });
-    expect(rollFormer.orientation).toEqual({ sourceKey: 'Archived Sheet Thickness', label: 'Archived sheet class', scope: 'Archived reference only', value: '0.3–1.0mm' });
+    expect(crawler.orientation).toEqual({ sourceKey: 'Archived Height Class', label: 'Catalog height class', scope: 'Catalog reference — confirm on RFQ', value: '17m class' });
+    expect(truck.orientation).toEqual({ sourceKey: 'Archived Height Class', label: 'Catalog height class', scope: 'Catalog reference — confirm on RFQ', value: '12m class' });
+    expect(ceiling.orientation).toEqual({ sourceKey: 'Archived Height Class', label: 'Catalog height class', scope: 'Catalog reference — confirm on RFQ', value: '25m class' });
+    expect(rollFormer.orientation).toEqual({ sourceKey: 'Archived Sheet Thickness', label: 'Catalog sheet class', scope: 'Catalog reference — confirm on RFQ', value: '0.3–1.0mm' });
     for (const view of [crawler, truck, ceiling, rollFormer]) expect(JSON.stringify(view.orientation)).not.toMatch(/Payload|Power/);
     for (const view of [crawler, truck, ceiling]) expect(JSON.stringify(view.orientation)).not.toMatch(/Thickness/);
   });
@@ -123,9 +123,9 @@ describe('ARCLIFT family-first product selector', () => {
 
   it('gives buyers project inputs and exposes the evidence boundary through visible family and reference content', () => {
     expect(productListSource).toMatch(/Prepare these inputs/);
-    expect(productListSource).toContain('work height and working area, forming-machine or deck task, site access, support conditions and destination');
-    expect(productListSource).toContain('signed technical schedule, approved drawings and applicable load chart');
-    expect(productListSource).toContain('archived or concept references');
+    expect(productListSource).toContain('building or work height, panel profile, machine mass, coil data, site access, chassis included yes or no, destination, and timeline');
+    expect(productListSource).toContain('technical schedule, approved drawings, and applicable load chart');
+    expect(productListSource).toContain('catalog references for selection and RFQ');
     expect(productListSource).toContain('Photographs show equipment families and working contexts, not individual ARC models');
     expect(productListSource).toMatch(/reference\.status/);
     expect(productListSource).toMatch(/reference\.orientation\.value/);
@@ -235,13 +235,13 @@ describe('ARCLIFT evidence-safe comparison page', () => {
       model: 'ARC-F20',
       familyId: 'crawler-ceiling-platforms',
       familyName: 'Crawler Ceiling Platforms',
-      status: 'Archived reference class',
-      statusNote: 'Project-specific confirmation required',
-      scopeStatement: 'This archived reference class provides orientation for an early project discussion only.',
+      status: 'Catalog model',
+      statusNote: 'Catalog reference — confirm on RFQ',
+      scopeStatement: 'This catalog model is a selection reference for RFQ. Platform load, transport size, and chassis inclusion are confirmed on RFQ.',
       buyerQuestion: 'What project data is needed before configuration review?',
       orientation: {
-        label: 'Archived height',
-        scope: 'Archived reference only',
+        label: 'Catalog height class',
+        scope: 'Catalog reference — confirm on RFQ',
         value: 'Archived reference – 20m class',
       },
       confirmationGate: 'Signed technical schedule, approved drawings and approved load chart',
@@ -259,11 +259,11 @@ describe('ARCLIFT evidence-safe comparison page', () => {
     ].filter(Boolean);
     const html = renderCompareRegion?.(views) ?? '';
 
-    expect(html).toContain('<caption>Archived references and project-review boundaries</caption>');
+    expect(html).toContain('<caption>Catalog models and project-review boundaries</caption>');
     expect(html).toMatch(/<th scope="col">Review field<\/th>/);
     expect(html).toMatch(/<th scope="row"[^>]*>Family<\/th>/);
     expect(html).toContain('data-compare-field="orientation"');
-    expect(html).toContain('Archived height');
+    expect(html).toContain('Catalog height class');
     for (const slug of ['arc-f20-crawler-ceiling-platform', 'arc-f25-crawler-ceiling-platform', 'arc-f31-crawler-ceiling-platform', 'arc-f35-crawler-ceiling-platform']) {
       expect(html).toContain(`href="/products/${slug}/"`);
     }

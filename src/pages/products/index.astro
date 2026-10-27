@@ -21,22 +21,22 @@ const familySections = [...EQUIPMENT_CATALOG, RELATED_FORMING_EQUIPMENT].map(equ
   quoteUrl: `/contact/?product=${equipment.id === 'roll-forming-machines' ? 'ARC-RF8' : equipment.id}&request=quote`,
 }));
 const itemListSchema = {
-  '@context': 'https://schema.org', '@type': 'ItemList', name: 'ARCLIFT equipment reference index',
+  '@context': 'https://schema.org', '@type': 'ItemList', name: 'ARCLIFT catalog model index',
   itemListElement: PRODUCT_REFERENCES.map((reference, position) => ({
     '@type': 'ListItem', position: position + 1,
-    item: { '@type': 'WebPage', name: `${reference.model} reference page`, url: new URL(`/products/${reference.slug}/`, Astro.url).href },
+    item: { '@type': 'WebPage', name: `${reference.model} catalog page`, url: new URL(`/products/${reference.slug}/`, Astro.url).href },
   })),
 };
 ---
 
-<BaseLayout title="Truck & Crawler Roll-Forming Lifts | ARCLIFT Equipment" description="Explore truck and crawler roof-forming lifts, large-deck crawler platforms and truck-mounted work platforms. Compare equipment references and request a project quote." transparentNav={false}>
+<BaseLayout title="Roof Panel Roll Former Lift Platforms — Truck & Crawler" description="Compare ARCLIFT truck-mounted and crawler roof-panel roll former lift platforms and large-deck work platforms. Height-class catalog references with an RFQ path." transparentNav={false}>
   <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
   <section class="catalog-intro catalog-shell">
     <div class="catalog-intro__copy">
       <p class="eyebrow">ARCLIFT equipment</p>
-      <h1>Roof-forming lifts<br />and large work platforms.</h1>
-      <p>Raise the forming machine for roof-panel production, or position a working deck for installation. Find the equipment route for your project.</p>
-      <a class="catalog-link" href="/contact/?request=advice">Get help choosing equipment →</a>
+      <h1>Roof panel roll former lifts<br />and large work platforms.</h1>
+      <p>Raise a compatible roof-panel or standing-seam roll former for roof-level production, or position a large working deck for ceiling and wall installation. Pick a height class below, then request a quote with your site and machine data.</p>
+      <a class="catalog-link" href="/contact/?request=quote">Request a quote →</a>
     </div>
     <figure class="catalog-intro__photo" data-catalog-photo>
       <img src="/images/equipment/coil-real-handling.webp" width="593" height="411" alt="Elevated roof-forming equipment beside a steel-frame building, with sheet output extending to the right" fetchpriority="high" />
@@ -52,8 +52,8 @@ const itemListSchema = {
   </section>
   <div id="families" class="catalog-shell families">
     <aside class="family-reference-boundary">
-      <strong>About the model references</strong>
-      <p>Model codes and numerical classes below are archived or concept references for an initial discussion. Current specifications and options are confirmed in the signed technical schedule, approved drawings and applicable load chart. Photographs show equipment families and working contexts, not individual ARC models.</p>
+      <strong>About these catalog models</strong>
+      <p>Model codes and height classes below are catalog references for selection and RFQ. They describe equipment families ARCLIFT supplies. Platform load, transport size, and chassis inclusion are confirmed in the quotation package (technical schedule, approved drawings, and applicable load chart). Photographs show equipment families and working contexts, not individual ARC models.</p>
     </aside>
     {familySections.map((family, index) => (
       <section class:list={['family-section', { 'family-section--related': index === 4 }]} id={family.id}>
@@ -83,14 +83,14 @@ const itemListSchema = {
             ))}
           </div>
         ) : (
-          <p class="configuration-note">Discuss the working-deck layout, truck chassis and installation task together. This configuration route is quoted around the project; it has no separate ARC model reference in this catalogue.</p>
+          <p class="configuration-note">Discuss deck layout, truck chassis, and the installation task together. Quoted per project. This route has no separate ARC model reference in the catalogue.</p>
         )}
       </section>
     ))}
   </div>
   <section id="product-inputs" class="catalog-shell inputs">
-    <div><p class="eyebrow">Start a useful conversation</p><h2>Prepare these inputs</h2><p>Send the work height and working area, forming-machine or deck task, site access, support conditions and destination. We use these details to define the equipment and supply scope.</p></div>
-    <a class="catalog-button" href="/contact/?request=advice">Discuss your project →</a>
+    <div><p class="eyebrow">Start a useful conversation</p><h2>Prepare these inputs</h2><p>Send the eight RFQ inputs: building or work height, panel profile, machine mass, coil data, site access, chassis included yes or no, destination, and timeline. We use these details to define the equipment and supply scope.</p></div>
+    <a class="catalog-button" href="/contact/?request=quote">Request a quote →</a>
   </section>
   <script>
     const compareItems = Array.from(document.querySelectorAll<HTMLInputElement>('[data-compare-item]'));

@@ -10,7 +10,7 @@ const PRODUCT_VISUAL_DISCLOSURE = `${AI_ASSISTED_VISUAL}. ${DISCLOSURE}`;
 const COMPARE_VISUAL_DISCLOSURE = `${AI_ASSISTED_COMPOSITE}. ${DISCLOSURE}`;
 const SCHEMATIC_DISCLOSURE = 'AI-assisted editorial schematic — not to scale; not model-specific evidence.';
 const COMPACT_REFERENCE_BOUNDARY = 'Editorial planning visual — not model-specific evidence. Card values are archived orientation or reference-concept records only. Signed technical schedules, approved drawings and approved load charts control configuration and project suitability.';
-const PHOTOGRAPH_REFERENCE_BOUNDARY = 'Model codes and numerical classes below are archived or concept references for an initial discussion. Current specifications and options are confirmed in the signed technical schedule, approved drawings and applicable load chart. Photographs show equipment families and working contexts, not individual ARC models.';
+const PHOTOGRAPH_REFERENCE_BOUNDARY = 'Model codes and height classes below are catalog references for selection and RFQ. They describe equipment families ARCLIFT supplies. Platform load, transport size, and chassis inclusion are confirmed in the quotation package (technical schedule, approved drawings, and applicable load chart). Photographs show equipment families and working contexts, not individual ARC models.';
 const CATALOG_PHOTOGRAPHS = [
   ['truck-mounted-roll-forming-lifts', 'coil-real-cover.webp'],
   ['crawler-roll-forming-lifts', 'transport-real-stowed.webp'],
@@ -46,9 +46,19 @@ const BASELINE_INDEXABLE_ROUTES = Object.freeze([
   '/products/',
   ...PRODUCT_SLUGS.map(slug => `/products/${slug}/`),
   '/blog/',
-  '/blog/page/2/',
   ...BASELINE_BLOG_SLUGS.map(slug => `/blog/${slug}/`),
 ]);
+const CATALOG_PRODUCT_SCHEMA_ROUTES = new Set([
+  '/products/arc-t18-truck-mounted-roll-forming-lift/',
+  '/products/arc-t25-truck-mounted-roll-forming-lift/',
+  '/products/arc-c25-crawler-roll-forming-lift/',
+  '/products/arc-f25-crawler-ceiling-platform/',
+  '/products/arc-rf8-roll-forming-machine/',
+]);
+
+function isBlogPagination(route) {
+  return /^\/blog\/page\/\d+\/$/.test(route);
+}
 const LEGACY_REDIRECTS = new Map([
   ['fddpt-20m-crawler-ceiling-platform', 'arc-f20-crawler-ceiling-platform'],
   ['fddpt-25m-crawler-ceiling-platform', 'arc-f25-crawler-ceiling-platform'],
@@ -154,6 +164,7 @@ function auditSchemas(route, html, errors) {
       const types = collectSchemaTypes(JSON.parse(match[2]));
       for (const type of types) {
         if (PROHIBITED_SCHEMA_TYPES.has(type)) {
+          if (type === 'Product' && CATALOG_PRODUCT_SCHEMA_ROUTES.has(route)) continue;
           errors.push(`${route} contains prohibited ${type} structured data`);
         }
       }
@@ -264,6 +275,7 @@ export async function auditBuildOutput({
   const requiredRoutes = [...new Set([
     ...BASELINE_INDEXABLE_ROUTES,
     '/compare/',
+    '/blog/page/2/',
     ...requiredBlogSlugs.map(slug => `/blog/${slug}/`),
   ])];
   for (const route of requiredRoutes) {
@@ -279,9 +291,9 @@ export async function auditBuildOutput({
     expectCanonical(route, html, errors, site);
     auditSchemas(route, html, errors);
     const robots = robotsValues(html);
-    if (route === '/compare/') {
+    if (route === '/compare/' || isBlogPagination(route)) {
       if (robots.length !== 1 || robots[0] !== 'noindex,follow') {
-        errors.push('/compare/ must emit exactly one noindex,follow robots directive');
+        errors.push(`${route} must emit exactly one noindex,follow robots directive`);
       }
     } else if (robots.some(value => value.includes('noindex'))) {
       errors.push(`${route} is indexable but emits noindex`);
@@ -405,7 +417,7 @@ export async function auditBuildOutput({
     errors.push(`/compare/ hero must place an adjacent ${AI_ASSISTED_COMPOSITE} disclosure with the exact evidence boundary`);
   }
   if (!/data-compare-region/.test(compareHtml)
-      || !/<caption>Archived references and project-review boundaries<\/caption>/.test(compareHtml)
+      || !/<caption>Catalog models and project-review boundaries<\/caption>/.test(compareHtml)
       || !/<tbody>[\s\S]*?<td>[^<]+<\/td>[\s\S]*?<\/tbody>/.test(compareHtml)) {
     errors.push('/compare/ must contain a non-empty static comparison table');
   }
@@ -451,14 +463,18 @@ export async function auditBuildOutput({
   const sitemapUrls = new Set((await Promise.all(sitemapFiles.map(file => readFile(file, 'utf8')))).flatMap(parseSitemapUrls));
   if (sitemapFiles.length === 0) errors.push('missing generated sitemap shard');
   if (sitemapUrls.has(`${site}/compare/`)) errors.push('/compare/ is noindex and must not remain in the sitemap');
+  for (const url of sitemapUrls) {
+    if (/\/blog\/page\/\d+\/$/.test(new URL(url).pathname)) {
+      errors.push(`${url} is a noindex blog pagination route and must not remain in the sitemap`);
+    }
+  }
   const requiredBlogSitemapRoutes = [
-    '/blog/page/2/',
     ...BASELINE_BLOG_SLUGS.map(slug => `/blog/${slug}/`),
   ];
   for (const route of requiredBlogSitemapRoutes) {
     if (!sitemapUrls.has(`${site}${route}`)) errors.push(`sitemap is missing required baseline blog route ${site}${route}`);
   }
-  const indexableRoutes = contentPages.map(([route]) => route).filter(route => route !== '/compare/');
+  const indexableRoutes = contentPages.map(([route]) => route).filter(route => route !== '/compare/' && !isBlogPagination(route));
   const expectedSitemapUrls = new Set(indexableRoutes.map(route => `${site}${route}`));
   for (const url of expectedSitemapUrls) {
     if (!sitemapUrls.has(url)) errors.push(`sitemap is missing indexable canonical ${url}`);

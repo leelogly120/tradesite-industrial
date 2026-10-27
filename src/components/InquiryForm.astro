@@ -136,9 +136,49 @@ const countries = [
           <input id="company" name="company" maxlength="160" autocomplete="organization" placeholder="Your company name" />
           <span class="field-error" data-error-for="company"></span>
         </div>
+        <fieldset class="rfq-fields">
+          <legend>Eight RFQ inputs</legend>
+          <div class="fg">
+            <label for="work_height_m">Building / work height &amp; roof outlet datum</label>
+            <input id="work_height_m" name="work_height_m" maxlength="200" placeholder="Eave height, outlet height, or datum" />
+          </div>
+          <div class="fg">
+            <label for="panel_profile">Panel profile &amp; former (if known)</label>
+            <input id="panel_profile" name="panel_profile" maxlength="200" placeholder="Standing seam, trapezoidal, or drawing ref" />
+          </div>
+          <div class="fg">
+            <label for="machine_mass">Machine mass &amp; mounting preference</label>
+            <input id="machine_mass" name="machine_mass" maxlength="200" placeholder="Tons or kg if known; otherwise unknown" />
+          </div>
+          <div class="fg">
+            <label for="coil_data">Coil weight / width (if needed)</label>
+            <input id="coil_data" name="coil_data" maxlength="200" placeholder="Skip if no coil handling" />
+          </div>
+          <div class="fg">
+            <label for="site_access">Site access (gate, turning, setup space)</label>
+            <textarea id="site_access" name="site_access" maxlength="2000" placeholder="Gate height, turning, and setup space"></textarea>
+          </div>
+          <div class="fg">
+            <label for="chassis_included">Chassis / carrier included?</label>
+            <select id="chassis_included" name="chassis_included">
+              <option value="">Select...</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="unsure">Unsure</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="destination">Destination country / port</label>
+            <input id="destination" name="destination" maxlength="200" placeholder="Country and port" />
+          </div>
+          <div class="fg">
+            <label for="timeline_qty">Timeline &amp; quantity</label>
+            <input id="timeline_qty" name="timeline_qty" maxlength="200" placeholder="When and how many" />
+          </div>
+        </fieldset>
         <div class="fg">
           <label for="message">Message</label>
-          <textarea id="message" name="message" maxlength="5000" placeholder="A few details are enough to start: your application, destination or a question."></textarea>
+          <textarea id="message" name="message" maxlength="5000" placeholder="Anything else that should travel with the eight inputs."></textarea>
           <span class="field-error" data-error-for="message"></span>
         </div>
       </div>
@@ -268,7 +308,7 @@ const countries = [
   const query = new URLSearchParams(window.location.search);
   const model = form?.querySelector<HTMLSelectElement>('#model');
   const pageModel = model?.value || '';
-  const queryProduct = query.get('product') || query.get('family') || '';
+  const queryProduct = query.get('model') || query.get('product') || query.get('family') || '';
   const matchingModel = model && [...model.options].find(option => option.value.toLowerCase() === queryProduct.toLowerCase());
   if (matchingModel && model) {
     model.value = matchingModel.value;
@@ -366,7 +406,12 @@ const countries = [
       updateRequestHelp();
       if (status) {
         status.setAttribute('role', 'status');
-        status.textContent = 'Thank you. Your request was sent. We will reply using your contact details.';
+        status.textContent = 'Thanks — we received your RFQ. We reply on WhatsApp or email with the next document checklist. Final specifications are confirmed in the quotation package.';
+        const leadModel = String(payload.model || payload.product || '');
+        const analyticsWindow = window as Window & { dataLayer?: unknown[]; gtag?: (...args: unknown[]) => void };
+        analyticsWindow.dataLayer = analyticsWindow.dataLayer || [];
+        analyticsWindow.dataLayer.push({ event: 'rfq_submit', model: leadModel });
+        analyticsWindow.gtag?.('event', 'generate_lead', { model: leadModel });
       }
     } catch {
       if (status) {
@@ -443,6 +488,8 @@ const countries = [
 
   form[data-form-variant='contact'] .submit:hover { background: #20566f; }
   form[data-form-variant='contact'] .submit:disabled { opacity: .65; cursor: wait; }
+  form[data-form-variant='contact'] .rfq-fields { margin: 8px 0 20px; padding: 16px 16px 4px; border: 1px solid #c4d0d7; }
+  form[data-form-variant='contact'] .rfq-fields legend { padding: 0 6px; color: #123b50; font-weight: 700; }
   form[data-form-variant='contact'] label { display: block; margin-bottom: 6px; font-weight: 650; color: #273c47; }
   form[data-form-variant='contact'] .req { color: #123b50; }
   .field-help { margin: 7px 0 0; color: #526570; font-size: .9rem; line-height: 1.5; }

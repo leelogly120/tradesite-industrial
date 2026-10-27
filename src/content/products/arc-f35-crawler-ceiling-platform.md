@@ -1,9 +1,9 @@
 ---
-title: "ARC-F35 Crawler Under-Ceiling Platform — Reference Concept"
-description: "Reference concept with a 35m archived orientation class; final scope, configuration and documents need project confirmation."
+title: "ARC-F35 Crawler Large-Deck Ceiling Work Platform (35m Class)"
+description: "ARC-F35 large-deck catalog reference for the 35m class. Deck load and documents are confirmed on RFQ."
 category: "Crawler Ceiling Platforms"
 specifications:
-  "Archived Height Class": "Archived reference — 35m class; project-specific confirmation required"
+  "Archived Height Class": "Catalog reference — confirm on RFQ; 35m class; project-specific confirmation required"
   "Platform Envelope": "Historical reference — large-deck concept; final deck dimensions, extension and guard arrangement require review"
   "Load Basis": "To be confirmed — crew, tools, materials, point loads and allowable distribution follow the approved load chart"
   "Travel Mode": "Reference configuration — crawler travel concept; floor route, slope and movement restrictions require approval"

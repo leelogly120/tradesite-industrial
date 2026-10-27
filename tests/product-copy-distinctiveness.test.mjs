@@ -64,7 +64,7 @@ const references = [
   {
     slug: 'arc-f25-crawler-ceiling-platform',
     family: 'platform',
-    decision: /25m reference concept/i,
+    decision: /25m catalog model/i,
   },
   {
     slug: 'arc-f31-crawler-ceiling-platform',
@@ -347,7 +347,8 @@ describe('Product copy distinctiveness', () => {
     })));
     expect(bySlug['arc-t25hq-truck-mounted-roll-forming-lift-40hq']).toMatch(/40HQ packing-study route only/i);
     expect(bySlug['arc-f20-crawler-ceiling-platform']).toMatch(/archived reference class/i);
-    for (const slug of ['arc-f25-crawler-ceiling-platform', 'arc-f31-crawler-ceiling-platform', 'arc-f35-crawler-ceiling-platform']) {
+    expect(bySlug['arc-f25-crawler-ceiling-platform']).toMatch(/25m catalog model/i);
+    for (const slug of ['arc-f31-crawler-ceiling-platform', 'arc-f35-crawler-ceiling-platform']) {
       expect(bySlug[slug]).toMatch(/reference concept/i);
     }
     for (const [slug, body] of Object.entries(bySlug)) {
