@@ -1,9 +1,9 @@
 ---
-title: "ARC-C21 Crawler Roll Forming Lift — Archived Reference"
-description: "ARC-C21 archived 21m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
+title: "ARC-C21 Crawler Roll Forming Lift — 21m Catalog Model"
+description: "ARC-C21 crawler catalog reference for the 21m class. Load, transport, and documents are confirmed on RFQ."
 category: "Crawler Roll Forming Lifts"
 specifications:
-  "Archived Height Class": "Archived reference — 21m class; project-specific confirmation required"
+  "Archived Height Class": "Catalog reference — confirm on RFQ; 21m class; project-specific confirmation required"
   "Archived Payload Class": "Historical reference — 8t class; final allowable load follows the approved load chart"
   "Archived Sheet Thickness": "Historical reference — 0.3–1.0mm; final material, profile, yield and tooling require confirmation"
   "Archived Power Basis": "Historical reference — 380V-class supply; final voltage, frequency and phase are destination-specific"

@@ -10,147 +10,98 @@ coverCaption: "Reference photograph of crawler equipment on a separate carrier. 
 draft: false
 ---
 
-Buying or renting a roll-forming lift starts with the equipment needed for the roofing work and the period during which it must be available. A purchased asset creates continuing ownership obligations. A hire proposal creates a defined period, equipment scope and return boundary to examine. Compare actual available proposals against the same project need before treating either route as the economical choice.
-
-The machine carries a compatible roof-panel roll former near the roof receiving level. A hire listing for a personnel platform therefore does not answer this request. This guide is a procurement worksheet, with no statement that ARCLIFT offers rental equipment and no assumed rental market, rate or availability.
+Buy when the same crew will repeat the same outlet often enough to own the learning, the transport, and the idle weeks. Rent when one roof's dates are shorter than that learning and you can name what the hire must include. Either way, screen the machine first: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) at 18.5m, [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) at 25m, and [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is part of the job. This page has no hire rate and no purchase price. Both numbers belong in a quotation after the scope is the same on both columns.
 
 **Contents**
 
-- Define the equipment access your projects need
-- Separate ownership and project cost questions
-- Test a hypothetical purchase and hire comparison
-- Obtain proposals before choosing the procurement route
-- FAQ
+- A comparison with no prices
+- What "included" must list
+- When neither column is honest
+- How to ask
 
 <!-- audit-section: buyer-intent -->
-## Define the equipment access your projects need
+## Make the two columns describe the same roof
 
-### Name the actual machine combination
+A rent quote for "a 25m lift" and a buy quote for "a 25m lift plus former plus chassis" are not a comparison. Write the outlet, the former, the base, and the site once. Ask both paths to answer that sheet. The catalog class is only the screen.
 
-Identify the former, lift and relevant feed equipment before comparing commercial routes. An owned forming line with a hired lifting assembly is a different arrangement from hiring an integrated package. The enquiry must identify which combinations need technical review and who supplies their connection. The phrase equipment hire cannot fill an undefined mounting or control boundary.
+### Repeat work versus one roof
+List the roofs you already have, not the roofs you hope to win. If the list is one address and a finish date, start with hire and write the hand-back condition. If the list is a crew that forms every month, start with a purchase and write who maintains it.
 
-If the former has not been selected, ask whether the comparison concerns a line-and-lift package or the lift alone. Keep that choice consistent in purchase and hire enquiries. A seemingly simpler rental proposal may have fewer included objects, while a purchase offer may include items the project already owns. Neither difference establishes value by itself.
-
-### Describe periods of need and uncertainty
-
-Show the project's expected equipment period, any intervening storage period and later jobs that are genuinely identified. Distinguish a committed roofing package from a possible future opportunity. Do not convert a sales forecast into assured utilisation or assume that the equipment can serve overlapping jobs.
-
-For hire, ask what event starts the chargeable period and what event ends it under the actual terms. For ownership, ask where the asset would be kept between known projects and which organization would manage it. This article gives no threshold of days or jobs at which buying becomes preferable. The useful first result is a realistic description of demand for equipment access.
-
-### Keep architecture separate from ownership
-
-Both [crawler](/products/#crawler-roll-forming-lifts) and [truck-mounted forming-lift](/products/#truck-mounted-roll-forming-lifts) architectures need project-specific assessment. The [crawler-versus-truck guide](/blog/crawler-vs-truck-mounted-roll-forming-system/) handles that physical choice. Purchase does not make a base fit a restricted site, and hire does not establish that the actual configuration is suitable.
-
-Compare an identified candidate rather than combining desirable features from several listings. If an alternative machine is proposed for a later project, its separate compatibility and logistics questions remain part of that route.
+### Idle time is an ownership fact
+A purchased lift still needs a yard, a person, and a way to the next site. If you cannot name those, the purchase may be early. Say so in the RFQ. Do not ask the website for a payback month.
 
 ![Folded red crawler equipment standing on extended support legs](/images/equipment/transport-real-stowed.webp)
 
-*Reference photograph of folded crawler equipment with supports deployed. It does not verify a travel-ready state, condition assessment or suitability for another project.*
+*Reference photograph. It does not show a hire fleet.*
 
 <!-- audit-section: conditions -->
-## Separate ownership and project cost questions
+## Buy and rent on the same rows
 
-### Build a worksheet with actual boundaries
-
-The following worksheet has no rates, estimated residual value or assumed saving. Use it to request amounts and conditions from actual providers. Enter a reference to an offer where one exists; leave an unpriced uncertainty visible. This avoids comparing a purchase total with a hire figure that excludes mobilisation, return or the forming machine itself.
-
-| Question category | Ownership route: information to obtain | Hire route: information to obtain | Unpriced or unresolved input |
+| Row | Buy | Rent | What stays open |
 | --- | --- | --- | --- |
-| Equipment access | Purchased assemblies and options | Exact hired assemblies and permitted substitution terms | Former-to-lift combination |
-| Recurring obligations | Storage, records and competent support arrangements | Hire-period responsibilities and included support | Who supplies each activity |
-| Project-specific costs | Delivery, integration and site resources | Mobilisation, integration and collection scope | Local provider response |
-| Idle or interrupted periods | Asset location and ongoing obligations | Treatment under actual hire terms | Changed project window |
-| End of project | Collection, storage or next transfer | Return location, condition and included logistics | Destination handover |
-| Later project | New site review and transfer scope | Availability of an identified later hire proposal | Future task not yet defined |
+| Height screen | ARC-T18 18.5m, ARC-T25 25m, or ARC-C25 25m | The same class, or say the hire fleet's class is unknown | Confirm the offered class on RFQ |
+| Former | ARC-RF8, your own line, or none | Included, excluded, or bring-your-own | Mass and tooling: confirm on RFQ |
+| Chassis or carrier | Included, local, or unsure | Whose truck or low-bed arrives | Confirm on RFQ |
+| Operator and stop rule | Your crew | Hire crew, your crew, or split | Name the names |
+| Transport to the next roof | Yours after purchase | Usually the hire company's move | Measure the route on site |
+| After the last panel | You keep the machine | Hand-back condition | Write the condition before you book |
+| Documents | Signed schedule and drawings | The hire sheet plus the same site sketch | Project-specific either way |
 
-### Investigate continuing ownership responsibilities
+### Ceiling work is a third column
+People and materials under a soffit are not a forming-lift hire. Shortlist [ARC-F25](/products/arc-f25-crawler-ceiling-platform/) and the other ARC-F classes. Mixing that deck into a forming-lift rent makes both quotes vague.
 
-Ask who in the purchasing organization would maintain the asset information, arrange competent service and coordinate future transport. These obligations remain relevant when the equipment is not producing panels. Do not assume that an initial spare package resolves them or that a supplier contact includes local attendance.
-
-The <a href="https://www.hse.gov.uk/work-equipment-machinery/inspection.htm" target="_blank" rel="noopener noreferrer">HSE inspection guidance</a> provides Great Britain risk-based inspection context. It does not supply a universal interval or an ownership cost. Ask the responsible parties which requirements apply to the actual equipment and destination, then obtain the relevant support scope separately.
-
-### Read hire inclusions as a defined service
-
-An actual hire enquiry should ask which machine is proposed, what transport is included, which party supplies the former and what information accompanies the equipment. Clarify whether any attendance, installation support or configuration review is included. A generic promise that equipment is supported does not describe those services.
-
-Read responsibility for interruptions, extensions and return in the actual agreement. This guide does not interpret a contract or prescribe commercial terms. Its purpose is to expose the questions the buyer needs answered before using a hire figure in a comparison. Unknown terms should stay unknown until the provider responds.
-
-<!-- audit-section: evidence-tradeoffs -->
-## Test a hypothetical purchase and hire comparison
-
-### One defined project with uncertain follow-on work
-
-Consider a hypothetical contractor with one awarded roofing project and a second project still awaiting a client decision. A purchase offer identifies a lift for the contractor's former. A possible hire route has not yet identified an available machine. The two routes are at different levels of definition: one is an equipment proposal; the other is a procurement possibility.
-
-The buyer should request an actual hire candidate and common scope before comparing cost. The uncertain second project can be listed as an optional use requiring further review. It should not be counted as assured work supporting ownership. Equally, the absence of a hire reply today is not proof that hiring is impossible; it identifies a question still to investigate.
-
-### Two scheduled jobs with different forming requirements
-
-In another hypothetical comparison, two known jobs use different panel tasks and destinations. A proposed purchase may address the first but leave the second former arrangement unresolved. A hire route could propose different equipment for each job, if actual providers and configurations are identified. Those are distinct commercial and technical routes.
-
-The trade-off is between retaining a known asset and procuring equipment separately for defined tasks, with different support and availability dependencies. No universal recommendation follows. The [multiple-project fit guide](/blog/roll-forming-lift-multiple-project-fleet-fit/) develops the common-asset question without assuming that one machine covers every future job.
+### What you can measure without a price
+Outlet height, gate width, and the pad. Measure those on site. Leave load and hire inclusions as confirm on RFQ.
 
 ![Blue machine module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
 
-*Reference photograph showing a suspended blue machine module. It does not verify its identity, compatibility, attachment points or an approved lifting method.*
+*Reference photograph. It cannot show ownership.*
 
-### Include disruption without inventing its probability
+<!-- audit-section: evidence-tradeoffs -->
+## The trade-off is control against a short calendar
 
-Ask what each route would require if a planned start moves, a site is unavailable or a buyer-owned former remains on another job. Record the contractual question and practical dependency. Do not assign a guessed probability, charge or downtime allowance merely to produce a financial answer.
-
-For ownership, the consequence may concern storage, transport or the asset's conflict with another job. For hire, it may concern actual availability, extension terms or collection. The answer must come from the actual parties. A useful comparison describes the scenario and resulting enquiry, rather than claiming one route inherently avoids delays.
-
-## Obtain proposals before choosing the procurement route
-
-### Ask for the same usable endpoint
-
-Issue a common task brief identifying the former, intended output relationship and location. Request the scope needed to reach that endpoint under purchase and any actual hire alternative. Separate initial delivery from the work required to establish the combined arrangement. Keep the end-of-project collection or storage requirement alongside mobilisation.
-
-The [purchase-price comparison](/blog/roll-forming-lift-price-quotation-cost-scope/) helps reconcile quoted inclusions. It cannot substitute for actual hire terms or a buyer's financial assessment. Once both scopes are known, the buyer and its advisers can examine their actual amounts, obligations and uncertainties using the organization's own criteria.
-
-<!-- audit-section: project-checklist -->
-### Prepare an equipment-access brief
-
-- Identify the former, panel profile and material requirement for each known job.
-- Show the outlet height reference and roof receiving zone for the common task.
-- Describe site access and available ground or floor information.
-- State the destination, transport endpoint and collection or storage need.
-- Identify the chassis or carrier scope to be included in each proposal.
-- Record local power and integration resources already available or still required.
-- Separate committed project periods from optional work and unknown dates.
-
-### Read the answer before choosing a headline
-
-A provider's reply should identify what it can actually propose and the assumptions supporting it. A request for more machine records is not a completed offer; a family brochure is not equipment availability. Keep those distinctions visible to the person making the commercial decision. This prevents a comparison from presenting speculative access as an alternative equivalent to a defined purchase.
-
-<!-- audit-section: limitations-not-fit -->
-### Recognize a procurement comparison that remains premature
-
-This worksheet may not fit a decision based on unidentified rental equipment, undefined project periods or an unresolved former-to-lift pairing. It supplies no rental offering, utilisation threshold, depreciation rule, remaining-value forecast or financial recommendation. Obtain actual offers and appropriate project and commercial advice before deciding.
+Buying gives you the configuration you specified and the duty to store it, move it, and keep the drawings. Hiring can match a short roof and leaves you with whatever the hire sheet actually lists. The constraint is the inclusion list. A cheap-looking hire that excludes the former, the operator, and the low-bed is a different machine from the one in the buy column.
 
 ![Elevated red forming apparatus beside steel framing with coils at ground level](/images/equipment/coil-real-handling.webp)
 
-*Reference photograph of elevated apparatus, building steelwork and ground-level coils. It does not verify active production, current performance or the complete equipment arrangement being offered.*
+*Reference photograph. It is not a measured job.*
+
+<!-- audit-section: limitations-not-fit -->
+## Failure modes
+
+The comparison may not fit when the rent column hides the chassis and the buy column includes it. It may not fit when you need a load chart from a hire desk that has not seen the former. It may not fit when the "one roof" already has a second phase with a different eave. Split the RFQ. It may not fit when someone asks this page for a rate. We will not invent one.
+
+<!-- audit-section: project-checklist -->
+## Same inputs on both paths
+
+- Work height and outreach the roof actually needs
+- Roof slope, geometry, and how many eaves
+- Profile, material, thickness, and whether the former is included
+- Wind stop and who is allowed to call it
+- Ground or floor the supports will sit on
+- Access route into the site and on to the next roof
+- Outrigger or track footprint
+- Destination, even if the hire is domestic
+- Chassis or carrier, and who brings it
+- Transport between yards
+- Container only if the buy path is an import
+- Voltage and who stands at the controls
 
 <!-- audit-section: cta-editorial-note -->
-### Request a defined equipment-supply alternative
+## Ask for two columns, one site sketch
 
-[Ask ARCLIFT for forming-lift supply advice](/contact/?product=crawler-roll-forming-lifts&request=advice) with the known projects and the purchase scope you want investigated. Include height and roof-zone references, former identity, site route, destination and transport assumptions. State if a separately sourced hire alternative is part of your comparison. ARCLIFT's role here is technical selection and supply coordination; no rental service is implied. Final choices require project-specific proposals, and the editorial images do not demonstrate availability or ownership economics.
+Send the work height, the site, the destination, the transport duty, the work zone, and the floor or ground. The signed schedule is project-specific. Editorial images do not set a hire rate or a purchase price.
 
-## FAQ
+Name the screen you want priced both ways: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), and [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is in scope. [Request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. <a href="https://www.hse.gov.uk/work-equipment-machinery/puwer.htm" target="_blank" rel="noopener noreferrer">HSE guidance on work equipment</a> is a Great Britain note on equipment in use. It does not tell you to buy or to rent.
 
-#### Does this guide mean ARCLIFT rents roll-forming lifts?
+#### Can you tell me which is cheaper?
+No. Send the inclusion list. A quotation can price two matching scopes.
 
-No rental offering is established here. It explains how buyers can compare purchase with an actual hire proposal obtained from an identified provider.
+#### Is a rental the same catalog model?
+Only if the hire sheet names it. Otherwise write "class unknown" and do not pretend it is ARC-T25.
 
-#### Is frequent use enough to decide to buy?
+#### What if we might buy later?
+Say that. A hire with a later purchase is a third column, not a reason to blur the first two.
 
-It is only an input. The specific projects, equipment compatibility, availability, support obligations and actual commercial terms still need assessment. There is no universal job-count threshold in this guide.
-
-#### Should possible future work be included?
-
-Show it separately from committed jobs and identify the missing task information. A possible contract should not silently become assured utilisation in the comparison.
-
-#### What if the hired configuration changes?
-
-Identify the substitute and have the relevant machine, site and commercial questions answered for it. A similar category or model name cannot establish equivalent scope or suitability.
+#### Who brings the former?
+Write included, excluded, or ours. That single word changes both quotes.

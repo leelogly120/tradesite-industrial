@@ -1,9 +1,9 @@
 ---
-title: "ARC-T25HQ Transport-Oriented Truck-Mounted Lift — Archived Reference"
-description: "ARC-T25HQ archived 25m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
+title: "ARC-T25HQ Vehicle-Mounted Lift — 40HQ Packing Route"
+description: "ARC-T25HQ catalog reference in the 25m class for a 40HQ packing route. Packing confirmation stays project-specific."
 category: "Truck-Mounted Roll Forming Lifts"
 specifications:
-  "Archived Height Class": "Archived reference — 25m class; project-specific confirmation required"
+  "Archived Height Class": "Catalog reference — confirm on RFQ; 25m class; project-specific confirmation required"
   "Archived Container Route": "Historical reference — 40HQ planning route only; fit is not promised"
   "Packing Inputs": "To be confirmed — module dimensions, module mass, centre of gravity and lifting points"
   "Container Checks": "To be confirmed — container-door clearance, internal envelope, floor limits and lashing plan"

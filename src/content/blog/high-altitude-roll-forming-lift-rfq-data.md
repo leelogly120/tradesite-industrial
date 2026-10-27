@@ -11,168 +11,141 @@ coverCaption: "Reference photograph showing raised equipment, ground-level coils
 draft: false
 ---
 
-A first enquiry for a high-altitude roll-forming lift should tell the supplier which buying conversation to start. You may already own the roof-panel roll former, need a new forming line with the lift, or still be choosing the overall equipment architecture. Each starting point needs different attachments and should produce a different useful first reply.
-
-The lifting system carries a compatible roof-panel roll former near the intended receiving level. It is therefore important to say whether the forming machine is part of this purchase. This guide helps you assemble a short enquiry with the information available now. The [line specification guide](/blog/roll-forming-line-specification-long-span-roof-panels/) develops the complete machine requirement, and the [technical-document guide](/blog/roll-forming-lift-technical-document-package/) explains the information suppliers may return. You do not need to complete those later reviews before asking a clearly bounded first question.
+Send eight lines and a model name. A blank is a better RFQ than a guessed load. Screen [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) at 18.5m, [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) at 25m, [ARC-F25](/products/arc-f25-crawler-ceiling-platform/) only if the job is a deck, and [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is in the same buy. Platform load, chassis, and transport stay confirm on RFQ. The point of the file is to make two suppliers answer the same sheet.
 
 **Contents**
 
-- Define the purchase before naming a model
-- Choose the information path for your project
-- Compare replies against the same scope
-- Send a concise first-pass RFQ
-- FAQ
-- Send the package that matches your starting point
+- The eight lines and the status of each
+- Which purchase you are opening
+- What a useful reply refuses to invent
+- Where to send it
 
 <!-- audit-section: buyer-intent -->
-## Define the purchase before naming a model
+## Eight lines, each with a status
 
-### State the production objective
+Write the line, then write known, measure on site, or confirm on RFQ. Do not fill a status with a number you hope is close.
 
-Describe the intended roof-panel production and the reason for considering an elevated forming machine. Identify the panel requirement and the roof areas involved. A request to lift panels is a different description from a request to lift the roll former; the opening sentence should make the intended equipment task unmistakable.
+### Work height
+The outlet on your section, from the datum you mean. 18.5m and 25m are screens you may cite beside that measurement. They are not a substitute for it.
 
-Then state the decision wanted from the supplier. It may be an initial architecture discussion, a budgetary scope, clarification for a tender or review of a proposed machine combination. These stages require different evidence. A supplier can answer a bounded early question while leaving compatibility, site suitability and final commercial commitments conditional.
+### Panel and coil
+Profile name, drawing revision, thickness, coil width, feed side. If the former is ARC-RF8, the sheet class 0.3–1.0mm is only the catalog screen. Your coil may sit inside it or not. Say which.
 
-### Separate the height references
+### Machine mass
+Known, or unknown. A kilogram taken from a photograph is how a lift gets designed to fiction.
 
-Show the roof receiving point and the ground location under consideration, using a common project reference where available. Distinguish roof level, requested panel-outlet or cutter level and any lift-platform reference. Do not replace all of them with one working-height figure or infer a machine's capability from a model suffix.
+### Chassis line
+Yes, no, or unsure. One clause: included, local builder, or not decided. Repeat the same words in the email and on the form.
 
-If the survey is incomplete, identify which values are estimates and what record will replace them. The first enquiry can still explain the intended relationship. The [roof-zone survey guide](/blog/roof-zone-survey-roll-forming-lift-selection/) provides the detailed follow-up; the RFQ should identify that dependency rather than invent a convenient geometry.
+### Access in one sentence
+Public road, yard, soft ground, or a door. Name the narrowest gate if you know it. If you have not measured the wire, say that. A catalog class cannot discover a gate.
 
-### Distinguish requirements from permitted alternatives
+### Destination and how many
+Country, port, and whether this enquiry is one machine or two. A second machine for a second crew is a different quote from a spare former.
 
-An RFQ can keep the architecture open while fixing the production question. Separate the required result, site constraints and choices that a bidder may propose. The required result could be the identified panel task and roof receiving relationship. A site constraint could be an access boundary awaiting survey confirmation. An open choice could be whether to assess the buyer's existing former or include a new line. Mark the status of each; an unconfirmed constraint is not a fixed equipment specification.
+### Dates you already hold
+Roof dates you already hold are useful. A demand that we invent a manufacture promise is not. Leave that promise off the sheet.
 
-Consider a hypothetical enquiry that permits either crawler or truck-mounted proposals for the same roof zone. Ask for a response to that common task, followed by a separately identified alternative if the bidder proposes another receiving position or a different forming-machine package. The alternative should show which physical relationship changes: arrival route, standing area, feed side, outlet position or destination integration. It should not quietly replace the task used by the other bidders.
-
-This gives the buyer a useful next decision. A reply meeting the stated task with unresolved machine data needs an interface follow-up. A reply depending on a different receiving location needs the project team to consider that location first. Both may deserve investigation, but they answer different questions. Keeping the baseline and alternative visible allows procurement to explore options without making the first quotation's assumptions the project requirements.
-
-### Name the package you want priced
-
-Separate the forming machine, lift, base or vehicle, feed equipment, transport and destination integration in the enquiry. For each, say whether it is requested, already owned or undecided. This makes a lift-only request distinguishable from a request for a proposed line-and-lift package before either supplier spends time preparing a price.
-
-The current [crawler forming-lift](/products/#crawler-roll-forming-lifts) and [truck-mounted forming-lift](/products/#truck-mounted-roll-forming-lifts) catalog routes explain the two base architectures. A product family is a useful reference for the enquiry; it does not settle which chassis, forming machine or local services are included. Name the intended destination so those commercial boundaries can be discussed from the start.
+### Who answers the follow-up
+Name the person and the hour band in their time zone. A file nobody can question is a brochure pointed the wrong way.
 
 ![Blue machine module suspended beside a red lifting structure in a yard](/images/equipment/coil-real-module.webp)
 
-*Reference photograph showing a blue machine module suspended beside a red lifting structure. It does not establish its model, mounting compatibility or inclusion in a proposed supply package.*
+*Reference photograph. It does not identify a model.*
 
 <!-- audit-section: conditions -->
-## Choose the information path for your project
+## Status table you can paste into the form
 
-### Package one: an existing roll former
+| Line | Example of a fair entry | Catalog number you may mention | Status if unknown |
+| --- | --- | --- | --- |
+| Outlet height | Eave on revision C, measured | ARC-T18 18.5m or ARC-T25 / ARC-C25 25m as the screen | Measure on site |
+| Profile | Drawing attached | ARC-RF8 sheet class 0.3–1.0mm | Confirm on RFQ |
+| Former mass | Unknown | None | Confirm on RFQ |
+| Chassis | Local, cab stays | Not a height | Confirm on RFQ |
+| Pad | Slab, covers unmarked | None | Measure on site |
+| Deck instead of former | People under a soffit | ARC-F20 20m, ARC-F25 25m, ARC-F31 31m, ARC-F35 35m | Confirm load on RFQ |
+| 40HQ | Box is the limit | ARC-T25HQ packing route | Packing study, confirm on RFQ |
+| Power | Site cable, voltage unknown | None | Confirm on RFQ |
 
-Send the machine identity and current records first. Useful attachments include its arrangement drawing, available mass and mounting information, electrical documentation and a description of known alterations. Identify the panel and material it is expected to produce for this project. A photograph can help locate an assembly mentioned in the records, but cannot replace the information needed to assess it.
+### Lift only
+You own the former. The RFQ is an interface: mass, mount, coil side, power, and the base.
 
-The useful initial reply is a statement of whether those records support an interface discussion and which missing machine information is needed next. That is a different deliverable from a final compatibility statement. For example, an identifiable machine with an outdated arrangement drawing may need its current assembly clarified before a lift proposal can refer to it reliably. The [mounting-interface guide](/blog/lifted-roll-forming-line-mounting-interface-review/) develops that follow-up.
+### Lift and line
+Put ARC-RF8 and the lift in one message so the mount is reviewed once. Chassis stays on the lift line.
 
-Make the purchase boundary explicit: are you asking for the lift and integration scope around this former, or allowing a separate new-line alternative? Ownership alone does not decide which option should be investigated.
+### Deck, not a former
+If the sentence is about a ceiling crew, stop. A forming-lift RFQ will answer the wrong question.
 
-### Package two: a new forming line and lift
-
-Lead with the required panel profile and actual material basis. Attach the controlling profile drawing if it exists, identify the intended lengths or length range as project requirements, and explain the roof receiving relationship. Say which feed and cutting functions you expect in the proposal and which choices remain open. These inputs let the supplier discuss what the line must make before assigning a machine to the lift.
-
-The useful first reply is a proposed line-and-lift scope, the panel or material clarifications needed, and the basis for a preliminary commercial response. Request identification of the eventual machine-to-lift interface as part of that scope. A generic line price and a separate lift price can still leave their connection outside the purchase.
-
-If the profile has not been agreed, ask for input clarification rather than presenting a similar-looking sample as the final requirement. The supplier can identify the next information needed without the enquiry pretending that tooling has already been specified.
-
-### Package three: an open architecture
-
-When neither the forming machine nor the base architecture has been selected, begin with the task: the panel requirement, roof receiving location, proposed standing areas, access conditions and destination. Distinguish the outlet height sought from roof height and platform height. A marked plan and elevation, with estimates labelled, can communicate more than a preferred model number with no explanation.
-
-Ask which architecture and supply route deserve further investigation, and what additional information would decide between them. The [crawler versus truck guide](/blog/crawler-vs-truck-mounted-roll-forming-system/) explains the broader comparison. The first reply should identify the assumptions behind each route and the next decision for the buyer, such as clarifying the available standing area or deciding who supplies the forming line.
-
-For a truck proposal, also say whether a destination chassis is already selected, is to be sourced locally or remains open. The [chassis sourcing guide](/blog/truck-mounted-lift-destination-chassis-sourcing/) develops that separate purchase. A crawler shown on a transport trailer remains a crawler; the transport photograph does not choose the architecture for you.
+### Two outlets
+If two people disagree, send both numbers and label them. Do not average them.
 
 ![Elevated red equipment beside a building with ground supports and nearby coils](/images/equipment/entry-real-clearance.webp)
 
-*Reference photograph showing elevated equipment and supports beside a building. It does not provide surveyed height, ground capacity or a confirmed arrangement for another site.*
+*Reference photograph. It cannot replace a section.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## Compare replies against the same scope
+## The trade-off is a short file against a wrong machine
 
-### Match the response to the question asked
+A thin RFQ gets more questions or a class label with every load left open. A thick RFQ full of invented numbers is worse, because the quotation will treat fiction as a fact. The constraint is honesty about blanks. Unknown is a value we can plan around.
 
-Request one useful result at the present stage: a missing-record list for an owned former, a proposed scope for a new line, or an architecture discussion for an open project. Ask the supplier to identify the inputs used and the particular decisions still dependent on follow-up information. This is more actionable than a reply that calls the whole project either possible or impossible without explaining why.
+### A reply you can compare
+Ask every supplier to restate the eight lines in the same order. A reply that jumps to a model code without your outlet and your chassis choice is not ready to set beside another reply.
 
-For Great Britain context, <a href="https://www.hse.gov.uk/work-equipment-machinery/are-you.htm" target="_blank" rel="noopener noreferrer">HSE's purchaser and supply-role guidance</a> distinguishes equipment supply responsibilities and accompanying information. It does not classify this proposed package or settle another destination's requirements. Include the destination and intended supply roles so the relevant local review can be identified.
+### Blanks that should stay open
+Bearing, legal axle, and the week a crate might move. Write them as questions. If a seller closes them with an adjective, ask which document they are quoting.
 
-### Use unresolved scope to decide the next step
+### Ugly attachments are welcome
+A phone photo of the eave, a PDF with a revision cloud, and a sketch of the gate are enough to start. Date each file so an older drawing does not win by accident.
 
-| RFQ condition | Useful initial supplier response | Decision still requiring more information |
-| :-- | :-- | :-- |
-| Existing roll former, incomplete drawings | Identify the machine and interface records needed | Compatibility with the proposed lift |
-| New line, provisional profile or material | State the assumptions and tooling inputs required | Final forming-machine specification |
-| Roof relationship based on estimates | Explain the geometry needed for screening | Confirmed outlet and receiving arrangement |
-| Crawler or truck architecture undecided | Compare the different information and supply boundaries | Selection of an actual configuration |
-| Local chassis supply proposed | Identify vehicle and integration responsibilities | Chassis compatibility and destination decisions |
-| Site support review not yet appointed | Identify the equipment inputs that the reviewer will need | Suitability of proposed support locations |
+### A second reader before you send
+Hand the file to someone who did not write it. Ask them to point at the outlet, the former, and the chassis choice without asking you a question. If they cannot, the reviewer in another country cannot either. Fix the sentence. A polite paragraph that hides the datum still hides the datum.
 
-### Read price differences as scope questions
+Write heights in metres and thicknesses in millimetres, and say so once at the top of the file. If a drawing uses feet, convert it yourself and keep the original beside the conversion. Do not ask the supplier to guess which unit won. Name the drawing revision in the same line as the number. Outlet 22 on revision C is a fact. About 22 is a conversation that will come back as a question. If two drawings disagree, send both and say which one the roof contractor is building to.
 
-Consider two hypothetical replies to a short enquiry. One includes a proposed forming line and packing; the other covers only the lift module and assumes a buyer-owned machine. Their prices cannot be compared until those differences are resolved. The same problem occurs when transport, local integration or documentation is included in one response and absent in another.
+A useful reply restates your eight lines, marks each one confirmed or open, and names the document that would close an open line. It does not invent a platform load or a price to make the email feel finished. If a reply offers those without a schedule, treat them as marketing and ask for the line again. You can compare two honest replies. You cannot compare a story with a blank. When you open a catalog model, use the quote link so the model code arrives with the eight lines instead of in a separate thread.
 
-Ask for a scope reconciliation rather than a new headline price alone. Identify what object or service changes, who supplies it and which technical assumptions follow. Do not use a lower total as evidence of equivalent capability or better value when the underlying package differs. The RFQ should make those differences visible before the buyer makes a commitment.
+Add the hour band the contact can be reached, in their own time zone. Say whether a translator is needed. Say whether the roof contractor or the importer is allowed to change the outlet after you send the file. Those three sentences stop a week of crossed emails. They are not a commercial term. If the former is already on a previous roof, say what you want repeated and what you want changed, as facts. The RFQ is a selection file. It is not a place to beat another machine with a claim this website will not make. Attach the coil certificate if you have one, and say if you do not. A missing certificate is a blank. A certificate for a different thickness than the drawing is a conflict, and conflicts should be visible in the first email rather than in the third. Name the port only if you already know it. If the port is a guess, write the country and leave the port confirm on RFQ. Two machines for two crews need two chassis lines even when the height class is the same. Say that in the quantity line so the reply does not assume a spare former on a shared truck.
 
 ![Red crawler equipment on a low-bed carrier with lateral supports visible](/images/equipment/transport-real-carrier.webp)
 
-*Reference photograph showing crawler equipment on a separate low-bed carrier. It does not establish truck-mounted architecture, transport approval or the scope of a destination vehicle supply.*
-
-<!-- audit-section: project-checklist -->
-## Send a concise first-pass RFQ
-
-### Use a short opening that identifies the decision
-
-The following wording is intended to be sent with known facts and explicit unknowns. Choose one buying package and one next response; avoid asking for final compatibility, a fixed price and a complete site design when the enquiry supplies only an approximate roof height.
-
-> We are considering equipment to elevate a compatible roof-panel roll former for [panel task and roof zone]. Our starting package is [our existing former, identity / a new line and lift / an open architecture]. The destination is [place]. The expected receiver is [location or unknown], and the requested outlet reference is [drawing/value or estimated/unknown]. We attach [current machine records or profile/material records or roof/access sketch]. The fixed requirements are [items]; alternatives are permitted for [items]. Please provide [missing machine records needed for screening / proposed line-and-lift supply scope / architecture and supply-route advice]. Please name any assumptions and the next decision we should resolve.
-
-This opening tells the supplier what kind of answer would advance the purchase. If several sites are involved, identify the first site used for the initial response and describe the others as additional requirements. Otherwise the supplier may combine unrelated site facts into a layout that exists nowhere.
-
-### Attach the information available now
-
-- State the panel task, profile and material basis, or identify which of them is still being agreed.
-- Name the existing former and current records, the new-line requirement, or the open machine choice.
-- Show the roof receiver and the outlet height relationship, with estimates labelled.
-- State the preferred crawler or truck architecture, or explain why both are being considered.
-- Give the destination, requested package and the specific response wanted next.
-- Note available ground or floor and access information, with wind and weather responsibilities identified.
-- State available power data and the current chassis, transport and documentation assumptions; mark each unresolved item.
-
-A short attachment note should explain each file's purpose: for example, “current machine arrangement” or “roof sketch with estimated receiver location.” That helps the supplier find the fact that matters rather than treating every photograph as a specification.
-
-### Identify follow-up inputs without delaying the enquiry
-
-The reply may need further information on coil and feed equipment, ground or floor support, wind and weather responsibilities, access routes, power and controls, transport, chassis supply and destination documentation. Say what is already known and what is pending. Naming the missing input lets the supplier explain whether it affects early screening or a later commitment.
-
-For instance, a pending ground review need not prevent discussion of an owned former's documentation. It does prevent that discussion from being treated as confirmation of a particular standing area. Similarly, an unresolved feed package can be a requested part of a new-line proposal, provided it is not silently assumed to be included in the lift price.
+*Reference photograph. It does not prove a truck scope.*
 
 <!-- audit-section: limitations-not-fit -->
-### Recognize when an RFQ cannot support commitment
+## Failure modes
 
-The enquiry may not fit a final offer when it describes only a height and photograph, omits the forming machine or leaves the destination supply boundary undefined. This guide does not select a model, confirm loading, approve a site or establish a price. Missing inputs should narrow the requested response and identify the next review, not disappear into an unqualified promise.
+The RFQ may not fit a catalog model when the height is a wish with no section, when the profile cannot be drawn, when the site cannot be entered by the base you named, or when you need a price by tomorrow and will not send the eight lines. It may not fit when the purchase is a deck and the file still says roll former. Change the model list. Do not hope a salesperson will notice.
 
-## FAQ
+<!-- audit-section: project-checklist -->
+## Copy these into the form
 
-#### Can an enquiry be sent before the survey is complete?
-
-Yes, for a bounded preliminary response when estimates and missing survey records are identified. The supplier should state which geometry and site decisions remain conditional.
-
-#### Should a preferred model be named?
-
-It can be a reference if the reason for considering it is explained. Its code or photograph does not establish height, load, availability or compatibility with the buyer's forming machine.
-
-#### What is the most important first distinction?
-
-Clarify that the equipment is intended to elevate a roll former, then state whether that machine is buyer owned or part of the purchase. This changes the information and supply interfaces immediately.
-
-#### How can quotations be made comparable?
-
-Ask each bidder to use the same panel, machine, site and destination assumptions and to identify included, excluded and buyer-supplied items. Reconcile those boundaries before comparing totals.
+- Work height and outreach to the outlet you marked, beside the catalog class you want screened
+- Roof geometry, slope, and obstructions
+- Profile, material, thickness, coil width, and feed side
+- Wind exposure and the stop rule
+- Ground or floor under the setup
+- Access route and the narrowest gate
+- Outrigger or track footprint, or unknown
+- Destination country and port
+- Chassis or carrier included, local, or unsure
+- Transport or container assumption, stated as a question
+- Voltage and who owns the controls
+- Documents the destination will ask to see
 
 <!-- audit-section: cta-editorial-note -->
-## Send the package that matches your starting point
+## Use the form with the model in the link
 
-[Request forming-lift selection advice](/contact/?product=crawler-roll-forming-lifts&request=advice) using the short opening above. Name whether you own the former, need a new line or are keeping the architecture open; state any truck-mounted alternative in the message. Ask for the one reply that moves your project forward now. ARCLIFT can use the attached machine, panel or site information to coordinate the relevant technical selection and supply discussion.
+Send the work height, the site, the destination, the transport assumption, the work zone, and the floor or ground note. The signed technical schedule is project-specific. Editorial images do not set a price, a load, or a lead time.
 
-Include the outlet height reference, destination and transport assumptions, even if some remain unknown. This editorial template supports the first conversation; the final package depends on the project-specific information established afterward.
+Open the quote link on [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), [ARC-F25](/products/arc-f25-crawler-ceiling-platform/), or [ARC-RF8](/products/arc-rf8-roll-forming-machine/). The same eight lines fit [request a quote](/contact/?request=quote) and WhatsApp +86 15515922444. The <a href="https://www.osha.gov/fall-protection" target="_blank" rel="noopener noreferrer">OSHA fall-protection overview</a> is for your destination reviewer where it applies. It is not a substitute for the eight lines.
+
+#### Do I have to fill every box?
+No. Empty means unknown. Invented numbers are the problem.
+
+#### Can I name the model in the link?
+Yes. Use the quote button on the catalog page so the code arrives with the lines.
+
+#### Will a load chart come back the same day?
+Not from the website. A chart belongs to a configuration. The RFQ is how that configuration gets defined.
+
+#### What if I only know the building height?
+Send it and mark the datum. One true dimension beats six guesses.

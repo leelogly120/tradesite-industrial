@@ -213,7 +213,7 @@ test.describe('comparison orientation', () => {
     await expect(page.locator('.compare-intro > p').filter({ hasText: /C25.*T25.*F20.*RF8/i })).toBeVisible();
 
     await page.goto('/compare/?items=arc-c17-crawler-roll-forming-lift,arc-c21-crawler-roll-forming-lift');
-    const selectedTable = page.getByRole('table', { name: 'Archived references and project-review boundaries' });
+    const selectedTable = page.getByRole('table', { name: 'Catalog models and project-review boundaries' });
     await expect(selectedTable.getByRole('link', { name: 'ARC-C17' })).toBeVisible();
     await expect(selectedTable.getByRole('link', { name: 'ARC-C21' })).toBeVisible();
     await expect(selectedTable.getByRole('link', { name: 'ARC-T25' })).toHaveCount(0);

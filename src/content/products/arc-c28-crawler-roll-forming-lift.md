@@ -1,9 +1,9 @@
 ---
-title: "ARC-C28 Crawler Roll Forming Lift — Archived Reference"
-description: "ARC-C28 archived 28m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
+title: "ARC-C28 Crawler Roll Forming Lift — 28m Catalog Model"
+description: "ARC-C28 crawler catalog reference for the 28m class. Load, transport, and documents are confirmed on RFQ."
 category: "Crawler Roll Forming Lifts"
 specifications:
-  "Archived Height Class": "Archived reference — 28m class; project-specific confirmation required"
+  "Archived Height Class": "Catalog reference — confirm on RFQ; 28m class; project-specific confirmation required"
   "Archived Payload Class": "Historical reference — 8t class; final allowable load follows the approved load chart"
   "Archived Sheet Thickness": "Historical reference — 0.3–1.0mm; final material, profile, yield and tooling require confirmation"
   "Archived Power Basis": "Historical reference — 380V-class supply; final voltage, frequency and phase are destination-specific"

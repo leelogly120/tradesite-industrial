@@ -11,154 +11,107 @@ coverCaption: "Reference photograph of elevated apparatus beside a building; it 
 draft: false
 ---
 
-A roof-level roll-forming lift carries a compatible **roof-panel roll former** close to the planned panel receiving level. The purchase makes sense only when that elevated outlet improves a defined material route. Compare it with a ground-level line by asking where the long panel first appears, how it reaches the roof team and what space each arrangement needs. The result should identify a forming route to investigate, the machine already owned or required, and the outlet-to-receiver relationship that the equipment proposal must address.
+If the roof specification wants one panel from eave to ridge, shortlist a roof-level outlet: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) at the 18.5m catalog class, [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) at the 25m catalog class, with [ARC-RF8](/products/arc-rf8-roll-forming-machine/) when you are also buying the line. If the specification allows a splice, keep the former on the ground and spend the money on the hoist and the seam, not on a taller lift. Panel length is not the catalog height. Load, chassis, and transport stay confirm on RFQ.
 
 **Contents**
 
-- Understand what the lifting system carries
-- Compare where the long panel first appears
-- Test the route against the building
-- Prepare a useful equipment enquiry
-- FAQ
-- Discuss the forming route with ARCLIFT
+- The decision in one table
+- Where the long panel actually fails
+- What to measure before the class label
+- Model shortlist
 
 <!-- audit-section: buyer-intent -->
-## Understand what the lifting system carries
+## Use the height class as a screen, then draw the panel
 
-### Three roles make one forming route
+A long panel is a flexible strip the moment it leaves the shear. The lift only earns its place when that strip can be aimed at the roof without a second bend. Write the panel length schedule next to the outlet height. Do not copy 18.5m or 25m into the length column.
 
-The **line makes the panel**. Its tooling, material and cutting arrangement determine the forming task. The **lift positions the line**. Its equipment platform and lifting structure must match the particular machine. The **project provides material delivery and panel receipt**. Coil supply, emerging-panel support and roof installation need their own defined arrangements. Buying any one part does not silently include the other two.
+### One piece or a seam
+Ask the architect which bays forbid a splice. Those bays set the outlet. The other bays can still be formed lower if the crew will accept two methods on one roof. Say that split in the RFQ so the quote does not assume every panel is the longest one.
 
-This division is useful when reading a quotation. A lift offer may identify the carrying equipment while leaving the roll former to the buyer. A line offer may address the required profile while leaving elevated mounting unresolved. A combined proposal should say where its supply ends on both sides of the machine: at incoming material and at the outgoing panel.
-
-### Start with the former you own or the panel you need
-
-If you already own a roll former, send its actual identification, dimensions, mass information, mounting records and current accessories. Its ability to produce your panel is a useful starting point; elevated compatibility remains a separate question. A similar machine photograph cannot fill gaps in those records.
-
-If you need a new line, begin with the panel profile, material, finish, thickness and lengths. Ask for the forming-machine proposal and lifting arrangement to develop together. The [line specification guide](/blog/roll-forming-line-specification-long-span-roof-panels/) explains how to connect the purchased equipment with the particular assembly proposed for installation.
-
-### The outlet matters more than a headline height
-
-The point where a panel leaves the forming and cutting equipment is not necessarily the supporting platform level. It is also different from the height at which a person can work. A roof eave dimension describes the building, not automatically the required equipment setting. The site and equipment drawings need a common reference before these dimensions can be compared.
-
-Describe the intended receiving location in plan and elevation, including the direction the panel must travel. The [roof-zone survey guide](/blog/roof-zone-survey-roll-forming-lift-selection/) develops that measurement task. It keeps the building coordinates separate from the proposed machine position rather than turning one roof height into a model recommendation.
-
-### Choose a base around the work and transport route
-
-The [crawler roll-forming lift family](/products/#crawler-roll-forming-lifts) combines a tracked base, lifting structure and equipment platform. It is a route to investigate where site positioning and a separate carrier arrangement can be resolved. The [truck-mounted roll-forming lift family](/products/#truck-mounted-roll-forming-lifts) connects equipment positioning with a vehicle-mounted arrangement, including its stabilisers and line layout. Ask what vehicle scope the actual offer includes.
-
-These are forming-machine carriers. The separate work-platform families address installation access with a working deck. A roof-former lift should not be selected as a personnel platform, nor should a deck be assumed interchangeable with the line platform. Choose the application first, then compare crawler and truck proposals against the same forming and receiving task.
+### Former, lift, and the person at the run-out
+Three purchases sit in one sentence: the line makes the profile, the lift holds the line near the eave, and a named person supports the strip. If that third name is missing, the height class will not save the coating.
 
 ![Ground coils beside elevated red forming apparatus and a steel building frame](/images/equipment/coil-real-handling.webp)
 
-*Reference photograph showing ground coils and elevated apparatus near a building frame. It does not establish how material was fed, the permitted load or an approved production method.*
+*Reference photograph. It does not set a feed method.*
 
 <!-- audit-section: conditions -->
-## Compare where the long panel first appears
+## Catalog classes you can put in the comparison
 
-### Ground forming creates a finished-panel handling task
+| Choice | Catalog figure you may cite | Use it for | Leave blank until RFQ or a site measure |
+| --- | --- | --- | --- |
+| ARC-T18 truck lift | 18.5m height class | Vehicle-mounted outlet screen | Platform load, chassis included, folded size: confirm on RFQ |
+| ARC-T25 truck lift | 25m height class | Taller vehicle-mounted screen | Platform load, chassis, road envelope: confirm on RFQ |
+| ARC-C25 crawler lift | 25m height class | Tracked moves between pads on one site | Ground bearing: measure on site. Low-bed arrival: confirm on RFQ |
+| ARC-RF8 line | Sheet class 0.3–1.0mm | Profile family screen for roof and standing seam | Machine mass, power, tooling list: confirm on RFQ |
+| Ground line plus hoist | No lift class | Roofs that allow a splice | Hoist and seam are the roof contractor's method, not a catalog height |
 
-With a ground-level line, the finished panel begins its onward journey at the ground outlet. The project must establish where it is supported, how it changes direction or elevation, and where the roof team receives it. A convenient place for the forming machine may be a poor departure point for a long panel if buildings, traffic or temporary works interrupt the next movement.
+### Outlet datum
+Measure to the point the panel must reach: slab, eave, or ridge. Write which. A catalog class that is taller than the eave is not proof the outlet clears the parapet. Measure the parapet on site.
 
-Ground forming remains a candidate when the line location and subsequent panel-handling arrangement can both be resolved. Keeping the machine on the ground does not, by itself, resolve the transfer to the roof. Equally, a difficult transfer does not prove that elevated forming will fit the available support area.
+### Pads along the eave
+Mark every setup. A 25m class that cannot travel from bay three to bay four is the wrong base even when the height looks right. Truck models move on the road envelope. Crawler models move on tracks and still arrive on a carrier.
 
-### Elevated forming changes the handover location
-
-With the line elevated, the emerging panel reaches a different part of the site before it becomes a finished item awaiting installation. That changes which interfaces deserve early attention: line-to-lift attachment, feed arrangement, services, immediate outlet support and the roof receiving zone. It does not remove the material-handling task.
-
-Keep coil loading distinct from panel receipt. A photograph with coils near a machine cannot establish whether a coil travels with the line, how it reaches its feed position or which lifting arrangement is included. The [roof-level coil-loading guide](/blog/roof-level-roll-forming-lift-coil-loading-plan/) is the next reading step when this boundary determines whether the concept is workable.
-
-### Compare the same panel and work zone
-
-Use the same panel definition and roof zone for both candidates. Otherwise, one proposal may quietly rely on a different panel length, temporary laydown area or receiving method. The comparison below is a planning aid, not a finding that either route is faster, safer or less expensive.
-
-| Question to resolve | Ground forming and finished-panel transfer | Elevated forming near the roof |
-| --- | --- | --- |
-| Where does the formed panel first need support? | At the ground line outlet, then along the onward handling route. | At the elevated outlet and through the proposed receiving interface. |
-| What must connect to the roof team? | The finished-panel transfer and receiving arrangement. | The forming output, immediate support and receiving arrangement. |
-| Which machine interface needs particular attention? | Line location, feed supply and the equipment used for onward transfer. | Line mass, attachment, services and its relationship to the lifting assembly. |
-| Which space must remain available? | Forming area, panel route and any intermediate handling area. | Lift support area, coil route and the output path beside the building. |
-| What could leave the option unresolved? | A missing approved transfer or receiving method. | A missing line/lift interface, support assessment or receiving method. |
-
-### Keep the receiver and roof sequence in the comparison
-
-Consider a hypothetical main hall whose first roof zone can receive panels while an adjoining zone remains occupied by another trade. A ground-forming proposal might depend on a separately assessed holding area for completed panels. An elevated proposal might depend on the roof receiver being available when the panel emerges. The buyer should ask which condition each proposal includes and which roof zones it actually serves.
-
-This is also a useful way to compare a single route with divided scope. If elevated forming is proposed only for the main hall, keep the adjoining area's production and transfer requirement in the purchase brief. The same line cannot simply be assumed available in two locations at once. A change of receiver or construction stage may call for another forming position or a different route; it does not establish that either arrangement is quicker.
+### Wind and the stop
+Name who reads the wind and who may stop the shear. This page does not publish a wind number. Your method statement does.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Test the route against the building
+## The trade-off is carry distance against mass in the air
 
-### Follow the panel across the receiving interface
-
-Look beyond the nearest roof edge. The first receiving point and the final installed position may be different places, so reaching roof level can still leave another material movement. Identify which zone receives the emerging panel, how it relates to the planned roof work and where the supplier's equipment scope ends.
-
-The [panel handover-zone guide](/blog/elevated-roll-forming-roof-panel-handover-zones/) develops immediate outlet support and roof receipt. At the concept stage, the important question is whether there is a defined connection at all. If an outlet points toward a structural interruption, a nominal lifting height cannot make the downstream route complete.
+A ground line keeps the mechanic on the slab and hands a long carry to the roof crew. A roof-level outlet shortens that carry and puts former mass, coil side, and run-out on the lift interface. That interface is the constraint. Compare both routes on the same profile, the same thickness band, and the same handover sketch.
 
 ![Long light-colored panel beside red apparatus and an open building frame](/images/equipment/coil-real-panel.webp)
 
-*Reference photograph of a long panel beside a building. It cannot verify panel length, profile, production status or how the receiving arrangement was approved.*
+*Reference photograph. It cannot prove panel length.*
 
-### Keep the machine footprint and material route together
+If the lifted route needs a chassis the destination will not register, drop it and price ARC-C25. If the ground route needs a splice the specification forbids, drop the ground route. Do not average the two into a slogan.
 
-An empty patch of ground can look sufficient until the proposed supports, coil position and delivery access are drawn on the same plan. Conversely, an attractive panel-output position may place the machine over a surface whose construction or underground features remain unknown. Evaluate the machine position and the material route together, using their actual proposed states.
+<!-- audit-section: limitations-not-fit -->
+## Failure modes that should kill the roof-level idea
 
-Support review concerns the equipment reactions and the ground or structure receiving them. It is not settled by the apparent width of the crawler tracks. Vehicle access, stationary support and elevated work may place different demands on different locations. The site engineer and equipment parties need the relevant state-specific information before the position can be accepted.
+The roof-level route may not fit when any of these are true.
 
-### Match the enquiry to the next physical question
+- The run-out is a person grabbing a moving strip, and nobody will change that.
+- The only pad is a slab with no bearing note. Measure on site before you ask for a load chart.
+- The former you already own has no mass and no mounting outline.
+- The panel must be flipped by hand at the eave.
+- The job is people and materials under a ceiling. That is an ARC-F25 deck, not a forming lift.
 
-If the receiving point is known but the line arrangement is missing, request machine geometry and interface information. If the proposed line is identified but the roof destination is uncertain, resolve the receiving concept with the project. These lead to different next actions and should not be hidden inside a request for the tallest model.
+<!-- audit-section: project-checklist -->
+## Send this, then stop adding adjectives
 
-Weather can also affect the proposed material route and receiving availability. The project needs an assessment for its equipment, panel and work area, with wind and weather decisions assigned to the responsible parties. The [weather hold-point guide](/blog/roof-level-roll-forming-weather-hold-points/) develops that planning task without supplying universal operating limits.
+- Outlet height and outreach to the eave you marked, plus the panel length that must arrive there
+- Roof slope, parapet, and the geometry of each handover
+- Profile, material, thickness, coil width, and feed side
+- Wind rule and the name of the person who stops the line
+- Ground or floor under the first pad
+- Access route from the gate to that pad
+- Outrigger or track footprint you hope the pad can take
+- Destination country and port
+- Chassis included, local, or unsure, and the transport assumption
+- Container question, only if someone has already raised 40HQ
+- Voltage at the pad and who owns the controls
+- Documents the destination reviewer will ask to see
 
-The UK HSE's <a href="https://www.hse.gov.uk/work-equipment-machinery/planning-organising-lifting-operations.htm" target="_blank" rel="noopener noreferrer">guidance on planning lifting operations</a> explains the need for suitable competence, resources and risk-based planning. It provides UK planning context, not a selection approval for this equipment or a rule covering every destination. Actual lifting activities require their own applicable project arrangements.
+<!-- audit-section: cta-editorial-note -->
+## Open one model and send the sketch
+
+Send the work height, the site pad, the destination, the transport assumption, the handover zone, and the floor or ground note. The signed schedule is project-specific. Editorial images do not set a load or a price.
+
+Shortlist: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) for the 18.5m truck class, [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) for the 25m class, and [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is in the same purchase. [Request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. The <a href="https://www.hse.gov.uk/work-at-height/index.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height guidance</a> is a Great Britain reference for the people at the eave. It does not rate these models.
 
 ![Folded red crawler apparatus resting with its support legs extended](/images/equipment/transport-real-stowed.webp)
 
-*Reference photograph showing folded crawler apparatus with supports extended. It does not show a travel-ready state or establish ground capacity and support reactions.*
+*Reference photograph. It is not a measured travel state.*
 
-## Prepare a useful equipment enquiry
+#### Does 18.5m or 25m mean the panel can be that long?
+No. Those are catalog height classes. Send the length schedule with the profile.
 
-<!-- audit-section: limitations-not-fit -->
-### Recognise when the concept is not ready
+#### Can the former and the lift be one RFQ?
+Yes. Name ARC-RF8 and the lift together so the mount is reviewed once.
 
-Elevated forming may not fit where no supported machine position can connect to the receiver, or where the line-to-lift and coil-supply interfaces cannot be resolved. Ground forming may remain a useful candidate when its finished-panel transfer is already established. The decision should follow the complete route, rather than long panel length alone.
+#### We already own the former. What do you need?
+Mass, outline, coil side, and power. Unknown is acceptable. A guessed kilogram is not.
 
-A missing drawing calls for information; a reviewed arrangement that cannot fit calls for a changed position or production concept. This distinction helps a buyer keep a viable option under consideration without treating an unfinished proposal as ready for use.
-
-<!-- audit-section: project-checklist -->
-### Send the information that changes the decision
-
-- Identify the panel profile, material, thickness and required lengths so both forming routes address the same finished product.
-- Mark the outlet height reference, roof geometry, receiving location and direction of panel movement for each zone; show which zones each proposed forming route covers.
-- Map site access, coil delivery and the route between proposed work zones, including locations where other activities intersect them.
-- Provide ground or floor information for each machine position and identify the owner of the support assessment.
-- Show the proposed outrigger or support-area boundary, distinguishing available space from an approved support arrangement.
-- Record wind and weather assessment responsibilities for forming, material handling and roof receipt, with unresolved decisions visible.
-- Describe the available power connection and the intended line, including its dimensions, mass and interface-document status.
-- State the destination, transport route and expected moves between projects so the equipment architecture can be compared realistically.
-
-A first enquiry can use an annotated drawing and a clear list of unknowns. Concentrate on the connection that controls the purchase: the former's installed arrangement, the available stand area or the receiver. The equipment response should address that connection and identify the associated supply items.
-
-## FAQ
-
-#### Does a roll-forming lift lift finished roof panels?
-
-Its defining role in this guide is to raise a compatible forming machine so that panel output occurs near the receiving level. Handling finished panels, supplying coils and installing the roof remain separate tasks whose equipment and responsibilities must be established for the project.
-
-#### Is roof height the required lifting height?
-
-Not automatically. The roof receiving location, machine outlet and supporting platform have different reference points. Compare them on coordinated drawings with the proposed equipment state identified. A roof dimension alone does not establish the required configuration or a suitable model.
-
-#### Does elevated forming eliminate a crane?
-
-No such conclusion follows from the concept. Coil handling, machine modules, accessories, installation or other activities may still need separate lifting resources. The comparison must cover the complete material and equipment route, including stages before and after panel formation.
-
-#### Which information should a first enquiry include?
-
-Start with the panel and material definition, proposed outlet and receiving locations, available forming machine, site access, support information and destination. State which facts are confirmed and which are preliminary. These inputs help identify the next review instead of producing a premature model recommendation.
-
-<!-- audit-section: cta-editorial-note -->
-## Discuss the forming route with ARCLIFT
-
-For a crawler candidate, [request forming-route advice](/contact/?product=crawler-roll-forming-lifts&request=advice) with the former owned or required, site plan, outlet height reference, roof zone, destination and transport route. For a vehicle-based concept, choose the truck-mounted family in the enquiry. Ask ARCLIFT, as a technical selection and supply partner, to identify the proposed equipment boundary and the next configuration information needed. Final selection is project-specific; the editorial photographs retain the scene limitations stated in their captions.
+#### Truck or crawler first?
+Public road between roofs: ARC-T18 or ARC-T25. One site, track moves: ARC-C25.

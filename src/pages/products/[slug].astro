@@ -4,6 +4,7 @@ import { getCollection, render } from 'astro:content';
 import { buildProductView, getRelatedProductSlugs } from '../../lib/product-selection';
 import { EQUIPMENT_CATALOG, RELATED_FORMING_EQUIPMENT } from '../../lib/equipment-catalog';
 import { getProductGuides } from '../../lib/guide-navigation';
+import { catalogProductJsonLd } from '../../lib/catalog-product-jsonld';
 import GuideLinks from '../../components/GuideLinks.astro';
 
 export async function getStaticPaths() {
@@ -31,12 +32,16 @@ const familyDetails = {
 const familyDetail = familyDetails[productView.family.id];
 const equipment = EQUIPMENT_CATALOG.find(item => item.referenceFamilyId === productView.family.id) ?? RELATED_FORMING_EQUIPMENT;
 const metaTitle = product.id === 'arc-f20-crawler-ceiling-platform'
-  ? 'ARC-F20 Ceiling Platform — Archived Reference Class'
+  ? 'ARC-F20 Crawler Large-Deck Ceiling Work Platform (20m Class)'
   : product.id === 'arc-t25hq-truck-mounted-roll-forming-lift-40hq'
-    ? 'ARC-T25HQ Truck-Mounted Lift — Planning Route'
+    ? 'ARC-T25HQ Vehicle-Mounted Lift — 40HQ Packing Route'
     : data.title;
 const productGuides = getProductGuides(productView.family.id, await getCollection('blog'));
-const quoteUrl = `/contact/?product=${encodeURIComponent(model)}&request=quote`;
+const quoteUrl = productView.catalogSpecs
+  ? `/contact/?model=${encodeURIComponent(model)}&product=${encodeURIComponent(model)}&request=quote`
+  : `/contact/?product=${encodeURIComponent(model)}&request=quote`;
+const catalogSchema = catalogProductJsonLd(product.id);
+const referenceSectionLabel = productView.catalogSpecs ? 'Catalog reference' : 'Archive reference';
 const datasheetUrl = `/contact/?product=${encodeURIComponent(model)}&request=datasheet`;
 
 const allProducts = await getCollection('products');
@@ -75,7 +80,7 @@ function visualAlt(url: string): string {
 const pageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: data.title,
+  name: metaTitle,
   description: data.description,
   about: {
     '@type': 'Thing',
@@ -87,6 +92,7 @@ const pageSchema = {
 
 <BaseLayout title={metaTitle} description={data.description} ogImage={data.images?.[0]} transparentNav={false}>
   <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+  {catalogSchema && <script type="application/ld+json" set:html={JSON.stringify(catalogSchema)} />}
 
   {data.faq && data.faq.length > 0 && (
     <script type="application/ld+json" set:html={JSON.stringify({
@@ -117,7 +123,7 @@ const pageSchema = {
   <section class="product-intro">
     <div class="product-intro__copy">
       <div class="product-hero__tag">{category}</div>
-      <h1 class="product-hero__name">{model} {familyDetail.name}</h1>
+      <h1 class="product-hero__name">{productView.headline ?? `${model} ${familyDetail.name}`}</h1>
       <div class="reference-status">
         <span>{productView.status}</span>
         <a href="#archive-reference">View historical reference</a>
@@ -127,6 +133,7 @@ const pageSchema = {
         <a href={quoteUrl} class="btn btn--primary" data-product-primary-cta>Request a quote →</a>
         <a href={datasheetUrl} class="btn btn--outline-blue">Request specifications</a>
       </div>
+      {productView.catalogSpecs && <p class="product-workflow">Request a quote — send the 8 inputs (height, profile, machine mass, coil, access, chassis yes/no, destination, timeline) via the contact form or WhatsApp +86 15515922444.</p>}
     </div>
     <figure class="product-intro__photo" data-product-photo>
       <img src={equipment.image.src} width={equipment.image.width} height={equipment.image.height} alt={equipment.image.alt} fetchpriority="high" />
@@ -137,7 +144,7 @@ const pageSchema = {
 
   <nav class="decision-nav" aria-label="Product decision sections">
     <a href="#selection-overview">Equipment background</a>
-    <a href="#archive-reference">Archive reference</a>
+    <a href="#archive-reference">{referenceSectionLabel}</a>
     <a href="#project-inputs">Project inputs</a>
     <a href="#workflows-to-assess">System interfaces</a>
     <a href="#questions-and-documents">FAQs and documents</a>
@@ -147,13 +154,32 @@ const pageSchema = {
   <div class="decision-page">
     <section id="archive-reference" class="decision-section decision-section--tint">
       <div class="decision-section__heading">
-        <p>Archive reference</p>
-        <h2>Historical class and current specification</h2>
+        <p>{referenceSectionLabel}</p>
+        <h2>{productView.catalogSpecs ? 'Catalog reference specifications' : 'Historical class and current specification'}</h2>
         <p>{productView.scopeStatement} {productView.statusNote}. Current height, load, dimensions and options are established by the {productView.confirmationGate.toLowerCase()}.</p>
       </div>
+      {productView.catalogSpecs && (
+        <div class="specs-table-wrap">
+          <table class="specs-table">
+            <caption>Minimum catalog specification — confirm unknown values on RFQ</caption>
+            <thead>
+              <tr><th scope="col">Field</th><th scope="col">Catalog reference</th><th scope="col">Notes</th></tr>
+            </thead>
+            <tbody>
+              {productView.catalogSpecs.map(row => (
+                <tr>
+                  <th scope="row">{row.field}</th>
+                  <td>{row.value}</td>
+                  <td>{row.notes}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
       <div class="specs-table-wrap">
         <table class="specs-table">
-          <caption>Public archive orientation</caption>
+          <caption>{productView.catalogSpecs ? 'Published orientation' : 'Public archive orientation'}</caption>
           <thead>
             <tr><th scope="col">Reference field</th><th scope="col">Published orientation</th></tr>
           </thead>
@@ -230,8 +256,9 @@ const pageSchema = {
 
   <section class="sec related-section">
     <div class="sec__header">
-      <div class="sec__overline">Related references</div>
+      <div class="sec__overline">Related catalog models</div>
       <h2 class="sec__title">Continue the selection review</h2>
+      <p class="catalog-disclaimer">Catalog references on this page support selection and RFQ. Final height, load, dimensions, options, and transport arrangement are confirmed by the quotation technical schedule, approved drawings, and applicable load chart for the ordered configuration.</p>
     </div>
     <div class="related">
       {related.map(rp => {
@@ -559,6 +586,7 @@ const pageSchema = {
       gap: 10px;
       min-width: 280px;
     }
+    .catalog-disclaimer { max-width: 760px; margin: 0 0 18px; color: #64748b; font-size: 14px; line-height: 1.6; }
     .related-card__body h3 {
       margin: 0 0 8px;
       color: #0f172a;

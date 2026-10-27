@@ -1,9 +1,9 @@
 ---
-title: "ARC-T31 Truck-Mounted Roll Forming Lift — Archived Reference"
-description: "ARC-T31 archived 31m-class reference configuration. Height, load, interfaces, transport and documents require project-specific confirmation."
+title: "ARC-T31 Truck-Mounted Roll Forming Lift — 31m Catalog Model"
+description: "ARC-T31 truck-mounted catalog reference for the 31m class. Load, transport, and chassis are confirmed on RFQ."
 category: "Truck-Mounted Roll Forming Lifts"
 specifications:
-  "Archived Height Class": "Archived reference — 31m class; project-specific confirmation required"
+  "Archived Height Class": "Catalog reference — confirm on RFQ; 31m class; project-specific confirmation required"
   "Archived Payload Class": "Historical reference — 8t class; final allowable load follows the approved load chart"
   "Archived Sheet Thickness": "Historical reference — 0.3–1.0mm; final material, profile, yield and tooling require confirmation"
   "Archived Power Basis": "Historical reference — 380V-class supply; final voltage, frequency and phase are destination-specific"

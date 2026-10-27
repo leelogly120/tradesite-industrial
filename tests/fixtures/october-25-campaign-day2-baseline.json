@@ -4,10 +4,10 @@
   "articles": [
     {
       "slug": "40hq-shipping-truck-mounted-roll-forming-lift",
-      "sha256": "bcd65398143a73c86fb53074e44ee342e5275785584c1a304a04c86478c5cc6b",
-      "workspaceSha256": "bcd65398143a73c86fb53074e44ee342e5275785584c1a304a04c86478c5cc6b",
-      "gitSha256": "bcd65398143a73c86fb53074e44ee342e5275785584c1a304a04c86478c5cc6b",
-      "gitBlobSha1": "4655e1c8bb3122cfc030464e7eac3114bb422bfb",
+      "sha256": "8dc9d6347124b84b5111b183f7571b72e686e767df666d9e1996ebfc6c8837db",
+      "workspaceSha256": "8dc9d6347124b84b5111b183f7571b72e686e767df666d9e1996ebfc6c8837db",
+      "gitSha256": "8dc9d6347124b84b5111b183f7571b72e686e767df666d9e1996ebfc6c8837db",
+      "gitBlobSha1": "9f66ba7668702145b6e0a7941cb7943199f7b571",
       "title": "\"40HQ Planning for Truck-Mounted Roll-Forming Lifts\"",
       "date": "2026-07-24",
       "updated": "2026-10-22"
@@ -294,20 +294,20 @@
     },
     {
       "slug": "crawler-under-ceiling-platform-buyers-guide",
-      "sha256": "70e9f39dbc14b39a912bd28fa8f2c9702a847e53b641b007158868517833ebae",
-      "workspaceSha256": "48b2ef60caa28f81305d5416084c2f5730a129eaa98fc0903f4cc2fede511ac5",
-      "gitSha256": "70e9f39dbc14b39a912bd28fa8f2c9702a847e53b641b007158868517833ebae",
-      "gitBlobSha1": "6d58d89a6846ec3f7fd801290927ba1f57ef2e51",
+      "sha256": "b3c5147519a6ad774e5fae366f1e9fe9ed76ed63e3a0eeda1aa86fd5b012c1b1",
+      "workspaceSha256": "b3c5147519a6ad774e5fae366f1e9fe9ed76ed63e3a0eeda1aa86fd5b012c1b1",
+      "gitSha256": "b3c5147519a6ad774e5fae366f1e9fe9ed76ed63e3a0eeda1aa86fd5b012c1b1",
+      "gitBlobSha1": "fee69f6dc88a4e66a1eeb645928d6bb4e94f123c",
       "title": "\"How to Choose a Crawler Under-Ceiling Work Platform\"",
       "date": "2026-07-27",
       "updated": "2026-10-22"
     },
     {
       "slug": "crawler-vs-truck-mounted-roll-forming-system",
-      "sha256": "5d0a037301e6e50b1d5eed16943f3869e5dfd2a48df0fd6b717ce5342bc5047e",
-      "workspaceSha256": "5d0a037301e6e50b1d5eed16943f3869e5dfd2a48df0fd6b717ce5342bc5047e",
-      "gitSha256": "5d0a037301e6e50b1d5eed16943f3869e5dfd2a48df0fd6b717ce5342bc5047e",
-      "gitBlobSha1": "d422ab3a18be7b61626ecc7a98128765b4ca8880",
+      "sha256": "f1ba7aac238738a06f17e6d11f3d733fe8ff613f84fdd13818bc7ba5b2a60748",
+      "workspaceSha256": "f1ba7aac238738a06f17e6d11f3d733fe8ff613f84fdd13818bc7ba5b2a60748",
+      "gitSha256": "f1ba7aac238738a06f17e6d11f3d733fe8ff613f84fdd13818bc7ba5b2a60748",
+      "gitBlobSha1": "1ccf9aad9c396ad6cb270e9424ff4f44121998c0",
       "title": "\"Crawler vs Truck-Mounted Roll-Forming Lifts Compared\"",
       "date": "2026-07-24",
       "updated": "2026-10-22"
@@ -324,10 +324,10 @@
     },
     {
       "slug": "elevated-roll-forming-roof-panel-handover-zones",
-      "sha256": "f1f5044edfe8e198ceafba2a30c23446b9ecf4d7a9963a866704d764abb588e7",
-      "workspaceSha256": "f1f5044edfe8e198ceafba2a30c23446b9ecf4d7a9963a866704d764abb588e7",
-      "gitSha256": "f1f5044edfe8e198ceafba2a30c23446b9ecf4d7a9963a866704d764abb588e7",
-      "gitBlobSha1": "1fa7519ff9c54710dda2b6dbca5f30c431e361d8",
+      "sha256": "04df14aa8fef1893ebaa415b82e501018d8313d9b94b89158e24caf8f4c213a1",
+      "workspaceSha256": "04df14aa8fef1893ebaa415b82e501018d8313d9b94b89158e24caf8f4c213a1",
+      "gitSha256": "04df14aa8fef1893ebaa415b82e501018d8313d9b94b89158e24caf8f4c213a1",
+      "gitBlobSha1": "93c2f8b4628f3a21cd7098fb076d86954bf1daba",
       "title": "\"Roof Panel Handover Zones for Elevated Roll Forming\"",
       "date": "2026-08-07",
       "updated": "2026-10-22"
@@ -344,10 +344,10 @@
     },
     {
       "slug": "high-altitude-roll-forming-lift-rfq-data",
-      "sha256": "a3e0c9fd99155737cfeb64ff4f0219574aff3863ea1238911ec652dc818fa5b3",
-      "workspaceSha256": "a3e0c9fd99155737cfeb64ff4f0219574aff3863ea1238911ec652dc818fa5b3",
-      "gitSha256": "a3e0c9fd99155737cfeb64ff4f0219574aff3863ea1238911ec652dc818fa5b3",
-      "gitBlobSha1": "b07d197b788aeccb1a12df8b3f9fd730157bcb42",
+      "sha256": "ca644bfa918f4186f31f89a5d8cf6cc6bcf5925078d84f53ac817a99905bd70c",
+      "workspaceSha256": "ca644bfa918f4186f31f89a5d8cf6cc6bcf5925078d84f53ac817a99905bd70c",
+      "gitSha256": "ca644bfa918f4186f31f89a5d8cf6cc6bcf5925078d84f53ac817a99905bd70c",
+      "gitBlobSha1": "e8c2cf454ab81019ae2f8938a33bd70315f42fab",
       "title": "\"RFQ Data Guide for High-Altitude Roll-Forming Lifts\"",
       "date": "2026-08-07",
       "updated": "2026-10-22"
@@ -454,10 +454,10 @@
     },
     {
       "slug": "roll-forming-lift-buy-vs-rent-project-decision",
-      "sha256": "dd911bef4b68cf46118f28276541f0d227307b6143121c2a07cff9e32bcc9c05",
-      "workspaceSha256": "a0cfb9a7e420e8ce57d150fcbc97669eeccd1c421608b3abf780f672c8aa5189",
-      "gitSha256": "dd911bef4b68cf46118f28276541f0d227307b6143121c2a07cff9e32bcc9c05",
-      "gitBlobSha1": "ff201eae106bdbfcd4410c7c0360e2d61f3cfe12",
+      "sha256": "d29d0b22295d4ded54114b22ee6dc64fcb5ed0813f06264e0ba9c44e103ac4b3",
+      "workspaceSha256": "d29d0b22295d4ded54114b22ee6dc64fcb5ed0813f06264e0ba9c44e103ac4b3",
+      "gitSha256": "d29d0b22295d4ded54114b22ee6dc64fcb5ed0813f06264e0ba9c44e103ac4b3",
+      "gitBlobSha1": "761871b6e43dbba7e216fae8ac0d85ed218a983d",
       "title": "\"Buy or Rent a Roll-Forming Lift? Compare the Project Need\"",
       "date": "2026-10-24",
       "updated": null
@@ -544,10 +544,10 @@
     },
     {
       "slug": "roll-forming-lift-importer-distributor-supply-package",
-      "sha256": "95b13766d0f395494a6d3d31f2d210d37a56d80bd57d7b8dc496b3a1a2e5b2a8",
-      "workspaceSha256": "da54aa191e1867970c87a4d077ac00314b62a2e29d12f1b7aa422e2acb984b0b",
-      "gitSha256": "95b13766d0f395494a6d3d31f2d210d37a56d80bd57d7b8dc496b3a1a2e5b2a8",
-      "gitBlobSha1": "e8eb8b693f60269d67684c885b35510481587af5",
+      "sha256": "8de418d4dc33cc79781e72303a5182cd7c87523a5e9dd5adfda5a59440f2100d",
+      "workspaceSha256": "8de418d4dc33cc79781e72303a5182cd7c87523a5e9dd5adfda5a59440f2100d",
+      "gitSha256": "8de418d4dc33cc79781e72303a5182cd7c87523a5e9dd5adfda5a59440f2100d",
+      "gitBlobSha1": "26910f9d9026f324cf7d1c750b58caef9952bfe3",
       "title": "\"Roll-Forming Lifts for Importers: Define the Supply Package\"",
       "date": "2026-10-24",
       "updated": null
@@ -734,10 +734,10 @@
     },
     {
       "slug": "roll-forming-line-specification-long-span-roof-panels",
-      "sha256": "d170f435d3d136111b810719f45becf490e80a5f61e59ef35d97da45fab2ec55",
-      "workspaceSha256": "d170f435d3d136111b810719f45becf490e80a5f61e59ef35d97da45fab2ec55",
-      "gitSha256": "d170f435d3d136111b810719f45becf490e80a5f61e59ef35d97da45fab2ec55",
-      "gitBlobSha1": "01ff52cb5c1f4b08d2a7a9fe09f76212056d84a3",
+      "sha256": "9de2b0604a3181db79fd55c7801f4a91fef0577b81107c28cda5a21cea6da9fa",
+      "workspaceSha256": "9de2b0604a3181db79fd55c7801f4a91fef0577b81107c28cda5a21cea6da9fa",
+      "gitSha256": "9de2b0604a3181db79fd55c7801f4a91fef0577b81107c28cda5a21cea6da9fa",
+      "gitBlobSha1": "a4d4efeba7b58e9b349968c7315b92535c245788",
       "title": "\"Roof-Panel Roll-Forming Lines: Specification for Lifts\"",
       "date": "2026-07-24",
       "updated": "2026-10-22"
@@ -764,10 +764,10 @@
     },
     {
       "slug": "roof-level-roll-forming-long-panels",
-      "sha256": "b6bebe318763c5f8873e63b481f111076c8bee55f05ce4e3f118b7ad41ad7131",
-      "workspaceSha256": "b6bebe318763c5f8873e63b481f111076c8bee55f05ce4e3f118b7ad41ad7131",
-      "gitSha256": "b6bebe318763c5f8873e63b481f111076c8bee55f05ce4e3f118b7ad41ad7131",
-      "gitBlobSha1": "16c757aa92aa689c3c27ff42fce30d2d95a0eb1d",
+      "sha256": "0a98c330369ed556889739f59d186578c03b6dcbddaea4073bac45a87fa21d3f",
+      "workspaceSha256": "0a98c330369ed556889739f59d186578c03b6dcbddaea4073bac45a87fa21d3f",
+      "gitSha256": "0a98c330369ed556889739f59d186578c03b6dcbddaea4073bac45a87fa21d3f",
+      "gitBlobSha1": "c8edc75780a51da3aea6a2bc2e6adfb3cb4e6311",
       "title": "\"Roof-Level Roll-Forming Lifts for Long Roof Panels\"",
       "date": "2026-07-24",
       "updated": "2026-10-22"
@@ -854,10 +854,10 @@
     },
     {
       "slug": "truck-mounted-roll-forming-chassis-interface-review",
-      "sha256": "af2470cdec358a9ecf20e8a5bbe804be53058310d16ac1eae85a78ca46b19947",
-      "workspaceSha256": "af2470cdec358a9ecf20e8a5bbe804be53058310d16ac1eae85a78ca46b19947",
-      "gitSha256": "af2470cdec358a9ecf20e8a5bbe804be53058310d16ac1eae85a78ca46b19947",
-      "gitBlobSha1": "78774c527078524f9c8cc1442cea248d050e4f4f",
+      "sha256": "20c6ae9f2ce7248bfddc9e0889c512e76b153e4f38c933d3c00f6bc1c364a03b",
+      "workspaceSha256": "20c6ae9f2ce7248bfddc9e0889c512e76b153e4f38c933d3c00f6bc1c364a03b",
+      "gitSha256": "20c6ae9f2ce7248bfddc9e0889c512e76b153e4f38c933d3c00f6bc1c364a03b",
+      "gitBlobSha1": "f99f449fa7e4f5c434d6e75712733c572d5acd0e",
       "title": "\"Truck Chassis Integration Review for Roll-Forming Lines\"",
       "date": "2026-07-27",
       "updated": "2026-10-22"
@@ -956,14 +956,14 @@
   "preservedFiles": [
     {
       "path": "public/_headers",
-      "sha256": "5e9abfcfcf7f824677bebb74ccfd5dfb66067d455b8f1122bd5e71b4a0846cce",
-      "workspaceSha256": "5e9abfcfcf7f824677bebb74ccfd5dfb66067d455b8f1122bd5e71b4a0846cce",
+      "sha256": "68a8f0c947ed81b049f4f8cdf1bb21ff00d2374ab557361bcb706db022afa92b",
+      "workspaceSha256": "68a8f0c947ed81b049f4f8cdf1bb21ff00d2374ab557361bcb706db022afa92b",
       "normalizeNewlines": false
     },
     {
       "path": "public/_redirects",
-      "sha256": "fd387d55c27408badc9ae1170123cd645ed221313b4e32b74ac4caf373edb506",
-      "workspaceSha256": "fd387d55c27408badc9ae1170123cd645ed221313b4e32b74ac4caf373edb506",
+      "sha256": "e0036dcdd9e3658a67ec9ba475bc0000d59946e375414db1cbedb1673696f495",
+      "workspaceSha256": "e0036dcdd9e3658a67ec9ba475bc0000d59946e375414db1cbedb1673696f495",
       "normalizeNewlines": false
     },
     {
@@ -1748,32 +1748,32 @@
     },
     {
       "path": "src/components/InquiryForm.astro",
-      "sha256": "8b673ff3ed12e270cb975e58a2d1aee585a0a2e6517bc8dcd5e6eae2bccfea15",
-      "workspaceSha256": "9696f9bacabefa03aea4cf8e4c7f35d338d70a4652d5232b13eab59b5a19f60f",
+      "sha256": "0ca9c5fb54d37987d267f2c736389770bc34232016b4595d83e8298411923676",
+      "workspaceSha256": "0ca9c5fb54d37987d267f2c736389770bc34232016b4595d83e8298411923676",
       "normalizeNewlines": true
     },
     {
       "path": "src/layouts/BaseLayout.astro",
-      "sha256": "0a64fb1f3db0ab2d6696c04bd60e7e1eab171e0f8280775692cc4e590d0c7b03",
-      "workspaceSha256": "4a4f434bef6cd7b4e9055917e83b8e121d774dd8c5cd10646a541a19f6f72596",
+      "sha256": "dd5678dbd057b8391ad50ea81443a619c06017f9c024498295e787ecc44e657f",
+      "workspaceSha256": "dd5678dbd057b8391ad50ea81443a619c06017f9c024498295e787ecc44e657f",
       "normalizeNewlines": true
     },
     {
       "path": "workers/inquiry-router/src/contracts.ts",
-      "sha256": "568def2c7392cdd2e13aa3cc70d0e5ac6d6c9824fed1a5ed6dee6b78de61025d",
-      "workspaceSha256": "c19e3cb60d1213cba293ca3645c9f29997e9ce63c45456de2604d03f98dc538f",
+      "sha256": "e3ad22c723de97f6019f8b76d1b35d0c2ff3d96638f055098ec245eaaf0152cb",
+      "workspaceSha256": "e3ad22c723de97f6019f8b76d1b35d0c2ff3d96638f055098ec245eaaf0152cb",
       "normalizeNewlines": true
     },
     {
       "path": "workers/inquiry-router/src/index.ts",
-      "sha256": "633a196e634d91ccd78f4db849ef09bb4685cbea0b98b51aca7be11b9e21714a",
-      "workspaceSha256": "8cf8b537fe731b3c159aab89d9d5ed12a9bb16f6ca8ccb5e5c6883e6532ef936",
+      "sha256": "b19ab1373a72bee41c25497440d536d101a622d6c60239362452d7e0f13d8489",
+      "workspaceSha256": "b19ab1373a72bee41c25497440d536d101a622d6c60239362452d7e0f13d8489",
       "normalizeNewlines": true
     },
     {
       "path": "workers/inquiry-router/test/contracts.test.ts",
-      "sha256": "91ebef9b32898a0fe7c10b9ace61fbce0ff1a0c4671f96d576cea51f56f098fb",
-      "workspaceSha256": "5f32c5e4bb2572c6fe179406835402e7cf280df848fce61d5390eb42795bf944",
+      "sha256": "df99b1eb248ea003cb15626ccb2b8e4c5987d2f2c6563486cc09d98b71fcee7e",
+      "workspaceSha256": "df99b1eb248ea003cb15626ccb2b8e4c5987d2f2c6563486cc09d98b71fcee7e",
       "normalizeNewlines": true
     },
     {

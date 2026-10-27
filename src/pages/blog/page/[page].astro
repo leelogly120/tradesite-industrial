@@ -35,6 +35,8 @@ const next = pageNum < totalPages ? `/blog/page/${pageNum + 1}/` : undefined;
   title={`Project Guides — Page ${pageNum}`}
   description={`Browse page ${pageNum} of ${totalPages} in the ARCLIFT guide library: roll-forming lift selection, line interfaces, transport and large-deck platform planning.`}
   canonical={`https://www.arclifteq.com/blog/page/${pageNum}/`}
+  noindex={true}
+  follow={true}
   transparentNav={false}
 >
   <BlogListing

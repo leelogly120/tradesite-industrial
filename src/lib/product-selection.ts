@@ -26,6 +26,12 @@ type Orientation = {
   scope: string;
 };
 
+export type CatalogSpecRow = {
+  field: string;
+  value: string;
+  notes: string;
+};
+
 export type ProductReference = {
   slug: string;
   model: string;
@@ -41,6 +47,8 @@ export type ProductReference = {
   imageDisclosure: string;
   editorialImages: readonly string[];
   authoredRelatedSlugs: readonly string[];
+  headline?: string;
+  catalogSpecs?: readonly CatalogSpecRow[];
 };
 
 type ProductLike = {
@@ -124,9 +132,21 @@ const crawlers = ['arc-c17-crawler-roll-forming-lift', 'arc-c21-crawler-roll-for
 const trucks = ['arc-t12-truck-mounted-roll-forming-lift', 'arc-t18-truck-mounted-roll-forming-lift', 'arc-t25-truck-mounted-roll-forming-lift', 'arc-t25hq-truck-mounted-roll-forming-lift-40hq', 'arc-t31-truck-mounted-roll-forming-lift'];
 const ceilings = ['arc-f20-crawler-ceiling-platform', 'arc-f25-crawler-ceiling-platform', 'arc-f31-crawler-ceiling-platform', 'arc-f35-crawler-ceiling-platform'];
 
-const archivedHeight: Orientation = { sourceKey: 'Archived Height Class', label: 'Archived height', scope: 'Archived reference only' };
-const referenceHeight: Orientation = { sourceKey: 'Archived Height Class', label: 'Reference height', scope: 'Reference concept only' };
-const archivedSheet: Orientation = { sourceKey: 'Archived Sheet Thickness', label: 'Archived sheet class', scope: 'Archived reference only' };
+const catalogHeight: Orientation = { sourceKey: 'Archived Height Class', label: 'Catalog height class', scope: 'Catalog reference — confirm on RFQ' };
+const catalogSheet: Orientation = { sourceKey: 'Archived Sheet Thickness', label: 'Catalog sheet class', scope: 'Catalog reference — confirm on RFQ' };
+
+const loadTransportNotes = 'Depends on the approved load chart, fold state, and destination packing';
+const chassisNotes = 'State whether the chassis or carrier is included, local, or unsure';
+
+function catalogLiftSpecs(height: string, base: string): readonly CatalogSpecRow[] {
+  return [
+    { field: 'Height class', value: height, notes: 'Published catalog height class on this site' },
+    { field: 'Platform / machine load', value: 'Confirm on RFQ', notes: 'Depends on former mass, options, and the approved load chart' },
+    { field: 'Transport size', value: 'Confirm on RFQ', notes: loadTransportNotes },
+    { field: 'Chassis included', value: 'Confirm on RFQ', notes: chassisNotes },
+    { field: 'Base type', value: base, notes: 'Road rules, ground bearing, and registration are destination-specific' },
+  ];
+}
 
 function reference(
   slug: string,
@@ -134,15 +154,17 @@ function reference(
   familyId: ProductFamily['id'],
   orientation: Orientation,
   authoredRelatedSlugs: readonly string[],
-  options: Partial<Pick<ProductReference, 'status' | 'statusNote' | 'scopeStatement' | 'buyerQuestion' | 'confirmationGate' | 'editorialImages'>> = {},
+  options: Partial<Pick<ProductReference, 'status' | 'statusNote' | 'scopeStatement' | 'buyerQuestion' | 'confirmationGate' | 'editorialImages' | 'headline' | 'catalogSpecs'>> = {},
 ): ProductReference {
   return {
     slug,
     model,
     familyId,
-    status: options.status ?? 'Archived reference',
-    statusNote: options.statusNote ?? 'Project-specific confirmation required',
-    scopeStatement: options.scopeStatement ?? 'This is an archived reference configuration for early project discussions.',
+    status: options.status ?? 'Catalog model',
+    statusNote: options.statusNote ?? 'Catalog reference — confirm on RFQ',
+    scopeStatement: options.scopeStatement ?? 'This catalog model is a selection reference for RFQ. Platform load, transport size, and chassis inclusion are confirmed on RFQ.',
+    headline: options.headline,
+    catalogSpecs: options.catalogSpecs,
     buyerQuestion: options.buyerQuestion ?? 'What project data is needed before configuration review?',
     orientation,
     confirmationGate: options.confirmationGate ?? CONFIRMATION_GATE,
@@ -155,27 +177,53 @@ function reference(
 }
 
 export const PRODUCT_REFERENCES = [
-  reference(crawlers[0], 'ARC-C17', 'crawler-roll-forming-lifts', archivedHeight, [crawlers[1], crawlers[2], 'arc-rf8-roll-forming-machine']),
-  reference(crawlers[1], 'ARC-C21', 'crawler-roll-forming-lifts', archivedHeight, [crawlers[0], crawlers[2], 'arc-rf8-roll-forming-machine']),
-  reference(crawlers[2], 'ARC-C25', 'crawler-roll-forming-lifts', archivedHeight, [crawlers[1], crawlers[3], 'arc-rf8-roll-forming-machine']),
-  reference(crawlers[3], 'ARC-C28', 'crawler-roll-forming-lifts', archivedHeight, [crawlers[2], crawlers[4], 'arc-rf8-roll-forming-machine']),
-  reference(crawlers[4], 'ARC-C32', 'crawler-roll-forming-lifts', archivedHeight, [crawlers[3], crawlers[2], 'arc-rf8-roll-forming-machine']),
-  reference(trucks[0], 'ARC-T12', 'truck-mounted-roll-forming-lifts', archivedHeight, [trucks[1], trucks[2], 'arc-rf8-roll-forming-machine']),
-  reference(trucks[1], 'ARC-T18', 'truck-mounted-roll-forming-lifts', archivedHeight, [trucks[0], trucks[2], 'arc-rf8-roll-forming-machine']),
-  reference(trucks[2], 'ARC-T25', 'truck-mounted-roll-forming-lifts', archivedHeight, [trucks[1], trucks[4], trucks[3]]),
-  reference(trucks[3], 'ARC-T25HQ', 'truck-mounted-roll-forming-lifts', archivedHeight, [trucks[2], trucks[4], 'arc-rf8-roll-forming-machine'], {
-    status: 'Planning route', statusNote: '40HQ planning route only', scopeStatement: 'A transport-oriented archived reference for early 40HQ route planning.',
+  reference(crawlers[0], 'ARC-C17', 'crawler-roll-forming-lifts', catalogHeight, [crawlers[1], crawlers[2], 'arc-rf8-roll-forming-machine']),
+  reference(crawlers[1], 'ARC-C21', 'crawler-roll-forming-lifts', catalogHeight, [crawlers[0], crawlers[2], 'arc-rf8-roll-forming-machine']),
+  reference(crawlers[2], 'ARC-C25', 'crawler-roll-forming-lifts', catalogHeight, [crawlers[1], crawlers[3], 'arc-rf8-roll-forming-machine'], {
+    headline: 'ARC-C25 crawler roof panel roll former lift — 25m class',
+    catalogSpecs: catalogLiftSpecs('25m', 'Crawler'),
+  }),
+  reference(crawlers[3], 'ARC-C28', 'crawler-roll-forming-lifts', catalogHeight, [crawlers[2], crawlers[4], 'arc-rf8-roll-forming-machine']),
+  reference(crawlers[4], 'ARC-C32', 'crawler-roll-forming-lifts', catalogHeight, [crawlers[3], crawlers[2], 'arc-rf8-roll-forming-machine']),
+  reference(trucks[0], 'ARC-T12', 'truck-mounted-roll-forming-lifts', catalogHeight, [trucks[1], trucks[2], 'arc-rf8-roll-forming-machine']),
+  reference(trucks[1], 'ARC-T18', 'truck-mounted-roll-forming-lifts', catalogHeight, [trucks[0], trucks[2], 'arc-rf8-roll-forming-machine'], {
+    headline: 'ARC-T18 vehicle-mounted roof panel roll former lift — 18.5m class',
+    catalogSpecs: catalogLiftSpecs('18.5m', 'Truck-mounted'),
+  }),
+  reference(trucks[2], 'ARC-T25', 'truck-mounted-roll-forming-lifts', catalogHeight, [trucks[1], trucks[4], trucks[3]], {
+    headline: 'ARC-T25 vehicle-mounted roof panel roll former lift — 25m class',
+    catalogSpecs: catalogLiftSpecs('25m', 'Truck-mounted'),
+  }),
+  reference(trucks[3], 'ARC-T25HQ', 'truck-mounted-roll-forming-lifts', catalogHeight, [trucks[2], trucks[4], 'arc-rf8-roll-forming-machine'], {
+    status: 'Catalog model — packing route',
+    statusNote: '40HQ packing route — confirm on RFQ',
+    scopeStatement: 'A catalog model for 40HQ packing-route discussion. Packing confirmation remains project-specific.',
     confirmationGate: 'Signed technical schedule, approved drawings, approved load chart and approved packing plan',
   }),
-  reference(trucks[4], 'ARC-T31', 'truck-mounted-roll-forming-lifts', archivedHeight, [trucks[1], trucks[2], trucks[3]]),
-  reference(ceilings[0], 'ARC-F20', 'crawler-ceiling-platforms', archivedHeight, [], {
-    status: 'Archived reference class',
-    scopeStatement: 'This archived reference class provides orientation for an early project discussion only.',
+  reference(trucks[4], 'ARC-T31', 'truck-mounted-roll-forming-lifts', catalogHeight, [trucks[1], trucks[2], trucks[3]]),
+  reference(ceilings[0], 'ARC-F20', 'crawler-ceiling-platforms', catalogHeight, []),
+  reference(ceilings[1], 'ARC-F25', 'crawler-ceiling-platforms', catalogHeight, [], {
+    headline: 'ARC-F25 crawler large-deck ceiling work platform — 25m class',
+    catalogSpecs: [
+      { field: 'Height class', value: '25m', notes: 'Published catalog height class on this site' },
+      { field: 'Deck / platform load', value: 'Confirm on RFQ', notes: 'Crew, tools, and material loads against the approved load chart' },
+      { field: 'Transport size', value: 'Confirm on RFQ', notes: 'Building entry, doors, ramps, and packing basis' },
+      { field: 'Chassis included', value: 'Confirm on RFQ', notes: chassisNotes },
+      { field: 'Base type', value: 'Crawler large-deck', notes: 'Floor bearing and indoor route are reviewed per site' },
+    ],
   }),
-  reference(ceilings[1], 'ARC-F25', 'crawler-ceiling-platforms', referenceHeight, [], { status: 'Reference concept', statusNote: 'Model-specific engineering required', scopeStatement: 'This reference concept frames an early project discussion and does not establish an archived configuration.' }),
-  reference(ceilings[2], 'ARC-F31', 'crawler-ceiling-platforms', referenceHeight, [], { status: 'Reference concept', statusNote: 'Model-specific engineering required', scopeStatement: 'This reference concept frames an early project discussion and does not establish an archived configuration.' }),
-  reference(ceilings[3], 'ARC-F35', 'crawler-ceiling-platforms', referenceHeight, [], { status: 'Reference concept', statusNote: 'Model-specific engineering required', scopeStatement: 'This reference concept frames an early project discussion and does not establish an archived configuration.' }),
-  reference('arc-rf8-roll-forming-machine', 'ARC-RF8', 'roll-forming-machines', archivedSheet, [crawlers[0], crawlers[2], trucks[2]]),
+  reference(ceilings[2], 'ARC-F31', 'crawler-ceiling-platforms', catalogHeight, []),
+  reference(ceilings[3], 'ARC-F35', 'crawler-ceiling-platforms', catalogHeight, []),
+  reference('arc-rf8-roll-forming-machine', 'ARC-RF8', 'roll-forming-machines', catalogSheet, [crawlers[0], crawlers[2], trucks[2]], {
+    headline: 'ARC-RF8 roof panel and standing-seam roll forming line',
+    catalogSpecs: [
+      { field: 'Sheet thickness class', value: '0.3–1.0mm', notes: 'Catalog reference — feasibility depends on profile, grade, and coating' },
+      { field: 'Machine mass / mounting', value: 'Confirm on RFQ', notes: 'Required for the lift load chart and interface' },
+      { field: 'Transport size', value: 'Confirm on RFQ', notes: 'Line footprint, run-out, and packing basis' },
+      { field: 'Chassis included', value: 'N/A — machine module', notes: 'Lift chassis is covered on the ARC-T and ARC-C models' },
+      { field: 'Base type', value: 'Roll forming line', notes: 'Specify with the matching lift platform' },
+    ],
+  }),
 ] as const satisfies readonly ProductReference[];
 
 export const DEFAULT_COMPARE_SLUGS = [

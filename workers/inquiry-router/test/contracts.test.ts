@@ -61,6 +61,14 @@ describe('inquiry contract', () => {
       application: 160,
       message: 5000,
       sourcePage: 500,
+      work_height_m: 200,
+      panel_profile: 200,
+      machine_mass: 200,
+      coil_data: 200,
+      site_access: 2000,
+      chassis_included: 20,
+      destination: 200,
+      timeline_qty: 200,
     });
     expect(MAX_BODY_BYTES).toBe(16 * 1024);
     const result = validateInquiry({ ...valid, message: 'x'.repeat(5001) }, new Date());

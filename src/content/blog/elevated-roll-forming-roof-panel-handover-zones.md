@@ -11,157 +11,127 @@ coverCaption: "Reference photograph showing a long light-coloured sheet beside a
 draft: false
 ---
 
-Elevated roll forming places a compatible roof-panel roll former near the planned receiving level. The purchase still needs a complete explanation of the path beyond its outlet: external runout support, a receiving boundary and the connection to installation. A lift and forming machine can be well defined while that last part of the project remains outside every quotation.
-
-The buyer's decision is whether the proposal connects production directly to an available installation stage or uses a separately defined intermediate receiving stage. Each choice changes the support, space and services that must be supplied. This guide explains those scope differences. The [production-route overview](/blog/roof-level-roll-forming-long-panels/) compares ground and elevated forming, and the [roof-zone survey](/blog/roof-zone-survey-roll-forming-lift-selection/) develops the measured relationship. For the equipment discussion, start with the [crawler roof-forming lift family](/products/#crawler-roll-forming-lifts) or the [truck-mounted family](/products/#truck-mounted-roll-forming-lifts), then identify the external receiving functions required for your project.
+Name the person who owns the panel after the shear before you pick the lift. If that person stands at the eave and can stop the line, a roof-level outlet is worth screening: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) at 18.5m, or [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) and [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) at 25m, with [ARC-RF8](/products/arc-rf8-roll-forming-machine/) when the line is in the same purchase. If nobody owns the panel, the catalog height will not create a handover. Support length, exclusion, and wind are measure on site. Loads stay confirm on RFQ.
 
 **Contents**
 
-- Follow the panel across four physical boundaries
-- Match the panel and roof information
-- Define what each handover party must confirm
-- Compare direct receipt with an intermediate stage
-- FAQ
-- Ask for the missing receiving function
+- Four boundaries and who stands there
+- Direct receipt or a pause
+- What fails when the zone is a blank
+- The sketch to attach
 
 <!-- audit-section: buyer-intent -->
-## Follow the panel across four physical boundaries
+## Follow one panel across four hands
 
-### Start at the actual forming outlet
+The panel is not finished at the shear. Someone supports it, someone aims it, someone takes it, and someone keeps people out from under the outlet. Write four names. The same crew can be more than one name. "The roofers" is not a name.
 
-The first boundary is where the forming line presents the panel to equipment or arrangements outside its supply. Request an arrangement drawing that identifies the outlet or cutter reference, direction and height datum. The lift platform edge is a different reference: it carries the machine, whose own geometry determines where the panel emerges. The roof receiver needs an equally identifiable location.
+### Shear to first support
+The first support is a roller table, a person, or nothing. Write which. If it is a person, say so. That choice may be the reason to move the outlet or to keep the former on the ground.
 
-This distinction changes the enquiry. Asking whether a lift can reach a roof height leaves the panel path unanswered. Asking how a particular machine outlet relates to a nominated receiver gives the equipment and project parties a physical interface to assess. State whether the quote is expected to include anything beyond that outlet.
+### Support to the roof edge
+Direction, the face that may touch a rest, and the place the panel is allowed to stop. [The long-panel guide](/blog/roof-level-roll-forming-long-panels/) is the selection context. This page is the receiving context.
 
-### Give external runout support a defined scope
+### Edge to the fixing crew
+The words they use, and what they do if the panel arrives twisted. A radio plan is part of the zone. A height class is not.
 
-The second boundary concerns the panel as it extends beyond the forming line, including the period before a finished panel exists. Ask what the forming-line proposal includes at its outlet and where the project-specific external support begins. The required supporting arrangement depends on the actual panel and geometry; a lift rating cannot define it.
-
-One bidder may include an identified outlet component while another ends its scope at the cutter. Both can describe a forming line, but they leave different work for the buyer. Request the component description and its interface drawing, then identify the party covering the remaining path. This exposes a missing supply item without assuming a support design or prescribing support spacing.
-
-### Describe receipt and entry to installation separately
-
-The third boundary is receipt by the nominated party. The fourth is entry to the intended installation stage. They may be closely connected, but physical arrival, acceptance of custody and availability for installation answer different questions. A cut panel is not automatically in the receiver's custody, and a received panel is not automatically ready for its intended roof position.
-
-Use the panel identity once across these boundaries: the profile and material reference, intended length and roof-zone destination should identify the same product. In a hypothetical project, two zones use the same visible profile but different length schedules. A panel reaches the receiver while its destination is unresolved. The project then needs an applicable support and custody arrangement while the responsible party decides where it belongs. This is the concise exception that a direct-receipt proposal must still address; it does not justify inventing a temporary storage area or returning material along the outlet path.
+### Fixing crew to the finished bay
+Where offcuts go, and who may walk under the outlet while a panel is moving. Draw the exclusion before you draw the machine.
 
 ![Coils on the ground beside elevated forming equipment](/images/equipment/coil-real-handling.webp)
 
-*Reference photograph showing ground-level coils and elevated equipment beside a steel building. It does not show a complete panel handover method or establish production and receiving responsibilities.*
+*Reference photograph. It does not show a handover.*
 
 <!-- audit-section: conditions -->
-## Match the panel and roof information
+## Zone table
 
-### Use one panel definition at the boundary
+| Boundary | What you write | Catalog figure nearby | If you have not measured it |
+| --- | --- | --- | --- |
+| Outlet height | Eave or ridge datum | 18.5m ARC-T18, 25m ARC-T25 or ARC-C25 | Measure on site |
+| First support | Table, person, or none | None | Do not leave it as "normal" |
+| Run-out length | Metres you need clear | None | Measure on site |
+| Exclusion under the outlet | Who is barred | None | Draw it, even roughly |
+| Wind stop | Who looks and who shouts | None | Your rule, not a number from this site |
+| Coating face | Which face may touch a rest | ARC-RF8 only if that line is in the buy | Architect to confirm |
+| Deck instead of a former | People receiving sheets by hand | ARC-F25 25m class and the other ARC-F screens | Load confirm on RFQ |
+| Chassis or carrier | How the lift arrived | Truck or crawler, not the zone itself | Confirm on RFQ |
 
-Give the forming-line supplier, external-support reviewer and receiver the same profile revision, material basis and intended length schedule. A general roof-panel family name may be enough for an initial conversation but leave important edge or orientation details unspecified. The [profile and tooling guide](/blog/roof-panel-profile-material-tooling-data/) explains those manufacturing inputs.
+### Direct receipt
+The panel runs toward the crew and is taken as it arrives. You need the outlet aimed at them, a support for the middle, and a stop if they are not ready. This is the picture people imagine. It needs the clearest stop rule.
 
-For handover, the practical question is how the receiver associates the particular panel with the intended roof zone and direction shown on the project drawing. Ask the parties to explain that association within their proposed arrangement. Any identification proposal must respect the panel supplier's requirements. The receiver needs a recognizable product and destination, without taking over responsibility for approving tooling or the roof system.
+### A pause
+The panel is cut, rested, and moved by a second crew. You need a rest that will not crease the coating. The lift might be simpler. The roof crew might not be. Write the pause if that is the truth.
 
-### Show the relationship in plan and elevation
+### The middle of a long panel
+The middle sags. Name the support there, not only at the ends. A 25m class does not stiffen the sheet.
 
-A plan can show the outlet direction and receiving area but omit a vertical mismatch. An elevation can show levels while concealing an offset along the building. Use both to identify the proposed path and its physical boundaries. Tie them to the same roof-zone references and construction stage.
-
-Mark edges, openings, fragile areas and access constraints identified by the project. These features can change the usable receiving area even when the eave line remains the same. The <a href="https://www.hse.gov.uk/construction/safetytopics/roofwork.htm" target="_blank" rel="noopener noreferrer">HSE roof-work guidance</a> treats access, edges, openings and fragile surfaces as planning concerns in Great Britain. It does not approve a panel path, provide a support layout or replace the destination project's roof-work requirements.
-
-### Identify the interfaces between equipment controls and people
-
-The project needs a defined way to communicate receiving readiness and changes that affect production. Establish which functions belong to the supplied forming or lifting equipment and which belong to the site's work method. Do not assume that a verbal arrangement is an equipment interlock, or that two independently supplied systems share controls.
-
-Use the [electrical and control interface guide](/blog/roll-forming-line-electrical-control-interfaces/) to identify questions for the equipment parties. The handover record should state the agreed interface and its owner without inventing a control sequence, signal protocol or automatic response that the actual equipment has not confirmed.
-
-### Identify the missing next stage
-
-If the next installation position is unavailable, identify which part of the path is affected. Material still connected to the line, a cut panel at the transfer boundary and a panel in the receiver's custody create different support and responsibility questions. The supplier and project parties should explain which of those conditions their proposal covers.
-
-This is useful before choosing a concept because a waiting condition may need space also intended for the next panel. A quality decision does not supply that space or its support design. Include the relevant stopped or waiting condition in the project review instead of treating uninterrupted production as the only case that needs an answer.
+### Night and rain
+Say whether panels may rest overnight and who covers them. "Panels are not left out" and "panels may rest until the next shift, covered by the roof contractor" are both usable sentences. Pick one.
 
 ![Elevated forming equipment aligned beside a building](/images/equipment/entry-real-clearance.webp)
 
-*Reference photograph showing elevated equipment beside a building, with ground supports visible. It cannot confirm outlet alignment, roof capacity or an approved panel receiving area.*
-
-<!-- audit-section: project-checklist -->
-## Define what each handover party must confirm
-
-### Describe the boundary before naming a department
-
-Start with the physical interface and then assign the responsible party. The same contractor may own more than one interface, but the technical questions remain distinct. The following table can guide the discussion without prescribing where a support or custody line must be placed.
-
-| Interface | Information that defines it | Question the project must close |
-| :-- | :-- | :-- |
-| Forming outlet | Line arrangement, panel identity and outlet datum | Which controlled reference describes where the panel emerges? |
-| External runout support | Project support design and applicable panel conditions | Who covers the path beyond the supplied forming line? |
-| Receiving transfer | Named receiver and agreed acceptance condition | How is transfer recognized for the intended panel? |
-| Installation entry | Roof-work method, location and installation owner | What confirms that the next work stage can accept it? |
-| Waiting or changed condition | Applicable equipment information, support scope and decision owner | Where does the plan account for a panel that has arrived but is not yet accepted for installation? |
-
-### Bring the connected inputs to the review
-
-- Supply the common panel profile, material basis, length schedule and roof-zone destination.
-- Mark the actual outlet, receiving coordinates and height references in plan and elevation.
-- Identify the lift configuration, ground or floor information and support footprint used to locate that outlet.
-- Show access, exclusion areas and any transport or material-delivery route that affects the receiving space.
-- Ask which outlet components, external support and receiving equipment are included, locally supplied or still undecided.
-- Identify the required power, equipment-control interface and separate site communication responsibilities.
-- State the relevant wind and weather dependencies and the condition when receiving work is unavailable.
-- Include destination documentation requirements and the party covering receipt, waiting and installation.
-
-The review should produce a physical scope description, not merely a list of departments. For example, “external support between the identified outlet and receiver is supplied separately” tells the buyer what remains to be procured. “Roof team responsible” does not establish which arrangement that team is expected to receive.
+*Reference photograph. It cannot confirm the outlet.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## Compare direct receipt with an intermediate stage
+## The trade-off is a short carry against a crowded edge
 
-### Direct receipt connects two work schedules
+Putting the former at the eave shortens the carry and crowds the edge with the machine, the run-out, and the crew. Leaving the former on the ground clears the edge and lengthens the carry. The constraint is the same either way: a support and an owner at every step.
 
-In a direct-receipt concept, the forming output is connected closely to the next installation stage. The quotation and project arrangement must explain that interface: the outlet-side supply, external support and the receiver expected to accept the panel. Production depends on the relevant receiving and installation resources being available for that relationship.
+### Three names
+The person at the shear, the person at the edge, and the person who can stop both. Add the signal: radio, horn, or eye contact, and what happens when it fails.
 
-Suppose, hypothetically, the required roof zone is available only during a defined construction window. The buyer should ask whether the proposed panel route fits that window and what part of the proposal covers a receiving interruption. The answer may affect the equipment layout or the outside services required. It does not establish that direct receipt is faster, safer or more productive than another route.
+### Offcuts and oil
+Name where offcuts land. A pile under the outlet becomes the exclusion you forgot. If the former sheds oil, say which way it falls and whether the finished face can pass through it.
 
-### An intermediate stage creates another physical scope
+### A change of direction
+A hip or a step is a new handover. Mark it. Say whether the former moves, the crew moves, or the panel is paused and turned. Unknown next to that bay is easier to quote than a bay you described as a copy of the first.
 
-A separately defined intermediate receiving stage may separate the timing of production from installation. It also needs its own reviewed support, available space, access, exposure basis and responsibility for the panels it receives. A rectangle labelled buffer is not that arrangement. Ask whether the quotation includes any equipment for the intermediate stage and who develops its relationship to both the outlet and installation work.
+### The first panel of the day
+Treat the first panel as a rehearsal. Say who watches it, how long the crew may stop, and what gets written down before the second panel starts. A zone that only works after everyone has learned it by surprise is a hope. Put the rehearsal in the RFQ so the run-out and the rest are sized for the slow pass. If the first panel is scrap by plan, say that, so nobody draws the scrap path as the production path.
 
-Compare both concepts against the same panel, roof zone and forming machine:
+Name who removes a cover and who checks the face before the panel is fixed. Those two names are small, and they stop the zone from being redrawn by whoever happens to be holding the sheet. Say where the checked panel waits if the fixer is not ready. A rest in the wrong place marks the weather side. If you do not know the coating rule yet, write unknown and do not let a supplier assume either face is sacrificial.
 
-| Buying question | Direct receipt | Defined intermediate stage |
-| :-- | :-- | :-- |
-| What must be available at receipt? | The agreed receiver and the linked installation stage | The intermediate receiver and its reviewed supporting arrangement |
-| What external supply needs definition? | The outlet-to-receiver support and transfer boundary | That boundary plus the intermediate stage and its next handover |
-| What happens when installation is unavailable? | The project must identify the applicable interrupted condition | The proposal must show which waiting condition the stage actually covers |
-| What should the price include? | The explicitly requested outlet and receiving functions | Those functions plus any separately specified intermediate equipment or services |
-
-This comparison reveals what is being bought. It does not select a handling sequence or rank the concepts. If an intermediate stage is excluded, its cost and technical dependencies remain part of the customer's project even when the forming-lift quotation is otherwise complete.
+Walk the exclusion with the site manager and mark the doors that stay open for other trades. A handover drawn as if the bay were empty will fail on the morning the electricians are still on the slab. Note that conflict now. The lift quotation will not invent a traffic plan. The sketch can, in one sentence: who waits, who passes, and who has the stop. Add the same sentence to the line enquiry so the lift quote and the former quote do not aim the run-out at two different crews. If the bay changes direction at a hip, give that hip its own four names or say the same crew walks around it. A copied exclusion from the first bay will put people under the outlet exactly where the panel turns. Write the hand-off as a time of day as well as a place. Morning handover on a wet sheet is a different zone from afternoon handover on a dry one, even when the machine has not moved. You do not need a weather model from this page. You need the sentence your crew will actually use when the sheet is slick. Write that sentence on the sketch, next to the names.
 
 ![Blue machine module suspended beside a lifting structure](/images/equipment/coil-real-module.webp)
 
-*Reference photograph showing a blue machine module suspended beside a lifting structure. It does not show a coil, prove compatibility or establish a machine-installation or panel-handling method.*
+*Reference photograph. It is not a handling method.*
 
 <!-- audit-section: limitations-not-fit -->
-### Recognize a handover concept that may not fit
+## Failure modes
 
-Revisit the production concept if the confirmed outlet cannot connect to a reviewed receiver, external support has no defined scope, or the necessary waiting condition cannot be accommodated. More lifting height alone cannot resolve those gaps. Project-specific panel support, roof capacity and work methods need the appointed technical parties; this guide supplies no span limits or handling instructions.
+The elevated handover may not fit when nobody will own the panel after the shear, when the edge is a public way you cannot close, or when the only support is a person you are not willing to put there. It may not fit when the specification demands a splice the crew did not plan. Change the panel schedule or change the outlet. Do not hope the zone appears on delivery day.
 
-## FAQ
+<!-- audit-section: project-checklist -->
+## Zone inputs
 
-#### Is the handover point always the roof edge?
-
-No. Its location and acceptance condition must follow the actual equipment, panel, support and receiving arrangement. The roof edge is a geometric feature, not an automatic transfer of responsibility.
-
-#### Does cutting the panel complete the handover?
-
-No. Completion of a forming-line action does not establish receipt or installation readiness. The project must define those boundaries and the applicable condition of the panel between them.
-
-#### Can a receiving zone be used as temporary storage?
-
-Only if the project has specifically reviewed that use. Storage or waiting introduces support, exposure, access and ownership questions that are not settled by the existence of a receiving area.
-
-#### Does the equipment supplier provide the whole panel route?
-
-The supply scope must state that explicitly. Confirm where the forming-line and lifting-equipment responsibilities end, then assign external support, receipt and installation to the appropriate project parties.
+- Work height and the outlet the package must serve
+- Roof geometry the panel crosses, including slope and parapet
+- Profile, coating face, thickness, and former mass if it travels with the lift
+- Wind stop and the name of the person who calls it
+- Ground at the setup and at the rest table
+- Access for the crew, not only for the machine
+- Outrigger or track footprint beside the exclusion
+- Destination country
+- Chassis or carrier, so the zone sketch is not mistaken for a vehicle
+- Transport of the panel if it is paused and moved again
+- Voltage only if the stop is tied to the controls
+- Documents: the sketch, the profile, and the stop rule
 
 <!-- audit-section: cta-editorial-note -->
-## Ask for the missing receiving function
+## Send the zone with the machine enquiry
 
-[Request advice on a crawler forming-lift arrangement](/contact/?product=crawler-roll-forming-lifts&request=advice) with the machine outlet reference, panel definition and expected roof receiver. State whether you propose direct receipt or an intermediate stage, and name the external support or receiving function that must be included or arranged separately. If the project uses a truck-mounted architecture, identify that in the message. ARCLIFT can use this boundary to coordinate an equipment proposal around the actual purchase question.
+Send the work height, the site edge, the destination, the transport of the lift, the handover zone, and the floor or ground at the rest. The signed schedule is project-specific. Editorial images do not draw your exclusion.
 
-Include the outlet height, roof-zone plan, site access and destination. This editorial comparison frames the supply enquiry; final support and receiving decisions need the project-specific technical review.
+Attach the sketch to [request a quote](/contact/?request=quote) and name [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), plus [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is included. WhatsApp +86 15515922444 can take the same four names. The <a href="https://www.hse.gov.uk/work-at-height/index.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height guidance</a> is a Great Britain reference for the people at that edge. It does not draw the zone.
+
+#### Is the run-out included with the lift?
+Only if the quotation says so. Ask for it as its own line.
+
+#### Can the crew take panels straight from the shear?
+Only if you have described the support, the stop, and the exclusion.
+
+#### Which machine page should I open?
+The truck or crawler page that matches how you move between pads. The zone sketch is the same attachment either way.
+
+#### What if the first panel is scrap on purpose?
+Say that. Otherwise the scrap path gets drawn as the production path.

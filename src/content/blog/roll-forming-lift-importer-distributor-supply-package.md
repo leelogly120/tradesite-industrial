@@ -10,150 +10,98 @@ coverCaption: "Reference photograph showing a suspended coil beside vehicle-moun
 draft: false
 ---
 
-An importer or distributor buying roll-forming lifts for onward supply needs to define three connected scopes: the equipment purchased upstream, the work completed locally and the information passed to the eventual buyer. A forming-lift family name does not settle any of them. Start with what the downstream customer needs to receive, then connect every supplied assembly and local dependency to that result.
-
-The main equipment positions a compatible roof-panel roll former near the receiving level. It differs from a personnel work platform and from a finished-panel hoist. This guide helps structure a supply-package enquiry; it offers no dealership, territory arrangement, margin forecast or legal classification for an importing business.
+An importer's package is a list of owners, not a container count. Decide who supplies the lift module, who supplies the chassis or carrier, who supplies [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is resold with the lift, and who stands in front of the destination reviewer. Screen height with [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) at 18.5m or [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) and [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) at 25m. Load, documents, and what is in the box are confirm on RFQ. Do not publish a landed price from this page, and do not promise a stock position you do not have.
 
 **Contents**
 
-- Define the onward product before ordering upstream
-- Map equipment and work across the supply chain
-- Keep product information attributable
-- Request a package that can be explained to the buyer
-- FAQ
+- Who owns each line of the package
+- What your onward buyer must still send
+- Where distributor files fail
+- The note to send ARCLIFT
 
 <!-- audit-section: buyer-intent -->
-## Define the onward product before ordering upstream
+## Split origin scope from destination scope
 
-### Identify the customer's actual equipment task
+Your customer will ask for "the machine." You need a table that answers "which machine, which chassis, which papers." If a line is local, say local. If a line is unknown, say unknown. A blank that looks like a complete package is how a second buyer inherits your gap.
 
-An end buyer may need a lift for its own former, a proposed new line-and-lift arrangement or an open architecture discussion. Each request needs a different upstream reply. A distributor should preserve that distinction rather than translating every enquiry into a preferred model code. The [first-RFQ guide](/blog/high-altitude-roll-forming-lift-rfq-data/) explains those individual starting points.
+### Catalog class is the only number you can repeat safely
+You may tell an onward buyer that ARC-T18 is an 18.5m catalog class and that ARC-T25 and ARC-C25 are 25m catalog classes. You may not turn those into a platform load, a road approval, or a crate count. Those close in the quotation package.
 
-For onward supply, add the local completion boundary. If the customer expects an integrated vehicle, identify who sources the chassis, who owns integration and what the upstream equipment offer includes. If the customer expects crawler equipment delivered to a site, identify the separate carrier and handover. Avoid selling an undetermined combination as though it were a settled product.
-
-### Separate display references from an actual offer
-
-A family brochure can explain architecture without establishing the configuration available for the customer. Archived model references are useful orientation, but their suffixes do not establish height, load or compatibility. Obtain an attributable response for the actual task before turning a display reference into a downstream commitment.
-
-The [truck-mounted forming-lift](/products/#truck-mounted-roll-forming-lifts) and [crawler forming-lift](/products/#crawler-roll-forming-lifts) routes describe distinct base arrangements. Separate ceiling and wall work platforms have another use. If customers ask about both uses, request separately identified scope; do not imply that every former lift converts to a personnel platform.
-
-### Define who the next buyer actually is
-
-An order for an identified end project differs from a proposed demonstration asset or equipment purchased before an end site is known. State that difference upstream. A site-specific response should not silently become a general promise for any later customer, and a display asset cannot answer a final roof geometry that has not been supplied.
-
-The useful result is a clear supply objective: a project-specific purchase, a defined demonstration enquiry or an equipment discussion with future application limits. This avoids asking a provider to certify an undefined market of future uses.
+### One package, one country
+A file written for one destination's registration is not a regional brochure. Name the country on the RFQ. If you sell into two countries, send two packs.
 
 ![Elevated red forming apparatus beside steel framing with coils at ground level](/images/equipment/coil-real-handling.webp)
 
-*Reference photograph of elevated apparatus, building steelwork and ground-level coils. It does not verify active production, current performance or the complete equipment arrangement being offered.*
+*Reference photograph. It does not list a supply package.*
 
 <!-- audit-section: conditions -->
-## Map equipment and work across the supply chain
+## Package table
 
-### Use an upstream, local and onward scope map
-
-Build the map around physical items and activities, not only company names. An upstream item can be delivered correctly while a necessary local connection remains unpurchased. An onward buyer may reasonably expect that connection if the distributor's offer uses a broader completion description. Resolve the difference before ordering.
-
-| Purchase boundary | Upstream response to request | Local scope to establish | Information needed by the onward buyer |
+| Line | Origin option | Local option | If you are unsure |
 | --- | --- | --- | --- |
-| Former and lift | Exact included assemblies and combination | Any separately owned machine | Agreed configuration and exclusions |
-| Vehicle or carrier | Included vehicle or equipment-only scope | Chassis sourcing or transport provision | Actual arrival and work arrangement |
-| Connecting equipment | Identified interface items and design scope | Assigned integration work | Which combination the records cover |
-| Feed and optional handling | Functions and items actually proposed | Separately supplied material arrangements | Clear boundary of each option |
-| Destination completion | Included attendance and deliverables | Facilities and appointed providers | Conditions before the intended handover |
-| Parts and support | Information and services actually offered | Identified local responsibilities | Request route and explicit exclusions |
+| Lift module | ARC-T18, ARC-T25, or ARC-C25 as the screen | Not usually local | Confirm the model on RFQ |
+| Height you may quote in speech | 18.5m or 25m catalog class | Same class | Do not invent a third height |
+| Chassis or carrier | Included from origin | Destination builder | Write unsure; do not leave it implied |
+| Roll former | ARC-RF8, sheet class 0.3–1.0mm | Buyer's existing line | Mass and tooling confirm on RFQ |
+| Packing | Module crate, or ARC-T25HQ packing route if 40HQ is the limit | Vehicle that never enters a box | Packing study, not a slogan |
+| Commissioning | Origin technician, if the quote says so | Your crew | Name the person |
+| Documents for resale | Drawing list in the quotation | Destination filings you own | List the missing sheets |
 
-### Test the gaps between two complete offers
+### What your buyer still has to measure
+Outlet on their section, gate, and pad. Measure on site. You cannot measure those from a showroom.
 
-A local chassis seller can supply the vehicle described in its agreement while the upstream equipment provider supplies the lifting assembly described in another. Those two completed deliveries do not establish that their integration was purchased. Ask who coordinates the pairing and which candidate-specific information each party needs.
-
-The [destination-chassis guide](/blog/truck-mounted-lift-destination-chassis-sourcing/) develops that local procurement issue. The distributor's scope map should show the missing link without specifying an attachment design. Where no provider has agreed to own that work, the downstream offer should retain the dependency rather than conceal it under assembled locally.
-
-### Keep commercial coordination separate from destination duties
-
-Supply-chain roles and information requirements depend on the actual arrangement and destination. The <a href="https://www.hse.gov.uk/work-equipment-machinery/are-you.htm" target="_blank" rel="noopener noreferrer">HSE equipment supply-role guidance</a> is a Great Britain reference distinguishing roles and accompanying information. It does not determine another country's importer duties or the legal status of this proposed package.
-
-Use qualified local advice for the specific destination where needed. The commercial map identifies who is expected to supply each item and response; it does not replace the applicable legal assessment or transfer every responsibility to the party arranging the order.
-
-<!-- audit-section: evidence-tradeoffs -->
-## Keep product information attributable
-
-### Request information for the offered configuration
-
-Ask the upstream provider to identify the equipment covered by its schedule, drawing, instruction set and stated options. Keep preliminary information distinguishable from an agreed configuration. An onward customer should be able to understand whether an item is offered, optional, excluded or still awaiting clarification.
-
-Avoid copying a number from one archive page onto a different package because the machines look similar. Height datums, load conditions and installed assemblies can differ. The buyer needs the supplied document's actual definition, not a harmonized marketing table made from unrelated records. The [technical-document guide](/blog/roll-forming-lift-technical-document-package/) covers detailed reading of returned files.
-
-### A hypothetical locally completed truck package
-
-Imagine an importer receives a project enquiry for a completed truck-mounted forming lift. Its proposed upstream supply is a lifting assembly, while a destination dealer would supply the truck. The local integration provider has not yet been appointed. This is a hypothetical commercial example, not a described ARCLIFT delivery.
-
-The importer can request an upstream equipment scope and vehicle inputs now, but should identify local integration as unresolved in the downstream proposal. The end buyer's expected completion boundary remains broader than the upstream shipment. Comparing another offer that includes an identified vehicle requires the missing local work to be described, not assigned a guessed cost or assumed timeline.
+### Spares and the second call
+Say whether a spare kit is in the first shipment or a later one. "Available" is not a kit list. If you do not know the kit, ask for it as its own line.
 
 ![Folded crawler apparatus carried on a separate low-bed trailer](/images/equipment/transport-real-cover.webp)
 
-*Reference photograph of crawler equipment on a separate carrier. It does not verify truck-mounted architecture, an approved transport arrangement or a completed ARCLIFT delivery.*
+*Reference photograph. It cannot show your resale scope.*
 
-### Preserve source identity without transferring credentials
+<!-- audit-section: evidence-tradeoffs -->
+## The trade-off is a complete origin package against a local chassis
 
-Product information should remain attributable to its issuer and equipment scope through the agreed project channel. That does not authorize publishing private source identities, unapproved certificates or raw supplier documents. Ask what material may be shared with the downstream buyer and in what form, while keeping confidential details protected.
-
-ARCLIFT's role is integrated equipment supplier and technical selection and supply partner. A source manufacturer's factory history, patents, customer list or certificates cannot become ARCLIFT credentials. The same principle matters for onward marketing: a photograph of reference equipment is not proof of the distributor's delivered customer project or of an identified current model.
-
-### Weigh a broad offer against controllable local scope
-
-The trade-off is between a wider upstream package and a divided supply chain that the importer can genuinely coordinate. More inclusion is useful only when it answers the actual end task. Local supply can be useful only when its provider, inputs and completion boundary are established. Neither route proves a particular margin, market demand or delivery advantage.
-
-Use the [quotation-cost scope guide](/blog/roll-forming-lift-price-quotation-cost-scope/) to compare actual inclusions once the local gaps are visible. A low equipment amount and an undefined local completion promise are not a completed-purchase alternative. Keep the uncertainty explicit to the commercial decision maker.
-
-## Request a package that can be explained to the buyer
-
-### Ask for a response at each supply boundary
-
-Request the upstream equipment list, integration interfaces, included information, packing boundary and support scope. State the local parties and resources actually available, with unknowns marked. Then ask which information can support your onward proposal and which questions require the actual customer's site or machine records.
-
-An answer may be conditional without being unhelpful. For example, an upstream provider may identify the machine data required before it can investigate the buyer-owned former. Carry that condition to the end buyer accurately. Do not convert the request for information into a compatibility claim merely to simplify the sales message.
-
-<!-- audit-section: project-checklist -->
-### Prepare the importer enquiry package
-
-- Describe the onward buyer's panel profile, material and former ownership situation.
-- Show outlet height and roof receiving requirements or identify the unknown site.
-- State the destination and expected upstream transport or packing handover.
-- Identify local chassis, carrier and integration providers already selected.
-- Describe available access and ground or floor information for the end project.
-- State local power and control interfaces that another party is expected to supply.
-- Request attributable configuration documentation and permitted onward-sharing scope.
-- Separate actual support commitments from services still to be obtained locally.
-
-<!-- audit-section: limitations-not-fit -->
-### Avoid an onward promise broader than the evidence
-
-The proposed package may not fit when its downstream completion scope exceeds the agreed upstream and local work, or when essential interfaces have no provider. This guide establishes no dealership, exclusive territory, resale demand, legal importer status or service network. A catalogue reference cannot support a universal offer to future customers.
+A complete origin package is easier to describe to your first buyer and harder when the destination wants its own vehicle rules. A module plus a local chassis is easier at the port and harder in your contract, because you now own the interface between our drawing and their builder. The constraint is that interface. Write it down before you print a one-page offer.
 
 ![Blue machine module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
 
-*Reference photograph showing a suspended blue machine module. It does not verify its identity, compatibility, attachment points or an approved lifting method.*
+*Reference photograph. It is not a measured supply line.*
+
+<!-- audit-section: limitations-not-fit -->
+## Failure modes
+
+The package may not fit when the onward offer says "turnkey" and the RFQ still has chassis unsure. It may not fit when two destinations share one document set. It may not fit when you need us to name a platform load so your tender can look finished. Leave the load confirm on RFQ. It may not fit when the former is the buyer's and nobody has an outline.
+
+<!-- audit-section: project-checklist -->
+## Lines to put in the distributor RFQ
+
+- Work height class you want to resell, and the outlet your buyer actually marked
+- Roof types you expect: slope, length, seam
+- Profile, material, thickness, and whether ARC-RF8 is in the package
+- Wind is your buyer's rule; say if they have one
+- Ground they typically set up on
+- Access and ports you actually ship through
+- Outrigger or track story you are willing to repeat
+- Destination country for this file
+- Chassis included, local, or unsure
+- Transport mode and whether 40HQ is a real limit
+- Voltage in that country and who trains the operator
+- Documents you must hand to your buyer, and documents you cannot
 
 <!-- audit-section: cta-editorial-note -->
-### Request an onward-supply scope discussion
+## Send the package table, not a brand page
 
-[Send ARCLIFT an importer supply enquiry](/contact/?product=truck-mounted-roll-forming-lifts&request=advice), identifying the downstream task and the upstream, local and onward boundaries. Include the former, height reference, roof zone, site information, destination and transport assumptions. Ask which equipment and attributable information can be proposed for that specific scope. Final commitments require project-specific confirmation. These editorial reference photographs do not establish a distributorship, delivered order or approved configuration.
+Send the work height, the site types you resell into, the destination, the transport mode, the handover zone your buyer will face, and the floor or ground they use. The signed schedule is project-specific. Editorial images do not fill a commercial invoice.
 
-## FAQ
+Shortlist the screens in the note: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), [ARC-RF8](/products/arc-rf8-roll-forming-machine/), and [ARC-T25HQ](/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq/) only if the box is the constraint. [Request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. <a href="https://www.cbp.gov/trade/basic-import-export" target="_blank" rel="noopener noreferrer">U.S. CBP import and export basics</a> are a destination example, not your paperwork.
 
-#### Does an importer enquiry establish a dealership?
+#### Can I tell my buyer the load?
+Only after a quotation states it. The catalog class is not a load.
 
-No. This page concerns defining equipment supply for onward sale. It creates no territory, appointment, partnership or commercial rights.
+#### Do you hold machines for distributors?
+Ask in the RFQ. This page will not say what is standing in a yard.
 
-#### Can a family brochure be used as a confirmed technical offer?
+#### Can one drawing set cover three countries?
+No. Send one country per file.
 
-It can explain the product category. An actual offer needs the identified configuration, definitions, inclusions and dependencies applicable to the end buyer's task.
-
-#### Who should supply a locally sourced chassis?
-
-The actual commercial arrangement must identify the provider and integration responsibilities. Local availability alone does not establish compatibility or completed-vehicle scope.
-
-#### Can reference photographs be presented as local delivery cases?
-
-No such conclusion follows from the images. They illustrate only the visible reference scenes and limitations in their captions, without establishing customer identity or delivery ownership.
+#### Who speaks to my buyer?
+Say whether the technical reply goes to you or through you. Name the person.

@@ -88,7 +88,7 @@ export function renderCompareRegion(views: readonly CompareView[]): string {
   );
 
   const notice = mode === 'cross-family'
-    ? '<p class="comparison-notice" role="note">Orientation is omitted for cross-family comparisons because each family uses a different archived reference basis.</p>'
+    ? '<p class="comparison-notice" role="note">Orientation is omitted for cross-family comparisons because each family uses a different catalog reference basis.</p>'
     : mode === 'single'
       ? '<p class="comparison-notice" role="status">Add at least one more reference to compare project-review boundaries.</p>'
       : '';
@@ -102,7 +102,7 @@ export function renderCompareRegion(views: readonly CompareView[]): string {
     notice,
     '<div class="comparison-table-wrap">',
     '<table class="comparison-table">',
-    '<caption>Archived references and project-review boundaries</caption>',
+    '<caption>Catalog models and project-review boundaries</caption>',
     `<thead><tr><th scope="col">Review field</th>${columns}</tr></thead>`,
     `<tbody>${rows.join('')}</tbody>`,
     '</table>',
