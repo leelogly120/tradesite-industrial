@@ -854,10 +854,10 @@
     },
     {
       "slug": "truck-mounted-roll-forming-chassis-interface-review",
-      "sha256": "905957e2eacc91e943dffc912632bb8173be5731ef5ee853473ad07ea96fc2fd",
-      "workspaceSha256": "905957e2eacc91e943dffc912632bb8173be5731ef5ee853473ad07ea96fc2fd",
-      "gitSha256": "905957e2eacc91e943dffc912632bb8173be5731ef5ee853473ad07ea96fc2fd",
-      "gitBlobSha1": "456926a1bb57541848c9965d81c496ad261fb872",
+      "sha256": "7288da1e98809e0e47e7306b0e306dc93aba9a94b3943362ec3c68ef2d8aabc8",
+      "workspaceSha256": "7288da1e98809e0e47e7306b0e306dc93aba9a94b3943362ec3c68ef2d8aabc8",
+      "gitSha256": "7288da1e98809e0e47e7306b0e306dc93aba9a94b3943362ec3c68ef2d8aabc8",
+      "gitBlobSha1": "f0b97dcc07396b20a18504110058a5a7266cc017",
       "title": "\"Truck Chassis Integration Review for Roll-Forming Lines\"",
       "date": "2026-07-27",
       "updated": "2026-10-22"
