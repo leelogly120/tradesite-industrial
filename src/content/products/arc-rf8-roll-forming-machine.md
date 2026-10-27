@@ -48,4 +48,4 @@ ARCLIFT acts as an integrated equipment supplier. Ask ARCLIFT to review the prof
 
 **Image disclosure:** Representative editorial image — not model-specific evidence. The editorial diagram explains project inputs only and is not model-specific evidence of an ARC-RF8 line.
 
-Spec ARC-RF8 with the lift on the contact form or WhatsApp +86 15515922444. sales@arclifteq.com is a TODO placeholder for the company inbox.
+Spec ARC-RF8 with the lift on the contact form, WhatsApp +86 15515922444, or leelogly120@gmail.com.

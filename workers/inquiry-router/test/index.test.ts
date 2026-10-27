@@ -171,6 +171,7 @@ describe('inquiry worker', () => {
       phone: '+1 416 555 0198',
       company: '',
       message: '',
+      _replyto: 'jane@roof.test',
     });
   });
 
@@ -209,10 +210,28 @@ describe('inquiry worker', () => {
     expect(response.status).toBe(200);
     const formspree = JSON.parse(String(fetchMock.mock.calls[0]?.[1]?.body));
     const dingTalk = JSON.parse(String(fetchMock.mock.calls[1]?.[1]?.body));
-    expect(formspree).toMatchObject({ requestType: 'datasheet', model: 'ARC-C25', phone: '' });
+    expect(formspree).toMatchObject({ requestType: 'datasheet', model: 'ARC-C25', phone: '', _replyto: 'jane@roof.test' });
     expect(formspree._subject).toContain('Technical documents');
     expect(dingTalk.markdown.text).toContain('Request type: Technical documents');
+    expect(dingTalk.markdown.text).toContain('Email: jane@roof.test');
+    expect(dingTalk.markdown.text).toContain('ARCLIFT email: leelogly120@gmail.com');
     expect(dingTalk.markdown.text).toContain('ARC');
+  });
+
+  it('uses the public ARCLIFT address when the buyer omits an email', async () => {
+    const fetchMock = vi.fn()
+      .mockResolvedValueOnce(new Response('{}', { status: 200 }))
+      .mockResolvedValueOnce(new Response('{"errcode":0}', { status: 200 }));
+    const response = await handleRequest(request({
+      ...contactPayload, email: '', phone: '+1 416 555 0198',
+    }), env(), deps(fetchMock));
+    expect(response.status).toBe(200);
+    const formspree = JSON.parse(String(fetchMock.mock.calls[0]?.[1]?.body));
+    const dingTalk = JSON.parse(String(fetchMock.mock.calls[1]?.[1]?.body));
+    expect(formspree.email).toBe('');
+    expect(formspree._replyto).toBe('leelogly120@gmail.com');
+    expect(dingTalk.markdown.text).toContain('Email: Not supplied');
+    expect(dingTalk.markdown.text).toContain('ARCLIFT email: leelogly120@gmail.com');
   });
 
   it('keeps the full product-form validation threshold', async () => {

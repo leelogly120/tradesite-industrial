@@ -48,4 +48,4 @@ ARCLIFT acts as an integrated equipment supplier. Ask ARCLIFT to review the mult
 
 **Image disclosure:** Representative editorial image — not model-specific evidence. The **AI-assisted editorial composite** shows a roof-level forming context, not a measured ARC-C25 machine.
 
-Enquire on ARC-C25 through the contact form or WhatsApp +86 15515922444. sales@arclifteq.com remains a TODO company-inbox placeholder.
+Enquire on ARC-C25 through the contact form, WhatsApp +86 15515922444, or leelogly120@gmail.com.

@@ -48,4 +48,4 @@ ARCLIFT acts as an integrated equipment supplier. Ask ARCLIFT to review the work
 
 **Image disclosure:** Representative editorial image — not model-specific evidence. The **AI-assisted editorial composite** illustrates the truck-mounted family and does not identify a finished ARC-T25 chassis.
 
-Request an ARC-T25 quote from the contact form or WhatsApp +86 15515922444. The address sales@arclifteq.com is a TODO until the company mailbox is connected.
+Request an ARC-T25 quote from the contact form, WhatsApp +86 15515922444, or leelogly120@gmail.com.

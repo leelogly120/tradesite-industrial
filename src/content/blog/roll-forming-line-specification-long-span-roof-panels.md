@@ -92,7 +92,7 @@ The combined spec may not fit when the profile cannot be drawn, when the thickne
 
 Send the work height, the site, the destination, the transport split, the handover zone, and the floor under the setup. The signed schedule is project-specific. Editorial images do not tool a profile.
 
-Name [ARC-RF8](/products/arc-rf8-roll-forming-machine/) plus [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/). [Request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. <a href="https://worldsteel.org/steel-topics/steel-markets/construction/" target="_blank" rel="noopener noreferrer">worldsteel's construction note</a> is industry context for the material conversation. It does not specify your seam.
+Name [ARC-RF8](/products/arc-rf8-roll-forming-machine/) plus [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/). [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). <a href="https://worldsteel.org/steel-topics/steel-markets/construction/" target="_blank" rel="noopener noreferrer">worldsteel's construction note</a> is industry context for the material conversation. It does not specify your seam.
 
 #### Is 0.3–1.0mm my coil?
 It is the ARC-RF8 catalog sheet class. Your coil is whatever you write on the RFQ.

@@ -92,7 +92,7 @@ The package may not fit when the onward offer says "turnkey" and the RFQ still h
 
 Send the work height, the site types you resell into, the destination, the transport mode, the handover zone your buyer will face, and the floor or ground they use. The signed schedule is project-specific. Editorial images do not fill a commercial invoice.
 
-Shortlist the screens in the note: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), [ARC-RF8](/products/arc-rf8-roll-forming-machine/), and [ARC-T25HQ](/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq/) only if the box is the constraint. [Request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. <a href="https://www.cbp.gov/trade/basic-import-export" target="_blank" rel="noopener noreferrer">U.S. CBP import and export basics</a> are a destination example, not your paperwork.
+Shortlist the screens in the note: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), [ARC-RF8](/products/arc-rf8-roll-forming-machine/), and [ARC-T25HQ](/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq/) only if the box is the constraint. [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). <a href="https://www.cbp.gov/trade/basic-import-export" target="_blank" rel="noopener noreferrer">U.S. CBP import and export basics</a> are a destination example, not your paperwork.
 
 #### Can I tell my buyer the load?
 Only after a quotation states it. The catalog class is not a load.

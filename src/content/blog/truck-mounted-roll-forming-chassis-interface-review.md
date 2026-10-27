@@ -119,7 +119,7 @@ This pairing may not fit when the candidate chassis is already at its legal leng
 
 Send the work height, the site pads, the destination, the transport route, the work zone at the eave, and the floor or ground under the stabilisers. The signed schedule is project-specific. Editorial images do not legalise a vehicle.
 
-Start from [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) or [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), add [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if you are buying the line, and use [request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. The <a href="https://www.fmcsa.dot.gov/regulations" target="_blank" rel="noopener noreferrer">FMCSA regulations index</a> is a United States road-rule doorway. It is not an approval of any arrangement.
+Start from [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) or [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), add [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if you are buying the line, and use [request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://www.fmcsa.dot.gov/regulations" target="_blank" rel="noopener noreferrer">FMCSA regulations index</a> is a United States road-rule doorway. It is not an approval of any arrangement.
 
 #### Is the chassis included?
 Only if your RFQ says yes. The catalog default is confirm on RFQ.

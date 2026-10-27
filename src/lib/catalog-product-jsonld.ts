@@ -3,6 +3,7 @@ type JsonLd = Record<string, unknown>;
 const manufacturer = {
   '@type': 'Organization',
   name: 'ARCLIFT Equipment Co., Ltd.',
+  email: 'leelogly120@gmail.com',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Xinxiang',

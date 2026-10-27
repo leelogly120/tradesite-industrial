@@ -92,7 +92,7 @@ The comparison may not fit when the rent column hides the chassis and the buy co
 
 Send the work height, the site, the destination, the transport duty, the work zone, and the floor or ground. The signed schedule is project-specific. Editorial images do not set a hire rate or a purchase price.
 
-Name the screen you want priced both ways: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), and [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is in scope. [Request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. <a href="https://www.hse.gov.uk/work-equipment-machinery/puwer.htm" target="_blank" rel="noopener noreferrer">HSE guidance on work equipment</a> is a Great Britain note on equipment in use. It does not tell you to buy or to rent.
+Name the screen you want priced both ways: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), and [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is in scope. [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). <a href="https://www.hse.gov.uk/work-equipment-machinery/puwer.htm" target="_blank" rel="noopener noreferrer">HSE guidance on work equipment</a> is a Great Britain note on equipment in use. It does not tell you to buy or to rent.
 
 #### Can you tell me which is cheaper?
 No. Send the inclusion list. A quotation can price two matching scopes.

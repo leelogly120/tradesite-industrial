@@ -98,7 +98,7 @@ The roof-level route may not fit when any of these are true.
 
 Send the work height, the site pad, the destination, the transport assumption, the handover zone, and the floor or ground note. The signed schedule is project-specific. Editorial images do not set a load or a price.
 
-Shortlist: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) for the 18.5m truck class, [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) for the 25m class, and [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is in the same purchase. [Request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. The <a href="https://www.hse.gov.uk/work-at-height/index.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height guidance</a> is a Great Britain reference for the people at the eave. It does not rate these models.
+Shortlist: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) for the 18.5m truck class, [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) for the 25m class, and [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is in the same purchase. [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://www.hse.gov.uk/work-at-height/index.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height guidance</a> is a Great Britain reference for the people at the eave. It does not rate these models.
 
 ![Folded red crawler apparatus resting with its support legs extended](/images/equipment/transport-real-stowed.webp)
 
