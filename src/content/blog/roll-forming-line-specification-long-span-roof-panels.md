@@ -11,96 +11,97 @@ coverCaption: "Reference photograph of coils and elevated apparatus near a build
 draft: false
 ---
 
-A line specification is a drawing pack, not a sentence that says "roof panel". The pack has to say which profile, which material, which thickness band you hope to run, and which machine arrangement will sit on the lift. [ARC-RF8](/products/arc-rf8-roll-forming-machine/) publishes 0.3–1.0mm only as a catalog sheet class. It is not a promise that every profile in that band can be tooled.
+A lift quote is unfinished until the line has a spec. For a roof or standing-seam panel, start with [ARC-RF8](/products/arc-rf8-roll-forming-machine/) and the sheet class 0.3–1.0mm as a catalog screen, then name the lift that will hold it: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) at 18.5m, or [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) at 25m. Thickness outside that screen, machine mass, and power are confirm on RFQ. Do not let a height class stand in for a profile drawing.
 
 **Contents**
 
-- What the drawing must contain
-- How the line meets the lift
-- Comparisons that are fair
-- When to stop
-- Where to send it
+- The spec rows that change the lift
+- What the drawing must show
+- Where lines and lifts fail together
+- What to send
 
 <!-- audit-section: buyer-intent -->
-## Specify the panel before the lift
+## Write the profile before the outlet
 
-### One controlled profile drawing
-Send the profile with critical dimensions, the coating, and the side that faces the weather. A sketch on letterhead is a start. A superseded drawing with no revision is a way to buy the wrong rolls. If you have a sample strip, say so and how you will ship it. Do not claim the sample proves a production rate.
+The lift does not know your seam. The line does not know your parapet. Put both on one sheet: profile name, a revision, thickness, coil width, feed side, and the outlet the panel must reach. If you already own the former, send its outline instead of asking for ARC-RF8.
 
-### Thickness is a range you will actually buy
-Write the thinnest and thickest coil you will purchase, the grade, and the yield if you know it. The catalog class 0.3–1.0mm is a screen so we do not start from zero. Feasibility still depends on the profile shape and the coating. If you only know "about 0.5", write that and mark it unknown rather than rounding it into a specification.
+### Sheet class is a screen
+0.3–1.0mm is the ARC-RF8 catalog sheet class. It is not a promise that your coil, your coating, or your yield will run. If the coil is outside that band, say so. The quote can then say the tooling is open instead of pretending the screen was a process window.
 
-### Lengths and the cut
-List the lengths the roof needs, or attach the schedule. Say whether the shear is on the line and who checks the length. Long panels that must leave in one piece push you toward a roof-level outlet. Short panels with a planned seam can stay on the ground. The line quote should not hide that choice.
+### Mass is an interface number
+The number the lift reviewer needs is the former's mass in the work position, including the coil you intend to carry. If you do not know it, write unknown. A kilogram copied from a similar photo will be treated as a fact and then fail on site.
 
 ![Blue machine module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
 
-*Reference photograph showing a separate machine module beside a lifting structure. It cannot establish the module's mass, compatibility, attachment details or an approved handling method.*
+*Reference photograph. It does not set a module mass.*
 
 <!-- audit-section: conditions -->
-## Put the line on a lift only after the arrangement is named
+## Spec table the lift reviewer can answer
 
-### What is elevated
-Decoiler, stands, main mill, shear, and run-out. Circle the items that must rise with the former and the items that stay on the ground. A coil car that stays on the ground changes the feed path. [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) can be named in the same RFQ so the interface is reviewed once.
+| Spec row | Catalog figure, if any | Your job | Status if you do not know yet |
+| --- | --- | --- | --- |
+| Profile and seam | None until your drawing | Attach the revision the roof will be built to | Measure on the drawing; do not describe the seam in adjectives |
+| Thickness | ARC-RF8 sheet class 0.3–1.0mm | State the coil you will buy | Outside the class: confirm on RFQ |
+| Coil width and feed side | None | Left, right, or either, and how the coil is loaded | Confirm on RFQ if the coil car is a separate buy |
+| Outlet height | 18.5m on ARC-T18; 25m on ARC-T25 and ARC-C25 | The eave or ridge on your section | Measure on site if the parapet is not on the drawing |
+| Former mass and power | None on this website | The interface the lift must carry and feed | Confirm on RFQ |
+| Run-out direction | None | Toward the roof crew or toward a rest | Measure the clear length on site |
 
-### Mass and the mounting face
-Machine mass is confirm-on-RFQ. Send whatever outline and mass you have, including motors that hang outside the frame. The lift load chart is not on this website. Your outline is what lets a reviewer ask for the right chart instead of inventing one.
+### Power split
+Say whether the former and the lift share a supply. A shared generator, a chassis supply, and a site cable are three interfaces. Name voltage only if you already have it.
 
-### Power at the destination
-Voltage and frequency at the site, and whether the former and the lift share a supply. If you do not know, say the destination and who will confirm. Do not copy 380V from another project into this one.
+### Coatings and the face that may touch a roller
+Say which face is sacrificial. The lift layout will not invent that rule. The line spec should.
 
 ![Long light-colored panel beside a building frame and red apparatus](/images/equipment/coil-real-panel.webp)
 
-*Reference photograph of a panel beside a building frame. It does not verify the panel's length, tolerances, finish acceptance or the capability of a proposed roll-forming line.*
+*Reference photograph. It cannot prove a profile.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## The trade-off is a complete line against a lift interface
+## The trade-off is a complete line against a lift-only interface
 
-A ground line can carry more auxiliaries because the floor is the interface. A lifted line has to survive the fold, the travel, and the outlet. That interface constraint drops nice-to-have tables and extra loopers unless you have a place for them. Compare suppliers on the same profile and the same elevated list. A cheaper line that cannot name its mass is not comparable to one that can.
+Buying ARC-RF8 with the lift lets one reviewer check the mount, the coil side, and the outlet together. Bringing your own former is lighter on the purchase and heavier on the drawing: you must supply the outline. The constraint is the interface. A line that runs on the ground can still be the wrong line in the air if the decoiler occupies the side the mechanic needs.
 
 ![Elevated apparatus beside a building with coils and ground equipment nearby](/images/equipment/entry-real-clearance.webp)
 
-*Reference photograph showing the relationship between elevated apparatus and a building-side area. It cannot establish a selected line's service access, outlet alignment or site suitability.*
+*Reference photograph. It is not a measured outlet.*
 
 <!-- audit-section: limitations-not-fit -->
-## This specification may not fit
+## Failure modes
 
-It may not fit when the profile drawing is missing, when the coating is unknown and appearance is contractual, or when the panel length only works if someone catches it by hand. It may not fit when you already own a former and only need a mount: send the existing machine, and do not ask for a new tooling story you will not use.
+The combined spec may not fit when the profile cannot be drawn, when the thickness is a range copied from a different product, or when the former outline collides with the lift's service side. It may not fit when you need the lift to form a panel the line has never tooled. Change the tooling list or change the panel. Do not hope the height class will absorb a missing seam.
 
 <!-- audit-section: project-checklist -->
-## Line RFQ inputs
+## Line rows to attach
 
-- Work height and outreach to the real outlet or deck
-- Roof geometry, slope, parapet, and obstructions
-- Profile, material, thickness, coil width, and feed side
-- Wind limit and the person allowed to stop the line
-- Ground or floor bearing at each pad
-- Access route from the gate to the first setup
-- Outrigger or track footprint and the exclusion zone
-- Destination country and port
-- Chassis or carrier included, local, or unsure
-- Transport assumption, including whether a container is in scope
-- Voltage, power split, and who owns the controls
-- Documents the destination reviewer will request
+- Work height and outreach to the outlet the panel must reach
+- Roof slope and geometry the run-out must clear
+- Profile, material, thickness, coil width, feed side, and the drawing revision
+- Wind stop, because a long panel is a sail even when the line is happy
+- Ground or floor under the lift, since the line mass sits there
+- Access route for the coil, not only for the truck
+- Outrigger or track footprint beside the decoiler
+- Destination country and who signs the profile
+- Chassis or carrier, so the line packing is not confused with the vehicle
+- Transport assumption for the former if it ships separate
+- Voltage, power, and who owns the controls
+- Documents: profile drawing, coil certificate if you have one, and the destination file list
 
 <!-- audit-section: cta-editorial-note -->
-## Send the drawing pack
+## Ask for the line and the lift in one note
 
-Send the work height, site plan, destination, transport assumption, work zone, and floor or ground note. The signed technical schedule is project-specific. Editorial images on this page do not set a load, a price, or a lead time. Open [ARC-RF8](/products/arc-rf8-roll-forming-machine/) and [request a quote](/contact/?request=quote).
+Send the work height, the site, the destination, the transport split, the handover zone, and the floor under the setup. The signed schedule is project-specific. Editorial images do not tool a profile.
 
+Name [ARC-RF8](/products/arc-rf8-roll-forming-machine/) plus [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/). [Request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. <a href="https://worldsteel.org/steel-topics/steel-markets/construction/" target="_blank" rel="noopener noreferrer">worldsteel's construction note</a> is industry context for the material conversation. It does not specify your seam.
 
-The <a href="https://www.worldsteel.org/steel-topics/steel-markets/construction.html" target="_blank" rel="noopener noreferrer">worldsteel construction overview</a> is background on steel in buildings. It does not rate a roll former.
+#### Is 0.3–1.0mm my coil?
+It is the ARC-RF8 catalog sheet class. Your coil is whatever you write on the RFQ.
 
-## FAQ
+#### Can you quote the lift with no line data?
+You will get questions back. Mass, feed side, and power are the minimum interface.
 
-#### Does 0.3–1.0mm cover my profile?
-It is a catalog sheet class only. The drawing, grade, and coating still have to be reviewed.
+#### Who owns tooling?
+Say it. Owned by you, included, or unknown. Unknown is a real answer.
 
-#### Can the line and the lift be one RFQ?
-Yes. Name both. Chassis scope stays on the lift model.
-
-#### What if I own the former already?
-Send mass, outline, coil side, and power. The RFQ becomes an interface check.
-
-#### Who confirms the cut length?
-You say how length will be checked. The quotation can include a shear only if you asked for it.
+#### Which height do I type?
+The outlet on your section. Use 18.5m or 25m only as the catalog screen you want compared.

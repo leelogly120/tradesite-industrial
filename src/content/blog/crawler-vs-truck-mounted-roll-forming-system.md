@@ -11,110 +11,95 @@ coverCaption: "Reference photograph of crawler equipment on a low-loader; it doe
 draft: false
 ---
 
-Compare a crawler and a truck-mounted roll-forming lift on the same roof, the same former, and the same week of work. Both exist to raise a compatible roof-panel former toward a handover. They split on how the machine arrives and how it moves between pads. Pick the constraint that is harder, and open that catalog family first.
+Pick the truck when the same machine must leave the site on a road and work the next roof. Pick the crawler when the machine stays inside one site, relocates on tracks, and arrives on a low-bed. The catalog screens are [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) at 18.5m, [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) at 25m, and [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) at 25m. Height class does not choose the base. The move between pads does. Loads and chassis stay confirm on RFQ.
 
 **Contents**
 
-- Same task, two bases
-- Five comparisons that change the quote
-- A table you can fill
-- When neither base fits
-- Pages to open
+- Three catalog rows
+- The move that decides the base
+- What still fails after you pick
+- Who to write to
 
 <!-- audit-section: buyer-intent -->
-## Hold the former still and change only the base
+## Start from the second setup, not the brochure photo
 
-### One panel list
-Use the same profile, thickness band, coil width, and handover sketch for both candidates. If you let the panel list change, you are no longer comparing bases. [ARC-RF8](/products/arc-rf8-roll-forming-machine/) can sit in either conversation when you are buying the former too.
+The first pad can flatter either base. The second pad exposes the choice. If getting there means a public road, a gate, and a folded height, you are in a truck file. If getting there means tracks across the yard, you are in a crawler file. Write that sentence before you compare 18.5m with 25m.
 
-### Truck means a vehicle story
-[ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) is the 18.5m catalog class. [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) is the 25m class. Both need a chassis answer: included, local, or unsure. Road legality is not included in the class label.
+### Road day versus yard day
+Count the roofs this machine must visit in a month only as a fact you already know. Do not turn it into a cycle-time claim. One roof with three eaves can still be a crawler. Five towns in a week can still be a truck. The path is the evidence.
 
-### Crawler means a yard story
-[ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) is the 25m crawler catalog class. It still arrives on something. The RFQ should say how it gets from the port to the first pad, and what the ground is between pads.
+### Chassis is a truck question
+A crawler does not have a destination chassis. It has a carrier for arrival. A truck quote is incomplete until you mark chassis included, local, or unsure. Leaving that box empty makes the two prices impossible to compare later, even though this page states no price.
 
 ![Truck-mounted red structure beside a suspended metal coil](/images/equipment/coil-real-cover.webp)
 
-*Reference photograph showing a truck-mounted structure and suspended coil. It cannot establish lifting capacity, the approved loading method, road status or the configuration offered to a buyer.*
+*Reference photograph. It cannot show which base you need.*
 
 <!-- audit-section: conditions -->
-## Five comparisons, in the order they usually bite
+## Put the catalog numbers in columns
 
-### Public road between roofs
-If the machine must drive itself between sites, start with the truck family and the destination road rules. A crawler on a low-bed is a different transport every time you move towns.
+| Model | Catalog height class | How it changes pads | Arrival | Open until RFQ or a site measure |
+| --- | --- | --- | --- | --- |
+| ARC-T18 | 18.5m | Drives the road envelope between roofs | Vehicle, if the chassis is in the supply | Platform load, axle, registration: confirm on RFQ |
+| ARC-T25 | 25m | Same idea, taller outlet screen | Vehicle, same chassis question | Platform load, folded height: confirm on RFQ. Bridge on the route: measure on site |
+| ARC-C25 | 25m | Tracks between pads on one site | Low-bed or other carrier | Ground bearing: measure on site. Carrier scope: confirm on RFQ |
+| ARC-RF8 with either lift | Sheet class 0.3–1.0mm | Stays on the lift you chose | Follows the lift's packing | Mass and power: confirm on RFQ |
 
-### Soft ground and short moves
-If the roofs are in one yard and the ground is the worry, start with the crawler and send the pad map. Tracks do not cancel a weak slab. They give you a different question to ask.
+### Outlet and former
+Both bases can hold a compatible roof-panel former. The former's coil side and run-out still have to face the eave. Changing the base does not rotate the profile. Name [ARC-RF8](/products/arc-rf8-roll-forming-machine/) only when the line is in the purchase.
 
-### Chassis versus carrier
-A truck quote without a chassis answer is incomplete. A crawler quote without a carrier answer is also incomplete. Write one line for each so the two offers can be read side by side.
-
-### Outlet and run-out
-The former's exit direction has to meet the roof on both concepts. A base that faces the wrong way is not saved by a taller class. Draw the arrow.
-
-### Setup crew and exclusion
-Who stands under the machine, and what is fenced. This is a method input, not a speed claim. Do not ask the quote for a cycle time.
+### Ground under the supports
+Truck stabilisers and crawler tracks ask different questions of the same yard. Measure the pad. Do not borrow a bearing number from another project.
 
 ![Folded red crawler apparatus with support legs extending beyond its tracks](/images/equipment/transport-real-stowed.webp)
 
-*Reference photograph showing crawler tracks and extended supports around folded apparatus. It does not establish an allowable ground load or an authorised travel condition.*
+*Reference photograph. It does not set a ground pressure.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## The trade-off is road envelope against ground envelope
+## The trade-off is registration against a carrier
 
-The truck carries its road problem with it. The crawler leaves the road problem on a trailer and picks up a ground-bearing problem. The interface constraint is the same former either way. Fill this table with your facts. Leave a cell blank rather than inventing a load.
-
-| Question | Truck-mounted catalog model | Crawler catalog model |
-| --- | --- | --- |
-| How it arrives | Chassis included or local, still open if unsure | Low-bed or other carrier, named or open |
-| How it moves on site | Drives if the vehicle and the route allow | Tracks between pads you have marked |
-| What you must send | Road rules, axle worry, stabiliser spread | Ground, path, and the number of pads |
-| Catalog pages | ARC-T18 or ARC-T25 | ARC-C25 |
-| What this page will not state | A legal axle or a price | A bearing pressure or a price |
+A truck can leave under its own power when the destination allows that vehicle. That is also the constraint: road rules, axle groups, and who registers the chassis. A crawler avoids that registration and accepts a carrier every time the site changes. The interface with the former is common to both. Compare replies only after both suppliers restate your outlet, your former, and your chassis-or-carrier line.
 
 ![Elevated red forming apparatus positioned beside a building lane](/images/equipment/entry-real-clearance.webp)
 
-*Reference photograph of elevated apparatus beside a building. It cannot verify output alignment, permitted clearances, support adequacy or suitability of either proposed architecture.*
+*Reference photograph. It is not a measured clearance.*
 
 <!-- audit-section: limitations-not-fit -->
-## Either base may not fit
+## Failure modes
 
-A truck may not fit when no chassis can be registered or the folded height meets a bridge you cannot avoid. A crawler may not fit when the path between pads crosses a slab or a public mall you cannot close. Neither fits when you actually need a deck for people under a ceiling. That is the large-deck family, not a forming lift.
+This comparison may not fit when you need both a road-legal truck and track moves on soft ground in the same week. That is two machines or a different method, not a hybrid adjective. It may not fit when the "crawler" plan still assumes the lift is a registered vehicle. It may not fit when the ceiling task is people and sheets under a deck: open an ARC-F model instead of forcing ARC-C25 to be a work platform.
 
 <!-- audit-section: project-checklist -->
-## Comparison inputs
+## Rows that make the two quotes comparable
 
-- Work height and outreach to the real outlet or deck
-- Roof geometry, slope, parapet, and obstructions
+- Work height and outreach to the outlet, with the catalog class you are screening
+- Roof geometry, slope, and the eaves you will actually stand at
 - Profile, material, thickness, coil width, and feed side
-- Wind limit and the person allowed to stop the line
-- Ground or floor bearing at each pad
-- Access route from the gate to the first setup
-- Outrigger or track footprint and the exclusion zone
-- Destination country and port
-- Chassis or carrier included, local, or unsure
-- Transport assumption, including whether a container is in scope
-- Voltage, power split, and who owns the controls
-- Documents the destination reviewer will request
+- Wind stop rule for the panel, not for the brochure
+- Ground or floor at each pad
+- Access route, including the public road if there is one
+- Outrigger spread or track path
+- Destination country
+- Chassis included, local, or unsure, or carrier if the base is a crawler
+- Transport assumption between sites
+- Container only if 40HQ was already raised
+- Voltage and who owns lift power versus former power
 
 <!-- audit-section: cta-editorial-note -->
-## Ask for both only if both are real
+## Send the path with the model name
 
-Send the work height, site plan, destination, transport assumption, work zone, and floor or ground note. The signed technical schedule is project-specific. Editorial images on this page do not set a load, a price, or a lead time. Otherwise open one family and [request a quote](/contact/?request=quote).
+Send the work height, the site path, the destination, the transport assumption, the work zone, and the floor or ground at the pad. The signed schedule is project-specific. Editorial images do not choose the base.
 
+Write to us on [request a quote](/contact/?request=quote) or WhatsApp +86 15515922444 with ARC-T18, ARC-T25, or ARC-C25 named in the first line, and ARC-RF8 if the former is in the same buy. The <a href="https://www.hse.gov.uk/work-at-height/index.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height guidance</a> is for the people who will stand at the outlet in Great Britain. It does not pick a chassis.
 
-The <a href="https://www.hse.gov.uk/work-at-height/index.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height guidance</a> is a Great Britain reference for your reviewer. It does not choose a base for you.
+#### We visit three towns. Is that automatically a truck?
+Only if the machine itself uses the road. A crawler on a low-bed can also visit three towns. Say which vehicle moves.
 
-## FAQ
+#### Can one quote include both bases?
+Yes. Ask for two columns that restate the same outlet and the same former, with chassis on the truck column and carrier on the crawler column.
 
-#### Should I enquire on both?
-Only if the site could honestly go either way. If the road is impossible, do not make the supplier price a truck.
+#### Does 25m on both models mean they match?
+The height class matches as a screen. The move, the ground, and the registration do not.
 
-#### Is the crawler road-legal because it sits on a trailer?
-No. The trailer is a separate transport. Say who supplies it.
-
-#### Do the height classes match across families?
-25m on a truck page and 25m on a crawler page are both catalog classes. They are not a statement that the outlets match your section.
-
-#### Where do I send the filled table?
-With the contact form or WhatsApp +86 15515922444, attached or described in the message.
+#### Where does the large deck fit?
+If the sentence is about people under a ceiling, leave this page and open the ARC-F shortlist on the contact form.

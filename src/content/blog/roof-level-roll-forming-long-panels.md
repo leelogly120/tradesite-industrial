@@ -11,98 +11,107 @@ coverCaption: "Reference photograph of elevated apparatus beside a building; it 
 draft: false
 ---
 
-A long roof panel is a handling problem before it is a machine problem. The panel leaves the shear as a flexible strip. Someone has to support it, point it at the roof, and hand it to the crew who fixes it. A roof-level roll-forming lift exists to move a compatible former closer to that receiving point. It does not, by itself, decide panel length, former mass, or whether the truck or the crawler is the right base.
+If the roof specification wants one panel from eave to ridge, shortlist a roof-level outlet: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) at the 18.5m catalog class, [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) at the 25m catalog class, with [ARC-RF8](/products/arc-rf8-roll-forming-machine/) when you are also buying the line. If the specification allows a splice, keep the former on the ground and spend the money on the hoist and the seam, not on a taller lift. Panel length is not the catalog height. Load, chassis, and transport stay confirm on RFQ.
 
 **Contents**
 
-- Where long panels actually get damaged
-- Ground line or roof outlet
-- Inputs that make a quote specific
-- When to stop and change method
-- Models to open next
+- The decision in one table
+- Where the long panel actually fails
+- What to measure before the class label
+- Model shortlist
 
 <!-- audit-section: buyer-intent -->
-## Where long panels actually get damaged
+## Use the height class as a screen, then draw the panel
 
-### The unsupported metre after the shear
-Most scratches, kinks, and oil-canning stories start in the run-out, not in the roll tooling. If the first support is a person grabbing a moving strip, the lift height is not your problem yet. Draw the run-out: direction, length you need clear, and who stands there. That sketch belongs in the RFQ next to the profile.
+A long panel is a flexible strip the moment it leaves the shear. The lift only earns its place when that strip can be aimed at the roof without a second bend. Write the panel length schedule next to the outlet height. Do not copy 18.5m or 25m into the length column.
 
-### Three purchases, not one adjective
-The former makes the panel. The lift positions the former. The site receives the panel. [ARC-RF8](/products/arc-rf8-roll-forming-machine/) is the catalog line for roof and standing-seam profiles. [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) and [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) are vehicle-mounted lifts in the 18.5m and 25m catalog classes. [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) is the crawler class when the machine must move between pads. Quote the combination you mean. A lift page does not include a former, and a former page does not include a chassis.
+### One piece or a seam
+Ask the architect which bays forbid a splice. Those bays set the outlet. The other bays can still be formed lower if the crew will accept two methods on one roof. Say that split in the RFQ so the quote does not assume every panel is the longest one.
 
-### Splices change the machine choice
-If the roof can take a shorter panel and a seam, a ground line plus a hoist may be the simpler route. If the specification wants the panel in one piece from eave to ridge, the outlet has to sit where that piece can be steered onto the roof without a second bend. Write that requirement in one sentence before you compare catalog classes.
+### Former, lift, and the person at the run-out
+Three purchases sit in one sentence: the line makes the profile, the lift holds the line near the eave, and a named person supports the strip. If that third name is missing, the height class will not save the coating.
 
 ![Ground coils beside elevated red forming apparatus and a steel building frame](/images/equipment/coil-real-handling.webp)
 
-*Reference photograph showing ground coils and elevated apparatus near a building frame. It does not establish how material was fed, the permitted load or an approved production method.*
+*Reference photograph. It does not set a feed method.*
 
 <!-- audit-section: conditions -->
-## Walk the outlet before you name a class
+## Catalog classes you can put in the comparison
 
-### Which side of the building forms
-Pick the eave or the gable where the panel will arrive. Note parapet height, overhang, and anything the former must not touch: purlins already fixed, ducts, a crane rail. The catalog height class is a screen. The outlet datum on your section is the number the reviewer uses.
+| Choice | Catalog figure you may cite | Use it for | Leave blank until RFQ or a site measure |
+| --- | --- | --- | --- |
+| ARC-T18 truck lift | 18.5m height class | Vehicle-mounted outlet screen | Platform load, chassis included, folded size: confirm on RFQ |
+| ARC-T25 truck lift | 25m height class | Taller vehicle-mounted screen | Platform load, chassis, road envelope: confirm on RFQ |
+| ARC-C25 crawler lift | 25m height class | Tracked moves between pads on one site | Ground bearing: measure on site. Low-bed arrival: confirm on RFQ |
+| ARC-RF8 line | Sheet class 0.3–1.0mm | Profile family screen for roof and standing seam | Machine mass, power, tooling list: confirm on RFQ |
+| Ground line plus hoist | No lift class | Roofs that allow a splice | Hoist and seam are the roof contractor's method, not a catalog height |
 
-### Pads, not a single hero position
-Long roofs rarely finish from one setup. Mark every pad, the path between them, and whether that path is a public road, a yard, or soft ground. Truck-mounted catalog models stay on a vehicle envelope. Crawler catalog models move on tracks and still need a low-bed story for arrival. Say which constraint is harder on this site.
+### Outlet datum
+Measure to the point the panel must reach: slab, eave, or ridge. Write which. A catalog class that is taller than the eave is not proof the outlet clears the parapet. Measure the parapet on site.
 
-### Wind, power, and the stop rule
-Name who measures wind and who is allowed to stop the line. Name the power available at the pad: voltage and who supplies the cable. Do not invent a lead time for commissioning. If power is temporary, say so. The quotation can then separate lift power from former power instead of guessing.
+### Pads along the eave
+Mark every setup. A 25m class that cannot travel from bay three to bay four is the wrong base even when the height looks right. Truck models move on the road envelope. Crawler models move on tracks and still arrive on a carrier.
+
+### Wind and the stop
+Name who reads the wind and who may stop the shear. This page does not publish a wind number. Your method statement does.
 
 <!-- audit-section: evidence-tradeoffs -->
-## The trade-off is outlet height against handling
+## The trade-off is carry distance against mass in the air
 
-A ground line keeps the former where mechanics can reach it and pushes the handling problem onto the roof crew. A roof-level outlet shortens the carry and pushes mass, stability, and access onto the lift interface. That interface is the constraint: former footprint, coil side, run-out direction, and the exclusion zone under the machine. Neither photograph below is a rated layout. Use them only to see the kind of scene you must describe.
+A ground line keeps the mechanic on the slab and hands a long carry to the roof crew. A roof-level outlet shortens that carry and puts former mass, coil side, and run-out on the lift interface. That interface is the constraint. Compare both routes on the same profile, the same thickness band, and the same handover sketch.
 
 ![Long light-colored panel beside red apparatus and an open building frame](/images/equipment/coil-real-panel.webp)
 
-*Reference photograph of a long panel beside a building. It cannot verify panel length, profile, production status or how the receiving arrangement was approved.*
+*Reference photograph. It cannot prove panel length.*
 
-Compare the two routes on the same panel list. Same profile, same thickness range, same coil width, same handover sketch. If one route needs a splice the specification forbids, drop it. If the other route needs a chassis the destination cannot register, drop that one and look at the crawler catalog model.
+If the lifted route needs a chassis the destination will not register, drop it and price ARC-C25. If the ground route needs a splice the specification forbids, drop the ground route. Do not average the two into a slogan.
 
 <!-- audit-section: limitations-not-fit -->
-## This roof-level route may not fit
+## Failure modes that should kill the roof-level idea
 
-It may not fit when you cannot show the run-out, when the only access crosses a slab nobody has checked, when the former you already own has no mass or mounting drawing, or when the panel must be flipped by hand at height. It also may not fit when the job is really a ceiling deck for people and materials. That is a large-deck platform conversation, not a forming lift. Stop and change the RFQ rather than forcing a class label.
+The roof-level route may not fit when any of these are true.
+
+- The run-out is a person grabbing a moving strip, and nobody will change that.
+- The only pad is a slab with no bearing note. Measure on site before you ask for a load chart.
+- The former you already own has no mass and no mounting outline.
+- The panel must be flipped by hand at the eave.
+- The job is people and materials under a ceiling. That is an ARC-F25 deck, not a forming lift.
 
 <!-- audit-section: project-checklist -->
-## Put these on the RFQ, then stop adding adjectives
+## Send this, then stop adding adjectives
 
-- Work height and outreach measured to the outlet or deck, not copied from a brochure class
-- Roof slope, parapet, obstructions, and the geometry of each handover point
-- Panel profile, material grade, thickness, coil width, and the feed direction
-- Wind exposure and who stops work when the limit is reached
-- Ground or floor bearing under outriggers, tracks, or the deck path
-- Access route from the gate or door to the first setup pad
-- Outrigger or track footprint and the exclusion zone around it
-- Destination country, port, and the road or floor rules that apply there
-- Chassis or carrier included, local, or still unknown
-- Transport fold size and whether a container is even in the conversation
-- Voltage, power, and who owns the controls at the former and at the lift
-- Compliance documents the destination reviewer will actually ask to see
+- Outlet height and outreach to the eave you marked, plus the panel length that must arrive there
+- Roof slope, parapet, and the geometry of each handover
+- Profile, material, thickness, coil width, and feed side
+- Wind rule and the name of the person who stops the line
+- Ground or floor under the first pad
+- Access route from the gate to that pad
+- Outrigger or track footprint you hope the pad can take
+- Destination country and port
+- Chassis included, local, or unsure, and the transport assumption
+- Container question, only if someone has already raised 40HQ
+- Voltage at the pad and who owns the controls
+- Documents the destination reviewer will ask to see
 
 <!-- audit-section: cta-editorial-note -->
-## Ask for a catalog model against that sketch
+## Open one model and send the sketch
 
-Send the work height, the site plan, the destination, the transport assumption, the work zone, and the floor or ground note with the former or deck sketch. A catalog class is only a starting label. The signed technical schedule and the project-specific drawings decide the order. Photographs on this page are editorial reference images; they do not set a load, a lead time, or a price. Open the truck, crawler, or line page that matches the constraint you circled, or send the pack from the contact form.
+Send the work height, the site pad, the destination, the transport assumption, the handover zone, and the floor or ground note. The signed schedule is project-specific. Editorial images do not set a load or a price.
 
-
-Use the contact form at [request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. <a href="https://www.hse.gov.uk/work-at-height/index.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height guidance</a> is a destination-rule reference for Great Britain. It does not rate ARCLIFT equipment.
+Shortlist: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) for the 18.5m truck class, [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) for the 25m class, and [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is in the same purchase. [Request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. The <a href="https://www.hse.gov.uk/work-at-height/index.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height guidance</a> is a Great Britain reference for the people at the eave. It does not rate these models.
 
 ![Folded red crawler apparatus resting with its support legs extended](/images/equipment/transport-real-stowed.webp)
 
-*Reference photograph showing folded crawler apparatus with supports extended. It does not show a travel-ready state or establish ground capacity and support reactions.*
+*Reference photograph. It is not a measured travel state.*
 
-## FAQ
+#### Does 18.5m or 25m mean the panel can be that long?
+No. Those are catalog height classes. Send the length schedule with the profile.
 
-#### Does the 18.5m or 25m label mean the panel can be that long?
-No. Those figures are catalog height classes for the lift. Panel length is a tooling and handling question. Send the length schedule with the profile drawing.
+#### Can the former and the lift be one RFQ?
+Yes. Name ARC-RF8 and the lift together so the mount is reviewed once.
 
-#### Can I enquire on a former and a lift together?
-Yes. Name ARC-RF8 and the lift model in the same RFQ so the mounting interface is reviewed once. Chassis scope stays on the lift.
+#### We already own the former. What do you need?
+Mass, outline, coil side, and power. Unknown is acceptable. A guessed kilogram is not.
 
-#### What if I already own the roll former?
-Send its mass, outline, coil side, and power. The lift quote is then an interface check, not a new line design.
-
-#### Which base do I open first?
-If the machine must drive a public road between roofs, start with ARC-T18 or ARC-T25. If it stays inside one site and relocates on tracks, start with ARC-C25.
+#### Truck or crawler first?
+Public road between roofs: ARC-T18 or ARC-T25. One site, track moves: ARC-C25.

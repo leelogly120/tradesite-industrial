@@ -4,10 +4,10 @@
   "articles": [
     {
       "slug": "40hq-shipping-truck-mounted-roll-forming-lift",
-      "sha256": "abd40d5a736194833517ac777d75e5ba7c1b81fa28874af21381d12da86faa56",
-      "workspaceSha256": "abd40d5a736194833517ac777d75e5ba7c1b81fa28874af21381d12da86faa56",
-      "gitSha256": "abd40d5a736194833517ac777d75e5ba7c1b81fa28874af21381d12da86faa56",
-      "gitBlobSha1": "98c422a28ce847bf4fdb2330db7fb4d9f21c490b",
+      "sha256": "8dc9d6347124b84b5111b183f7571b72e686e767df666d9e1996ebfc6c8837db",
+      "workspaceSha256": "8dc9d6347124b84b5111b183f7571b72e686e767df666d9e1996ebfc6c8837db",
+      "gitSha256": "8dc9d6347124b84b5111b183f7571b72e686e767df666d9e1996ebfc6c8837db",
+      "gitBlobSha1": "9f66ba7668702145b6e0a7941cb7943199f7b571",
       "title": "\"40HQ Planning for Truck-Mounted Roll-Forming Lifts\"",
       "date": "2026-07-24",
       "updated": "2026-10-22"
@@ -294,20 +294,20 @@
     },
     {
       "slug": "crawler-under-ceiling-platform-buyers-guide",
-      "sha256": "ba682b020bf52771cd0783329f519ad950a39cefd1872831640cb6518b7b8520",
-      "workspaceSha256": "ba682b020bf52771cd0783329f519ad950a39cefd1872831640cb6518b7b8520",
-      "gitSha256": "ba682b020bf52771cd0783329f519ad950a39cefd1872831640cb6518b7b8520",
-      "gitBlobSha1": "33235480e7fc578f04bfec3c333c5d9a6302fba9",
+      "sha256": "b3c5147519a6ad774e5fae366f1e9fe9ed76ed63e3a0eeda1aa86fd5b012c1b1",
+      "workspaceSha256": "b3c5147519a6ad774e5fae366f1e9fe9ed76ed63e3a0eeda1aa86fd5b012c1b1",
+      "gitSha256": "b3c5147519a6ad774e5fae366f1e9fe9ed76ed63e3a0eeda1aa86fd5b012c1b1",
+      "gitBlobSha1": "fee69f6dc88a4e66a1eeb645928d6bb4e94f123c",
       "title": "\"How to Choose a Crawler Under-Ceiling Work Platform\"",
       "date": "2026-07-27",
       "updated": "2026-10-22"
     },
     {
       "slug": "crawler-vs-truck-mounted-roll-forming-system",
-      "sha256": "7b128e70876a08d78d359b6269a38df2a522318aad4256ff858069756665dc2b",
-      "workspaceSha256": "7b128e70876a08d78d359b6269a38df2a522318aad4256ff858069756665dc2b",
-      "gitSha256": "7b128e70876a08d78d359b6269a38df2a522318aad4256ff858069756665dc2b",
-      "gitBlobSha1": "e3d3b705e77ad65fcbcc56715f213686f92887aa",
+      "sha256": "f1ba7aac238738a06f17e6d11f3d733fe8ff613f84fdd13818bc7ba5b2a60748",
+      "workspaceSha256": "f1ba7aac238738a06f17e6d11f3d733fe8ff613f84fdd13818bc7ba5b2a60748",
+      "gitSha256": "f1ba7aac238738a06f17e6d11f3d733fe8ff613f84fdd13818bc7ba5b2a60748",
+      "gitBlobSha1": "1ccf9aad9c396ad6cb270e9424ff4f44121998c0",
       "title": "\"Crawler vs Truck-Mounted Roll-Forming Lifts Compared\"",
       "date": "2026-07-24",
       "updated": "2026-10-22"
@@ -324,10 +324,10 @@
     },
     {
       "slug": "elevated-roll-forming-roof-panel-handover-zones",
-      "sha256": "3c279843e2c84cda8cfe505f3d7f60dd18a959db621556f7a56639bccf96871b",
-      "workspaceSha256": "3c279843e2c84cda8cfe505f3d7f60dd18a959db621556f7a56639bccf96871b",
-      "gitSha256": "3c279843e2c84cda8cfe505f3d7f60dd18a959db621556f7a56639bccf96871b",
-      "gitBlobSha1": "9335b34f4ee4ea642fcb6e9db42dff397c726e9a",
+      "sha256": "04df14aa8fef1893ebaa415b82e501018d8313d9b94b89158e24caf8f4c213a1",
+      "workspaceSha256": "04df14aa8fef1893ebaa415b82e501018d8313d9b94b89158e24caf8f4c213a1",
+      "gitSha256": "04df14aa8fef1893ebaa415b82e501018d8313d9b94b89158e24caf8f4c213a1",
+      "gitBlobSha1": "93c2f8b4628f3a21cd7098fb076d86954bf1daba",
       "title": "\"Roof Panel Handover Zones for Elevated Roll Forming\"",
       "date": "2026-08-07",
       "updated": "2026-10-22"
@@ -344,10 +344,10 @@
     },
     {
       "slug": "high-altitude-roll-forming-lift-rfq-data",
-      "sha256": "697db7a5e36223b5faea1294a83686ed770bf39314656c3f78015bca563cedd9",
-      "workspaceSha256": "697db7a5e36223b5faea1294a83686ed770bf39314656c3f78015bca563cedd9",
-      "gitSha256": "697db7a5e36223b5faea1294a83686ed770bf39314656c3f78015bca563cedd9",
-      "gitBlobSha1": "56f813e3be82ad16bbe567303dab3d9378cbd19d",
+      "sha256": "ca644bfa918f4186f31f89a5d8cf6cc6bcf5925078d84f53ac817a99905bd70c",
+      "workspaceSha256": "ca644bfa918f4186f31f89a5d8cf6cc6bcf5925078d84f53ac817a99905bd70c",
+      "gitSha256": "ca644bfa918f4186f31f89a5d8cf6cc6bcf5925078d84f53ac817a99905bd70c",
+      "gitBlobSha1": "e8c2cf454ab81019ae2f8938a33bd70315f42fab",
       "title": "\"RFQ Data Guide for High-Altitude Roll-Forming Lifts\"",
       "date": "2026-08-07",
       "updated": "2026-10-22"
@@ -454,10 +454,10 @@
     },
     {
       "slug": "roll-forming-lift-buy-vs-rent-project-decision",
-      "sha256": "2b0595f069e27d3a1507a35a32e4307a4612277a0aeda1ba889a71f00e598382",
-      "workspaceSha256": "2b0595f069e27d3a1507a35a32e4307a4612277a0aeda1ba889a71f00e598382",
-      "gitSha256": "2b0595f069e27d3a1507a35a32e4307a4612277a0aeda1ba889a71f00e598382",
-      "gitBlobSha1": "7462259b18fe6388be54ca0f7073bac5fa69649a",
+      "sha256": "d29d0b22295d4ded54114b22ee6dc64fcb5ed0813f06264e0ba9c44e103ac4b3",
+      "workspaceSha256": "d29d0b22295d4ded54114b22ee6dc64fcb5ed0813f06264e0ba9c44e103ac4b3",
+      "gitSha256": "d29d0b22295d4ded54114b22ee6dc64fcb5ed0813f06264e0ba9c44e103ac4b3",
+      "gitBlobSha1": "761871b6e43dbba7e216fae8ac0d85ed218a983d",
       "title": "\"Buy or Rent a Roll-Forming Lift? Compare the Project Need\"",
       "date": "2026-10-24",
       "updated": null
@@ -544,10 +544,10 @@
     },
     {
       "slug": "roll-forming-lift-importer-distributor-supply-package",
-      "sha256": "5f39c315b85ee7d2fa3505029af7637bd91954742a80c6b95899ad2a10a49e56",
-      "workspaceSha256": "5f39c315b85ee7d2fa3505029af7637bd91954742a80c6b95899ad2a10a49e56",
-      "gitSha256": "5f39c315b85ee7d2fa3505029af7637bd91954742a80c6b95899ad2a10a49e56",
-      "gitBlobSha1": "39e0e2bb0cf3289cc850786171ba9f559beabf9a",
+      "sha256": "8de418d4dc33cc79781e72303a5182cd7c87523a5e9dd5adfda5a59440f2100d",
+      "workspaceSha256": "8de418d4dc33cc79781e72303a5182cd7c87523a5e9dd5adfda5a59440f2100d",
+      "gitSha256": "8de418d4dc33cc79781e72303a5182cd7c87523a5e9dd5adfda5a59440f2100d",
+      "gitBlobSha1": "26910f9d9026f324cf7d1c750b58caef9952bfe3",
       "title": "\"Roll-Forming Lifts for Importers: Define the Supply Package\"",
       "date": "2026-10-24",
       "updated": null
@@ -734,10 +734,10 @@
     },
     {
       "slug": "roll-forming-line-specification-long-span-roof-panels",
-      "sha256": "73578472d90ade5f7c4ec68dca1f7ff9d832bfc40ee3e81506d95b6c7fc7b47f",
-      "workspaceSha256": "73578472d90ade5f7c4ec68dca1f7ff9d832bfc40ee3e81506d95b6c7fc7b47f",
-      "gitSha256": "73578472d90ade5f7c4ec68dca1f7ff9d832bfc40ee3e81506d95b6c7fc7b47f",
-      "gitBlobSha1": "d8845154af3f28eef30500061edcb87f374e8c38",
+      "sha256": "9de2b0604a3181db79fd55c7801f4a91fef0577b81107c28cda5a21cea6da9fa",
+      "workspaceSha256": "9de2b0604a3181db79fd55c7801f4a91fef0577b81107c28cda5a21cea6da9fa",
+      "gitSha256": "9de2b0604a3181db79fd55c7801f4a91fef0577b81107c28cda5a21cea6da9fa",
+      "gitBlobSha1": "a4d4efeba7b58e9b349968c7315b92535c245788",
       "title": "\"Roof-Panel Roll-Forming Lines: Specification for Lifts\"",
       "date": "2026-07-24",
       "updated": "2026-10-22"
@@ -764,10 +764,10 @@
     },
     {
       "slug": "roof-level-roll-forming-long-panels",
-      "sha256": "95be17fbcd8a265c9b9503bea3181347be1866d12236b5f979ee7cf08f9edc86",
-      "workspaceSha256": "95be17fbcd8a265c9b9503bea3181347be1866d12236b5f979ee7cf08f9edc86",
-      "gitSha256": "95be17fbcd8a265c9b9503bea3181347be1866d12236b5f979ee7cf08f9edc86",
-      "gitBlobSha1": "69364b1bd67519d2599ca049bfebce9ccc9d6a09",
+      "sha256": "0a98c330369ed556889739f59d186578c03b6dcbddaea4073bac45a87fa21d3f",
+      "workspaceSha256": "0a98c330369ed556889739f59d186578c03b6dcbddaea4073bac45a87fa21d3f",
+      "gitSha256": "0a98c330369ed556889739f59d186578c03b6dcbddaea4073bac45a87fa21d3f",
+      "gitBlobSha1": "c8edc75780a51da3aea6a2bc2e6adfb3cb4e6311",
       "title": "\"Roof-Level Roll-Forming Lifts for Long Roof Panels\"",
       "date": "2026-07-24",
       "updated": "2026-10-22"
@@ -854,10 +854,10 @@
     },
     {
       "slug": "truck-mounted-roll-forming-chassis-interface-review",
-      "sha256": "7288da1e98809e0e47e7306b0e306dc93aba9a94b3943362ec3c68ef2d8aabc8",
-      "workspaceSha256": "7288da1e98809e0e47e7306b0e306dc93aba9a94b3943362ec3c68ef2d8aabc8",
-      "gitSha256": "7288da1e98809e0e47e7306b0e306dc93aba9a94b3943362ec3c68ef2d8aabc8",
-      "gitBlobSha1": "f0b97dcc07396b20a18504110058a5a7266cc017",
+      "sha256": "20c6ae9f2ce7248bfddc9e0889c512e76b153e4f38c933d3c00f6bc1c364a03b",
+      "workspaceSha256": "20c6ae9f2ce7248bfddc9e0889c512e76b153e4f38c933d3c00f6bc1c364a03b",
+      "gitSha256": "20c6ae9f2ce7248bfddc9e0889c512e76b153e4f38c933d3c00f6bc1c364a03b",
+      "gitBlobSha1": "f99f449fa7e4f5c434d6e75712733c572d5acd0e",
       "title": "\"Truck Chassis Integration Review for Roll-Forming Lines\"",
       "date": "2026-07-27",
       "updated": "2026-10-22"

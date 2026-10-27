@@ -11,109 +11,125 @@ coverCaption: "Reference photograph of a broad platform and red lifting structur
 draft: false
 ---
 
-A crawler under-ceiling platform is a place to put people, tools, and materials along a face. It is not a roll-forming lift, and it is not a scaffold quote with a different name. Buy it when the work is a continuous ceiling or wall, and the crew needs a deck that can be moved and then parked. If you only need to visit points, say that, because a basket may be the shorter conversation.
+If the job is people and materials under a ceiling, shortlist a large-deck crawler, not a roll-forming lift. Screen [ARC-F20](/products/arc-f20-crawler-ceiling-platform/) at the 20m catalog class, [ARC-F25](/products/arc-f25-crawler-ceiling-platform/) at 25m, [ARC-F31](/products/arc-f31-crawler-ceiling-platform/) at 31m, and [ARC-F35](/products/arc-f35-crawler-ceiling-platform/) at 35m. The class is the height screen. Deck load, entry width, and floor bearing are confirm on RFQ or measure on site. A forming lift such as ARC-T25 or ARC-C25 answers a different question: it holds a roll former. Do not buy it because the brochure also shows a platform.
 
 **Contents**
 
-- The job the deck is for
-- The building as a sequence of zones
-- Load, power, and rescue as inputs
-- When a large deck is the wrong tool
-- Which catalog page to open
+- Which catalog class to screen
+- The building measurements that beat the class
+- Occupied rooms and empty shells
+- What to send with the deck sketch
 
 <!-- audit-section: buyer-intent -->
-## Start from the face you have to touch
+## Name the workface before the model
 
-### Continuous face or a list of points
-Walk the ceiling or wall and mark the length that must be reached without climbing down. A long face with the same task, such as fixing panels or services, is the reason to look at [ARC-F25](/products/arc-f25-crawler-ceiling-platform/) in the 25m catalog class or the neighbouring large-deck classes. A handful of lamps in a hall is a different machine. Write which one you have before you ask for a price you will not get from this page.
+The useful sentence is "we need a deck under this soffit for this crew and these materials." The weak sentence is "we need the biggest crawler." Write the first sentence, then use the table to see which catalog class is even in the conversation.
 
-### People, tools, and the thing they are fixing
-Name the crew count you expect on the deck and what they carry: hand tools, a panel bundle, a coil of cable, a welder. Do not convert that into a kilogram rating yourself. The quotation compares your list with a load chart that does not exist on the website. "Two fitters and a stack of panels" is a better RFQ line than a made-up tonne.
+### People, tools, and the stack of panels
+Say what stands on the deck: crew, hand tools, and whether a bundle of ceiling or wall panels is supposed to ride up with them. This page will not assign a kilogram to that stack. The quotation can, after you describe it. If the stack is unknown, write unknown rather than copying a number from a rental flyer.
 
-### Not a former lift
-[ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) raises a roll former. ARC-F25 is a work deck. If the RFQ says both, split it into two lines so nobody quotes a basket as a former mount. Warehouse, stadium, and terminal jobs in the applications pages are deck jobs when the sentence is about access, and forming jobs when the sentence is about a panel leaving a machine.
+### Not a roll former
+If a roll-forming line must sit on the machine, leave this guide and open ARC-T18, ARC-T25, or ARC-C25. The deck models here are for access and installation. Mixing the two in one RFQ produces a polite answer to the wrong machine.
+
+### Door, then height
+A 35m class that cannot pass the door is not a 35m solution for that building. Measure the door, the turn inside, and the lowest duct on the route. Do that before you fall in love with the class.
+
+### Rescue and the way down
+Name how people leave the deck if the machine stops. A catalog class does not contain a rescue plan. Your site does. If you have no plan yet, say so. The quote should not invent one in a footnote.
 
 ![Raised red platform structure outside an industrial building with open bays](/images/equipment/entry-real-approach.webp)
 
-*Reference photograph of a raised platform outside an industrial building. It does not verify an entry route, transport envelope, task clearance or suitability for another site.*
+*Reference photograph. It does not prove an entry path.*
 
 <!-- audit-section: conditions -->
-## Break the building into zones you can lose
+## Catalog height classes for the shortlist
 
-### Door, ramp, and the first turn
-Measure the opening the machine must pass: width, height, and anything that sticks into it. Then the first turn. A deck that works under the ceiling and cannot enter the building is not a candidate. Say if a wall is still open during installation and will be closed later. That sequence changes the transport story.
+| Model | Catalog height class | What the class is allowed to mean | What you still measure or confirm |
+| --- | --- | --- | --- |
+| ARC-F20 | 20m | A screen for a lower ceiling or a shorter rise | Deck load: confirm on RFQ. Door and floor: measure on site |
+| ARC-F25 | 25m | The mid screen most buyers compare first | Deck load and power: confirm on RFQ. Overhead obstacles: measure on site |
+| ARC-F31 | 31m | A taller screen, still not a measured underside | Same blanks. Do not subtract 25 from 31 and call it spare reach |
+| ARC-F35 | 35m | The tallest class in this family | Entry route often fails before height does. Measure the route |
 
-### Floor from the door to the last pad
-Slabs, joints, trenches, raised floors, and covers. Note where a track would cross a joint you do not trust. The catalog will not publish a bearing pressure. Your note is what makes the reviewer ask for a mat or refuse the route.
+### Soffit, not slab
+Measure from the floor you will set up on to the face you must reach. Beams, lights, and sprinklers steal that distance. A class taller than the room can still be useless if the deck cannot pass the beam.
 
-### Overhead, not just height
-Ducts, purlins, lights, scoreboards, and cranes occupy the space the deck wants. Mark the lowest obstruction in each zone and the horizontal offset from the face. A 25m class label does not clear a duct at 11m. The section does.
+### Floor that has to hold the setup
+Note slab, soil, or a raised floor. Mark covers and ramps. Bearing pressure is confirm on RFQ. The fact that the floor is a warehouse slab is not a bearing number.
 
-### Occupied building versus an empty shell
-A terminal or a shop that stays open is not the same RFQ as a shell with no public underneath. Say the hours the deck may stand in a aisle, what barrier you can build, and whether materials can be staged overnight. Those facts change the travel path more than the catalog class does. If you cannot close the area, write that in the first paragraph so the quotation does not assume an empty floor. Add the hour the public returns, because a deck that must be folded and moved before opening is a different setup from one that can stay parked overnight.
+### Power and who drives
+Say whether the building can feed the machine or whether you will bring power. Say whether the operator stands on the deck, beside it, or both. Unknown is allowed. A guess about voltage copied from another country is not.
 
-### Rescue and who is in charge
-Who can lower the deck, where the second way out is, and whether the building is occupied. Indoor work often fails on rescue and communication, not on the catalog class. Name the person who will sign the method, even if that person is not you.
+### Night work and a closed shop
+If the ceiling is above a shop that trades in the day, the working hours are part of the machine choice. A deck that can only be driven in at dawn may still be the right class and the wrong week. Write the hours.
 
 ![People on a yellow raised platform beneath steel roof framing inside a building](/images/equipment/entry-real-interior.webp)
 
-*Reference photograph of people on a raised platform beneath roof framing. It does not establish a permitted occupant count, task load, working method or approved arrangement.*
+*Reference photograph. It cannot set an occupant count.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## The trade-off is deck area against the building envelope
+## The trade-off is reach against the occupied room
 
-A large deck lets a crew keep materials beside the work. It also needs a door, a floor, and a path that a basket never asked for. The constraint is that envelope: entry, turn, overhead, and the floor under the parked machine. A spider or a scaffold can win when the door is small or the floor is a finished surface you cannot mark. A deck wins when the face is long and the materials cannot live in a basket. Compare those constraints on one sketch, not on slogans.
+A taller class reaches a higher soffit and usually asks more of the door, the floor, and the exclusion under the deck. A shorter class is easier to bring in and may leave the crew short of the face, which they will then solve with ladders you did not plan. The constraint is the workface, not the largest number in the family.
 
-### Power at the deck
-Say if the tools need power on the platform and who provides it. A cable dragged from a wall and a circuit on the machine are different interfaces. Leave the voltage as a fact from the site, not a guess copied from another country.
+### Occupied building
+People who are not your crew still use the floor. The exclusion, the noise, and the hours belong in the RFQ. A photograph of an empty bay is not that building.
 
-### What the interior photograph is for
-The photograph shows people on a platform under steel. It does not show your hall, your load, or a permitted method. Use it to remember to photograph your own obstruction and your own floor joint.
+### Empty shell
+You can move further and leave materials on the deck path. You can also discover that the slab was never meant to see a crawler. Measure it anyway.
+
+### One bay or the whole grid
+If the deck must relocate under a repeating grid, the track path between bays matters as much as the height. Mark three bays, not one hero bay.
+
+### The first morning inside the building
+Walk the route with the person who controls the door, not with the person who liked the catalog photo. Start outside and write what the crawler meets in order: the street, the gate, the ramp, the door, the first turn, the first beam, and the bay where the deck must sit. At each step write a number you measured or the word unknown. A 25m class that clears the soffit and clips the mezzanine on the way in is a failed entry, and the failure belongs in the RFQ before anyone discusses options.
+
+Note who else is in the building that morning. A shop that keeps a forklift aisle open will not accept the same exclusion as an empty shell. Say whether materials are staged inside overnight or arrive with the crew. Say whether the deck must fold to let that forklift pass, and how many times a day. Those repeats are a site fact. They are not a speed claim.
+
+Write the underside as a list of things the deck must not touch: lights that stay, a sprinkler main, a signage box, a cable tray. You do not need a millimetre from this website. You need the objects named so the quotation can ask which ones move. If nothing can move, say that too. A short class that works around a fixed tray is a better buy than a tall class that only works after someone else redesigns the ceiling.
+
+End the walk with the way the crew gets down if the machine stops away from the door. Name the person who calls that stop and the person who meets them. If those names are the same as the operator, say so. A deck purchase that skips this walk usually comes back as a second quote for a smaller class, after the door has already been promised to the building owner.
 
 ![Folded red crawler apparatus outdoors with support beams extended to the ground](/images/equipment/transport-real-stowed.webp)
 
-*Reference photograph of a separate folded crawler apparatus with extended supports. It does not show the same machine as the platform photographs or establish a permitted travel state, conversion or platform option.*
+*Reference photograph. It is not a measured folded size.*
 
 <!-- audit-section: limitations-not-fit -->
-## A large deck may not fit
+## Failure modes
 
-It may not fit when the machine cannot pass the door, when the floor is unknown, when the work is really a roll former at the eave, or when rescue cannot be described. It may not fit when the ceiling is a scatter of points and you would rather hire a basket for a week. Stop and change the RFQ. Forcing ARC-F25 onto a forming specification wastes the review.
+This shortlist may not fit when the door is smaller than any folded envelope you are willing to wait for a drawing to prove. It may not fit when the "deck" is actually a basket for one person and a forming line is the real purchase. It may not fit when the floor owner will not allow tracks. It may not fit when you need a published deck load tonight. That number is confirm on RFQ, after the crew and the materials are described.
 
 <!-- audit-section: project-checklist -->
-## Deck RFQ inputs
+## Deck inputs
 
-- Work height and outreach measured to the deck or outlet, not copied from a brochure class
-- Roof or ceiling geometry, slope, obstructions, and each work face
-- Panel, material, or tool load you intend to park on the deck, described not guessed as a rating
-- Wind or indoor air movement and who stops the task
-- Floor or ground bearing along the whole travel path
-- Access from the door or gate to the first setup
-- Outrigger, track, or stabilizer footprint and the exclusion zone
-- Destination and the local rule that will review the method
-- Carrier included or not, and how the machine enters the building
-- Transport fold and any container assumption, left open if unknown
-- Voltage, power, and who holds the controls
-- Documents the reviewer will ask for before people go up
+- Work height from the setup floor to the soffit, and the catalog class you want screened
+- Roof or ceiling geometry, beams, lights, and slope if the face is not flat
+- Materials that ride the deck: profile, panel length, or "tools only"
+- Wind only if the face is open to weather
+- Floor construction under the tracks
+- Access route from the street to the first bay, including the door
+- Outrigger or track footprint you can mark, or unknown
+- Destination and whether the building is occupied
+- Chassis is usually not the question; the carrier that delivers the crawler is
+- Transport to site, including any container story
+- Voltage, power, and where the operator stands
+- Documents the building owner will ask to see before entry
 
 <!-- audit-section: cta-editorial-note -->
-## Open the large-deck catalog model
+## Send the bay sketch to the deck shortlist
 
-Send the work height at the face, the site plan, the destination, how it will be transported in, the work zone, and the floor it must cross. The signed schedule is project-specific. Editorial images here do not set a deck load or a lead time. Start with [ARC-F25](/products/arc-f25-crawler-ceiling-platform/) and [request a quote](/contact/?request=quote). The <a href="https://www.osha.gov/fall-protection" target="_blank" rel="noopener noreferrer">OSHA fall-protection overview</a> is a United States doorway for the buyer’s own reviewer. It is not an ARCLIFT certificate.
+Send the work height, the site door, the destination, the transport of the crawler, the work zone under the soffit, and the floor note. The signed schedule is project-specific. Editorial images do not set a deck load.
 
-### Zones worth writing in full sentences
-Write one sentence per zone: what the crew does there, what sits overhead, and how they leave. Five honest sentences beat a single "ceiling work" line. Include the zone you hope to avoid, such as a trench or a public concourse, because that zone is usually the one that kills the route.
+Open [ARC-F20](/products/arc-f20-crawler-ceiling-platform/), [ARC-F25](/products/arc-f25-crawler-ceiling-platform/), [ARC-F31](/products/arc-f31-crawler-ceiling-platform/), or [ARC-F35](/products/arc-f35-crawler-ceiling-platform/) and use the quote button, or [request a quote](/contact/?request=quote). WhatsApp +86 15515922444 can carry the same sketch. The <a href="https://www.osha.gov/fall-protection" target="_blank" rel="noopener noreferrer">OSHA fall-protection overview</a> is for destinations where it applies. It does not choose a class.
 
-### Materials that must ride the deck
-List materials that cannot be passed up by hand. A bundle of panels, a glass unit, or a cable drum changes the conversation even when you refuse to invent a kilogram rating. Say the count and the rough size you can measure with a tape. Leave the allowable load to the chart in the quotation.
+#### Why not ARC-C25?
+ARC-C25 is a forming-lift class. Use it when a roll former is the payload. Use ARC-F when the payload is the crew and the materials.
 
-#### Is ARC-F25 a roll-forming lift?
-No. It is a large-deck catalog model for ceiling and wall access. Forming lifts are the ARC-T and ARC-C pages.
+#### Is 31m the reach under the beam?
+No. 31m is the catalog class. The beam is a site measure.
 
-#### Does 25m mean I can reach every point in the hall?
-No. 25m is the catalog height class. Ducts, offsets, and the floor route decide the real face you can touch.
+#### Can the deck take a bundle of panels?
+Ask in the RFQ after you describe the bundle. Do not copy a rental sticker.
 
-#### What should I send if the floor drawing is unfinished?
-Send the drawing you have and mark the zones as unknown. Unknown is allowed. A guessed slab capacity is not.
-
-#### Can the carrier be included?
-Say yes, no, or unsure. Entry through the building and transport to the site are different lines on the RFQ.
+#### What if the floor rating is unknown?
+Write unknown and who will test it. That is more useful than a guessed tonne.

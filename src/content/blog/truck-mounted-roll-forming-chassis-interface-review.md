@@ -11,116 +11,124 @@ coverCaption: "Reference photograph of a truck-mounted arrangement and nearby co
 draft: false
 ---
 
-A truck chassis integration review treats the roll-forming lift as a pairing, not a paint color. The vehicle, the lift module, and the former each have a mass, a footprint, and a service side. The quote is useful when those three are drawn on one elevation in the road position and again in the work position. A model name does not do that drawing.
+A truck chassis integration review starts with one decision: the chassis is included, it is local, or you are unsure. Screen the lift as [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) at the 18.5m catalog class or [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) at 25m, and add [ARC-RF8](/products/arc-rf8-roll-forming-machine/) only when the former is in the same buy. Until a signed schedule exists, loads, stability, road use, registration, compliance, final architecture and chassis fit remain undecided. The [payload allocation review](/blog/truck-mounted-roll-forming-payload-allocation-review/) is where module mass and coil mass get separated once a candidate chassis exists.
 
 **Contents**
 
-- Name the vehicle you actually mean
-- Draw the interface before the brochure
-- Utilities, axle, and service access
-- Conflicts that should stop the file
-- What to send ARCLIFT
+- The chassis line that changes the quote
+- Road position and work position
+- What a photograph will not settle
+- The file to send
 
 <!-- audit-section: buyer-intent -->
-## Name the vehicle before the lift class
+## Write the chassis choice in words a second person can repeat
 
-### Whose chassis is in the price
-Say yes, no, or unsure. "Unsure" is a valid RFQ answer. It tells us whether [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) or [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) is being quoted as a module onto a destination truck, or as a package that includes a chassis. Those are different supply scopes. Do not leave the word "truck" to imply a registered vehicle.
+"Truck" is not a scope. Included, local, or unsure is a scope. Put that word in the email, on the form, and on the truck catalog page so the three do not drift.
 
-### The class is not the axle
-18.5m and 25m are catalog height classes. They are not axle loads, not a wheelbase, and not a statement that the finished vehicle is road-legal anywhere. If the destination already has a chassis candidate, send the manufacturer, wheelbase, cab position, and any body that must stay. If it does not, say the chassis is open and ask the quote to list what the module needs.
+### Whose name is on the vehicle
+If the destination already has a candidate, send the builder, the wheelbase, and whether the cab stays. If it does not, say the chassis is open. The quote should list what the module needs instead of inventing a brand.
 
-### Former first, then the deck it sits on
+### The class is not an axle
+18.5m and 25m are catalog height classes. They are not axle loads and not a statement that the finished vehicle is road-legal. Registration is a destination question. Ask it directly.
 
-The former's outline should show the decoiler, the shear, and the direction the panel leaves. Put a box around anything that hangs past the chassis frame in the work position. If a coil car is a separate purchase, say whether it travels on the truck or arrives on its own trailer. Mixing those stories is how a quote looks complete and then fails at the port. Write one sentence: "The coil is loaded from the left / right / either side, by a forklift / crane / coil car." If you cannot finish the sentence, that is the first question in the RFQ, ahead of color and cab trim.
+### Former before trim
+The former's decoiler, shear, and outlet direction decide the interface. Cab colour does not. If the former is already yours, send the outline. If it is ARC-RF8, say so and leave mass as confirm on RFQ.
 
-### A second setup is still the same chassis
-If the truck must form on two eaves, the road position between them is part of the interface. Note gates, overhead wires, and the surface it drives on while folded. A chassis that works on the first pad and cannot leave it is not a truck-mounted solution for that roof. Say how many moves you expect in a day only as a site fact, not as a cycle-time promise.
-
-The former's mass and coil side drive the interface. [ARC-RF8](/products/arc-rf8-roll-forming-machine/) is the catalog line when you are also buying the former. If the former is already yours, send its outline instead of a catalog photo. A suspended module in a yard photograph is not your machine.
+### A second roof is still the same chassis
+Gates, wires, and the surface the truck drives while folded are part of the interface. A chassis that works on the first pad and cannot leave it is not a solution for a route of roofs. Say how many moves you expect only as a site fact.
 
 ![Blue machine module suspended beside a red lifting assembly in a yard](/images/equipment/coil-real-module.webp)
 
-*Reference photograph of a machine module beside lifting apparatus. It does not verify a truck mounting interface, component compatibility or an approved lifting method.*
+*Reference photograph. It does not show your chassis.*
 
 <!-- audit-section: conditions -->
-## Put road position and work position on the same sheet
+## Chassis choices beside the catalog class
+
+| Choice | Height screen you may cite | What ships | What you measure or confirm |
+| --- | --- | --- | --- |
+| Chassis included | ARC-T18 at 18.5m or ARC-T25 at 25m | Lift and vehicle from the quoted scope | Platform load, axle, registration: confirm on RFQ |
+| Chassis local | Same screens | Lift module, then a destination builder | Interface drawing confirm on RFQ. Their frame: measure on site |
+| Unsure | Same screens | Nothing is implied by the word truck | Leave the line blank and ask for two columns |
+| ARC-T25HQ packing route | 25m class, box is the limit | A module someone hopes to crate | Folded size confirm on RFQ. Do not treat 40HQ as done |
+| ARC-C25 instead | 25m crawler class | Not a truck chassis at all | Use this row when the road vehicle was a mistake |
 
 ### Road position
-Cab, lift folded, former stowed or removed, outriggers in, overall height and width as you expect them to travel. Mark overhangs. This is the drawing a transport reviewer argues with. We will not invent clearances you did not measure.
+Cab, lift folded, former stowed or removed, stabilisers in. Mark overhangs you already know. If you do not know the folded height, write unknown. We will not invent a clearance.
 
 ### Work position
-Outriggers or stabilisers down, former at the outlet you care about, coil on the feed side, run-out going toward the roof. Show the exclusion zone for people. If the same chassis cannot reach both the road envelope and this work envelope, the file has a conflict, not a detail to hide in an appendix.
+Stabilisers down, former at the outlet, coil on the feed side, run-out toward the roof. Show where people must not stand. If one chassis cannot be both drawings, the file has a conflict.
 
 ### Ground under the stabilisers
-Soil, slab, or a mat. Note slopes and covers. The catalog page will not publish a bearing pressure. Your note lets the quotation ask for a pad design instead of pretending the yard is flat.
+Soil, slab, or a mat. Bearing is confirm on RFQ. The yard being "flat" is not a measure.
 
-### Where the mechanic stands
-Service doors, hose routes, and the control side need a person. If the former's decoiler occupies that side, say so now. Moving a cabinet after the chassis is built is the expensive version of this conversation.
+### The side the mechanic uses
+Service doors and the control side need a person. If the decoiler occupies that side, say so now. Moving a cabinet after the chassis is built is the expensive version of this conversation.
 
 ![Coils and elevated apparatus positioned beside an unfinished steel building](/images/equipment/coil-real-handling.webp)
 
-*Reference photograph of material staging and elevated apparatus beside a structure. It cannot establish vehicle load distribution, ground adequacy or a reviewed chassis arrangement.*
+*Reference photograph. It cannot show axle loads.*
 
 <!-- audit-section: evidence-tradeoffs -->
 ## The trade-off is a complete vehicle against a local chassis
 
-Shipping a complete vehicle can simplify the first start-up and complicate destination registration. Shipping a lift module for a local chassis does the opposite: the destination builder owns the vehicle rules, and the interface drawing becomes the contract between you and that builder. The constraint is the interface, not the slogan on the door. ![Raised red forming apparatus positioned beside a building with supports visible](/images/equipment/entry-real-clearance.webp)
+Shipping a complete vehicle can make the first start simpler and the registration harder. Shipping a module for a local chassis does the opposite: their builder owns the vehicle rules, and the interface drawing is the contract between you and that builder. The constraint is the interface.
 
-*Reference photograph of elevated apparatus in an exterior work area. It does not confirm a truck chassis design, service clearance or any permitted movement state.* is only a scene. It does not show your chassis.
+### Power across the joint
+A shared generator, a chassis supply, and a site cable are three different interfaces. Name the one you want, or ask the quote to propose the split.
 
-### Power and controls across the joint
-Write who supplies lift power and who supplies former power. A shared generator, a chassis PTO, and a site cable are three different interfaces. Name connectors only if you already know them. Otherwise ask the quote to propose the split.
+### Coil side versus traffic
+The feed side and the street often want the same space. Pick one. Draw the stabiliser that would otherwise land in the loading zone.
 
-### Coil side versus traffic side
-The feed side of the former and the traffic side of the truck often want the same space. Pick one. If the coil must be loaded from the street, the outrigger on that side cannot occupy the truck. Draw it.
+### What you still do not know
+Legal axle, fifth-wheel height, and a passed inspection are not on this website. The payload guide linked above is the next page once a candidate exists. Until then the loads stay open on purpose.
 
-### Axle groups and the fold you can actually drive
-List the axle groups you expect to remain legal after the module is mounted, and the fold height you must stay under for the bridges on the real route. Do not copy a number from a different country's drawing. If you do not have the numbers, write "unknown" beside each axle and beside the folded height. A blank is more useful than a guessed tonne. The quotation can then mark those lines as open instead of designing a chassis around fiction. The [payload allocation review](/blog/truck-mounted-roll-forming-payload-allocation-review/) is the place to separate module mass from coil mass once a chassis candidate exists. Add the route's lowest bridge or gate if one bridge is the reason you are worried. That single obstruction often matters more than the catalog class.
+### Axle groups you should leave blank
+List the axle groups you hope will remain usable after the module is mounted, and write unknown beside each one you have not been given by the chassis builder. Add the folded height you must stay under for the lowest bridge or gate on the real route. One obstruction is often the whole reason the 18.5m screen is in the conversation instead of the 25m screen. Measure that obstruction on site. Do not copy a folded height from a drawing that was made for a different cab.
 
-### What a photograph cannot settle
-Reference photographs show families of equipment. They do not show axle group loads, a fifth-wheel height, or a passed inspection. Treat them as reminders of what to photograph on your own candidate truck.
+Say whether the former stays on the chassis while the truck moves between eaves, or whether it comes off and follows on a trailer. Both can be honest. A file that says "travel mode" without choosing one of them will be read as the more convenient option by whoever quotes first. Put the choice in a sentence: "former stays aboard" or "former is a second vehicle." If the coil is loaded from a forklift, say which side of the parked truck that forklift uses, and whether that side is also the traffic side. The stabiliser on the forklift side cannot occupy the same rectangle.
+
+Ask the destination builder, if you already have one, for the wheelbase and the cab position they are willing to defend. If you do not have a builder, do not invent a European or a domestic chassis to make the drawing look finished. The quote can show the module envelope the builder must clear. That envelope is still confirm on RFQ until someone signs it. Keep the registration owner on the same page as the envelope. A module that fits a frame and a frame that cannot be registered in the destination country is not a completed integration. It is two purchases that have not met. Write the name of the person who will answer the chassis builder's questions, and the language they will answer in. A drawing that arrives without that name sits until someone guesses a contact. Guessing is how the stabiliser spread changes quietly between revision A and revision B. Put the revision letter on the email subject so the builder answers the drawing you meant.
+
+![Raised red forming apparatus positioned beside a building with supports visible](/images/equipment/entry-real-clearance.webp)
+
+*Reference photograph. It is not a measured envelope.*
 
 <!-- audit-section: limitations-not-fit -->
-## This pairing may not fit
+## Failure modes
 
-It may not fit when the candidate chassis is already at its legal length, when the former is heavier than any number you are willing to write down, when the destination forbids the stabiliser spread, or when you need the machine to move between roofs on tracks rather than on a road vehicle. In that last case, leave the truck page and open a crawler catalog model. Do not ask a chassis drawing to solve a tracked-site problem. Until a signed schedule exists, loads, stability, road use, registration, compliance, final architecture and chassis fit remain undecided.
+This pairing may not fit when the candidate chassis is already at its legal length, when the former is heavier than any number you will write down, when the destination forbids the stabiliser spread, or when the machine must move on tracks. In that last case open ARC-C25. It may not fit when two people averaged two outlet heights into one number to keep the peace. Send both numbers.
 
 <!-- audit-section: project-checklist -->
-## Chassis RFQ inputs
+## Chassis file
 
-- Work height and outreach measured to the outlet or deck, not copied from a brochure class
-- Roof slope, parapet, obstructions, and the geometry of each handover point
-- Panel profile, material grade, thickness, coil width, and the feed direction
-- Wind exposure and who stops work when the limit is reached
-- Ground or floor bearing under outriggers, tracks, or the deck path
-- Access route from the gate or door to the first setup pad
-- Outrigger or track footprint and the exclusion zone around it
-- Destination country, port, and the road or floor rules that apply there
-- Chassis or carrier included, local, or still unknown
-- Transport fold size and whether a container is even in the conversation
-- Voltage, power, and who owns the controls at the former and at the lift
-- Compliance documents the destination reviewer will actually ask to see
-
-### Extra lines that belong only on a truck file
-- Candidate chassis brand, wheelbase, and whether the cab stays
-- Road position envelope and work position envelope on one sheet
-- Who registers the vehicle and in which country
-- Stabiliser spread the site can actually accept
+- Work height and outreach to the outlet, plus the catalog class you are screening
+- Roof slope and the eaves the truck must reach
+- Profile, material, thickness, coil width, and feed side
+- Wind stop for the panel once it is in the air
+- Ground under the stabilisers
+- Access route, including bridges and gates on the real road
+- Outrigger spread the site can accept, or unknown
+- Destination country and who registers the vehicle
+- Chassis included, local, or unsure
+- Transport between roofs while folded
+- Container only if ARC-T25HQ is actually in play
+- Voltage and who owns lift power versus former power
 
 <!-- audit-section: cta-editorial-note -->
-## Send the pairing, not a slogan
+## Send the pairing
 
-Send the work height you need at the outlet, the site pad, the destination, the transport assumption, the work zone, and the floor or ground under the stabilisers. The signed technical schedule is project-specific. Editorial images on this page do not set a price or a delivery week. Start from [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) or [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), and use [request a quote](/contact/?request=quote). The <a href="https://www.fmcsa.dot.gov/regulations" target="_blank" rel="noopener noreferrer">FMCSA regulations index</a> is a United States road-rule doorway. It is not an approval of any ARCLIFT arrangement.
+Send the work height, the site pads, the destination, the transport route, the work zone at the eave, and the floor or ground under the stabilisers. The signed schedule is project-specific. Editorial images do not legalise a vehicle.
 
-#### Is a truck chassis included?
-Only if the RFQ says yes. The catalog default is "confirm on RFQ".
+Start from [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) or [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), add [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if you are buying the line, and use [request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. The <a href="https://www.fmcsa.dot.gov/regulations" target="_blank" rel="noopener noreferrer">FMCSA regulations index</a> is a United States road-rule doorway. It is not an approval of any arrangement.
 
-#### Will the vehicle be road-legal in my country?
-Not from this page. Registration is a destination question. Send the country and who owns that filing.
+#### Is the chassis included?
+Only if your RFQ says yes. The catalog default is confirm on RFQ.
 
-#### Can the former stay on the chassis during travel?
-Sometimes, and sometimes it is a separate package. The road-position drawing is how you ask the question without guessing.
+#### Will it be road-legal here?
+Not from this page. Send the country and who files.
 
-#### What if 40HQ packing is the hard limit?
-Open the ARC-T25HQ packing-route page and treat container fit as unproven until a packing study says otherwise.
+#### Can the former stay on during travel?
+Sometimes. The road-position drawing is how you ask without guessing.
+
+#### What if 40HQ is the limit?
+Open ARC-T25HQ and treat the box as unproven until a packing study exists.

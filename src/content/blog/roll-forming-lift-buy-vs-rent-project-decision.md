@@ -10,93 +10,98 @@ coverCaption: "Reference photograph of crawler equipment on a separate carrier. 
 draft: false
 ---
 
-Buy or rent is a question about how long you need a roof-panel roll-forming lift and who carries the machine between jobs. It is not a question this page can price. ARCLIFT publishes catalog models for purchase enquiries. This guide does not say that a rental fleet exists, what it costs, or how fast it could arrive.
+Buy when the same crew will repeat the same outlet often enough to own the learning, the transport, and the idle weeks. Rent when one roof's dates are shorter than that learning and you can name what the hire must include. Either way, screen the machine first: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) at 18.5m, [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) at 25m, and [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is part of the job. This page has no hire rate and no purchase price. Both numbers belong in a quotation after the scope is the same on both columns.
 
 **Contents**
 
-- Write the need before the route
-- What ownership actually includes
-- What a hire file would have to include
-- When the comparison is fake
-- What to send
+- A comparison with no prices
+- What "included" must list
+- When neither column is honest
+- How to ask
 
 <!-- audit-section: buyer-intent -->
-## Write the roofs first
+## Make the two columns describe the same roof
 
-### How many roofs, how far apart
-List the roofs you expect this machine to serve and whether they are in one yard or in different towns. A machine that lives on one site for a year is a different file from a machine that must appear on four sites. You still do not need a day rate to see that split.
+A rent quote for "a 25m lift" and a buy quote for "a 25m lift plus former plus chassis" are not a comparison. Write the outlet, the former, the base, and the site once. Ask both paths to answer that sheet. The catalog class is only the screen.
 
-### The former is part of the need
-A personnel-platform hire does not answer a forming-lift question. Say whether you already own the former or you need [ARC-RF8](/products/arc-rf8-roll-forming-machine/) with the lift. [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) and [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/) are purchase catalog models, not hire advertisements.
+### Repeat work versus one roof
+List the roofs you already have, not the roofs you hope to win. If the list is one address and a finish date, start with hire and write the hand-back condition. If the list is a crew that forms every month, start with a purchase and write who maintains it.
 
-### Who must be able to run it
-Name the crew that will stay with the machine and the crew that would have to be trained if you owned it. A hire that arrives with an operator is a different supply from a purchase that arrives as equipment. Write which one you are allowed to consider. If your company cannot take an operator from outside, say so.
+### Idle time is an ownership fact
+A purchased lift still needs a yard, a person, and a way to the next site. If you cannot name those, the purchase may be early. Say so in the RFQ. Do not ask the website for a payback month.
 
 ![Folded red crawler equipment standing on extended support legs](/images/equipment/transport-real-stowed.webp)
 
-*Reference photograph of folded crawler equipment with supports deployed. It does not verify a travel-ready state, condition assessment or suitability for another project.*
+*Reference photograph. It does not show a hire fleet.*
 
 <!-- audit-section: conditions -->
-## Ownership is a stack of obligations
+## Buy and rent on the same rows
 
-### Storage and the next job
-If you buy, you need a place for the machine when the roof is finished, and a way to move it. That is a chassis or a carrier question, the same one on the catalog page. "Confirm on RFQ" still applies. Owning the asset does not invent a legal road weight.
+| Row | Buy | Rent | What stays open |
+| --- | --- | --- | --- |
+| Height screen | ARC-T18 18.5m, ARC-T25 25m, or ARC-C25 25m | The same class, or say the hire fleet's class is unknown | Confirm the offered class on RFQ |
+| Former | ARC-RF8, your own line, or none | Included, excluded, or bring-your-own | Mass and tooling: confirm on RFQ |
+| Chassis or carrier | Included, local, or unsure | Whose truck or low-bed arrives | Confirm on RFQ |
+| Operator and stop rule | Your crew | Hire crew, your crew, or split | Name the names |
+| Transport to the next roof | Yours after purchase | Usually the hire company's move | Measure the route on site |
+| After the last panel | You keep the machine | Hand-back condition | Write the condition before you book |
+| Documents | Signed schedule and drawings | The hire sheet plus the same site sketch | Project-specific either way |
 
-### Spares and who answers the phone
-Ask who holds wear parts and who is allowed to adjust tooling. Put that in the purchase file as a question, not as a promise you expect this article to make. If you cannot name an owner for spares, the buy case is incomplete.
+### Ceiling work is a third column
+People and materials under a soffit are not a forming-lift hire. Shortlist [ARC-F25](/products/arc-f25-crawler-ceiling-platform/) and the other ARC-F classes. Mixing that deck into a forming-lift rent makes both quotes vague.
 
-### A hire file, if you are allowed to open one
-A hire comparison needs a start date you chose, a stop date, what equipment is on the truck, who operates it, and what happens if the roof slips. If you cannot fill those lines, you do not have a hire offer. You have a wish. Do not invent a weekly number to make the wish look like a spreadsheet.
+### What you can measure without a price
+Outlet height, gate width, and the pad. Measure those on site. Leave load and hire inclusions as confirm on RFQ.
 
 ![Blue machine module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
 
-*Reference photograph showing a suspended blue machine module. It does not verify its identity, compatibility, attachment points or an approved lifting method.*
+*Reference photograph. It cannot show ownership.*
 
 <!-- audit-section: evidence-tradeoffs -->
-## The trade-off is idle time against flexibility
+## The trade-off is control against a short calendar
 
-Buying can make sense when the same former and lift will see enough roofs to justify the storage and the people. Hiring can make sense when the roofs are rare and someone else already carries the machine, the operator, and the transport. The constraint is evidence: you need two real files, not one catalog class and a guessed day rate. This page will not supply the day rate.
+Buying gives you the configuration you specified and the duty to store it, move it, and keep the drawings. Hiring can match a short roof and leaves you with whatever the hire sheet actually lists. The constraint is the inclusion list. A cheap-looking hire that excludes the former, the operator, and the low-bed is a different machine from the one in the buy column.
 
 ![Elevated red forming apparatus beside steel framing with coils at ground level](/images/equipment/coil-real-handling.webp)
 
-*Reference photograph of elevated apparatus, building steelwork and ground-level coils. It does not verify active production, current performance or the complete equipment arrangement being offered.*
+*Reference photograph. It is not a measured job.*
 
 <!-- audit-section: limitations-not-fit -->
-## The comparison may not fit
+## Failure modes
 
-It may not fit when you have no second offer, when the "rental" is actually a different machine such as a basket, or when the roofs are so unlike that one former cannot serve them. It may not fit when cash-flow talk is standing in for a missing profile drawing. Fix the drawing first. Then ask whether to own the lift.
+The comparison may not fit when the rent column hides the chassis and the buy column includes it. It may not fit when you need a load chart from a hire desk that has not seen the former. It may not fit when the "one roof" already has a second phase with a different eave. Split the RFQ. It may not fit when someone asks this page for a rate. We will not invent one.
 
 <!-- audit-section: project-checklist -->
-## Inputs for a purchase enquiry
+## Same inputs on both paths
 
-- Work height and outreach to the outlet you marked
-- Roof geometry, slope, and obstructions
-- Profile, material, thickness, and coil data
-- Wind exposure and the stop rule
-- Ground or floor under the setup
-- Access route into the site
+- Work height and outreach the roof actually needs
+- Roof slope, geometry, and how many eaves
+- Profile, material, thickness, and whether the former is included
+- Wind stop and who is allowed to call it
+- Ground or floor the supports will sit on
+- Access route into the site and on to the next roof
 - Outrigger or track footprint
-- Destination country and port
-- Chassis or carrier included, local, or unsure
-- Transport or container assumption, if any
-- Voltage and who owns the controls
-- Documents the destination will ask to see
+- Destination, even if the hire is domestic
+- Chassis or carrier, and who brings it
+- Transport between yards
+- Container only if the buy path is an import
+- Voltage and who stands at the controls
 
 <!-- audit-section: cta-editorial-note -->
-## Enquire on the purchase catalog
+## Ask for two columns, one site sketch
 
-Send the work height, the site, the destination, the transport assumption, the work zone, and the floor or ground note. The signed technical schedule is project-specific. Editorial images do not set a price, a load, or a lead time. Use [request a quote](/contact/?request=quote) for the catalog model you circled. The <a href="https://www.hse.gov.uk/work-equipment-machinery/puwer.htm" target="_blank" rel="noopener noreferrer">HSE PUWER overview</a> is a Great Britain work-equipment doorway. It does not set an ARCLIFT hire rate, because this site is not offering one.
+Send the work height, the site, the destination, the transport duty, the work zone, and the floor or ground. The signed schedule is project-specific. Editorial images do not set a hire rate or a purchase price.
 
-## FAQ
+Name the screen you want priced both ways: [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), and [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is in scope. [Request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. <a href="https://www.hse.gov.uk/work-equipment-machinery/puwer.htm" target="_blank" rel="noopener noreferrer">HSE guidance on work equipment</a> is a Great Britain note on equipment in use. It does not tell you to buy or to rent.
 
-#### Does ARCLIFT rent these lifts from this page?
-No. The pages are catalog models for a purchase enquiry. A hire comparison is your own worksheet.
+#### Can you tell me which is cheaper?
+No. Send the inclusion list. A quotation can price two matching scopes.
 
-#### Can I still ask what a purchase includes?
-Yes. Chassis, former, and carrier are separate lines. Say yes, no, or unsure for each.
+#### Is a rental the same catalog model?
+Only if the hire sheet names it. Otherwise write "class unknown" and do not pretend it is ARC-T25.
 
-#### Should I wait for a rental price before I draw the roof?
-No. The roof and the former decide whether any machine is relevant. A missing drawing makes both columns useless.
+#### What if we might buy later?
+Say that. A hire with a later purchase is a third column, not a reason to blur the first two.
 
-#### Which model do I name if I might buy?
-Name the class that matches the constraint: ARC-T18 or ARC-T25 if the road vehicle matters, ARC-C25 if the yard and the pads matter.
+#### Who brings the former?
+Write included, excluded, or ours. That single word changes both quotes.
