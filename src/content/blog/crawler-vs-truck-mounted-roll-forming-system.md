@@ -90,7 +90,7 @@ This comparison may not fit when you need both a road-legal truck and track move
 
 Send the work height, the site path, the destination, the transport assumption, the work zone, and the floor or ground at the pad. The signed schedule is project-specific. Editorial images do not choose the base.
 
-Write to us on [request a quote](/contact/?request=quote) or WhatsApp +86 15515922444 with ARC-T18, ARC-T25, or ARC-C25 named in the first line, and ARC-RF8 if the former is in the same buy. The <a href="https://www.hse.gov.uk/work-at-height/index.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height guidance</a> is for the people who will stand at the outlet in Great Britain. It does not pick a chassis.
+Write to us on [request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com) with ARC-T18, ARC-T25, or ARC-C25 named in the first line, and ARC-RF8 if the former is in the same buy. The <a href="https://www.hse.gov.uk/work-at-height/index.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height guidance</a> is for the people who will stand at the outlet in Great Britain. It does not pick a chassis.
 
 #### We visit three towns. Is that automatically a truck?
 Only if the machine itself uses the road. A crawler on a low-bed can also visit three towns. Say which vehicle moves.

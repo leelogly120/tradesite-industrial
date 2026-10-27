@@ -112,10 +112,13 @@ const requestTypeLabels = {
   advice: 'Selection advice',
 } as const;
 
+const COMPANY_EMAIL = 'leelogly120@gmail.com';
+
 const formspreePayload = (inquiry: Inquiry, requestId: string) => ({
   _subject: `ARCLIFT ${requestTypeLabels[inquiry.requestType]} — ${inquiry.model || inquiry.product || 'Equipment inquiry'}`,
   requestId,
   ...inquiry,
+  _replyto: inquiry.email || COMPANY_EMAIL,
 });
 
 const dingTalkPayload = (inquiry: Inquiry, requestId: string) => {
@@ -128,6 +131,7 @@ const dingTalkPayload = (inquiry: Inquiry, requestId: string) => {
     `- Company: ${markdown(inquiry.company, 160)}`,
     `- Country: ${markdown(inquiry.country, 100)}`,
     `- Email: ${markdown(inquiry.email || 'Not supplied', 254)}`,
+    `- ARCLIFT email: ${markdown(COMPANY_EMAIL, 254)}`,
     `- WhatsApp / Phone: ${markdown(inquiry.phone || 'Not supplied', 50)}`,
     `- Model: ${markdown(inquiry.model || inquiry.product || 'Not sure', 160)}`,
     `- Application: ${markdown(inquiry.application || 'Not supplied', 160)}`,

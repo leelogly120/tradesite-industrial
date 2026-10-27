@@ -120,7 +120,7 @@ This shortlist may not fit when the door is smaller than any folded envelope you
 
 Send the work height, the site door, the destination, the transport of the crawler, the work zone under the soffit, and the floor note. The signed schedule is project-specific. Editorial images do not set a deck load.
 
-Open [ARC-F20](/products/arc-f20-crawler-ceiling-platform/), [ARC-F25](/products/arc-f25-crawler-ceiling-platform/), [ARC-F31](/products/arc-f31-crawler-ceiling-platform/), or [ARC-F35](/products/arc-f35-crawler-ceiling-platform/) and use the quote button, or [request a quote](/contact/?request=quote). WhatsApp +86 15515922444 can carry the same sketch. The <a href="https://www.osha.gov/fall-protection" target="_blank" rel="noopener noreferrer">OSHA fall-protection overview</a> is for destinations where it applies. It does not choose a class.
+Open [ARC-F20](/products/arc-f20-crawler-ceiling-platform/), [ARC-F25](/products/arc-f25-crawler-ceiling-platform/), [ARC-F31](/products/arc-f31-crawler-ceiling-platform/), or [ARC-F35](/products/arc-f35-crawler-ceiling-platform/) and use the quote button, or [request a quote](/contact/?request=quote). WhatsApp +86 15515922444 or [leelogly120@gmail.com](mailto:leelogly120@gmail.com) can carry the same sketch. The <a href="https://www.osha.gov/fall-protection" target="_blank" rel="noopener noreferrer">OSHA fall-protection overview</a> is for destinations where it applies. It does not choose a class.
 
 #### Why not ARC-C25?
 ARC-C25 is a forming-lift class. Use it when a roll former is the payload. Use ARC-F when the payload is the crew and the materials.

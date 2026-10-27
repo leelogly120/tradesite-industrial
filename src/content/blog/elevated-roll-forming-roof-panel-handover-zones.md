@@ -122,7 +122,7 @@ The elevated handover may not fit when nobody will own the panel after the shear
 
 Send the work height, the site edge, the destination, the transport of the lift, the handover zone, and the floor or ground at the rest. The signed schedule is project-specific. Editorial images do not draw your exclusion.
 
-Attach the sketch to [request a quote](/contact/?request=quote) and name [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), plus [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is included. WhatsApp +86 15515922444 can take the same four names. The <a href="https://www.hse.gov.uk/work-at-height/index.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height guidance</a> is a Great Britain reference for the people at that edge. It does not draw the zone.
+Attach the sketch to [request a quote](/contact/?request=quote) and name [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), plus [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line is included. WhatsApp +86 15515922444 or [leelogly120@gmail.com](mailto:leelogly120@gmail.com) can take the same four names. The <a href="https://www.hse.gov.uk/work-at-height/index.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height guidance</a> is a Great Britain reference for the people at that edge. It does not draw the zone.
 
 #### Is the run-out included with the lift?
 Only if the quotation says so. Ask for it as its own line.

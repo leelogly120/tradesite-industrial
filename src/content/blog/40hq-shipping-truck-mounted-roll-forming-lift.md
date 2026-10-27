@@ -92,7 +92,7 @@ The 40HQ plan may not fit when the object in the box is still "the whole machine
 
 Send the work height, the site, the destination, the transport question, the handover zone, and the floor or ground at arrival. The signed schedule is project-specific. Editorial images do not prove a container result.
 
-Open [ARC-T25HQ](/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq/) when the box is the constraint, and [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) or [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) when the working height is the constraint. Add [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line ships too. [Request a quote](/contact/?request=quote) or WhatsApp +86 15515922444. The <a href="https://www.imo.org/en/OurWork/Safety/Pages/Default.aspx" target="_blank" rel="noopener noreferrer">IMO safety page</a> is a doorway into sea-carriage rules. It does not pack your lift.
+Open [ARC-T25HQ](/products/arc-t25hq-truck-mounted-roll-forming-lift-40hq/) when the box is the constraint, and [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/) or [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/) when the working height is the constraint. Add [ARC-RF8](/products/arc-rf8-roll-forming-machine/) if the line ships too. [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://www.imo.org/en/OurWork/Safety/Pages/Default.aspx" target="_blank" rel="noopener noreferrer">IMO safety page</a> is a doorway into sea-carriage rules. It does not pack your lift.
 
 #### Does ARC-T25HQ fit a 40HQ?
 Not as a standing claim. It is the catalog model for that packing conversation. The study decides.

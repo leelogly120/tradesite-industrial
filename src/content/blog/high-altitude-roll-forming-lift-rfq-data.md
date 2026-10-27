@@ -136,7 +136,7 @@ The RFQ may not fit a catalog model when the height is a wish with no section, w
 
 Send the work height, the site, the destination, the transport assumption, the work zone, and the floor or ground note. The signed technical schedule is project-specific. Editorial images do not set a price, a load, or a lead time.
 
-Open the quote link on [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), [ARC-F25](/products/arc-f25-crawler-ceiling-platform/), or [ARC-RF8](/products/arc-rf8-roll-forming-machine/). The same eight lines fit [request a quote](/contact/?request=quote) and WhatsApp +86 15515922444. The <a href="https://www.osha.gov/fall-protection" target="_blank" rel="noopener noreferrer">OSHA fall-protection overview</a> is for your destination reviewer where it applies. It is not a substitute for the eight lines.
+Open the quote link on [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), [ARC-F25](/products/arc-f25-crawler-ceiling-platform/), or [ARC-RF8](/products/arc-rf8-roll-forming-machine/). The same eight lines fit [request a quote](/contact/?request=quote), WhatsApp +86 15515922444, and [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://www.osha.gov/fall-protection" target="_blank" rel="noopener noreferrer">OSHA fall-protection overview</a> is for your destination reviewer where it applies. It is not a substitute for the eight lines.
 
 #### Do I have to fill every box?
 No. Empty means unknown. Invented numbers are the problem.

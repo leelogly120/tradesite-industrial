@@ -48,4 +48,4 @@ ARCLIFT acts as an integrated equipment supplier. Ask ARCLIFT to review the chas
 
 **Image disclosure:** Representative editorial image — not model-specific evidence. The **AI-assisted editorial composite** shows the truck-mounted equipment family, not a specific ARC-T18 vehicle.
 
-Request a quote for ARC-T18 with the eight inputs on the contact form or WhatsApp +86 15515922444. Email sales@arclifteq.com is a TODO placeholder until the company inbox is live.
+Request a quote for ARC-T18 with the eight inputs on the contact form, WhatsApp +86 15515922444, or leelogly120@gmail.com.

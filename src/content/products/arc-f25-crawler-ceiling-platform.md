@@ -48,4 +48,4 @@ ARCLIFT acts as an integrated equipment supplier. Ask ARCLIFT to review the ceil
 
 **Image disclosure:** Representative editorial image — not model-specific evidence. The **AI-assisted editorial composite** shows a large-deck context beneath steelwork, not a verified ARC-F25 rating plate.
 
-Request an ARC-F25 quote on the contact form or WhatsApp +86 15515922444. sales@arclifteq.com is the TODO company address until that inbox is live.
+Request an ARC-F25 quote on the contact form, WhatsApp +86 15515922444, or leelogly120@gmail.com.
