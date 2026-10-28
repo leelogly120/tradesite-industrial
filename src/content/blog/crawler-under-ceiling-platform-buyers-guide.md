@@ -2,7 +2,7 @@
 title: "How to Choose a Crawler Under-Ceiling Work Platform"
 description: "Choose a crawler under-ceiling work platform by mapping reach, access, floor, overhead, load, power, controls, rescue, and local review needs for procurement."
 date: 2026-07-27
-updated: 2026-10-22
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
 tags: ["Crawler Platforms", "Ceiling Work", "Buyer Guide"]
 coverImage: "/images/equipment/entry-real-cover.webp"
@@ -114,6 +114,8 @@ This shortlist may not fit when the door is smaller than any folded envelope you
 - Transport to site, including any container story
 - Voltage, power, and where the operator stands
 - Documents the building owner will ask to see before entry
+- Charging bay and overnight parking, only if a rechargeable option is actually offered
+- What the operator must see at each workface, and what the steel hides
 
 <!-- audit-section: cta-editorial-note -->
 ## Send the bay sketch to the deck shortlist

@@ -188,11 +188,13 @@
     },
     {
       "slug": "crawler-under-ceiling-platform-buyers-guide",
-      "sha256": "4523f917311179a426b27a0c69df2f6a512b7102527c0ae9900539622f36d65a",
-      "workspaceSha256": "4523f917311179a426b27a0c69df2f6a512b7102527c0ae9900539622f36d65a",
+      "sha256": "75afa3c2a661afb2ffbb62a6b872d1ec689b05918f31801ddd21da1f02337a99",
+      "workspaceSha256": "75afa3c2a661afb2ffbb62a6b872d1ec689b05918f31801ddd21da1f02337a99",
       "title": "\"How to Choose a Crawler Under-Ceiling Work Platform\"",
       "date": "2026-07-27",
-      "updated": "2026-10-22"
+      "updated": "2026-10-28",
+      "gitSha256": "75afa3c2a661afb2ffbb62a6b872d1ec689b05918f31801ddd21da1f02337a99",
+      "gitBlobSha1": "3dc7d3b0e58f004169f3fb3985152ae4b614a30a"
     },
     {
       "slug": "crawler-vs-truck-mounted-roll-forming-system",
@@ -228,11 +230,13 @@
     },
     {
       "slug": "high-altitude-roll-forming-lift-rfq-data",
-      "sha256": "c7cbf31ba04fd7be1fea9ee9ce5e71387b6ce91c00d795062d96d8576d0586ba",
-      "workspaceSha256": "c7cbf31ba04fd7be1fea9ee9ce5e71387b6ce91c00d795062d96d8576d0586ba",
+      "sha256": "78e15cf3ff445e050ffa3565d84e734f22d81e54828d697a23a84a0714c3e8eb",
+      "workspaceSha256": "78e15cf3ff445e050ffa3565d84e734f22d81e54828d697a23a84a0714c3e8eb",
       "title": "\"RFQ Data Guide for High-Altitude Roll-Forming Lifts\"",
       "date": "2026-08-07",
-      "updated": "2026-10-22"
+      "updated": "2026-10-28",
+      "gitSha256": "78e15cf3ff445e050ffa3565d84e734f22d81e54828d697a23a84a0714c3e8eb",
+      "gitBlobSha1": "704406e5edcaf42c9fd04c5291a8832e8c1c9c85"
     },
     {
       "slug": "indoor-aerial-platform-ground-pressure-guide",
@@ -436,11 +440,13 @@
     },
     {
       "slug": "roll-forming-line-specification-long-span-roof-panels",
-      "sha256": "e7da389da05bf754baf1c6b67d1b104439a8e14bc48caa5593a125dcc635898c",
-      "workspaceSha256": "e7da389da05bf754baf1c6b67d1b104439a8e14bc48caa5593a125dcc635898c",
+      "sha256": "fcfbe726537d5dc19508939b38bf3a698f7d86ca0ec2268e1b443f0ba38b31bd",
+      "workspaceSha256": "fcfbe726537d5dc19508939b38bf3a698f7d86ca0ec2268e1b443f0ba38b31bd",
       "title": "\"Roof-Panel Roll-Forming Lines: Specification for Lifts\"",
       "date": "2026-07-24",
-      "updated": "2026-10-22"
+      "updated": "2026-10-28",
+      "gitSha256": "fcfbe726537d5dc19508939b38bf3a698f7d86ca0ec2268e1b443f0ba38b31bd",
+      "gitBlobSha1": "3d514941f8f4f4a9d504200449a314ae5dbbc692"
     },
     {
       "slug": "roof-level-roll-forming-lift-coil-loading-plan",

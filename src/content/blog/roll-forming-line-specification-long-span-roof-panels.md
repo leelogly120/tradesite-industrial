@@ -2,7 +2,7 @@
 title: "Roof-Panel Roll-Forming Lines: Specification for Lifts"
 description: "Specify a roof-panel roll-forming line for elevated use. Connect panel quality, machine geometry, coil feed and electrical inputs before choosing a lift."
 date: 2026-07-24
-updated: 2026-10-22
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
 tags: ["Roll Forming", "Roofing Panels", "Technical Specification"]
 coverImage: "/images/equipment/coil-real-handling.webp"
@@ -69,7 +69,7 @@ Buying ARC-RF8 with the lift lets one reviewer check the mount, the coil side, a
 <!-- audit-section: limitations-not-fit -->
 ## Failure modes
 
-The combined spec may not fit when the profile cannot be drawn, when the thickness is a range copied from a different product, or when the former outline collides with the lift's service side. It may not fit when you need the lift to form a panel the line has never tooled. Change the tooling list or change the panel. Do not hope the height class will absorb a missing seam.
+The combined spec may not fit when the profile cannot be drawn, when the thickness is a range copied from a different product, or when the former outline collides with the lift's service side. A cutting word in the offer is not a connection: ask whether that signal stays inside the former or is a named line item on the lift. It may not fit when you need the lift to form a panel the line has never tooled. Change the tooling list or change the panel. Do not hope the height class will absorb a missing seam.
 
 <!-- audit-section: project-checklist -->
 ## Line rows to attach
@@ -86,6 +86,7 @@ The combined spec may not fit when the profile cannot be drawn, when the thickne
 - Transport assumption for the former if it ships separate
 - Voltage, power, and who owns the controls
 - Documents: profile drawing, coil certificate if you have one, and the destination file list
+- Cutting signal scope: former-only, a named interface, or not in this purchase
 
 <!-- audit-section: cta-editorial-note -->
 ## Ask for the line and the lift in one note

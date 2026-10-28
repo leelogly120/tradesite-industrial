@@ -2,7 +2,7 @@
 title: "RFQ Data Guide for High-Altitude Roll-Forming Lifts"
 description: "Prepare a clear RFQ for a roll-forming lift by defining the forming machine, panel task, roof geometry, supply scope, destination and unresolved project inputs."
 date: 2026-08-07
-updated: 2026-10-22
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming lift RFQ", "high-altitude equipment", "project data", "technical selection"]
 coverImage: "/images/equipment/coil-real-handling.webp"
@@ -130,6 +130,7 @@ The RFQ may not fit a catalog model when the height is a wish with no section, w
 - Transport or container assumption, stated as a question
 - Voltage and who owns the controls
 - Documents the destination will ask to see
+- Control cabinet position, and the weather, dust, or wash-down that reaches it
 
 <!-- audit-section: cta-editorial-note -->
 ## Use the form with the model in the link

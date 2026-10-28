@@ -28,6 +28,21 @@ const built = async route => nodes(parse(await readFile(resolve(root, 'dist', `.
 const processor = await createMarkdownProcessor();
 const readArticle = slug => readFile(resolve(root, 'src/content/blog', slug + '.md'), 'utf8');
 const markers = ['buyer-intent', 'conditions', 'evidence-tradeoffs', 'limitations-not-fit', 'project-checklist', 'cta-editorial-note'];
+const softLandings = new Set([
+  'ceiling-platform-charging-and-parking-brief',
+  'ceiling-platform-control-view-between-workfaces',
+  'roll-forming-lift-control-cabinet-site-conditions',
+  'roll-forming-lift-cutting-signal-interface',
+]);
+const remediated = new Set([
+  ...softLandings,
+  'ceiling-platform-dual-power-task-boundary',
+  'ceiling-platform-occupied-building-work-hours',
+  'ceiling-platform-indoor-emissions-enquiry',
+  'roll-forming-lift-hydraulic-power-package',
+  'roll-forming-lift-order-before-former-selection',
+  'roll-forming-lift-former-emergency-stop-boundary',
+]);
 
 describe('2026-10-26 campaign day3: twenty new URLs after the published one hundred ten', () => {
   it('registers exactly the approved twenty unused slugs with fourteen forming and six platform subjects', () => {
@@ -112,23 +127,31 @@ describe('2026-10-26 campaign day3: twenty new URLs after the published one hund
     expect(fm.description.length).toBeGreaterThanOrEqual(150);
     expect(fm.description.length).toBeLessThanOrEqual(160);
     expect(new Date(fm.date).toISOString()).toBe('2026-10-26T00:00:00.000Z');
-    expect(fm).not.toHaveProperty('updated');
+    if (remediated.has(article.slug)) expect(new Date(fm.updated).toISOString()).toBe('2026-10-28T00:00:00.000Z');
+    else expect(fm).not.toHaveProperty('updated');
     expect(fm.draft).toBe(false);
     expect(fm.author).toBe('ARCLIFT Technical Editorial');
     const tree = parseFragment((await processor.render(content)).code), all = nodes(tree);
-    expect(words(tree)).toBeGreaterThanOrEqual(1500);
-    expect(words(tree)).toBeLessThanOrEqual(3000);
-    const h2 = all.filter(n => n.tagName === 'h2');
-    expect(h2).toHaveLength(5);
-    expect(text(h2.at(-1)).trim()).toBe('FAQ');
-    const contents = all.find(n => n.tagName === 'ul');
-    expect(nodes(contents).filter(n => n.tagName === 'li').map(n => text(n).trim()))
-      .toEqual(h2.map(n => text(n).trim()));
-    expect(all.filter(n => n.tagName === 'h3').length).toBeGreaterThanOrEqual(12);
-    expect(all.filter(n => n.tagName === 'h4').length).toBeGreaterThanOrEqual(4);
-    expect(all.filter(n => n.tagName === 'h4').length).toBeLessThanOrEqual(6);
-    for (const marker of markers) expect(source).toContain(`<!-- audit-section: ${marker} -->`);
-    expect(auditArticle(source)).toMatchObject({ fatal: false, publishable: true, score: 100 });
+    if (remediated.has(article.slug)) expect(source).not.toMatch(/does not establish/i);
+    if (softLandings.has(article.slug)) {
+      expect(words(tree), article.slug).toBeGreaterThanOrEqual(120);
+      expect(words(tree), article.slug).toBeLessThan(1500);
+      expect(source).toMatch(/crawler-under-ceiling-platform-buyers-guide|high-altitude-roll-forming-lift-rfq-data|roll-forming-line-specification-long-span-roof-panels/);
+    } else {
+      expect(words(tree)).toBeGreaterThanOrEqual(1500);
+      expect(words(tree)).toBeLessThanOrEqual(3000);
+      const h2 = all.filter(n => n.tagName === 'h2');
+      expect(h2).toHaveLength(5);
+      expect(text(h2.at(-1)).trim()).toBe('FAQ');
+      const contents = all.find(n => n.tagName === 'ul');
+      expect(nodes(contents).filter(n => n.tagName === 'li').map(n => text(n).trim()))
+        .toEqual(h2.map(n => text(n).trim()));
+      expect(all.filter(n => n.tagName === 'h3').length).toBeGreaterThanOrEqual(12);
+      expect(all.filter(n => n.tagName === 'h4').length).toBeGreaterThanOrEqual(4);
+      expect(all.filter(n => n.tagName === 'h4').length).toBeLessThanOrEqual(6);
+      for (const marker of markers) expect(source).toContain(`<!-- audit-section: ${marker} -->`);
+      expect(auditArticle(source)).toMatchObject({ fatal: false, publishable: true, score: 100 });
+    }
     const images = all.filter(n => n.tagName === 'img');
     expect([fm.coverImage, ...images.map(n => attr(n, 'src'))]).toEqual(article.photos.map(p => p.url));
     expect(images).toHaveLength(3);
@@ -187,11 +210,21 @@ describe('2026-10-26 campaign day3: twenty new URLs after the published one hund
       expect(page.filter(n => n.tagName === 'link' && attr(n, 'rel') === 'canonical').map(n => attr(n, 'href'))).toEqual([`${origin}/blog/${slug}/`]);
       const schema = page.filter(n => n.tagName === 'script' && attr(n, 'type') === 'application/ld+json')
         .map(n => JSON.parse((n.childNodes ?? []).map(c => c.value ?? '').join(''))).find(s => s['@type'] === 'BlogPosting');
-      expect(schema).toMatchObject({ headline: planned.find(a => a.slug === slug).title, datePublished: '2026-10-26T00:00:00.000Z', dateModified: '2026-10-26T00:00:00.000Z' });
+      expect(schema).toMatchObject({
+        headline: planned.find(a => a.slug === slug).title,
+        datePublished: '2026-10-26T00:00:00.000Z',
+        dateModified: remediated.has(slug) ? '2026-10-28T00:00:00.000Z' : '2026-10-26T00:00:00.000Z',
+      });
       const body = page.find(n => hasClass(n, 'article-content'));
       expect(body, slug).toBeDefined();
-      expect(words(body), slug).toBeGreaterThanOrEqual(1500);
-      expect(words(body), slug).toBeLessThanOrEqual(3000);
+      expect(text(body), slug).not.toMatch(/does not establish/i);
+      if (softLandings.has(slug)) {
+        expect(words(body), slug).toBeGreaterThanOrEqual(120);
+        expect(words(body), slug).toBeLessThan(1500);
+      } else {
+        expect(words(body), slug).toBeGreaterThanOrEqual(1500);
+        expect(words(body), slug).toBeLessThanOrEqual(3000);
+      }
       const internal = page.filter(n => n.tagName === 'a' && attr(n, 'href')?.startsWith('/')).map(n => attr(n, 'href'));
       for (const target of internal) {
         const url = new URL(target, origin);

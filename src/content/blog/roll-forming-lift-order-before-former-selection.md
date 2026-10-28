@@ -1,151 +1,140 @@
 ---
 title: "Ordering a Roll-Forming Lift Before the Former Is Final"
-description: "Compare fixed and provisional roll-forming lift purchase scope when the former is not selected, identifying commitments and the provider response still needed."
+description: "Order a roll-forming lift before the former is final only with the height screen separated from mass, feed side, power and the lines that must stay open."
 date: 2026-10-26
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
-tags: ["roll forming","roll forming lift order before former selection","buyer planning"]
+tags: ["roll forming","ordering roll forming lift before former selection","buyer planning"]
 coverImage: "/images/equipment/coil-real-handling.webp"
 coverAlt: "Elevated red forming apparatus beside steel building frames and ground level coils"
-coverCaption: "Reference photograph showing elevated forming apparatus beside building steelwork and coils. It does not establish a model, electrical arrangement or approved working configuration."
+coverCaption: "Reference photograph of elevated forming gear beside coils. It cannot freeze a former that is not chosen."
 draft: false
 ---
 
-When the forming machine has not been selected, a roll-forming lift enquiry can still identify the buyer's project requirement, but it cannot pretend that the machine-to-lift combination is already defined. Ask which scope the provider can actually describe now, which commitments depend on the former and what is expressly excluded from the preliminary proposal.
-
-This guide compares purchase boundaries; it does not advise placing an order or entering a contract. The [procurement dependency guide](/blog/roll-forming-lift-procurement-delivery-dependencies/) maps events and inputs. Here the useful output is a fixed/provisional scope sheet that prevents an early lift discussion from becoming an assumed commitment to carry any later-selected former.
+You can screen a height class before the former is final. You cannot freeze mass, feed side, or power until the former is named. Send the screen with the blanks still blank. Delivery dependencies are in the [purchase-dependency guide](/blog/roll-forming-lift-procurement-delivery-dependencies/). The former and the lift together are specified in the [line specification](/blog/roll-forming-line-specification-long-span-roof-panels/).
 
 **Contents**
 
-- Identify what is fixed without inventing the former
-- Make each provisional item visible beside its dependency
-- Compare a preliminary module proposal with a defined pairing
-- Use the scope sheet to decide the next enquiry
+- Screen the class and freeze nothing else
+- Compare a named former with a blank former
+- Ordering early may not fit
+- Lines you can send before the former is final
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Identify what is fixed without inventing the former
+## Screen the class and freeze nothing else
 
-### Start with the roofing requirement
+### Write the outlet, then the screen
 
-Record the panel task, intended roof receiving relationship and destination as buyer requirements. Distinguish these from an equipment response. A project may have a clearly defined roof geometry while the forming machine remains undecided; the clarity of the roof requirement does not supply the missing machine identity.
+The outlet height on your section is the number that matters. ARC-T18 is the 18.5m truck screen. ARC-T25 is the 25m truck screen. ARC-C25 is the 25m crawler screen. Pick the screen that is nearest the outlet you measured, and write "screen only" beside it. That phrase stops a later reader from treating the class as a finished machine. If the outlet is still a guess, write the guess and the word unknown. Do not upgrade the class to cover a guess.
 
-The [crawler forming-lift family](/products/#crawler-roll-forming-lifts) describes equipment that raises a compatible former near the receiving level. Compatibility is the unresolved purchase question, not an automatic consequence of choosing a machine that makes the desired panel.
+### List the three blanks that stay open
 
-### List the former choices still being considered
+Mass of the former, feed side, and power stay open until a former has a name and a drawing revision. An importer once issued a purchase order for a 25m screen "to hold the slot" and typed a mass copied from a different former. The slot was not a machine, and the mass poisoned every later interface question. Leave the three cells blank or write unknown. Confirm on RFQ is the status, not a delay you should be ashamed of.
 
-Identify actual candidate machines if they exist, with the records their providers have supplied. Where no candidate exists, say so rather than creating an approximate machine and presenting it as the future selection. A provisional outline can be a discussion input only when its status and origin remain clear.
+### Say what you are allowed to promise internally
 
-The provider should know whether it is responding to one identified former, comparing several candidates or discussing a task with no selected machine. Those are different levels of purchase definition even if the buyer uses the same lift enquiry form.
+You may tell your own team which class you are asking about. You may not tell them the chassis is included, the deck load is known, or the former will fit, unless a document says so. Those sentences are how an early screen becomes a fake order. Chassis, load, and fit are confirm on RFQ. Say that in the same email that names the class.
 
-### Ask the seller which scope it can define now
+### Keep ARC-RF8 conditional
 
-Request an attributable response identifying the equipment or service scope the seller can describe with the information available. It may be an early selection discussion, a limited module proposal or another actual offer. Do not assume a provider offers reservations, deposits, configurable future capacity or a particular commercial arrangement.
-
-The key question is what the present proposal commits to describing, and what it leaves open. Keep that answer separate from the buyer's desire to advance the project quickly.
-
-<a href="https://www.hse.gov.uk/pubns/indg271.pdf" target="_blank" rel="noopener noreferrer">HSE's machinery-purchasing guide, Checklist A</a> asks buyers to explain the intended location, task and users, especially for complex equipment. That Great Britain purchasing context supports a requirements discussion while machine choices remain open; it supplies no commitment to accept an unselected former and no advice on placing an early order.
-
-![Blue machine module suspended beside a red lifting structure in an outdoor yard](/images/equipment/coil-real-module.webp)
-
-*Reference photograph showing a suspended blue machine module. It does not identify its electrical requirements, mass or an approved handling method.*
+If the line might be in the same purchase, name ARC-RF8 as conditional. Its catalog sheet class is 0.3–1.0mm. Your coil is not that band until you write your coil. If the former will be someone else's machine, say so, and do not attach ARC-RF8. A conditional line is allowed. A silent assumption is not.
 
 <!-- audit-section: conditions -->
-## Make each provisional item visible beside its dependency
+## Compare a named former with a blank former
 
-### Separate equipment identity from an allowance
+### Two columns, same lift screen
 
-A budget allowance or provisional description does not identify the final former. Ask which equipment assumptions underpin the lift proposal and which supplier responses must change once the former is selected. Do not interpret an allowance as a promise that all candidates will fit within it.
+| Line on the note | Former already named | Former still blank |
+| --- | --- | --- |
+| Height screen | 18.5m or 25m, as a screen | Same screen, marked screen only |
+| Mass, feed side, power | From that former's sheet, or unknown | Unknown; do not borrow |
+| Cutting and controls | Ask with the former's name | Leave off this purchase |
+| What you can order | Only what the offer freezes | A question, not a machine |
 
-For example, a buyer may know the desired panel profile but still be choosing the forming arrangement. The information needed for the lift interface concerns the actual machine and its included parts, not merely the product the machine is intended to make.
+![Forming module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
 
-### Identify commitments that depend on the machine
+*Reference photograph of a forming module beside a lift frame. It cannot stand in for an unchosen former.*
 
-Ask the responsible provider which parts of its proposed scope rely on actual former records. The answer may identify mounting, material interfaces, power or another configuration-specific question, but the buyer should not prescribe the technical consequences. Retain each dependency next to the affected deliverable.
+### Do not borrow a neighbour's interface
 
-The [mounting interface guide](/blog/lifted-roll-forming-line-mounting-interface-review/) explains why an outline is different from designated support information. This article uses that distinction only to define what an early purchase discussion has not yet settled.
+Another project's former mass is not a placeholder you may type. It looks like data and it is fiction. If you need a number to satisfy a form, the form is wrong. Send unknown. The [RFQ data guide](/blog/high-altitude-roll-forming-lift-rfq-data/) already treats empty as unknown. Use that habit here.
 
-### Distinguish an excluded promise from a missing detail
+### Separate the commercial hold from the technical freeze
 
-If a provider expressly excludes compatibility with an unselected former, record that exclusion prominently. It is not just an administrative blank that can be completed later without consequence. Conversely, a provider may offer a defined review after receiving identified records; ask what that review includes and what it does not promise.
+A commercial conversation about timing can happen while the former is open. Call it a conversation. Do not call it an order for a configuration. Lead time language does not belong on this page, and a class code is not a delivery promise. Ask the supplier what, if anything, can be discussed before the former revision exists. Accept "nothing" as a complete answer.
 
-The buyer should be able to explain the proposed purchase boundary in one sentence without hiding the dependency in an attachment. If that sentence sounds broader than the actual offer, revise the summary before using it for an internal decision.
+### Photographs are not a former
 
-![Steel coil suspended beside red vehicle mounted equipment in a yard](/images/equipment/coil-real-cover.webp)
+![Coils and forming equipment at the side of a steel building](/images/equipment/coil-real-cover.webp)
 
-*Reference photograph showing a suspended steel coil beside vehicle-mounted apparatus. It does not establish package inclusion, capacity or an approved handling arrangement.*
+*Reference photograph of coils beside the building. It cannot identify the former you have not chosen.*
+
+Coils in a photograph were formed somewhere else. They are not your former. Do not attach it as a specification. Attach your drawing, or attach nothing and say the drawing is not ready.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Compare a preliminary module proposal with a defined pairing
+The trade-off is calendar pressure against a false interface. Screening early can keep a height class in view. Freezing mass early can waste the screen, because the real former will not match the borrowed number. The limitation is that feed side and power are properties of a named machine. The constraint is the missing drawing. The interface you do not have yet is the whole point: do not invent one so the file looks closed.
 
-### Work through two hypothetical purchase paths
+An anonymous buyer had a roof contract and no former. The outlet height was measured, so an 18.5m screen and a 25m screen were fair questions. The purchase draft then listed a former mass taken from a brochure for a different profile, a left-hand feed copied from the last job, and a power figure nobody could source. That draft was not an early order. It was three invented interfaces. The draft that was actually sendable kept the height screens and replaced the three figures with unknown. ARC-T18, ARC-C25, and ARC-RF8 stayed on the shortlist only as conditional names: the former row had to be filled before any of them could be treated as a matched set.
 
-Suppose a buyer has shortlisted Former A and Former B for the same roof-panel requirement. Provider One can discuss a lifting assembly but excludes machine-specific integration until a former is identified. Provider Two proposes a package around Former A with stated integration scope. The buyer asks whether the first proposal is simply an earlier, cheaper version of the second.
+A second anonymous file tried to "reserve both classes" by writing two quantities. The team thought two lines on a purchase order would hold both machines until the former arrived. A screen is a question you can repeat. A quantity is an order. They deleted the quantities and left one RFQ with two height classes, one measured outlet, and blank cells for mass, feed side, power, and which lines must stay open during the lift. Calendar pressure remained. The false interface did not.
 
-It is not yet the same purchase boundary. The first leaves the machine choice and its consequences unresolved; the second identifies a pairing but still requires review of its actual scope. Neither hypothetical proposal establishes current availability or recommends an early order.
-
-### Build the fixed/provisional comparison
-
-| Purchase element | Preliminary module discussion | Defined-pairing proposal | Buyer decision still needed |
-| :-- | :-- | :-- | :-- |
-| Roof task | Buyer requirement supplied | Same buyer requirement supplied | Confirm both address the same task |
-| Former identity | Candidate choice remains open | Named former in offer | Decide which equipment record is being assessed |
-| Lift scope | Provider-defined limited proposal | Lift tied to named pairing | Read the actual boundary of each offer |
-| Machine interface | Excluded or conditional as stated | Defined deliverable requested | Identify what must precede reliance on the pairing |
-| Commercial commitment | Actual preliminary terms only | Actual package terms only | Obtain appropriate review of the real proposal |
-| Later former change | No assumed universal acceptance | A change to the proposed pairing | Ask which scope and records must be reconsidered |
-
-The sheet makes the difference visible without inventing cost adjustments or contractual protections. A provider response, rather than the buyer's spreadsheet, must establish what is actually offered at either stage.
-
-### Evaluate the value of keeping a choice open
-
-The trade-off is between retaining a former choice and obtaining a more specifically defined equipment combination. Keeping candidates open may preserve a buying option, but it also preserves unresolved interface questions. Selecting one former can narrow the enquiry, while a later substitution may reopen the basis of that response.
-
-Ask what information would allow the provider to expand its scope and what would remain excluded even then. That answer is more useful than asking for an unconditional assurance that the lift will suit whichever former is eventually purchased.
-
-![Long light coloured panel beside an elevated red structure and building facade](/images/equipment/coil-real-panel.webp)
-
-*Reference photograph showing a panel and building relationship. It does not establish measured panel length, forming quality or the equipment supply requirements.*
-
-## Use the scope sheet to decide the next enquiry
+Chassis words are the same trap. Adding a truck or a crawler because the page looks empty does not make the former more final. The [chassis review](/blog/truck-mounted-roll-forming-chassis-interface-review/) is where that choice belongs, after the former mass is a measured input rather than a borrowed one. Until then, write chassis unknown next to the height screen you are willing to discuss.
 
 <!-- audit-section: limitations-not-fit -->
-### Recognise an early proposal that is being overstated
+## Ordering early may not fit
 
-A preliminary proposal may not fit a final combined-equipment decision if its former identity, interface assumptions or excluded commitments are still unresolved. A buyer's schedule pressure cannot turn a limited module description into a confirmed pairing. This article does not recommend deposits, order placement, cancellation terms or other contractual actions.
+### A purchase order that lists a guess
 
-Where the actual offer is unclear, obtain a provider clarification and appropriate purchasing advice. The reference photographs show representative equipment relationships; they do not establish that a future former will fit a particular lift or that an early commercial route is available.
+This path may not fit when the document you are about to sign lists a former mass, a feed side, or a power figure you copied. That is not an early screen. That is an order for a machine you have not defined. Stop and replace the figures with unknown, or wait for the former sheet.
+
+### Two classes ordered to "be safe"
+
+It may not fit when someone asks for both 18.5m and 25m as if buying both screens reserves both machines. A screen is a question. Two questions are allowed on one RFQ. Two imaginary orders are not. Write which outlet you measured and which class you want compared.
+
+### Chassis words added for comfort
+
+It may not fit when the early note says the truck is included because an empty chassis line looked unfinished. Included, local, or unsure are the only honest chassis words, and unsure is the right one before the former and the destination rules are known. The [chassis review](/blog/truck-mounted-roll-forming-chassis-interface-review/) is where that word is explained. Do not soften it here.
+
+### A sheet class used as the former
+
+It may not fit when 0.3–1.0mm is written as the former specification. It is the ARC-RF8 catalog band. Your profile drawing is the specification. If the drawing is late, say late. Do not promote the band into a design.
+
+![Long panel beside elevated forming equipment](/images/equipment/coil-real-panel.webp)
+
+*Reference photograph of a panel path. It cannot substitute for a former drawing.*
 
 <!-- audit-section: project-checklist -->
-### Prepare the fixed and provisional scope sheet
+## Lines you can send before the former is final
 
-- State the required panel profile and material task, distinguishing known requirements from still-unselected forming equipment.
-- Identify the roof receiving geometry and outlet height basis as project inputs rather than confirmed equipment capability.
-- List actual former candidates and the records available for each, without inventing a representative final machine.
-- Attach site ground or floor and access information so the lift discussion has a real project context.
-- Record destination and transport assembly assumptions, including which parts of the purchase would come from other providers.
-- Ask which power, mounting and documentation commitments are defined now, which depend on the former and which are expressly excluded.
-
-Review the provider's answer before changing the purchasing summary. If the next step is simply to obtain missing candidate records, identify that focused action rather than treating an early order as the only way to advance the project.
+- Work height to the outlet you measured, plus the catalog screen
+- Roof geometry the future panel must clear
+- Profile and thickness if you have them; otherwise unknown
+- Wind exposure at the eave, or unknown
+- Ground or floor under the future setup
+- Access route, even if the former mass is unknown
+- Outrigger or track footprint, or unknown
+- Destination country
+- Chassis included, local, or unsure
+- Transport assumption stated as a question
+- Power and feed side marked unknown until the former is named
+- Documents you do have, and a list of the ones that are late
 
 <!-- audit-section: cta-editorial-note -->
-### Ask what can be defined with the information available
+Send the work height, the site, the destination, the transport question, the handover zone, and the floor note. The signed schedule is project-specific. Editorial images do not select your former.
 
-[Discuss the unselected-former boundary with ARCLIFT](/contact/?product=crawler-roll-forming-lifts&request=advice) and identify the actual candidates or the fact that no former has been chosen. Include site, destination, outlet height and transport expectations. Ask for the scope that can be described now and the specific inputs needed for a final project-specific pairing response. This editorial comparison is a purchasing clarification aid, not advice to enter a contract or a promise of future compatibility.
+Open [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), or [ARC-RF8](/products/arc-rf8-roll-forming-machine/) only if the line might be included. [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). <a href="https://www.cbp.gov/trade/basic-import-export" target="_blank" rel="noopener noreferrer">U.S. CBP import and export basics</a> are a destination example, not your paperwork, and not a reason to invent a former.
 
 ## FAQ
 
-#### Can an enquiry begin before a former is selected?
+#### Can I place an order with the former blank?
+You can ask a question. Do not sign a configuration that fills the blank with a borrowed mass.
 
-Yes, if it clearly identifies the unresolved machine choice and asks for a bounded response. The enquiry can establish project inputs and missing information. It should not be presented as confirmation that a particular lift will accept any later-selected former.
+#### Which class do I name?
+The screen nearest the outlet you measured: 18.5m or 25m. Mark it as a screen.
 
-#### Does a common panel profile make two formers interchangeable?
+#### Should I attach ARC-RF8 now?
+Only if that machine might be the former. Otherwise leave it off and say the former is someone else's.
 
-It does not establish their machine-to-lift interfaces. Ask for the actual records and provider responses for each candidate. The resulting purchase scope may differ even when both machines are being considered for the same panel requirement.
-
-#### Is a provisional allowance a compatibility commitment?
-
-Read the actual offer and ask its issuer to define the allowance. This guide does not infer a promise from that label. Keep its assumptions, conditions and exclusions beside the affected scope rather than treating it as a confirmed final configuration.
-
-#### What should happen when the former choice becomes final?
-
-Send the actual selected-machine information to the responsible providers and request the resulting scope response. Identify which earlier assumptions are replaced and which records need revision. A selected machine enables a specific enquiry; it does not by itself complete the integration review.
+#### What do I do with feed side?
+Write unknown until the former drawing names it. A guess will be treated as data.
