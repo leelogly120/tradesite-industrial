@@ -2,150 +2,142 @@
 title: "Roll-Forming Lift Radio Controls: Destination Questions"
 description: "Prepare a roll-forming lift radio-control enquiry by identifying the radio equipment, destination questions and supplier records without assuming approval."
 date: 2026-10-26
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming","roll forming lift radio control market enquiry","buyer planning"]
 coverImage: "/images/equipment/coil-real-handling.webp"
 coverAlt: "Elevated red forming apparatus beside steel building frames and ground level coils"
-coverCaption: "Reference photograph showing elevated forming apparatus beside building steelwork and coils. It does not establish a model, electrical arrangement or approved working configuration."
+coverCaption: "Reference photograph of elevated forming gear beside coils. It cannot show a radio approval."
 draft: false
 ---
 
-A radio-control option in a roll-forming lift offer raises a separate destination question: which radio equipment is actually proposed, and what information should the buyer submit for the relevant local review? Begin with identity and attributable records. A general equipment conformity statement or a photograph of a handset does not answer that question for an unspecified radio system.
-
-This article produces a destination enquiry pack, without stating radio frequencies, market rules or approval outcomes. The [remote-control planning guide](/blog/remote-control-aerial-platform-safety-planning/) addresses equipment functions and site visibility for platforms. The narrower task here is identifying the radio equipment in a forming-lift proposal and directing the right questions to its provider and the appropriate destination authority or adviser.
-
-As a UK example, <a href="https://www.ofcom.org.uk/spectrum/radio-equipment/licence-exempt-radio-use" target="_blank" rel="noopener noreferrer">Ofcom's licence-exempt radio guidance</a> explains that exemptions have particular technical conditions. Use it to frame an identity-based question to the appropriate destination reviewer. It does not classify the proposed radio, establish an exemption or resolve machinery functions, and UK guidance cannot determine another market's outcome.
+Treat a radio as a destination question, not as a ticked feature. "Remote included" does not mean the destination allows that radio to be used. Ask what the offer actually contains, then ask what the destination still has to answer. Station planning in general is in the [remote-control safety guide](/blog/remote-control-aerial-platform-safety-planning/). The control split between machines is in the [electrical interface guide](/blog/roll-forming-line-electrical-control-interfaces/).
 
 **Contents**
 
-- Establish what the seller means by radio control
-- Build a radio identity pack with clear boundaries
-- Compare an approval claim with an answerable enquiry
-- Keep the purchase decision tied to the actual reply
+- Separate the radio in the box from permission to use it
+- Compare the offer with the destination
+- A radio claim may not fit
+- Radio lines to attach
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Establish what the seller means by radio control
+## Separate the radio in the box from permission to use it
 
-### Distinguish the feature description from equipment identity
+### Say what hardware the offer names
 
-Ask whether the actual proposal includes radio control and request the identity of the proposed radio equipment through the supplier's records. The word remote is insufficient by itself: it describes an interface concept without necessarily identifying the communication arrangement. Do not assume a particular device or system from a catalogue illustration.
+Ask whether a radio is included, excluded, or unnamed. If it is included, ask for the seller's own name for the unit and which machine it belongs to. ARC-T25 and ARC-C25 are 25m screens. ARC-RF8 is a former in the 0.3–1.0mm band. A screen does not include a radio because the word remote appeared in a brochure.
 
-The response should relate to the quoted lift configuration. [Crawler roll-forming lifts](/products/#crawler-roll-forming-lifts) support a compatible former near the roof receiving level, but that architectural purpose does not establish a standard radio option for every proposed machine.
+### Keep the local station on the page
 
-### Identify the parties behind the answer
+A radio without a local station is a different offer from a radio plus a station at the machine. Write both. If the local station disappears because "remote is included," put it back as a question. The people at the outlet still need a place to stand when the radio is not the right tool.
 
-Record the equipment seller, the issuer of the radio-system information and the person coordinating destination questions. They may have different roles. Ask the seller which records it can provide and which questions require a response from another actual provider.
+### Destination permission is not a seller's sentence
 
-Keep source radio-system records attached to their actual issuer rather than presenting them as ARCLIFT product certification. ARCLIFT's selection and supply role can support an enquiry, while the identity and scope of each technical or market statement must remain attached to its issuer.
+This page does not say which destination allows which radio. Write the destination country and the question you still owe its rules. If you do not know the rule, write unknown. Do not let the seller's inclusion line close that cell.
 
-### State the destination accurately
+### One radio is not both machines
 
-Name the intended destination and the actual purchasing situation without making a legal conclusion. A proposed shipment to one market is a different enquiry from equipment already owned and being considered for another destination. Ask the relevant local authority or qualified adviser what information it needs to assess the proposed radio equipment.
-
-This guide does not identify a universal approval route or tell the buyer which rules apply. The purpose of stating the destination is to obtain an attributable answer about this actual equipment, rather than relying on an unrelated market claim.
-
-![Blue machine module suspended beside a red lifting structure in an outdoor yard](/images/equipment/coil-real-module.webp)
-
-*Reference photograph showing a suspended blue machine module. It does not identify its electrical requirements, mass or an approved handling method.*
+A radio for the lift is not a radio for the former. Ask twice. If only one unit is in the offer, say which machine it is mounted to and leave the other unknown.
 
 <!-- audit-section: conditions -->
-## Build a radio identity pack with clear boundaries
+## Compare the offer with the destination
 
-### Request records for the proposed combination
+### Put hardware and permission on one table
 
-Ask the provider to identify the radio equipment and the offered machine configuration with which it is proposed. Where the provider describes multiple related components, retain the identities it supplies and the stated relationship between them. Do not substitute a similar-looking handset or combine documents from different options.
+| Question | Offer | Destination | If it is open |
+| --- | --- | --- | --- |
+| Is a radio named? | Included, excluded, or silent | Not a substitute for this cell | Confirm on RFQ |
+| Which machine | Lift, former, or both | The place it would be used | Do not merge |
+| Local station still included | Yes, no, or silent | Where the operator must stand | Measure on site |
+| Permission to use it | Seller cannot close this | Known rule, or unknown | Leave unknown |
 
-The buyer's pack should make it possible for a reviewer to understand what equipment is being discussed. It should not contain pairing instructions, connection settings or a buyer-created technical configuration. Those are outside the purchasing enquiry.
+![Forming module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
 
-### Separate radio questions from machine-function questions
+*Reference photograph of a forming module beside a lift frame. It cannot approve a radio.*
 
-A destination response concerning radio equipment does not establish which lift functions the interface permits. Conversely, a machine manual describing remote functions does not by itself answer the destination radio question. Keep separate rows for equipment-function scope and radio-documentation scope so neither answer is stretched beyond its purpose.
+### Copy the seller's words, do not invent a band
 
-For the former, ask whether it has a separate proposed interface that belongs in the enquiry. Do not assume that the lift's radio device also controls the former or that all equipment in the forming package shares one system.
+If the offer names a band or a standard, copy those words. If it does not, write silent. Do not fill a radio band from memory of another country. The destination question is which authority the buyer must ask, not a frequency you choose on this page.
 
-### Record the version and substitution question
+### A spare transmitter is still a scope line
 
-Ask what actual device identity will appear in the final offer or delivery information. If the seller proposes a substitute, request its identity and the effect on the earlier documentation response. A destination review tied to one identified product should not silently become a response about a different item.
+Ask whether a second transmitter is included, and who may hold it. "Remote included" often means one unit. A second unit is a different line. Write included or excluded. Do not assume a spare because the job has two crews.
 
-The [configuration-change guide](/blog/roll-forming-lift-configuration-change-control/) covers the wider purchase issue. Here the useful change record is narrow: what radio equipment changed, which document referred to it, and who must reassess the destination question.
+![Coils and forming equipment at the side of a steel building](/images/equipment/coil-real-cover.webp)
 
-![Steel coil suspended beside red vehicle mounted equipment in a yard](/images/equipment/coil-real-cover.webp)
+*Reference photograph of coils beside the building. It cannot show a radio licence.*
 
-*Reference photograph showing a suspended steel coil beside vehicle-mounted apparatus. It does not establish package inclusion, capacity or an approved handling arrangement.*
+### Interference is a site note, not a design
+
+If the buyer already knows of other radios on that roof, say so in one sentence. Do not propose a fix. The note exists so the seller and the destination reviewer see the neighbour. If you do not know, write unknown.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Compare an approval claim with an answerable enquiry
+The trade-off is a ticked remote against a destination that has not answered. The limitation is that inclusion is a commercial line, not a permission. The constraint is the local station you still need when the radio cannot be used. The interface is the pair of cells: what is in the box, and what the destination still owes. Without both, stop comparing remotes.
 
-### Examine a hypothetical document mismatch
+An anonymous offer included a radio on the lift and deleted the local station to simplify the sheet. The destination question had not been asked. When the site rule later limited that radio, the crew had no station left on the quotation. The useful file put the local station back as its own row, marked destination permission unknown, and kept ARC-T25 as a height screen only.
 
-Suppose Offer A says approved wireless control but does not identify the radio equipment or market behind the statement. Offer B names a proposed radio system and supplies issuer records, while expressly asking the buyer to obtain destination advice. The buyer cannot infer that A is more complete because its wording sounds definitive.
+A second anonymous file treated one radio as the control for both the lift and the former because both machines were on the same slab. The former seller had not named a radio at all. The lift radio's functions stopped at the lift. The corrected rows said: lift radio included, former radio silent, destination permission unknown, local station on the lift still included. Confirm on RFQ went to the former seller and to the destination question separately.
 
-Ask A to identify the actual equipment, the statement's issuer and its destination scope. Ask the local reviewer what it needs from either proposal. B's documents may be useful inputs, but their existence does not mean that the destination question has already been resolved.
+A third anonymous shipment included the radio and left the permission cell blank on purpose, then someone filled the blank with "approved" because the unit had been paid for. Payment is not permission. The destination question was still with the buyer, and the local station had been removed from the lift sheet to "simplify" the remote. When the site limited that radio, the quotation had no station to fall back on and no written exclusion either. The rebuild put four marks in one note: radio included on the lift only, local station included unless a line excludes it, former radio silent, destination permission unknown. ARC-T25 stayed a 25m screen beside those marks. It did not become a licence.
 
-### Organise the enquiry by recipient
+Copy band words only when the offer prints them. A buyer who types a band from another country creates a false specification and a false sense that the destination question is done. Silent is the honest cell. A second transmitter is the same kind of cell: ask, and expect excluded until a line includes it. Two crews do not imply two units. Other radios already on the roof can be named as a site fact in one sentence, without proposing a remedy. If you do not know whether those radios exist, write unknown and measure on site. The height screen can travel the same day. The permission cannot be inferred from the crate.
 
-| Enquiry item | Equipment-side question | Destination-side question | Boundary to preserve |
-| :-- | :-- | :-- | :-- |
-| Proposed radio identity | Which actual equipment is offered? | What identity information is needed for review? | A feature name is not a device identity |
-| Issuer records | Which records can the provider supply? | Which records are relevant to this destination? | Document availability is not approval |
-| Machine association | Which lift configuration uses the proposal? | Does the review need the machine context? | Radio scope and machine functions differ |
-| Separate former interface | Is any separate radio equipment proposed? | Should it be considered as another item? | Lift records do not transfer automatically |
-| Substitution | What item would replace the original proposal? | Does the earlier response still address it? | Similar appearance is insufficient |
-| Unresolved outcome | What supplier information remains missing? | Who can issue the actual destination response? | Buyer assumptions are not authority decisions |
-
-This table is an enquiry organiser, not a market-access checklist. It deliberately leaves the relevant technical and legal conclusions to attributable destination and equipment responses.
-
-### Evaluate certainty without overstating it
-
-The commercial trade-off is between a proposal with traceable equipment information and one whose assurance cannot yet be matched to an item or destination. Traceability makes a review possible; it does not establish its outcome. Record exactly what the reply says and which equipment identity it addresses.
-
-If a provider supplies documents for a different market, retain their stated scope and ask the destination reviewer whether they are relevant. Do not relabel them as local approval or reject them solely because the buyer expected a different document title.
-
-![Long light coloured panel beside an elevated red structure and building facade](/images/equipment/coil-real-panel.webp)
-
-*Reference photograph showing a panel and building relationship. It does not establish measured panel length, forming quality or the equipment supply requirements.*
-
-## Keep the purchase decision tied to the actual reply
+Say where the operator will stand if the radio cannot be used. That place is the local station, and it needs a view of the motion. If steel or a parapet blocks it, write the block and measure on site. A radio that was included to solve the view does not solve it while permission is unknown. Keep the former's radio, if any, on its own line so a lift unit is not described as a line unit. A spare transmitter stays excluded until named. Destination stays a question even after the hardware row is filled. Send 25m or 18.5m as the height screen in the same note, and do not let either class close the permission cell.
 
 <!-- audit-section: limitations-not-fit -->
-### Do not use an unresolved radio option as a settled feature
+## A radio claim may not fit
 
-A proposal may not fit a final destination purchase decision when the actual radio equipment is unidentified or the relevant review questions remain unanswered. That does not establish that the feature is unavailable; it means the buyer lacks a defined basis for relying on it.
+### Inclusion read as permission
 
-This guide supplies no frequency recommendation, regional rule, approval claim or radio configuration procedure. It also cannot authorise remote operation, establish communication performance or prescribe a control position. The reference photographs show equipment context without identifying a radio system.
+This enquiry may not fit when "remote included" is sent to the site as if the destination had agreed. Split the cells. Permission stays unknown until the destination answers.
+
+### No local station
+
+It may not fit when the radio line is used to remove the station at the machine. Put the station back on the offer or mark it excluded on purpose. Do not lose it by accident.
+
+### One unit for two machines
+
+It may not fit when the lift radio is described as the former radio without a second line. Count units and name the machine on each.
+
+### A band invented to look complete
+
+It may not fit when a buyer types a radio band the offer never stated. Delete it. Copy the offer or write silent.
+
+![Long panel beside elevated forming equipment](/images/equipment/coil-real-panel.webp)
+
+*Reference photograph of a panel path. It cannot clear a radio for use.*
 
 <!-- audit-section: project-checklist -->
-### Prepare the identity and destination request
+## Radio lines to attach
 
-- Identify the offered lift and any separately controlled former or feed equipment without assuming they share one radio system.
-- Ask for the actual radio equipment identity, issuer records and relationship to the quoted control configuration.
-- State the destination accurately and identify the party obtaining the appropriate local response rather than inventing an approval requirement.
-- Include site roof geometry and outlet height only as equipment context, keeping them separate from radio-performance assertions.
-- Describe ground, access and transport handover context where needed to identify the intended machine and purchase boundary.
-- Request the final documentation and substitution response that will keep the delivered equipment identity aligned with the reviewed proposal.
-
-Keep a short record of which question went to which recipient. A supplier may answer equipment identity while the destination reviewer answers a different market question; neither response should be rewritten to imply that the other has also been completed.
+- Work height and the catalog class to screen
+- Roof geometry where the operator must see the outlet
+- Profile and coil, so the former question is separate
+- Wind if it changes where people stand
+- Floor or ground at the local station
+- Access and the place the operator is allowed to stand
+- Outrigger or track footprint beside that place
+- Destination country and the permission still unknown
+- Transport of the radio, so a boxed unit is not confused with a licence
+- Control rows: radio, local station, and which machine
+- Documents: the inclusion line, or "none supplied"
 
 <!-- audit-section: cta-editorial-note -->
-### Request a traceable radio-control proposal
+Send the work height, the site, the destination, the transport split, the operator zone, and the floor at the station. The signed schedule is project-specific. Editorial images do not approve a radio.
 
-[Send ARCLIFT the destination and radio-control enquiry](/contact/?product=crawler-roll-forming-lifts&request=advice) with the actual forming-lift scope, intended site and any buyer-owned former. Include outlet height, destination and transport handover information so the proposed equipment is clear. This editorial enquiry does not establish radio approval or remote capability. Final project-specific records and the actual destination response must address the identified equipment; availability and included services require an attributable offer.
+Open [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), or [ARC-RF8](/products/arc-rf8-roll-forming-machine/). [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://www.hse.gov.uk/construction/safetytopics/mewp.htm" target="_blank" rel="noopener noreferrer">HSE MEWP guidance</a> is a Great Britain note. It does not permit a radio at your destination.
 
 ## FAQ
 
-#### Does a wireless feature claim identify the radio equipment?
+#### Does "remote included" mean we may use it there?
+No. Inclusion is the seller's line. Permission is the destination's question. Keep them apart.
 
-No. Request the actual proposed identity and the supplier records that describe it. The same broad feature label can appear in different offers, so it cannot substitute for the information needed to ask a destination-specific question.
+#### Should I delete the local station?
+No, unless the offer excludes it on purpose. A radio does not erase the station by itself.
 
-#### Is a general machine conformity statement enough?
+#### Can one radio run the lift and the former?
+Only if each seller says so. Otherwise count two questions.
 
-This article cannot determine which records are sufficient for a destination. Keep the scope of the machine statement distinct and ask the relevant local reviewer what it needs for the proposed radio equipment. Do not expand a document's stated coverage by inference.
-
-#### Can documents for another market be reused?
-
-Ask the destination reviewer about their relevance while preserving the original scope and issuer. This guide neither accepts nor rejects them as local evidence. The useful first step is making the equipment identity and the document's actual claim clear.
-
-#### Does a destination radio response approve operation on site?
-
-It does not replace the equipment-function and site review. Keep the actual response within its stated scope. Permitted functions, control locations and project arrangements require their own applicable equipment information and responsible assessment, rather than assumptions based on a radio document.
+#### What do I write if the band is not on the sheet?
+Silent. Do not invent a band to fill the cell.

@@ -2,150 +2,142 @@
 title: "Roll-Forming Lift Offers: Check Supply Frequency Data"
 description: "Review a roll-forming lift supply-frequency discrepancy with the site and equipment records, then request a configuration-specific response from providers."
 date: 2026-10-26
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming","roll forming lift supply frequency mismatch","buyer planning"]
 coverImage: "/images/equipment/coil-real-handling.webp"
 coverAlt: "Elevated red forming apparatus beside steel building frames and ground level coils"
-coverCaption: "Reference photograph showing elevated forming apparatus beside building steelwork and coils. It does not establish a model, electrical arrangement or approved working configuration."
+coverCaption: "Reference photograph of elevated forming gear beside coils. It cannot show supply frequency."
 draft: false
 ---
 
-When a roll-forming lift offer and the destination supply record state different frequencies, preserve both statements and ask the actual equipment providers to reconcile them. Do not silently correct a quotation, assume a catalogue value is a typing error, or recommend a conversion. The buyer needs a response tied to the offered equipment combination and the documented site supply.
-
-This guide develops a discrepancy record, including what to ask when a revised offer still leaves part of the line unanswered. The [electrical interface article](/blog/roll-forming-line-electrical-control-interfaces/) explains the broader project boundary. Here the narrower buying decision is whether the supplier's response actually resolves the frequency discrepancy for the equipment under consideration.
-
-The frequency entry in <a href="https://www.abb.com/global/en/news/132261/how-to-read-a-nema-motor-nameplate" target="_blank" rel="noopener noreferrer">ABB's motor-nameplate explainer</a> is linked to the motor's rated output, voltage and speed. Use that context to request the actual offered motor records alongside the discrepancy, without importing ABB example values. The explainer does not establish the proposed equipment's compatibility or an available adaptation.
+If the site record and the offer do not use the same frequency words, stop the comparison and ask. Do not average them, and do not pick the number that makes the quote look easier. Screen the height class while the words disagree. The rest of the electrical split is in the [electrical interface guide](/blog/roll-forming-line-electrical-control-interfaces/). The form rows are in the [RFQ data guide](/blog/high-altitude-roll-forming-lift-rfq-data/).
 
 **Contents**
 
-- Preserve the discrepancy before seeking an explanation
-- Trace the answer through the complete equipment set
-- Compare a corrected line with a resolved equipment question
-- Close the record with the right level of confidence
+- Put the two frequency words side by side
+- Compare the record with the offer
+- A mismatched frequency may not fit
+- Frequency lines to attach
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Preserve the discrepancy before seeking an explanation
+## Put the two frequency words side by side
 
-### Record each statement exactly as issued
+### Copy, do not translate
 
-Identify the quotation or equipment document containing the frequency entry and the site record containing the destination information. Keep the issuer, equipment or source identity and revision with each entry. Do not merge conflicting statements into a single spreadsheet value merely to make the comparison tidy.
+Write the frequency words exactly as the site record prints them, and exactly as each equipment sheet prints them. If a sheet is silent, write silent. Do not convert a silent sheet into the site's words. ARC-T18, ARC-T25, and ARC-C25 are height screens. ARC-RF8's 0.3–1.0mm band is a material class. None of those is a frequency.
 
-The discrepancy might arise from an outdated quotation, a different configuration, an incorrect site assumption or another cause. The buyer should not decide which explanation is true before the responsible parties respond. The original records make the clarification specific and answerable.
+### One machine, one pair of words
 
-### Check whether the documents describe the same scope
+Do this for the lift, then again for the former, then again for feed equipment. A match on the lift does not answer the former. A package cover that states one word for "the line" must be split or marked as unsplit.
 
-A frequency entry for the lift may not describe the former or another powered subsystem. Ask what equipment the entry covers before treating the discrepancy as a single whole-line issue. If the buyer owns the former, its provider's information belongs in the request alongside the lift offer.
+### Name who must answer
 
-Similarly, confirm which site source the destination record describes. A record for the finished building and a proposal based on temporary construction provision may refer to different sources, leaving a scope mismatch rather than one directly comparable pair of entries.
+The site owner can confirm the record. The equipment seller can confirm what that seller's sheet requires. You can show that the words differ. You cannot decide which word wins. Confirm on RFQ means the cell goes back to the person who owns it.
 
-### Ask a bounded question instead of proposing a remedy
+### Keep voltage words in their own cell
 
-Send the two identified records with a question such as: which offered configuration addresses this documented site supply, and which equipment does your answer cover? Ask the provider to identify the records it will revise or replace. This directs attention to the actual proposal rather than inviting a general statement that equipment can be adapted.
-
-Avoid suggesting converters, rewiring or motor substitutions. Their availability and suitability have not been established by finding a discrepancy, and this purchasing record is not an electrical design.
-
-![Blue machine module suspended beside a red lifting structure in an outdoor yard](/images/equipment/coil-real-module.webp)
-
-*Reference photograph showing a suspended blue machine module. It does not identify its electrical requirements, mass or an approved handling method.*
+Frequency and voltage are neighbours on many forms and they are not the same fact. Copy both if both are printed. Do not let a voltage match hide a frequency mismatch, or the reverse.
 
 <!-- audit-section: conditions -->
-## Trace the answer through the complete equipment set
+## Compare the record with the offer
 
-### Identify motors and controls through provider records
+### Use one table per machine
 
-Ask the responsible equipment party whether its reply covers the offered motor, control and auxiliary equipment arrangement, using the identities and documentation it provides. The buyer does not need to create a component design or decide which items are sensitive to the discrepancy. The useful question is whether the supplier's configuration-specific answer covers the whole scope it proposes.
+| Cell | What to write | If the papers disagree |
+| --- | --- | --- |
+| Site record | The printed words and the date | Do not edit the record to match the offer |
+| Equipment sheet | The printed words and the machine name | Ask that seller, not the other one |
+| Status | Match, mismatch, or silent | Mismatch stops the comparison |
+| Who answers | Source owner or equipment seller | Confirm on RFQ |
 
-If the reply refers only to a main motor, leave the rest of the claimed equipment coverage unresolved. A narrowly worded response should not become a broad suitability statement in the buyer's summary.
+![Forming module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
 
-### Keep lift and former replies attributable
+*Reference photograph of a forming module beside a lift frame. It cannot print a frequency.*
 
-Where two providers are involved, retain their answers separately and identify who addresses the combined arrangement. One provider's confirmation about its lift cannot be attributed to the former supplier. Ask whether a combined response requires additional information or an expressly defined coordination service.
+### A common mismatch is two documents, not two opinions
 
-The [crawler forming-lift family](/products/#crawler-roll-forming-lifts) describes equipment that raises a compatible former toward the roof receiving level. That architectural relationship explains why both identities matter, but it does not establish an electrical arrangement or a common supply specification.
+Buyers sometimes hold a site drawing that says one mains frequency and an equipment sheet that says another. Those are not preferences. They are different statements. Treat them as a stop, the same way you would treat two different outlet heights. Ask which statement the offer was built on.
 
-### Ask what changes in the commercial offer
+### Silence is not the site's number
 
-If the provider proposes a different configuration, request the corresponding description and identify any affected quotation items. Do not assume the change has no effect on price, delivery or documentation; equally, do not invent an effect before the provider states one. Keep the response conditional until its actual scope is clear.
+If the equipment sheet does not state a frequency, do not fill it from the building. Mark silent and ask. An offer that is silent might be unfinished, or it might assume a home-market figure the destination does not use. You will not know which until the seller writes the word.
 
-A revised frequency entry alone may not explain whether the underlying equipment offer changed or whether the earlier document was incorrect. Ask the issuer to make that distinction so the buyer knows which previous records remain relevant.
+![Coils and forming equipment at the side of a steel building](/images/equipment/coil-real-cover.webp)
 
-![Steel coil suspended beside red vehicle mounted equipment in a yard](/images/equipment/coil-real-cover.webp)
+*Reference photograph of coils beside the building. It cannot reconcile two sheets.*
 
-*Reference photograph showing a suspended steel coil beside vehicle-mounted apparatus. It does not establish package inclusion, capacity or an approved handling arrangement.*
+### Do not "correct" the site to save the offer
+
+Changing the site cell so it matches a catalog is how a later board review fails. The site record stays as issued. The offer changes, or the offer is not for this site.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Compare a corrected line with a resolved equipment question
+The trade-off is a fast comparison against a quote for the wrong supply. The limitation is that a height class carries no frequency. The constraint is the pair of documents in your hand. The interface is the seller's written reply that repeats your site words and says whether that seller's machine is offered for them. Without that reply, the offers are not on the same site.
 
-### Work through two hypothetical replies
+An anonymous enquiry put a site drawing and a lift sheet in one email. The drawing stated one frequency. The sheet stated another. The buyer deleted the sheet's word so the file looked consistent, then asked for a price. The seller priced the altered file. The board owner later rejected the match. The repair was to restore both words, mark mismatch, and ask the seller for a configuration-specific reply. The 25m screen was unchanged. The frequency row was not.
 
-Suppose a buyer reports that a quoted frequency entry differs from the site's record. Provider A emails a replacement quotation with the entry changed but no explanation. Provider B identifies the affected equipment configuration, explains which previous document is superseded and lists the remaining former information needed for its response.
+A second anonymous file had a matching lift row and a silent former row. The team called the line "matched" because the lift matched. The former was ARC-RF8 in name only, and its sheet had no frequency line. The corrected status was match for the lift, silent for the former. Silent is not a match. Confirm on RFQ went to the former seller alone.
 
-A has corrected the visible inconsistency but has not yet explained the equipment basis. B has made its scope clearer while leaving an explicit open question. Neither reply should be described as a completed electrical assessment merely because it looks more detailed.
+A third anonymous file tried to finish the mismatch by editing the site drawing. The drawing stated one frequency. The lift sheet stated another. The former sheet was silent. Someone changed the drawing's word so the lift sheet would match, then called the package aligned. The board owner still held the unedited record. The equipment seller had priced the edited word. Both were consistent with a file the other party did not have. Restoring the record, marking mismatch on the lift, and marking silent on the former took one table and no new height class. The 18.5m and 25m screens stayed in the same email so the frequency status could not be mistaken for a reason to change class.
 
-### Use a discrepancy closure table
+Treat a match on voltage as irrelevant to this row. Buyers hide a frequency mismatch behind a voltage that happens to agree. Copy both if both are printed, and do not let one agreement close the other cell. If several bidders send sheets, compare each sheet to the same unedited record. A bidder who repeats your site words and says whether the machine is offered for them is comparable. A bidder who repeats only the height class is not. Destination belongs beside the record so nobody substitutes a home-market habit for the paper in the folder. Confirm on RFQ is the status you send, not a delay you apologize for.
 
-| Question | Reply consisting only of a changed entry | Configuration-specific reply | Buyer follow-up |
-| :-- | :-- | :-- | :-- |
-| Which equipment is addressed? | Unstated | Named in response | Check against the actual purchase list |
-| Which record is replaced? | New page supplied | Previous revision identified | Retain the document relationship |
-| Does the answer cover the former? | Unknown | Coverage or exclusion stated | Obtain the actual former-provider answer |
-| Does the equipment proposal change? | Not explained | Changed or unchanged scope described | Request affected commercial details where relevant |
-| What site information was used? | Not referenced | Source record named | Confirm that the intended source was reviewed |
-| What remains unresolved? | No list given | Missing inputs identified | Assign each question to its responsible party |
-
-The table does not rank technical solutions. It compares the completeness and attribution of responses to a documented discrepancy. A revised label and a defined equipment answer are different deliverables.
-
-### Recognise what agreement does not establish
-
-Even when the frequency statements agree, the proposed arrangement may require other equipment and site information. Do not turn the closed discrepancy into a claim that the whole installation is suitable. Record the narrower conclusion: the identified documents have been reconciled for the stated equipment scope, subject to the actual provider and site review.
-
-The trade-off is clarity versus premature finality. A purchasing team may want a single green status, but a specific closure note preserves what was answered and prevents that note from being reused for a different former or site.
-
-![Long light coloured panel beside an elevated red structure and building facade](/images/equipment/coil-real-panel.webp)
-
-*Reference photograph showing a panel and building relationship. It does not establish measured panel length, forming quality or the equipment supply requirements.*
-
-## Close the record with the right level of confidence
+Make the status visible in the subject of the email, not only in a cell the seller can skip. "Lift mismatch, former silent, site record dated and attached" is a complete subject. A subject that says only "power question" lets the reader answer a different question. Attach the unedited record and the equipment sheet as separate files so nobody has to guess which word was changed. If you are screening both 18.5m and 25m, say that the frequency status is identical for both screens unless a seller writes otherwise. A class does not carry its own frequency. Feed equipment, when it exists, gets a third status rather than a shrug. Silent on the feed is still silent. Leave the site drawing unedited in the folder the seller returns, and compare the returned words to that file rather than to the reply's own restatement. A restatement can drop the awkward word. The original record cannot.
 
 <!-- audit-section: limitations-not-fit -->
-### Keep unresolved equipment outside the confirmation
+## A mismatched frequency may not fit
 
-An offer may not fit the intended destination enquiry if the provider cannot address the documented source or identify the equipment covered by its reply. The buyer should record that limitation and request clarification rather than infer an available modification. This guide makes no recommendation about conversion equipment, wiring changes or replacement components.
+### Two words averaged into one
 
-Reference photographs cannot show that a frequency discrepancy has been resolved. Nor does a similar machine supplied elsewhere establish suitability for this combination. The actual equipment records and responsible assessment remain essential.
+This comparison may not fit when someone picks a middle position or deletes the awkward word. Put both words back. A mismatch is a status, not a nuisance.
+
+### One word made to serve every machine
+
+It may not fit when the lift's frequency line is copied onto the former and the feed. Check each sheet. A shared package noun is not a shared statement.
+
+### A destination assumed from the seller's home market
+
+It may not fit when the offer is silent and the buyer inserts the frequency they think is normal at the destination. Write the destination. Write silent. Ask. Do not invent the normal.
+
+### Height used to end the argument
+
+It may not fit when a buyer changes from 18.5m to 25m to escape the mismatch. The class does not carry the words. The sheets do.
+
+![Long panel beside elevated forming equipment](/images/equipment/coil-real-panel.webp)
+
+*Reference photograph of a panel path. It cannot choose a supply frequency.*
 
 <!-- audit-section: project-checklist -->
-### Prepare a discrepancy request that can be answered
+## Frequency lines to attach
 
-- Attach the quoted power entry and destination source record with their issuers and revisions, preserving the original statements.
-- Name the lift, former and feed equipment covered by the purchase, separating buyer-owned items and unresolved selections.
-- Describe the intended roof zone and outlet height so the response relates to the proposed forming arrangement.
-- Identify site access and ground or floor restrictions that belong in the broader equipment review, without presenting them as electrical conclusions.
-- State transport and destination assembly boundaries when different providers supply parts of the equipment package.
-- Request a configuration-specific reply identifying changed documentation, actual coverage and the questions that still need another provider's answer.
-
-Once responses arrive, write the closure in ordinary language. “Supplier replaced record X for equipment Y” is more informative than an unexplained compatibility tick, especially when another subsystem still has an outstanding enquiry.
+- Work height at the outlet, and the catalog class to screen
+- Roof geometry, unchanged by the frequency row
+- Profile, material, and coil on their own rows
+- Wind limit, or unknown
+- Floor or ground under the machines
+- Access route to the set-down
+- Outrigger or track footprint
+- Destination country, written next to the site record
+- Transport split, so papers travel with the right machine
+- Power words: site frequency, each machine's frequency, or silent
+- Documents: both sheets attached, with dates
 
 <!-- audit-section: cta-editorial-note -->
-### Ask for a response to the actual discrepancy
+Send the work height, the site record, the destination, the transport split, the roof zone, and the floor note. The signed schedule is project-specific. Editorial images do not print a frequency.
 
-[Send ARCLIFT the frequency discrepancy records](/contact/?product=crawler-roll-forming-lifts&request=advice) together with the former identity, intended site and destination. Include outlet height, roof zone and transport assembly scope so the equipment enquiry remains tied to the project. This editorial guide supports accurate purchasing questions; it does not establish conversion feasibility or electrical suitability. Final project-specific equipment information and the responsible installation review must address the actual proposed combination.
+Open [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), or [ARC-RF8](/products/arc-rf8-roll-forming-machine/). [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://webstore.iec.ch/en/publication/71256" target="_blank" rel="noopener noreferrer">IEC 60204-1 scope record</a> is a machine-side boundary note. It does not reconcile your two sheets.
 
 ## FAQ
 
-#### Should the buyer change the frequency entry in the quotation?
+#### Do I pick the site word or the offer word?
+Neither, on this page. Show both. Ask the owner of each paper.
 
-Ask the issuer to explain and revise its own document where appropriate. An internal correction can hide the original discrepancy without establishing what equipment was offered. Keep both the original and the attributable response so later reviewers can understand the change.
+#### Is silence a match?
+No. Silence means you ask. Do not fill it from the other sheet.
 
-#### Does matching frequency prove compatibility?
+#### Can one reply cover the lift and the former?
+Only if the reply names each machine. A line reply that names neither is still silent.
 
-No. It closes only the stated information question when the relevant records and equipment scope have been reconciled. Other requirements and installation conditions remain for assessment. Avoid using one matching entry as a substitute for a configuration-specific equipment and site review.
-
-#### Can a main-motor answer cover every subsystem?
-
-Only if the actual responsible response expressly defines that broader coverage. A reply limited to one component should remain limited in the buyer's summary. Ask the providers to identify the remaining former, control or auxiliary equipment scope instead of extending their statement by inference.
-
-#### What if the supplier proposes an adaptation?
-
-Request the actual proposed configuration, responsible provider and revised records for review. This article neither establishes that an adaptation is available nor recommends one. Its commercial consequences and technical suitability must be addressed in the real proposal and project assessment.
+#### Does the height screen wait?
+No. Send the height screen with the mismatch marked. Do not pretend the words already agree.

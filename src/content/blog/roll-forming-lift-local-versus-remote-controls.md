@@ -2,150 +2,142 @@
 title: "Roll-Forming Lift Controls: Local and Remote Scope Data"
 description: "Compare local and remote control scope in a roll-forming lift offer using station identities, documented functions and states without assuming capability."
 date: 2026-10-26
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming","roll forming lift local versus remote controls","buyer planning"]
 coverImage: "/images/equipment/coil-real-handling.webp"
 coverAlt: "Elevated red forming apparatus beside steel building frames and ground level coils"
-coverCaption: "Reference photograph showing elevated forming apparatus beside building steelwork and coils. It does not establish a model, electrical arrangement or approved working configuration."
+coverCaption: "Reference photograph of elevated forming gear beside coils. It cannot list control functions."
 draft: false
 ---
 
-A roll-forming lift offer that lists remote control still needs to explain the local control provision. The buyer should identify each proposed station, the equipment it addresses and the functions its provider documents for that interface. Neither the presence of a handset nor a photograph of a cabinet establishes that all functions are available at both locations.
-
-This guide creates a control-station scope matrix for comparing actual offers. It does not explain how to operate, transfer authority between or override controls. The [electrical interface guide](/blog/roll-forming-line-electrical-control-interfaces/) covers the larger system; this enquiry isolates what the seller includes at each proposed interface.
-
-The public <a href="https://webstore.iec.ch/en/publication/31998" target="_blank" rel="noopener noreferrer">IEC 62745 scope record</a> concerns cableless-control functionality and interfaces between operator stations and machine controls. That is context for asking what the offered remote station actually covers. The abstract neither defines this machine's local/remote relationship nor proves interchangeable stations, permitted functions or compliance.
+Count stations before you count functions. A local station and a remote station are two scopes until a sheet says which functions exist at each. "Full remote" is not a function list. Screen the height class while the list is blank. The wider control boundary is in the [electrical interface guide](/blog/roll-forming-line-electrical-control-interfaces/). Where a person may stand is discussed in the [remote-control safety guide](/blog/remote-control-aerial-platform-safety-planning/).
 
 **Contents**
 
-- Identify the stations before comparing features
-- Ask the provider to define function coverage
-- Compare two station descriptions against one task
-- Turn the matrix into a purchase clarification
+- Count the stations you were offered
+- Compare functions at each station
+- A full-remote claim may not fit
+- Station lines to attach
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Identify the stations before comparing features
+## Count the stations you were offered
 
-### Ask what local means in the actual proposal
+### Name the place a person stands
 
-Local can be used loosely in a commercial description. Ask the provider to identify the proposed station or interface and the machine to which it belongs. Do not assume that a cabinet, a fixed panel and a separately supplied former interface are one control station because they appear close together.
+Write local as the station fixed on the lift or the former, and remote as the station a person can carry. If you cannot point at a place, you do not yet have a station. ARC-T25 and ARC-C25 are 25m screens. ARC-RF8 is the former band 0.3–1.0mm. The class does not tell you where the operator stands.
 
-For a [crawler roll-forming lift](/products/#crawler-roll-forming-lifts), the relevant purchase may include a lift and a compatible former from different providers. Each provider should identify the controls within its own offered scope before a combined description can be understood.
+### Ask for functions, not adjectives
 
-### Identify the remote interface separately
+For each station, ask which motions the seller's sheet actually names. Raise, travel, stop, and former start are examples of words you may copy if they are printed. If they are not printed, write unnamed. Do not upgrade unnamed to "all functions" because the brochure said full.
 
-Request the actual proposed remote device or interface identity and the configuration it accompanies. Keep the feature name separate from the provider's description of its function coverage. A general statement that equipment is remote controlled does not answer whether a particular requested function is part of that option.
+### Say which machine the station belongs to
 
-If the remote arrangement is optional, distinguish a priced item from a possible future proposal. The buyer should be able to see whether the station is included, excluded or awaiting confirmation rather than treating a marketing photograph as purchase scope.
+A station on the lift does not operate the former unless the sheet says so. Count stations per machine. Two machines on one slab can still be two local stations and no shared remote.
 
-### Keep the former's controls in their own row
+### Keep the view in the same note
 
-The forming machine performs a different task from the lift. Ask whether the offer describes its controls at all and, if so, which actual former is covered. A lift handset should not become an assumed controller for the whole forming line without an attributable equipment response.
-
-Where the buyer owns the former, obtain its provider's information and identify the separate integration questions. This avoids a misleading comparison in which one seller quotes lift controls and another describes a wider package under the same heading.
-
-![Blue machine module suspended beside a red lifting structure in an outdoor yard](/images/equipment/coil-real-module.webp)
-
-*Reference photograph showing a suspended blue machine module. It does not identify its electrical requirements, mass or an approved handling method.*
+The operator must see the motion the station commands. If steel, a parapet, or a coil blocks that view, write the block. A remote that walks the person to a better view is only useful if the functions exist at that remote. If you have not checked the view, write unknown and measure on site.
 
 <!-- audit-section: conditions -->
-## Ask the provider to define function coverage
+## Compare functions at each station
 
-### Describe the requested task without issuing commands
+### Put the stations on one table
 
-Explain the buyer's intended forming task and the reason for requesting a particular interface. For example, the project may need the provider to address a specific equipment-position or visibility question. State that need as an input for review rather than prescribing where a person should stand or which device should be used.
+| Station | Where the person stands | Functions the sheet names | If the sheet is silent |
+| --- | --- | --- | --- |
+| Lift local | On the machine, or unknown | Copy the words | Unnamed, not "all" |
+| Lift remote | Carried, or not offered | Copy the words | Confirm on RFQ |
+| Former local | On the former, or unknown | That seller's words | Do not copy the lift |
+| Former remote | Offered or not | That seller's words | Silent is not included |
 
-The actual provider should explain the functions and conditions of its offered equipment. This article does not create a command list or authorise a machine state simply because the buyer would find it convenient.
+![Forming module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
 
-### Keep equipment states explicit
+*Reference photograph of a forming module beside a lift frame. It cannot list station functions.*
 
-Ask which equipment states the provider's function description covers. A response about one state should not silently answer for another. Retain the terminology used in the applicable equipment records and request clarification where commercial wording is broader than the documented scope.
+### Full is not a column
 
-The buyer's matrix can show state coverage as confirmed by a named record, conditional, excluded or unanswered. These statuses describe the response received; they do not establish that a function is permitted until the actual equipment information and responsible project review support that conclusion.
+Strike the word full from the comparison until it is replaced by a list. Two offers that both say full can name different motions. The list is the only way to see the difference.
 
-### Request the relationship information without designing it
+### States matter as much as motions
 
-When more than one station is proposed, ask which documents explain their relationship and any relevant limitations. Do not infer interchangeable authority, simultaneous control or a fallback function from the existence of two interfaces. The provider must identify what its configuration actually includes.
+Ask what the station can do while the machine is travelling, while it is forming, and while a stop is latched. If the sheet does not say, write unknown. Do not assume a remote repeats the local station in every state.
 
-This is a request for scope and applicable information, not for the buyer to invent priority or override logic. If the quotation leaves the relationship undefined, carry that gap into the comparison as an unanswered equipment question.
+![Coils and forming equipment at the side of a steel building](/images/equipment/coil-real-cover.webp)
 
-![Steel coil suspended beside red vehicle mounted equipment in a yard](/images/equipment/coil-real-cover.webp)
+*Reference photograph of coils beside the building. It cannot show who holds a remote.*
 
-*Reference photograph showing a suspended steel coil beside vehicle-mounted apparatus. It does not establish package inclusion, capacity or an approved handling arrangement.*
+### A removed local station is a change of scope
+
+If a seller drops the local station because a remote is included, that is an exclusion. Write it as excluded. The crew may still need the fixed station when the remote is down, unauthorised, or out of view.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Compare two station descriptions against one task
+The trade-off is one remote that sounds complete against a short list of motions you can actually compare. The limitation is that adjectives hide the list. The constraint is the view and the machine the station is allowed to move. The interface is the sheet that names functions per station. Without it, stop ranking remotes.
 
-### Examine a hypothetical remote-only headline
+An anonymous offer sold "full remote" and removed the local station from the lift. The function list never arrived. At the outlet the operator could not see the former from the only place the remote was allowed to stand, and there was no fixed station left on the quote. The file that replaced it restored the local station as included unless excluded in writing, marked remote functions unnamed, and kept the 25m class as a height screen.
 
-Imagine a buyer comparing Offer A, headed full remote control, with Offer B, which lists a fixed station and a separate remote option. A's clarification addresses only identified lift functions. B's response describes station identities but leaves the requested former relationship outside its scope. The original headlines therefore hide different unanswered questions.
+A second anonymous file gave the lift a remote and described it as the line remote. The former seller had quoted a local station only. The buyer compared two lift remotes and never noticed the former had no remote at all. The corrected table had four rows. The former remote row said not offered. That single cell changed which quotation was complete. Confirm on RFQ was the former row, not a second adjective on the lift.
 
-The buyer sends both providers the same requested task and equipment identities. A is asked to identify local provision; B is asked to identify the boundary with the former provider. No particular station arrangement is assumed to be preferable before the actual responses arrive.
+A third anonymous comparison scored two remotes and learned nothing. Both covers said full. Neither listed a motion. One remote could travel the lift and could not start the former. The other remote named no motions at all and had been used to delete the fixed station. The buyer ranked them by which brochure looked newer. At the outlet, steel hid the former from the only place the remaining remote was allowed to stand, so the winning adjective still had no view. The table that replaced the ranking had a row per station, a column for named functions, and a column for the view. Unnamed stayed unnamed. The local station returned as included until a written exclusion removed it. 25m remained the height screen and did not award points.
 
-### Use a station identity matrix
+Ask about state as well as motion. A station that works while the machine is standing may not be the station that works while it is travelling or while a stop is latched. If the sheet is silent, write unknown for that state. Do not copy the local list onto the remote, and do not copy the lift list onto the former. Two machines on one slab are still allowed to have different stations. Measure on site if you have not stood where the operator must stand. A photograph of the frame is not that standing place. Confirm on RFQ is the request for the list, not an apology for leaving full off the form.
 
-| Matrix row | Buyer input | Provider answer to request | Assumption to avoid |
-| :-- | :-- | :-- | :-- |
-| Fixed lift interface | Named lift configuration | Actual station identity and included scope | A cabinet automatically provides every local function |
-| Remote lift interface | Requested option and task reason | Actual device and documented coverage | Remote means all functions in all states |
-| Former controls | Actual former identity | Provider and separate interface description | Lift controls also command the former |
-| State coverage | Relevant intended equipment context | Applicable records and exclusions | One state's answer applies to every state |
-| Station relationship | Multiple proposed interfaces | Documents defining their relationship | Stations are interchangeable or simultaneous |
-| Delivery scope | Quoted package and options | Devices and information actually included | An illustration adds an unlisted control station |
-
-The rows should be filled using attributable equipment responses. They are not an operating checklist. Empty entries reveal what the seller has not yet defined, rather than proving that the equipment lacks a function.
-
-### Compare exclusions as part of the price
-
-One offer may include a remote option while leaving former integration to another party. Another may include more documentation but a narrower station provision. The trade-off is the actual function and coordination scope being purchased, not the number of devices shown in a photograph.
-
-Ask each provider to identify the specific unanswered task requirement. If the requested function is outside its proposal, the buyer can compare a revised offer or another concept. Do not transform an exclusion into an assumed operating workaround.
-
-![Long light coloured panel beside an elevated red structure and building facade](/images/equipment/coil-real-panel.webp)
-
-*Reference photograph showing a panel and building relationship. It does not establish measured panel length, forming quality or the equipment supply requirements.*
-
-## Turn the matrix into a purchase clarification
+Write the stations in the order a person can find them: lift local, lift remote, former local, former remote. Leave a station on the list even when it is not offered, so absence is visible. Next to each one, put the motions the sheet names and the state those motions apply to. If the sheet uses full and nothing else, copy nothing and write unnamed. If the view from that station is blocked, say what blocks it. A newer brochure is not a score. Two machines on one slab do not share a station by proximity. The height screen sits under the table, not inside it, so a move from 18.5m to 25m cannot be mistaken for a fuller remote. If a seller returns the word full again, answer with the blank function cells still blank and ask for the motions by name. Do not fill them from the other offer.
 
 <!-- audit-section: limitations-not-fit -->
-### Recognise unsupported control expectations
+## A full-remote claim may not fit
 
-An offer may not fit the buyer's final selection when the requested task depends on a control function the provider has not defined for the proposed configuration. It may also remain unsuitable for comparison if local and remote interfaces refer to different equipment identities. Ask for a precise response rather than a broader feature adjective.
+### An adjective with no list
 
-The guide does not prescribe control priority, emergency response, movement, recovery or control transfer. It also does not establish that a local station is an available substitute for a remote device. Those matters belong to actual equipment information and responsible project arrangements.
+This comparison may not fit when both offers say full and neither lists a motion. Ask for the list. Do not score the adjective.
+
+### Local station deleted by accident
+
+It may not fit when the remote line is used to remove the fixed station. Put the station back or mark the exclusion on purpose. The height class does not replace it.
+
+### One station described as both machines
+
+It may not fit when the lift remote is also called the former remote. Split the rows. The machine without a sheet stays unnamed.
+
+### A view you have not stood in
+
+It may not fit when the remote is accepted from a photograph that does not show the outlet. Measure on site who can see the motion. A station the operator cannot see from is not a completed scope.
+
+![Long panel beside elevated forming equipment](/images/equipment/coil-real-panel.webp)
+
+*Reference photograph of a panel path. It cannot show a control station.*
 
 <!-- audit-section: project-checklist -->
-### Send the station questions with the project context
+## Station lines to attach
 
-- Identify the lift, former and feed equipment whose control interfaces must be distinguished in the proposal.
-- State the requested local and remote interface needs separately, including the actual task question behind each request.
-- Describe outlet height, roof receiving geometry and the relevant work zone without selecting an operator position.
-- Provide site ground or floor information and access constraints where they affect the equipment arrangement being reviewed.
-- Identify destination and transport handover scope so the devices and records can be matched to the delivered equipment.
-- Ask for power and control documentation describing each station's coverage, exclusions and relationship to other supplied interfaces.
-
-When the supplier replies, keep its exact scope beside the buyer's requirement. A requirement copied into an offer summary remains a request unless the provider has actually answered it for the named configuration.
+- Work height and the catalog class to screen
+- Roof geometry and what blocks the outlet view
+- Profile, material, and coil
+- Wind if it moves where people may stand
+- Floor or ground at each station
+- Access to the place the operator must stand
+- Outrigger or track footprint beside that place
+- Destination country and any limit on the remote
+- Transport of a portable station, separate from the machine
+- Control functions named at each station, or unnamed
+- Documents: the function list, or "none supplied"
 
 <!-- audit-section: cta-editorial-note -->
-### Request a station-specific scope response
+Send the work height, the site, the destination, the transport split, the operator zone, and the floor at each station. The signed schedule is project-specific. Editorial images do not list functions.
 
-[Ask ARCLIFT to clarify the offered control stations](/contact/?product=crawler-roll-forming-lifts&request=advice) and include the actual former information, intended site and the task reason for requesting local or remote interfaces. State outlet height, destination and transport boundary so the response concerns the proposed equipment package. This editorial matrix helps compare purchase scope. It does not establish permitted functions; final project-specific equipment records and responsible review must govern the actual configuration.
+Open [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), or [ARC-RF8](/products/arc-rf8-roll-forming-machine/). [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://www.hse.gov.uk/construction/safetytopics/mewp.htm" target="_blank" rel="noopener noreferrer">HSE MEWP guidance</a> is a Great Britain note. It does not list the functions at your stations.
 
 ## FAQ
 
-#### Does remote control imply local controls are also included?
+#### What does full remote mean?
+Nothing, until a sheet lists the functions at that station. Ask for the list.
 
-The actual proposal must identify its local provision. Ask what station is supplied, which equipment it addresses and which functions are documented. Do not infer an included interface from a cabinet photograph or assume that every remote function has a local equivalent.
+#### Is the local station still required?
+Keep it unless the offer excludes it in writing. A remote does not delete it by implication.
 
-#### Can two stations be treated as interchangeable?
+#### Does the lift remote run the former?
+Only if the former sheet says so. Otherwise it is a lift station.
 
-Only the applicable equipment information can define their relationship. This guide does not assume common authority or a transfer method. Request the provider's documents and keep any unanswered relationship visible in the scope matrix rather than inventing a practical workaround.
-
-#### Does the lift's handset also control cutting?
-
-That must not be assumed. Ask the actual providers whether any such interface is proposed and which equipment and documents define it. A shared forming task does not establish a control connection between the lift, former and cutter.
-
-#### What makes two control offers comparable?
-
-They must address the same equipment identities, requested task and provider-defined state coverage. Compare included stations, applicable records and exclusions together. Similar handset appearance or the same remote-control phrase does not make the delivered function scope equivalent.
+#### Can I compare two remotes without the lists?
+No. You would be comparing adjectives. Wait for the words, and still send the height screen.

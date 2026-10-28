@@ -2,150 +2,142 @@
 title: "Roll-Forming Lift Power Cables: Define the Supply Scope"
 description: "Define roll-forming lift cable supply boundaries with named source and equipment endpoints, connectors and local responsibilities before comparing quotes."
 date: 2026-10-26
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming","roll forming lift site cable supply scope","buyer planning"]
 coverImage: "/images/equipment/coil-real-handling.webp"
 coverAlt: "Elevated red forming apparatus beside steel building frames and ground level coils"
-coverCaption: "Reference photograph showing elevated forming apparatus beside building steelwork and coils. It does not establish a model, electrical arrangement or approved working configuration."
+coverCaption: "Reference photograph of elevated forming gear beside coils. It cannot show a cable run."
 draft: false
 ---
 
-The phrase power cable supplied leaves an important buying question unanswered: supplied between which two points? For a roll-forming lift project, the buyer needs to identify the proposed source, the actual equipment connection and the party providing each intervening item. A cable included with a machine may describe a different boundary from the connection work the site expects.
-
-This guide helps create a commercial endpoint map. It does not select cable sizes, connectors or installation routes. Use the [electrical interface overview](/blog/roll-forming-line-electrical-control-interfaces/) for broader equipment integration, and the [crawler forming-lift family](/products/#crawler-roll-forming-lifts) to identify the equipment architecture being discussed. The deliverable here is a precise request for what an offer includes between named boundaries.
-
-The public <a href="https://webstore.iec.ch/en/publication/71256" target="_blank" rel="noopener noreferrer">IEC 60204-1 record</a> identifies the supply connection as the start of its machine-equipment scope. That is useful context for asking both endpoints of a cable inclusion; it does not allocate contract responsibilities or specify a cable or installation.
+Name who supplies the cable between the site source and the machine, and name both ends. A word like "plug" or "lead included" is not that cable. Screen the height class while the ends are still blank. The electrical split between machines is in the [electrical interface guide](/blog/roll-forming-line-electrical-control-interfaces/). The rows that belong on the form are in the [RFQ data guide](/blog/high-altitude-roll-forming-lift-rfq-data/).
 
 **Contents**
 
-- Replace the word supplied with two endpoints
-- Describe the interfaces the commercial map must cover
-- Compare two cable inclusions by their actual endpoints
-- Turn the endpoint map into a clear enquiry
+- Name both ends before you accept a lead
+- Compare who owns the run
+- A cable gap may not fit
+- Cable lines to attach
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Replace the word supplied with two endpoints
+## Name both ends before you accept a lead
 
-### Name the site-side origin
+### Point at the source end and the machine end
 
-Ask the site owner to identify the proposed source location and the record describing it. Use a labelled point on the site layout so that all bidders refer to the same origin. Do not turn a convenient socket in a photograph into the agreed connection point, or assume a proposed construction supply is already available.
+Write the source as the site record from the power enquiry, and write the machine as the lift, the former, or both. A cable has two ends. If either end is "the package," you do not have a cable scope. ARC-T25 and ARC-C25 are 25m screens. ARC-RF8 is the former band 0.3–1.0mm. None of them is a length of cable.
 
-The commercial map can start with an unresolved origin if it is clearly labelled. That tells the equipment seller why a final connection-scope response may be premature and tells the buyer whom to ask next.
+### Say who supplies, who terminates, and who supports the run
 
-### Name the equipment-side boundary
+Three jobs are often three companies. The offer may include a short lead at the machine and exclude the run across the yard. The site electrician may own the source end and refuse the machine end. Write each job as included, excluded, or unknown. Do not collapse them into "electrical by others."
 
-Request the connection boundary for the offered equipment configuration from its actual provider. The answer should identify the relevant item and document, rather than simply referring to the machine. An elevated former, lift and separate feed unit may be different equipment identities within one project brief.
+### Keep the route as a conflict list, not a design
 
-If a quotation includes a connection item, ask which equipment it serves and what lies beyond it. This prevents a cable associated with one subsystem from being counted as the complete source-to-line provision for every subsystem.
+Note a fire lane, a public path, a wet yard, or a door that must stay shut. Those are reasons the obvious line on a sketch may be illegal or unavailable. They are not an instruction to size a conductor. If you cannot walk the route, write unknown and measure on site.
 
-### Keep item ownership distinct from design responsibility
+### Do not borrow a length
 
-One party may supply a physical item while another defines or reviews the overall installation. Record these responsibilities separately. A seller supplying a cable does not necessarily own the local installation design, and a local contractor carrying out agreed work does not automatically supply every item excluded by the equipment quotation.
-
-The endpoint map is useful because it reveals the gap without attempting to solve it technically. Ask the responsible project parties to confirm their respective scopes, then retain their responses with the actual equipment and source records.
-
-![Blue machine module suspended beside a red lifting structure in an outdoor yard](/images/equipment/coil-real-module.webp)
-
-*Reference photograph showing a suspended blue machine module. It does not identify its electrical requirements, mass or an approved handling method.*
+Another project's lead length is not a placeholder. It looks like data and it is fiction. If a form demands a length you have not measured, the form is ahead of the site. Send unknown.
 
 <!-- audit-section: conditions -->
-## Describe the interfaces the commercial map must cover
+## Compare who owns the run
 
-### Distinguish incoming and equipment-internal items
+### Put the ends on one table
 
-Ask whether quoted cables or connectors belong inside the supplied equipment assembly, between delivered modules, or between the site source and equipment. Those are different supply boundaries even when a packing list calls them all electrical accessories. Request the item description and the two points it is intended to join.
+| End or job | Write it as | If the offer is silent |
+| --- | --- | --- |
+| Source end | The record and who terminates there | Confirm on RFQ |
+| Machine end | Lift, former, or both | Do not merge the machines |
+| Who supplies the cable | Named seller or the site | Excluded until written |
+| Route conflict | Fire lane, path, water, or none known | Measure on site |
 
-A buyer comparing complete and modular delivery should ask this explicitly. An accessory supplied for reassembly at destination may not answer the site's question about incoming connection provision. The [destination receipt guide](/blog/roll-forming-lift-destination-receipt-plan/) covers the wider arrival boundary.
+![Forming module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
 
-### Show changing positions as questions
+*Reference photograph of a forming module beside a lift frame. It cannot show a cable end.*
 
-The former's outlet position and roof receiving zone explain why the location relationship matters. Mark the proposed equipment positions and any changing boundary that the responsible designer needs to consider. Do not draw a preferred cable path or prescribe how services should accommodate movement.
+### A short lead is not the yard run
 
-If the buyer expects more than one forming position, state that expectation in the scope request. A provider's answer for a single position should not silently become a commitment covering every location in the building.
+Ask whether the included lead leaves the machine enclosure only. Many offers stop there. The yard, the riser, and the board remain site work until a line says otherwise. Treat silence as excluded, not as included.
 
-### Include separately owned equipment
+### Connectors are names, not assumptions
 
-An owned roll former may arrive with accessories from an earlier installation. Identify those items as available records or buyer-owned equipment, subject to actual review. Their existence does not establish suitability for the new lifted arrangement or mean that the lift supplier accepts responsibility for them.
+If the offer names a connector, copy the name. If it does not, write unknown. Do not match a connector from a photograph of a coil or a panel. The photograph was not taken of your board.
 
-Ask each provider to state what it needs to determine its boundary. The buyer should be able to point to the owner of an unanswered interface, even where the physical connection cannot yet be specified.
+![Coils and forming equipment at the side of a steel building](/images/equipment/coil-real-cover.webp)
 
-![Steel coil suspended beside red vehicle mounted equipment in a yard](/images/equipment/coil-real-cover.webp)
+*Reference photograph of coils beside the building. It cannot trace a route.*
 
-*Reference photograph showing a suspended steel coil beside vehicle-mounted apparatus. It does not establish package inclusion, capacity or an approved handling arrangement.*
+### Two machines can mean two runs
+
+The lift and the former may not share a cable just because they share a slab. Ask the question twice. A yes for the lift is not a yes for the former. Feed equipment, if it is in the purchase, is a third end.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Compare two cable inclusions by their actual endpoints
+The trade-off is a cheap sentence against a missing run on the day the machine arrives. The limitation is that catalog classes do not include cable. The constraint is the route the building will actually allow. The interface is the quotation line that names both ends and the owner of the run. Without that line, the offers are not comparable.
 
-### Examine an incomplete quotation pair
+An anonymous arrival had a lift with a short lead and a former with no lead. The buyer had read "cables included" on a package cover. The yard from the board to the set-down was nobody's line. The crew waited on a measured route that crossed a fire lane the sketch had ignored. The note that should have gone out named the board, named the two machines, marked the yard run as not in the purchase, and marked the fire lane as a conflict to measure on site.
 
-In a hypothetical purchase, Offer A states electrical cables included. Its clarification reveals cables between modules delivered by the equipment supplier. Offer B states site cable excluded but includes an equipment connection schedule. The buyer initially treats A as more complete because it contains the word included.
+A second anonymous file copied a length from a previous job because the cell looked empty. The new yard was longer, and the connector name did not match the board. The copied length made the quote look finished and made the first morning wrong. Unknown was the correct cell. ARC-T25 stayed a height screen. It did not become a cable.
 
-After mapping endpoints, the buyer discovers that neither price includes the site-source-to-equipment provision. A and B may still differ in useful deliverables, but A's accessory line did not eliminate the local scope. The discovery changes the comparison without making any judgement about cable adequacy.
+A third anonymous morning lost half a shift at the board. The lift had a short lead. The former had a different connector from the one the site electrician had prepared, because the connector name had been guessed from a photograph of another machine. The yard run crossed a door the process required to stay shut during working hours. Nobody had written the door. The electrician owned the board end, refused the machine end, and was right to refuse it: that end had never been placed in the purchase. The enquiry that would have prevented the wait named both ends, marked the yard run excluded, copied only connector names that appeared on paper, and listed the shut door as a route conflict to measure on site.
 
-### Build an origin-to-equipment ownership table
+Do not let a package cover close these cells. "Cables included" on a cover can mean a lead that stops at the enclosure. Ask where it stops, in words a person can point at. If the answer is the enclosure, the yard is still open. If two machines are in the buy, ask twice and keep the answers on two rows. A single yes does not jump the gap. Transport can put a coil of cable in a crate and still leave the termination excluded. Write termination as its own job. Confirm on RFQ who may do that job at the destination, because a seller's inclusion line does not appoint the local person.
 
-| Boundary | Question for the equipment provider | Question for the site party | Purchasing result |
-| :-- | :-- | :-- | :-- |
-| Documented source location | Which source information is needed? | Who identifies the proposed origin? | Common starting point for all offers |
-| Source to equipment boundary | What is included, excluded or conditional? | Who owns remaining local provision? | Explicit external connection scope |
-| Delivered module interface | Which joining items accompany the modules? | What destination work is separately arranged? | Accessories distinguished from incoming supply |
-| Buyer-owned former interface | Which former records are required? | Who supplies existing equipment information? | Ownership and compatibility question exposed |
-| Additional forming position | Does the scope response address this position? | Which location restrictions change? | Position-specific assumptions retained |
-| Final documentation boundary | Which equipment-side records are supplied? | Who coordinates the actual installation review? | Clear handover of information |
-
-Use labels that match the actual layout and offer. The rows describe questions, not an electrical connection sequence. They deliberately avoid connector types, cable lengths and routing recommendations.
-
-### Make exclusions comparable before negotiating totals
-
-The useful trade-off is between a package with clearly identified supplied items and one leaving those items to another provider. A longer inclusion list is not necessarily a wider source-to-equipment scope. Ask whether the quoted items cover the same endpoints and whether any additional coordination work is included.
-
-If an item appears in two offers, identify whether it is genuinely duplicated or whether the descriptions refer to different boundaries. Conversely, two suppliers each excluding the same connection leaves a real purchasing gap even if their individual machines are fully described.
-
-![Long light coloured panel beside an elevated red structure and building facade](/images/equipment/coil-real-panel.webp)
-
-*Reference photograph showing a panel and building relationship. It does not establish measured panel length, forming quality or the equipment supply requirements.*
-
-## Turn the endpoint map into a clear enquiry
+Walk the route on paper before you call it excluded or included. Start at the board name on the record, pass the door that stays shut, pass the fire lane if there is one, and end at the lift and then again at the former. Anywhere you cannot name, the cell is unknown. A straight line on a brochure photo is not this walk. If the included lead is only long enough to leave the enclosure, say that, and keep the rest of the walk out of the purchase until someone accepts it in writing. Connector names travel only if they are copied. A second machine does not inherit the first machine's connector. Measure on site when the sketch and the yard disagree, and send the height screen the same day with the cable cells still open.
 
 <!-- audit-section: limitations-not-fit -->
-### Leave engineering selections with their owners
+## A cable gap may not fit
 
-An endpoint map may not fit a final procurement decision while the source location or offered equipment boundary is still undefined. It can still identify who owes those answers. Do not make it appear complete by specifying a cable type, protection arrangement or connector based on a generic illustration.
+### Silence read as included
 
-The map also does not establish permitted service routing across moving equipment. It records the buyer's location requirements and the commercial parties involved; the responsible designers and equipment providers must determine the actual arrangement and its documentation.
+This scope may not fit when the only evidence of a cable is a package noun. Ask for the line. If the seller cannot name the ends, the run is not in the offer.
+
+### A route you have not walked
+
+It may not fit when the sketch shows a straight line across a fire lane, a public path, or a door that stays shut. Measure on site before you treat the line as the scope. A taller class does not move the lane.
+
+### One lead for two machines
+
+It may not fit when the lift lead is also described as the former lead without a second end. Count ends. The machine without an end stays unknown.
+
+### A borrowed length
+
+It may not fit when the number in the cell came from another project. Delete it. Send the height screen with the cable cells open.
+
+![Long panel beside elevated forming equipment](/images/equipment/coil-real-panel.webp)
+
+*Reference photograph of a panel path. It cannot measure a cable route.*
 
 <!-- audit-section: project-checklist -->
-### Check the six commercial boundaries
+## Cable lines to attach
 
-- Mark the site source and proposed equipment connection as separate labelled points, including any unresolved origin information.
-- Identify roof receiving geometry and outlet height so the scope answer refers to the actual forming position under discussion.
-- List buyer-owned former and feed equipment, with existing accessory records distinguished from confirmed supplied items.
-- Record ground, floor and access restrictions affecting the intended equipment location without proposing a cable route.
-- State destination assembly and transport module boundaries so incoming supply is not confused with reassembly accessories.
-- Ask who supplies each power-connection item, who owns the remaining local scope and which documentation each party provides.
-
-Return the completed map to the parties whose boundaries meet. A buyer's internal annotation that an item is included is weaker than an attributable supplier response identifying the same endpoints.
+- Work height at the outlet, and the catalog class to screen
+- Roof geometry and the set-down you will actually use
+- Profile and coil, so the former end is a real machine
+- Wind if the run is in the open
+- Floor or ground the cable would cross
+- Access route, including doors that must stay shut
+- Outrigger or track footprint the run must avoid
+- Destination country and who may terminate there
+- Transport, so a lead in a box is not confused with the yard run
+- Power ends: source, lift, former, and who supplies the cable
+- Documents: the line that names the run, or "none supplied"
 
 <!-- audit-section: cta-editorial-note -->
-### Request a source-to-equipment scope statement
+Send the work height, the site ends, the destination, the transport split, the roof zone, and the floor the run would cross. The signed schedule is project-specific. Editorial images do not show a cable.
 
-[Send an endpoint enquiry to ARCLIFT](/contact/?product=crawler-roll-forming-lifts&request=advice) with the actual source record, forming equipment list and site layout. Include outlet height, destination and transport assembly split, then ask which items and equipment-side documents the offered package includes. This editorial map supports a clearer quotation comparison. It does not specify electrical connections; final project-specific design and installation responsibilities must be resolved by the actual providers and the site's appointed reviewer.
+Open [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), or [ARC-RF8](/products/arc-rf8-roll-forming-machine/). [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://webstore.iec.ch/en/publication/71256" target="_blank" rel="noopener noreferrer">IEC 60204-1 scope record</a> is a machine-side boundary note. It does not supply your cable.
 
 ## FAQ
 
-#### Does a cable on the packing list cover the site connection?
+#### Is a short lead the same as the site run?
+No. Ask where the included lead stops. The rest is excluded until a line names it.
 
-Its description must identify that boundary before the buyer can count it that way. It may instead join delivered modules or serve another equipment function. Ask the provider to name both endpoints and keep its answer with the packing or scope record.
+#### Can you specify the connector from a photo?
+No. Copy the connector from the offer or the board record, or write unknown.
 
-#### Can the buyer specify a cable length from the layout?
+#### Do the lift and the former share one cable?
+Only if the offer says so for each end. Silence is not a share.
 
-The buyer can provide measured location information and proposed work positions. This guide does not derive a cable length or route from them. The responsible design must account for the actual arrangement; a straight-line distance is not a completed installation specification.
-
-#### Who supplies connectors when several vendors are involved?
-
-The offers and project agreements must answer that question. Identify each meeting boundary and ask the adjacent providers to state their supply scope. Do not assume that the supplier of one cable also supplies or approves every connection item at either end.
-
-#### What if both sellers exclude the same connection?
-
-Keep the gap visible and identify a responsible party for the remaining enquiry. The buyer can then seek a defined proposal for that work. Removing the exclusion from a comparison spreadsheet would hide the issue without resolving the actual purchasing boundary.
+#### What if the length is unknown?
+Send unknown. Do not borrow a length from another job.

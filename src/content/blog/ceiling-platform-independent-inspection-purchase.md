@@ -2,150 +2,142 @@
 title: "Ceiling Platform Inspection Services: Agree the Scope"
 description: "Define a ceiling-platform inspection service enquiry with equipment identity, examination scope, report deliverables and exclusions before relying on providers."
 date: 2026-10-26
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
 tags: ["ceiling platforms","ceiling platform independent inspection purchase","buyer planning"]
 coverImage: "/images/equipment/entry-real-cover.webp"
 coverAlt: "Broad elevated work deck beneath steel roof members inside a building"
-coverCaption: "Reference photograph showing a broad deck beneath building steelwork. It does not establish a model, rated capacity, permitted occupancy or task approval."
+coverCaption: "Reference photograph of a broad deck under roof steel. It cannot show an inspection report."
 draft: false
 ---
 
-Before appointing an independent provider to examine a ceiling platform, define the question the buyer wants that service to answer. A document review, a physical examination and a review of a proposed site arrangement are different scopes. The provider's report can only be understood against the actual equipment, records and activities included in its appointment.
-
-This guide develops a service enquiry rather than an inspection method or a legal checklist. The [site acceptance records guide](/blog/crawler-ceiling-platform-site-acceptance-records/) organises contractual findings at destination. Here the buyer is procuring a defined independent examination and keeping its scope distinct from contractual acceptance, equipment instructions and any separate local duties.
+An inspection is in this purchase only when the offer names who examines the deck, what the report contains, and what is excluded. A catalog class is not an inspection, and a handover photo is not a report. Screen ARC-F20, ARC-F25, or ARC-F31 while those three lines are open. What the site records at acceptance is in the [site acceptance guide](/blog/crawler-ceiling-platform-site-acceptance-records/). The deck choice itself stays in the [under-ceiling buyers guide](/blog/crawler-under-ceiling-platform-buyers-guide/).
 
 **Contents**
 
-- Define the question before requesting an inspection price
-- Separate records, examination and site questions
-- Compare two service proposals by the report they can support
-- Agree the service boundary before relying on its outcome
+- Name the examiner, the report, and the exclusion
+- Compare a photo handover with an examination
+- An inspection claim may not fit
+- Inspection lines to attach
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Define the question before requesting an inspection price
+## Name the examiner, the report, and the exclusion
 
-### State the buying decision the report should inform
+### Say who does the work
 
-Explain whether the buyer needs an examination of identified equipment condition, a review of supplied records, observations about a defined delivered arrangement or another expressly described service. Avoid asking for a complete inspection without naming the actual question. A provider cannot define useful exclusions against an undefined expectation.
+Write the seller, an independent examiner the buyer will appoint, or unknown. "Inspection included" does not name a person or a company. If both sides think the other one booked it, nobody has booked it. The 20m, 25m, and 31m names are catalog screens. They do not arrive with an examiner because the number is larger.
 
-This does not mean the buyer should prescribe technical examination methods. Ask the actual provider to describe the service it proposes for the stated question and identify what information it needs before confirming that scope.
+### Say what the report must contain
 
-### Identify the platform actually presented
+Ask for the list: machine identity, the date, the place, what was looked at, and what was not. A certificate word with no list is not a report you can compare. If the destination requires a form you already hold, attach that form. If you do not hold it, write unknown. Do not invent the legal wording.
 
-Give the provider the equipment identity, offered or delivered configuration and included assemblies available for review. A [crawler ceiling-platform family](/products/#crawler-ceiling-platforms) describes a broad work-deck application; it does not identify the exact machine or accessory combination to be examined.
+### Say what is outside
 
-If some assemblies will arrive later, state that fact. A service covering the equipment physically available on one date should not be described as examining an absent combination simply because that combination appears on the purchase agreement.
+A visual look from the floor, a check after transport damage, and a periodic examination later are different jobs. Ask which one the line sells. Parts, repairs, and a second visit are excluded until a line includes them. Write the exclusion so the price you request is for a known verb.
 
-### Ask what makes the service independent for this purchase
+### Keep acceptance records separate
 
-Ask the proposed provider to explain its role, relevant relationships and the scope on which the buyer may rely. The word independent should not replace an actual understanding of who performs the work and what responsibilities it accepts. Do not infer qualifications, accreditation or local authority from a service title.
-
-The buyer should seek the appropriate project advice on provider selection and applicable requirements. This article does not certify a provider, establish a legal appointment standard or promise that a particular inspection service is available through ARCLIFT.
-
-<a href="https://www.hse.gov.uk/work-equipment-machinery/inspection.htm" target="_blank" rel="noopener noreferrer">HSE's work-equipment inspection guidance</a> relates inspection scope and competence to the equipment, its use and conditions. This Great Britain context supports asking the proposed examiner to define what its service addresses. It does not accredit that provider, determine destination duties or make a purchased report equivalent to contractual acceptance or permission to use the platform.
-
-![Raised work deck above a vehicle bed beneath an indoor steel roof](/images/equipment/entry-real-interior.webp)
-
-*Reference photograph showing a deck and vehicle-bed context beneath a roof. It does not identify a current truck-platform model or prove conversion suitability.*
+The site acceptance guide is the buyer's own record of what arrived. It is not a substitute for an examiner's report, and an examiner's report is not a substitute for the buyer's record. Send both asks, or say which one you are not buying.
 
 <!-- audit-section: conditions -->
-## Separate records, examination and site questions
+## Compare a photo handover with an examination
 
-### Identify the documents available to the provider
+### Put the jobs on one table
 
-List the actual equipment records available, their configuration references and any missing information. Ask the provider which documents are needed for its proposed scope. A sample manual or preliminary drawing should retain that status rather than being presented as the final applicable record.
+| Job | Who does it | What you should receive | If the offer is silent |
+| --- | --- | --- | --- |
+| Handover photographs | Usually the crew | Pictures, not a report | Do not call them an inspection |
+| Examination in this purchase | Named company, or not | A report with a list | Confirm on RFQ |
+| Later periodic examination | Often the owner's duty | Not this purchase unless written | Leave it with the owner |
+| Repairs found on the day | A different line | Excluded until named | Do not fold them in |
 
-If a requested document is unavailable, ask how the provider's proposed service and report would reflect that limitation. The buyer should not conceal the gap merely to obtain a clean quotation or assume that physical observation automatically replaces missing equipment information.
+![Raised work deck inside a steel hall above an open floor](/images/equipment/entry-real-interior.webp)
 
-### Ask what can actually be examined
+*Reference photograph of the deck inside the hall. It cannot replace an examination.*
 
-Tell the provider which equipment and areas will be accessible under the proposed appointment conditions. Ask it to define the examination scope, exclusions and prerequisites through its own professional response. Do not use this article to specify tests, loads, operating sequences or access methods.
+### Identity has to match the machine that arrived
 
-An offer limited to visible observations may answer a different question from an offer involving other defined activities. The distinction should be clear before price comparison, and any limitations should remain visible in the eventual report rather than disappearing into a general pass statement.
+The report should name the machine that was examined, not a class in a brochure. Ask the seller how that identity will be written. If the offer cannot say, the report scope is unfinished. A 31m screen examined under a 25m name is the wrong record.
 
-### Keep site suitability outside an equipment-only assumption
+### Timing is part of the scope
 
-If the buyer also wants a site-related assessment, identify the actual floor, route, workface and task information involved and ask whether the provider offers that scope. An equipment examination does not automatically include building support or the suitability of every intended work zone.
+Ask whether the examination is before shipment, at arrival, or both. Before shipment does not see transport damage. At arrival does not see what the factory could have shown. Write the one you are buying. Unknown is acceptable. A vague "on delivery" is not a timing.
 
-The facility and other project parties retain their own responsibilities. Ask who addresses each question rather than expecting one report to cover all decisions. The [work-zone layout guide](/blog/large-deck-crawler-platform-work-zone-layout/) can help organise the separate spatial inputs.
+![Empty platform beside open bays and building columns](/images/equipment/entry-real-approach.webp)
 
-![Empty red platform beside open building bays and structural columns](/images/equipment/entry-real-approach.webp)
+*Reference photograph of the approach. It cannot date an inspection.*
 
-*Reference photograph showing an empty platform beside building openings. It does not measure a doorway or prove clearance, passage or permitted travel.*
+### The building can refuse the visit
+
+An occupied hall may not allow the examiner in during the hours the crew prefers. Write the hours the building will give, the same way you write them for the work itself. An examination that cannot enter is not delivered.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Compare two service proposals by the report they can support
+The trade-off is a short inclusion word against a report you can actually file. The limitation is that catalog classes do not name an examiner. The constraint is the destination's own rule, which this page does not state, and the building's hours. The interface is the quotation line that names the person, the list, and the exclusion. Without it, stop comparing "inspection included."
 
-### Follow a hypothetical appointment comparison
+An anonymous purchase treated the handover photographs as the inspection. The photos showed the deck in the hall. They did not name the examiner, the date of any examination, or what was left out. The owner's file had pictures and no report. The corrected order said: photographs by the crew included, examination not in this purchase, examiner to be appointed by the owner, repairs excluded. ARC-F25 stayed the height screen. It did not become a certificate.
 
-Imagine Offer A proposes a review of supplied equipment documents and a report listing observed document gaps. Offer B proposes an examination of the identified delivered platform, with stated access prerequisites and exclusions. The buyer initially compares their prices as two quotes for the same inspection.
+A second anonymous file had the seller and the buyer each assuming the other had booked an independent examiner before shipment. The machine shipped with neither visit. The argument started from the word included, which had never named a company. The note that prevents that names the company or says the buyer will appoint one, and it says whether the visit is before shipment or at arrival. Confirm on RFQ if that company is still blank.
 
-They answer different questions. If the buyer's decision depends on the actual delivered condition, A's document-only scope does not answer it. If the immediate problem is understanding missing records before delivery, B's later physical appointment may not address the timing of that question. Neither example establishes that either service is adequate for a real project.
+A third anonymous file used the word certificate for a stack of arrival photos. The photos showed ARC-F25's class of deck in the hall. They did not name an examiner, a date of examination, or a list of what was left out. The owner filed them and later could not show a report to the person who asked for one. The purchase that should have been written said: crew photographs included, examination not in this purchase, examiner appointed by the owner, visit at arrival rather than before shipment, repairs excluded. Before shipment would have missed transport damage. At arrival did not need to pretend it had seen the factory. The 20m and 31m screens were still available as height questions. Neither screen filled the report.
 
-### Use an appointment-scope comparison
+Write the building's hours next to the visit. An occupied hall can refuse the examiner during the crew's preferred shift, just as it can refuse the work itself. An examination that cannot enter is not delivered, even when the line says included. Identity has to be the machine that arrived, not the class on the brochure. Ask how that identity will be written. If the offer cannot say, the report scope is unfinished. Keep the buyer's own acceptance record on its own page. It does not replace the examiner, and the examiner does not replace it. Confirm on RFQ which of the two you are buying today.
 
-| Scope field | Document-review proposal | Equipment-examination proposal | Question for the buyer and provider |
-| :-- | :-- | :-- | :-- |
-| Subject | Identified records | Identified physical equipment | Does it match the decision needing evidence? |
-| Configuration | Record references supplied | Arrangement actually presented | Are absent assemblies or later changes excluded? |
-| Activities | Provider-defined review | Provider-defined examination | What is actually included in the price? |
-| Prerequisites | Applicable records available | Access and information as stated | Who supplies each missing prerequisite? |
-| Report | Findings within document scope | Findings within examination scope | How are limitations and unresolved items recorded? |
-| Other decisions | Site and contractual matters separate | Site and contractual matters separate unless defined | Who owns the remaining assessments? |
-
-The table compares service boundaries rather than technical examination quality. The actual provider must propose its methods, competence basis and applicable scope for the project; the buyer should obtain appropriate advice on whether that response meets its needs.
-
-### Request a report that preserves limitations
-
-Ask what the report will identify: equipment examined, records considered, activities performed, findings and stated exclusions. A short conclusion should remain linked to those details. If a prerequisite was missing or part of the equipment was inaccessible, the buyer needs to understand how the provider records that fact.
-
-The trade-off is between a narrowly priced service that answers a specific question and a broader appointment with additional scope. Broader wording alone is not better evidence. Compare what each provider actually proposes and what separate decisions remain outside the report.
-
-![Crawler equipment carried on a separate road vehicle beside industrial buildings](/images/equipment/transport-real-cover.webp)
-
-*Reference photograph showing crawler equipment on a separate carrier. It does not establish a truck-mounted product, completed delivery or approved transport arrangement.*
-
-## Agree the service boundary before relying on its outcome
+Put the deliverable in the subject so a photo set cannot be renamed later. "Photographs included, examination excluded, examiner buyer-appointed, timing at arrival" is a subject a seller can accept or refuse. "Inspection included" is a subject that starts the argument you already saw. Repairs stay out of that subject unless you add them as their own line. The machine identity the examiner will write has to be the machine that arrived. A class such as 20m, 25m, or 31m can be the screen you are buying and still be the wrong name on the report. The building's hours sit beside the timing. If the hall will not let the examiner in, the line is not delivered.
 
 <!-- audit-section: limitations-not-fit -->
-### Recognise a report that cannot answer the buyer's question
+## An inspection claim may not fit
 
-A proposed service may not fit the intended decision if it examines different equipment, omits the relevant activity or relies on records the buyer cannot supply. Resolve that mismatch before treating the appointment as a solution. A report title or supplier attendance does not extend the scope actually performed.
+### A photo called a report
 
-This guide sets no inspection interval, technical method, test load, pass criterion or statutory conclusion. It does not establish contractual acceptance or permission for platform use. Those decisions must be addressed through the actual agreement, applicable equipment information and responsible local arrangements.
+This purchase may not fit when the only deliverable is a set of pictures. Pictures can be useful and they are not the examination. Ask for the list or drop the word inspection.
+
+### Nobody named
+
+It may not fit when both parties think the other booked the examiner. Write the name or write buyer-appointed. A blank is how the visit is missed.
+
+### The wrong machine identity
+
+It may not fit when the report is allowed to cite a catalog class instead of the machine that arrived. Ask for the identity the examiner will write. A class screen is not that identity.
+
+### Repairs hidden inside the word
+
+It may not fit when the buyer expects faults to be fixed because an examination was included. Fixing is a different verb. Exclude it unless a line includes it.
+
+![Crawler equipment carried on a road vehicle beside industrial buildings](/images/equipment/transport-real-cover.webp)
+
+*Reference photograph of equipment on a carrier. It cannot show what was examined.*
 
 <!-- audit-section: project-checklist -->
-### Prepare the independent-service enquiry
+## Inspection lines to attach
 
-- Identify the actual platform, supplied assemblies and configuration that would be available for the proposed examination.
-- State the buyer decision and distinguish document review, physical examination and any separately requested site assessment.
-- Provide task height, ceiling geometry and material context only where relevant to the defined service question.
-- Identify floor and access information, equipment availability and any restrictions that affect the provider's proposed scope.
-- State destination and transport or delivery stage so the service is not quoted against equipment that will not yet be present.
-- Request the provider's prerequisites, power or control information needs, report deliverables, exclusions and treatment of unresolved documentation.
-
-Retain the appointment scope with the report. When the platform or task changes later, ask the responsible parties which earlier findings remain relevant instead of treating the report as a permanent approval for all future arrangements.
+- Work height and the catalog class to screen
+- Roof geometry in the bay the examiner must enter
+- Materials that will be on the deck, if the visit is during work
+- Wind if the visit is at an open door
+- Floor under the tracks during the visit
+- Access hours the building will allow
+- Outrigger or track footprint the examiner must see
+- Destination country and any form you already hold
+- Transport timing, so before-shipment is not confused with arrival
+- Power mode only if the visit needs the deck to move
+- Documents: the report list, the examiner's name, or "none supplied"
 
 <!-- audit-section: cta-editorial-note -->
-### Clarify the supplied equipment information
+Send the work height, the site hours, the destination, the transport timing, the bay, and the floor the examiner must use. The signed schedule is project-specific. Editorial images do not examine a deck.
 
-[Ask ARCLIFT about the equipment records for your proposed review](/contact/?product=crawler-ceiling-platforms&request=advice) and identify the independent service question separately. Include site, task height, floor context, destination and transport stage so the supplied configuration is clear. This editorial guide does not offer or certify an inspection service. Final project-specific appointment scope, provider selection and reliance on findings belong to the actual buyer, service provider and responsible project reviewers.
+Open [ARC-F20](/products/arc-f20-crawler-ceiling-platform/), [ARC-F25](/products/arc-f25-crawler-ceiling-platform/), or [ARC-F31](/products/arc-f31-crawler-ceiling-platform/). [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://www.hse.gov.uk/construction/safetytopics/mewp.htm" target="_blank" rel="noopener noreferrer">HSE MEWP guidance</a> is a Great Britain note. It does not appoint an examiner.
 
 ## FAQ
 
-#### Is independent inspection the same as contractual acceptance?
+#### Are handover photos an inspection?
+No. They are pictures. An examination names who looked, at what, and what was left out.
 
-They are different questions unless the actual agreement expressly defines their relationship. An examination can provide findings within its scope, while contractual acceptance concerns agreed deliverables and decision owners. Do not infer one outcome from the title of the other record.
+#### Who books the examiner?
+The offer must say. If it does not, write buyer-appointed or unknown. Do not assume the seller booked it.
 
-#### Can a document review establish the physical condition?
+#### Does a 31m class include a fuller inspection than 20m?
+No. Both are height screens. The report is a separate line.
 
-Its report should stay within the evidence it actually considers. Ask the provider what question the review can answer and what remains outside it. A document-only appointment should not be summarised as a physical examination that never occurred.
-
-#### Should the buyer specify the inspection procedure?
-
-The buyer should identify the decision, equipment and available information, then ask the actual provider to define its proposed professional scope. This article supplies no technical procedure or test criteria. Appropriate project advice is needed to assess whether the service meets the actual requirement.
-
-#### Does a report cover a later accessory automatically?
-
-No coverage should be inferred for an assembly absent from the examined configuration. Identify the later change and ask the responsible parties what the earlier report addresses. Receipt of the accessory does not rewrite what was actually available during the service.
+#### Should repairs be inside the same word?
+No. Ask for them as their own line, or write them as excluded.

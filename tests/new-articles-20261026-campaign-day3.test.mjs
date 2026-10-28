@@ -42,6 +42,16 @@ const remediated = new Set([
   'roll-forming-lift-hydraulic-power-package',
   'roll-forming-lift-order-before-former-selection',
   'roll-forming-lift-former-emergency-stop-boundary',
+  'roll-forming-lift-site-power-enquiry',
+  'roll-forming-lift-generator-package-boundary',
+  'roll-forming-lift-site-cable-supply-scope',
+  'roll-forming-lift-separate-former-power',
+  'roll-forming-lift-supply-frequency-mismatch',
+  'roll-forming-lift-control-language-request',
+  'roll-forming-lift-radio-control-market-enquiry',
+  'roll-forming-lift-local-versus-remote-controls',
+  'roll-forming-lift-remote-support-access-scope',
+  'ceiling-platform-independent-inspection-purchase',
 ]);
 
 describe('2026-10-26 campaign day3: twenty new URLs after the published one hundred ten', () => {
