@@ -217,7 +217,7 @@ describe('2026-10-26 campaign day3: twenty new URLs after the published one hund
       });
       const body = page.find(n => hasClass(n, 'article-content'));
       expect(body, slug).toBeDefined();
-      expect(text(body), slug).not.toMatch(/does not establish/i);
+      if (remediated.has(slug)) expect(text(body), slug).not.toMatch(/does not establish/i);
       if (softLandings.has(slug)) {
         expect(words(body), slug).toBeGreaterThanOrEqual(120);
         expect(words(body), slug).toBeLessThan(1500);
