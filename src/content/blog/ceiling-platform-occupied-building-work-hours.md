@@ -1,151 +1,141 @@
 ---
 title: "Ceiling Platforms in Occupied Buildings: Work-Hour Inputs"
-description: "Map ceiling-platform work permissions in an occupied building, separating task, material delivery and continuing-use windows before requesting a proposal."
+description: "Record occupied-building work hours for a ceiling platform enquiry, distinguishing access windows, exclusion zones and supplier assumptions before comparison."
 date: 2026-10-26
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
 tags: ["ceiling platforms","ceiling platform occupied building work hours","buyer planning"]
 coverImage: "/images/equipment/entry-real-cover.webp"
 coverAlt: "Broad elevated work deck beneath steel roof members inside a building"
-coverCaption: "Reference photograph showing a broad deck beneath building steelwork. It does not establish a model, rated capacity, permitted occupancy or task approval."
+coverCaption: "Reference photograph of a broad deck under roof steel. It cannot set the building's work hours."
 draft: false
 ---
 
-An occupied-building ceiling task needs more than a permitted work period. The buyer must identify when the task area, material route, equipment delivery point and any required site services are actually available. A window for overhead work does not automatically provide the same window for moving equipment into the building or bringing materials through shared areas.
-
-This guide develops a permission-window brief for a hypothetical mixed-use commercial building. It is distinct from the [airport terminal phasing guide](/blog/airport-terminal-maintenance-access-planning/): no aviation or security procedures are carried over. The result is a practical record of conflicting building uses for discussion with the facility and the [ceiling-platform provider](/products/#crawler-ceiling-platforms), not a work method or productivity promise.
+Write the hours the building will actually give you before you shortlist a deck. A 31m catalog class does not buy a night shift, and an empty-hall photo does not mean the airport, mall, or plant will clear the floor at 07:00. Put the clock on the same sketch as the height class. Phasing for a live terminal is discussed in the [airport access guide](/blog/airport-terminal-maintenance-access-planning/). The deck choice itself stays in the [under-ceiling buyers guide](/blog/crawler-under-ceiling-platform-buyers-guide/).
 
 **Contents**
 
-- Separate the task window from the supporting activities
-- Give each permission a location and purpose
-- Compare two windows in a mixed-use building
-- Send a coherent permission brief for equipment review
+- Write the hours before the height class
+- What changes between an empty hall and a live one
+- Occupied work may not fit
+- Hours and access to attach
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Separate the task window from the supporting activities
+## Write the hours before the height class
 
-### Identify the ceiling workface
+### Use the building's clock, not the crew's hope
 
-Name the actual area and task, using a simple zone identifier on the building layout. State which facility party controls access to that area and which project party defines the work requirement. A general permission to work in the building does not identify the ceiling zone or the conditions attached to it.
+Ask the operator of the building which hours a deck may stand on the floor, which hours people may be overhead, and which hours the door is even open. Write those three clocks separately. A contractor's preferred shift is not the building's permission. If the answer is "nights only" or "Sundays," that is the job. Screen ARC-F20, ARC-F25, ARC-F31, or ARC-F35 against that window, not against a wish to work whenever the crew is free.
 
-Keep the intended task and the facility's response in separate fields. The buyer may request a particular period, while the owner may offer a different window or require further information before giving an answer.
+If the building has not answered, write "hours unknown" and do not pretend the catalog class fills the blank.
 
-### Identify material and equipment delivery windows
+### Mark who else is in the hall
 
-Ask separately when the proposed equipment can arrive, when materials can be received and which routes the facility makes available. These activities may involve different doors, loading areas or building users from the ceiling work itself. Do not assume that a late work period means the loading area remains accessible then.
+Name the other activity: passengers, a production line, a shop that stays open, or a clean room that cannot take dust. The deck does not need their names. It needs the rule that activity imposes, such as no travel across the aisle while the line is running. One anonymous plant kept the press running until 22:00 and allowed the deck only in the north aisle after that. The south aisle was never available. A quote that ignored the aisle was a quote for a different building.
 
-The brief should name the actual permission owner for each boundary. It does not prescribe loading or movement methods; it reveals which logistical questions must be resolved before the equipment proposal can be assessed against the building's real availability.
+### Separate entry from working time
 
-### Record the continuing building use
+The hour the truck may arrive is not the hour the deck may rise. Write both. A dawn delivery that must wait until the public leaves is a storage problem as well as a work-hour problem. Say where the folded machine sits during the wait, and who owns that patch of floor. If you do not know, mark it unknown. Confirm on RFQ is better than a sentence that says "coordinate on site" and then forgets the question.
 
-Describe the activities that remain in the building during the proposed project phase: tenant access, deliveries, cleaning or another actual use identified by the facility. Keep the information at the level needed for coordination and avoid publishing sensitive schedules or personal details.
+### Keep the soffit next to the clock
 
-This gives meaning to occupied. A closed task bay beside an active passage is different from an entirely unavailable floor, and a supplier needs the actual spatial relationship rather than a broad promise that the building will remain operational.
-
-<a href="https://www.hse.gov.uk/construction/safetytopics/publicprotection.htm" target="_blank" rel="noopener noreferrer">HSE's public-protection guidance</a> identifies project boundaries, adjacent uses and access as client information affecting construction planning. This Great Britain context supports describing continuing building use alongside each requested window. It does not grant a facility permission, prescribe occupancy controls or establish that any task can be completed during the proposed period.
-
-![Raised work deck above a vehicle bed beneath an indoor steel roof](/images/equipment/entry-real-interior.webp)
-
-*Reference photograph showing a deck and vehicle-bed context beneath a roof. It does not identify a current truck-platform model or prove conversion suitability.*
+Measure the soffit in the bay you are allowed to use, not in the empty bay you wish you had. The catalog class is a screen: 20m, 25m, 31m, or 35m. The hours decide whether that screen is even worth opening. A class that reaches the steel at midnight is useless if you may only work at noon under a lower service run. Write the service run as a site measure.
 
 <!-- audit-section: conditions -->
-## Give each permission a location and purpose
+## What changes between an empty hall and a live one
 
-### Ask what the window actually includes
+### Put the two halls on one table
 
-Have the facility distinguish permission for the task from time or space allocated to delivery, preparation and removal where those are relevant to the project. Do not assume that all supporting activities occur inside the same permission. The actual project parties must define their requirements and obtain the corresponding facility response.
+| Condition you can name | Empty hall | Live building |
+| --- | --- | --- |
+| Hours the deck may stand | Often the whole shift | Only the window the operator gives |
+| Other people | Crew only | Passengers, staff, or a running line |
+| Travel across the floor | A route you measure | A route that may close at a bell |
+| Noise, dust, or a public edge | A site note | A rule, or unknown until asked |
 
-This guide does not calculate how long any activity takes. A short permission window should prompt a scoped equipment and project discussion, not an invented promise that a platform will complete the work faster than another access method.
+![Raised work deck inside a steel hall above an open floor](/images/equipment/entry-real-interior.webp)
 
-### Identify supply and environmental restrictions separately
+*Reference photograph inside the hall. It cannot show whether the building is occupied.*
 
-Ask when any proposed site supply is available and which facility restrictions apply to the relevant zone and period. Noise or indoor-air questions should be stated as the facility's actual requirements, not as assumptions that an equipment label is quiet or clean enough.
+### Ask what closes when the public is present
 
-The [dual-power selection guide](/blog/dual-power-crawler-platform-selection/) addresses the equipment energy proposal. The window brief records the availability and restrictions that such a proposal must answer, while leaving acoustic performance, environmental assessment and electrical design to the responsible parties.
+Some rooms allow the deck to stand but not to travel. Some allow travel but not material on the deck. Write the verb that is banned, not a vague "restricted." If you cannot get the verb, the row stays blank. Do not upgrade the class to look decisive.
 
-### Keep physical suitability outside the permission statement
+### Count the moves you lose
 
-A facility can make a route available without establishing that the actual platform fits or that the floor supports the proposed arrangement. Record permission and technical review as separate questions. The supplier and site reviewers need current equipment and building information for the latter.
+An empty hall might allow three bay moves in a shift. A live hall might allow one, because the aisle reopens for a shift change. The same deck then needs more calendar days. That is a planning fact, not a promise about speed. Say it on the RFQ so the supplier does not read your height class as a one-day job.
 
-The [work-zone layout guide](/blog/large-deck-crawler-platform-work-zone-layout/) develops those spatial inputs. The present brief should reference the actual route and floor review rather than turning a booking or access permission into a machine-suitability conclusion.
+### Leave the carrier out of the hour row
 
-![Empty red platform beside open building bays and structural columns](/images/equipment/entry-real-approach.webp)
+![Empty platform beside open bays and building columns](/images/equipment/entry-real-approach.webp)
 
-*Reference photograph showing an empty platform beside building openings. It does not measure a doorway or prove clearance, passage or permitted travel.*
+*Reference photograph of the approach. It cannot set the hour the door opens.*
+
+The road move and the indoor hour are different clocks. A machine that can be hauled at night may still be forbidden to enter until a guard arrives. Write the guard's hour if you have it. The [buyers guide](/blog/crawler-under-ceiling-platform-buyers-guide/) already asks for the door. This page asks for the clock on that door.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Compare two windows in a mixed-use building
+The trade-off is calendar time against access. A live building can be the right place for a large deck and still offer a short window. The limitation is that the catalog class says nothing about that window. The constraint is the other activity on the floor. The interface is the sentence from the building operator, attached to the RFQ, that names hours and banned verbs. Without that sentence you are comparing machines for an empty hall you do not have.
 
-### Work through a hypothetical lobby and service corridor
+An anonymous mall job shows how the clocks split. The deck could enter at 21:30, after the last shop closed, and had to be folded and off the public concourse before 06:00. The crew's preferred start was 18:00. That start was not available, because the food hall was still serving. The useful note was three lines: door hour 21:30, last rise 04:30, public edge stays open on the south walk. A quotation that said "night work, 31m class" missed the south walk and treated 18:00 as if the operator had agreed.
 
-Imagine a commercial building where the facility offers an evening ceiling-task window in a lobby. The service loading area is available earlier, while a corridor needed for materials remains in tenant use during part of the evening. The buyer initially sends the supplier only the lobby window and expects the equipment proposal to cover the whole activity.
+A second anonymous job was a plant, not a mall. The press ran until 22:00 in the south aisle and the north aisle was free from 16:00. The soffit in the north aisle was the one that matched a 25m screen. The south soffit was higher, and it was also the aisle the buyer wanted. Writing "25m, whole hall, after 16:00" would have sent the deck into a running press. The note that worked named the aisle, the hour that aisle opened, and the hour the press released the other aisle. Height class stayed a screen. The aisle stayed the constraint.
 
-The corrected brief shows three different availability boundaries. The project must ask the facility about the unresolved material route and any permitted waiting or staging arrangement. No particular barrier, staffing arrangement or movement sequence is prescribed by this example.
-
-### Use a zone-and-window conflict table
-
-| Activity or area | Facility response in the example | Continuing-use conflict | Question that must be resolved |
-| :-- | :-- | :-- | :-- |
-| Lobby ceiling task | Evening window proposed | Adjacent tenant access continues | What exact area and conditions does the permission cover? |
-| Equipment arrival | Earlier loading-area availability | Later arrival not confirmed | Does the delivery proposal match that boundary? |
-| Material route | Corridor availability partly unresolved | Tenant passage overlaps the request | Who decides whether and when the route is available? |
-| Waiting or parking | No location yet identified | Shared areas remain in use | Is any actual facility provision available for review? |
-| Site supply | Availability response requested | Building services may have separate control | Which source and period can the facility document? |
-| End-of-window condition | Facility requirement to be stated | Next building use follows | What completion boundary must the project plan address? |
-
-This table is a permission enquiry, not a schedule to execute. Its useful finding is that the ceiling-task window alone does not describe the complete site availability needed by the project.
-
-### Evaluate alternatives without promising reduced disruption
-
-A second hypothetical proposal might use another permitted task period with a different material route. Compare the actual permissions and unresolved questions for each option before asking suppliers about equipment suitability. The alternative with the longer task window is not automatically more workable if its delivery or supply boundary remains undefined.
-
-The trade-off concerns the interfaces the project must resolve with continued building use. No window establishes zero disruption, a particular productivity rate or acoustic acceptance. The buyer needs a coherent set of facility responses for the actual proposed activity, not one attractive time slot.
-
-![Crawler equipment carried on a separate road vehicle beside industrial buildings](/images/equipment/transport-real-cover.webp)
-
-*Reference photograph showing crawler equipment on a separate carrier. It does not establish a truck-mounted product, completed delivery or approved transport arrangement.*
-
-## Send a coherent permission brief for equipment review
+Count the lost moves before you argue about class. If the live window allows one bay change and the empty-hall plan assumed three, the calendar grows even when the machine is unchanged. Say that on the RFQ. Do not ask the supplier to "make up the time" by picking a taller class. A taller class does not open a door, and it does not move a crowd. Confirm on RFQ where the folded machine waits between the door hour and the first rise, because that wait is often longer than the work itself.
 
 <!-- audit-section: limitations-not-fit -->
-### Recognise a window that does not cover the purchase assumptions
+## Occupied work may not fit
 
-A proposed arrangement may not fit the current project when the task, delivery, material route or waiting area depends on permissions the facility has not provided. An equipment feature cannot create those permissions. Keep the specific unresolved boundary visible and ask the responsible project parties whether another actual proposal can be assessed.
+### A window shorter than the setup
 
-This article gives no occupancy-control method, work sequence, noise level, staffing rule or assured completion period. The reference photographs are not evidence of work in an occupied customer building or approval for a particular activity.
+This shortlist may not fit when the allowed window is shorter than the time to enter, set the tracks, and leave, before any panel goes up. Measure that setup on a similar visit or mark it unknown. Do not hide it inside "night work." A taller class does not set up faster.
+
+### A public edge you cannot close
+
+It may not fit when the deck would stand over a public path the building will not close. The photograph of an empty platform does not move the path. If the path stays open, the workface moves, or the job waits. Write which one the operator chose.
+
+### Noise or dust the day shift will not take
+
+It may not fit when the only hours on offer are the hours the shop is selling, and the shop will not take the noise or the dust. Confirm on RFQ is not a way to skip the shop. It is a way to say you do not have the rule yet. Once you have the rule, it can knock out a mode or a whole shift.
+
+### Hours invented to match a class
+
+It may not fit when someone writes "24 hours" because 35m looked like the serious machine. Hours come from the building. The class comes from the soffit. Mixing them makes a quote that cannot be used on the day the public stays.
+
+![Crawler equipment carried on a road vehicle beside industrial buildings](/images/equipment/transport-real-cover.webp)
+
+*Reference photograph of equipment on a carrier. It cannot show a shift-change crowd.*
 
 <!-- audit-section: project-checklist -->
-### Prepare the occupied-building window brief
+## Hours and access to attach
 
-- Identify each ceiling workface and its task height and geometry, with the actual facility owner of its access decision.
-- State the people, tools and material task inputs without assuming a permitted platform load or occupancy.
-- Separate equipment transport arrival, material delivery, task-area access and any waiting or parking request into distinct windows.
-- Attach current floor and route information, keeping technical review separate from permission to use an area.
-- Record the facility's power availability, environmental restrictions and continuing building uses for the actual destination and project phase.
-- Ask which documentation and unanswered permissions prevent the equipment proposal from addressing the intended activity as a whole.
-
-Use simple zone labels in the supplier brief and retain detailed tenant schedules within the facility's agreed process. The equipment provider needs the relevant restrictions, not unrelated private operating information.
+- Work height in the bay you are allowed to use, plus the catalog class to screen
+- Roof or ceiling geometry in that bay, including services that hang lower by day
+- Materials on the deck during the allowed hours
+- Wind if a public door stays open
+- Floor under the tracks, and where the folded machine waits
+- Access route and the hour the door opens
+- Outrigger or track footprint during public hours
+- Destination country and the building operator's rule
+- Transport to the door, separate from indoor hours
+- Power mode if the hour is indoors with people present
+- Documents the operator wants before the first night
 
 <!-- audit-section: cta-editorial-note -->
-### Request a proposal against the actual windows
+Send the work height, the site hours, the destination, the transport to the door, the work zone, and the floor note. The signed schedule is project-specific. Editorial images do not grant a night shift.
 
-[Send ARCLIFT the occupied-building brief](/contact/?product=crawler-ceiling-platforms&request=advice) with the task zone, height, floor and access records and the distinct facility windows. Include destination, transport arrival and unresolved supply or material-route questions. This editorial table does not grant permission or promise completion within a window. Final project-specific equipment review and the facility's actual decisions must address the complete proposed arrangement and its continuing-use interfaces.
+Open [ARC-F20](/products/arc-f20-crawler-ceiling-platform/), [ARC-F25](/products/arc-f25-crawler-ceiling-platform/), or [ARC-F31](/products/arc-f31-crawler-ceiling-platform/). [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://www.osha.gov/fall-protection" target="_blank" rel="noopener noreferrer">OSHA fall-protection overview</a> is for destinations where it applies. It does not set your building's clock.
 
 ## FAQ
 
-#### Does an evening work window include equipment delivery?
+#### Can the supplier pick the night shift?
+No. The building operator owns the clock. The supplier can say whether a named class can be discussed inside that clock.
 
-Only the facility's actual permission can answer that. Ask separately about delivery point, route and availability. A ceiling-task window should not be used as evidence that loading areas, doors or shared passages are accessible for all supporting activities.
+#### What if the hours are still in a meeting?
+Write unknown. Do not send a class as if the meeting had finished.
 
-#### Can a quiet-power label resolve tenant restrictions?
+#### Does 20m mean a smaller disturbance?
+No. 20m is a catalog height class. Disturbance is a building rule.
 
-The facility's actual requirement and the provider's relevant equipment information need review. This article supplies no acoustic performance claim. A feature label cannot grant permission or establish that the proposed activity meets the building's stated restrictions.
-
-#### Is a permitted route technically suitable for the platform?
-
-Permission and suitability are separate questions. The actual equipment envelope, floor information and other relevant conditions still need responsible review. A facility booking confirms only the scope of the permission it actually gives, not every physical requirement of the machine.
-
-#### What if the material window conflicts with the task window?
-
-Record the conflict and ask the facility and project parties for an actual response. Do not assume materials can be staged in an occupied area or invent a transfer method. The equipment enquiry should retain the unresolved dependency until the responsible parties define a viable proposal.
+#### Where do the hours go?
+On the quote note with the class, the door, and the bay you are actually allowed to enter.

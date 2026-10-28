@@ -2,150 +2,144 @@
 title: "Ceiling Platform Dual Power: Match Each Intended Task"
 description: "Match a ceiling platform dual-power offer to required tasks by comparing supplier replies, function exclusions and the assumptions that remain unresolved."
 date: 2026-10-26
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
 tags: ["ceiling platforms","ceiling platform dual power task boundary","buyer planning"]
 coverImage: "/images/equipment/entry-real-cover.webp"
 coverAlt: "Broad elevated work deck beneath steel roof members inside a building"
-coverCaption: "Reference photograph showing a broad deck beneath building steelwork. It does not establish a model, rated capacity, permitted occupancy or task approval."
+coverCaption: "Reference photograph of a broad deck under roof steel. It cannot choose a power mode."
 draft: false
 ---
 
-A dual-power label is not a completed answer to a ceiling-platform task. Identify the function the project must have under its stated site conditions, then ask the provider to show which proposed mode addresses that requirement. A second source may have a narrower documented role than the buyer assumes, so two offers with the same label can answer different purchases.
-
-The [dual-power selection guide](/blog/dual-power-crawler-platform-selection/) explains energy sources, site infrastructure and duration evidence. This article goes one step further into evaluating actual replies: it produces a requirement-to-response comparison that separates an essential task, an optional convenience and an unsupported assumption. It does not claim any power option is available on every [crawler ceiling platform](/products/#crawler-ceiling-platforms).
+Decide the one task the second power mode must finish, and treat every other mode as a named fallback. A dual-power label does not finish a bay. Screen ARC-F20, ARC-F25, ARC-F31, or ARC-F35 only after the hall, the hours, and the charger are written down. Wider energy choices are in the [dual-power selection guide](/blog/dual-power-crawler-platform-selection/).
 
 **Contents**
 
-- State the task that the option must answer
-- Ask for replies tied to the offered mode and configuration
-- Compare two replies against an essential interior task
-- Keep task acceptance separate from the power label
+- Decide which task the second mode must finish
+- Compare the two modes on one bay
+- Where dual power may not fit
+- Attach these power lines
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## State the task that the option must answer
+## Decide which task the second mode must finish
 
-### Identify one essential requirement
+### Name the longest task, not the brochure word
 
-Write the actual ceiling or wall task in terms of the project need and the conditions the provider must address. For example, a buyer might need a proposed platform arrangement to serve a named interior zone where the facility has not confirmed an external supply. That is a requirement for review, not proof that any onboard option is suitable.
+Write the longest stretch of work the crew must do without coming down: one bay of panels, a run of lights, or a duct that crosses three frames. Put a clock on it in the crew's own words, even if the number is rough. The supplier needs that task beside the catalog class. A second engine or a battery pack is only useful if it is the mode that can still do that stretch when the first mode is not allowed.
 
-Keep the requirement separate from the desired product feature. Asking for dual power starts with a label; asking what the proposed arrangement can document for the actual task starts with the buyer's problem.
+If the longest task is "whatever the hall gives us," you do not have a power decision yet. You have a wish. Mark the task unknown and keep the height class as a screen, not as a promise that both modes last the same time.
 
-### Distinguish convenience from necessity
+An anonymous warehouse job makes the split obvious. The day shift hangs lights in a closed hall until 16:00. The night shift moves the same deck through an open loading face. Those are two tasks. The first needs a mode the air rule allows. The second can use a different mode if the offer names it for travel. Writing "dual power, both shifts" hides which mode dies at the door. Write the door, the hour, and the mode on separate lines.
 
-The buyer may also prefer another source for a different project phase or occasional location. Identify whether that is essential to the purchase or a secondary preference. A provider response that satisfies a secondary use should not be treated as answering the main task when its relevant function remains unconfirmed.
+### Separate a closed hall from an open bay
 
-This distinction makes the comparison more useful than counting the number of sources. It lets the buyer see which missing answer prevents selection and which optional feature could be considered separately after the essential requirement is addressed.
+A closed hall with no exhaust path is a different purchase from an open bay that can take a combustion mode for the move between faces. Write which one this job is. If the building owner has already banned exhaust, do not carry a diesel sentence into the indoor rows. If the owner has not answered, write "exhaust rule unknown" and stop guessing.
 
-### Name the assumptions being rejected
+The [crawler ceiling-platform family](/products/#crawler-ceiling-platforms) is the deck you are screening. It is not a statement that every class is offered with two modes. Ask for the mode list on the configuration you named.
 
-List the assumptions the comparison must not make: that both modes supply identical functions, that every mode covers all equipment states, or that a secondary source is an emergency provision. Ask the provider to define actual coverage through its configuration-specific information.
+### Say what still works if the first mode stops
 
-This is not a statement that any particular option lacks a function. It prevents the buyer from adding functions to the offer by inference. An explicit limited reply can be more useful than a broad assurance whose equipment and conditions are unidentified.
+Name the function that must remain if the preferred mode stops: travel to the door, lower the deck, or finish the last panel. Ask the offer which mode performs that function, and whether that mode is included or still a question. Do not copy a rescue story from another machine. The answer belongs to this configuration and is confirm on RFQ until the supplier ties it to a document.
 
-<a href="https://www.hse.gov.uk/construction/safetytopics/mewp.htm" target="_blank" rel="noopener noreferrer">HSE's MEWP guidance</a> stresses selecting equipment for the job and site. This Great Britain personnel-platform context supports comparing replies against the essential task rather than counting energy sources. It does not establish the functions of a proposed power mode, classify this configuration or approve its use for the task.
+If nobody can name the function, the dual-power line is advertising. Leave it off the comparison until a person will sign the sentence.
 
-![Raised work deck above a vehicle bed beneath an indoor steel roof](/images/equipment/entry-real-interior.webp)
+### Keep the catalog class beside the task
 
-*Reference photograph showing a deck and vehicle-bed context beneath a roof. It does not identify a current truck-platform model or prove conversion suitability.*
+Use 20m, 25m, 31m, or 35m only as the catalog screen. The task height is the soffit you measured, not the class number. Write both. A taller class does not add battery time, and a shorter class does not become legal indoors because the exhaust pipe is smaller. Height and energy are two rows. Mixing them is how a quote looks finished and still cannot enter the building.
 
 <!-- audit-section: conditions -->
-## Ask for replies tied to the offered mode and configuration
+## Compare the two modes on one bay
 
-### Identify the mode using the provider's description
+### Put both offers on the same rows
 
-Ask the provider to name the proposed source arrangement and the equipment configuration to which its answer applies. Do not impose generic mode labels that conceal a difference between offers. If the provider's description is conditional, retain that condition next to the task response.
+Use one table for every supplier. If a cell is empty, the offer did not answer. Do not fill it from a similar machine.
 
-The buyer should be able to trace each answer to an actual proposed item rather than to a product-family image. The reference deck photographs show workface context but do not identify an energy source, function set or permitted operating state.
+| Task you can describe | Mode to ask about | If you do not know yet |
+| --- | --- | --- |
+| Closed hall, no exhaust path | Electric or battery only | Confirm on RFQ; do not assume diesel is allowed |
+| Open bay, short move between faces | Whichever mode the offer names for travel | Measure the move on site |
+| Overnight parking with a charger | The rechargeable arrangement only | Name the bay; charger inclusion is confirm on RFQ |
+| Lowering if the preferred mode stops | The mode the offer says can lower | Do not invent a time |
 
-### Ask which part of the requirement is answered
+![Raised work deck inside a steel hall above an open floor](/images/equipment/entry-real-interior.webp)
 
-Have the provider identify the documented function coverage relevant to the essential task. If its response addresses only another activity or a narrower condition, mark that difference explicitly. A reply should not be counted as complete merely because it repeats the task wording before presenting unrelated feature information.
+*Reference photograph of the deck inside the hall. It cannot show which mode is installed.*
 
-Where the buyer's intended use is not yet defined sufficiently, ask what additional task information is needed. The correct next step may be clarifying the requirement rather than requesting a larger or more complex power package.
+### Ask whether the charger is in the price
 
-### Keep site dependencies alongside function coverage
+A rechargeable sentence without a charger is a different purchase from one that includes the charger, the lead, and a place to put them. Write included, excluded, or unknown. Unknown is allowed. A supplier that answers "standard" has not answered. Ask for the line on the quotation that names the charger.
 
-Even a provider-defined function may depend on site provision or conditions. Identify those dependencies and ask the facility owner whether the assumed provision exists. The supplier response and site response answer different sides of the same requirement and should remain separately attributable.
+The floor owner still has to accept the bay. Equipment scope and building permission are not the same signature.
 
-Do not turn a period when the platform is idle into an assumed replenishment opportunity. This article does not establish charging, fuel, source-changeover or runtime arrangements. It evaluates whether the actual reply answers the task under the stated project assumptions.
+### Measure the move between faces
 
-![Empty red platform beside open building bays and structural columns](/images/equipment/entry-real-approach.webp)
+If the crew must drive from face A to face B under load, say so, and say whether people stay on the deck. If the move is empty and short, say that too. The energy row changes. A mode that is fine for a parked bay can be the wrong mode for a travel that crosses a doorway. Measure the doorway on site. The catalog class does not contain the doorway width.
 
-*Reference photograph showing an empty platform beside building openings. It does not measure a doorway or prove clearance, passage or permitted travel.*
+### Leave the photograph out of the energy row
+
+![Empty platform beside open bays and building columns](/images/equipment/entry-real-approach.webp)
+
+*Reference photograph of the approach beside open bays. It cannot measure exhaust or a charger lead.*
+
+A picture of a deck under steel shows a scene. It cannot tell you the mode, the charger, or the hours. Use it to remember the hall. Use the table to remember the purchase. If a seller points at the picture as proof of indoor use, ask for the sentence on the offer instead.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Compare two replies against an essential interior task
-
-### Follow a hypothetical unanswered-function example
-
-Imagine a buyer whose essential requirement concerns a ceiling task in Interior Zone A. A secondary preference concerns use in another zone with a separately documented site supply. Offer One advertises two sources but its supplied information describes the required function only under the second zone's conditions. Offer Two gives a configuration-specific response for Zone A while leaving the secondary preference unresolved.
-
-The buyer should not count One's two-source label as a complete answer or reject Two solely because its optional row is open. The next action is to obtain the missing essential-task response from One and assess Two's actual evidence with the responsible project parties.
-
-### Use a requirement-to-response matrix
-
-| Comparison row | Offer One in the example | Offer Two in the example | Buyer interpretation |
-| :-- | :-- | :-- | :-- |
-| Essential Zone A task | Function coverage not established | Configuration-specific response supplied | Review actual coverage before comparing optional features |
-| Secondary zone preference | Relevant source description supplied | Still unresolved | Keep optional scope separate from essential fit |
-| Mode identity | Two-source label plus limited record | Proposed mode identified | Match each answer to actual equipment |
-| Site dependency | Assumes a provision not confirmed in Zone A | States its required site inputs | Obtain the facility response to each dependency |
-| Other equipment states | Not answered by task record | Not answered unless expressly covered | Avoid extending a narrow response |
-| Emergency provision | No inference allowed | No inference allowed | Require separate actual documentation if relevant |
-
-The example supplies no capability or recommendation for a real machine. It shows how to compare the question answered by each reply, rather than treating feature counts as evidence of task suitability.
-
-### Decide what a limited reply changes
-
-If a provider confirms that its proposed mode does not cover the essential requirement, the buyer has a concrete selection issue to discuss. Ask whether another actual proposal is available, or consider whether the project requirement itself has been misunderstood. Do not invent an operating workaround or assume another source can substitute.
-
-The trade-off is between a defined response to the essential task and a broader list of conditional features. Optional convenience cannot compensate for an unresolved main requirement, while an unanswered optional row need not erase the value of a properly bounded essential-task response.
-
-![Crawler equipment carried on a separate road vehicle beside industrial buildings](/images/equipment/transport-real-cover.webp)
-
-*Reference photograph showing crawler equipment on a separate carrier. It does not establish a truck-mounted product, completed delivery or approved transport arrangement.*
-
-## Keep task acceptance separate from the power label
+The trade-off is simple and easy to skip. Two modes give you a fallback only when each mode has a task, a place, and a person who will say it is included. The limitation is that the second mode often arrives as a word, not as a duration, a charger, or a permission. The constraint is the hall: exhaust rules and parking rules are not on the catalog page. The interface is the quotation line that names the mode against your task. If that line is missing, you are comparing labels.
 
 <!-- audit-section: limitations-not-fit -->
-### Recognise when the function evidence is insufficient
+## Where dual power may not fit
 
-A proposal may not fit the intended purchase when the essential task depends on a function that the provider has not documented for the offered mode and conditions. It also remains unresolved if the required site provision is unavailable or unknown. Another power label does not settle floor, workface, access or environmental questions.
+### A hall that bans exhaust
 
-This article defines no runtime, emergency function or mode-change procedure. It does not authorise occupied movement or any other equipment state. The actual configuration information and responsible project review must establish what is appropriate for the task.
+This shortlist may not fit when the only second mode is a combustion engine and the hall will not take exhaust. Buying the taller class does not change the air in the room. Either the offer has a non-combustion mode that can do the task, or you stop and change the task. Do not ask the crew to "just crack a door" unless the building owner has written that down.
+
+### A bay the battery cannot finish
+
+It may not fit when the rechargeable mode is real but the bay is longer than anyone has tied to that battery, and the charger is back at the yard. Write the bay length as unknown if you have not measured it. Confirm on RFQ is the right mark. A guessed runtime is worse than a blank, because the blank still asks a question.
+
+### Parking that is not a workplace
+
+It may not fit when the only flat floor for overnight is a fire lane, a public aisle, or a wash-down pit. The machine can match the soffit and still have nowhere legal to sit. Charging and parking belong on the [buyers guide sketch](/blog/crawler-under-ceiling-platform-buyers-guide/), not in a footnote after the order.
+
+### A height class used as a substitute for energy
+
+It may not fit when the buyer picks 31m or 35m because the power question feels unfinished. The class is a screen for reach. Reach is not hours, and hours are not permission. If you cannot fill the energy row, send the RFQ with the row blank rather than upgrading the class to hide it.
+
+![Crawler equipment carried on a road vehicle beside industrial buildings](/images/equipment/transport-real-cover.webp)
+
+*Reference photograph of crawler equipment on a carrier. It cannot set the indoor power rule.*
 
 <!-- audit-section: project-checklist -->
-### Prepare the task-specific reply comparison
+## Attach these power lines
 
-- State the essential ceiling or wall task and distinguish it from secondary preferences about other work zones.
-- Identify task height and platform-height basis, keeping the workface geometry clear for the actual proposed deck arrangement.
-- Describe people, tools and material requirements as project inputs without inferring a permitted load or occupancy.
-- Provide floor and access information for the intended positions, including the facility's actual supply availability response.
-- State destination and transport handover scope for the proposed energy equipment and any separately supplied items.
-- Ask the provider to map its power-mode functions and documentation to each requirement, identifying exclusions and missing site inputs.
-
-Use the replies to decide which enquiry is still necessary. A missing essential-function answer deserves a focused follow-up; a generic request for more brochures is unlikely to resolve the actual comparison.
+- Work height from the floor to the soffit, and the catalog class you want screened
+- Roof or ceiling geometry, beams, and any slope
+- Materials on the deck: profile, panel length, or tools only
+- Wind only if a face is open
+- Floor under the tracks, and the overnight bay if a charger is in the offer
+- Access route and the door
+- Outrigger or track footprint, or unknown
+- Destination country
+- Transport of the crawler to site
+- Voltage or fuel mode for each task, and who owns the charger
+- Documents the building owner wants before entry
 
 <!-- audit-section: cta-editorial-note -->
-### Request an answer to the essential task
+Send the work height, the site, the destination, the transport of the crawler, the work zone, and the floor note. The signed schedule is project-specific. Editorial images do not set a runtime or a deck load.
 
-[Send ARCLIFT the mode-by-task enquiry](/contact/?product=crawler-ceiling-platforms&request=advice) with the essential requirement, secondary preference and actual site supply information. Include task height, floor conditions, destination and transport scope. Ask which offered configuration can be described against those inputs and what remains unresolved. This editorial comparison does not establish an available power option or task permission; final project-specific evidence and responsible review must address the proposed arrangement.
+Open [ARC-F20](/products/arc-f20-crawler-ceiling-platform/), [ARC-F25](/products/arc-f25-crawler-ceiling-platform/), or [ARC-F35](/products/arc-f35-crawler-ceiling-platform/). [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://www.hse.gov.uk/work-at-height/index.htm" target="_blank" rel="noopener noreferrer">HSE work-at-height guidance</a> is a Great Britain note for the people on the deck. It does not pick a power mode.
 
 ## FAQ
 
-#### Does dual power mean either source supports every task?
+#### Does dual power mean both modes can do the whole bay?
+No. Ask which mode does the longest task you wrote down. The other mode is a fallback only if the offer says so.
 
-No such equivalence should be assumed. Ask the provider which functions and conditions its actual mode description covers. The buyer's comparison should identify the essential requirement and the evidence that answers it, rather than expanding a source label into universal capability.
+#### Can I leave the charger off the RFQ?
+Yes, if you mark it unknown. Do not write "included" because the word battery appeared.
 
-#### Can the optional task decide the purchase?
+#### Is 25m the runtime?
+No. 25m is a catalog height class. Runtime is confirm on RFQ after the task and the mode are named.
 
-The buyer can set its priorities, but the comparison should show them clearly. An answer to a secondary preference does not resolve an unanswered essential function. Keep both rows visible so the decision reflects the actual task needs and provider replies.
-
-#### Is the second source an emergency backup?
-
-That requires separate applicable equipment information. The number of sources does not establish an emergency role. This guide does not define emergency functions or procedures, and a task-mode response should not be relabelled as emergency evidence.
-
-#### What if neither offer answers the main task?
-
-Identify the missing function, condition or site input and ask for a focused response. The buyer may need a different actual proposal or a clearer requirement. Do not choose between two incomplete replies by assuming that the more extensive feature list fills the gap.
+#### Which class do I open first?
+The class nearest the soffit you measured. Use the quote link so the code travels with the power lines.
