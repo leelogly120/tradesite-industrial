@@ -2,150 +2,142 @@
 title: "Roll-Forming Lifts with Generators: Define Package Scope"
 description: "Compare generator package scope for a roll-forming lift by identifying equipment loads, supply boundaries and excluded services before accepting an offer."
 date: 2026-10-26
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming","roll forming lift generator package boundary","buyer planning"]
 coverImage: "/images/equipment/coil-real-handling.webp"
 coverAlt: "Elevated red forming apparatus beside steel building frames and ground level coils"
-coverCaption: "Reference photograph showing elevated forming apparatus beside building steelwork and coils. It does not establish a model, electrical arrangement or approved working configuration."
+coverCaption: "Reference photograph of elevated forming gear beside coils. It cannot show a generator."
 draft: false
 ---
 
-A generator mentioned in a roll-forming lift quotation may describe a separate machine, a proposed source, or a package with additional services. Before comparing prices, establish which equipment the generator proposal is intended to support and which parties have supplied the requirements. The word included does not identify the connected equipment set or the work between the generator and the forming system.
-
-The buyer's useful output is a generator package comparison tied to named equipment, not a guessed generator size. [Crawler forming lifts](/products/#crawler-roll-forming-lifts) raise compatible roof-panel forming equipment; that purpose does not establish a universal electrical demand. The [electrical interface guide](/blog/roll-forming-line-electrical-control-interfaces/) explains the wider integration boundary. This guide isolates the separately proposed generator purchase.
-
-The <a href="https://mart.cummins.com/imagelibrary/data/assetfiles/0056648.pdf" target="_blank" rel="noopener noreferrer">Cummins generator-sizing white paper</a> treats project parameters and load characteristics as inputs to selection. For procurement, this supports asking the actual generator provider which named equipment and requirements its proposal addresses. Its examples supply no rating, sizing rule or compatibility finding for this forming-lift package, and imply no brand relationship.
+A generator is in this purchase only when a quotation line names it, names the machine it supplies, and says what is excluded. "Power included" is not a generator. Screen 18.5m or 25m while that line is still blank. Machine boundaries sit in the [electrical interface guide](/blog/roll-forming-line-electrical-control-interfaces/). The combined purchase still belongs in the [line specification](/blog/roll-forming-line-specification-long-span-roof-panels/).
 
 **Contents**
 
-- Identify the package the generator proposal addresses
-- Give each bidder the same package inputs
-- Reconcile a generator-only offer with a package offer
-- Close the generator enquiry without guessing a rating
+- Say whether a generator is even in the offer
+- Compare who brings the set
+- A shared generator story may not fit
+- Generator lines to attach
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Identify the package the generator proposal addresses
+## Say whether a generator is even in the offer
 
-### Name the intended equipment set
+### Tick one owner
 
-Start with the actual lift, former and any separately proposed feed equipment. Against each name, identify the provider expected to issue its electrical requirements. If a component has not been selected, keep its identity provisional. A generator bidder cannot answer for an unspecified future former merely because both buyer and seller use the phrase forming line.
+Use three cells: set on the lift offer, set brought by the site, set not in this purchase. Both sellers must be able to point at the same cell. If they point at each other, you own a gap. ARC-T18 and ARC-T25 are height screens. ARC-RF8 is a former in the 0.3–1.0mm catalog band. A screen does not include a generator because the model name looks complete.
 
-Do not add assumed workshop tools, lighting or other site loads to a list without identifying them as additional requirements. The buyer's intention to use a source for several purposes must be visible in the enquiry.
+### Do not size a set from a blank former
 
-### Distinguish source provision from integration
+The former may still be unnamed. Its requirement is then unknown. A lift screen can go out. A sentence that says the generator is "enough for the line" cannot. Confirm on RFQ after the former has a name, a feed side, and its own requirement words.
 
-A proposal to supply a generator is not necessarily a proposal to design the combined electrical arrangement. Ask where the generator provider's scope ends and which documents or services, if any, address the connection to the intended equipment. Name the person coordinating the equipment-side requirements with the site-side review.
+### Separate fuel, location, and noise from the height class
 
-This is a commercial responsibility question. It should not become a buyer-created wiring diagram. Where a provider excludes coordination, retain that exclusion in the comparison rather than assuming another supplier will absorb it without a separate agreement.
+Write where the set would stand, who refuels it, and whether the building will accept the noise and the exhaust. Those are site facts. They are not answered by 25m. If the hall banned combustion on another page, do not hide a generator inside "power included."
 
-### Make conditional options visible
+### Keep the site supply in its own column
 
-If a lift quotation mentions an optional generator, ask whether the option is actually priced, which equipment configuration it accompanies and what further information its confirmation requires. An option line may be preliminary. A brochure reference does not establish current availability, a particular provider, or suitability for every former that the buyer might later purchase.
-
-The same distinction applies when the buyer intends to obtain a generator locally. Treat that as a separate purchase with its own scope, instead of removing it from the equipment enquiry entirely.
-
-![Blue machine module suspended beside a red lifting structure in an outdoor yard](/images/equipment/coil-real-module.webp)
-
-*Reference photograph showing a suspended blue machine module. It does not identify its electrical requirements, mass or an approved handling method.*
+A generator is one way to feed a machine when the site record is missing or unsuitable. It is not a substitute for writing the site record. If the site already has a source the reviewer will use, say so and do not add a set to fill a blank line.
 
 <!-- audit-section: conditions -->
-## Give each bidder the same package inputs
+## Compare who brings the set
 
-### Request equipment-provider requirements
+### Put the offer and the site on one table
 
-Collect the records supplied for the named equipment configuration and identify any missing records. Send those records to the proposed generator provider and the responsible site electrical reviewer. Ask each to state what additional information is needed before giving a configuration-specific response.
+| Question | Lift offer | Site | If it is still open |
+| --- | --- | --- | --- |
+| Is a generator named? | Yes, no, or silent | Yes, no, or silent | Confirm on RFQ |
+| Which machine it feeds | Lift, former, both, or unknown | The same question | Do not merge the names |
+| Where it stands | On the quote, or not | Yard, hall, or unknown | Measure on site |
+| Fuel, exhaust, noise | Excluded until written | Building rule, or unknown | Ask the owner |
 
-Do not use this exercise to calculate a generator rating from a collection of motor labels. The project may involve conditions or interactions not expressed in a simple list. Equipment requirements and the proposed source need assessment by the parties responsible for that actual arrangement.
+![Forming module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
 
-### State the task assumptions without prescribing operation
+*Reference photograph of a forming module beside a lift frame. It cannot show who owns a generator.*
 
-Describe the proposed forming task and ask the equipment providers to identify the operating-state information their requirements represent. A buyer might expect forming and another function to be available during the same project phase, but that expectation is not permission for simultaneous operation. Keep it as a question for the actual equipment parties.
+### Read "included" as a pointer, not a set
 
-The generator comparison should refer to their documented answer. Otherwise two source proposals may use different assumptions about the equipment set, while their headline prices appear to cover the same job.
+Ask the seller to point at the line. If the line is missing, the set is not in the purchase. Do not upgrade the height class to look more serious. 18.5m and 25m are screens. They do not become packages because the power question feels unfinished.
 
-### Separate equipment from continuing services
+### Weather and wash-down sit with the set
 
-Ask whether the proposal covers only the generator asset or also named services such as delivery, collection or another expressly proposed provision. Do not assume any service exists or belongs to ARCLIFT. Where a third party offers continuing support, request its actual scope and exclusions in that party's response.
+If the set stands in the yard, write rain, dust, or wash-down if those reach that patch. If you do not know the patch, write unknown. A photograph of coils beside the building does not locate the set.
 
-Distinguish destination delivery from access to the final proposed position. The buyer can state the site restrictions and transport boundary without designing placement, fuel arrangements, ventilation or electrical installation. Those remain separate project-specific matters.
+![Coils and forming equipment at the side of a steel building](/images/equipment/coil-real-cover.webp)
 
-![Steel coil suspended beside red vehicle mounted equipment in a yard](/images/equipment/coil-real-cover.webp)
+*Reference photograph of coils beside the building. It cannot locate a generator.*
 
-*Reference photograph showing a suspended steel coil beside vehicle-mounted apparatus. It does not establish package inclusion, capacity or an approved handling arrangement.*
+### Leave the running hours blank
+
+Do not invent how long the set must run. Ask the crew for the shift they were actually given, and mark unknown if the building has not answered. Duty comes from the task, not from a wish to close the file.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Reconcile a generator-only offer with a package offer
+The trade-off is one named set against two vague power sentences. The limitation is that early offers name neither the set nor the machines it feeds. The constraint is the former you may not have chosen, plus any hall rule that refuses exhaust. The interface is the quotation line that ticks one owner. Without that line, stop comparing duty and compare scope.
 
-### Follow a hypothetical two-bid comparison
+An anonymous roof order had "power included" on the lift sheet and "standard power included" on the former sheet. Neither sheet named a generator, and each seller assumed the other had brought one. The site received two machines and no set. The fix was the three cells. Both sellers had to tick one. Until they did, fuel, location, and which machine was fed stayed confirm on RFQ. ARC-T18 stayed a height screen.
 
-Imagine a buyer receiving Offer A for a lift with a generator option and Offer B for a locally supplied generator. A refers only to the lift configuration. B refers to a list headed complete roof line, but the list omits the buyer's feed unit. Neither offer yet answers the buyer's intended equipment scope.
+A second anonymous file tried to size a set from a former copied off another project. The profile was different, the feed side was blank, and the hall had already said no combustion past the door. The copied number could not survive those facts. The note that went out said: height class to compare, generator owner unknown, former not selected, combustion not accepted in the hall unless the owner later names a path.
 
-The buyer sends the same equipment identities to both providers and requests revised scope descriptions. A may confirm a broader package, retain its narrower scope, or decline the additional requirement. B must identify whether its response changes when the omitted feed unit is included. No outcome is presumed.
+A third anonymous arrival put a set on the truck that nobody had ordered. The lift seller had written "power package" and hired a subcontractor who arrived with a generator. The site already had a board the reviewer was willing to use, and the hall rule refused a combustion set inside the door. The set sat in the rain because the yard patch had not been named. Fuel, exhaust, and who would remove the set were all blank. The note that should have existed before the truck left said: site board is the intended source, generator not in this purchase, hall combustion refused, yard patch unknown. ARC-T18 remained the height screen. The unasked set was a cost and a blockage, not a solution.
 
-### Use a scope comparison with exclusions
+Write the exclusion in the same email as the class. Buyers lose the exclusion when it sits in a later attachment the seller does not open. If the former is still unnamed, repeat that the set cannot be declared enough for it. If a seller offers a set only for the lift, say so, and leave the former row unknown rather than letting one set look like a line supply. Confirm on RFQ where the set would stand, who refuels it, and whether that patch is indoors. Those three answers are site facts. They are not implied by 25m.
 
-| Comparison item | Offer A as received | Offer B as received | Clarification required |
-| :-- | :-- | :-- | :-- |
-| Equipment identities | Lift option referenced | Roof-line list referenced | Match each proposal to the same named equipment |
-| Former requirements | Not attached | Buyer summary only | Obtain the actual former-provider record |
-| Feed equipment | Unstated | Omitted from list | Confirm whether this item is in the intended package |
-| Source deliverable | Optional generator line | Separate generator supply | Identify what is actually priced and conditional |
-| Connection boundary | Not defined | Generator-side boundary stated | Assign the remaining coordination scope |
-| Delivery and continuing services | Unclear | Named exclusions | Compare like services or price them separately |
-
-The table is a worked purchasing example, not an evaluation of real bids. Its main finding is that the original totals do not describe equivalent scope. A lower number cannot be interpreted until the missing equipment and services have been reconciled.
-
-### Decide what can be compared now
-
-After clarification, compare only the items supported by actual responses. If both proposals address the same equipment set but one excludes a needed service, show the exclusion as a separate purchase question. If one still depends on an unselected former, keep its source suitability unresolved rather than treating an allowance as a confirmed arrangement.
-
-The trade-off is commercial visibility: a bundled package may reduce the number of contracting boundaries, while a separately bought source may expose additional coordination work. Neither arrangement is inherently suitable or cheaper for the buyer's project.
-
-![Long light coloured panel beside an elevated red structure and building facade](/images/equipment/coil-real-panel.webp)
-
-*Reference photograph showing a panel and building relationship. It does not establish measured panel length, forming quality or the equipment supply requirements.*
-
-## Close the generator enquiry without guessing a rating
+If the site board and a generator are both still possible, send them as alternatives rather than as one package. Alternative A is the board, with the generator excluded. Alternative B is a named set, with the hall rule written beside it so a combustion set cannot slip indoors. Ask each seller which alternative that seller priced, and do not let a single "power included" cover both. The former stays off both alternatives until it has a name. Feed equipment, if it is in the layout, gets the same question: does this set feed it, or is that a third gap. Write the answer, or write unknown. A height change from 18.5m to 25m is allowed in the same note and does not choose A or B.
 
 <!-- audit-section: limitations-not-fit -->
-### Identify the decision that must remain open
+## A shared generator story may not fit
 
-A generator proposal may not fit the intended forming package if its stated equipment scope excludes a required subsystem or if the provider cannot assess the actual requirements. That is a reason to request a defined response, not a reason to invent a larger rating. This guide offers no sizing multiplier, starting-current assumption or fuel-use estimate.
+### Two sellers, no owner
 
-Likewise, a source proposed for an outdoor forming task is not automatically acceptable in another building environment. Site restrictions and source arrangement require their own review; an equipment photograph cannot resolve them.
+This shortlist may not fit when both the lift seller and the former seller assume the other one brought the set. Ask each of them the included, excluded, or unknown question in writing. If both say excluded, the set is a third purchase.
+
+### A hall that will not take exhaust
+
+It may not fit when the only included supply is a combustion set and the owner has already refused exhaust in that room. Change the supply story or change the room. Do not ask the crew to "vent it" unless the owner has named a path.
+
+### A former that is still a blank
+
+It may not fit when the set is declared enough for a former that has no name. Screen the height. Do not freeze the set. Mass, feed side, and power stay confirm on RFQ.
+
+### A height class used as a package
+
+It may not fit when someone picks 25m because it "includes power" and 18.5m because it looks smaller. Neither class states a generator. Read the line, not the class.
+
+![Long panel beside elevated forming equipment](/images/equipment/coil-real-panel.webp)
+
+*Reference photograph of a panel path. It cannot show a generator package.*
 
 <!-- audit-section: project-checklist -->
-### Build the package comparison pack
+## Generator lines to attach
 
-- Identify the lift, former and feed equipment with their actual provider records, including provisional selections and buyer-owned items.
-- State the required outlet height and roof zone only as task context, keeping these separate from generator requirements.
-- Attach the site access layout and ground restrictions that the provider needs to understand the proposed delivery boundary.
-- Name destination and transport responsibilities for both the generator and the forming equipment, which may arrive under separate contracts.
-- Request the power-scope response for the same equipment set from every source provider, with missing inputs expressly identified.
-- List quoted documentation, coordination and continuing-service inclusions separately so exclusions remain visible beside the price.
-
-When a bid is revised, keep the old equipment list with its original response. A revised total without a revised scope statement can conceal the very change the comparison was meant to resolve.
+- Work height at the outlet, and the catalog class to screen
+- Roof geometry at the set-down
+- Profile, material, and coil, kept off the generator row until the former is named
+- Wind if the set stands in the open
+- Floor or ground under the set and under the lift
+- Access for fuel and for the people who tend the set
+- Outrigger or track footprint beside the set
+- Destination country and the exhaust rule
+- Transport of the set, separate from the lift
+- Power owner: lift offer, site, or not in this purchase
+- Documents: the line that names the set, or "none supplied"
 
 <!-- audit-section: cta-editorial-note -->
-### Ask for the generator boundary alongside the lift offer
+Send the work height, the site rule on exhaust, the destination, the transport split, the roof zone, and the floor under the set. The signed schedule is project-specific. Editorial images do not include a generator.
 
-[Discuss a forming-lift package with ARCLIFT](/contact/?product=crawler-roll-forming-lifts&request=quote) and identify whether a generator is being proposed by the equipment provider or purchased separately. Include site, destination, forming outlet height and transport boundary. Ask for the exact scope available for review, including unresolved equipment inputs. This editorial comparison does not select a source or establish suitability; final project-specific equipment requirements and the responsible electrical assessment govern the proposed combination.
+Open [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), or [ARC-RF8](/products/arc-rf8-roll-forming-machine/). [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://www.hse.gov.uk/work-equipment-machinery/puwer.htm" target="_blank" rel="noopener noreferrer">HSE guidance on work equipment</a> is a Great Britain note. It does not decide who brings a generator.
 
 ## FAQ
 
-#### Does an included generator cover the former automatically?
+#### Does "power included" mean a generator?
+No. Ask for the line that names the set, the machine it feeds, and what is excluded.
 
-Only the actual offer can define that scope. Ask which named former and other equipment the proposal addresses. A generator option associated with a lift may leave other equipment outside its stated basis, and the word included alone does not resolve that uncertainty.
+#### Can the set be sized before the former is chosen?
+No. Screen the height class. Leave the set unknown until the former has a name.
 
-#### Should a buyer choose a larger generator to cover unknowns?
+#### What if the hall refuses exhaust?
+Write that rule on the enquiry. A generator that the room will not take is not an included solution.
 
-This guide does not recommend a size or a margin. Identify the unknown equipment and obtain its requirements from the responsible provider. An arbitrary allowance does not replace assessment of the actual source, equipment combination and intended conditions.
-
-#### Can a local provider supply the generator instead?
-
-A buyer can enquire about a separate source proposal, but its suitability and services are not established here. Give that provider the same equipment records and identify the coordination boundary with the forming-equipment parties and the site's electrical reviewer.
-
-#### Is generator supply the same as a complete power package?
-
-The phrase complete power package needs a definition. It may imply equipment, connection work or services that a particular seller excludes. Ask for a written boundary and compare those deliverables directly, rather than relying on the package name to imply missing work.
+#### Where does the site supply go?
+In its own column. A generator does not erase a source record you already have.

@@ -2,150 +2,142 @@
 title: "Roll-Forming Lift Controls: Specify Language Requirements"
 description: "Specify roll-forming lift language needs for control screens, fixed labels and instructions, then compare what each provider includes in the delivered scope."
 date: 2026-10-26
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming","roll forming lift control language request","buyer planning"]
 coverImage: "/images/equipment/coil-real-handling.webp"
 coverAlt: "Elevated red forming apparatus beside steel building frames and ground level coils"
-coverCaption: "Reference photograph showing elevated forming apparatus beside building steelwork and coils. It does not establish a model, electrical arrangement or approved working configuration."
+coverCaption: "Reference photograph of elevated forming gear beside coils. It cannot show a screen language."
 draft: false
 ---
 
-A request for English controls can mean several different purchases: translated screen text, physical labels, instructions, or technical records. State those needs separately before ordering a roll-forming lift. An English quotation does not demonstrate that the delivered control interface or the documents associated with every supplied subsystem will use the same language.
-
-The useful outcome is a language deliverables schedule that names the interface, audience and actual provider response. This extends the [technical document comparison guide](/blog/roll-forming-lift-technical-document-package/) into the language of the delivered equipment. It does not prescribe legally required languages or promise that a particular translation or screen option is available.
-
-In its Great Britain context, <a href="https://www.hse.gov.uk/work-equipment-machinery/faqs.htm" target="_blank" rel="noopener noreferrer">HSE's machinery FAQs</a> address end-user language for instructions. This supports keeping the instruction-language enquiry separate from a commercial quotation or screen sample. It does not confirm a translated interface, assess translation quality or determine the obligations at another destination.
+Name the language on the screen, on the fixed labels, and in the instructions as three lines. "English available" is not all three, and it is not a promise about alarms. Say which language the crew will actually read, then ask what the offer includes. The document set around the machine is in the [technical document package](/blog/roll-forming-lift-technical-document-package/). The control boundary between machines is in the [electrical interface guide](/blog/roll-forming-line-electrical-control-interfaces/).
 
 **Contents**
 
-- Define the language need by interface
-- Tie the language schedule to the delivered configuration
-- Compare an English screen with a defined language package
-- Make the language request part of the equipment enquiry
+- Split screen, labels, and instructions
+- Compare what each seller includes
+- A language claim may not fit
+- Language lines to attach
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Define the language need by interface
+## Split screen, labels, and instructions
 
-### Separate screens from physical labels
+### Write the crew's language first
 
-List the proposed screen interfaces and fixed labels as different deliverables. Ask the provider which items its language statement covers. A translated display menu does not automatically include labels beside physical controls, and an English label set does not establish the language of messages within a screen.
+Ask who will stand at the controls and which language they read for an alarm, not for a brochure. Write that language as the request. If the crew is mixed, write the language the site rule requires for alarms, or write unknown if the site has not said. Do not guess from the destination's majority language.
 
-Use the actual offered equipment identity beside each entry. The [crawler forming-lift family](/products/#crawler-roll-forming-lifts) can include a lift associated with a compatible former, but the former may come from another provider with its own interface. Do not extend one supplier's language answer across both machines.
+### Three objects, three answers
 
-### Identify the people who need the information
+A screen can be one language while a fixed label beside an emergency device is another, and the manual is a third that arrives later. Ask each one: included as requested, included in another language, excluded, or unknown. ARC-T18 and ARC-T25 are height screens. They do not carry a language because the class is taller.
 
-Describe the language requirements of the people expected to receive equipment information, using roles relevant to the purchase. The buyer may need one language for commercial review and another for the intended equipment users. State both without assuming that a translated quotation resolves the second need.
+### The former is a separate ask
 
-This is an input to supplier and project review, not a staffing or training decision. The actual parties responsible for the equipment and destination must determine what information is appropriate and how it will be used.
+ARC-RF8, if it is in the purchase, has its own screen and its own labels. A yes on the lift is not a yes on the former. If the former is buyer-supplied, send the language request to that provider and keep it out of the lift row.
 
-### Keep technical records distinct from user information
+### Manuals are not screens
 
-Instructions, interface schedules and other technical records can have different issuers and purposes. Identify which records the buyer requests in each language and ask what the actual provider offers. Avoid a single cell labelled all documents English unless the included document set is defined.
-
-If a record will be produced only after the configuration is settled, ask whether the language requirement is part of that promised deliverable. A translated sample can illustrate a format while still leaving the final equipment-specific document unconfirmed.
-
-![Blue machine module suspended beside a red lifting structure in an outdoor yard](/images/equipment/coil-real-module.webp)
-
-*Reference photograph showing a suspended blue machine module. It does not identify its electrical requirements, mass or an approved handling method.*
+An instruction file that can be translated later is not the label screwed to the machine. Say when the crew must have each object: before shipment, at arrival, or unknown. A manual promised after the machine is in use does not answer the label question.
 
 <!-- audit-section: conditions -->
-## Tie the language schedule to the delivered configuration
+## Compare what each seller includes
 
-### Identify the interface version behind a sample
+### Put the three objects on one table
 
-A screen image can help explain the supplier's proposed interface, but ask which equipment and software version it represents. A generic screenshot should not become proof of the language delivered on a different configuration. Request confirmation of the actual scope instead of judging it from the appearance of an example.
+| Object | Request | Offer | If the offer is silent |
+| --- | --- | --- | --- |
+| Control screen | The crew language | Included, other language, or silent | Confirm on RFQ |
+| Fixed labels and alarms | The same or the site rule | Included, other language, or silent | Do not assume they follow the screen |
+| Instructions | The same language | Included now, later, or silent | Later is not now |
+| Former, if separate | Repeat the three | That seller's own reply | Do not copy the lift column |
 
-Where multiple screen pages or message types are relevant, ask the issuer to describe the coverage of its proposal. The buyer should not assume that one translated home screen establishes every label and message in the interface.
+![Forming module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
 
-### Ask how the provider handles terminology
+*Reference photograph of a forming module beside a lift frame. It cannot show label language.*
 
-The buyer can supply a short list of project terms that need consistent interpretation across the lift, former and site documents. Ask the relevant issuers how their proposed records identify the same equipment functions or objects. This is especially useful where commercial descriptions use broad words such as platform or line that can refer to different things.
+### "Available" needs a line
 
-Do not create replacement operating labels or translate technical instructions informally through a purchasing spreadsheet. Ask the issuer to address terminology in its own controlled information for the actual equipment.
+If the seller says a language is available, ask whether it is in this purchase or a later option, and which of the three objects it covers. Available on a website is not included on the machine. Write the difference.
 
-### Establish what happens when the offer changes
+### Keep destination rules beside the request
 
-A changed former, controller or document revision may alter the language deliverables. Keep the language schedule connected to those equipment identities and ask whether a revised offer changes any included item. If a translation is to follow later, record its deliverable and agreed stage rather than marking it received.
+Some destinations require a language on warnings. This page does not state those rules. Write the destination and attach the rule if the buyer already has it. If not, write unknown. Do not invent a legal sentence to make the cell look closed.
 
-The [configuration-change guide](/blog/roll-forming-lift-configuration-change-control/) explains the broader equipment question. Here the narrower concern is that the language assurance remains attached to the interface and records that will actually be supplied.
+![Coils and forming equipment at the side of a steel building](/images/equipment/coil-real-cover.webp)
 
-![Steel coil suspended beside red vehicle mounted equipment in a yard](/images/equipment/coil-real-cover.webp)
+*Reference photograph of coils beside the building. It cannot translate a label.*
 
-*Reference photograph showing a suspended steel coil beside vehicle-mounted apparatus. It does not establish package inclusion, capacity or an approved handling arrangement.*
+### Do not use the height class as a language proxy
+
+18.5m and 25m do not differ by screen language. If two classes are on the shortlist, the language rows should be identical unless a seller has said otherwise in writing.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Compare an English screen with a defined language package
+The trade-off is a brochure language against the words an operator must read on an alarm. The limitation is that "English available" hides which object was translated. The constraint is the crew and the site rule, which the catalog does not know. The interface is the quotation line that names screen, labels, and instructions separately. Without that line, the offers are not comparable.
 
-### Follow a hypothetical purchase conversation
+An anonymous crew read the screen in the requested language and the alarm labels in another. The manual matched the screen and arrived in a box the crew did not open on the first night. The buyer had accepted "controls in the requested language." The labels were the object that mattered at the alarm, and they had never been a row. The corrected request split the three objects and marked labels as the ones required before shipment.
 
-Imagine a buyer asking two providers for English controls. Offer A includes an English display option but does not identify fixed labels or the former's interface. Offer B lists English equipment instructions and translated fixed labels, while its screen language remains subject to confirmation. The buyer cannot rank them as equivalent language packages.
+A second anonymous file asked for two languages because two crews shared the machine. The seller included one language on the screen and called the second "available." Available was not in the price and not on the labels. The note that should have been sent said: screen language A included, language B not in this purchase unless a line is added, labels still silent, former not included in this ask. Confirm on RFQ before anyone tells the second crew they can read the machine.
 
-The corrected enquiry separates the interfaces and identifies the buyer's required language for each. Both providers can then state what they offer, what is conditional and what belongs to a different issuer. Neither hypothetical offer represents an actual ARCLIFT capability or service.
+A third anonymous night showed the label row in practice. The screen used the language the crew had asked for. The fixed alarm labels used another. The instruction file matched the screen and sat in a crate the crew did not open while an alarm was sounding. The accepted sentence had been "controls in the requested language." Controls had never been split. The sentence that should have been on the order said: screen included in the requested language before shipment, fixed labels still silent, instruction file later and therefore not a substitute, former asked of its own seller. ARC-T18 and ARC-T25 were both on the shortlist, and the language rows were the same on both, because the class does not choose a language.
 
-### Use a language deliverables schedule
+Write the crew you mean. A destination's majority language is not automatically the language at the station. If two crews share the machine, say which language is required on the labels and which language is only requested. "Available" belongs in the offer column only when the line says it is in this purchase and names the object. A language on a website is not a label on the machine. If the site already holds a rule about warning language, attach the rule and do not retype it from memory. If it does not, write unknown rather than a legal sentence you composed to close the cell.
 
-| Deliverable | Buyer requirement to state | Provider response needed | Evidence boundary |
-| :-- | :-- | :-- | :-- |
-| Lift screen interface | Requested language and intended audience | Actual offered interface and coverage | A sample screen does not confirm all messages |
-| Physical control labels | Requested language for identified controls | Included label scope for the configuration | A translated display does not include labels by inference |
-| Former interface | Requirement for the named former | Reply from the actual former provider | Lift-provider answer does not transfer automatically |
-| Equipment instructions | Named document set and language need | Issuer, included language and delivery stage | A sample manual is not the final delivered record |
-| Technical interface records | Requested record purpose and language | Actual included deliverables | Commercial correspondence is not a technical package |
-| Later revisions | Which deliverables must remain aligned | Provider's proposed revision scope | An earlier translation may describe another version |
-
-The schedule should be completed using actual answers. Blank cells identify a purchasing question; they do not prove that a requested language is unavailable or legally sufficient.
-
-### Evaluate coverage before comparing translation price
-
-The trade-off may involve different included deliverables rather than different translation quality alone. One price might address the lift screen while another includes a defined document set. Compare them against the same requirement before asking whether one is more economical. Keep excluded interfaces visible so the buyer can seek a separate response.
-
-If the provider cannot yet confirm a requested interface language, record the condition and the affected purchase decision. Do not replace the missing answer with a promise that the buyer can translate or relabel the equipment later.
-
-![Long light coloured panel beside an elevated red structure and building facade](/images/equipment/coil-real-panel.webp)
-
-*Reference photograph showing a panel and building relationship. It does not establish measured panel length, forming quality or the equipment supply requirements.*
-
-## Make the language request part of the equipment enquiry
+Put the three objects in the email subject so a one-word reply cannot cover them by accident. Screen, labels, instructions: each can come back included, other language, later, or silent. Later on the instruction file must not be copied onto the labels. Other language on the screen must not be copied onto the alarms. If the former is a different seller, its subject line is a second email, not a fourth word on the lift email. The crew who will stand at the station should be named by role, not by a guess about the destination's majority language. Height screens can share this language block. They do not each need a different story unless a seller has written one. A reply that says "as requested" without naming screen, labels, or instructions is still silent on all three. Ask again with the objects listed, and do not mark the row included.
 
 <!-- audit-section: limitations-not-fit -->
-### Recognise when the language statement is too broad
+## A language claim may not fit
 
-A proposal may not fit the buyer's stated language needs if it addresses only commercial documents while the requested equipment interfaces remain undefined. This is a scope gap to resolve with the actual issuers. It does not authorise unofficial relabelling or establish that a translation service is available.
+### One word for three objects
 
-This guide also cannot determine destination language obligations, approve translated instructions or establish user competence. Those questions need the actual equipment information and responsible local review. The photographs provide no evidence of screen language or delivered documentation.
+This request may not fit when the offer says only "local language" or "English." Split it. If the seller will not split it, the claim is not specific enough to compare.
+
+### Labels left in the factory language
+
+It may not fit when the screen is translated and the fixed alarm labels are not. Ask the label row on its own. A screen match does not move a screwed-on label.
+
+### A manual used as a substitute
+
+It may not fit when the only translated object is a file the crew will not have at the control. Say which object must exist on the machine. A later file does not replace it.
+
+### Two machines, one answer
+
+It may not fit when the lift answer is pasted onto the former. Send the former question to the former seller. ARC-RF8 does not inherit a lift screen.
+
+![Long panel beside elevated forming equipment](/images/equipment/coil-real-panel.webp)
+
+*Reference photograph of a panel path. It cannot show the language of a control.*
 
 <!-- audit-section: project-checklist -->
-### Prepare six specific language inputs
+## Language lines to attach
 
-- Identify the lift, former and feed equipment whose interfaces require separate language responses from their actual providers.
-- State the language needs for screens, fixed control labels and instructions as distinct deliverables with named audiences.
-- Include outlet height and roof task context where terminology must distinguish equipment position from personnel-platform language.
-- Provide site access and floor or ground context only where it affects the documents being requested, keeping translation scope specific.
-- Identify destination and transport handover stages at which the relevant information is needed, without assuming a delivery promise.
-- Ask which power and control records are included, which language versions are offered and how the final equipment identity will be shown.
-
-Have the actual provider answer each row. A purchasing team's preferred wording is a requirement, while the provider's stated offer is a response; keeping both columns prevents the requirement from being mistaken for an included feature.
+- Work height and the catalog class to screen
+- Roof geometry, kept off the language rows
+- Profile, material, and coil
+- Wind limit, or unknown
+- Floor or ground at the control station
+- Access for the people who will read the labels
+- Outrigger or track footprint
+- Destination country and any language rule you already hold
+- Transport, so documents are not confused with labels on the machine
+- Control language for screen, labels, and instructions
+- Documents: the line that lists each object, or "none supplied"
 
 <!-- audit-section: cta-editorial-note -->
-### Request an interface-specific language response
+Send the work height, the site, the destination, the transport split, the control zone, and the floor at the station. The signed schedule is project-specific. Editorial images do not show a language.
 
-[Send ARCLIFT the requested language schedule](/contact/?product=crawler-roll-forming-lifts&request=advice) with the proposed former, lift and intended user-information needs. Include site, destination, outlet height and transport handover context so the deliverables can be discussed against a real purchase. This editorial schedule does not promise a translated interface or establish legal sufficiency. Final project-specific language and documentation scope must be confirmed by the actual providers and responsible destination reviewers.
+Open [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-T25](/products/arc-t25-truck-mounted-roll-forming-lift/), or [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/). [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://www.hse.gov.uk/work-equipment-machinery/puwer.htm" target="_blank" rel="noopener noreferrer">HSE guidance on work equipment</a> is a Great Britain note. It does not choose a screen language.
 
 ## FAQ
 
-#### Does an English quotation imply English controls?
+#### Is "English available" enough?
+No. Ask whether the screen, the fixed labels, and the instructions are in this purchase, and in which language.
 
-No. Commercial correspondence and the delivered interface are separate items. Ask the provider to identify the language of the actual screen, fixed labels and equipment instructions, and retain any conditions beside the relevant deliverable rather than treating the quotation language as confirmation.
+#### Do alarm labels follow the screen?
+Only if the offer says so. Ask the label row by itself.
 
-#### Can one screenshot establish the whole interface language?
+#### Can the manual arrive later?
+Only if you have accepted later for that object. Do not let a later manual close the label row.
 
-It can show the text visible in that example, but it does not establish the complete delivered interface. Ask which equipment and version it represents and what language coverage is included. Other pages, messages or separate subsystems remain questions for the issuer.
-
-#### Should the former and lift use one language schedule?
-
-A single buyer schedule can organise the enquiry, provided each subsystem and provider response remains separate. Do not let a complete lift response conceal an unanswered former interface. The schedule is a coordination aid, not evidence that all providers offer identical language scope.
-
-#### What if a requested translation is not confirmed?
-
-Keep it unresolved and ask the provider whether a defined option is available. Consider the effect on the actual purchase requirement without inventing a later remedy. This article does not recommend unofficial translation, interface modification or equipment use with missing information.
+#### Does the former use the lift's language?
+Not unless that seller says so. Keep a separate ask.

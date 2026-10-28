@@ -2,150 +2,142 @@
 title: "Roll-Forming Lift Power: Separate Lift and Former Loads"
 description: "Separate lift, former and feed equipment power information in a roll-forming project, then request a supply diagram tied to the offered machine identities."
 date: 2026-10-26
+updated: 2026-10-28
 author: "ARCLIFT Technical Editorial"
 tags: ["roll forming","roll forming lift separate former power","buyer planning"]
 coverImage: "/images/equipment/coil-real-handling.webp"
 coverAlt: "Elevated red forming apparatus beside steel building frames and ground level coils"
-coverCaption: "Reference photograph showing elevated forming apparatus beside building steelwork and coils. It does not establish a model, electrical arrangement or approved working configuration."
+coverCaption: "Reference photograph of elevated forming gear beside coils. It cannot split two power loads."
 draft: false
 ---
 
-A lift's power label describes an item of equipment, not necessarily the whole roof-panel forming line. Before treating a quotation as a complete supply arrangement, identify the lift, forming machine and any additional powered equipment separately. Ask the actual providers to explain which equipment their requirements cover and whether the proposal includes a coordinated arrangement.
-
-The result should be a subsystem identity diagram request that exposes unconfirmed shared-supply assumptions. It should not be a buyer-designed circuit. The [electrical control interface guide](/blog/roll-forming-line-electrical-control-interfaces/) discusses overall integration; this page focuses on preventing one subsystem's data from becoming the assumed data for all others. The [forming-lift catalog](/products/#crawler-roll-forming-lifts) identifies a family rather than one universal electrical configuration.
-
-The <a href="https://webstore.iec.ch/en/publication/71256" target="_blank" rel="noopener noreferrer">IEC 60204-1 public scope</a> includes coordinated groups of machines. For this coverage enquiry, ask which actual machines a combined response names; the abstract does not establish shared power, a completed integration design or conformity of the proposed L/F/U set.
+Write the lift, the former, and any feed equipment as three power rows. One number does not cover three machines. Screen the height class while the rows are open, and do not add the rows together in your head. How the machines meet is in the [electrical interface guide](/blog/roll-forming-line-electrical-control-interfaces/). The line they belong to is in the [line specification](/blog/roll-forming-line-specification-long-span-roof-panels/).
 
 **Contents**
 
-- Give every powered subsystem its own identity
-- Request a diagram that explains coverage
-- Trace a complete-line claim to its actual equipment
-- Resolve the coverage gap before relying on the package label
+- Give each machine its own power row
+- Compare a package sentence with three rows
+- A single load line may not fit
+- Power rows to attach
 - FAQ
 
 <!-- audit-section: buyer-intent -->
-## Give every powered subsystem its own identity
+## Give each machine its own power row
 
-### Start with the actual lifted equipment
+### Name the machine before the number
 
-Roof-level forming equipment raises a compatible roll former toward the receiving level. The lift and the former have different roles within that arrangement, even when they appear together in a photograph or commercial package. Identify each by the actual proposal or equipment record rather than treating their common location as evidence of shared power.
+ARC-T18 is an 18.5m truck screen. ARC-C25 is a 25m crawler screen. ARC-RF8 is a former with a catalog sheet class of 0.3–1.0mm. Put each name on its own row, then ask what power words the seller actually attached to that name. A blank row stays blank. Do not copy the lift row onto the former because the package title was singular.
 
-If the buyer owns the former, attach its current identity and provider information. If it is still being selected, mark that uncertainty directly. A lift quotation cannot settle the requirements of an unidentified future machine.
+### Keep feed equipment visible
 
-### Include peripheral equipment only when it exists in scope
+A decoiler, a stacker, or a conveyor is a machine if it is in the purchase. If it is buyer-supplied, say so and ask its provider for its own row. Hiding it inside "the line" is how a supply gets sized for two machines and asked to run three.
 
-Ask whether feed equipment, auxiliary handling equipment or other powered items are actually proposed. Do not infer their inclusion from photographs showing coils beside a lift. List buyer-supplied items separately from seller-supplied items and distinguish optional entries from confirmed purchase scope.
+### Refuse a borrowed total
 
-This produces a useful equipment list without inventing an idealised factory line. Each listed item should have a reason for being in the buyer's intended package and a named provider from whom its actual requirements can be requested.
+A total from another profile, another former, or a brochure that is not this offer is not a row. It looks decisive and it is fiction. If you need a total to satisfy a form, the form is ahead of the machines. Send the three rows with unknown where the sheets are silent.
 
-### Identify the owner of a combined statement
+### Ask for a sketch that uses your names
 
-When a seller says the system uses a particular supply arrangement, ask which equipment identities the statement includes and who is responsible for the combined response. A general description may refer only to the lift or to a different former from the one the buyer intends to use.
-
-Ask for the record that explains the offered combination. The purpose is to attribute the statement correctly, not to demand a particular integration model. A single seller can have exclusions, and separate sellers can propose explicitly defined coordination work.
-
-![Blue machine module suspended beside a red lifting structure in an outdoor yard](/images/equipment/coil-real-module.webp)
-
-*Reference photograph showing a suspended blue machine module. It does not identify its electrical requirements, mass or an approved handling method.*
+The useful reply is a simple diagram that repeats the names you sent: this lift, this former, this feed, and the site source. A generic single-line sketch with no names does not answer the enquiry. Confirm on RFQ if the seller will issue that sketch, and do not draw it yourself to close the file.
 
 <!-- audit-section: conditions -->
-## Request a diagram that explains coverage
+## Compare a package sentence with three rows
 
-### Use boxes for identities and questions for boundaries
+### Put the machines on one table
 
-The buyer's first sketch can contain labelled boxes for the site source, lift, former and actual additional equipment. Beside each box, name the provider and available requirements record. Between boxes, write unresolved questions such as whether the offer supplies that interface and who defines it. Do not draw a connection as confirmed when no provider has described it.
+| Machine | Words on its own sheet | If the sheet is silent |
+| --- | --- | --- |
+| Lift | Copy the power line, or "none" | Unknown; do not borrow |
+| Former | Copy the power line, or "none" | Unknown until the former is named |
+| Feed or other powered item | Its provider's line | Say buyer-supplied or not in this purchase |
+| Site source | The record, kept separate | See the site-power enquiry |
 
-This sketch requests information. The supplier's response should explain the actual offered arrangement; the buyer's boxes do not specify how electrical systems must be connected.
+![Forming module suspended beside a red lifting structure](/images/equipment/coil-real-module.webp)
 
-### Separate supply relationships from control relationships
+*Reference photograph of a forming module beside a lift frame. It cannot merge two loads.*
 
-Two machines may exchange information without the buyer having established their supply arrangement. Conversely, a common proposed source does not explain machine-control interactions. Keep power coverage and control-interface questions on separate parts of the request so that a statement about one cannot be mistaken for an answer about the other.
+### A package noun is not a sum
 
-For example, a proposal referring to communication between a feeder and former does not identify the source for each item. Ask the relevant providers to identify both relationships in their actual documents without inferring one from the other.
+"Line power," "system power," and "package supply" are commercial nouns. They do not add the rows. Ask the seller to split the noun or to say the split is not in this purchase. Silence is not a sum you may invent.
 
-### Preserve the configuration behind each record
+### The sheet class is not a load
 
-Equipment records can describe different revisions, optional components or purchase packages. Retain the configuration reference next to each subsystem entry. A later former selection should trigger a question about the affected combined statement rather than quietly inheriting the earlier diagram.
+0.3–1.0mm says what ARC-RF8's catalog band covers. It does not say what the former draws, and it does not say what the lift draws. Keep the band on the material row.
 
-The [configuration-change guide](/blog/roll-forming-lift-configuration-change-control/) addresses the broader consequences of changing a proposed package. For the power request, identify precisely which box or boundary changed and ask the responsible provider which earlier requirements need revision.
+![Coils and forming equipment at the side of a steel building](/images/equipment/coil-real-cover.webp)
 
-![Steel coil suspended beside red vehicle mounted equipment in a yard](/images/equipment/coil-real-cover.webp)
+*Reference photograph of coils beside the building. It cannot total a load.*
 
-*Reference photograph showing a suspended steel coil beside vehicle-mounted apparatus. It does not establish package inclusion, capacity or an approved handling arrangement.*
+### Height stays a screen
+
+You can ask for 18.5m and 25m to be compared while the power rows are open. You cannot treat the taller screen as the one with the "full" supply. Height and power are different questions. Write both.
 
 <!-- audit-section: evidence-tradeoffs -->
-## Trace a complete-line claim to its actual equipment
+The trade-off is one tidy total against three honest rows. The limitation is that a package sentence hides which machine was counted. The constraint is a former or a feed unit that is not chosen yet. The interface is the sketch that repeats your machine names. Without it, stop adding numbers and send the blanks.
 
-### Keep the intended equipment set unchanged
+An anonymous buyer received one power figure on a cover sheet titled "complete line." The lift sheet had no power line. The former sheet had a different figure. The feed equipment was not listed. The cover figure matched none of the rows and could not be rebuilt from them. The file that replaced it listed three rows, marked the cover figure as unused, and asked which machines the seller had actually counted. ARC-C25 stayed on the height screen only.
 
-Consider a hypothetical enquiry for identified Lift L, Former F and Feed Unit U. These labels identify three actual requested objects within the example; they are not product models. The supplier returns a requirements sheet explicitly naming L and a cover note headed complete line. The cover note refers to Former F-old from an earlier proposal and does not identify U. The buyer's intended L/F/U set has not changed, but the returned documents do not yet represent it consistently.
+A second anonymous file added a lift figure to a former figure taken from another profile, then asked the site to "confirm the board." The site record described a different end of the building, and the feed unit was buyer-supplied with no row at all. The sum was not a question the board owner could answer. The corrected note sent the site record unchanged, listed the buyer-supplied feed as a separate provider, and left both equipment figures unknown until each seller wrote on that seller's own machine.
 
-The lift sheet remains attributable to L. It should not be discarded merely because the wider statement is incomplete. Equally, its information must not be entered as the requirement for F or U. The useful finding is a specific coverage mismatch, rather than a choice between buying separate machines and buying a combined package.
+A third anonymous comparison looked tidy and was not. The cover sheet showed one figure for "the line." The lift sheet was silent. The former sheet used a different figure from a previous profile. The decoiler was on the layout and on nobody's power row. A reviewer added the two figures that existed, sent the sum to the board owner, and asked for confirmation. The board owner sent the sum back. It cited machines the owner had not been shown, and it omitted the decoiler the layout showed. The replacement email had four names and no arithmetic: lift unknown, former unknown until that seller writes on this profile, decoiler buyer-supplied and asked of its own provider, site record attached unchanged. ARC-T18 and ARC-C25 stayed height screens beside that list.
 
-### Mark the subject represented by each statement
+Keep the sheet class off the power rows. 0.3–1.0mm can sit on the material line for ARC-RF8 and still say nothing about what any machine requires. If a form you did not design demands a total, answer that the total is not available and attach the rows. Inventing the total to pass the form is the failure the rows exist to prevent. Confirm on RFQ which seller will repeat your machine names on a sketch. A generic sketch with no names is not that reply. Height can be discussed the same day. The sum cannot.
 
-| Evidence item | Subject actually represented | Gap against the unchanged L/F/U request | Clarification to obtain |
-| :-- | :-- | :-- | :-- |
-| Lift requirements sheet | Identified L and its stated configuration | No statement about F or U | Retain the sheet for L without broadening its scope |
-| Complete-line heading | A general package description | Included equipment is not established by the heading | Ask the issuer to name the equipment covered |
-| F-old reference in cover note | An earlier proposed former | The intended F is a different identity | Obtain the applicable F record and revised issuer response |
-| Feed Unit U on the buyer list | A requested powered item | No returned equipment requirement identifies U | Ask its provider for the relevant record and supply-boundary explanation |
-| Proposed combined statement | Its own explicitly listed subjects | Current coverage remains inconsistent | Request a statement tied to L, F and U, including exclusions |
-| Site-source assessment input | Equipment records actually supplied | The whole requested set is not yet represented | Identify the missing records before requesting a whole-set assessment |
-
-The table compares statements with their subjects. It neither adds power figures nor decides whether the equipment shares a source. The trade-off is accepting a concise package heading versus obtaining a response that preserves the actual coverage of each record.
-
-### Distinguish a corrected label from a resolved requirement
-
-Suppose the issuer changes F-old to F in its cover note but supplies no attributable requirement for F and leaves U absent. The textual correction makes the intended subject clearer, yet the requested equipment information remains incomplete. Ask the issuer which actual records its revised statement relies on and who supplies the remaining U response. A newer date or corrected heading alone does not create the missing coverage.
-
-A subsequent reply may explicitly cover L and F while excluding U. That is a useful, narrower statement to retain alongside U's separate provider record. It does not decide the eventual supply architecture. The buyer can now send the responsible reviewer the identified equipment set and precise remaining boundary, instead of presenting one lift sheet as a complete-line electrical specification.
-
-![Long light coloured panel beside an elevated red structure and building facade](/images/equipment/coil-real-panel.webp)
-
-*Reference photograph showing a panel and building relationship. It does not establish measured panel length, forming quality or the equipment supply requirements.*
-
-## Resolve the coverage gap before relying on the package label
+Repeat the machine names in the subject line of the enquiry so a cover total has nowhere to hide. Lift, former, feed, site record: four labels, even when three of them say unknown. If a seller returns one figure, ask which label it sits under, and reject the figure for the file until that answer arrives. Do not store it "for later" in a totals cell. Later is how it becomes the number everyone quotes. The deck or the truck class can still be compared. ARC-T18 and ARC-C25 answer height. They do not answer which label a stray figure belongs to. The former's sheet class stays on the material row beside them, unused as a load. If a later email arrives with a total and no labels, file it as unused and send the four labels again. Do not promote the total because it is the only number in the thread.
 
 <!-- audit-section: limitations-not-fit -->
-### Avoid conclusions from a common frame
+## A single load line may not fit
 
-A proposed package may not fit the buyer's final selection while its powered equipment identities remain unresolved or its combined supply statement excludes an essential item. A common mounting frame, photograph or seller name cannot close that gap. Nor should the buyer combine nameplate figures into a new unreviewed specification.
+### A cover total with no rows
 
-This article does not define demand, protection, connections or permitted simultaneous functions. Its outcome is a clearer question for the actual equipment providers and responsible electrical reviewer, with each answer attached to the subsystem it truly describes.
+This comparison may not fit when the only power figure sits on a package cover. Split it or discard it. Do not ask the site to confirm a total you cannot explain.
+
+### A former copied from another job
+
+It may not fit when the former row was filled from a different profile. Delete the copy. Unknown is safer than a precise fiction.
+
+### Feed equipment left off the list
+
+It may not fit when a decoiler or stacker is in the purchase and absent from the power note. Add the row, or write that it is not in this purchase. Do not hope it is small enough to ignore.
+
+### Height used as a proxy for power
+
+It may not fit when 25m is chosen over 18.5m because the power question felt unfinished. Change of class is not a change of load. Keep the rows.
+
+![Long panel beside elevated forming equipment](/images/equipment/coil-real-panel.webp)
+
+*Reference photograph of a panel path. It cannot separate machine loads.*
 
 <!-- audit-section: project-checklist -->
-### Assemble the subsystem request
+## Power rows to attach
 
-- Name the actual lift and former separately, including buyer-owned equipment and any provisional selection awaiting a provider record.
-- Identify proposed feed and other material-related equipment only where it belongs in the intended purchase scope.
-- Mark outlet height and roof receiving geometry so the equipment parties understand which combined arrangement is being discussed.
-- Attach site source information, floor or ground restrictions and access context without converting them into connection instructions.
-- State destination and transport assembly boundaries, including which subsystems arrive from different providers.
-- Ask for a power-coverage diagram or equivalent description identifying supplied interfaces, exclusions and the owner of combined documentation.
-
-Use the returned matrix to see which parts of the proposal can be compared and which remain provisional. If every supplier answers only for its own box, the unassigned space between boxes is still a project scope to resolve.
+- Work height at the outlet, and the catalog class to screen
+- Roof geometry at that outlet
+- Profile, material, thickness, and coil
+- Wind limit already used by the panel crew, or unknown
+- Floor or ground under each machine
+- Access route to each set-down
+- Outrigger or track footprint
+- Destination country and who reviews the supply there
+- Transport split between lift, former, and feed
+- Power row for each machine, or unknown
+- Documents: each seller's own sheet, not a borrowed total
 
 <!-- audit-section: cta-editorial-note -->
-### Request coverage for the actual equipment combination
+Send the work height, the site, the destination, the transport split, the roof zone, and the floor under each machine. The signed schedule is project-specific. Editorial images do not add the loads.
 
-[Ask ARCLIFT about the proposed subsystem package](/contact/?product=crawler-roll-forming-lifts&request=advice) with the former identity, lift enquiry and any separate feed scope. Include the site, outlet height, destination and transport split so the response addresses the intended assembly. This editorial request helps distinguish individual records from a combined statement. Final project-specific electrical requirements and coordination responsibilities must come from the actual providers and the parties reviewing the installation.
+Open [ARC-T18](/products/arc-t18-truck-mounted-roll-forming-lift/), [ARC-C25](/products/arc-c25-crawler-roll-forming-lift/), or [ARC-RF8](/products/arc-rf8-roll-forming-machine/). [Request a quote](/contact/?request=quote), WhatsApp +86 15515922444, or [leelogly120@gmail.com](mailto:leelogly120@gmail.com). The <a href="https://www.hse.gov.uk/work-equipment-machinery/puwer.htm" target="_blank" rel="noopener noreferrer">HSE guidance on work equipment</a> is a Great Britain note. It does not total these machines.
 
 ## FAQ
 
-#### Does a lift power label include the forming machine?
+#### Can I add the lift and the former myself?
+No. Send the rows. Let each seller say what that seller included. A homemade total is not a requirement.
 
-Its scope must be confirmed from the relevant equipment record. The label may describe only the lift. Ask the provider which items are included before placing its information under a whole-line heading or using it in a source enquiry.
+#### What if the former is not chosen?
+Leave its row unknown. Still screen the height. Do not borrow another former's figure.
 
-#### Does correcting the former name complete the record?
+#### Does 0.3–1.0mm tell me the load?
+No. It is the ARC-RF8 catalog sheet class. Keep it on the material line.
 
-It can correct the subject of a statement without supplying the missing equipment information. Ask which actual former record and configuration the revised response uses, then check whether the other requested powered items are represented. A corrected heading does not establish a complete combined requirement.
-
-#### Can the same source serve separate subsystems?
-
-That is a question for assessment of the actual equipment requirements and proposed installation. This guide does not determine the answer or recommend a connection arrangement. Its purpose is to ensure the responsible reviewer receives distinct, attributable subsystem information.
-
-#### What changes when the former is replaced?
-
-The former identity and its requirements change, and any combined statement referring to the previous former needs review. Ask the responsible provider which interfaces and records are affected. Do not treat a similar product description as proof that the earlier arrangement remains applicable.
+#### Where does the site board sit in this note?
+Beside the rows, not inside them. The site record is not a substitute for a machine row.
