@@ -183,6 +183,29 @@ afterEach(async () => {
 });
 
 describe('sitemap policy', () => {
+  it.each([
+    '/blog/page',
+    '/blog/page/',
+    '/blog/page?utm_source=review',
+    '/blog/page/?utm_source=review#guides',
+    '/blog/page/2',
+    '/blog/page/2/',
+    '/blog/page/7/?utm_source=review',
+    '/blog/page/next/',
+    '/blog/page/2/child/',
+  ])('excludes the reserved pagination path %s', path => {
+    expect(shouldIncludeInSitemap(`${SITE}${path}`)).toBe(false);
+  });
+
+  it.each([
+    '/blog/',
+    '/blog/page-speed/',
+    '/blog/pages/',
+    '/blog/page-two/?utm_source=review',
+  ])('keeps indexable paths outside the pagination namespace: %s', path => {
+    expect(shouldIncludeInSitemap(`${SITE}${path}`)).toBe(true);
+  });
+
   it('excludes the noindex comparison route without excluding indexable routes', () => {
     expect(shouldIncludeInSitemap(`${SITE}/compare/`)).toBe(false);
     expect(shouldIncludeInSitemap(`${SITE}/blog/page/2/`)).toBe(false);

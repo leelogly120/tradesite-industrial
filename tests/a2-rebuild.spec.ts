@@ -19,11 +19,13 @@ test('product-family deep links clear both the site header and comparison bar', 
   }).toBe(true);
 });
 
-test('Contact shares the equipment site styling with either pathname spelling', async ({ page }) => {
-  for (const path of ['/contact', '/contact/']) {
-    await page.goto(path);
+test('Contact uses its canonical trailing-slash path with and without a query', async ({ page }) => {
+  for (const path of ['/contact/', '/contact/?request=quote']) {
+    const response = await page.goto(path);
+    expect(response?.status()).toBe(200);
     await expect(page.locator('body')).toHaveClass('design-a2');
     await expect(page.locator('#inquiry-form')).toBeVisible();
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', 'https://www.arclifteq.com/contact/');
   }
 });
 

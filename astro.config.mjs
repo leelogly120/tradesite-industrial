@@ -14,6 +14,7 @@ const articleUpdates = new Map(readdirSync(blogDirectory).filter(name => name.en
 
 export default defineConfig({
   site: 'https://www.arclifteq.com',
+  trailingSlash: 'always',
   redirects: {
     '/products/fddpt-20m-crawler-ceiling-platform/': '/products/arc-f20-crawler-ceiling-platform/',
     '/products/fddpt-25m-crawler-ceiling-platform/': '/products/arc-f25-crawler-ceiling-platform/',
