@@ -468,7 +468,7 @@ async function collectPublishedRoutes() {
 
 function literalInternalLinks(text) {
   const links = [];
-  for (const pattern of [/href\s*=\s*["'](\/[^"']*)["']/g, /\]\((\/[^)\s]+)\)/g]) {
+  for (const pattern of [/(?:href|action)\s*=\s*["'](\/[^"']*)["']/g, /\]\((\/[^)\s]+)\)/g]) {
     for (const match of text.matchAll(pattern)) links.push(match[1]);
   }
   return links;
@@ -487,7 +487,7 @@ describe('public route integrity', () => {
     expect(failures).toEqual([]);
   });
 
-  it('resolves literal internal page links to published routes', async () => {
+  it('uses the exact trailing-slash form of published internal page routes', async () => {
     const files = await listRouteSourceFiles();
     const routes = await collectPublishedRoutes();
     const failures = [];
@@ -498,7 +498,7 @@ describe('public route integrity', () => {
         const target = href.split(/[?#]/, 1)[0] || '/';
         if (/\.(?:avif|gif|ico|jpe?g|pdf|png|svg|webp)$/i.test(target)) continue;
         const normalized = target === '/' ? '/' : `${target.replace(/\/+$/, '')}/`;
-        if (!routes.has(normalized)) failures.push(`${displayPath(file)} -> ${href}`);
+        if (target !== normalized || !routes.has(target)) failures.push(`${displayPath(file)} -> ${href}`);
       }
     }
 

@@ -8,6 +8,8 @@ const moves = [
   ['/products/fddpt-25m-crawler-ceiling-platform/', '/products/arc-f25-crawler-ceiling-platform/'],
   ['/products/fddpt-31m-crawler-ceiling-platform/', '/products/arc-f31-crawler-ceiling-platform/'],
   ['/products/fddpt-35m-crawler-ceiling-platform/', '/products/arc-f35-crawler-ceiling-platform/'],
+  ['/blog/page', '/blog/'],
+  ['/blog/page/', '/blog/'],
 ];
 let runtime;
 

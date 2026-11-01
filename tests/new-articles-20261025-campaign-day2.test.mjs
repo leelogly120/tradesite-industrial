@@ -8,6 +8,7 @@ import * as registry from '../scripts/lift-platform-article-registry.mjs';
 import { EXTENDED_LAUNCH_SLUGS, auditArticle } from '../scripts/audit-lift-platform-content.mjs';
 import { REFERENCE_PHOTO_ARTICLES } from '../scripts/reference-photo-articles.mjs';
 import { GUIDE_TOPICS, getGuideTopic, getRelatedGuides } from '../src/lib/guide-navigation.ts';
+import { retainedRedirectBytes } from './helpers/retained-redirects.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const baseline = JSON.parse(await readFile(resolve(root, 'tests/fixtures/october-25-campaign-day2-baseline.json'), 'utf8'));
@@ -61,7 +62,8 @@ describe('2026-10-25 campaign day2: twenty new URLs after the published ninety',
     }
     for (const file of baseline.preservedFiles) {
       const bytes = await readFile(resolve(root, file.path));
-      const comparable = file.normalizeNewlines ? bytes.toString().replace(/\r\n/g, '\n') : bytes;
+      const comparable = file.path === 'public/_redirects' ? retainedRedirectBytes(bytes)
+        : file.normalizeNewlines ? bytes.toString().replace(/\r\n/g, '\n') : bytes;
       expect(sha256(comparable), file.path).toBe(file.sha256);
     }
   });
