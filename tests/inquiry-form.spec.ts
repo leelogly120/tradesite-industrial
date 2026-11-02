@@ -46,7 +46,7 @@ test('contact shows the chosen equipment and request purpose before asking for c
   );
   await expect(page.getByLabel('Message')).toHaveAttribute(
     'placeholder',
-    'A few details are enough to start: your application, destination or a question.',
+    'Anything else that should travel with the eight inputs.',
   );
 
   const emptyErrorMetrics = await form.locator('.field-error:empty').evaluateAll((nodes) =>
@@ -86,7 +86,7 @@ test('contact accepts a name and email alone and forwards visible document inten
 
   await page.getByLabel('Email').fill('jane@roof.test');
   await page.getByRole('button', { name: /Send Request/ }).click();
-  await expect(page.getByRole('status')).toContainText('Thank you');
+  await expect(page.getByRole('status')).toContainText('Thanks — we received your RFQ.');
   expect(submitted).toMatchObject({
     formVariant: 'contact',
     name: 'Jane Buyer',
@@ -116,7 +116,7 @@ test('contact accepts phone alone and sends the currently selected family and in
   await page.getByLabel('Name').fill('Jane Buyer');
   await page.getByLabel('WhatsApp / Phone').fill('+1 416 555 0198');
   await page.getByRole('button', { name: /Send Request/ }).click();
-  await expect(page.getByRole('status')).toContainText('Thank you');
+  await expect(page.getByRole('status')).toContainText('Thanks — we received your RFQ.');
   expect(submitted).toMatchObject({
     email: '', phone: '+1 416 555 0198', model: 'truck-mounted-work-platforms',
     product: 'truck-mounted-work-platforms', requestType: 'advice',
@@ -162,7 +162,7 @@ test('primary delivery failure preserves all contact values', async ({ page }) =
   await expect(page.getByLabel('Product / Model')).toHaveValue('crawler-roll-forming-lifts');
   await expect(page.getByLabel('I need')).toHaveValue('advice');
   await page.getByRole('button', { name: /Send Request/ }).click();
-  await expect(page.getByRole('status')).toContainText('Thank you');
+  await expect(page.getByRole('status')).toContainText('Thanks — we received your RFQ.');
   expect(attempts).toBe(2);
 });
 
@@ -217,7 +217,7 @@ test('default product InquiryForm renders the full field set and preserves valid
 
   await page.getByLabel('Email').fill('jane@roof.test');
   await page.getByRole('button', { name: 'Submit Inquiry' }).click();
-  await expect(page.getByRole('status')).toContainText('Thank you');
+  await expect(page.getByRole('status')).toContainText('Thanks — we received your RFQ.');
   expect(submitted).toMatchObject({
     formVariant: 'product',
     name: 'Jane Buyer',

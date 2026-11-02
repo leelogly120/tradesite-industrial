@@ -1,3 +1,4 @@
+import { CURRENT_ARTICLE_COUNT } from './helpers/current-release.mjs';
 import { expect, test } from '@playwright/test';
 
 test('product-family deep links clear both the site header and comparison bar', async ({ page }) => {
@@ -98,6 +99,6 @@ test('product overview keeps all fifteen references and guides reachable without
   expect(links).toHaveLength(15);
   await page.goto('/blog/');
   const guides = await page.locator('[data-guide-directory] a').count();
-  expect(guides).toBe(130);
+  expect(guides).toBe(CURRENT_ARTICLE_COUNT);
   await context.close();
 });

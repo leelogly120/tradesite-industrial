@@ -8,7 +8,7 @@ async function openHomepage(page, width = 1440) {
 
 test('shows a static real-equipment hero and four distinct application routes', async ({ page }) => {
   await openHomepage(page);
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('Lifting systems for roof-panel roll forming.');
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('Vehicle-mounted and crawler lifts for roof-panel roll forming.');
   await expect(page.locator('.hero__carousel, .hero__slide, .hero__dot')).toHaveCount(0);
   await expect(page.locator('#equipment-series article')).toHaveCount(4);
   for (const family of ['truck-mounted-roll-forming-lifts','crawler-roll-forming-lifts','crawler-ceiling-platforms','truck-mounted-work-platforms']) {
@@ -66,7 +66,7 @@ test('mobile menu stays inert when closed, traps focus when open and restores fo
   await expect(drawer).not.toHaveAttribute('inert', '');
   await expect(page.getByRole('button', { name: 'Close navigation' })).toBeFocused();
   await page.keyboard.press('Shift+Tab');
-  await expect(drawer.getByRole('link', { name: 'Email ARCLIFT' })).toBeFocused();
+  await expect(drawer.getByRole('link', { name: 'leelogly120@gmail.com' })).toBeFocused();
   await page.keyboard.press('Tab');
   await expect(page.getByRole('button', { name: 'Close navigation' })).toBeFocused();
   await page.keyboard.press('Escape');
@@ -90,7 +90,7 @@ test('short mobile drawer scrolls to the direct contact links while the backgrou
   await page.goto('/');
   await page.getByRole('button',{name:'Toggle navigation'}).click();
   const drawer=page.locator('#mobile-drawer');
-  const email=drawer.getByRole('link',{name:'Email ARCLIFT'});
+  const email=drawer.getByRole('link',{name:'leelogly120@gmail.com'});
   await email.scrollIntoViewIfNeeded();
   expect(await email.evaluate(el=>{const r=el.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight})).toBe(true);
   expect(await drawer.evaluate(el=>el.scrollTop)).toBeGreaterThan(0);
