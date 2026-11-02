@@ -1,3 +1,4 @@
+import { CURRENT_ARTICLE_COUNT } from './helpers/current-release.mjs';
 import { expect, test, type Page } from '@playwright/test';
 
 const mobileWidths = [360, 390] as const;
@@ -66,7 +67,7 @@ test('makes roof-level panel forming the primary application route without hidin
   await page.goto('/applications/');
   await page.waitForLoadState('networkidle');
 
-  await expect(page.getByRole('heading', { level: 1 })).toContainText(/roof-level forming/i);
+  await expect(page.getByRole('heading', { level: 1 })).toContainText(/roof-level panel forming/i);
   await expect(page.locator('[data-application-route="roof-forming"]')).toContainText(/Roof-level roll forming/);
   const routes = page.locator('[data-application-route]');
   await expect(routes).toHaveCount(3);
@@ -92,7 +93,7 @@ test('keeps every application detail page task-specific, disclosed and connected
   const pages = [
     {
       path: '/applications/warehouse/',
-      heading: /roof-level forming|industrial roof/i,
+      heading: /Warehouse and PEB roof-panel forming at height/i,
       guide: '/blog/roof-level-roll-forming-long-panels/',
     },
     {
@@ -122,7 +123,7 @@ test('keeps every application detail page task-specific, disclosed and connected
   }
 });
 
-test('publishes a compact first-page directory linking to all 130 published guides', async ({ page }) => {
+test('publishes a compact first-page directory linking to all published guides', async ({ page }) => {
   await page.goto('/blog/');
   await page.waitForLoadState('networkidle');
 
@@ -130,9 +131,9 @@ test('publishes a compact first-page directory linking to all 130 published guid
   await expect(directory).toBeVisible();
   await expect(directory.locator('details')).toHaveCount(10);
   const directoryLinks = directory.locator('a[href^="/blog/"]');
-  await expect(directoryLinks).toHaveCount(130);
+  await expect(directoryLinks).toHaveCount(CURRENT_ARTICLE_COUNT);
   const hrefs = await directoryLinks.evaluateAll((links) => links.map((link) => link.getAttribute('href')));
-  expect(new Set(hrefs).size).toBe(130);
+  expect(new Set(hrefs).size).toBe(CURRENT_ARTICLE_COUNT);
   await expect(directory).not.toContainText(/ordinary page link|does not create new article URLs/i);
   const firstTopic = directory.locator('details').first();
   const firstSummary = firstTopic.locator('summary');

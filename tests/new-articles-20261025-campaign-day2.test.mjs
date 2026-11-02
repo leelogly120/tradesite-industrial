@@ -1,4 +1,5 @@
-import { precedingManifestBytes } from './helpers/four-article-release.mjs';
+import { CURRENT_ARTICLE_COUNT, CURRENT_SITEMAP_COUNT, CURRENT_PAGE_SIZES, laterSlugsThan, currentSitemapUrls } from './helpers/current-release.mjs';
+import { precedingReleaseBytes } from './helpers/october-27-release.mjs';
 import { readFile, readdir, access } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
@@ -17,7 +18,7 @@ const planned = baseline.plannedArticles;
 const oldSlugs = baseline.articles.map(a => a.slug);
 const newSlugs = planned.map(a => a.slug);
 const allSlugs = [...oldSlugs, ...newSlugs];
-const laterSlugs = registry.OCTOBER_26_CAMPAIGN_DAY3_ARTICLE_SLUGS;
+const laterSlugs = laterSlugsThan(allSlugs);
 const currentSlugs = [...allSlugs, ...laterSlugs];
 const origin = 'https://www.arclifteq.com';
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -62,19 +63,18 @@ describe('2026-10-25 campaign day2: twenty new URLs after the published ninety',
       }
     }
     for (const file of baseline.preservedFiles) {
-      const bytes = await readFile(resolve(root, file.path));
-      const comparable = file.path === 'public/images/asset-manifest.json' ? precedingManifestBytes(bytes)
-        : file.path === 'public/_redirects' ? retainedRedirectBytes(bytes)
+      const bytes = precedingReleaseBytes(file.path, await readFile(resolve(root, file.path)));
+      const comparable = file.path === 'public/_redirects' ? retainedRedirectBytes(bytes)
         : file.normalizeNewlines ? bytes.toString().replace(/\r\n/g, '\n') : bytes;
       expect(sha256(comparable), file.path).toBe(file.sha256);
     }
   });
 
-  it('retains the fixed 110 day2 articles within 130 current source files and executable audit targets', async () => {
+  it('retains the fixed 110 day2 articles within current source files and executable audit targets', async () => {
     const actual = (await readdir(resolve(root, 'src/content/blog'))).filter(p => p.endsWith('.md')).map(p => p.slice(0, -3));
-    expect(actual).toHaveLength(130);
+    expect(actual).toHaveLength(CURRENT_ARTICLE_COUNT);
     expect(actual.sort()).toEqual([...currentSlugs].sort());
-    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(130);
+    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(CURRENT_ARTICLE_COUNT);
     expect([...EXTENDED_LAUNCH_SLUGS].sort()).toEqual([...currentSlugs].sort());
   });
 
@@ -92,7 +92,7 @@ describe('2026-10-25 campaign day2: twenty new URLs after the published ninety',
   it('keeps all original topic memberships and gives each new guide a contextual incoming link', () => {
     expect(GUIDE_TOPICS.map(t => ({ name: t.name, slugs: t.slugs.filter(s => oldSlugs.includes(s)) }))).toEqual(baseline.guideTopics);
     const assigned = GUIDE_TOPICS.flatMap(t => t.slugs);
-    expect(assigned).toHaveLength(130);
+    expect(assigned).toHaveLength(CURRENT_ARTICLE_COUNT);
     expect([...assigned].sort()).toEqual([...currentSlugs].sort());
     const posts = currentSlugs.map(id => ({ id, data: { title: id, description: 'Guide.', draft: false } }));
     for (const article of planned) {
@@ -156,33 +156,35 @@ describe('2026-10-25 campaign day2: twenty new URLs after the published ninety',
       .toBeGreaterThanOrEqual(1);
   });
 
-  it('retains day2 discovery within 130 guides and places its twenty articles on page two', async () => {
+  it('retains day2 discovery within current guides while newer cohorts shift pagination', async () => {
     const first = await built('/blog/');
     const directory = first.find(n => n.attrs?.some(a => a.name === 'data-guide-directory'));
     expect(directory).toBeDefined();
     const directoryLinks = nodes(directory).filter(n => n.tagName === 'a').map(n => attr(n, 'href'));
     expect(directoryLinks.sort()).toEqual(currentSlugs.map(s => `/blog/${s}/`).sort());
     const cards = [];
-    for (const [index, count] of [20, 20, 20, 20, 20, 20, 10].entries()) {
+    for (const [index, count] of CURRENT_PAGE_SIZES.entries()) {
       const page = index === 0 ? first : await built(`/blog/page/${index + 1}/`);
       const links = page.filter(n => n.tagName === 'a' && hasClass(n, 'blog-card')).map(n => attr(n, 'href'));
       expect(links, `page ${index + 1}`).toHaveLength(count);
-      if (index === 1) expect([...links].sort()).toEqual(newSlugs.map(s => `/blog/${s}/`).sort());
+      // October25 spans pages two and three after the ten October27 additions.
       cards.push(...links);
     }
     expect(cards.sort()).toEqual(currentSlugs.map(s => `/blog/${s}/`).sort());
-    expect(new Set(cards).size).toBe(130);
+    expect(new Set(cards).size).toBe(CURRENT_ARTICLE_COUNT);
   });
 
-  it('preserves the fixed 139 day2 sitemap URLs within the current 160 URL release', async () => {
+  it('preserves the fixed 139 day2 sitemap URLs within the current URL release', async () => {
     expect(baseline.sitemapUrls).toHaveLength(118);
     const xml = await readFile(resolve(root, 'dist/sitemap-0.xml'), 'utf8');
     const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
-    const articleUrls = (list) => list.filter(url => !/\/blog\/page\/\d+\/$/.test(url));
-    const expected = articleUrls([...baseline.sitemapUrls, ...newSlugs.map(s => `${origin}/blog/${s}/`)]);
-    const currentExpected = articleUrls([...expected, ...laterSlugs.map(s => `${origin}/blog/${s}/`)]);
-    expect(xml).not.toMatch(/\/blog\/page\/\d+\//);
-    expect([...articleUrls(urls)].sort()).toEqual(currentExpected.sort());
+    const expected = [...baseline.sitemapUrls, ...newSlugs.map(s => `${origin}/blog/${s}/`), `${origin}/blog/page/6/`];
+    expect(new Set(expected).size).toBe(139);
+    const currentExpected = currentSitemapUrls(expected);
+    expect(urls).toHaveLength(CURRENT_SITEMAP_COUNT);
+    expect(new Set(urls).size).toBe(CURRENT_SITEMAP_COUNT);
+    expect([...urls].sort()).toEqual(currentExpected.sort());
+    expect(urls.filter(url => /^\/blog\/page(?:\/|$)/.test(new URL(url).pathname))).toEqual([]);
     for (const slug of newSlugs) {
       const page = await built(`/blog/${slug}/`);
       expect(page.filter(n => n.tagName === 'link' && attr(n, 'rel') === 'canonical').map(n => attr(n, 'href'))).toEqual([`${origin}/blog/${slug}/`]);

@@ -1,0 +1,153 @@
+{
+  "precedingCommit": "e1c3ffa8447ceee2210e202486797e9b38317b70",
+  "updated": "2026-11-02",
+  "reason": "Explicitly authorized repair of four existing URLs; no new articles or cohort changes. Exact source and photograph revisions supplement historical frozen baselines.",
+  "articles": [
+    {
+      "slug": "ceiling-platform-charging-and-parking-brief",
+      "beforeSha256": "c7d4252d1aee19a1f24bb3d5bb078d12c0465d5775ab64bbec05fe79510f7b59",
+      "sha256": "6a173d19d01fa48231a7e662a56504ec4ad9c95110e3a7e1cc6f5fcfcf2cca14",
+      "beforePhotos": {
+        "slug": "ceiling-platform-charging-and-parking-brief",
+        "cover": [
+          "/images/equipment/entry-real-cover.webp"
+        ],
+        "body": [
+          "/images/equipment/entry-real-interior.webp",
+          "/images/equipment/entry-real-approach.webp",
+          "/images/equipment/transport-real-cover.webp"
+        ]
+      },
+      "photos": {
+        "slug": "ceiling-platform-charging-and-parking-brief",
+        "cover": [
+          "/images/equipment/buyer-20261102-workshop-low-deck.webp"
+        ],
+        "body": [
+          "/images/equipment/buyer-20261029-deck-folded.webp",
+          "/images/equipment/buyer-20261102-hall-ground-route.webp"
+        ]
+      }
+    },
+    {
+      "slug": "ceiling-platform-control-view-between-workfaces",
+      "beforeSha256": "77c2564e6f7a3f5a1bce708edffa8c9457d014cc493feac129df602f28f5243d",
+      "sha256": "ad8953724451366536111ac87ef8449ddf57862db2a3595c057f682bb78d9958",
+      "beforePhotos": {
+        "slug": "ceiling-platform-control-view-between-workfaces",
+        "cover": [
+          "/images/equipment/entry-real-cover.webp"
+        ],
+        "body": [
+          "/images/equipment/entry-real-interior.webp",
+          "/images/equipment/entry-real-approach.webp",
+          "/images/equipment/transport-real-cover.webp"
+        ]
+      },
+      "photos": {
+        "slug": "ceiling-platform-control-view-between-workfaces",
+        "cover": [
+          "/images/equipment/buyer-20261029-ceiling-interface.webp"
+        ],
+        "body": [
+          "/images/equipment/buyer-20261027-ceiling-side.webp",
+          "/images/equipment/buyer-20261027-ceiling-wide.webp"
+        ]
+      }
+    },
+    {
+      "slug": "roll-forming-lift-control-cabinet-site-conditions",
+      "beforeSha256": "835c3f985f52b9eec081a7121e89c0288fd4f930f4eda8c72ac8e5067241f4c1",
+      "sha256": "3a2d6a716a1a010927860d4efe4ac3d14864e4b648a6ef7dc778dfdc0ba25e3e",
+      "beforePhotos": {
+        "slug": "roll-forming-lift-control-cabinet-site-conditions",
+        "cover": [
+          "/images/equipment/coil-real-handling.webp"
+        ],
+        "body": [
+          "/images/equipment/coil-real-module.webp",
+          "/images/equipment/coil-real-cover.webp",
+          "/images/equipment/coil-real-panel.webp"
+        ]
+      },
+      "photos": {
+        "slug": "roll-forming-lift-control-cabinet-site-conditions",
+        "cover": [
+          "/images/equipment/buyer-20261031-crawler-line-low.webp"
+        ],
+        "body": [
+          "/images/equipment/coil-real-handling.webp",
+          "/images/equipment/transport-real-stowed.webp"
+        ]
+      }
+    },
+    {
+      "slug": "roll-forming-lift-cutting-signal-interface",
+      "beforeSha256": "23ee5119c8427c4a53c62080ce5b13889b12a60743e7bb3fc169213d7644286f",
+      "sha256": "b298f2990a45bae98ea3219a7373592be7b5893408ca650d3edee96cc4a642a1",
+      "beforePhotos": {
+        "slug": "roll-forming-lift-cutting-signal-interface",
+        "cover": [
+          "/images/equipment/coil-real-handling.webp"
+        ],
+        "body": [
+          "/images/equipment/coil-real-module.webp",
+          "/images/equipment/coil-real-cover.webp",
+          "/images/equipment/coil-real-panel.webp"
+        ]
+      },
+      "photos": {
+        "slug": "roll-forming-lift-cutting-signal-interface",
+        "cover": [
+          "/images/equipment/buyer-20261028-profile-cutter.webp"
+        ],
+        "body": [
+          "/images/equipment/coil-real-module.webp",
+          "/images/equipment/coil-real-handling.webp"
+        ]
+      }
+    }
+  ],
+  "retainedNovember02Articles": [
+    {
+      "slug": "roof-panel-oil-canning-roll-former-purchase",
+      "sha256": "c436a51af0be50c7ee5a942ff0ec970d70614041eef6c362f8427be0ce91830b"
+    },
+    {
+      "slug": "metal-decking-vs-roof-panel-roll-forming-business",
+      "sha256": "a5d69bb8caa2596504d49f9f35e09dded9227a518a7348443fd9781fd15a843e"
+    },
+    {
+      "slug": "tile-effect-metal-roof-panel-production-equipment",
+      "sha256": "2033fa35125251af48cf611a723fc9c886b33e8ad01bcde37f05f5944777cfaf"
+    },
+    {
+      "slug": "discontinued-roof-panel-profile-replacement-tooling",
+      "sha256": "ef8aabe733a9c26837d6e8e2e2d0d8b596603d18f009d9fc9ef8c26c81d36d09"
+    },
+    {
+      "slug": "solar-ready-standing-seam-panel-tooling-selection",
+      "sha256": "3eca88020bb25eb624c5e50884fe718a044cab286a8c7fe7bcbb3e798c349f35"
+    },
+    {
+      "slug": "ceiling-platform-floor-coating-work-sequence",
+      "sha256": "4ac74e6cb7b5102f74355e8f7a4ad7fe8722ef490f97cec3188ff63ed5dd4c48"
+    },
+    {
+      "slug": "roof-panel-roll-forming-digital-job-transfer",
+      "sha256": "ff2932b006c354808e7e43312e99b8cf04c35bdce53729260d554f1b2a7a6aee"
+    },
+    {
+      "slug": "roll-forming-lift-critical-spares-stock-decision",
+      "sha256": "c9be55f77ac1dcc3d46dfb2a8b8e4d216d572fac7efd9cb3f010664831e6c160"
+    },
+    {
+      "slug": "roof-panel-roll-forming-short-order-scheduling",
+      "sha256": "2d1219bc40257caf771f36cdeb237384684fbcf4ed36eabaa2fbb02ff1b0f49d"
+    },
+    {
+      "slug": "ceiling-platform-strip-out-and-reinstallation-package",
+      "sha256": "6f94b56e64e633a3d09133cfe4c5a27f0dcb698302c264c4139210d210016a0f"
+    }
+  ]
+}

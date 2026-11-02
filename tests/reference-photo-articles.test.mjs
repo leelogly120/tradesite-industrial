@@ -1,11 +1,13 @@
-import { fourArticleRelease, retainedPhotoArticle } from './helpers/four-article-release.mjs';
 import { REVISED_BUYER_ARTICLE_SLUGS } from '../scripts/revised-buyer-articles.mjs';
+import { retainedPhotoArticle } from './helpers/retained-production-content.mjs';
 import { readFile, readdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import sharp from 'sharp';
 import { REFERENCE_PHOTO_ARTICLES } from '../scripts/reference-photo-articles.mjs';
+import { BUYER_ARTICLE_SLUGS } from '../scripts/lift-platform-article-registry.mjs';
+import { BUYER_PHOTO_URLS } from './helpers/current-release.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const expectedArticles = [
@@ -141,21 +143,21 @@ function assertPhotoDisclosure({ alt, caption }, context, revised = false) {
 
 describe('approved reference photographs', () => {
   it('preserves all107 prior photo articles and registers twenty day3 articles using the same twelve photographs', async () => {
-    expect(REFERENCE_PHOTO_ARTICLES).toEqual(expectedArticles.map(({ slug, images }) => ({
+    const legacyPhotoArticles = REFERENCE_PHOTO_ARTICLES.filter(article => !BUYER_ARTICLE_SLUGS.includes(article.slug));
+    expect(legacyPhotoArticles).toEqual(expectedArticles.map(({ slug, images }) => ({
       slug,
       cover: [photoUrl(images[0])],
       body: images.slice(1).map(photoUrl),
     })).map(retainedPhotoArticle));
-    const urls = REFERENCE_PHOTO_ARTICLES.flatMap(({ cover, body }) => [...cover, ...body]);
-    const unchangedPhotoUses = REFERENCE_PHOTO_ARTICLES.filter(article => !REVISED_BUYER_ARTICLE_SLUGS.includes(article.slug)).flatMap(({ cover, body }) => [...cover, ...body]);
+    const urls = legacyPhotoArticles.flatMap(({ cover, body }) => [...cover, ...body]);
+    const unchangedPhotoUses = legacyPhotoArticles.filter(article => !REVISED_BUYER_ARTICLE_SLUGS.includes(article.slug)).flatMap(({ cover, body }) => [...cover, ...body]);
     expect(new Set(unchangedPhotoUses).size).toBe(12);
-    expect(new Set(urls).size).toBe(20);
     const registry = await readFile(resolve(root, 'scripts/reference-photo-articles.mjs'), 'utf8');
     expect(registry).not.toMatch(privateIdentity);
     expect(registry).not.toMatch(/(?:source|original)[_-]?(?:file|name|path)|raw[_-]?path/i);
 
     for (const name of await readdir(resolve(root, 'src/content/blog'))) {
-      if (!name.endsWith('.md') || expectedArticles.some(({ slug }) => name === `${slug}.md`)) continue;
+      if (!name.endsWith('.md') || expectedArticles.some(({ slug }) => name === `${slug}.md`) || BUYER_ARTICLE_SLUGS.includes(name.slice(0, -3))) continue;
       const article = await readFile(resolve(root, 'src/content/blog', name), 'utf8');
       for (const url of urls) expect(article, `${name}: unapproved photo migration`).not.toContain(url);
     }
@@ -163,9 +165,7 @@ describe('approved reference photographs', () => {
 
   it('registers exactly twelve real reference photographs separately from synthetic editorial assets', async () => {
     const manifest = JSON.parse(await readFile(resolve(root, 'public/images/asset-manifest.json'), 'utf8'));
-    expect(manifest.referencePhotos ?? []).toHaveLength(20);
-    const addedUrls = fourArticleRelease.addedPhotos.map(photo => photo.record.url);
-    const legacyPhotos = manifest.referencePhotos.filter(photo => !addedUrls.includes(photo.url));
+    const legacyPhotos = (manifest.referencePhotos ?? []).filter(photo => !BUYER_PHOTO_URLS.includes(photo.url));
     expect(legacyPhotos).toHaveLength(12);
     const expectedUrls = Object.keys(expectedDimensions).map(photoUrl).sort();
     expect(legacyPhotos.map(({ url }) => url).sort()).toEqual(expectedUrls);

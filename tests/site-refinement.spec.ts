@@ -59,7 +59,7 @@ test('mobile navigation traps focus and restores the menu trigger', async ({ pag
   await expect(close).toBeFocused();
 
   await page.keyboard.press('Shift+Tab');
-  await expect(drawer.getByRole('link', { name: 'Email ARCLIFT' })).toBeFocused();
+  await expect(drawer.getByRole('link', { name: 'leelogly120@gmail.com' })).toBeFocused();
   await page.keyboard.press('Tab');
   await expect(close).toBeFocused();
 

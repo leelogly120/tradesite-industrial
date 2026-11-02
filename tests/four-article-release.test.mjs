@@ -9,6 +9,8 @@ import { auditFiles, EXTENDED_LAUNCH_SLUGS } from '../scripts/audit-lift-platfor
 import { buyerArticleFailures } from '../scripts/lib/buyer-article-audit.mjs';
 import { REVISED_BUYER_ARTICLE_SLUGS } from '../scripts/revised-buyer-articles.mjs';
 import { REFERENCE_PHOTO_ARTICLES } from '../scripts/reference-photo-articles.mjs';
+import { BUYER_ARTICLE_SLUGS } from '../scripts/lift-platform-article-registry.mjs';
+import { CURRENT_ARTICLE_COUNT, CURRENT_SITEMAP_COUNT, CURRENT_REFERENCE_PHOTO_COUNT } from './helpers/current-release.mjs';
 import { fourArticleRelease as fixture, retainedPhotoArticle, precedingManifestBytes } from './helpers/four-article-release.mjs';
 
 const root = resolve(import.meta.dirname, '..');
@@ -20,12 +22,16 @@ const attr = (node, name) => node.attrs?.find(item => item.name === name)?.value
 const text = node => !node ? '' : node.nodeName === '#text' ? node.value : (node.childNodes ?? []).map(text).join(' ');
 const hasClass = (node, name) => (attr(node, 'class') ?? '').split(/\s+/).includes(name);
 
-describe('four revised existing articles within the 130-article release', () => {
-  it('retains all 126 other manuscripts and publishes exactly the original 130 routes', async () => {
+describe('four revised existing articles alongside the 70 newly published buyer guides', () => {
+  it('retains all 126 other manuscripts and preserves all original routes alongside the 70 registered additions', async () => {
     expect(fixture.articles).toHaveLength(4);
     expect(fixture.retainedArticles).toHaveLength(126);
-    const expected = [...fixture.retainedArticles, ...fixture.articles].map(article => article.slug).sort();
-    expect(new Set(expected).size).toBe(130);
+    const original = [...fixture.retainedArticles, ...fixture.articles].map(article => article.slug);
+    expect(original).toHaveLength(130);
+    expect(BUYER_ARTICLE_SLUGS).toHaveLength(70);
+    expect(BUYER_ARTICLE_SLUGS.filter(slug => original.includes(slug))).toEqual([]);
+    const expected = [...original, ...BUYER_ARTICLE_SLUGS].sort();
+    expect(new Set(expected).size).toBe(CURRENT_ARTICLE_COUNT);
     const actual = (await readdir(resolve(root, 'src/content/blog'))).filter(name => name.endsWith('.md')).map(name => name.slice(0, -3)).sort();
     expect(actual).toEqual(expected);
     expect([...EXTENDED_LAUNCH_SLUGS].sort()).toEqual(expected);
@@ -64,7 +70,7 @@ describe('four revised existing articles within the 130-article release', () => 
     const schema = html.filter(node => node.tagName === 'script' && attr(node, 'type') === 'application/ld+json').map(node => JSON.parse((node.childNodes ?? []).map(child => child.value ?? '').join(''))).find(data => data['@type'] === 'BlogPosting');
     expect(schema).toMatchObject({ datePublished: '2026-10-26T00:00:00.000Z', dateModified: '2026-11-02T00:00:00.000Z' });
     const sitemap = await readFile(resolve(root, 'dist/sitemap-0.xml'), 'utf8');
-    expect([...sitemap.matchAll(/<loc>/g)]).toHaveLength(154);
+    expect([...sitemap.matchAll(/<loc>/g)]).toHaveLength(CURRENT_SITEMAP_COUNT);
     expect(sitemap).not.toMatch(/\/blog\/page(?:\/|<)/);
     const entry = [...sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)].find(match => match[1].includes(`/blog/${article.slug}/</loc>`))?.[1];
     expect(entry).toMatch(/<lastmod>2026-11-02(?:T[^<]*)?<\/lastmod>/);
@@ -72,7 +78,7 @@ describe('four revised existing articles within the 130-article release', () => 
 
   it.each(fixture.addedPhotos)('$record.url preserves the reviewed pixels, dimensions and public metadata', async ({ record, sha256: expectedSha }) => {
     const manifest = JSON.parse(await readFile(resolve(root, 'public/images/asset-manifest.json'), 'utf8'));
-    expect(manifest.referencePhotos).toHaveLength(20);
+    expect(manifest.referencePhotos).toHaveLength(CURRENT_REFERENCE_PHOTO_COUNT);
     expect(manifest.referencePhotos.find(photo => photo.url === record.url)).toEqual(record);
     const bytes = await readFile(resolve(root, 'public' + record.url));
     expect(sha256(bytes)).toBe(expectedSha);
@@ -92,7 +98,7 @@ describe('four revised existing articles within the 130-article release', () => 
       expect(() => retainedPhotoArticle({ ...article.beforePhotos, body: ['/images/unreviewed.webp'] })).toThrow(/Unknown/);
     }
     const bytes = await readFile(resolve(root, 'public/images/asset-manifest.json'));
-    expect(JSON.parse(precedingManifestBytes(bytes)).referencePhotos).toHaveLength(12);
+    expect(JSON.parse(precedingManifestBytes(bytes)).referencePhotos).toHaveLength(CURRENT_REFERENCE_PHOTO_COUNT - fixture.addedPhotos.length);
     const altered = JSON.parse(bytes);
     altered.referencePhotos.find(photo => photo.url === fixture.addedPhotos[0].record.url).width += 1;
     expect(() => precedingManifestBytes(Buffer.from(JSON.stringify(altered)))).toThrow(/Unknown/);

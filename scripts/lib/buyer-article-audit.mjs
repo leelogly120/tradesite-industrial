@@ -1,3 +1,4 @@
+import { REVIEWED_BUYER_UPDATES } from '../reviewed-buyer-updates.mjs';
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -45,7 +46,7 @@ function clarityFailures(content, frontmatter) {
 }
 
 // Mechanical checks support editorial review; they do not score originality or engineering suitability.
-export function buyerArticleFailures(markdown, expectedDate) {
+export function buyerArticleFailures(markdown, expectedDate, registeredSlug) {
   const failures = new Set();
   let fm, content;
   try { ({ frontmatter: fm, content } = parseFrontmatter(markdown)); }
@@ -53,10 +54,11 @@ export function buyerArticleFailures(markdown, expectedDate) {
   const body = visible(content);
   // expectedDate comes from the registered cohort, never manuscript frontmatter.
   // New buyer cohorts inherit this policy; earlier reviewed manuscripts retain their contract.
-  if (expectedDate >= '2026-10-29') clarityFailures(content, fm).forEach(failure => failures.add(failure));
+  const expectedUpdatedDate = REVIEWED_BUYER_UPDATES.find(article => article.slug === registeredSlug && article.date === expectedDate)?.updated ?? expectedDate;
+  if (expectedUpdatedDate >= '2026-10-29') clarityFailures(content, fm).forEach(failure => failures.add(failure));
   const date = value => { const parsed = new Date(value); return Number.isFinite(parsed.getTime()) ? parsed.toISOString().slice(0, 10) : ''; };
   if (typeof fm.title !== 'string' || fm.title.length < 20 || typeof fm.description !== 'string' || fm.description.length < 50 || fm.description.length > 160
-    || !expectedDate || date(fm.date) !== expectedDate || date(fm.updated) !== expectedDate || fm.author !== 'ARCLIFT Technical Editorial' || fm.draft !== false
+    || !expectedDate || date(fm.date) !== expectedDate || date(fm.updated) !== expectedUpdatedDate || fm.author !== 'ARCLIFT Technical Editorial' || fm.draft !== false
     || !Array.isArray(fm.tags) || fm.tags.length < 3 || fm.tags.length > 5 || fm.tags.some(tag => typeof tag !== 'string' || tag.trim().length < 2)) failures.add('missing-buyer-metadata');
 
   const first = body.split(/\r?\n\s*\r?\n/).map(text => text.replace(/^#\s+.*$/m, '').trim()).find(Boolean) ?? '';

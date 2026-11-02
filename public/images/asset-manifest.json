@@ -1038,7 +1038,215 @@
       "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
     },
     {
-      "url": "/images/equipment/buyer-20261102-workshop-low-deck.webp",
+      "url": "/images/equipment/buyer-20261027-forming-line.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-twin-lines.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-rollers.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-tooling.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-truck-roof.webp",
+      "width": 1080,
+      "height": 1440,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-roof-interface.webp",
+      "width": 1400,
+      "height": 1352,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-crawler-roof.webp",
+      "width": 1000,
+      "height": 2197,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-ceiling-wide.webp",
+      "width": 1600,
+      "height": 1067,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-ceiling-side.webp",
+      "width": 1600,
+      "height": 1067,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-wall-frame.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-transport.webp",
+      "width": 744,
+      "height": 419,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-loading.webp",
+      "width": 683,
+      "height": 370,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-coil-transfer.webp",
+      "width": 680,
+      "height": 562,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-module-transfer.webp",
+      "width": 607,
+      "height": 563,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-material-interface.webp",
+      "width": 593,
+      "height": 411,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261028-wrapped-line.webp",
+      "width": 800,
+      "height": 600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261028-profile-cutter.webp",
+      "width": 800,
+      "height": 600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261028-truck-loading.webp",
+      "width": 800,
+      "height": 600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261028-truck-dispatch.webp",
+      "width": 800,
+      "height": 600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261028-coil-feed.webp",
+      "width": 800,
+      "height": 600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261028-panel-outlet.webp",
+      "width": 800,
+      "height": 600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261028-long-panel.webp",
+      "width": 800,
+      "height": 600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261028-crawler-base.webp",
+      "width": 800,
+      "height": 534,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261029-deck-yard.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261029-wall-corridor.webp",
+      "width": 1200,
+      "height": 1600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261029-wall-installation.webp",
+      "width": 1200,
+      "height": 1600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261029-wall-yard.webp",
       "width": 1600,
       "height": 1200,
       "classification": "editorial",
@@ -1054,7 +1262,7 @@
       "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
     },
     {
-      "url": "/images/equipment/buyer-20261102-hall-ground-route.webp",
+      "url": "/images/equipment/buyer-20261029-deck-hall.webp",
       "width": 1600,
       "height": 1067,
       "classification": "editorial",
@@ -1070,20 +1278,84 @@
       "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
     },
     {
-      "url": "/images/equipment/buyer-20261027-ceiling-side.webp",
+      "url": "/images/equipment/buyer-20261029-port-handling.webp",
       "width": 1600,
-      "height": 1067,
+      "height": 900,
       "classification": "editorial",
       "medium": "reference-photograph",
-      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
     },
     {
-      "url": "/images/equipment/buyer-20261027-ceiling-wide.webp",
+      "url": "/images/equipment/buyer-20261030-crawler-forming-site.webp",
+      "width": 728,
+      "height": 1600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261030-line-frame.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261030-panel-samples.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261030-feed-entry.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261030-stored-line-frames.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261030-deck-site-wide.webp",
       "width": 1600,
       "height": 1067,
       "classification": "editorial",
       "medium": "reference-photograph",
-      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261030-wall-site.webp",
+      "width": 1200,
+      "height": 1600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261030-vertical-deck.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261031-crawler-roof-side.webp",
+      "width": 728,
+      "height": 1600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
     },
     {
       "url": "/images/equipment/buyer-20261031-crawler-line-low.webp",
@@ -1094,12 +1366,180 @@
       "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
     },
     {
-      "url": "/images/equipment/buyer-20261028-profile-cutter.webp",
-      "width": 800,
-      "height": 600,
+      "url": "/images/equipment/buyer-20261031-roof-framing.webp",
+      "width": 728,
+      "height": 1600,
       "classification": "editorial",
       "medium": "reference-photograph",
-      "disclosure": "Real equipment photograph processed with non-generative tone adjustment, local identity/privacy blur where needed and WebP encoding."
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261031-container-rear.webp",
+      "width": 1200,
+      "height": 1600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261031-port-handling.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261031-deck-top.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261031-deck-raised-yard.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261031-hall-construction.webp",
+      "width": 1600,
+      "height": 1067,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261101-former-entry.webp",
+      "width": 1200,
+      "height": 1600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261101-roller-components.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261101-profiled-sheet.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261101-roller-line-detail.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261101-roof-panels.webp",
+      "width": 728,
+      "height": 1600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261101-crawler-former-yard.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261101-deck-underside.webp",
+      "width": 1600,
+      "height": 1067,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261101-deck-hall-low.webp",
+      "width": 1600,
+      "height": 1067,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261102-profile-tooling-closeup.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261102-roller-row.webp",
+      "width": 1200,
+      "height": 1600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261102-wrapped-former.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261102-embossed-panel-outlet.webp",
+      "width": 1600,
+      "height": 1067,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261102-embossed-sheet-sample.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261102-workshop-low-deck.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261102-hall-ground-route.webp",
+      "width": 1600,
+      "height": 1067,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261102-elevated-former-coils.webp",
+      "width": 728,
+      "height": 1600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
     }
   ]
 }

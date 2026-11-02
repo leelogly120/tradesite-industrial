@@ -2,6 +2,7 @@
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import { getCollection, render } from 'astro:content';
 import { getGuideTopic, getRelatedGuides } from '../../lib/guide-navigation';
+import { buyerCohortForSlug } from '../../../scripts/lift-platform-article-registry.mjs';
 import { REVISED_BUYER_ARTICLE_SLUGS } from '../../../scripts/revised-buyer-articles.mjs';
 
 export async function getStaticPaths() {
@@ -22,7 +23,7 @@ const allPosts = await getCollection('blog');
 const relatedGuides = getRelatedGuides(post.id, allPosts);
 const guideTopic = getGuideTopic(post.id)?.name;
 const slug = post.id.replace(/\.md$/, '');
-const isBuyerGuide = REVISED_BUYER_ARTICLE_SLUGS.includes(slug);
+const isBuyerGuide = Boolean(buyerCohortForSlug(slug)) || REVISED_BUYER_ARTICLE_SLUGS.includes(slug);
 const buyerLead = isBuyerGuide
   ? post.body.replace(/<!--[\s\S]*?-->/g, '').split(/\r?\n\s*\r?\n/).map(part => part.trim()).find(part => part && !/^#/.test(part))
       ?.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[*_`]/g, '')

@@ -1,7 +1,8 @@
 import { readFile } from 'node:fs/promises';
-import { resolve } from 'node:path';
+import { resolve, basename } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { BASELINE_BLOG_SLUGS } from './lift-platform-article-registry.mjs';
+import { BASELINE_BLOG_SLUGS, BUYER_ARTICLE_COHORTS, buyerCohortForSlug } from './lift-platform-article-registry.mjs';
+import { buyerArticleFailures } from './lib/buyer-article-audit.mjs';
 
 export const LAUNCH_SLUGS = [...BASELINE_BLOG_SLUGS];
 
@@ -78,7 +79,7 @@ const HIGH_RISK_PATTERNS = [
   /\b(?:complies?\s+with|compliance\s+with)\s+(?:EN|ISO|CE|UL|CSA)\b/i,
   /\bpatent(?:ed|\s+pending|\s+protection)?\b/i,
   /\b(?:in stock|available from stock)\b/i,
-  /\b(?:delivery|lead(?:\s|-)?time|shipping|ships?)[^.\n]{0,60}?\b(?:in|within)\s+(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty[- ]four)\s+(?:hours?|days?|weeks?|months?)\b/i,
+  /\b(?:deliver(?:y|ed)|lead(?:\s|-)?time|shipping|ships?)[^.\n]{0,60}?\b(?:in|within)\s+(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty[- ]four)\s+(?:hours?|days?|weeks?|months?)\b/i,
   /\b\d+(?:\.\d+)?%\s+(?:savings?|faster|improvement|increase|reduction|more productive|less)\b/i,
   /\b\d+(?:\.\d+)?\s+percent\s+(?:labor\s+)?(?:savings?|reduction|improvement)\b/i,
   /\b(?:reduces?|cuts?|lowers?)\s+(?:labor|costs?|time)\s+by\s+\d+(?:\.\d+)?(?:%|\s+percent)/i,
@@ -296,6 +297,11 @@ function evaluateCategories(markdown, images) {
 export function auditArticle(markdown, options = {}) {
   const cleanMarkdown = stripBom(markdown);
   const failures = textFailures(cleanMarkdown);
+  const buyerCohort = BUYER_ARTICLE_COHORTS.find(cohort => cohort.standard === options.standard);
+  if (buyerCohort) {
+    if (hasEditorialImageEvidenceClaim(cleanMarkdown)) failures.add('editorial-image-evidence-claim');
+    return createReport([...failures, ...buyerArticleFailures(cleanMarkdown, buyerCohort.date, options.slug)], { standard: buyerCohort.standard });
+  }
   const images = publicImages(cleanMarkdown);
   const minimumImages = options.minimumImages ?? 3;
 
@@ -362,7 +368,8 @@ export async function auditFiles(paths) {
   for (const path of paths) {
     try {
       const content = await readFile(path, 'utf8');
-      files[path] = path.toLowerCase().endsWith('.json') ? auditManifest(content) : auditArticle(content);
+      const standard = buyerCohortForSlug(basename(path, '.md'))?.standard;
+      files[path] = path.toLowerCase().endsWith('.json') ? auditManifest(content) : auditArticle(content, { standard, slug: basename(path, '.md') });
     } catch (error) {
       files[path] = createReport(['unreadable-file'], { error: error.message });
     }

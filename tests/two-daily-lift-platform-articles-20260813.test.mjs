@@ -1,3 +1,4 @@
+import { CURRENT_ARTICLE_COUNT, CURRENT_SLUGS, HISTORICAL_50_SLUGS } from './helpers/current-release.mjs';
 import { access, readdir, readFile } from 'node:fs/promises';
 import { constants } from 'node:fs';
 import { resolve } from 'node:path';
@@ -8,10 +9,6 @@ import {
   ALL_LIFT_PLATFORM_ARTICLES,
   AUGUST_13_LIFT_PLATFORM_ARTICLES,
   BASELINE_BLOG_SLUGS,
-  OCTOBER_23_LIFT_PLATFORM_ARTICLE_SLUGS,
-  OCTOBER_24_CAMPAIGN_DAY1_ARTICLE_SLUGS,
-  OCTOBER_25_CAMPAIGN_DAY2_ARTICLE_SLUGS,
-  OCTOBER_26_CAMPAIGN_DAY3_ARTICLE_SLUGS,
 } from '../scripts/lift-platform-article-registry.mjs';
 
 const root = resolve(import.meta.dirname, '..');
@@ -76,9 +73,9 @@ describe('2026-08-13 two-article release contract', () => {
       diagram,
       cluster: expect.any(String),
     })));
-    expect(new Set(expected.filter(slug => !OCTOBER_23_LIFT_PLATFORM_ARTICLE_SLUGS.includes(slug) && !OCTOBER_24_CAMPAIGN_DAY1_ARTICLE_SLUGS.includes(slug) && !OCTOBER_25_CAMPAIGN_DAY2_ARTICLE_SLUGS.includes(slug) && !OCTOBER_26_CAMPAIGN_DAY3_ARTICLE_SLUGS.includes(slug))).size).toBe(50);
-    expect(new Set(expected).size).toBe(130);
-    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(130);
+    expect(new Set(expected.filter(slug => HISTORICAL_50_SLUGS.includes(slug))).size).toBe(50);
+    expect(new Set(expected).size).toBe(CURRENT_ARTICLE_COUNT);
+    expect(new Set(EXTENDED_LAUNCH_SLUGS).size).toBe(CURRENT_ARTICLE_COUNT);
     const actual = (await readdir(blogRoot)).filter((name) => name.endsWith('.md')).map((name) => name.slice(0, -3)).sort();
     expect(actual).toEqual(expected.sort());
   });
