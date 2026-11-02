@@ -481,10 +481,17 @@ describe('public route integrity', () => {
 
     for (const file of files) {
       const text = await readFile(file, 'utf8');
-      if (/\/solutions\//i.test(text)) failures.push(displayPath(file));
+      if (literalInternalLinks(text).some(href => /^\/solutions\//i.test(href))) failures.push(displayPath(file));
     }
 
     expect(failures).toEqual([]);
+  });
+
+  it('distinguishes external solutions citations from unresolved internal routes', () => {
+    const citedSource = '[Manufacturer portfolio](https://www.hennecke.com/en/solutions/machines-and-production-systems/sandwich-panel-lines)';
+    const internalRoutes = '<a href="/solutions/roof/">Roof</a> [Ceiling](/solutions/ceiling/)';
+    expect(literalInternalLinks(citedSource)).toEqual([]);
+    expect(literalInternalLinks(internalRoutes).filter(href => /^\/solutions\//i.test(href))).toEqual(['/solutions/roof/', '/solutions/ceiling/']);
   });
 
   it('uses the exact trailing-slash form of published internal page routes', async () => {

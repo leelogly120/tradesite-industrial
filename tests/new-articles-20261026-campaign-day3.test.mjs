@@ -1,3 +1,6 @@
+import { precedingManifestBytes } from './helpers/four-article-release.mjs';
+import { retainedPhotoArticle } from './helpers/four-article-release.mjs';
+import { REVISED_BUYER_ARTICLE_SLUGS } from '../scripts/revised-buyer-articles.mjs';
 import { readFile, readdir, access } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
@@ -29,14 +32,9 @@ const built = async route => nodes(parse(await readFile(resolve(root, 'dist', `.
 const processor = await createMarkdownProcessor();
 const readArticle = slug => readFile(resolve(root, 'src/content/blog', slug + '.md'), 'utf8');
 const markers = ['buyer-intent', 'conditions', 'evidence-tradeoffs', 'limitations-not-fit', 'project-checklist', 'cta-editorial-note'];
-const softLandings = new Set([
-  'ceiling-platform-charging-and-parking-brief',
-  'ceiling-platform-control-view-between-workfaces',
-  'roll-forming-lift-control-cabinet-site-conditions',
-  'roll-forming-lift-cutting-signal-interface',
-]);
+const revisedArticles = new Set(REVISED_BUYER_ARTICLE_SLUGS);
 const remediated = new Set([
-  ...softLandings,
+  ...revisedArticles,
   'ceiling-platform-dual-power-task-boundary',
   'ceiling-platform-occupied-building-work-hours',
   'ceiling-platform-indoor-emissions-enquiry',
@@ -87,7 +85,8 @@ describe('2026-10-26 campaign day3: twenty new URLs after the published one hund
     }
     for (const file of baseline.preservedFiles) {
       const bytes = await readFile(resolve(root, file.path));
-      const comparable = file.path === 'public/_redirects' ? retainedRedirectBytes(bytes)
+      const comparable = file.path === 'public/images/asset-manifest.json' ? precedingManifestBytes(bytes)
+        : file.path === 'public/_redirects' ? retainedRedirectBytes(bytes)
         : file.normalizeNewlines ? bytes.toString().replace(/\r\n/g, '\n') : bytes;
       expect(sha256(comparable), file.path).toBe(file.sha256);
       expect(sha256(comparable), file.path + ': committed Git bytes').toBe(file.gitSha256);
@@ -108,7 +107,7 @@ describe('2026-10-26 campaign day3: twenty new URLs after the published one hund
     expect(baseline.referencePhotoArticles).toHaveLength(107);
     expect(REFERENCE_PHOTO_ARTICLES).toEqual([...baseline.referencePhotoArticles, ...planned.map(({ slug, photos }) => ({
       slug, cover: [photos[0].url], body: photos.slice(1).map(p => p.url),
-    }))]);
+    }))].map(retainedPhotoArticle));
     for (const article of planned) {
       expect(new Set(article.photos.map(p => p.url)).size, article.slug).toBe(4);
       for (const photo of article.photos) expect(sha256(await readFile(resolve(root, 'public', photo.url.slice(1))))).toBe(photo.sha256);
@@ -139,16 +138,16 @@ describe('2026-10-26 campaign day3: twenty new URLs after the published one hund
     expect(fm.description.length).toBeGreaterThanOrEqual(150);
     expect(fm.description.length).toBeLessThanOrEqual(160);
     expect(new Date(fm.date).toISOString()).toBe('2026-10-26T00:00:00.000Z');
-    if (remediated.has(article.slug)) expect(new Date(fm.updated).toISOString()).toBe('2026-10-28T00:00:00.000Z');
+    if (revisedArticles.has(article.slug)) expect(new Date(fm.updated).toISOString()).toBe('2026-11-02T00:00:00.000Z');
+    else if (remediated.has(article.slug)) expect(new Date(fm.updated).toISOString()).toBe('2026-10-28T00:00:00.000Z');
     else expect(fm).not.toHaveProperty('updated');
     expect(fm.draft).toBe(false);
     expect(fm.author).toBe('ARCLIFT Technical Editorial');
     const tree = parseFragment((await processor.render(content)).code), all = nodes(tree);
     if (remediated.has(article.slug)) expect(source).not.toMatch(/does not establish/i);
-    if (softLandings.has(article.slug)) {
-      expect(words(tree), article.slug).toBeGreaterThanOrEqual(120);
-      expect(words(tree), article.slug).toBeLessThan(1500);
-      expect(source).toMatch(/crawler-under-ceiling-platform-buyers-guide|high-altitude-roll-forming-lift-rfq-data|roll-forming-line-specification-long-span-roof-panels/);
+    if (revisedArticles.has(article.slug)) {
+      expect(auditArticle(source)).toMatchObject({ fatal: false, failures: [], publishable: true, score: 100 });
+      for (const marker of markers) expect(source).toContain(`<!-- audit-section: ${marker} -->`);
     } else {
       expect(words(tree)).toBeGreaterThanOrEqual(1500);
       expect(words(tree)).toBeLessThanOrEqual(3000);
@@ -165,17 +164,22 @@ describe('2026-10-26 campaign day3: twenty new URLs after the published one hund
       expect(auditArticle(source)).toMatchObject({ fatal: false, publishable: true, score: 100 });
     }
     const images = all.filter(n => n.tagName === 'img');
-    expect([fm.coverImage, ...images.map(n => attr(n, 'src'))]).toEqual(article.photos.map(p => p.url));
-    expect(images).toHaveLength(3);
+    const photoMapping = retainedPhotoArticle({ slug: article.slug, cover: [article.photos[0].url], body: article.photos.slice(1).map(photo => photo.url) });
+    expect([fm.coverImage, ...images.map(n => attr(n, 'src'))]).toEqual([...photoMapping.cover, ...photoMapping.body]);
+    expect(images).toHaveLength(photoMapping.body.length);
     expect(fm.coverAlt.length).toBeGreaterThanOrEqual(20);
-    expect(fm.coverCaption).toMatch(/reference photograph/i);
-    expect(fm.coverCaption).toMatch(/does not|cannot|not evidence/i);
+    if (!revisedArticles.has(article.slug)) {
+      expect(fm.coverCaption).toMatch(/reference photograph/i);
+      expect(fm.coverCaption).toMatch(/does not|cannot|not evidence/i);
+    } else expect(fm.coverCaption.length).toBeGreaterThanOrEqual(20);
     for (const image of images) {
       expect(attr(image, 'alt').length).toBeGreaterThanOrEqual(20);
       const siblings = image.parentNode.parentNode.childNodes;
       const next = siblings.slice(siblings.indexOf(image.parentNode) + 1).find(n => n.nodeName !== '#text' || n.value.trim());
-      expect(text(next)).toMatch(/reference photograph/i);
-      expect(text(next)).toMatch(/does not|cannot|not evidence/i);
+      if (!revisedArticles.has(article.slug)) {
+        expect(text(next)).toMatch(/reference photograph/i);
+        expect(text(next)).toMatch(/does not|cannot|not evidence/i);
+      } else expect(text(next).length).toBeGreaterThanOrEqual(20);
     }
     expect(all.filter(n => n.tagName === 'tbody').some(n => nodes(n).filter(x => x.tagName === 'tr').length >= 4)).toBe(true);
     const links = all.filter(n => n.tagName === 'a');
@@ -185,8 +189,9 @@ describe('2026-10-26 campaign day3: twenty new URLs after the published one hund
     for (const href of ctas) expect(['quote', 'datasheet', 'advice']).toContain(new URL(href, origin).searchParams.get('request'));
     // Source relevance is independently reviewed; this permanent gate requires its public anchor.
     const externalReferences = links.filter(n => attr(n, 'href')?.startsWith('https://')
-      && new URL(attr(n, 'href')).hostname !== new URL(origin).hostname && text(n).trim().length > 0 && attr(n, 'target') === '_blank'
-      && ['noopener', 'noreferrer'].every(rel => (attr(n, 'rel') ?? '').split(/\s+/).includes(rel)));
+      && new URL(attr(n, 'href')).hostname !== new URL(origin).hostname && text(n).trim().length > 0
+      && ((revisedArticles.has(article.slug) && !attr(n, 'target')) || (attr(n, 'target') === '_blank'
+        && ['noopener', 'noreferrer'].every(rel => (attr(n, 'rel') ?? '').split(/\s+/).includes(rel)))));
     expect(externalReferences.length, `${article.slug}: relevant primary-source anchor must be present with safe external-link attributes`)
       .toBeGreaterThanOrEqual(1);
   });
@@ -225,14 +230,13 @@ describe('2026-10-26 campaign day3: twenty new URLs after the published one hund
       expect(schema).toMatchObject({
         headline: planned.find(a => a.slug === slug).title,
         datePublished: '2026-10-26T00:00:00.000Z',
-        dateModified: remediated.has(slug) ? '2026-10-28T00:00:00.000Z' : '2026-10-26T00:00:00.000Z',
+        dateModified: revisedArticles.has(slug) ? '2026-11-02T00:00:00.000Z' : remediated.has(slug) ? '2026-10-28T00:00:00.000Z' : '2026-10-26T00:00:00.000Z',
       });
       const body = page.find(n => hasClass(n, 'article-content'));
       expect(body, slug).toBeDefined();
       if (remediated.has(slug)) expect(text(body), slug).not.toMatch(/does not establish/i);
-      if (softLandings.has(slug)) {
-        expect(words(body), slug).toBeGreaterThanOrEqual(120);
-        expect(words(body), slug).toBeLessThan(1500);
+      if (revisedArticles.has(slug)) {
+        expect(page.some(node => hasClass(node, 'article__buyer-lead')), slug).toBe(true);
       } else {
         expect(words(body), slug).toBeGreaterThanOrEqual(1500);
         expect(words(body), slug).toBeLessThanOrEqual(3000);

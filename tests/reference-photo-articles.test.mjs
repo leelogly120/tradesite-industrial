@@ -1,3 +1,5 @@
+import { fourArticleRelease, retainedPhotoArticle } from './helpers/four-article-release.mjs';
+import { REVISED_BUYER_ARTICLE_SLUGS } from '../scripts/revised-buyer-articles.mjs';
 import { readFile, readdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
@@ -121,13 +123,18 @@ function disclosedBodyImages(markdown) {
     .map(([, alt, url, caption]) => ({ alt, url, caption }));
 }
 
-function assertPhotoDisclosure({ alt, caption }, context) {
+function assertPhotoDisclosure({ alt, caption }, context, revised = false) {
   expect(alt.length, `${context}: descriptive alt`).toBeGreaterThanOrEqual(20);
   expect((alt.match(/[A-Za-z]+/g) ?? []).length, `${context}: meaningful alt`).toBeGreaterThanOrEqual(5);
   expect(alt, context).not.toMatch(/placeholder|image here|photo here|TBD|TODO/i);
-  expect(caption, `${context}: photo medium`).toMatch(/\bphotograph\b/i);
-  expect(caption, `${context}: reference scope`).toMatch(/\breference\b/i);
-  expect(caption, `${context}: claim boundary`).toMatch(/\b(?:does not|cannot|not (?:an?|evidence|verification|a measured))\b/i);
+  if (!revised) {
+    expect(caption, `${context}: photo medium`).toMatch(/\bphotograph\b/i);
+    expect(caption, `${context}: reference scope`).toMatch(/\breference\b/i);
+    expect(caption, `${context}: claim boundary`).toMatch(/\b(?:does not|cannot|not (?:an?|evidence|verification|a measured))\b/i);
+  } else {
+    expect(caption.length, `${context}: useful factual caption`).toBeGreaterThanOrEqual(20);
+    expect(caption, context).not.toMatch(/does not establish|cannot prove|reference only|does not verify|not evidence/i);
+  }
   expect(`${alt}\n${caption}`, context).not.toMatch(syntheticLabel);
   expect(`${alt}\n${caption}`, context).not.toMatch(privateIdentity);
 }
@@ -138,9 +145,11 @@ describe('approved reference photographs', () => {
       slug,
       cover: [photoUrl(images[0])],
       body: images.slice(1).map(photoUrl),
-    })));
+    })).map(retainedPhotoArticle));
     const urls = REFERENCE_PHOTO_ARTICLES.flatMap(({ cover, body }) => [...cover, ...body]);
-    expect(new Set(urls).size).toBe(12);
+    const unchangedPhotoUses = REFERENCE_PHOTO_ARTICLES.filter(article => !REVISED_BUYER_ARTICLE_SLUGS.includes(article.slug)).flatMap(({ cover, body }) => [...cover, ...body]);
+    expect(new Set(unchangedPhotoUses).size).toBe(12);
+    expect(new Set(urls).size).toBe(20);
     const registry = await readFile(resolve(root, 'scripts/reference-photo-articles.mjs'), 'utf8');
     expect(registry).not.toMatch(privateIdentity);
     expect(registry).not.toMatch(/(?:source|original)[_-]?(?:file|name|path)|raw[_-]?path/i);
@@ -154,10 +163,13 @@ describe('approved reference photographs', () => {
 
   it('registers exactly twelve real reference photographs separately from synthetic editorial assets', async () => {
     const manifest = JSON.parse(await readFile(resolve(root, 'public/images/asset-manifest.json'), 'utf8'));
-    expect(manifest.referencePhotos ?? []).toHaveLength(12);
+    expect(manifest.referencePhotos ?? []).toHaveLength(20);
+    const addedUrls = fourArticleRelease.addedPhotos.map(photo => photo.record.url);
+    const legacyPhotos = manifest.referencePhotos.filter(photo => !addedUrls.includes(photo.url));
+    expect(legacyPhotos).toHaveLength(12);
     const expectedUrls = Object.keys(expectedDimensions).map(photoUrl).sort();
-    expect(manifest.referencePhotos.map(({ url }) => url).sort()).toEqual(expectedUrls);
-    for (const record of manifest.referencePhotos ?? []) {
+    expect(legacyPhotos.map(({ url }) => url).sort()).toEqual(expectedUrls);
+    for (const record of legacyPhotos) {
       expect(Object.keys(record).sort()).toEqual(['classification', 'disclosure', 'height', 'medium', 'url', 'width']);
       expect(record.classification).toBe('editorial');
       expect(record.medium).toBe('reference-photograph');
@@ -200,11 +212,13 @@ describe('approved reference photographs', () => {
   it.each(expectedArticles)('$slug retains its publication date and discloses every exact photo use', async ({ slug, date, images }) => {
     const markdown = await readFile(resolve(root, 'src/content/blog', `${slug}.md`), 'utf8');
     expect(frontmatterValue(markdown, 'date')).toBe(date);
-    expect(frontmatterValue(markdown, 'coverImage')).toBe(photoUrl(images[0]));
-    assertPhotoDisclosure({ alt: frontmatterValue(markdown, 'coverAlt'), caption: frontmatterValue(markdown, 'coverCaption') }, `${slug}: cover`);
+    const revised = REVISED_BUYER_ARTICLE_SLUGS.includes(slug);
+    const mapping = retainedPhotoArticle({ slug, cover: [photoUrl(images[0])], body: images.slice(1).map(photoUrl) });
+    expect(frontmatterValue(markdown, 'coverImage')).toBe(mapping.cover[0]);
+    assertPhotoDisclosure({ alt: frontmatterValue(markdown, 'coverAlt'), caption: frontmatterValue(markdown, 'coverCaption') }, `${slug}: cover`, revised);
     const bodyImages = disclosedBodyImages(markdown);
-    expect(bodyImages.map(({ url }) => url)).toEqual(images.slice(1).map(photoUrl));
-    for (const image of bodyImages) assertPhotoDisclosure(image, `${slug}: ${image.url}`);
+    expect(bodyImages.map(({ url }) => url)).toEqual(mapping.body);
+    for (const image of bodyImages) assertPhotoDisclosure(image, `${slug}: ${image.url}`, revised);
   });
 
   it('runs this contract through the permanent content verification entry point', async () => {

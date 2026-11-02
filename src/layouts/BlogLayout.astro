@@ -16,12 +16,13 @@ interface Props {
   author?: string;
   relatedGuides?: GuideLink[];
   guideTopic?: string;
+  buyerLead?: string;
 }
 
 const {
   title, description, date, updated, tags = [], coverImage,
   coverAlt, coverCaption, readTime, author = 'ARCLIFT Team',
-  relatedGuides = [], guideTopic,
+  relatedGuides = [], guideTopic, buyerLead,
 } = Astro.props;
 const formattedDate = new Date(date).toLocaleDateString('en-US', {
   year: 'numeric', month: 'long', day: 'numeric',
@@ -60,9 +61,10 @@ const formattedDate = new Date(date).toLocaleDateString('en-US', {
   })} />
 
   <!-- HERO BANNER -->
-  <section class="hero-banner">
+  <section class:list={['hero-banner', { 'hero-banner--buyer': buyerLead }]}>
     <div class="overline">{tags.length > 0 ? tags[0] : 'Blog'}</div>
     <h1>{title}</h1>
+    {buyerLead && <p class="article__buyer-lead">{buyerLead}</p>}
     <div class="meta">
       {tags.length > 0 && <span class="tag">{tags[0]}</span>}
       <time datetime={new Date(date).toISOString()}>Published {formattedDate}</time>
@@ -86,21 +88,21 @@ const formattedDate = new Date(date).toLocaleDateString('en-US', {
   <!-- ARTICLE -->
   <article class="article">
     {coverImage && (
-      <figure class="article__hero">
+      <figure class:list={['article__hero', { 'article__hero--buyer': buyerLead }]}>
         <img src={coverImage} alt={coverAlt} loading="eager" decoding="async" fetchpriority="high" />
         <figcaption>{coverCaption}</figcaption>
       </figure>
     )}
 
     <!-- EDITORIAL NOTE -->
-    <div class="key-takeaways">
+    {!buyerLead && <div class="key-takeaways">
       <h4>Editorial & Technical Note</h4>
       <ul>
         <li>Application guidance is educational and does not replace a site-specific lift plan or local regulatory review.</li>
         <li>Product values are reference configurations; request the signed technical schedule for the quoted machine.</li>
         <li>Performance comparisons depend on crew, site, weather, access and the selected conventional method.</li>
       </ul>
-    </div>
+    </div>}
 
     <!-- CONTENT -->
     <div class="article-content">
@@ -122,9 +124,9 @@ const formattedDate = new Date(date).toLocaleDateString('en-US', {
 
   <!-- CTA -->
   <section class="cta">
-    <h2>READY TO REVIEW YOUR PROJECT DATA?</h2>
-    <p>Send the working height, panel profile, access and ground conditions, transport limits and destination market. ARCLIFT will identify the configuration questions that need confirmation before a project-specific quotation.</p>
-    <a href="/contact/" class="btn btn--white">Send Project Data →</a>
+    <h2>{buyerLead ? 'REQUEST AN EQUIPMENT SHORTLIST' : 'READY TO REVIEW YOUR PROJECT DATA?'}</h2>
+    <p>{buyerLead ? 'Send your project brief for a scoped equipment quotation. Include the required work position, material, access route and destination.' : 'Send the working height, panel profile, access and ground conditions, transport limits and destination market. ARCLIFT will identify the configuration questions that need confirmation before a project-specific quotation.'}</p>
+    <a href="/contact/" class="btn btn--white">{buyerLead ? 'Request a Scoped Quotation →' : 'Send Project Data →'}</a>
   </section>
 
 </BaseLayout>
@@ -234,6 +236,32 @@ const formattedDate = new Date(date).toLocaleDateString('en-US', {
     border-radius: 0 0 12px 12px;
     background: #f8fafc;
     line-height: 1.55;
+  }
+
+  .hero-banner--buyer {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+  .hero-banner--buyer h1 {
+    font-size: clamp(32px, 4vw, 56px);
+    max-width: 960px;
+  }
+  .article__buyer-lead {
+    max-width: 900px;
+    margin: 24px 0;
+    color: #e2e8f0;
+    position: relative;
+    font-size: clamp(17px, 1.4vw, 20px);
+    line-height: 1.65;
+    text-align: left;
+  }
+  .article__hero--buyer img {
+    width: auto;
+    max-width: 100%;
+    max-height: 560px;
+    aspect-ratio: auto;
+    object-fit: contain;
+    margin-inline: auto;
   }
 
   /* Key Takeaways */

@@ -375,7 +375,10 @@ describe('Task 5b article metadata and presentation contract', () => {
   it('renders the cover as a disclosed figure and receives calculated reading metadata', async () => {
     const layout = await readFile(resolve(root, 'src/layouts/BlogLayout.astro'), 'utf8');
     const slugPage = await readFile(resolve(root, 'src/pages/blog/[slug].astro'), 'utf8');
-    expect(layout).toMatch(/<figure class="article__hero">/);
+    const legacyPage = await readFile(resolve(root, 'dist/blog/roof-level-roll-forming-long-panels/index.html'), 'utf8');
+    expect(legacyPage).toMatch(/<figure\b[^>]*class="[^"]*\barticle__hero\b[^"]*"/);
+    expect(legacyPage).not.toContain('article__hero--buyer');
+    expect(legacyPage).toMatch(/Editorial &(?:amp;)? Technical Note/);
     expect(layout).toMatch(/alt=\{coverAlt\}/);
     expect(layout).toMatch(/<figcaption>\{coverCaption\}<\/figcaption>/);
     expect(layout).toMatch(/dateModified:\s*new Date\(updated \?\? date\)/);
