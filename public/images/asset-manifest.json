@@ -1036,6 +1036,70 @@
       "classification": "editorial",
       "medium": "reference-photograph",
       "disclosure": "Reference photograph used for editorial context; does not verify equipment identity, configuration, capability, compliance or project results."
+    },
+    {
+      "url": "/images/equipment/buyer-20261102-workshop-low-deck.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261029-deck-folded.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261102-hall-ground-route.webp",
+      "width": 1600,
+      "height": 1067,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261029-ceiling-interface.webp",
+      "width": 1600,
+      "height": 1067,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-ceiling-side.webp",
+      "width": 1600,
+      "height": 1067,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261027-ceiling-wide.webp",
+      "width": 1600,
+      "height": 1067,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261031-crawler-line-low.webp",
+      "width": 1600,
+      "height": 1200,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+    },
+    {
+      "url": "/images/equipment/buyer-20261028-profile-cutter.webp",
+      "width": 800,
+      "height": 600,
+      "classification": "editorial",
+      "medium": "reference-photograph",
+      "disclosure": "Real equipment photograph processed with non-generative tone adjustment, local identity/privacy blur where needed and WebP encoding."
     }
   ]
 }

@@ -1,0 +1,708 @@
+{
+  "productionArticles": 130,
+  "sitemapUrls": 154,
+  "published": "2026-10-26",
+  "updated": "2026-11-02",
+  "articles": [
+    {
+      "slug": "ceiling-platform-charging-and-parking-brief",
+      "beforeSha256": "c7d4252d1aee19a1f24bb3d5bb078d12c0465d5775ab64bbec05fe79510f7b59",
+      "sha256": "6a173d19d01fa48231a7e662a56504ec4ad9c95110e3a7e1cc6f5fcfcf2cca14",
+      "beforePhotos": {
+        "slug": "ceiling-platform-charging-and-parking-brief",
+        "cover": [
+          "/images/equipment/entry-real-cover.webp"
+        ],
+        "body": [
+          "/images/equipment/entry-real-interior.webp",
+          "/images/equipment/entry-real-approach.webp",
+          "/images/equipment/transport-real-cover.webp"
+        ]
+      },
+      "photos": {
+        "slug": "ceiling-platform-charging-and-parking-brief",
+        "cover": [
+          "/images/equipment/buyer-20261102-workshop-low-deck.webp"
+        ],
+        "body": [
+          "/images/equipment/buyer-20261029-deck-folded.webp",
+          "/images/equipment/buyer-20261102-hall-ground-route.webp"
+        ]
+      }
+    },
+    {
+      "slug": "ceiling-platform-control-view-between-workfaces",
+      "beforeSha256": "77c2564e6f7a3f5a1bce708edffa8c9457d014cc493feac129df602f28f5243d",
+      "sha256": "ad8953724451366536111ac87ef8449ddf57862db2a3595c057f682bb78d9958",
+      "beforePhotos": {
+        "slug": "ceiling-platform-control-view-between-workfaces",
+        "cover": [
+          "/images/equipment/entry-real-cover.webp"
+        ],
+        "body": [
+          "/images/equipment/entry-real-interior.webp",
+          "/images/equipment/entry-real-approach.webp",
+          "/images/equipment/transport-real-cover.webp"
+        ]
+      },
+      "photos": {
+        "slug": "ceiling-platform-control-view-between-workfaces",
+        "cover": [
+          "/images/equipment/buyer-20261029-ceiling-interface.webp"
+        ],
+        "body": [
+          "/images/equipment/buyer-20261027-ceiling-side.webp",
+          "/images/equipment/buyer-20261027-ceiling-wide.webp"
+        ]
+      }
+    },
+    {
+      "slug": "roll-forming-lift-control-cabinet-site-conditions",
+      "beforeSha256": "835c3f985f52b9eec081a7121e89c0288fd4f930f4eda8c72ac8e5067241f4c1",
+      "sha256": "3a2d6a716a1a010927860d4efe4ac3d14864e4b648a6ef7dc778dfdc0ba25e3e",
+      "beforePhotos": {
+        "slug": "roll-forming-lift-control-cabinet-site-conditions",
+        "cover": [
+          "/images/equipment/coil-real-handling.webp"
+        ],
+        "body": [
+          "/images/equipment/coil-real-module.webp",
+          "/images/equipment/coil-real-cover.webp",
+          "/images/equipment/coil-real-panel.webp"
+        ]
+      },
+      "photos": {
+        "slug": "roll-forming-lift-control-cabinet-site-conditions",
+        "cover": [
+          "/images/equipment/buyer-20261031-crawler-line-low.webp"
+        ],
+        "body": [
+          "/images/equipment/coil-real-handling.webp",
+          "/images/equipment/transport-real-stowed.webp"
+        ]
+      }
+    },
+    {
+      "slug": "roll-forming-lift-cutting-signal-interface",
+      "beforeSha256": "23ee5119c8427c4a53c62080ce5b13889b12a60743e7bb3fc169213d7644286f",
+      "sha256": "b298f2990a45bae98ea3219a7373592be7b5893408ca650d3edee96cc4a642a1",
+      "beforePhotos": {
+        "slug": "roll-forming-lift-cutting-signal-interface",
+        "cover": [
+          "/images/equipment/coil-real-handling.webp"
+        ],
+        "body": [
+          "/images/equipment/coil-real-module.webp",
+          "/images/equipment/coil-real-cover.webp",
+          "/images/equipment/coil-real-panel.webp"
+        ]
+      },
+      "photos": {
+        "slug": "roll-forming-lift-cutting-signal-interface",
+        "cover": [
+          "/images/equipment/buyer-20261028-profile-cutter.webp"
+        ],
+        "body": [
+          "/images/equipment/coil-real-module.webp",
+          "/images/equipment/coil-real-handling.webp"
+        ]
+      }
+    }
+  ],
+  "retainedArticles": [
+    {
+      "slug": "40hq-shipping-truck-mounted-roll-forming-lift",
+      "sha256": "054960f52dd9e79ff4fc2276e03bc4abf4f87312eedbc97c892caffa2e762256"
+    },
+    {
+      "slug": "aerial-platform-emergency-lowering-rescue-plan",
+      "sha256": "7aa0e322e67c9bcc5bcd4303f9307e97831e851d82ae23b0ede3944f57cd085d"
+    },
+    {
+      "slug": "aerial-platform-familiarization-handover",
+      "sha256": "c192b8ad95d865895ab0fb7a9269fdd1705c4211e4066060a7b483943657a7e7"
+    },
+    {
+      "slug": "aerial-platform-worker-tool-material-load-planning",
+      "sha256": "b86ee2072c6d94f1eca8f64cab5ab33ac224ff609427596db85a990bdf33ea92"
+    },
+    {
+      "slug": "airport-terminal-ceiling-access-route-survey-guide",
+      "sha256": "9c3351ffd9372adf14843257235d7d73aa41fa9be6661173565d7e403e79c848"
+    },
+    {
+      "slug": "airport-terminal-maintenance-access-planning",
+      "sha256": "2f58fab81bef9b2e8a02b809cf76080f2b84b5d57bd60724a9fa3303ddd79d99"
+    },
+    {
+      "slug": "ceiling-maintenance-safety-checklist",
+      "sha256": "33298b82feadf864cf7af90267f2a9f67b9b6a0ab44de36c28cb8c895770b4f9"
+    },
+    {
+      "slug": "ceiling-platform-beam-depth-workface",
+      "sha256": "f1bca20a9ee5767e395e0d98a13605d741e717a259372fb6abb7fd9488f6410c"
+    },
+    {
+      "slug": "ceiling-platform-dual-power-task-boundary",
+      "sha256": "15fb9309c23132903b29cf72dc158726ac53ef388919149df5d0974be6389804"
+    },
+    {
+      "slug": "ceiling-platform-ductwork-access-positions",
+      "sha256": "ab36c6b56806a2dcb1966e50a6fb04ff52d7f75189439146c1e53339fb34b789"
+    },
+    {
+      "slug": "ceiling-platform-equipment-versus-access-service",
+      "sha256": "f46b3e263fae7377f717a94f7746a229858fd7869851c0db7798c50783514fa1"
+    },
+    {
+      "slug": "ceiling-platform-independent-inspection-purchase",
+      "sha256": "1ecf24c8513812424c92c6ca9637393d9ed9df9d4d9aadc187cc4691798537f3"
+    },
+    {
+      "slug": "ceiling-platform-indoor-emissions-enquiry",
+      "sha256": "c05a7d01aadd53c0d8d42ffe483a076c02b99f371b0607bf74a5443adaebbec9"
+    },
+    {
+      "slug": "ceiling-platform-interrupted-beam-grid",
+      "sha256": "75858d03845d33369aa3f148941f1493e97f82232b1b029f9a3dd33a458fcc68"
+    },
+    {
+      "slug": "ceiling-platform-lighting-workface-access",
+      "sha256": "7337b30b930d698d2a9daef34c79fca520b3430b78f221891913e4254dd177b3"
+    },
+    {
+      "slug": "ceiling-platform-long-panels-versus-small-units",
+      "sha256": "053c359dd3df81880f4060bfe910916a7bd3d57558e55dbbb7d25d9fc87c0f87"
+    },
+    {
+      "slug": "ceiling-platform-material-replenishment-supply",
+      "sha256": "a4bd3d9f9beb81a4b827539d76df0a04a37dba8cbbdbfb72a22a1c04667b9da2"
+    },
+    {
+      "slug": "ceiling-platform-noise-evidence-enquiry",
+      "sha256": "f230da053b9ae8943514b84f9af1f7daf73dffa87570edb84825395bfcc8adaf"
+    },
+    {
+      "slug": "ceiling-platform-occupied-building-work-hours",
+      "sha256": "1cb4b310038f6d8fc0b93ca998185cf3e30a49ad3c69edcd05b9f92091b6be6a"
+    },
+    {
+      "slug": "ceiling-platform-overhead-clearance-survey",
+      "sha256": "040bfd540743a213aa78216332aa6345e6a14d1bb051d525339b6d7340c80f82"
+    },
+    {
+      "slug": "ceiling-platform-purchase-service-support-package",
+      "sha256": "73c592cfb02ff80eae68c88fa1493ec8415b79e9bc583c3e54c0b57ef7a54a76"
+    },
+    {
+      "slug": "ceiling-platform-refurbishment-vs-new-installation",
+      "sha256": "d5312139f2e44115448a0a85ba85d31bb8ee3a74e1cf21b61efabad91ec592ea"
+    },
+    {
+      "slug": "ceiling-platform-service-pipe-obstructions",
+      "sha256": "78b582f79fb242a13709386adfbba70b80da4c68b2851e60d93d1bdac3459c07"
+    },
+    {
+      "slug": "ceiling-platform-sloping-workface-brief",
+      "sha256": "88416530a9e9f63fa24d878f4045b69307b9b8b13207fd1ce063e9f2bac6f056"
+    },
+    {
+      "slug": "ceiling-platform-training-service-purchase",
+      "sha256": "4e9cff261788369951317cf90383121ab2d51e87d69e6313e12eef568ab28f95"
+    },
+    {
+      "slug": "ceiling-platform-wall-to-roof-junction",
+      "sha256": "c988f72eb7a186bd8015f42d6d01570faf0897e5afb422047a2708f83ebd9bff"
+    },
+    {
+      "slug": "ceiling-work-platform-deck-extension-option",
+      "sha256": "d477781b474436984f1006fbf9d60ec65811ba96beeb6442d4a33dd51becdf35"
+    },
+    {
+      "slug": "ceiling-work-technology-trends",
+      "sha256": "f8d890c17e16116ee86d302bb223e20749306667a39ec9f04866dac571e92958"
+    },
+    {
+      "slug": "coil-handling-roll-forming-line-feeding-plan",
+      "sha256": "771931ecb981b75b8195ef9d1f05ed71c9a930f4ecb4734db81cb90047ab847c"
+    },
+    {
+      "slug": "crawler-ceiling-platform-rental-enquiry-scope",
+      "sha256": "8b9f34b7b45e1b73765f98967a01cfc1b4197f6cd2742d8584d4e92b87494522"
+    },
+    {
+      "slug": "crawler-ceiling-platform-site-acceptance-records",
+      "sha256": "252a05bdaa156bb1969893fa956a65eecb244a45296cb78c5ff800a46bad2def"
+    },
+    {
+      "slug": "crawler-ceiling-wall-panel-platform-project-data",
+      "sha256": "aa83109a4dc528a3f7fbb60bfcd5783f7f27a12e5f447a44cca17083d19ba9e9"
+    },
+    {
+      "slug": "crawler-platform-maintenance-spares-handover",
+      "sha256": "1bcf9085a69f6a9b115bb1bd5ac075d68bb92f27aec099f9b1a2d1b7348b7125"
+    },
+    {
+      "slug": "crawler-platform-vs-spider-lift-vs-scaffolding",
+      "sha256": "b72693594bf05cc615e285502cb15c7ae7cfe6cb161905d5b3329bd42343c671"
+    },
+    {
+      "slug": "crawler-roll-forming-lift-access-route-survey",
+      "sha256": "3ca1f4f92d2c54f53da8afdc3559e635178ebc2499ebeb1c4e472358f8d6b25e"
+    },
+    {
+      "slug": "crawler-roll-forming-lift-carrier-supply-scope",
+      "sha256": "a544a3ccbdfd7664fe1b684d292d502f2d99c7c6f5fa37cfd663e669086af2ff"
+    },
+    {
+      "slug": "crawler-roll-forming-lift-ground-support-review",
+      "sha256": "8e13645f4805f17799977baaad94a0ec29291a2276eae49d2780a07e03384536"
+    },
+    {
+      "slug": "crawler-roll-forming-lift-work-zone-relocation",
+      "sha256": "71635d30b5414b007e683b51740d1fdd1ebd2140087a404f92fca35e534ddb97"
+    },
+    {
+      "slug": "crawler-under-ceiling-platform-buyers-guide",
+      "sha256": "75afa3c2a661afb2ffbb62a6b872d1ec689b05918f31801ddd21da1f02337a99"
+    },
+    {
+      "slug": "crawler-vs-truck-mounted-roll-forming-system",
+      "sha256": "e926a5f4240a412a8a4791f25d331014a421f39c42a56e366c24061f8a12cf9d"
+    },
+    {
+      "slug": "dual-power-crawler-platform-selection",
+      "sha256": "a5db8d9e17a3cd332f48a3374203f04d7394e099620640910e8c6d213a4ad297"
+    },
+    {
+      "slug": "elevated-roll-forming-roof-panel-handover-zones",
+      "sha256": "a2b27b1307179d0dc8790e46eada1bae437fbc98b5b1db445b35619738d5fbc6"
+    },
+    {
+      "slug": "existing-roof-panel-former-lift-retrofit-purchase",
+      "sha256": "3233a713671f73a9817451a09e2a3c04f14188153b7a30036a5af4bb630e575b"
+    },
+    {
+      "slug": "high-altitude-roll-forming-lift-rfq-data",
+      "sha256": "78e15cf3ff445e050ffa3565d84e734f22d81e54828d697a23a84a0714c3e8eb"
+    },
+    {
+      "slug": "indoor-aerial-platform-ground-pressure-guide",
+      "sha256": "30aacc04bf26960687e9ed8ef3af40a243fa469fa6ad20c26843bd477fc24402"
+    },
+    {
+      "slug": "large-crawler-platform-transport-data-package",
+      "sha256": "2dd655793c8979541ff1465bc8d54c3fa5665ade694a24cd48ac2250aba8a301"
+    },
+    {
+      "slug": "large-crawler-work-platform-building-entry-survey",
+      "sha256": "0e45155532aeb3714383ec86758db42c04783103cba8d090b52001cd4f187c22"
+    },
+    {
+      "slug": "large-deck-crawler-platform-vs-basket-lift",
+      "sha256": "d896ec59e708af54cc40a782b480749d3d94e05606a88ece0e6d1f50263e3aad"
+    },
+    {
+      "slug": "large-deck-crawler-platform-work-zone-layout",
+      "sha256": "805baab585529e9ea8cb86be2238d5d99c3b056440247d836ad187af3429bdc4"
+    },
+    {
+      "slug": "large-deck-platform-wall-panel-access-planning",
+      "sha256": "936230f420b74010d7fd27fefa55195564cf732031a5fcfcc953f9d92d86b0db"
+    },
+    {
+      "slug": "lift-roll-forming-system-commissioning-plan",
+      "sha256": "7243ce883290535de840ac04d0ee9c759bd2bdfd773b650b3d18905ca81d57bd"
+    },
+    {
+      "slug": "lifted-roll-forming-line-mounting-interface-review",
+      "sha256": "435a1eb2e3133b65d62baf67d8f4d81992086309b30b08127bd5142a51edb4de"
+    },
+    {
+      "slug": "pick-and-carry-vs-spider-lift",
+      "sha256": "18d49c920f023d7305b493bca5fbcf856b27b6d37717d120abb6aafc3bf11563"
+    },
+    {
+      "slug": "remote-control-aerial-platform-safety-planning",
+      "sha256": "4fe8e33ef0bd668f8e280ac499e57fe36e55aba4f572e26f59a8c83000e410ab"
+    },
+    {
+      "slug": "roll-forming-lift-buy-vs-rent-project-decision",
+      "sha256": "be924626086ffa556ce525ba53389340184dbfab46c194d419dd7f7cd95958f7"
+    },
+    {
+      "slug": "roll-forming-lift-capacity-load-scope-questions",
+      "sha256": "72402f9e422b6d9e12274d1e38f6e8e0fe028f91ebfbd033ba0740fd64097150"
+    },
+    {
+      "slug": "roll-forming-lift-coated-coil-surface-evidence",
+      "sha256": "49b6cb9f807d1c2571ef23e1c7fb4a418075bc6692723795b1c978b8c9323afd"
+    },
+    {
+      "slug": "roll-forming-lift-coil-change-supply-boundary",
+      "sha256": "fe2fd4eb0aec14938d71d3eccae888aaeb4b551afce25d987490a480544c50b4"
+    },
+    {
+      "slug": "roll-forming-lift-coil-feed-handedness",
+      "sha256": "8e2bcc76514a96308d895e28aed1e8d31fb75bb849a90b92749668634ad31516"
+    },
+    {
+      "slug": "roll-forming-lift-coil-handling-option-vs-separate-equipment",
+      "sha256": "0cb312f483b3936cdb12386a6b9e789c4970b16d41f71fb844ff9055b4d253ed"
+    },
+    {
+      "slug": "roll-forming-lift-configuration-change-control",
+      "sha256": "a8cf70042666d51f7b893750c7c14a5ce7c932d52f0b81284166733a6f7bb5fe"
+    },
+    {
+      "slug": "roll-forming-lift-control-language-request",
+      "sha256": "918503bff1d2be36269fb7bd3259fbb749f836859653888e525f4b2acfdd0266"
+    },
+    {
+      "slug": "roll-forming-lift-courtyard-output-route",
+      "sha256": "cd1e776f444d9bbda459766a4f1b8390006082f04c3a337a33a2c1bfaaa93717"
+    },
+    {
+      "slug": "roll-forming-lift-cut-length-measurement-basis",
+      "sha256": "745814a67aa91fbf3813649ba5599dac363c3195a5d72ac61b0cbd32de0fd212"
+    },
+    {
+      "slug": "roll-forming-lift-destination-receipt-plan",
+      "sha256": "0dec56cd727f628b4902569d9cf3d6ee76b9d04417ff9771b9b79e73a3259f2d"
+    },
+    {
+      "slug": "roll-forming-lift-first-panel-output-space",
+      "sha256": "94605486bffb5f907d02ac56cb9efff439314f4bc873f47035a6f6024413577f"
+    },
+    {
+      "slug": "roll-forming-lift-folded-versus-working-envelope",
+      "sha256": "cecdce98fe02056cd3dd35352fe2e0154601961051a7e12e3e60d370fcf85381"
+    },
+    {
+      "slug": "roll-forming-lift-former-emergency-stop-boundary",
+      "sha256": "df3750e7b29ab6b5c358dc60f1211f3577123e550782e90abe40f0c3968d241f"
+    },
+    {
+      "slug": "roll-forming-lift-generator-package-boundary",
+      "sha256": "f33a5b80ca6b02f0708f9b41828b9c22dd14340fea669233fb142a26380ff0d2"
+    },
+    {
+      "slug": "roll-forming-lift-height-specification-datum",
+      "sha256": "dba0f9bbc651e20e6bbec2377930d85f5083f54e97b348dc8db4ec261b79cdf7"
+    },
+    {
+      "slug": "roll-forming-lift-hydraulic-power-package",
+      "sha256": "241babc35d22b1049d1d96e8b8ea1af797ebb2ccb15a0169c51684aeb3bb321e"
+    },
+    {
+      "slug": "roll-forming-lift-importer-distributor-supply-package",
+      "sha256": "4b515f895c7a1622be5cc9bd9d55e0013b587b21d2ac9e63263817e6ad32876c"
+    },
+    {
+      "slug": "roll-forming-lift-intermediate-obstruction-data",
+      "sha256": "e5091d3a5291ca69f69e43f0d1b22944ee901f8c99da60538be00ff0e12136ce"
+    },
+    {
+      "slug": "roll-forming-lift-local-versus-remote-controls",
+      "sha256": "bd85b63c352534924e2e3b96c5f76d8fe0db69e274c071abd554dc791bca2458"
+    },
+    {
+      "slug": "roll-forming-lift-maintenance-spares-supply",
+      "sha256": "6254c3a07adce07bcf438e01d93c613945d71cf4ae069fdc3147f45c413d212b"
+    },
+    {
+      "slug": "roll-forming-lift-material-strength-identification",
+      "sha256": "602ee8bffac2973917dfa9e38a33a2a7eeac0e100872be74f8d8b68c74b8577a"
+    },
+    {
+      "slug": "roll-forming-lift-multiple-project-fleet-fit",
+      "sha256": "1224a432079c12bfcbd64083c3e0eef5bc89ede6dbdaa6f351389990d5990c1f"
+    },
+    {
+      "slug": "roll-forming-lift-nominated-former-tender",
+      "sha256": "cfcb07748be14656aa4aa1411d4f477b1d9d24a939af6d08d43b6c030733b080"
+    },
+    {
+      "slug": "roll-forming-lift-operator-view-requirements",
+      "sha256": "d8fdf597954d00caca7a95fbecfb1b81f365f76ab46a215e67761dbe7702858e"
+    },
+    {
+      "slug": "roll-forming-lift-opposite-building-faces",
+      "sha256": "bf1fa10304dc7ac86df879a868f2c2cd744b5d6ab1c8ac8b9e57261f5d711910"
+    },
+    {
+      "slug": "roll-forming-lift-order-before-former-selection",
+      "sha256": "5c16362074567b9b57a21dca8464b5d79ea4513684933dc5d95c37dbd9951cd4"
+    },
+    {
+      "slug": "roll-forming-lift-panel-bundle-staging-scope",
+      "sha256": "cc7ddb843bca6e0075bc783ac2c3dd6bb542baf4e6ca9fc0f1f1889e94a686cd"
+    },
+    {
+      "slug": "roll-forming-lift-panel-output-direction",
+      "sha256": "17368972ba8696d0eb5bfad04cb8c64c0f5cf0c9caf3f0c533c6e0b368174ce1"
+    },
+    {
+      "slug": "roll-forming-lift-parapet-panel-clearance",
+      "sha256": "289564a1954caf4a05c4e8e1e2fcd4fdbb45d03a912562bddc832957c6a7502d"
+    },
+    {
+      "slug": "roll-forming-lift-price-quotation-cost-scope",
+      "sha256": "a723a603f8294fd98a4deafe39bf58575a6dda5d0241ab06a54623cdd5c66647"
+    },
+    {
+      "slug": "roll-forming-lift-procurement-delivery-dependencies",
+      "sha256": "fb316cd9365368f788e1273af8a4568db9117f3cabdd77427e83ae26b4752eef"
+    },
+    {
+      "slug": "roll-forming-lift-profile-tolerance-documents",
+      "sha256": "54a5cc27c113537d1ddfd7ccee4578fe2150b3dd8f8f2cdfedb1fc5ad73b9696"
+    },
+    {
+      "slug": "roll-forming-lift-protective-film-interface",
+      "sha256": "23a0c25f759877f3aeb7ad502abb4cc4e6343427133f9df91a04ed670f7a1e27"
+    },
+    {
+      "slug": "roll-forming-lift-radio-control-market-enquiry",
+      "sha256": "6115576a42cb29059ed8a905224da565dade79bfa4e93a27be9f835e3b6f1b5d"
+    },
+    {
+      "slug": "roll-forming-lift-remote-support-access-scope",
+      "sha256": "cf2253a0b25594c1a5694aec7837f1b7a0bcbc2a6498b6d1d483fffcbc5b2398"
+    },
+    {
+      "slug": "roll-forming-lift-rental-fleet-purchase-brief",
+      "sha256": "ea846dbbe0e26598e1b04e702913950d859332499c0518385d099ecc78638c98"
+    },
+    {
+      "slug": "roll-forming-lift-roof-pitch-outlet-datum",
+      "sha256": "7fcf0d2cdb4cf4753364cf6d984d8fa1acf53d17d34dd6c8b4d062c989c5cf69"
+    },
+    {
+      "slug": "roll-forming-lift-separate-former-power",
+      "sha256": "f465be8d0284520f136c3ff137e026297680fd5b40112fd6d37f96d53f4c24e2"
+    },
+    {
+      "slug": "roll-forming-lift-site-cable-supply-scope",
+      "sha256": "90f993bce810041b6e52006b9ad749880da92c00b232a87c2fa10f4412541fdc"
+    },
+    {
+      "slug": "roll-forming-lift-site-power-enquiry",
+      "sha256": "f6e1e045b4852f9cfaeb14067dd62d1ad4ce793e9066d01d7810a186445f8c6b"
+    },
+    {
+      "slug": "roll-forming-lift-standard-versus-custom-tooling",
+      "sha256": "514fd86d9df442ef8bd29692fbde78ca0788aecdb35e369f34853f39c6155b5f"
+    },
+    {
+      "slug": "roll-forming-lift-standing-seam-profile-inputs",
+      "sha256": "57b312033ea8bfd99baaf73b2dc2598e9bb3ba3b9fc86d4cc84cd312e6fc733e"
+    },
+    {
+      "slug": "roll-forming-lift-stepped-roof-levels",
+      "sha256": "cacc83642484d7e16b9dd5e2fd214bbfa999428ed12bbdc6abff56a12378ac51"
+    },
+    {
+      "slug": "roll-forming-lift-supplier-demonstration-request",
+      "sha256": "d946b0e3bd785b3f9c77b924d2e52bb597319a4d70d31ac0dcb7e1410646f111"
+    },
+    {
+      "slug": "roll-forming-lift-supplier-identity-evidence",
+      "sha256": "8230a196bf94228aaa4e528c593dd76be18de63e95b659b931807d0753eb7f67"
+    },
+    {
+      "slug": "roll-forming-lift-supply-frequency-mismatch",
+      "sha256": "37385cbfd9eff6db20d36cce0617d3d091aecdf45a54ebd1962d1ed21e689b77"
+    },
+    {
+      "slug": "roll-forming-lift-technical-document-package",
+      "sha256": "9621628a7167c6b0ad5ddf2b42cd03f20dffdc7ea64efbf78bf89ec4c9c39c66"
+    },
+    {
+      "slug": "roll-forming-lift-tender-base-bid-alternatives",
+      "sha256": "506530889b78c3c50ec3c8513e8a55326e740a1cd639cbc36c9291ee24869ae8"
+    },
+    {
+      "slug": "roll-forming-lift-tooling-ownership-custody",
+      "sha256": "9cec0867849b96dc0a28e608b62d4f3d2edf5392ed0fa137fbef31b58bcd88e5"
+    },
+    {
+      "slug": "roll-forming-lift-trapezoidal-profile-width",
+      "sha256": "d286e9ca5d8e28c4f36618abefddbba86d8ad6c376cd8a718362a66403d866a3"
+    },
+    {
+      "slug": "roll-forming-lift-variable-panel-length-schedule",
+      "sha256": "66cdb0f7867a2feb53e10da7fc204bcd246a7c1dc879ef9be7083defa334f383"
+    },
+    {
+      "slug": "roll-forming-line-electrical-control-interfaces",
+      "sha256": "c11dce19d0908d3512d77484d7e58dae498c71f5dc0e5d93b738e14542e435d4"
+    },
+    {
+      "slug": "roll-forming-line-fat-sat-acceptance-checklist",
+      "sha256": "d9f56cd62e63423776e5aac9b6873a8247437ee4298081824de5d51f686238bf"
+    },
+    {
+      "slug": "roll-forming-line-specification-long-span-roof-panels",
+      "sha256": "fcfbe726537d5dc19508939b38bf3a698f7d86ca0ec2268e1b443f0ba38b31bd"
+    },
+    {
+      "slug": "roof-forming-lift-setback-from-roof-edge",
+      "sha256": "2926d9e0fd52e5de644b15a2ec59078f278dcacf01a376567102de858624fd9a"
+    },
+    {
+      "slug": "roof-level-roll-forming-lift-coil-loading-plan",
+      "sha256": "3ee4781481e630b5a2251c8f847ef6d252cc17b9cb6c3f267c1362a45fa6c06e"
+    },
+    {
+      "slug": "roof-level-roll-forming-long-panels",
+      "sha256": "f16fdf0b6f329802260a9a598ba3f1a64320b74962584adc7ba502e6790b1752"
+    },
+    {
+      "slug": "roof-level-roll-forming-weather-hold-points",
+      "sha256": "7834f92fd4bb5676ae4d5c682b039d411723bee6675e442b9e46d1055b0e9ca9"
+    },
+    {
+      "slug": "roof-panel-profile-material-tooling-data",
+      "sha256": "72f8760cc3b4bbb8e31cc61ab932ec6ff18498c8a42db37a535edc7433ff58a8"
+    },
+    {
+      "slug": "roof-panel-roll-forming-production-route-cost-comparison",
+      "sha256": "dfa5177a3f8792edab0ea88975067c27e787b7e1d9e63b51a75b709cc938b4e0"
+    },
+    {
+      "slug": "roof-zone-survey-roll-forming-lift-selection",
+      "sha256": "bd3460a7c3e05763fa31870e351dc57bce0d6c8e5ccd812765028d51958a8453"
+    },
+    {
+      "slug": "stadium-ceiling-access-platform-planning",
+      "sha256": "5056ac808394d708d5800d9703ef8bf6a8f315372ecae30f363e63295d502176"
+    },
+    {
+      "slug": "truck-mounted-forming-lift-jobsite-setup-review",
+      "sha256": "cc7d4c112a673235eeda81fc21c66657401b3b5fa33a8cab9dbe9819d8004739"
+    },
+    {
+      "slug": "truck-mounted-forming-lift-road-transport-documents",
+      "sha256": "f4bacdd181f3d0a22037f6dfdb4955971aa5c8baec1079b85470173958bd5fe9"
+    },
+    {
+      "slug": "truck-mounted-lift-destination-chassis-sourcing",
+      "sha256": "cd841fc132ac3be884e637d2909e7ffdbf91f709264aeb70da8fdeeaa86c1e8e"
+    },
+    {
+      "slug": "truck-mounted-roll-forming-chassis-interface-review",
+      "sha256": "bbf886b4cf002ad6c8efc1ebd4bafcb455995a01351b91ef539c44ca9071fefd"
+    },
+    {
+      "slug": "truck-mounted-roll-forming-payload-allocation-review",
+      "sha256": "b641491a4d8f7b70c83bd7ee84f6fc31ba40d24bc2d97589057ea39221e23165"
+    },
+    {
+      "slug": "truck-vs-crawler-ceiling-work-platform-purchase",
+      "sha256": "83753d13f63229ba755e3e71d2f9de73ed98b7308352faad59e2d1dd83996058"
+    },
+    {
+      "slug": "used-roll-forming-lift-purchase-records",
+      "sha256": "b145e270451c72d03f7664fcc1311ea34807455c553eeac5a4b3c65634e504b7"
+    },
+    {
+      "slug": "wall-panel-platform-panel-orientation-inputs",
+      "sha256": "df054db080e1641ef28d91e91aa3adbf2a7b418524bae34955ec5a00bffd5647"
+    },
+    {
+      "slug": "warehouse-ceiling-access-platform-planning",
+      "sha256": "69d123a872ecd7cc8d6f69a21e723befe82e8973956229ca151b5ffe557896ab"
+    }
+  ],
+  "addedPhotos": [
+    {
+      "record": {
+        "url": "/images/equipment/buyer-20261027-ceiling-wide.webp",
+        "width": 1600,
+        "height": 1067,
+        "classification": "editorial",
+        "medium": "reference-photograph",
+        "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+      },
+      "sha256": "505f88aae466853cc8e39c2b3eca8e0e3c5b2c12bb070a9131bbb5cad5a5228a"
+    },
+    {
+      "record": {
+        "url": "/images/equipment/buyer-20261027-ceiling-side.webp",
+        "width": 1600,
+        "height": 1067,
+        "classification": "editorial",
+        "medium": "reference-photograph",
+        "disclosure": "Real equipment photograph processed with non-generative crop, tone adjustment, local identity blur and WebP encoding."
+      },
+      "sha256": "040a356ba240a344239b26d6e7836d3f83ab32e58817a8a25a144eb939527698"
+    },
+    {
+      "record": {
+        "url": "/images/equipment/buyer-20261028-profile-cutter.webp",
+        "width": 800,
+        "height": 600,
+        "classification": "editorial",
+        "medium": "reference-photograph",
+        "disclosure": "Real equipment photograph processed with non-generative tone adjustment, local identity/privacy blur where needed and WebP encoding."
+      },
+      "sha256": "5c58dcebc1515cb6f994f95dbaefe8800bd9915af7b667388f2c30001b31452d"
+    },
+    {
+      "record": {
+        "url": "/images/equipment/buyer-20261029-deck-folded.webp",
+        "width": 1600,
+        "height": 1200,
+        "classification": "editorial",
+        "medium": "reference-photograph",
+        "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+      },
+      "sha256": "91bc2f29ce65c8f0b062ceb3ec5cd1087eb71f1cc1a8cd3ee52a962b15594781"
+    },
+    {
+      "record": {
+        "url": "/images/equipment/buyer-20261029-ceiling-interface.webp",
+        "width": 1600,
+        "height": 1067,
+        "classification": "editorial",
+        "medium": "reference-photograph",
+        "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+      },
+      "sha256": "97ad35f2c9880eed7c29d4987c95798d38e1067e92552976abbc107c070e3c3a"
+    },
+    {
+      "record": {
+        "url": "/images/equipment/buyer-20261031-crawler-line-low.webp",
+        "width": 1600,
+        "height": 1200,
+        "classification": "editorial",
+        "medium": "reference-photograph",
+        "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+      },
+      "sha256": "736f692725314d9ed52357216bee63855a3e503cf48607d14a458856d454b379"
+    },
+    {
+      "record": {
+        "url": "/images/equipment/buyer-20261102-workshop-low-deck.webp",
+        "width": 1600,
+        "height": 1200,
+        "classification": "editorial",
+        "medium": "reference-photograph",
+        "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+      },
+      "sha256": "3232173491154c1009368e7793c602be0016e7e00aece80938e3ed6519ccdd27"
+    },
+    {
+      "record": {
+        "url": "/images/equipment/buyer-20261102-hall-ground-route.webp",
+        "width": 1600,
+        "height": 1067,
+        "classification": "editorial",
+        "medium": "reference-photograph",
+        "disclosure": "Real equipment photograph processed directly from its original with non-generative proportional resizing, restrained tone adjustment, local identity/privacy blur where needed and WebP encoding."
+      },
+      "sha256": "6360b6036c10f02f7b5eaef06c3fd7706a4a86476845ac7b78dcffeed1f3636d"
+    }
+  ]
+}

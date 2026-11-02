@@ -1,3 +1,4 @@
+import { precedingManifestBytes } from './helpers/four-article-release.mjs';
 import { readFile, readdir, access } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { resolve } from 'node:path';
@@ -58,7 +59,8 @@ describe('2026-10-24 campaign day1: twenty new URLs after the published seventy'
     }
     for (const file of baseline.preservedFiles) {
       const bytes = await readFile(resolve(root, file.path));
-      const comparable = file.path === 'public/_redirects' ? retainedRedirectBytes(bytes)
+      const comparable = file.path === 'public/images/asset-manifest.json' ? precedingManifestBytes(bytes)
+        : file.path === 'public/_redirects' ? retainedRedirectBytes(bytes)
         : file.normalizeNewlines ? bytes.toString().replace(/\r\n/g, '\n') : bytes;
       expect(sha256(comparable), file.path).toBe(file.sha256);
     }
