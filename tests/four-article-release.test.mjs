@@ -9,7 +9,7 @@ import { auditFiles, EXTENDED_LAUNCH_SLUGS } from '../scripts/audit-lift-platfor
 import { buyerArticleFailures } from '../scripts/lib/buyer-article-audit.mjs';
 import { REVISED_BUYER_ARTICLE_SLUGS } from '../scripts/revised-buyer-articles.mjs';
 import { REFERENCE_PHOTO_ARTICLES } from '../scripts/reference-photo-articles.mjs';
-import { BUYER_ARTICLE_SLUGS } from '../scripts/lift-platform-article-registry.mjs';
+import { BUYER_ARTICLE_SLUGS, BUYER_ARTICLE_COHORTS } from '../scripts/lift-platform-article-registry.mjs';
 import { CURRENT_ARTICLE_COUNT, CURRENT_SITEMAP_COUNT, CURRENT_REFERENCE_PHOTO_COUNT } from './helpers/current-release.mjs';
 import { fourArticleRelease as fixture, retainedPhotoArticle, precedingManifestBytes } from './helpers/four-article-release.mjs';
 
@@ -28,7 +28,8 @@ describe('four revised existing articles alongside the 70 newly published buyer 
     expect(fixture.retainedArticles).toHaveLength(126);
     const original = [...fixture.retainedArticles, ...fixture.articles].map(article => article.slug);
     expect(original).toHaveLength(130);
-    expect(BUYER_ARTICLE_SLUGS).toHaveLength(70);
+    const publishedByNovember02 = BUYER_ARTICLE_COHORTS.filter(cohort => cohort.date <= '2026-11-02').flatMap(cohort => cohort.slugs);
+    expect(publishedByNovember02).toHaveLength(70);
     expect(BUYER_ARTICLE_SLUGS.filter(slug => original.includes(slug))).toEqual([]);
     const expected = [...original, ...BUYER_ARTICLE_SLUGS].sort();
     expect(new Set(expected).size).toBe(CURRENT_ARTICLE_COUNT);

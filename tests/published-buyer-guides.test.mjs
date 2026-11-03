@@ -2,19 +2,20 @@ import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {resolve} from 'node:path';
 import {describe,it,expect} from 'vitest';
-import {BUYER_ARTICLE_SLUGS} from '../scripts/lift-platform-article-registry.mjs';
+import {BUYER_ARTICLE_COHORTS} from '../scripts/lift-platform-article-registry.mjs';
 import {REVIEWED_BUYER_UPDATES,reviewedUpdateForSlug} from '../scripts/reviewed-buyer-updates.mjs';
 import {buyerArticleFailures} from '../scripts/lib/buyer-article-audit.mjs';
 import {retainedArticleSha256} from './helpers/retained-production-content.mjs';
 const root=resolve(import.meta.dirname,'..');
 const fixture=JSON.parse(readFileSync(resolve(root,'tests/fixtures/november-02-published-buyer-guides.json'),'utf8'));
+const publishedByNovember02=BUYER_ARTICLE_COHORTS.filter(cohort=>cohort.date<='2026-11-02').flatMap(cohort=>cohort.slugs);
 const revisions=JSON.parse(readFileSync(resolve(root,'tests/fixtures/november-02-pending-publication-revisions.json'),'utf8'));
 const text=slug=>readFileSync(resolve(root,'src/content/blog',slug+'.md'),'utf8').replace(/\r\n/g,'\n');
 const sha=s=>createHash('sha256').update(s).digest('hex');
 describe('seventy reviewed buyer articles entering the live corpus',()=>{
  it('publishes the exact seventy registered manuscripts and only the reviewed revision history',()=>{
   expect(fixture.articles).toHaveLength(70);
-  expect(fixture.articles.map(a=>a.slug).sort()).toEqual([...BUYER_ARTICLE_SLUGS].sort());
+  expect(fixture.articles.map(a=>a.slug).sort()).toEqual([...publishedByNovember02].sort());
   expect(revisions.articles).toHaveLength(23);
   expect(REVIEWED_BUYER_UPDATES.map(a=>a.slug).sort()).toEqual(revisions.articles.map(a=>a.slug).sort());
   expect(reviewedUpdateForSlug('not-an-approved-guide','2026-10-27')).toBe('2026-10-27');

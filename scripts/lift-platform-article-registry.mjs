@@ -537,6 +537,60 @@ export const NOVEMBER_02_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_02_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_02_BUYER_ARTICLES.map(({ slug }) => slug));
 
+export const NOVEMBER_03_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "used-roof-panel-roll-former-vs-new-line",
+    "title": "Used Roof-Panel Roll Former or New Line for Your First Orders?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-production-walk-in-orders-vs-project-contracts",
+    "title": "Roof-Panel Production: Walk-In Orders or Scheduled Project Contracts?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "ceiling-platform-snagging-retain-vs-remobilize",
+    "title": "Ceiling Snagging: Retain the Main Platform or Book a Closeout Return?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "wall-cladding-platform-and-vacuum-lifter-package",
+    "title": "Wall-Cladding Platform and Vacuum Lifter: Buying the Complete Package",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "standing-seam-roof-system-approval-before-roll-former-purchase",
+    "title": "Standing-Seam Production: Secure the Roof-System Route Before Buying the Former",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "self-supporting-arch-roof-machine-vs-roof-panel-line",
+    "title": "Self-Supporting Arch Roof Machine or Conventional Roof-Panel Line?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-former-stop-to-cut-vs-flying-cut",
+    "title": "Roof-Panel Roll Former: Stop-to-Cut or Flying Cut?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-forming-single-decoiler-vs-coil-change-system",
+    "title": "Roof-Panel Roll Forming: Single Decoiler or Coil-Change System?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-level-former-dedicated-vs-shared-workshop-line",
+    "title": "Dedicated Roof-Level Roll Former or One Line Shared with the Workshop?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-production-central-factory-vs-regional-lines",
+    "title": "Roof-Panel Production: One Central Factory or Regional Lines?",
+    "cluster": "forming-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_03_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_03_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -547,6 +601,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ date: '2026-10-31', standard: 'buyer-2026-10-31', articles: OCTOBER_31_BUYER_ARTICLES, slugs: OCTOBER_31_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ date: '2026-11-01', standard: 'buyer-2026-11-01', articles: NOVEMBER_01_BUYER_ARTICLES, slugs: NOVEMBER_01_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ date: '2026-11-02', standard: 'buyer-2026-11-02', articles: NOVEMBER_02_BUYER_ARTICLES, slugs: NOVEMBER_02_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ date: '2026-11-03', standard: 'buyer-2026-11-03', articles: NOVEMBER_03_BUYER_ARTICLES, slugs: NOVEMBER_03_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -570,6 +625,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...OCTOBER_31_BUYER_ARTICLES,
   ...NOVEMBER_01_BUYER_ARTICLES,
   ...NOVEMBER_02_BUYER_ARTICLES,
+  ...NOVEMBER_03_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));

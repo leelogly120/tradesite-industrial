@@ -41,6 +41,22 @@ export const BUYER_PHOTO_COHORTS = Object.freeze([
     "/images/equipment/buyer-20261102-hall-ground-route.webp",
     "/images/equipment/buyer-20261102-elevated-former-coils.webp"
 ]) }),
+  Object.freeze({ date: '2026-11-03', urls: Object.freeze([
+  "/images/equipment/buyer-20261103-wide-deck-yard.webp",
+  "/images/equipment/buyer-20261103-low-deck-workshop.webp",
+  "/images/equipment/buyer-20261103-raised-deck-hall.webp",
+  "/images/equipment/buyer-20261103-wall-access-frame.webp",
+  "/images/equipment/buyer-20261103-roof-level-former-v2.webp",
+  "/images/equipment/buyer-20261103-roof-edge-interface.webp",
+  "/images/equipment/buyer-20261103-long-roof-panels.webp",
+  "/images/equipment/buyer-20261103-forming-lines-workshop.webp",
+  "/images/equipment/buyer-20261103-roller-tooling-parts.webp",
+  "/images/equipment/buyer-20261103-roller-bed-perspective.webp",
+  "/images/equipment/buyer-20261103-forming-line-truck.webp",
+  "/images/equipment/buyer-20261103-coil-workshop-context.webp",
+  "/images/equipment/buyer-20261103-sheet-roller-bed.webp",
+  "/images/equipment/buyer-20261103-panel-edge-sample.webp"
+]) }),
 ]);
 export const BUYER_PHOTO_URLS = Object.freeze(BUYER_PHOTO_COHORTS.flatMap(cohort => cohort.urls));
 export const buyerPhotoUrlsForDate = date => BUYER_PHOTO_COHORTS.find(cohort => cohort.date === date)?.urls ?? [];

@@ -8,6 +8,10 @@ export type GuideLink = { href: string; title: string; description: string };
 // Editorial topic boundaries, not keyword matching or automatic recommendations.
 export const GUIDE_TOPICS = [
   { name: 'Roof-level system selection', slugs: [
+    'roof-panel-production-walk-in-orders-vs-project-contracts',
+    'self-supporting-arch-roof-machine-vs-roof-panel-line',
+    'roof-level-former-dedicated-vs-shared-workshop-line',
+    'roof-panel-production-central-factory-vs-regional-lines',
     'metal-decking-vs-roof-panel-roll-forming-business',
     'sandwich-panel-production-line-vs-roof-sheet-roll-former',
     'roll-forming-lift-joint-ownership-vs-single-contractor',
@@ -55,6 +59,9 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'used-roof-panel-roll-former-vs-new-line',
+    'standing-seam-roof-system-approval-before-roll-former-purchase',
+    'roof-panel-roll-former-stop-to-cut-vs-flying-cut',
     'roof-panel-oil-canning-roll-former-purchase',
     'tile-effect-metal-roof-panel-production-equipment',
     'discontinued-roof-panel-profile-replacement-tooling',
@@ -106,6 +113,7 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-control-cabinet-site-conditions',
   ] },
   { name: 'Coil and roof-panel routes', slugs: [
+    'roof-panel-roll-forming-single-decoiler-vs-coil-change-system',
     'roof-panel-roll-forming-runout-table-vs-automatic-stacker',
     'full-length-roof-panels-vs-designed-end-laps-forming-package',
     'roof-panel-roll-forming-buy-slit-coil-vs-slitting-line',
@@ -161,6 +169,7 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-equipment-versus-access-service',
   ] },
   { name: 'Indoor routes, floors and work areas', slugs: [
+    'wall-cladding-platform-and-vacuum-lifter-package',
     'ceiling-platform-ground-preassembly-vs-overhead-assembly',
     'multi-storey-building-ceiling-platform-access-packages',
     'indoor-aerial-platform-ground-pressure-guide',
@@ -208,6 +217,7 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-control-view-between-workfaces',
   ] },
   { name: 'Planning access around building use', slugs: [
+    'ceiling-platform-snagging-retain-vs-remobilize',
     'ceiling-platform-floor-coating-work-sequence',
     'ceiling-platform-strip-out-and-reinstallation-package',
     'cleanroom-ceiling-platform-before-vs-after-clean-handover',
