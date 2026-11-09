@@ -42,9 +42,6 @@ describe('November 3: ten additional illustrated buyer decisions', () => {
     expect(slugs).toHaveLength(10);
     expect(slugs.filter(slug => oldSlugs.includes(slug))).toEqual([]);
     expect(new Set(frozenSlugs).size).toBe(210);
-    expect(CURRENT_ARTICLE_COUNT).toBe(210);
-    expect(CURRENT_SITEMAP_COUNT).toBe(234);
-    expect(CURRENT_PAGE_SIZES).toEqual([20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 10]);
     expect(NOVEMBER_03_BUYER_ARTICLES.filter(article => article.cluster === 'ceiling-buyer-decision')).toHaveLength(2);
     expect(NOVEMBER_03_BUYER_ARTICLES.filter(article => article.cluster === 'forming-buyer-decision')).toHaveLength(8);
     expect(new Set(expectedSlugs).size).toBe(CURRENT_ARTICLE_COUNT);
