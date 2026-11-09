@@ -8,6 +8,9 @@ export type GuideLink = { href: string; title: string; description: string };
 // Editorial topic boundaries, not keyword matching or automatic recommendations.
 export const GUIDE_TOPICS = [
   { name: 'Roof-level system selection', slugs: [
+    'corrugated-vs-trapezoidal-roof-panel-roll-forming-business',
+    'roof-panel-roll-forming-line-vs-wall-cassette-fabrication',
+    'roof-panel-producer-supply-only-vs-supply-and-install',
     'roof-panel-production-walk-in-orders-vs-project-contracts',
     'self-supporting-arch-roof-machine-vs-roof-panel-line',
     'roof-level-former-dedicated-vs-shared-workshop-line',
@@ -59,6 +62,8 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'rooflight-compatible-roof-panel-roll-forming-package',
+    'roof-panel-sheet-only-vs-complete-accessory-supply',
     'used-roof-panel-roll-former-vs-new-line',
     'standing-seam-roof-system-approval-before-roll-former-purchase',
     'roof-panel-roll-former-stop-to-cut-vs-flying-cut',
@@ -155,6 +160,9 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'suspended-acoustic-ceiling-tiles-vs-open-baffle-platform-package',
+    'roof-insulation-retrofit-access-from-above-vs-ceiling-platform',
+    'steel-roof-fire-protection-board-vs-spray-access-package',
     'large-deck-ceiling-platform-vs-rope-access-contractor',
     'ceiling-platform-vs-suspended-access-deck',
     'ceiling-contractor-labour-only-vs-supply-and-install-platform-purchase',
@@ -190,6 +198,7 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-ductwork-access-positions',
   ] },
   { name: 'Controls, maintenance and handover responsibilities', slugs: [
+    'roof-panel-roll-former-controls-retrofit-vs-new-line',
     'roll-forming-lift-critical-spares-stock-decision',
     'industrial-ceiling-camera-survey-vs-platform-inspection',
     'ceiling-platform-in-house-maintenance-vs-service-contractor',
@@ -217,6 +226,7 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-control-view-between-workfaces',
   ] },
   { name: 'Planning access around building use', slugs: [
+    'suspended-ceiling-grid-reuse-vs-complete-replacement-platform-scope',
     'ceiling-platform-snagging-retain-vs-remobilize',
     'ceiling-platform-floor-coating-work-sequence',
     'ceiling-platform-strip-out-and-reinstallation-package',

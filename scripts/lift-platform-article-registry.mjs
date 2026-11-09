@@ -591,6 +591,60 @@ export const NOVEMBER_03_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_03_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_03_BUYER_ARTICLES.map(({ slug }) => slug));
 
+export const NOVEMBER_09_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "corrugated-vs-trapezoidal-roof-panel-roll-forming-business",
+    "title": "Corrugated or Trapezoidal Roof-Panel Roll Forming for Your First Line?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "rooflight-compatible-roof-panel-roll-forming-package",
+    "title": "Roof-Panel Roll Forming for Rooflight Projects: Buy the Matched Package",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-forming-line-vs-wall-cassette-fabrication",
+    "title": "Roof-Panel Roll Forming or Wall-Cassette Fabrication: Which Business Fits?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-sheet-only-vs-complete-accessory-supply",
+    "title": "Roof-Panel Business: Sell Sheets Only or a Coordinated Accessory Package?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-former-controls-retrofit-vs-new-line",
+    "title": "Roof-Panel Roll Former: Retrofit Obsolete Controls or Buy a New Line?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "suspended-acoustic-ceiling-tiles-vs-open-baffle-platform-package",
+    "title": "Ceiling Platforms for Acoustic Tiles or Open Baffles: Price Different Work",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "roof-insulation-retrofit-access-from-above-vs-ceiling-platform",
+    "title": "Roof Insulation Retrofit: Work from Above or Use a Ceiling Platform?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "steel-roof-fire-protection-board-vs-spray-access-package",
+    "title": "Steel-Roof Fire Protection: Board or Spray Access Packages?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "suspended-ceiling-grid-reuse-vs-complete-replacement-platform-scope",
+    "title": "Ceiling Renewal: Reuse the Grid or Replace the Complete System?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-producer-supply-only-vs-supply-and-install",
+    "title": "Roof-Panel Producer: Supply Only or Supply and Install?",
+    "cluster": "forming-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_09_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_09_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -602,6 +656,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ date: '2026-11-01', standard: 'buyer-2026-11-01', articles: NOVEMBER_01_BUYER_ARTICLES, slugs: NOVEMBER_01_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ date: '2026-11-02', standard: 'buyer-2026-11-02', articles: NOVEMBER_02_BUYER_ARTICLES, slugs: NOVEMBER_02_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ date: '2026-11-03', standard: 'buyer-2026-11-03', articles: NOVEMBER_03_BUYER_ARTICLES, slugs: NOVEMBER_03_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ date: '2026-11-09', standard: 'buyer-2026-11-09', articles: NOVEMBER_09_BUYER_ARTICLES, slugs: NOVEMBER_09_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -626,6 +681,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_01_BUYER_ARTICLES,
   ...NOVEMBER_02_BUYER_ARTICLES,
   ...NOVEMBER_03_BUYER_ARTICLES,
+  ...NOVEMBER_09_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
