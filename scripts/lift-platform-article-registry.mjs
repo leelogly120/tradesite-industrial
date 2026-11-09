@@ -645,6 +645,262 @@ export const NOVEMBER_09_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_09_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_09_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// Fifty backlog decisions written and published on the actual November 10 date.
+// Missed quota dates are private accounting and never select public metadata.
+export const NOVEMBER_10_CATCHUP_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "fixed-eaves-forming-station-vs-dedicated-roll-forming-lift",
+    "title": "Fixed Eaves Forming Station or a Dedicated Roll-Forming Lift?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "interchangeable-forming-ceiling-modules-vs-dedicated-machines",
+    "title": "One Interchangeable Forming-and-Ceiling System or Two Dedicated Machines?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "purlin-line-vs-roof-panel-roll-forming-investment",
+    "title": "Purlin Production or Roof-Panel Roll Forming: Which Factory Investment?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "snap-lock-vs-mechanically-seamed-roof-panel-production",
+    "title": "Snap-Lock or Mechanically Seamed Standing-Seam Panel Production?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "standing-seam-panel-brake-folding-vs-roll-forming-line",
+    "title": "Short Standing-Seam Orders: Brake Folding or a Roll-Forming Line?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "fixed-width-vs-adjustable-width-standing-seam-roll-former",
+    "title": "Fixed-Width or Adjustable-Width Standing-Seam Roll Former?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-former-driven-tooling-vs-separate-drive-rollers",
+    "title": "Roof-Panel Former: Driven Forming Rolls or Separate Drive Rollers?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-former-cassette-tooling-vs-conventional-roll-changes",
+    "title": "Roof-Panel Roll Former: Cassette Tooling or Conventional Roll Changes?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-line-powered-decoiler-vs-pull-through-feed",
+    "title": "Roof-Panel Feed System: Powered Decoiler or Pull-Through Arrangement?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-forming-conditioned-coil-vs-entry-leveler",
+    "title": "Roof-Panel Production: Buy Conditioned Coil or Add Entry Leveling?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "gutter-production-vs-roof-panel-roll-forming-business",
+    "title": "Gutter Production or Roof-Panel Roll Forming: Which First Business?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "standing-seam-inline-sealant-vs-separate-application-process",
+    "title": "Standing-Seam Production: Inline Sealant or a Separate Application Process?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "sawtooth-multispan-roof-elevated-forming-vs-central-production-yard",
+    "title": "Sawtooth Roof Panels: Elevated Forming at Each Receiver or a Central Yard?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "solar-array-roof-renewal-forming-package-vs-local-panel-repairs",
+    "title": "Solar-Array Roof Work: Continuous Re-Roofing Package or Local Panel Repairs?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-forming-before-vs-after-factory-floor-slab",
+    "title": "Roof-Panel Forming Before or After the Factory Floor Slab?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "factory-reroof-single-shutdown-vs-phased-forming-campaign",
+    "title": "Factory Re-Roofing: One Shutdown or a Phased Forming Campaign?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "logistics-park-roof-panels-central-project-yard-vs-roving-forming-lift",
+    "title": "Logistics-Park Roofing: Central Project Yard or a Roving Forming Lift?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "standing-seam-production-open-framing-vs-deck-supported-roofs",
+    "title": "Standing-Seam Production for Open Framing or Deck-Supported Roofs?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "mobile-roof-panel-production-job-sized-coils-vs-recoiling-line",
+    "title": "Mobile Roof Production: Buy Job-Sized Coils or Add a Recoiling Line?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "new-roof-panel-profile-pilot-production-vs-full-line-investment",
+    "title": "New Roof-Panel Profile: Pilot Production or a Full Line Investment?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "plasterboard-vs-demountable-metal-ceiling-access-package",
+    "title": "Plasterboard or Demountable Metal Ceilings: Buy Different Access Packages",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "stretched-fabric-vs-rigid-panel-ceiling-platform-package",
+    "title": "Stretched Fabric or Rigid Ceiling Panels: Compare the Complete Installation",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "radiant-heated-chilled-ceiling-vs-passive-ceiling-access",
+    "title": "Heated and Chilled Ceilings: Price More Than Panel Installation",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "swimming-pool-ceiling-refurbishment-floor-release-vs-specialist-access",
+    "title": "Pool-Hall Ceiling Refurbishment: Release the Floor or Buy Specialist Access?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "auditorium-ceiling-refit-seat-removal-vs-retained-seating",
+    "title": "Auditorium Ceiling Refit: Remove Seats or Retain Them?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "sports-hall-impact-ceiling-repair-vs-system-replacement",
+    "title": "Sports-Hall Ceilings: Matched System Repair or Complete Renewal?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "gym-divider-curtain-vs-fixed-partition-installation-access",
+    "title": "Gym Divider Curtains or Fixed Partitions: Compare Installation Access",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "acoustic-wall-retrofit-direct-panels-vs-framed-lining",
+    "title": "Acoustic Wall Retrofit: Direct Panels or a Framed Lining?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "insulated-wall-panel-vs-rainscreen-facade-access-package",
+    "title": "Insulated Wall Panels or Rainscreen Facades: Price the Installation Package",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "industrial-wall-recladding-zoned-vs-whole-elevation-renewal",
+    "title": "Industrial Wall Recladding: Replace Selected Bays or the Whole Elevation?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "high-bay-lighting-retrofit-vs-complete-lighting-renewal-access",
+    "title": "High-Bay Lighting: Component Retrofit or Complete System Renewal?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "sprinkler-retrofit-vs-network-replacement-access-package",
+    "title": "Sprinkler Retrofit or Network Replacement: Buy the Correct Access Scope",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "overhead-steel-coating-spot-repair-vs-full-recoat-access",
+    "title": "Overhead Steel Coatings: Spot Repairs or a Full Recoat Campaign?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "industrial-ceiling-cleaning-ground-reach-vs-work-platform",
+    "title": "Industrial Ceiling Cleaning: Ground-Reach Equipment or a Work Platform?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "warehouse-bird-exclusion-netting-vs-rigid-lining-access",
+    "title": "Warehouse Bird Exclusion: Netting or Rigid Lining Access Packages?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "overhead-busbar-vs-cable-tray-installation-access-package",
+    "title": "Busbar or Cable-Tray Distribution: Compare Overhead Access Packages",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "industrial-door-operator-retrofit-vs-complete-door-replacement-access",
+    "title": "Industrial Doors: Operator Retrofit or Complete Replacement Access?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "large-led-video-wall-service-vs-complete-display-replacement-access",
+    "title": "Large LED Video Walls: Service Existing Modules or Replace the Display?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "food-factory-wall-refurbishment-hygienic-lining-vs-refinish",
+    "title": "Food-Factory Wall Refurbishment: New Hygienic Lining or Refinish?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "external-wall-insulation-render-vs-rainscreen-access-package",
+    "title": "External Wall Insulation: Rendered System or Rainscreen Access Package?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-production-turnkey-cell-vs-owner-integrated-equipment",
+    "title": "Roof-Panel Production: Turnkey Cell or Owner-Integrated Equipment?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "relocate-roof-panel-forming-line-vs-buy-new-for-new-workshop",
+    "title": "Relocate Your Roof-Panel Line or Buy New for the Next Workshop?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-production-private-label-vs-own-brand",
+    "title": "Roof-Panel Production: Private-Label Supply or Your Own Brand?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-forming-local-vs-imported-coil-supply",
+    "title": "Roof-Panel Roll Forming: Local or Imported Coil Supply?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "first-roof-panel-line-experienced-crew-vs-new-team",
+    "title": "First Roof-Panel Line: Hire an Experienced Crew or Train a New Team?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-forming-operator-assisted-vs-automated-cell",
+    "title": "Roof-Panel Roll Forming: Operator-Assisted Line or Automated Cell?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "steel-service-centre-add-roof-panel-roll-forming-vs-buy-panels",
+    "title": "Steel Service Centre: Add Roof-Panel Roll Forming or Buy Finished Panels?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-forming-lift-business-dealer-resale-vs-owned-rental-fleet",
+    "title": "Roof-Forming Lift Business: Dealer Resale or an Owned Rental Fleet?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "buy-roof-panel-manufacturing-business-vs-start-new-cell",
+    "title": "Buy a Roof-Panel Manufacturing Business or Start a New Production Cell?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-factory-lease-existing-workshop-vs-purpose-built-plant",
+    "title": "Roof-Panel Factory: Lease an Existing Workshop or Build a Dedicated Plant?",
+    "cluster": "forming-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_10_CATCHUP_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_10_CATCHUP_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -657,6 +913,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ date: '2026-11-02', standard: 'buyer-2026-11-02', articles: NOVEMBER_02_BUYER_ARTICLES, slugs: NOVEMBER_02_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ date: '2026-11-03', standard: 'buyer-2026-11-03', articles: NOVEMBER_03_BUYER_ARTICLES, slugs: NOVEMBER_03_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ date: '2026-11-09', standard: 'buyer-2026-11-09', articles: NOVEMBER_09_BUYER_ARTICLES, slugs: NOVEMBER_09_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'catchup-20261104-08', date: '2026-11-10', standard: 'buyer-2026-11-10', articles: NOVEMBER_10_CATCHUP_BUYER_ARTICLES, slugs: NOVEMBER_10_CATCHUP_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -682,6 +939,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_02_BUYER_ARTICLES,
   ...NOVEMBER_03_BUYER_ARTICLES,
   ...NOVEMBER_09_BUYER_ARTICLES,
+  ...NOVEMBER_10_CATCHUP_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));

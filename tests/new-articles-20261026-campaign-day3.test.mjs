@@ -31,7 +31,11 @@ const hidden = n => ['script', 'style', 'template', 'noscript'].includes(n.tagNa
   || n.attrs?.some(a => a.name === 'hidden') || /display\s*:\s*none|visibility\s*:\s*hidden/i.test(attr(n, 'style') ?? '');
 const text = n => !n || hidden(n) ? '' : n.nodeName === '#text' ? n.value : (n.childNodes ?? []).map(text).join(' ');
 const words = n => (text(n).match(/[\p{L}\p{N}]+(?:['’-][\p{L}\p{N}]+)*/gu) ?? []).length;
-const built = async route => nodes(parse(await readFile(resolve(root, 'dist', `.${route}`, 'index.html'), 'utf8')));
+const builtPages = new Map();
+const built = route => {
+  if (!builtPages.has(route)) builtPages.set(route, readFile(resolve(root, 'dist', `.${route}`, 'index.html'), 'utf8').then(html => nodes(parse(html))));
+  return builtPages.get(route);
+};
 const processor = await createMarkdownProcessor();
 const readArticle = slug => readFile(resolve(root, 'src/content/blog', slug + '.md'), 'utf8');
 const markers = ['buyer-intent', 'conditions', 'evidence-tradeoffs', 'limitations-not-fit', 'project-checklist', 'cta-editorial-note'];
