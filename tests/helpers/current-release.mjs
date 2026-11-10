@@ -2,9 +2,9 @@ import { BASELINE_BLOG_SLUGS, ALL_LIFT_PLATFORM_ARTICLE_SLUGS, LIFT_PLATFORM_ART
 export { BUYER_PHOTO_URLS } from './buyer-photo-cohorts.mjs';
 
 // Current release size is explicit; frozen cohort fixtures remain independent.
-export const CURRENT_ARTICLE_COUNT = 270;
-export const CURRENT_SITEMAP_COUNT = 294;
-export const CURRENT_REFERENCE_PHOTO_COUNT = 100;
+export const CURRENT_ARTICLE_COUNT = 280;
+export const CURRENT_SITEMAP_COUNT = 304;
+export const CURRENT_REFERENCE_PHOTO_COUNT = 113;
 export const CURRENT_SLUGS = Object.freeze([...BASELINE_BLOG_SLUGS, ...ALL_LIFT_PLATFORM_ARTICLE_SLUGS]);
 export const HISTORICAL_50_SLUGS = Object.freeze([...BASELINE_BLOG_SLUGS, ...LIFT_PLATFORM_ARTICLE_SLUGS, ...DAILY_LIFT_PLATFORM_ARTICLE_SLUGS, ...AUGUST_10_LIFT_PLATFORM_ARTICLE_SLUGS, ...AUGUST_13_LIFT_PLATFORM_ARTICLE_SLUGS]);
 export const CURRENT_PAGE_SIZES = Object.freeze(Array.from({ length: Math.ceil(CURRENT_ARTICLE_COUNT / 20) }, (_, index) => Math.min(20, CURRENT_ARTICLE_COUNT - index * 20)));

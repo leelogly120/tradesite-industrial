@@ -901,6 +901,61 @@ export const NOVEMBER_10_CATCHUP_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_10_CATCHUP_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_10_CATCHUP_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// Ordinary November 10 daily quota, separate from the same-date catchup cohort.
+export const NOVEMBER_10_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "ceiling-drilling-robot-vs-complete-platform-access-package",
+    "title": "Ceiling Drilling Robot or Work Platform: Price the Complete Installation",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "used-vs-new-large-deck-ceiling-platform-purchase",
+    "title": "Used or New Large-Deck Ceiling Platform: Compare the Ready-for-Work Purchase",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "naturally-curved-vs-mechanically-curved-roof-panel-production",
+    "title": "Curved Metal Roofs: Straight-Panel Production or Mechanical Pre-Curving?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "integrated-roof-panel-forming-curving-vs-separate-machines",
+    "title": "Curved Roof-Panel Production: One Integrated Machine or Separate Forming and Curving?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-coil-store-overhead-crane-vs-forklift-handling",
+    "title": "Roof-Panel Coil Stores: Overhead Crane or Forklift Handling?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-forming-equipment-commission-agent-vs-stocking-distributor",
+    "title": "Roof-Forming Equipment Sales: Commission Agent or Stocking Distributor?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-forming-equipment-cash-purchase-vs-hire-purchase-finance",
+    "title": "Roof-Forming Equipment: Pay Cash or Use Hire-Purchase Finance?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "fabric-vs-metal-ductwork-personnel-access-package",
+    "title": "Fabric or Metal Ductwork: Buy the Complete Overhead Access Package",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "unitized-vs-stick-curtain-wall-personnel-access-package",
+    "title": "Unitized or Stick Curtain Wall: Price the Complete Access Package",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "insulated-roof-panel-production-continuous-line-vs-discontinuous-press",
+    "title": "Insulated Roof-Panel Production: Continuous Line or Discontinuous Press?",
+    "cluster": "forming-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_10_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_10_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -914,6 +969,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ date: '2026-11-03', standard: 'buyer-2026-11-03', articles: NOVEMBER_03_BUYER_ARTICLES, slugs: NOVEMBER_03_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ date: '2026-11-09', standard: 'buyer-2026-11-09', articles: NOVEMBER_09_BUYER_ARTICLES, slugs: NOVEMBER_09_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'catchup-20261104-08', date: '2026-11-10', standard: 'buyer-2026-11-10', articles: NOVEMBER_10_CATCHUP_BUYER_ARTICLES, slugs: NOVEMBER_10_CATCHUP_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261110', date: '2026-11-10', standard: 'buyer-2026-11-10', articles: NOVEMBER_10_BUYER_ARTICLES, slugs: NOVEMBER_10_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -940,6 +996,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_03_BUYER_ARTICLES,
   ...NOVEMBER_09_BUYER_ARTICLES,
   ...NOVEMBER_10_CATCHUP_BUYER_ARTICLES,
+  ...NOVEMBER_10_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
