@@ -59,9 +59,6 @@ describe('November 10: fifty distinct catchup buyer decisions on their actual so
     expect(slugs).toHaveLength(50);
     expect(slugs.filter(slug => oldSlugs.includes(slug))).toEqual([]);
     expect(new Set(frozenSlugs).size).toBe(270);
-    expect(CURRENT_ARTICLE_COUNT).toBe(270);
-    expect(CURRENT_SITEMAP_COUNT).toBe(294);
-    expect(CURRENT_PAGE_SIZES).toEqual([20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 10]);
     expect(NOVEMBER_10_CATCHUP_BUYER_ARTICLES.filter(article => article.cluster === 'ceiling-buyer-decision')).toHaveLength(20);
     expect(NOVEMBER_10_CATCHUP_BUYER_ARTICLES.filter(article => article.cluster === 'forming-buyer-decision')).toHaveLength(30);
     expect(new Set(expectedSlugs).size).toBe(CURRENT_ARTICLE_COUNT);

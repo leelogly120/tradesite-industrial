@@ -8,6 +8,8 @@ export type GuideLink = { href: string; title: string; description: string };
 // Editorial topic boundaries, not keyword matching or automatic recommendations.
 export const GUIDE_TOPICS = [
   { name: 'Roof-level system selection', slugs: [
+    'roof-forming-equipment-commission-agent-vs-stocking-distributor',
+    'roof-forming-equipment-cash-purchase-vs-hire-purchase-finance',
     'fixed-eaves-forming-station-vs-dedicated-roll-forming-lift',
     'interchangeable-forming-ceiling-modules-vs-dedicated-machines',
     'sawtooth-multispan-roof-elevated-forming-vs-central-production-yard',
@@ -69,6 +71,9 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'naturally-curved-vs-mechanically-curved-roof-panel-production',
+    'integrated-roof-panel-forming-curving-vs-separate-machines',
+    'insulated-roof-panel-production-continuous-line-vs-discontinuous-press',
     'purlin-line-vs-roof-panel-roll-forming-investment',
     'snap-lock-vs-mechanically-seamed-roof-panel-production',
     'standing-seam-panel-brake-folding-vs-roll-forming-line',
@@ -139,6 +144,7 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-control-cabinet-site-conditions',
   ] },
   { name: 'Coil and roof-panel routes', slugs: [
+    'roof-panel-coil-store-overhead-crane-vs-forklift-handling',
     'roof-panel-line-powered-decoiler-vs-pull-through-feed',
     'roof-panel-roll-forming-conditioned-coil-vs-entry-leveler',
     'logistics-park-roof-panels-central-project-yard-vs-roving-forming-lift',
@@ -186,6 +192,9 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'ceiling-drilling-robot-vs-complete-platform-access-package',
+    'fabric-vs-metal-ductwork-personnel-access-package',
+    'unitized-vs-stick-curtain-wall-personnel-access-package',
     'plasterboard-vs-demountable-metal-ceiling-access-package',
     'stretched-fabric-vs-rigid-panel-ceiling-platform-package',
     'radiant-heated-chilled-ceiling-vs-passive-ceiling-access',
@@ -234,6 +243,7 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-ductwork-access-positions',
   ] },
   { name: 'Controls, maintenance and handover responsibilities', slugs: [
+    'used-vs-new-large-deck-ceiling-platform-purchase',
     'high-bay-lighting-retrofit-vs-complete-lighting-renewal-access',
     'industrial-door-operator-retrofit-vs-complete-door-replacement-access',
     'large-led-video-wall-service-vs-complete-display-replacement-access',
