@@ -71,6 +71,12 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'steel-framing-roll-former-vs-roof-panel-production-line',
+    'perforated-acoustic-roof-liner-vs-weather-sheet-production',
+    'roof-panel-embossed-coil-supply-vs-own-embossing-line',
+    'roof-panel-site-production-temporary-workshop-vs-open-yard',
+    'roof-panel-protective-film-buy-laminated-coil-vs-applicator',
+    'cut-to-length-flat-sheet-business-vs-roof-panel-roll-forming',
     'naturally-curved-vs-mechanically-curved-roof-panel-production',
     'integrated-roof-panel-forming-curving-vs-separate-machines',
     'insulated-roof-panel-production-continuous-line-vs-discontinuous-press',
@@ -192,6 +198,10 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'fire-curtain-vs-compartment-wall-access-package',
+    'high-bay-light-lowering-system-vs-platform-maintenance',
+    'acoustic-spray-vs-suspended-ceiling-installation-access',
+    'walkable-cleanroom-ceiling-vs-access-from-below',
     'ceiling-drilling-robot-vs-complete-platform-access-package',
     'fabric-vs-metal-ductwork-personnel-access-package',
     'unitized-vs-stick-curtain-wall-personnel-access-package',

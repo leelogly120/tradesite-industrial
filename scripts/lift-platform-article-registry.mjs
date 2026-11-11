@@ -956,6 +956,61 @@ export const NOVEMBER_10_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_10_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_10_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// November 11 ordinary daily quota.
+export const NOVEMBER_11_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "steel-framing-roll-former-vs-roof-panel-production-line",
+    "title": "Steel Framing or Roof Panels: Which Roll-Forming Business Should You Build?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "perforated-acoustic-roof-liner-vs-weather-sheet-production",
+    "title": "Perforated Acoustic Roof Liners or Weather Sheets: Choose the Production Business",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-embossed-coil-supply-vs-own-embossing-line",
+    "title": "Textured Roof Panels: Buy Embossed Coil or Add an Embossing Line?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "fire-curtain-vs-compartment-wall-access-package",
+    "title": "Retractable Fire Curtain or Compartment Wall: Price the Complete Installation Access",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-site-production-temporary-workshop-vs-open-yard",
+    "title": "Temporary Workshop or Open Yard for Site Roof-Panel Production?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-protective-film-buy-laminated-coil-vs-applicator",
+    "title": "Roof-Panel Protective Film: Buy Laminated Coil or Add an Applicator?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "high-bay-light-lowering-system-vs-platform-maintenance",
+    "title": "High-Bay Light Lowering System or Platform-Based Maintenance?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "acoustic-spray-vs-suspended-ceiling-installation-access",
+    "title": "Acoustic Spray or Suspended Ceiling: Buy the Complete Access Package",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "cut-to-length-flat-sheet-business-vs-roof-panel-roll-forming",
+    "title": "Flat-Sheet Cutting Business or Roof-Panel Roll Forming?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "walkable-cleanroom-ceiling-vs-access-from-below",
+    "title": "Walkable Cleanroom Ceiling or Service Access from Below?",
+    "cluster": "ceiling-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_11_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_11_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -970,6 +1025,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ date: '2026-11-09', standard: 'buyer-2026-11-09', articles: NOVEMBER_09_BUYER_ARTICLES, slugs: NOVEMBER_09_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'catchup-20261104-08', date: '2026-11-10', standard: 'buyer-2026-11-10', articles: NOVEMBER_10_CATCHUP_BUYER_ARTICLES, slugs: NOVEMBER_10_CATCHUP_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261110', date: '2026-11-10', standard: 'buyer-2026-11-10', articles: NOVEMBER_10_BUYER_ARTICLES, slugs: NOVEMBER_10_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261111', date: '2026-11-11', standard: 'buyer-2026-11-11', articles: NOVEMBER_11_BUYER_ARTICLES, slugs: NOVEMBER_11_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -997,6 +1053,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_09_BUYER_ARTICLES,
   ...NOVEMBER_10_CATCHUP_BUYER_ARTICLES,
   ...NOVEMBER_10_BUYER_ARTICLES,
+  ...NOVEMBER_11_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
