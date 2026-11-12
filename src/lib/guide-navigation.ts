@@ -8,6 +8,10 @@ export type GuideLink = { href: string; title: string; description: string };
 // Editorial topic boundaries, not keyword matching or automatic recommendations.
 export const GUIDE_TOPICS = [
   { name: 'Roof-level system selection', slugs: [
+    'reclaimed-metal-roof-panels-vs-new-formed-sheets',
+    'prefabricated-roof-cassettes-vs-site-built-roof-package',
+    'metal-roof-forming-vs-single-ply-roofing-contractor-investment',
+    'metal-roof-restoration-coating-vs-new-panel-replacement',
     'roof-forming-equipment-commission-agent-vs-stocking-distributor',
     'roof-forming-equipment-cash-purchase-vs-hire-purchase-finance',
     'fixed-eaves-forming-station-vs-dedicated-roll-forming-lift',
@@ -71,6 +75,9 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'polycarbonate-roof-sheet-extrusion-vs-metal-roll-forming',
+    'roof-panel-post-form-powder-coating-vs-prepainted-coil',
+    'concrete-roof-tile-plant-vs-metal-roof-panel-business',
     'steel-framing-roll-former-vs-roof-panel-production-line',
     'perforated-acoustic-roof-liner-vs-weather-sheet-production',
     'roof-panel-embossed-coil-supply-vs-own-embossing-line',
@@ -198,6 +205,9 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'industrial-facade-bmu-vs-ground-platform-maintenance',
+    'fabric-hangar-door-vs-horizontal-sliding-door-access',
+    'hvls-vs-distributed-industrial-fans-installation-access',
     'fire-curtain-vs-compartment-wall-access-package',
     'high-bay-light-lowering-system-vs-platform-maintenance',
     'acoustic-spray-vs-suspended-ceiling-installation-access',

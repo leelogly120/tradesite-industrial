@@ -1011,6 +1011,61 @@ export const NOVEMBER_11_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_11_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_11_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// November 12 ordinary daily quota.
+export const NOVEMBER_12_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "reclaimed-metal-roof-panels-vs-new-formed-sheets",
+    "title": "Reclaimed Metal Roof Panels or New Formed Sheets?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "prefabricated-roof-cassettes-vs-site-built-roof-package",
+    "title": "Prefabricated Roof Cassettes or a Site-Built Roof Package?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-forming-vs-single-ply-roofing-contractor-investment",
+    "title": "Metal Roof Forming or Single-Ply Roofing: Where Should a Contractor Invest?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-restoration-coating-vs-new-panel-replacement",
+    "title": "Restore the Metal Roof with a Coating or Replace Its Panels?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "polycarbonate-roof-sheet-extrusion-vs-metal-roll-forming",
+    "title": "Polycarbonate Roof-Sheet Extrusion or Metal Roll Forming?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-post-form-powder-coating-vs-prepainted-coil",
+    "title": "Roof-Panel Finishing: Post-Form Powder Coating or Prepainted Coil?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "concrete-roof-tile-plant-vs-metal-roof-panel-business",
+    "title": "Concrete Roof Tiles or Metal Roof Panels: Choose the Complete Production Business",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "industrial-facade-bmu-vs-ground-platform-maintenance",
+    "title": "Permanent Facade BMU or Ground-Based Platform: Buy the Complete Maintenance Route",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "fabric-hangar-door-vs-horizontal-sliding-door-access",
+    "title": "Fabric-Lifting or Sliding Hangar Door: Price the Full Installation Access",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "hvls-vs-distributed-industrial-fans-installation-access",
+    "title": "Large HVLS Fans or Distributed Fans: Buy the Complete Installation Access",
+    "cluster": "ceiling-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_12_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_12_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -1026,6 +1081,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'catchup-20261104-08', date: '2026-11-10', standard: 'buyer-2026-11-10', articles: NOVEMBER_10_CATCHUP_BUYER_ARTICLES, slugs: NOVEMBER_10_CATCHUP_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261110', date: '2026-11-10', standard: 'buyer-2026-11-10', articles: NOVEMBER_10_BUYER_ARTICLES, slugs: NOVEMBER_10_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261111', date: '2026-11-11', standard: 'buyer-2026-11-11', articles: NOVEMBER_11_BUYER_ARTICLES, slugs: NOVEMBER_11_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261112', date: '2026-11-12', standard: 'buyer-2026-11-12', articles: NOVEMBER_12_BUYER_ARTICLES, slugs: NOVEMBER_12_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -1054,6 +1110,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_10_CATCHUP_BUYER_ARTICLES,
   ...NOVEMBER_10_BUYER_ARTICLES,
   ...NOVEMBER_11_BUYER_ARTICLES,
+  ...NOVEMBER_12_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
