@@ -1066,6 +1066,61 @@ export const NOVEMBER_12_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_12_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_12_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// November 13 ordinary daily quota.
+export const NOVEMBER_13_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "ground-assembled-whole-roof-vs-roof-level-forming",
+    "title": "Ground-Assembled Roof Lift or Roof-Level Panel Forming?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "integrated-solar-roof-vs-separate-pv-panel-production",
+    "title": "Integrated Solar Roof or Separate PV: What Should the Panel Producer Supply?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "modular-building-factory-roofs-vs-site-overroof-forming",
+    "title": "Modular Buildings: Factory-Finished Roofs or a Separate Site Overroof?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-flashing-cell-long-folder-vs-press-brake",
+    "title": "Roof-Panel Flashing Cell: Long Folder or Press Brake?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "natural-roof-smoke-vents-vs-mechanical-extraction-access",
+    "title": "Natural Smoke Vents or Mechanical Extraction: Buy the Complete Access Package",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "freestanding-inplant-room-vs-full-height-partition-access",
+    "title": "In-Plant Rooms: Freestanding Enclosure or Full-Height Partitions?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "radiant-tube-vs-warm-air-heaters-platform-installation",
+    "title": "Radiant Tube or Warm-Air Heaters: Buy the Complete Installation Access",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "warehouse-beam-vs-aspirating-smoke-detection-access",
+    "title": "Beam or Aspirating Smoke Detection: Price Warehouse Access",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "overhead-crane-on-site-repair-vs-workshop-overhaul-access",
+    "title": "Overhead Crane Repair: On-Site Work or Workshop Overhaul?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "overhead-vs-floor-conveyor-installation-access",
+    "title": "Overhead or Floor Conveyors: Price Installation and Service Access",
+    "cluster": "ceiling-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_13_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_13_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -1082,6 +1137,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'daily-20261110', date: '2026-11-10', standard: 'buyer-2026-11-10', articles: NOVEMBER_10_BUYER_ARTICLES, slugs: NOVEMBER_10_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261111', date: '2026-11-11', standard: 'buyer-2026-11-11', articles: NOVEMBER_11_BUYER_ARTICLES, slugs: NOVEMBER_11_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261112', date: '2026-11-12', standard: 'buyer-2026-11-12', articles: NOVEMBER_12_BUYER_ARTICLES, slugs: NOVEMBER_12_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261113', date: '2026-11-13', standard: 'buyer-2026-11-13', articles: NOVEMBER_13_BUYER_ARTICLES, slugs: NOVEMBER_13_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -1111,6 +1167,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_10_BUYER_ARTICLES,
   ...NOVEMBER_11_BUYER_ARTICLES,
   ...NOVEMBER_12_BUYER_ARTICLES,
+  ...NOVEMBER_13_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));

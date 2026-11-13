@@ -1,0 +1,100 @@
+[
+  {
+    "url": "/images/equipment/buyer-20261029-ceiling-interface.webp",
+    "sha256": "97ad35f2c9880eed7c29d4987c95798d38e1067e92552976abbc107c070e3c3a",
+    "width": 1600,
+    "height": 1067,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261029-wall-corridor.webp",
+    "sha256": "7967db4d538acbea00f9fc3a70c9dfa2f01a1904f829714d015f4125052c525f",
+    "width": 1200,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261029-wall-installation.webp",
+    "sha256": "ea7deaf96d7d4328720cf9086c4a3dfd1420f9c01b107b5cbe436d56e5a12784",
+    "width": 1200,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261030-feed-entry.webp",
+    "sha256": "5741ba7941b9d11efb5d620878112cc6a8b9d04e5226c7982b5623042cee7876",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261031-crawler-line-low.webp",
+    "sha256": "736f692725314d9ed52357216bee63855a3e503cf48607d14a458856d454b379",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261031-crawler-roof-side.webp",
+    "sha256": "08c05e09b7a341d9d1e5f71e64e106443cbea75644f90d5b9c7d840fce017a89",
+    "width": 728,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261031-deck-raised-yard.webp",
+    "sha256": "3aba332758bed83980e461e0d2cc2751d50dd091bd6af2ec8528fb3889ca4671",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261031-deck-top.webp",
+    "sha256": "bf6afec505bf7e16149cea6492eb206a34f557aaff3642f74320666a2ba7ca5e",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261031-hall-construction.webp",
+    "sha256": "c994b77bd4b5a56013a9bb7c7bef458af0c9d63fef6a5f0548bb22e5b6f1fa70",
+    "width": 1600,
+    "height": 1067,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261031-roof-framing.webp",
+    "sha256": "2a1568776f524c3c78f763983487683bce14c23b517adafe44c0b6c134943a1b",
+    "width": 728,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261101-former-entry.webp",
+    "sha256": "a5e826b6b00aace87aa4bade717e496d5fc66f65255324d0e9903a37d2decdc6",
+    "width": 1200,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261101-profiled-sheet.webp",
+    "sha256": "cd8ca90eb8b704e32ef1a917f6072a04fb43c1e13f675dbec4eed20b51e7b96b",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261101-roller-components.webp",
+    "sha256": "91acecc297a08403811c3e9bab97af2224ae82612a6f72b22f309288120a5a26",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261101-roller-line-detail.webp",
+    "sha256": "e74368ffe95c68e0d1179c0a3af7b7e790098aa72a4227745a0b686e025d2249",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  }
+]
