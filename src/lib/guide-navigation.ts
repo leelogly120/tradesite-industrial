@@ -8,6 +8,9 @@ export type GuideLink = { href: string; title: string; description: string };
 // Editorial topic boundaries, not keyword matching or automatic recommendations.
 export const GUIDE_TOPICS = [
   { name: 'Roof-level system selection', slugs: [
+    'ground-assembled-whole-roof-vs-roof-level-forming',
+    'integrated-solar-roof-vs-separate-pv-panel-production',
+    'modular-building-factory-roofs-vs-site-overroof-forming',
     'reclaimed-metal-roof-panels-vs-new-formed-sheets',
     'prefabricated-roof-cassettes-vs-site-built-roof-package',
     'metal-roof-forming-vs-single-ply-roofing-contractor-investment',
@@ -75,6 +78,7 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'roof-flashing-cell-long-folder-vs-press-brake',
     'polycarbonate-roof-sheet-extrusion-vs-metal-roll-forming',
     'roof-panel-post-form-powder-coating-vs-prepainted-coil',
     'concrete-roof-tile-plant-vs-metal-roof-panel-business',
@@ -205,6 +209,12 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'natural-roof-smoke-vents-vs-mechanical-extraction-access',
+    'freestanding-inplant-room-vs-full-height-partition-access',
+    'radiant-tube-vs-warm-air-heaters-platform-installation',
+    'warehouse-beam-vs-aspirating-smoke-detection-access',
+    'overhead-crane-on-site-repair-vs-workshop-overhaul-access',
+    'overhead-vs-floor-conveyor-installation-access',
     'industrial-facade-bmu-vs-ground-platform-maintenance',
     'fabric-hangar-door-vs-horizontal-sliding-door-access',
     'hvls-vs-distributed-industrial-fans-installation-access',
