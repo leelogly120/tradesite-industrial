@@ -1121,6 +1121,61 @@ export const NOVEMBER_13_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_13_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_13_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// November 14 ordinary daily quota.
+export const NOVEMBER_14_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "roof-supported-roll-former-vs-ground-supported-lift",
+    "title": "Roof-Supported Roll Former or Ground-Supported Forming Lift?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "reroof-temporary-cover-vs-phased-weather-closures",
+    "title": "Reroofing an Occupied Building: Temporary Roof or Phased Closures?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "flat-to-pitched-roof-conversion-vs-same-geometry-renewal",
+    "title": "Flat-to-Pitched Metal Roof Conversion or Same-Geometry Renewal?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "containerized-roof-panel-plant-vs-open-trailer-roll-former",
+    "title": "Containerized Roof Panel Plant or Open Trailer Roll Former?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "high-rack-order-picker-vs-ceiling-maintenance-platform",
+    "title": "High-Rack Order Picker or Ceiling Maintenance Platform?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "workpiece-positioner-vs-mobile-platform-fabrication-access",
+    "title": "Fabrication Access: Position the Workpiece or Raise the Crew?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "construction-hoist-vs-ceiling-work-platform-purchase",
+    "title": "Construction Hoist or Ceiling Work Platform: Buy the Correct Duty",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "ceiling-platform-elevated-travel-vs-repositioning",
+    "title": "Ceiling Platforms: Pay for Elevated Travel or Plan Repositioning?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "hazardous-area-ceiling-platform-vs-alternative-work-package",
+    "title": "Hazardous-Area Ceiling Work: Specialist Platform or a Different Work Package?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "ceiling-platform-consolidated-rental-vs-trade-hire",
+    "title": "Ceiling Access: Consolidated Site Rental or Separate Trade Hire?",
+    "cluster": "ceiling-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_14_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_14_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -1138,6 +1193,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'daily-20261111', date: '2026-11-11', standard: 'buyer-2026-11-11', articles: NOVEMBER_11_BUYER_ARTICLES, slugs: NOVEMBER_11_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261112', date: '2026-11-12', standard: 'buyer-2026-11-12', articles: NOVEMBER_12_BUYER_ARTICLES, slugs: NOVEMBER_12_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261113', date: '2026-11-13', standard: 'buyer-2026-11-13', articles: NOVEMBER_13_BUYER_ARTICLES, slugs: NOVEMBER_13_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261114', date: '2026-11-14', standard: 'buyer-2026-11-14', articles: NOVEMBER_14_BUYER_ARTICLES, slugs: NOVEMBER_14_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -1168,6 +1224,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_11_BUYER_ARTICLES,
   ...NOVEMBER_12_BUYER_ARTICLES,
   ...NOVEMBER_13_BUYER_ARTICLES,
+  ...NOVEMBER_14_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
