@@ -8,6 +8,9 @@ export type GuideLink = { href: string; title: string; description: string };
 // Editorial topic boundaries, not keyword matching or automatic recommendations.
 export const GUIDE_TOPICS = [
   { name: 'Roof-level system selection', slugs: [
+    'roof-supported-roll-former-vs-ground-supported-lift',
+    'reroof-temporary-cover-vs-phased-weather-closures',
+    'flat-to-pitched-roof-conversion-vs-same-geometry-renewal',
     'ground-assembled-whole-roof-vs-roof-level-forming',
     'integrated-solar-roof-vs-separate-pv-panel-production',
     'modular-building-factory-roofs-vs-site-overroof-forming',
@@ -78,6 +81,7 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'containerized-roof-panel-plant-vs-open-trailer-roll-former',
     'roof-flashing-cell-long-folder-vs-press-brake',
     'polycarbonate-roof-sheet-extrusion-vs-metal-roll-forming',
     'roof-panel-post-form-powder-coating-vs-prepainted-coil',
@@ -209,6 +213,12 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'high-rack-order-picker-vs-ceiling-maintenance-platform',
+    'workpiece-positioner-vs-mobile-platform-fabrication-access',
+    'construction-hoist-vs-ceiling-work-platform-purchase',
+    'ceiling-platform-elevated-travel-vs-repositioning',
+    'hazardous-area-ceiling-platform-vs-alternative-work-package',
+    'ceiling-platform-consolidated-rental-vs-trade-hire',
     'natural-roof-smoke-vents-vs-mechanical-extraction-access',
     'freestanding-inplant-room-vs-full-height-partition-access',
     'radiant-tube-vs-warm-air-heaters-platform-installation',
