@@ -61,9 +61,6 @@ describe('November 14: ten new buyer decisions after the preserved November13 co
     expect(slugs).toHaveLength(10);
     expect(slugs.filter(slug => oldSlugs.includes(slug))).toEqual([]);
     expect(new Set(frozenSlugs).size).toBe(320);
-    expect(CURRENT_ARTICLE_COUNT).toBe(320);
-    expect(CURRENT_SITEMAP_COUNT).toBe(344);
-    expect(CURRENT_PAGE_SIZES).toEqual([20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]);
     expect(NOVEMBER_14_BUYER_ARTICLES.filter(article => article.cluster === 'ceiling-buyer-decision')).toHaveLength(6);
     expect(NOVEMBER_14_BUYER_ARTICLES.filter(article => article.cluster === 'forming-buyer-decision')).toHaveLength(4);
     expect(new Set(expectedSlugs).size).toBe(CURRENT_ARTICLE_COUNT);

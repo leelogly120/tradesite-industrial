@@ -1176,6 +1176,61 @@ export const NOVEMBER_14_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_14_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_14_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// November 15 ordinary daily quota.
+export const NOVEMBER_15_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "directional-vs-symmetrical-standing-seam-roof-production",
+    "title": "Standing-Seam Roof Production: Directional Panels or a Symmetrical System?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "portable-roof-roll-former-exclusive-coil-program-vs-independent-sourcing",
+    "title": "Portable Roof Roll Formers: Accept Exclusive Coil Supply or Source Independently?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "existing-standing-seam-wind-retrofit-vs-new-roof-panel-package",
+    "title": "Reinforce an Existing Standing-Seam Roof or Buy Replacement Panels?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "faceted-roof-redesign-vs-continuous-freeform-roof-panels",
+    "title": "A Faceted Roof Redesign or a Continuous Freeform Metal Skin?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "ceiling-platform-temporary-floor-propping-vs-alternative-access",
+    "title": "Ceiling Platforms on Suspended Floors: Fund Temporary Propping or Change Access?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "occupied-ceiling-refit-protection-deck-vs-vacating-work-area",
+    "title": "Occupied Ceiling Refits: Buy Overhead Protection or Vacate the Work Area?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "overhead-telescopic-platform-vs-floor-based-large-deck",
+    "title": "Overhead Telescopic Work Platform or a Floor-Based Large Deck?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "rough-terrain-scissor-vs-crawler-large-deck-platform",
+    "title": "Rough-Terrain Scissor Lift or a Crawler Large-Deck Platform?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "platform-rental-fleet-cross-hire-vs-new-equipment-purchase",
+    "title": "Rental Fleet Gaps: Cross-Hire a Platform or Buy Another Asset?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "under-bridge-inspection-truck-vs-ground-based-work-platform",
+    "title": "Under-Bridge Inspection Truck or a Ground-Based Work Platform?",
+    "cluster": "ceiling-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_15_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_15_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -1194,6 +1249,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'daily-20261112', date: '2026-11-12', standard: 'buyer-2026-11-12', articles: NOVEMBER_12_BUYER_ARTICLES, slugs: NOVEMBER_12_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261113', date: '2026-11-13', standard: 'buyer-2026-11-13', articles: NOVEMBER_13_BUYER_ARTICLES, slugs: NOVEMBER_13_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261114', date: '2026-11-14', standard: 'buyer-2026-11-14', articles: NOVEMBER_14_BUYER_ARTICLES, slugs: NOVEMBER_14_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261115', date: '2026-11-15', standard: 'buyer-2026-11-15', articles: NOVEMBER_15_BUYER_ARTICLES, slugs: NOVEMBER_15_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -1225,6 +1281,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_12_BUYER_ARTICLES,
   ...NOVEMBER_13_BUYER_ARTICLES,
   ...NOVEMBER_14_BUYER_ARTICLES,
+  ...NOVEMBER_15_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));

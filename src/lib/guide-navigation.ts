@@ -8,6 +8,9 @@ export type GuideLink = { href: string; title: string; description: string };
 // Editorial topic boundaries, not keyword matching or automatic recommendations.
 export const GUIDE_TOPICS = [
   { name: 'Roof-level system selection', slugs: [
+    'directional-vs-symmetrical-standing-seam-roof-production',
+    'existing-standing-seam-wind-retrofit-vs-new-roof-panel-package',
+    'faceted-roof-redesign-vs-continuous-freeform-roof-panels',
     'roof-supported-roll-former-vs-ground-supported-lift',
     'reroof-temporary-cover-vs-phased-weather-closures',
     'flat-to-pitched-roof-conversion-vs-same-geometry-renewal',
@@ -81,6 +84,7 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'portable-roof-roll-former-exclusive-coil-program-vs-independent-sourcing',
     'containerized-roof-panel-plant-vs-open-trailer-roll-former',
     'roof-flashing-cell-long-folder-vs-press-brake',
     'polycarbonate-roof-sheet-extrusion-vs-metal-roll-forming',
@@ -213,6 +217,12 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'ceiling-platform-temporary-floor-propping-vs-alternative-access',
+    'occupied-ceiling-refit-protection-deck-vs-vacating-work-area',
+    'overhead-telescopic-platform-vs-floor-based-large-deck',
+    'rough-terrain-scissor-vs-crawler-large-deck-platform',
+    'platform-rental-fleet-cross-hire-vs-new-equipment-purchase',
+    'under-bridge-inspection-truck-vs-ground-based-work-platform',
     'high-rack-order-picker-vs-ceiling-maintenance-platform',
     'workpiece-positioner-vs-mobile-platform-fabrication-access',
     'construction-hoist-vs-ceiling-work-platform-purchase',
