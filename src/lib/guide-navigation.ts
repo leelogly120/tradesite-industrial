@@ -8,6 +8,7 @@ export type GuideLink = { href: string; title: string; description: string };
 // Editorial topic boundaries, not keyword matching or automatic recommendations.
 export const GUIDE_TOPICS = [
   { name: 'Roof-level system selection', slugs: [
+    'industrial-rooflights-vs-high-wall-glazing-panel-production',
     'directional-vs-symmetrical-standing-seam-roof-production',
     'existing-standing-seam-wind-retrofit-vs-new-roof-panel-package',
     'faceted-roof-redesign-vs-continuous-freeform-roof-panels',
@@ -84,6 +85,10 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'roof-panel-roll-tooling-recondition-vs-new-roll-set',
+    'portable-roof-roll-former-fixed-drive-vs-modular-power-pack',
+    'roof-panel-deliveries-returnable-racks-vs-one-way-packaging',
+    'rolling-steel-door-curtain-production-vs-roof-panel-line',
     'portable-roof-roll-former-exclusive-coil-program-vs-independent-sourcing',
     'containerized-roof-panel-plant-vs-open-trailer-roll-former',
     'roof-flashing-cell-long-folder-vs-press-brake',
@@ -217,6 +222,11 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'atrium-platform-crane-in-vs-compact-doorway-access',
+    'inside-vs-outside-glazed-curtain-wall-replacement-access',
+    'asbestos-ceiling-refurbishment-managed-retention-vs-specialist-removal',
+    'raised-access-floor-vs-overhead-services-platform-package',
+    'factory-bay-overhead-crane-vs-freestanding-workstation-cranes',
     'ceiling-platform-temporary-floor-propping-vs-alternative-access',
     'occupied-ceiling-refit-protection-deck-vs-vacating-work-area',
     'overhead-telescopic-platform-vs-floor-based-large-deck',
