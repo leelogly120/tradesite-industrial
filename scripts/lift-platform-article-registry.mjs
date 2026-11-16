@@ -1286,6 +1286,261 @@ export const NOVEMBER_16_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_16_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_16_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// Separately authorized overtime campaign. Its date may match an ordinary release.
+export const OVERTIME_20261116_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "roof-panel-coil-upender-vs-specified-delivery-orientation",
+    "title": "Roof Panel Coil Supply: Buy an Upender or Specify Delivery Orientation?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-reception-individual-vacuum-picks-vs-bundle-delivery",
+    "title": "Roof Panel Reception: Individual Vacuum Picks or Whole Bundles?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-roll-forming-strip-accumulator-vs-coil-batch-stops",
+    "title": "Roof Roll Forming: Fund Continuous Strip Entry or Stop Between Coils?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-packing-automatic-unitizing-vs-staffed-packing-station",
+    "title": "Roof Panel Dispatch: Buy Automatic Packaging or Staff a Packing Station?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "standing-seam-roof-clips-buy-approved-vs-in-house-stamping",
+    "title": "Standing-Seam Roof Clips: Buy Approved Components or Invest in Stamping?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-assembly-testing-own-facility-vs-independent-lab",
+    "title": "Metal Roof Assembly Testing: Build a Test Facility or Buy Laboratory Services?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-panels-project-cut-list-vs-site-length-trimming",
+    "title": "Metal Roof Panels: Release a Cut-to-Length Kit or Allow Final Site Trimming?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-geometry-laser-scan-vs-measured-bay-survey",
+    "title": "Roof Panel Orders: Buy a 3D Survey or Measure the Bays Directly?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-coil-store-automated-retrieval-vs-conventional-storage",
+    "title": "Roof Panel Coil Stores: Automate Retrieval or Keep Conventional Storage?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-level-forming-public-street-occupation-vs-private-footprint",
+    "title": "Roof-Level Forming: Pay for Street Occupation or Use a Private Production Site?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-forming-lift-overhead-line-diversion-vs-alternative-production-route",
+    "title": "Overhead Lines at a Roof Project: Buy Utility Intervention or Change the Panel Route?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-forming-handover-permanent-vs-temporary-edge-protection",
+    "title": "Roof Panel Handover: Buy Permanent Edge Protection or a Temporary Construction Package?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "welded-stainless-roof-vs-mechanically-jointed-panel-production",
+    "title": "Welded Stainless Roofs or Mechanically Jointed Panels: Which Work Can Your Line Supply?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "rooftop-plant-nonpenetrating-supports-vs-structural-support-package",
+    "title": "Rooftop Plant Supports: Surface Frames or Supports Connected to the Structure?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-snow-retention-vs-designed-shedding-zone",
+    "title": "Metal Roof Procurement: Include Snow Retention or Reserve a Designed Shedding Zone?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-tooling-in-house-manufacture-vs-commissioned-toolsets",
+    "title": "Roof Panel Roll Tooling: Build a Toolroom or Commission Complete Sets?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-weathertightness-program-vs-separate-material-and-installation-cover",
+    "title": "Metal Roof Orders: Price a Weathertightness Program or Separate Product and Installation Cover?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-project-mockup-vs-retained-first-bay",
+    "title": "Roof Panel Mockups: Build a Separate Assembly or Keep the Accepted First Bay?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-flashing-field-brake-vs-delivered-shop-formed-trim",
+    "title": "Roof Flashings: Deploy a Field Brake or Deliver Finished Shop Trim?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "hydrostatic-vs-water-shedding-metal-roof-panel-production",
+    "title": "Water-Barrier or Water-Shedding Metal Roof: Which Panel Orders Can You Produce?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "aircraft-maintenance-docking-vs-mobile-access-platform",
+    "title": "Aircraft Maintenance Docks or Mobile Platforms for a Hangar?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "integrated-telehandler-work-platform-vs-dedicated-mewp",
+    "title": "Integrated Telehandler Work Platform or Dedicated MEWP?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "cast-in-channels-vs-post-installed-overhead-service-supports",
+    "title": "Overhead Service Supports: Cast-In Channels or Post-Installed Anchors?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "siphonic-vs-gravity-roof-drainage-installation-access",
+    "title": "Siphonic or Gravity Roof Drainage: Price the High-Level Pipework",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "welding-fume-extraction-central-system-vs-mobile-units",
+    "title": "Welding Fume Extraction: Central Ductwork or Mobile Units?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "data-centre-aisle-containment-rack-supported-vs-freestanding",
+    "title": "Data Centre Aisle Containment: Rack-Supported or Freestanding?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "event-lighting-truss-ground-supported-vs-flown-access",
+    "title": "Event Lighting Truss: Fly It or Buy Ground Support?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "concrete-soffit-patch-repair-vs-cathodic-protection-access",
+    "title": "Concrete Soffit Repair: Price Patching and Cathodic Protection Access",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "external-vs-internal-solar-shading-facade-maintenance-access",
+    "title": "Commercial Solar Shading: Exterior Screens or Interior Blinds?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "etfe-cushions-vs-single-layer-foil-facade-access",
+    "title": "ETFE Facades: Air Cushions or Mechanically Tensioned Foil?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "roro-vs-lolo-shipping-large-work-platforms",
+    "title": "Ship a Large Work Platform by RoRo or LoLo?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "articulating-vs-telescopic-boom-lifts-wall-access",
+    "title": "Articulating or Telescopic Boom Lift for Wall Access?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "access-platform-fleet-telematics-vs-dispatch-records",
+    "title": "Access Fleet Telematics or Dispatch Records: What Is Worth Buying?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "work-platform-field-repair-vs-workshop-return",
+    "title": "Repair the Work Platform on Site or Return It to the Workshop?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "rail-depot-track-mounted-vs-floor-based-work-platform",
+    "title": "Rail Depot Access: Rail-Mounted Plant or a Floor-Based Platform?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "facade-platform-access-temporary-trackway-vs-permanent-road",
+    "title": "Facade Platform Access: Hire Trackway or Build the Service Road Early?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "mewp-training-centre-investment-vs-external-course-places",
+    "title": "MEWP Training: Become an Approved Centre or Buy Course Places?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "temporary-hall-lighting-mobile-towers-vs-suspended-luminaires",
+    "title": "Temporary Hall Lighting: Mobile Towers or Suspended Fixtures?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "portable-vs-ceiling-suspended-basketball-backstop-access",
+    "title": "Basketball Backstops: Portable Floor Units or Ceiling Suspension?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "removable-valve-insulation-vs-fixed-cladding-high-level-access",
+    "title": "High-Level Valve Insulation: Removable Covers or Fixed Cladding?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "roll-forming-equipment-letter-of-credit-vs-documentary-collection",
+    "title": "Roll-Forming Equipment Imports: Letter of Credit or Documentary Collection?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roll-forming-lift-import-fca-vs-fob-delivery-point",
+    "title": "FCA or FOB for a Roll-Forming Lift Import? Match the Actual Handover",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "packed-roll-forming-machine-lcl-vs-dedicated-container",
+    "title": "Packed Roll-Forming Machines: LCL Consolidation or a Dedicated Container?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roll-forming-equipment-export-wood-vs-steel-packing",
+    "title": "Roll-Forming Equipment Export Packing: Timber Crate or Engineered Steel Base?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roll-forming-machine-shipping-vci-vs-desiccant-barrier",
+    "title": "Roll-Forming Machine Preservation: VCI Package or Desiccant Barrier?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roll-forming-lift-cargo-insurance-vs-carrier-liability",
+    "title": "Imported Roll-Forming Lifts: Cargo Cover or Carrier Liability Alone?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roll-forming-equipment-spares-air-freight-vs-ocean-replenishment",
+    "title": "Roll-Forming Equipment Spares: Urgent Air Freight or Planned Ocean Replenishment?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roll-forming-equipment-us-port-clearance-vs-inland-in-bond",
+    "title": "US Roll-Forming Equipment Imports: Clear at the Seaport or Move In-Bond Inland?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roll-forming-lift-direct-ocean-service-vs-transshipment",
+    "title": "Roll-Forming Lift Shipping: Direct Ocean Service or a Transshipment Route?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roll-forming-machine-container-live-unload-vs-drop-delivery",
+    "title": "Roll-Forming Machine Container Delivery: Live Unload or Drop and Collect?",
+    "cluster": "forming-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const OVERTIME_20261116_BUYER_ARTICLE_SLUGS = Object.freeze(OVERTIME_20261116_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -1306,6 +1561,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'daily-20261114', date: '2026-11-14', standard: 'buyer-2026-11-14', articles: NOVEMBER_14_BUYER_ARTICLES, slugs: NOVEMBER_14_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261115', date: '2026-11-15', standard: 'buyer-2026-11-15', articles: NOVEMBER_15_BUYER_ARTICLES, slugs: NOVEMBER_15_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261116', date: '2026-11-16', standard: 'buyer-2026-11-16', articles: NOVEMBER_16_BUYER_ARTICLES, slugs: NOVEMBER_16_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'overtime-20261116-50', date: '2026-11-17', standard: 'buyer-2026-11-17', articles: OVERTIME_20261116_BUYER_ARTICLES, slugs: OVERTIME_20261116_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -1339,6 +1595,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_14_BUYER_ARTICLES,
   ...NOVEMBER_15_BUYER_ARTICLES,
   ...NOVEMBER_16_BUYER_ARTICLES,
+  ...OVERTIME_20261116_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
