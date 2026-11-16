@@ -1231,6 +1231,61 @@ export const NOVEMBER_15_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_15_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_15_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// November 16 ordinary daily quota.
+export const NOVEMBER_16_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "roof-panel-roll-tooling-recondition-vs-new-roll-set",
+    "title": "Roof Panel Roll Tooling: Recut the Existing Set or Buy New Rolls?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "portable-roof-roll-former-fixed-drive-vs-modular-power-pack",
+    "title": "Portable Roof Roll Formers: Choose a Fixed Drive or Modular Power Pack",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-deliveries-returnable-racks-vs-one-way-packaging",
+    "title": "Roof Panel Deliveries: When Is a Returnable Rack Fleet Worth Buying?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "industrial-rooflights-vs-high-wall-glazing-panel-production",
+    "title": "Rooflights or High Wall Glazing: Which Metal Roof Panels Must You Produce?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "atrium-platform-crane-in-vs-compact-doorway-access",
+    "title": "Atrium Access: Bring a Compact Platform Through the Doors or Crane One In?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "inside-vs-outside-glazed-curtain-wall-replacement-access",
+    "title": "Inside- or Outside-Glazed Curtain Walls: Buy a Usable Glass Replacement Route",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "rolling-steel-door-curtain-production-vs-roof-panel-line",
+    "title": "Rolling Steel Door Curtains or Roof Panels: Which Production Business?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "asbestos-ceiling-refurbishment-managed-retention-vs-specialist-removal",
+    "title": "Asbestos in a Factory Ceiling: Manage Retained Material or Fund Removal First?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "raised-access-floor-vs-overhead-services-platform-package",
+    "title": "Raised Access Floor or Overhead Services: What Ceiling Access Should You Buy?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "factory-bay-overhead-crane-vs-freestanding-workstation-cranes",
+    "title": "Factory Bay Crane or Freestanding Workstation Cranes: Price the Installation Access",
+    "cluster": "ceiling-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_16_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_16_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -1250,6 +1305,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'daily-20261113', date: '2026-11-13', standard: 'buyer-2026-11-13', articles: NOVEMBER_13_BUYER_ARTICLES, slugs: NOVEMBER_13_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261114', date: '2026-11-14', standard: 'buyer-2026-11-14', articles: NOVEMBER_14_BUYER_ARTICLES, slugs: NOVEMBER_14_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261115', date: '2026-11-15', standard: 'buyer-2026-11-15', articles: NOVEMBER_15_BUYER_ARTICLES, slugs: NOVEMBER_15_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261116', date: '2026-11-16', standard: 'buyer-2026-11-16', articles: NOVEMBER_16_BUYER_ARTICLES, slugs: NOVEMBER_16_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -1282,6 +1338,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_13_BUYER_ARTICLES,
   ...NOVEMBER_14_BUYER_ARTICLES,
   ...NOVEMBER_15_BUYER_ARTICLES,
+  ...NOVEMBER_16_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
