@@ -1,0 +1,128 @@
+[
+  {
+    "url": "/images/equipment/buyer-20261029-ceiling-interface.webp",
+    "sha256": "97ad35f2c9880eed7c29d4987c95798d38e1067e92552976abbc107c070e3c3a",
+    "width": 1600,
+    "height": 1067,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261029-deck-hall.webp",
+    "sha256": "06fe624c0e13e5fbd468ed3aa7a60a83bcaa316b53e1af1d4298a9580c021ed4",
+    "width": 1600,
+    "height": 1067,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261029-deck-yard.webp",
+    "sha256": "f6dfb1234d448e7fbf55b6455416f8b1d2158a962c890a948decc8b69bddc3eb",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261029-wall-corridor.webp",
+    "sha256": "7967db4d538acbea00f9fc3a70c9dfa2f01a1904f829714d015f4125052c525f",
+    "width": 1200,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261029-wall-installation.webp",
+    "sha256": "ea7deaf96d7d4328720cf9086c4a3dfd1420f9c01b107b5cbe436d56e5a12784",
+    "width": 1200,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261030-feed-entry.webp",
+    "sha256": "5741ba7941b9d11efb5d620878112cc6a8b9d04e5226c7982b5623042cee7876",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261030-panel-samples.webp",
+    "sha256": "a8327c2548f016d6908c32b54ded174b37b7db4693cffd2fea48125f1171ec53",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261031-crawler-line-low.webp",
+    "sha256": "736f692725314d9ed52357216bee63855a3e503cf48607d14a458856d454b379",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261031-deck-raised-yard.webp",
+    "sha256": "3aba332758bed83980e461e0d2cc2751d50dd091bd6af2ec8528fb3889ca4671",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261031-deck-top.webp",
+    "sha256": "bf6afec505bf7e16149cea6492eb206a34f557aaff3642f74320666a2ba7ca5e",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261031-roof-framing.webp",
+    "sha256": "2a1568776f524c3c78f763983487683bce14c23b517adafe44c0b6c134943a1b",
+    "width": 728,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261102-elevated-former-coils.webp",
+    "sha256": "e2c94bd2dd126f8d28c74af2fce0fa4cf743d0c204006f377a79e65f079b0d7d",
+    "width": 728,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261102-embossed-panel-outlet.webp",
+    "sha256": "99c18453381cf63b875c5330ede84e9229bd6cbbdf0fcac002050f908986d05f",
+    "width": 1600,
+    "height": 1067,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261102-hall-ground-route.webp",
+    "sha256": "6360b6036c10f02f7b5eaef06c3fd7706a4a86476845ac7b78dcffeed1f3636d",
+    "width": 1600,
+    "height": 1067,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261102-profile-tooling-closeup.webp",
+    "sha256": "23196e6a2c0898147186ae4c7a3b55569a62d4aabb03922377f64f8f370afff0",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261102-roller-row.webp",
+    "sha256": "f29d9a8b865908d6b87d112b070e22147f39cc2cff7d9c3b212c890285758ccd",
+    "width": 1200,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261102-workshop-low-deck.webp",
+    "sha256": "3232173491154c1009368e7793c602be0016e7e00aece80938e3ed6519ccdd27",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261110-coil-processing-workshop.webp",
+    "sha256": "7d9fc460e7929c757ad4d5b0e747263cdb68528ca0edcde2d10f67cf132d1fdb",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  }
+]

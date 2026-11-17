@@ -1541,6 +1541,61 @@ export const OVERTIME_20261116_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const OVERTIME_20261116_BUYER_ARTICLE_SLUGS = Object.freeze(OVERTIME_20261116_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// Ordinary daily guides on the same date as the separately authorized overtime campaign.
+export const NOVEMBER_17_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "roof-panel-coil-consignment-vs-owned-stock",
+    "title": "Roof-Panel Coil: Buy the Stock or Draw from Consignment?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-shingle-production-contract-stamping-vs-owned-press-line",
+    "title": "Metal Roofing Shingles: Contract the Stamping or Buy a Press Line?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "industrial-metal-roof-permanent-safety-mesh-vs-temporary-net-package",
+    "title": "Metal Roof Installation: Permanent Safety Mesh or Temporary Safety Nets?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-replacement-equipment-hatch-vs-removable-roof-opening",
+    "title": "Plant Replacement Through a Metal Roof: Equipment Hatch or Removable Roof Section?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "ventilated-vs-unventilated-standing-seam-roof-package",
+    "title": "Standing-Seam Zinc Roofing: Price a Ventilated or Unventilated Assembly?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "large-deck-ceiling-platform-single-type-vs-mixed-fleet",
+    "title": "Ceiling Platform Fleet: Standardize Large Decks or Buy a Mixed Fleet?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "industrial-crane-electrification-festoon-vs-conductor-bar-access",
+    "title": "Crane Electrification: Festoon Cables or Conductor Rails—and What Access to Buy?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "grooved-vs-welded-overhead-pipework-platform-installation",
+    "title": "Overhead Pipework: Grooved or Welded Joints—and the Full Access Cost?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "overhead-cable-support-ladder-vs-wire-basket-installation-access",
+    "title": "Cable Ladder or Wire Basket: Buy the Support System and Installation Access",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "industrial-noise-control-machine-enclosure-vs-room-treatment-access",
+    "title": "Factory Noise Control: Enclose the Machine or Treat the Room?",
+    "cluster": "ceiling-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_17_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_17_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -1562,6 +1617,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'daily-20261115', date: '2026-11-15', standard: 'buyer-2026-11-15', articles: NOVEMBER_15_BUYER_ARTICLES, slugs: NOVEMBER_15_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261116', date: '2026-11-16', standard: 'buyer-2026-11-16', articles: NOVEMBER_16_BUYER_ARTICLES, slugs: NOVEMBER_16_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'overtime-20261116-50', date: '2026-11-17', standard: 'buyer-2026-11-17', articles: OVERTIME_20261116_BUYER_ARTICLES, slugs: OVERTIME_20261116_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261117', date: '2026-11-17', standard: 'buyer-2026-11-17', articles: NOVEMBER_17_BUYER_ARTICLES, slugs: NOVEMBER_17_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -1596,6 +1652,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_15_BUYER_ARTICLES,
   ...NOVEMBER_16_BUYER_ARTICLES,
   ...OVERTIME_20261116_BUYER_ARTICLES,
+  ...NOVEMBER_17_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));

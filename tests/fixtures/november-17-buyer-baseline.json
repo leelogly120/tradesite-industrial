@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "sourceCommit": "8d24a19a2fc43b474c54f805be7606d30a9d9eed",
+  "counts": {
+    "articles": 390,
+    "assets": 232,
+    "referencePhotos": 113,
+    "photoMappings": 387,
+    "topics": 10,
+    "topicMemberships": 390,
+    "buyerCohorts": 18,
+    "buyerArticles": 260,
+    "sitemapUrls": 414
+  },
+  "sha256": {
+    "articles": "be74cda72a1f9d70dfc8989d4d1ba12b0e996d82f9ac09b7d02d499432f40181",
+    "assets": "02403db2c63076cb6577d42b58f554fc4a6d27689dfd3e4c514e4d8db6830cba",
+    "manifest": "7d748f7a7f9fcea00e186db7e69eeff013812a1e07cde29ef87d610a13aa48be",
+    "photoMappings": "ebb28bd7f86eb497ee549f66f6806ff27c8292e6853530afb3fcbbc19906b596",
+    "guideTopics": "4c3b945fc6dde9b61de190670fe0040f409e5fc101df3df1f9de7bf4010f62b4",
+    "buyerCohorts": "cd599e22f669ba8325cf09db9d90d8c4842012e872290603299001186055ee83",
+    "sitemapUrls": "5f7f96c48639e7a2d66dac3a29fa77b9e9695dcc5fcf5ed8023551af1d80428e"
+  }
+}
