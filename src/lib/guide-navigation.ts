@@ -8,6 +8,9 @@ export type GuideLink = { href: string; title: string; description: string };
 // Editorial topic boundaries, not keyword matching or automatic recommendations.
 export const GUIDE_TOPICS = [
   { name: 'Roof-level system selection', slugs: [
+    'industrial-metal-roof-permanent-safety-mesh-vs-temporary-net-package',
+    'metal-roof-replacement-equipment-hatch-vs-removable-roof-opening',
+    'ventilated-vs-unventilated-standing-seam-roof-package',
     'roof-panel-reception-individual-vacuum-picks-vs-bundle-delivery',
     'metal-roof-panels-project-cut-list-vs-site-length-trimming',
     'roof-panel-geometry-laser-scan-vs-measured-bay-survey',
@@ -91,6 +94,8 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'roof-panel-coil-consignment-vs-owned-stock',
+    'metal-shingle-production-contract-stamping-vs-owned-press-line',
     'roof-panel-coil-upender-vs-specified-delivery-orientation',
     'roof-roll-forming-strip-accumulator-vs-coil-batch-stops',
     'roof-panel-packing-automatic-unitizing-vs-staffed-packing-station',
@@ -253,6 +258,7 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'large-deck-ceiling-platform-single-type-vs-mixed-fleet',
     'aircraft-maintenance-docking-vs-mobile-access-platform',
     'integrated-telehandler-work-platform-vs-dedicated-mewp',
     'external-vs-internal-solar-shading-facade-maintenance-access',
@@ -381,6 +387,10 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-control-view-between-workfaces',
   ] },
   { name: 'Planning access around building use', slugs: [
+    'industrial-crane-electrification-festoon-vs-conductor-bar-access',
+    'grooved-vs-welded-overhead-pipework-platform-installation',
+    'overhead-cable-support-ladder-vs-wire-basket-installation-access',
+    'industrial-noise-control-machine-enclosure-vs-room-treatment-access',
     'siphonic-vs-gravity-roof-drainage-installation-access',
     'welding-fume-extraction-central-system-vs-mobile-units',
     'event-lighting-truss-ground-supported-vs-flown-access',
