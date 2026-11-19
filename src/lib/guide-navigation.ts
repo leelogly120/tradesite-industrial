@@ -109,6 +109,12 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'roof-panel-roll-former-chain-vs-geared-transmission',
+    'roof-panel-roll-former-profile-shear-vs-saw-cutoff',
+    'roof-panel-roll-former-cantilever-vs-through-shaft-stands',
+    'roof-panel-roll-tooling-segmented-vs-one-piece-rolls',
+    'roof-panel-roll-former-dry-forming-vs-lubrication-package',
+    'roof-panel-roll-tooling-coated-vs-uncoated-working-surfaces',
     'roof-panel-coil-pvdf-vs-smp-finish',
     'roof-panel-coil-galvanized-vs-aluminium-zinc-coated-steel',
     'titanium-zinc-roof-panel-production-vs-coated-steel-range',
@@ -259,6 +265,8 @@ export const GUIDE_TOPICS = [
     'truck-mounted-forming-lift-jobsite-setup-review',
   ] },
   { name: 'Shipping, documents and equipment handover', slugs: [
+    'containerized-forming-equipment-shipper-owned-vs-carrier-container',
+    'forming-lift-fleet-import-one-shipment-vs-staged-complete-units',
     'roro-vs-lolo-shipping-large-work-platforms',
     'roll-forming-equipment-letter-of-credit-vs-documentary-collection',
     'roll-forming-lift-import-fca-vs-fob-delivery-point',
@@ -288,6 +296,7 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'battery-electric-ceiling-platform-lithium-ion-vs-lead-acid',
     'large-deck-ceiling-platform-single-type-vs-mixed-fleet',
     'aircraft-maintenance-docking-vs-mobile-access-platform',
     'integrated-telehandler-work-platform-vs-dedicated-mewp',
@@ -378,6 +387,7 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-ductwork-access-positions',
   ] },
   { name: 'Controls, maintenance and handover responsibilities', slugs: [
+    'hydraulic-forming-lift-fleet-offline-filtration-vs-oil-replacement',
     'cast-in-channels-vs-post-installed-overhead-service-supports',
     'concrete-soffit-patch-repair-vs-cathodic-protection-access',
     'access-platform-fleet-telematics-vs-dispatch-records',
