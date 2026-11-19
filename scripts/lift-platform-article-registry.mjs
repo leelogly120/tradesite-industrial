@@ -1596,6 +1596,261 @@ export const NOVEMBER_17_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_17_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_17_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// Fifty ordinary daily guides under the one-day quota override; prior cohorts retained.
+export const NOVEMBER_18_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "roof-panel-coil-pvdf-vs-smp-finish",
+    "title": "Roof-Panel Coil: PVDF or SMP Finish for Your Product Range?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-coil-galvanized-vs-aluminium-zinc-coated-steel",
+    "title": "Roof-Panel Coil: Galvanized Steel or an Aluminium-Zinc Alloy Coating?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "titanium-zinc-roof-panel-production-vs-coated-steel-range",
+    "title": "Titanium-Zinc Roof Panels or Coated-Steel Roofing: Which Production Range?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "copper-standing-seam-roof-production-vs-coated-steel",
+    "title": "Copper Standing-Seam Roof Production or a Coated-Steel Product Range?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "cool-roof-rated-coil-finish-vs-standard-colour-range",
+    "title": "Cool-Roof Coil: A Rated Reflective Finish or Your Standard Colour Range?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "zinc-roof-panels-natural-vs-preweathered-surface",
+    "title": "Zinc Roof Panels: Natural Weathering or a Factory-Preweathered Surface?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "soffit-panel-roll-forming-vs-roof-weather-sheet-line",
+    "title": "Soffit Panels or Roof Weather Sheets: Which Roll-Forming Product to Add?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "aluminium-roof-panel-alloy-temper-material-qualification",
+    "title": "Aluminium Roof-Panel Coil: Qualify Alloy and Temper Before Substitution",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "cap-seam-vs-folded-standing-seam-roof-production",
+    "title": "Separate-Cap or Folded Standing-Seam Roofing: Buy the Complete Product Route",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-high-strength-thin-vs-thicker-ductile-steel",
+    "title": "Roof-Panel Coil: High-Strength Thin Steel or a Thicker Ductile Grade?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-supply-epd-backed-projects-vs-commodity-orders",
+    "title": "Roof-Panel Supply: Build an EPD-Backed Project Range or Serve Commodity Orders?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-profile-depth-vs-support-spacing-production",
+    "title": "Roof-Panel Production: Deeper Profiles or More Roof Supports?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-production-scrap-loose-collection-vs-baler",
+    "title": "Roof-Panel Production Scrap: Loose Collection or an Owned Metal Baler?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-panel-fire-performance-product-supply-scope",
+    "title": "Fire-Specified Metal Roof Orders: Sell Sheets or a Defined Roof Assembly?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "hail-resistant-metal-roof-panel-production-tested-assembly",
+    "title": "Hail-Resistant Roof-Panel Orders: Qualify the Assembly Before Buying Heavier Coil",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "acoustic-metal-roof-perforated-liner-vs-separate-absorption",
+    "title": "Acoustic Metal Roofs: Perforated Liners or Separate Room Absorption?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-rain-noise-tested-assembly-vs-heavy-roof",
+    "title": "Rain Noise: Buy a Tested Metal Roof Assembly or a Heavier Roof?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "coastal-industrial-roof-aluminium-vs-coated-steel-package",
+    "title": "Coastal Industrial Roofs: Aluminium or Coated-Steel Supply Packages?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "industrial-metal-roof-external-gutters-vs-internal-box-gutters",
+    "title": "Industrial Metal Roofs: External Eaves Gutters or Internal Box Gutters?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-building-movement-joint-vs-continuous-panel-fields",
+    "title": "Long Metal Roofs: Building-Movement Joints or Continuous Panel Fields?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-service-penetrations-grouped-zone-vs-distributed-curbs",
+    "title": "Metal Roof Services: Grouped Penetration Zones or Distributed Curbs?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "industrial-roof-structural-liner-trays-vs-purlins-liner-sheets",
+    "title": "Industrial Roof Packages: Structural Liner Trays or Purlins and Liner Sheets?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "loading-bay-metal-roof-freestanding-canopy-vs-building-extension",
+    "title": "Loading-Bay Metal Roofs: Freestanding Canopy or Building-Attached Extension?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "livestock-metal-roof-covered-ridge-vs-controlled-envelope",
+    "title": "Livestock Metal Roofs: Covered Open Ridge or a Mechanically Controlled Envelope?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "industrial-metal-roof-rainwater-reuse-vs-discharge-only",
+    "title": "Industrial Metal Roofs: Rainwater Reuse Package or Discharge Only?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "standing-seam-roof-permanent-walkways-vs-temporary-maintenance-access",
+    "title": "Standing-Seam Roofs: Permanent Walkways or Recurring Temporary Access?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "standing-seam-roof-lightning-protection-mounted-vs-isolated-system",
+    "title": "Standing-Seam Roofs: Roof-Mounted or Isolated Lightning Protection Packages?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "industrial-storage-fabric-hall-vs-metal-roof-warehouse",
+    "title": "Industrial Storage: Fabric Hall or Metal-Roof Warehouse Package?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "industrial-rooflights-continuous-strips-vs-distributed-units",
+    "title": "Industrial Roof Daylight: Continuous Rooflight Strips or Distributed Units?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-curbs-prefabricated-vs-site-fabricated-package",
+    "title": "Metal Roof Curbs: Prefabricated Assemblies or Site-Fabricated Details?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "industrial-entry-air-curtain-vs-entrance-vestibule",
+    "title": "Industrial Entrances: Air Curtain or Physical Vestibule?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "high-bay-public-address-distributed-speakers-vs-suspended-array",
+    "title": "High-Bay Public Address: Distributed Speakers or Suspended Arrays?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "compressed-air-aluminium-modular-vs-steel-header-installation",
+    "title": "Compressed-Air Headers: Modular Aluminium or Steel Pipe?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "preinsulated-duct-panels-vs-metal-duct-site-insulation",
+    "title": "HVAC Ducts: Preinsulated Panels or Metal with Site Insulation?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "high-speed-industrial-door-fabric-vs-rigid-rolling-installation",
+    "title": "High-Speed Industrial Doors: Fabric or Rigid Rolling Construction?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "industrial-wall-louvres-stationary-vs-operable-installation",
+    "title": "Industrial Wall Louvres: Stationary Blades or Operable Control?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "overhead-duct-cleaning-access-doors-vs-section-removal",
+    "title": "Overhead Duct Cleaning: Add Access Doors or Remove Duct Sections?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "fire-rated-duct-protection-wrap-vs-board-enclosure",
+    "title": "Fire-Rated Duct Protection: Flexible Wrap or Board Enclosure?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "warehouse-wifi-directional-vs-omnidirectional-high-bay-access",
+    "title": "Warehouse Wi-Fi: Directional Aisle Coverage or Ceiling Omnidirectional Access Points?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "high-wall-daylighting-diffuse-panels-vs-transparent-glazing",
+    "title": "High Wall Daylighting: Diffuse Panels or Transparent Glazing?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "industrial-humidification-direct-room-nozzles-vs-duct-steam",
+    "title": "Industrial Humidification: Direct-Room Nozzles or Duct Steam?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "industrial-wall-movement-joints-sealant-vs-cover-system",
+    "title": "Industrial Wall Movement Joints: Sealant Detail or Cover System?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "large-hall-projection-vs-led-display-installation-access",
+    "title": "Large-Hall Displays: Projection or Direct-View LED Installation?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "overhead-cable-installation-manual-vs-powered-pulling-package",
+    "title": "Overhead Cable Installation: Manual Handling or Powered Pulling Package?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "precast-wall-connections-bolted-vs-site-welded-access-package",
+    "title": "Precast Wall Connections: Bolted System or Site-Welded Package?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "overhead-pipe-expansion-loops-vs-bellows-platform-access",
+    "title": "Overhead Pipe Expansion: Loops or Bellows—and the Access Package?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "mep-supports-modular-channel-vs-welded-steel-platform-access",
+    "title": "MEP Support Racks: Modular Channels or Welded Steel?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "compressed-air-ring-main-vs-branch-layout-platform-installation",
+    "title": "Compressed-Air Pipework: Ring Main or Branched Layout—and Access?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "high-level-cable-penetrations-modular-transits-vs-sealant",
+    "title": "High-Level Cable Penetrations: Modular Transits or Sealed Openings?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "indoor-drone-inspection-own-team-vs-contracted-surveys",
+    "title": "Indoor Drone Inspection: Own the Team or Contract the Surveys?",
+    "cluster": "ceiling-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_18_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_18_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -1618,6 +1873,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'daily-20261116', date: '2026-11-16', standard: 'buyer-2026-11-16', articles: NOVEMBER_16_BUYER_ARTICLES, slugs: NOVEMBER_16_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'overtime-20261116-50', date: '2026-11-17', standard: 'buyer-2026-11-17', articles: OVERTIME_20261116_BUYER_ARTICLES, slugs: OVERTIME_20261116_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261117', date: '2026-11-17', standard: 'buyer-2026-11-17', articles: NOVEMBER_17_BUYER_ARTICLES, slugs: NOVEMBER_17_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261118', date: '2026-11-18', standard: 'buyer-2026-11-18', articles: NOVEMBER_18_BUYER_ARTICLES, slugs: NOVEMBER_18_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -1653,6 +1909,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_16_BUYER_ARTICLES,
   ...OVERTIME_20261116_BUYER_ARTICLES,
   ...NOVEMBER_17_BUYER_ARTICLES,
+  ...NOVEMBER_18_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
