@@ -1906,6 +1906,61 @@ export const NOVEMBER_19_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_19_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_19_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// Ten overdue November20 quota guides created November21; all preceding cohorts and fulfilled overrides retained.
+export const NOVEMBER_20_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "roof-flashing-folder-single-direction-vs-up-down",
+    "title": "Roof-Flashing Folders: Single-Direction or Up-and-Down Bending?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-flashing-blanks-guillotine-vs-coil-cut-to-length",
+    "title": "Roof-Flashing Blanks: Sheet Guillotine or Coil-Fed Cut-to-Length Cell?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "forming-lift-hydraulic-pump-new-vs-oem-reman-exchange",
+    "title": "Forming-Lift Hydraulic Pumps: New OEM Unit or Remanufactured Exchange?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "retired-roof-forming-lift-auction-vs-negotiated-sale",
+    "title": "Retiring a Roof-Forming Lift: Auction or Negotiated Sale?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "eu-forming-machinery-purchase-january-2027-transition",
+    "title": "Buying Forming Machinery for the EU Across the January 2027 Change",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "us-forming-lift-import-diesel-engine-vs-engine-free-package",
+    "title": "US Forming-Lift Imports: Diesel-Equipped or an Actual Engine-Free Package?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "forming-equipment-distributor-private-brand-vs-maker-brand",
+    "title": "Forming-Equipment Distribution: Your Brand or the Manufacturer’s Name?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "large-deck-platform-extended-warranty-vs-funded-repair-risk",
+    "title": "Large-Deck Platform Purchase: Extended Warranty or Funded Repair Risk?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "ontario-roll-forming-line-certification-vs-field-evaluation",
+    "title": "Roll-Forming Lines for Ontario: Certification or Field Evaluation?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roll-forming-lift-advance-payment-guarantee-vs-escrow",
+    "title": "Roll-Forming Lift Advances: Bank Guarantee or Escrow?",
+    "cluster": "forming-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_20_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_20_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -1930,6 +1985,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'daily-20261117', date: '2026-11-17', standard: 'buyer-2026-11-17', articles: NOVEMBER_17_BUYER_ARTICLES, slugs: NOVEMBER_17_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261118', date: '2026-11-18', standard: 'buyer-2026-11-18', articles: NOVEMBER_18_BUYER_ARTICLES, slugs: NOVEMBER_18_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261119', date: '2026-11-19', standard: 'buyer-2026-11-19', articles: NOVEMBER_19_BUYER_ARTICLES, slugs: NOVEMBER_19_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261120', date: '2026-11-21', standard: 'buyer-2026-11-21', articles: NOVEMBER_20_BUYER_ARTICLES, slugs: NOVEMBER_20_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -1967,6 +2023,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_17_BUYER_ARTICLES,
   ...NOVEMBER_18_BUYER_ARTICLES,
   ...NOVEMBER_19_BUYER_ARTICLES,
+  ...NOVEMBER_20_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));

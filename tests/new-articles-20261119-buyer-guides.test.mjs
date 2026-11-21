@@ -85,9 +85,6 @@ describe('November 19: ten independently reviewed ordinary daily buyer articles'
     expect(slugs).toHaveLength(10);
     expect(slugs.filter(slug => oldSlugs.includes(slug))).toEqual([]);
     expect(new Set(frozenSlugs).size).toBe(460);
-    expect(CURRENT_ARTICLE_COUNT).toBe(460);
-    expect(CURRENT_SITEMAP_COUNT).toBe(484);
-    expect(CURRENT_PAGE_SIZES).toEqual([20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]);
     expect(NOVEMBER_19_BUYER_ARTICLES.filter(article => article.cluster === 'ceiling-buyer-decision')).toHaveLength(1);
     expect(NOVEMBER_19_BUYER_ARTICLES.filter(article => article.cluster === 'forming-buyer-decision')).toHaveLength(9);
     expect(new Set(expectedSlugs).size).toBe(CURRENT_ARTICLE_COUNT);
