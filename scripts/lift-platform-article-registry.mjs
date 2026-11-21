@@ -1851,6 +1851,61 @@ export const NOVEMBER_18_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_18_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_18_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// Ten ordinary daily guides; preceding cohorts and the fulfilled one-day override retained.
+export const NOVEMBER_19_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "roof-panel-roll-former-chain-vs-geared-transmission",
+    "title": "Roof-Panel Roll Formers: Chain Drive or Geared Transmission?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-former-profile-shear-vs-saw-cutoff",
+    "title": "Roof-Panel Cutoff: Profile Shear or Saw?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-former-cantilever-vs-through-shaft-stands",
+    "title": "Roll-Former Stands: Cantilever or Through-Shaft Support?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-tooling-segmented-vs-one-piece-rolls",
+    "title": "Roof-Panel Roll Tooling: Segmented Rolls or One-Piece Rolls?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-former-dry-forming-vs-lubrication-package",
+    "title": "Roof-Panel Roll Formers: Dry Forming or a Lubrication Package?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-tooling-coated-vs-uncoated-working-surfaces",
+    "title": "Roof-Panel Roll Tooling: Coated Working Surfaces or Uncoated Tool Steel?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "battery-electric-ceiling-platform-lithium-ion-vs-lead-acid",
+    "title": "Battery-Electric Ceiling Platforms: Lithium-Ion or Lead-Acid?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "hydraulic-forming-lift-fleet-offline-filtration-vs-oil-replacement",
+    "title": "Hydraulic Forming-Lift Fleets: Add Offline Filtration or Replace the Oil?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "containerized-forming-equipment-shipper-owned-vs-carrier-container",
+    "title": "Containerized Forming Equipment: Shipper-Owned or Carrier-Owned Container?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "forming-lift-fleet-import-one-shipment-vs-staged-complete-units",
+    "title": "Importing a Forming-Lift Fleet: One Shipment or Staged Complete Units?",
+    "cluster": "forming-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_19_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_19_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -1874,6 +1929,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'overtime-20261116-50', date: '2026-11-17', standard: 'buyer-2026-11-17', articles: OVERTIME_20261116_BUYER_ARTICLES, slugs: OVERTIME_20261116_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261117', date: '2026-11-17', standard: 'buyer-2026-11-17', articles: NOVEMBER_17_BUYER_ARTICLES, slugs: NOVEMBER_17_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261118', date: '2026-11-18', standard: 'buyer-2026-11-18', articles: NOVEMBER_18_BUYER_ARTICLES, slugs: NOVEMBER_18_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261119', date: '2026-11-19', standard: 'buyer-2026-11-19', articles: NOVEMBER_19_BUYER_ARTICLES, slugs: NOVEMBER_19_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -1910,6 +1966,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...OVERTIME_20261116_BUYER_ARTICLES,
   ...NOVEMBER_17_BUYER_ARTICLES,
   ...NOVEMBER_18_BUYER_ARTICLES,
+  ...NOVEMBER_19_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));

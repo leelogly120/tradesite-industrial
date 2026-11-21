@@ -1,0 +1,170 @@
+[
+  {
+    "url": "/images/equipment/buyer-20261029-deck-hall.webp",
+    "sha256": "06fe624c0e13e5fbd468ed3aa7a60a83bcaa316b53e1af1d4298a9580c021ed4",
+    "width": 1600,
+    "height": 1067,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261029-deck-yard.webp",
+    "sha256": "f6dfb1234d448e7fbf55b6455416f8b1d2158a962c890a948decc8b69bddc3eb",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261030-line-frame.webp",
+    "sha256": "b3688460799cbaff56285d50aa3966c0fb27e3fa19320fa09d95f318c74aa7f0",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261030-panel-samples.webp",
+    "sha256": "a8327c2548f016d6908c32b54ded174b37b7db4693cffd2fea48125f1171ec53",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261030-stored-line-frames.webp",
+    "sha256": "02543b724174f61c195318a1a5100c7df19e7735e71db128edbb9b1722c2c582",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261031-container-rear.webp",
+    "sha256": "1d58aa2143f3e85c0150e48b8d666b097e3819487f3807800e12d3513fc14819",
+    "width": 1200,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261031-crawler-roof-side.webp",
+    "sha256": "08c05e09b7a341d9d1e5f71e64e106443cbea75644f90d5b9c7d840fce017a89",
+    "width": 728,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261031-port-handling.webp",
+    "sha256": "25d36113ff26aff05eedb4e2add3224b98b70749fb273ee216302c68063106a7",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261101-crawler-former-yard.webp",
+    "sha256": "cf29d21090645e859c7792d3a4f386dc7c1a44027c00b361d167d7cb53935328",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261101-deck-hall-low.webp",
+    "sha256": "1451e0d1bcd1025478bd48b264fe1ffa8c31c7d1bf097720d4ebb37f14c7cece",
+    "width": 1600,
+    "height": 1067,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261101-former-entry.webp",
+    "sha256": "a5e826b6b00aace87aa4bade717e496d5fc66f65255324d0e9903a37d2decdc6",
+    "width": 1200,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261101-profiled-sheet.webp",
+    "sha256": "cd8ca90eb8b704e32ef1a917f6072a04fb43c1e13f675dbec4eed20b51e7b96b",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261101-roller-components.webp",
+    "sha256": "91acecc297a08403811c3e9bab97af2224ae82612a6f72b22f309288120a5a26",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261101-roller-line-detail.webp",
+    "sha256": "e74368ffe95c68e0d1179c0a3af7b7e790098aa72a4227745a0b686e025d2249",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261102-embossed-panel-outlet.webp",
+    "sha256": "99c18453381cf63b875c5330ede84e9229bd6cbbdf0fcac002050f908986d05f",
+    "width": 1600,
+    "height": 1067,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261102-embossed-sheet-sample.webp",
+    "sha256": "2c5cc1b1b2a16d349ec3cf01a7e58da7f1d6ba7eca0ca5301985253fc79e8554",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261102-profile-tooling-closeup.webp",
+    "sha256": "23196e6a2c0898147186ae4c7a3b55569a62d4aabb03922377f64f8f370afff0",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261102-roller-row.webp",
+    "sha256": "f29d9a8b865908d6b87d112b070e22147f39cc2cff7d9c3b212c890285758ccd",
+    "width": 1200,
+    "height": 1600,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261102-workshop-low-deck.webp",
+    "sha256": "3232173491154c1009368e7793c602be0016e7e00aece80938e3ed6519ccdd27",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261102-wrapped-former.webp",
+    "sha256": "0aabf21c22d834a3be9e5f3d029d3875ffef537eae0f95b64c6bee0b2eb71dd8",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261110-coil-processing-workshop.webp",
+    "sha256": "7d9fc460e7929c757ad4d5b0e747263cdb68528ca0edcde2d10f67cf132d1fdb",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261110-former-truck-workshop.webp",
+    "sha256": "0b29be08ccb700dc5e8d715f84582c009ed387a06185fbd28101c78476877f9e",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261110-forming-lines-workshop.webp",
+    "sha256": "6b8c239a8cf985f269f75728aff5114cd8104b32d79493c173308fd607fd91f0",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  },
+  {
+    "url": "/images/equipment/buyer-20261110-roller-train-detail.webp",
+    "sha256": "5faa071cd97d23f0eac758fef9de3fb3a18ef5a063fd762d65eb1f974456afba",
+    "width": 1600,
+    "height": 1200,
+    "newPublicAsset": false
+  }
+]
