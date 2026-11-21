@@ -1961,6 +1961,61 @@ export const NOVEMBER_20_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_20_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_20_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// Ten ordinary November21 daily guides; all preceding cohorts and fulfilled overrides retained.
+export const NOVEMBER_21_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "high-bay-emergency-lighting-central-battery-vs-self-contained",
+    "title": "High-Bay Emergency Lighting: Central Batteries or Self-Contained Fittings?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "high-bay-lighting-controls-wired-dali-vs-wireless",
+    "title": "High-Bay Lighting Controls: Wired DALI or a Wireless System?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "overhead-steel-recoat-dry-blasting-vs-waterjetting",
+    "title": "Overhead Steel Recoating: Dry Abrasive Blasting or Waterjetting?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "forming-lift-hydraulic-mineral-vs-biodegradable-fluid-configuration",
+    "title": "New Forming Lifts: Mineral-Oil or Biodegradable-Fluid Configuration?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "owned-curved-roof-panel-production-smooth-vs-crimp-curving",
+    "title": "Owned Curved-Panel Production: Smooth Curving or Crimp Curving?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "standing-seam-roof-removal-recovery-disassembly-vs-scrap",
+    "title": "Standing-Seam Roof Removal: Recover Panels or Cut for Scrap?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "industrial-hall-central-ahu-vs-decentralized-ventilation-access",
+    "title": "Industrial Hall Ventilation: Central AHU or Distributed Roof Units?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "industrial-roof-daylight-smoke-vents-combined-vs-separate",
+    "title": "Industrial Roofs: Combined Daylight and Smoke Vents or Separate Units?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-snow-retention-continuous-barrier-vs-individual-pads",
+    "title": "Metal Roof Snow Retention: Continuous Barriers or Individual Pads?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "sandwich-roof-panel-factory-pir-foam-vs-mineral-wool-production",
+    "title": "Sandwich Roof-Panel Factories: PIR Foam or Mineral-Wool Production?",
+    "cluster": "forming-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_21_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_21_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -1986,6 +2041,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'daily-20261118', date: '2026-11-18', standard: 'buyer-2026-11-18', articles: NOVEMBER_18_BUYER_ARTICLES, slugs: NOVEMBER_18_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261119', date: '2026-11-19', standard: 'buyer-2026-11-19', articles: NOVEMBER_19_BUYER_ARTICLES, slugs: NOVEMBER_19_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261120', date: '2026-11-21', standard: 'buyer-2026-11-21', articles: NOVEMBER_20_BUYER_ARTICLES, slugs: NOVEMBER_20_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261121', date: '2026-11-21', standard: 'buyer-2026-11-21', articles: NOVEMBER_21_BUYER_ARTICLES, slugs: NOVEMBER_21_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -2024,6 +2080,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_18_BUYER_ARTICLES,
   ...NOVEMBER_19_BUYER_ARTICLES,
   ...NOVEMBER_20_BUYER_ARTICLES,
+  ...NOVEMBER_21_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
