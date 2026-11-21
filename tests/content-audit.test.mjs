@@ -274,3 +274,178 @@ describe('final ownership and checklist adversarial regressions', () => {
     expect(report.failures).toContain('missing-project-checklist');
   });
 });
+
+describe('source-supported financial instrument nouns', () => {
+  const bankSource = '[HSBC instrument guide](https://www.business.hsbc.uk/en-gb/products/international-business-guarantees)';
+  const icbcSource = '[ICBC instrument guide](https://www.icbc.com.cn/ICBC/EN/CorporateFinance/GlobalService/FXGuarantee/AdvancePaymentGuarantee/)';
+  const iccSource = '[ICC demand instrument form](https://library.iccwbo.org/content/tfb/pdf/Model%20forms%20758.pdf)';
+  const rulesSource = '[ICC URDG rules](https://library.iccwbo.org/content/tfb/RULES/tfb-urdg758-rules.htm?AGENT=ICC_QAT+title%3D)';
+  const evidence = bankSource + '\n' + iccSource;
+
+  it.each([
+    'bank guarantee',
+    'advance-payment guarantee',
+    'advance payment guarantee',
+    'advance repayment guarantee',
+    'advance-repayment guarantee',
+    'demand guarantee',
+    'demand-guarantee',
+  ])('accepts the sourced named financial noun %s without treating the official URL as a promise', (instrument) => {
+    const report = auditArticle(articleWith('A ' + instrument + ' is a separate bank undertaking for the stated payment demand, beneficiary and expiry.\n' + evidence));
+    expect(report).toMatchObject({ fatal: false, failures: [], score: 100, publishable: true });
+  });
+
+  it('accepts an alternative actual bank primary source with the ICC rule source', () => {
+    expect(auditArticle(articleWith('An advance-payment guarantee addresses the outstanding advance under its stated undertaking.\n' + icbcSource + '\n' + rulesSource)))
+      .toMatchObject({ fatal: false, failures: [], score: 100, publishable: true });
+  });
+
+  it.each([
+    ['no sources', ''],
+    ['bank source only', bankSource],
+    ['ICC source only', iccSource],
+    ['third-party bank discussion', '[Bank discussion](https://example.com/bank-guarantee)\n' + iccSource],
+    ['unrelated bank home page', '[HSBC](https://www.business.hsbc.uk/)\n' + iccSource],
+    ['bank lookalike hostname', '[Bank](https://www.business.hsbc.uk.example.com/en-gb/products/international-business-guarantees)\n' + iccSource],
+    ['bank name in an attacker query', '[Bank](https://example.com/?source=https://www.business.hsbc.uk/en-gb/products/international-business-guarantees)\n' + iccSource],
+    ['bank name in URL credentials', '[Bank](https://www.business.hsbc.uk@example.com/en-gb/products/international-business-guarantees)\n' + iccSource],
+    ['HTTP bank target', bankSource.replace('https:', 'http:') + '\n' + iccSource],
+    ['ICC lookalike hostname', bankSource + '\n[Rules](https://library.iccwbo.org.example.com/content/tfb/pdf/Model%20forms%20758.pdf)'],
+    ['unrelated ICC home page', bankSource + '\n[ICC](https://iccwbo.org/)'],
+    ['third-party rule copy', bankSource + '\n[Rules](https://example.com/urdg758.pdf)'],
+    ['plain unlinked primary addresses', 'https://www.business.hsbc.uk/en-gb/products/international-business-guarantees\nhttps://library.iccwbo.org/content/tfb/pdf/Model%20forms%20758.pdf'],
+    ['sources hidden in a comment', '<!-- ' + evidence + ' -->'],
+    ['sources inside a code block', '~~~md\n' + evidence + '\n~~~'],
+    ['source URLs used as images', bankSource.replace('[', '![') + '\n' + iccSource.replace('[', '![')],
+  ])('rejects a named financial noun with %s', (_name, references) => {
+    const report = auditArticle(articleWith('A bank guarantee is a separate payment undertaking.\n' + references));
+    expect(report.failures).toContain('unsupported-high-risk-claim');
+  });
+
+  it.each([
+    'The result is guaranteed.',
+    'The bank guarantees uninterrupted production.',
+    'ARCLIFT guarantees every delivery.',
+    'A bank guarantee guarantees the line output.',
+    'A performance guarantee applies to the machine.',
+    'The service guarantee covers all destinations.',
+    'The arrangement delivers 20% savings.',
+    'The system is CE certified.',
+    'Delivery is available in three weeks.',
+  ])('keeps a guarantee verb or other unsupported claim fatal even beside genuine financial sources: %s', (claim) => {
+    expect(auditArticle(articleWith('A bank guarantee is a separate payment undertaking.\n' + evidence + '\n' + claim)).failures)
+      .toContain('unsupported-high-risk-claim');
+  });
+
+  it.each([
+    'ARCLIFT offers an advance-payment guarantee.',
+    'We provide a bank guarantee.',
+    'Our team issues a demand guarantee.',
+    'ARCLIFT arranges an advance repayment guarantee.',
+    'Our bank guarantee is available for the order.',
+    "ARCLIFT's bank guarantee protects the advance.",
+    'The bank guarantee is issued by ARCLIFT.',
+    'The demand guarantee is arranged by our company.',
+    'ARCLIFT provides financial services.',
+    'We arrange escrow services.',
+  ])('rejects an unsupported ARCLIFT financial-service claim: %s', (claim) => {
+    expect(auditArticle(articleWith(claim + '\n' + evidence)).failures).toContain('unsupported-high-risk-claim');
+  });
+
+  it('rejects an unsupported financial-service offer even when source URLs contain no separate guarantee word', () => {
+    expect(auditArticle(articleWith('ARCLIFT provides financial services.\n' + icbcSource + '\n' + iccSource)).failures)
+      .toContain('unsupported-high-risk-claim');
+  });
+
+  it('continues to inspect raw non-guarantee risk words inside official link labels and targets', () => {
+    const labelled = bankSource.replace('HSBC instrument guide', 'The system is CE certified');
+    expect(auditArticle(articleWith('A bank guarantee is a separate payment undertaking.\n' + labelled + '\n' + iccSource)).failures)
+      .toContain('unsupported-high-risk-claim');
+    const target = bankSource.replace('international-business-guarantees', 'international-business-guarantees/patented');
+    expect(auditArticle(articleWith('A bank guarantee is a separate payment undertaking.\n' + target + '\n' + iccSource)).failures)
+      .toContain('unsupported-high-risk-claim');
+  });
+});
+
+describe('financial evidence remains visible and promise checks remain raw', () => {
+  const bank = '[HSBC instrument guide](https://www.business.hsbc.uk/en-gb/products/international-business-guarantees)';
+  const icc = '[ICC demand form](https://library.iccwbo.org/content/tfb/pdf/Model%20forms%20758.pdf)';
+  it.each([
+    bank.replace('guarantees)', 'guarantees?claim=guaranteed)'),
+    bank.replace('guarantees)', 'guarantees#guarantees)'),
+    bank.replace('guarantees)', 'guarantees?claim=patented)'),
+  ])('does not hide risk words in an otherwise official source target: %s', (target) => {
+    expect(auditArticle(articleWith('A bank guarantee is a separate bank undertaking.\n' + target + '\n' + icc)).failures)
+      .toContain('unsupported-high-risk-claim');
+  });
+  it('does not count citations hidden behind four-tilde fences as financial evidence', () => {
+    expect(auditArticle(articleWith('A bank guarantee is a separate bank undertaking.\n~~~~md\n' + bank + '\n' + icc + '\n~~~~')).failures)
+      .toContain('unsupported-high-risk-claim');
+  });
+  it('does not count source-looking frontmatter values as public financial citations', () => {
+    const article = compliantArticle.replace('title: Evidence-led equipment planning', 'title: Evidence-led equipment planning\nsourceOne: "' + bank + '"\nsourceTwo: "' + icc + '"');
+    expect(auditArticle(article + '\nA bank guarantee is a separate bank undertaking.').failures)
+      .toContain('unsupported-high-risk-claim');
+  });
+  it('keeps the bank as issuer while ARCLIFT supplies only the equipment', () => {
+    expect(auditArticle(articleWith('ARCLIFT supplies the identified line; the buyer obtains a bank guarantee from its transaction bank for the stated advance.\n' + bank + '\n' + icc)))
+      .toMatchObject({ fatal: false, failures: [], score: 100, publishable: true });
+  });
+});
+
+describe('financial noun evidence cannot hide a service or performance promise', () => {
+  const sources = '[HSBC instrument](https://www.business.hsbc.uk/en-gb/products/international-business-guarantees)\n[ICC form](https://library.iccwbo.org/content/tfb/pdf/Model%20forms%20758.pdf)';
+  it.each([
+    'A bank guarantee ensures uninterrupted production.',
+    'An advance-payment guarantee promises flawless output.',
+  ])('keeps an equipment-performance promise fatal: %s', (claim) => {
+    expect(auditArticle(articleWith(claim + '\n' + sources)).failures).toContain('unsupported-high-risk-claim');
+  });
+  const tick = String.fromCharCode(96);
+  it.each([
+    tick + sources.replace('\n', tick + ' \n' + tick) + tick,
+    '<div hidden>\n' + sources + '\n</div>',
+  ])('does not count inline-code or hidden HTML citations as source support', (references) => {
+    expect(auditArticle(articleWith('A bank guarantee is a separate payment undertaking.\n' + references)).failures)
+      .toContain('unsupported-high-risk-claim');
+  });
+});
+
+describe('financial service claims retain past and progressive verb forms', () => {
+  const sources = '[HSBC instrument](https://www.business.hsbc.uk/en-gb/products/international-business-guarantees)\n[ICC form](https://library.iccwbo.org/content/tfb/pdf/Model%20forms%20758.pdf)';
+  it.each([
+    'We have offered an advance-payment guarantee.',
+    'ARCLIFT is providing a bank guarantee.',
+    'Our team is issuing a demand guarantee.',
+    'ARCLIFT has arranged an advance repayment guarantee.',
+  ])('rejects the unsupported service claim: %s', (claim) => {
+    expect(auditArticle(articleWith(claim + '\n' + sources)).failures).toContain('unsupported-high-risk-claim');
+  });
+});
+
+describe('financial source citations must be ordinary visible prose', () => {
+  const bank = '[HSBC instrument](https://www.business.hsbc.uk/en-gb/products/international-business-guarantees)';
+  const icc = '[ICC form](https://library.iccwbo.org/content/tfb/pdf/Model%20forms%20758.pdf)';
+  it.each(['    ', '\t', '  \t'])('rejects financial citations hidden by code indentation %j', (indent) => {
+    const references = indent + bank + '\n' + indent + icc;
+    expect(auditArticle(articleWith('A bank guarantee is a separate payment undertaking.\n\n' + references)).failures)
+      .toContain('unsupported-high-risk-claim');
+  });
+});
+
+describe('financial instrument nouns do not authorize supplier security services', () => {
+  const sources = '[HSBC instrument](https://www.business.hsbc.uk/en-gb/products/international-business-guarantees)\n[ICC form](https://library.iccwbo.org/content/tfb/pdf/Model%20forms%20758.pdf)';
+  it.each([
+    'ARCLIFT can supply a bank guarantee.',
+    'We supply a bank guarantee.',
+    'Our team secures an advance-payment guarantee.',
+    'ARCLIFT supplied a bank guarantee.',
+    'We are supplying an advance payment guarantee.',
+    'Our company has secured a demand guarantee.',
+    'A bank guarantee is supplied by ARCLIFT.',
+    'An advance-payment guarantee is secured by our team.',
+  ])('rejects an unsupported supplier security-service claim even with primary sources: %s', (claim) => {
+    expect(auditArticle(articleWith(claim + '\n' + sources)).failures)
+      .toContain('unsupported-high-risk-claim');
+  });
+});

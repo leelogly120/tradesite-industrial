@@ -109,6 +109,9 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'roof-flashing-folder-single-direction-vs-up-down',
+    'roof-flashing-blanks-guillotine-vs-coil-cut-to-length',
+    'ontario-roll-forming-line-certification-vs-field-evaluation',
     'roof-panel-roll-former-chain-vs-geared-transmission',
     'roof-panel-roll-former-profile-shear-vs-saw-cutoff',
     'roof-panel-roll-former-cantilever-vs-through-shaft-stands',
@@ -265,6 +268,11 @@ export const GUIDE_TOPICS = [
     'truck-mounted-forming-lift-jobsite-setup-review',
   ] },
   { name: 'Shipping, documents and equipment handover', slugs: [
+    'retired-roof-forming-lift-auction-vs-negotiated-sale',
+    'eu-forming-machinery-purchase-january-2027-transition',
+    'us-forming-lift-import-diesel-engine-vs-engine-free-package',
+    'forming-equipment-distributor-private-brand-vs-maker-brand',
+    'roll-forming-lift-advance-payment-guarantee-vs-escrow',
     'containerized-forming-equipment-shipper-owned-vs-carrier-container',
     'forming-lift-fleet-import-one-shipment-vs-staged-complete-units',
     'roro-vs-lolo-shipping-large-work-platforms',
@@ -387,6 +395,8 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-ductwork-access-positions',
   ] },
   { name: 'Controls, maintenance and handover responsibilities', slugs: [
+    'forming-lift-hydraulic-pump-new-vs-oem-reman-exchange',
+    'large-deck-platform-extended-warranty-vs-funded-repair-risk',
     'hydraulic-forming-lift-fleet-offline-filtration-vs-oil-replacement',
     'cast-in-channels-vs-post-installed-overhead-service-supports',
     'concrete-soffit-patch-repair-vs-cathodic-protection-access',

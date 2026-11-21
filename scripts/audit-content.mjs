@@ -83,8 +83,19 @@ const HIGH_RISK_PATTERNS = [
   /\b\d+(?:\.\d+)?%\s+(?:savings?|faster|improvement|increase|reduction|more productive|less)\b/i,
   /\b\d+(?:\.\d+)?\s+percent\s+(?:labor\s+)?(?:savings?|reduction|improvement)\b/i,
   /\b(?:reduces?|cuts?|lowers?)\s+(?:labor|costs?|time)\s+by\s+\d+(?:\.\d+)?(?:%|\s+percent)/i,
-  /\b(?:guarantee|guaranteed|guarantees)\b/i,
 ];
+// Named financial instruments are terminology only when both primary sources
+// below are present. All other risk patterns continue to inspect raw Markdown.
+const GUARANTEE_CLAIM_PATTERN = /\b(?:guarantee|guaranteed|guarantees)\b/i;
+const FINANCIAL_GUARANTEE_NOUN = /\b(?:bank[- ]+|advance[- ]+(?:payment|repayment)[- ]+|demand[- ]+)guarantee\b/i;
+const FINANCIAL_OBJECT = '(?:' + FINANCIAL_GUARANTEE_NOUN.source + '|financial\\s+services?|escrow(?:\\s+services?)?|trade\\s+finance)';
+const FINANCIAL_SERVICE_PATTERNS = [
+  new RegExp("\\b(?:arclift|we|our(?:\\s+(?:company|team))?)\\b[^.!?;\\n]{0,60}\\b(?:offer(?:s|ed|ing)?|provid(?:e[sd]?|ing)|issu(?:e[sd]?|ing)|arrang(?:e[sd]?|ing)|suppl(?:y|ies|ied|ying)|secur(?:e[sd]?|ing))\\b[^.!?;\\n]{0,60}" + FINANCIAL_OBJECT, 'i'),
+  new RegExp("\\b(?:our|arclift['’]s)\\s+" + FINANCIAL_GUARANTEE_NOUN.source, 'i'),
+  new RegExp(FINANCIAL_OBJECT + "[^.!?;\\n]{0,60}\\b(?:offered|provided|issued|arranged|supplied|secured)\\s+by\\s+(?:arclift|us|our(?:\\s+(?:company|team))?)\\b", 'i'),
+  new RegExp(FINANCIAL_GUARANTEE_NOUN.source + "[^.!?;\\n]{0,40}\\b(?:ensures?|promises?|assures?)\\b[^.!?;\\n]{0,60}\\b(?:uptime|output|production|speed|delivery|performance|results?|savings?|safety|quality)\\b", 'i'),
+];
+const FINANCIAL_SOURCE_LINK = /(?<!!)\[([^\]\n]+)\]\((https:\/\/[^\s)]+)\)/g;
 const PROVENANCE_VALUE_PATTERN = /\b(?:original\s+(?:source|file(?:name)?|image)|source\s+(?:path|file|archive))\b/i;
 const AUDIT_SECTION_HEADINGS = {
   'buyer-intent': 'Buyer Intent',
@@ -177,6 +188,55 @@ function removeProductionCapacityBoundaries(text) {
   );
 }
 
+function financialSource(target) {
+  try {
+    const url = new URL(target);
+    if (url.protocol !== 'https:' || url.username || url.password || url.port) return null;
+    const host = url.hostname.toLowerCase(), pathname = decodeURIComponent(url.pathname).toLowerCase();
+    const bank = (['www.business.hsbc.uk', 'business.hsbc.uk'].includes(host)
+      && /^\/en-gb\/products\/international-business-guarantees\/?$/.test(pathname))
+      || (['www.icbc.com.cn', 'icbc.com.cn'].includes(host)
+      && /^\/icbc\/en\/corporatefinance\/globalservice\/fxguarantee\/advancepaymentguarantee\/?$/.test(pathname));
+    const icc = host === 'library.iccwbo.org' && [
+      '/content/tfb/pdf/model forms 758.pdf',
+      '/content/tfb/rules/tfb-urdg758-rules.htm',
+    ].includes(pathname);
+    return bank || icc ? { url, kind: bank ? 'bank' : 'icc' } : null;
+  } catch { return null; }
+}
+
+function financialEvidence(markdown) {
+  let fence = null;
+  const body = stripHtmlComments(markdown.replace(/^---\r?\n[\s\S]*?\r?\n---(?:\r?\n|$)/, ''));
+  const visible = body.split(/\r?\n/).filter(line => {
+    if (/^(?: {4}| {0,3}\t)/.test(line)) return false;
+    const match = line.match(/^\s*(\x60{3,}|~{3,})/);
+    if (match) {
+      if (!fence) fence = match[1];
+      else if (match[1][0] === fence[0] && match[1].length >= fence.length) fence = null;
+      return false;
+    }
+    return !fence;
+  }).join('\n')
+    .replace(/\x60+[^\x60\n]*\x60+/g, '')
+    .replace(/<([a-z][\w-]*)\b[^>]*>[\s\S]*?<\/\1\s*>/gi, '');
+  const sources = [...visible.matchAll(FINANCIAL_SOURCE_LINK)].map(match => financialSource(match[2])).filter(Boolean);
+  return FINANCIAL_GUARANTEE_NOUN.test(visible) && sources.some(source => source.kind === 'bank') && sources.some(source => source.kind === 'icc');
+}
+
+function guaranteeClaimText(markdown) {
+  if (!financialEvidence(markdown)) return markdown;
+  const text = markdown.replace(FINANCIAL_SOURCE_LINK, (link, _label, target) => {
+    const source = financialSource(target);
+    if (!source) return link;
+    // Remove only the known source-page noun in its path; risk words in the
+    // visible label, query and fragment remain subject to the ordinary checks.
+    const pathname = source.url.pathname.replace(/\bguarantees\b/gi, 'financial-instruments');
+    return link.replace(target, target.replace(source.url.pathname, pathname));
+  });
+  return text.replace(new RegExp(FINANCIAL_GUARANTEE_NOUN.source, 'gi'), 'financial instrument');
+}
+
 function textFailures(markdown) {
   const failures = new Set();
   const identityText = removeSupplierNegations(markdown);
@@ -186,7 +246,8 @@ function textFailures(markdown) {
   if (MOJIBAKE_PATTERN.test(markdown)) failures.add('mojibake-text');
   if (IDENTITY_PATTERNS.some((pattern) => pattern.test(identityText))) failures.add('prohibited-identity-language');
   if (BANNED_AI_PATTERNS.some((pattern) => pattern.test(markdown))) failures.add('banned-ai-language');
-  if (PRODUCTION_CAPACITY_PATTERN.test(highRiskText) || HIGH_RISK_PATTERNS.some((pattern) => pattern.test(markdown))) failures.add('unsupported-high-risk-claim');
+  if (PRODUCTION_CAPACITY_PATTERN.test(highRiskText) || HIGH_RISK_PATTERNS.some((pattern) => pattern.test(markdown))
+    || GUARANTEE_CLAIM_PATTERN.test(guaranteeClaimText(markdown)) || FINANCIAL_SERVICE_PATTERNS.some(pattern => pattern.test(markdown))) failures.add('unsupported-high-risk-claim');
   return failures;
 }
 
