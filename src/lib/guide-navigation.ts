@@ -109,6 +109,8 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'owned-curved-roof-panel-production-smooth-vs-crimp-curving',
+    'sandwich-roof-panel-factory-pir-foam-vs-mineral-wool-production',
     'roof-flashing-folder-single-direction-vs-up-down',
     'roof-flashing-blanks-guillotine-vs-coil-cut-to-length',
     'ontario-roll-forming-line-certification-vs-field-evaluation',
@@ -238,6 +240,9 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-control-cabinet-site-conditions',
   ] },
   { name: 'Coil and roof-panel routes', slugs: [
+    'standing-seam-roof-removal-recovery-disassembly-vs-scrap',
+    'industrial-roof-daylight-smoke-vents-combined-vs-separate',
+    'metal-roof-snow-retention-continuous-barrier-vs-individual-pads',
     'roof-panel-coil-store-overhead-crane-vs-forklift-handling',
     'roof-panel-line-powered-decoiler-vs-pull-through-feed',
     'roof-panel-roll-forming-conditioned-coil-vs-entry-leveler',
@@ -395,6 +400,7 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-ductwork-access-positions',
   ] },
   { name: 'Controls, maintenance and handover responsibilities', slugs: [
+    'forming-lift-hydraulic-mineral-vs-biodegradable-fluid-configuration',
     'forming-lift-hydraulic-pump-new-vs-oem-reman-exchange',
     'large-deck-platform-extended-warranty-vs-funded-repair-risk',
     'hydraulic-forming-lift-fleet-offline-filtration-vs-oil-replacement',
@@ -437,6 +443,10 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-control-view-between-workfaces',
   ] },
   { name: 'Planning access around building use', slugs: [
+    'high-bay-emergency-lighting-central-battery-vs-self-contained',
+    'high-bay-lighting-controls-wired-dali-vs-wireless',
+    'overhead-steel-recoat-dry-blasting-vs-waterjetting',
+    'industrial-hall-central-ahu-vs-decentralized-ventilation-access',
     'industrial-entry-air-curtain-vs-entrance-vestibule',
     'high-bay-public-address-distributed-speakers-vs-suspended-array',
     'compressed-air-aluminium-modular-vs-steel-header-installation',
