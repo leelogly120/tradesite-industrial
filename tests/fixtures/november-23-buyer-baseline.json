@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "sourceCommit": "d68d769f622b5d6596edb0c53fe896a5847be1d9",
+  "counts": {
+    "articles": 490,
+    "assets": 232,
+    "referencePhotos": 113,
+    "photoMappings": 487,
+    "topics": 10,
+    "topicMemberships": 490,
+    "buyerCohorts": 24,
+    "buyerArticles": 360,
+    "sitemapUrls": 514
+  },
+  "sha256": {
+    "articles": "830f85d7f1b13436febbdad6dfeb224e8a9506732ee6b3a527fb141a7c2e854e",
+    "assets": "02403db2c63076cb6577d42b58f554fc4a6d27689dfd3e4c514e4d8db6830cba",
+    "manifest": "7d748f7a7f9fcea00e186db7e69eeff013812a1e07cde29ef87d610a13aa48be",
+    "photoMappings": "0db4b72d1a745110b12c75be8826eee9c89e318c76d328ae43da96bba4fb8582",
+    "guideTopics": "d7be4b212bad3601d0103c084cdafa97e89d55b4e1a99fb2df425589302433ae",
+    "buyerCohorts": "5261df77561df0cbd9204c0fb61168e998b84cf9e69cfe84acd756fb38ecd45b",
+    "sitemapUrls": "eef7b9058849e67ba667624dea56ef77c478b32acd45fe06412b3f44914172bc"
+  }
+}
