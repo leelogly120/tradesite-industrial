@@ -109,6 +109,9 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'roof-panel-roll-forming-entry-compact-feeder-vs-separate-loop-line',
+    'roof-panel-roll-forming-length-control-wheel-vs-laser',
+    'roof-panel-roll-former-mounted-reels-vs-freestanding-coil-support',
     'roof-panel-roll-forming-wide-gauge-line-vs-gauge-dedicated-lines',
     'roof-panel-roll-forming-dual-height-vs-single-height-raft-line',
     'roof-panel-roll-former-direct-electric-vs-hydraulic-drive',
@@ -243,6 +246,7 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-control-cabinet-site-conditions',
   ] },
   { name: 'Coil and roof-panel routes', slugs: [
+    'standing-seam-panel-completion-mains-vs-drill-driven-seamers',
     'roof-panel-roll-forming-line-magnetic-vs-roller-drop-stacking',
     'standing-seam-roof-removal-recovery-disassembly-vs-scrap',
     'industrial-roof-daylight-smoke-vents-combined-vs-separate',
@@ -268,6 +272,7 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-panel-bundle-staging-scope',
   ] },
   { name: 'Truck integration and transport boundaries', slugs: [
+    'truck-mounted-roll-forming-lift-road-vs-all-wheel-drive-chassis',
     'ceiling-platform-transport-rear-ramps-vs-front-loading-lowbed',
     'truck-mounted-roll-forming-chassis-interface-review',
     'truck-mounted-roll-forming-payload-allocation-review',
@@ -314,6 +319,7 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'ceiling-installation-platform-pipe-racks-vs-separate-material-lift',
     'high-wall-painting-robot-vs-crewed-platform-access',
     'battery-electric-ceiling-platform-lithium-ion-vs-lead-acid',
     'large-deck-ceiling-platform-single-type-vs-mixed-fleet',
@@ -382,6 +388,7 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-equipment-versus-access-service',
   ] },
   { name: 'Indoor routes, floors and work areas', slugs: [
+    'sloping-site-platform-access-self-levelling-vs-level-stations',
     'data-centre-aisle-containment-rack-supported-vs-freestanding',
     'facade-platform-access-temporary-trackway-vs-permanent-road',
     'overhead-busbar-vs-cable-tray-installation-access-package',
@@ -406,6 +413,8 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-ductwork-access-positions',
   ] },
   { name: 'Controls, maintenance and handover responsibilities', slugs: [
+    'roll-forming-lift-temporary-mains-vs-generator-supply',
+    'ceiling-platform-oem-guarding-retrofit-vs-equipped-new-machine',
     'forming-lift-hydraulic-tube-routes-vs-hose-dominant-layout',
     'roll-forming-lift-constant-speed-vs-variable-speed-hydraulic-power',
     'forming-lift-hydraulic-mineral-vs-biodegradable-fluid-configuration',
@@ -451,6 +460,7 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-control-view-between-workfaces',
   ] },
   { name: 'Planning access around building use', slugs: [
+    'high-wall-platform-access-masonry-vs-metal-stud-partitions',
     'new-steel-offsite-intumescent-vs-site-coating-platform-access',
     'overhead-fall-protection-rail-vs-cable-installation-platform-access',
     'high-bay-emergency-lighting-central-battery-vs-self-contained',
