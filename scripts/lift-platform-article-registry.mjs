@@ -2016,6 +2016,61 @@ export const NOVEMBER_21_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_21_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_21_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// Ten November22 quota guides created November23; all preceding cohorts and fulfilled overrides retained.
+export const NOVEMBER_22_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "forming-lift-hydraulic-tube-routes-vs-hose-dominant-layout",
+    "title": "Forming-Lift Hydraulics: Fixed Tube Routes or a Hose-Dominant Layout?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-forming-wide-gauge-line-vs-gauge-dedicated-lines",
+    "title": "Roof-Panel Roll Forming: One Qualified Gauge-Range Line or Gauge-Dedicated Lines?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-forming-line-magnetic-vs-roller-drop-stacking",
+    "title": "Roof-Panel Roll-Forming Line Outfeed: Magnetic or Roller-Drop Stacking?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roll-forming-lift-constant-speed-vs-variable-speed-hydraulic-power",
+    "title": "Roll-Forming Lift Hydraulics: Constant-Speed or Variable-Speed Power?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-forming-dual-height-vs-single-height-raft-line",
+    "title": "Roof-Panel Roll-Forming Lines: Dual Height or Single-Height Rafts?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-former-direct-electric-vs-hydraulic-drive",
+    "title": "Roof-Panel Roll Formers: Direct-Electric or Hydraulic Drive?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "new-steel-offsite-intumescent-vs-site-coating-platform-access",
+    "title": "New Steel Coatings: Offsite Application or Full Site Work and Platform Access?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "high-wall-painting-robot-vs-crewed-platform-access",
+    "title": "High-Wall Painting: Buy a Finishing Robot or Crewed Platform Access?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "overhead-fall-protection-rail-vs-cable-installation-platform-access",
+    "title": "Overhead Rail or Cable Fall Protection: Which Installation Platform Access?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "ceiling-platform-transport-rear-ramps-vs-front-loading-lowbed",
+    "title": "Ceiling-Platform Access Fleets: Rear-Ramp Transport or a Front-Loading Lowbed?",
+    "cluster": "ceiling-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_22_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_22_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -2042,6 +2097,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'daily-20261119', date: '2026-11-19', standard: 'buyer-2026-11-19', articles: NOVEMBER_19_BUYER_ARTICLES, slugs: NOVEMBER_19_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261120', date: '2026-11-21', standard: 'buyer-2026-11-21', articles: NOVEMBER_20_BUYER_ARTICLES, slugs: NOVEMBER_20_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261121', date: '2026-11-21', standard: 'buyer-2026-11-21', articles: NOVEMBER_21_BUYER_ARTICLES, slugs: NOVEMBER_21_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261122', date: '2026-11-23', standard: 'buyer-2026-11-23', articles: NOVEMBER_22_BUYER_ARTICLES, slugs: NOVEMBER_22_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -2081,6 +2137,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_19_BUYER_ARTICLES,
   ...NOVEMBER_20_BUYER_ARTICLES,
   ...NOVEMBER_21_BUYER_ARTICLES,
+  ...NOVEMBER_22_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
