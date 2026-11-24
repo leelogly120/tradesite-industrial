@@ -109,6 +109,10 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'tapered-standing-seam-roll-former-single-edge-vs-width-tracking',
+    'roof-flashing-production-dedicated-roll-former-vs-folding-cell',
+    'roof-panel-roll-forming-pre-punch-vs-post-punch-process',
+    'roof-panel-roll-forming-line-vs-ceiling-t-grid-manufacturing',
     'roof-panel-roll-forming-entry-compact-feeder-vs-separate-loop-line',
     'roof-panel-roll-forming-length-control-wheel-vs-laser',
     'roof-panel-roll-former-mounted-reels-vs-freestanding-coil-support',
@@ -272,6 +276,7 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-panel-bundle-staging-scope',
   ] },
   { name: 'Truck integration and transport boundaries', slugs: [
+    'mobile-roof-panel-roll-former-trailer-vs-demountable-base',
     'truck-mounted-roll-forming-lift-road-vs-all-wheel-drive-chassis',
     'ceiling-platform-transport-rear-ramps-vs-front-loading-lowbed',
     'truck-mounted-roll-forming-chassis-interface-review',
@@ -319,6 +324,8 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'operable-wall-access-vertical-folding-vs-horizontal-stacking',
+    'wall-panel-access-fork-carried-vs-crane-suspended-vacuum-handling',
     'ceiling-installation-platform-pipe-racks-vs-separate-material-lift',
     'high-wall-painting-robot-vs-crewed-platform-access',
     'battery-electric-ceiling-platform-lithium-ion-vs-lead-acid',
@@ -413,6 +420,7 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-ductwork-access-positions',
   ] },
   { name: 'Controls, maintenance and handover responsibilities', slugs: [
+    'roof-panel-roll-forming-controls-supplier-managed-vs-owner-maintainable',
     'roll-forming-lift-temporary-mains-vs-generator-supply',
     'ceiling-platform-oem-guarding-retrofit-vs-equipped-new-machine',
     'forming-lift-hydraulic-tube-routes-vs-hose-dominant-layout',
@@ -460,6 +468,8 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-control-view-between-workfaces',
   ] },
   { name: 'Planning access around building use', slugs: [
+    'ceiling-cleaning-platform-dry-ice-vs-wet-wash-package',
+    'ceiling-coating-platform-airless-spray-vs-roller-toolchain',
     'high-wall-platform-access-masonry-vs-metal-stud-partitions',
     'new-steel-offsite-intumescent-vs-site-coating-platform-access',
     'overhead-fall-protection-rail-vs-cable-installation-platform-access',
