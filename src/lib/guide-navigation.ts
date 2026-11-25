@@ -109,6 +109,11 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'stone-coated-roof-tile-plant-vs-long-run-metal-sheet-production',
+    'industrial-roof-panel-diaphragm-package-vs-separate-bracing',
+    'fibre-cement-roof-sheet-plant-vs-metal-panel-roll-forming',
+    'acoustic-roof-liner-buy-perforated-coil-vs-owned-perforating-line',
+    'roof-panel-coil-testing-own-tensile-lab-vs-contract-service',
     'tapered-standing-seam-roll-former-single-edge-vs-width-tracking',
     'roof-flashing-production-dedicated-roll-former-vs-folding-cell',
     'roof-panel-roll-forming-pre-punch-vs-post-punch-process',
@@ -250,6 +255,7 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-control-cabinet-site-conditions',
   ] },
   { name: 'Coil and roof-panel routes', slugs: [
+    'roof-panel-delivery-own-fleet-vs-specialist-haulage',
     'standing-seam-panel-completion-mains-vs-drill-driven-seamers',
     'roof-panel-roll-forming-line-magnetic-vs-roller-drop-stacking',
     'standing-seam-roof-removal-recovery-disassembly-vs-scrap',
@@ -324,6 +330,8 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'chilled-water-pipe-preinsulated-plastic-vs-insulated-steel-access',
+    'arena-scoreboard-centerhung-vs-wall-mounted-personnel-access',
     'operable-wall-access-vertical-folding-vs-horizontal-stacking',
     'wall-panel-access-fork-carried-vs-crane-suspended-vacuum-handling',
     'ceiling-installation-platform-pipe-racks-vs-separate-material-lift',
@@ -468,6 +476,8 @@ export const GUIDE_TOPICS = [
     'ceiling-platform-control-view-between-workfaces',
   ] },
   { name: 'Planning access around building use', slugs: [
+    'ducted-dehumidification-condensation-vs-desiccant-ceiling-access',
+    'sprinkler-wet-pipe-vs-preaction-ceiling-platform-package',
     'ceiling-cleaning-platform-dry-ice-vs-wet-wash-package',
     'ceiling-coating-platform-airless-spray-vs-roller-toolchain',
     'high-wall-platform-access-masonry-vs-metal-stud-partitions',

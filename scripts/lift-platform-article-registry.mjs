@@ -2181,6 +2181,61 @@ export const NOVEMBER_24_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_24_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_24_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// Ten ordinary November25 quota guides created November25; all preceding cohorts and fulfilled overrides retained.
+export const NOVEMBER_25_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "stone-coated-roof-tile-plant-vs-long-run-metal-sheet-production",
+    "title": "Stone-Coated Roof-Tile Plant or Long-Run Metal Sheet Production?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "industrial-roof-panel-diaphragm-package-vs-separate-bracing",
+    "title": "Industrial Roof Panels: A Designed Diaphragm Package or Separate Bracing?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "fibre-cement-roof-sheet-plant-vs-metal-panel-roll-forming",
+    "title": "Fibre-Cement Roof-Sheet Plant or Metal Roof-Panel Roll Forming?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "acoustic-roof-liner-buy-perforated-coil-vs-owned-perforating-line",
+    "title": "Acoustic Roof-Liner Production: Buy Perforated Coil or Own the Perforating Line?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-coil-testing-own-tensile-lab-vs-contract-service",
+    "title": "Roof-Panel Coil Testing: Own a Tensile Laboratory or Buy the Service?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-delivery-own-fleet-vs-specialist-haulage",
+    "title": "Roof-Panel Deliveries: Own the Fleet or Contract Specialist Haulage?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "chilled-water-pipe-preinsulated-plastic-vs-insulated-steel-access",
+    "title": "Chilled-Water Pipe Access: Preinsulated Plastic or Steel with Site Insulation?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "ducted-dehumidification-condensation-vs-desiccant-ceiling-access",
+    "title": "Ducted Dehumidification Access: Condensation or Desiccant Equipment?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "arena-scoreboard-centerhung-vs-wall-mounted-personnel-access",
+    "title": "Arena Scoreboard Access: Centerhung Assembly or Wall-Mounted Boards?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "sprinkler-wet-pipe-vs-preaction-ceiling-platform-package",
+    "title": "Sprinkler Ceiling Access: Wet-Pipe or Preaction Installation Package?",
+    "cluster": "ceiling-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_25_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_25_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -2210,6 +2265,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'daily-20261122', date: '2026-11-23', standard: 'buyer-2026-11-23', articles: NOVEMBER_22_BUYER_ARTICLES, slugs: NOVEMBER_22_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261123', date: '2026-11-23', standard: 'buyer-2026-11-23', articles: NOVEMBER_23_BUYER_ARTICLES, slugs: NOVEMBER_23_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261124', date: '2026-11-24', standard: 'buyer-2026-11-24', articles: NOVEMBER_24_BUYER_ARTICLES, slugs: NOVEMBER_24_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261125', date: '2026-11-25', standard: 'buyer-2026-11-25', articles: NOVEMBER_25_BUYER_ARTICLES, slugs: NOVEMBER_25_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -2252,6 +2308,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_22_BUYER_ARTICLES,
   ...NOVEMBER_23_BUYER_ARTICLES,
   ...NOVEMBER_24_BUYER_ARTICLES,
+  ...NOVEMBER_25_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
