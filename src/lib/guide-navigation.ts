@@ -8,6 +8,9 @@ export type GuideLink = { href: string; title: string; description: string };
 // Editorial topic boundaries, not keyword matching or automatic recommendations.
 export const GUIDE_TOPICS = [
   { name: 'Roof-level system selection', slugs: [
+    'metal-roof-underlayment-self-adhered-vs-mechanically-fastened',
+    'metal-roof-air-barrier-early-diagnostics-vs-final-test',
+    'standing-seam-wind-uplift-attachment-kits-by-zone',
     'acoustic-metal-roof-perforated-liner-vs-separate-absorption',
     'metal-roof-rain-noise-tested-assembly-vs-heavy-roof',
     'coastal-industrial-roof-aluminium-vs-coated-steel-package',
@@ -109,6 +112,8 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-folded-versus-working-envelope',
   ] },
   { name: 'Forming-line specification and interfaces', slugs: [
+    'roof-panel-roll-former-portable-vibration-checks-vs-fixed-sensors',
+    'roof-panel-roll-former-manual-vs-active-strip-guiding',
     'stone-coated-roof-tile-plant-vs-long-run-metal-sheet-production',
     'industrial-roof-panel-diaphragm-package-vs-separate-bracing',
     'fibre-cement-roof-sheet-plant-vs-metal-panel-roll-forming',
@@ -255,6 +260,7 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-control-cabinet-site-conditions',
   ] },
   { name: 'Coil and roof-panel routes', slugs: [
+    'prepainted-roof-panel-coil-when-to-require-line-trial',
     'roof-panel-delivery-own-fleet-vs-specialist-haulage',
     'standing-seam-panel-completion-mains-vs-drill-driven-seamers',
     'roof-panel-roll-forming-line-magnetic-vs-roller-drop-stacking',
@@ -330,6 +336,10 @@ export const GUIDE_TOPICS = [
     'roll-forming-lift-order-before-former-selection',
   ] },
   { name: 'Choosing a ceiling-access method', slugs: [
+    'warehouse-led-trunking-vs-individual-high-bay-access',
+    'tall-interior-wall-graphics-adhesive-film-vs-rigid-panels',
+    'high-wall-jet-nozzles-vs-ceiling-diffusers-hall-access',
+    'industrial-door-retrofit-sectional-vs-rolling-steel-crane-clearance',
     'chilled-water-pipe-preinsulated-plastic-vs-insulated-steel-access',
     'arena-scoreboard-centerhung-vs-wall-mounted-personnel-access',
     'operable-wall-access-vertical-folding-vs-horizontal-stacking',

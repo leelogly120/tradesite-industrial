@@ -2236,6 +2236,61 @@ export const NOVEMBER_25_BUYER_ARTICLES = Object.freeze([
 ].map(article => Object.freeze(article)));
 export const NOVEMBER_25_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_25_BUYER_ARTICLES.map(({ slug }) => slug));
 
+// Ten ordinary November26 quota guides created November26; all preceding cohorts and fulfilled overrides retained.
+export const NOVEMBER_26_BUYER_ARTICLES = Object.freeze([
+  {
+    "slug": "roof-panel-roll-former-portable-vibration-checks-vs-fixed-sensors",
+    "title": "Roll-Former Vibration Checks: Portable or Fixed Sensors?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "prepainted-roof-panel-coil-when-to-require-line-trial",
+    "title": "Prepainted Roof-Panel Coil: When to Require a Line Trial",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "roof-panel-roll-former-manual-vs-active-strip-guiding",
+    "title": "Roof-Panel Roll Former: Manual or Active Strip Guiding?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-underlayment-self-adhered-vs-mechanically-fastened",
+    "title": "Metal Roof Underlayment: Self-Adhered or Mechanically Fastened?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "metal-roof-air-barrier-early-diagnostics-vs-final-test",
+    "title": "Roof Air Barrier Testing: One Visit or a Staged Test Package?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "standing-seam-wind-uplift-attachment-kits-by-zone",
+    "title": "Standing-Seam Wind Uplift: One Attachment Kit or Roof-Zone Kits?",
+    "cluster": "forming-buyer-decision"
+  },
+  {
+    "slug": "warehouse-led-trunking-vs-individual-high-bay-access",
+    "title": "LED Trunking or Individual High-Bays? Price the Work Above Each Aisle",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "tall-interior-wall-graphics-adhesive-film-vs-rigid-panels",
+    "title": "Tall Interior Wall Graphics: Adhesive Film or Printed Panels?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "high-wall-jet-nozzles-vs-ceiling-diffusers-hall-access",
+    "title": "High-Wall Jet Nozzles or Ceiling Diffusers for a Large Hall?",
+    "cluster": "ceiling-buyer-decision"
+  },
+  {
+    "slug": "industrial-door-retrofit-sectional-vs-rolling-steel-crane-clearance",
+    "title": "Industrial Door Retrofit: Sectional or Rolling Steel Under a Working Crane?",
+    "cluster": "ceiling-buyer-decision"
+  }
+].map(article => Object.freeze(article)));
+export const NOVEMBER_26_BUYER_ARTICLE_SLUGS = Object.freeze(NOVEMBER_26_BUYER_ARTICLES.map(({ slug }) => slug));
+
 // Only reviewed, explicitly registered cohorts select the buyer audit and layout.
 // Publication metadata cannot grant itself a different content standard.
 export const BUYER_ARTICLE_COHORTS = Object.freeze([
@@ -2266,6 +2321,7 @@ export const BUYER_ARTICLE_COHORTS = Object.freeze([
   Object.freeze({ id: 'daily-20261123', date: '2026-11-23', standard: 'buyer-2026-11-23', articles: NOVEMBER_23_BUYER_ARTICLES, slugs: NOVEMBER_23_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261124', date: '2026-11-24', standard: 'buyer-2026-11-24', articles: NOVEMBER_24_BUYER_ARTICLES, slugs: NOVEMBER_24_BUYER_ARTICLE_SLUGS }),
   Object.freeze({ id: 'daily-20261125', date: '2026-11-25', standard: 'buyer-2026-11-25', articles: NOVEMBER_25_BUYER_ARTICLES, slugs: NOVEMBER_25_BUYER_ARTICLE_SLUGS }),
+  Object.freeze({ id: 'daily-20261126', date: '2026-11-26', standard: 'buyer-2026-11-26', articles: NOVEMBER_26_BUYER_ARTICLES, slugs: NOVEMBER_26_BUYER_ARTICLE_SLUGS }),
 ]);
 export const BUYER_ARTICLES = Object.freeze(BUYER_ARTICLE_COHORTS.flatMap(cohort => cohort.articles));
 export const BUYER_ARTICLE_SLUGS = Object.freeze(BUYER_ARTICLES.map(article => article.slug));
@@ -2309,6 +2365,7 @@ export const ALL_LIFT_PLATFORM_ARTICLES = Object.freeze([
   ...NOVEMBER_23_BUYER_ARTICLES,
   ...NOVEMBER_24_BUYER_ARTICLES,
   ...NOVEMBER_25_BUYER_ARTICLES,
+  ...NOVEMBER_26_BUYER_ARTICLES,
 ]);
 
 export const ALL_LIFT_PLATFORM_ARTICLE_SLUGS = Object.freeze(ALL_LIFT_PLATFORM_ARTICLES.map(({ slug }) => slug));
